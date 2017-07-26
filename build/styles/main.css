@@ -187,13 +187,13 @@ body #preloader {
 body #preloader .spinner {
   width: 32px;
   height: 32px;
-  background-image: url(/../images/logo-black.png);
+  background-image: url(../images/logo-black.png);
   top: 45%;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   body #preloader .spinner {
     background-size: 32px 32px;
-    background-image: url(/../images/logo-black-2x.png);
+    background-image: url(../images/logo-black-2x.png);
   }
 }
 body #header.header .top {
@@ -209,12 +209,12 @@ body #header.header .top .logo {
 body #header.header .top .logo .image {
   width: 32px;
   height: 32px;
-  background-image: url(/../images/logo.png);
+  background-image: url(../images/logo.png);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   body #header.header .top .logo .image {
     background-size: 32px 32px;
-    background-image: url(/../images/logo-2x.png);
+    background-image: url(../images/logo-2x.png);
   }
 }
 body #header.header .top .logo .image + span {
@@ -261,27 +261,27 @@ body #header.header .top .main-menu li a:hover {
   body #header.header .top .button .open {
     width: 32px;
     height: 32px;
-    background-image: url(/../images/open.png);
+    background-image: url(../images/open.png);
   }
 }
 @media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 2dppx) {
   body #header.header .top .button .open {
     background-size: 32px 32px;
-    background-image: url(/../images/open-2x.png);
+    background-image: url(../images/open-2x.png);
   }
 }
 @media only screen and (max-width: 767px) {
   body #header.header .top .button .close {
     width: 32px;
     height: 32px;
-    background-image: url(/../images/close.png);
+    background-image: url(../images/close.png);
     display: none;
   }
 }
 @media only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 2dppx) {
   body #header.header .top .button .close {
     background-size: 32px 32px;
-    background-image: url(/../images/close-2x.png);
+    background-image: url(../images/close-2x.png);
   }
 }
 
