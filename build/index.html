@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>clocklab pack</title>
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <link rel="icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" href="styles/main.css">
+        
+        <!-- some Bower components will be here if you need it -->
+        <!-- <link rel="stylesheet" href="styles/libs.min.css"> -->
+        
+        <!-- script -->
+        <!-- <script src="/xhr/wordlist?d[0]=main" defer charset="utf-8"></script> -->
+        <script src="scripts/main.min.js"></script>
+        <script src="scripts/gbAPI.js"></script>
+        <script>
+        	
+        	// var CURRENT_LANGUAGE = "<?=USER_LANG?>";
+            var Queue = new function() {
+                var q = this;q.s = [];q.stack = {"gbAPI":false, "main":false};
+                q.add = function(h) { q.s.push(h); }
+                var w = setInterval(function() {
+                    var r = true;
+                    for (var k in q.stack){if(!k){r = false;break; }}
+                    if (r) { clearInterval(w);for(var j = q.s.length; j--;) q.s[j]();}
+                }, 1000);
+            }
+        
+            // Queue.add(doc.currentScript.parentNode, function() { });
+        </script>
+    </head>
+    <body>
+        <div class="wrapper">
+            
+            <!-- preloader -->
+            <div id="preloader">
+                <span class="spinner"></span>
+            </div>
+
+            <!-- topbar -->
+            <div id="topbar">
+                <nav id="main-menu">
+
+                </nav>
+            </div>
+
+            <!-- header -->
+            <header id="header" class="header">
+            
+                <!-- top -->
+                <nav class="top">
+                    <div class="container">
+            
+                        <!-- logo -->
+                        <a href="/" class="logo valign">
+                            <div class="image"></div>
+                            <span>clocklab pack</span>
+                        </a>
+                            
+                        <!-- button -->
+                        <span class="button">
+                            <div class="open"></div>
+                            <div class="close"></div>
+                        </span>
+            
+                        <!-- main-menu -->
+                        <ul class="main-menu phone valign">
+                            <li><a href="#">menu 1</a></li>
+                            <li><a href="#">menu 2</a></li>
+                            <li><a href="#">menu 3</a></li>
+                            <li><a href="#">menu 4</a></li>
+                            <li><a href="#">menu 5</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            
+                <!-- bottom -->
+                <div class="bottom">
+                    <div class="container">
+                        <p>header bottom</p>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- main menu -->
+            <nav id="main-menu" class="main-menu">
+                <div class="container">
+                    <ul>
+                        <li><a href="#">menu 1</a></li>
+                        <li><a href="#">menu 2</a></li>
+                        <li><a href="#">menu 3</a></li>
+                        <li><a href="#">menu 4</a></li>
+                        <li><a href="#">menu 5</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- article -->
+            <main id="article" class="article">
+                <div class="container">
+                    <h1>article</h1>
+                </div>
+            </main>
+
+            <!-- footer -->
+            <footer id="footer" class="footer">
+                <div class="container">
+                    <p>footer</p>
+                    
+                    <!-- social -->
+                    <div class="social">
+                        <a href="https://facebook.com" target="_blank"></a>
+                        <a href="https://twitter.com" target="_blank"></a>
+                        <a href="https://github.com" target="_blank"></a>
+                        <a href="https://linkedin.com" target="_blank"></a>
+                        <a href="https://instagram.com/mysecondspace" target="_blank"></a>
+                    </div>
+                    
+                    <!-- copyright -->
+                    <div id="copyright">
+                        <a href="https://clocklab.design/ru/" target="_blank" title="site developed by Clock Creative Lab">
+                            <div data-translate="textContent">site developed by</div>
+                            <img alt="site developed by Clock Creative Lab" src="https://clocklab.design/clock.png" hspace="8" vspace="6">
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
