@@ -1,7 +1,6 @@
 // global variables
 $browser-context: 16;
 $padding: 24px 0;
-$time: .1s;
 
 // colors
 $secondary: #FAFBFC;
@@ -30,3 +29,12 @@ $desktop:         '(min-width: 1025px) and (max-width: 1366px)';
 $desktopWide:     '(min-width: 1367px) and (max-width: 1680px)';
 $desktopHD:       '(min-width: 1681px) and (max-width: 1920px)';
 $desktopMega:     '(min-width: 1921px)';
+
+$white: #fff;
+$black: #000;
+$gray: #999;
+$darkGray: #444;
+$blue: #0000fe;
+
+$time: .3s;
+$timeDif: .1s;

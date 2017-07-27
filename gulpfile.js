@@ -27,7 +27,7 @@ var source = 'source',
         },
         source: {
             html: source + '/*.html',
-            fonts: source + '/fonts/*.*',
+            fonts: source + '/fonts/**/*.*',
             videos: source + '/videos/*.*',
             images: source + '/images/*.*',
             styles: source + '/styles/*.*',
@@ -112,7 +112,7 @@ gulp.task('scripts', function() {
     gulp.src(path.source.scripts)
         .pipe(plugins.plumber())
         .pipe(plugins.rigger())
-        .pipe(plugins.uglify())
+        //.pipe(plugins.uglify())
         .pipe(plugins.rename({
             suffix: '.min'
         }))
