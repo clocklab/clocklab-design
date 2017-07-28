@@ -2,32 +2,23 @@
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 2;
+    z-index: 9999;
     width: 100%;
     height: 100%;
     background: $black;
     font-family: 'Roboto';
 
-    &__background {
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        background: rgba(0, 0, 0, .5);
-    }
-
     &__item {
         box-sizing: border-box;
         display: block;
         position: relative;
+        z-index: 2;
         float: right;
         width: px(240);
         height: px(240);
         border: 1px solid $white;
         color: $white;
+        cursor: pointer;
         backface-visibility: hidden;
         transition: transform $time;
 
@@ -100,29 +91,49 @@
             position: relative;
             margin: 0 auto;
             width: px(90);
-            height: px(50);
+            height: px(72);
 
             &-tick {
                 position: absolute;
                 left: 0;
                 width: 100%;
-                height: 2px;
+                height: 3px;
                 background: $white;
                 border-radius: 3px;
                 transform-origin: 0 50%;
                 transition: transform $time, width $time;
 
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0%;
+                    height: 3px;
+                    background: $black;
+                    content: '';
+                    transition: width $time;
+                }
+
                 &:nth-child(1) {
                     top: 0;
+                    width: 50%;
                 }
 
                 &:nth-child(2) {
-                    top: 50%;
-                    transform: translateY(-1px);
+                    top: calc(100% / 3);
+                    transform: translateY(-1.5px);
+                    transition: width $time;
+                }
+
+                &:nth-child(3) {
+                    top: calc(100% / 3 * 2);
+                    width: 50%;
+                    transform: translateY(-1.5px);
                     transition: width $time;
                 }
                 
-                &:nth-child(3) {
+                &:nth-child(4) {
                     bottom: 0;
                 }
             }
@@ -158,7 +169,7 @@
         }
 
         &--about-us {
-            z-index: 2;
+            z-index: 3;
         }
 
         &--team {
@@ -174,7 +185,7 @@
         }
 
         &--open-close {
-            padding-top: px(74);
+            padding-top: px(70);
 
             &::before {
                 display: none;
@@ -284,10 +295,48 @@
         /* STYLES FOR BORDER ANIMATION ENDS */
     }
 
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, .2);
+        transition: opacity $time;
+    }
+
     &.opened {
 
         .menu__item {
             transform: perspective(0) rotate(0);
+
+            .hamburger {
+                width: px(70);
+                height: px(70);
+
+                &-tick {
+
+                    &:nth-child(1),
+                    &:nth-child(4) {
+                        width: px(90);
+                    }
+
+                    &:nth-child(1) {
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        width: 0;
+                    }
+
+                    &:nth-child(4) {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
 
             /* STYLES FOR ANIMATION */
             &--team,
@@ -314,6 +363,7 @@
             .border-bottom {
                 width: 100vw;
             }
+
             &--open-close {
 
                 .border-left {
@@ -357,26 +407,11 @@
                 }
             }
             /* STYLES FOR BORDER ANIMATION ENDS */
+        }
 
-            .hamburger {
-
-                &-tick {
-
-                    &:nth-child(1) {
-                        width: px(103);
-                        transform: rotate(28deg);
-                    }
-
-                    &:nth-child(2) {
-                        width: 0;
-                    }
-
-                    &:nth-child(3) {
-                        width: px(103);
-                        transform: rotate(-28deg);
-                    }
-                }
-            }
+        .menu__background {
+            visibility: visible;
+            opacity: 1;
         }
     }
 
