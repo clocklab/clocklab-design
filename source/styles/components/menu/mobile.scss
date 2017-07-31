@@ -7,6 +7,7 @@
     height: 100%;
     background: $black;
     font-family: 'Roboto';
+    overflow: hidden;
 
     &__item {
         box-sizing: border-box;
@@ -18,18 +19,10 @@
         height: px(150);
         border: 1px solid $white;
         color: $white;
+        cursor: pointer;
+        outline: 0;
         backface-visibility: hidden;
         transition: transform $time;
-
-        .border-block {
-            position: absolute;
-            left: 0;
-            top: 0;
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            border: 1px solid $white;
-        }
 
         .text-block {
             position: relative;
@@ -41,8 +34,8 @@
 
         .serial-number {
             position: absolute;
-            top: px(10);
-            right: px(10);
+            top: px(14);
+            right: px(14);
             font-size: px(18);
             color: $gray;
         } 
@@ -61,7 +54,7 @@
         .name {
             display: block;
             position: absolute;
-            bottom: px(30);
+            bottom: px(20);
             width: 100%;
             font-size: px(24);
         }
@@ -89,38 +82,52 @@
         .hamburger {
             position: relative;
             margin: 0 auto;
-            width: px(90);
-            height: px(72);
+            width: px(70);
+            height: px(52);
 
             &-tick {
                 position: absolute;
                 left: 0;
                 width: 100%;
-                height: 3px;
-                background: $white;
+                height: 2px;
                 border-radius: 3px;
-                transform-origin: 0 50%;
-                transition: transform $time, width $time;
+                overflow: hidden;
 
-                &:nth-child(1) {
+                .inner-tick {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: $white;
+                    border-radius: 3px;
+                    transition: transform $time;
+
+                    &-2 {
+                        transform: translateX(-100%);
+                    }
+                }
+
+                &-1 {
                     top: 0;
                     width: 50%;
                 }
 
-                &:nth-child(2) {
+                &-2 {
                     top: calc(100% / 3);
                     transform: translateY(-1.5px);
                     transition: width $time;
                 }
 
-                &:nth-child(3) {
+                &-3 {
                     top: calc(100% / 3 * 2);
                     width: 50%;
                     transform: translateY(-1.5px);
                     transition: width $time;
                 }
                 
-                &:nth-child(4) {
+                &-4 {
                     bottom: 0;
                 }
             }
@@ -128,8 +135,8 @@
 
         &::before {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 50px;
+            right: 50px;
             z-index: 2;
             width: 100%;
             height: 100%;
@@ -148,10 +155,108 @@
             }
 
             &::before {
-                top: 3px;
-                right: 3px;
+                top: 5px;
+                right: 5px;
                 opacity: 1;
                 visibility: visible;
+            }
+        }
+
+        &--open-close {
+            padding-top: px(40);
+
+            &::before {
+                display: none;
+            }
+
+            &:hover {
+
+                .hamburger-tick {
+
+                    .inner-tick {
+                        animation-fill-mode: forwards;
+                        animation-timing-function: linear;
+
+                        &-1 {
+                            animation-name: innerTickAnimation1;
+                        }
+
+                        &-2 {
+                            animation-name: innerTickAnimation2;
+                        }
+                    }
+
+                    &-1,
+                    &-3 {
+
+                        .inner-tick {
+                            animation-duration: $timeTickHalf;
+                        }
+                    }
+
+                    &-2,
+                    &-4 {
+                        .inner-tick {
+                            animation-duration: $timeTick;
+                        }
+                    }
+
+                    &-1 {
+
+                        .inner-tick {
+
+                            &-1 {
+                                animation-delay: 0s;
+                            }
+
+                            &-2 {
+                                animation-delay: $timeTickHalf * 4 + $timeTick * 3;
+                            }
+                        }
+                    }
+
+                    &-2 {
+
+                        .inner-tick {
+
+                            &-1 {
+                                animation-delay: $timeTickHalf;
+                            }
+
+                            &-2 {
+                                animation-delay: $timeTickHalf * 4 + $timeTick * 2;
+                            }
+                        }
+                    }
+
+                    &-3 {
+
+                        .inner-tick {
+
+                            &-1 {
+                                animation-delay: $timeTickHalf * 2;
+                            }
+
+                            &-2 {
+                                animation-delay: $timeTickHalf * 3 + $timeTick * 2;
+                            }
+                        }
+                    }
+
+                    &-4 {
+
+                        .inner-tick {
+
+                            &-1 {
+                                animation-delay: $timeTickHalf * 3;
+                            }
+
+                            &-2 {
+                                animation-delay: $timeTickHalf * 3 + $timeTick;
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -169,14 +274,6 @@
 
         &--blog {
             z-index: 5;
-        }
-
-        &--open-close {
-            padding-top: px(40);
-
-            &::before {
-                display: none;
-            }
         }
 
         &--blog,
@@ -299,6 +396,100 @@
         .menu__item {
             transform: perspective(0) rotate(0);
 
+            .hamburger {
+                width: px(60);
+                height: px(60);
+                overflow: hidden;
+
+                &-tick {
+                    transform-origin: 0 50%;
+                    //background: red;
+
+                    &:nth-child(1),
+                    &:nth-child(4) {
+                        width: px(78);
+
+                        .inner-tick {
+                            width: 80%;
+
+                            &-1 {
+                                left: 10%;
+                            }
+
+                            &-2 {
+                                left: 0%;
+                            }
+                        }
+                    }
+
+                    &:nth-child(1) {
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        width: 0;
+                    }
+
+                    &:nth-child(4) {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+
+            &--open-close {
+                padding-top: px(30);
+
+                &:hover {
+
+                    .hamburger-tick {
+
+                        .inner-tick {
+                            animation: none;
+                            animation-duration: $timeTick;
+                            animation-fill-mode: forwards;
+                            animation-timing-function: linear; 
+
+                            &-1 {
+                                animation-name: innerTickOpenedAnimation1; 
+                            }
+
+                            &-2 {
+                                animation-name: innerTickOpenedAnimation2;
+                            }
+                        }
+
+                        &-1 {
+
+                            .inner-tick {
+
+                                &-1 {
+                                    animation-delay: 0s;
+                                }
+
+                                &-2 {
+                                    animation-delay: $timeTick * 2 - $timeDif / 2;
+                                }
+                            }
+                        }
+
+                        &-4 {
+
+                            .inner-tick {
+
+                                &-1 {
+                                    animation-delay: $timeTick - $timeDif / 2;
+                                }
+
+                                &-2 {
+                                    animation-delay: $timeTick * 3 - $timeDif / 2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             /* STYLES FOR ANIMATION */
             &--team,
             &--blog {
@@ -324,6 +515,7 @@
             .border-bottom {
                 width: 100vw;
             }
+
             &--open-close {
 
                 .border-left {
@@ -367,26 +559,6 @@
                 }
             }
             /* STYLES FOR BORDER ANIMATION ENDS */
-
-            .hamburger {
-
-                &-tick {
-
-                    &:nth-child(1) {
-                        width: px(103);
-                        transform: rotate(28deg);
-                    }
-
-                    &:nth-child(2) {
-                        width: 0;
-                    }
-
-                    &:nth-child(3) {
-                        width: px(103);
-                        transform: rotate(-28deg);
-                    }
-                }
-            }
         }
 
         .menu__background {
