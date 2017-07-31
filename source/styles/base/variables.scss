@@ -1,3 +1,46 @@
+// animation for hamburger ticks
+@keyframes innerTickAnimation1 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes innerTickAnimation2 {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+// animation for hamburger ticks (menu opened)
+@keyframes innerTickOpenedAnimation1 {
+    from {
+        left: 10%;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes innerTickOpenedAnimation2 {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: 90%;
+    }
+}
+
+
 // global variables
 $browser-context: 16;
 $padding: 24px 0;
@@ -37,4 +80,8 @@ $darkGray: #444;
 $blue: #0000fe;
 
 $time: .3s;
+$timeHalf: $time / 2;
 $timeDif: .1s;
+
+$timeTick: .2s;
+$timeTickHalf: $timeTick / 2;
