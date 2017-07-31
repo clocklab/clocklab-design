@@ -78,6 +78,12 @@
 }
 @font-face {
   font-family: 'Raleway';
+  src: url("../fonts/Raleway/Raleway-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Raleway';
   src: url("../fonts/Raleway/Raleway-ExtraBold.ttf");
   font-style: normal;
   font-weight: 800;
@@ -3305,5 +3311,232 @@ html body .wrapper #preloader .spinner {
   }
   .menu.gray__item .hamburger-tick {
     background: #444;
+  }
+}
+
+@keyframes innerTickAnimation1 {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@keyframes innerTickAnimation2 {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes innerTickOpenedAnimation1 {
+  from {
+    left: 10%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes innerTickOpenedAnimation2 {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 90%;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .buttons {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .buttons .bottom-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 2.60048vw;
+  }
+  .buttons .bottom-nav a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  .buttons .bottom-nav span {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .buttons .bottom-nav svg .st0 {
+    fill: #999;
+    stroke: #999;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .buttons .bottom-nav svg .st1 {
+    fill: none;
+    stroke: #999;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .buttons {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .buttons .bottom-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 1.9512vw;
+  }
+  .buttons .bottom-nav a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  .buttons .bottom-nav span {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .buttons .bottom-nav svg .st0 {
+    fill: #999;
+    stroke: #999;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .buttons .bottom-nav svg .st1 {
+    fill: none;
+    stroke: #999;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
+  .buttons {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .buttons .bottom-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 1.46304vw;
+  }
+  .buttons .bottom-nav a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  .buttons .bottom-nav span {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .buttons .bottom-nav svg .st0 {
+    fill: #999;
+    stroke: #999;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .buttons .bottom-nav svg .st1 {
+    fill: none;
+    stroke: #999;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
+  .buttons {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .buttons .bottom-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 1.18976vw;
+  }
+  .buttons .bottom-nav a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  .buttons .bottom-nav span {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .buttons .bottom-nav svg .st0 {
+    fill: #999;
+    stroke: #999;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .buttons .bottom-nav svg .st1 {
+    fill: none;
+    stroke: #999;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+}
+@media (min-width: 1921px) {
+  .buttons {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .buttons .bottom-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 1.04112vw;
+  }
+  .buttons .bottom-nav a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+  }
+  .buttons .bottom-nav span {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .buttons .bottom-nav svg .st0 {
+    fill: #999;
+    stroke: #999;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .buttons .bottom-nav svg .st1 {
+    fill: none;
+    stroke: #999;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
   }
 }

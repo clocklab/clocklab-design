@@ -1,0 +1,42 @@
+& {  
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+
+
+    // Parent for bottom nav
+    .bottom-nav {
+        display: flex;
+        position: absolute;
+        bottom: px(40);
+
+        a {
+            display: flex;
+            cursor: pointer;
+        }
+
+        span {
+            color: rgba(0, 0, 0, .4);
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        svg {
+
+            .st0 {
+                fill: $gray;
+                stroke: $gray;
+                stroke-width: 0.75;
+                stroke-miterlimit: 10;
+            }
+
+            .st1 {
+                fill: none;
+                stroke: $gray;
+                stroke-width: 0.75;
+                stroke-miterlimit: 10;
+            }
+        }
+    }
+}
