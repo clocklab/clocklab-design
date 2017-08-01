@@ -86,8 +86,8 @@ gulp.task('compass', function() {
     gulp.src(path.source.styles)
         .pipe(plugins.plumber())
         .pipe(plugins.compass({
-            config_file: 'config.rb',
-            image: source + '/images',
+            // config_file: 'config.rb',
+            // image: source + '/images',
             sass: source + '/styles',
             css: path.build.styles
         }))

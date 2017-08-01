@@ -3,26 +3,367 @@
     width: 100vw;
     height: 100vh;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    transform: translateY(100%);
 
 
-    // Parent for bottom nav
+    // Parent for freaky button with jump letters
+    .freaky-button-container {
+        margin: px(50);
+        padding: px(50);
+
+        .freaky-button {
+            position: relative;
+            width: px(100);
+            height: px(100);
+            line-height: px(100);
+
+            &__bg {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                outline: 90px solid transparent;
+                border-radius: 100%;
+            }
+
+            .blob {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                width: 100%;
+                height: 100%;
+                border-radius: 70px;
+                background: $blue;
+                pointer-events: none;
+            }
+        }
+    }
+
+
+
+
+    // Parent for button with jump letters
+    @keyframes letterUp {
+        0%,
+        100% {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+        49% {
+            opacity: 1;
+            transform: translate3d(0, 100%, 0);
+        }
+        50% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+        51% {
+            opacity: 0;
+            transform: translate3d(0, -100%, 0);
+        }
+    }
+
+    @keyframes letterDown {
+        0%,
+        100% {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+        49% {
+            opacity: 1;
+            transform: translate3d(0, -100%, 0);
+        }
+        50% {
+            opacity: 0;
+            transform: translate3d(0, -100%, 0);
+        }
+        51% {
+            opacity: 0;
+            transform: translate3d(0, 100%, 0);
+        }
+    }
+
+    @keyframes crossAnchor {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+
+    .jump-letters {
+        padding: px(50);
+        margin: px(50);
+
+        a {
+            display: inline-block;
+            width: initial;
+            position: relative;
+            text-transform: uppercase;
+            overflow: hidden;
+            padding: 0 px(20);
+            font-size: 0;
+            text-align: center;
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 45%;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background: $black;
+                content: '';
+                transform: translateX(-100%);
+            }
+
+            span {
+                display: inline-block;
+                padding: px(10) 0;
+                font-size: px(24);
+            }
+
+            &:hover {
+                    
+                span {
+                    animation-duration: .25s;
+                    animation-fill-mode: forwards;
+
+                    &:nth-child(odd) {
+                        animation-name: letterUp;
+                    }
+
+                    &:nth-child(even) {
+                        animation-name: letterDown;
+                    }
+
+                    &:nth-child(1) {
+                        animation-delay: 0s;
+                    }
+
+                    &:nth-child(2) {
+                        animation-delay: $timeTickHalf / 2;
+                    }
+
+                    &:nth-child(3) {
+                        animation-delay: $timeTickHalf;
+                    }
+
+                    &:nth-child(4) {
+                        animation-delay: $timeTickHalf * 1.5;
+                    }
+
+                    &:nth-child(5) {
+                        animation-delay: $timeTickHalf * 2;
+                    }
+
+                    &:nth-child(6) {
+                        animation-delay: $timeTickHalf * 2.5;
+                    }
+
+                    &:nth-child(7) {
+                        animation-delay: $timeTickHalf * 3;
+                    }
+
+                    &:nth-child(8) {
+                        animation-delay: $timeTickHalf * 3.5;
+                    }
+
+                    &:nth-child(9) {
+                        animation-delay: $timeTickHalf * 4;
+                    }
+                }
+
+                &:before {
+                    animation: crossAnchor $timeTick $timeTickHalf * 4 + .25s forwards;
+                }
+            }
+        }
+    }
+
+
+    // Parent for crossed button with arrow
+    @keyframes spanCrossAnimation {
+        from {
+            transform: translateX(-100%);
+        }
+
+        to {
+            transform: translateX(100%);
+        }
+    }
+
+    @keyframes arrowAnimation {
+        from {
+            opacity: 0;
+            transform: translateX(-100%);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+
+    .container {
+        margin: px(100);
+        padding: px(100);
+
+        .button-with-arrow {
+            display: flex;
+            width: 400px;
+
+            span {
+                position: relative;
+                padding: 0 px(20);
+                color: rgba(0, 0, 0, 1);
+                font-size: px(24);
+                line-height: 16px;
+                font-weight: 700; 
+                overflow: hidden;
+                text-transform: uppercase;
+                transition: padding $time;
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: 8px;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: $black;
+                    content: '';
+                    transform: translateX(-100%);
+                }
+            }
+
+            .arrow-container {
+                width: px(72);
+                overflow: hidden;
+                transform: translateX(-20%);
+                transition: transform $timeTick linear $time;
+            }
+
+            .arrow {
+                width: 100%;
+                opacity: 0;
+                transform: translateX(-100%);
+
+                .st0 {
+                    fill: none;
+                    stroke: $black;
+                    stroke-width: 1;
+                    stroke-miterlimit: 10;
+                }
+
+                .st1 {
+                    fill: none;
+                    stroke: $black;
+                    stroke-width: 0.75;
+                    stroke-miterlimit: 10;
+                }
+            }
+
+            &:hover {
+
+                span {
+                    padding: 0 px(10); 
+
+                    &:before {
+                        animation: spanCrossAnimation $time linear forwards;
+                    }
+                }
+
+                .arrow-container {
+                    transform: translateX(0%);
+                }
+
+                .arrow {
+                    animation: arrowAnimation $time $timeTickHalf linear forwards;
+                }
+            }
+
+            // Button reversed
+            &.reversed {
+                flex-direction: row-reverse;
+
+                span {
+
+                    &:before {
+                        top: 7px;
+                        transform: translateX(100%);
+                    }
+                }
+
+                .arrow-container {
+                    transform: rotate(180deg);
+                }
+
+                &:hover {
+
+                    span {
+
+                        &:before {
+                            animation-direction: reverse;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Parent for bottom nav with button
     .bottom-nav {
         display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
         position: absolute;
         bottom: px(40);
+        padding: 0 px(140) 0 px(120);
+        width: 100%;
 
+        //Button
         a {
             display: flex;
             cursor: pointer;
+
+            &:hover {
+                span {
+                    padding: 0 px(60) 0 px(50);
+                }
+
+                .arrow {
+                    opacity: 1;
+                    transform: translateX(10%);
+                }
+            } 
         }
 
         span {
+            padding-left: px(96);
             color: rgba(0, 0, 0, .4);
-            font-weight: 700;
+            font-size: px(24);
+            line-height: 16px;
+            font-weight: 700; 
             text-transform: uppercase;
+            transition: padding $timeTick;
         }
 
-        svg {
+        .arrow-container {
+            width: px(80);
+            overflow: hidden;
+        }
+
+        .arrow {
+            width: 90%;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: opacity $timeTickHalf, transform $time;
 
             .st0 {
                 fill: $gray;
@@ -37,6 +378,13 @@
                 stroke-width: 0.75;
                 stroke-miterlimit: 10;
             }
+        }
+
+        .line {
+            flex-grow: 1;
+            height: 1px;
+            background: rgba(0, 0, 0, .3);
+            transition: width $timeTick;
         }
     }
 }
