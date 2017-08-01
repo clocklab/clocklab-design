@@ -3,3 +3,4 @@
 
 // scripts
 //= components/scripts.js
+//= components/menu.js
