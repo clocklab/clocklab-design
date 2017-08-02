@@ -1,0 +1,31 @@
+& {  
+
+    position: absolute;
+    top: 0;
+    right: px(240);
+    z-index: 5;
+    color: $darkGray;
+    font-weight: 500;
+    font-size: px(28);
+    text-align: right;
+
+    .date {
+        transform: translateY(px(940));
+
+        span {
+
+            &:last-child {
+                padding-left: px(30);
+            }
+        }
+    }
+
+    .formats {
+        transform: translateY(px(1480));
+
+        span {
+            display: block;
+            margin-bottom: px(14);
+        }
+    }
+}
