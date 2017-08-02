@@ -1,0 +1,55 @@
+@import '../mobile';
+
+& {
+
+    .car-covering-layer {
+
+        $centerBlockHeight: 72vh;
+
+        @keyframes heightIncrease {
+            from {
+                height: 0vh;
+                transform: translateY(44vh);
+            }
+            to {
+                height: $centerBlockHeight;
+                transform: translateY(20vh);
+            }
+        }
+        @keyframes heightReduce {
+            from {
+                margin-top: 0;
+                height: 130vh;
+            }
+            60% {
+                opacity: 1;
+            }
+            to {
+                margin-top: 42vh;
+                height: px(60);
+                opacity: .7;
+            }
+        }
+
+        img {
+            left: -20vw;
+            min-height: 1024px;
+        }
+
+        &--center {
+            width: 47vw;
+            height: 72vh;
+            transform: translateY(20vh);
+
+            img {
+                top: -20vh;
+                left: -46.5vw;
+            }
+
+            &:before {
+                top: -22vh;
+                //animation: none;
+            }
+        }
+    }
+}

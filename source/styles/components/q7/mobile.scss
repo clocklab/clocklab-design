@@ -1,0 +1,124 @@
+& {  
+
+    .q7 {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .car-covering-layer {
+        overflow: hidden;
+        position: relative;
+
+        img {
+            position: absolute;
+            left: -30vw;
+            z-index: 1; 
+            height: 100vh;
+            min-height: 568px;
+        }
+
+        .image-cover-layer {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            background: $white;
+        }
+
+        // Animation for left block
+        $leftBlockWidth: 100%;
+        @keyframes widthIncrease {
+            from {
+                width: 0;
+            }
+            to {
+                width: $leftBlockWidth;
+            }
+        }
+
+        &--left {
+            position: absolute;
+            float: left;
+            width: 0;
+            height: 100vh;
+            animation: widthIncrease $time * 3 $time * 5 forwards;
+
+            .image-cover-layer {
+                opacity: .9;
+            }
+        }
+
+        // Animation for center block
+        $centerBlockHeight: 60vh;
+
+        @keyframes heightIncrease {
+            from {
+                height: 0vh;
+                transform: translateY(60vh);
+            }
+            to {
+                height: $centerBlockHeight;
+                transform: translateY(30vh);
+            }
+        }
+        @keyframes heightReduce {
+            from {
+                margin-top: 0;
+                height: 130vh;
+            }
+            60% {
+                opacity: 1;
+            }
+            to {
+                margin-top: 50vh;
+                height: px(60);
+                opacity: .7;
+            }
+        }
+        @keyframes shadowAppearance {
+            from {
+                box-shadow: 0 px(0) px(0) px(0) rgba(0, 0, 0, 0);
+            }
+            to {
+                box-shadow: 0 px(30) px(100) px(14) rgba(0, 0, 0, .3);    
+            }
+        }
+
+        &--center {
+            position: relative;
+            z-index: 2;
+            margin: 0 auto;
+            width: 53vw;
+            height: $centerBlockHeight;
+            box-shadow: 0 px(0) px(0) px(0) rgba(0, 0, 0, 0);
+            transform: translateY(30vh);
+            animation: heightIncrease $time * 3 forwards, shadowAppearance $time * 3 $time * 4 forwards;
+
+            img {
+                top: -30vh;
+                left: -53.5vw;
+            }
+
+            .image-cover-layer {
+                opacity: .6;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: -30vh;
+                left: -33.5vw;
+                z-index: 3;
+                margin-top: 0;
+                width: 140vw;
+                height: 130vh;
+                background: $blue;
+                content: '';
+                transform: rotate(-45deg);
+                animation: heightReduce $time * 3 $time * 3 forwards;
+            }
+        }
+    }
+}

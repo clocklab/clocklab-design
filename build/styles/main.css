@@ -5953,3 +5953,1376 @@ html body .wrapper #preloader .spinner {
     transition: width 0.2s;
   }
 }
+
+@keyframes innerTickAnimation1 {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+@keyframes innerTickAnimation2 {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes innerTickOpenedAnimation1 {
+  from {
+    left: 10%;
+  }
+  to {
+    left: 100%;
+  }
+}
+@keyframes innerTickOpenedAnimation2 {
+  from {
+    left: -2%;
+  }
+  to {
+    left: 90%;
+  }
+}
+@media (max-width: 414px) {
+  .q7 .q7 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer {
+    overflow: hidden;
+    position: relative;
+  }
+  .q7 .car-covering-layer img {
+    position: absolute;
+    left: -30vw;
+    z-index: 1;
+    height: 100vh;
+    min-height: 568px;
+  }
+  .q7 .car-covering-layer .image-cover-layer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  @-webkit-keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .q7 .car-covering-layer--left {
+    position: absolute;
+    float: left;
+    width: 0;
+    height: 100vh;
+    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
+            animation: widthIncrease 0.9s 1.5s forwards;
+  }
+  .q7 .car-covering-layer--left .image-cover-layer {
+    opacity: .9;
+  }
+  @-webkit-keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(60vh);
+              transform: translateY(60vh);
+    }
+    to {
+      height: 60vh;
+      -webkit-transform: translateY(30vh);
+              transform: translateY(30vh);
+    }
+  }
+  @keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(60vh);
+              transform: translateY(60vh);
+    }
+    to {
+      height: 60vh;
+      -webkit-transform: translateY(30vh);
+              transform: translateY(30vh);
+    }
+  }
+  @-webkit-keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 130vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 50vh;
+      height: 9.375vw;
+      opacity: .7;
+    }
+  }
+  @keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 130vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 50vh;
+      height: 9.375vw;
+      opacity: .7;
+    }
+  }
+  @-webkit-keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 4.6875vw 15.625vw 2.1875vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 4.6875vw 15.625vw 2.1875vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  .q7 .car-covering-layer--center {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 53vw;
+    height: 60vh;
+    box-shadow: 0 0vw 0vw 0vw transparent;
+    -webkit-transform: translateY(30vh);
+            transform: translateY(30vh);
+    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+  }
+  .q7 .car-covering-layer--center img {
+    top: -30vh;
+    left: -53.5vw;
+  }
+  .q7 .car-covering-layer--center .image-cover-layer {
+    opacity: .6;
+  }
+  .q7 .car-covering-layer--center:before {
+    display: block;
+    position: absolute;
+    top: -30vh;
+    left: -33.5vw;
+    z-index: 3;
+    margin-top: 0;
+    width: 140vw;
+    height: 130vh;
+    background: #0000fe;
+    content: '';
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-animation: heightReduce 0.9s 0.9s forwards;
+            animation: heightReduce 0.9s 0.9s forwards;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
+  .q7 .q7 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer {
+    overflow: hidden;
+    position: relative;
+  }
+  .q7 .car-covering-layer img {
+    position: absolute;
+    left: -30vw;
+    z-index: 1;
+    height: 100vh;
+    min-height: 568px;
+  }
+  .q7 .car-covering-layer .image-cover-layer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  @-webkit-keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .q7 .car-covering-layer--left {
+    position: absolute;
+    float: left;
+    width: 0;
+    height: 100vh;
+    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
+            animation: widthIncrease 0.9s 1.5s forwards;
+  }
+  .q7 .car-covering-layer--left .image-cover-layer {
+    opacity: .9;
+  }
+  @-webkit-keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(60vh);
+              transform: translateY(60vh);
+    }
+    to {
+      height: 60vh;
+      -webkit-transform: translateY(30vh);
+              transform: translateY(30vh);
+    }
+  }
+  @keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(60vh);
+              transform: translateY(60vh);
+    }
+    to {
+      height: 60vh;
+      -webkit-transform: translateY(30vh);
+              transform: translateY(30vh);
+    }
+  }
+  @-webkit-keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 130vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 50vh;
+      height: 7.2288vw;
+      opacity: .7;
+    }
+  }
+  @keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 130vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 50vh;
+      height: 7.2288vw;
+      opacity: .7;
+    }
+  }
+  @-webkit-keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 3.6144vw 12.048vw 1.68672vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 3.6144vw 12.048vw 1.68672vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  .q7 .car-covering-layer--center {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 53vw;
+    height: 60vh;
+    box-shadow: 0 0vw 0vw 0vw transparent;
+    -webkit-transform: translateY(30vh);
+            transform: translateY(30vh);
+    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+  }
+  .q7 .car-covering-layer--center img {
+    top: -30vh;
+    left: -53.5vw;
+  }
+  .q7 .car-covering-layer--center .image-cover-layer {
+    opacity: .6;
+  }
+  .q7 .car-covering-layer--center:before {
+    display: block;
+    position: absolute;
+    top: -30vh;
+    left: -33.5vw;
+    z-index: 3;
+    margin-top: 0;
+    width: 140vw;
+    height: 130vh;
+    background: #0000fe;
+    content: '';
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-animation: heightReduce 0.9s 0.9s forwards;
+            animation: heightReduce 0.9s 0.9s forwards;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) {
+  .q7 .q7 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer {
+    overflow: hidden;
+    position: relative;
+  }
+  .q7 .car-covering-layer img {
+    position: absolute;
+    left: -30vw;
+    z-index: 1;
+    height: 100vh;
+    min-height: 568px;
+  }
+  .q7 .car-covering-layer .image-cover-layer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  @-webkit-keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .q7 .car-covering-layer--left {
+    position: absolute;
+    float: left;
+    width: 0;
+    height: 100vh;
+    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
+            animation: widthIncrease 0.9s 1.5s forwards;
+  }
+  .q7 .car-covering-layer--left .image-cover-layer {
+    opacity: .9;
+  }
+  @-webkit-keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(60vh);
+              transform: translateY(60vh);
+    }
+    to {
+      height: 60vh;
+      -webkit-transform: translateY(30vh);
+              transform: translateY(30vh);
+    }
+  }
+  @keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(60vh);
+              transform: translateY(60vh);
+    }
+    to {
+      height: 60vh;
+      -webkit-transform: translateY(30vh);
+              transform: translateY(30vh);
+    }
+  }
+  @-webkit-keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 130vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 50vh;
+      height: 4.491vw;
+      opacity: .7;
+    }
+  }
+  @keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 130vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 50vh;
+      height: 4.491vw;
+      opacity: .7;
+    }
+  }
+  @-webkit-keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 2.2455vw 7.485vw 1.0479vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 2.2455vw 7.485vw 1.0479vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  .q7 .car-covering-layer--center {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 53vw;
+    height: 60vh;
+    box-shadow: 0 0vw 0vw 0vw transparent;
+    -webkit-transform: translateY(30vh);
+            transform: translateY(30vh);
+    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+  }
+  .q7 .car-covering-layer--center img {
+    top: -30vh;
+    left: -53.5vw;
+  }
+  .q7 .car-covering-layer--center .image-cover-layer {
+    opacity: .6;
+  }
+  .q7 .car-covering-layer--center:before {
+    display: block;
+    position: absolute;
+    top: -30vh;
+    left: -33.5vw;
+    z-index: 3;
+    margin-top: 0;
+    width: 140vw;
+    height: 130vh;
+    background: #0000fe;
+    content: '';
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-animation: heightReduce 0.9s 0.9s forwards;
+            animation: heightReduce 0.9s 0.9s forwards;
+  }
+  @keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(44vh);
+              transform: translateY(44vh);
+    }
+    to {
+      height: 72vh;
+      -webkit-transform: translateY(20vh);
+              transform: translateY(20vh);
+    }
+  }
+  @keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 130vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 42vh;
+      height: 4.491vw;
+      opacity: .7;
+    }
+  }
+  .q7 .car-covering-layer img {
+    left: -20vw;
+    min-height: 1024px;
+  }
+  .q7 .car-covering-layer--center {
+    width: 47vw;
+    height: 72vh;
+    -webkit-transform: translateY(20vh);
+            transform: translateY(20vh);
+  }
+  .q7 .car-covering-layer--center img {
+    top: -20vh;
+    left: -46.5vw;
+  }
+  .q7 .car-covering-layer--center:before {
+    top: -22vh;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .q7 .q7 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer {
+    overflow: hidden;
+    position: relative;
+  }
+  .q7 .car-covering-layer img {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    min-height: 700px;
+  }
+  .q7 .car-covering-layer .image-cover-layer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  @-webkit-keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  @keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
+    position: absolute;
+    height: 100vh;
+  }
+  .q7 .car-covering-layer--left {
+    float: left;
+    width: 0;
+    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
+            animation: widthIncrease 0.9s 1.5s forwards;
+  }
+  .q7 .car-covering-layer--left .image-cover-layer {
+    opacity: .9;
+  }
+  .q7 .car-covering-layer--right {
+    width: 50%;
+    float: right;
+    background: #fff;
+  }
+  @-webkit-keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(40vh);
+              transform: translateY(40vh);
+    }
+    to {
+      height: 88vh;
+      -webkit-transform: translateY(4vh);
+              transform: translateY(4vh);
+    }
+  }
+  @keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(40vh);
+              transform: translateY(40vh);
+    }
+    to {
+      height: 88vh;
+      -webkit-transform: translateY(4vh);
+              transform: translateY(4vh);
+    }
+  }
+  @-webkit-keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 100vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 40vh;
+      height: 3.90072vw;
+      opacity: .7;
+    }
+  }
+  @keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 100vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 40vh;
+      height: 3.90072vw;
+      opacity: .7;
+    }
+  }
+  @-webkit-keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 1.95036vw 6.5012vw 0.91017vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 1.95036vw 6.5012vw 0.91017vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  .q7 .car-covering-layer--center {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 18.75vw;
+    height: 88vh;
+    box-shadow: 0 0vw 0vw 0vw transparent;
+    -webkit-transform: translateY(4vh);
+            transform: translateY(4vh);
+    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+  }
+  .q7 .car-covering-layer--center img {
+    top: -4vh;
+    left: -40.625vw;
+  }
+  .q7 .car-covering-layer--center .image-cover-layer {
+    opacity: .6;
+  }
+  .q7 .car-covering-layer--center:before {
+    display: block;
+    position: absolute;
+    top: -4vh;
+    left: -40.625vw;
+    z-index: 3;
+    margin-top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0000fe;
+    content: '';
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-animation: heightReduce 0.9s 0.9s forwards;
+            animation: heightReduce 0.9s 0.9s forwards;
+  }
+  .q7 .car-covering-layer--center {
+    width: 28vw;
+  }
+  .q7 .car-covering-layer--center img {
+    left: -36vw;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .q7 .q7 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer {
+    overflow: hidden;
+    position: relative;
+  }
+  .q7 .car-covering-layer img {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    min-height: 700px;
+  }
+  .q7 .car-covering-layer .image-cover-layer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  @-webkit-keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  @keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
+    position: absolute;
+    height: 100vh;
+  }
+  .q7 .car-covering-layer--left {
+    float: left;
+    width: 0;
+    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
+            animation: widthIncrease 0.9s 1.5s forwards;
+  }
+  .q7 .car-covering-layer--left .image-cover-layer {
+    opacity: .9;
+  }
+  .q7 .car-covering-layer--right {
+    width: 50%;
+    float: right;
+    background: #fff;
+  }
+  @-webkit-keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(40vh);
+              transform: translateY(40vh);
+    }
+    to {
+      height: 88vh;
+      -webkit-transform: translateY(4vh);
+              transform: translateY(4vh);
+    }
+  }
+  @keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(40vh);
+              transform: translateY(40vh);
+    }
+    to {
+      height: 88vh;
+      -webkit-transform: translateY(4vh);
+              transform: translateY(4vh);
+    }
+  }
+  @-webkit-keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 100vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 40vh;
+      height: 2.9268vw;
+      opacity: .7;
+    }
+  }
+  @keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 100vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 40vh;
+      height: 2.9268vw;
+      opacity: .7;
+    }
+  }
+  @-webkit-keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 1.4634vw 4.878vw 0.68292vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 1.4634vw 4.878vw 0.68292vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  .q7 .car-covering-layer--center {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 18.75vw;
+    height: 88vh;
+    box-shadow: 0 0vw 0vw 0vw transparent;
+    -webkit-transform: translateY(4vh);
+            transform: translateY(4vh);
+    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+  }
+  .q7 .car-covering-layer--center img {
+    top: -4vh;
+    left: -40.625vw;
+  }
+  .q7 .car-covering-layer--center .image-cover-layer {
+    opacity: .6;
+  }
+  .q7 .car-covering-layer--center:before {
+    display: block;
+    position: absolute;
+    top: -4vh;
+    left: -40.625vw;
+    z-index: 3;
+    margin-top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0000fe;
+    content: '';
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-animation: heightReduce 0.9s 0.9s forwards;
+            animation: heightReduce 0.9s 0.9s forwards;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
+  .q7 .q7 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer {
+    overflow: hidden;
+    position: relative;
+  }
+  .q7 .car-covering-layer img {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    min-height: 700px;
+  }
+  .q7 .car-covering-layer .image-cover-layer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  @-webkit-keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  @keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
+    position: absolute;
+    height: 100vh;
+  }
+  .q7 .car-covering-layer--left {
+    float: left;
+    width: 0;
+    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
+            animation: widthIncrease 0.9s 1.5s forwards;
+  }
+  .q7 .car-covering-layer--left .image-cover-layer {
+    opacity: .9;
+  }
+  .q7 .car-covering-layer--right {
+    width: 50%;
+    float: right;
+    background: #fff;
+  }
+  @-webkit-keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(40vh);
+              transform: translateY(40vh);
+    }
+    to {
+      height: 88vh;
+      -webkit-transform: translateY(4vh);
+              transform: translateY(4vh);
+    }
+  }
+  @keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(40vh);
+              transform: translateY(40vh);
+    }
+    to {
+      height: 88vh;
+      -webkit-transform: translateY(4vh);
+              transform: translateY(4vh);
+    }
+  }
+  @-webkit-keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 100vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 40vh;
+      height: 2.19456vw;
+      opacity: .7;
+    }
+  }
+  @keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 100vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 40vh;
+      height: 2.19456vw;
+      opacity: .7;
+    }
+  }
+  @-webkit-keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 1.09728vw 3.6576vw 0.51206vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 1.09728vw 3.6576vw 0.51206vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  .q7 .car-covering-layer--center {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 18.75vw;
+    height: 88vh;
+    box-shadow: 0 0vw 0vw 0vw transparent;
+    -webkit-transform: translateY(4vh);
+            transform: translateY(4vh);
+    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+  }
+  .q7 .car-covering-layer--center img {
+    top: -4vh;
+    left: -40.625vw;
+  }
+  .q7 .car-covering-layer--center .image-cover-layer {
+    opacity: .6;
+  }
+  .q7 .car-covering-layer--center:before {
+    display: block;
+    position: absolute;
+    top: -4vh;
+    left: -40.625vw;
+    z-index: 3;
+    margin-top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0000fe;
+    content: '';
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-animation: heightReduce 0.9s 0.9s forwards;
+            animation: heightReduce 0.9s 0.9s forwards;
+  }
+  .q7 .car-covering-layer img {
+    min-height: 770px;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
+  .q7 .q7 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer {
+    overflow: hidden;
+    position: relative;
+  }
+  .q7 .car-covering-layer img {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    min-height: 700px;
+  }
+  .q7 .car-covering-layer .image-cover-layer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  @-webkit-keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  @keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
+    position: absolute;
+    height: 100vh;
+  }
+  .q7 .car-covering-layer--left {
+    float: left;
+    width: 0;
+    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
+            animation: widthIncrease 0.9s 1.5s forwards;
+  }
+  .q7 .car-covering-layer--left .image-cover-layer {
+    opacity: .9;
+  }
+  .q7 .car-covering-layer--right {
+    width: 50%;
+    float: right;
+    background: #fff;
+  }
+  @-webkit-keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(40vh);
+              transform: translateY(40vh);
+    }
+    to {
+      height: 88vh;
+      -webkit-transform: translateY(4vh);
+              transform: translateY(4vh);
+    }
+  }
+  @keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(40vh);
+              transform: translateY(40vh);
+    }
+    to {
+      height: 88vh;
+      -webkit-transform: translateY(4vh);
+              transform: translateY(4vh);
+    }
+  }
+  @-webkit-keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 100vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 40vh;
+      height: 1.78464vw;
+      opacity: .7;
+    }
+  }
+  @keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 100vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 40vh;
+      height: 1.78464vw;
+      opacity: .7;
+    }
+  }
+  @-webkit-keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 0.89232vw 2.9744vw 0.41642vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 0.89232vw 2.9744vw 0.41642vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  .q7 .car-covering-layer--center {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 18.75vw;
+    height: 88vh;
+    box-shadow: 0 0vw 0vw 0vw transparent;
+    -webkit-transform: translateY(4vh);
+            transform: translateY(4vh);
+    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+  }
+  .q7 .car-covering-layer--center img {
+    top: -4vh;
+    left: -40.625vw;
+  }
+  .q7 .car-covering-layer--center .image-cover-layer {
+    opacity: .6;
+  }
+  .q7 .car-covering-layer--center:before {
+    display: block;
+    position: absolute;
+    top: -4vh;
+    left: -40.625vw;
+    z-index: 3;
+    margin-top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0000fe;
+    content: '';
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-animation: heightReduce 0.9s 0.9s forwards;
+            animation: heightReduce 0.9s 0.9s forwards;
+  }
+  .q7 .car-covering-layer img {
+    min-height: 860px;
+  }
+}
+@media (min-width: 1921px) {
+  .q7 .q7 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer {
+    overflow: hidden;
+    position: relative;
+  }
+  .q7 .car-covering-layer img {
+    position: absolute;
+    z-index: 1;
+    height: 100vh;
+    min-height: 700px;
+  }
+  .q7 .car-covering-layer .image-cover-layer {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  @-webkit-keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  @keyframes widthIncrease {
+    from {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
+  }
+  .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
+    position: absolute;
+    height: 100vh;
+  }
+  .q7 .car-covering-layer--left {
+    float: left;
+    width: 0;
+    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
+            animation: widthIncrease 0.9s 1.5s forwards;
+  }
+  .q7 .car-covering-layer--left .image-cover-layer {
+    opacity: .9;
+  }
+  .q7 .car-covering-layer--right {
+    width: 50%;
+    float: right;
+    background: #fff;
+  }
+  @-webkit-keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(40vh);
+              transform: translateY(40vh);
+    }
+    to {
+      height: 88vh;
+      -webkit-transform: translateY(4vh);
+              transform: translateY(4vh);
+    }
+  }
+  @keyframes heightIncrease {
+    from {
+      height: 0vh;
+      -webkit-transform: translateY(40vh);
+              transform: translateY(40vh);
+    }
+    to {
+      height: 88vh;
+      -webkit-transform: translateY(4vh);
+              transform: translateY(4vh);
+    }
+  }
+  @-webkit-keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 100vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 40vh;
+      height: 1.56168vw;
+      opacity: .7;
+    }
+  }
+  @keyframes heightReduce {
+    from {
+      margin-top: 0;
+      height: 100vh;
+    }
+    60% {
+      opacity: 1;
+    }
+    to {
+      margin-top: 40vh;
+      height: 1.56168vw;
+      opacity: .7;
+    }
+  }
+  @-webkit-keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 0.78084vw 2.6028vw 0.36439vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  @keyframes shadowAppearance {
+    from {
+      box-shadow: 0 0vw 0vw 0vw transparent;
+    }
+    to {
+      box-shadow: 0 0.78084vw 2.6028vw 0.36439vw rgba(0, 0, 0, 0.3);
+    }
+  }
+  .q7 .car-covering-layer--center {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    width: 18.75vw;
+    height: 88vh;
+    box-shadow: 0 0vw 0vw 0vw transparent;
+    -webkit-transform: translateY(4vh);
+            transform: translateY(4vh);
+    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
+  }
+  .q7 .car-covering-layer--center img {
+    top: -4vh;
+    left: -40.625vw;
+  }
+  .q7 .car-covering-layer--center .image-cover-layer {
+    opacity: .6;
+  }
+  .q7 .car-covering-layer--center:before {
+    display: block;
+    position: absolute;
+    top: -4vh;
+    left: -40.625vw;
+    z-index: 3;
+    margin-top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0000fe;
+    content: '';
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-animation: heightReduce 0.9s 0.9s forwards;
+            animation: heightReduce 0.9s 0.9s forwards;
+  }
+  .q7 .car-covering-layer img {
+    min-height: 1210px;
+  }
+}
