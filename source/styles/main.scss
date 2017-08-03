@@ -3,6 +3,7 @@
 @import "compass/css3";
 
 // base
+@import "base/animations";
 @import "base/variables";
 @import "base/fonts";
 @import "base/mixins";
@@ -18,4 +19,4 @@
 @import "components/menu/main";
 @import "components/buttons/main";
 @import "components/q7/main";
-@import "components/right-panel/main";
+@import "components/portfolio-right-panel/main";

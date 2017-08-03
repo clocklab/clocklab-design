@@ -1,0 +1,60 @@
+// Portfolio Q7 animations
+
+//IT works motherfucker
+@mixin animation-mixin($name, $from, $to) {
+    @keyframes #{$name} {
+        from {
+            transform: translate3d($from, 0, 0);
+            #{$name}: 0;
+        }
+        to {
+            transform: translate3d($to, 0, 0); 
+            #{$name}: 1;
+        }
+    }
+}
+
+@keyframes widthIncrease {
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes heightIncrease {
+    from {
+        height: 0vh;
+        transform: translateY(40vh);
+    }
+    to {
+        height: 88vh;
+        transform: translateY(4vh);
+    }
+}
+
+@keyframes heightReduce {
+    from {
+        margin-top: 0;
+        height: 100vh;
+    }
+    60% {
+        opacity: 1;
+    }
+    to {
+        margin-top: 40vh;
+        height: px(60);
+        opacity: .7;
+    }
+}
+
+@keyframes shadowAppearance {
+    from {
+        box-shadow: 0 px(0) px(0) px(0) rgba(0, 0, 0, 0);
+    }
+    to {
+        box-shadow: 0 px(30) px(100) px(14) rgba(0, 0, 0, .3);    
+    }
+}
+// Portfolio Q7 animations end

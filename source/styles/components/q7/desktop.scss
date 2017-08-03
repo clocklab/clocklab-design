@@ -33,7 +33,7 @@
                 width: 0;
             }
             to {
-                width: $leftBlockWidth;
+                width: 50%;
             }
         }
 
@@ -68,7 +68,7 @@
                 transform: translateY(40vh);
             }
             to {
-                height: $centerBlockHeight;
+                height: 88vh;
                 transform: translateY(4vh);
             }
         }
@@ -104,6 +104,8 @@
             box-shadow: 0 px(0) px(0) px(0) rgba(0, 0, 0, 0);
             transform: translateY(4vh);
             animation: heightIncrease $time * 3 forwards, shadowAppearance $time * 3 $time * 4 forwards;
+
+            @include animation-mixin(opacity, 0, 100%);
 
             img {
                 top: -4vh;
