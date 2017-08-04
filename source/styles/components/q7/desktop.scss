@@ -27,7 +27,6 @@
         }
 
         // Animation for left block
-        $leftBlockWidth: 50%;
         @keyframes widthIncrease {
             from {
                 width: 0;
@@ -45,8 +44,7 @@
 
         &--left {
             float: left;
-            width: 0;
-            animation: widthIncrease $time * 3 $time * 5 forwards;
+            animation: widthIncrease $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTime both;
 
             .image-cover-layer {
                 opacity: .9;
@@ -60,8 +58,6 @@
         }
 
         // Animation for center block
-        $centerBlockHeight: 88vh;
-
         @keyframes heightIncrease {
             from {
                 height: 0vh;
@@ -100,12 +96,8 @@
             z-index: 2;
             margin: 0 auto;
             width: 18.75vw;
-            height: $centerBlockHeight;
-            box-shadow: 0 px(0) px(0) px(0) rgba(0, 0, 0, 0);
-            transform: translateY(4vh);
-            animation: heightIncrease $time * 3 forwards, shadowAppearance $time * 3 $time * 4 forwards;
-
-            @include animation-mixin(opacity, 0, 100%);
+            animation: heightIncrease $portfolioAudiCenterBlockAnimationTime $portfolioAudiCenterBlockDelayTime both, 
+                       shadowAppearance $portfolioAudiCenterBlockShadowAnimationTime $portfolioAudiCenterBlockShadowDelayTime both;
 
             img {
                 top: -4vh;
@@ -122,13 +114,11 @@
                 top: -4vh;
                 left: -40.625vw;
                 z-index: 3;
-                margin-top: 0;
                 width: 100vw;
-                height: 100vh;
                 background: $blue;
                 content: '';
                 transform: rotate(-45deg);
-                animation: heightReduce $time * 3 $time * 3 forwards;
+                animation: heightReduce $portfolioAudiCenterBlockLineAnimationTime $portfolioAudiCenterBlockLineDelayTime both;
             }
         }
     }

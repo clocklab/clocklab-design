@@ -6601,9 +6601,8 @@ html body .wrapper #preloader .spinner {
   }
   .q7 .car-covering-layer--left {
     float: left;
-    width: 0;
-    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
-            animation: widthIncrease 0.9s 1.5s forwards;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
   }
   .q7 .car-covering-layer--left .image-cover-layer {
     opacity: .9;
@@ -6686,36 +6685,8 @@ html body .wrapper #preloader .spinner {
     z-index: 2;
     margin: 0 auto;
     width: 18.75vw;
-    height: 88vh;
-    box-shadow: 0 0vw 0vw 0vw transparent;
-    -webkit-transform: translateY(4vh);
-            transform: translateY(4vh);
-    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
-            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
-  }
-  @-webkit-keyframes opacity {
-    from {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translate3d(100%, 0, 0);
-              transform: translate3d(100%, 0, 0);
-      opacity: 1;
-    }
-  }
-  @keyframes opacity {
-    from {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translate3d(100%, 0, 0);
-              transform: translate3d(100%, 0, 0);
-      opacity: 1;
-    }
+    -webkit-animation: heightIncrease 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
+            animation: heightIncrease 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
   }
   .q7 .car-covering-layer--center img {
     top: -4vh;
@@ -6730,15 +6701,13 @@ html body .wrapper #preloader .spinner {
     top: -4vh;
     left: -40.625vw;
     z-index: 3;
-    margin-top: 0;
     width: 100vw;
-    height: 100vh;
     background: #0000fe;
     content: '';
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-animation: heightReduce 0.9s 0.9s forwards;
-            animation: heightReduce 0.9s 0.9s forwards;
+    -webkit-animation: heightReduce 0.9s 2.1s both;
+            animation: heightReduce 0.9s 2.1s both;
   }
   .q7 .car-covering-layer--center {
     width: 28vw;
@@ -6793,9 +6762,8 @@ html body .wrapper #preloader .spinner {
   }
   .q7 .car-covering-layer--left {
     float: left;
-    width: 0;
-    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
-            animation: widthIncrease 0.9s 1.5s forwards;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
   }
   .q7 .car-covering-layer--left .image-cover-layer {
     opacity: .9;
@@ -6878,36 +6846,8 @@ html body .wrapper #preloader .spinner {
     z-index: 2;
     margin: 0 auto;
     width: 18.75vw;
-    height: 88vh;
-    box-shadow: 0 0vw 0vw 0vw transparent;
-    -webkit-transform: translateY(4vh);
-            transform: translateY(4vh);
-    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
-            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
-  }
-  @-webkit-keyframes opacity {
-    from {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translate3d(100%, 0, 0);
-              transform: translate3d(100%, 0, 0);
-      opacity: 1;
-    }
-  }
-  @keyframes opacity {
-    from {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translate3d(100%, 0, 0);
-              transform: translate3d(100%, 0, 0);
-      opacity: 1;
-    }
+    -webkit-animation: heightIncrease 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
+            animation: heightIncrease 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
   }
   .q7 .car-covering-layer--center img {
     top: -4vh;
@@ -6922,15 +6862,13 @@ html body .wrapper #preloader .spinner {
     top: -4vh;
     left: -40.625vw;
     z-index: 3;
-    margin-top: 0;
     width: 100vw;
-    height: 100vh;
     background: #0000fe;
     content: '';
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-animation: heightReduce 0.9s 0.9s forwards;
-            animation: heightReduce 0.9s 0.9s forwards;
+    -webkit-animation: heightReduce 0.9s 2.1s both;
+            animation: heightReduce 0.9s 2.1s both;
   }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
@@ -6979,9 +6917,8 @@ html body .wrapper #preloader .spinner {
   }
   .q7 .car-covering-layer--left {
     float: left;
-    width: 0;
-    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
-            animation: widthIncrease 0.9s 1.5s forwards;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
   }
   .q7 .car-covering-layer--left .image-cover-layer {
     opacity: .9;
@@ -7064,36 +7001,8 @@ html body .wrapper #preloader .spinner {
     z-index: 2;
     margin: 0 auto;
     width: 18.75vw;
-    height: 88vh;
-    box-shadow: 0 0vw 0vw 0vw transparent;
-    -webkit-transform: translateY(4vh);
-            transform: translateY(4vh);
-    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
-            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
-  }
-  @-webkit-keyframes opacity {
-    from {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translate3d(100%, 0, 0);
-              transform: translate3d(100%, 0, 0);
-      opacity: 1;
-    }
-  }
-  @keyframes opacity {
-    from {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translate3d(100%, 0, 0);
-              transform: translate3d(100%, 0, 0);
-      opacity: 1;
-    }
+    -webkit-animation: heightIncrease 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
+            animation: heightIncrease 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
   }
   .q7 .car-covering-layer--center img {
     top: -4vh;
@@ -7108,15 +7017,13 @@ html body .wrapper #preloader .spinner {
     top: -4vh;
     left: -40.625vw;
     z-index: 3;
-    margin-top: 0;
     width: 100vw;
-    height: 100vh;
     background: #0000fe;
     content: '';
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-animation: heightReduce 0.9s 0.9s forwards;
-            animation: heightReduce 0.9s 0.9s forwards;
+    -webkit-animation: heightReduce 0.9s 2.1s both;
+            animation: heightReduce 0.9s 2.1s both;
   }
   .q7 .car-covering-layer img {
     min-height: 770px;
@@ -7168,9 +7075,8 @@ html body .wrapper #preloader .spinner {
   }
   .q7 .car-covering-layer--left {
     float: left;
-    width: 0;
-    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
-            animation: widthIncrease 0.9s 1.5s forwards;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
   }
   .q7 .car-covering-layer--left .image-cover-layer {
     opacity: .9;
@@ -7253,36 +7159,8 @@ html body .wrapper #preloader .spinner {
     z-index: 2;
     margin: 0 auto;
     width: 18.75vw;
-    height: 88vh;
-    box-shadow: 0 0vw 0vw 0vw transparent;
-    -webkit-transform: translateY(4vh);
-            transform: translateY(4vh);
-    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
-            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
-  }
-  @-webkit-keyframes opacity {
-    from {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translate3d(100%, 0, 0);
-              transform: translate3d(100%, 0, 0);
-      opacity: 1;
-    }
-  }
-  @keyframes opacity {
-    from {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translate3d(100%, 0, 0);
-              transform: translate3d(100%, 0, 0);
-      opacity: 1;
-    }
+    -webkit-animation: heightIncrease 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
+            animation: heightIncrease 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
   }
   .q7 .car-covering-layer--center img {
     top: -4vh;
@@ -7297,15 +7175,13 @@ html body .wrapper #preloader .spinner {
     top: -4vh;
     left: -40.625vw;
     z-index: 3;
-    margin-top: 0;
     width: 100vw;
-    height: 100vh;
     background: #0000fe;
     content: '';
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-animation: heightReduce 0.9s 0.9s forwards;
-            animation: heightReduce 0.9s 0.9s forwards;
+    -webkit-animation: heightReduce 0.9s 2.1s both;
+            animation: heightReduce 0.9s 2.1s both;
   }
   .q7 .car-covering-layer img {
     min-height: 860px;
@@ -7357,9 +7233,8 @@ html body .wrapper #preloader .spinner {
   }
   .q7 .car-covering-layer--left {
     float: left;
-    width: 0;
-    -webkit-animation: widthIncrease 0.9s 1.5s forwards;
-            animation: widthIncrease 0.9s 1.5s forwards;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
   }
   .q7 .car-covering-layer--left .image-cover-layer {
     opacity: .9;
@@ -7442,36 +7317,8 @@ html body .wrapper #preloader .spinner {
     z-index: 2;
     margin: 0 auto;
     width: 18.75vw;
-    height: 88vh;
-    box-shadow: 0 0vw 0vw 0vw transparent;
-    -webkit-transform: translateY(4vh);
-            transform: translateY(4vh);
-    -webkit-animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
-            animation: heightIncrease 0.9s forwards, shadowAppearance 0.9s 1.2s forwards;
-  }
-  @-webkit-keyframes opacity {
-    from {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translate3d(100%, 0, 0);
-              transform: translate3d(100%, 0, 0);
-      opacity: 1;
-    }
-  }
-  @keyframes opacity {
-    from {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      opacity: 0;
-    }
-    to {
-      -webkit-transform: translate3d(100%, 0, 0);
-              transform: translate3d(100%, 0, 0);
-      opacity: 1;
-    }
+    -webkit-animation: heightIncrease 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
+            animation: heightIncrease 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
   }
   .q7 .car-covering-layer--center img {
     top: -4vh;
@@ -7486,15 +7333,13 @@ html body .wrapper #preloader .spinner {
     top: -4vh;
     left: -40.625vw;
     z-index: 3;
-    margin-top: 0;
     width: 100vw;
-    height: 100vh;
     background: #0000fe;
     content: '';
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-animation: heightReduce 0.9s 0.9s forwards;
-            animation: heightReduce 0.9s 0.9s forwards;
+    -webkit-animation: heightReduce 0.9s 2.1s both;
+            animation: heightReduce 0.9s 2.1s both;
   }
   .q7 .car-covering-layer img {
     min-height: 1210px;
@@ -7599,11 +7444,8 @@ html body .wrapper #preloader .spinner {
     }
   }
   .portfolio-right-panel .date {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 60vh, 0);
-            transform: translate3d(0, 60vh, 0);
-    -webkit-animation: rightPanelDate 0.3s forwards;
-            animation: rightPanelDate 0.3s forwards;
+    -webkit-animation: rightPanelDate 0.3s 0s both;
+            animation: rightPanelDate 0.3s 0s both;
   }
   .portfolio-right-panel .date span:last-child {
     padding-left: 2.994vw;
@@ -7615,17 +7457,26 @@ html body .wrapper #preloader .spinner {
   .portfolio-right-panel .devices span {
     display: block;
     margin-bottom: 1.0479vw;
-    opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-animation: rightPanelDevices 0.3s 0.3s forwards;
-            animation: rightPanelDevices 0.3s 0.3s forwards;
+    -webkit-animation-name: rightPanelDevices;
+            animation-name: rightPanelDevices;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .portfolio-right-panel .devices span:nth-child(1) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .portfolio-right-panel .devices span:nth-child(2) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
   .portfolio-right-panel .devices span:nth-child(3) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-delay: 0.9s;
             animation-delay: 0.9s;
   }
@@ -7698,11 +7549,8 @@ html body .wrapper #preloader .spinner {
     }
   }
   .portfolio-right-panel .date {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 60vh, 0);
-            transform: translate3d(0, 60vh, 0);
-    -webkit-animation: rightPanelDate 0.3s forwards;
-            animation: rightPanelDate 0.3s forwards;
+    -webkit-animation: rightPanelDate 0.3s 0s both;
+            animation: rightPanelDate 0.3s 0s both;
   }
   .portfolio-right-panel .date span:last-child {
     padding-left: 2.60048vw;
@@ -7714,17 +7562,26 @@ html body .wrapper #preloader .spinner {
   .portfolio-right-panel .devices span {
     display: block;
     margin-bottom: 0.91017vw;
-    opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-animation: rightPanelDevices 0.3s 0.3s forwards;
-            animation: rightPanelDevices 0.3s 0.3s forwards;
+    -webkit-animation-name: rightPanelDevices;
+            animation-name: rightPanelDevices;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .portfolio-right-panel .devices span:nth-child(1) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .portfolio-right-panel .devices span:nth-child(2) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
   .portfolio-right-panel .devices span:nth-child(3) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-delay: 0.9s;
             animation-delay: 0.9s;
   }
@@ -7794,11 +7651,8 @@ html body .wrapper #preloader .spinner {
     }
   }
   .portfolio-right-panel .date {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 60vh, 0);
-            transform: translate3d(0, 60vh, 0);
-    -webkit-animation: rightPanelDate 0.3s forwards;
-            animation: rightPanelDate 0.3s forwards;
+    -webkit-animation: rightPanelDate 0.3s 0s both;
+            animation: rightPanelDate 0.3s 0s both;
   }
   .portfolio-right-panel .date span:last-child {
     padding-left: 1.9512vw;
@@ -7810,17 +7664,26 @@ html body .wrapper #preloader .spinner {
   .portfolio-right-panel .devices span {
     display: block;
     margin-bottom: 0.68292vw;
-    opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-animation: rightPanelDevices 0.3s 0.3s forwards;
-            animation: rightPanelDevices 0.3s 0.3s forwards;
+    -webkit-animation-name: rightPanelDevices;
+            animation-name: rightPanelDevices;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .portfolio-right-panel .devices span:nth-child(1) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .portfolio-right-panel .devices span:nth-child(2) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
   .portfolio-right-panel .devices span:nth-child(3) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-delay: 0.9s;
             animation-delay: 0.9s;
   }
@@ -7890,11 +7753,8 @@ html body .wrapper #preloader .spinner {
     }
   }
   .portfolio-right-panel .date {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 60vh, 0);
-            transform: translate3d(0, 60vh, 0);
-    -webkit-animation: rightPanelDate 0.3s forwards;
-            animation: rightPanelDate 0.3s forwards;
+    -webkit-animation: rightPanelDate 0.3s 0s both;
+            animation: rightPanelDate 0.3s 0s both;
   }
   .portfolio-right-panel .date span:last-child {
     padding-left: 1.46304vw;
@@ -7906,17 +7766,26 @@ html body .wrapper #preloader .spinner {
   .portfolio-right-panel .devices span {
     display: block;
     margin-bottom: 0.51206vw;
-    opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-animation: rightPanelDevices 0.3s 0.3s forwards;
-            animation: rightPanelDevices 0.3s 0.3s forwards;
+    -webkit-animation-name: rightPanelDevices;
+            animation-name: rightPanelDevices;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .portfolio-right-panel .devices span:nth-child(1) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .portfolio-right-panel .devices span:nth-child(2) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
   .portfolio-right-panel .devices span:nth-child(3) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-delay: 0.9s;
             animation-delay: 0.9s;
   }
@@ -7986,11 +7855,8 @@ html body .wrapper #preloader .spinner {
     }
   }
   .portfolio-right-panel .date {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 60vh, 0);
-            transform: translate3d(0, 60vh, 0);
-    -webkit-animation: rightPanelDate 0.3s forwards;
-            animation: rightPanelDate 0.3s forwards;
+    -webkit-animation: rightPanelDate 0.3s 0s both;
+            animation: rightPanelDate 0.3s 0s both;
   }
   .portfolio-right-panel .date span:last-child {
     padding-left: 1.18976vw;
@@ -8002,17 +7868,26 @@ html body .wrapper #preloader .spinner {
   .portfolio-right-panel .devices span {
     display: block;
     margin-bottom: 0.41642vw;
-    opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-animation: rightPanelDevices 0.3s 0.3s forwards;
-            animation: rightPanelDevices 0.3s 0.3s forwards;
+    -webkit-animation-name: rightPanelDevices;
+            animation-name: rightPanelDevices;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .portfolio-right-panel .devices span:nth-child(1) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .portfolio-right-panel .devices span:nth-child(2) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
   .portfolio-right-panel .devices span:nth-child(3) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-delay: 0.9s;
             animation-delay: 0.9s;
   }
@@ -8082,11 +7957,8 @@ html body .wrapper #preloader .spinner {
     }
   }
   .portfolio-right-panel .date {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 60vh, 0);
-            transform: translate3d(0, 60vh, 0);
-    -webkit-animation: rightPanelDate 0.3s forwards;
-            animation: rightPanelDate 0.3s forwards;
+    -webkit-animation: rightPanelDate 0.3s 0s both;
+            animation: rightPanelDate 0.3s 0s both;
   }
   .portfolio-right-panel .date span:last-child {
     padding-left: 1.04112vw;
@@ -8098,17 +7970,26 @@ html body .wrapper #preloader .spinner {
   .portfolio-right-panel .devices span {
     display: block;
     margin-bottom: 0.36439vw;
-    opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-    -webkit-animation: rightPanelDevices 0.3s 0.3s forwards;
-            animation: rightPanelDevices 0.3s 0.3s forwards;
+    -webkit-animation-name: rightPanelDevices;
+            animation-name: rightPanelDevices;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .portfolio-right-panel .devices span:nth-child(1) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .portfolio-right-panel .devices span:nth-child(2) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-delay: 0.6s;
             animation-delay: 0.6s;
   }
   .portfolio-right-panel .devices span:nth-child(3) {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
     -webkit-animation-delay: 0.9s;
             animation-delay: 0.9s;
   }
