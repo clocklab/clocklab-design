@@ -1,42 +1,3 @@
-// animation for hamburger ticks
-@keyframes innerTickAnimation1 {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(100%);
-    }
-}
-
-@keyframes innerTickAnimation2 {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-// animation for hamburger ticks (menu opened)
-@keyframes innerTickOpenedAnimation1 {
-    from {
-        left: 10%;
-    }
-    to {
-        left: 100%;
-    }
-}
-
-@keyframes innerTickOpenedAnimation2 {
-    from {
-        left: -2%;
-    }
-    to {
-        left: 90%;
-    }
-}
-
-
 // global variables
 $browser-context: 16;
 
@@ -72,8 +33,18 @@ $timeTickHalf: $timeTick / 2;
 // TIME CONSTANTS END
 
 
+// VARIABLES FOR PORTFOLIO CLIENT
+//$portfolioClientDelayTime: 0s;
+$portfolioClientDelayTime: $time * 3;
+$portfolioClientAnimationTime: $time;
+
+$portfolioClientNameDelayTime: $portfolioClientDelayTime + $portfolioClientAnimationTime;
+$portfolioClientNameAnimationTime: $time;
+// VARIABLES FOR PORTFOLIO CLIENT END
+
+
 // VARIABLES FOR PORTFOLIO RIGHT PANEL
-$portfolioRightPanelDateDelayTime: 0s;
+$portfolioRightPanelDateDelayTime: $portfolioClientDelayTime;
 $portfolioRightPanelDateAnimationTime: $time;
 
 $portfolioRightPanelDevicesDesktopDelayTime: $portfolioRightPanelDateDelayTime + $portfolioRightPanelDateAnimationTime;
@@ -99,4 +70,30 @@ $portfolioAudiCenterBlockShadowAnimationTime: $time * 3;
 
 $portfolioAudiLeftBlockDelayTime: $portfolioAudiCenterBlockLineDelayTime + $portfolioAudiCenterBlockLineAnimationTime;
 $portfolioAudiLeftBlockAnimationTime: $time * 3;
+
+    // MOBILE
+    $portfolioAudiCenterBlockDelayTimeMobile: 0s;
+    $portfolioAudiCenterBlockLineDelayTimeMobile: $portfolioAudiCenterBlockDelayTimeMobile + $portfolioAudiCenterBlockAnimationTime;
+    $portfolioAudiCenterBlockShadowDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime - $timeTick;
+    $portfolioAudiLeftBlockDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime;
+
 // VARIABLES FOR PORTFOLIO BLOCK AUDI Q7 END
+
+
+// VARIABLES FOR PORTFOLIO BLOCK VINO GRAD
+$portfolioVinogradLeftBlockDelayTime: 0s;
+$portfolioVinogradLeftBlockAnimationTime: $time * 3;
+
+$portfolioVinogradRightBlockDelayTime: $portfolioVinogradLeftBlockDelayTime;
+$portfolioVinogradRightBlockAnimationTime: $portfolioVinogradLeftBlockAnimationTime;
+
+$portfolioVinogradPosterDelayTime: $portfolioRightPanelDevicesMobileDelayTime + $portfolioRightPanelDevicesMobileAnimationTime;
+$portfolioVinogradPosterAnimationTime: $time * 6;
+
+$portfolioVinogradPosterImageDelayTime: $portfolioVinogradPosterDelayTime + $portfolioVinogradPosterAnimationTime;
+$portfolioVinogradPosterImageAnimationTime: $time * 3;
+
+    // MOBILE
+    $portfolioVinogradPosterDelayTimeMobile: $portfolioVinogradRightBlockDelayTime + $portfolioVinogradRightBlockAnimationTime;
+    $portfolioVinogradPosterImageDelayTimeMobile: $portfolioVinogradPosterDelayTimeMobile + $portfolioVinogradPosterAnimationTime;
+// VARIABLES FOR PORTFOLIO BLOCK VINO GRAD END

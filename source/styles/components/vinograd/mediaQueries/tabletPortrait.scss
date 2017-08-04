@@ -1,0 +1,9 @@
+@import '../desktop';
+
+& {
+
+    .poster {
+        margin-top: px(940);
+        animation-name: posterTablet;
+    }
+}

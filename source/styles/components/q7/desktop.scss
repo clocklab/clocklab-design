@@ -26,16 +26,6 @@
             background: $white;
         }
 
-        // Animation for left block
-        @keyframes widthIncrease {
-            from {
-                width: 0;
-            }
-            to {
-                width: 50%;
-            }
-        }
-
         &--left,
         &--right {
             position: absolute;
@@ -44,7 +34,7 @@
 
         &--left {
             float: left;
-            animation: widthIncrease $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTime both;
+            animation: widthIncreaseDesktop $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTime both;
 
             .image-cover-layer {
                 opacity: .9;
@@ -58,16 +48,6 @@
         }
 
         // Animation for center block
-        @keyframes heightIncrease {
-            from {
-                height: 0vh;
-                transform: translateY(40vh);
-            }
-            to {
-                height: 88vh;
-                transform: translateY(4vh);
-            }
-        }
         @keyframes heightReduce {
             from {
                 margin-top: 0;
@@ -82,21 +62,23 @@
                 opacity: .7;
             }
         }
+
         @keyframes shadowAppearance {
             from {
-                box-shadow: 0 px(0) px(0) px(0) rgba(0, 0, 0, 0);
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
             }
             to {
                 box-shadow: 0 px(30) px(100) px(14) rgba(0, 0, 0, .3);    
             }
         }
+        // Animation for center block ends
 
         &--center {
             position: relative;
             z-index: 2;
             margin: 0 auto;
             width: 18.75vw;
-            animation: heightIncrease $portfolioAudiCenterBlockAnimationTime $portfolioAudiCenterBlockDelayTime both, 
+            animation: heightIncreaseDesktop $portfolioAudiCenterBlockAnimationTime $portfolioAudiCenterBlockDelayTime both, 
                        shadowAppearance $portfolioAudiCenterBlockShadowAnimationTime $portfolioAudiCenterBlockShadowDelayTime both;
 
             img {

@@ -27,23 +27,11 @@
             background: $white;
         }
 
-        // Animation for left block
-        $leftBlockWidth: 100%;
-        @keyframes widthIncrease {
-            from {
-                width: 0;
-            }
-            to {
-                width: $leftBlockWidth;
-            }
-        }
-
         &--left {
             position: absolute;
             float: left;
-            width: 0;
             height: 100vh;
-            animation: widthIncrease $time * 3 $time * 5 forwards;
+            animation: widthIncreaseMobile $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTimeMobile both;
 
             .image-cover-layer {
                 opacity: .9;
@@ -51,18 +39,6 @@
         }
 
         // Animation for center block
-        $centerBlockHeight: 60vh;
-
-        @keyframes heightIncrease {
-            from {
-                height: 0vh;
-                transform: translateY(60vh);
-            }
-            to {
-                height: $centerBlockHeight;
-                transform: translateY(30vh);
-            }
-        }
         @keyframes heightReduce {
             from {
                 margin-top: 0;
@@ -82,19 +58,18 @@
                 box-shadow: 0 px(0) px(0) px(0) rgba(0, 0, 0, 0);
             }
             to {
-                box-shadow: 0 px(30) px(100) px(14) rgba(0, 0, 0, .3);    
+                box-shadow: 0 px(20) px(90) px(10) rgba(0, 0, 0, .3);    
             }
         }
+        // Animation for center block
 
         &--center {
             position: relative;
             z-index: 2;
             margin: 0 auto;
             width: 53vw;
-            height: $centerBlockHeight;
-            box-shadow: 0 px(0) px(0) px(0) rgba(0, 0, 0, 0);
-            transform: translateY(30vh);
-            animation: heightIncrease $time * 3 forwards, shadowAppearance $time * 3 $time * 4 forwards;
+            animation: heightIncreaseMobile $portfolioAudiCenterBlockAnimationTime $portfolioAudiCenterBlockDelayTimeMobile both, 
+                       shadowAppearance $portfolioAudiCenterBlockShadowAnimationTime $portfolioAudiCenterBlockShadowDelayTimeMobile both;
 
             img {
                 top: -30vh;
@@ -117,7 +92,7 @@
                 background: $blue;
                 content: '';
                 transform: rotate(-45deg);
-                animation: heightReduce $time * 3 $time * 3 forwards;
+                animation: heightReduce $portfolioAudiCenterBlockLineAnimationTime $portfolioAudiCenterBlockLineDelayTimeMobile both;
             }
         }
     }
