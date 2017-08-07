@@ -338,23 +338,7 @@ html body .wrapper #preloader .spinner {
             transform: translateX(0);
   }
 }
-@-webkit-keyframes widthIncreaseDesktop {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50%;
-  }
-}
-@keyframes widthIncreaseDesktop {
-  from {
-    width: 0;
-  }
-  to {
-    width: 50%;
-  }
-}
-@-webkit-keyframes widthIncreaseMobile {
+@-webkit-keyframes widthIncrease {
   from {
     width: 0;
   }
@@ -362,7 +346,7 @@ html body .wrapper #preloader .spinner {
     width: 100%;
   }
 }
-@keyframes widthIncreaseMobile {
+@keyframes widthIncrease {
   from {
     width: 0;
   }
@@ -394,6 +378,30 @@ html body .wrapper #preloader .spinner {
             transform: translateY(4vh);
   }
 }
+@-webkit-keyframes heightIncreaseTablet {
+  from {
+    height: 0vh;
+    -webkit-transform: translateY(56vh);
+            transform: translateY(56vh);
+  }
+  to {
+    height: 72vh;
+    -webkit-transform: translateY(20vh);
+            transform: translateY(20vh);
+  }
+}
+@keyframes heightIncreaseTablet {
+  from {
+    height: 0vh;
+    -webkit-transform: translateY(56vh);
+            transform: translateY(56vh);
+  }
+  to {
+    height: 72vh;
+    -webkit-transform: translateY(20vh);
+            transform: translateY(20vh);
+  }
+}
 @-webkit-keyframes heightIncreaseMobile {
   from {
     height: 0vh;
@@ -416,6 +424,86 @@ html body .wrapper #preloader .spinner {
     height: 60vh;
     -webkit-transform: translateY(30vh);
             transform: translateY(30vh);
+  }
+}
+@-webkit-keyframes rightDown {
+  from {
+    -webkit-transform: rotate(45deg) translate3d(-100%, 0, 0);
+            transform: rotate(45deg) translate3d(-100%, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate(45deg) translate3d(100%, 0, 0);
+            transform: rotate(45deg) translate3d(100%, 0, 0);
+  }
+}
+@keyframes rightDown {
+  from {
+    -webkit-transform: rotate(45deg) translate3d(-100%, 0, 0);
+            transform: rotate(45deg) translate3d(-100%, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate(45deg) translate3d(100%, 0, 0);
+            transform: rotate(45deg) translate3d(100%, 0, 0);
+  }
+}
+@-webkit-keyframes leftDown {
+  from {
+    -webkit-transform: rotate(-45deg) translate3d(100%, 0, 0);
+            transform: rotate(-45deg) translate3d(100%, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate(-45deg) translate3d(-20%, 0, 0);
+            transform: rotate(-45deg) translate3d(-20%, 0, 0);
+  }
+}
+@keyframes leftDown {
+  from {
+    -webkit-transform: rotate(-45deg) translate3d(100%, 0, 0);
+            transform: rotate(-45deg) translate3d(100%, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate(-45deg) translate3d(-20%, 0, 0);
+            transform: rotate(-45deg) translate3d(-20%, 0, 0);
+  }
+}
+@-webkit-keyframes rightDownTablet {
+  from {
+    -webkit-transform: rotate(45deg) translate3d(-100%, 0, 0);
+            transform: rotate(45deg) translate3d(-100%, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate(45deg) translate3d(100%, 0, 0);
+            transform: rotate(45deg) translate3d(100%, 0, 0);
+  }
+}
+@keyframes rightDownTablet {
+  from {
+    -webkit-transform: rotate(45deg) translate3d(-100%, 0, 0);
+            transform: rotate(45deg) translate3d(-100%, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate(45deg) translate3d(100%, 0, 0);
+            transform: rotate(45deg) translate3d(100%, 0, 0);
+  }
+}
+@-webkit-keyframes leftDownTablet {
+  from {
+    -webkit-transform: rotate(-45deg) translate3d(100%, 0, 0);
+            transform: rotate(-45deg) translate3d(100%, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate(-45deg) translate3d(-10%, 0, 0);
+            transform: rotate(-45deg) translate3d(-10%, 0, 0);
+  }
+}
+@keyframes leftDownTablet {
+  from {
+    -webkit-transform: rotate(-45deg) translate3d(100%, 0, 0);
+            transform: rotate(-45deg) translate3d(100%, 0, 0);
+  }
+  to {
+    -webkit-transform: rotate(-45deg) translate3d(-10%, 0, 0);
+            transform: rotate(-45deg) translate3d(-10%, 0, 0);
   }
 }
 @-webkit-keyframes up {
@@ -6190,7 +6278,7 @@ html body .wrapper #preloader .spinner {
 }
 
 @media (max-width: 414px) {
-  .q7 .q7 {
+  .q7 {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -6207,22 +6295,37 @@ html body .wrapper #preloader .spinner {
     height: 100vh;
     min-height: 568px;
   }
-  .q7 .car-covering-layer .image-cover-layer {
+  .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+  }
+  .q7 .car-covering-layer--left {
+    left: 0;
+    width: 100%;
+  }
+  .q7 .car-covering-layer--left .image-container {
     position: relative;
+    height: 100vh;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer--left:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 2;
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
   }
-  .q7 .car-covering-layer--left {
-    position: absolute;
-    float: left;
-    height: 100vh;
-    -webkit-animation: widthIncreaseMobile 0.9s 1.8s both;
-            animation: widthIncreaseMobile 0.9s 1.8s both;
-  }
-  .q7 .car-covering-layer--left .image-cover-layer {
-    opacity: .9;
+  .q7 .car-covering-layer--right {
+    right: 0;
+    width: 50%;
   }
   @-webkit-keyframes heightReduce {
     from {
@@ -6280,9 +6383,6 @@ html body .wrapper #preloader .spinner {
     top: -30vh;
     left: -53.5vw;
   }
-  .q7 .car-covering-layer--center .image-cover-layer {
-    opacity: .6;
-  }
   .q7 .car-covering-layer--center:before {
     display: block;
     position: absolute;
@@ -6298,10 +6398,21 @@ html body .wrapper #preloader .spinner {
             transform: rotate(-45deg);
     -webkit-animation: heightReduce 0.9s 0.9s both;
             animation: heightReduce 0.9s 0.9s both;
+  }
+  .q7 .car-covering-layer--center:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    content: '';
   }
 }
 @media (min-width: 415px) and (max-width: 667px) {
-  .q7 .q7 {
+  .q7 {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -6318,22 +6429,37 @@ html body .wrapper #preloader .spinner {
     height: 100vh;
     min-height: 568px;
   }
-  .q7 .car-covering-layer .image-cover-layer {
+  .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+  }
+  .q7 .car-covering-layer--left {
+    left: 0;
+    width: 100%;
+  }
+  .q7 .car-covering-layer--left .image-container {
     position: relative;
+    height: 100vh;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer--left:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 2;
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
   }
-  .q7 .car-covering-layer--left {
-    position: absolute;
-    float: left;
-    height: 100vh;
-    -webkit-animation: widthIncreaseMobile 0.9s 1.8s both;
-            animation: widthIncreaseMobile 0.9s 1.8s both;
-  }
-  .q7 .car-covering-layer--left .image-cover-layer {
-    opacity: .9;
+  .q7 .car-covering-layer--right {
+    right: 0;
+    width: 50%;
   }
   @-webkit-keyframes heightReduce {
     from {
@@ -6391,9 +6517,6 @@ html body .wrapper #preloader .spinner {
     top: -30vh;
     left: -53.5vw;
   }
-  .q7 .car-covering-layer--center .image-cover-layer {
-    opacity: .6;
-  }
   .q7 .car-covering-layer--center:before {
     display: block;
     position: absolute;
@@ -6409,10 +6532,21 @@ html body .wrapper #preloader .spinner {
             transform: rotate(-45deg);
     -webkit-animation: heightReduce 0.9s 0.9s both;
             animation: heightReduce 0.9s 0.9s both;
+  }
+  .q7 .car-covering-layer--center:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    content: '';
   }
 }
 @media (min-width: 668px) and (max-width: 768px) {
-  .q7 .q7 {
+  .q7 {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -6429,22 +6563,37 @@ html body .wrapper #preloader .spinner {
     height: 100vh;
     min-height: 568px;
   }
-  .q7 .car-covering-layer .image-cover-layer {
+  .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+  }
+  .q7 .car-covering-layer--left {
+    left: 0;
+    width: 100%;
+  }
+  .q7 .car-covering-layer--left .image-container {
     position: relative;
+    height: 100vh;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer--left:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 2;
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
   }
-  .q7 .car-covering-layer--left {
-    position: absolute;
-    float: left;
-    height: 100vh;
-    -webkit-animation: widthIncreaseMobile 0.9s 1.8s both;
-            animation: widthIncreaseMobile 0.9s 1.8s both;
-  }
-  .q7 .car-covering-layer--left .image-cover-layer {
-    opacity: .9;
+  .q7 .car-covering-layer--right {
+    right: 0;
+    width: 50%;
   }
   @-webkit-keyframes heightReduce {
     from {
@@ -6502,9 +6651,6 @@ html body .wrapper #preloader .spinner {
     top: -30vh;
     left: -53.5vw;
   }
-  .q7 .car-covering-layer--center .image-cover-layer {
-    opacity: .6;
-  }
   .q7 .car-covering-layer--center:before {
     display: block;
     position: absolute;
@@ -6520,14 +6666,85 @@ html body .wrapper #preloader .spinner {
             transform: rotate(-45deg);
     -webkit-animation: heightReduce 0.9s 0.9s both;
             animation: heightReduce 0.9s 0.9s both;
+  }
+  .q7 .car-covering-layer--center:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    content: '';
   }
   .q7 .car-covering-layer img {
     left: -20vw;
     min-height: 1024px;
   }
+  .q7 .car-covering-layer .lines {
+    position: absolute;
+    top: 30vh;
+    z-index: 3;
+    height: 60vh;
+    width: 26.5vw;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer .lines .line {
+    position: absolute;
+    width: 60vh;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .q7 .car-covering-layer .lines .line--left {
+    left: 0;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-animation: rightDownTablet both;
+            animation: rightDownTablet both;
+  }
+  .q7 .car-covering-layer .lines .line--right {
+    right: 0;
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    -webkit-animation: leftDownTablet both;
+            animation: leftDownTablet both;
+  }
   .q7 .car-covering-layer--left {
-    -webkit-animation-delay: 3.9s;
-            animation-delay: 3.9s;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  .q7 .car-covering-layer--left .lines {
+    left: 0;
+  }
+  .q7 .car-covering-layer--left .lines .line--left {
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .q7 .car-covering-layer--left .lines .line--right {
+    top: 10vh;
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0.27s;
+            animation-delay: 0.27s;
+  }
+  .q7 .car-covering-layer--right .lines {
+    right: 0;
+  }
+  .q7 .car-covering-layer--right .lines .line--left {
+    top: 10vh;
+    -webkit-animation-duration: 2.4s;
+            animation-duration: 2.4s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .q7 .car-covering-layer--right .lines .line--right {
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0.54s;
+            animation-delay: 0.54s;
   }
   @keyframes heightReduce {
     from {
@@ -6545,20 +6762,21 @@ html body .wrapper #preloader .spinner {
   }
   .q7 .car-covering-layer--center {
     width: 47vw;
-    -webkit-animation: heightIncreaseMobile 0.9s 2.1s both, shadowAppearance 0.9s 3.7s both;
-            animation: heightIncreaseMobile 0.9s 2.1s both, shadowAppearance 0.9s 3.7s both;
+    -webkit-animation: heightIncreaseTablet 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
+            animation: heightIncreaseTablet 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
   }
   .q7 .car-covering-layer--center img {
     left: -46.5vw;
+    top: -20vh;
   }
   .q7 .car-covering-layer--center:before {
     top: -22vh;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
+    -webkit-animation-delay: 2.1s;
+            animation-delay: 2.1s;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-  .q7 .q7 {
+  .q7 {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -6574,29 +6792,99 @@ html body .wrapper #preloader .spinner {
     height: 100vh;
     min-height: 700px;
   }
-  .q7 .car-covering-layer .image-cover-layer {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: #fff;
+  .q7 .car-covering-layer .lines {
+    position: absolute;
+    top: 15.60288vw;
+    z-index: 3;
+    height: 101.41872vw;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer .lines .line {
+    position: absolute;
+    width: 152.12808vw;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .q7 .car-covering-layer .lines .line--left {
+    left: 0;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-animation: rightDown both;
+            animation: rightDown both;
+  }
+  .q7 .car-covering-layer .lines .line--right {
+    right: 0;
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    -webkit-animation: leftDown both;
+            animation: leftDown both;
   }
   .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
     position: absolute;
+    top: 0;
+    z-index: 1;
     height: 100vh;
+    width: 50%;
   }
   .q7 .car-covering-layer--left {
-    float: left;
-    -webkit-animation: widthIncreaseDesktop 0.9s 3.9s both;
-            animation: widthIncreaseDesktop 0.9s 3.9s both;
+    left: 0;
   }
-  .q7 .car-covering-layer--left .image-cover-layer {
-    opacity: .9;
+  .q7 .car-covering-layer--left .image-container {
+    position: relative;
+    height: 100vh;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer--left .lines {
+    left: 19.5036vw;
+    width: 21.1214vw;
+  }
+  .q7 .car-covering-layer--left .lines .line--left {
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .q7 .car-covering-layer--left .lines .line--right {
+    top: 20vh;
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0.27s;
+            animation-delay: 0.27s;
+  }
+  .q7 .car-covering-layer--left:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
   }
   .q7 .car-covering-layer--right {
+    right: 0;
     width: 50%;
-    float: right;
     background: #fff;
+  }
+  .q7 .car-covering-layer--right .lines {
+    left: 9.375vw;
+    width: 14.2434vw;
+  }
+  .q7 .car-covering-layer--right .lines .line--left {
+    top: 20vh;
+    -webkit-animation-duration: 2.4s;
+            animation-duration: 2.4s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .q7 .car-covering-layer--right .lines .line--right {
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0.54s;
+            animation-delay: 0.54s;
   }
   @-webkit-keyframes heightReduce {
     from {
@@ -6647,15 +6935,12 @@ html body .wrapper #preloader .spinner {
     z-index: 2;
     margin: 0 auto;
     width: 18.75vw;
-    -webkit-animation: heightIncreaseDesktop 0.9s 2.1s both, shadowAppearance 0.9s 3.7s both;
-            animation: heightIncreaseDesktop 0.9s 2.1s both, shadowAppearance 0.9s 3.7s both;
+    -webkit-animation: heightIncreaseDesktop 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
+            animation: heightIncreaseDesktop 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
   }
   .q7 .car-covering-layer--center img {
     top: -4vh;
     left: -40.625vw;
-  }
-  .q7 .car-covering-layer--center .image-cover-layer {
-    opacity: .6;
   }
   .q7 .car-covering-layer--center:before {
     display: block;
@@ -6668,8 +6953,19 @@ html body .wrapper #preloader .spinner {
     content: '';
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-animation: heightReduce 0.9s 3s both;
-            animation: heightReduce 0.9s 3s both;
+    -webkit-animation: heightReduce 0.9s 2.1s both;
+            animation: heightReduce 0.9s 2.1s both;
+  }
+  .q7 .car-covering-layer--center:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    content: '';
   }
   .q7 .car-covering-layer--center {
     width: 28vw;
@@ -6679,7 +6975,7 @@ html body .wrapper #preloader .spinner {
   }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
-  .q7 .q7 {
+  .q7 {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -6695,29 +6991,99 @@ html body .wrapper #preloader .spinner {
     height: 100vh;
     min-height: 700px;
   }
-  .q7 .car-covering-layer .image-cover-layer {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: #fff;
+  .q7 .car-covering-layer .lines {
+    position: absolute;
+    top: 11.7072vw;
+    z-index: 3;
+    height: 76.0968vw;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer .lines .line {
+    position: absolute;
+    width: 114.1452vw;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .q7 .car-covering-layer .lines .line--left {
+    left: 0;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-animation: rightDown both;
+            animation: rightDown both;
+  }
+  .q7 .car-covering-layer .lines .line--right {
+    right: 0;
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    -webkit-animation: leftDown both;
+            animation: leftDown both;
   }
   .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
     position: absolute;
+    top: 0;
+    z-index: 1;
     height: 100vh;
+    width: 50%;
   }
   .q7 .car-covering-layer--left {
-    float: left;
-    -webkit-animation: widthIncreaseDesktop 0.9s 3.9s both;
-            animation: widthIncreaseDesktop 0.9s 3.9s both;
+    left: 0;
   }
-  .q7 .car-covering-layer--left .image-cover-layer {
-    opacity: .9;
+  .q7 .car-covering-layer--left .image-container {
+    position: relative;
+    height: 100vh;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer--left .lines {
+    left: 14.634vw;
+    width: 25.991vw;
+  }
+  .q7 .car-covering-layer--left .lines .line--left {
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .q7 .car-covering-layer--left .lines .line--right {
+    top: 20vh;
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0.27s;
+            animation-delay: 0.27s;
+  }
+  .q7 .car-covering-layer--left:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
   }
   .q7 .car-covering-layer--right {
+    right: 0;
     width: 50%;
-    float: right;
     background: #fff;
+  }
+  .q7 .car-covering-layer--right .lines {
+    left: 9.375vw;
+    width: 23.171vw;
+  }
+  .q7 .car-covering-layer--right .lines .line--left {
+    top: 20vh;
+    -webkit-animation-duration: 2.4s;
+            animation-duration: 2.4s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .q7 .car-covering-layer--right .lines .line--right {
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0.54s;
+            animation-delay: 0.54s;
   }
   @-webkit-keyframes heightReduce {
     from {
@@ -6768,15 +7134,12 @@ html body .wrapper #preloader .spinner {
     z-index: 2;
     margin: 0 auto;
     width: 18.75vw;
-    -webkit-animation: heightIncreaseDesktop 0.9s 2.1s both, shadowAppearance 0.9s 3.7s both;
-            animation: heightIncreaseDesktop 0.9s 2.1s both, shadowAppearance 0.9s 3.7s both;
+    -webkit-animation: heightIncreaseDesktop 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
+            animation: heightIncreaseDesktop 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
   }
   .q7 .car-covering-layer--center img {
     top: -4vh;
     left: -40.625vw;
-  }
-  .q7 .car-covering-layer--center .image-cover-layer {
-    opacity: .6;
   }
   .q7 .car-covering-layer--center:before {
     display: block;
@@ -6789,12 +7152,23 @@ html body .wrapper #preloader .spinner {
     content: '';
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-animation: heightReduce 0.9s 3s both;
-            animation: heightReduce 0.9s 3s both;
+    -webkit-animation: heightReduce 0.9s 2.1s both;
+            animation: heightReduce 0.9s 2.1s both;
+  }
+  .q7 .car-covering-layer--center:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    content: '';
   }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
-  .q7 .q7 {
+  .q7 {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -6810,29 +7184,99 @@ html body .wrapper #preloader .spinner {
     height: 100vh;
     min-height: 700px;
   }
-  .q7 .car-covering-layer .image-cover-layer {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: #fff;
+  .q7 .car-covering-layer .lines {
+    position: absolute;
+    top: 8.77824vw;
+    z-index: 3;
+    height: 57.05856vw;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer .lines .line {
+    position: absolute;
+    width: 85.58784vw;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .q7 .car-covering-layer .lines .line--left {
+    left: 0;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-animation: rightDown both;
+            animation: rightDown both;
+  }
+  .q7 .car-covering-layer .lines .line--right {
+    right: 0;
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    -webkit-animation: leftDown both;
+            animation: leftDown both;
   }
   .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
     position: absolute;
+    top: 0;
+    z-index: 1;
     height: 100vh;
+    width: 50%;
   }
   .q7 .car-covering-layer--left {
-    float: left;
-    -webkit-animation: widthIncreaseDesktop 0.9s 3.9s both;
-            animation: widthIncreaseDesktop 0.9s 3.9s both;
+    left: 0;
   }
-  .q7 .car-covering-layer--left .image-cover-layer {
-    opacity: .9;
+  .q7 .car-covering-layer--left .image-container {
+    position: relative;
+    height: 100vh;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer--left .lines {
+    left: 10.9728vw;
+    width: 29.6522vw;
+  }
+  .q7 .car-covering-layer--left .lines .line--left {
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .q7 .car-covering-layer--left .lines .line--right {
+    top: 20vh;
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0.27s;
+            animation-delay: 0.27s;
+  }
+  .q7 .car-covering-layer--left:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
   }
   .q7 .car-covering-layer--right {
+    right: 0;
     width: 50%;
-    float: right;
     background: #fff;
+  }
+  .q7 .car-covering-layer--right .lines {
+    left: 9.375vw;
+    width: 29.8832vw;
+  }
+  .q7 .car-covering-layer--right .lines .line--left {
+    top: 20vh;
+    -webkit-animation-duration: 2.4s;
+            animation-duration: 2.4s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .q7 .car-covering-layer--right .lines .line--right {
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0.54s;
+            animation-delay: 0.54s;
   }
   @-webkit-keyframes heightReduce {
     from {
@@ -6883,15 +7327,12 @@ html body .wrapper #preloader .spinner {
     z-index: 2;
     margin: 0 auto;
     width: 18.75vw;
-    -webkit-animation: heightIncreaseDesktop 0.9s 2.1s both, shadowAppearance 0.9s 3.7s both;
-            animation: heightIncreaseDesktop 0.9s 2.1s both, shadowAppearance 0.9s 3.7s both;
+    -webkit-animation: heightIncreaseDesktop 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
+            animation: heightIncreaseDesktop 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
   }
   .q7 .car-covering-layer--center img {
     top: -4vh;
     left: -40.625vw;
-  }
-  .q7 .car-covering-layer--center .image-cover-layer {
-    opacity: .6;
   }
   .q7 .car-covering-layer--center:before {
     display: block;
@@ -6904,15 +7345,26 @@ html body .wrapper #preloader .spinner {
     content: '';
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-animation: heightReduce 0.9s 3s both;
-            animation: heightReduce 0.9s 3s both;
+    -webkit-animation: heightReduce 0.9s 2.1s both;
+            animation: heightReduce 0.9s 2.1s both;
+  }
+  .q7 .car-covering-layer--center:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    content: '';
   }
   .q7 .car-covering-layer img {
     min-height: 800px;
   }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
-  .q7 .q7 {
+  .q7 {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -6928,29 +7380,99 @@ html body .wrapper #preloader .spinner {
     height: 100vh;
     min-height: 700px;
   }
-  .q7 .car-covering-layer .image-cover-layer {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: #fff;
+  .q7 .car-covering-layer .lines {
+    position: absolute;
+    top: 7.13856vw;
+    z-index: 3;
+    height: 46.40064vw;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer .lines .line {
+    position: absolute;
+    width: 69.60096vw;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .q7 .car-covering-layer .lines .line--left {
+    left: 0;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-animation: rightDown both;
+            animation: rightDown both;
+  }
+  .q7 .car-covering-layer .lines .line--right {
+    right: 0;
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    -webkit-animation: leftDown both;
+            animation: leftDown both;
   }
   .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
     position: absolute;
+    top: 0;
+    z-index: 1;
     height: 100vh;
+    width: 50%;
   }
   .q7 .car-covering-layer--left {
-    float: left;
-    -webkit-animation: widthIncreaseDesktop 0.9s 3.9s both;
-            animation: widthIncreaseDesktop 0.9s 3.9s both;
+    left: 0;
   }
-  .q7 .car-covering-layer--left .image-cover-layer {
-    opacity: .9;
+  .q7 .car-covering-layer--left .image-container {
+    position: relative;
+    height: 100vh;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer--left .lines {
+    left: 8.9232vw;
+    width: 31.7018vw;
+  }
+  .q7 .car-covering-layer--left .lines .line--left {
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .q7 .car-covering-layer--left .lines .line--right {
+    top: 20vh;
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0.27s;
+            animation-delay: 0.27s;
+  }
+  .q7 .car-covering-layer--left:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
   }
   .q7 .car-covering-layer--right {
+    right: 0;
     width: 50%;
-    float: right;
     background: #fff;
+  }
+  .q7 .car-covering-layer--right .lines {
+    left: 9.375vw;
+    width: 33.6408vw;
+  }
+  .q7 .car-covering-layer--right .lines .line--left {
+    top: 20vh;
+    -webkit-animation-duration: 2.4s;
+            animation-duration: 2.4s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .q7 .car-covering-layer--right .lines .line--right {
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0.54s;
+            animation-delay: 0.54s;
   }
   @-webkit-keyframes heightReduce {
     from {
@@ -7001,15 +7523,12 @@ html body .wrapper #preloader .spinner {
     z-index: 2;
     margin: 0 auto;
     width: 18.75vw;
-    -webkit-animation: heightIncreaseDesktop 0.9s 2.1s both, shadowAppearance 0.9s 3.7s both;
-            animation: heightIncreaseDesktop 0.9s 2.1s both, shadowAppearance 0.9s 3.7s both;
+    -webkit-animation: heightIncreaseDesktop 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
+            animation: heightIncreaseDesktop 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
   }
   .q7 .car-covering-layer--center img {
     top: -4vh;
     left: -40.625vw;
-  }
-  .q7 .car-covering-layer--center .image-cover-layer {
-    opacity: .6;
   }
   .q7 .car-covering-layer--center:before {
     display: block;
@@ -7022,15 +7541,26 @@ html body .wrapper #preloader .spinner {
     content: '';
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-animation: heightReduce 0.9s 3s both;
-            animation: heightReduce 0.9s 3s both;
+    -webkit-animation: heightReduce 0.9s 2.1s both;
+            animation: heightReduce 0.9s 2.1s both;
+  }
+  .q7 .car-covering-layer--center:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    content: '';
   }
   .q7 .car-covering-layer img {
     min-height: 910px;
   }
 }
 @media (min-width: 1921px) {
-  .q7 .q7 {
+  .q7 {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -7046,29 +7576,99 @@ html body .wrapper #preloader .spinner {
     height: 100vh;
     min-height: 700px;
   }
-  .q7 .car-covering-layer .image-cover-layer {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: #fff;
+  .q7 .car-covering-layer .lines {
+    position: absolute;
+    top: 6.24672vw;
+    z-index: 3;
+    height: 40.60368vw;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer .lines .line {
+    position: absolute;
+    width: 60.90552vw;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .q7 .car-covering-layer .lines .line--left {
+    left: 0;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-animation: rightDown both;
+            animation: rightDown both;
+  }
+  .q7 .car-covering-layer .lines .line--right {
+    right: 0;
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    -webkit-animation: leftDown both;
+            animation: leftDown both;
   }
   .q7 .car-covering-layer--left, .q7 .car-covering-layer--right {
     position: absolute;
+    top: 0;
+    z-index: 1;
     height: 100vh;
+    width: 50%;
   }
   .q7 .car-covering-layer--left {
-    float: left;
-    -webkit-animation: widthIncreaseDesktop 0.9s 3.9s both;
-            animation: widthIncreaseDesktop 0.9s 3.9s both;
+    left: 0;
   }
-  .q7 .car-covering-layer--left .image-cover-layer {
-    opacity: .9;
+  .q7 .car-covering-layer--left .image-container {
+    position: relative;
+    height: 100vh;
+    -webkit-animation: widthIncrease 0.9s 3s both;
+            animation: widthIncrease 0.9s 3s both;
+    overflow: hidden;
+  }
+  .q7 .car-covering-layer--left .lines {
+    left: 7.8084vw;
+    width: 32.8166vw;
+  }
+  .q7 .car-covering-layer--left .lines .line--left {
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  .q7 .car-covering-layer--left .lines .line--right {
+    top: 20vh;
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0.27s;
+            animation-delay: 0.27s;
+  }
+  .q7 .car-covering-layer--left:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
   }
   .q7 .car-covering-layer--right {
+    right: 0;
     width: 50%;
-    float: right;
     background: #fff;
+  }
+  .q7 .car-covering-layer--right .lines {
+    left: 9.375vw;
+    width: 35.6846vw;
+  }
+  .q7 .car-covering-layer--right .lines .line--left {
+    top: 20vh;
+    -webkit-animation-duration: 2.4s;
+            animation-duration: 2.4s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
+  .q7 .car-covering-layer--right .lines .line--right {
+    -webkit-animation-duration: 2.7s;
+            animation-duration: 2.7s;
+    -webkit-animation-delay: 0.54s;
+            animation-delay: 0.54s;
   }
   @-webkit-keyframes heightReduce {
     from {
@@ -7119,15 +7719,12 @@ html body .wrapper #preloader .spinner {
     z-index: 2;
     margin: 0 auto;
     width: 18.75vw;
-    -webkit-animation: heightIncreaseDesktop 0.9s 2.1s both, shadowAppearance 0.9s 3.7s both;
-            animation: heightIncreaseDesktop 0.9s 2.1s both, shadowAppearance 0.9s 3.7s both;
+    -webkit-animation: heightIncreaseDesktop 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
+            animation: heightIncreaseDesktop 0.9s 1.2s both, shadowAppearance 0.9s 2.8s both;
   }
   .q7 .car-covering-layer--center img {
     top: -4vh;
     left: -40.625vw;
-  }
-  .q7 .car-covering-layer--center .image-cover-layer {
-    opacity: .6;
   }
   .q7 .car-covering-layer--center:before {
     display: block;
@@ -7140,8 +7737,19 @@ html body .wrapper #preloader .spinner {
     content: '';
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    -webkit-animation: heightReduce 0.9s 3s both;
-            animation: heightReduce 0.9s 3s both;
+    -webkit-animation: heightReduce 0.9s 2.1s both;
+            animation: heightReduce 0.9s 2.1s both;
+  }
+  .q7 .car-covering-layer--center:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    content: '';
   }
   .q7 .car-covering-layer img {
     min-height: 1210px;
@@ -7182,8 +7790,8 @@ html body .wrapper #preloader .spinner {
     line-height: 4.6407vw;
     font-weight: 500;
     vertical-align: bottom;
-    -webkit-animation: client 0.3s 0.9s both;
-            animation: client 0.3s 0.9s both;
+    -webkit-animation: client 0.3s 0s both;
+            animation: client 0.3s 0s both;
   }
   .portfolio-client .client-name-container {
     vertical-align: bottom;
@@ -7193,8 +7801,8 @@ html body .wrapper #preloader .spinner {
     overflow: hidden;
   }
   .portfolio-client .client-name-container span {
-    -webkit-animation: clientName 0.3s 1.2s both;
-            animation: clientName 0.3s 1.2s both;
+    -webkit-animation: clientName 0.3s 0.3s both;
+            animation: clientName 0.3s 0.3s both;
   }
   .portfolio-client.white {
     color: #fff;
@@ -7234,8 +7842,8 @@ html body .wrapper #preloader .spinner {
     line-height: 4.03074vw;
     font-weight: 500;
     vertical-align: bottom;
-    -webkit-animation: client 0.3s 0.9s both;
-            animation: client 0.3s 0.9s both;
+    -webkit-animation: client 0.3s 0s both;
+            animation: client 0.3s 0s both;
   }
   .portfolio-client .client-name-container {
     vertical-align: bottom;
@@ -7245,8 +7853,8 @@ html body .wrapper #preloader .spinner {
     overflow: hidden;
   }
   .portfolio-client .client-name-container span {
-    -webkit-animation: clientName 0.3s 1.2s both;
-            animation: clientName 0.3s 1.2s both;
+    -webkit-animation: clientName 0.3s 0.3s both;
+            animation: clientName 0.3s 0.3s both;
   }
   .portfolio-client.white {
     color: #fff;
@@ -7276,8 +7884,8 @@ html body .wrapper #preloader .spinner {
     line-height: 3.02436vw;
     font-weight: 500;
     vertical-align: bottom;
-    -webkit-animation: client 0.3s 0.9s both;
-            animation: client 0.3s 0.9s both;
+    -webkit-animation: client 0.3s 0s both;
+            animation: client 0.3s 0s both;
   }
   .portfolio-client .client-name-container {
     vertical-align: bottom;
@@ -7287,8 +7895,8 @@ html body .wrapper #preloader .spinner {
     overflow: hidden;
   }
   .portfolio-client .client-name-container span {
-    -webkit-animation: clientName 0.3s 1.2s both;
-            animation: clientName 0.3s 1.2s both;
+    -webkit-animation: clientName 0.3s 0.3s both;
+            animation: clientName 0.3s 0.3s both;
   }
   .portfolio-client.white {
     color: #fff;
@@ -7318,8 +7926,8 @@ html body .wrapper #preloader .spinner {
     line-height: 2.26771vw;
     font-weight: 500;
     vertical-align: bottom;
-    -webkit-animation: client 0.3s 0.9s both;
-            animation: client 0.3s 0.9s both;
+    -webkit-animation: client 0.3s 0s both;
+            animation: client 0.3s 0s both;
   }
   .portfolio-client .client-name-container {
     vertical-align: bottom;
@@ -7329,8 +7937,8 @@ html body .wrapper #preloader .spinner {
     overflow: hidden;
   }
   .portfolio-client .client-name-container span {
-    -webkit-animation: clientName 0.3s 1.2s both;
-            animation: clientName 0.3s 1.2s both;
+    -webkit-animation: clientName 0.3s 0.3s both;
+            animation: clientName 0.3s 0.3s both;
   }
   .portfolio-client.white {
     color: #fff;
@@ -7360,8 +7968,8 @@ html body .wrapper #preloader .spinner {
     line-height: 1.84413vw;
     font-weight: 500;
     vertical-align: bottom;
-    -webkit-animation: client 0.3s 0.9s both;
-            animation: client 0.3s 0.9s both;
+    -webkit-animation: client 0.3s 0s both;
+            animation: client 0.3s 0s both;
   }
   .portfolio-client .client-name-container {
     vertical-align: bottom;
@@ -7371,8 +7979,8 @@ html body .wrapper #preloader .spinner {
     overflow: hidden;
   }
   .portfolio-client .client-name-container span {
-    -webkit-animation: clientName 0.3s 1.2s both;
-            animation: clientName 0.3s 1.2s both;
+    -webkit-animation: clientName 0.3s 0.3s both;
+            animation: clientName 0.3s 0.3s both;
   }
   .portfolio-client.white {
     color: #fff;
@@ -7402,8 +8010,8 @@ html body .wrapper #preloader .spinner {
     line-height: 1.61374vw;
     font-weight: 500;
     vertical-align: bottom;
-    -webkit-animation: client 0.3s 0.9s both;
-            animation: client 0.3s 0.9s both;
+    -webkit-animation: client 0.3s 0s both;
+            animation: client 0.3s 0s both;
   }
   .portfolio-client .client-name-container {
     vertical-align: bottom;
@@ -7413,8 +8021,8 @@ html body .wrapper #preloader .spinner {
     overflow: hidden;
   }
   .portfolio-client .client-name-container span {
-    -webkit-animation: clientName 0.3s 1.2s both;
-            animation: clientName 0.3s 1.2s both;
+    -webkit-animation: clientName 0.3s 0.3s both;
+            animation: clientName 0.3s 0.3s both;
   }
   .portfolio-client.white {
     color: #fff;
@@ -7445,8 +8053,8 @@ html body .wrapper #preloader .spinner {
     text-align: right;
   }
   .portfolio-right-panel .date {
-    -webkit-animation: rightPanelDate 0.3s 0.9s both;
-            animation: rightPanelDate 0.3s 0.9s both;
+    -webkit-animation: rightPanelDate 0.3s 0s both;
+            animation: rightPanelDate 0.3s 0s both;
   }
   .portfolio-right-panel .date span:last-child {
     padding-left: 2.994vw;
@@ -7466,20 +8074,20 @@ html body .wrapper #preloader .spinner {
   .portfolio-right-panel .devices span:nth-child(1) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.2s;
-            animation-delay: 1.2s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .portfolio-right-panel .devices span:nth-child(2) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
   }
   .portfolio-right-panel .devices span:nth-child(3) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.8s;
-            animation-delay: 1.8s;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
   }
   .portfolio-right-panel.white {
     color: #fff;
@@ -7502,8 +8110,8 @@ html body .wrapper #preloader .spinner {
     text-align: right;
   }
   .portfolio-right-panel .date {
-    -webkit-animation: rightPanelDate 0.3s 0.9s both;
-            animation: rightPanelDate 0.3s 0.9s both;
+    -webkit-animation: rightPanelDate 0.3s 0s both;
+            animation: rightPanelDate 0.3s 0s both;
   }
   .portfolio-right-panel .date span:last-child {
     padding-left: 2.60048vw;
@@ -7523,20 +8131,20 @@ html body .wrapper #preloader .spinner {
   .portfolio-right-panel .devices span:nth-child(1) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.2s;
-            animation-delay: 1.2s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .portfolio-right-panel .devices span:nth-child(2) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
   }
   .portfolio-right-panel .devices span:nth-child(3) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.8s;
-            animation-delay: 1.8s;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
   }
   .portfolio-right-panel.white {
     color: #fff;
@@ -7556,8 +8164,8 @@ html body .wrapper #preloader .spinner {
     text-align: right;
   }
   .portfolio-right-panel .date {
-    -webkit-animation: rightPanelDate 0.3s 0.9s both;
-            animation: rightPanelDate 0.3s 0.9s both;
+    -webkit-animation: rightPanelDate 0.3s 0s both;
+            animation: rightPanelDate 0.3s 0s both;
   }
   .portfolio-right-panel .date span:last-child {
     padding-left: 1.9512vw;
@@ -7577,20 +8185,20 @@ html body .wrapper #preloader .spinner {
   .portfolio-right-panel .devices span:nth-child(1) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.2s;
-            animation-delay: 1.2s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .portfolio-right-panel .devices span:nth-child(2) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
   }
   .portfolio-right-panel .devices span:nth-child(3) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.8s;
-            animation-delay: 1.8s;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
   }
   .portfolio-right-panel.white {
     color: #fff;
@@ -7610,8 +8218,8 @@ html body .wrapper #preloader .spinner {
     text-align: right;
   }
   .portfolio-right-panel .date {
-    -webkit-animation: rightPanelDate 0.3s 0.9s both;
-            animation: rightPanelDate 0.3s 0.9s both;
+    -webkit-animation: rightPanelDate 0.3s 0s both;
+            animation: rightPanelDate 0.3s 0s both;
   }
   .portfolio-right-panel .date span:last-child {
     padding-left: 1.46304vw;
@@ -7631,20 +8239,20 @@ html body .wrapper #preloader .spinner {
   .portfolio-right-panel .devices span:nth-child(1) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.2s;
-            animation-delay: 1.2s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .portfolio-right-panel .devices span:nth-child(2) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
   }
   .portfolio-right-panel .devices span:nth-child(3) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.8s;
-            animation-delay: 1.8s;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
   }
   .portfolio-right-panel.white {
     color: #fff;
@@ -7664,8 +8272,8 @@ html body .wrapper #preloader .spinner {
     text-align: right;
   }
   .portfolio-right-panel .date {
-    -webkit-animation: rightPanelDate 0.3s 0.9s both;
-            animation: rightPanelDate 0.3s 0.9s both;
+    -webkit-animation: rightPanelDate 0.3s 0s both;
+            animation: rightPanelDate 0.3s 0s both;
   }
   .portfolio-right-panel .date span:last-child {
     padding-left: 1.18976vw;
@@ -7685,20 +8293,20 @@ html body .wrapper #preloader .spinner {
   .portfolio-right-panel .devices span:nth-child(1) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.2s;
-            animation-delay: 1.2s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .portfolio-right-panel .devices span:nth-child(2) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
   }
   .portfolio-right-panel .devices span:nth-child(3) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.8s;
-            animation-delay: 1.8s;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
   }
   .portfolio-right-panel.white {
     color: #fff;
@@ -7718,8 +8326,8 @@ html body .wrapper #preloader .spinner {
     text-align: right;
   }
   .portfolio-right-panel .date {
-    -webkit-animation: rightPanelDate 0.3s 0.9s both;
-            animation: rightPanelDate 0.3s 0.9s both;
+    -webkit-animation: rightPanelDate 0.3s 0s both;
+            animation: rightPanelDate 0.3s 0s both;
   }
   .portfolio-right-panel .date span:last-child {
     padding-left: 1.04112vw;
@@ -7739,20 +8347,20 @@ html body .wrapper #preloader .spinner {
   .portfolio-right-panel .devices span:nth-child(1) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.2s;
-            animation-delay: 1.2s;
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
   }
   .portfolio-right-panel .devices span:nth-child(2) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.5s;
-            animation-delay: 1.5s;
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
   }
   .portfolio-right-panel .devices span:nth-child(3) {
     -webkit-animation-duration: 0.3s;
             animation-duration: 0.3s;
-    -webkit-animation-delay: 1.8s;
-            animation-delay: 1.8s;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
   }
   .portfolio-right-panel.white {
     color: #fff;
@@ -7887,8 +8495,8 @@ html body .wrapper #preloader .spinner {
     margin: 34.431vw auto 0;
     overflow: hidden;
     box-shadow: 0 0 7.485vw 0.7485vw rgba(0, 0, 0, 0.4);
-    -webkit-animation: poster 1.8s 2.1s both;
-            animation: poster 1.8s 2.1s both;
+    -webkit-animation: poster 1.8s 1.2s both;
+            animation: poster 1.8s 1.2s both;
   }
   .vinograd .poster img {
     position: relative;
@@ -7896,8 +8504,8 @@ html body .wrapper #preloader .spinner {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -webkit-animation: right 0.9s 3.9s both;
-            animation: right 0.9s 3.9s both;
+    -webkit-animation: right 0.9s 3s both;
+            animation: right 0.9s 3s both;
   }
   .vinograd .poster .image-cover-layer {
     position: absolute;
@@ -7908,8 +8516,8 @@ html body .wrapper #preloader .spinner {
     background: rgba(0, 0, 0, 0.8);
     content: '';
     transition: opacity 0.3s;
-    -webkit-animation: right 0.9s 3.9s both;
-            animation: right 0.9s 3.9s both;
+    -webkit-animation: right 0.9s 3s both;
+            animation: right 0.9s 3s both;
   }
   .vinograd .poster:hover .image-cover-layer {
     opacity: 0;
@@ -7952,8 +8560,8 @@ html body .wrapper #preloader .spinner {
     margin: 29.90552vw auto 0;
     overflow: hidden;
     box-shadow: 0 0 6.5012vw 0.65012vw rgba(0, 0, 0, 0.4);
-    -webkit-animation: poster 1.8s 2.1s both;
-            animation: poster 1.8s 2.1s both;
+    -webkit-animation: poster 1.8s 1.2s both;
+            animation: poster 1.8s 1.2s both;
   }
   .vinograd .poster img {
     position: relative;
@@ -7961,8 +8569,8 @@ html body .wrapper #preloader .spinner {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -webkit-animation: right 0.9s 3.9s both;
-            animation: right 0.9s 3.9s both;
+    -webkit-animation: right 0.9s 3s both;
+            animation: right 0.9s 3s both;
   }
   .vinograd .poster .image-cover-layer {
     position: absolute;
@@ -7973,8 +8581,8 @@ html body .wrapper #preloader .spinner {
     background: rgba(0, 0, 0, 0.8);
     content: '';
     transition: opacity 0.3s;
-    -webkit-animation: right 0.9s 3.9s both;
-            animation: right 0.9s 3.9s both;
+    -webkit-animation: right 0.9s 3s both;
+            animation: right 0.9s 3s both;
   }
   .vinograd .poster:hover .image-cover-layer {
     opacity: 0;
@@ -8012,8 +8620,8 @@ html body .wrapper #preloader .spinner {
     margin: 22.4388vw auto 0;
     overflow: hidden;
     box-shadow: 0 0 4.878vw 0.4878vw rgba(0, 0, 0, 0.4);
-    -webkit-animation: poster 1.8s 2.1s both;
-            animation: poster 1.8s 2.1s both;
+    -webkit-animation: poster 1.8s 1.2s both;
+            animation: poster 1.8s 1.2s both;
   }
   .vinograd .poster img {
     position: relative;
@@ -8021,8 +8629,8 @@ html body .wrapper #preloader .spinner {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -webkit-animation: right 0.9s 3.9s both;
-            animation: right 0.9s 3.9s both;
+    -webkit-animation: right 0.9s 3s both;
+            animation: right 0.9s 3s both;
   }
   .vinograd .poster .image-cover-layer {
     position: absolute;
@@ -8033,8 +8641,8 @@ html body .wrapper #preloader .spinner {
     background: rgba(0, 0, 0, 0.8);
     content: '';
     transition: opacity 0.3s;
-    -webkit-animation: right 0.9s 3.9s both;
-            animation: right 0.9s 3.9s both;
+    -webkit-animation: right 0.9s 3s both;
+            animation: right 0.9s 3s both;
   }
   .vinograd .poster:hover .image-cover-layer {
     opacity: 0;
@@ -8072,8 +8680,8 @@ html body .wrapper #preloader .spinner {
     margin: 16.82496vw auto 0;
     overflow: hidden;
     box-shadow: 0 0 3.6576vw 0.36576vw rgba(0, 0, 0, 0.4);
-    -webkit-animation: poster 1.8s 2.1s both;
-            animation: poster 1.8s 2.1s both;
+    -webkit-animation: poster 1.8s 1.2s both;
+            animation: poster 1.8s 1.2s both;
   }
   .vinograd .poster img {
     position: relative;
@@ -8081,8 +8689,8 @@ html body .wrapper #preloader .spinner {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -webkit-animation: right 0.9s 3.9s both;
-            animation: right 0.9s 3.9s both;
+    -webkit-animation: right 0.9s 3s both;
+            animation: right 0.9s 3s both;
   }
   .vinograd .poster .image-cover-layer {
     position: absolute;
@@ -8093,8 +8701,8 @@ html body .wrapper #preloader .spinner {
     background: rgba(0, 0, 0, 0.8);
     content: '';
     transition: opacity 0.3s;
-    -webkit-animation: right 0.9s 3.9s both;
-            animation: right 0.9s 3.9s both;
+    -webkit-animation: right 0.9s 3s both;
+            animation: right 0.9s 3s both;
   }
   .vinograd .poster:hover .image-cover-layer {
     opacity: 0;
@@ -8132,8 +8740,8 @@ html body .wrapper #preloader .spinner {
     margin: 13.68224vw auto 0;
     overflow: hidden;
     box-shadow: 0 0 2.9744vw 0.29744vw rgba(0, 0, 0, 0.4);
-    -webkit-animation: poster 1.8s 2.1s both;
-            animation: poster 1.8s 2.1s both;
+    -webkit-animation: poster 1.8s 1.2s both;
+            animation: poster 1.8s 1.2s both;
   }
   .vinograd .poster img {
     position: relative;
@@ -8141,8 +8749,8 @@ html body .wrapper #preloader .spinner {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -webkit-animation: right 0.9s 3.9s both;
-            animation: right 0.9s 3.9s both;
+    -webkit-animation: right 0.9s 3s both;
+            animation: right 0.9s 3s both;
   }
   .vinograd .poster .image-cover-layer {
     position: absolute;
@@ -8153,8 +8761,8 @@ html body .wrapper #preloader .spinner {
     background: rgba(0, 0, 0, 0.8);
     content: '';
     transition: opacity 0.3s;
-    -webkit-animation: right 0.9s 3.9s both;
-            animation: right 0.9s 3.9s both;
+    -webkit-animation: right 0.9s 3s both;
+            animation: right 0.9s 3s both;
   }
   .vinograd .poster:hover .image-cover-layer {
     opacity: 0;
@@ -8192,8 +8800,8 @@ html body .wrapper #preloader .spinner {
     margin: 11.97288vw auto 0;
     overflow: hidden;
     box-shadow: 0 0 2.6028vw 0.26028vw rgba(0, 0, 0, 0.4);
-    -webkit-animation: poster 1.8s 2.1s both;
-            animation: poster 1.8s 2.1s both;
+    -webkit-animation: poster 1.8s 1.2s both;
+            animation: poster 1.8s 1.2s both;
   }
   .vinograd .poster img {
     position: relative;
@@ -8201,8 +8809,8 @@ html body .wrapper #preloader .spinner {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    -webkit-animation: right 0.9s 3.9s both;
-            animation: right 0.9s 3.9s both;
+    -webkit-animation: right 0.9s 3s both;
+            animation: right 0.9s 3s both;
   }
   .vinograd .poster .image-cover-layer {
     position: absolute;
@@ -8213,8 +8821,8 @@ html body .wrapper #preloader .spinner {
     background: rgba(0, 0, 0, 0.8);
     content: '';
     transition: opacity 0.3s;
-    -webkit-animation: right 0.9s 3.9s both;
-            animation: right 0.9s 3.9s both;
+    -webkit-animation: right 0.9s 3s both;
+            animation: right 0.9s 3s both;
   }
   .vinograd .poster:hover .image-cover-layer {
     opacity: 0;

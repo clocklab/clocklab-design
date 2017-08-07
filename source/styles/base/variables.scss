@@ -34,8 +34,8 @@ $timeTickHalf: $timeTick / 2;
 
 
 // VARIABLES FOR PORTFOLIO CLIENT
-//$portfolioClientDelayTime: 0s;
-$portfolioClientDelayTime: $time * 3;
+$portfolioClientDelayTime: 0s;
+//$portfolioClientDelayTime: $time * 3;
 $portfolioClientAnimationTime: $time;
 
 $portfolioClientNameDelayTime: $portfolioClientDelayTime + $portfolioClientAnimationTime;
@@ -59,6 +59,18 @@ $portfolioRightPanelDevicesMobileAnimationTime: $time;
 
 
 // VARIABLES FOR PORTFOLIO BLOCK AUDI Q7
+$portfolioAudiLeftBlockLeftLineDelayTime: $portfolioClientDelayTime;
+$portfolioAudiLeftBlockLeftLineAnimationTime: $time * 9;
+
+$portfolioAudiLeftBlockRightLineDelayTime: $portfolioAudiLeftBlockLeftLineDelayTime + $portfolioAudiLeftBlockLeftLineAnimationTime / 10;
+$portfolioAudiLeftBlockRightLineAnimationTime: $time * 9;
+
+$portfolioAudiRightBlockLeftLineDelayTime: $portfolioAudiLeftBlockLeftLineDelayTime + $time;
+$portfolioAudiRightBlockLeftLineAnimationTime: $time * 9 - $time;
+
+$portfolioAudiRightBlockRightLineDelayTime: $portfolioAudiRightBlockLeftLineDelayTime + $portfolioAudiRightBlockLeftLineAnimationTime / 10;
+$portfolioAudiRightBlockRightLineAnimationTime: $time * 9;
+
 $portfolioAudiCenterBlockDelayTime: $portfolioRightPanelDevicesMobileDelayTime + $portfolioRightPanelDevicesMobileAnimationTime;
 $portfolioAudiCenterBlockAnimationTime: $time * 3;
 

@@ -102,16 +102,7 @@
 
 
 // PORTFOLIO Q7 ANIMATION
-@keyframes widthIncreaseDesktop {
-    from {
-        width: 0;
-    }
-    to {
-        width: 50%;
-    }
-}
-
-@keyframes widthIncreaseMobile {
+@keyframes widthIncrease {
     from {
         width: 0;
     }
@@ -131,6 +122,17 @@
     }
 }
 
+@keyframes heightIncreaseTablet {
+    from {
+        height: 0vh;
+        transform: translateY(56vh);
+    }
+    to {
+        height: 72vh;
+        transform: translateY(20vh);
+    }
+}
+
 @keyframes heightIncreaseMobile {
     from {
         height: 0vh;
@@ -139,6 +141,42 @@
     to {
         height: 60vh;
         transform: translateY(30vh);
+    }
+}
+
+@keyframes rightDown {
+    from {
+        transform: rotate(45deg) translate3d(-100%, 0, 0);
+    }
+    to {
+        transform: rotate(45deg) translate3d(100%, 0, 0);
+    }
+}
+
+@keyframes leftDown {
+    from {
+        transform: rotate(-45deg) translate3d(100%, 0, 0);
+    }
+    to {
+        transform: rotate(-45deg) translate3d(-20%, 0, 0);
+    }
+}
+
+@keyframes rightDownTablet {
+    from {
+        transform: rotate(45deg) translate3d(-100%, 0, 0);
+    }
+    to {
+        transform: rotate(45deg) translate3d(100%, 0, 0);
+    }
+}
+
+@keyframes leftDownTablet {
+    from {
+        transform: rotate(-45deg) translate3d(100%, 0, 0);
+    }
+    to {
+        transform: rotate(-45deg) translate3d(-10%, 0, 0);
     }
 }
 // PORTFOLIO Q7 ANIMATION ENDS

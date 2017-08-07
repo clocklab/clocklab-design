@@ -1,11 +1,9 @@
 & {  
 
-    .q7 {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-    }
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 
     .car-covering-layer {
         overflow: hidden;
@@ -19,23 +17,41 @@
             min-height: 568px;
         }
 
-        .image-cover-layer {
-            position: relative;
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-            background: $white;
+        &--left,
+        &--right {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            height: 100vh;
         }
 
         &--left {
-            position: absolute;
-            float: left;
-            height: 100vh;
-            animation: widthIncreaseMobile $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTimeMobile both;
+            left: 0;
+            width: 100%;
 
-            .image-cover-layer {
-                opacity: .9;
+            .image-container {
+                position: relative;
+                height: 100vh;
+                animation: widthIncrease $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTime both;
+                overflow: hidden;
             }
+
+            &:after {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, .9);
+                content: '';
+            }
+        }
+
+        &--right {
+            right: 0;
+            width: 50%;
         }
 
         // Animation for center block
@@ -76,10 +92,6 @@
                 left: -53.5vw;
             }
 
-            .image-cover-layer {
-                opacity: .6;
-            }
-
             &:before {
                 display: block;
                 position: absolute;
@@ -93,6 +105,18 @@
                 content: '';
                 transform: rotate(-45deg);
                 animation: heightReduce $portfolioAudiCenterBlockLineAnimationTime $portfolioAudiCenterBlockLineDelayTimeMobile both;
+            }
+
+            &:after {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, .6);
+                content: '';
             }
         }
     }
