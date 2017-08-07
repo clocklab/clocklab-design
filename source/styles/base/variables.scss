@@ -109,3 +109,18 @@ $portfolioVinogradPosterImageAnimationTime: $time * 3;
     $portfolioVinogradPosterDelayTimeMobile: $portfolioVinogradRightBlockDelayTime + $portfolioVinogradRightBlockAnimationTime;
     $portfolioVinogradPosterImageDelayTimeMobile: $portfolioVinogradPosterDelayTimeMobile + $portfolioVinogradPosterAnimationTime;
 // VARIABLES FOR PORTFOLIO BLOCK VINO GRAD END
+
+
+// VARIABLES FOR PORTFOLIO BLOCK EURO CLUB
+$portfolioEuroclubBlueLineDelayTime: 0s;
+$portfolioEuroclubBlueLineAnimationTime: $time * 3;
+
+$portfolioEuroclubGrayBlockDelayTime: $portfolioEuroclubBlueLineDelayTime +  $portfolioEuroclubBlueLineAnimationTime;
+$portfolioEuroclubGrayBlockAnimationTime: $time * 3;
+
+$portfolioEuroclubImageTextDelayTime: $portfolioEuroclubGrayBlockDelayTime + $portfolioEuroclubGrayBlockAnimationTime;
+$portfolioEuroclubImageTextAnimationTime: $time * 3;
+
+$portfolioEuroclubLetterDelayTime: $portfolioEuroclubImageTextDelayTime + $portfolioEuroclubImageTextAnimationTime;
+$portfolioEuroclubLetterAnimationTime: $time * 3;
+// VARIABLES FOR PORTFOLIO BLOCK EURO CLUB END
