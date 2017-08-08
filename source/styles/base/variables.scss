@@ -115,10 +115,16 @@ $portfolioVinogradPosterImageAnimationTime: $time * 3;
 $portfolioEuroclubBlueLineDelayTime: 0s;
 $portfolioEuroclubBlueLineAnimationTime: $time * 3;
 
-$portfolioEuroclubGrayBlockDelayTime: $portfolioEuroclubBlueLineDelayTime +  $portfolioEuroclubBlueLineAnimationTime;
-$portfolioEuroclubGrayBlockAnimationTime: $time * 3;
+$portfolioEuroclubGrayBlockDelayTime: $portfolioEuroclubBlueLineDelayTime + $portfolioEuroclubBlueLineAnimationTime;
+$portfolioEuroclubGrayBlockAnimationTime: $time * 6;
 
-$portfolioEuroclubImageTextDelayTime: $portfolioEuroclubGrayBlockDelayTime + $portfolioEuroclubGrayBlockAnimationTime;
+$portfolioEuroclubImageDelayTime: $portfolioEuroclubBlueLineDelayTime + $portfolioEuroclubBlueLineAnimationTime;
+$portfolioEuroclubImageAnimationTime: $portfolioEuroclubGrayBlockAnimationTime / 2;
+
+$portfolioEuroclubImageShadowDelayTime: $portfolioEuroclubBlueLineDelayTime + $portfolioEuroclubGrayBlockAnimationTime;
+$portfolioEuroclubImageShadowAnimationTime: $time * 3;
+
+$portfolioEuroclubImageTextDelayTime: $portfolioEuroclubImageShadowDelayTime + $portfolioEuroclubImageShadowAnimationTime;
 $portfolioEuroclubImageTextAnimationTime: $time * 3;
 
 $portfolioEuroclubLetterDelayTime: $portfolioEuroclubImageTextDelayTime + $portfolioEuroclubImageTextAnimationTime;
