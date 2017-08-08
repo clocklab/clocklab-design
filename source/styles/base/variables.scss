@@ -17,6 +17,7 @@ $desktopMega:     '(min-width: 1921px)';
 // COLORS VARIABLES
 $white: #fff;
 $black: #000;
+$lightBlack: #1c1c1c;
 $gray: #999;
 $darkGray: #444;
 $blue: #0000fe;
@@ -105,6 +106,9 @@ $portfolioVinogradPosterAnimationTime: $time * 6;
 $portfolioVinogradPosterImageDelayTime: $portfolioVinogradPosterDelayTime + $portfolioVinogradPosterAnimationTime;
 $portfolioVinogradPosterImageAnimationTime: $time * 3;
 
+$portfolioVinogradPosterTextDelayTime: $portfolioVinogradPosterImageDelayTime + $portfolioVinogradPosterImageAnimationTime;
+$portfolioVinogradPosterTextAnimationTime: $time * 3;
+
     // MOBILE
     $portfolioVinogradPosterDelayTimeMobile: $portfolioVinogradRightBlockDelayTime + $portfolioVinogradRightBlockAnimationTime;
     $portfolioVinogradPosterImageDelayTimeMobile: $portfolioVinogradPosterDelayTimeMobile + $portfolioVinogradPosterAnimationTime;
@@ -130,3 +134,33 @@ $portfolioEuroclubImageTextAnimationTime: $time * 3;
 $portfolioEuroclubLetterDelayTime: $portfolioEuroclubImageTextDelayTime + $portfolioEuroclubImageTextAnimationTime;
 $portfolioEuroclubLetterAnimationTime: $time * 3;
 // VARIABLES FOR PORTFOLIO BLOCK EURO CLUB END
+
+
+// VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL
+$portfolioAltaLeftBlockDelayTime: 0s;
+$portfolioAltaLeftBlockAnimationTime: $time * 3;
+
+$portfolioAltaRightBlockDelayTime: $portfolioAltaLeftBlockDelayTime;
+$portfolioAltaRightBlockAnimationTime: $portfolioAltaLeftBlockAnimationTime;
+
+$portfolioAltaGrayBlockDelayTime: $portfolioAltaRightBlockDelayTime + $portfolioAltaRightBlockAnimationTime;
+$portfolioAltaGrayBlockAnimationTime: $time * 3;
+
+$portfolioAltaImageDelayTime: $portfolioAltaGrayBlockDelayTime + $portfolioAltaGrayBlockAnimationTime;
+$portfolioAltaImageAnimationTime: $time * 3;
+
+$portfolioAltaPosterTextDelayTime: $portfolioAltaImageDelayTime + $portfolioAltaImageAnimationTime;
+$portfolioAltaPosterTextAnimationTime: $time * 3;
+
+$portfolioAltaPosterParagraphDelayTime: $portfolioAltaPosterTextDelayTime + $portfolioAltaPosterTextAnimationTime;
+$portfolioAltaPosterParagraphAnimationTime: $time * 3;
+
+$portfolioAltaControlsRightBlockDelayTime: $portfolioAltaPosterParagraphDelayTime + $portfolioAltaPosterParagraphAnimationTime;
+$portfolioAltaControlsRightBlockAimationTime: $time * 3;
+
+$portfolioAltaControlsLeftBlockDelayTime: $portfolioAltaControlsRightBlockDelayTime;
+$portfolioAltaControlsLeftBlockAimationTime: $portfolioAltaControlsRightBlockAimationTime;
+
+$portfolioAltaControlsIndicatorsDelayTime: $portfolioAltaControlsRightBlockDelayTime + $portfolioAltaControlsRightBlockAimationTime;
+$portfolioAltaControlsIndicatorsAimationTime: $time * 3;
+// VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL ENDS 

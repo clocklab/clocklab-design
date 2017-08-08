@@ -7,30 +7,40 @@
     .poster {
         position: relative;
         z-index: 2;
-        height: 37vh;
-        max-height: 340px;
-        overflow: hidden;
-        box-shadow: 0 0 px(100) px(10) rgba(0, 0, 0, .4);
-        animation: posterMobile $portfolioVinogradPosterAnimationTime $portfolioVinogradPosterDelayTimeMobile both;
 
-        img {
+        .image-container {
             position: relative;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
+            z-index: 2;
+            height: 37vh;
+            max-height: 340px;
+            box-shadow: 0 0 px(100) px(10) rgba(0, 0, 0, .4);
+            overflow: hidden;
+            animation: poster $portfolioVinogradPosterAnimationTime $portfolioVinogradPosterDelayTimeMobile both;
+
+            img {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
+            }
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .2);
+                content: '';
+                transition: opacity $time;
+                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
+            }
         }
 
-        .image-cover-layer {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, .2);
-            content: '';
-            transition: opacity $time;
-            animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
+        span {
+            display: none;
         }
     }
 

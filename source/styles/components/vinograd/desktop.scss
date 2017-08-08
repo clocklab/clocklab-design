@@ -3,40 +3,74 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+
+    @keyframes posterTextApear {
+        from {
+            opacity: 0;
+            transform: rotate(90deg) translateY(100%);
+        }
+        to {
+            opacity: 1;
+            transform: rotate(90deg) translateY(0);
+        }
+    }
 
     .poster {
         position: relative;
         z-index: 2;
         margin: px(460) auto 0;
-        overflow: hidden;
-        box-shadow: 0 0 px(100) px(10) rgba(0, 0, 0, .4);
-        animation: poster $portfolioVinogradPosterAnimationTime $portfolioVinogradPosterDelayTime both;
+        width: 53vw;
 
-        img {
+        .image-container {
             position: relative;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
-        }
+            z-index: 2;
+            box-shadow: 0 0 px(100) px(10) rgba(0, 0, 0, .4);
+            overflow: hidden;
+            animation: poster $portfolioVinogradPosterAnimationTime $portfolioVinogradPosterDelayTime both;
 
-        .image-cover-layer {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, .8);
-            content: '';
-            transition: opacity $time;
-            animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
-        }
-
-        &:hover {
-
-            .image-cover-layer {
-                opacity: 0;
+            img {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
             }
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .8);
+                content: '';
+                transition: opacity $time;
+                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
+            }
+
+            &:hover {
+
+                &:before {
+                    opacity: 0;
+                }
+            }
+        }
+
+        span {
+            position: absolute;
+            bottom: 100%;
+            left: 100%;
+            z-index: 1;
+            padding: px(50) px(20);
+            color: $white;
+            font-size: px(28);
+            letter-spacing: 7px;
+            transform-origin: 0 100%;
+            //transform: rotate(90deg);
+            animation: posterTextApear $portfolioVinogradPosterTextAnimationTime $portfolioVinogradPosterTextDelayTime both;
         }
     }
 

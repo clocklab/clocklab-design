@@ -570,104 +570,96 @@ html body .wrapper #preloader .spinner {
   from {
     width: 0;
     height: 0;
-    -webkit-transform: translate3d(-26.5vw, 54vh, 0);
-            transform: translate3d(-26.5vw, 54vh, 0);
+    -webkit-transform: translateY(54vh);
+            transform: translateY(54vh);
   }
   50% {
     width: 0;
     height: 54vh;
-    -webkit-transform: translate3d(-26.5vw, 0, 0);
-            transform: translate3d(-26.5vw, 0, 0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
-    width: 53vw;
+    width: 100%;
     height: 54vh;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @keyframes poster {
   from {
     width: 0;
     height: 0;
-    -webkit-transform: translate3d(-26.5vw, 54vh, 0);
-            transform: translate3d(-26.5vw, 54vh, 0);
+    -webkit-transform: translateY(54vh);
+            transform: translateY(54vh);
   }
   50% {
     width: 0;
     height: 54vh;
-    -webkit-transform: translate3d(-26.5vw, 0, 0);
-            transform: translate3d(-26.5vw, 0, 0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
-    width: 53vw;
+    width: 100%;
     height: 54vh;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @-webkit-keyframes posterTablet {
   from {
     width: 0;
     height: 0;
-    -webkit-transform: translate3d(-46vw, 36vh, 0);
-            transform: translate3d(-46vw, 36vh, 0);
+    -webkit-transform: translateY(36vh);
+            transform: translateY(36vh);
   }
   50% {
     width: 0;
     height: 36vh;
-    -webkit-transform: translate3d(-46vw, 0, 0);
-            transform: translate3d(-46vw, 0, 0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
-    width: 92vw;
+    width: 100%;
     height: 36vh;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @keyframes posterTablet {
   from {
     width: 0;
     height: 0;
-    -webkit-transform: translate3d(-46vw, 36vh, 0);
-            transform: translate3d(-46vw, 36vh, 0);
+    -webkit-transform: translateY(36vh);
+            transform: translateY(36vh);
   }
   50% {
     width: 0;
     height: 36vh;
-    -webkit-transform: translate3d(-46vw, 0, 0);
-            transform: translate3d(-46vw, 0, 0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
-    width: 92vw;
+    width: 100%;
     height: 36vh;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @-webkit-keyframes posterMobile {
   from {
     width: 0;
-    -webkit-transform: translateX(-50vw);
-            transform: translateX(-50vw);
   }
   to {
     width: 100vw;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
   }
 }
 @keyframes posterMobile {
   from {
     width: 0;
-    -webkit-transform: translateX(-50vw);
-            transform: translateX(-50vw);
   }
   to {
     width: 100vw;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
   }
 }
 @media (max-width: 414px) {
@@ -8376,14 +8368,18 @@ html body .wrapper #preloader .spinner {
   .vinograd .poster {
     position: relative;
     z-index: 2;
+  }
+  .vinograd .poster .image-container {
+    position: relative;
+    z-index: 2;
     height: 37vh;
     max-height: 340px;
-    overflow: hidden;
     box-shadow: 0 0 15.625vw 1.5625vw rgba(0, 0, 0, 0.4);
-    -webkit-animation: posterMobile 1.8s 0.9s both;
-            animation: posterMobile 1.8s 0.9s both;
+    overflow: hidden;
+    -webkit-animation: poster 1.8s 0.9s both;
+            animation: poster 1.8s 0.9s both;
   }
-  .vinograd .poster img {
+  .vinograd .poster .image-container img {
     position: relative;
     width: 100%;
     height: 100%;
@@ -8392,10 +8388,11 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 2.7s both;
             animation: right 0.9s 2.7s both;
   }
-  .vinograd .poster .image-cover-layer {
+  .vinograd .poster .image-container:before {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
@@ -8403,6 +8400,9 @@ html body .wrapper #preloader .spinner {
     transition: opacity 0.3s;
     -webkit-animation: right 0.9s 2.7s both;
             animation: right 0.9s 2.7s both;
+  }
+  .vinograd .poster span {
+    display: none;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -8434,14 +8434,18 @@ html body .wrapper #preloader .spinner {
   .vinograd .poster {
     position: relative;
     z-index: 2;
+  }
+  .vinograd .poster .image-container {
+    position: relative;
+    z-index: 2;
     height: 37vh;
     max-height: 340px;
-    overflow: hidden;
     box-shadow: 0 0 12.048vw 1.2048vw rgba(0, 0, 0, 0.4);
-    -webkit-animation: posterMobile 1.8s 0.9s both;
-            animation: posterMobile 1.8s 0.9s both;
+    overflow: hidden;
+    -webkit-animation: poster 1.8s 0.9s both;
+            animation: poster 1.8s 0.9s both;
   }
-  .vinograd .poster img {
+  .vinograd .poster .image-container img {
     position: relative;
     width: 100%;
     height: 100%;
@@ -8450,10 +8454,11 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 2.7s both;
             animation: right 0.9s 2.7s both;
   }
-  .vinograd .poster .image-cover-layer {
+  .vinograd .poster .image-container:before {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
@@ -8461,6 +8466,9 @@ html body .wrapper #preloader .spinner {
     transition: opacity 0.3s;
     -webkit-animation: right 0.9s 2.7s both;
             animation: right 0.9s 2.7s both;
+  }
+  .vinograd .poster span {
+    display: none;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -8488,18 +8496,49 @@ html body .wrapper #preloader .spinner {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  @-webkit-keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(90deg) translateY(100%);
+              transform: rotate(90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(90deg) translateY(0);
+              transform: rotate(90deg) translateY(0);
+    }
+  }
+  @keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(90deg) translateY(100%);
+              transform: rotate(90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(90deg) translateY(0);
+              transform: rotate(90deg) translateY(0);
+    }
   }
   .vinograd .poster {
     position: relative;
     z-index: 2;
     margin: 34.431vw auto 0;
-    overflow: hidden;
+    width: 53vw;
+  }
+  .vinograd .poster .image-container {
+    position: relative;
+    z-index: 2;
     box-shadow: 0 0 7.485vw 0.7485vw rgba(0, 0, 0, 0.4);
+    overflow: hidden;
     -webkit-animation: poster 1.8s 1.2s both;
             animation: poster 1.8s 1.2s both;
   }
-  .vinograd .poster img {
+  .vinograd .poster .image-container img {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -8507,10 +8546,11 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
   }
-  .vinograd .poster .image-cover-layer {
+  .vinograd .poster .image-container:before {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
@@ -8519,8 +8559,22 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
   }
-  .vinograd .poster:hover .image-cover-layer {
+  .vinograd .poster .image-container:hover:before {
     opacity: 0;
+  }
+  .vinograd .poster span {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    z-index: 1;
+    padding: 3.7425vw 1.497vw;
+    color: #fff;
+    font-size: 2.0958vw;
+    letter-spacing: 7px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-animation: posterTextApear 0.9s 3.9s both;
+            animation: posterTextApear 0.9s 3.9s both;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -8543,9 +8597,15 @@ html body .wrapper #preloader .spinner {
             animation: up 0.9s 0s both;
   }
   .vinograd .poster {
-    margin-top: 70.359vw;
+    margin-top: 65.868vw;
+    width: 93vw;
+  }
+  .vinograd .poster .image-container {
     -webkit-animation-name: posterTablet;
             animation-name: posterTablet;
+  }
+  .vinograd .poster span {
+    display: none;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -8553,18 +8613,49 @@ html body .wrapper #preloader .spinner {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  @-webkit-keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(90deg) translateY(100%);
+              transform: rotate(90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(90deg) translateY(0);
+              transform: rotate(90deg) translateY(0);
+    }
+  }
+  @keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(90deg) translateY(100%);
+              transform: rotate(90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(90deg) translateY(0);
+              transform: rotate(90deg) translateY(0);
+    }
   }
   .vinograd .poster {
     position: relative;
     z-index: 2;
     margin: 29.90552vw auto 0;
-    overflow: hidden;
+    width: 53vw;
+  }
+  .vinograd .poster .image-container {
+    position: relative;
+    z-index: 2;
     box-shadow: 0 0 6.5012vw 0.65012vw rgba(0, 0, 0, 0.4);
+    overflow: hidden;
     -webkit-animation: poster 1.8s 1.2s both;
             animation: poster 1.8s 1.2s both;
   }
-  .vinograd .poster img {
+  .vinograd .poster .image-container img {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -8572,10 +8663,11 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
   }
-  .vinograd .poster .image-cover-layer {
+  .vinograd .poster .image-container:before {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
@@ -8584,8 +8676,22 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
   }
-  .vinograd .poster:hover .image-cover-layer {
+  .vinograd .poster .image-container:hover:before {
     opacity: 0;
+  }
+  .vinograd .poster span {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    z-index: 1;
+    padding: 3.2506vw 1.30024vw;
+    color: #fff;
+    font-size: 1.82034vw;
+    letter-spacing: 7px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-animation: posterTextApear 0.9s 3.9s both;
+            animation: posterTextApear 0.9s 3.9s both;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -8613,18 +8719,49 @@ html body .wrapper #preloader .spinner {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  @-webkit-keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(90deg) translateY(100%);
+              transform: rotate(90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(90deg) translateY(0);
+              transform: rotate(90deg) translateY(0);
+    }
+  }
+  @keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(90deg) translateY(100%);
+              transform: rotate(90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(90deg) translateY(0);
+              transform: rotate(90deg) translateY(0);
+    }
   }
   .vinograd .poster {
     position: relative;
     z-index: 2;
     margin: 22.4388vw auto 0;
-    overflow: hidden;
+    width: 53vw;
+  }
+  .vinograd .poster .image-container {
+    position: relative;
+    z-index: 2;
     box-shadow: 0 0 4.878vw 0.4878vw rgba(0, 0, 0, 0.4);
+    overflow: hidden;
     -webkit-animation: poster 1.8s 1.2s both;
             animation: poster 1.8s 1.2s both;
   }
-  .vinograd .poster img {
+  .vinograd .poster .image-container img {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -8632,10 +8769,11 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
   }
-  .vinograd .poster .image-cover-layer {
+  .vinograd .poster .image-container:before {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
@@ -8644,8 +8782,22 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
   }
-  .vinograd .poster:hover .image-cover-layer {
+  .vinograd .poster .image-container:hover:before {
     opacity: 0;
+  }
+  .vinograd .poster span {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    z-index: 1;
+    padding: 2.439vw 0.9756vw;
+    color: #fff;
+    font-size: 1.36584vw;
+    letter-spacing: 7px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-animation: posterTextApear 0.9s 3.9s both;
+            animation: posterTextApear 0.9s 3.9s both;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -8673,18 +8825,49 @@ html body .wrapper #preloader .spinner {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  @-webkit-keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(90deg) translateY(100%);
+              transform: rotate(90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(90deg) translateY(0);
+              transform: rotate(90deg) translateY(0);
+    }
+  }
+  @keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(90deg) translateY(100%);
+              transform: rotate(90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(90deg) translateY(0);
+              transform: rotate(90deg) translateY(0);
+    }
   }
   .vinograd .poster {
     position: relative;
     z-index: 2;
     margin: 16.82496vw auto 0;
-    overflow: hidden;
+    width: 53vw;
+  }
+  .vinograd .poster .image-container {
+    position: relative;
+    z-index: 2;
     box-shadow: 0 0 3.6576vw 0.36576vw rgba(0, 0, 0, 0.4);
+    overflow: hidden;
     -webkit-animation: poster 1.8s 1.2s both;
             animation: poster 1.8s 1.2s both;
   }
-  .vinograd .poster img {
+  .vinograd .poster .image-container img {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -8692,10 +8875,11 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
   }
-  .vinograd .poster .image-cover-layer {
+  .vinograd .poster .image-container:before {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
@@ -8704,8 +8888,22 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
   }
-  .vinograd .poster:hover .image-cover-layer {
+  .vinograd .poster .image-container:hover:before {
     opacity: 0;
+  }
+  .vinograd .poster span {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    z-index: 1;
+    padding: 1.8288vw 0.73152vw;
+    color: #fff;
+    font-size: 1.02413vw;
+    letter-spacing: 7px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-animation: posterTextApear 0.9s 3.9s both;
+            animation: posterTextApear 0.9s 3.9s both;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -8733,18 +8931,49 @@ html body .wrapper #preloader .spinner {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  @-webkit-keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(90deg) translateY(100%);
+              transform: rotate(90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(90deg) translateY(0);
+              transform: rotate(90deg) translateY(0);
+    }
+  }
+  @keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(90deg) translateY(100%);
+              transform: rotate(90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(90deg) translateY(0);
+              transform: rotate(90deg) translateY(0);
+    }
   }
   .vinograd .poster {
     position: relative;
     z-index: 2;
     margin: 13.68224vw auto 0;
-    overflow: hidden;
+    width: 53vw;
+  }
+  .vinograd .poster .image-container {
+    position: relative;
+    z-index: 2;
     box-shadow: 0 0 2.9744vw 0.29744vw rgba(0, 0, 0, 0.4);
+    overflow: hidden;
     -webkit-animation: poster 1.8s 1.2s both;
             animation: poster 1.8s 1.2s both;
   }
-  .vinograd .poster img {
+  .vinograd .poster .image-container img {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -8752,10 +8981,11 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
   }
-  .vinograd .poster .image-cover-layer {
+  .vinograd .poster .image-container:before {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
@@ -8764,8 +8994,22 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
   }
-  .vinograd .poster:hover .image-cover-layer {
+  .vinograd .poster .image-container:hover:before {
     opacity: 0;
+  }
+  .vinograd .poster span {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    z-index: 1;
+    padding: 1.4872vw 0.59488vw;
+    color: #fff;
+    font-size: 0.83283vw;
+    letter-spacing: 7px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-animation: posterTextApear 0.9s 3.9s both;
+            animation: posterTextApear 0.9s 3.9s both;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -8793,18 +9037,49 @@ html body .wrapper #preloader .spinner {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  @-webkit-keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(90deg) translateY(100%);
+              transform: rotate(90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(90deg) translateY(0);
+              transform: rotate(90deg) translateY(0);
+    }
+  }
+  @keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(90deg) translateY(100%);
+              transform: rotate(90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(90deg) translateY(0);
+              transform: rotate(90deg) translateY(0);
+    }
   }
   .vinograd .poster {
     position: relative;
     z-index: 2;
     margin: 11.97288vw auto 0;
-    overflow: hidden;
+    width: 53vw;
+  }
+  .vinograd .poster .image-container {
+    position: relative;
+    z-index: 2;
     box-shadow: 0 0 2.6028vw 0.26028vw rgba(0, 0, 0, 0.4);
+    overflow: hidden;
     -webkit-animation: poster 1.8s 1.2s both;
             animation: poster 1.8s 1.2s both;
   }
-  .vinograd .poster img {
+  .vinograd .poster .image-container img {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -8812,10 +9087,11 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
   }
-  .vinograd .poster .image-cover-layer {
+  .vinograd .poster .image-container:before {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
@@ -8824,8 +9100,22 @@ html body .wrapper #preloader .spinner {
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
   }
-  .vinograd .poster:hover .image-cover-layer {
+  .vinograd .poster .image-container:hover:before {
     opacity: 0;
+  }
+  .vinograd .poster span {
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    z-index: 1;
+    padding: 1.3014vw 0.52056vw;
+    color: #fff;
+    font-size: 0.72878vw;
+    letter-spacing: 7px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-animation: posterTextApear 0.9s 3.9s both;
+            animation: posterTextApear 0.9s 3.9s both;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -10533,5 +10823,1511 @@ html body .wrapper #preloader .spinner {
             transform: rotate(90deg);
     -webkit-animation: textApear 0.9s 2.7s both;
             animation: textApear 0.9s 2.7s both;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .alta-capital {
+    position: relative;
+    padding-top: 13.0024vw;
+    padding-right: 25vw;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  @-webkit-keyframes right {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes right {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes left {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes left {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(-90deg) translateY(100%);
+              transform: rotate(-90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(-90deg) translateY(0);
+              transform: rotate(-90deg) translateY(0);
+    }
+  }
+  @keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(-90deg) translateY(100%);
+              transform: rotate(-90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(-90deg) translateY(0);
+              transform: rotate(-90deg) translateY(0);
+    }
+  }
+  @-webkit-keyframes up {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes up {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  .alta-capital .poster {
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    width: 101.41872vw;
+    height: 62.41152vw;
+  }
+  .alta-capital .poster .image-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .alta-capital .poster .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: left 0.9s 1.8s both;
+            animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #444;
+    content: '';
+    -webkit-animation: left 0.9s 0.9s both;
+            animation: left 0.9s 0.9s both;
+  }
+  .alta-capital .poster > span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 3.2506vw 11.70216vw;
+    color: #fff;
+    font-size: 1.82034vw;
+    letter-spacing: 7px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-animation: posterTextApear 0.9s 2.7s both;
+            animation: posterTextApear 0.9s 2.7s both;
+  }
+  .alta-capital .poster > span:first-letter {
+    padding-right: 2px;
+  }
+  .alta-capital .poster .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 3.2506vw;
+    width: 100%;
+  }
+  .alta-capital .poster .text p {
+    padding-right: 6.5012vw;
+    width: 50%;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 1.82034vw;
+    line-height: 2.60048vw;
+    -webkit-animation: up 0.9s 3.6s both;
+            animation: up 0.9s 3.6s both;
+  }
+  .alta-capital .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    margin-top: 11.05204vw;
+    width: 26.0048vw;
+    height: 26.0048vw;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .alta-capital .controls > div {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+  }
+  .alta-capital .controls svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 4.68086vw;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  .alta-capital .controls svg .st0 {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .alta-capital .controls svg .st1 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .alta-capital .controls .gallery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .alta-capital .controls .gallery img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .alta-capital .controls .content-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .alta-capital .controls .content-container:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    transition: opacity 0.3s;
+  }
+  .alta-capital .controls .slide-controls {
+    cursor: pointer;
+  }
+  .alta-capital .controls .slide-controls--next-slide {
+    margin-left: 13.0024vw;
+  }
+  .alta-capital .controls .slide-controls--next-slide .content-container {
+    -webkit-animation: right 0.9s 4.5s both;
+            animation: right 0.9s 4.5s both;
+  }
+  .alta-capital .controls .slide-controls--next-slide svg {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+  }
+  .alta-capital .controls .slide-controls--previous-slide .content-container {
+    -webkit-animation: left 0.9s 4.5s both;
+            animation: left 0.9s 4.5s both;
+  }
+  .alta-capital .controls .slide-controls--previous-slide svg {
+    -webkit-transform: rotate(180deg) translate3d(50%, 50%, 0);
+            transform: rotate(180deg) translate3d(50%, 50%, 0);
+  }
+  .alta-capital .controls .slide-controls:hover .content-container:before {
+    opacity: 0;
+  }
+  .alta-capital .controls .indicators {
+    font-size: 0;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: up 0.9s 5.4s both;
+            animation: up 0.9s 5.4s both;
+  }
+  .alta-capital .controls .indicators span {
+    font-size: 1.95036vw;
+    line-height: 13.0024vw;
+  }
+  .alta-capital .controls .indicators .all-slides {
+    color: #999;
+  }
+  .alta-capital:before, .alta-capital:after {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    background: #1c1c1c;
+    content: '';
+  }
+  .alta-capital:before {
+    left: 0;
+    width: 75vw;
+    -webkit-animation: right 0.9s 0s both;
+            animation: right 0.9s 0s both;
+  }
+  .alta-capital:after {
+    right: 0;
+    width: 25vw;
+    -webkit-animation: left 0.9s 0s both;
+            animation: left 0.9s 0s both;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .alta-capital {
+    position: relative;
+    padding-top: 9.756vw;
+    padding-right: 25vw;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  @-webkit-keyframes right {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes right {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes left {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes left {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(-90deg) translateY(100%);
+              transform: rotate(-90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(-90deg) translateY(0);
+              transform: rotate(-90deg) translateY(0);
+    }
+  }
+  @keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(-90deg) translateY(100%);
+              transform: rotate(-90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(-90deg) translateY(0);
+              transform: rotate(-90deg) translateY(0);
+    }
+  }
+  @-webkit-keyframes up {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes up {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  .alta-capital .poster {
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    width: 76.0968vw;
+    height: 46.8288vw;
+  }
+  .alta-capital .poster .image-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .alta-capital .poster .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: left 0.9s 1.8s both;
+            animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #444;
+    content: '';
+    -webkit-animation: left 0.9s 0.9s both;
+            animation: left 0.9s 0.9s both;
+  }
+  .alta-capital .poster > span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 2.439vw 8.7804vw;
+    color: #fff;
+    font-size: 1.36584vw;
+    letter-spacing: 7px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-animation: posterTextApear 0.9s 2.7s both;
+            animation: posterTextApear 0.9s 2.7s both;
+  }
+  .alta-capital .poster > span:first-letter {
+    padding-right: 2px;
+  }
+  .alta-capital .poster .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 2.439vw;
+    width: 100%;
+  }
+  .alta-capital .poster .text p {
+    padding-right: 4.878vw;
+    width: 50%;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 1.36584vw;
+    line-height: 1.9512vw;
+    -webkit-animation: up 0.9s 3.6s both;
+            animation: up 0.9s 3.6s both;
+  }
+  .alta-capital .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    margin-top: 8.2926vw;
+    width: 19.512vw;
+    height: 19.512vw;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .alta-capital .controls > div {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+  }
+  .alta-capital .controls svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 3.51216vw;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  .alta-capital .controls svg .st0 {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .alta-capital .controls svg .st1 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .alta-capital .controls .gallery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .alta-capital .controls .gallery img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .alta-capital .controls .content-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .alta-capital .controls .content-container:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    transition: opacity 0.3s;
+  }
+  .alta-capital .controls .slide-controls {
+    cursor: pointer;
+  }
+  .alta-capital .controls .slide-controls--next-slide {
+    margin-left: 9.756vw;
+  }
+  .alta-capital .controls .slide-controls--next-slide .content-container {
+    -webkit-animation: right 0.9s 4.5s both;
+            animation: right 0.9s 4.5s both;
+  }
+  .alta-capital .controls .slide-controls--next-slide svg {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+  }
+  .alta-capital .controls .slide-controls--previous-slide .content-container {
+    -webkit-animation: left 0.9s 4.5s both;
+            animation: left 0.9s 4.5s both;
+  }
+  .alta-capital .controls .slide-controls--previous-slide svg {
+    -webkit-transform: rotate(180deg) translate3d(50%, 50%, 0);
+            transform: rotate(180deg) translate3d(50%, 50%, 0);
+  }
+  .alta-capital .controls .slide-controls:hover .content-container:before {
+    opacity: 0;
+  }
+  .alta-capital .controls .indicators {
+    font-size: 0;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: up 0.9s 5.4s both;
+            animation: up 0.9s 5.4s both;
+  }
+  .alta-capital .controls .indicators span {
+    font-size: 1.4634vw;
+    line-height: 9.756vw;
+  }
+  .alta-capital .controls .indicators .all-slides {
+    color: #999;
+  }
+  .alta-capital:before, .alta-capital:after {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    background: #1c1c1c;
+    content: '';
+  }
+  .alta-capital:before {
+    left: 0;
+    width: 75vw;
+    -webkit-animation: right 0.9s 0s both;
+            animation: right 0.9s 0s both;
+  }
+  .alta-capital:after {
+    right: 0;
+    width: 25vw;
+    -webkit-animation: left 0.9s 0s both;
+            animation: left 0.9s 0s both;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
+  .alta-capital {
+    position: relative;
+    padding-top: 7.3152vw;
+    padding-right: 25vw;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  @-webkit-keyframes right {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes right {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes left {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes left {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(-90deg) translateY(100%);
+              transform: rotate(-90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(-90deg) translateY(0);
+              transform: rotate(-90deg) translateY(0);
+    }
+  }
+  @keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(-90deg) translateY(100%);
+              transform: rotate(-90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(-90deg) translateY(0);
+              transform: rotate(-90deg) translateY(0);
+    }
+  }
+  @-webkit-keyframes up {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes up {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  .alta-capital .poster {
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    width: 57.05856vw;
+    height: 35.11296vw;
+  }
+  .alta-capital .poster .image-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .alta-capital .poster .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: left 0.9s 1.8s both;
+            animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #444;
+    content: '';
+    -webkit-animation: left 0.9s 0.9s both;
+            animation: left 0.9s 0.9s both;
+  }
+  .alta-capital .poster > span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 1.8288vw 6.58368vw;
+    color: #fff;
+    font-size: 1.02413vw;
+    letter-spacing: 7px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-animation: posterTextApear 0.9s 2.7s both;
+            animation: posterTextApear 0.9s 2.7s both;
+  }
+  .alta-capital .poster > span:first-letter {
+    padding-right: 2px;
+  }
+  .alta-capital .poster .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1.8288vw;
+    width: 100%;
+  }
+  .alta-capital .poster .text p {
+    padding-right: 3.6576vw;
+    width: 50%;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 1.02413vw;
+    line-height: 1.46304vw;
+    -webkit-animation: up 0.9s 3.6s both;
+            animation: up 0.9s 3.6s both;
+  }
+  .alta-capital .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    margin-top: 6.21792vw;
+    width: 14.6304vw;
+    height: 14.6304vw;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .alta-capital .controls > div {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+  }
+  .alta-capital .controls svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 2.63347vw;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  .alta-capital .controls svg .st0 {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .alta-capital .controls svg .st1 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .alta-capital .controls .gallery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .alta-capital .controls .gallery img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .alta-capital .controls .content-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .alta-capital .controls .content-container:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    transition: opacity 0.3s;
+  }
+  .alta-capital .controls .slide-controls {
+    cursor: pointer;
+  }
+  .alta-capital .controls .slide-controls--next-slide {
+    margin-left: 7.3152vw;
+  }
+  .alta-capital .controls .slide-controls--next-slide .content-container {
+    -webkit-animation: right 0.9s 4.5s both;
+            animation: right 0.9s 4.5s both;
+  }
+  .alta-capital .controls .slide-controls--next-slide svg {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+  }
+  .alta-capital .controls .slide-controls--previous-slide .content-container {
+    -webkit-animation: left 0.9s 4.5s both;
+            animation: left 0.9s 4.5s both;
+  }
+  .alta-capital .controls .slide-controls--previous-slide svg {
+    -webkit-transform: rotate(180deg) translate3d(50%, 50%, 0);
+            transform: rotate(180deg) translate3d(50%, 50%, 0);
+  }
+  .alta-capital .controls .slide-controls:hover .content-container:before {
+    opacity: 0;
+  }
+  .alta-capital .controls .indicators {
+    font-size: 0;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: up 0.9s 5.4s both;
+            animation: up 0.9s 5.4s both;
+  }
+  .alta-capital .controls .indicators span {
+    font-size: 1.09728vw;
+    line-height: 7.3152vw;
+  }
+  .alta-capital .controls .indicators .all-slides {
+    color: #999;
+  }
+  .alta-capital:before, .alta-capital:after {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    background: #1c1c1c;
+    content: '';
+  }
+  .alta-capital:before {
+    left: 0;
+    width: 75vw;
+    -webkit-animation: right 0.9s 0s both;
+            animation: right 0.9s 0s both;
+  }
+  .alta-capital:after {
+    right: 0;
+    width: 25vw;
+    -webkit-animation: left 0.9s 0s both;
+            animation: left 0.9s 0s both;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
+  .alta-capital {
+    position: relative;
+    padding-top: 5.9488vw;
+    padding-right: 25vw;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  @-webkit-keyframes right {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes right {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes left {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes left {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(-90deg) translateY(100%);
+              transform: rotate(-90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(-90deg) translateY(0);
+              transform: rotate(-90deg) translateY(0);
+    }
+  }
+  @keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(-90deg) translateY(100%);
+              transform: rotate(-90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(-90deg) translateY(0);
+              transform: rotate(-90deg) translateY(0);
+    }
+  }
+  @-webkit-keyframes up {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes up {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  .alta-capital .poster {
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    width: 46.40064vw;
+    height: 28.55424vw;
+  }
+  .alta-capital .poster .image-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .alta-capital .poster .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: left 0.9s 1.8s both;
+            animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #444;
+    content: '';
+    -webkit-animation: left 0.9s 0.9s both;
+            animation: left 0.9s 0.9s both;
+  }
+  .alta-capital .poster > span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 1.4872vw 5.35392vw;
+    color: #fff;
+    font-size: 0.83283vw;
+    letter-spacing: 7px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-animation: posterTextApear 0.9s 2.7s both;
+            animation: posterTextApear 0.9s 2.7s both;
+  }
+  .alta-capital .poster > span:first-letter {
+    padding-right: 2px;
+  }
+  .alta-capital .poster .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1.4872vw;
+    width: 100%;
+  }
+  .alta-capital .poster .text p {
+    padding-right: 2.9744vw;
+    width: 50%;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 0.83283vw;
+    line-height: 1.18976vw;
+    -webkit-animation: up 0.9s 3.6s both;
+            animation: up 0.9s 3.6s both;
+  }
+  .alta-capital .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    margin-top: 5.05648vw;
+    width: 11.8976vw;
+    height: 11.8976vw;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .alta-capital .controls > div {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+  }
+  .alta-capital .controls svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 2.14157vw;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  .alta-capital .controls svg .st0 {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .alta-capital .controls svg .st1 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .alta-capital .controls .gallery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .alta-capital .controls .gallery img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .alta-capital .controls .content-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .alta-capital .controls .content-container:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    transition: opacity 0.3s;
+  }
+  .alta-capital .controls .slide-controls {
+    cursor: pointer;
+  }
+  .alta-capital .controls .slide-controls--next-slide {
+    margin-left: 5.9488vw;
+  }
+  .alta-capital .controls .slide-controls--next-slide .content-container {
+    -webkit-animation: right 0.9s 4.5s both;
+            animation: right 0.9s 4.5s both;
+  }
+  .alta-capital .controls .slide-controls--next-slide svg {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+  }
+  .alta-capital .controls .slide-controls--previous-slide .content-container {
+    -webkit-animation: left 0.9s 4.5s both;
+            animation: left 0.9s 4.5s both;
+  }
+  .alta-capital .controls .slide-controls--previous-slide svg {
+    -webkit-transform: rotate(180deg) translate3d(50%, 50%, 0);
+            transform: rotate(180deg) translate3d(50%, 50%, 0);
+  }
+  .alta-capital .controls .slide-controls:hover .content-container:before {
+    opacity: 0;
+  }
+  .alta-capital .controls .indicators {
+    font-size: 0;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: up 0.9s 5.4s both;
+            animation: up 0.9s 5.4s both;
+  }
+  .alta-capital .controls .indicators span {
+    font-size: 0.89232vw;
+    line-height: 5.9488vw;
+  }
+  .alta-capital .controls .indicators .all-slides {
+    color: #999;
+  }
+  .alta-capital:before, .alta-capital:after {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    background: #1c1c1c;
+    content: '';
+  }
+  .alta-capital:before {
+    left: 0;
+    width: 75vw;
+    -webkit-animation: right 0.9s 0s both;
+            animation: right 0.9s 0s both;
+  }
+  .alta-capital:after {
+    right: 0;
+    width: 25vw;
+    -webkit-animation: left 0.9s 0s both;
+            animation: left 0.9s 0s both;
+  }
+}
+@media (min-width: 1921px) {
+  .alta-capital {
+    position: relative;
+    padding-top: 5.2056vw;
+    padding-right: 25vw;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  @-webkit-keyframes right {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes right {
+    from {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes left {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes left {
+    from {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @-webkit-keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(-90deg) translateY(100%);
+              transform: rotate(-90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(-90deg) translateY(0);
+              transform: rotate(-90deg) translateY(0);
+    }
+  }
+  @keyframes posterTextApear {
+    from {
+      opacity: 0;
+      -webkit-transform: rotate(-90deg) translateY(100%);
+              transform: rotate(-90deg) translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: rotate(-90deg) translateY(0);
+              transform: rotate(-90deg) translateY(0);
+    }
+  }
+  @-webkit-keyframes up {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  @keyframes up {
+    from {
+      opacity: 0;
+      -webkit-transform: translateY(100%);
+              transform: translateY(100%);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+  }
+  .alta-capital .poster {
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    width: 40.60368vw;
+    height: 24.98688vw;
+  }
+  .alta-capital .poster .image-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .alta-capital .poster .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: left 0.9s 1.8s both;
+            animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #444;
+    content: '';
+    -webkit-animation: left 0.9s 0.9s both;
+            animation: left 0.9s 0.9s both;
+  }
+  .alta-capital .poster > span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 1.3014vw 4.68504vw;
+    color: #fff;
+    font-size: 0.72878vw;
+    letter-spacing: 7px;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-animation: posterTextApear 0.9s 2.7s both;
+            animation: posterTextApear 0.9s 2.7s both;
+  }
+  .alta-capital .poster > span:first-letter {
+    padding-right: 2px;
+  }
+  .alta-capital .poster .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1.3014vw;
+    width: 100%;
+  }
+  .alta-capital .poster .text p {
+    padding-right: 2.6028vw;
+    width: 50%;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 0.72878vw;
+    line-height: 1.04112vw;
+    -webkit-animation: up 0.9s 3.6s both;
+            animation: up 0.9s 3.6s both;
+  }
+  .alta-capital .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+    margin-left: auto;
+    margin-top: 4.42476vw;
+    width: 10.4112vw;
+    height: 10.4112vw;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+  .alta-capital .controls > div {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+  }
+  .alta-capital .controls svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 1.87402vw;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  .alta-capital .controls svg .st0 {
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .alta-capital .controls svg .st1 {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 0.75;
+    stroke-miterlimit: 10;
+  }
+  .alta-capital .controls .gallery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .alta-capital .controls .gallery img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .alta-capital .controls .content-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .alta-capital .controls .content-container:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    transition: opacity 0.3s;
+  }
+  .alta-capital .controls .slide-controls {
+    cursor: pointer;
+  }
+  .alta-capital .controls .slide-controls--next-slide {
+    margin-left: 5.2056vw;
+  }
+  .alta-capital .controls .slide-controls--next-slide .content-container {
+    -webkit-animation: right 0.9s 4.5s both;
+            animation: right 0.9s 4.5s both;
+  }
+  .alta-capital .controls .slide-controls--next-slide svg {
+    -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+  }
+  .alta-capital .controls .slide-controls--previous-slide .content-container {
+    -webkit-animation: left 0.9s 4.5s both;
+            animation: left 0.9s 4.5s both;
+  }
+  .alta-capital .controls .slide-controls--previous-slide svg {
+    -webkit-transform: rotate(180deg) translate3d(50%, 50%, 0);
+            transform: rotate(180deg) translate3d(50%, 50%, 0);
+  }
+  .alta-capital .controls .slide-controls:hover .content-container:before {
+    opacity: 0;
+  }
+  .alta-capital .controls .indicators {
+    font-size: 0;
+    color: #fff;
+    text-align: center;
+    -webkit-animation: up 0.9s 5.4s both;
+            animation: up 0.9s 5.4s both;
+  }
+  .alta-capital .controls .indicators span {
+    font-size: 0.78084vw;
+    line-height: 5.2056vw;
+  }
+  .alta-capital .controls .indicators .all-slides {
+    color: #999;
+  }
+  .alta-capital:before, .alta-capital:after {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    background: #1c1c1c;
+    content: '';
+  }
+  .alta-capital:before {
+    left: 0;
+    width: 75vw;
+    -webkit-animation: right 0.9s 0s both;
+            animation: right 0.9s 0s both;
+  }
+  .alta-capital:after {
+    right: 0;
+    width: 25vw;
+    -webkit-animation: left 0.9s 0s both;
+            animation: left 0.9s 0s both;
   }
 }
