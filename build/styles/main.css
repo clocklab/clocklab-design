@@ -11424,8 +11424,29 @@ html body .wrapper #preloader .spinner {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .poster .image-container img.loaded {
     -webkit-animation: left 0.9s 1.8s both;
             animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container img.current {
+    z-index: 2;
+  }
+  .alta-capital .poster .image-container img.left {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .alta-capital .poster .image-container img.right {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
   }
   .alta-capital .poster .image-container:before {
     display: block;
@@ -11520,6 +11541,7 @@ html body .wrapper #preloader .spinner {
   }
   .alta-capital .controls .gallery {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
   }
@@ -11529,6 +11551,29 @@ html body .wrapper #preloader .spinner {
     top: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .controls .gallery img.current {
+    z-index: 2;
+  }
+  .alta-capital .controls .gallery img.left {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+  }
+  .alta-capital .controls .gallery img.right {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
   }
   .alta-capital .controls .content-container {
     width: 100%;
@@ -11608,14 +11653,14 @@ html body .wrapper #preloader .spinner {
   }
   .alta-capital {
     padding-top: 24.73952vw;
-    padding-right: 3.2552vw;
+    padding-right: 3.25521%;
   }
   .alta-capital .poster {
-    width: 58.5936vw;
-    height: 42.3176vw;
+    width: 77.47376vw;
+    height: 51.43216vw;
   }
   .alta-capital .poster > span {
-    padding: 0.65104vw 3.2552vw;
+    padding: 1.30208vw 3.2552vw;
   }
   .alta-capital .poster .text {
     padding-top: 2.60416vw;
@@ -11631,10 +11676,10 @@ html body .wrapper #preloader .spinner {
             transform: none;
   }
   .alta-capital:before {
-    width: 96.7448vw;
+    width: 96.74479%;
   }
   .alta-capital:after {
-    width: 3.2552vw;
+    width: 3.25521%;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -11755,8 +11800,29 @@ html body .wrapper #preloader .spinner {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .poster .image-container img.loaded {
     -webkit-animation: left 0.9s 1.8s both;
             animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container img.current {
+    z-index: 2;
+  }
+  .alta-capital .poster .image-container img.left {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .alta-capital .poster .image-container img.right {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
   }
   .alta-capital .poster .image-container:before {
     display: block;
@@ -11851,6 +11917,7 @@ html body .wrapper #preloader .spinner {
   }
   .alta-capital .controls .gallery {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
   }
@@ -11860,6 +11927,29 @@ html body .wrapper #preloader .spinner {
     top: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .controls .gallery img.current {
+    z-index: 2;
+  }
+  .alta-capital .controls .gallery img.left {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+  }
+  .alta-capital .controls .gallery img.right {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
   }
   .alta-capital .controls .content-container {
     width: 100%;
@@ -12056,8 +12146,29 @@ html body .wrapper #preloader .spinner {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .poster .image-container img.loaded {
     -webkit-animation: left 0.9s 1.8s both;
             animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container img.current {
+    z-index: 2;
+  }
+  .alta-capital .poster .image-container img.left {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .alta-capital .poster .image-container img.right {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
   }
   .alta-capital .poster .image-container:before {
     display: block;
@@ -12152,6 +12263,7 @@ html body .wrapper #preloader .spinner {
   }
   .alta-capital .controls .gallery {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
   }
@@ -12161,6 +12273,29 @@ html body .wrapper #preloader .spinner {
     top: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .controls .gallery img.current {
+    z-index: 2;
+  }
+  .alta-capital .controls .gallery img.left {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+  }
+  .alta-capital .controls .gallery img.right {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
   }
   .alta-capital .controls .content-container {
     width: 100%;
@@ -12357,8 +12492,29 @@ html body .wrapper #preloader .spinner {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .poster .image-container img.loaded {
     -webkit-animation: left 0.9s 1.8s both;
             animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container img.current {
+    z-index: 2;
+  }
+  .alta-capital .poster .image-container img.left {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .alta-capital .poster .image-container img.right {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
   }
   .alta-capital .poster .image-container:before {
     display: block;
@@ -12453,6 +12609,7 @@ html body .wrapper #preloader .spinner {
   }
   .alta-capital .controls .gallery {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
   }
@@ -12462,6 +12619,29 @@ html body .wrapper #preloader .spinner {
     top: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .controls .gallery img.current {
+    z-index: 2;
+  }
+  .alta-capital .controls .gallery img.left {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+  }
+  .alta-capital .controls .gallery img.right {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
   }
   .alta-capital .controls .content-container {
     width: 100%;
@@ -12658,8 +12838,29 @@ html body .wrapper #preloader .spinner {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .poster .image-container img.loaded {
     -webkit-animation: left 0.9s 1.8s both;
             animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container img.current {
+    z-index: 2;
+  }
+  .alta-capital .poster .image-container img.left {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .alta-capital .poster .image-container img.right {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
   }
   .alta-capital .poster .image-container:before {
     display: block;
@@ -12754,6 +12955,7 @@ html body .wrapper #preloader .spinner {
   }
   .alta-capital .controls .gallery {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
   }
@@ -12763,6 +12965,29 @@ html body .wrapper #preloader .spinner {
     top: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .controls .gallery img.current {
+    z-index: 2;
+  }
+  .alta-capital .controls .gallery img.left {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+  }
+  .alta-capital .controls .gallery img.right {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
   }
   .alta-capital .controls .content-container {
     width: 100%;
@@ -12959,8 +13184,29 @@ html body .wrapper #preloader .spinner {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .poster .image-container img.loaded {
     -webkit-animation: left 0.9s 1.8s both;
             animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container img.current {
+    z-index: 2;
+  }
+  .alta-capital .poster .image-container img.left {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .alta-capital .poster .image-container img.right {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
   }
   .alta-capital .poster .image-container:before {
     display: block;
@@ -13055,6 +13301,7 @@ html body .wrapper #preloader .spinner {
   }
   .alta-capital .controls .gallery {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
   }
@@ -13064,6 +13311,29 @@ html body .wrapper #preloader .spinner {
     top: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .controls .gallery img.current {
+    z-index: 2;
+  }
+  .alta-capital .controls .gallery img.left {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+  }
+  .alta-capital .controls .gallery img.right {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
   }
   .alta-capital .controls .content-container {
     width: 100%;
