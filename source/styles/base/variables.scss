@@ -163,4 +163,9 @@ $portfolioAltaControlsLeftBlockAimationTime: $portfolioAltaControlsRightBlockAim
 
 $portfolioAltaControlsIndicatorsDelayTime: $portfolioAltaControlsRightBlockDelayTime + $portfolioAltaControlsRightBlockAimationTime;
 $portfolioAltaControlsIndicatorsAimationTime: $time * 3;
+
+    // MOBILE
+    $portfolioAltaControlsRightBlockDelayTimeMobile: $portfolioAltaImageDelayTime + $portfolioAltaImageAnimationTime;
+    $portfolioAltaControlsLeftBlockDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile; 
+    $portfolioAltaControlsIndicatorsDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile + $portfolioAltaControlsRightBlockAimationTime;
 // VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL ENDS 

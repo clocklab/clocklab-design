@@ -1,3 +1,211 @@
 & {  
 
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+
+    @keyframes right {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes left {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes up {
+        from {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .poster {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: px(430);
+
+        .image-container {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $darkGray;
+                content: '';
+                animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
+            }
+        }
+
+        & > span,
+        .text {
+            display: none;
+        }
+    }
+
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        margin-top: px(60);
+        width: 100%;
+        height: px(200);
+
+        & > div {
+            position: relative;
+            width: calc(100% / 3);
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .slide-controls {
+            cursor: pointer;
+
+            &--next-slide {
+                order: 3;
+
+                .content-container {
+                    animation: right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTimeMobile both;
+                }   
+
+                svg {
+                    transform: translate3d(-50%, -50%, 0)
+                }
+            }
+
+            &--previous-slide {
+                order: 1;
+
+                .content-container {
+                    animation: left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTimeMobile both;
+                }
+
+                svg {
+                    transform: rotate(180deg) translate3d(50%, 50%, 0)
+                }
+            }
+        }
+
+        .content-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .5);
+                content: '';
+                transition: opacity $time;
+            }
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            width: px(72);
+            transform-origin: 50% 50%;
+
+            .st0 {
+                fill: $white;
+                stroke: $white;
+                stroke-width: 0.75;
+                stroke-miterlimit: 10;
+            }
+
+            .st1 {
+                fill: none;
+                stroke: $white;
+                stroke-width: 0.75;
+                stroke-miterlimit: 10;
+            }
+        }
+
+        .gallery {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .indicators {
+            order: 2;
+            font-size: 0;
+            color: $white;
+            text-align: center;
+            animation: up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTimeMobile both;
+
+            span {
+                font-size: px(24);
+                line-height: px(200);
+            }
+
+            .all-slides {
+                color: $gray;
+            }
+        }
+    }
+
+    &:before {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        height: 100vh;
+        background: $lightBlack;
+        content: '';
+    }
+
+    &:before {
+        left: 0;
+        width: 100vw;
+        animation: right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
+    }
 }
