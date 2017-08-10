@@ -1,0 +1,187 @@
+& {  
+
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    .car-covering-layer {
+        overflow: hidden;
+        position: relative;
+
+        img {
+            position: absolute;
+            z-index: 1; 
+            height: 100vh;
+            min-height: 700px;
+        }
+
+        .lines {
+            position: absolute;
+            top: px(240);
+            z-index: 3;
+            height: px(1560);
+            overflow: hidden;
+
+            .line {
+                position: absolute;
+                width: px(1560) * 1.5;
+                height: 1px;
+                background: rgba(0, 0, 0, .4);
+
+                &--left {
+                    left: 0;
+                    transform-origin: 0 0;
+                    animation: rightDown both;
+                }
+
+                &--right {
+                    right: 0;
+                    transform-origin: 100% 0;
+                    animation: leftDown both;
+                }
+            }
+        }
+
+        &--left,
+        &--right {
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            height: 100vh;
+            width: 50%;
+        }
+
+        &--left {
+            left: 0;
+            
+            .image-container {
+                position: relative;
+                height: 100vh;
+                animation: widthIncrease $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTime both;
+                overflow: hidden;
+            }
+
+            .lines {
+                left: px(300);
+                width: 40.625vw - px(300);
+
+                .line {
+
+                    &--left {
+                         animation-duration: $portfolioAudiLeftBlockLeftLineAnimationTime;
+                         animation-delay: $portfolioAudiLeftBlockLeftLineDelayTime;
+                    }
+
+                    &--right {
+                        top: 20vh;
+                        animation-duration: $portfolioAudiLeftBlockRightLineAnimationTime;
+                        animation-delay: $portfolioAudiLeftBlockRightLineDelayTime;
+                    }
+                }
+            }
+
+            &:after {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, .9);
+                content: '';
+            }
+        }
+
+        &--right {
+            right: 0;
+            width: 50%;
+            background: $white;
+
+            .lines {
+                left: 9.375vw;
+                width: 50vw - px(550);
+
+                .line {
+
+                    &--left {
+                        top: 20vh;
+                        animation-duration: $portfolioAudiRightBlockLeftLineAnimationTime;
+                        animation-delay: $portfolioAudiRightBlockLeftLineDelayTime;
+                    }
+
+                    &--right {
+                        animation-duration: $portfolioAudiRightBlockRightLineAnimationTime;
+                        animation-delay: $portfolioAudiRightBlockRightLineDelayTime;
+                    }
+                }
+            }
+        }
+
+        // Animation for center block
+        @keyframes heightReduce {
+            from {
+                margin-top: 0;
+                height: 100vh;
+            }
+            60% {
+                opacity: 1;
+            }
+            to {
+                margin-top: 40vh;
+                height: px(60);
+                opacity: .7;
+            }
+        }
+
+        @keyframes shadowAppearance {
+            from {
+                box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            }
+            to {
+                box-shadow: 0 px(30) px(100) px(14) rgba(0, 0, 0, .3);    
+            }
+        }
+        // Animation for center block ends
+
+        &--center {
+            position: relative;
+            z-index: 2;
+            margin: 0 auto;
+            width: 18.75vw;
+            animation: heightIncreaseDesktop $portfolioAudiCenterBlockAnimationTime $portfolioAudiCenterBlockDelayTime both, 
+                       shadowAppearance $portfolioAudiCenterBlockShadowAnimationTime $portfolioAudiCenterBlockShadowDelayTime both;
+
+            img {
+                top: -4vh;
+                left: -40.625vw;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: -4vh;
+                left: -40.625vw;
+                z-index: 3;
+                width: 100vw;
+                background: $blue;
+                content: '';
+                transform: rotate(-45deg);
+                animation: heightReduce $portfolioAudiCenterBlockLineAnimationTime $portfolioAudiCenterBlockLineDelayTime both;
+            }
+
+            &:after {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background: rgba(255, 255, 255, .6);
+                content: '';
+            }
+        }
+    }
+}

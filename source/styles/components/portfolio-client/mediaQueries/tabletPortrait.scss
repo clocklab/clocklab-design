@@ -1,0 +1,16 @@
+//@import '../mobile';
+@import '../desktop';
+
+& {
+
+    bottom: px(160);
+    left: px(40);
+
+    .client {
+        padding-right: px(40);
+
+        &-name-container {
+            font-size: px(60);
+        }
+    }
+}

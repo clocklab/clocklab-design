@@ -1,0 +1,15 @@
+@import '../desktop';
+
+& {
+
+    .car-covering-layer {
+
+        &--center {
+            width: 28vw;
+
+            img {
+                left: -36vw;
+            }
+        }
+    }
+}

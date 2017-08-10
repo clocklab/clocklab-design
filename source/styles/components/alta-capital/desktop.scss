@@ -1,0 +1,271 @@
+& {  
+
+    position: relative;
+    padding-top: px(200);
+    padding-right: 25vw;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+
+    @keyframes right {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes left {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes posterTextApear {
+        from {
+            opacity: 0;
+            transform: rotate(-90deg) translateY(100%);
+        }
+        to {
+            opacity: 1;
+            transform: rotate(-90deg) translateY(0);
+        }
+    }
+
+    @keyframes up {
+        from {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .poster {
+        position: relative;
+        z-index: 2;
+        margin-left: auto;
+        width: px(1560);
+        height: px(960);
+
+        .image-container {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $darkGray;
+                content: '';
+                animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
+            }
+        }
+
+        & > span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            padding: px(50) px(180);
+            color: $white;
+            font-size: px(28);
+            letter-spacing: 7px;
+            transform-origin: 0 100%;
+            animation: posterTextApear $portfolioAltaPosterTextAnimationTime $portfolioAltaPosterTextDelayTime both;
+
+            &:first-letter {
+                padding-right: 2px;
+            }
+        }
+
+        .text {
+            display: flex;
+            justify-content: space-between;
+            padding-top: px(50);
+            width: 100%;
+
+            p {
+                padding-right: px(100);
+                width: 50%;
+                color: $white;
+                font-family: 'Roboto';
+                font-size: px(28);
+                line-height: px(40);
+                animation: up $portfolioAltaPosterParagraphAnimationTime $portfolioAltaPosterParagraphDelayTime both;
+            }
+        }
+    }
+
+    .controls {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 2;
+        margin-left: auto;
+        margin-top: px(170);
+        width: px(400);
+        height: px(400);
+        transform: translateX(50%);
+
+        & > div {
+            position: relative;
+            width: 50%;
+            height: 50%;
+            overflow: hidden;
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            width: px(72);
+            transform-origin: 50% 50%;
+
+            .st0 {
+                fill: $white;
+                stroke: $white;
+                stroke-width: 0.75;
+                stroke-miterlimit: 10;
+            }
+
+            .st1 {
+                fill: none;
+                stroke: $white;
+                stroke-width: 0.75;
+                stroke-miterlimit: 10;
+            }
+        }
+
+        .gallery {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            img {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .content-container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .5);
+                content: '';
+                transition: opacity $time;
+            }
+        }
+
+        .slide-controls {
+            cursor: pointer;
+
+            &--next-slide {
+                margin-left: px(200);
+
+                .content-container {
+                    animation: right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTime both;
+                }   
+
+                svg {
+                    transform: translate3d(-50%, -50%, 0)
+                }
+            }
+
+            &--previous-slide {
+
+                .content-container {
+                    animation: left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTime both;
+                }
+
+                svg {
+                    transform: rotate(180deg) translate3d(50%, 50%, 0)
+                }
+            }
+
+            &:hover {
+
+                .content-container {
+
+                    &:before {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+
+        .indicators {
+            font-size: 0;
+            color: $white;
+            text-align: center;
+            animation: up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTime both;
+
+            span {
+                font-size: px(30);
+                line-height: px(200);
+            }
+
+            .all-slides {
+                color: $gray;
+            }
+        }
+    }
+
+    &:before,
+    &:after {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        height: 100vh;
+        background: $lightBlack;
+        content: '';
+    }
+
+    &:before {
+        left: 0;
+        width: 75vw;
+        animation: right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
+    }
+
+    &:after {
+        right: 0;
+        width: 25vw;
+        animation: left $portfolioAltaRightBlockAnimationTime $portfolioAltaRightBlockDelayTime both;
+    }
+}

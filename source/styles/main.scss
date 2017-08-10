@@ -9,12 +9,18 @@
 @import "base/sprites";
 @import "base/reset";
 @import "base/common";
+@import "base/animations";
 
 // sprites
 // $space: 0;
 // @include add(social, "social/*.png", "social-2x/*.png");
 
 // components
-@import "components/header/main";
 @import "components/menu/main";
 @import "components/buttons/main";
+@import "components/portfolio-right-panel/main";
+@import "components/portfolio-client/main";
+@import "components/q7/main";
+@import "components/vinograd/main";
+@import "components/euro-club/main";
+@import "components/alta-capital/main";

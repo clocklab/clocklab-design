@@ -1,0 +1,40 @@
+//@import '../mobile';
+@import '../desktop';
+
+& {
+
+    padding-top: px(380);
+    padding-right: px(50);
+
+    .poster {
+        width: px(900);
+        height: px(650);
+
+        & > span {
+            padding: px(10) px(50);
+        }
+
+        .text {
+            padding-top: px(40);
+
+            p {
+                padding-right: 0;
+                width: 47%;
+            }
+        }
+    }
+
+    .controls {
+        margin-top: px(250);
+        margin-right: px(60);
+        transform: none;
+    }
+
+    &:before {
+        width: 100vw - px(50);
+    }
+
+    &:after {
+        width: px(50);
+    }
+}
