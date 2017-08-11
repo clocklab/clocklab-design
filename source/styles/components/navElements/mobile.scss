@@ -1,6 +1,6 @@
 & {
-    // $space: 0;
-    // @include add(social, "social/*.png", "social-2x/*.png");
+    $space: 0;
+    @include add(social, "social/*.png", "social-2x/*.png");
    
     // ----- bg letter -----
     .bg-letter {
@@ -105,8 +105,8 @@
         a {
             @include inline-block;
             background-repeat: no-repeat;
-            // &[href*="linkedin"] { @include sprite(linkedin, social); }
-            // &[href*="facebook"] { @include sprite(facebook, social); }
+            &[href*="linkedin"] { @include sprite(linkedin, social); }
+            &[href*="facebook"] { @include sprite(facebook, social); }
         }
     }
 
