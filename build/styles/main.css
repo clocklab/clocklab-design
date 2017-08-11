@@ -1098,6 +1098,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (max-width: 414px) and (min-device-pixel-ratio: 1.5), (max-width: 414px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 414px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (max-width: 414px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (max-width: 414px) and (min-device-pixel-ratio: 1.5), (max-width: 414px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 414px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (max-width: 414px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -1414,6 +1444,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) and (min-device-pixel-ratio: 1.5), (min-width: 415px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 415px) and (max-width: 667px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) and (min-device-pixel-ratio: 1.5), (min-width: 415px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 415px) and (max-width: 667px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -1730,6 +1790,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) and (min-device-pixel-ratio: 1.5), (min-width: 668px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 668px) and (max-width: 768px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) and (min-device-pixel-ratio: 1.5), (min-width: 668px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 668px) and (max-width: 768px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -2055,6 +2145,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) and (min-device-pixel-ratio: 1.5), (min-width: 769px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 769px) and (max-width: 1024px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) and (min-device-pixel-ratio: 1.5), (min-width: 769px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 769px) and (max-width: 1024px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -2386,6 +2506,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) and (min-device-pixel-ratio: 1.5), (min-width: 1025px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1025px) and (max-width: 1366px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) and (min-device-pixel-ratio: 1.5), (min-width: 1025px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1025px) and (max-width: 1366px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -2717,6 +2867,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) and (min-device-pixel-ratio: 1.5), (min-width: 1367px) and (max-width: 1680px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1367px) and (max-width: 1680px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) and (min-device-pixel-ratio: 1.5), (min-width: 1367px) and (max-width: 1680px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1367px) and (max-width: 1680px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -3048,6 +3228,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) and (min-device-pixel-ratio: 1.5), (min-width: 1681px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1681px) and (max-width: 1920px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) and (min-device-pixel-ratio: 1.5), (min-width: 1681px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1681px) and (max-width: 1920px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -3379,6 +3589,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1921px) and (min-device-pixel-ratio: 1.5), (min-width: 1921px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1921px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 1921px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1921px) and (min-device-pixel-ratio: 1.5), (min-width: 1921px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1921px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 1921px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
