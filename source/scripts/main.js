@@ -2,4 +2,4 @@
 //= ../../bower_components/jquery/dist/jquery.js
 
 // scripts
-//= components/alta.js
+//= components/q7.js

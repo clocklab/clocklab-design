@@ -1,6 +1,7 @@
 & {  
 
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    cursor: default;
 
     // Animation for block
     @keyframes apear {
@@ -49,6 +50,7 @@
         font-weight: 700;
         user-select: none;
         animation: letterApear $portfolioEuroclubLetterAnimationTime $portfolioEuroclubLetterDelayTime both;
+        transition: transform $time cubic-bezier(.05, .71, .48, 1);
     }
 
     .blue-line {

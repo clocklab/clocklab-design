@@ -9703,6 +9703,7 @@ html body .wrapper #preloader .spinner {
 @media (min-width: 769px) and (max-width: 1024px) {
   .euro-club {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    cursor: default;
     position: relative;
     padding-top: 14.649vw;
     padding-left: 17.5788vw;
@@ -9776,6 +9777,9 @@ html body .wrapper #preloader .spinner {
             user-select: none;
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
+    transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+    transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+    transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
   }
   .euro-club .blue-line {
     position: absolute;
@@ -9928,6 +9932,7 @@ html body .wrapper #preloader .spinner {
 @media (min-width: 1025px) and (max-width: 1366px) {
   .euro-club {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    cursor: default;
     position: relative;
     padding-top: 10.98vw;
     padding-left: 13.176vw;
@@ -10001,6 +10006,9 @@ html body .wrapper #preloader .spinner {
             user-select: none;
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
+    transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+    transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+    transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
   }
   .euro-club .blue-line {
     position: absolute;
@@ -10153,6 +10161,7 @@ html body .wrapper #preloader .spinner {
 @media (min-width: 1367px) and (max-width: 1680px) {
   .euro-club {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    cursor: default;
     position: relative;
     padding-top: 8.928vw;
     padding-left: 10.7136vw;
@@ -10226,6 +10235,9 @@ html body .wrapper #preloader .spinner {
             user-select: none;
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
+    transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+    transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+    transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
   }
   .euro-club .blue-line {
     position: absolute;
@@ -10378,6 +10390,7 @@ html body .wrapper #preloader .spinner {
 @media (min-width: 1681px) and (max-width: 1920px) {
   .euro-club {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    cursor: default;
     position: relative;
     padding-top: 7.812vw;
     padding-left: 9.3744vw;
@@ -10451,6 +10464,9 @@ html body .wrapper #preloader .spinner {
             user-select: none;
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
+    transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+    transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+    transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
   }
   .euro-club .blue-line {
     position: absolute;
@@ -10603,6 +10619,7 @@ html body .wrapper #preloader .spinner {
 @media (min-width: 1921px) {
   .euro-club {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    cursor: default;
     position: relative;
     padding-top: 5.859vw;
     padding-left: 7.0308vw;
@@ -10676,6 +10693,9 @@ html body .wrapper #preloader .spinner {
             user-select: none;
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
+    transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+    transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+    transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
   }
   .euro-club .blue-line {
     position: absolute;
@@ -10917,8 +10937,29 @@ html body .wrapper #preloader .spinner {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .poster .image-container img.loaded {
     -webkit-animation: left 0.9s 1.8s both;
             animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container img.current {
+    z-index: 2;
+  }
+  .alta-capital .poster .image-container img.left {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .alta-capital .poster .image-container img.right {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
   }
   .alta-capital .poster .image-container:before {
     display: block;
@@ -11024,6 +11065,7 @@ html body .wrapper #preloader .spinner {
   }
   .alta-capital .controls .gallery {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
   }
@@ -11033,6 +11075,29 @@ html body .wrapper #preloader .spinner {
     top: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .controls .gallery img.current {
+    z-index: 2;
+  }
+  .alta-capital .controls .gallery img.left {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+  }
+  .alta-capital .controls .gallery img.right {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
   }
   .alta-capital .controls .indicators {
     -webkit-box-ordinal-group: 3;
@@ -11157,8 +11222,29 @@ html body .wrapper #preloader .spinner {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .poster .image-container img.loaded {
     -webkit-animation: left 0.9s 1.8s both;
             animation: left 0.9s 1.8s both;
+  }
+  .alta-capital .poster .image-container img.current {
+    z-index: 2;
+  }
+  .alta-capital .poster .image-container img.left {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  }
+  .alta-capital .poster .image-container img.right {
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
   }
   .alta-capital .poster .image-container:before {
     display: block;
@@ -11264,6 +11350,7 @@ html body .wrapper #preloader .spinner {
   }
   .alta-capital .controls .gallery {
     position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
   }
@@ -11273,6 +11360,29 @@ html body .wrapper #preloader .spinner {
     top: 0;
     width: 100%;
     height: 100%;
+  }
+  .alta-capital .controls .gallery img.current {
+    z-index: 2;
+  }
+  .alta-capital .controls .gallery img.left {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: left;
+            animation-name: left;
+  }
+  .alta-capital .controls .gallery img.right {
+    -webkit-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    -webkit-animation-duration: 0.3s;
+            animation-duration: 0.3s;
+    -webkit-animation-name: right;
+            animation-name: right;
   }
   .alta-capital .controls .indicators {
     -webkit-box-ordinal-group: 3;
