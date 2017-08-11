@@ -2,11 +2,20 @@ html {
     body {
         min-width: 320px;
         overflow-x: hidden;
+        font-family: $raleway;
+        font-weight: $regular;
+        background-color: $background;
+        h1, h2, h3, h4, h5, h6, button, input, label, span,
+        td, th, li, p, a, a:hover, a:focus {
+            letter-spacing: em(1);
+            color: $primary;
+        }
         .wrapper {
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
+            .cyrillic { font-family: $roboto; }
             nav ul li { @include inline-block; }
             input, button { outline: none; }
             button { border: none; }
@@ -32,24 +41,13 @@ html {
                 margin: 0 auto;
                 max-width: 1440px;
             }
-            // @include media(phone) { .container { width: calc(#{$container} - 10%); } }
-            // @include media(tablet) { .container { width: calc(#{$container} - 15%); } }
-            // @include media(laptop) { .container { width: calc(#{$container} - 30%); } }
-            // @include media(desktop) { .container { width: calc(#{$container} - 35%); } }
-            // @include media(large) { .container { width: calc(#{$container} - 40%); } }
-            #preloader {
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                z-index: 999;
-                position: fixed;
-                .spinner {
-                    left: 0;
-                    right: 0;
-                    margin: 0 auto;
-                    position: absolute;
-                }
+            .screen-block {
+                $space: 0;
+                width: 100%;
+                height: 100vh;
+                display: table;
+                position: relative;
+                @include add(social, "social/*.png", "social-2x/*.png");
             }
         }
     }
