@@ -3,23 +3,37 @@ $browser-context: 16;
 $padding: 24px 0;
 $time: .1s;
 
+$timeTick: .2s;
+$timeTickHalf: $timeTick / 2;
+
 // colors
+$background: #1C1C1C;
+$silver: #2D2D2D;
+$black: #000000;
+$gray: #666666;
+$blue: #0057FF;
+$dark: #333333;
+
 $secondary: #FAFBFC;
 $primary: #24292E;
 $border: #E1E4E8;
 $white: #FFF;
 
 // media queries
-// $phone: 768px;
+$phone: 768px;
 // $tablet: 1024px;
 // $laptop: 1200px;
 // $desktop: 1440px;
-// $container: 100%;
+$container: 100%;
 
 // font
-$bold: 'rubik bold';
-$light: 'rubik light';
-$regular: 'rubik regular';
+$roboto: Roboto;
+$raleway: Raleway;
+$extra-bold: 800;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$thin: 100;
 
 // media queries
 $phonePortrait:   '(max-width: 414px)';

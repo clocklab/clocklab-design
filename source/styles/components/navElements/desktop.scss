@@ -1,0 +1,268 @@
+& {
+    
+    // ----- bg letter -----
+    .bg-letter {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    // ----- bg clock -----
+    .bg-clock {
+        position: absolute;
+        top: 50%;
+        margin-top: -128px;
+        width: 100%;
+        line-height: 128px;
+        text-align: center;
+        font-size: 70vh;
+        color: $white;
+    }
+
+    // ----- logo -----
+    .logo {
+        position: absolute;
+        z-index: 1;
+        top: 3.5vh;
+        left: 5vh;
+       .image {
+            @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
+            background-repeat: no-repeat;
+            &.black {
+                @include image-retina("/../images/logo-black.png", "/../images/logo-black-2x.png");
+                background-repeat: no-repeat;
+            }
+        } 
+    }
+
+    // ----- language -----
+    .language {
+        position: absolute;
+        font-size: 1.34vh;
+        bottom: 45vh;
+        z-index: 1;
+        left: 5vh;
+        div {
+            width: fit-content;
+            transform: rotate(-90deg);
+            &:nth-of-type(1) { margin-bottom: 3.5vh; }
+            &:nth-of-type(2) { margin-bottom: 2vh; }
+            a {
+                &.select {
+                    color: $white;
+                    &::before {
+                        position: absolute;
+                        color: $white;
+                        bottom: .15vh;
+                        right: 2.5vh;
+                        content: '—';
+                    }
+                }
+                color: $gray;
+                cursor: pointer;
+                font-weight: $thin;
+                text-transform: uppercase;
+                &:hover {
+                    color: $white;
+                    transition: $time;
+                }
+            }
+        }
+    }
+
+    // ----- social -----
+    .social {
+        position: absolute;
+        bottom: 5vh;
+        z-index: 1;
+        left: 5vh;
+        div {
+            z-index: 0;
+            padding: 5.75px;
+            border: 1px solid $white;
+            &:nth-of-type(1) {
+                position: absolute;
+                bottom: 29px;
+                left: 0;
+            }
+            &:nth-of-type(2) {
+                position: absolute;
+                left: 29px;
+                bottom: 0;
+            }
+            &:hover::before {
+                visibility: visible;
+                opacity: 1;
+                right: 5px;
+                top: 5px;
+            }
+            &:before {
+                top: 25px;
+                opacity: 0;
+                z-index: -1;
+                content: '';
+                right: 25px;
+                width: 100%;
+                height: 100%;
+                background: $blue;
+                position: absolute;
+                visibility: hidden;
+                transition: opacity .3s, top .3s, right .3s;
+            }
+        }
+        a {
+            @include inline-block;
+            background-repeat: no-repeat;
+            &[href*="linkedin"] { @include sprite(linkedin, social); }
+            &[href*="facebook"] { @include sprite(facebook, social); }
+        }
+    }
+
+    // ----- jump letters -----
+    .jump-letters a {
+        @include inline-block;
+        text-align: center;
+        position: relative;
+        padding: 0 px(20);
+        overflow: hidden;
+        width: initial;
+        font-size: 0;
+        &:before {
+            left: 0;
+            top: 45%;
+            width: 100%;
+            height: 1px;
+            content: '';
+            display: block;
+            position: absolute;
+            background: $black;
+            transform: translateX(-100%);
+        }
+        span {
+            @include inline-block;
+            font-size: px(24);
+            padding: px(10) 0;
+        }
+        &:hover {
+            span {
+                animation-duration: .25s;
+                animation-fill-mode: forwards;
+                &:nth-child(odd) { animation-name: letterUp; }
+                &:nth-child(even) { animation-name: letterDown; }
+                &:nth-child(1) { animation-delay: 0s; }
+                &:nth-child(2) { animation-delay: $timeTickHalf / 2; }
+                &:nth-child(3) { animation-delay: $timeTickHalf; }
+                &:nth-child(4) { animation-delay: $timeTickHalf * 1.5; }
+                &:nth-child(5) { animation-delay: $timeTickHalf * 2; }
+                &:nth-child(6) { animation-delay: $timeTickHalf * 2.5; }
+                &:nth-child(7) { animation-delay: $timeTickHalf * 3; }
+            }
+            &:before { animation: crossAnchor $timeTick $timeTickHalf * 4 + .25s forwards; }
+        }
+    }
+    // ----- behance -----
+    .behance {
+        position: absolute;
+        bottom: 5vh;
+        left: 23vh;
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+        a {
+            &:before {
+                top: 56%;
+                left: -1px;
+                background: $white;
+            }
+            span {
+                color: $white;
+                font-weight: $thin;
+                font-size: 1.3vh;
+            }
+        }
+    }
+
+    // ----- copyright -----
+    .copyright {
+        transform: rotate(-90deg);
+        position: absolute;
+        font-size: 1.34vh;
+        right: -8.5vh;
+        bottom: 29vh;
+        p {
+            color: $white;
+            font-weight: $thin;
+        }
+    }
+
+    // ----- title -----
+    .title {
+        z-index: 1;
+        margin-top: 20vh;
+        margin-left: 35vh;
+        position: relative;
+        &.dark {
+            span.name span, .word span, p { color: $dark; }
+            span.name:before { background: $dark; }
+        }
+        p {
+            font-weight: $medium;
+            padding: 2vh 1vh 0;
+            line-height: 2vh;
+            color: $white;
+        }
+        span.name {
+            text-transform: uppercase;
+            position: relative;
+            font-size: 1.3vh;
+            top: -5vh;
+            span {
+                color: $white;
+                display: block;
+                visibility: hidden;
+                animation: titleName .5s linear;
+                animation-fill-mode: forwards;
+                animation-delay: .5s;
+            }
+            &:before {
+                animation: titleNameShape .5s linear;
+                background: $white;
+                position: absolute;
+                display: block;
+                height: 0.4vh;
+                width: 5.2vh;
+                left: -6.5vh;
+                content: '';
+                top: .4vh;
+            }
+        }
+        .word {
+            text-align: center;
+            overflow: hidden;
+            span {
+                width: 100%;
+                color: $white;
+                display: block;
+                font-size: 6vh;
+                position: relative;
+                font-weight: $extra-bold;
+                text-transform: uppercase;
+                animation: titleWord .5s .5s linear;
+                animation-fill-mode: forwards;
+                overflow: hidden;
+            }
+        }
+        .animation-border {
+            background-color: $blue;
+            animation: titleWordShape 2s linear;
+            animation-fill-mode: forwards;
+            animation-duration: .5s;
+            position: absolute;
+            z-index: -1;
+            height: 2vh;
+            width: 100%;
+            left: 0;
+        }
+    }
+}
