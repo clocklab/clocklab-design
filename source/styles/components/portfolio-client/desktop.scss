@@ -1,0 +1,40 @@
+& {  
+
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: px(300);
+    left: px(100);
+    z-index: 5;
+    color: $darkGray;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+
+    span {
+        display: block;
+    }
+
+    .client {
+        padding-right: px(100);
+        font-size: px(28);
+        line-height: px(62);
+        font-weight: 500;
+        vertical-align: bottom;
+        animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
+
+        &-name-container {
+            vertical-align: bottom;
+            font-size: px(72);
+            line-height: px(90);
+            font-weight: 700;
+            overflow: hidden;
+
+            span {
+                animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
+            }
+        }
+    }
+
+    &.white {
+        color: $white;
+    }
+}

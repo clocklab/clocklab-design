@@ -1,41 +1,5 @@
 // global variables
 $browser-context: 16;
-$padding: 24px 0;
-$time: .1s;
-
-$timeTick: .2s;
-$timeTickHalf: $timeTick / 2;
-
-// colors
-$background: #1C1C1C;
-$silver: #2D2D2D;
-$black: #000000;
-$gray: #666666;
-$blue: #0057FF;
-$dark: #333333;
-
-$secondary: #FAFBFC;
-$primary: #24292E;
-$border: #E1E4E8;
-$white: #FFF;
-
-// media queries
-$phone: 768px;
-// $tablet: 1024px;
-// $laptop: 1200px;
-// $desktop: 1440px;
-$container: 100%;
-
-// font
-$roboto: Roboto;
-$raleway: Raleway;
-$extra-bold: 800;
-$regular: 400;
-$medium: 500;
-$bold: 700;
-$thin: 100;
-
-// media queries
 $phonePortrait:   '(max-width: 414px)';
 $phoneLandscape:  '(min-width: 415px) and (max-width: 667px)';
 $tabletPortrait:  '(min-width: 668px) and (max-width: 768px)';
@@ -44,3 +8,161 @@ $desktop:         '(min-width: 1025px) and (max-width: 1366px)';
 $desktopWide:     '(min-width: 1367px) and (max-width: 1680px)';
 $desktopHD:       '(min-width: 1681px) and (max-width: 1920px)';
 $desktopMega:     '(min-width: 1921px)';
+// MEDIA QUERIES END
+
+
+// COLORS VARIABLES
+$white: #fff;
+$black: #000;
+$lightBlack: #1c1c1c;
+$gray: #999;
+$darkGray: #444;
+$blue: #0000fe;
+// COLORS VARIABLES END
+
+
+// TIME CONSTANTS
+$time: .3s;
+$timeHalf: $time / 2;
+$timeDif: .1s;
+
+$timeTick: .2s;
+$timeTickHalf: $timeTick / 2;
+// TIME CONSTANTS END
+
+
+// VARIABLES FOR PORTFOLIO CLIENT
+$portfolioClientDelayTime: 0s;
+//$portfolioClientDelayTime: $time * 3;
+$portfolioClientAnimationTime: $time;
+
+$portfolioClientNameDelayTime: $portfolioClientDelayTime + $portfolioClientAnimationTime;
+$portfolioClientNameAnimationTime: $time;
+// VARIABLES FOR PORTFOLIO CLIENT END
+
+
+// VARIABLES FOR PORTFOLIO RIGHT PANEL
+$portfolioRightPanelDateDelayTime: $portfolioClientDelayTime;
+$portfolioRightPanelDateAnimationTime: $time;
+
+$portfolioRightPanelDevicesDesktopDelayTime: $portfolioRightPanelDateDelayTime + $portfolioRightPanelDateAnimationTime;
+$portfolioRightPanelDevicesDesktopAnimationTime: $time;
+
+$portfolioRightPanelDevicesTabletDelayTime: $portfolioRightPanelDevicesDesktopDelayTime + $portfolioRightPanelDevicesDesktopAnimationTime;
+$portfolioRightPanelDevicesTabletAnimationTime: $time;
+
+$portfolioRightPanelDevicesMobileDelayTime: $portfolioRightPanelDevicesTabletDelayTime + $portfolioRightPanelDevicesTabletAnimationTime;
+$portfolioRightPanelDevicesMobileAnimationTime: $time;
+// VARIABLES FOR PORTFOLIO RIGHT PANEL END
+
+
+// VARIABLES FOR PORTFOLIO BLOCK AUDI Q7
+$portfolioAudiLeftBlockLeftLineDelayTime: $portfolioClientDelayTime;
+$portfolioAudiLeftBlockLeftLineAnimationTime: $time * 9;
+
+$portfolioAudiLeftBlockRightLineDelayTime: $portfolioAudiLeftBlockLeftLineDelayTime + $portfolioAudiLeftBlockLeftLineAnimationTime / 10;
+$portfolioAudiLeftBlockRightLineAnimationTime: $time * 9;
+
+$portfolioAudiRightBlockLeftLineDelayTime: $portfolioAudiLeftBlockLeftLineDelayTime + $time;
+$portfolioAudiRightBlockLeftLineAnimationTime: $time * 9 - $time;
+
+$portfolioAudiRightBlockRightLineDelayTime: $portfolioAudiRightBlockLeftLineDelayTime + $portfolioAudiRightBlockLeftLineAnimationTime / 10;
+$portfolioAudiRightBlockRightLineAnimationTime: $time * 9;
+
+$portfolioAudiCenterBlockDelayTime: $portfolioRightPanelDevicesMobileDelayTime + $portfolioRightPanelDevicesMobileAnimationTime;
+$portfolioAudiCenterBlockAnimationTime: $time * 3;
+
+$portfolioAudiCenterBlockLineDelayTime: $portfolioAudiCenterBlockDelayTime + $portfolioAudiCenterBlockAnimationTime;
+$portfolioAudiCenterBlockLineAnimationTime: $time * 3;
+
+$portfolioAudiCenterBlockShadowDelayTime: $portfolioAudiCenterBlockLineDelayTime + $portfolioAudiCenterBlockLineAnimationTime - $timeTick;
+$portfolioAudiCenterBlockShadowAnimationTime: $time * 3;
+
+$portfolioAudiLeftBlockDelayTime: $portfolioAudiCenterBlockLineDelayTime + $portfolioAudiCenterBlockLineAnimationTime;
+$portfolioAudiLeftBlockAnimationTime: $time * 3;
+
+    // MOBILE
+    $portfolioAudiCenterBlockDelayTimeMobile: 0s;
+    $portfolioAudiCenterBlockLineDelayTimeMobile: $portfolioAudiCenterBlockDelayTimeMobile + $portfolioAudiCenterBlockAnimationTime;
+    $portfolioAudiCenterBlockShadowDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime - $timeTick;
+    $portfolioAudiLeftBlockDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime;
+
+// VARIABLES FOR PORTFOLIO BLOCK AUDI Q7 END
+
+
+// VARIABLES FOR PORTFOLIO BLOCK VINO GRAD
+$portfolioVinogradLeftBlockDelayTime: 0s;
+$portfolioVinogradLeftBlockAnimationTime: $time * 3;
+
+$portfolioVinogradRightBlockDelayTime: $portfolioVinogradLeftBlockDelayTime;
+$portfolioVinogradRightBlockAnimationTime: $portfolioVinogradLeftBlockAnimationTime;
+
+$portfolioVinogradPosterDelayTime: $portfolioRightPanelDevicesMobileDelayTime + $portfolioRightPanelDevicesMobileAnimationTime;
+$portfolioVinogradPosterAnimationTime: $time * 6;
+
+$portfolioVinogradPosterImageDelayTime: $portfolioVinogradPosterDelayTime + $portfolioVinogradPosterAnimationTime;
+$portfolioVinogradPosterImageAnimationTime: $time * 3;
+
+$portfolioVinogradPosterTextDelayTime: $portfolioVinogradPosterImageDelayTime + $portfolioVinogradPosterImageAnimationTime;
+$portfolioVinogradPosterTextAnimationTime: $time * 3;
+
+    // MOBILE
+    $portfolioVinogradPosterDelayTimeMobile: $portfolioVinogradRightBlockDelayTime + $portfolioVinogradRightBlockAnimationTime;
+    $portfolioVinogradPosterImageDelayTimeMobile: $portfolioVinogradPosterDelayTimeMobile + $portfolioVinogradPosterAnimationTime;
+// VARIABLES FOR PORTFOLIO BLOCK VINO GRAD END
+
+
+// VARIABLES FOR PORTFOLIO BLOCK EURO CLUB
+$portfolioEuroclubBlueLineDelayTime: 0s;
+$portfolioEuroclubBlueLineAnimationTime: $time * 3;
+
+$portfolioEuroclubGrayBlockDelayTime: $portfolioEuroclubBlueLineDelayTime + $portfolioEuroclubBlueLineAnimationTime;
+$portfolioEuroclubGrayBlockAnimationTime: $time * 6;
+
+$portfolioEuroclubImageDelayTime: $portfolioEuroclubBlueLineDelayTime + $portfolioEuroclubBlueLineAnimationTime;
+$portfolioEuroclubImageAnimationTime: $portfolioEuroclubGrayBlockAnimationTime / 2;
+
+$portfolioEuroclubImageShadowDelayTime: $portfolioEuroclubBlueLineDelayTime + $portfolioEuroclubGrayBlockAnimationTime;
+$portfolioEuroclubImageShadowAnimationTime: $time * 3;
+
+$portfolioEuroclubImageTextDelayTime: $portfolioEuroclubImageShadowDelayTime + $portfolioEuroclubImageShadowAnimationTime;
+$portfolioEuroclubImageTextAnimationTime: $time * 3;
+
+$portfolioEuroclubLetterDelayTime: $portfolioEuroclubImageTextDelayTime + $portfolioEuroclubImageTextAnimationTime;
+$portfolioEuroclubLetterAnimationTime: $time * 3;
+// VARIABLES FOR PORTFOLIO BLOCK EURO CLUB END
+
+
+// VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL
+$portfolioAltaLeftBlockDelayTime: 0s;
+$portfolioAltaLeftBlockAnimationTime: $time * 3;
+
+$portfolioAltaRightBlockDelayTime: $portfolioAltaLeftBlockDelayTime;
+$portfolioAltaRightBlockAnimationTime: $portfolioAltaLeftBlockAnimationTime;
+
+$portfolioAltaGrayBlockDelayTime: $portfolioAltaRightBlockDelayTime + $portfolioAltaRightBlockAnimationTime;
+$portfolioAltaGrayBlockAnimationTime: $time * 3;
+
+$portfolioAltaImageDelayTime: $portfolioAltaGrayBlockDelayTime + $portfolioAltaGrayBlockAnimationTime;
+$portfolioAltaImageAnimationTime: $time * 3;
+
+$portfolioAltaPosterTextDelayTime: $portfolioAltaImageDelayTime + $portfolioAltaImageAnimationTime;
+$portfolioAltaPosterTextAnimationTime: $time * 3;
+
+$portfolioAltaPosterParagraphDelayTime: $portfolioAltaPosterTextDelayTime + $portfolioAltaPosterTextAnimationTime;
+$portfolioAltaPosterParagraphAnimationTime: $time * 3;
+
+$portfolioAltaControlsRightBlockDelayTime: $portfolioAltaPosterParagraphDelayTime + $portfolioAltaPosterParagraphAnimationTime;
+$portfolioAltaControlsRightBlockAimationTime: $time * 3;
+
+$portfolioAltaControlsLeftBlockDelayTime: $portfolioAltaControlsRightBlockDelayTime;
+$portfolioAltaControlsLeftBlockAimationTime: $portfolioAltaControlsRightBlockAimationTime;
+
+$portfolioAltaControlsIndicatorsDelayTime: $portfolioAltaControlsRightBlockDelayTime + $portfolioAltaControlsRightBlockAimationTime;
+$portfolioAltaControlsIndicatorsAimationTime: $time * 3;
+
+    // MOBILE
+    $portfolioAltaControlsRightBlockDelayTimeMobile: $portfolioAltaImageDelayTime + $portfolioAltaImageAnimationTime;
+    $portfolioAltaControlsLeftBlockDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile; 
+    $portfolioAltaControlsIndicatorsDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile + $portfolioAltaControlsRightBlockAimationTime;
+// VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL ENDS 

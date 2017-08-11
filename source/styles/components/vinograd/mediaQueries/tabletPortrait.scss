@@ -1,0 +1,17 @@
+@import '../desktop';
+
+& {
+
+    .poster {
+        margin-top: px(880);
+        width: 93vw;
+
+        .image-container {
+            animation-name: posterTablet;
+        }
+
+        span {
+            display: none;
+        }
+    }
+}

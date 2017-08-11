@@ -1,5 +1,4 @@
 // modules
-@import "compass/utilities/sprites";
 @import "compass/css3";
 
 // base
@@ -9,10 +8,18 @@
 @import "base/fonts";
 @import "base/reset";
 @import "base/common";
-@import "base/animation";
+@import "base/animations";
 
 // components
 @import "components/navElements/main";
 @import "components/screenClock/main";
 @import "components/pageContacts/main";
 @import "components/screenServicesOne/main";
+@import "components/menu/main";
+@import "components/buttons/main";
+@import "components/portfolio-right-panel/main";
+@import "components/portfolio-client/main";
+@import "components/q7/main";
+@import "components/vinograd/main";
+@import "components/euro-club/main";
+@import "components/alta-capital/main";

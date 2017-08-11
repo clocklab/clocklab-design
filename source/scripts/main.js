@@ -12,3 +12,6 @@
 
 // text shadow
 //= components/shadow.js
+
+// q7
+//= components/q7.js

@@ -1,0 +1,19 @@
+document.addEventListener('DOMContentLoaded', () => {
+
+    const euroClub = document.querySelector('.euro-club'),
+          letter = document.querySelector('.euro-club .letter'),
+          koef = 10
+
+    euroClub.addEventListener('mousemove', event => {
+        const allHeight = document.documentElement.clientHeight,
+              allWidth = document.documentElement.clientWidth,
+              currentXPos = event.clientX,
+              currentYPos = event.clientY
+
+        const newX = - (allWidth / 2 - currentXPos) / koef,
+              newY = - (allHeight / 2 - currentYPos) / koef
+
+        letter.style.transform = `translate3d(${newX}px, ${newY}px, 0)`
+    })
+
+})

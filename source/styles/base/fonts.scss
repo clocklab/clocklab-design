@@ -1,12 +1,29 @@
+// Roboto
 @font-face {
- 	font-family: 'rubik bold';
-    src: url(../fonts/rubik-bold.ttf);
+ 	font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
 }
+
+// Raleway
 @font-face {
- 	font-family: 'rubik light';
-    src: url(../fonts/rubik-light.ttf);
+ 	font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Medium.ttf');
+    font-style: normal;
+    font-weight: 500;
 }
+
 @font-face {
- 	font-family: 'rubik regular';
-    src: url(../fonts/rubik-regular.ttf);
+ 	font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+ 	font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-ExtraBold.ttf');
+    font-style: normal;
+    font-weight: 800;
 }

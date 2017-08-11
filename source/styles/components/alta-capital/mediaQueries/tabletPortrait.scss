@@ -1,0 +1,42 @@
+//@import '../mobile';
+@import '../desktop';
+
+& {
+
+    $afterWidth: 3.25520833%;
+
+    padding-top: px(380);
+    padding-right: $afterWidth;
+
+    .poster {
+        width: px(1190);
+        height: px(790);
+
+        & > span {
+            padding: px(20) px(50);
+        }
+
+        .text {
+            padding-top: px(40);
+
+            p {
+                padding-right: 0;
+                width: 47%;
+            }
+        }
+    }
+
+    .controls {
+        margin-top: px(250);
+        margin-right: px(60);
+        transform: none;
+    }
+
+    &:before {
+        width: 100% - $afterWidth;
+    }
+
+    &:after {
+        width: $afterWidth;
+    }
+}
