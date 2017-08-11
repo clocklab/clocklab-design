@@ -12,14 +12,30 @@ $desktopMega:     '(min-width: 1921px)';
 
 
 // COLORS VARIABLES
+$background: #1C1C1C;
+$silver: #2D2D2D;
+// $gray: #666666;
+$blue: #0057FF;
+$dark: #333333;
 $white: #fff;
 $black: #000;
 $lightBlack: #1c1c1c;
 $gray: #999;
 $darkGray: #444;
 $blue: #0000fe;
+$secondary: #FAFBFC;
+$primary: #24292E;
+$border: #E1E4E8;
 // COLORS VARIABLES END
 
+// FONT VARIABLES
+$roboto: Roboto;
+$raleway: Raleway;
+$extra-bold: 800;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$thin: 100;
 
 // TIME CONSTANTS
 $time: .3s;
@@ -88,7 +104,6 @@ $portfolioAudiLeftBlockAnimationTime: $time * 3;
     $portfolioAudiLeftBlockDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime;
 
 // VARIABLES FOR PORTFOLIO BLOCK AUDI Q7 END
-
 
 // VARIABLES FOR PORTFOLIO BLOCK VINO GRAD
 $portfolioVinogradLeftBlockDelayTime: 0s;

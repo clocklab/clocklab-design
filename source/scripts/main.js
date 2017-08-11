@@ -15,3 +15,6 @@
 
 // q7
 //= components/q7.js
+
+// menu
+//= components/menu.js
