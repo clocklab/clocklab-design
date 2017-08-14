@@ -1,0 +1,37 @@
+// ----- small-gray-lines -----
+.small-gray-lines {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    .line {
+        background-color: $silver;
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 24vh;
+        &.up { animation: lineUp 1s both; }
+        &.down { animation: lineDown 1s both; }
+        &:nth-of-type(1) {
+            left: 18vh;
+            top: -3vh;
+        }
+        &:nth-of-type(2) {
+            left: 100vh;
+            top: -19vh;
+        }
+        &:nth-of-type(3) {
+            right: 9vh;
+            top: 14vh;
+        }
+        &:nth-of-type(4) {
+            bottom: -3vh;
+            left: 29vh;
+        }
+        &:nth-of-type(5) {
+            bottom: 21vh;
+            right: 91vh;
+        }
+    }
+}

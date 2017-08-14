@@ -10,12 +10,13 @@
 @import "base/reset";
 @import "base/common";
 @import "base/animations";
+@import "base/small-gray-lines";
 
 // components
-@import "components/navElements/main";
-@import "components/screenClock/main";
-@import "components/pageContacts/main";
-@import "components/screenServicesOne/main";
+@import "components/navigation-elements/main";
+@import "components/clock/main";
+@import "components/contacts/main";
+@import "components/service-one/main";
 @import "components/menu/main";
 @import "components/buttons/main";
 @import "components/portfolio-right-panel/main";

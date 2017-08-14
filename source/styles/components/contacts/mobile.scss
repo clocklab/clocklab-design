@@ -1,4 +1,7 @@
 & {
+    background-color: $background;
+    font-family: $raleway;
+    font-weight: $regular;
     
     // ----- title -----
     .title {
@@ -31,8 +34,8 @@
         }
     }
 
-    // ----- contacts -----
-    .contacts {
+    // ----- contacts-info -----
+    .contacts-info {
         display: inherit;
         margin: 9vh 0 0 12.5vh;
         li {
@@ -60,6 +63,6 @@
     // ----- bg letter -----
     .bg-letter { display: none; }
 
-    // ----- lines -----
-    .lines { display: none; }
+    // ----- small-gray-lines -----
+    .small-gray-lines { display: none; }
 }

@@ -92,14 +92,10 @@ a {
 html body {
   min-width: 320px;
   overflow-x: hidden;
-  font-family: Raleway;
-  font-weight: 400;
-  background-color: #1C1C1C;
 }
 html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body button, html body input, html body label, html body span,
 html body td, html body th, html body li, html body p, html body a, html body a:hover, html body a:focus {
   letter-spacing: 0.0625em;
-  color: #24292E;
 }
 html body .wrapper {
   width: 100%;
@@ -966,7 +962,54 @@ html body .wrapper .screen-block {
             transform: rotate(-65deg) translate3d(100%, 0, 0);
   }
 }
+.small-gray-lines {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.small-gray-lines .line {
+  background-color: #2D2D2D;
+  position: absolute;
+  display: block;
+  height: 1px;
+  width: 24vh;
+}
+.small-gray-lines .line.up {
+  -webkit-animation: lineUp 1s both;
+          animation: lineUp 1s both;
+}
+.small-gray-lines .line.down {
+  -webkit-animation: lineDown 1s both;
+          animation: lineDown 1s both;
+}
+.small-gray-lines .line:nth-of-type(1) {
+  left: 18vh;
+  top: -3vh;
+}
+.small-gray-lines .line:nth-of-type(2) {
+  left: 100vh;
+  top: -19vh;
+}
+.small-gray-lines .line:nth-of-type(3) {
+  right: 9vh;
+  top: 14vh;
+}
+.small-gray-lines .line:nth-of-type(4) {
+  bottom: -3vh;
+  left: 29vh;
+}
+.small-gray-lines .line:nth-of-type(5) {
+  bottom: 21vh;
+  right: 91vh;
+}
+
 @media (max-width: 414px) {
+  .screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+  }
   .screen-block .bg-letter {
     position: absolute;
     height: 100%;
@@ -1313,6 +1356,10 @@ html body .wrapper .screen-block {
   }
 }
 @media (min-width: 415px) and (max-width: 667px) {
+  .screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+  }
   .screen-block .bg-letter {
     position: absolute;
     height: 100%;
@@ -1659,6 +1706,10 @@ html body .wrapper .screen-block {
   }
 }
 @media (min-width: 668px) and (max-width: 768px) {
+  .screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+  }
   .screen-block .bg-letter {
     position: absolute;
     height: 100%;
@@ -2005,6 +2056,10 @@ html body .wrapper .screen-block {
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+  .screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+  }
   .screen-block .bg-letter {
     position: absolute;
     height: 100%;
@@ -2366,6 +2421,10 @@ html body .wrapper .screen-block {
   }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
+  .screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+  }
   .screen-block .bg-letter {
     position: absolute;
     height: 100%;
@@ -2727,6 +2786,10 @@ html body .wrapper .screen-block {
   }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
+  .screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+  }
   .screen-block .bg-letter {
     position: absolute;
     height: 100%;
@@ -3088,6 +3151,10 @@ html body .wrapper .screen-block {
   }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
+  .screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+  }
   .screen-block .bg-letter {
     position: absolute;
     height: 100%;
@@ -3449,6 +3516,10 @@ html body .wrapper .screen-block {
   }
 }
 @media (min-width: 1921px) {
+  .screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+  }
   .screen-block .bg-letter {
     position: absolute;
     height: 100%;
@@ -3811,32 +3882,37 @@ html body .wrapper .screen-block {
 }
 
 @media (max-width: 414px) {
-  #screenClock.screen-block .slogan {
+  #clock.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+    background-color: #1C1C1C;
+  }
+  #clock.screen-block .slogan {
     font-weight: 800;
     position: absolute;
     left: 2.4vh;
     top: 43.5vh;
     z-index: 1;
   }
-  #screenClock.screen-block .slogan .second-slogan {
+  #clock.screen-block .slogan .second-slogan {
     margin: -100px 0 0 0;
     width: 28vh;
   }
-  #screenClock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .slogan .second-slogan p {
     color: #0000fe;
     font-size: 2.2vh;
     line-height: 3vh;
     font-weight: 500;
     font-family: Roboto;
   }
-  #screenClock.screen-block .slogan .word {
+  #clock.screen-block .slogan .word {
     height: 6vh;
   }
-  #screenClock.screen-block .slogan .word:nth-of-type(2) span {
+  #clock.screen-block .slogan .word:nth-of-type(2) span {
     -webkit-animation-delay: 1.25s;
             animation-delay: 1.25s;
   }
-  #screenClock.screen-block .slogan .word span {
+  #clock.screen-block .slogan .word span {
     opacity: 1;
     color: #fff;
     display: block;
@@ -3848,29 +3924,29 @@ html body .wrapper .screen-block {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #screenClock.screen-block .bg-letter {
+  #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
     background-size: 80%;
   }
-  #screenClock.screen-block .clock-light {
-    background: url("../images/clock-light.png");
+  #clock.screen-block .watch-light {
+    background: url("../images/watch-light.png");
     background-size: cover;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
   }
-  #screenClock.screen-block .clock {
-    background: url("../images/clock.png") no-repeat 60.5%;
+  #clock.screen-block .watch {
+    background: url("../images/watch.png") no-repeat 60.5%;
     background-size: 47%;
     margin: 19vh auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
   }
-  #screenClock.screen-block .hours-container,
-  #screenClock.screen-block .minutes-container,
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .hours-container,
+  #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
     position: absolute;
     margin: auto;
     bottom: 0;
@@ -3884,7 +3960,7 @@ html body .wrapper .screen-block {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  #screenClock.screen-block .hours {
+  #clock.screen-block .hours {
     background: url("../images/hours-hand.svg") no-repeat;
     -webkit-transform-origin: 60% 100%;
             transform-origin: 60% 100%;
@@ -3897,7 +3973,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .minutes {
+  #clock.screen-block .minutes {
     background: url("../images/minutes-hand.svg") no-repeat;
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
@@ -3910,7 +3986,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .seconds {
+  #clock.screen-block .seconds {
     background: url("../images/seconds-hand.svg") no-repeat;
     -webkit-transform: rotateZ(0) !important;
             transform: rotateZ(0) !important;
@@ -3924,17 +4000,17 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .hours-container {
+  #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
   }
-  #screenClock.screen-block .minutes-container {
+  #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -3952,37 +4028,42 @@ html body .wrapper .screen-block {
               transform: rotateZ(360deg);
     }
   }
-  #screenClock.screen-block .scroll {
+  #clock.screen-block .scroll {
     display: none;
   }
 }
 @media (min-width: 415px) and (max-width: 667px) {
-  #screenClock.screen-block .slogan {
+  #clock.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+    background-color: #1C1C1C;
+  }
+  #clock.screen-block .slogan {
     font-weight: 800;
     position: absolute;
     left: 2.4vh;
     top: 43.5vh;
     z-index: 1;
   }
-  #screenClock.screen-block .slogan .second-slogan {
+  #clock.screen-block .slogan .second-slogan {
     margin: -100px 0 0 0;
     width: 28vh;
   }
-  #screenClock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .slogan .second-slogan p {
     color: #0000fe;
     font-size: 2.2vh;
     line-height: 3vh;
     font-weight: 500;
     font-family: Roboto;
   }
-  #screenClock.screen-block .slogan .word {
+  #clock.screen-block .slogan .word {
     height: 6vh;
   }
-  #screenClock.screen-block .slogan .word:nth-of-type(2) span {
+  #clock.screen-block .slogan .word:nth-of-type(2) span {
     -webkit-animation-delay: 1.25s;
             animation-delay: 1.25s;
   }
-  #screenClock.screen-block .slogan .word span {
+  #clock.screen-block .slogan .word span {
     opacity: 1;
     color: #fff;
     display: block;
@@ -3994,29 +4075,29 @@ html body .wrapper .screen-block {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #screenClock.screen-block .bg-letter {
+  #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
     background-size: 80%;
   }
-  #screenClock.screen-block .clock-light {
-    background: url("../images/clock-light.png");
+  #clock.screen-block .watch-light {
+    background: url("../images/watch-light.png");
     background-size: cover;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
   }
-  #screenClock.screen-block .clock {
-    background: url("../images/clock.png") no-repeat 60.5%;
+  #clock.screen-block .watch {
+    background: url("../images/watch.png") no-repeat 60.5%;
     background-size: 47%;
     margin: 19vh auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
   }
-  #screenClock.screen-block .hours-container,
-  #screenClock.screen-block .minutes-container,
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .hours-container,
+  #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
     position: absolute;
     margin: auto;
     bottom: 0;
@@ -4030,7 +4111,7 @@ html body .wrapper .screen-block {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  #screenClock.screen-block .hours {
+  #clock.screen-block .hours {
     background: url("../images/hours-hand.svg") no-repeat;
     -webkit-transform-origin: 60% 100%;
             transform-origin: 60% 100%;
@@ -4043,7 +4124,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .minutes {
+  #clock.screen-block .minutes {
     background: url("../images/minutes-hand.svg") no-repeat;
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
@@ -4056,7 +4137,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .seconds {
+  #clock.screen-block .seconds {
     background: url("../images/seconds-hand.svg") no-repeat;
     -webkit-transform: rotateZ(0) !important;
             transform: rotateZ(0) !important;
@@ -4070,17 +4151,17 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .hours-container {
+  #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
   }
-  #screenClock.screen-block .minutes-container {
+  #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -4098,37 +4179,42 @@ html body .wrapper .screen-block {
               transform: rotateZ(360deg);
     }
   }
-  #screenClock.screen-block .scroll {
+  #clock.screen-block .scroll {
     display: none;
   }
 }
 @media (min-width: 668px) and (max-width: 768px) {
-  #screenClock.screen-block .slogan {
+  #clock.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+    background-color: #1C1C1C;
+  }
+  #clock.screen-block .slogan {
     font-weight: 800;
     position: absolute;
     left: 2.4vh;
     top: 43.5vh;
     z-index: 1;
   }
-  #screenClock.screen-block .slogan .second-slogan {
+  #clock.screen-block .slogan .second-slogan {
     margin: -100px 0 0 0;
     width: 28vh;
   }
-  #screenClock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .slogan .second-slogan p {
     color: #0000fe;
     font-size: 2.2vh;
     line-height: 3vh;
     font-weight: 500;
     font-family: Roboto;
   }
-  #screenClock.screen-block .slogan .word {
+  #clock.screen-block .slogan .word {
     height: 6vh;
   }
-  #screenClock.screen-block .slogan .word:nth-of-type(2) span {
+  #clock.screen-block .slogan .word:nth-of-type(2) span {
     -webkit-animation-delay: 1.25s;
             animation-delay: 1.25s;
   }
-  #screenClock.screen-block .slogan .word span {
+  #clock.screen-block .slogan .word span {
     opacity: 1;
     color: #fff;
     display: block;
@@ -4140,29 +4226,29 @@ html body .wrapper .screen-block {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #screenClock.screen-block .bg-letter {
+  #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
     background-size: 80%;
   }
-  #screenClock.screen-block .clock-light {
-    background: url("../images/clock-light.png");
+  #clock.screen-block .watch-light {
+    background: url("../images/watch-light.png");
     background-size: cover;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
   }
-  #screenClock.screen-block .clock {
-    background: url("../images/clock.png") no-repeat 60.5%;
+  #clock.screen-block .watch {
+    background: url("../images/watch.png") no-repeat 60.5%;
     background-size: 47%;
     margin: 19vh auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
   }
-  #screenClock.screen-block .hours-container,
-  #screenClock.screen-block .minutes-container,
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .hours-container,
+  #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
     position: absolute;
     margin: auto;
     bottom: 0;
@@ -4176,7 +4262,7 @@ html body .wrapper .screen-block {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  #screenClock.screen-block .hours {
+  #clock.screen-block .hours {
     background: url("../images/hours-hand.svg") no-repeat;
     -webkit-transform-origin: 60% 100%;
             transform-origin: 60% 100%;
@@ -4189,7 +4275,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .minutes {
+  #clock.screen-block .minutes {
     background: url("../images/minutes-hand.svg") no-repeat;
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
@@ -4202,7 +4288,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .seconds {
+  #clock.screen-block .seconds {
     background: url("../images/seconds-hand.svg") no-repeat;
     -webkit-transform: rotateZ(0) !important;
             transform: rotateZ(0) !important;
@@ -4216,17 +4302,17 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .hours-container {
+  #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
   }
-  #screenClock.screen-block .minutes-container {
+  #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -4244,35 +4330,40 @@ html body .wrapper .screen-block {
               transform: rotateZ(360deg);
     }
   }
-  #screenClock.screen-block .scroll {
+  #clock.screen-block .scroll {
     display: none;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-  #screenClock.screen-block .slogan {
+  #clock.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+    background-color: #1C1C1C;
+  }
+  #clock.screen-block .slogan {
     font-weight: 800;
     position: absolute;
     left: 20vh;
     top: 35vh;
     z-index: 1;
   }
-  #screenClock.screen-block .slogan .second-slogan {
+  #clock.screen-block .slogan .second-slogan {
     margin: -80px 0 0 1vh;
   }
-  #screenClock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .slogan .second-slogan p {
     color: #0000fe;
     font-size: 1.9vh;
     font-weight: 500;
     font-family: Roboto;
   }
-  #screenClock.screen-block .slogan .word {
+  #clock.screen-block .slogan .word {
     height: 6vh;
   }
-  #screenClock.screen-block .slogan .word:nth-of-type(2) span {
+  #clock.screen-block .slogan .word:nth-of-type(2) span {
     -webkit-animation-delay: 1.25s;
             animation-delay: 1.25s;
   }
-  #screenClock.screen-block .slogan .word span {
+  #clock.screen-block .slogan .word span {
     opacity: 1;
     color: #fff;
     display: block;
@@ -4284,28 +4375,28 @@ html body .wrapper .screen-block {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #screenClock.screen-block .bg-letter {
+  #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
     background-size: 28%;
   }
-  #screenClock.screen-block .clock-light {
-    background: url("../images/clock-light.png");
+  #clock.screen-block .watch-light {
+    background: url("../images/watch-light.png");
     background-size: cover;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
   }
-  #screenClock.screen-block .clock {
-    background: url("../images/clock.png") no-repeat 51.5%;
+  #clock.screen-block .watch {
+    background: url("../images/watch.png") no-repeat 51.5%;
     margin: -2vh auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
   }
-  #screenClock.screen-block .hours-container,
-  #screenClock.screen-block .minutes-container,
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .hours-container,
+  #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
     position: absolute;
     margin: auto;
     bottom: 0;
@@ -4318,7 +4409,7 @@ html body .wrapper .screen-block {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  #screenClock.screen-block .hours {
+  #clock.screen-block .hours {
     background: url("../images/hours-hand.svg") no-repeat;
     -webkit-transform-origin: 60% 100%;
             transform-origin: 60% 100%;
@@ -4331,7 +4422,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .minutes {
+  #clock.screen-block .minutes {
     background: url("../images/minutes-hand.svg") no-repeat;
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
@@ -4344,7 +4435,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .seconds {
+  #clock.screen-block .seconds {
     background: url("../images/seconds-hand.svg") no-repeat;
     -webkit-transform: rotateZ(0) !important;
             transform: rotateZ(0) !important;
@@ -4358,17 +4449,17 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .hours-container {
+  #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
   }
-  #screenClock.screen-block .minutes-container {
+  #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -4386,7 +4477,7 @@ html body .wrapper .screen-block {
               transform: rotateZ(360deg);
     }
   }
-  #screenClock.screen-block .scroll {
+  #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
     bottom: 6.6vh;
@@ -4394,13 +4485,13 @@ html body .wrapper .screen-block {
     right: 50%;
     left: 50%;
   }
-  #screenClock.screen-block .scroll .circle {
+  #clock.screen-block .scroll .circle {
     width: 4px;
     height: 4px;
     background: #fff;
     border-radius: 50px;
   }
-  #screenClock.screen-block .scroll .arrow:before {
+  #clock.screen-block .scroll .arrow:before {
     -webkit-transform: translateY(-50%) rotate(45deg);
     transform: translateY(-50%) rotate(45deg);
     -webkit-animation: bounce 1s infinite;
@@ -4448,30 +4539,35 @@ html body .wrapper .screen-block {
   }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
-  #screenClock.screen-block .slogan {
+  #clock.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+    background-color: #1C1C1C;
+  }
+  #clock.screen-block .slogan {
     font-weight: 800;
     position: absolute;
     left: 20vh;
     top: 35vh;
     z-index: 1;
   }
-  #screenClock.screen-block .slogan .second-slogan {
+  #clock.screen-block .slogan .second-slogan {
     margin: -80px 0 0 1vh;
   }
-  #screenClock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .slogan .second-slogan p {
     color: #0000fe;
     font-size: 1.9vh;
     font-weight: 500;
     font-family: Roboto;
   }
-  #screenClock.screen-block .slogan .word {
+  #clock.screen-block .slogan .word {
     height: 6vh;
   }
-  #screenClock.screen-block .slogan .word:nth-of-type(2) span {
+  #clock.screen-block .slogan .word:nth-of-type(2) span {
     -webkit-animation-delay: 1.25s;
             animation-delay: 1.25s;
   }
-  #screenClock.screen-block .slogan .word span {
+  #clock.screen-block .slogan .word span {
     opacity: 1;
     color: #fff;
     display: block;
@@ -4483,28 +4579,28 @@ html body .wrapper .screen-block {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #screenClock.screen-block .bg-letter {
+  #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
     background-size: 28%;
   }
-  #screenClock.screen-block .clock-light {
-    background: url("../images/clock-light.png");
+  #clock.screen-block .watch-light {
+    background: url("../images/watch-light.png");
     background-size: cover;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
   }
-  #screenClock.screen-block .clock {
-    background: url("../images/clock.png") no-repeat 51.5%;
+  #clock.screen-block .watch {
+    background: url("../images/watch.png") no-repeat 51.5%;
     margin: -2vh auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
   }
-  #screenClock.screen-block .hours-container,
-  #screenClock.screen-block .minutes-container,
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .hours-container,
+  #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
     position: absolute;
     margin: auto;
     bottom: 0;
@@ -4517,7 +4613,7 @@ html body .wrapper .screen-block {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  #screenClock.screen-block .hours {
+  #clock.screen-block .hours {
     background: url("../images/hours-hand.svg") no-repeat;
     -webkit-transform-origin: 60% 100%;
             transform-origin: 60% 100%;
@@ -4530,7 +4626,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .minutes {
+  #clock.screen-block .minutes {
     background: url("../images/minutes-hand.svg") no-repeat;
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
@@ -4543,7 +4639,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .seconds {
+  #clock.screen-block .seconds {
     background: url("../images/seconds-hand.svg") no-repeat;
     -webkit-transform: rotateZ(0) !important;
             transform: rotateZ(0) !important;
@@ -4557,17 +4653,17 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .hours-container {
+  #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
   }
-  #screenClock.screen-block .minutes-container {
+  #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -4585,7 +4681,7 @@ html body .wrapper .screen-block {
               transform: rotateZ(360deg);
     }
   }
-  #screenClock.screen-block .scroll {
+  #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
     bottom: 6.6vh;
@@ -4593,13 +4689,13 @@ html body .wrapper .screen-block {
     right: 50%;
     left: 50%;
   }
-  #screenClock.screen-block .scroll .circle {
+  #clock.screen-block .scroll .circle {
     width: 4px;
     height: 4px;
     background: #fff;
     border-radius: 50px;
   }
-  #screenClock.screen-block .scroll .arrow:before {
+  #clock.screen-block .scroll .arrow:before {
     -webkit-transform: translateY(-50%) rotate(45deg);
     transform: translateY(-50%) rotate(45deg);
     -webkit-animation: bounce 1s infinite;
@@ -4647,30 +4743,35 @@ html body .wrapper .screen-block {
   }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
-  #screenClock.screen-block .slogan {
+  #clock.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+    background-color: #1C1C1C;
+  }
+  #clock.screen-block .slogan {
     font-weight: 800;
     position: absolute;
     left: 20vh;
     top: 35vh;
     z-index: 1;
   }
-  #screenClock.screen-block .slogan .second-slogan {
+  #clock.screen-block .slogan .second-slogan {
     margin: -80px 0 0 1vh;
   }
-  #screenClock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .slogan .second-slogan p {
     color: #0000fe;
     font-size: 1.9vh;
     font-weight: 500;
     font-family: Roboto;
   }
-  #screenClock.screen-block .slogan .word {
+  #clock.screen-block .slogan .word {
     height: 6vh;
   }
-  #screenClock.screen-block .slogan .word:nth-of-type(2) span {
+  #clock.screen-block .slogan .word:nth-of-type(2) span {
     -webkit-animation-delay: 1.25s;
             animation-delay: 1.25s;
   }
-  #screenClock.screen-block .slogan .word span {
+  #clock.screen-block .slogan .word span {
     opacity: 1;
     color: #fff;
     display: block;
@@ -4682,28 +4783,28 @@ html body .wrapper .screen-block {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #screenClock.screen-block .bg-letter {
+  #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
     background-size: 28%;
   }
-  #screenClock.screen-block .clock-light {
-    background: url("../images/clock-light.png");
+  #clock.screen-block .watch-light {
+    background: url("../images/watch-light.png");
     background-size: cover;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
   }
-  #screenClock.screen-block .clock {
-    background: url("../images/clock.png") no-repeat 51.5%;
+  #clock.screen-block .watch {
+    background: url("../images/watch.png") no-repeat 51.5%;
     margin: -2vh auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
   }
-  #screenClock.screen-block .hours-container,
-  #screenClock.screen-block .minutes-container,
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .hours-container,
+  #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
     position: absolute;
     margin: auto;
     bottom: 0;
@@ -4716,7 +4817,7 @@ html body .wrapper .screen-block {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  #screenClock.screen-block .hours {
+  #clock.screen-block .hours {
     background: url("../images/hours-hand.svg") no-repeat;
     -webkit-transform-origin: 60% 100%;
             transform-origin: 60% 100%;
@@ -4729,7 +4830,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .minutes {
+  #clock.screen-block .minutes {
     background: url("../images/minutes-hand.svg") no-repeat;
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
@@ -4742,7 +4843,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .seconds {
+  #clock.screen-block .seconds {
     background: url("../images/seconds-hand.svg") no-repeat;
     -webkit-transform: rotateZ(0) !important;
             transform: rotateZ(0) !important;
@@ -4756,17 +4857,17 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .hours-container {
+  #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
   }
-  #screenClock.screen-block .minutes-container {
+  #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -4784,7 +4885,7 @@ html body .wrapper .screen-block {
               transform: rotateZ(360deg);
     }
   }
-  #screenClock.screen-block .scroll {
+  #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
     bottom: 6.6vh;
@@ -4792,13 +4893,13 @@ html body .wrapper .screen-block {
     right: 50%;
     left: 50%;
   }
-  #screenClock.screen-block .scroll .circle {
+  #clock.screen-block .scroll .circle {
     width: 4px;
     height: 4px;
     background: #fff;
     border-radius: 50px;
   }
-  #screenClock.screen-block .scroll .arrow:before {
+  #clock.screen-block .scroll .arrow:before {
     -webkit-transform: translateY(-50%) rotate(45deg);
     transform: translateY(-50%) rotate(45deg);
     -webkit-animation: bounce 1s infinite;
@@ -4846,30 +4947,35 @@ html body .wrapper .screen-block {
   }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
-  #screenClock.screen-block .slogan {
+  #clock.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+    background-color: #1C1C1C;
+  }
+  #clock.screen-block .slogan {
     font-weight: 800;
     position: absolute;
     left: 20vh;
     top: 35vh;
     z-index: 1;
   }
-  #screenClock.screen-block .slogan .second-slogan {
+  #clock.screen-block .slogan .second-slogan {
     margin: -80px 0 0 1vh;
   }
-  #screenClock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .slogan .second-slogan p {
     color: #0000fe;
     font-size: 1.9vh;
     font-weight: 500;
     font-family: Roboto;
   }
-  #screenClock.screen-block .slogan .word {
+  #clock.screen-block .slogan .word {
     height: 6vh;
   }
-  #screenClock.screen-block .slogan .word:nth-of-type(2) span {
+  #clock.screen-block .slogan .word:nth-of-type(2) span {
     -webkit-animation-delay: 1.25s;
             animation-delay: 1.25s;
   }
-  #screenClock.screen-block .slogan .word span {
+  #clock.screen-block .slogan .word span {
     opacity: 1;
     color: #fff;
     display: block;
@@ -4881,28 +4987,28 @@ html body .wrapper .screen-block {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #screenClock.screen-block .bg-letter {
+  #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
     background-size: 28%;
   }
-  #screenClock.screen-block .clock-light {
-    background: url("../images/clock-light.png");
+  #clock.screen-block .watch-light {
+    background: url("../images/watch-light.png");
     background-size: cover;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
   }
-  #screenClock.screen-block .clock {
-    background: url("../images/clock.png") no-repeat 51.5%;
+  #clock.screen-block .watch {
+    background: url("../images/watch.png") no-repeat 51.5%;
     margin: -2vh auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
   }
-  #screenClock.screen-block .hours-container,
-  #screenClock.screen-block .minutes-container,
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .hours-container,
+  #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
     position: absolute;
     margin: auto;
     bottom: 0;
@@ -4915,7 +5021,7 @@ html body .wrapper .screen-block {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  #screenClock.screen-block .hours {
+  #clock.screen-block .hours {
     background: url("../images/hours-hand.svg") no-repeat;
     -webkit-transform-origin: 60% 100%;
             transform-origin: 60% 100%;
@@ -4928,7 +5034,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .minutes {
+  #clock.screen-block .minutes {
     background: url("../images/minutes-hand.svg") no-repeat;
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
@@ -4941,7 +5047,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .seconds {
+  #clock.screen-block .seconds {
     background: url("../images/seconds-hand.svg") no-repeat;
     -webkit-transform: rotateZ(0) !important;
             transform: rotateZ(0) !important;
@@ -4955,17 +5061,17 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .hours-container {
+  #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
   }
-  #screenClock.screen-block .minutes-container {
+  #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -4983,7 +5089,7 @@ html body .wrapper .screen-block {
               transform: rotateZ(360deg);
     }
   }
-  #screenClock.screen-block .scroll {
+  #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
     bottom: 6.6vh;
@@ -4991,13 +5097,13 @@ html body .wrapper .screen-block {
     right: 50%;
     left: 50%;
   }
-  #screenClock.screen-block .scroll .circle {
+  #clock.screen-block .scroll .circle {
     width: 4px;
     height: 4px;
     background: #fff;
     border-radius: 50px;
   }
-  #screenClock.screen-block .scroll .arrow:before {
+  #clock.screen-block .scroll .arrow:before {
     -webkit-transform: translateY(-50%) rotate(45deg);
     transform: translateY(-50%) rotate(45deg);
     -webkit-animation: bounce 1s infinite;
@@ -5045,30 +5151,35 @@ html body .wrapper .screen-block {
   }
 }
 @media (min-width: 1921px) {
-  #screenClock.screen-block .slogan {
+  #clock.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+    background-color: #1C1C1C;
+  }
+  #clock.screen-block .slogan {
     font-weight: 800;
     position: absolute;
     left: 20vh;
     top: 35vh;
     z-index: 1;
   }
-  #screenClock.screen-block .slogan .second-slogan {
+  #clock.screen-block .slogan .second-slogan {
     margin: -80px 0 0 1vh;
   }
-  #screenClock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .slogan .second-slogan p {
     color: #0000fe;
     font-size: 1.9vh;
     font-weight: 500;
     font-family: Roboto;
   }
-  #screenClock.screen-block .slogan .word {
+  #clock.screen-block .slogan .word {
     height: 6vh;
   }
-  #screenClock.screen-block .slogan .word:nth-of-type(2) span {
+  #clock.screen-block .slogan .word:nth-of-type(2) span {
     -webkit-animation-delay: 1.25s;
             animation-delay: 1.25s;
   }
-  #screenClock.screen-block .slogan .word span {
+  #clock.screen-block .slogan .word span {
     opacity: 1;
     color: #fff;
     display: block;
@@ -5080,28 +5191,28 @@ html body .wrapper .screen-block {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #screenClock.screen-block .bg-letter {
+  #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
     background-size: 28%;
   }
-  #screenClock.screen-block .clock-light {
-    background: url("../images/clock-light.png");
+  #clock.screen-block .watch-light {
+    background: url("../images/watch-light.png");
     background-size: cover;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
   }
-  #screenClock.screen-block .clock {
-    background: url("../images/clock.png") no-repeat 51.5%;
+  #clock.screen-block .watch {
+    background: url("../images/watch.png") no-repeat 51.5%;
     margin: -2vh auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
   }
-  #screenClock.screen-block .hours-container,
-  #screenClock.screen-block .minutes-container,
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .hours-container,
+  #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
     position: absolute;
     margin: auto;
     bottom: 0;
@@ -5114,7 +5225,7 @@ html body .wrapper .screen-block {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
-  #screenClock.screen-block .hours {
+  #clock.screen-block .hours {
     background: url("../images/hours-hand.svg") no-repeat;
     -webkit-transform-origin: 60% 100%;
             transform-origin: 60% 100%;
@@ -5127,7 +5238,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .minutes {
+  #clock.screen-block .minutes {
     background: url("../images/minutes-hand.svg") no-repeat;
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
@@ -5140,7 +5251,7 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .seconds {
+  #clock.screen-block .seconds {
     background: url("../images/seconds-hand.svg") no-repeat;
     -webkit-transform: rotateZ(0) !important;
             transform: rotateZ(0) !important;
@@ -5154,17 +5265,17 @@ html body .wrapper .screen-block {
     margin: auto;
     display: block;
   }
-  #screenClock.screen-block .hours-container {
+  #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
   }
-  #screenClock.screen-block .minutes-container {
+  #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
-  #screenClock.screen-block .seconds-container {
+  #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -5182,7 +5293,7 @@ html body .wrapper .screen-block {
               transform: rotateZ(360deg);
     }
   }
-  #screenClock.screen-block .scroll {
+  #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
     bottom: 6.6vh;
@@ -5190,13 +5301,13 @@ html body .wrapper .screen-block {
     right: 50%;
     left: 50%;
   }
-  #screenClock.screen-block .scroll .circle {
+  #clock.screen-block .scroll .circle {
     width: 4px;
     height: 4px;
     background: #fff;
     border-radius: 50px;
   }
-  #screenClock.screen-block .scroll .arrow:before {
+  #clock.screen-block .scroll .arrow:before {
     -webkit-transform: translateY(-50%) rotate(45deg);
     transform: translateY(-50%) rotate(45deg);
     -webkit-animation: bounce 1s infinite;
@@ -5245,228 +5356,248 @@ html body .wrapper .screen-block {
 }
 
 @media (max-width: 414px) {
-  #pageContacts.screen-block .title {
+  #contacts.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #contacts.screen-block .title {
     display: inherit;
     margin-top: 23vh;
     margin-left: 3vh;
   }
-  #pageContacts.screen-block .title span.name {
+  #contacts.screen-block .title span.name {
     font-size: 2.1vh;
     left: 11vh;
     top: -3vh;
   }
-  #pageContacts.screen-block .title span.name span {
+  #contacts.screen-block .title span.name span {
     color: #cccccc;
     display: inherit;
   }
-  #pageContacts.screen-block .title span.name:before {
+  #contacts.screen-block .title span.name:before {
     background: #cccccc;
     left: -11vh;
     width: 9vh;
     top: 1vh;
   }
-  #pageContacts.screen-block .title .animation-border {
+  #contacts.screen-block .title .animation-border {
     display: none;
   }
-  #pageContacts.screen-block .title .word {
+  #contacts.screen-block .title .word {
     text-align: left;
     height: 7.5vh;
   }
-  #pageContacts.screen-block .title .word span {
+  #contacts.screen-block .title .word span {
     bottom: -100px;
     font-size: 3.9vh;
   }
-  #pageContacts.screen-block .contacts {
+  #contacts.screen-block .contacts-info {
     display: inherit;
     margin: 9vh 0 0 12.5vh;
   }
-  #pageContacts.screen-block .contacts li {
+  #contacts.screen-block .contacts-info li {
     color: #fff;
     font-size: 2vh;
     margin-bottom: 5.5vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a:hover {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a:hover {
     border: none;
   }
-  #pageContacts.screen-block .contacts li a {
+  #contacts.screen-block .contacts-info li a {
     color: #fff;
     display: block;
     font-size: 2.6vh;
     margin-top: -.5vh;
   }
-  #pageContacts.screen-block .language {
+  #contacts.screen-block .language {
     top: 25vh;
   }
-  #pageContacts.screen-block .bg-letter {
+  #contacts.screen-block .bg-letter {
     display: none;
   }
-  #pageContacts.screen-block .lines {
+  #contacts.screen-block .small-gray-lines {
     display: none;
   }
 }
 @media (min-width: 415px) and (max-width: 667px) {
-  #pageContacts.screen-block .title {
+  #contacts.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #contacts.screen-block .title {
     display: inherit;
     margin-top: 23vh;
     margin-left: 3vh;
   }
-  #pageContacts.screen-block .title span.name {
+  #contacts.screen-block .title span.name {
     font-size: 2.1vh;
     left: 11vh;
     top: -3vh;
   }
-  #pageContacts.screen-block .title span.name span {
+  #contacts.screen-block .title span.name span {
     color: #cccccc;
     display: inherit;
   }
-  #pageContacts.screen-block .title span.name:before {
+  #contacts.screen-block .title span.name:before {
     background: #cccccc;
     left: -11vh;
     width: 9vh;
     top: 1vh;
   }
-  #pageContacts.screen-block .title .animation-border {
+  #contacts.screen-block .title .animation-border {
     display: none;
   }
-  #pageContacts.screen-block .title .word {
+  #contacts.screen-block .title .word {
     text-align: left;
     height: 7.5vh;
   }
-  #pageContacts.screen-block .title .word span {
+  #contacts.screen-block .title .word span {
     bottom: -100px;
     font-size: 3.9vh;
   }
-  #pageContacts.screen-block .contacts {
+  #contacts.screen-block .contacts-info {
     display: inherit;
     margin: 9vh 0 0 12.5vh;
   }
-  #pageContacts.screen-block .contacts li {
+  #contacts.screen-block .contacts-info li {
     color: #fff;
     font-size: 2vh;
     margin-bottom: 5.5vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a:hover {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a:hover {
     border: none;
   }
-  #pageContacts.screen-block .contacts li a {
+  #contacts.screen-block .contacts-info li a {
     color: #fff;
     display: block;
     font-size: 2.6vh;
     margin-top: -.5vh;
   }
-  #pageContacts.screen-block .language {
+  #contacts.screen-block .language {
     top: 25vh;
   }
-  #pageContacts.screen-block .bg-letter {
+  #contacts.screen-block .bg-letter {
     display: none;
   }
-  #pageContacts.screen-block .lines {
+  #contacts.screen-block .small-gray-lines {
     display: none;
   }
 }
 @media (min-width: 668px) and (max-width: 768px) {
-  #pageContacts.screen-block .title {
+  #contacts.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #contacts.screen-block .title {
     display: inherit;
     margin-top: 23vh;
     margin-left: 3vh;
   }
-  #pageContacts.screen-block .title span.name {
+  #contacts.screen-block .title span.name {
     font-size: 2.1vh;
     left: 11vh;
     top: -3vh;
   }
-  #pageContacts.screen-block .title span.name span {
+  #contacts.screen-block .title span.name span {
     color: #cccccc;
     display: inherit;
   }
-  #pageContacts.screen-block .title span.name:before {
+  #contacts.screen-block .title span.name:before {
     background: #cccccc;
     left: -11vh;
     width: 9vh;
     top: 1vh;
   }
-  #pageContacts.screen-block .title .animation-border {
+  #contacts.screen-block .title .animation-border {
     display: none;
   }
-  #pageContacts.screen-block .title .word {
+  #contacts.screen-block .title .word {
     text-align: left;
     height: 7.5vh;
   }
-  #pageContacts.screen-block .title .word span {
+  #contacts.screen-block .title .word span {
     bottom: -100px;
     font-size: 3.9vh;
   }
-  #pageContacts.screen-block .contacts {
+  #contacts.screen-block .contacts-info {
     display: inherit;
     margin: 9vh 0 0 12.5vh;
   }
-  #pageContacts.screen-block .contacts li {
+  #contacts.screen-block .contacts-info li {
     color: #fff;
     font-size: 2vh;
     margin-bottom: 5.5vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a:hover {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a:hover {
     border: none;
   }
-  #pageContacts.screen-block .contacts li a {
+  #contacts.screen-block .contacts-info li a {
     color: #fff;
     display: block;
     font-size: 2.6vh;
     margin-top: -.5vh;
   }
-  #pageContacts.screen-block .language {
+  #contacts.screen-block .language {
     top: 25vh;
   }
-  #pageContacts.screen-block .bg-letter {
+  #contacts.screen-block .bg-letter {
     display: none;
   }
-  #pageContacts.screen-block .lines {
+  #contacts.screen-block .small-gray-lines {
     display: none;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-  #pageContacts.screen-block .title {
+  #contacts.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #contacts.screen-block .title {
     width: 80.5vh;
     display: inherit;
     margin-top: 27vh;
     margin-left: 30vh;
   }
-  #pageContacts.screen-block .title span.name {
+  #contacts.screen-block .title span.name {
     top: -2vh;
   }
-  #pageContacts.screen-block .title .animation-border {
+  #contacts.screen-block .title .animation-border {
     top: 4.7vh;
   }
-  #pageContacts.screen-block .title .word {
+  #contacts.screen-block .title .word {
     height: 7.5vh;
   }
-  #pageContacts.screen-block .title .word span {
+  #contacts.screen-block .title .word span {
     bottom: -100px;
     font-size: 6.3vh;
   }
-  #pageContacts.screen-block .contacts {
+  #contacts.screen-block .contacts-info {
     display: inherit;
     margin: 34.5vh 0 0 33vh;
   }
-  #pageContacts.screen-block .contacts li {
+  #contacts.screen-block .contacts-info li {
     color: #fff;
     font-size: 1.3vh;
     display: inline-block;
@@ -5475,98 +5606,61 @@ html body .wrapper .screen-block {
     *zoom: 1;
     *display: inline;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(1) {
+  #contacts.screen-block .contacts-info li:nth-of-type(1) {
     margin-right: 14vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(2) {
+  #contacts.screen-block .contacts-info li:nth-of-type(2) {
     margin-right: 31vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a:hover {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a:hover {
     border: none;
   }
-  #pageContacts.screen-block .contacts li a {
+  #contacts.screen-block .contacts-info li a {
     color: #fff;
     display: block;
   }
-  #pageContacts.screen-block .bg-letter {
+  #contacts.screen-block .bg-letter {
     background: url("../images/letter-2.png") no-repeat;
     background-position: 96% 100%;
     background-size: 28%;
-  }
-  #pageContacts.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #pageContacts.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #pageContacts.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #pageContacts.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
-  #pageContacts.screen-block .title {
+  #contacts.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #contacts.screen-block .title {
     width: 80.5vh;
     display: inherit;
     margin-top: 27vh;
     margin-left: 30vh;
   }
-  #pageContacts.screen-block .title span.name {
+  #contacts.screen-block .title span.name {
     top: -2vh;
   }
-  #pageContacts.screen-block .title .animation-border {
+  #contacts.screen-block .title .animation-border {
     top: 4.7vh;
   }
-  #pageContacts.screen-block .title .word {
+  #contacts.screen-block .title .word {
     height: 7.5vh;
   }
-  #pageContacts.screen-block .title .word span {
+  #contacts.screen-block .title .word span {
     bottom: -100px;
     font-size: 6.3vh;
   }
-  #pageContacts.screen-block .contacts {
+  #contacts.screen-block .contacts-info {
     display: inherit;
     margin: 34.5vh 0 0 33vh;
   }
-  #pageContacts.screen-block .contacts li {
+  #contacts.screen-block .contacts-info li {
     color: #fff;
     font-size: 1.3vh;
     display: inline-block;
@@ -5575,98 +5669,61 @@ html body .wrapper .screen-block {
     *zoom: 1;
     *display: inline;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(1) {
+  #contacts.screen-block .contacts-info li:nth-of-type(1) {
     margin-right: 14vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(2) {
+  #contacts.screen-block .contacts-info li:nth-of-type(2) {
     margin-right: 31vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a:hover {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a:hover {
     border: none;
   }
-  #pageContacts.screen-block .contacts li a {
+  #contacts.screen-block .contacts-info li a {
     color: #fff;
     display: block;
   }
-  #pageContacts.screen-block .bg-letter {
+  #contacts.screen-block .bg-letter {
     background: url("../images/letter-2.png") no-repeat;
     background-position: 96% 100%;
     background-size: 28%;
-  }
-  #pageContacts.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #pageContacts.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #pageContacts.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #pageContacts.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
-  #pageContacts.screen-block .title {
+  #contacts.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #contacts.screen-block .title {
     width: 80.5vh;
     display: inherit;
     margin-top: 27vh;
     margin-left: 30vh;
   }
-  #pageContacts.screen-block .title span.name {
+  #contacts.screen-block .title span.name {
     top: -2vh;
   }
-  #pageContacts.screen-block .title .animation-border {
+  #contacts.screen-block .title .animation-border {
     top: 4.7vh;
   }
-  #pageContacts.screen-block .title .word {
+  #contacts.screen-block .title .word {
     height: 7.5vh;
   }
-  #pageContacts.screen-block .title .word span {
+  #contacts.screen-block .title .word span {
     bottom: -100px;
     font-size: 6.3vh;
   }
-  #pageContacts.screen-block .contacts {
+  #contacts.screen-block .contacts-info {
     display: inherit;
     margin: 34.5vh 0 0 33vh;
   }
-  #pageContacts.screen-block .contacts li {
+  #contacts.screen-block .contacts-info li {
     color: #fff;
     font-size: 1.3vh;
     display: inline-block;
@@ -5675,98 +5732,61 @@ html body .wrapper .screen-block {
     *zoom: 1;
     *display: inline;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(1) {
+  #contacts.screen-block .contacts-info li:nth-of-type(1) {
     margin-right: 14vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(2) {
+  #contacts.screen-block .contacts-info li:nth-of-type(2) {
     margin-right: 31vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a:hover {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a:hover {
     border: none;
   }
-  #pageContacts.screen-block .contacts li a {
+  #contacts.screen-block .contacts-info li a {
     color: #fff;
     display: block;
   }
-  #pageContacts.screen-block .bg-letter {
+  #contacts.screen-block .bg-letter {
     background: url("../images/letter-2.png") no-repeat;
     background-position: 96% 100%;
     background-size: 28%;
-  }
-  #pageContacts.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #pageContacts.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #pageContacts.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #pageContacts.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
-  #pageContacts.screen-block .title {
+  #contacts.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #contacts.screen-block .title {
     width: 80.5vh;
     display: inherit;
     margin-top: 27vh;
     margin-left: 30vh;
   }
-  #pageContacts.screen-block .title span.name {
+  #contacts.screen-block .title span.name {
     top: -2vh;
   }
-  #pageContacts.screen-block .title .animation-border {
+  #contacts.screen-block .title .animation-border {
     top: 4.7vh;
   }
-  #pageContacts.screen-block .title .word {
+  #contacts.screen-block .title .word {
     height: 7.5vh;
   }
-  #pageContacts.screen-block .title .word span {
+  #contacts.screen-block .title .word span {
     bottom: -100px;
     font-size: 6.3vh;
   }
-  #pageContacts.screen-block .contacts {
+  #contacts.screen-block .contacts-info {
     display: inherit;
     margin: 34.5vh 0 0 33vh;
   }
-  #pageContacts.screen-block .contacts li {
+  #contacts.screen-block .contacts-info li {
     color: #fff;
     font-size: 1.3vh;
     display: inline-block;
@@ -5775,98 +5795,61 @@ html body .wrapper .screen-block {
     *zoom: 1;
     *display: inline;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(1) {
+  #contacts.screen-block .contacts-info li:nth-of-type(1) {
     margin-right: 14vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(2) {
+  #contacts.screen-block .contacts-info li:nth-of-type(2) {
     margin-right: 31vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a:hover {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a:hover {
     border: none;
   }
-  #pageContacts.screen-block .contacts li a {
+  #contacts.screen-block .contacts-info li a {
     color: #fff;
     display: block;
   }
-  #pageContacts.screen-block .bg-letter {
+  #contacts.screen-block .bg-letter {
     background: url("../images/letter-2.png") no-repeat;
     background-position: 96% 100%;
     background-size: 28%;
-  }
-  #pageContacts.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #pageContacts.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #pageContacts.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #pageContacts.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 @media (min-width: 1921px) {
-  #pageContacts.screen-block .title {
+  #contacts.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #contacts.screen-block .title {
     width: 80.5vh;
     display: inherit;
     margin-top: 27vh;
     margin-left: 30vh;
   }
-  #pageContacts.screen-block .title span.name {
+  #contacts.screen-block .title span.name {
     top: -2vh;
   }
-  #pageContacts.screen-block .title .animation-border {
+  #contacts.screen-block .title .animation-border {
     top: 4.7vh;
   }
-  #pageContacts.screen-block .title .word {
+  #contacts.screen-block .title .word {
     height: 7.5vh;
   }
-  #pageContacts.screen-block .title .word span {
+  #contacts.screen-block .title .word span {
     bottom: -100px;
     font-size: 6.3vh;
   }
-  #pageContacts.screen-block .contacts {
+  #contacts.screen-block .contacts-info {
     display: inherit;
     margin: 34.5vh 0 0 33vh;
   }
-  #pageContacts.screen-block .contacts li {
+  #contacts.screen-block .contacts-info li {
     color: #fff;
     font-size: 1.3vh;
     display: inline-block;
@@ -5875,301 +5858,275 @@ html body .wrapper .screen-block {
     *zoom: 1;
     *display: inline;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(1) {
+  #contacts.screen-block .contacts-info li:nth-of-type(1) {
     margin-right: 14vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(2) {
+  #contacts.screen-block .contacts-info li:nth-of-type(2) {
     margin-right: 31vh;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #pageContacts.screen-block .contacts li:nth-of-type(3) a:hover {
+  #contacts.screen-block .contacts-info li:nth-of-type(3) a:hover {
     border: none;
   }
-  #pageContacts.screen-block .contacts li a {
+  #contacts.screen-block .contacts-info li a {
     color: #fff;
     display: block;
   }
-  #pageContacts.screen-block .bg-letter {
+  #contacts.screen-block .bg-letter {
     background: url("../images/letter-2.png") no-repeat;
     background-position: 96% 100%;
     background-size: 28%;
-  }
-  #pageContacts.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #pageContacts.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #pageContacts.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #pageContacts.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #pageContacts.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 
 @media (max-width: 414px) {
-  #screenServicesOne.screen-block .title {
+  #service-one.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #service-one.screen-block .title {
     display: inherit;
     margin-top: 23vh;
     margin-left: 3vh;
   }
-  #screenServicesOne.screen-block .title span.name {
+  #service-one.screen-block .title span.name {
     font-size: 2.1vh;
     left: 11vh;
     top: -3vh;
   }
-  #screenServicesOne.screen-block .title span.name span {
+  #service-one.screen-block .title span.name span {
     color: #cccccc;
     display: inherit;
   }
-  #screenServicesOne.screen-block .title span.name:before {
+  #service-one.screen-block .title span.name:before {
     background: #cccccc;
     left: -11vh;
     width: 9vh;
     top: 1vh;
   }
-  #screenServicesOne.screen-block .title .animation-border {
+  #service-one.screen-block .title .animation-border {
     display: none;
   }
-  #screenServicesOne.screen-block .title .word {
+  #service-one.screen-block .title .word {
     text-align: left;
     height: 7.5vh;
   }
-  #screenServicesOne.screen-block .title .word span {
+  #service-one.screen-block .title .word span {
     bottom: -100px;
     font-size: 3.9vh;
   }
-  #screenServicesOne.screen-block .contacts {
+  #service-one.screen-block .contacts {
     display: inherit;
     margin: 9vh 0 0 12.5vh;
   }
-  #screenServicesOne.screen-block .contacts li {
+  #service-one.screen-block .contacts li {
     color: #fff;
     font-size: 2vh;
     margin-bottom: 5.5vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
+  #service-one.screen-block .contacts li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a:hover {
+  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
     border: none;
   }
-  #screenServicesOne.screen-block .contacts li a {
+  #service-one.screen-block .contacts li a {
     color: #fff;
     display: block;
     font-size: 2.6vh;
     margin-top: -.5vh;
   }
-  #screenServicesOne.screen-block .language {
+  #service-one.screen-block .language {
     top: 25vh;
   }
-  #screenServicesOne.screen-block .bg-letter {
+  #service-one.screen-block .bg-letter {
     display: none;
   }
-  #screenServicesOne.screen-block .lines {
+  #service-one.screen-block .lines {
     display: none;
   }
 }
 @media (min-width: 415px) and (max-width: 667px) {
-  #screenServicesOne.screen-block .title {
+  #service-one.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #service-one.screen-block .title {
     display: inherit;
     margin-top: 23vh;
     margin-left: 3vh;
   }
-  #screenServicesOne.screen-block .title span.name {
+  #service-one.screen-block .title span.name {
     font-size: 2.1vh;
     left: 11vh;
     top: -3vh;
   }
-  #screenServicesOne.screen-block .title span.name span {
+  #service-one.screen-block .title span.name span {
     color: #cccccc;
     display: inherit;
   }
-  #screenServicesOne.screen-block .title span.name:before {
+  #service-one.screen-block .title span.name:before {
     background: #cccccc;
     left: -11vh;
     width: 9vh;
     top: 1vh;
   }
-  #screenServicesOne.screen-block .title .animation-border {
+  #service-one.screen-block .title .animation-border {
     display: none;
   }
-  #screenServicesOne.screen-block .title .word {
+  #service-one.screen-block .title .word {
     text-align: left;
     height: 7.5vh;
   }
-  #screenServicesOne.screen-block .title .word span {
+  #service-one.screen-block .title .word span {
     bottom: -100px;
     font-size: 3.9vh;
   }
-  #screenServicesOne.screen-block .contacts {
+  #service-one.screen-block .contacts {
     display: inherit;
     margin: 9vh 0 0 12.5vh;
   }
-  #screenServicesOne.screen-block .contacts li {
+  #service-one.screen-block .contacts li {
     color: #fff;
     font-size: 2vh;
     margin-bottom: 5.5vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
+  #service-one.screen-block .contacts li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a:hover {
+  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
     border: none;
   }
-  #screenServicesOne.screen-block .contacts li a {
+  #service-one.screen-block .contacts li a {
     color: #fff;
     display: block;
     font-size: 2.6vh;
     margin-top: -.5vh;
   }
-  #screenServicesOne.screen-block .language {
+  #service-one.screen-block .language {
     top: 25vh;
   }
-  #screenServicesOne.screen-block .bg-letter {
+  #service-one.screen-block .bg-letter {
     display: none;
   }
-  #screenServicesOne.screen-block .lines {
+  #service-one.screen-block .lines {
     display: none;
   }
 }
 @media (min-width: 668px) and (max-width: 768px) {
-  #screenServicesOne.screen-block .title {
+  #service-one.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #service-one.screen-block .title {
     display: inherit;
     margin-top: 23vh;
     margin-left: 3vh;
   }
-  #screenServicesOne.screen-block .title span.name {
+  #service-one.screen-block .title span.name {
     font-size: 2.1vh;
     left: 11vh;
     top: -3vh;
   }
-  #screenServicesOne.screen-block .title span.name span {
+  #service-one.screen-block .title span.name span {
     color: #cccccc;
     display: inherit;
   }
-  #screenServicesOne.screen-block .title span.name:before {
+  #service-one.screen-block .title span.name:before {
     background: #cccccc;
     left: -11vh;
     width: 9vh;
     top: 1vh;
   }
-  #screenServicesOne.screen-block .title .animation-border {
+  #service-one.screen-block .title .animation-border {
     display: none;
   }
-  #screenServicesOne.screen-block .title .word {
+  #service-one.screen-block .title .word {
     text-align: left;
     height: 7.5vh;
   }
-  #screenServicesOne.screen-block .title .word span {
+  #service-one.screen-block .title .word span {
     bottom: -100px;
     font-size: 3.9vh;
   }
-  #screenServicesOne.screen-block .contacts {
+  #service-one.screen-block .contacts {
     display: inherit;
     margin: 9vh 0 0 12.5vh;
   }
-  #screenServicesOne.screen-block .contacts li {
+  #service-one.screen-block .contacts li {
     color: #fff;
     font-size: 2vh;
     margin-bottom: 5.5vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
+  #service-one.screen-block .contacts li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a:hover {
+  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
     border: none;
   }
-  #screenServicesOne.screen-block .contacts li a {
+  #service-one.screen-block .contacts li a {
     color: #fff;
     display: block;
     font-size: 2.6vh;
     margin-top: -.5vh;
   }
-  #screenServicesOne.screen-block .language {
+  #service-one.screen-block .language {
     top: 25vh;
   }
-  #screenServicesOne.screen-block .bg-letter {
+  #service-one.screen-block .bg-letter {
     display: none;
   }
-  #screenServicesOne.screen-block .lines {
+  #service-one.screen-block .lines {
     display: none;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-  #screenServicesOne.screen-block {
-    background-color: #fff;
+  #service-one.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
     z-index: 0;
   }
-  #screenServicesOne.screen-block .title {
+  #service-one.screen-block .title {
     width: 50vh;
     display: inherit;
     margin-top: 27vh;
     margin-left: 30vh;
   }
-  #screenServicesOne.screen-block .title span.name {
+  #service-one.screen-block .title span.name {
     top: -2vh;
   }
-  #screenServicesOne.screen-block .title .animation-border {
+  #service-one.screen-block .title .animation-border {
     top: 3.5vh;
   }
-  #screenServicesOne.screen-block .title .word {
+  #service-one.screen-block .title .word {
     height: 6.2vh;
   }
-  #screenServicesOne.screen-block .title .word span {
+  #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
   }
-  #screenServicesOne.screen-block .contacts {
+  #service-one.screen-block .contacts {
     display: inherit;
     margin: 34.5vh 0 0 33vh;
   }
-  #screenServicesOne.screen-block .contacts li {
+  #service-one.screen-block .contacts li {
     color: #fff;
     font-size: 1.3vh;
     display: inline-block;
@@ -6178,102 +6135,103 @@ html body .wrapper .screen-block {
     *zoom: 1;
     *display: inline;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(1) {
+  #service-one.screen-block .contacts li:nth-of-type(1) {
     margin-right: 14vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(2) {
+  #service-one.screen-block .contacts li:nth-of-type(2) {
     margin-right: 31vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
+  #service-one.screen-block .contacts li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a:hover {
+  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
     border: none;
   }
-  #screenServicesOne.screen-block .contacts li a {
+  #service-one.screen-block .contacts li a {
     color: #fff;
     display: block;
   }
-  #screenServicesOne.screen-block .bg-letter {
+  #service-one.screen-block .bg-letter {
     background: url("../images/letter-2.png") no-repeat;
     background-position: 96% 100%;
     background-size: 28%;
   }
-  #screenServicesOne.screen-block .lines {
+  #service-one.screen-block .lines {
     position: absolute;
     overflow: hidden;
     height: 100%;
     width: 100%;
     z-index: -1;
   }
-  #screenServicesOne.screen-block .lines .line {
+  #service-one.screen-block .lines .line {
     background-color: #2D2D2D;
     position: absolute;
     display: block;
     height: 1px;
     width: 24vh;
   }
-  #screenServicesOne.screen-block .lines .line.up {
+  #service-one.screen-block .lines .line.up {
     -webkit-animation: lineUp 1s both;
             animation: lineUp 1s both;
   }
-  #screenServicesOne.screen-block .lines .line.down {
+  #service-one.screen-block .lines .line.down {
     -webkit-animation: lineDown 1s both;
             animation: lineDown 1s both;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(1) {
+  #service-one.screen-block .lines .line:nth-of-type(1) {
     left: 18vh;
     top: -3vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(2) {
+  #service-one.screen-block .lines .line:nth-of-type(2) {
     left: 100vh;
     top: -19vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(3) {
+  #service-one.screen-block .lines .line:nth-of-type(3) {
     right: 9vh;
     top: 14vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(4) {
+  #service-one.screen-block .lines .line:nth-of-type(4) {
     bottom: -3vh;
     left: 29vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(5) {
+  #service-one.screen-block .lines .line:nth-of-type(5) {
     bottom: 21vh;
     right: 91vh;
   }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
-  #screenServicesOne.screen-block {
-    background-color: #fff;
+  #service-one.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
     z-index: 0;
   }
-  #screenServicesOne.screen-block .title {
+  #service-one.screen-block .title {
     width: 50vh;
     display: inherit;
     margin-top: 27vh;
     margin-left: 30vh;
   }
-  #screenServicesOne.screen-block .title span.name {
+  #service-one.screen-block .title span.name {
     top: -2vh;
   }
-  #screenServicesOne.screen-block .title .animation-border {
+  #service-one.screen-block .title .animation-border {
     top: 3.5vh;
   }
-  #screenServicesOne.screen-block .title .word {
+  #service-one.screen-block .title .word {
     height: 6.2vh;
   }
-  #screenServicesOne.screen-block .title .word span {
+  #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
   }
-  #screenServicesOne.screen-block .contacts {
+  #service-one.screen-block .contacts {
     display: inherit;
     margin: 34.5vh 0 0 33vh;
   }
-  #screenServicesOne.screen-block .contacts li {
+  #service-one.screen-block .contacts li {
     color: #fff;
     font-size: 1.3vh;
     display: inline-block;
@@ -6282,102 +6240,103 @@ html body .wrapper .screen-block {
     *zoom: 1;
     *display: inline;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(1) {
+  #service-one.screen-block .contacts li:nth-of-type(1) {
     margin-right: 14vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(2) {
+  #service-one.screen-block .contacts li:nth-of-type(2) {
     margin-right: 31vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
+  #service-one.screen-block .contacts li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a:hover {
+  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
     border: none;
   }
-  #screenServicesOne.screen-block .contacts li a {
+  #service-one.screen-block .contacts li a {
     color: #fff;
     display: block;
   }
-  #screenServicesOne.screen-block .bg-letter {
+  #service-one.screen-block .bg-letter {
     background: url("../images/letter-2.png") no-repeat;
     background-position: 96% 100%;
     background-size: 28%;
   }
-  #screenServicesOne.screen-block .lines {
+  #service-one.screen-block .lines {
     position: absolute;
     overflow: hidden;
     height: 100%;
     width: 100%;
     z-index: -1;
   }
-  #screenServicesOne.screen-block .lines .line {
+  #service-one.screen-block .lines .line {
     background-color: #2D2D2D;
     position: absolute;
     display: block;
     height: 1px;
     width: 24vh;
   }
-  #screenServicesOne.screen-block .lines .line.up {
+  #service-one.screen-block .lines .line.up {
     -webkit-animation: lineUp 1s both;
             animation: lineUp 1s both;
   }
-  #screenServicesOne.screen-block .lines .line.down {
+  #service-one.screen-block .lines .line.down {
     -webkit-animation: lineDown 1s both;
             animation: lineDown 1s both;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(1) {
+  #service-one.screen-block .lines .line:nth-of-type(1) {
     left: 18vh;
     top: -3vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(2) {
+  #service-one.screen-block .lines .line:nth-of-type(2) {
     left: 100vh;
     top: -19vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(3) {
+  #service-one.screen-block .lines .line:nth-of-type(3) {
     right: 9vh;
     top: 14vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(4) {
+  #service-one.screen-block .lines .line:nth-of-type(4) {
     bottom: -3vh;
     left: 29vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(5) {
+  #service-one.screen-block .lines .line:nth-of-type(5) {
     bottom: 21vh;
     right: 91vh;
   }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
-  #screenServicesOne.screen-block {
-    background-color: #fff;
+  #service-one.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
     z-index: 0;
   }
-  #screenServicesOne.screen-block .title {
+  #service-one.screen-block .title {
     width: 50vh;
     display: inherit;
     margin-top: 27vh;
     margin-left: 30vh;
   }
-  #screenServicesOne.screen-block .title span.name {
+  #service-one.screen-block .title span.name {
     top: -2vh;
   }
-  #screenServicesOne.screen-block .title .animation-border {
+  #service-one.screen-block .title .animation-border {
     top: 3.5vh;
   }
-  #screenServicesOne.screen-block .title .word {
+  #service-one.screen-block .title .word {
     height: 6.2vh;
   }
-  #screenServicesOne.screen-block .title .word span {
+  #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
   }
-  #screenServicesOne.screen-block .contacts {
+  #service-one.screen-block .contacts {
     display: inherit;
     margin: 34.5vh 0 0 33vh;
   }
-  #screenServicesOne.screen-block .contacts li {
+  #service-one.screen-block .contacts li {
     color: #fff;
     font-size: 1.3vh;
     display: inline-block;
@@ -6386,102 +6345,103 @@ html body .wrapper .screen-block {
     *zoom: 1;
     *display: inline;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(1) {
+  #service-one.screen-block .contacts li:nth-of-type(1) {
     margin-right: 14vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(2) {
+  #service-one.screen-block .contacts li:nth-of-type(2) {
     margin-right: 31vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
+  #service-one.screen-block .contacts li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a:hover {
+  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
     border: none;
   }
-  #screenServicesOne.screen-block .contacts li a {
+  #service-one.screen-block .contacts li a {
     color: #fff;
     display: block;
   }
-  #screenServicesOne.screen-block .bg-letter {
+  #service-one.screen-block .bg-letter {
     background: url("../images/letter-2.png") no-repeat;
     background-position: 96% 100%;
     background-size: 28%;
   }
-  #screenServicesOne.screen-block .lines {
+  #service-one.screen-block .lines {
     position: absolute;
     overflow: hidden;
     height: 100%;
     width: 100%;
     z-index: -1;
   }
-  #screenServicesOne.screen-block .lines .line {
+  #service-one.screen-block .lines .line {
     background-color: #2D2D2D;
     position: absolute;
     display: block;
     height: 1px;
     width: 24vh;
   }
-  #screenServicesOne.screen-block .lines .line.up {
+  #service-one.screen-block .lines .line.up {
     -webkit-animation: lineUp 1s both;
             animation: lineUp 1s both;
   }
-  #screenServicesOne.screen-block .lines .line.down {
+  #service-one.screen-block .lines .line.down {
     -webkit-animation: lineDown 1s both;
             animation: lineDown 1s both;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(1) {
+  #service-one.screen-block .lines .line:nth-of-type(1) {
     left: 18vh;
     top: -3vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(2) {
+  #service-one.screen-block .lines .line:nth-of-type(2) {
     left: 100vh;
     top: -19vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(3) {
+  #service-one.screen-block .lines .line:nth-of-type(3) {
     right: 9vh;
     top: 14vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(4) {
+  #service-one.screen-block .lines .line:nth-of-type(4) {
     bottom: -3vh;
     left: 29vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(5) {
+  #service-one.screen-block .lines .line:nth-of-type(5) {
     bottom: 21vh;
     right: 91vh;
   }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
-  #screenServicesOne.screen-block {
-    background-color: #fff;
+  #service-one.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
     z-index: 0;
   }
-  #screenServicesOne.screen-block .title {
+  #service-one.screen-block .title {
     width: 50vh;
     display: inherit;
     margin-top: 27vh;
     margin-left: 30vh;
   }
-  #screenServicesOne.screen-block .title span.name {
+  #service-one.screen-block .title span.name {
     top: -2vh;
   }
-  #screenServicesOne.screen-block .title .animation-border {
+  #service-one.screen-block .title .animation-border {
     top: 3.5vh;
   }
-  #screenServicesOne.screen-block .title .word {
+  #service-one.screen-block .title .word {
     height: 6.2vh;
   }
-  #screenServicesOne.screen-block .title .word span {
+  #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
   }
-  #screenServicesOne.screen-block .contacts {
+  #service-one.screen-block .contacts {
     display: inherit;
     margin: 34.5vh 0 0 33vh;
   }
-  #screenServicesOne.screen-block .contacts li {
+  #service-one.screen-block .contacts li {
     color: #fff;
     font-size: 1.3vh;
     display: inline-block;
@@ -6490,102 +6450,103 @@ html body .wrapper .screen-block {
     *zoom: 1;
     *display: inline;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(1) {
+  #service-one.screen-block .contacts li:nth-of-type(1) {
     margin-right: 14vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(2) {
+  #service-one.screen-block .contacts li:nth-of-type(2) {
     margin-right: 31vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
+  #service-one.screen-block .contacts li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a:hover {
+  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
     border: none;
   }
-  #screenServicesOne.screen-block .contacts li a {
+  #service-one.screen-block .contacts li a {
     color: #fff;
     display: block;
   }
-  #screenServicesOne.screen-block .bg-letter {
+  #service-one.screen-block .bg-letter {
     background: url("../images/letter-2.png") no-repeat;
     background-position: 96% 100%;
     background-size: 28%;
   }
-  #screenServicesOne.screen-block .lines {
+  #service-one.screen-block .lines {
     position: absolute;
     overflow: hidden;
     height: 100%;
     width: 100%;
     z-index: -1;
   }
-  #screenServicesOne.screen-block .lines .line {
+  #service-one.screen-block .lines .line {
     background-color: #2D2D2D;
     position: absolute;
     display: block;
     height: 1px;
     width: 24vh;
   }
-  #screenServicesOne.screen-block .lines .line.up {
+  #service-one.screen-block .lines .line.up {
     -webkit-animation: lineUp 1s both;
             animation: lineUp 1s both;
   }
-  #screenServicesOne.screen-block .lines .line.down {
+  #service-one.screen-block .lines .line.down {
     -webkit-animation: lineDown 1s both;
             animation: lineDown 1s both;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(1) {
+  #service-one.screen-block .lines .line:nth-of-type(1) {
     left: 18vh;
     top: -3vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(2) {
+  #service-one.screen-block .lines .line:nth-of-type(2) {
     left: 100vh;
     top: -19vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(3) {
+  #service-one.screen-block .lines .line:nth-of-type(3) {
     right: 9vh;
     top: 14vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(4) {
+  #service-one.screen-block .lines .line:nth-of-type(4) {
     bottom: -3vh;
     left: 29vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(5) {
+  #service-one.screen-block .lines .line:nth-of-type(5) {
     bottom: 21vh;
     right: 91vh;
   }
 }
 @media (min-width: 1921px) {
-  #screenServicesOne.screen-block {
-    background-color: #fff;
+  #service-one.screen-block {
+    font-family: Raleway;
+    font-weight: 400;
     z-index: 0;
   }
-  #screenServicesOne.screen-block .title {
+  #service-one.screen-block .title {
     width: 50vh;
     display: inherit;
     margin-top: 27vh;
     margin-left: 30vh;
   }
-  #screenServicesOne.screen-block .title span.name {
+  #service-one.screen-block .title span.name {
     top: -2vh;
   }
-  #screenServicesOne.screen-block .title .animation-border {
+  #service-one.screen-block .title .animation-border {
     top: 3.5vh;
   }
-  #screenServicesOne.screen-block .title .word {
+  #service-one.screen-block .title .word {
     height: 6.2vh;
   }
-  #screenServicesOne.screen-block .title .word span {
+  #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
   }
-  #screenServicesOne.screen-block .contacts {
+  #service-one.screen-block .contacts {
     display: inherit;
     margin: 34.5vh 0 0 33vh;
   }
-  #screenServicesOne.screen-block .contacts li {
+  #service-one.screen-block .contacts li {
     color: #fff;
     font-size: 1.3vh;
     display: inline-block;
@@ -6594,69 +6555,69 @@ html body .wrapper .screen-block {
     *zoom: 1;
     *display: inline;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(1) {
+  #service-one.screen-block .contacts li:nth-of-type(1) {
     margin-right: 14vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(2) {
+  #service-one.screen-block .contacts li:nth-of-type(2) {
     margin-right: 31vh;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
+  #service-one.screen-block .contacts li:nth-of-type(3) a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
   }
-  #screenServicesOne.screen-block .contacts li:nth-of-type(3) a:hover {
+  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
     border: none;
   }
-  #screenServicesOne.screen-block .contacts li a {
+  #service-one.screen-block .contacts li a {
     color: #fff;
     display: block;
   }
-  #screenServicesOne.screen-block .bg-letter {
+  #service-one.screen-block .bg-letter {
     background: url("../images/letter-2.png") no-repeat;
     background-position: 96% 100%;
     background-size: 28%;
   }
-  #screenServicesOne.screen-block .lines {
+  #service-one.screen-block .lines {
     position: absolute;
     overflow: hidden;
     height: 100%;
     width: 100%;
     z-index: -1;
   }
-  #screenServicesOne.screen-block .lines .line {
+  #service-one.screen-block .lines .line {
     background-color: #2D2D2D;
     position: absolute;
     display: block;
     height: 1px;
     width: 24vh;
   }
-  #screenServicesOne.screen-block .lines .line.up {
+  #service-one.screen-block .lines .line.up {
     -webkit-animation: lineUp 1s both;
             animation: lineUp 1s both;
   }
-  #screenServicesOne.screen-block .lines .line.down {
+  #service-one.screen-block .lines .line.down {
     -webkit-animation: lineDown 1s both;
             animation: lineDown 1s both;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(1) {
+  #service-one.screen-block .lines .line:nth-of-type(1) {
     left: 18vh;
     top: -3vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(2) {
+  #service-one.screen-block .lines .line:nth-of-type(2) {
     left: 100vh;
     top: -19vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(3) {
+  #service-one.screen-block .lines .line:nth-of-type(3) {
     right: 9vh;
     top: 14vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(4) {
+  #service-one.screen-block .lines .line:nth-of-type(4) {
     bottom: -3vh;
     left: 29vh;
   }
-  #screenServicesOne.screen-block .lines .line:nth-of-type(5) {
+  #service-one.screen-block .lines .line:nth-of-type(5) {
     bottom: 21vh;
     right: 91vh;
   }
