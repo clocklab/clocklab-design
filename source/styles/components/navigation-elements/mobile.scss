@@ -2,7 +2,7 @@
     $space: 0;
     font-family: $raleway;
     font-weight: $regular;
-    @include add(social, "social/*.png", "social-2x/*.png");
+    // @include add(social, "social/*.png", "social-2x/*.png");
    
     // ----- bg letter -----
     .bg-letter {
@@ -107,8 +107,8 @@
         a {
             @include inline-block;
             background-repeat: no-repeat;
-            &[href*="linkedin"] { @include sprite(linkedin, social); }
-            &[href*="facebook"] { @include sprite(facebook, social); }
+            // &[href*="linkedin"] { @include sprite(linkedin, social); }
+            // &[href*="facebook"] { @include sprite(facebook, social); }
         }
     }
 
@@ -191,7 +191,7 @@
 
     // ----- title -----
     .title {
-        z-index: 1;
+        z-index: 3;
         margin-top: 20vh;
         margin-left: 35vh;
         position: relative;
