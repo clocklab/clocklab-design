@@ -94,7 +94,6 @@ html body {
   overflow-x: hidden;
   font-family: Raleway;
   font-weight: 400;
-  background-color: #1C1C1C;
 }
 html body h1, html body h2, html body h3, html body h4, html body h5, html body h6, html body button, html body input, html body label, html body span,
 html body td, html body th, html body li, html body p, html body a, html body a:hover, html body a:focus {
@@ -1046,7 +1045,6 @@ html body .wrapper .screen-block {
   }
   .screen-block .language div a:hover {
     color: #fff;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   .screen-block .social {
@@ -1087,7 +1085,6 @@ html body .wrapper .screen-block {
     background: #0000fe;
     position: absolute;
     visibility: hidden;
-    -webkit-transition: opacity .3s, top .3s, right .3s;
     transition: opacity .3s, top .3s, right .3s;
   }
   .screen-block .social a {
@@ -1362,7 +1359,6 @@ html body .wrapper .screen-block {
   }
   .screen-block .language div a:hover {
     color: #fff;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   .screen-block .social {
@@ -1403,7 +1399,6 @@ html body .wrapper .screen-block {
     background: #0000fe;
     position: absolute;
     visibility: hidden;
-    -webkit-transition: opacity .3s, top .3s, right .3s;
     transition: opacity .3s, top .3s, right .3s;
   }
   .screen-block .social a {
@@ -1678,7 +1673,6 @@ html body .wrapper .screen-block {
   }
   .screen-block .language div a:hover {
     color: #fff;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   .screen-block .social {
@@ -1719,7 +1713,6 @@ html body .wrapper .screen-block {
     background: #0000fe;
     position: absolute;
     visibility: hidden;
-    -webkit-transition: opacity .3s, top .3s, right .3s;
     transition: opacity .3s, top .3s, right .3s;
   }
   .screen-block .social a {
@@ -2003,7 +1996,6 @@ html body .wrapper .screen-block {
   }
   .screen-block .language div a:hover {
     color: #fff;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   .screen-block .social {
@@ -2044,7 +2036,6 @@ html body .wrapper .screen-block {
     background: #0000fe;
     position: absolute;
     visibility: hidden;
-    -webkit-transition: opacity .3s, top .3s, right .3s;
     transition: opacity .3s, top .3s, right .3s;
   }
   .screen-block .social a {
@@ -2334,7 +2325,6 @@ html body .wrapper .screen-block {
   }
   .screen-block .language div a:hover {
     color: #fff;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   .screen-block .social {
@@ -2375,7 +2365,6 @@ html body .wrapper .screen-block {
     background: #0000fe;
     position: absolute;
     visibility: hidden;
-    -webkit-transition: opacity .3s, top .3s, right .3s;
     transition: opacity .3s, top .3s, right .3s;
   }
   .screen-block .social a {
@@ -2665,7 +2654,6 @@ html body .wrapper .screen-block {
   }
   .screen-block .language div a:hover {
     color: #fff;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   .screen-block .social {
@@ -2706,7 +2694,6 @@ html body .wrapper .screen-block {
     background: #0000fe;
     position: absolute;
     visibility: hidden;
-    -webkit-transition: opacity .3s, top .3s, right .3s;
     transition: opacity .3s, top .3s, right .3s;
   }
   .screen-block .social a {
@@ -2996,7 +2983,6 @@ html body .wrapper .screen-block {
   }
   .screen-block .language div a:hover {
     color: #fff;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   .screen-block .social {
@@ -3037,7 +3023,6 @@ html body .wrapper .screen-block {
     background: #0000fe;
     position: absolute;
     visibility: hidden;
-    -webkit-transition: opacity .3s, top .3s, right .3s;
     transition: opacity .3s, top .3s, right .3s;
   }
   .screen-block .social a {
@@ -3327,7 +3312,6 @@ html body .wrapper .screen-block {
   }
   .screen-block .language div a:hover {
     color: #fff;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   .screen-block .social {
@@ -3368,7 +3352,6 @@ html body .wrapper .screen-block {
     background: #0000fe;
     position: absolute;
     visibility: hidden;
-    -webkit-transition: opacity .3s, top .3s, right .3s;
     transition: opacity .3s, top .3s, right .3s;
   }
   .screen-block .social a {
@@ -3689,13 +3672,11 @@ html body .wrapper .screen-block {
             animation: rotate 43200s infinite linear;
   }
   #screenClock.screen-block .minutes-container {
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
   #screenClock.screen-block .seconds-container {
-    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -3835,13 +3816,11 @@ html body .wrapper .screen-block {
             animation: rotate 43200s infinite linear;
   }
   #screenClock.screen-block .minutes-container {
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
   #screenClock.screen-block .seconds-container {
-    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -3981,13 +3960,11 @@ html body .wrapper .screen-block {
             animation: rotate 43200s infinite linear;
   }
   #screenClock.screen-block .minutes-container {
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
   #screenClock.screen-block .seconds-container {
-    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -4123,13 +4100,11 @@ html body .wrapper .screen-block {
             animation: rotate 43200s infinite linear;
   }
   #screenClock.screen-block .minutes-container {
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
   #screenClock.screen-block .seconds-container {
-    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -4322,13 +4297,11 @@ html body .wrapper .screen-block {
             animation: rotate 43200s infinite linear;
   }
   #screenClock.screen-block .minutes-container {
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
   #screenClock.screen-block .seconds-container {
-    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -4521,13 +4494,11 @@ html body .wrapper .screen-block {
             animation: rotate 43200s infinite linear;
   }
   #screenClock.screen-block .minutes-container {
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
   #screenClock.screen-block .seconds-container {
-    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -4720,13 +4691,11 @@ html body .wrapper .screen-block {
             animation: rotate 43200s infinite linear;
   }
   #screenClock.screen-block .minutes-container {
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
   #screenClock.screen-block .seconds-container {
-    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -4919,13 +4888,11 @@ html body .wrapper .screen-block {
             animation: rotate 43200s infinite linear;
   }
   #screenClock.screen-block .minutes-container {
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
   }
   #screenClock.screen-block .seconds-container {
-    -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
@@ -5046,7 +5013,6 @@ html body .wrapper .screen-block {
     margin-bottom: 5.5vh;
   }
   #pageContacts.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -5112,7 +5078,6 @@ html body .wrapper .screen-block {
     margin-bottom: 5.5vh;
   }
   #pageContacts.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -5178,7 +5143,6 @@ html body .wrapper .screen-block {
     margin-bottom: 5.5vh;
   }
   #pageContacts.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -5242,7 +5206,6 @@ html body .wrapper .screen-block {
     margin-right: 31vh;
   }
   #pageContacts.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -5342,7 +5305,6 @@ html body .wrapper .screen-block {
     margin-right: 31vh;
   }
   #pageContacts.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -5442,7 +5404,6 @@ html body .wrapper .screen-block {
     margin-right: 31vh;
   }
   #pageContacts.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -5542,7 +5503,6 @@ html body .wrapper .screen-block {
     margin-right: 31vh;
   }
   #pageContacts.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -5642,7 +5602,6 @@ html body .wrapper .screen-block {
     margin-right: 31vh;
   }
   #pageContacts.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -5745,7 +5704,6 @@ html body .wrapper .screen-block {
     margin-bottom: 5.5vh;
   }
   #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -5811,7 +5769,6 @@ html body .wrapper .screen-block {
     margin-bottom: 5.5vh;
   }
   #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -5877,7 +5834,6 @@ html body .wrapper .screen-block {
     margin-bottom: 5.5vh;
   }
   #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -5945,7 +5901,6 @@ html body .wrapper .screen-block {
     margin-right: 31vh;
   }
   #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -6049,7 +6004,6 @@ html body .wrapper .screen-block {
     margin-right: 31vh;
   }
   #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -6153,7 +6107,6 @@ html body .wrapper .screen-block {
     margin-right: 31vh;
   }
   #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -6257,7 +6210,6 @@ html body .wrapper .screen-block {
     margin-right: 31vh;
   }
   #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -6361,7 +6313,6 @@ html body .wrapper .screen-block {
     margin-right: 31vh;
   }
   #screenServicesOne.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-bottom: 4px;
     border-bottom: 1px solid;
@@ -6428,11 +6379,7 @@ html body .wrapper .screen-block {
     top: 0;
     right: 0;
     z-index: 9999;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
     font-family: 'Roboto';
-    overflow: hidden;
   }
   .menu__item {
     box-sizing: border-box;
@@ -6448,7 +6395,6 @@ html body .wrapper .screen-block {
     outline: 0;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -6471,14 +6417,13 @@ html body .wrapper .screen-block {
     font-size: 2.8125vw;
     color: #999;
   }
-  .menu__item .logo,
+  .menu__item .symbol,
   .menu__item .name {
     font-size: 7.5vw;
     text-align: center;
-    -webkit-transition: color 0.3s;
     transition: color 0.3s;
   }
-  .menu__item .logo {
+  .menu__item .symbol {
     font-family: 'Raleway';
   }
   .menu__item .name {
@@ -6495,7 +6440,6 @@ html body .wrapper .screen-block {
     width: 1px;
     height: 0;
     background: #999;
-    -webkit-transition: height 0.3s;
     transition: height 0.3s;
   }
   .menu__item .border-bottom {
@@ -6505,7 +6449,6 @@ html body .wrapper .screen-block {
     width: 0;
     height: 1px;
     background: #999;
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger {
@@ -6531,7 +6474,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: #fff;
     border-radius: 3px;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -6548,7 +6490,6 @@ html body .wrapper .screen-block {
     top: calc(100% / 3);
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-3 {
@@ -6556,7 +6497,6 @@ html body .wrapper .screen-block {
     width: 50%;
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-4 {
@@ -6573,10 +6513,9 @@ html body .wrapper .screen-block {
     content: '';
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity 0.3s, top 0.3s, right 0.3s;
     transition: opacity 0.3s, top 0.3s, right 0.3s;
   }
-  .menu__item:hover .logo,
+  .menu__item:hover .symbol,
   .menu__item:hover .name {
     color: #fff;
   }
@@ -6680,46 +6619,36 @@ html body .wrapper .screen-block {
             transform: perspective(300px) rotateX(-90deg);
   }
   .menu__item--portfolio {
-    -webkit-transition-delay: 0.7s;
-            transition-delay: 0.7s;
+    transition-delay: 0.7s;
   }
   .menu__item--services, .menu__item--contact, .menu__item--about-us {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu__item--team, .menu__item--blog {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu__item--open-close .border-left {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 0.4s;
-            transition-delay: 0.4s;
+    transition-delay: 0.4s;
   }
   .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu__item--about-us .border-left {
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
+    transition-delay: 0.2s;
   }
   .menu__item--services .border-left {
     top: -100%;
-    -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
+    transition-delay: 0.1s;
   }
   .menu__item--services .border-bottom {
     right: -100%;
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
+    transition-delay: 0.5s;
   }
   .menu__background {
     position: absolute;
@@ -6729,9 +6658,12 @@ html body .wrapper .screen-block {
     visibility: hidden;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    -webkit-transition: opacity 0.3s;
+    background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.3s;
+  }
+  .menu.opened {
+    width: 100%;
+    height: 100%;
   }
   .menu.opened .menu__item {
     -webkit-transform: perspective(0) rotate(0);
@@ -6811,16 +6743,13 @@ html body .wrapper .screen-block {
             animation-delay: 0.55s;
   }
   .menu.opened .menu__item--team, .menu.opened .menu__item--blog {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu.opened .menu__item--services, .menu.opened .menu__item--contact, .menu.opened .menu__item--about-us {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu.opened .menu__item--portfolio {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu.opened .menu__item .border-left {
     height: 100vh;
@@ -6829,32 +6758,25 @@ html body .wrapper .screen-block {
     width: 100vw;
   }
   .menu.opened .menu__item--open-close .border-left {
-    -webkit-transition-delay: 1.5s;
-            transition-delay: 1.5s;
+    transition-delay: 1.5s;
   }
   .menu.opened .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.9s;
-            transition-delay: 0.9s;
+    transition-delay: 0.9s;
   }
   .menu.opened .menu__item--services .border-left {
-    -webkit-transition-delay: 1.4s;
-            transition-delay: 1.4s;
+    transition-delay: 1.4s;
   }
   .menu.opened .menu__item--services .border-bottom {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu.opened .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 1.1s;
-            transition-delay: 1.1s;
+    transition-delay: 1.1s;
   }
   .menu.opened .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 1.2s;
-            transition-delay: 1.2s;
+    transition-delay: 1.2s;
   }
   .menu.opened .menu__item--about-us .border-left {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu.opened .menu__background {
     visibility: visible;
@@ -6863,7 +6785,7 @@ html body .wrapper .screen-block {
   .menu.gray__item {
     border-color: #444;
   }
-  .menu.gray__item .logo,
+  .menu.gray__item .symbol,
   .menu.gray__item .name {
     color: #444;
   }
@@ -6877,11 +6799,7 @@ html body .wrapper .screen-block {
     top: 0;
     right: 0;
     z-index: 9999;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
     font-family: 'Roboto';
-    overflow: hidden;
   }
   .menu__item {
     box-sizing: border-box;
@@ -6897,7 +6815,6 @@ html body .wrapper .screen-block {
     outline: 0;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -6920,14 +6837,13 @@ html body .wrapper .screen-block {
     font-size: 1.58454vw;
     color: #999;
   }
-  .menu__item .logo,
+  .menu__item .symbol,
   .menu__item .name {
     font-size: 4.22544vw;
     text-align: center;
-    -webkit-transition: color 0.3s;
     transition: color 0.3s;
   }
-  .menu__item .logo {
+  .menu__item .symbol {
     font-family: 'Raleway';
   }
   .menu__item .name {
@@ -6944,7 +6860,6 @@ html body .wrapper .screen-block {
     width: 1px;
     height: 0;
     background: #999;
-    -webkit-transition: height 0.3s;
     transition: height 0.3s;
   }
   .menu__item .border-bottom {
@@ -6954,7 +6869,6 @@ html body .wrapper .screen-block {
     width: 0;
     height: 1px;
     background: #999;
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger {
@@ -6980,7 +6894,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: #fff;
     border-radius: 3px;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -6997,7 +6910,6 @@ html body .wrapper .screen-block {
     top: calc(100% / 3);
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-3 {
@@ -7005,7 +6917,6 @@ html body .wrapper .screen-block {
     width: 50%;
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-4 {
@@ -7022,10 +6933,9 @@ html body .wrapper .screen-block {
     content: '';
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity 0.3s, top 0.3s, right 0.3s;
     transition: opacity 0.3s, top 0.3s, right 0.3s;
   }
-  .menu__item:hover .logo,
+  .menu__item:hover .symbol,
   .menu__item:hover .name {
     color: #fff;
   }
@@ -7129,46 +7039,36 @@ html body .wrapper .screen-block {
             transform: perspective(300px) rotateX(-90deg);
   }
   .menu__item--portfolio {
-    -webkit-transition-delay: 0.7s;
-            transition-delay: 0.7s;
+    transition-delay: 0.7s;
   }
   .menu__item--services, .menu__item--contact, .menu__item--about-us {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu__item--team, .menu__item--blog {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu__item--open-close .border-left {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 0.4s;
-            transition-delay: 0.4s;
+    transition-delay: 0.4s;
   }
   .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu__item--about-us .border-left {
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
+    transition-delay: 0.2s;
   }
   .menu__item--services .border-left {
     top: -100%;
-    -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
+    transition-delay: 0.1s;
   }
   .menu__item--services .border-bottom {
     right: -100%;
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
+    transition-delay: 0.5s;
   }
   .menu__background {
     position: absolute;
@@ -7178,9 +7078,12 @@ html body .wrapper .screen-block {
     visibility: hidden;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    -webkit-transition: opacity 0.3s;
+    background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.3s;
+  }
+  .menu.opened {
+    width: 100%;
+    height: 100%;
   }
   .menu.opened .menu__item {
     -webkit-transform: perspective(0) rotate(0);
@@ -7260,16 +7163,13 @@ html body .wrapper .screen-block {
             animation-delay: 0.55s;
   }
   .menu.opened .menu__item--team, .menu.opened .menu__item--blog {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu.opened .menu__item--services, .menu.opened .menu__item--contact, .menu.opened .menu__item--about-us {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu.opened .menu__item--portfolio {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu.opened .menu__item .border-left {
     height: 100vh;
@@ -7278,32 +7178,25 @@ html body .wrapper .screen-block {
     width: 100vw;
   }
   .menu.opened .menu__item--open-close .border-left {
-    -webkit-transition-delay: 1.5s;
-            transition-delay: 1.5s;
+    transition-delay: 1.5s;
   }
   .menu.opened .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.9s;
-            transition-delay: 0.9s;
+    transition-delay: 0.9s;
   }
   .menu.opened .menu__item--services .border-left {
-    -webkit-transition-delay: 1.4s;
-            transition-delay: 1.4s;
+    transition-delay: 1.4s;
   }
   .menu.opened .menu__item--services .border-bottom {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu.opened .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 1.1s;
-            transition-delay: 1.1s;
+    transition-delay: 1.1s;
   }
   .menu.opened .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 1.2s;
-            transition-delay: 1.2s;
+    transition-delay: 1.2s;
   }
   .menu.opened .menu__item--about-us .border-left {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu.opened .menu__background {
     visibility: visible;
@@ -7312,7 +7205,7 @@ html body .wrapper .screen-block {
   .menu.gray__item {
     border-color: #444;
   }
-  .menu.gray__item .logo,
+  .menu.gray__item .symbol,
   .menu.gray__item .name {
     color: #444;
   }
@@ -7326,11 +7219,7 @@ html body .wrapper .screen-block {
     top: 0;
     right: 0;
     z-index: 9999;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
     font-family: 'Roboto';
-    overflow: hidden;
   }
   .menu__item {
     box-sizing: border-box;
@@ -7346,7 +7235,6 @@ html body .wrapper .screen-block {
     outline: 0;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -7369,14 +7257,13 @@ html body .wrapper .screen-block {
     font-size: 1.82291vw;
     color: #999;
   }
-  .menu__item .logo,
+  .menu__item .symbol,
   .menu__item .name {
     font-size: 4.68749vw;
     text-align: center;
-    -webkit-transition: color 0.3s;
     transition: color 0.3s;
   }
-  .menu__item .logo {
+  .menu__item .symbol {
     font-family: 'Raleway';
   }
   .menu__item .name {
@@ -7393,7 +7280,6 @@ html body .wrapper .screen-block {
     width: 1px;
     height: 0;
     background: #999;
-    -webkit-transition: height 0.3s;
     transition: height 0.3s;
   }
   .menu__item .border-bottom {
@@ -7403,7 +7289,6 @@ html body .wrapper .screen-block {
     width: 0;
     height: 1px;
     background: #999;
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger {
@@ -7429,7 +7314,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: #fff;
     border-radius: 3px;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -7446,7 +7330,6 @@ html body .wrapper .screen-block {
     top: calc(100% / 3);
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-3 {
@@ -7454,7 +7337,6 @@ html body .wrapper .screen-block {
     width: 50%;
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-4 {
@@ -7471,10 +7353,9 @@ html body .wrapper .screen-block {
     content: '';
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity 0.3s, top 0.3s, right 0.3s;
     transition: opacity 0.3s, top 0.3s, right 0.3s;
   }
-  .menu__item:hover .logo,
+  .menu__item:hover .symbol,
   .menu__item:hover .name {
     color: #fff;
   }
@@ -7578,46 +7459,36 @@ html body .wrapper .screen-block {
             transform: perspective(300px) rotateX(-90deg);
   }
   .menu__item--portfolio {
-    -webkit-transition-delay: 0.7s;
-            transition-delay: 0.7s;
+    transition-delay: 0.7s;
   }
   .menu__item--services, .menu__item--contact, .menu__item--about-us {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu__item--team, .menu__item--blog {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu__item--open-close .border-left {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 0.4s;
-            transition-delay: 0.4s;
+    transition-delay: 0.4s;
   }
   .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu__item--about-us .border-left {
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
+    transition-delay: 0.2s;
   }
   .menu__item--services .border-left {
     top: -100%;
-    -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
+    transition-delay: 0.1s;
   }
   .menu__item--services .border-bottom {
     right: -100%;
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
+    transition-delay: 0.5s;
   }
   .menu__background {
     position: absolute;
@@ -7627,9 +7498,12 @@ html body .wrapper .screen-block {
     visibility: hidden;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    -webkit-transition: opacity 0.3s;
+    background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.3s;
+  }
+  .menu.opened {
+    width: 100%;
+    height: 100%;
   }
   .menu.opened .menu__item {
     -webkit-transform: perspective(0) rotate(0);
@@ -7709,16 +7583,13 @@ html body .wrapper .screen-block {
             animation-delay: 0.55s;
   }
   .menu.opened .menu__item--team, .menu.opened .menu__item--blog {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu.opened .menu__item--services, .menu.opened .menu__item--contact, .menu.opened .menu__item--about-us {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu.opened .menu__item--portfolio {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu.opened .menu__item .border-left {
     height: 100vh;
@@ -7727,45 +7598,38 @@ html body .wrapper .screen-block {
     width: 100vw;
   }
   .menu.opened .menu__item--open-close .border-left {
-    -webkit-transition-delay: 1.5s;
-            transition-delay: 1.5s;
+    transition-delay: 1.5s;
   }
   .menu.opened .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.9s;
-            transition-delay: 0.9s;
+    transition-delay: 0.9s;
   }
   .menu.opened .menu__item--services .border-left {
-    -webkit-transition-delay: 1.4s;
-            transition-delay: 1.4s;
+    transition-delay: 1.4s;
   }
   .menu.opened .menu__item--services .border-bottom {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu.opened .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 1.1s;
-            transition-delay: 1.1s;
+    transition-delay: 1.1s;
   }
   .menu.opened .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 1.2s;
-            transition-delay: 1.2s;
+    transition-delay: 1.2s;
   }
   .menu.opened .menu__item--about-us .border-left {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu.opened .menu__background {
     visibility: visible;
     opacity: 1;
   }
-  .menu.gray__item {
+  .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray__item .logo,
-  .menu.gray__item .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
-  .menu.gray__item .hamburger-tick {
+  .menu.gray .menu__item .hamburger-tick {
     background: #444;
   }
 }
@@ -7775,11 +7639,7 @@ html body .wrapper .screen-block {
     top: 0;
     right: 0;
     z-index: 9999;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
     font-family: 'Roboto';
-    overflow: hidden;
   }
   .menu__item {
     box-sizing: border-box;
@@ -7795,7 +7655,6 @@ html body .wrapper .screen-block {
     outline: 0;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -7818,14 +7677,13 @@ html body .wrapper .screen-block {
     font-size: 1.36724vw;
     color: #999;
   }
-  .menu__item .logo,
+  .menu__item .symbol,
   .menu__item .name {
     font-size: 3.51576vw;
     text-align: center;
-    -webkit-transition: color 0.3s;
     transition: color 0.3s;
   }
-  .menu__item .logo {
+  .menu__item .symbol {
     font-family: 'Raleway';
   }
   .menu__item .name {
@@ -7842,7 +7700,6 @@ html body .wrapper .screen-block {
     width: 1px;
     height: 0;
     background: #999;
-    -webkit-transition: height 0.3s;
     transition: height 0.3s;
   }
   .menu__item .border-bottom {
@@ -7852,7 +7709,6 @@ html body .wrapper .screen-block {
     width: 0;
     height: 1px;
     background: #999;
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger {
@@ -7878,7 +7734,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: #fff;
     border-radius: 3px;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -7895,7 +7750,6 @@ html body .wrapper .screen-block {
     top: calc(100% / 3);
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-3 {
@@ -7903,7 +7757,6 @@ html body .wrapper .screen-block {
     width: 50%;
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-4 {
@@ -7920,10 +7773,9 @@ html body .wrapper .screen-block {
     content: '';
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity 0.3s, top 0.3s, right 0.3s;
     transition: opacity 0.3s, top 0.3s, right 0.3s;
   }
-  .menu__item:hover .logo,
+  .menu__item:hover .symbol,
   .menu__item:hover .name {
     color: #fff;
   }
@@ -8027,46 +7879,36 @@ html body .wrapper .screen-block {
             transform: perspective(300px) rotateX(-90deg);
   }
   .menu__item--portfolio {
-    -webkit-transition-delay: 0.7s;
-            transition-delay: 0.7s;
+    transition-delay: 0.7s;
   }
   .menu__item--services, .menu__item--contact, .menu__item--about-us {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu__item--team, .menu__item--blog {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu__item--open-close .border-left {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 0.4s;
-            transition-delay: 0.4s;
+    transition-delay: 0.4s;
   }
   .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu__item--about-us .border-left {
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
+    transition-delay: 0.2s;
   }
   .menu__item--services .border-left {
     top: -100%;
-    -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
+    transition-delay: 0.1s;
   }
   .menu__item--services .border-bottom {
     right: -100%;
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
+    transition-delay: 0.5s;
   }
   .menu__background {
     position: absolute;
@@ -8076,9 +7918,12 @@ html body .wrapper .screen-block {
     visibility: hidden;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    -webkit-transition: opacity 0.3s;
+    background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.3s;
+  }
+  .menu.opened {
+    width: 100%;
+    height: 100%;
   }
   .menu.opened .menu__item {
     -webkit-transform: perspective(0) rotate(0);
@@ -8158,16 +8003,13 @@ html body .wrapper .screen-block {
             animation-delay: 0.55s;
   }
   .menu.opened .menu__item--team, .menu.opened .menu__item--blog {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu.opened .menu__item--services, .menu.opened .menu__item--contact, .menu.opened .menu__item--about-us {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu.opened .menu__item--portfolio {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu.opened .menu__item .border-left {
     height: 100vh;
@@ -8176,45 +8018,38 @@ html body .wrapper .screen-block {
     width: 100vw;
   }
   .menu.opened .menu__item--open-close .border-left {
-    -webkit-transition-delay: 1.5s;
-            transition-delay: 1.5s;
+    transition-delay: 1.5s;
   }
   .menu.opened .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.9s;
-            transition-delay: 0.9s;
+    transition-delay: 0.9s;
   }
   .menu.opened .menu__item--services .border-left {
-    -webkit-transition-delay: 1.4s;
-            transition-delay: 1.4s;
+    transition-delay: 1.4s;
   }
   .menu.opened .menu__item--services .border-bottom {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu.opened .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 1.1s;
-            transition-delay: 1.1s;
+    transition-delay: 1.1s;
   }
   .menu.opened .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 1.2s;
-            transition-delay: 1.2s;
+    transition-delay: 1.2s;
   }
   .menu.opened .menu__item--about-us .border-left {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu.opened .menu__background {
     visibility: visible;
     opacity: 1;
   }
-  .menu.gray__item {
+  .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray__item .logo,
-  .menu.gray__item .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
-  .menu.gray__item .hamburger-tick {
+  .menu.gray .menu__item .hamburger-tick {
     background: #444;
   }
 }
@@ -8224,11 +8059,7 @@ html body .wrapper .screen-block {
     top: 0;
     right: 0;
     z-index: 9999;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
     font-family: 'Roboto';
-    overflow: hidden;
   }
   .menu__item {
     box-sizing: border-box;
@@ -8244,7 +8075,6 @@ html body .wrapper .screen-block {
     outline: 0;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -8267,14 +8097,13 @@ html body .wrapper .screen-block {
     font-size: 1.0248vw;
     color: #999;
   }
-  .menu__item .logo,
+  .menu__item .symbol,
   .menu__item .name {
     font-size: 2.6352vw;
     text-align: center;
-    -webkit-transition: color 0.3s;
     transition: color 0.3s;
   }
-  .menu__item .logo {
+  .menu__item .symbol {
     font-family: 'Raleway';
   }
   .menu__item .name {
@@ -8291,7 +8120,6 @@ html body .wrapper .screen-block {
     width: 1px;
     height: 0;
     background: #999;
-    -webkit-transition: height 0.3s;
     transition: height 0.3s;
   }
   .menu__item .border-bottom {
@@ -8301,7 +8129,6 @@ html body .wrapper .screen-block {
     width: 0;
     height: 1px;
     background: #999;
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger {
@@ -8327,7 +8154,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: #fff;
     border-radius: 3px;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -8344,7 +8170,6 @@ html body .wrapper .screen-block {
     top: calc(100% / 3);
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-3 {
@@ -8352,7 +8177,6 @@ html body .wrapper .screen-block {
     width: 50%;
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-4 {
@@ -8369,10 +8193,9 @@ html body .wrapper .screen-block {
     content: '';
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity 0.3s, top 0.3s, right 0.3s;
     transition: opacity 0.3s, top 0.3s, right 0.3s;
   }
-  .menu__item:hover .logo,
+  .menu__item:hover .symbol,
   .menu__item:hover .name {
     color: #fff;
   }
@@ -8476,46 +8299,36 @@ html body .wrapper .screen-block {
             transform: perspective(300px) rotateX(-90deg);
   }
   .menu__item--portfolio {
-    -webkit-transition-delay: 0.7s;
-            transition-delay: 0.7s;
+    transition-delay: 0.7s;
   }
   .menu__item--services, .menu__item--contact, .menu__item--about-us {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu__item--team, .menu__item--blog {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu__item--open-close .border-left {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 0.4s;
-            transition-delay: 0.4s;
+    transition-delay: 0.4s;
   }
   .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu__item--about-us .border-left {
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
+    transition-delay: 0.2s;
   }
   .menu__item--services .border-left {
     top: -100%;
-    -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
+    transition-delay: 0.1s;
   }
   .menu__item--services .border-bottom {
     right: -100%;
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
+    transition-delay: 0.5s;
   }
   .menu__background {
     position: absolute;
@@ -8525,9 +8338,12 @@ html body .wrapper .screen-block {
     visibility: hidden;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    -webkit-transition: opacity 0.3s;
+    background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.3s;
+  }
+  .menu.opened {
+    width: 100%;
+    height: 100%;
   }
   .menu.opened .menu__item {
     -webkit-transform: perspective(0) rotate(0);
@@ -8607,16 +8423,13 @@ html body .wrapper .screen-block {
             animation-delay: 0.55s;
   }
   .menu.opened .menu__item--team, .menu.opened .menu__item--blog {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu.opened .menu__item--services, .menu.opened .menu__item--contact, .menu.opened .menu__item--about-us {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu.opened .menu__item--portfolio {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu.opened .menu__item .border-left {
     height: 100vh;
@@ -8625,45 +8438,38 @@ html body .wrapper .screen-block {
     width: 100vw;
   }
   .menu.opened .menu__item--open-close .border-left {
-    -webkit-transition-delay: 1.5s;
-            transition-delay: 1.5s;
+    transition-delay: 1.5s;
   }
   .menu.opened .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.9s;
-            transition-delay: 0.9s;
+    transition-delay: 0.9s;
   }
   .menu.opened .menu__item--services .border-left {
-    -webkit-transition-delay: 1.4s;
-            transition-delay: 1.4s;
+    transition-delay: 1.4s;
   }
   .menu.opened .menu__item--services .border-bottom {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu.opened .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 1.1s;
-            transition-delay: 1.1s;
+    transition-delay: 1.1s;
   }
   .menu.opened .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 1.2s;
-            transition-delay: 1.2s;
+    transition-delay: 1.2s;
   }
   .menu.opened .menu__item--about-us .border-left {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu.opened .menu__background {
     visibility: visible;
     opacity: 1;
   }
-  .menu.gray__item {
+  .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray__item .logo,
-  .menu.gray__item .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
-  .menu.gray__item .hamburger-tick {
+  .menu.gray .menu__item .hamburger-tick {
     background: #444;
   }
 }
@@ -8673,11 +8479,7 @@ html body .wrapper .screen-block {
     top: 0;
     right: 0;
     z-index: 9999;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
     font-family: 'Roboto';
-    overflow: hidden;
   }
   .menu__item {
     box-sizing: border-box;
@@ -8693,7 +8495,6 @@ html body .wrapper .screen-block {
     outline: 0;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -8716,14 +8517,13 @@ html body .wrapper .screen-block {
     font-size: 0.83328vw;
     color: #999;
   }
-  .menu__item .logo,
+  .menu__item .symbol,
   .menu__item .name {
     font-size: 2.14272vw;
     text-align: center;
-    -webkit-transition: color 0.3s;
     transition: color 0.3s;
   }
-  .menu__item .logo {
+  .menu__item .symbol {
     font-family: 'Raleway';
   }
   .menu__item .name {
@@ -8740,7 +8540,6 @@ html body .wrapper .screen-block {
     width: 1px;
     height: 0;
     background: #999;
-    -webkit-transition: height 0.3s;
     transition: height 0.3s;
   }
   .menu__item .border-bottom {
@@ -8750,7 +8549,6 @@ html body .wrapper .screen-block {
     width: 0;
     height: 1px;
     background: #999;
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger {
@@ -8776,7 +8574,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: #fff;
     border-radius: 3px;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -8793,7 +8590,6 @@ html body .wrapper .screen-block {
     top: calc(100% / 3);
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-3 {
@@ -8801,7 +8597,6 @@ html body .wrapper .screen-block {
     width: 50%;
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-4 {
@@ -8818,10 +8613,9 @@ html body .wrapper .screen-block {
     content: '';
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity 0.3s, top 0.3s, right 0.3s;
     transition: opacity 0.3s, top 0.3s, right 0.3s;
   }
-  .menu__item:hover .logo,
+  .menu__item:hover .symbol,
   .menu__item:hover .name {
     color: #fff;
   }
@@ -8925,46 +8719,36 @@ html body .wrapper .screen-block {
             transform: perspective(300px) rotateX(-90deg);
   }
   .menu__item--portfolio {
-    -webkit-transition-delay: 0.7s;
-            transition-delay: 0.7s;
+    transition-delay: 0.7s;
   }
   .menu__item--services, .menu__item--contact, .menu__item--about-us {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu__item--team, .menu__item--blog {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu__item--open-close .border-left {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 0.4s;
-            transition-delay: 0.4s;
+    transition-delay: 0.4s;
   }
   .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu__item--about-us .border-left {
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
+    transition-delay: 0.2s;
   }
   .menu__item--services .border-left {
     top: -100%;
-    -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
+    transition-delay: 0.1s;
   }
   .menu__item--services .border-bottom {
     right: -100%;
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
+    transition-delay: 0.5s;
   }
   .menu__background {
     position: absolute;
@@ -8974,9 +8758,12 @@ html body .wrapper .screen-block {
     visibility: hidden;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    -webkit-transition: opacity 0.3s;
+    background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.3s;
+  }
+  .menu.opened {
+    width: 100%;
+    height: 100%;
   }
   .menu.opened .menu__item {
     -webkit-transform: perspective(0) rotate(0);
@@ -9056,16 +8843,13 @@ html body .wrapper .screen-block {
             animation-delay: 0.55s;
   }
   .menu.opened .menu__item--team, .menu.opened .menu__item--blog {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu.opened .menu__item--services, .menu.opened .menu__item--contact, .menu.opened .menu__item--about-us {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu.opened .menu__item--portfolio {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu.opened .menu__item .border-left {
     height: 100vh;
@@ -9074,45 +8858,38 @@ html body .wrapper .screen-block {
     width: 100vw;
   }
   .menu.opened .menu__item--open-close .border-left {
-    -webkit-transition-delay: 1.5s;
-            transition-delay: 1.5s;
+    transition-delay: 1.5s;
   }
   .menu.opened .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.9s;
-            transition-delay: 0.9s;
+    transition-delay: 0.9s;
   }
   .menu.opened .menu__item--services .border-left {
-    -webkit-transition-delay: 1.4s;
-            transition-delay: 1.4s;
+    transition-delay: 1.4s;
   }
   .menu.opened .menu__item--services .border-bottom {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu.opened .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 1.1s;
-            transition-delay: 1.1s;
+    transition-delay: 1.1s;
   }
   .menu.opened .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 1.2s;
-            transition-delay: 1.2s;
+    transition-delay: 1.2s;
   }
   .menu.opened .menu__item--about-us .border-left {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu.opened .menu__background {
     visibility: visible;
     opacity: 1;
   }
-  .menu.gray__item {
+  .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray__item .logo,
-  .menu.gray__item .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
-  .menu.gray__item .hamburger-tick {
+  .menu.gray .menu__item .hamburger-tick {
     background: #444;
   }
 }
@@ -9122,11 +8899,7 @@ html body .wrapper .screen-block {
     top: 0;
     right: 0;
     z-index: 9999;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
     font-family: 'Roboto';
-    overflow: hidden;
   }
   .menu__item {
     box-sizing: border-box;
@@ -9142,7 +8915,6 @@ html body .wrapper .screen-block {
     outline: 0;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -9165,14 +8937,13 @@ html body .wrapper .screen-block {
     font-size: 0.72912vw;
     color: #999;
   }
-  .menu__item .logo,
+  .menu__item .symbol,
   .menu__item .name {
     font-size: 1.87488vw;
     text-align: center;
-    -webkit-transition: color 0.3s;
     transition: color 0.3s;
   }
-  .menu__item .logo {
+  .menu__item .symbol {
     font-family: 'Raleway';
   }
   .menu__item .name {
@@ -9189,7 +8960,6 @@ html body .wrapper .screen-block {
     width: 1px;
     height: 0;
     background: #999;
-    -webkit-transition: height 0.3s;
     transition: height 0.3s;
   }
   .menu__item .border-bottom {
@@ -9199,7 +8969,6 @@ html body .wrapper .screen-block {
     width: 0;
     height: 1px;
     background: #999;
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger {
@@ -9225,7 +8994,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: #fff;
     border-radius: 3px;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -9242,7 +9010,6 @@ html body .wrapper .screen-block {
     top: calc(100% / 3);
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-3 {
@@ -9250,7 +9017,6 @@ html body .wrapper .screen-block {
     width: 50%;
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-4 {
@@ -9267,10 +9033,9 @@ html body .wrapper .screen-block {
     content: '';
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity 0.3s, top 0.3s, right 0.3s;
     transition: opacity 0.3s, top 0.3s, right 0.3s;
   }
-  .menu__item:hover .logo,
+  .menu__item:hover .symbol,
   .menu__item:hover .name {
     color: #fff;
   }
@@ -9374,46 +9139,36 @@ html body .wrapper .screen-block {
             transform: perspective(300px) rotateX(-90deg);
   }
   .menu__item--portfolio {
-    -webkit-transition-delay: 0.7s;
-            transition-delay: 0.7s;
+    transition-delay: 0.7s;
   }
   .menu__item--services, .menu__item--contact, .menu__item--about-us {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu__item--team, .menu__item--blog {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu__item--open-close .border-left {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 0.4s;
-            transition-delay: 0.4s;
+    transition-delay: 0.4s;
   }
   .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu__item--about-us .border-left {
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
+    transition-delay: 0.2s;
   }
   .menu__item--services .border-left {
     top: -100%;
-    -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
+    transition-delay: 0.1s;
   }
   .menu__item--services .border-bottom {
     right: -100%;
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
+    transition-delay: 0.5s;
   }
   .menu__background {
     position: absolute;
@@ -9423,9 +9178,12 @@ html body .wrapper .screen-block {
     visibility: hidden;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    -webkit-transition: opacity 0.3s;
+    background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.3s;
+  }
+  .menu.opened {
+    width: 100%;
+    height: 100%;
   }
   .menu.opened .menu__item {
     -webkit-transform: perspective(0) rotate(0);
@@ -9505,16 +9263,13 @@ html body .wrapper .screen-block {
             animation-delay: 0.55s;
   }
   .menu.opened .menu__item--team, .menu.opened .menu__item--blog {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu.opened .menu__item--services, .menu.opened .menu__item--contact, .menu.opened .menu__item--about-us {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu.opened .menu__item--portfolio {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu.opened .menu__item .border-left {
     height: 100vh;
@@ -9523,45 +9278,38 @@ html body .wrapper .screen-block {
     width: 100vw;
   }
   .menu.opened .menu__item--open-close .border-left {
-    -webkit-transition-delay: 1.5s;
-            transition-delay: 1.5s;
+    transition-delay: 1.5s;
   }
   .menu.opened .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.9s;
-            transition-delay: 0.9s;
+    transition-delay: 0.9s;
   }
   .menu.opened .menu__item--services .border-left {
-    -webkit-transition-delay: 1.4s;
-            transition-delay: 1.4s;
+    transition-delay: 1.4s;
   }
   .menu.opened .menu__item--services .border-bottom {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu.opened .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 1.1s;
-            transition-delay: 1.1s;
+    transition-delay: 1.1s;
   }
   .menu.opened .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 1.2s;
-            transition-delay: 1.2s;
+    transition-delay: 1.2s;
   }
   .menu.opened .menu__item--about-us .border-left {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu.opened .menu__background {
     visibility: visible;
     opacity: 1;
   }
-  .menu.gray__item {
+  .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray__item .logo,
-  .menu.gray__item .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
-  .menu.gray__item .hamburger-tick {
+  .menu.gray .menu__item .hamburger-tick {
     background: #444;
   }
 }
@@ -9571,11 +9319,7 @@ html body .wrapper .screen-block {
     top: 0;
     right: 0;
     z-index: 9999;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
     font-family: 'Roboto';
-    overflow: hidden;
   }
   .menu__item {
     box-sizing: border-box;
@@ -9591,7 +9335,6 @@ html body .wrapper .screen-block {
     outline: 0;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -9614,14 +9357,13 @@ html body .wrapper .screen-block {
     font-size: 0.54684vw;
     color: #999;
   }
-  .menu__item .logo,
+  .menu__item .symbol,
   .menu__item .name {
     font-size: 1.40616vw;
     text-align: center;
-    -webkit-transition: color 0.3s;
     transition: color 0.3s;
   }
-  .menu__item .logo {
+  .menu__item .symbol {
     font-family: 'Raleway';
   }
   .menu__item .name {
@@ -9638,7 +9380,6 @@ html body .wrapper .screen-block {
     width: 1px;
     height: 0;
     background: #999;
-    -webkit-transition: height 0.3s;
     transition: height 0.3s;
   }
   .menu__item .border-bottom {
@@ -9648,7 +9389,6 @@ html body .wrapper .screen-block {
     width: 0;
     height: 1px;
     background: #999;
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger {
@@ -9674,7 +9414,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: #fff;
     border-radius: 3px;
-    -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
     transition: transform 0.3s, -webkit-transform 0.3s;
@@ -9691,7 +9430,6 @@ html body .wrapper .screen-block {
     top: calc(100% / 3);
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-3 {
@@ -9699,7 +9437,6 @@ html body .wrapper .screen-block {
     width: 50%;
     -webkit-transform: translateY(-1.5px);
             transform: translateY(-1.5px);
-    -webkit-transition: width 0.3s;
     transition: width 0.3s;
   }
   .menu__item .hamburger-tick-4 {
@@ -9716,10 +9453,9 @@ html body .wrapper .screen-block {
     content: '';
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: opacity 0.3s, top 0.3s, right 0.3s;
     transition: opacity 0.3s, top 0.3s, right 0.3s;
   }
-  .menu__item:hover .logo,
+  .menu__item:hover .symbol,
   .menu__item:hover .name {
     color: #fff;
   }
@@ -9823,46 +9559,36 @@ html body .wrapper .screen-block {
             transform: perspective(300px) rotateX(-90deg);
   }
   .menu__item--portfolio {
-    -webkit-transition-delay: 0.7s;
-            transition-delay: 0.7s;
+    transition-delay: 0.7s;
   }
   .menu__item--services, .menu__item--contact, .menu__item--about-us {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu__item--team, .menu__item--blog {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu__item--open-close .border-left {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 0.4s;
-            transition-delay: 0.4s;
+    transition-delay: 0.4s;
   }
   .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu__item--about-us .border-left {
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
+    transition-delay: 0.2s;
   }
   .menu__item--services .border-left {
     top: -100%;
-    -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s;
+    transition-delay: 0.1s;
   }
   .menu__item--services .border-bottom {
     right: -100%;
-    -webkit-transition-delay: 0.5s;
-            transition-delay: 0.5s;
+    transition-delay: 0.5s;
   }
   .menu__background {
     position: absolute;
@@ -9872,9 +9598,12 @@ html body .wrapper .screen-block {
     visibility: hidden;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    -webkit-transition: opacity 0.3s;
+    background: rgba(0, 0, 0, 0.4);
     transition: opacity 0.3s;
+  }
+  .menu.opened {
+    width: 100%;
+    height: 100%;
   }
   .menu.opened .menu__item {
     -webkit-transform: perspective(0) rotate(0);
@@ -9954,16 +9683,13 @@ html body .wrapper .screen-block {
             animation-delay: 0.55s;
   }
   .menu.opened .menu__item--team, .menu.opened .menu__item--blog {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
+    transition-delay: 0s;
   }
   .menu.opened .menu__item--services, .menu.opened .menu__item--contact, .menu.opened .menu__item--about-us {
-    -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
+    transition-delay: 0.3s;
   }
   .menu.opened .menu__item--portfolio {
-    -webkit-transition-delay: 0.6s;
-            transition-delay: 0.6s;
+    transition-delay: 0.6s;
   }
   .menu.opened .menu__item .border-left {
     height: 100vh;
@@ -9972,45 +9698,38 @@ html body .wrapper .screen-block {
     width: 100vw;
   }
   .menu.opened .menu__item--open-close .border-left {
-    -webkit-transition-delay: 1.5s;
-            transition-delay: 1.5s;
+    transition-delay: 1.5s;
   }
   .menu.opened .menu__item--open-close .border-bottom {
-    -webkit-transition-delay: 0.9s;
-            transition-delay: 0.9s;
+    transition-delay: 0.9s;
   }
   .menu.opened .menu__item--services .border-left {
-    -webkit-transition-delay: 1.4s;
-            transition-delay: 1.4s;
+    transition-delay: 1.4s;
   }
   .menu.opened .menu__item--services .border-bottom {
-    -webkit-transition-delay: 1s;
-            transition-delay: 1s;
+    transition-delay: 1s;
   }
   .menu.opened .menu__item--contact .border-bottom {
-    -webkit-transition-delay: 1.1s;
-            transition-delay: 1.1s;
+    transition-delay: 1.1s;
   }
   .menu.opened .menu__item--portfolio .border-left {
-    -webkit-transition-delay: 1.2s;
-            transition-delay: 1.2s;
+    transition-delay: 1.2s;
   }
   .menu.opened .menu__item--about-us .border-left {
-    -webkit-transition-delay: 1.3s;
-            transition-delay: 1.3s;
+    transition-delay: 1.3s;
   }
   .menu.opened .menu__background {
     visibility: visible;
     opacity: 1;
   }
-  .menu.gray__item {
+  .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray__item .logo,
-  .menu.gray__item .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
-  .menu.gray__item .hamburger-tick {
+  .menu.gray .menu__item .hamburger-tick {
     background: #444;
   }
 }
@@ -10316,7 +10035,6 @@ html body .wrapper .screen-block {
     font-weight: 700;
     overflow: hidden;
     text-transform: uppercase;
-    -webkit-transition: padding 0.3s;
     transition: padding 0.3s;
   }
   .buttons .container .button-with-arrow span:before {
@@ -10336,7 +10054,6 @@ html body .wrapper .screen-block {
     overflow: hidden;
     -webkit-transform: translateX(-20%);
             transform: translateX(-20%);
-    -webkit-transition: -webkit-transform 0.2s linear 0.3s;
     transition: -webkit-transform 0.2s linear 0.3s;
     transition: transform 0.2s linear 0.3s;
     transition: transform 0.2s linear 0.3s, -webkit-transform 0.2s linear 0.3s;
@@ -10430,7 +10147,6 @@ html body .wrapper .screen-block {
     line-height: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    -webkit-transition: padding 0.2s;
     transition: padding 0.2s;
   }
   .buttons .bottom-nav .arrow-container {
@@ -10442,7 +10158,6 @@ html body .wrapper .screen-block {
     opacity: 0;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
-    -webkit-transition: opacity 0.1s, -webkit-transform 0.3s;
     transition: opacity 0.1s, -webkit-transform 0.3s;
     transition: opacity 0.1s, transform 0.3s;
     transition: opacity 0.1s, transform 0.3s, -webkit-transform 0.3s;
@@ -10465,7 +10180,6 @@ html body .wrapper .screen-block {
             flex-grow: 1;
     height: 1px;
     background: rgba(0, 0, 0, 0.3);
-    -webkit-transition: width 0.2s;
     transition: width 0.2s;
   }
 }
@@ -10770,7 +10484,6 @@ html body .wrapper .screen-block {
     font-weight: 700;
     overflow: hidden;
     text-transform: uppercase;
-    -webkit-transition: padding 0.3s;
     transition: padding 0.3s;
   }
   .buttons .container .button-with-arrow span:before {
@@ -10790,7 +10503,6 @@ html body .wrapper .screen-block {
     overflow: hidden;
     -webkit-transform: translateX(-20%);
             transform: translateX(-20%);
-    -webkit-transition: -webkit-transform 0.2s linear 0.3s;
     transition: -webkit-transform 0.2s linear 0.3s;
     transition: transform 0.2s linear 0.3s;
     transition: transform 0.2s linear 0.3s, -webkit-transform 0.2s linear 0.3s;
@@ -10884,7 +10596,6 @@ html body .wrapper .screen-block {
     line-height: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    -webkit-transition: padding 0.2s;
     transition: padding 0.2s;
   }
   .buttons .bottom-nav .arrow-container {
@@ -10896,7 +10607,6 @@ html body .wrapper .screen-block {
     opacity: 0;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
-    -webkit-transition: opacity 0.1s, -webkit-transform 0.3s;
     transition: opacity 0.1s, -webkit-transform 0.3s;
     transition: opacity 0.1s, transform 0.3s;
     transition: opacity 0.1s, transform 0.3s, -webkit-transform 0.3s;
@@ -10919,7 +10629,6 @@ html body .wrapper .screen-block {
             flex-grow: 1;
     height: 1px;
     background: rgba(0, 0, 0, 0.3);
-    -webkit-transition: width 0.2s;
     transition: width 0.2s;
   }
 }
@@ -11224,7 +10933,6 @@ html body .wrapper .screen-block {
     font-weight: 700;
     overflow: hidden;
     text-transform: uppercase;
-    -webkit-transition: padding 0.3s;
     transition: padding 0.3s;
   }
   .buttons .container .button-with-arrow span:before {
@@ -11244,7 +10952,6 @@ html body .wrapper .screen-block {
     overflow: hidden;
     -webkit-transform: translateX(-20%);
             transform: translateX(-20%);
-    -webkit-transition: -webkit-transform 0.2s linear 0.3s;
     transition: -webkit-transform 0.2s linear 0.3s;
     transition: transform 0.2s linear 0.3s;
     transition: transform 0.2s linear 0.3s, -webkit-transform 0.2s linear 0.3s;
@@ -11338,7 +11045,6 @@ html body .wrapper .screen-block {
     line-height: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    -webkit-transition: padding 0.2s;
     transition: padding 0.2s;
   }
   .buttons .bottom-nav .arrow-container {
@@ -11350,7 +11056,6 @@ html body .wrapper .screen-block {
     opacity: 0;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
-    -webkit-transition: opacity 0.1s, -webkit-transform 0.3s;
     transition: opacity 0.1s, -webkit-transform 0.3s;
     transition: opacity 0.1s, transform 0.3s;
     transition: opacity 0.1s, transform 0.3s, -webkit-transform 0.3s;
@@ -11373,7 +11078,6 @@ html body .wrapper .screen-block {
             flex-grow: 1;
     height: 1px;
     background: rgba(0, 0, 0, 0.3);
-    -webkit-transition: width 0.2s;
     transition: width 0.2s;
   }
 }
@@ -11678,7 +11382,6 @@ html body .wrapper .screen-block {
     font-weight: 700;
     overflow: hidden;
     text-transform: uppercase;
-    -webkit-transition: padding 0.3s;
     transition: padding 0.3s;
   }
   .buttons .container .button-with-arrow span:before {
@@ -11698,7 +11401,6 @@ html body .wrapper .screen-block {
     overflow: hidden;
     -webkit-transform: translateX(-20%);
             transform: translateX(-20%);
-    -webkit-transition: -webkit-transform 0.2s linear 0.3s;
     transition: -webkit-transform 0.2s linear 0.3s;
     transition: transform 0.2s linear 0.3s;
     transition: transform 0.2s linear 0.3s, -webkit-transform 0.2s linear 0.3s;
@@ -11792,7 +11494,6 @@ html body .wrapper .screen-block {
     line-height: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    -webkit-transition: padding 0.2s;
     transition: padding 0.2s;
   }
   .buttons .bottom-nav .arrow-container {
@@ -11804,7 +11505,6 @@ html body .wrapper .screen-block {
     opacity: 0;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
-    -webkit-transition: opacity 0.1s, -webkit-transform 0.3s;
     transition: opacity 0.1s, -webkit-transform 0.3s;
     transition: opacity 0.1s, transform 0.3s;
     transition: opacity 0.1s, transform 0.3s, -webkit-transform 0.3s;
@@ -11827,7 +11527,6 @@ html body .wrapper .screen-block {
             flex-grow: 1;
     height: 1px;
     background: rgba(0, 0, 0, 0.3);
-    -webkit-transition: width 0.2s;
     transition: width 0.2s;
   }
 }
@@ -12132,7 +11831,6 @@ html body .wrapper .screen-block {
     font-weight: 700;
     overflow: hidden;
     text-transform: uppercase;
-    -webkit-transition: padding 0.3s;
     transition: padding 0.3s;
   }
   .buttons .container .button-with-arrow span:before {
@@ -12152,7 +11850,6 @@ html body .wrapper .screen-block {
     overflow: hidden;
     -webkit-transform: translateX(-20%);
             transform: translateX(-20%);
-    -webkit-transition: -webkit-transform 0.2s linear 0.3s;
     transition: -webkit-transform 0.2s linear 0.3s;
     transition: transform 0.2s linear 0.3s;
     transition: transform 0.2s linear 0.3s, -webkit-transform 0.2s linear 0.3s;
@@ -12246,7 +11943,6 @@ html body .wrapper .screen-block {
     line-height: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    -webkit-transition: padding 0.2s;
     transition: padding 0.2s;
   }
   .buttons .bottom-nav .arrow-container {
@@ -12258,7 +11954,6 @@ html body .wrapper .screen-block {
     opacity: 0;
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
-    -webkit-transition: opacity 0.1s, -webkit-transform 0.3s;
     transition: opacity 0.1s, -webkit-transform 0.3s;
     transition: opacity 0.1s, transform 0.3s;
     transition: opacity 0.1s, transform 0.3s, -webkit-transform 0.3s;
@@ -12281,7 +11976,6 @@ html body .wrapper .screen-block {
             flex-grow: 1;
     height: 1px;
     background: rgba(0, 0, 0, 0.3);
-    -webkit-transition: width 0.2s;
     transition: width 0.2s;
   }
 }
@@ -13402,6 +13096,12 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
   }
+  .q7 .logo {
+    z-index: 2;
+  }
+  .q7 .title {
+    position: absolute;
+  }
   .q7 .car-covering-layer {
     overflow: hidden;
     position: relative;
@@ -13456,6 +13156,17 @@ html body .wrapper .screen-block {
             animation: widthIncrease 0.9s 3s both;
     overflow: hidden;
   }
+  .q7 .car-covering-layer--left .image-container:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
+  }
   .q7 .car-covering-layer--left .lines {
     left: 14.649vw;
     width: 25.976vw;
@@ -13472,17 +13183,6 @@ html body .wrapper .screen-block {
             animation-duration: 2.7s;
     -webkit-animation-delay: 0.27s;
             animation-delay: 0.27s;
-  }
-  .q7 .car-covering-layer--left:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    content: '';
   }
   .q7 .car-covering-layer--right {
     right: 0;
@@ -13601,6 +13301,12 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
   }
+  .q7 .logo {
+    z-index: 2;
+  }
+  .q7 .title {
+    position: absolute;
+  }
   .q7 .car-covering-layer {
     overflow: hidden;
     position: relative;
@@ -13655,6 +13361,17 @@ html body .wrapper .screen-block {
             animation: widthIncrease 0.9s 3s both;
     overflow: hidden;
   }
+  .q7 .car-covering-layer--left .image-container:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
+  }
   .q7 .car-covering-layer--left .lines {
     left: 10.98vw;
     width: 29.645vw;
@@ -13671,17 +13388,6 @@ html body .wrapper .screen-block {
             animation-duration: 2.7s;
     -webkit-animation-delay: 0.27s;
             animation-delay: 0.27s;
-  }
-  .q7 .car-covering-layer--left:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    content: '';
   }
   .q7 .car-covering-layer--right {
     right: 0;
@@ -13794,6 +13500,12 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
   }
+  .q7 .logo {
+    z-index: 2;
+  }
+  .q7 .title {
+    position: absolute;
+  }
   .q7 .car-covering-layer {
     overflow: hidden;
     position: relative;
@@ -13848,6 +13560,17 @@ html body .wrapper .screen-block {
             animation: widthIncrease 0.9s 3s both;
     overflow: hidden;
   }
+  .q7 .car-covering-layer--left .image-container:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
+  }
   .q7 .car-covering-layer--left .lines {
     left: 8.928vw;
     width: 31.697vw;
@@ -13864,17 +13587,6 @@ html body .wrapper .screen-block {
             animation-duration: 2.7s;
     -webkit-animation-delay: 0.27s;
             animation-delay: 0.27s;
-  }
-  .q7 .car-covering-layer--left:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    content: '';
   }
   .q7 .car-covering-layer--right {
     right: 0;
@@ -13990,6 +13702,12 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
   }
+  .q7 .logo {
+    z-index: 2;
+  }
+  .q7 .title {
+    position: absolute;
+  }
   .q7 .car-covering-layer {
     overflow: hidden;
     position: relative;
@@ -14044,6 +13762,17 @@ html body .wrapper .screen-block {
             animation: widthIncrease 0.9s 3s both;
     overflow: hidden;
   }
+  .q7 .car-covering-layer--left .image-container:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
+  }
   .q7 .car-covering-layer--left .lines {
     left: 7.812vw;
     width: 32.813vw;
@@ -14060,17 +13789,6 @@ html body .wrapper .screen-block {
             animation-duration: 2.7s;
     -webkit-animation-delay: 0.27s;
             animation-delay: 0.27s;
-  }
-  .q7 .car-covering-layer--left:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    content: '';
   }
   .q7 .car-covering-layer--right {
     right: 0;
@@ -14186,6 +13904,12 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
   }
+  .q7 .logo {
+    z-index: 2;
+  }
+  .q7 .title {
+    position: absolute;
+  }
   .q7 .car-covering-layer {
     overflow: hidden;
     position: relative;
@@ -14240,6 +13964,17 @@ html body .wrapper .screen-block {
             animation: widthIncrease 0.9s 3s both;
     overflow: hidden;
   }
+  .q7 .car-covering-layer--left .image-container:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    content: '';
+  }
   .q7 .car-covering-layer--left .lines {
     left: 5.859vw;
     width: 34.766vw;
@@ -14256,17 +13991,6 @@ html body .wrapper .screen-block {
             animation-duration: 2.7s;
     -webkit-animation-delay: 0.27s;
             animation-delay: 0.27s;
-  }
-  .q7 .car-covering-layer--left:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    content: '';
   }
   .q7 .car-covering-layer--right {
     right: 0;
@@ -14414,7 +14138,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     -webkit-animation: right 0.9s 2.7s both;
             animation: right 0.9s 2.7s both;
@@ -14481,7 +14204,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     -webkit-animation: right 0.9s 2.7s both;
             animation: right 0.9s 2.7s both;
@@ -14516,6 +14238,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .vinograd .title {
+    position: absolute;
   }
   @-webkit-keyframes posterTextApear {
     from {
@@ -14574,7 +14299,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
@@ -14635,6 +14359,9 @@ html body .wrapper .screen-block {
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
   }
+  .vinograd .title {
+    position: absolute;
+  }
   @-webkit-keyframes posterTextApear {
     from {
       opacity: 0;
@@ -14692,7 +14419,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
@@ -14741,6 +14467,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .vinograd .title {
+    position: absolute;
   }
   @-webkit-keyframes posterTextApear {
     from {
@@ -14799,7 +14528,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
@@ -14848,6 +14576,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .vinograd .title {
+    position: absolute;
   }
   @-webkit-keyframes posterTextApear {
     from {
@@ -14906,7 +14637,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
@@ -14955,6 +14685,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .vinograd .title {
+    position: absolute;
   }
   @-webkit-keyframes posterTextApear {
     from {
@@ -15013,7 +14746,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
@@ -15062,6 +14794,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .vinograd .title {
+    position: absolute;
   }
   @-webkit-keyframes posterTextApear {
     from {
@@ -15120,7 +14855,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
     -webkit-animation: right 0.9s 3s both;
             animation: right 0.9s 3s both;
@@ -15802,7 +15536,6 @@ html body .wrapper .screen-block {
             user-select: none;
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
@@ -16032,7 +15765,6 @@ html body .wrapper .screen-block {
             user-select: none;
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
@@ -16262,7 +15994,6 @@ html body .wrapper .screen-block {
             user-select: none;
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
@@ -16492,7 +16223,6 @@ html body .wrapper .screen-block {
             user-select: none;
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
@@ -16722,7 +16452,6 @@ html body .wrapper .screen-block {
             user-select: none;
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
-    -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
@@ -17070,7 +16799,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
   }
   .alta-capital .controls svg {
@@ -17356,7 +17084,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
   }
   .alta-capital .controls svg {
@@ -17457,6 +17184,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .alta-capital .title {
+    position: absolute;
   }
   @-webkit-keyframes right {
     from {
@@ -17732,7 +17462,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
   }
   .alta-capital .controls .slide-controls {
@@ -17834,6 +17563,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .alta-capital .title {
+    position: absolute;
   }
   @-webkit-keyframes right {
     from {
@@ -18109,7 +17841,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
   }
   .alta-capital .controls .slide-controls {
@@ -18181,6 +17912,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .alta-capital .title {
+    position: absolute;
   }
   @-webkit-keyframes right {
     from {
@@ -18456,7 +18190,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
   }
   .alta-capital .controls .slide-controls {
@@ -18528,6 +18261,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .alta-capital .title {
+    position: absolute;
   }
   @-webkit-keyframes right {
     from {
@@ -18803,7 +18539,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
   }
   .alta-capital .controls .slide-controls {
@@ -18875,6 +18610,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .alta-capital .title {
+    position: absolute;
   }
   @-webkit-keyframes right {
     from {
@@ -19150,7 +18888,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
   }
   .alta-capital .controls .slide-controls {
@@ -19222,6 +18959,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  }
+  .alta-capital .title {
+    position: absolute;
   }
   @-webkit-keyframes right {
     from {
@@ -19497,7 +19237,6 @@ html body .wrapper .screen-block {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     content: '';
-    -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
   }
   .alta-capital .controls .slide-controls {

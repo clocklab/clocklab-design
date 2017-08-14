@@ -5,6 +5,10 @@
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 
+    .title {
+        position: absolute;
+    }
+
     @keyframes posterTextApear {
         from {
             opacity: 0;

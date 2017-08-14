@@ -3,11 +3,7 @@
     top: 0;
     right: 0;
     z-index: 9999;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .3);
     font-family: 'Roboto';
-    overflow: hidden;
 
     &__item {
         box-sizing: border-box;
@@ -40,14 +36,14 @@
             color: $gray;
         } 
 
-        .logo,
+        .symbol,
         .name {
             font-size: px(72);
             text-align: center;
             transition: color $time;
         }
 
-        .logo {
+        .symbol {
             font-family: 'Raleway';
         }
 
@@ -150,7 +146,7 @@
 
         &:hover {
 
-            .logo,
+            .symbol,
             .name {
                 color: $white;
             }
@@ -388,11 +384,13 @@
         visibility: hidden;
         width: 100%;
         height: 100%;
-        background: rgba(255, 255, 255, .2);
+        background: rgba(0, 0, 0, .4);
         transition: opacity $time;
     }
 
     &.opened {
+        width: 100%;
+        height: 100%;
 
         .menu__item {
             transform: perspective(0) rotate(0);
@@ -570,10 +568,10 @@
 
     &.gray {
 
-        &__item {
+        .menu__item {
             border-color: $darkGray;
 
-            .logo,
+            .symbol,
             .name {
                 color: $darkGray;
             }
