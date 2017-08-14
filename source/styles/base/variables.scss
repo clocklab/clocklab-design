@@ -1,5 +1,8 @@
 // global variables
 $browser-context: 16;
+
+
+// MEDIA QUERIES
 $phonePortrait:   '(max-width: 414px)';
 $phoneLandscape:  '(min-width: 415px) and (max-width: 667px)';
 $tabletPortrait:  '(min-width: 668px) and (max-width: 768px)';
@@ -9,7 +12,6 @@ $desktopWide:     '(min-width: 1367px) and (max-width: 1680px)';
 $desktopHD:       '(min-width: 1681px) and (max-width: 1920px)';
 $desktopMega:     '(min-width: 1921px)';
 // MEDIA QUERIES END
-
 
 // COLORS VARIABLES
 $background: #1C1C1C;
@@ -27,6 +29,7 @@ $primary: #24292E;
 $border: #E1E4E8;
 // COLORS VARIABLES END
 
+
 // FONT VARIABLES
 $roboto: Roboto;
 $raleway: Raleway;
@@ -35,6 +38,8 @@ $regular: 400;
 $medium: 500;
 $bold: 700;
 $thin: 100;
+// FONT VARIABLES END
+
 
 // TIME CONSTANTS
 $time: .3s;
@@ -104,12 +109,20 @@ $portfolioAudiLeftBlockAnimationTime: $time * 3;
 
 // VARIABLES FOR PORTFOLIO BLOCK AUDI Q7 END
 
+
 // VARIABLES FOR PORTFOLIO BLOCK VINO GRAD
 $portfolioVinogradLeftBlockDelayTime: 0s;
 $portfolioVinogradLeftBlockAnimationTime: $time * 3;
 
 $portfolioVinogradRightBlockDelayTime: $portfolioVinogradLeftBlockDelayTime;
 $portfolioVinogradRightBlockAnimationTime: $portfolioVinogradLeftBlockAnimationTime;
+
+    // COMPONENTS
+    $portfolioVinogradRightPanelDelayTime: $portfolioVinogradLeftBlockDelayTime + $portfolioVinogradLeftBlockAnimationTime;
+    $portfolioVinogradClientDelayTime: $portfolioVinogradRightPanelDelayTime;
+    $portfolioVinogradClientNameDelayTime: $portfolioVinogradClientDelayTime + $portfolioClientAnimationTime;
+    $portfolioVinogradLogoDelayTime: $portfolioVinogradRightPanelDelayTime;
+    $portfolioVinogradMenuDelayTime: $portfolioVinogradRightPanelDelayTime;
 
 $portfolioVinogradPosterDelayTime: $portfolioRightPanelDevicesMobileDelayTime + $portfolioRightPanelDevicesMobileAnimationTime;
 $portfolioVinogradPosterAnimationTime: $time * 6;
