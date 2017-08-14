@@ -112,7 +112,7 @@ gulp.task('scripts', function() {
     gulp.src(path.source.scripts)
         .pipe(plugins.plumber())
         .pipe(plugins.rigger())
-        //.pipe(plugins.uglify())
+        // .pipe(plugins.uglify())
         .pipe(plugins.rename({
             suffix: '.min'
         }))
