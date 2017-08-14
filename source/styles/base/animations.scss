@@ -20,13 +20,13 @@
         transform: translateX(0);
     }
     to {
-        transform: translateX(100%);
+        transform: translateX(101%);
     }
 }
 
 @keyframes innerTickAnimation2 {
     from {
-        transform: translateX(-100%);
+        transform: translateX(-101%);
     }
     to {
         transform: translateX(0);
@@ -38,16 +38,16 @@
         left: 10%;
     }
     to {
-        left: 100%;
+        left: 101%;
     }
 }
 
 @keyframes innerTickOpenedAnimation2 {
     from {
-        left: -2%;
+        left: -101%;
     }
     to {
-        left: 90%;
+        left: 10%;
     }
 }
 // ANIMATION FOR HAMBURGER TICKS ENDS

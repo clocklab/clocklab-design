@@ -24,10 +24,11 @@
 @import "components/portfolio-right-panel/main";
 @import "components/portfolio-client/main";
 
-@import "components/screenClock/main";
 @import "components/q7/main";
 @import "components/vinograd/main";
 @import "components/euro-club/main";
 @import "components/alta-capital/main";
-@import "components/screenServicesOne/main";
-@import "components/pageContacts/main";
+
+body {
+    background: rgba(0, 0, 0, .2);
+}
