@@ -1251,85 +1251,6 @@ html body .wrapper .screen-block {
     color: #fff;
     font-weight: 100;
   }
-  .screen-block .title {
-    z-index: 3;
-    margin-top: 20vh;
-    margin-left: 35vh;
-    position: relative;
-  }
-  .screen-block .title.dark span.name span, .screen-block .title.dark .word span, .screen-block .title.dark p {
-    color: #333333;
-  }
-  .screen-block .title.dark span.name:before {
-    background: #333333;
-  }
-  .screen-block .title p {
-    font-weight: 500;
-    padding: 2vh 1vh 0;
-    line-height: 2vh;
-    color: #fff;
-  }
-  .screen-block .title span.name {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 1.3vh;
-    top: -5vh;
-  }
-  .screen-block .title span.name span {
-    color: #fff;
-    display: block;
-    visibility: hidden;
-    -webkit-animation: titleName .5s linear;
-            animation: titleName .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s;
-  }
-  .screen-block .title span.name:before {
-    -webkit-animation: titleNameShape .5s linear;
-            animation: titleNameShape .5s linear;
-    background: #fff;
-    position: absolute;
-    display: block;
-    height: 0.4vh;
-    width: 5.2vh;
-    left: -6.5vh;
-    content: '';
-    top: .4vh;
-  }
-  .screen-block .title .word {
-    text-align: center;
-    overflow: hidden;
-  }
-  .screen-block .title .word span {
-    width: 100%;
-    color: #fff;
-    display: block;
-    font-size: 6vh;
-    position: relative;
-    font-weight: 800;
-    text-transform: uppercase;
-    -webkit-animation: titleWord .5s .5s linear;
-            animation: titleWord .5s .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    overflow: hidden;
-  }
-  .screen-block .title .animation-border {
-    background-color: #0057FF;
-    -webkit-animation: titleWordShape 2s linear;
-            animation: titleWordShape 2s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-duration: .5s;
-            animation-duration: .5s;
-    position: absolute;
-    z-index: -1;
-    height: 2vh;
-    width: 100%;
-    left: 0;
-  }
 }
 @media (min-width: 415px) and (max-width: 667px) {
   .screen-block {
@@ -1577,85 +1498,6 @@ html body .wrapper .screen-block {
     color: #fff;
     font-weight: 100;
   }
-  .screen-block .title {
-    z-index: 3;
-    margin-top: 20vh;
-    margin-left: 35vh;
-    position: relative;
-  }
-  .screen-block .title.dark span.name span, .screen-block .title.dark .word span, .screen-block .title.dark p {
-    color: #333333;
-  }
-  .screen-block .title.dark span.name:before {
-    background: #333333;
-  }
-  .screen-block .title p {
-    font-weight: 500;
-    padding: 2vh 1vh 0;
-    line-height: 2vh;
-    color: #fff;
-  }
-  .screen-block .title span.name {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 1.3vh;
-    top: -5vh;
-  }
-  .screen-block .title span.name span {
-    color: #fff;
-    display: block;
-    visibility: hidden;
-    -webkit-animation: titleName .5s linear;
-            animation: titleName .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s;
-  }
-  .screen-block .title span.name:before {
-    -webkit-animation: titleNameShape .5s linear;
-            animation: titleNameShape .5s linear;
-    background: #fff;
-    position: absolute;
-    display: block;
-    height: 0.4vh;
-    width: 5.2vh;
-    left: -6.5vh;
-    content: '';
-    top: .4vh;
-  }
-  .screen-block .title .word {
-    text-align: center;
-    overflow: hidden;
-  }
-  .screen-block .title .word span {
-    width: 100%;
-    color: #fff;
-    display: block;
-    font-size: 6vh;
-    position: relative;
-    font-weight: 800;
-    text-transform: uppercase;
-    -webkit-animation: titleWord .5s .5s linear;
-            animation: titleWord .5s .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    overflow: hidden;
-  }
-  .screen-block .title .animation-border {
-    background-color: #0057FF;
-    -webkit-animation: titleWordShape 2s linear;
-            animation: titleWordShape 2s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-duration: .5s;
-            animation-duration: .5s;
-    position: absolute;
-    z-index: -1;
-    height: 2vh;
-    width: 100%;
-    left: 0;
-  }
 }
 @media (min-width: 668px) and (max-width: 768px) {
   .screen-block {
@@ -1902,85 +1744,6 @@ html body .wrapper .screen-block {
   .screen-block .copyright p {
     color: #fff;
     font-weight: 100;
-  }
-  .screen-block .title {
-    z-index: 3;
-    margin-top: 20vh;
-    margin-left: 35vh;
-    position: relative;
-  }
-  .screen-block .title.dark span.name span, .screen-block .title.dark .word span, .screen-block .title.dark p {
-    color: #333333;
-  }
-  .screen-block .title.dark span.name:before {
-    background: #333333;
-  }
-  .screen-block .title p {
-    font-weight: 500;
-    padding: 2vh 1vh 0;
-    line-height: 2vh;
-    color: #fff;
-  }
-  .screen-block .title span.name {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 1.3vh;
-    top: -5vh;
-  }
-  .screen-block .title span.name span {
-    color: #fff;
-    display: block;
-    visibility: hidden;
-    -webkit-animation: titleName .5s linear;
-            animation: titleName .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s;
-  }
-  .screen-block .title span.name:before {
-    -webkit-animation: titleNameShape .5s linear;
-            animation: titleNameShape .5s linear;
-    background: #fff;
-    position: absolute;
-    display: block;
-    height: 0.4vh;
-    width: 5.2vh;
-    left: -6.5vh;
-    content: '';
-    top: .4vh;
-  }
-  .screen-block .title .word {
-    text-align: center;
-    overflow: hidden;
-  }
-  .screen-block .title .word span {
-    width: 100%;
-    color: #fff;
-    display: block;
-    font-size: 6vh;
-    position: relative;
-    font-weight: 800;
-    text-transform: uppercase;
-    -webkit-animation: titleWord .5s .5s linear;
-            animation: titleWord .5s .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    overflow: hidden;
-  }
-  .screen-block .title .animation-border {
-    background-color: #0057FF;
-    -webkit-animation: titleWordShape 2s linear;
-            animation: titleWordShape 2s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-duration: .5s;
-            animation-duration: .5s;
-    position: absolute;
-    z-index: -1;
-    height: 2vh;
-    width: 100%;
-    left: 0;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -2238,85 +2001,6 @@ html body .wrapper .screen-block {
     color: #fff;
     font-weight: 100;
   }
-  .screen-block .title {
-    z-index: 3;
-    margin-top: 20vh;
-    margin-left: 35vh;
-    position: relative;
-  }
-  .screen-block .title.dark span.name span, .screen-block .title.dark .word span, .screen-block .title.dark p {
-    color: #333333;
-  }
-  .screen-block .title.dark span.name:before {
-    background: #333333;
-  }
-  .screen-block .title p {
-    font-weight: 500;
-    padding: 2vh 1vh 0;
-    line-height: 2vh;
-    color: #fff;
-  }
-  .screen-block .title span.name {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 1.3vh;
-    top: -5vh;
-  }
-  .screen-block .title span.name span {
-    color: #fff;
-    display: block;
-    visibility: hidden;
-    -webkit-animation: titleName .5s linear;
-            animation: titleName .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s;
-  }
-  .screen-block .title span.name:before {
-    -webkit-animation: titleNameShape .5s linear;
-            animation: titleNameShape .5s linear;
-    background: #fff;
-    position: absolute;
-    display: block;
-    height: 0.4vh;
-    width: 5.2vh;
-    left: -6.5vh;
-    content: '';
-    top: .4vh;
-  }
-  .screen-block .title .word {
-    text-align: center;
-    overflow: hidden;
-  }
-  .screen-block .title .word span {
-    width: 100%;
-    color: #fff;
-    display: block;
-    font-size: 6vh;
-    position: relative;
-    font-weight: 800;
-    text-transform: uppercase;
-    -webkit-animation: titleWord .5s .5s linear;
-            animation: titleWord .5s .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    overflow: hidden;
-  }
-  .screen-block .title .animation-border {
-    background-color: #0057FF;
-    -webkit-animation: titleWordShape 2s linear;
-            animation: titleWordShape 2s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-duration: .5s;
-            animation-duration: .5s;
-    position: absolute;
-    z-index: -1;
-    height: 2vh;
-    width: 100%;
-    left: 0;
-  }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
   .screen-block {
@@ -2572,85 +2256,6 @@ html body .wrapper .screen-block {
   .screen-block .copyright p {
     color: #fff;
     font-weight: 100;
-  }
-  .screen-block .title {
-    z-index: 3;
-    margin-top: 20vh;
-    margin-left: 35vh;
-    position: relative;
-  }
-  .screen-block .title.dark span.name span, .screen-block .title.dark .word span, .screen-block .title.dark p {
-    color: #333333;
-  }
-  .screen-block .title.dark span.name:before {
-    background: #333333;
-  }
-  .screen-block .title p {
-    font-weight: 500;
-    padding: 2vh 1vh 0;
-    line-height: 2vh;
-    color: #fff;
-  }
-  .screen-block .title span.name {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 1.3vh;
-    top: -5vh;
-  }
-  .screen-block .title span.name span {
-    color: #fff;
-    display: block;
-    visibility: hidden;
-    -webkit-animation: titleName .5s linear;
-            animation: titleName .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s;
-  }
-  .screen-block .title span.name:before {
-    -webkit-animation: titleNameShape .5s linear;
-            animation: titleNameShape .5s linear;
-    background: #fff;
-    position: absolute;
-    display: block;
-    height: 0.4vh;
-    width: 5.2vh;
-    left: -6.5vh;
-    content: '';
-    top: .4vh;
-  }
-  .screen-block .title .word {
-    text-align: center;
-    overflow: hidden;
-  }
-  .screen-block .title .word span {
-    width: 100%;
-    color: #fff;
-    display: block;
-    font-size: 6vh;
-    position: relative;
-    font-weight: 800;
-    text-transform: uppercase;
-    -webkit-animation: titleWord .5s .5s linear;
-            animation: titleWord .5s .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    overflow: hidden;
-  }
-  .screen-block .title .animation-border {
-    background-color: #0057FF;
-    -webkit-animation: titleWordShape 2s linear;
-            animation: titleWordShape 2s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-duration: .5s;
-            animation-duration: .5s;
-    position: absolute;
-    z-index: -1;
-    height: 2vh;
-    width: 100%;
-    left: 0;
   }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
@@ -2908,85 +2513,6 @@ html body .wrapper .screen-block {
     color: #fff;
     font-weight: 100;
   }
-  .screen-block .title {
-    z-index: 3;
-    margin-top: 20vh;
-    margin-left: 35vh;
-    position: relative;
-  }
-  .screen-block .title.dark span.name span, .screen-block .title.dark .word span, .screen-block .title.dark p {
-    color: #333333;
-  }
-  .screen-block .title.dark span.name:before {
-    background: #333333;
-  }
-  .screen-block .title p {
-    font-weight: 500;
-    padding: 2vh 1vh 0;
-    line-height: 2vh;
-    color: #fff;
-  }
-  .screen-block .title span.name {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 1.3vh;
-    top: -5vh;
-  }
-  .screen-block .title span.name span {
-    color: #fff;
-    display: block;
-    visibility: hidden;
-    -webkit-animation: titleName .5s linear;
-            animation: titleName .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s;
-  }
-  .screen-block .title span.name:before {
-    -webkit-animation: titleNameShape .5s linear;
-            animation: titleNameShape .5s linear;
-    background: #fff;
-    position: absolute;
-    display: block;
-    height: 0.4vh;
-    width: 5.2vh;
-    left: -6.5vh;
-    content: '';
-    top: .4vh;
-  }
-  .screen-block .title .word {
-    text-align: center;
-    overflow: hidden;
-  }
-  .screen-block .title .word span {
-    width: 100%;
-    color: #fff;
-    display: block;
-    font-size: 6vh;
-    position: relative;
-    font-weight: 800;
-    text-transform: uppercase;
-    -webkit-animation: titleWord .5s .5s linear;
-            animation: titleWord .5s .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    overflow: hidden;
-  }
-  .screen-block .title .animation-border {
-    background-color: #0057FF;
-    -webkit-animation: titleWordShape 2s linear;
-            animation: titleWordShape 2s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-duration: .5s;
-            animation-duration: .5s;
-    position: absolute;
-    z-index: -1;
-    height: 2vh;
-    width: 100%;
-    left: 0;
-  }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
   .screen-block {
@@ -3242,85 +2768,6 @@ html body .wrapper .screen-block {
   .screen-block .copyright p {
     color: #fff;
     font-weight: 100;
-  }
-  .screen-block .title {
-    z-index: 3;
-    margin-top: 20vh;
-    margin-left: 35vh;
-    position: relative;
-  }
-  .screen-block .title.dark span.name span, .screen-block .title.dark .word span, .screen-block .title.dark p {
-    color: #333333;
-  }
-  .screen-block .title.dark span.name:before {
-    background: #333333;
-  }
-  .screen-block .title p {
-    font-weight: 500;
-    padding: 2vh 1vh 0;
-    line-height: 2vh;
-    color: #fff;
-  }
-  .screen-block .title span.name {
-    text-transform: uppercase;
-    position: relative;
-    font-size: 1.3vh;
-    top: -5vh;
-  }
-  .screen-block .title span.name span {
-    color: #fff;
-    display: block;
-    visibility: hidden;
-    -webkit-animation: titleName .5s linear;
-            animation: titleName .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s;
-  }
-  .screen-block .title span.name:before {
-    -webkit-animation: titleNameShape .5s linear;
-            animation: titleNameShape .5s linear;
-    background: #fff;
-    position: absolute;
-    display: block;
-    height: 0.4vh;
-    width: 5.2vh;
-    left: -6.5vh;
-    content: '';
-    top: .4vh;
-  }
-  .screen-block .title .word {
-    text-align: center;
-    overflow: hidden;
-  }
-  .screen-block .title .word span {
-    width: 100%;
-    color: #fff;
-    display: block;
-    font-size: 6vh;
-    position: relative;
-    font-weight: 800;
-    text-transform: uppercase;
-    -webkit-animation: titleWord .5s .5s linear;
-            animation: titleWord .5s .5s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    overflow: hidden;
-  }
-  .screen-block .title .animation-border {
-    background-color: #0057FF;
-    -webkit-animation: titleWordShape 2s linear;
-            animation: titleWordShape 2s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-duration: .5s;
-            animation-duration: .5s;
-    position: absolute;
-    z-index: -1;
-    height: 2vh;
-    width: 100%;
-    left: 0;
   }
 }
 @media (min-width: 1921px) {
@@ -3578,31 +3025,34 @@ html body .wrapper .screen-block {
     color: #fff;
     font-weight: 100;
   }
-  .screen-block .title {
+}
+
+@media (max-width: 414px) {
+  .title {
     z-index: 3;
     margin-top: 20vh;
     margin-left: 35vh;
     position: relative;
   }
-  .screen-block .title.dark span.name span, .screen-block .title.dark .word span, .screen-block .title.dark p {
+  .title.dark span.name span, .title.dark .word span, .title.dark p {
     color: #333333;
   }
-  .screen-block .title.dark span.name:before {
+  .title.dark span.name:before {
     background: #333333;
   }
-  .screen-block .title p {
+  .title p {
     font-weight: 500;
     padding: 2vh 1vh 0;
     line-height: 2vh;
     color: #fff;
   }
-  .screen-block .title span.name {
+  .title span.name {
     text-transform: uppercase;
     position: relative;
     font-size: 1.3vh;
     top: -5vh;
   }
-  .screen-block .title span.name span {
+  .title span.name span {
     color: #fff;
     display: block;
     visibility: hidden;
@@ -3613,7 +3063,7 @@ html body .wrapper .screen-block {
     -webkit-animation-delay: .5s;
             animation-delay: .5s;
   }
-  .screen-block .title span.name:before {
+  .title span.name:before {
     -webkit-animation: titleNameShape .5s linear;
             animation: titleNameShape .5s linear;
     background: #fff;
@@ -3625,11 +3075,11 @@ html body .wrapper .screen-block {
     content: '';
     top: .4vh;
   }
-  .screen-block .title .word {
+  .title .word {
     text-align: center;
     overflow: hidden;
   }
-  .screen-block .title .word span {
+  .title .word span {
     width: 100%;
     color: #fff;
     display: block;
@@ -3643,7 +3093,574 @@ html body .wrapper .screen-block {
             animation-fill-mode: forwards;
     overflow: hidden;
   }
-  .screen-block .title .animation-border {
+  .title .animation-border {
+    background-color: #0057FF;
+    -webkit-animation: titleWordShape 2s linear;
+            animation: titleWordShape 2s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    position: absolute;
+    z-index: -1;
+    height: 2vh;
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
+  .title {
+    z-index: 3;
+    margin-top: 20vh;
+    margin-left: 35vh;
+    position: relative;
+  }
+  .title.dark span.name span, .title.dark .word span, .title.dark p {
+    color: #333333;
+  }
+  .title.dark span.name:before {
+    background: #333333;
+  }
+  .title p {
+    font-weight: 500;
+    padding: 2vh 1vh 0;
+    line-height: 2vh;
+    color: #fff;
+  }
+  .title span.name {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.3vh;
+    top: -5vh;
+  }
+  .title span.name span {
+    color: #fff;
+    display: block;
+    visibility: hidden;
+    -webkit-animation: titleName .5s linear;
+            animation: titleName .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  .title span.name:before {
+    -webkit-animation: titleNameShape .5s linear;
+            animation: titleNameShape .5s linear;
+    background: #fff;
+    position: absolute;
+    display: block;
+    height: 0.4vh;
+    width: 5.2vh;
+    left: -6.5vh;
+    content: '';
+    top: .4vh;
+  }
+  .title .word {
+    text-align: center;
+    overflow: hidden;
+  }
+  .title .word span {
+    width: 100%;
+    color: #fff;
+    display: block;
+    font-size: 6vh;
+    position: relative;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-animation: titleWord .5s .5s linear;
+            animation: titleWord .5s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    overflow: hidden;
+  }
+  .title .animation-border {
+    background-color: #0057FF;
+    -webkit-animation: titleWordShape 2s linear;
+            animation: titleWordShape 2s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    position: absolute;
+    z-index: -1;
+    height: 2vh;
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) {
+  .title {
+    z-index: 3;
+    margin-top: 20vh;
+    margin-left: 35vh;
+    position: relative;
+  }
+  .title.dark span.name span, .title.dark .word span, .title.dark p {
+    color: #333333;
+  }
+  .title.dark span.name:before {
+    background: #333333;
+  }
+  .title p {
+    font-weight: 500;
+    padding: 2vh 1vh 0;
+    line-height: 2vh;
+    color: #fff;
+  }
+  .title span.name {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.3vh;
+    top: -5vh;
+  }
+  .title span.name span {
+    color: #fff;
+    display: block;
+    visibility: hidden;
+    -webkit-animation: titleName .5s linear;
+            animation: titleName .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  .title span.name:before {
+    -webkit-animation: titleNameShape .5s linear;
+            animation: titleNameShape .5s linear;
+    background: #fff;
+    position: absolute;
+    display: block;
+    height: 0.4vh;
+    width: 5.2vh;
+    left: -6.5vh;
+    content: '';
+    top: .4vh;
+  }
+  .title .word {
+    text-align: center;
+    overflow: hidden;
+  }
+  .title .word span {
+    width: 100%;
+    color: #fff;
+    display: block;
+    font-size: 6vh;
+    position: relative;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-animation: titleWord .5s .5s linear;
+            animation: titleWord .5s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    overflow: hidden;
+  }
+  .title .animation-border {
+    background-color: #0057FF;
+    -webkit-animation: titleWordShape 2s linear;
+            animation: titleWordShape 2s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    position: absolute;
+    z-index: -1;
+    height: 2vh;
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .title {
+    z-index: 3;
+    margin-top: 20vh;
+    margin-left: 35vh;
+    position: relative;
+  }
+  .title.dark span.name span, .title.dark .word span, .title.dark p {
+    color: #333333;
+  }
+  .title.dark span.name:before {
+    background: #333333;
+  }
+  .title p {
+    font-weight: 500;
+    padding: 2vh 1vh 0;
+    line-height: 2vh;
+    color: #fff;
+  }
+  .title span.name {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.3vh;
+    top: -5vh;
+  }
+  .title span.name span {
+    color: #fff;
+    display: block;
+    visibility: hidden;
+    -webkit-animation: titleName .5s linear;
+            animation: titleName .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  .title span.name:before {
+    -webkit-animation: titleNameShape .5s linear;
+            animation: titleNameShape .5s linear;
+    background: #fff;
+    position: absolute;
+    display: block;
+    height: 0.4vh;
+    width: 5.2vh;
+    left: -6.5vh;
+    content: '';
+    top: .4vh;
+  }
+  .title .word {
+    text-align: center;
+    overflow: hidden;
+  }
+  .title .word span {
+    width: 100%;
+    color: #fff;
+    display: block;
+    font-size: 6vh;
+    position: relative;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-animation: titleWord .5s .5s linear;
+            animation: titleWord .5s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    overflow: hidden;
+  }
+  .title .animation-border {
+    background-color: #0057FF;
+    -webkit-animation: titleWordShape 2s linear;
+            animation: titleWordShape 2s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    position: absolute;
+    z-index: -1;
+    height: 2vh;
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .title {
+    z-index: 3;
+    margin-top: 20vh;
+    margin-left: 35vh;
+    position: relative;
+  }
+  .title.dark span.name span, .title.dark .word span, .title.dark p {
+    color: #333333;
+  }
+  .title.dark span.name:before {
+    background: #333333;
+  }
+  .title p {
+    font-weight: 500;
+    padding: 2vh 1vh 0;
+    line-height: 2vh;
+    color: #fff;
+  }
+  .title span.name {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.3vh;
+    top: -5vh;
+  }
+  .title span.name span {
+    color: #fff;
+    display: block;
+    visibility: hidden;
+    -webkit-animation: titleName .5s linear;
+            animation: titleName .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  .title span.name:before {
+    -webkit-animation: titleNameShape .5s linear;
+            animation: titleNameShape .5s linear;
+    background: #fff;
+    position: absolute;
+    display: block;
+    height: 0.4vh;
+    width: 5.2vh;
+    left: -6.5vh;
+    content: '';
+    top: .4vh;
+  }
+  .title .word {
+    text-align: center;
+    overflow: hidden;
+  }
+  .title .word span {
+    width: 100%;
+    color: #fff;
+    display: block;
+    font-size: 6vh;
+    position: relative;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-animation: titleWord .5s .5s linear;
+            animation: titleWord .5s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    overflow: hidden;
+  }
+  .title .animation-border {
+    background-color: #0057FF;
+    -webkit-animation: titleWordShape 2s linear;
+            animation: titleWordShape 2s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    position: absolute;
+    z-index: -1;
+    height: 2vh;
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
+  .title {
+    z-index: 3;
+    margin-top: 20vh;
+    margin-left: 35vh;
+    position: relative;
+  }
+  .title.dark span.name span, .title.dark .word span, .title.dark p {
+    color: #333333;
+  }
+  .title.dark span.name:before {
+    background: #333333;
+  }
+  .title p {
+    font-weight: 500;
+    padding: 2vh 1vh 0;
+    line-height: 2vh;
+    color: #fff;
+  }
+  .title span.name {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.3vh;
+    top: -5vh;
+  }
+  .title span.name span {
+    color: #fff;
+    display: block;
+    visibility: hidden;
+    -webkit-animation: titleName .5s linear;
+            animation: titleName .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  .title span.name:before {
+    -webkit-animation: titleNameShape .5s linear;
+            animation: titleNameShape .5s linear;
+    background: #fff;
+    position: absolute;
+    display: block;
+    height: 0.4vh;
+    width: 5.2vh;
+    left: -6.5vh;
+    content: '';
+    top: .4vh;
+  }
+  .title .word {
+    text-align: center;
+    overflow: hidden;
+  }
+  .title .word span {
+    width: 100%;
+    color: #fff;
+    display: block;
+    font-size: 6vh;
+    position: relative;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-animation: titleWord .5s .5s linear;
+            animation: titleWord .5s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    overflow: hidden;
+  }
+  .title .animation-border {
+    background-color: #0057FF;
+    -webkit-animation: titleWordShape 2s linear;
+            animation: titleWordShape 2s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    position: absolute;
+    z-index: -1;
+    height: 2vh;
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
+  .title {
+    z-index: 3;
+    margin-top: 20vh;
+    margin-left: 35vh;
+    position: relative;
+  }
+  .title.dark span.name span, .title.dark .word span, .title.dark p {
+    color: #333333;
+  }
+  .title.dark span.name:before {
+    background: #333333;
+  }
+  .title p {
+    font-weight: 500;
+    padding: 2vh 1vh 0;
+    line-height: 2vh;
+    color: #fff;
+  }
+  .title span.name {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.3vh;
+    top: -5vh;
+  }
+  .title span.name span {
+    color: #fff;
+    display: block;
+    visibility: hidden;
+    -webkit-animation: titleName .5s linear;
+            animation: titleName .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  .title span.name:before {
+    -webkit-animation: titleNameShape .5s linear;
+            animation: titleNameShape .5s linear;
+    background: #fff;
+    position: absolute;
+    display: block;
+    height: 0.4vh;
+    width: 5.2vh;
+    left: -6.5vh;
+    content: '';
+    top: .4vh;
+  }
+  .title .word {
+    text-align: center;
+    overflow: hidden;
+  }
+  .title .word span {
+    width: 100%;
+    color: #fff;
+    display: block;
+    font-size: 6vh;
+    position: relative;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-animation: titleWord .5s .5s linear;
+            animation: titleWord .5s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    overflow: hidden;
+  }
+  .title .animation-border {
+    background-color: #0057FF;
+    -webkit-animation: titleWordShape 2s linear;
+            animation: titleWordShape 2s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: .5s;
+            animation-duration: .5s;
+    position: absolute;
+    z-index: -1;
+    height: 2vh;
+    width: 100%;
+    left: 0;
+  }
+}
+@media (min-width: 1921px) {
+  .title {
+    z-index: 3;
+    margin-top: 20vh;
+    margin-left: 35vh;
+    position: relative;
+  }
+  .title.dark span.name span, .title.dark .word span, .title.dark p {
+    color: #333333;
+  }
+  .title.dark span.name:before {
+    background: #333333;
+  }
+  .title p {
+    font-weight: 500;
+    padding: 2vh 1vh 0;
+    line-height: 2vh;
+    color: #fff;
+  }
+  .title span.name {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 1.3vh;
+    top: -5vh;
+  }
+  .title span.name span {
+    color: #fff;
+    display: block;
+    visibility: hidden;
+    -webkit-animation: titleName .5s linear;
+            animation: titleName .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  .title span.name:before {
+    -webkit-animation: titleNameShape .5s linear;
+            animation: titleNameShape .5s linear;
+    background: #fff;
+    position: absolute;
+    display: block;
+    height: 0.4vh;
+    width: 5.2vh;
+    left: -6.5vh;
+    content: '';
+    top: .4vh;
+  }
+  .title .word {
+    text-align: center;
+    overflow: hidden;
+  }
+  .title .word span {
+    width: 100%;
+    color: #fff;
+    display: block;
+    font-size: 6vh;
+    position: relative;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-animation: titleWord .5s .5s linear;
+            animation: titleWord .5s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    overflow: hidden;
+  }
+  .title .animation-border {
     background-color: #0057FF;
     -webkit-animation: titleWordShape 2s linear;
             animation: titleWordShape 2s linear;
