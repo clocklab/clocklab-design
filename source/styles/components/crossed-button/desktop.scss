@@ -47,6 +47,10 @@
             content: '';
             transform: translateX(-100%);
         }
+
+        &:after {
+            content: 'посмотреть работы';
+        }
     }
 
     .arrow-container {
