@@ -5,6 +5,8 @@
     align-items: center;
     position: absolute;
     bottom: px(50);
+    left: 0;
+    z-index: 6;
     padding: 0 px(140) 0 px(120);
     width: 100%;
 
@@ -28,7 +30,7 @@
     span {
         position: relative;
         padding-left: px(96);
-        color: rgba(0, 0, 0, .4);
+        color: $gray;
         font-size: px(24);
         line-height: 16px;
         font-weight: 700; 
@@ -69,7 +71,7 @@
     .line {
         flex-grow: 1;
         height: 1px;
-        background: rgba(0, 0, 0, .3);
+        background: $gray;
         transition: width $timeTick;
     }
 }

@@ -962,6 +962,30 @@ html body .wrapper .screen-block {
             transform: rotate(-65deg) translate3d(100%, 0, 0);
   }
 }
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
 .small-gray-lines {
   position: absolute;
   overflow: hidden;
@@ -7440,6 +7464,8 @@ html body .wrapper .screen-block {
     right: 0;
     z-index: 9999;
     font-family: 'Roboto';
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -7863,6 +7889,8 @@ html body .wrapper .screen-block {
     right: 0;
     z-index: 9999;
     font-family: 'Roboto';
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -8286,6 +8314,8 @@ html body .wrapper .screen-block {
     right: 0;
     z-index: 9999;
     font-family: 'Roboto';
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -8709,6 +8739,8 @@ html body .wrapper .screen-block {
     right: 0;
     z-index: 9999;
     font-family: 'Roboto';
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -9132,6 +9164,8 @@ html body .wrapper .screen-block {
     right: 0;
     z-index: 9999;
     font-family: 'Roboto';
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -9555,6 +9589,8 @@ html body .wrapper .screen-block {
     right: 0;
     z-index: 9999;
     font-family: 'Roboto';
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -9985,7 +10021,9 @@ html body .wrapper .screen-block {
         -ms-flex-align: center;
             align-items: center;
     position: absolute;
-    bottom: 7.8125vw;
+    bottom: 4.6875vw;
+    left: 0;
+    z-index: 6;
     padding: 0 4.6875vw;
     width: 100%;
   }
@@ -10007,7 +10045,7 @@ html body .wrapper .screen-block {
   .bottom-button span {
     position: relative;
     padding-left: 9.375vw;
-    color: rgba(0, 0, 0, 0.4);
+    color: #999;
     font-size: 3.75vw;
     line-height: 16px;
     font-weight: 700;
@@ -10049,7 +10087,7 @@ html body .wrapper .screen-block {
         -ms-flex-positive: 1;
             flex-grow: 1;
     height: 1px;
-    background: rgba(0, 0, 0, 0.3);
+    background: #999;
     transition: width 0.2s;
   }
 }
@@ -10066,7 +10104,9 @@ html body .wrapper .screen-block {
         -ms-flex-align: center;
             align-items: center;
     position: absolute;
-    bottom: 4.4015vw;
+    bottom: 2.6409vw;
+    left: 0;
+    z-index: 6;
     padding: 0 2.6409vw;
     width: 100%;
   }
@@ -10088,7 +10128,7 @@ html body .wrapper .screen-block {
   .bottom-button span {
     position: relative;
     padding-left: 5.2818vw;
-    color: rgba(0, 0, 0, 0.4);
+    color: #999;
     font-size: 2.11272vw;
     line-height: 16px;
     font-weight: 700;
@@ -10130,7 +10170,7 @@ html body .wrapper .screen-block {
         -ms-flex-positive: 1;
             flex-grow: 1;
     height: 1px;
-    background: rgba(0, 0, 0, 0.3);
+    background: #999;
     transition: width 0.2s;
   }
 }
@@ -10148,6 +10188,8 @@ html body .wrapper .screen-block {
             align-items: center;
     position: absolute;
     bottom: 3.2552vw;
+    left: 0;
+    z-index: 6;
     padding: 0 9.11456vw 0 7.81248vw;
     width: 100%;
   }
@@ -10169,7 +10211,7 @@ html body .wrapper .screen-block {
   .bottom-button span {
     position: relative;
     padding-left: 6.24998vw;
-    color: rgba(0, 0, 0, 0.4);
+    color: #999;
     font-size: 1.5625vw;
     line-height: 16px;
     font-weight: 700;
@@ -10209,7 +10251,7 @@ html body .wrapper .screen-block {
         -ms-flex-positive: 1;
             flex-grow: 1;
     height: 1px;
-    background: rgba(0, 0, 0, 0.3);
+    background: #999;
     transition: width 0.2s;
   }
   .bottom-button {
@@ -10238,6 +10280,8 @@ html body .wrapper .screen-block {
             align-items: center;
     position: absolute;
     bottom: 2.4415vw;
+    left: 0;
+    z-index: 6;
     padding: 0 6.8362vw 0 5.8596vw;
     width: 100%;
   }
@@ -10259,7 +10303,7 @@ html body .wrapper .screen-block {
   .bottom-button span {
     position: relative;
     padding-left: 4.68768vw;
-    color: rgba(0, 0, 0, 0.4);
+    color: #999;
     font-size: 1.17192vw;
     line-height: 16px;
     font-weight: 700;
@@ -10299,7 +10343,7 @@ html body .wrapper .screen-block {
         -ms-flex-positive: 1;
             flex-grow: 1;
     height: 1px;
-    background: rgba(0, 0, 0, 0.3);
+    background: #999;
     transition: width 0.2s;
   }
 }
@@ -10317,6 +10361,8 @@ html body .wrapper .screen-block {
             align-items: center;
     position: absolute;
     bottom: 1.83vw;
+    left: 0;
+    z-index: 6;
     padding: 0 5.124vw 0 4.392vw;
     width: 100%;
   }
@@ -10338,7 +10384,7 @@ html body .wrapper .screen-block {
   .bottom-button span {
     position: relative;
     padding-left: 3.5136vw;
-    color: rgba(0, 0, 0, 0.4);
+    color: #999;
     font-size: 0.8784vw;
     line-height: 16px;
     font-weight: 700;
@@ -10378,7 +10424,7 @@ html body .wrapper .screen-block {
         -ms-flex-positive: 1;
             flex-grow: 1;
     height: 1px;
-    background: rgba(0, 0, 0, 0.3);
+    background: #999;
     transition: width 0.2s;
   }
 }
@@ -10396,6 +10442,8 @@ html body .wrapper .screen-block {
             align-items: center;
     position: absolute;
     bottom: 1.488vw;
+    left: 0;
+    z-index: 6;
     padding: 0 4.1664vw 0 3.5712vw;
     width: 100%;
   }
@@ -10417,7 +10465,7 @@ html body .wrapper .screen-block {
   .bottom-button span {
     position: relative;
     padding-left: 2.85696vw;
-    color: rgba(0, 0, 0, 0.4);
+    color: #999;
     font-size: 0.71424vw;
     line-height: 16px;
     font-weight: 700;
@@ -10457,7 +10505,7 @@ html body .wrapper .screen-block {
         -ms-flex-positive: 1;
             flex-grow: 1;
     height: 1px;
-    background: rgba(0, 0, 0, 0.3);
+    background: #999;
     transition: width 0.2s;
   }
 }
@@ -10475,6 +10523,8 @@ html body .wrapper .screen-block {
             align-items: center;
     position: absolute;
     bottom: 1.302vw;
+    left: 0;
+    z-index: 6;
     padding: 0 3.6456vw 0 3.1248vw;
     width: 100%;
   }
@@ -10496,7 +10546,7 @@ html body .wrapper .screen-block {
   .bottom-button span {
     position: relative;
     padding-left: 2.49984vw;
-    color: rgba(0, 0, 0, 0.4);
+    color: #999;
     font-size: 0.62496vw;
     line-height: 16px;
     font-weight: 700;
@@ -10536,7 +10586,7 @@ html body .wrapper .screen-block {
         -ms-flex-positive: 1;
             flex-grow: 1;
     height: 1px;
-    background: rgba(0, 0, 0, 0.3);
+    background: #999;
     transition: width 0.2s;
   }
 }
@@ -10554,6 +10604,8 @@ html body .wrapper .screen-block {
             align-items: center;
     position: absolute;
     bottom: 0.9765vw;
+    left: 0;
+    z-index: 6;
     padding: 0 2.7342vw 0 2.3436vw;
     width: 100%;
   }
@@ -10575,7 +10627,7 @@ html body .wrapper .screen-block {
   .bottom-button span {
     position: relative;
     padding-left: 1.87488vw;
-    color: rgba(0, 0, 0, 0.4);
+    color: #999;
     font-size: 0.46872vw;
     line-height: 16px;
     font-weight: 700;
@@ -10615,7 +10667,7 @@ html body .wrapper .screen-block {
         -ms-flex-positive: 1;
             flex-grow: 1;
     height: 1px;
-    background: rgba(0, 0, 0, 0.3);
+    background: #999;
     transition: width 0.2s;
   }
 }
@@ -15370,6 +15422,12 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
   }
+  .q7 .logo {
+    display: none;
+  }
+  .q7 .title {
+    position: absolute;
+  }
   .q7 .car-covering-layer {
     overflow: hidden;
     position: relative;
@@ -15504,6 +15562,12 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
   }
+  .q7 .logo {
+    display: none;
+  }
+  .q7 .title {
+    position: absolute;
+  }
   .q7 .car-covering-layer {
     overflow: hidden;
     position: relative;
@@ -15637,6 +15701,12 @@ html body .wrapper .screen-block {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+  }
+  .q7 .logo {
+    display: none;
+  }
+  .q7 .title {
+    position: absolute;
   }
   .q7 .car-covering-layer {
     overflow: hidden;
@@ -16878,6 +16948,12 @@ html body .wrapper .screen-block {
     height: 100vh;
     overflow: hidden;
   }
+  .vinograd .logo {
+    display: none;
+  }
+  .vinograd .title {
+    position: absolute;
+  }
   .vinograd .poster {
     position: relative;
     z-index: 2;
@@ -16943,6 +17019,12 @@ html body .wrapper .screen-block {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+  }
+  .vinograd .logo {
+    display: none;
+  }
+  .vinograd .title {
+    position: absolute;
   }
   .vinograd .poster {
     position: relative;
@@ -17014,7 +17096,10 @@ html body .wrapper .screen-block {
   .vinograd .title {
     position: absolute;
   }
-  @-webkit-keyframes posterTextApear {
+  .vinograd .small-gray-lines {
+    z-index: 2;
+  }
+  @-webkit-keyframes posterTextApearVinograd {
     from {
       opacity: 0;
       -webkit-transform: rotate(90deg) translateY(100%);
@@ -17026,7 +17111,7 @@ html body .wrapper .screen-block {
               transform: rotate(90deg) translateY(0);
     }
   }
-  @keyframes posterTextApear {
+  @keyframes posterTextApearVinograd {
     from {
       opacity: 0;
       -webkit-transform: rotate(90deg) translateY(100%);
@@ -17089,8 +17174,8 @@ html body .wrapper .screen-block {
     letter-spacing: 7px;
     -webkit-transform-origin: 0 100%;
             transform-origin: 0 100%;
-    -webkit-animation: posterTextApear 0.9s 3.9s both;
-            animation: posterTextApear 0.9s 3.9s both;
+    -webkit-animation: posterTextApearVinograd 0.9s 3.9s both;
+            animation: posterTextApearVinograd 0.9s 3.9s both;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -17134,7 +17219,10 @@ html body .wrapper .screen-block {
   .vinograd .title {
     position: absolute;
   }
-  @-webkit-keyframes posterTextApear {
+  .vinograd .small-gray-lines {
+    z-index: 2;
+  }
+  @-webkit-keyframes posterTextApearVinograd {
     from {
       opacity: 0;
       -webkit-transform: rotate(90deg) translateY(100%);
@@ -17146,7 +17234,7 @@ html body .wrapper .screen-block {
               transform: rotate(90deg) translateY(0);
     }
   }
-  @keyframes posterTextApear {
+  @keyframes posterTextApearVinograd {
     from {
       opacity: 0;
       -webkit-transform: rotate(90deg) translateY(100%);
@@ -17209,8 +17297,8 @@ html body .wrapper .screen-block {
     letter-spacing: 7px;
     -webkit-transform-origin: 0 100%;
             transform-origin: 0 100%;
-    -webkit-animation: posterTextApear 0.9s 3.9s both;
-            animation: posterTextApear 0.9s 3.9s both;
+    -webkit-animation: posterTextApearVinograd 0.9s 3.9s both;
+            animation: posterTextApearVinograd 0.9s 3.9s both;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -17243,7 +17331,10 @@ html body .wrapper .screen-block {
   .vinograd .title {
     position: absolute;
   }
-  @-webkit-keyframes posterTextApear {
+  .vinograd .small-gray-lines {
+    z-index: 2;
+  }
+  @-webkit-keyframes posterTextApearVinograd {
     from {
       opacity: 0;
       -webkit-transform: rotate(90deg) translateY(100%);
@@ -17255,7 +17346,7 @@ html body .wrapper .screen-block {
               transform: rotate(90deg) translateY(0);
     }
   }
-  @keyframes posterTextApear {
+  @keyframes posterTextApearVinograd {
     from {
       opacity: 0;
       -webkit-transform: rotate(90deg) translateY(100%);
@@ -17318,8 +17409,8 @@ html body .wrapper .screen-block {
     letter-spacing: 7px;
     -webkit-transform-origin: 0 100%;
             transform-origin: 0 100%;
-    -webkit-animation: posterTextApear 0.9s 3.9s both;
-            animation: posterTextApear 0.9s 3.9s both;
+    -webkit-animation: posterTextApearVinograd 0.9s 3.9s both;
+            animation: posterTextApearVinograd 0.9s 3.9s both;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -17352,7 +17443,10 @@ html body .wrapper .screen-block {
   .vinograd .title {
     position: absolute;
   }
-  @-webkit-keyframes posterTextApear {
+  .vinograd .small-gray-lines {
+    z-index: 2;
+  }
+  @-webkit-keyframes posterTextApearVinograd {
     from {
       opacity: 0;
       -webkit-transform: rotate(90deg) translateY(100%);
@@ -17364,7 +17458,7 @@ html body .wrapper .screen-block {
               transform: rotate(90deg) translateY(0);
     }
   }
-  @keyframes posterTextApear {
+  @keyframes posterTextApearVinograd {
     from {
       opacity: 0;
       -webkit-transform: rotate(90deg) translateY(100%);
@@ -17427,8 +17521,8 @@ html body .wrapper .screen-block {
     letter-spacing: 7px;
     -webkit-transform-origin: 0 100%;
             transform-origin: 0 100%;
-    -webkit-animation: posterTextApear 0.9s 3.9s both;
-            animation: posterTextApear 0.9s 3.9s both;
+    -webkit-animation: posterTextApearVinograd 0.9s 3.9s both;
+            animation: posterTextApearVinograd 0.9s 3.9s both;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -17461,7 +17555,10 @@ html body .wrapper .screen-block {
   .vinograd .title {
     position: absolute;
   }
-  @-webkit-keyframes posterTextApear {
+  .vinograd .small-gray-lines {
+    z-index: 2;
+  }
+  @-webkit-keyframes posterTextApearVinograd {
     from {
       opacity: 0;
       -webkit-transform: rotate(90deg) translateY(100%);
@@ -17473,7 +17570,7 @@ html body .wrapper .screen-block {
               transform: rotate(90deg) translateY(0);
     }
   }
-  @keyframes posterTextApear {
+  @keyframes posterTextApearVinograd {
     from {
       opacity: 0;
       -webkit-transform: rotate(90deg) translateY(100%);
@@ -17536,8 +17633,8 @@ html body .wrapper .screen-block {
     letter-spacing: 7px;
     -webkit-transform-origin: 0 100%;
             transform-origin: 0 100%;
-    -webkit-animation: posterTextApear 0.9s 3.9s both;
-            animation: posterTextApear 0.9s 3.9s both;
+    -webkit-animation: posterTextApearVinograd 0.9s 3.9s both;
+            animation: posterTextApearVinograd 0.9s 3.9s both;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -17570,7 +17667,10 @@ html body .wrapper .screen-block {
   .vinograd .title {
     position: absolute;
   }
-  @-webkit-keyframes posterTextApear {
+  .vinograd .small-gray-lines {
+    z-index: 2;
+  }
+  @-webkit-keyframes posterTextApearVinograd {
     from {
       opacity: 0;
       -webkit-transform: rotate(90deg) translateY(100%);
@@ -17582,7 +17682,7 @@ html body .wrapper .screen-block {
               transform: rotate(90deg) translateY(0);
     }
   }
-  @keyframes posterTextApear {
+  @keyframes posterTextApearVinograd {
     from {
       opacity: 0;
       -webkit-transform: rotate(90deg) translateY(100%);
@@ -17645,8 +17745,8 @@ html body .wrapper .screen-block {
     letter-spacing: 7px;
     -webkit-transform-origin: 0 100%;
             transform-origin: 0 100%;
-    -webkit-animation: posterTextApear 0.9s 3.9s both;
-            animation: posterTextApear 0.9s 3.9s both;
+    -webkit-animation: posterTextApearVinograd 0.9s 3.9s both;
+            animation: posterTextApearVinograd 0.9s 3.9s both;
   }
   .vinograd:before, .vinograd:after {
     display: block;
@@ -18243,6 +18343,9 @@ html body .wrapper .screen-block {
     background: #fff;
     overflow: hidden;
   }
+  .euro-club .small-gray-lines .line {
+    background: #999;
+  }
   @-webkit-keyframes apear {
     from {
       -webkit-transform: translate3d(-100%, -100%, 0);
@@ -18471,6 +18574,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     background: #fff;
     overflow: hidden;
+  }
+  .euro-club .small-gray-lines .line {
+    background: #999;
   }
   @-webkit-keyframes apear {
     from {
@@ -18701,6 +18807,9 @@ html body .wrapper .screen-block {
     background: #fff;
     overflow: hidden;
   }
+  .euro-club .small-gray-lines .line {
+    background: #999;
+  }
   @-webkit-keyframes apear {
     from {
       -webkit-transform: translate3d(-100%, -100%, 0);
@@ -18930,6 +19039,9 @@ html body .wrapper .screen-block {
     background: #fff;
     overflow: hidden;
   }
+  .euro-club .small-gray-lines .line {
+    background: #999;
+  }
   @-webkit-keyframes apear {
     from {
       -webkit-transform: translate3d(-100%, -100%, 0);
@@ -19158,6 +19270,9 @@ html body .wrapper .screen-block {
     height: 100vh;
     background: #fff;
     overflow: hidden;
+  }
+  .euro-club .small-gray-lines .line {
+    background: #999;
   }
   @-webkit-keyframes apear {
     from {
@@ -19960,6 +20075,9 @@ html body .wrapper .screen-block {
   .alta-capital .title {
     position: absolute;
   }
+  .alta-capital .small-gray-lines {
+    z-index: 2;
+  }
   @-webkit-keyframes right {
     from {
       -webkit-transform: translateX(-100%);
@@ -20339,6 +20457,9 @@ html body .wrapper .screen-block {
   .alta-capital .title {
     position: absolute;
   }
+  .alta-capital .small-gray-lines {
+    z-index: 2;
+  }
   @-webkit-keyframes right {
     from {
       -webkit-transform: translateX(-100%);
@@ -20687,6 +20808,9 @@ html body .wrapper .screen-block {
   }
   .alta-capital .title {
     position: absolute;
+  }
+  .alta-capital .small-gray-lines {
+    z-index: 2;
   }
   @-webkit-keyframes right {
     from {
@@ -21037,6 +21161,9 @@ html body .wrapper .screen-block {
   .alta-capital .title {
     position: absolute;
   }
+  .alta-capital .small-gray-lines {
+    z-index: 2;
+  }
   @-webkit-keyframes right {
     from {
       -webkit-transform: translateX(-100%);
@@ -21386,6 +21513,9 @@ html body .wrapper .screen-block {
   .alta-capital .title {
     position: absolute;
   }
+  .alta-capital .small-gray-lines {
+    z-index: 2;
+  }
   @-webkit-keyframes right {
     from {
       -webkit-transform: translateX(-100%);
@@ -21734,6 +21864,9 @@ html body .wrapper .screen-block {
   }
   .alta-capital .title {
     position: absolute;
+  }
+  .alta-capital .small-gray-lines {
+    z-index: 2;
   }
   @-webkit-keyframes right {
     from {
