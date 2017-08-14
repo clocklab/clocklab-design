@@ -4,13 +4,14 @@
     margin-left: 35vh;
     position: relative;
     &.dark {
-        span.name span, .word span, p { color: $dark; }
-        span.name:before { background: $dark; }
+        span.name span, .word span, p { color: $dark !important; }
+        span.name:before { background: $dark !important; }
     }
     p {
         font-weight: $medium;
         padding: 2vh 1vh 0;
-        line-height: 2vh;
+        font-size: px(28);
+        line-height: 1.5;
         color: $white;
     }
     span.name {
@@ -22,6 +23,7 @@
             color: $white;
             display: block;
             visibility: hidden;
+            font-weight: $bold;
             animation: titleName .5s linear;
             animation-fill-mode: forwards;
             animation-delay: .5s;

@@ -3035,15 +3035,16 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333;
+    color: #333333 !important;
   }
   .title.dark span.name:before {
-    background: #333333;
+    background: #333333 !important;
   }
   .title p {
     font-weight: 500;
     padding: 2vh 1vh 0;
-    line-height: 2vh;
+    font-size: 4.375vw;
+    line-height: 1.5;
     color: #fff;
   }
   .title span.name {
@@ -3056,6 +3057,7 @@ html body .wrapper .screen-block {
     color: #fff;
     display: block;
     visibility: hidden;
+    font-weight: 700;
     -webkit-animation: titleName .5s linear;
             animation: titleName .5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -3116,15 +3118,16 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333;
+    color: #333333 !important;
   }
   .title.dark span.name:before {
-    background: #333333;
+    background: #333333 !important;
   }
   .title p {
     font-weight: 500;
     padding: 2vh 1vh 0;
-    line-height: 2vh;
+    font-size: 2.46484vw;
+    line-height: 1.5;
     color: #fff;
   }
   .title span.name {
@@ -3137,6 +3140,7 @@ html body .wrapper .screen-block {
     color: #fff;
     display: block;
     visibility: hidden;
+    font-weight: 700;
     -webkit-animation: titleName .5s linear;
             animation: titleName .5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -3197,15 +3201,16 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333;
+    color: #333333 !important;
   }
   .title.dark span.name:before {
-    background: #333333;
+    background: #333333 !important;
   }
   .title p {
     font-weight: 500;
     padding: 2vh 1vh 0;
-    line-height: 2vh;
+    font-size: 1.82291vw;
+    line-height: 1.5;
     color: #fff;
   }
   .title span.name {
@@ -3218,6 +3223,7 @@ html body .wrapper .screen-block {
     color: #fff;
     display: block;
     visibility: hidden;
+    font-weight: 700;
     -webkit-animation: titleName .5s linear;
             animation: titleName .5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -3278,15 +3284,16 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333;
+    color: #333333 !important;
   }
   .title.dark span.name:before {
-    background: #333333;
+    background: #333333 !important;
   }
   .title p {
     font-weight: 500;
     padding: 2vh 1vh 0;
-    line-height: 2vh;
+    font-size: 1.36724vw;
+    line-height: 1.5;
     color: #fff;
   }
   .title span.name {
@@ -3299,6 +3306,7 @@ html body .wrapper .screen-block {
     color: #fff;
     display: block;
     visibility: hidden;
+    font-weight: 700;
     -webkit-animation: titleName .5s linear;
             animation: titleName .5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -3359,15 +3367,16 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333;
+    color: #333333 !important;
   }
   .title.dark span.name:before {
-    background: #333333;
+    background: #333333 !important;
   }
   .title p {
     font-weight: 500;
     padding: 2vh 1vh 0;
-    line-height: 2vh;
+    font-size: 1.0248vw;
+    line-height: 1.5;
     color: #fff;
   }
   .title span.name {
@@ -3380,6 +3389,7 @@ html body .wrapper .screen-block {
     color: #fff;
     display: block;
     visibility: hidden;
+    font-weight: 700;
     -webkit-animation: titleName .5s linear;
             animation: titleName .5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -3440,15 +3450,16 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333;
+    color: #333333 !important;
   }
   .title.dark span.name:before {
-    background: #333333;
+    background: #333333 !important;
   }
   .title p {
     font-weight: 500;
     padding: 2vh 1vh 0;
-    line-height: 2vh;
+    font-size: 0.83328vw;
+    line-height: 1.5;
     color: #fff;
   }
   .title span.name {
@@ -3461,6 +3472,7 @@ html body .wrapper .screen-block {
     color: #fff;
     display: block;
     visibility: hidden;
+    font-weight: 700;
     -webkit-animation: titleName .5s linear;
             animation: titleName .5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -3521,15 +3533,16 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333;
+    color: #333333 !important;
   }
   .title.dark span.name:before {
-    background: #333333;
+    background: #333333 !important;
   }
   .title p {
     font-weight: 500;
     padding: 2vh 1vh 0;
-    line-height: 2vh;
+    font-size: 0.72912vw;
+    line-height: 1.5;
     color: #fff;
   }
   .title span.name {
@@ -3542,6 +3555,7 @@ html body .wrapper .screen-block {
     color: #fff;
     display: block;
     visibility: hidden;
+    font-weight: 700;
     -webkit-animation: titleName .5s linear;
             animation: titleName .5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -3602,15 +3616,16 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333;
+    color: #333333 !important;
   }
   .title.dark span.name:before {
-    background: #333333;
+    background: #333333 !important;
   }
   .title p {
     font-weight: 500;
     padding: 2vh 1vh 0;
-    line-height: 2vh;
+    font-size: 0.54684vw;
+    line-height: 1.5;
     color: #fff;
   }
   .title span.name {
@@ -3623,6 +3638,7 @@ html body .wrapper .screen-block {
     color: #fff;
     display: block;
     visibility: hidden;
+    font-weight: 700;
     -webkit-animation: titleName .5s linear;
             animation: titleName .5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -5685,9 +5701,15 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    display: none;
+  }
   #service-one.screen-block .title {
     display: inherit;
-    margin-top: 23vh;
+    margin-top: 7vh;
     margin-left: 3vh;
   }
   #service-one.screen-block .title span.name {
@@ -5716,37 +5738,10 @@ html body .wrapper .screen-block {
     bottom: -100px;
     font-size: 3.9vh;
   }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 9vh 0 0 12.5vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 2vh;
-    margin-bottom: 5.5vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-    font-size: 2.6vh;
-    margin-top: -.5vh;
-  }
-  #service-one.screen-block .language {
-    top: 25vh;
-  }
-  #service-one.screen-block .bg-letter {
+  #service-one.screen-block .logo {
     display: none;
   }
-  #service-one.screen-block .lines {
+  #service-one.screen-block .bg-clock {
     display: none;
   }
 }
@@ -5756,9 +5751,15 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    display: none;
+  }
   #service-one.screen-block .title {
     display: inherit;
-    margin-top: 23vh;
+    margin-top: 7vh;
     margin-left: 3vh;
   }
   #service-one.screen-block .title span.name {
@@ -5787,37 +5788,10 @@ html body .wrapper .screen-block {
     bottom: -100px;
     font-size: 3.9vh;
   }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 9vh 0 0 12.5vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 2vh;
-    margin-bottom: 5.5vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-    font-size: 2.6vh;
-    margin-top: -.5vh;
-  }
-  #service-one.screen-block .language {
-    top: 25vh;
-  }
-  #service-one.screen-block .bg-letter {
+  #service-one.screen-block .logo {
     display: none;
   }
-  #service-one.screen-block .lines {
+  #service-one.screen-block .bg-clock {
     display: none;
   }
 }
@@ -5827,9 +5801,15 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    display: none;
+  }
   #service-one.screen-block .title {
     display: inherit;
-    margin-top: 23vh;
+    margin-top: 7vh;
     margin-left: 3vh;
   }
   #service-one.screen-block .title span.name {
@@ -5858,37 +5838,10 @@ html body .wrapper .screen-block {
     bottom: -100px;
     font-size: 3.9vh;
   }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 9vh 0 0 12.5vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 2vh;
-    margin-bottom: 5.5vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-    font-size: 2.6vh;
-    margin-top: -.5vh;
-  }
-  #service-one.screen-block .language {
-    top: 25vh;
-  }
-  #service-one.screen-block .bg-letter {
+  #service-one.screen-block .logo {
     display: none;
   }
-  #service-one.screen-block .lines {
+  #service-one.screen-block .bg-clock {
     display: none;
   }
 }
@@ -5898,14 +5851,48 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    position: absolute;
+  }
+  #service-one.screen-block .service-one-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal p {
+    font-size: 1.36724vw;
+  }
+  #service-one.screen-block .service-one-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-one.screen-block .service-one-info.vertical p {
+    font-size: 1.26958vw;
+    line-height: 1.8vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.one {
+    top: 40vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.two {
+    top: 72vh;
+  }
   #service-one.screen-block .title {
-    width: 50vh;
+    width: 75vh;
     display: inherit;
-    margin-top: 27vh;
-    margin-left: 30vh;
+    margin-top: 21vh;
+    margin-left: 40vh;
   }
   #service-one.screen-block .title span.name {
-    top: -2vh;
+    top: -4vh;
   }
   #service-one.screen-block .title .animation-border {
     top: 3.5vh;
@@ -5916,85 +5903,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
-  }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 34.5vh 0 0 33vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 1.3vh;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(1) {
-    margin-right: 14vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(2) {
-    margin-right: 31vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-  }
-  #service-one.screen-block .bg-letter {
-    background: url("../images/letter-2.png") no-repeat;
-    background-position: 96% 100%;
-    background-size: 28%;
-  }
-  #service-one.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #service-one.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #service-one.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #service-one.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
@@ -6003,14 +5911,48 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    position: absolute;
+  }
+  #service-one.screen-block .service-one-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal p {
+    font-size: 1.0248vw;
+  }
+  #service-one.screen-block .service-one-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-one.screen-block .service-one-info.vertical p {
+    font-size: 0.9516vw;
+    line-height: 1.8vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.one {
+    top: 40vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.two {
+    top: 72vh;
+  }
   #service-one.screen-block .title {
-    width: 50vh;
+    width: 75vh;
     display: inherit;
-    margin-top: 27vh;
-    margin-left: 30vh;
+    margin-top: 21vh;
+    margin-left: 40vh;
   }
   #service-one.screen-block .title span.name {
-    top: -2vh;
+    top: -4vh;
   }
   #service-one.screen-block .title .animation-border {
     top: 3.5vh;
@@ -6021,85 +5963,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
-  }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 34.5vh 0 0 33vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 1.3vh;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(1) {
-    margin-right: 14vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(2) {
-    margin-right: 31vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-  }
-  #service-one.screen-block .bg-letter {
-    background: url("../images/letter-2.png") no-repeat;
-    background-position: 96% 100%;
-    background-size: 28%;
-  }
-  #service-one.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #service-one.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #service-one.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #service-one.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
@@ -6108,14 +5971,48 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    position: absolute;
+  }
+  #service-one.screen-block .service-one-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal p {
+    font-size: 0.83328vw;
+  }
+  #service-one.screen-block .service-one-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-one.screen-block .service-one-info.vertical p {
+    font-size: 0.77376vw;
+    line-height: 1.8vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.one {
+    top: 40vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.two {
+    top: 72vh;
+  }
   #service-one.screen-block .title {
-    width: 50vh;
+    width: 75vh;
     display: inherit;
-    margin-top: 27vh;
-    margin-left: 30vh;
+    margin-top: 21vh;
+    margin-left: 40vh;
   }
   #service-one.screen-block .title span.name {
-    top: -2vh;
+    top: -4vh;
   }
   #service-one.screen-block .title .animation-border {
     top: 3.5vh;
@@ -6126,85 +6023,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
-  }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 34.5vh 0 0 33vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 1.3vh;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(1) {
-    margin-right: 14vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(2) {
-    margin-right: 31vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-  }
-  #service-one.screen-block .bg-letter {
-    background: url("../images/letter-2.png") no-repeat;
-    background-position: 96% 100%;
-    background-size: 28%;
-  }
-  #service-one.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #service-one.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #service-one.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #service-one.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
@@ -6213,14 +6031,48 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    position: absolute;
+  }
+  #service-one.screen-block .service-one-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal p {
+    font-size: 0.72912vw;
+  }
+  #service-one.screen-block .service-one-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-one.screen-block .service-one-info.vertical p {
+    font-size: 0.67704vw;
+    line-height: 1.8vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.one {
+    top: 40vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.two {
+    top: 72vh;
+  }
   #service-one.screen-block .title {
-    width: 50vh;
+    width: 75vh;
     display: inherit;
-    margin-top: 27vh;
-    margin-left: 30vh;
+    margin-top: 21vh;
+    margin-left: 40vh;
   }
   #service-one.screen-block .title span.name {
-    top: -2vh;
+    top: -4vh;
   }
   #service-one.screen-block .title .animation-border {
     top: 3.5vh;
@@ -6231,85 +6083,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
-  }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 34.5vh 0 0 33vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 1.3vh;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(1) {
-    margin-right: 14vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(2) {
-    margin-right: 31vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-  }
-  #service-one.screen-block .bg-letter {
-    background: url("../images/letter-2.png") no-repeat;
-    background-position: 96% 100%;
-    background-size: 28%;
-  }
-  #service-one.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #service-one.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #service-one.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #service-one.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 @media (min-width: 1921px) {
@@ -6318,14 +6091,48 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    position: absolute;
+  }
+  #service-one.screen-block .service-one-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal p {
+    font-size: 0.54684vw;
+  }
+  #service-one.screen-block .service-one-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-one.screen-block .service-one-info.vertical p {
+    font-size: 0.50778vw;
+    line-height: 1.8vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.one {
+    top: 40vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.two {
+    top: 72vh;
+  }
   #service-one.screen-block .title {
-    width: 50vh;
+    width: 75vh;
     display: inherit;
-    margin-top: 27vh;
-    margin-left: 30vh;
+    margin-top: 21vh;
+    margin-left: 40vh;
   }
   #service-one.screen-block .title span.name {
-    top: -2vh;
+    top: -4vh;
   }
   #service-one.screen-block .title .animation-border {
     top: 3.5vh;
@@ -6336,85 +6143,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
-  }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 34.5vh 0 0 33vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 1.3vh;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(1) {
-    margin-right: 14vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(2) {
-    margin-right: 31vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-  }
-  #service-one.screen-block .bg-letter {
-    background: url("../images/letter-2.png") no-repeat;
-    background-position: 96% 100%;
-    background-size: 28%;
-  }
-  #service-one.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #service-one.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #service-one.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #service-one.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 
@@ -22212,9 +21940,15 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    display: none;
+  }
   #service-one.screen-block .title {
     display: inherit;
-    margin-top: 23vh;
+    margin-top: 7vh;
     margin-left: 3vh;
   }
   #service-one.screen-block .title span.name {
@@ -22243,37 +21977,10 @@ html body .wrapper .screen-block {
     bottom: -100px;
     font-size: 3.9vh;
   }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 9vh 0 0 12.5vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 2vh;
-    margin-bottom: 5.5vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-    font-size: 2.6vh;
-    margin-top: -.5vh;
-  }
-  #service-one.screen-block .language {
-    top: 25vh;
-  }
-  #service-one.screen-block .bg-letter {
+  #service-one.screen-block .logo {
     display: none;
   }
-  #service-one.screen-block .lines {
+  #service-one.screen-block .bg-clock {
     display: none;
   }
 }
@@ -22283,9 +21990,15 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    display: none;
+  }
   #service-one.screen-block .title {
     display: inherit;
-    margin-top: 23vh;
+    margin-top: 7vh;
     margin-left: 3vh;
   }
   #service-one.screen-block .title span.name {
@@ -22314,37 +22027,10 @@ html body .wrapper .screen-block {
     bottom: -100px;
     font-size: 3.9vh;
   }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 9vh 0 0 12.5vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 2vh;
-    margin-bottom: 5.5vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-    font-size: 2.6vh;
-    margin-top: -.5vh;
-  }
-  #service-one.screen-block .language {
-    top: 25vh;
-  }
-  #service-one.screen-block .bg-letter {
+  #service-one.screen-block .logo {
     display: none;
   }
-  #service-one.screen-block .lines {
+  #service-one.screen-block .bg-clock {
     display: none;
   }
 }
@@ -22354,9 +22040,15 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    display: none;
+  }
   #service-one.screen-block .title {
     display: inherit;
-    margin-top: 23vh;
+    margin-top: 7vh;
     margin-left: 3vh;
   }
   #service-one.screen-block .title span.name {
@@ -22385,37 +22077,10 @@ html body .wrapper .screen-block {
     bottom: -100px;
     font-size: 3.9vh;
   }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 9vh 0 0 12.5vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 2vh;
-    margin-bottom: 5.5vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-    font-size: 2.6vh;
-    margin-top: -.5vh;
-  }
-  #service-one.screen-block .language {
-    top: 25vh;
-  }
-  #service-one.screen-block .bg-letter {
+  #service-one.screen-block .logo {
     display: none;
   }
-  #service-one.screen-block .lines {
+  #service-one.screen-block .bg-clock {
     display: none;
   }
 }
@@ -22425,14 +22090,48 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    position: absolute;
+  }
+  #service-one.screen-block .service-one-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal p {
+    font-size: 1.36724vw;
+  }
+  #service-one.screen-block .service-one-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-one.screen-block .service-one-info.vertical p {
+    font-size: 1.26958vw;
+    line-height: 1.8vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.one {
+    top: 40vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.two {
+    top: 72vh;
+  }
   #service-one.screen-block .title {
-    width: 50vh;
+    width: 75vh;
     display: inherit;
-    margin-top: 27vh;
-    margin-left: 30vh;
+    margin-top: 21vh;
+    margin-left: 40vh;
   }
   #service-one.screen-block .title span.name {
-    top: -2vh;
+    top: -4vh;
   }
   #service-one.screen-block .title .animation-border {
     top: 3.5vh;
@@ -22443,85 +22142,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
-  }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 34.5vh 0 0 33vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 1.3vh;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(1) {
-    margin-right: 14vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(2) {
-    margin-right: 31vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-  }
-  #service-one.screen-block .bg-letter {
-    background: url("../images/letter-2.png") no-repeat;
-    background-position: 96% 100%;
-    background-size: 28%;
-  }
-  #service-one.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #service-one.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #service-one.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #service-one.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
@@ -22530,14 +22150,48 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    position: absolute;
+  }
+  #service-one.screen-block .service-one-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal p {
+    font-size: 1.0248vw;
+  }
+  #service-one.screen-block .service-one-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-one.screen-block .service-one-info.vertical p {
+    font-size: 0.9516vw;
+    line-height: 1.8vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.one {
+    top: 40vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.two {
+    top: 72vh;
+  }
   #service-one.screen-block .title {
-    width: 50vh;
+    width: 75vh;
     display: inherit;
-    margin-top: 27vh;
-    margin-left: 30vh;
+    margin-top: 21vh;
+    margin-left: 40vh;
   }
   #service-one.screen-block .title span.name {
-    top: -2vh;
+    top: -4vh;
   }
   #service-one.screen-block .title .animation-border {
     top: 3.5vh;
@@ -22548,85 +22202,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
-  }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 34.5vh 0 0 33vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 1.3vh;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(1) {
-    margin-right: 14vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(2) {
-    margin-right: 31vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-  }
-  #service-one.screen-block .bg-letter {
-    background: url("../images/letter-2.png") no-repeat;
-    background-position: 96% 100%;
-    background-size: 28%;
-  }
-  #service-one.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #service-one.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #service-one.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #service-one.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
@@ -22635,14 +22210,48 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    position: absolute;
+  }
+  #service-one.screen-block .service-one-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal p {
+    font-size: 0.83328vw;
+  }
+  #service-one.screen-block .service-one-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-one.screen-block .service-one-info.vertical p {
+    font-size: 0.77376vw;
+    line-height: 1.8vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.one {
+    top: 40vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.two {
+    top: 72vh;
+  }
   #service-one.screen-block .title {
-    width: 50vh;
+    width: 75vh;
     display: inherit;
-    margin-top: 27vh;
-    margin-left: 30vh;
+    margin-top: 21vh;
+    margin-left: 40vh;
   }
   #service-one.screen-block .title span.name {
-    top: -2vh;
+    top: -4vh;
   }
   #service-one.screen-block .title .animation-border {
     top: 3.5vh;
@@ -22653,85 +22262,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
-  }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 34.5vh 0 0 33vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 1.3vh;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(1) {
-    margin-right: 14vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(2) {
-    margin-right: 31vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-  }
-  #service-one.screen-block .bg-letter {
-    background: url("../images/letter-2.png") no-repeat;
-    background-position: 96% 100%;
-    background-size: 28%;
-  }
-  #service-one.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #service-one.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #service-one.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #service-one.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
@@ -22740,14 +22270,48 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    position: absolute;
+  }
+  #service-one.screen-block .service-one-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal p {
+    font-size: 0.72912vw;
+  }
+  #service-one.screen-block .service-one-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-one.screen-block .service-one-info.vertical p {
+    font-size: 0.67704vw;
+    line-height: 1.8vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.one {
+    top: 40vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.two {
+    top: 72vh;
+  }
   #service-one.screen-block .title {
-    width: 50vh;
+    width: 75vh;
     display: inherit;
-    margin-top: 27vh;
-    margin-left: 30vh;
+    margin-top: 21vh;
+    margin-left: 40vh;
   }
   #service-one.screen-block .title span.name {
-    top: -2vh;
+    top: -4vh;
   }
   #service-one.screen-block .title .animation-border {
     top: 3.5vh;
@@ -22758,85 +22322,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
-  }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 34.5vh 0 0 33vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 1.3vh;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(1) {
-    margin-right: 14vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(2) {
-    margin-right: 31vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-  }
-  #service-one.screen-block .bg-letter {
-    background: url("../images/letter-2.png") no-repeat;
-    background-position: 96% 100%;
-    background-size: 28%;
-  }
-  #service-one.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #service-one.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #service-one.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #service-one.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 @media (min-width: 1921px) {
@@ -22845,14 +22330,48 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #service-one.screen-block .service-one-info {
+    position: absolute;
+  }
+  #service-one.screen-block .service-one-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-one.screen-block .service-one-info.horizontal p {
+    font-size: 0.54684vw;
+  }
+  #service-one.screen-block .service-one-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-one.screen-block .service-one-info.vertical p {
+    font-size: 0.50778vw;
+    line-height: 1.8vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.one {
+    top: 40vh;
+  }
+  #service-one.screen-block .service-one-info.vertical.two {
+    top: 72vh;
+  }
   #service-one.screen-block .title {
-    width: 50vh;
+    width: 75vh;
     display: inherit;
-    margin-top: 27vh;
-    margin-left: 30vh;
+    margin-top: 21vh;
+    margin-left: 40vh;
   }
   #service-one.screen-block .title span.name {
-    top: -2vh;
+    top: -4vh;
   }
   #service-one.screen-block .title .animation-border {
     top: 3.5vh;
@@ -22863,85 +22382,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
-  }
-  #service-one.screen-block .contacts {
-    display: inherit;
-    margin: 34.5vh 0 0 33vh;
-  }
-  #service-one.screen-block .contacts li {
-    color: #fff;
-    font-size: 1.3vh;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align: auto;
-    *zoom: 1;
-    *display: inline;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(1) {
-    margin-right: 14vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(2) {
-    margin-right: 31vh;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-  }
-  #service-one.screen-block .contacts li:nth-of-type(3) a:hover {
-    border: none;
-  }
-  #service-one.screen-block .contacts li a {
-    color: #fff;
-    display: block;
-  }
-  #service-one.screen-block .bg-letter {
-    background: url("../images/letter-2.png") no-repeat;
-    background-position: 96% 100%;
-    background-size: 28%;
-  }
-  #service-one.screen-block .lines {
-    position: absolute;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-  #service-one.screen-block .lines .line {
-    background-color: #2D2D2D;
-    position: absolute;
-    display: block;
-    height: 1px;
-    width: 24vh;
-  }
-  #service-one.screen-block .lines .line.up {
-    -webkit-animation: lineUp 1s both;
-            animation: lineUp 1s both;
-  }
-  #service-one.screen-block .lines .line.down {
-    -webkit-animation: lineDown 1s both;
-            animation: lineDown 1s both;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(1) {
-    left: 18vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(2) {
-    left: 100vh;
-    top: -19vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(3) {
-    right: 9vh;
-    top: 14vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(4) {
-    bottom: -3vh;
-    left: 29vh;
-  }
-  #service-one.screen-block .lines .line:nth-of-type(5) {
-    bottom: 21vh;
-    right: 91vh;
   }
 }
 
