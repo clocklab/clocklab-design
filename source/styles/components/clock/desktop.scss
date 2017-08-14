@@ -1,4 +1,7 @@
 & {
+    font-family: $raleway;
+    font-weight: $regular;
+    background-color: $background;
     
     // ----- slogan -----
     .slogan {
@@ -38,17 +41,17 @@
         background-size: 28%;
     }
 
-    // ----- clock -----
-    .clock-light {
-        background: url('../images/clock-light.png');
+    // ----- watch -----
+    .watch-light {
+        background: url('../images/watch-light.png');
         background-size: cover;
         position: absolute;
         height: 100%;
         width: 100%;
         top: 0;
     }
-    .clock {
-        background: url('../images/clock.png') no-repeat 51.5%;
+    .watch {
+        background: url('../images/watch.png') no-repeat 51.5%;
         margin: -2vh auto 0;
         position: absolute;
         height: 100%;
