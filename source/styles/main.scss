@@ -10,9 +10,13 @@
 @import "base/reset";
 @import "base/common";
 @import "base/animations";
+@import "base/small-gray-lines";
 
 // components
-@import "components/navElements/main";
+@import "components/navigation-elements/main";
+@import "components/clock/main";
+@import "components/contacts/main";
+@import "components/service-one/main";
 @import "components/menu/main";
 @import "components/bottom-button/main";
 @import "components/crossed-button/main";

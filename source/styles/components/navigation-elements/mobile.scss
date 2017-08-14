@@ -1,7 +1,9 @@
 & {
-    // $space: 0;
-    // @include add(social, "social/*.png", "social-2x/*.png");
-    
+    $space: 0;
+    font-family: $raleway;
+    font-weight: $regular;
+    @include add(social, "social/*.png", "social-2x/*.png");
+   
     // ----- bg letter -----
     .bg-letter {
         position: absolute;
@@ -10,24 +12,12 @@
         z-index: -1;
     }
 
-    // ----- bg clock -----
-    .bg-clock {
-        position: absolute;
-        top: 50%;
-        margin-top: -128px;
-        width: 100%;
-        line-height: 128px;
-        text-align: center;
-        font-size: 70vh;
-        color: $white;
-    }
-
     // ----- logo -----
     .logo {
         position: absolute;
         z-index: 1;
-        top: 3.5vh;
-        left: 5vh;
+        top: 4vh;
+        left: 2vh;
        .image {
             @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
             background-repeat: no-repeat;
@@ -42,9 +32,10 @@
     .language {
         position: absolute;
         font-size: 1.34vh;
-        bottom: 45vh;
+        bottom: 15vh;
         z-index: 1;
-        left: 5vh;
+        zoom: 1.8;
+        left: 1vh;
         div {
             width: fit-content;
             transform: rotate(-90deg);
@@ -76,16 +67,16 @@
     // ----- social -----
     .social {
         position: absolute;
-        bottom: 5vh;
+        bottom: 2vh;
         z-index: 1;
-        left: 5vh;
+        left: 2vh;
         div {
             z-index: 0;
             padding: 5.75px;
             border: 1px solid $white;
             &:nth-of-type(1) {
                 position: absolute;
-                bottom: 29px;
+                bottom: 30.5px;
                 left: 0;
             }
             &:nth-of-type(2) {
@@ -166,8 +157,8 @@
     // ----- behance -----
     .behance {
         position: absolute;
-        bottom: 5vh;
-        left: 23vh;
+        bottom: 2.3vh;
+        left: 14.5vh;
         z-index: 1;
         padding: 0;
         margin: 0;
@@ -179,8 +170,8 @@
             }
             span {
                 color: $white;
+                font-size: 2.1vh;
                 font-weight: $thin;
-                font-size: 1.3vh;
             }
         }
     }
@@ -189,9 +180,9 @@
     .copyright {
         transform: rotate(-90deg);
         position: absolute;
-        font-size: 1.34vh;
-        right: -8.5vh;
-        bottom: 29vh;
+        font-size: 1.9vh;
+        bottom: 22vh;
+        right: -14vh;
         p {
             color: $white;
             font-weight: $thin;
@@ -204,10 +195,6 @@
         margin-top: 20vh;
         margin-left: 35vh;
         position: relative;
-        &.dark {
-            span.name span, .word span, p { color: $dark; }
-            span.name:before { background: $dark; }
-        }
         p {
             font-weight: $medium;
             padding: 2vh 1vh 0;
