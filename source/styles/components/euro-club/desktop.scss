@@ -3,6 +3,13 @@
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     cursor: default;
 
+    .small-gray-lines {
+
+        .line {
+            background: $gray;
+        }
+    }
+
     // Animation for block
     @keyframes apear {
         from {

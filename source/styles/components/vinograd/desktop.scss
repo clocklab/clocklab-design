@@ -9,7 +9,11 @@
         position: absolute;
     }
 
-    @keyframes posterTextApear {
+    .small-gray-lines {
+        z-index: 2;
+    }
+
+    @keyframes posterTextApearVinograd {
         from {
             opacity: 0;
             transform: rotate(90deg) translateY(100%);
@@ -73,8 +77,8 @@
             font-size: px(28);
             letter-spacing: 7px;
             transform-origin: 0 100%;
-            //transform: rotate(90deg);
-            animation: posterTextApear $portfolioVinogradPosterTextAnimationTime $portfolioVinogradPosterTextDelayTime both;
+            
+            animation: posterTextApearVinograd $portfolioVinogradPosterTextAnimationTime $portfolioVinogradPosterTextDelayTime both;
         }
     }
 

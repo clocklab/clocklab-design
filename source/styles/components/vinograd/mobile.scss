@@ -4,6 +4,14 @@
     height: 100vh;
     overflow: hidden;
 
+    .logo {
+        display: none;
+    }
+
+    .title {
+        position: absolute;
+    }
+
     .poster {
         position: relative;
         z-index: 2;
