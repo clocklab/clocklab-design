@@ -13,14 +13,17 @@
 
 // components
 @import "components/navElements/main";
-@import "components/screenClock/main";
-@import "components/pageContacts/main";
-@import "components/screenServicesOne/main";
 @import "components/menu/main";
-@import "components/buttons/main";
+@import "components/bottom-button/main";
+@import "components/crossed-button/main";
+@import "components/jumping-button/main";
 @import "components/portfolio-right-panel/main";
 @import "components/portfolio-client/main";
+
+@import "components/screenClock/main";
 @import "components/q7/main";
 @import "components/vinograd/main";
 @import "components/euro-club/main";
 @import "components/alta-capital/main";
+@import "components/screenServicesOne/main";
+@import "components/pageContacts/main";

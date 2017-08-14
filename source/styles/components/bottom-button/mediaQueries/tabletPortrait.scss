@@ -1,0 +1,21 @@
+//@import '../mobile';
+@import '../desktop';
+
+& {
+    bottom: px(40);
+    padding: 0 px(50);
+
+    a {
+
+        &:hover {
+            span {
+                padding: 0 px(100) 0 px(50);
+            }
+        }
+    }
+
+    .arrow-container {
+        position: absolute;
+        right: px(24);
+    }
+}
