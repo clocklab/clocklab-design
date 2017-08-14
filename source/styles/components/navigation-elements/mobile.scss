@@ -195,6 +195,10 @@
         margin-top: 20vh;
         margin-left: 35vh;
         position: relative;
+        &.dark {
+            span.name span, .word span, p { color: $dark; }
+            span.name:before { background: $dark; }
+        }
         p {
             font-weight: $medium;
             padding: 2vh 1vh 0;
