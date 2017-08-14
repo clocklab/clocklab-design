@@ -18,3 +18,6 @@
 
 // menu
 //= components/menu.js
+
+// alta
+//= components/alta.js
