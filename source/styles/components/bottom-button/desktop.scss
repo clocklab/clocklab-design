@@ -26,6 +26,7 @@
     }
 
     span {
+        position: relative;
         padding-left: px(96);
         color: rgba(0, 0, 0, .4);
         font-size: px(24);
@@ -33,6 +34,10 @@
         font-weight: 700; 
         text-transform: uppercase;
         transition: padding $timeTick;
+
+        &:before {
+            content: 'К портфолио';
+        }
     }
 
     .arrow-container {
