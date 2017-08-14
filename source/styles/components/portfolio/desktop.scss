@@ -1,0 +1,50 @@
+& {  
+
+    .page-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .back-layer {
+        width: 100%;
+        height: 100%;
+        background: $lightBlack;
+
+        .clock {
+
+        }
+
+        .letters {
+            color: rgba(0, 0, 0, .2);
+            font-size: px(328);
+        }
+
+        .letter {
+            position: absolute;
+
+            &-c {
+                top: px(280);
+                left: px(900);
+            }
+
+            &-o {
+                bottom: px(200);
+                right: px(800);
+            }
+        }
+    }
+
+    .front-layer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: px(270) px(300) px(280) px(250);
+    }
+
+    .navigation-layer {
+        width: 100vw;
+        height: 100vh;
+    }
+}
