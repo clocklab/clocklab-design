@@ -5,18 +5,25 @@
 //= ../../bower_components/wow/dist/wow.js
 
 // scripts
-//= components/scripts.js
+
 
 // clock
 
 
 // text shadow
-//= components/shadow.js
+
 
 // q7
 
 
 // menu
-//= components/menu.js
+
 
 // alta
+
+
+// horizontal-scroll
+//= components/horizontal-scroll.js
+
+// portfolio-shadow
+//= components/portfolio-shadow.js
