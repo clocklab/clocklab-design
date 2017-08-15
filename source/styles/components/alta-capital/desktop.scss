@@ -12,6 +12,10 @@
         position: absolute;
     }
 
+    .small-gray-lines {
+        z-index: 2;
+    }
+
     @keyframes right {
         from {
             transform: translateX(-100%);

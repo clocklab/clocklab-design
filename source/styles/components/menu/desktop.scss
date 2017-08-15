@@ -4,6 +4,7 @@
     right: 0;
     z-index: 9999;
     font-family: 'Roboto';
+    animation: fadeInDown $time * 3 both;
 
     &__item {
         box-sizing: border-box;

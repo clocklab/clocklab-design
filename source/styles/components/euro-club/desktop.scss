@@ -3,6 +3,13 @@
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
     cursor: default;
 
+    .small-gray-lines {
+
+        .line {
+            background: $gray;
+        }
+    }
+
     // Animation for block
     @keyframes apear {
         from {
@@ -39,18 +46,6 @@
         to {
             opacity: 1;
         }
-    }
-
-    .letter {
-        position: absolute;
-        top: -60vh;
-        right: -10vh;
-        color: rgba(0, 0, 0, .02);
-        font-size: 170vh;
-        font-weight: 700;
-        user-select: none;
-        animation: letterApear $portfolioEuroclubLetterAnimationTime $portfolioEuroclubLetterDelayTime both;
-        transition: transform $time cubic-bezier(.05, .71, .48, 1);
     }
 
     .blue-line {

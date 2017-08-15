@@ -4,7 +4,9 @@
     flex-direction: row-reverse;
     align-items: center;
     position: absolute;
-    bottom: px(50);
+    bottom: px(30);
+    left: 0;
+    z-index: 6;
     padding: 0 px(30);
     width: 100%;
 
@@ -28,7 +30,7 @@
     span {
         position: relative;
         padding-left: px(60);
-        color: rgba(0, 0, 0, .4);
+        color: $gray;
         font-size: px(24);
         line-height: 16px;
         font-weight: 700; 
@@ -71,7 +73,7 @@
     .line {
         flex-grow: 1;
         height: 1px;
-        background: rgba(0, 0, 0, .3);
+        background: $gray;
         transition: width $timeTick;
     }
 }
