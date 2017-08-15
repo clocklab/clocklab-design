@@ -1,24 +1,26 @@
 & {
     z-index: 3;
+    display: inherit;
     margin-top: 20vh;
     margin-left: 35vh;
     position: relative;
+    width: min-content;
     &.dark {
         span.name span, .word span, p { color: $dark; }
         span.name:before { background: $dark; }
     }
     p {
         font-weight: $medium;
-        padding: 2vh 1vh 0;
         font-size: px(28);
         line-height: 1.5;
+        padding: 0 1vh;
         color: $white;
     }
     span.name {
         text-transform: uppercase;
         position: relative;
         font-size: 1.3vh;
-        top: -5vh;
+        top: -4vh;
         span {
             color: $white;
             display: block;
@@ -41,30 +43,35 @@
         }
     }
     .word {
-        text-align: center;
+        position: relative;
         overflow: hidden;
+        display: inherit;
+        &:after {
+            background-color: $blue;
+            animation: titleWordShape 2s linear;
+            animation-fill-mode: forwards;
+            animation-duration: .5s;
+            position: absolute;
+            height: 18px;
+            content: '';
+            z-index: -1;
+            width: 100%;
+            top: 15px;
+            left: 0;
+        }
         span {
+            bottom: -97px;
             width: 100%;
             color: $white;
             display: block;
-            font-size: 6vh;
+            font-size: px(120);
             position: relative;
+            white-space: nowrap;
             font-weight: $extra-bold;
             text-transform: uppercase;
-            animation: titleWord .5s .5s linear;
+            animation: titleWord linear;
             animation-fill-mode: forwards;
             overflow: hidden;
         }
-    }
-    .animation-border {
-        background-color: $blue;
-        animation: titleWordShape 2s linear;
-        animation-fill-mode: forwards;
-        animation-duration: .5s;
-        position: absolute;
-        z-index: -1;
-        height: 2vh;
-        width: 100%;
-        left: 0;
     }
 }

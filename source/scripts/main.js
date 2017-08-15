@@ -13,11 +13,11 @@
 // text shadow
 //= components/shadow.js
 
-// q7
-//= components/q7.js
-
 // menu
 //= components/menu.js
 
 // alta
 //= components/alta.js
+
+// button-freaky
+//= components/button-freaky.js
