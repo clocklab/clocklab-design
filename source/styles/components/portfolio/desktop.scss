@@ -1,27 +1,99 @@
 & {  
 
+    font-family: $raleway;
+
     .page-layer {
-        position: absolute;
         top: 0;
         left: 0;
     }
 
     .back-layer {
-        width: 100%;
-        height: 100%;
-        background: $lightBlack;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
 
         .clock {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
 
+            span {
+                color: $white;
+                font-weight: 800;
+                font-size: 30vw;
+                line-height: 100vh;
+                text-align: center;
+                overflow-x: hidden;
+                
+                &:before {
+                    display: block;
+                    animation: right $PPClockAnimationTime both;                    
+                }
+
+                &:nth-child(1) {
+                    
+                    &:before {
+                        content: 'c';
+                        animation-delay: $PPClockFirstDelayTime;
+                    }
+                }
+
+                &:nth-child(2) {
+                    
+                    &:before {
+                        content: 'l';
+                        animation-delay: $PPClockSecondDelayTime;
+                    }
+                }
+
+                &:nth-child(3) {
+                    
+                    &:before {
+                        content: 'o';
+                        animation-delay: $PPClockThirdDelayTime;
+                    }
+                }
+
+                &:nth-child(4) {
+                    
+                    &:before {
+                        content: 'c';
+                        animation-delay: $PPClockFourthDelayTime;
+                    }
+                }
+
+                &:nth-child(5) {
+                    
+                    &:before {
+                        content: 'k';
+                        animation-delay: $PPClockFifthDelayTime;
+                    }
+                }
+            }
         }
 
         .letters {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100vw;
+            height: 100vh;
             color: rgba(0, 0, 0, .2);
-            font-size: px(328);
+            color: $gray;
+            font-size: 12vw;
+            font-weight: 700;
         }
 
         .letter {
             position: absolute;
+            animation: fadeIn $PPLettersAnimationTime $PPLettersDelayTime both;
 
             &-c {
                 top: px(280);
@@ -33,6 +105,27 @@
                 right: px(800);
             }
         }
+
+        &:before,
+        &:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 50vw;
+            height: 100vh;
+            background: $lightBlack;
+            content: '';
+        }
+
+        &:before {
+            left: 0;
+            animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
+        }
+
+        &:after {
+            right: 0;
+            animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
+        }
     }
 
     .front-layer {
@@ -40,10 +133,12 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+        position: absolute;
         padding: px(270) px(300) px(280) px(250);
     }
 
     .navigation-layer {
+        position: fixed;
         width: 100vw;
         height: 100vh;
     }

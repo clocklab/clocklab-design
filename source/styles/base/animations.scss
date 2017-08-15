@@ -390,3 +390,32 @@
     }
 }
 // animation for menu ends
+
+
+// portfolio
+@keyframes Down {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: none;
+    }
+}
+@keyframes Up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+// portfolio end

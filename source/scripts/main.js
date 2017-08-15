@@ -8,16 +8,15 @@
 //= components/scripts.js
 
 // clock
-//= components/clock.js
+
 
 // text shadow
 //= components/shadow.js
 
 // q7
-//= components/q7.js
+
 
 // menu
 //= components/menu.js
 
 // alta
-//= components/alta.js
