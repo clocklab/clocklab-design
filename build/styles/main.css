@@ -798,6 +798,62 @@ html body .wrapper .screen-block {
             transform: translateX(0);
   }
 }
+@-webkit-keyframes mainConatactsMapRight {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    -webkit-transform: translateX(10vh);
+            transform: translateX(10vh);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes mainConatactsMapRight {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    -webkit-transform: translateX(10vh);
+            transform: translateX(10vh);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes mainConatactsMapDown {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes mainConatactsMapDown {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
 @-webkit-keyframes titleNameShape {
   0% {
     width: 0%;
@@ -3035,10 +3091,10 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333 !important;
+    color: #333333;
   }
   .title.dark span.name:before {
-    background: #333333 !important;
+    background: #333333;
   }
   .title p {
     font-weight: 500;
@@ -3118,10 +3174,10 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333 !important;
+    color: #333333;
   }
   .title.dark span.name:before {
-    background: #333333 !important;
+    background: #333333;
   }
   .title p {
     font-weight: 500;
@@ -3201,10 +3257,10 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333 !important;
+    color: #333333;
   }
   .title.dark span.name:before {
-    background: #333333 !important;
+    background: #333333;
   }
   .title p {
     font-weight: 500;
@@ -3284,10 +3340,10 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333 !important;
+    color: #333333;
   }
   .title.dark span.name:before {
-    background: #333333 !important;
+    background: #333333;
   }
   .title p {
     font-weight: 500;
@@ -3367,10 +3423,10 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333 !important;
+    color: #333333;
   }
   .title.dark span.name:before {
-    background: #333333 !important;
+    background: #333333;
   }
   .title p {
     font-weight: 500;
@@ -3450,10 +3506,10 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333 !important;
+    color: #333333;
   }
   .title.dark span.name:before {
-    background: #333333 !important;
+    background: #333333;
   }
   .title p {
     font-weight: 500;
@@ -3533,10 +3589,10 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333 !important;
+    color: #333333;
   }
   .title.dark span.name:before {
-    background: #333333 !important;
+    background: #333333;
   }
   .title p {
     font-weight: 500;
@@ -3616,10 +3672,10 @@ html body .wrapper .screen-block {
     position: relative;
   }
   .title.dark span.name span, .title.dark .word span, .title.dark p {
-    color: #333333 !important;
+    color: #333333;
   }
   .title.dark span.name:before {
-    background: #333333 !important;
+    background: #333333;
   }
   .title p {
     font-weight: 500;
@@ -6143,6 +6199,661 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title .word span {
     bottom: -97px;
     font-size: 6.3vh;
+  }
+}
+
+@media (max-width: 414px) {
+  #main-contacts.screen-block {
+    background-color: #fff;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #main-contacts.screen-block .logo, #main-contacts.screen-block .menu, #main-contacts.screen-block .small-gray-lines {
+    display: none;
+  }
+  #main-contacts.screen-block .main-contacts-title {
+    width: 95%;
+    padding: 7.5vh 0 6.6vh 4%;
+    background-color: #1c1c1c;
+  }
+  #main-contacts.screen-block .main-contacts-title p {
+    font-weight: 800;
+  }
+  #main-contacts.screen-block .main-contacts-title p:first-child {
+    color: #fff;
+    font-size: 7.34375vw;
+    text-transform: uppercase;
+  }
+  #main-contacts.screen-block .main-contacts-title p:last-child {
+    font-size: 5.3125vw;
+    padding-top: 1vh;
+    text-align: left;
+    color: #0057FF;
+  }
+  #main-contacts.screen-block .small-gray-lines {
+    z-index: -1;
+  }
+  #main-contacts.screen-block .small-gray-lines .line {
+    background-color: #EBEBEB;
+  }
+  #main-contacts.screen-block .main-contacts-info {
+    display: inherit;
+    margin: 4vh 0 0 2vh;
+  }
+  #main-contacts.screen-block .main-contacts-info li {
+    line-height: .9;
+    color: #444;
+    font-size: 4.0625vw;
+    margin-bottom: 4vh;
+  }
+  #main-contacts.screen-block .main-contacts-info li a {
+    color: #444;
+  }
+  #main-contacts.screen-block .main-contacts-info li:last-of-type {
+    margin-bottom: 0;
+    display: block;
+  }
+  #main-contacts.screen-block #map {
+    bottom: 0;
+    width: 100%;
+    height: 43vh;
+    position: absolute;
+    visibility: hidden;
+    -webkit-animation: mainConatactsMapDown .5s linear;
+            animation: mainConatactsMapDown .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  #main-contacts.screen-block #map + .address {
+    display: none;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
+  #main-contacts.screen-block {
+    background-color: #fff;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #main-contacts.screen-block .logo, #main-contacts.screen-block .menu, #main-contacts.screen-block .small-gray-lines {
+    display: none;
+  }
+  #main-contacts.screen-block .main-contacts-title {
+    width: 95%;
+    padding: 7.5vh 0 6.6vh 4%;
+    background-color: #1c1c1c;
+  }
+  #main-contacts.screen-block .main-contacts-title p {
+    font-weight: 800;
+  }
+  #main-contacts.screen-block .main-contacts-title p:first-child {
+    color: #fff;
+    font-size: 4.13741vw;
+    text-transform: uppercase;
+  }
+  #main-contacts.screen-block .main-contacts-title p:last-child {
+    font-size: 2.99302vw;
+    padding-top: 1vh;
+    text-align: left;
+    color: #0057FF;
+  }
+  #main-contacts.screen-block .small-gray-lines {
+    z-index: -1;
+  }
+  #main-contacts.screen-block .small-gray-lines .line {
+    background-color: #EBEBEB;
+  }
+  #main-contacts.screen-block .main-contacts-info {
+    display: inherit;
+    margin: 4vh 0 0 2vh;
+  }
+  #main-contacts.screen-block .main-contacts-info li {
+    line-height: .9;
+    color: #444;
+    font-size: 2.28878vw;
+    margin-bottom: 4vh;
+  }
+  #main-contacts.screen-block .main-contacts-info li a {
+    color: #444;
+  }
+  #main-contacts.screen-block .main-contacts-info li:last-of-type {
+    margin-bottom: 0;
+    display: block;
+  }
+  #main-contacts.screen-block #map {
+    bottom: 0;
+    width: 100%;
+    height: 43vh;
+    position: absolute;
+    visibility: hidden;
+    -webkit-animation: mainConatactsMapDown .5s linear;
+            animation: mainConatactsMapDown .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  #main-contacts.screen-block #map + .address {
+    display: none;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) {
+  #main-contacts.screen-block {
+    background-color: #fff;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #main-contacts.screen-block .logo, #main-contacts.screen-block .menu, #main-contacts.screen-block .small-gray-lines {
+    display: none;
+  }
+  #main-contacts.screen-block .main-contacts-title {
+    width: 95%;
+    padding: 7.5vh 0 6.6vh 4%;
+    background-color: #1c1c1c;
+  }
+  #main-contacts.screen-block .main-contacts-title p {
+    font-weight: 800;
+  }
+  #main-contacts.screen-block .main-contacts-title p:first-child {
+    color: #fff;
+    font-size: 3.05989vw;
+    text-transform: uppercase;
+  }
+  #main-contacts.screen-block .main-contacts-title p:last-child {
+    font-size: 2.21354vw;
+    padding-top: 1vh;
+    text-align: left;
+    color: #0057FF;
+  }
+  #main-contacts.screen-block .small-gray-lines {
+    z-index: -1;
+  }
+  #main-contacts.screen-block .small-gray-lines .line {
+    background-color: #EBEBEB;
+  }
+  #main-contacts.screen-block .main-contacts-info {
+    display: inherit;
+    margin: 4vh 0 0 2vh;
+  }
+  #main-contacts.screen-block .main-contacts-info li {
+    line-height: .9;
+    color: #444;
+    font-size: 1.6927vw;
+    margin-bottom: 4vh;
+  }
+  #main-contacts.screen-block .main-contacts-info li a {
+    color: #444;
+  }
+  #main-contacts.screen-block .main-contacts-info li:last-of-type {
+    margin-bottom: 0;
+    display: block;
+  }
+  #main-contacts.screen-block #map {
+    bottom: 0;
+    width: 100%;
+    height: 43vh;
+    position: absolute;
+    visibility: hidden;
+    -webkit-animation: mainConatactsMapDown .5s linear;
+            animation: mainConatactsMapDown .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  #main-contacts.screen-block #map + .address {
+    display: none;
+  }
+  #main-contacts.screen-block .logo, #main-contacts.screen-block .menu, #main-contacts.screen-block .small-gray-lines {
+    display: block;
+  }
+  #main-contacts.screen-block .main-contacts-title {
+    padding: 4.5vh 10% 8vh 7%;
+    margin-top: 17vh;
+    width: 84%;
+  }
+  #main-contacts.screen-block .main-contacts-title p:first-child {
+    font-size: 6.11978vw;
+  }
+  #main-contacts.screen-block .main-contacts-title p:last-child {
+    font-size: 3.71093vw;
+    padding-top: .5vh;
+    text-align: right;
+  }
+  #main-contacts.screen-block .main-contacts-info {
+    position: absolute;
+    bottom: 4.5vh;
+    left: 5%;
+  }
+  #main-contacts.screen-block .main-contacts-info li {
+    margin-bottom: 3.5vh;
+  }
+  #main-contacts.screen-block .main-contacts-info li:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+  #main-contacts.screen-block .main-contacts-info li:last-of-type {
+    display: none;
+  }
+  #main-contacts.screen-block #map {
+    right: 0;
+    width: 68%;
+    height: 49vh;
+    bottom: 18vh;
+  }
+  #main-contacts.screen-block #map + .address {
+    top: 70vh;
+    left: 18%;
+    display: block;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  #main-contacts.screen-block #map + .address p {
+    color: #444;
+    font-size: 1.6927vw;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #main-contacts.screen-block {
+    background-color: #fff;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #main-contacts.screen-block .main-contacts-title {
+    top: 17vh;
+    position: absolute;
+    background-color: #1c1c1c;
+    padding: 6.5vh 9.5% 8.5vh 5.5%;
+  }
+  #main-contacts.screen-block .main-contacts-title p {
+    font-weight: 800;
+  }
+  #main-contacts.screen-block .main-contacts-title p:first-child {
+    color: #fff;
+    font-size: 5.76194vw;
+    text-transform: uppercase;
+  }
+  #main-contacts.screen-block .main-contacts-title p:last-child {
+    color: #0057FF;
+    font-size: 2.73448vw;
+    text-align: right;
+    padding-top: 2.5vh;
+  }
+  #main-contacts.screen-block .small-gray-lines {
+    z-index: -1;
+  }
+  #main-contacts.screen-block .small-gray-lines .line {
+    background-color: #EBEBEB;
+  }
+  #main-contacts.screen-block .main-contacts-info {
+    position: absolute;
+    bottom: 7vh;
+    left: 5.5%;
+  }
+  #main-contacts.screen-block .main-contacts-info li {
+    color: #444;
+    font-size: 1.26958vw;
+  }
+  #main-contacts.screen-block .main-contacts-info li a {
+    color: #444;
+  }
+  #main-contacts.screen-block .main-contacts-info li:first-of-type {
+    margin-bottom: 5vh;
+  }
+  #main-contacts.screen-block .main-contacts-info li:last-of-type {
+    display: none;
+  }
+  #main-contacts.screen-block #map {
+    width: 39%;
+    float: right;
+    height: 53vh;
+    visibility: hidden;
+    margin: 23vh 16% 0 0;
+    -webkit-animation: mainConatactsMapRight .5s linear;
+            animation: mainConatactsMapRight .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  #main-contacts.screen-block #map + .address {
+    top: 65vh;
+    right: 10%;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  #main-contacts.screen-block #map + .address p {
+    color: #444;
+    font-size: 1.26958vw;
+  }
+  #main-contacts.screen-block .main-contacts-title {
+    padding: 6.5vh 19.2vh 8.5vh 4.5vh;
+  }
+  #main-contacts.screen-block .main-contacts-title p:first-child {
+    font-size: 4.3947vw;
+  }
+  #main-contacts.screen-block #map {
+    margin: 23vh 5% 0 0;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  #main-contacts.screen-block {
+    background-color: #fff;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #main-contacts.screen-block .main-contacts-title {
+    top: 17vh;
+    position: absolute;
+    background-color: #1c1c1c;
+    padding: 6.5vh 9.5% 8.5vh 5.5%;
+  }
+  #main-contacts.screen-block .main-contacts-title p {
+    font-weight: 800;
+  }
+  #main-contacts.screen-block .main-contacts-title p:first-child {
+    color: #fff;
+    font-size: 4.3188vw;
+    text-transform: uppercase;
+  }
+  #main-contacts.screen-block .main-contacts-title p:last-child {
+    color: #0057FF;
+    font-size: 2.0496vw;
+    text-align: right;
+    padding-top: 2.5vh;
+  }
+  #main-contacts.screen-block .small-gray-lines {
+    z-index: -1;
+  }
+  #main-contacts.screen-block .small-gray-lines .line {
+    background-color: #EBEBEB;
+  }
+  #main-contacts.screen-block .main-contacts-info {
+    position: absolute;
+    bottom: 7vh;
+    left: 5.5%;
+  }
+  #main-contacts.screen-block .main-contacts-info li {
+    color: #444;
+    font-size: 0.9516vw;
+  }
+  #main-contacts.screen-block .main-contacts-info li a {
+    color: #444;
+  }
+  #main-contacts.screen-block .main-contacts-info li:first-of-type {
+    margin-bottom: 5vh;
+  }
+  #main-contacts.screen-block .main-contacts-info li:last-of-type {
+    display: none;
+  }
+  #main-contacts.screen-block #map {
+    width: 39%;
+    float: right;
+    height: 53vh;
+    visibility: hidden;
+    margin: 23vh 16% 0 0;
+    -webkit-animation: mainConatactsMapRight .5s linear;
+            animation: mainConatactsMapRight .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  #main-contacts.screen-block #map + .address {
+    top: 65vh;
+    right: 10%;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  #main-contacts.screen-block #map + .address p {
+    color: #444;
+    font-size: 0.9516vw;
+  }
+  #main-contacts.screen-block #map {
+    margin: 23vh 5% 0 0;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
+  #main-contacts.screen-block {
+    background-color: #fff;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #main-contacts.screen-block .main-contacts-title {
+    top: 17vh;
+    position: absolute;
+    background-color: #1c1c1c;
+    padding: 6.5vh 9.5% 8.5vh 5.5%;
+  }
+  #main-contacts.screen-block .main-contacts-title p {
+    font-weight: 800;
+  }
+  #main-contacts.screen-block .main-contacts-title p:first-child {
+    color: #fff;
+    font-size: 3.51168vw;
+    text-transform: uppercase;
+  }
+  #main-contacts.screen-block .main-contacts-title p:last-child {
+    color: #0057FF;
+    font-size: 1.66656vw;
+    text-align: right;
+    padding-top: 2.5vh;
+  }
+  #main-contacts.screen-block .small-gray-lines {
+    z-index: -1;
+  }
+  #main-contacts.screen-block .small-gray-lines .line {
+    background-color: #EBEBEB;
+  }
+  #main-contacts.screen-block .main-contacts-info {
+    position: absolute;
+    bottom: 7vh;
+    left: 5.5%;
+  }
+  #main-contacts.screen-block .main-contacts-info li {
+    color: #444;
+    font-size: 0.77376vw;
+  }
+  #main-contacts.screen-block .main-contacts-info li a {
+    color: #444;
+  }
+  #main-contacts.screen-block .main-contacts-info li:first-of-type {
+    margin-bottom: 5vh;
+  }
+  #main-contacts.screen-block .main-contacts-info li:last-of-type {
+    display: none;
+  }
+  #main-contacts.screen-block #map {
+    width: 39%;
+    float: right;
+    height: 53vh;
+    visibility: hidden;
+    margin: 23vh 16% 0 0;
+    -webkit-animation: mainConatactsMapRight .5s linear;
+            animation: mainConatactsMapRight .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  #main-contacts.screen-block #map + .address {
+    top: 65vh;
+    right: 10%;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  #main-contacts.screen-block #map + .address p {
+    color: #444;
+    font-size: 0.77376vw;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
+  #main-contacts.screen-block {
+    background-color: #fff;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #main-contacts.screen-block .main-contacts-title {
+    top: 17vh;
+    position: absolute;
+    background-color: #1c1c1c;
+    padding: 6.5vh 9.5% 8.5vh 5.5%;
+  }
+  #main-contacts.screen-block .main-contacts-title p {
+    font-weight: 800;
+  }
+  #main-contacts.screen-block .main-contacts-title p:first-child {
+    color: #fff;
+    font-size: 3.07272vw;
+    text-transform: uppercase;
+  }
+  #main-contacts.screen-block .main-contacts-title p:last-child {
+    color: #0057FF;
+    font-size: 1.45824vw;
+    text-align: right;
+    padding-top: 2.5vh;
+  }
+  #main-contacts.screen-block .small-gray-lines {
+    z-index: -1;
+  }
+  #main-contacts.screen-block .small-gray-lines .line {
+    background-color: #EBEBEB;
+  }
+  #main-contacts.screen-block .main-contacts-info {
+    position: absolute;
+    bottom: 7vh;
+    left: 5.5%;
+  }
+  #main-contacts.screen-block .main-contacts-info li {
+    color: #444;
+    font-size: 0.67704vw;
+  }
+  #main-contacts.screen-block .main-contacts-info li a {
+    color: #444;
+  }
+  #main-contacts.screen-block .main-contacts-info li:first-of-type {
+    margin-bottom: 5vh;
+  }
+  #main-contacts.screen-block .main-contacts-info li:last-of-type {
+    display: none;
+  }
+  #main-contacts.screen-block #map {
+    width: 39%;
+    float: right;
+    height: 53vh;
+    visibility: hidden;
+    margin: 23vh 16% 0 0;
+    -webkit-animation: mainConatactsMapRight .5s linear;
+            animation: mainConatactsMapRight .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  #main-contacts.screen-block #map + .address {
+    top: 65vh;
+    right: 10%;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  #main-contacts.screen-block #map + .address p {
+    color: #444;
+    font-size: 0.67704vw;
+  }
+}
+@media (min-width: 1921px) {
+  #main-contacts.screen-block {
+    background-color: #fff;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #main-contacts.screen-block .main-contacts-title {
+    top: 17vh;
+    position: absolute;
+    background-color: #1c1c1c;
+    padding: 6.5vh 9.5% 8.5vh 5.5%;
+  }
+  #main-contacts.screen-block .main-contacts-title p {
+    font-weight: 800;
+  }
+  #main-contacts.screen-block .main-contacts-title p:first-child {
+    color: #fff;
+    font-size: 2.30454vw;
+    text-transform: uppercase;
+  }
+  #main-contacts.screen-block .main-contacts-title p:last-child {
+    color: #0057FF;
+    font-size: 1.09368vw;
+    text-align: right;
+    padding-top: 2.5vh;
+  }
+  #main-contacts.screen-block .small-gray-lines {
+    z-index: -1;
+  }
+  #main-contacts.screen-block .small-gray-lines .line {
+    background-color: #EBEBEB;
+  }
+  #main-contacts.screen-block .main-contacts-info {
+    position: absolute;
+    bottom: 7vh;
+    left: 5.5%;
+  }
+  #main-contacts.screen-block .main-contacts-info li {
+    color: #444;
+    font-size: 0.50778vw;
+  }
+  #main-contacts.screen-block .main-contacts-info li a {
+    color: #444;
+  }
+  #main-contacts.screen-block .main-contacts-info li:first-of-type {
+    margin-bottom: 5vh;
+  }
+  #main-contacts.screen-block .main-contacts-info li:last-of-type {
+    display: none;
+  }
+  #main-contacts.screen-block #map {
+    width: 39%;
+    float: right;
+    height: 53vh;
+    visibility: hidden;
+    margin: 23vh 16% 0 0;
+    -webkit-animation: mainConatactsMapRight .5s linear;
+            animation: mainConatactsMapRight .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+  }
+  #main-contacts.screen-block #map + .address {
+    top: 65vh;
+    right: 10%;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  #main-contacts.screen-block #map + .address p {
+    color: #444;
+    font-size: 0.50778vw;
+  }
+  #main-contacts.screen-block .main-contacts-title {
+    padding: 6.5vh 9.5% 8.5vh 5.5%;
+  }
+  #main-contacts.screen-block #map + .address {
+    top: 65vh;
+    right: 11%;
   }
 }
 

@@ -4,8 +4,8 @@
     margin-left: 35vh;
     position: relative;
     &.dark {
-        span.name span, .word span, p { color: $dark !important; }
-        span.name:before { background: $dark !important; }
+        span.name span, .word span, p { color: $dark; }
+        span.name:before { background: $dark; }
     }
     p {
         font-weight: $medium;

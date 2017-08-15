@@ -314,6 +314,33 @@
     }
 }
 
+// MAIN CONTACTS MAP ANIMATION
+@keyframes mainConatactsMapRight {
+    0% {
+        opacity: 0;
+        visibility: visible;
+        transform: translateX(10vh);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+@keyframes mainConatactsMapDown {
+    0% {
+        opacity: 0;
+        visibility: visible;
+        transform: translateY(10vh);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+// MAIN CONTACTS MAP ENDS
+
 // shape under title
 @keyframes titleNameShape {
     0% { width: 0%; }
