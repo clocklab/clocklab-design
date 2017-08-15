@@ -3,10 +3,20 @@
     font-weight: $regular;
     z-index: 0;
     
+    // ----- bottom-button -----
+    .bottom-button span:before {
+        content: 'Все услуги';
+    }
+
+    // ----- service-one-info -----
+    .service-one-info {
+        display: none;
+    }
+    
     // ----- title -----
     .title {
         display: inherit;
-        margin-top: 23vh;
+        margin-top: 7vh;
         margin-left: 3vh;
         span.name {
             font-size: 2.1vh;
@@ -34,35 +44,9 @@
         }
     }
 
-    // ----- contacts -----
-    .contacts {
-        display: inherit;
-        margin: 9vh 0 0 12.5vh;
-        li {
-            color: $white;
-            font-size: 2vh;
-            margin-bottom: 5.5vh;
-            &:nth-of-type(3) a {
-                transition: $time;
-                padding-bottom: 4px;
-                border-bottom: 1px solid;
-                &:hover { border: none; }
-            }
-            a {
-                color: $white;
-                display: block;
-                font-size: 2.6vh;
-                margin-top: -.5vh;
-            }
-        }
-    }
+    // ----- logo -----
+    .logo { display: none; }
 
-    // ----- language -----
-    .language { top: 25vh; }
-
-    // ----- bg letter -----
-    .bg-letter { display: none; }
-
-    // ----- lines -----
-    .lines { display: none; }
+    // ----- bg clock -----
+    .bg-clock { display: none; }
 }
