@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     frontLayer.addEventListener('mousedown', event => {
         currentLeftPos = event.clientX
+        currentScrollLeft = frontLayer.scrollLeft
         frontLayer.style.cursor = '-webkit-grabbing'
 
         frontLayer.addEventListener('mousemove', moveObjects)

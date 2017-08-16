@@ -22,18 +22,21 @@
             z-index: 1;
             width: 100%;
             height: 100%;
+            text-shadow: px(4) px(4) px(4) $black;
 
             span {
+                width: 20%;
                 color: $lightBlack;
                 font-weight: 800;
-                font-size: 30vw;
+                font-size: 0;
                 line-height: 100vh;
                 text-align: center;
                 overflow-x: hidden;
 
                 &:before {
                     display: block;
-                    //animation: right $PPClockAnimationTime both;                    
+                    font-size: 30vw;
+                    animation: right $PPClockAnimationTime both;                    
                 }
 
                 &:nth-child(1) {
@@ -93,7 +96,7 @@
 
         .letter {
             position: absolute;
-            //animation: fadeIn $PPLettersAnimationTime $PPLettersDelayTime both;
+            animation: fadeIn $PPLettersAnimationTime $PPLettersDelayTime both;
 
             &-c {
                 top: px(280);
@@ -119,12 +122,12 @@
 
         &:before {
             left: 0;
-            //animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
+            animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
         }
 
         &:after {
             right: 0;
-            //animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
+            animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
         }
     }
 
@@ -145,55 +148,97 @@
             padding: px(270) px(300) px(280) px(250);
             width: 200vw;
             height: 100%;
+            min-height: 900px;
         }
 
         .portfolio-item {
-            // width: 40vw;
-            // height: 100%;
+            position: relative;
             color: $white;
-            font-size: 20px;
+
+            .image-container {
+                position: relative;
+                overflow: hidden;
+                font-size: 0;
+
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, .4);
+                    content: '';
+                    animation: Right $PPImageBgAnimationTime  $PPImageBgDelayTime both;
+                }
+            }
 
             img {
+                position: relative;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
                 object-fit: cover;
+                user-select: none;
+                animation: Right $PPImageAnimationTime  $PPImageDelayTime both;
             }
 
             &--audi {
-                margin-top: px(320);
+                margin: px(320) 0;
                 margin-right: px(170);
 
-                img {
-                    width: px(860);
-                    height: px(720);
+                .image-container {
+                    //width: px(860);
+                    width: 45vh;
+                    min-width: px(860);
+                    //height: px(720);
+                    height: 37.5vh;
+                    min-height: px(720)
                 }
 
-                span {
+                .new-title {
                     display: block;
-                    margin-top: px(40);
+                    position: absolute;
+                    margin-top: px(30);
                 }
             }
 
             &--alta-capital {
                 margin-left: px(60);
+                vertical-align: bottom;
                 
-                img {
-                    width: px(1000);
-                    height: px(600);
+                .image-container {
+                    display: inline-block;
+                    // width: px(1000);
+                    width: 52vh;
+                    min-width: px(1000);
+                    // height: px(600);
+                    height: 31.25vh;
+                    min-height: px(600);
                 }
 
-                span {
-                    margin-bottom: px(40);
+                .new-title {
+                    display: inline-block;
+                    bottom: px(40);
+                    left: px(20);
                 }
             }
 
             &--vino-grad {
                 
-                img {
-                    width: px(600);
-                    height: px(600);
+                .image-container {
+                    display: inline-block;
+                    // width: px(600);
+                    width: 31.25vh;
+                    min-width: px(600);
+                    // height: px(600);
+                    height: 31.25vh;
+                    min-height: px(600);
                 }
 
-                span {
-                    margin-bottom: px(60);
+                .new-title {
+                    display: inline-block;
+                    bottom: px(60);
+                    left: px(40);
                 }
             }
 
@@ -201,15 +246,48 @@
                 margin-top: px(90);
                 margin-left: px(160);
                 
-                img {
-                    width: px(600);
-                    height: px(1060);
+                .image-container {
+                    // width: px(600);
+                    width: 31.25vh;
+                    min-width: px(600);
+                    // height: px(1060);
+                    height: 55vh;
+                    min-height: px(1060);
                 }
 
-                span {
+                .new-title {
                     display: block;
+                    position: absolute;
                     margin-top: px(40);
                 }
+            }
+        }
+
+        .new-title {
+            position: relative;
+            padding: 0 px(16);
+            font-size: px(48);
+            font-weight: 700;
+            overflow: hidden;
+
+            span {
+                display: block;
+                position: relative;
+                z-index: 1;
+                line-height: px(60);
+                animation: Up $PPTitleTextAnimationTime $PPTitleTextDelayTime both;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: px(48);
+                background: $blue;
+                content: '';
+                animation: halfDown $PPTitleLineAnimationTime linear $PPTitleLineDelayTime both;
             }
         }
 
@@ -221,13 +299,20 @@
         .copyright,
         .behance {
             position: fixed;
+            z-index: 5;
+        }
+
+        .menu {
+            z-index: 9999;
+            animation: Down $PPMenuAnimationTime $PPMenuDelayTime both;
         }
 
         // ----- logo -----
         .logo {
-            z-index: 1;
-            top: px(60);
+            top: 0;
             left: px(100);
+            padding-top: px(60);
+            animation: Down $PPLogoAnimationTime $PPLogoDelayTime both;
 
            .image {
                 @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
@@ -242,83 +327,99 @@
 
         // ----- language -----
         .language {
-            position: absolute;
-            font-size: 1.34vh;
             bottom: 45vh;
-            z-index: 1;
-            left: 5vh;
-            div {
-                width: fit-content;
-                transform: rotate(-90deg);
-                &:nth-of-type(1) { margin-bottom: 3.5vh; }
-                &:nth-of-type(2) { margin-bottom: 2vh; }
-                a {
-                    &.select {
+            left: px(100);
+            font-size: 0;
+            transform-origin: 0 0;
+            transform: rotate(-90deg);
+            overflow: hidden;
+
+            a {
+                display: inline-block;
+                padding: 0 px(10);
+                color: $gray;
+                cursor: pointer;
+                font-size: px(28);
+                font-weight: $thin;
+                text-transform: uppercase;
+                animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+
+                &.select {
+                    color: $white;
+
+                    &::before {
+                        position: relative;
                         color: $white;
-                        &::before {
-                            position: absolute;
-                            color: $white;
-                            bottom: .15vh;
-                            right: 2.5vh;
-                            content: '—';
-                        }
+                        content: '—';
                     }
-                    color: $gray;
-                    cursor: pointer;
-                    font-weight: $thin;
-                    text-transform: uppercase;
-                    &:hover {
-                        color: $white;
-                        transition: $time;
-                    }
+                }
+                
+                &:hover {
+                    color: $white;
+                    transition: $time;
                 }
             }
         }
 
         // ----- social -----
         .social {
-            bottom: 5vh;
-            z-index: 1;
-            left: 5vh;
-            div {
-                z-index: 0;
-                padding: 5.75px;
+            bottom: px(90);
+            left: px(100);
+
+            a {
+                display: block;
+                position: relative;
+                width: px(60);
+                height: px(60);
                 border: 1px solid $white;
-                &:nth-of-type(1) {
-                    position: absolute;
-                    bottom: 29px;
-                    left: 0;
+                cursor: pointer;
+    
+                path {
+                    fill: $white;
                 }
-                &:nth-of-type(2) {
-                    position: absolute;
-                    left: 29px;
-                    bottom: 0;
-                }
-                &:hover::before {
-                    visibility: visible;
-                    opacity: 1;
-                    right: 5px;
-                    top: 5px;
-                }
+    
                 &:before {
-                    top: 25px;
-                    opacity: 0;
-                    z-index: -1;
-                    content: '';
-                    right: 25px;
+                    display: block;
+                    position: absolute;
+                    top: px(13);
+                    right: px(13);
                     width: 100%;
                     height: 100%;
                     background: $blue;
-                    position: absolute;
-                    visibility: hidden;
-                    transition: opacity .3s, top .3s, right .3s;
+                    content: '';
+                    opacity: 0;
+                    transition: top $time, right $time, opacity $time;
                 }
-            }
-            a {
-                @include inline-block;
-                background-repeat: no-repeat;
-                // &[href*="linkedin"] { @include sprite(linkedin, social); }
-                // &[href*="facebook"] { @include sprite(facebook, social); }
+    
+                &:hover {
+    
+                    &:before {
+                        top: px(5);
+                        right: px(5);
+                        opacity: 1;
+                    }
+                }
+    
+                &:first-child {
+                    transform-origin: 100% 100%;
+                    //animation: social $PPSocialAnimationTime $PPSocialDelayTime both;
+    
+                    svg {
+                        height: 60%;
+                        transform: translate3d(33%, 33%, 0);
+                    }
+                }
+    
+                &:last-child {
+                    transform-origin: 0 0;
+                    transform: translate3d(px(58), px(-2), 0);
+                    animation: socialReversed $PPSocialAnimationTime $PPSocialDelayTime both;
+    
+                    svg {
+                        height: 50%;
+                        transform: translate3d(50%, 50%, 0);
+                    }
+                }
             }
         }
 
@@ -367,34 +468,41 @@
 
         // ----- behance -----
         .behance {
-            bottom: 5vh;
-            left: 23vh;
-            z-index: 1;
-            padding: 0;
-            margin: 0;
+            bottom: px(90);
+            left: px(440);
+            overflow: hidden;
+
             a {
-                &:before {
-                    top: 56%;
-                    left: -1px;
-                    background: $white;
-                }
+                animation: Right $PPBehanceAnimationTime $PPBehancelDelayTime both;
+
                 span {
                     color: $white;
+                    font-size: px(24);
                     font-weight: $thin;
-                    font-size: 1.3vh;
+                }
+
+                &:before {
+                    top: 50%;
+                    left: -1px;
+                    background: $white;
                 }
             }
         }
 
         // ----- copyright -----
         .copyright {
+            right: px(60);
+            bottom: 39vh;
+            font-size: px(24);
+            overflow: hidden;
+            transform-origin: 100% 0;
             transform: rotate(-90deg);
-            font-size: 1.34vh;
-            right: -8.5vh;
-            bottom: 29vh;
+
             p {
+                padding-bottom: px(4);
                 color: $white;
                 font-weight: $thin;
+                animation: Up $PPCopyAnimationTime $PPCopyDelayTime both;
             }
         }
 

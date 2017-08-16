@@ -17,7 +17,7 @@
 
 
 // menu
-
+//= components/menu.js
 
 // alta
 

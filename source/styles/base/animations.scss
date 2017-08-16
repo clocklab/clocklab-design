@@ -410,12 +410,51 @@
     }
 }
 
+@keyframes Right {
+    from {
+        transform: translateX(-101%);
+    }
+    to {
+        transform: none;
+    }
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes halfDown {
+    from {
+        transform: translate3d(-100%, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 50%, 0);
+    }
+}
+
+@keyframes social {
+    from {
+        transform: rotateX(-90deg) rotateY(-90deg) perspective(300px);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes socialReversed {
+    from {
+        transform: rotateX(-90deg) rotateY(-90deg) perspective(300px) translate3d(px(58), px(-2), 0);
+    }
+    to {
+        transform: translate3d(px(58), px(-2), 0);
     }
 }
 // portfolio end
