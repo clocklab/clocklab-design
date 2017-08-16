@@ -69,7 +69,7 @@
             white-space: nowrap;
             font-weight: $extra-bold;
             text-transform: uppercase;
-            animation: titleWord linear;
+            animation: titleWord .5s .5s linear;
             animation-fill-mode: forwards;
             overflow: hidden;
         }

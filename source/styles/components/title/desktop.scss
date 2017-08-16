@@ -48,7 +48,7 @@
         display: inherit;
         &:after {
             background-color: $blue;
-            animation: titleWordShape 2s linear;
+            animation: titleWordShape 2s .5s linear;
             animation-fill-mode: forwards;
             animation-duration: .5s;
             position: absolute;
@@ -60,9 +60,9 @@
             left: 0;
         }
         span {
-            bottom: -97px;
             width: 100%;
             color: $white;
+            bottom: -97px;
             display: block;
             font-size: px(120);
             position: relative;

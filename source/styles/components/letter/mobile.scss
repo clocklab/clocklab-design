@@ -1,11 +1,14 @@
 & {  
-    
-    position: absolute;
-    bottom: -25vh;
     right: -25vh;
-    color: rgba(0, 0, 0, .02);
+    bottom: -25vh;
     font-size: 80vh;
     font-weight: 700;
     user-select: none;
+    position: absolute;
+    color: rgba(68,68,68,.05);
     animation: letterApear $portfolioEuroclubLetterAnimationTime $portfolioEuroclubLetterDelayTime both;
+	@keyframes letterApear {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
 }

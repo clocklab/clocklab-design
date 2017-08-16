@@ -3192,8 +3192,8 @@ html body .wrapper .screen-block {
     white-space: nowrap;
     font-weight: 800;
     text-transform: uppercase;
-    -webkit-animation: titleWord linear;
-            animation: titleWord linear;
+    -webkit-animation: titleWord .5s .5s linear;
+            animation: titleWord .5s .5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     overflow: hidden;
@@ -3284,8 +3284,8 @@ html body .wrapper .screen-block {
     white-space: nowrap;
     font-weight: 800;
     text-transform: uppercase;
-    -webkit-animation: titleWord linear;
-            animation: titleWord linear;
+    -webkit-animation: titleWord .5s .5s linear;
+            animation: titleWord .5s .5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     overflow: hidden;
@@ -3376,8 +3376,8 @@ html body .wrapper .screen-block {
     white-space: nowrap;
     font-weight: 800;
     text-transform: uppercase;
-    -webkit-animation: titleWord linear;
-            animation: titleWord linear;
+    -webkit-animation: titleWord .5s .5s linear;
+            animation: titleWord .5s .5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     overflow: hidden;
@@ -3444,8 +3444,8 @@ html body .wrapper .screen-block {
   }
   .title .word:after {
     background-color: #0057FF;
-    -webkit-animation: titleWordShape 2s linear;
-            animation: titleWordShape 2s linear;
+    -webkit-animation: titleWordShape 2s .5s linear;
+            animation: titleWordShape 2s .5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-duration: .5s;
@@ -3459,9 +3459,9 @@ html body .wrapper .screen-block {
     left: 0;
   }
   .title .word span {
-    bottom: -97px;
     width: 100%;
     color: #FFF;
+    bottom: -97px;
     display: block;
     font-size: 5.8596vw;
     position: relative;
@@ -3536,8 +3536,8 @@ html body .wrapper .screen-block {
   }
   .title .word:after {
     background-color: #0057FF;
-    -webkit-animation: titleWordShape 2s linear;
-            animation: titleWordShape 2s linear;
+    -webkit-animation: titleWordShape 2s .5s linear;
+            animation: titleWordShape 2s .5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-duration: .5s;
@@ -3551,9 +3551,9 @@ html body .wrapper .screen-block {
     left: 0;
   }
   .title .word span {
-    bottom: -97px;
     width: 100%;
     color: #FFF;
+    bottom: -97px;
     display: block;
     font-size: 4.392vw;
     position: relative;
@@ -3628,8 +3628,8 @@ html body .wrapper .screen-block {
   }
   .title .word:after {
     background-color: #0057FF;
-    -webkit-animation: titleWordShape 2s linear;
-            animation: titleWordShape 2s linear;
+    -webkit-animation: titleWordShape 2s .5s linear;
+            animation: titleWordShape 2s .5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-duration: .5s;
@@ -3643,9 +3643,9 @@ html body .wrapper .screen-block {
     left: 0;
   }
   .title .word span {
-    bottom: -97px;
     width: 100%;
     color: #FFF;
+    bottom: -97px;
     display: block;
     font-size: 3.5712vw;
     position: relative;
@@ -3720,8 +3720,8 @@ html body .wrapper .screen-block {
   }
   .title .word:after {
     background-color: #0057FF;
-    -webkit-animation: titleWordShape 2s linear;
-            animation: titleWordShape 2s linear;
+    -webkit-animation: titleWordShape 2s .5s linear;
+            animation: titleWordShape 2s .5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-duration: .5s;
@@ -3735,9 +3735,9 @@ html body .wrapper .screen-block {
     left: 0;
   }
   .title .word span {
-    bottom: -97px;
     width: 100%;
     color: #FFF;
+    bottom: -97px;
     display: block;
     font-size: 3.1248vw;
     position: relative;
@@ -3812,8 +3812,8 @@ html body .wrapper .screen-block {
   }
   .title .word:after {
     background-color: #0057FF;
-    -webkit-animation: titleWordShape 2s linear;
-            animation: titleWordShape 2s linear;
+    -webkit-animation: titleWordShape 2s .5s linear;
+            animation: titleWordShape 2s .5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-duration: .5s;
@@ -3827,9 +3827,9 @@ html body .wrapper .screen-block {
     left: 0;
   }
   .title .word span {
-    bottom: -97px;
     width: 100%;
     color: #FFF;
+    bottom: -97px;
     display: block;
     font-size: 2.3436vw;
     position: relative;
@@ -5320,124 +5320,220 @@ html body .wrapper .screen-block {
 
 @media (max-width: 414px) {
   .letter {
-    position: absolute;
-    bottom: -25vh;
     right: -25vh;
-    color: rgba(0, 0, 0, 0.02);
+    bottom: -25vh;
     font-size: 80vh;
     font-weight: 700;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    position: absolute;
+    color: rgba(68, 68, 68, 0.05);
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
+  }
+  @-webkit-keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 415px) and (max-width: 667px) {
   .letter {
-    position: absolute;
-    bottom: -25vh;
     right: -25vh;
-    color: rgba(0, 0, 0, 0.02);
+    bottom: -25vh;
     font-size: 80vh;
     font-weight: 700;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    position: absolute;
+    color: rgba(68, 68, 68, 0.05);
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
+  }
+  @-webkit-keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 668px) and (max-width: 768px) {
   .letter {
-    position: absolute;
-    bottom: -25vh;
     right: -25vh;
-    color: rgba(0, 0, 0, 0.02);
+    bottom: -25vh;
     font-size: 80vh;
     font-weight: 700;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    position: absolute;
+    color: rgba(68, 68, 68, 0.05);
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
+  }
+  @-webkit-keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .letter {
-    position: absolute;
     top: -60vh;
     right: -10vh;
-    color: rgba(0, 0, 0, 0.02);
     font-size: 170vh;
     font-weight: 700;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    position: absolute;
+    color: rgba(68, 68, 68, 0.05);
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+  }
+  @-webkit-keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
   .letter {
-    position: absolute;
     top: -60vh;
     right: -10vh;
-    color: rgba(0, 0, 0, 0.02);
     font-size: 170vh;
     font-weight: 700;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    position: absolute;
+    color: rgba(68, 68, 68, 0.05);
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+  }
+  @-webkit-keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
   .letter {
-    position: absolute;
     top: -60vh;
     right: -10vh;
-    color: rgba(0, 0, 0, 0.02);
     font-size: 170vh;
     font-weight: 700;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    position: absolute;
+    color: rgba(68, 68, 68, 0.05);
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+  }
+  @-webkit-keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
   .letter {
-    position: absolute;
     top: -60vh;
     right: -10vh;
-    color: rgba(0, 0, 0, 0.02);
     font-size: 170vh;
     font-weight: 700;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    position: absolute;
+    color: rgba(68, 68, 68, 0.05);
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
@@ -5445,25 +5541,57 @@ html body .wrapper .screen-block {
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
   }
+  @-webkit-keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
 @media (min-width: 1921px) {
   .letter {
-    position: absolute;
     top: -60vh;
     right: -10vh;
-    color: rgba(0, 0, 0, 0.02);
     font-size: 170vh;
     font-weight: 700;
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
             user-select: none;
+    position: absolute;
+    color: rgba(68, 68, 68, 0.05);
     -webkit-animation: letterApear 0.9s 3.6s both;
             animation: letterApear 0.9s 3.6s both;
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
     transition: transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1), -webkit-transform 0.3s cubic-bezier(0.05, 0.71, 0.48, 1);
+  }
+  @-webkit-keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes letterApear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 
@@ -6452,6 +6580,7 @@ html body .wrapper .screen-block {
     background-color: #FFF;
     font-family: Raleway;
     font-weight: 400;
+    overflow: hidden;
     z-index: 0;
   }
   #main-contacts.screen-block .logo, #main-contacts.screen-block .menu, #main-contacts.screen-block .small-gray-lines {
@@ -6521,6 +6650,7 @@ html body .wrapper .screen-block {
     background-color: #FFF;
     font-family: Raleway;
     font-weight: 400;
+    overflow: hidden;
     z-index: 0;
   }
   #main-contacts.screen-block .logo, #main-contacts.screen-block .menu, #main-contacts.screen-block .small-gray-lines {
@@ -6590,6 +6720,7 @@ html body .wrapper .screen-block {
     background-color: #FFF;
     font-family: Raleway;
     font-weight: 400;
+    overflow: hidden;
     z-index: 0;
   }
   #main-contacts.screen-block .logo, #main-contacts.screen-block .menu, #main-contacts.screen-block .small-gray-lines {
@@ -6707,6 +6838,7 @@ html body .wrapper .screen-block {
     background-color: #FFF;
     font-family: Raleway;
     font-weight: 400;
+    overflow: hidden;
     z-index: 0;
   }
   #main-contacts.screen-block .main-contacts-title {
@@ -6792,6 +6924,7 @@ html body .wrapper .screen-block {
     background-color: #FFF;
     font-family: Raleway;
     font-weight: 400;
+    overflow: hidden;
     z-index: 0;
   }
   #main-contacts.screen-block .main-contacts-title {
@@ -6871,6 +7004,7 @@ html body .wrapper .screen-block {
     background-color: #FFF;
     font-family: Raleway;
     font-weight: 400;
+    overflow: hidden;
     z-index: 0;
   }
   #main-contacts.screen-block .main-contacts-title {
@@ -6947,6 +7081,7 @@ html body .wrapper .screen-block {
     background-color: #FFF;
     font-family: Raleway;
     font-weight: 400;
+    overflow: hidden;
     z-index: 0;
   }
   #main-contacts.screen-block .main-contacts-title {
@@ -7023,6 +7158,7 @@ html body .wrapper .screen-block {
     background-color: #FFF;
     font-family: Raleway;
     font-weight: 400;
+    overflow: hidden;
     z-index: 0;
   }
   #main-contacts.screen-block .main-contacts-title {
@@ -18608,22 +18744,6 @@ html body .wrapper .screen-block {
       height: 100vh;
     }
   }
-  @-webkit-keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
   .euro-club .blue-line {
     position: absolute;
     top: 0;
@@ -18781,22 +18901,6 @@ html body .wrapper .screen-block {
       height: 100vh;
     }
   }
-  @-webkit-keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
   .euro-club .blue-line {
     position: absolute;
     top: 0;
@@ -18952,22 +19056,6 @@ html body .wrapper .screen-block {
     }
     to {
       height: 100vh;
-    }
-  }
-  @-webkit-keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
     }
   }
   .euro-club .blue-line {
@@ -19129,22 +19217,6 @@ html body .wrapper .screen-block {
     }
     to {
       height: 100vh;
-    }
-  }
-  @-webkit-keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
     }
   }
   .euro-club .blue-line {
@@ -19346,22 +19418,6 @@ html body .wrapper .screen-block {
       height: 100vh;
     }
   }
-  @-webkit-keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
   .euro-club .blue-line {
     position: absolute;
     top: 0;
@@ -19559,22 +19615,6 @@ html body .wrapper .screen-block {
     }
     to {
       height: 100vh;
-    }
-  }
-  @-webkit-keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
     }
   }
   .euro-club .blue-line {
@@ -19776,22 +19816,6 @@ html body .wrapper .screen-block {
       height: 100vh;
     }
   }
-  @-webkit-keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
   .euro-club .blue-line {
     position: absolute;
     top: 0;
@@ -19989,22 +20013,6 @@ html body .wrapper .screen-block {
     }
     to {
       height: 100vh;
-    }
-  }
-  @-webkit-keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  @keyframes letterApear {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
     }
   }
   .euro-club .blue-line {

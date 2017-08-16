@@ -19,5 +19,8 @@
 // alta
 //= components/alta.js
 
+// letter
+//= components/letter.js
+
 // button-freaky
 //= components/button-freaky.js
