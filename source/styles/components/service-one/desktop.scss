@@ -4,9 +4,10 @@
     z-index: 0;
     
     // ----- bottom-button -----
-    .bottom-button span:before {
-        content: 'Все услуги';
-    }
+    .bottom-button span:before { content: 'Все услуги'; }
+
+    // ----- title -----
+    .title { margin: 21vh 0 0 40vh; }
 
     // ----- service-one-info -----
     .service-one-info {
@@ -31,23 +32,6 @@
             }
             &.one { top: 40vh; }
             &.two { top: 72vh; }
-        }
-    }
-    
-    // ----- title -----
-    .title {
-        width: 75vh;
-        display: inherit;
-        margin-top: 21vh;
-        margin-left: 40vh;
-        span.name { top: -4vh; }
-        .animation-border { top: 3.5vh; }
-        .word {
-            height: 6.2vh;
-            span {
-                bottom: -97px;
-                font-size: 6.3vh;
-            }
         }
     }
 }

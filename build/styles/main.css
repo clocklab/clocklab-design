@@ -880,82 +880,66 @@ html body .wrapper .screen-block {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    opacity: 1;
-    height: 0;
   }
   25% {
     -webkit-transform: translateY(-25px);
             transform: translateY(-25px);
-    height: 25px;
-    opacity: 1;
   }
   50% {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
-    height: 50px;
-    opacity: 1;
   }
   75% {
     -webkit-transform: translateY(-75px);
             transform: translateY(-75px);
-    height: 75px;
-    opacity: 1;
   }
   100% {
     -webkit-transform: translateY(-100px);
             transform: translateY(-100px);
-    height: 100px;
-    opacity: 1;
   }
 }
 @keyframes titleWord {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    opacity: 1;
-    height: 0;
   }
   25% {
     -webkit-transform: translateY(-25px);
             transform: translateY(-25px);
-    height: 25px;
-    opacity: 1;
   }
   50% {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
-    height: 50px;
-    opacity: 1;
   }
   75% {
     -webkit-transform: translateY(-75px);
             transform: translateY(-75px);
-    height: 75px;
-    opacity: 1;
   }
   100% {
     -webkit-transform: translateY(-100px);
             transform: translateY(-100px);
-    height: 100px;
-    opacity: 1;
   }
 }
 @-webkit-keyframes titleWordShape {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    height: 36px;
-    width: 10%;
+    visibility: visible;
+    height: 30px;
+    width: 0%;
   }
   50% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    height: 36px;
+    visibility: visible;
+    height: 30px;
     width: 50%;
   }
   100% {
-    -webkit-transform: translateY(2vh);
-            transform: translateY(2vh);
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    visibility: visible;
+    height: 15px;
     width: 100%;
   }
 }
@@ -963,18 +947,22 @@ html body .wrapper .screen-block {
   0% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    height: 36px;
-    width: 10%;
+    visibility: visible;
+    height: 30px;
+    width: 0%;
   }
   50% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    height: 36px;
+    visibility: visible;
+    height: 30px;
     width: 50%;
   }
   100% {
-    -webkit-transform: translateY(2vh);
-            transform: translateY(2vh);
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    visibility: visible;
+    height: 15px;
     width: 100%;
   }
 }
@@ -3387,8 +3375,6 @@ html body .wrapper .screen-block {
   .title {
     z-index: 3;
     display: inherit;
-    margin-top: 20vh;
-    margin-left: 35vh;
     position: relative;
     width: -webkit-min-content;
     width: -moz-min-content;
@@ -3399,13 +3385,6 @@ html body .wrapper .screen-block {
   }
   .title.dark span.name:before {
     background: #333333;
-  }
-  .title p {
-    font-weight: 500;
-    font-size: 1.36724vw;
-    line-height: 1.5;
-    padding: 0 1vh;
-    color: #FFF;
   }
   .title span.name {
     text-transform: uppercase;
@@ -3442,6 +3421,21 @@ html body .wrapper .screen-block {
     overflow: hidden;
     display: inherit;
   }
+  .title .word:nth-of-type(1) {
+    margin-bottom: 5px;
+  }
+  .title .word:nth-of-type(1) span {
+    -webkit-animation: titleWord 1s .5s linear;
+            animation: titleWord 1s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .title .word:nth-of-type(2) span {
+    -webkit-animation: titleWord 1s 1s linear;
+            animation: titleWord 1s 1s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
   .title .word:after {
     background-color: #0057FF;
     -webkit-animation: titleWordShape 2s .5s linear;
@@ -3450,37 +3444,39 @@ html body .wrapper .screen-block {
             animation-fill-mode: forwards;
     -webkit-animation-duration: .5s;
             animation-duration: .5s;
+    visibility: hidden;
     position: absolute;
-    height: 18px;
+    height: 15px;
     content: '';
     z-index: -1;
     width: 100%;
-    top: 15px;
+    top: 27px;
     left: 0;
   }
   .title .word span {
     width: 100%;
     color: #FFF;
-    bottom: -97px;
+    bottom: -100px;
     display: block;
     font-size: 5.8596vw;
     position: relative;
     white-space: nowrap;
     font-weight: 800;
     text-transform: uppercase;
-    -webkit-animation: titleWord linear;
-            animation: titleWord linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     overflow: hidden;
+  }
+  .title p {
+    font-weight: 500;
+    padding: 5% 1vh 0;
+    font-size: 1.36724vw;
+    line-height: 1.5;
+    color: #FFF;
   }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
   .title {
     z-index: 3;
     display: inherit;
-    margin-top: 20vh;
-    margin-left: 35vh;
     position: relative;
     width: -webkit-min-content;
     width: -moz-min-content;
@@ -3491,13 +3487,6 @@ html body .wrapper .screen-block {
   }
   .title.dark span.name:before {
     background: #333333;
-  }
-  .title p {
-    font-weight: 500;
-    font-size: 1.0248vw;
-    line-height: 1.5;
-    padding: 0 1vh;
-    color: #FFF;
   }
   .title span.name {
     text-transform: uppercase;
@@ -3534,6 +3523,21 @@ html body .wrapper .screen-block {
     overflow: hidden;
     display: inherit;
   }
+  .title .word:nth-of-type(1) {
+    margin-bottom: 5px;
+  }
+  .title .word:nth-of-type(1) span {
+    -webkit-animation: titleWord 1s .5s linear;
+            animation: titleWord 1s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .title .word:nth-of-type(2) span {
+    -webkit-animation: titleWord 1s 1s linear;
+            animation: titleWord 1s 1s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
   .title .word:after {
     background-color: #0057FF;
     -webkit-animation: titleWordShape 2s .5s linear;
@@ -3542,37 +3546,39 @@ html body .wrapper .screen-block {
             animation-fill-mode: forwards;
     -webkit-animation-duration: .5s;
             animation-duration: .5s;
+    visibility: hidden;
     position: absolute;
-    height: 18px;
+    height: 15px;
     content: '';
     z-index: -1;
     width: 100%;
-    top: 15px;
+    top: 27px;
     left: 0;
   }
   .title .word span {
     width: 100%;
     color: #FFF;
-    bottom: -97px;
+    bottom: -100px;
     display: block;
     font-size: 4.392vw;
     position: relative;
     white-space: nowrap;
     font-weight: 800;
     text-transform: uppercase;
-    -webkit-animation: titleWord linear;
-            animation: titleWord linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     overflow: hidden;
+  }
+  .title p {
+    font-weight: 500;
+    padding: 5% 1vh 0;
+    font-size: 1.0248vw;
+    line-height: 1.5;
+    color: #FFF;
   }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
   .title {
     z-index: 3;
     display: inherit;
-    margin-top: 20vh;
-    margin-left: 35vh;
     position: relative;
     width: -webkit-min-content;
     width: -moz-min-content;
@@ -3583,13 +3589,6 @@ html body .wrapper .screen-block {
   }
   .title.dark span.name:before {
     background: #333333;
-  }
-  .title p {
-    font-weight: 500;
-    font-size: 0.83328vw;
-    line-height: 1.5;
-    padding: 0 1vh;
-    color: #FFF;
   }
   .title span.name {
     text-transform: uppercase;
@@ -3626,6 +3625,21 @@ html body .wrapper .screen-block {
     overflow: hidden;
     display: inherit;
   }
+  .title .word:nth-of-type(1) {
+    margin-bottom: 5px;
+  }
+  .title .word:nth-of-type(1) span {
+    -webkit-animation: titleWord 1s .5s linear;
+            animation: titleWord 1s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .title .word:nth-of-type(2) span {
+    -webkit-animation: titleWord 1s 1s linear;
+            animation: titleWord 1s 1s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
   .title .word:after {
     background-color: #0057FF;
     -webkit-animation: titleWordShape 2s .5s linear;
@@ -3634,37 +3648,39 @@ html body .wrapper .screen-block {
             animation-fill-mode: forwards;
     -webkit-animation-duration: .5s;
             animation-duration: .5s;
+    visibility: hidden;
     position: absolute;
-    height: 18px;
+    height: 15px;
     content: '';
     z-index: -1;
     width: 100%;
-    top: 15px;
+    top: 27px;
     left: 0;
   }
   .title .word span {
     width: 100%;
     color: #FFF;
-    bottom: -97px;
+    bottom: -100px;
     display: block;
     font-size: 3.5712vw;
     position: relative;
     white-space: nowrap;
     font-weight: 800;
     text-transform: uppercase;
-    -webkit-animation: titleWord linear;
-            animation: titleWord linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     overflow: hidden;
+  }
+  .title p {
+    font-weight: 500;
+    padding: 5% 1vh 0;
+    font-size: 0.83328vw;
+    line-height: 1.5;
+    color: #FFF;
   }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
   .title {
     z-index: 3;
     display: inherit;
-    margin-top: 20vh;
-    margin-left: 35vh;
     position: relative;
     width: -webkit-min-content;
     width: -moz-min-content;
@@ -3675,13 +3691,6 @@ html body .wrapper .screen-block {
   }
   .title.dark span.name:before {
     background: #333333;
-  }
-  .title p {
-    font-weight: 500;
-    font-size: 0.72912vw;
-    line-height: 1.5;
-    padding: 0 1vh;
-    color: #FFF;
   }
   .title span.name {
     text-transform: uppercase;
@@ -3718,6 +3727,21 @@ html body .wrapper .screen-block {
     overflow: hidden;
     display: inherit;
   }
+  .title .word:nth-of-type(1) {
+    margin-bottom: 5px;
+  }
+  .title .word:nth-of-type(1) span {
+    -webkit-animation: titleWord 1s .5s linear;
+            animation: titleWord 1s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .title .word:nth-of-type(2) span {
+    -webkit-animation: titleWord 1s 1s linear;
+            animation: titleWord 1s 1s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
   .title .word:after {
     background-color: #0057FF;
     -webkit-animation: titleWordShape 2s .5s linear;
@@ -3726,37 +3750,39 @@ html body .wrapper .screen-block {
             animation-fill-mode: forwards;
     -webkit-animation-duration: .5s;
             animation-duration: .5s;
+    visibility: hidden;
     position: absolute;
-    height: 18px;
+    height: 15px;
     content: '';
     z-index: -1;
     width: 100%;
-    top: 15px;
+    top: 27px;
     left: 0;
   }
   .title .word span {
     width: 100%;
     color: #FFF;
-    bottom: -97px;
+    bottom: -100px;
     display: block;
     font-size: 3.1248vw;
     position: relative;
     white-space: nowrap;
     font-weight: 800;
     text-transform: uppercase;
-    -webkit-animation: titleWord linear;
-            animation: titleWord linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     overflow: hidden;
+  }
+  .title p {
+    font-weight: 500;
+    padding: 5% 1vh 0;
+    font-size: 0.72912vw;
+    line-height: 1.5;
+    color: #FFF;
   }
 }
 @media (min-width: 1921px) {
   .title {
     z-index: 3;
     display: inherit;
-    margin-top: 20vh;
-    margin-left: 35vh;
     position: relative;
     width: -webkit-min-content;
     width: -moz-min-content;
@@ -3767,13 +3793,6 @@ html body .wrapper .screen-block {
   }
   .title.dark span.name:before {
     background: #333333;
-  }
-  .title p {
-    font-weight: 500;
-    font-size: 0.54684vw;
-    line-height: 1.5;
-    padding: 0 1vh;
-    color: #FFF;
   }
   .title span.name {
     text-transform: uppercase;
@@ -3810,6 +3829,21 @@ html body .wrapper .screen-block {
     overflow: hidden;
     display: inherit;
   }
+  .title .word:nth-of-type(1) {
+    margin-bottom: 5px;
+  }
+  .title .word:nth-of-type(1) span {
+    -webkit-animation: titleWord 1s .5s linear;
+            animation: titleWord 1s .5s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .title .word:nth-of-type(2) span {
+    -webkit-animation: titleWord 1s 1s linear;
+            animation: titleWord 1s 1s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
   .title .word:after {
     background-color: #0057FF;
     -webkit-animation: titleWordShape 2s .5s linear;
@@ -3818,29 +3852,33 @@ html body .wrapper .screen-block {
             animation-fill-mode: forwards;
     -webkit-animation-duration: .5s;
             animation-duration: .5s;
+    visibility: hidden;
     position: absolute;
-    height: 18px;
+    height: 15px;
     content: '';
     z-index: -1;
     width: 100%;
-    top: 15px;
+    top: 27px;
     left: 0;
   }
   .title .word span {
     width: 100%;
     color: #FFF;
-    bottom: -97px;
+    bottom: -100px;
     display: block;
     font-size: 2.3436vw;
     position: relative;
     white-space: nowrap;
     font-weight: 800;
     text-transform: uppercase;
-    -webkit-animation: titleWord linear;
-            animation: titleWord linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
     overflow: hidden;
+  }
+  .title p {
+    font-weight: 500;
+    padding: 5% 1vh 0;
+    font-size: 0.54684vw;
+    line-height: 1.5;
+    color: #FFF;
   }
 }
 
@@ -6282,6 +6320,9 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
+  }
+  #service-one.screen-block .title {
+    margin: 21vh 0 0 40vh;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -6314,25 +6355,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .service-one-info.vertical.two {
     top: 72vh;
   }
-  #service-one.screen-block .title {
-    width: 75vh;
-    display: inherit;
-    margin-top: 21vh;
-    margin-left: 40vh;
-  }
-  #service-one.screen-block .title span.name {
-    top: -4vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    top: 3.5vh;
-  }
-  #service-one.screen-block .title .word {
-    height: 6.2vh;
-  }
-  #service-one.screen-block .title .word span {
-    bottom: -97px;
-    font-size: 6.3vh;
-  }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
   #service-one.screen-block {
@@ -6342,6 +6364,9 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
+  }
+  #service-one.screen-block .title {
+    margin: 21vh 0 0 40vh;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -6374,25 +6399,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .service-one-info.vertical.two {
     top: 72vh;
   }
-  #service-one.screen-block .title {
-    width: 75vh;
-    display: inherit;
-    margin-top: 21vh;
-    margin-left: 40vh;
-  }
-  #service-one.screen-block .title span.name {
-    top: -4vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    top: 3.5vh;
-  }
-  #service-one.screen-block .title .word {
-    height: 6.2vh;
-  }
-  #service-one.screen-block .title .word span {
-    bottom: -97px;
-    font-size: 6.3vh;
-  }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
   #service-one.screen-block {
@@ -6402,6 +6408,9 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
+  }
+  #service-one.screen-block .title {
+    margin: 21vh 0 0 40vh;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -6434,25 +6443,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .service-one-info.vertical.two {
     top: 72vh;
   }
-  #service-one.screen-block .title {
-    width: 75vh;
-    display: inherit;
-    margin-top: 21vh;
-    margin-left: 40vh;
-  }
-  #service-one.screen-block .title span.name {
-    top: -4vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    top: 3.5vh;
-  }
-  #service-one.screen-block .title .word {
-    height: 6.2vh;
-  }
-  #service-one.screen-block .title .word span {
-    bottom: -97px;
-    font-size: 6.3vh;
-  }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
   #service-one.screen-block {
@@ -6462,6 +6452,9 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
+  }
+  #service-one.screen-block .title {
+    margin: 21vh 0 0 40vh;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -6494,25 +6487,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .service-one-info.vertical.two {
     top: 72vh;
   }
-  #service-one.screen-block .title {
-    width: 75vh;
-    display: inherit;
-    margin-top: 21vh;
-    margin-left: 40vh;
-  }
-  #service-one.screen-block .title span.name {
-    top: -4vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    top: 3.5vh;
-  }
-  #service-one.screen-block .title .word {
-    height: 6.2vh;
-  }
-  #service-one.screen-block .title .word span {
-    bottom: -97px;
-    font-size: 6.3vh;
-  }
 }
 @media (min-width: 1921px) {
   #service-one.screen-block {
@@ -6522,6 +6496,9 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
+  }
+  #service-one.screen-block .title {
+    margin: 21vh 0 0 40vh;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -6553,25 +6530,6 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .service-one-info.vertical.two {
     top: 72vh;
-  }
-  #service-one.screen-block .title {
-    width: 75vh;
-    display: inherit;
-    margin-top: 21vh;
-    margin-left: 40vh;
-  }
-  #service-one.screen-block .title span.name {
-    top: -4vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    top: 3.5vh;
-  }
-  #service-one.screen-block .title .word {
-    height: 6.2vh;
-  }
-  #service-one.screen-block .title .word span {
-    bottom: -97px;
-    font-size: 6.3vh;
   }
 }
 
@@ -23044,6 +23002,9 @@ html body .wrapper .screen-block {
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
   }
+  #service-one.screen-block .title {
+    margin: 21vh 0 0 40vh;
+  }
   #service-one.screen-block .service-one-info {
     position: absolute;
   }
@@ -23075,25 +23036,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .service-one-info.vertical.two {
     top: 72vh;
   }
-  #service-one.screen-block .title {
-    width: 75vh;
-    display: inherit;
-    margin-top: 21vh;
-    margin-left: 40vh;
-  }
-  #service-one.screen-block .title span.name {
-    top: -4vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    top: 3.5vh;
-  }
-  #service-one.screen-block .title .word {
-    height: 6.2vh;
-  }
-  #service-one.screen-block .title .word span {
-    bottom: -97px;
-    font-size: 6.3vh;
-  }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
   #service-one.screen-block {
@@ -23103,6 +23045,9 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
+  }
+  #service-one.screen-block .title {
+    margin: 21vh 0 0 40vh;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -23135,25 +23080,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .service-one-info.vertical.two {
     top: 72vh;
   }
-  #service-one.screen-block .title {
-    width: 75vh;
-    display: inherit;
-    margin-top: 21vh;
-    margin-left: 40vh;
-  }
-  #service-one.screen-block .title span.name {
-    top: -4vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    top: 3.5vh;
-  }
-  #service-one.screen-block .title .word {
-    height: 6.2vh;
-  }
-  #service-one.screen-block .title .word span {
-    bottom: -97px;
-    font-size: 6.3vh;
-  }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
   #service-one.screen-block {
@@ -23163,6 +23089,9 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
+  }
+  #service-one.screen-block .title {
+    margin: 21vh 0 0 40vh;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -23195,25 +23124,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .service-one-info.vertical.two {
     top: 72vh;
   }
-  #service-one.screen-block .title {
-    width: 75vh;
-    display: inherit;
-    margin-top: 21vh;
-    margin-left: 40vh;
-  }
-  #service-one.screen-block .title span.name {
-    top: -4vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    top: 3.5vh;
-  }
-  #service-one.screen-block .title .word {
-    height: 6.2vh;
-  }
-  #service-one.screen-block .title .word span {
-    bottom: -97px;
-    font-size: 6.3vh;
-  }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
   #service-one.screen-block {
@@ -23223,6 +23133,9 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
+  }
+  #service-one.screen-block .title {
+    margin: 21vh 0 0 40vh;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -23255,25 +23168,6 @@ html body .wrapper .screen-block {
   #service-one.screen-block .service-one-info.vertical.two {
     top: 72vh;
   }
-  #service-one.screen-block .title {
-    width: 75vh;
-    display: inherit;
-    margin-top: 21vh;
-    margin-left: 40vh;
-  }
-  #service-one.screen-block .title span.name {
-    top: -4vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    top: 3.5vh;
-  }
-  #service-one.screen-block .title .word {
-    height: 6.2vh;
-  }
-  #service-one.screen-block .title .word span {
-    bottom: -97px;
-    font-size: 6.3vh;
-  }
 }
 @media (min-width: 1921px) {
   #service-one.screen-block {
@@ -23283,6 +23177,9 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
+  }
+  #service-one.screen-block .title {
+    margin: 21vh 0 0 40vh;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -23314,25 +23211,6 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .service-one-info.vertical.two {
     top: 72vh;
-  }
-  #service-one.screen-block .title {
-    width: 75vh;
-    display: inherit;
-    margin-top: 21vh;
-    margin-left: 40vh;
-  }
-  #service-one.screen-block .title span.name {
-    top: -4vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    top: 3.5vh;
-  }
-  #service-one.screen-block .title .word {
-    height: 6.2vh;
-  }
-  #service-one.screen-block .title .word span {
-    bottom: -97px;
-    font-size: 6.3vh;
   }
 }
 
