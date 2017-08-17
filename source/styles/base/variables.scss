@@ -243,4 +243,7 @@ $PPTitleLineAnimationTime: $time * 3;
 
 $PPTitleTextDelayTime: $PPTitleLineDelayTime + $PPTitleLineAnimationTime;
 $PPTitleTextAnimationTime: $time * 3; 
+
+    // MOBILE
+    $PPBackBgDelayTime: $PPRightBlockDelayTime + $PPRightBlockAnimationTime;
 // PORTFOLIO PAGE ENDS
