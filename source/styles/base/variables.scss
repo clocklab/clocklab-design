@@ -188,3 +188,57 @@ $portfolioAltaControlsIndicatorsAimationTime: $time * 3;
     $portfolioAltaControlsLeftBlockDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile; 
     $portfolioAltaControlsIndicatorsDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile + $portfolioAltaControlsRightBlockAimationTime;
 // VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL ENDS 
+
+
+
+// PORTFOLIO PAGE (PP - Portfolio Page)
+$PPLeftBlockDelayTime: 0s; 
+$PPLeftBlockAnimationTime: $time * 3;
+
+$PPRightBlockDelayTime: $PPLeftBlockDelayTime; 
+$PPRightBlockAnimationTime: $PPLeftBlockAnimationTime;
+
+$PPMenuDelayTime: $PPRightBlockDelayTime + $PPRightBlockAnimationTime;
+$PPMenuAnimationTime: $time * 3;
+
+$PPLogoDelayTime: $PPMenuDelayTime; 
+$PPLogoAnimationTime: $PPMenuAnimationTime;
+
+$PPLangDelayTime: $PPMenuDelayTime;
+$PPLangAnimationTime: $PPMenuAnimationTime;
+
+$PPCopyDelayTime: $PPMenuDelayTime;
+$PPCopyAnimationTime: $PPMenuAnimationTime;
+
+$PPSocialDelayTime: $PPMenuDelayTime;
+$PPSocialAnimationTime: $PPMenuAnimationTime;
+
+$PPBehancelDelayTime: $PPSocialDelayTime + $PPSocialAnimationTime;
+$PPBehanceAnimationTime: $time;
+
+$PPClockAnimationTime: $time * 2;
+
+$PPClockFirstDelayTime: $PPCopyDelayTime + $PPCopyAnimationTime;
+$PPClockSecondDelayTime: $PPClockFirstDelayTime + $PPClockAnimationTime / 3;
+$PPClockThirdDelayTime: $PPClockSecondDelayTime + $PPClockAnimationTime / 3;
+$PPClockFourthDelayTime: $PPClockThirdDelayTime + $PPClockAnimationTime / 3;
+$PPClockFifthDelayTime: $PPClockFourthDelayTime + $PPClockAnimationTime / 3;
+
+$PPLettersDelayTime: $PPClockFifthDelayTime + $PPClockAnimationTime;
+$PPLettersAnimationTime: $time;
+
+$PPImageBgDelayTime: $PPLettersDelayTime + $PPLettersAnimationTime;
+$PPImageBgAnimationTime: $time * 3;
+
+$PPImageDelayTime: $PPImageBgDelayTime + $PPImageBgAnimationTime;
+$PPImageAnimationTime: $time * 3;
+
+$PPTitleLineDelayTime: $PPImageDelayTime + $PPImageAnimationTime;
+$PPTitleLineAnimationTime: $time * 3;
+
+$PPTitleTextDelayTime: $PPTitleLineDelayTime + $PPTitleLineAnimationTime;
+$PPTitleTextAnimationTime: $time * 3; 
+
+    // MOBILE
+    $PPBackBgDelayTime: $PPRightBlockDelayTime + $PPRightBlockAnimationTime;
+// PORTFOLIO PAGE ENDS
