@@ -350,47 +350,31 @@
 
 // title word
 @keyframes titleWord {
-    0% {
-        transform: translateY(0);
-        opacity: 1;
-        height: 0;
-    }
-    25% {
-        transform: translateY(-25px);
-        height: 25px;
-        opacity: 1;
-    }
-    50% {
-        transform: translateY(-50px);
-        height: 50px;
-        opacity: 1;
-    }
-    75% {
-        transform: translateY(-75px);
-        height: 75px;
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100px);
-        height: 100px;
-        opacity: 1;
-    }
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-25px); }
+    50% { transform: translateY(-50px); }
+    75% { transform: translateY(-75px); }
+    100% { transform: translateY(-100px); }
 }
 
 // shape title word
 @keyframes titleWordShape {
     0% {
         transform: translateY(0);
-        height: 36px;
-        width: 10%;
+        visibility: visible;
+        height: 30px;
+        width: 0%;
     }
     50% {
         transform: translateY(0);
-        height: 36px;
+        visibility: visible;
+        height: 30px;
         width: 50%;
     }
     100% {
-        transform: translateY(2vh);
+        transform: translateY(15px);
+        visibility: visible;
+        height: 15px;
         width: 100%;
     }
 }
