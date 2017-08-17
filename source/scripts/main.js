@@ -13,6 +13,7 @@
 // text shadow
 
 
+
 // q7
 
 
@@ -27,3 +28,11 @@
 
 // portfolio-shadow
 //= components/portfolio-shadow.js
+
+//= components/alta.js
+
+// letter
+//= components/letter.js
+
+// button-freaky
+//= components/button-freaky.js

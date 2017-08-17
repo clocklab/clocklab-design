@@ -1,0 +1,10 @@
+@import '../desktop';
+
+// ----- main-contacts-title -----
+.main-contacts-title { padding: 6.5vh 9.5% 8.5vh 5.5%; }
+
+// ----- map -----
+#map + .address {
+    top: 65vh;
+    right: 11%;
+}

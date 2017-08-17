@@ -1,0 +1,65 @@
+& {
+    .logo, .menu, .small-gray-lines { display: none; }
+    background-color: $white;
+    font-family: $raleway;
+    font-weight: $regular;
+    overflow: hidden;
+    z-index: 0;
+    
+    // ----- main-contacts-title -----
+    .main-contacts-title {
+        width: 95%;
+        padding: 7.5vh 0 6.6vh 4%;
+        background-color: $lightBlack;
+        p {
+            font-weight: $extra-bold;
+            &:first-child {
+                color: $white;
+                font-size: px(47);
+                text-transform: uppercase;
+            }
+            &:last-child {
+                font-size: px(34);
+                padding-top: 1vh;
+                text-align: left;
+                color: $blue;
+            }
+        }
+    }
+    
+    // ----- small-gray-lines -----
+    .small-gray-lines {
+        .line { background-color: #EBEBEB; }
+        z-index: -1;
+    }
+    
+    // ----- main-contacts-info -----
+    .main-contacts-info {
+        display: inherit;
+        margin: 4vh 0 0 2vh;
+        li {
+            line-height: .9;
+            color: $darkGray;
+            font-size: px(26);
+            margin-bottom: 4vh;
+            a { color: $darkGray; }
+            &:last-of-type {
+                margin-bottom: 0;
+                display: block;
+            }
+        }
+    }
+
+    // ----- map -----
+    #map {
+        bottom: 0;
+        width: 100%;
+        height: 43vh;
+        position: absolute;
+        visibility: hidden;
+        animation: mainConatactsMapDown .5s linear;
+        animation-fill-mode: forwards;
+        animation-delay: .5s;
+        & + .address { display: none; }
+    }
+}

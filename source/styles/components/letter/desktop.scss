@@ -1,0 +1,15 @@
+& {  
+    top: -60vh;
+    right: -10vh;
+    font-size: 170vh;
+    font-weight: 700;
+    user-select: none;
+    position: absolute;
+    color: rgba(68,68,68,.05);
+    animation: letterApear $portfolioEuroclubLetterAnimationTime $portfolioEuroclubLetterDelayTime both;
+    transition: transform $time cubic-bezier(.05,.71,.48,1);
+    @keyframes letterApear {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+}

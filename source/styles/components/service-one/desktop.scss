@@ -3,88 +3,35 @@
     font-weight: $regular;
     z-index: 0;
     
+    // ----- bottom-button -----
+    .bottom-button span:before { content: 'Все услуги'; }
+
     // ----- title -----
-    .title {
-        width: 50vh;
-        display: inherit;
-        margin-top: 27vh;
-        margin-left: 30vh;
-        span.name { top: -2vh; }
-        .animation-border { top: 3.5vh; }
-        .word {
-            height: 6.2vh;
-            span {
-                bottom: -97px;
-                font-size: 6.3vh;
-            }
-        }
-    }
+    .title { margin: 21vh 0 0 40vh; }
 
-    // ----- contacts -----
-    .contacts {
-        display: inherit;
-        margin: 34.5vh 0 0 33vh;
-        li {
-            color: $white;
-            font-size: 1.3vh;
-            @include inline-block;
-            &:nth-of-type(1) { margin-right: 14vh; }
-            &:nth-of-type(2) { margin-right: 31vh; }
-            &:nth-of-type(3) a {
-                transition: $time;
-                padding-bottom: 4px;
-                border-bottom: 1px solid;
-                &:hover { border: none; }
-            }
-            a {
-                color: $white;
-                display: block;
-            }
-        }
-    }
-
-    // ----- bg letter -----
-    .bg-letter {
-        background: url('../images/letter-2.png') no-repeat;
-        background-position: 96% 100%;
-        background-size: 28%;
-    }
-
-    // ----- lines -----
-    .lines {
+    // ----- service-one-info -----
+    .service-one-info {
         position: absolute;
-        overflow: hidden;
-        height: 100%;
-        width: 100%;
-        z-index: -1;
-        .line {
-            background-color: $silver;
-            position: absolute;
-            display: block;
-            height: 1px;
-            width: 24vh;
-            &.up { animation: lineUp 1s both; }
-            &.down { animation: lineDown 1s both; }
-            &:nth-of-type(1) {
-                left: 18vh;
-                top: -3vh;
+        p {
+            font-weight: $medium;
+            line-height: 2vh;
+        }
+        &.horizontal {
+            bottom: 11vh;
+            width: 55vh;
+            left: 81vh;
+            p { font-size: px(28); }
+        }
+        &.vertical {
+            transform: rotate(90deg);
+            right: 10px;
+            width: 13%;
+            p {
+                font-size: px(26);
+                line-height: 1.8vh;
             }
-            &:nth-of-type(2) {
-                left: 100vh;
-                top: -19vh;
-            }
-            &:nth-of-type(3) {
-                right: 9vh;
-                top: 14vh;
-            }
-            &:nth-of-type(4) {
-                bottom: -3vh;
-                left: 29vh;
-            }
-            &:nth-of-type(5) {
-                bottom: 21vh;
-                right: 91vh;
-            }
+            &.one { top: 40vh; }
+            &.two { top: 72vh; }
         }
     }
 }
