@@ -13,23 +13,33 @@
 @import "base/small-gray-lines";
 
 // components
-@import "components/navigation-elements/main";
 @import "components/title/main";
-@import "components/clock/main";
 @import "components/letter/main";
-@import "components/contacts/main";
-@import "components/service-one/main";
-@import "components/service-two/main";
-@import "components/main-contacts/main";
-@import "components/menu/main";
 @import "components/bottom-button/main";
 @import "components/crossed-button/main";
 @import "components/jumping-button/main";
 @import "components/portfolio-right-panel/main";
 @import "components/portfolio-client/main";
-@import "components/portfolio/main";
+
+// ***** MAIN PAGE *****
+@import "components/navigation-elements/main";
+@import "components/clock/main";
+@import "components/menu/main";
+
+// portfolio on the main page
 @import "components/q7/main";
 @import "components/vinograd/main";
 @import "components/euro-club/main";
 @import "components/alta-capital/main";
 
+// services on the main page
+@import "components/service-one/main";
+@import "components/service-two/main";
+@import "components/service-three/main";
+
+// contacts on the main page
+@import "components/main-contacts/main";
+
+// ***** OTHER PAGES *****
+@import "components/contacts/main";
+@import "components/portfolio/main";
