@@ -1,38 +1,31 @@
 & {
+    overflow: hidden;
     font-family: $raleway;
     font-weight: $regular;
     background-color: $background;
     
-    // ----- slogan -----
-    .slogan {
-        font-weight: $extra-bold;
-        position: absolute;
-        left: 2.4vh;
-        top: 43.5vh;
+    // ----- title -----
+    .title {
+        top: 25.5%;
+        left: 4.5%;
         z-index: 1;
-        .second-slogan {
-            margin: -100px 0 0 0;
-            width: 28vh;
-            p {
-                color: $blue;
-                font-size: 2.2vh;
-                line-height: 3vh;
-                font-weight: $medium;
-                font-family: $roboto;
-            }
-        }
+        position: absolute;
+        font-weight: $extra-bold;
         .word {
-            height: 6vh;
-            &:nth-of-type(2) span { animation-delay: 1.25s; }
             span {
-                opacity: 1; 
-                color: $white;
-                display: block;
-                font-size: 4.7vh;
-                overflow: hidden;
-                position: relative;
-                animation: titleWord .5s 1s linear;
-                animation-fill-mode: forwards;
+                text-transform: inherit;
+                font-size: px(53);
+            }
+            &:after { display: none; }
+            &:first-of-type { margin-bottom: px(24); }
+            &:last-of-type {
+                margin: px(18) 0 0;
+                span {
+                    color: $blue;
+                    font-size: px(25);
+                    font-weight: $medium;
+                    font-family: $roboto;
+                }
             }
         }
     }
@@ -55,7 +48,7 @@
     .watch {
         background: url('../images/watch.png') no-repeat 60.5%;
         background-size: 47%;
-        margin: 19vh auto 0;
+        margin: 34% auto 0;
         position: absolute;
         height: 100%;
         width: 100%;
@@ -69,7 +62,6 @@
         right: 0;
         top: .5%;
         left: 4%;
-        zoom: .38;
         width: 300px;
         height: 300px;
         display: inline-flex;
@@ -80,7 +72,7 @@
         background-size: cover;
         position: absolute;
         height: 60px;
-        top: 29%;
+        top: 30%;
         left: 46%;
         width: 20px;
         margin: auto;
@@ -111,9 +103,18 @@
         margin: auto;
         display: block;
     }
-    .hours-container { animation: rotate 43200s infinite linear; }
-    .minutes-container { transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44); }
-    .seconds-container { transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44); }
+    .hours-container {
+        animation: rotate 43200s infinite linear;
+        zoom: .45;
+    }
+    .minutes-container {
+        transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
+        zoom: .4;
+    }
+    .seconds-container {
+        transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
+        zoom: .45;
+    }
     @keyframes rotate { 100% { transform: rotateZ(360deg); } }
 
     // ----- scroll -----

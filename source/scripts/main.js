@@ -13,7 +13,6 @@
 // clock
 //= components/clock.js
 
-
 // menu
 //= components/menu.js
 

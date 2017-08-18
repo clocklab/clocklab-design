@@ -9,27 +9,16 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        z-index: -1;
-    }
-
-    // ----- bg clock -----
-    .bg-clock {
-        position: absolute;
-        top: 50%;
-        margin-top: -128px;
-        width: 100%;
-        line-height: 128px;
-        text-align: center;
-        font-size: 70vh;
-        color: $white;
+        z-index: 0;
     }
 
     // ----- logo -----
     .logo {
+        animation: fadeInDown $time * 3 both;
         position: absolute;
         z-index: 1;
-        top: 3.5vh;
-        left: 5vh;
+        left: 2.5%;
+        top: 3.5%;
        .image {
             @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
             background-repeat: no-repeat;
@@ -43,23 +32,23 @@
     // ----- language -----
     .language {
         position: absolute;
-        font-size: 1.34vh;
-        bottom: 45vh;
+        font-size: px(29);
+        bottom: 44.5%;
+        left: 2.5%;
         z-index: 1;
-        left: 5vh;
         div {
             width: fit-content;
             transform: rotate(-90deg);
-            &:nth-of-type(1) { margin-bottom: 3.5vh; }
-            &:nth-of-type(2) { margin-bottom: 2vh; }
+            &:nth-of-type(1) { margin-bottom: px(76); }
+            &:nth-of-type(2) { margin-bottom: px(36); }
             a {
                 &.select {
                     color: $white;
                     &::before {
                         position: absolute;
                         color: $white;
-                        bottom: .15vh;
-                        right: 2.5vh;
+                        bottom: 15%;
+                        right: 115%;
                         content: '—';
                     }
                 }
@@ -78,21 +67,21 @@
     // ----- social -----
     .social {
         position: absolute;
-        bottom: 5vh;
+        bottom: 4.5%;
         z-index: 1;
-        left: 5vh;
+        left: 2.5%;
         div {
             z-index: 0;
             padding: 5.75px;
             border: 1px solid $white;
             &:nth-of-type(1) {
                 position: absolute;
-                bottom: 29px;
+                bottom: 29.5px;
                 left: 0;
             }
             &:nth-of-type(2) {
                 position: absolute;
-                left: 29px;
+                left: 28.5px;
                 bottom: 0;
             }
             &:hover::before {
@@ -161,29 +150,38 @@
                 &:nth-child(5) { animation-delay: $timeTickHalf * 2; }
                 &:nth-child(6) { animation-delay: $timeTickHalf * 2.5; }
                 &:nth-child(7) { animation-delay: $timeTickHalf * 3; }
+                &:nth-child(8) { animation-delay: $timeTickHalf * 3.5; }
+                &:nth-child(9) { animation-delay: $timeTickHalf * 4; }
+                &:nth-child(10) { animation-delay: $timeTickHalf * 4.5; }
+                &:nth-child(11) { animation-delay: $timeTickHalf * 5; }
+                &:nth-child(12) { animation-delay: $timeTickHalf * 5.5; }
+                &:nth-child(13) { animation-delay: $timeTickHalf * 6; }
+                &:nth-child(14) { animation-delay: $timeTickHalf * 6.5; }
+                &:nth-child(15) { animation-delay: $timeTickHalf * 7; }
+                &:nth-child(16) { animation-delay: $timeTickHalf * 7.5; }
             }
             &:before { animation: crossAnchor $timeTick $timeTickHalf * 4 + .25s forwards; }
         }
     }
     
-    // ----- behance -----
-    .behance {
+    // ----- jump-button -----
+    .jump-button {
         position: absolute;
-        bottom: 5vh;
-        left: 23vh;
-        z-index: 1;
         padding: 0;
+        z-index: 1;
+        bottom: 5%;
         margin: 0;
+        left: 11%;
         a {
             &:before {
-                top: 56%;
+                top: 52%;
                 left: -1px;
                 background: $white;
             }
             span {
                 color: $white;
+                font-size: px(24);
                 font-weight: $thin;
-                font-size: 1.3vh;
             }
         }
     }
@@ -192,9 +190,10 @@
     .copyright {
         transform: rotate(-90deg);
         position: absolute;
-        font-size: 1.34vh;
-        right: -8.5vh;
-        bottom: 29vh;
+        font-size: px(26);
+        right: -4.3%;
+        bottom: 29%;
+        z-index: 1;
         p {
             color: $white;
             font-weight: $thin;

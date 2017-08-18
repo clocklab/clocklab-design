@@ -9,6 +9,34 @@
     // ----- title -----
     .title { margin: 21vh 0 0 40vh; }
 
+    // ----- bg clock -----
+    .bg-clock {
+        position: absolute;
+        text-align: center;
+        line-height: 100%;
+        font-size: 70vh;
+        color: $white;
+        width: 100%;
+        top: 12%;
+    }
+
+    // ----- jump-button -----
+    .jump-button {
+        left: initial;
+        right: 29.7%;
+        bottom: 7%;
+        a {
+            text-transform: uppercase;
+            &:before { background: $black; }
+            span {
+                color: $black;
+                font-size: px(25);
+                font-weight: $medium;
+                &:nth-of-type(10) { margin-right: 5px;}
+            }
+        }
+    }
+    
     // ----- service-one-info -----
     .service-one-info {
         position: absolute;
