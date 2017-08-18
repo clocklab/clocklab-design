@@ -1,15 +1,5 @@
 & {  
 
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    cursor: default;
-
-    .small-gray-lines {
-
-        .line {
-            background: $gray;
-        }
-    }
-
     // Animation for block
     @keyframes apear {
         from {
@@ -21,6 +11,8 @@
     }
     // Animation for block ends
 
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    cursor: default;
     position: relative;
     padding-top: px(300);
     padding-left: px(360);
@@ -28,7 +20,168 @@
     height: 100vh;
     background: $white;
     overflow: hidden;
-    //animation: apear $time * 3 0s both;
+
+    .small-gray-lines {
+        z-index: 2;
+
+        .line {
+            background: $gray;
+
+            &.up {
+                transform: rotate(-65deg) translate3d(100%, 0, 0);
+            }
+
+            &.down {
+                transform: rotate(-65deg) translate3d(-100%, 0, 0);
+            }
+
+            &.up,
+            &.down {
+                animation: none;
+            }
+        }
+    }
+
+    .logo {
+        z-index: 2;
+    }
+
+    .menu {
+
+        .menu__item {
+            border-color: $darkGray;
+
+            .symbol,
+            .name {
+                color: $darkGray;
+            }
+
+            .hamburger {
+
+                &-tick {
+
+                    .inner-tick {
+                        background: $darkGray;
+                    }
+                }
+            }
+        }
+    }
+
+    .portfolio-client {
+        bottom: px(130);
+        color: $darkGray;
+
+        
+        .client-name-container {
+            
+            span {
+
+                &:before {
+                    content: 'Eurovision';
+                }
+            }
+        }
+    }
+
+    .portfolio-right-panel {
+        color: $darkGray;
+    }
+
+    .info {
+        position: absolute;
+        top: px(420);
+        left: px(2090);
+        z-index: 3;
+    }
+
+    @keyframes widthIncreaseStickerLine {
+        from {
+            width: 0;
+        }
+        to {
+            width: px(100);
+        }
+    }
+
+    .sticker {
+        position: relative;
+        font-family: $raleway;
+        font-size: px(24);
+        font-weight: 700;
+
+        span {
+            display: inline-block;
+            color: $darkGray;
+            text-transform: uppercase;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: px(-120);
+            width: px(100);
+            height: 3px;
+            background: $lightBlack;
+            content: '';
+            transform: translateY(-50%);
+        }
+    }
+
+    .new-title {
+        margin-top: px(60);
+
+        .text-container {
+            position: relative;
+            overflow: hidden;
+
+            &:before {
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: px(60);
+                background: $blue;
+                content: '';
+                transform: translate3d(0, 50%, 0);
+            }
+
+            &:last-child {
+                display: inline-block;
+            }
+        }
+
+        span {
+            display: block;
+            position: relative;
+            z-index: 1;
+            color: $black;
+            font-size: px(120);
+            font-weight: 800;
+            line-height: px(125);
+            text-transform: uppercase;
+        }
+    }
+
+    .about-work {
+        margin-top: px(50);
+        width: px(780);
+
+        p {
+            display: block;
+            margin-bottom: px(30);
+            color: $darkGray;
+            font-family: $roboto;
+            font-size: px(32);
+            line-height: px(40);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 
     @keyframes heightChanging {
         from {
@@ -44,9 +197,8 @@
         top: 0;
         left: px(920);
         width: px(980);
-        //height: 100vh;
+        height: 100vh;
         background: $blue;
-        animation: heightChanging $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both;
     }
 
     @keyframes beforeApear {
@@ -92,16 +244,16 @@
 
     .image-block {
         position: relative;
-        width: px(1400);
-        height: px(1400);
-        //background: red;
+        z-index: 3;
+        width: px(1360);
+        height: px(1360);
 
         .image-container {
             position: relative;
             width: 100%;
             height: 100%;
             overflow: hidden;
-            animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+            box-shadow: 0 0 px(60) px(16) rgba(0, 0, 0, .3);
 
             img {
                 position: relative;
@@ -109,7 +261,6 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both;
             }
 
             &:before {
@@ -119,7 +270,7 @@
                 height: 100%;
                 background: $darkGray;
                 content: '';
-                animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both;
+                transform: translate3d(-90%, 90%, 0);
             }
         }
 
@@ -135,7 +286,143 @@
             line-height: px(30);
             transform-origin: 0 0;
             transform: rotate(90deg);
-            animation: textApear $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both;
+        }
+    }
+
+    &.current {
+        animation: apear $time * 3 0s both;
+
+        .small-gray-lines {
+            
+            .line {
+                animation: lineUp 1s $time * 3 both;
+
+                &.down {
+                    animation-name: lineDown; 
+                }
+            }
+        }
+
+        .letter {
+            animation: fadeIn $portfolioEuroclubLetterAnimationTime $portfolioEuroclubLetterDelayTime both;
+        }
+
+        .logo {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .menu {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .portfolio-client {
+            
+            .client {
+                animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
+        
+                &-name-container {
+        
+                    span {
+                        animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
+                    }
+                }
+            }
+        }
+
+        .portfolio-right-panel {
+            
+            .date {
+                animation: rightPanelDate $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
+            }
+        
+            .devices {
+                
+                span {
+                    animation-name: rightPanelDevices;
+                    animation-fill-mode: both;
+        
+                    &:nth-child(1) {
+                        animation-duration: $portfolioRightPanelDevicesDesktopAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesDesktopDelayTime;
+                    }
+        
+                    &:nth-child(2) {
+                        animation-duration: $portfolioRightPanelDevicesTabletAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesTabletDelayTime;
+                    }
+        
+                    &:nth-child(3) {
+                        animation-duration: $portfolioRightPanelDevicesMobileAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesMobileDelayTime;
+                    }
+                }
+            }
+        }
+
+        .bottom-button {
+            
+            span {
+                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+            }
+        
+            .line {
+                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation: FadeInRight $PEStickerTextAnimationTime $PEStickerTextDelayTime both;
+            }
+    
+            &:before {
+                animation: widthIncreaseStickerLine $PEStickerLineAnimationTime $PEStickerLineDelayTime both;
+            }
+        }
+
+        .new-title {
+    
+            .text-container {
+    
+                &:before {
+                    animation: halfDown $PETitleLineAnimationTime linear $PETitleLineDelayTime both;
+                }
+            }
+    
+            span {
+                animation: Up $PETitleTextAnimationTime $PETitleTextDelayTime both;
+            }
+        }
+    
+        .about-work {
+    
+            p {
+                animation: fadeInUpHalf $PEAboutAnimationTime $PEAboutDelayTime both;
+            }
+        }
+
+        .blue-line {
+            animation: heightChanging $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both;
+        }
+
+        .image-block {
+    
+            .image-container {
+                animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+    
+                img {
+                    animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both;
+                }
+    
+                &:before {
+                    animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both;
+                }
+            }
+    
+            p {
+                animation: textApear $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both;
+            }
         }
     }
 }

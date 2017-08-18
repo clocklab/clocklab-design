@@ -8,19 +8,22 @@
 //= components/scripts.js
 
 // clock
-//= components/clock.js
+
 
 // text shadow
-//= components/shadow.js
+
 
 // menu
 //= components/menu.js
 
 // alta
-//= components/alta.js
+
 
 // letter
-//= components/letter.js
+
 
 // button-freaky
-//= components/button-freaky.js
+
+
+// slides changing
+//= components/slides-changing.js
