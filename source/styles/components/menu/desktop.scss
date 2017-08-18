@@ -574,8 +574,8 @@
         .menu__item {
             border-color: $darkGray;
 
-            .symbol,
-            .name {
+            & > .symbol,
+            & > .name {
                 color: $darkGray;
             }
 
