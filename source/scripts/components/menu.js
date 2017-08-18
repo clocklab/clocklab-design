@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.remove('opened')
         menuBackground.removeEventListener('click', closeMenu)
         openCloseBtn.removeEventListener('click', closeMenu)
+        document.body.style.overflow = ''
 
         setTimeout(() => {
             openCloseBtn.addEventListener('click', openMenu)
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault()
         menu.classList.add('opened')
         openCloseBtn.removeEventListener('click', openMenu)
+        document.body.style.overflow = 'hidden'
 
         setTimeout(() => {
             openCloseBtn.addEventListener('click', closeMenu)
