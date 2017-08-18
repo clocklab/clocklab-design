@@ -570,7 +570,7 @@
     }
 
     &.gray {
-
+        .menu__background { background: none; }
         .menu__item {
             border-color: $darkGray;
 

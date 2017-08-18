@@ -155,8 +155,9 @@
             &:before { animation: crossAnchor $timeTick $timeTickHalf * 4 + .25s forwards; }
         }
     }
-    // ----- behance -----
-    .behance {
+    
+    // ----- jump-button -----
+    .jump-button {
         position: absolute;
         bottom: 2.5%;
         z-index: 1;
