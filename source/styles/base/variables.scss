@@ -48,13 +48,21 @@ $timeTickHalf: $timeTick / 2;
 // TIME CONSTANTS END
 
 // VARIABLES FOR PORTFOLIO CLIENT
-$portfolioClientDelayTime: 0s;
-//$portfolioClientDelayTime: $time * 3;
+//$portfolioClientDelayTime: 0s;
+$portfolioClientDelayTime: $time * 3;
 $portfolioClientAnimationTime: $time;
 
 $portfolioClientNameDelayTime: $portfolioClientDelayTime + $portfolioClientAnimationTime;
 $portfolioClientNameAnimationTime: $time;
 // VARIABLES FOR PORTFOLIO CLIENT END
+
+// VARIABLES FOR PORTFOLIO BOTTOM BUTTON
+$portfolioBottomLineDelayTime: $portfolioClientNameDelayTime;
+$portfolioBottomLineAnimationTime: $time * 3;
+
+$portfolioBottomTextDelayTime: $portfolioBottomLineDelayTime + $portfolioBottomLineAnimationTime;
+$portfolioBottomTextAnimationTime: $time * 3;
+// VARIABLES FOR PORTFOLIO BOTTOM BUTTON END
 
 // VARIABLES FOR PORTFOLIO RIGHT PANEL
 $portfolioRightPanelDateDelayTime: $portfolioClientDelayTime;
@@ -71,7 +79,7 @@ $portfolioRightPanelDevicesMobileAnimationTime: $time;
 // VARIABLES FOR PORTFOLIO RIGHT PANEL END
 
 
-// VARIABLES FOR PORTFOLIO BLOCK AUDI Q7
+// VARIABLES FOR PORTFOLIO BLOCK AUDI Q7 (PA - Portfolio Audi)
 $portfolioAudiLeftBlockLeftLineDelayTime: $portfolioClientDelayTime;
 $portfolioAudiLeftBlockLeftLineAnimationTime: $time * 9;
 
@@ -96,6 +104,21 @@ $portfolioAudiCenterBlockShadowAnimationTime: $time * 3;
 $portfolioAudiLeftBlockDelayTime: $portfolioAudiCenterBlockLineDelayTime + $portfolioAudiCenterBlockLineAnimationTime;
 $portfolioAudiLeftBlockAnimationTime: $time * 3;
 
+$PATitleLineDelayTime: $portfolioAudiLeftBlockDelayTime;
+$PATitleLineAnimationTime: $portfolioAudiLeftBlockAnimationTime;
+
+$PATitleTextDelayTime: $PATitleLineDelayTime + $PATitleLineAnimationTime;
+$PATitleTextAnimationTime: $time * 3;
+
+$PAStickerLineDelayTime: $PATitleTextDelayTime + $PATitleTextAnimationTime;
+$PAStickerLineAnimationTime: $time * 3;
+
+$PAStickerTextDelayTime: $PAStickerLineDelayTime + $PAStickerLineAnimationTime;
+$PAStickerTextAnimationTime: $time * 3;
+
+$PAAboutDelayTime: $PAStickerLineDelayTime;
+$PAAboutAnimationTime: $time * 3;
+
     // MOBILE
     $portfolioAudiCenterBlockDelayTimeMobile: 0s;
     $portfolioAudiCenterBlockLineDelayTimeMobile: $portfolioAudiCenterBlockDelayTimeMobile + $portfolioAudiCenterBlockAnimationTime;
@@ -105,7 +128,7 @@ $portfolioAudiLeftBlockAnimationTime: $time * 3;
 // VARIABLES FOR PORTFOLIO BLOCK AUDI Q7 END
 
 
-// VARIABLES FOR PORTFOLIO BLOCK VINO GRAD
+// VARIABLES FOR PORTFOLIO BLOCK VINO GRAD (PV - Portfolio Vinograd)
 $portfolioVinogradLeftBlockDelayTime: 0s;
 $portfolioVinogradLeftBlockAnimationTime: $time * 3;
 
@@ -128,14 +151,29 @@ $portfolioVinogradPosterImageAnimationTime: $time * 3;
 $portfolioVinogradPosterTextDelayTime: $portfolioVinogradPosterImageDelayTime + $portfolioVinogradPosterImageAnimationTime;
 $portfolioVinogradPosterTextAnimationTime: $time * 3;
 
+$PVTitleLineDelayTime: $portfolioVinogradPosterImageDelayTime + $portfolioVinogradPosterImageAnimationTime;
+$PVTitleLineAnimationTime: $portfolioVinogradPosterTextAnimationTime;
+
+$PVTitleTextDelayTime: $PVTitleLineDelayTime + $PVTitleLineAnimationTime;
+$PVTitleTextAnimationTime: $time * 3;
+
+$PVStickerLineDelayTime: $PVTitleTextDelayTime + $PVTitleTextAnimationTime;
+$PVStickerLineAnimationTime: $time * 3;
+
+$PVStickerTextDelayTime: $PVStickerLineDelayTime + $PVStickerLineAnimationTime;
+$PVStickerTextAnimationTime: $time * 3;
+
+$PVAboutDelayTime: $PVStickerLineDelayTime;
+$PVAboutAnimationTime: $time * 3;
+
     // MOBILE
     $portfolioVinogradPosterDelayTimeMobile: $portfolioVinogradRightBlockDelayTime + $portfolioVinogradRightBlockAnimationTime;
     $portfolioVinogradPosterImageDelayTimeMobile: $portfolioVinogradPosterDelayTimeMobile + $portfolioVinogradPosterAnimationTime;
 // VARIABLES FOR PORTFOLIO BLOCK VINO GRAD END
 
 
-// VARIABLES FOR PORTFOLIO BLOCK EURO CLUB
-$portfolioEuroclubBlueLineDelayTime: 0s;
+// VARIABLES FOR PORTFOLIO BLOCK EURO CLUB (PE - Portfolio Euro Club)
+$portfolioEuroclubBlueLineDelayTime: $time * 3;
 $portfolioEuroclubBlueLineAnimationTime: $time * 3;
 
 $portfolioEuroclubGrayBlockDelayTime: $portfolioEuroclubBlueLineDelayTime + $portfolioEuroclubBlueLineAnimationTime;
@@ -150,12 +188,27 @@ $portfolioEuroclubImageShadowAnimationTime: $time * 3;
 $portfolioEuroclubImageTextDelayTime: $portfolioEuroclubImageShadowDelayTime + $portfolioEuroclubImageShadowAnimationTime;
 $portfolioEuroclubImageTextAnimationTime: $time * 3;
 
+$PETitleLineDelayTime: $portfolioEuroclubImageTextDelayTime;
+$PETitleLineAnimationTime: $portfolioEuroclubImageTextAnimationTime;
+
+$PETitleTextDelayTime: $PETitleLineDelayTime + $PETitleLineAnimationTime;
+$PETitleTextAnimationTime: $time * 3;
+
+$PEStickerLineDelayTime: $PETitleTextDelayTime + $PETitleTextAnimationTime;
+$PEStickerLineAnimationTime: $time * 3;
+
+$PEStickerTextDelayTime: $PEStickerLineDelayTime + $PEStickerLineAnimationTime;
+$PEStickerTextAnimationTime: $time * 3;
+
+$PEAboutDelayTime: $PEStickerLineDelayTime;
+$PEAboutAnimationTime: $time * 3;
+
 $portfolioEuroclubLetterDelayTime: $portfolioEuroclubImageTextDelayTime + $portfolioEuroclubImageTextAnimationTime;
 $portfolioEuroclubLetterAnimationTime: $time * 3;
 // VARIABLES FOR PORTFOLIO BLOCK EURO CLUB END
 
 
-// VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL
+// VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL (PAC - Portfolio Alta Capital)
 $portfolioAltaLeftBlockDelayTime: 0s;
 $portfolioAltaLeftBlockAnimationTime: $time * 3;
 
@@ -182,6 +235,19 @@ $portfolioAltaControlsLeftBlockAimationTime: $portfolioAltaControlsRightBlockAim
 
 $portfolioAltaControlsIndicatorsDelayTime: $portfolioAltaControlsRightBlockDelayTime + $portfolioAltaControlsRightBlockAimationTime;
 $portfolioAltaControlsIndicatorsAimationTime: $time * 3;
+
+$PACTitleLineDelayTime: $portfolioAltaControlsRightBlockDelayTime;
+$PACTitleLineAnimationTime: $portfolioEuroclubImageTextAnimationTime;
+
+$PACTitleTextDelayTime: $PACTitleLineDelayTime + $PACTitleLineAnimationTime;
+$PACTitleTextAnimationTime: $time * 3;
+
+$PACStickerLineDelayTime: $PACTitleTextDelayTime + $PACTitleTextAnimationTime;
+$PACStickerLineAnimationTime: $time * 3;
+
+$PACStickerTextDelayTime: $PACStickerLineDelayTime + $PACStickerLineAnimationTime;
+$PACStickerTextAnimationTime: $time * 3;
+
 
     // MOBILE
     $portfolioAltaControlsRightBlockDelayTimeMobile: $portfolioAltaImageDelayTime + $portfolioAltaImageAnimationTime;

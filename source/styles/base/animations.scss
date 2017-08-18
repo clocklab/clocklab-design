@@ -179,6 +179,28 @@
         transform: rotate(-45deg) translate3d(-10%, 0, 0);
     }
 }
+
+@keyframes fadeInUpHalf {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes FadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
 // PORTFOLIO Q7 ANIMATION ENDS
 
 

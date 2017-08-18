@@ -8,12 +8,118 @@
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 
-    .title {
+    .logo {
+        z-index: 2;
+    }
+
+    .portfolio-client {
+
+        .client-name-container {
+
+            span {
+
+                &:before {
+                    content: 'Alta Capital';
+                }
+            }
+        }
+    }
+
+    .info {
         position: absolute;
+        top: px(280);
+        left: px(660);
+        z-index: 3;
+    }
+    
+    @keyframes widthIncreaseStickerLine {
+        from {
+            width: 0;
+        }
+        to {
+            width: px(100);
+        }
+    }
+
+    .sticker {
+        position: relative;
+        font-family: $raleway;
+        font-size: px(24);
+        font-weight: 700;
+
+        span {
+            display: inline-block;
+            color: $white;
+            text-transform: uppercase;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: px(-120);
+            width: px(100);
+            height: 3px;
+            background: $white;
+            content: '';
+            transform: translateY(-50%);
+        }
+    }
+
+    .new-title {
+        margin-top: px(60);
+
+        .text-container {
+            position: relative;
+            overflow: hidden;
+
+            &:before {
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: px(60);
+                background: $blue;
+                content: '';
+                transform: translate3d(0, 50%, 0);
+            }
+
+            &:last-child {
+                display: inline-block;
+            }
+        }
+
+        span {
+            display: block;
+            position: relative;
+            z-index: 1;
+            color: $white;
+            font-size: px(120);
+            font-weight: 800;
+            line-height: px(125);
+            text-transform: uppercase;
+        }
     }
 
     .small-gray-lines {
         z-index: 2;
+
+        .line {
+
+            &.up {
+                transform: rotate(-65deg) translate3d(100%, 0, 0);
+            }
+
+            &.down {
+                transform: rotate(-65deg) translate3d(-100%, 0, 0);
+            }
+
+            &.up,
+            &.down {
+                animation: none;
+            }
+        }
     }
 
     @keyframes right {
@@ -77,24 +183,8 @@
                 width: 100%;
                 height: 100%;
 
-                &.loaded {
-                    animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
-                }
-
                 &.current {
                     z-index: 2;
-                }
-
-                &.left {
-                    animation-duration: $time;
-                    animation-name: left;
-                    animation-fill-mode: both;
-                }
-
-                &.right {
-                    animation-duration: $time;
-                    animation-name: right;
-                    animation-fill-mode: both;
                 }
             }
 
@@ -107,7 +197,6 @@
                 height: 100%;
                 background: $darkGray;
                 content: '';
-                animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
             }
         }
 
@@ -121,7 +210,8 @@
             font-size: px(28);
             letter-spacing: 7px;
             transform-origin: 0 100%;
-            animation: posterTextApear $portfolioAltaPosterTextAnimationTime $portfolioAltaPosterTextDelayTime both;
+            opacity: 1;
+            transform: rotate(-90deg);
 
             &:first-letter {
                 padding-right: 2px;
@@ -141,7 +231,6 @@
                 font-family: 'Roboto';
                 font-size: px(28);
                 line-height: px(40);
-                animation: up $portfolioAltaPosterParagraphAnimationTime $portfolioAltaPosterParagraphDelayTime both;
             }
         }
     }
@@ -203,20 +292,6 @@
                 &.current {
                     z-index: 2;
                 }
-
-                &.left {
-                    animation-delay: 0;
-                    animation-fill-mode: both;
-                    animation-duration: $time;
-                    animation-name: left;
-                }
-
-                &.right {
-                    animation-delay: 0;
-                    animation-fill-mode: both;
-                    animation-duration: $time;
-                    animation-name: right;
-                }
             }
         }
 
@@ -243,11 +318,7 @@
             cursor: pointer;
 
             &--next-slide {
-                margin-left: px(200);
-
-                .content-container {
-                    animation: right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTime both;
-                }   
+                margin-left: px(200); 
 
                 svg {
                     transform: translate3d(-50%, -50%, 0)
@@ -255,10 +326,6 @@
             }
 
             &--previous-slide {
-
-                .content-container {
-                    animation: left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTime both;
-                }
 
                 svg {
                     transform: rotate(180deg) translate3d(50%, 50%, 0)
@@ -280,7 +347,6 @@
             font-size: 0;
             color: $white;
             text-align: center;
-            animation: up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTime both;
 
             span {
                 font-size: px(30);
@@ -306,12 +372,204 @@
     &:before {
         left: 0;
         width: 75vw;
-        animation: right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
     }
 
     &:after {
         right: 0;
         width: 25vw;
-        animation: left $portfolioAltaRightBlockAnimationTime $portfolioAltaRightBlockDelayTime both;
+    }
+
+    &.current {
+
+        .logo {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .menu {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .portfolio-client {
+
+            .client {
+                animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
+        
+                &-name-container {
+        
+                    span {
+                        animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
+                    }
+                }
+            }
+        }
+
+        .portfolio-right-panel {
+
+            .date {
+                animation: rightPanelDate $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
+            }
+        
+            .devices {
+                
+                span {
+                    animation-name: rightPanelDevices;
+                    animation-fill-mode: both;
+        
+                    &:nth-child(1) {
+                        animation-duration: $portfolioRightPanelDevicesDesktopAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesDesktopDelayTime;
+                    }
+        
+                    &:nth-child(2) {
+                        animation-duration: $portfolioRightPanelDevicesTabletAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesTabletDelayTime;
+                    }
+        
+                    &:nth-child(3) {
+                        animation-duration: $portfolioRightPanelDevicesMobileAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesMobileDelayTime;
+                    }
+                }
+            }
+        }
+
+        .bottom-button {
+
+            span {
+                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+            }
+        
+            .line {
+                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation: FadeInRight $PACStickerTextAnimationTime $PACStickerTextDelayTime both;
+            }
+    
+            &:before {
+                animation: widthIncreaseStickerLine $PACStickerLineAnimationTime $PACStickerLineDelayTime both;
+            }
+        }
+
+        .new-title {
+    
+            .text-container {
+    
+                &:before {
+                    animation: halfDown $PACTitleLineAnimationTime linear $PACTitleLineDelayTime both;
+                }
+            }
+    
+            span {
+                animation: Up $PACTitleTextAnimationTime $PACTitleTextDelayTime both;
+            }
+        }
+
+        .small-gray-lines {
+            
+            .line {
+                animation: lineUp 1s $time * 3 both;
+
+                &.down {
+                    animation-name: lineDown; 
+                }
+            }
+        }
+
+        .poster {
+            
+            .image-container {
+    
+                img {
+    
+                    &.loaded {
+                        animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
+                    }
+    
+                    &.left {
+                        animation-duration: $time;
+                        animation-name: left;
+                        animation-fill-mode: both;
+                    }
+    
+                    &.right {
+                        animation-duration: $time;
+                        animation-name: right;
+                        animation-fill-mode: both;
+                    }
+                }
+    
+                &:before {
+                    animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
+                }
+            }
+    
+            & > span {
+                animation: posterTextApear $portfolioAltaPosterTextAnimationTime $portfolioAltaPosterTextDelayTime both;
+            }
+    
+            .text {
+    
+                p {
+                    animation: up $portfolioAltaPosterParagraphAnimationTime $portfolioAltaPosterParagraphDelayTime both;
+                }
+            }
+        }
+    
+        .controls {
+    
+            .gallery {
+    
+                img {
+    
+                    &.left {
+                        animation-delay: 0;
+                        animation-fill-mode: both;
+                        animation-duration: $time;
+                        animation-name: left;
+                    }
+    
+                    &.right {
+                        animation-delay: 0;
+                        animation-fill-mode: both;
+                        animation-duration: $time;
+                        animation-name: right;
+                    }
+                }
+            }
+    
+            .slide-controls {
+    
+                &--next-slide {
+    
+                    .content-container {
+                        animation: right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTime both;
+                    }   
+                }
+    
+                &--previous-slide {
+    
+                    .content-container {
+                        animation: left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTime both;
+                    }
+                }
+            }
+    
+            .indicators {
+                animation: up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTime both;
+            }
+        }
+
+        &:before {
+            animation: right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
+        }
+
+        &:after {
+            animation: left $portfolioAltaRightBlockAnimationTime $portfolioAltaRightBlockDelayTime both;
+        }
     }
 }
