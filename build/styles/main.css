@@ -1435,7 +1435,7 @@ html body .wrapper .screen-block {
     -webkit-animation: crossAnchor 0.2s 0.65s forwards;
             animation: crossAnchor 0.2s 0.65s forwards;
   }
-  .screen-block .behance {
+  .screen-block .jump-button {
     position: absolute;
     bottom: 2.5%;
     z-index: 1;
@@ -1443,12 +1443,12 @@ html body .wrapper .screen-block {
     margin: 0;
     left: 26%;
   }
-  .screen-block .behance a:before {
+  .screen-block .jump-button a:before {
     top: 52%;
     left: -1px;
     background: #FFF;
   }
-  .screen-block .behance a span {
+  .screen-block .jump-button a span {
     color: #FFF;
     font-size: 3.75vw;
     font-weight: 100;
@@ -1685,7 +1685,7 @@ html body .wrapper .screen-block {
     -webkit-animation: crossAnchor 0.2s 0.65s forwards;
             animation: crossAnchor 0.2s 0.65s forwards;
   }
-  .screen-block .behance {
+  .screen-block .jump-button {
     position: absolute;
     bottom: 2.5%;
     z-index: 1;
@@ -1693,12 +1693,12 @@ html body .wrapper .screen-block {
     margin: 0;
     left: 26%;
   }
-  .screen-block .behance a:before {
+  .screen-block .jump-button a:before {
     top: 52%;
     left: -1px;
     background: #FFF;
   }
-  .screen-block .behance a span {
+  .screen-block .jump-button a span {
     color: #FFF;
     font-size: 2.11272vw;
     font-weight: 100;
@@ -1935,7 +1935,7 @@ html body .wrapper .screen-block {
     -webkit-animation: crossAnchor 0.2s 0.65s forwards;
             animation: crossAnchor 0.2s 0.65s forwards;
   }
-  .screen-block .behance {
+  .screen-block .jump-button {
     position: absolute;
     bottom: 2.5%;
     z-index: 1;
@@ -1943,12 +1943,12 @@ html body .wrapper .screen-block {
     margin: 0;
     left: 26%;
   }
-  .screen-block .behance a:before {
+  .screen-block .jump-button a:before {
     top: 52%;
     left: -1px;
     background: #FFF;
   }
-  .screen-block .behance a span {
+  .screen-block .jump-button a span {
     color: #FFF;
     font-size: 1.5625vw;
     font-weight: 100;
@@ -2191,11 +2191,47 @@ html body .wrapper .screen-block {
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
   }
+  .screen-block .jump-letters a:hover span:nth-child(8) {
+    -webkit-animation-delay: 0.35s;
+            animation-delay: 0.35s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(9) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(10) {
+    -webkit-animation-delay: 0.45s;
+            animation-delay: 0.45s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(11) {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(12) {
+    -webkit-animation-delay: 0.55s;
+            animation-delay: 0.55s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(13) {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(14) {
+    -webkit-animation-delay: 0.65s;
+            animation-delay: 0.65s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(15) {
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(16) {
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
+  }
   .screen-block .jump-letters a:hover:before {
     -webkit-animation: crossAnchor 0.2s 0.65s forwards;
             animation: crossAnchor 0.2s 0.65s forwards;
   }
-  .screen-block .behance {
+  .screen-block .jump-button {
     position: absolute;
     padding: 0;
     z-index: 1;
@@ -2203,12 +2239,12 @@ html body .wrapper .screen-block {
     margin: 0;
     left: 11%;
   }
-  .screen-block .behance a:before {
+  .screen-block .jump-button a:before {
     top: 52%;
     left: -1px;
     background: #FFF;
   }
-  .screen-block .behance a span {
+  .screen-block .jump-button a span {
     color: #FFF;
     font-size: 1.17192vw;
     font-weight: 100;
@@ -2443,11 +2479,47 @@ html body .wrapper .screen-block {
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
   }
+  .screen-block .jump-letters a:hover span:nth-child(8) {
+    -webkit-animation-delay: 0.35s;
+            animation-delay: 0.35s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(9) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(10) {
+    -webkit-animation-delay: 0.45s;
+            animation-delay: 0.45s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(11) {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(12) {
+    -webkit-animation-delay: 0.55s;
+            animation-delay: 0.55s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(13) {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(14) {
+    -webkit-animation-delay: 0.65s;
+            animation-delay: 0.65s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(15) {
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(16) {
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
+  }
   .screen-block .jump-letters a:hover:before {
     -webkit-animation: crossAnchor 0.2s 0.65s forwards;
             animation: crossAnchor 0.2s 0.65s forwards;
   }
-  .screen-block .behance {
+  .screen-block .jump-button {
     position: absolute;
     padding: 0;
     z-index: 1;
@@ -2455,12 +2527,12 @@ html body .wrapper .screen-block {
     margin: 0;
     left: 11%;
   }
-  .screen-block .behance a:before {
+  .screen-block .jump-button a:before {
     top: 52%;
     left: -1px;
     background: #FFF;
   }
-  .screen-block .behance a span {
+  .screen-block .jump-button a span {
     color: #FFF;
     font-size: 0.8784vw;
     font-weight: 100;
@@ -2692,11 +2764,47 @@ html body .wrapper .screen-block {
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
   }
+  .screen-block .jump-letters a:hover span:nth-child(8) {
+    -webkit-animation-delay: 0.35s;
+            animation-delay: 0.35s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(9) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(10) {
+    -webkit-animation-delay: 0.45s;
+            animation-delay: 0.45s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(11) {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(12) {
+    -webkit-animation-delay: 0.55s;
+            animation-delay: 0.55s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(13) {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(14) {
+    -webkit-animation-delay: 0.65s;
+            animation-delay: 0.65s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(15) {
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(16) {
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
+  }
   .screen-block .jump-letters a:hover:before {
     -webkit-animation: crossAnchor 0.2s 0.65s forwards;
             animation: crossAnchor 0.2s 0.65s forwards;
   }
-  .screen-block .behance {
+  .screen-block .jump-button {
     position: absolute;
     padding: 0;
     z-index: 1;
@@ -2704,12 +2812,12 @@ html body .wrapper .screen-block {
     margin: 0;
     left: 11%;
   }
-  .screen-block .behance a:before {
+  .screen-block .jump-button a:before {
     top: 52%;
     left: -1px;
     background: #FFF;
   }
-  .screen-block .behance a span {
+  .screen-block .jump-button a span {
     color: #FFF;
     font-size: 0.71424vw;
     font-weight: 100;
@@ -2941,11 +3049,47 @@ html body .wrapper .screen-block {
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
   }
+  .screen-block .jump-letters a:hover span:nth-child(8) {
+    -webkit-animation-delay: 0.35s;
+            animation-delay: 0.35s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(9) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(10) {
+    -webkit-animation-delay: 0.45s;
+            animation-delay: 0.45s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(11) {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(12) {
+    -webkit-animation-delay: 0.55s;
+            animation-delay: 0.55s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(13) {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(14) {
+    -webkit-animation-delay: 0.65s;
+            animation-delay: 0.65s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(15) {
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(16) {
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
+  }
   .screen-block .jump-letters a:hover:before {
     -webkit-animation: crossAnchor 0.2s 0.65s forwards;
             animation: crossAnchor 0.2s 0.65s forwards;
   }
-  .screen-block .behance {
+  .screen-block .jump-button {
     position: absolute;
     padding: 0;
     z-index: 1;
@@ -2953,12 +3097,12 @@ html body .wrapper .screen-block {
     margin: 0;
     left: 11%;
   }
-  .screen-block .behance a:before {
+  .screen-block .jump-button a:before {
     top: 52%;
     left: -1px;
     background: #FFF;
   }
-  .screen-block .behance a span {
+  .screen-block .jump-button a span {
     color: #FFF;
     font-size: 0.62496vw;
     font-weight: 100;
@@ -3190,11 +3334,47 @@ html body .wrapper .screen-block {
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
   }
+  .screen-block .jump-letters a:hover span:nth-child(8) {
+    -webkit-animation-delay: 0.35s;
+            animation-delay: 0.35s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(9) {
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(10) {
+    -webkit-animation-delay: 0.45s;
+            animation-delay: 0.45s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(11) {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(12) {
+    -webkit-animation-delay: 0.55s;
+            animation-delay: 0.55s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(13) {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(14) {
+    -webkit-animation-delay: 0.65s;
+            animation-delay: 0.65s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(15) {
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+  }
+  .screen-block .jump-letters a:hover span:nth-child(16) {
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
+  }
   .screen-block .jump-letters a:hover:before {
     -webkit-animation: crossAnchor 0.2s 0.65s forwards;
             animation: crossAnchor 0.2s 0.65s forwards;
   }
-  .screen-block .behance {
+  .screen-block .jump-button {
     position: absolute;
     padding: 0;
     z-index: 1;
@@ -3202,12 +3382,12 @@ html body .wrapper .screen-block {
     margin: 0;
     left: 11%;
   }
-  .screen-block .behance a:before {
+  .screen-block .jump-button a:before {
     top: 52%;
     left: -1px;
     background: #FFF;
   }
-  .screen-block .behance a span {
+  .screen-block .jump-button a span {
     color: #FFF;
     font-size: 0.46872vw;
     font-weight: 100;
@@ -6402,48 +6582,45 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .service-one-info, #service-one.screen-block .logo, #service-one.screen-block .menu, #service-one.screen-block .bg-clock {
+    display: none;
+  }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
   }
-  #service-one.screen-block .service-one-info {
-    display: none;
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 1.5%;
+    bottom: 8%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #444;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #444;
+    font-size: 3.90625vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
   }
   #service-one.screen-block .title {
-    display: inherit;
-    margin-top: 7vh;
-    margin-left: 3vh;
+    margin: 20% 0 0 11%;
+  }
+  #service-one.screen-block .title p {
+    padding: 7% 0 0;
+    line-height: 1.5;
+    font-size: 3.75vw;
   }
   #service-one.screen-block .title span.name {
-    font-size: 2.1vh;
-    left: 11vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .title span.name span {
-    color: #cccccc;
-    display: inherit;
-  }
-  #service-one.screen-block .title span.name:before {
-    background: #cccccc;
-    left: -11vh;
-    width: 9vh;
-    top: 1vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    display: none;
-  }
-  #service-one.screen-block .title .word {
-    text-align: left;
-    height: 7.5vh;
+    font-size: 4.0625vw;
+    top: -3.5vh;
   }
   #service-one.screen-block .title .word span {
-    bottom: -100px;
-    font-size: 3.9vh;
-  }
-  #service-one.screen-block .logo {
-    display: none;
-  }
-  #service-one.screen-block .bg-clock {
-    display: none;
+    font-size: 7.34375vw;
   }
 }
 @media (min-width: 415px) and (max-width: 667px) {
@@ -6452,48 +6629,45 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .service-one-info, #service-one.screen-block .logo, #service-one.screen-block .menu, #service-one.screen-block .bg-clock {
+    display: none;
+  }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
   }
-  #service-one.screen-block .service-one-info {
-    display: none;
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 1.5%;
+    bottom: 8%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #444;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #444;
+    font-size: 2.20075vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
   }
   #service-one.screen-block .title {
-    display: inherit;
-    margin-top: 7vh;
-    margin-left: 3vh;
+    margin: 20% 0 0 11%;
+  }
+  #service-one.screen-block .title p {
+    padding: 7% 0 0;
+    line-height: 1.5;
+    font-size: 2.11272vw;
   }
   #service-one.screen-block .title span.name {
-    font-size: 2.1vh;
-    left: 11vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .title span.name span {
-    color: #cccccc;
-    display: inherit;
-  }
-  #service-one.screen-block .title span.name:before {
-    background: #cccccc;
-    left: -11vh;
-    width: 9vh;
-    top: 1vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    display: none;
-  }
-  #service-one.screen-block .title .word {
-    text-align: left;
-    height: 7.5vh;
+    font-size: 2.28878vw;
+    top: -3.5vh;
   }
   #service-one.screen-block .title .word span {
-    bottom: -100px;
-    font-size: 3.9vh;
-  }
-  #service-one.screen-block .logo {
-    display: none;
-  }
-  #service-one.screen-block .bg-clock {
-    display: none;
+    font-size: 4.13741vw;
   }
 }
 @media (min-width: 668px) and (max-width: 768px) {
@@ -6502,48 +6676,45 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .service-one-info, #service-one.screen-block .logo, #service-one.screen-block .menu, #service-one.screen-block .bg-clock {
+    display: none;
+  }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
   }
-  #service-one.screen-block .service-one-info {
-    display: none;
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 1.5%;
+    bottom: 8%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #444;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #444;
+    font-size: 1.6276vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
   }
   #service-one.screen-block .title {
-    display: inherit;
-    margin-top: 7vh;
-    margin-left: 3vh;
+    margin: 20% 0 0 11%;
+  }
+  #service-one.screen-block .title p {
+    padding: 7% 0 0;
+    line-height: 1.5;
+    font-size: 1.5625vw;
   }
   #service-one.screen-block .title span.name {
-    font-size: 2.1vh;
-    left: 11vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .title span.name span {
-    color: #cccccc;
-    display: inherit;
-  }
-  #service-one.screen-block .title span.name:before {
-    background: #cccccc;
-    left: -11vh;
-    width: 9vh;
-    top: 1vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    display: none;
-  }
-  #service-one.screen-block .title .word {
-    text-align: left;
-    height: 7.5vh;
+    font-size: 1.6927vw;
+    top: -3.5vh;
   }
   #service-one.screen-block .title .word span {
-    bottom: -100px;
-    font-size: 3.9vh;
-  }
-  #service-one.screen-block .logo {
-    display: none;
-  }
-  #service-one.screen-block .bg-clock {
-    display: none;
+    font-size: 3.05989vw;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -6566,6 +6737,25 @@ html body .wrapper .screen-block {
     color: #FFF;
     width: 100%;
     top: 12%;
+  }
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 29.7%;
+    bottom: 7%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #000;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #000;
+    font-size: 1.22075vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -6620,6 +6810,25 @@ html body .wrapper .screen-block {
     width: 100%;
     top: 12%;
   }
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 29.7%;
+    bottom: 7%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #000;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #000;
+    font-size: 0.915vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
   #service-one.screen-block .service-one-info {
     position: absolute;
   }
@@ -6672,6 +6881,25 @@ html body .wrapper .screen-block {
     color: #FFF;
     width: 100%;
     top: 12%;
+  }
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 29.7%;
+    bottom: 7%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #000;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #000;
+    font-size: 0.744vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -6726,6 +6954,25 @@ html body .wrapper .screen-block {
     width: 100%;
     top: 12%;
   }
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 29.7%;
+    bottom: 7%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #000;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #000;
+    font-size: 0.651vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
   #service-one.screen-block .service-one-info {
     position: absolute;
   }
@@ -6778,6 +7025,25 @@ html body .wrapper .screen-block {
     color: #FFF;
     width: 100%;
     top: 12%;
+  }
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 29.7%;
+    bottom: 7%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #000;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #000;
+    font-size: 0.48825vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -7918,14 +8184,17 @@ html body .wrapper .screen-block {
     visibility: visible;
     opacity: 1;
   }
-  .menu.gray__item {
+  .menu.gray .menu__background {
+    background: none;
+  }
+  .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray__item .symbol,
-  .menu.gray__item .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
-  .menu.gray__item .hamburger-tick {
+  .menu.gray .menu__item .hamburger-tick {
     background: #444;
   }
 }
@@ -8372,14 +8641,17 @@ html body .wrapper .screen-block {
     visibility: visible;
     opacity: 1;
   }
-  .menu.gray__item {
+  .menu.gray .menu__background {
+    background: none;
+  }
+  .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray__item .symbol,
-  .menu.gray__item .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
-  .menu.gray__item .hamburger-tick {
+  .menu.gray .menu__item .hamburger-tick {
     background: #444;
   }
 }
@@ -8827,10 +9099,14 @@ html body .wrapper .screen-block {
     visibility: visible;
     opacity: 1;
   }
+  .menu.gray .menu__background {
+    background: none;
+  }
   .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray .menu__item > .symbol, .menu.gray .menu__item > .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
   .menu.gray .menu__item .hamburger-tick .inner-tick {
@@ -9281,10 +9557,14 @@ html body .wrapper .screen-block {
     visibility: visible;
     opacity: 1;
   }
+  .menu.gray .menu__background {
+    background: none;
+  }
   .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray .menu__item > .symbol, .menu.gray .menu__item > .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
   .menu.gray .menu__item .hamburger-tick .inner-tick {
@@ -9735,10 +10015,14 @@ html body .wrapper .screen-block {
     visibility: visible;
     opacity: 1;
   }
+  .menu.gray .menu__background {
+    background: none;
+  }
   .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray .menu__item > .symbol, .menu.gray .menu__item > .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
   .menu.gray .menu__item .hamburger-tick .inner-tick {
@@ -10189,10 +10473,14 @@ html body .wrapper .screen-block {
     visibility: visible;
     opacity: 1;
   }
+  .menu.gray .menu__background {
+    background: none;
+  }
   .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray .menu__item > .symbol, .menu.gray .menu__item > .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
   .menu.gray .menu__item .hamburger-tick .inner-tick {
@@ -10643,10 +10931,14 @@ html body .wrapper .screen-block {
     visibility: visible;
     opacity: 1;
   }
+  .menu.gray .menu__background {
+    background: none;
+  }
   .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray .menu__item > .symbol, .menu.gray .menu__item > .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
   .menu.gray .menu__item .hamburger-tick .inner-tick {
@@ -11097,10 +11389,14 @@ html body .wrapper .screen-block {
     visibility: visible;
     opacity: 1;
   }
+  .menu.gray .menu__background {
+    background: none;
+  }
   .menu.gray .menu__item {
     border-color: #444;
   }
-  .menu.gray .menu__item > .symbol, .menu.gray .menu__item > .name {
+  .menu.gray .menu__item .symbol,
+  .menu.gray .menu__item .name {
     color: #444;
   }
   .menu.gray .menu__item .hamburger-tick .inner-tick {
@@ -21664,48 +21960,45 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .service-one-info, #service-one.screen-block .logo, #service-one.screen-block .menu, #service-one.screen-block .bg-clock {
+    display: none;
+  }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
   }
-  #service-one.screen-block .service-one-info {
-    display: none;
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 1.5%;
+    bottom: 8%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #444;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #444;
+    font-size: 3.90625vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
   }
   #service-one.screen-block .title {
-    display: inherit;
-    margin-top: 7vh;
-    margin-left: 3vh;
+    margin: 20% 0 0 11%;
+  }
+  #service-one.screen-block .title p {
+    padding: 7% 0 0;
+    line-height: 1.5;
+    font-size: 3.75vw;
   }
   #service-one.screen-block .title span.name {
-    font-size: 2.1vh;
-    left: 11vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .title span.name span {
-    color: #cccccc;
-    display: inherit;
-  }
-  #service-one.screen-block .title span.name:before {
-    background: #cccccc;
-    left: -11vh;
-    width: 9vh;
-    top: 1vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    display: none;
-  }
-  #service-one.screen-block .title .word {
-    text-align: left;
-    height: 7.5vh;
+    font-size: 4.0625vw;
+    top: -3.5vh;
   }
   #service-one.screen-block .title .word span {
-    bottom: -100px;
-    font-size: 3.9vh;
-  }
-  #service-one.screen-block .logo {
-    display: none;
-  }
-  #service-one.screen-block .bg-clock {
-    display: none;
+    font-size: 7.34375vw;
   }
 }
 @media (min-width: 415px) and (max-width: 667px) {
@@ -21714,48 +22007,45 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .service-one-info, #service-one.screen-block .logo, #service-one.screen-block .menu, #service-one.screen-block .bg-clock {
+    display: none;
+  }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
   }
-  #service-one.screen-block .service-one-info {
-    display: none;
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 1.5%;
+    bottom: 8%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #444;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #444;
+    font-size: 2.20075vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
   }
   #service-one.screen-block .title {
-    display: inherit;
-    margin-top: 7vh;
-    margin-left: 3vh;
+    margin: 20% 0 0 11%;
+  }
+  #service-one.screen-block .title p {
+    padding: 7% 0 0;
+    line-height: 1.5;
+    font-size: 2.11272vw;
   }
   #service-one.screen-block .title span.name {
-    font-size: 2.1vh;
-    left: 11vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .title span.name span {
-    color: #cccccc;
-    display: inherit;
-  }
-  #service-one.screen-block .title span.name:before {
-    background: #cccccc;
-    left: -11vh;
-    width: 9vh;
-    top: 1vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    display: none;
-  }
-  #service-one.screen-block .title .word {
-    text-align: left;
-    height: 7.5vh;
+    font-size: 2.28878vw;
+    top: -3.5vh;
   }
   #service-one.screen-block .title .word span {
-    bottom: -100px;
-    font-size: 3.9vh;
-  }
-  #service-one.screen-block .logo {
-    display: none;
-  }
-  #service-one.screen-block .bg-clock {
-    display: none;
+    font-size: 4.13741vw;
   }
 }
 @media (min-width: 668px) and (max-width: 768px) {
@@ -21764,48 +22054,45 @@ html body .wrapper .screen-block {
     font-weight: 400;
     z-index: 0;
   }
+  #service-one.screen-block .service-one-info, #service-one.screen-block .logo, #service-one.screen-block .menu, #service-one.screen-block .bg-clock {
+    display: none;
+  }
   #service-one.screen-block .bottom-button span:before {
     content: 'Все услуги';
   }
-  #service-one.screen-block .service-one-info {
-    display: none;
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 1.5%;
+    bottom: 8%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #444;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #444;
+    font-size: 1.6276vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
   }
   #service-one.screen-block .title {
-    display: inherit;
-    margin-top: 7vh;
-    margin-left: 3vh;
+    margin: 20% 0 0 11%;
+  }
+  #service-one.screen-block .title p {
+    padding: 7% 0 0;
+    line-height: 1.5;
+    font-size: 1.5625vw;
   }
   #service-one.screen-block .title span.name {
-    font-size: 2.1vh;
-    left: 11vh;
-    top: -3vh;
-  }
-  #service-one.screen-block .title span.name span {
-    color: #cccccc;
-    display: inherit;
-  }
-  #service-one.screen-block .title span.name:before {
-    background: #cccccc;
-    left: -11vh;
-    width: 9vh;
-    top: 1vh;
-  }
-  #service-one.screen-block .title .animation-border {
-    display: none;
-  }
-  #service-one.screen-block .title .word {
-    text-align: left;
-    height: 7.5vh;
+    font-size: 1.6927vw;
+    top: -3.5vh;
   }
   #service-one.screen-block .title .word span {
-    bottom: -100px;
-    font-size: 3.9vh;
-  }
-  #service-one.screen-block .logo {
-    display: none;
-  }
-  #service-one.screen-block .bg-clock {
-    display: none;
+    font-size: 3.05989vw;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -21828,6 +22115,25 @@ html body .wrapper .screen-block {
     color: #FFF;
     width: 100%;
     top: 12%;
+  }
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 29.7%;
+    bottom: 7%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #000;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #000;
+    font-size: 1.22075vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -21882,6 +22188,25 @@ html body .wrapper .screen-block {
     width: 100%;
     top: 12%;
   }
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 29.7%;
+    bottom: 7%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #000;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #000;
+    font-size: 0.915vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
   #service-one.screen-block .service-one-info {
     position: absolute;
   }
@@ -21934,6 +22259,25 @@ html body .wrapper .screen-block {
     color: #FFF;
     width: 100%;
     top: 12%;
+  }
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 29.7%;
+    bottom: 7%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #000;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #000;
+    font-size: 0.744vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -21988,6 +22332,25 @@ html body .wrapper .screen-block {
     width: 100%;
     top: 12%;
   }
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 29.7%;
+    bottom: 7%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #000;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #000;
+    font-size: 0.651vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
   #service-one.screen-block .service-one-info {
     position: absolute;
   }
@@ -22040,6 +22403,25 @@ html body .wrapper .screen-block {
     color: #FFF;
     width: 100%;
     top: 12%;
+  }
+  #service-one.screen-block .jump-button {
+    left: initial;
+    right: 29.7%;
+    bottom: 7%;
+  }
+  #service-one.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #service-one.screen-block .jump-button a:before {
+    background: #000;
+  }
+  #service-one.screen-block .jump-button a span {
+    color: #000;
+    font-size: 0.48825vw;
+    font-weight: 500;
+  }
+  #service-one.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;

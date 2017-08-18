@@ -568,8 +568,8 @@
     }
 
     &.gray {
-
-        &__item {
+        .menu__background { background: none; }
+        .menu__item {
             border-color: $darkGray;
 
             .symbol,

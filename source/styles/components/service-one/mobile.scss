@@ -1,52 +1,41 @@
 & {
+    .service-one-info, .logo, .menu, .bg-clock { display: none; }
     font-family: $raleway;
     font-weight: $regular;
     z-index: 0;
     
     // ----- bottom-button -----
-    .bottom-button span:before {
-        content: 'Все услуги';
-    }
+    .bottom-button span:before { content: 'Все услуги'; }
 
-    // ----- service-one-info -----
-    .service-one-info {
-        display: none;
+    // ----- jump-button -----
+    .jump-button {
+        left: initial;
+        right: 1.5%;
+        bottom: 8%;
+        a {
+            text-transform: uppercase;
+            &:before { background: $darkGray; }
+            span {
+                color: $darkGray;
+                font-size: px(25);
+                font-weight: $medium;
+                &:nth-of-type(10) { margin-right: 5px;}
+            }
+        }
     }
     
     // ----- title -----
     .title {
-        display: inherit;
-        margin-top: 7vh;
-        margin-left: 3vh;
+        margin: 20% 0 0 11%;
+        p {
+            padding: 7% 0 0;
+            line-height: 1.5;
+            font-size: px(24);
+        }
         span.name {
-            font-size: 2.1vh;
-            left: 11vh;
-            top: -3vh;
-            span {
-                color: lighten($gray, 20%);
-                display: inherit;
-            }
-            &:before {
-                background: lighten($gray, 20%);
-                left: -11vh;
-                width: 9vh;
-                top: 1vh;
-            }
+            font-size: px(26);
+            top: -3.5vh;
         }
-        .animation-border { display: none; }
-        .word {
-            text-align: left;
-            height: 7.5vh;
-            span {
-                bottom: -100px;
-                font-size: 3.9vh;
-            }
-        }
+        .word span { font-size: px(47); }
     }
-
-    // ----- logo -----
-    .logo { display: none; }
-
-    // ----- bg clock -----
-    .bg-clock { display: none; }
 }
