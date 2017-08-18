@@ -9,6 +9,7 @@ html {
             height: 100%;
             display: flex;
             flex-direction: column;
+            background: $black;
             .cyrillic { font-family: $roboto; }
             nav ul li { @include inline-block; }
             input, button { outline: none; }
@@ -39,7 +40,18 @@ html {
                 width: 100%;
                 height: 100vh;
                 display: table;
-                position: relative;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: -1;
+
+                &.current {
+                    z-index: 2;
+                }              
+                
+                &.previous {
+                    z-index: 1;
+                }
             }
         }
     }

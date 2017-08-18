@@ -4,13 +4,137 @@
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    
+    .logo {
+        z-index: 2;
+    }
 
-    .title {
+    .portfolio-client {
+
+        .client-name-container {
+
+            span {
+
+                &:before {
+                    content: 'Vino grad';
+                }
+            }
+        }
+    }
+
+    .info {
         position: absolute;
+        top: px(280);
+        left: px(660);
+        z-index: 3;
+    }
+    
+    @keyframes widthIncreaseStickerLine {
+        from {
+            width: 0;
+        }
+        to {
+            width: px(100);
+        }
+    }
+
+    .sticker {
+        position: relative;
+        font-family: $raleway;
+        font-size: px(24);
+        font-weight: 700;
+
+        span {
+            display: inline-block;
+            color: $white;
+            text-transform: uppercase;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: px(-120);
+            width: px(100);
+            height: 3px;
+            background: $white;
+            content: '';
+            transform: translateY(-50%);
+        }
+    }
+
+    .new-title {
+        margin-top: px(60);
+
+        .text-container {
+            position: relative;
+            overflow: hidden;
+
+            &:before {
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: px(60);
+                background: $blue;
+                content: '';
+                transform: translate3d(0, 50%, 0);
+            }
+
+            &:last-child {
+                display: inline-block;
+            }
+        }
+
+        span {
+            display: block;
+            position: relative;
+            z-index: 1;
+            color: $white;
+            font-size: px(120);
+            font-weight: 800;
+            line-height: px(125);
+            text-transform: uppercase;
+        }
+    }
+
+    .about-work {
+        margin-top: px(50);
+        width: px(660);
+
+        p {
+            display: block;
+            margin-bottom: px(30);
+            color: $white;
+            font-family: $roboto;
+            font-size: px(32);
+            line-height: px(40);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     .small-gray-lines {
         z-index: 2;
+
+        .line {
+
+            &.up {
+                transform: rotate(-65deg) translate3d(100%, 0, 0);
+            }
+
+            &.down {
+                transform: rotate(-65deg) translate3d(-100%, 0, 0);
+            }
+
+            &.up,
+            &.down {
+                animation: none;
+            }
+        }
     }
 
     @keyframes posterTextApearVinograd {
@@ -33,9 +157,10 @@
         .image-container {
             position: relative;
             z-index: 2;
+            width: 100%;
+            height: 54vh;
             box-shadow: 0 0 px(100) px(10) rgba(0, 0, 0, .4);
             overflow: hidden;
-            animation: poster $portfolioVinogradPosterAnimationTime $portfolioVinogradPosterDelayTime both;
 
             img {
                 position: relative;
@@ -43,7 +168,6 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
             }
 
             &:before {
@@ -56,7 +180,6 @@
                 background: rgba(0, 0, 0, .8);
                 content: '';
                 transition: opacity $time;
-                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
             }
 
             &:hover {
@@ -77,13 +200,9 @@
             font-size: px(28);
             letter-spacing: 7px;
             transform-origin: 0 100%;
-            
-            animation: posterTextApearVinograd $portfolioVinogradPosterTextAnimationTime $portfolioVinogradPosterTextDelayTime both;
+            transform: rotate(90deg) translateY(0);
         }
     }
-
-    // ANIMATION DELAY FOR RIGHT AND LEFT PANELS
-    // ANIMATION DELAY FOR RIGHT AND LEFT PANELS ENDS
 
     &:before,
     &:after {
@@ -99,11 +218,146 @@
 
     &:before {
         left: 0;
-        animation: down $portfolioVinogradLeftBlockAnimationTime $portfolioVinogradLeftBlockDelayTime both; 
     }
 
     &:after {
         right: 0;
-        animation: up $portfolioVinogradRightBlockAnimationTime $portfolioVinogradRightBlockDelayTime both;
+    }
+
+    &.current {
+        animation-play-state: running;
+
+        .logo {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .menu {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .portfolio-client {
+
+            .client {
+                animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
+        
+                &-name-container {
+        
+                    span {
+                        animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
+                    }
+                }
+            }
+        }
+
+        .portfolio-right-panel {
+
+            .date {
+                animation: rightPanelDate $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
+            }
+        
+            .devices {
+                
+                span {
+                    animation-name: rightPanelDevices;
+                    animation-fill-mode: both;
+        
+                    &:nth-child(1) {
+                        animation-duration: $portfolioRightPanelDevicesDesktopAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesDesktopDelayTime;
+                    }
+        
+                    &:nth-child(2) {
+                        animation-duration: $portfolioRightPanelDevicesTabletAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesTabletDelayTime;
+                    }
+        
+                    &:nth-child(3) {
+                        animation-duration: $portfolioRightPanelDevicesMobileAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesMobileDelayTime;
+                    }
+                }
+            }
+        }
+
+        .bottom-button {
+
+            span {
+                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+            }
+        
+            .line {
+                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation: FadeInRight $PVStickerTextAnimationTime $PVStickerTextDelayTime both;
+            }
+    
+            &:before {
+                animation: widthIncreaseStickerLine $PVStickerLineAnimationTime $PVStickerLineDelayTime both;
+            }
+        }
+
+        .new-title {
+    
+            .text-container {
+    
+                &:before {
+                    animation: halfDown $PVTitleLineAnimationTime linear $PVTitleLineDelayTime both;
+                }
+            }
+    
+            span {
+                animation: Up $PVTitleTextAnimationTime $PVTitleTextDelayTime both;
+            }
+        }
+    
+        .about-work {
+    
+            p {
+                animation: fadeInUpHalf $PVAboutAnimationTime $PVAboutDelayTime both;
+            }
+        }
+
+        .small-gray-lines {
+
+            .line {
+                animation: lineUp 1s $time * 3 both;
+
+                &.down {
+                    animation-name: lineDown; 
+                }
+            }
+        }
+
+        .poster {
+    
+            .image-container {
+                animation: poster $portfolioVinogradPosterAnimationTime $portfolioVinogradPosterDelayTime both;
+    
+                img {
+                    animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
+                }
+    
+                &:before {
+                    animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
+                }
+            }
+    
+            span {
+                animation: posterTextApearVinograd $portfolioVinogradPosterTextAnimationTime $portfolioVinogradPosterTextDelayTime both;
+            }
+        }
+
+        &:before {
+            animation: down $portfolioVinogradLeftBlockAnimationTime $portfolioVinogradLeftBlockDelayTime both; 
+        }
+
+        &:after {
+            animation: up $portfolioVinogradRightBlockAnimationTime $portfolioVinogradRightBlockDelayTime both;
+        }
     }
 }

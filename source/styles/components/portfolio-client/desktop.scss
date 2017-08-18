@@ -6,7 +6,7 @@
     bottom: px(300);
     left: px(100);
     z-index: 5;
-    color: $darkGray;
+    color: $white;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 
     span {
@@ -19,7 +19,7 @@
         line-height: px(62);
         font-weight: 500;
         vertical-align: bottom;
-        animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
+        // animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
 
         &-name-container {
             vertical-align: bottom;
@@ -29,12 +29,12 @@
             overflow: hidden;
 
             span {
-                animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
+                // animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
             }
         }
     }
 
-    &.white {
-        color: $white;
+    &.gray {
+        color: $darkGray;
     }
 }

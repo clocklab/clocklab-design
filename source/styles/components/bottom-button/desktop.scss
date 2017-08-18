@@ -6,17 +6,21 @@
     bottom: px(50);
     left: 0;
     z-index: 6;
-    padding: 0 px(140) 0 px(120);
-    width: 100%;
+    margin-left: 3%;
+    width: 93%;
+    overflow: hidden;
 
     a {
         display: flex;
         height: px(40);
         cursor: pointer;
+
         &:hover {
+
             span {
                 padding: 0 px(60) 0 px(50);
             }
+
             .arrow {
                 opacity: 1;
                 transform: translateX(10%);
@@ -33,14 +37,18 @@
         font-weight: 700; 
         text-transform: uppercase;
         transition: padding $timeTick;
+        // animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+
         &:before {
             content: 'К портфолио';
         }
     }
+
     .arrow-container {
         width: px(80);
         overflow: hidden;
     }
+
     .arrow {
         width: 90%;
         opacity: 0;
@@ -61,10 +69,12 @@
             stroke-miterlimit: 10;
         }
     }
+
     .line {
         flex-grow: 1;
         height: 1px;
         background: $gray;
         transition: width $timeTick;
+        // animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
     }
 }

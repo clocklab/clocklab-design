@@ -30,3 +30,6 @@
 
 // portfolio-shadow
 //= components/portfolio-shadow.js
+
+// slides changing
+//= components/slides-changing.js
