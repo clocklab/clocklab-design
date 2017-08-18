@@ -1,1 +1,11 @@
 @import '../desktop';
+
+// ----- watch -----
+.hours-container, .minutes-container,
+.seconds-container { left: 0; }
+
+// ----- title -----
+.title .word {
+    span { font-size: px(116); }
+    &:last-of-type span { font-size: px(46); }
+}

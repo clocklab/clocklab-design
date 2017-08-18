@@ -4,31 +4,19 @@
 // WowJS
 //= ../../bower_components/wow/dist/wow.js
 
-// scripts
+// shadow
+//= components/shadow.js
 
+// scripts
+//= components/scripts.js
 
 // clock
-
-
-// text shadow
-
-
-
-// q7
-
+//= components/clock.js
 
 // menu
 //= components/menu.js
 
 // alta
-
-
-// horizontal-scroll
-//= components/horizontal-scroll.js
-
-// portfolio-shadow
-//= components/portfolio-shadow.js
-
 //= components/alta.js
 
 // letter
@@ -36,3 +24,9 @@
 
 // button-freaky
 //= components/button-freaky.js
+
+// horizontal-scroll
+//= components/horizontal-scroll.js
+
+// portfolio-shadow
+//= components/portfolio-shadow.js
