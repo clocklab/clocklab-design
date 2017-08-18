@@ -4,14 +4,14 @@
 // WowJS
 //= ../../bower_components/wow/dist/wow.js
 
+// shadow
+//= components/shadow.js
+
 // scripts
 //= components/scripts.js
 
 // clock
 //= components/clock.js
-
-// text shadow
-//= components/shadow.js
 
 // menu
 //= components/menu.js

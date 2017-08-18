@@ -1082,13 +1082,15 @@ html body .wrapper .screen-block {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
   }
   .screen-block .logo {
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
     position: absolute;
     z-index: 1;
-    top: 4vh;
-    left: 2vh;
+    left: 5%;
+    top: 4%;
   }
   .screen-block .logo .image {
     width: 135px;
@@ -1120,11 +1122,11 @@ html body .wrapper .screen-block {
 @media (max-width: 414px) {
   .screen-block .language {
     position: absolute;
-    font-size: 1.34vh;
-    bottom: 15vh;
+    font-size: 2.1875vw;
+    bottom: 27%;
     z-index: 1;
     zoom: 1.8;
-    left: 1vh;
+    left: 4%;
   }
   .screen-block .language div {
     width: -webkit-fit-content;
@@ -1134,10 +1136,10 @@ html body .wrapper .screen-block {
             transform: rotate(-90deg);
   }
   .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 3.5vh;
+    margin-bottom: 6.875vw;
   }
   .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 2vh;
+    margin-bottom: 3.125vw;
   }
   .screen-block .language div a {
     color: #999;
@@ -1151,8 +1153,8 @@ html body .wrapper .screen-block {
   .screen-block .language div a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: .15vh;
-    right: 2.5vh;
+    bottom: 10%;
+    right: 115%;
     content: '—';
   }
   .screen-block .language div a:hover {
@@ -1162,9 +1164,9 @@ html body .wrapper .screen-block {
   }
   .screen-block .social {
     position: absolute;
-    bottom: 2vh;
+    bottom: 2%;
     z-index: 1;
-    left: 2vh;
+    left: 4%;
   }
   .screen-block .social div {
     z-index: 0;
@@ -1178,7 +1180,7 @@ html body .wrapper .screen-block {
   }
   .screen-block .social div:nth-of-type(2) {
     position: absolute;
-    left: 29px;
+    left: 28.5px;
     bottom: 0;
   }
   .screen-block .social div:hover::before {
@@ -1209,6 +1211,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (max-width: 414px) and (min-device-pixel-ratio: 1.5), (max-width: 414px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 414px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (max-width: 414px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (max-width: 414px) and (min-device-pixel-ratio: 1.5), (max-width: 414px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 414px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (max-width: 414px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -1291,29 +1323,30 @@ html body .wrapper .screen-block {
   }
   .screen-block .behance {
     position: absolute;
-    bottom: 2.3vh;
-    left: 14.5vh;
+    bottom: 2.5%;
     z-index: 1;
     padding: 0;
     margin: 0;
+    left: 26%;
   }
   .screen-block .behance a:before {
-    top: 56%;
+    top: 52%;
     left: -1px;
     background: #FFF;
   }
   .screen-block .behance a span {
     color: #FFF;
-    font-size: 2.1vh;
+    font-size: 3.75vw;
     font-weight: 100;
   }
   .screen-block .copyright {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     position: absolute;
-    font-size: 1.9vh;
-    bottom: 22vh;
-    right: -14vh;
+    font-size: 3.4375vw;
+    right: -25%;
+    bottom: 22%;
+    z-index: 1;
   }
   .screen-block .copyright p {
     color: #FFF;
@@ -1329,13 +1362,15 @@ html body .wrapper .screen-block {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
   }
   .screen-block .logo {
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
     position: absolute;
     z-index: 1;
-    top: 4vh;
-    left: 2vh;
+    left: 5%;
+    top: 4%;
   }
   .screen-block .logo .image {
     width: 135px;
@@ -1367,11 +1402,11 @@ html body .wrapper .screen-block {
 @media (min-width: 415px) and (max-width: 667px) {
   .screen-block .language {
     position: absolute;
-    font-size: 1.34vh;
-    bottom: 15vh;
+    font-size: 1.23242vw;
+    bottom: 27%;
     z-index: 1;
     zoom: 1.8;
-    left: 1vh;
+    left: 4%;
   }
   .screen-block .language div {
     width: -webkit-fit-content;
@@ -1381,10 +1416,10 @@ html body .wrapper .screen-block {
             transform: rotate(-90deg);
   }
   .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 3.5vh;
+    margin-bottom: 3.87332vw;
   }
   .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 2vh;
+    margin-bottom: 1.7606vw;
   }
   .screen-block .language div a {
     color: #999;
@@ -1398,8 +1433,8 @@ html body .wrapper .screen-block {
   .screen-block .language div a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: .15vh;
-    right: 2.5vh;
+    bottom: 10%;
+    right: 115%;
     content: '—';
   }
   .screen-block .language div a:hover {
@@ -1409,9 +1444,9 @@ html body .wrapper .screen-block {
   }
   .screen-block .social {
     position: absolute;
-    bottom: 2vh;
+    bottom: 2%;
     z-index: 1;
-    left: 2vh;
+    left: 4%;
   }
   .screen-block .social div {
     z-index: 0;
@@ -1425,7 +1460,7 @@ html body .wrapper .screen-block {
   }
   .screen-block .social div:nth-of-type(2) {
     position: absolute;
-    left: 29px;
+    left: 28.5px;
     bottom: 0;
   }
   .screen-block .social div:hover::before {
@@ -1456,6 +1491,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) and (min-device-pixel-ratio: 1.5), (min-width: 415px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 415px) and (max-width: 667px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) and (min-device-pixel-ratio: 1.5), (min-width: 415px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 415px) and (max-width: 667px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -1538,29 +1603,30 @@ html body .wrapper .screen-block {
   }
   .screen-block .behance {
     position: absolute;
-    bottom: 2.3vh;
-    left: 14.5vh;
+    bottom: 2.5%;
     z-index: 1;
     padding: 0;
     margin: 0;
+    left: 26%;
   }
   .screen-block .behance a:before {
-    top: 56%;
+    top: 52%;
     left: -1px;
     background: #FFF;
   }
   .screen-block .behance a span {
     color: #FFF;
-    font-size: 2.1vh;
+    font-size: 2.11272vw;
     font-weight: 100;
   }
   .screen-block .copyright {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     position: absolute;
-    font-size: 1.9vh;
-    bottom: 22vh;
-    right: -14vh;
+    font-size: 1.93666vw;
+    right: -25%;
+    bottom: 22%;
+    z-index: 1;
   }
   .screen-block .copyright p {
     color: #FFF;
@@ -1576,13 +1642,15 @@ html body .wrapper .screen-block {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
   }
   .screen-block .logo {
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
     position: absolute;
     z-index: 1;
-    top: 4vh;
-    left: 2vh;
+    left: 5%;
+    top: 4%;
   }
   .screen-block .logo .image {
     width: 135px;
@@ -1614,11 +1682,11 @@ html body .wrapper .screen-block {
 @media (min-width: 668px) and (max-width: 768px) {
   .screen-block .language {
     position: absolute;
-    font-size: 1.34vh;
-    bottom: 15vh;
+    font-size: 0.91146vw;
+    bottom: 27%;
     z-index: 1;
     zoom: 1.8;
-    left: 1vh;
+    left: 4%;
   }
   .screen-block .language div {
     width: -webkit-fit-content;
@@ -1628,10 +1696,10 @@ html body .wrapper .screen-block {
             transform: rotate(-90deg);
   }
   .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 3.5vh;
+    margin-bottom: 2.86458vw;
   }
   .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 2vh;
+    margin-bottom: 1.30208vw;
   }
   .screen-block .language div a {
     color: #999;
@@ -1645,8 +1713,8 @@ html body .wrapper .screen-block {
   .screen-block .language div a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: .15vh;
-    right: 2.5vh;
+    bottom: 10%;
+    right: 115%;
     content: '—';
   }
   .screen-block .language div a:hover {
@@ -1656,9 +1724,9 @@ html body .wrapper .screen-block {
   }
   .screen-block .social {
     position: absolute;
-    bottom: 2vh;
+    bottom: 2%;
     z-index: 1;
-    left: 2vh;
+    left: 4%;
   }
   .screen-block .social div {
     z-index: 0;
@@ -1672,7 +1740,7 @@ html body .wrapper .screen-block {
   }
   .screen-block .social div:nth-of-type(2) {
     position: absolute;
-    left: 29px;
+    left: 28.5px;
     bottom: 0;
   }
   .screen-block .social div:hover::before {
@@ -1703,6 +1771,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) and (min-device-pixel-ratio: 1.5), (min-width: 668px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 668px) and (max-width: 768px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) and (min-device-pixel-ratio: 1.5), (min-width: 668px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 668px) and (max-width: 768px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -1785,33 +1883,45 @@ html body .wrapper .screen-block {
   }
   .screen-block .behance {
     position: absolute;
-    bottom: 2.3vh;
-    left: 14.5vh;
+    bottom: 2.5%;
     z-index: 1;
     padding: 0;
     margin: 0;
+    left: 26%;
   }
   .screen-block .behance a:before {
-    top: 56%;
+    top: 52%;
     left: -1px;
     background: #FFF;
   }
   .screen-block .behance a span {
     color: #FFF;
-    font-size: 2.1vh;
+    font-size: 1.5625vw;
     font-weight: 100;
   }
   .screen-block .copyright {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     position: absolute;
-    font-size: 1.9vh;
-    bottom: 22vh;
-    right: -14vh;
+    font-size: 1.43229vw;
+    right: -25%;
+    bottom: 22%;
+    z-index: 1;
   }
   .screen-block .copyright p {
     color: #FFF;
     font-weight: 100;
+  }
+  .screen-block .copyright {
+    font-size: 1.6927vw;
+    right: -13.5%;
+    bottom: 15%;
+  }
+  .screen-block .language {
+    bottom: 46%;
+  }
+  .screen-block .behance {
+    left: 14%;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1823,23 +1933,15 @@ html body .wrapper .screen-block {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1;
-  }
-  .screen-block .bg-clock {
-    position: absolute;
-    top: 50%;
-    margin-top: -128px;
-    width: 100%;
-    line-height: 128px;
-    text-align: center;
-    font-size: 70vh;
-    color: #FFF;
+    z-index: 0;
   }
   .screen-block .logo {
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
     position: absolute;
     z-index: 1;
-    top: 3.5vh;
-    left: 5vh;
+    left: 2.5%;
+    top: 3.5%;
   }
   .screen-block .logo .image {
     width: 135px;
@@ -1871,10 +1973,10 @@ html body .wrapper .screen-block {
 @media (min-width: 769px) and (max-width: 1024px) {
   .screen-block .language {
     position: absolute;
-    font-size: 1.34vh;
-    bottom: 45vh;
+    font-size: 1.41607vw;
+    bottom: 44.5%;
+    left: 2.5%;
     z-index: 1;
-    left: 5vh;
   }
   .screen-block .language div {
     width: -webkit-fit-content;
@@ -1884,10 +1986,10 @@ html body .wrapper .screen-block {
             transform: rotate(-90deg);
   }
   .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 3.5vh;
+    margin-bottom: 3.71108vw;
   }
   .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 2vh;
+    margin-bottom: 1.75788vw;
   }
   .screen-block .language div a {
     color: #999;
@@ -1901,8 +2003,8 @@ html body .wrapper .screen-block {
   .screen-block .language div a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: .15vh;
-    right: 2.5vh;
+    bottom: 15%;
+    right: 115%;
     content: '—';
   }
   .screen-block .language div a:hover {
@@ -1912,9 +2014,9 @@ html body .wrapper .screen-block {
   }
   .screen-block .social {
     position: absolute;
-    bottom: 5vh;
+    bottom: 4.5%;
     z-index: 1;
-    left: 5vh;
+    left: 2.5%;
   }
   .screen-block .social div {
     z-index: 0;
@@ -1923,12 +2025,12 @@ html body .wrapper .screen-block {
   }
   .screen-block .social div:nth-of-type(1) {
     position: absolute;
-    bottom: 29px;
+    bottom: 29.5px;
     left: 0;
   }
   .screen-block .social div:nth-of-type(2) {
     position: absolute;
-    left: 29px;
+    left: 28.5px;
     bottom: 0;
   }
   .screen-block .social div:hover::before {
@@ -1959,6 +2061,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) and (min-device-pixel-ratio: 1.5), (min-width: 769px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 769px) and (max-width: 1024px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) and (min-device-pixel-ratio: 1.5), (min-width: 769px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 769px) and (max-width: 1024px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -2041,33 +2173,37 @@ html body .wrapper .screen-block {
   }
   .screen-block .behance {
     position: absolute;
-    bottom: 5vh;
-    left: 23vh;
-    z-index: 1;
     padding: 0;
+    z-index: 1;
+    bottom: 5%;
     margin: 0;
+    left: 11%;
   }
   .screen-block .behance a:before {
-    top: 56%;
+    top: 52%;
     left: -1px;
     background: #FFF;
   }
   .screen-block .behance a span {
     color: #FFF;
+    font-size: 1.17192vw;
     font-weight: 100;
-    font-size: 1.3vh;
   }
   .screen-block .copyright {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     position: absolute;
-    font-size: 1.34vh;
-    right: -8.5vh;
-    bottom: 29vh;
+    font-size: 1.26958vw;
+    right: -4.3%;
+    bottom: 29%;
+    z-index: 1;
   }
   .screen-block .copyright p {
     color: #FFF;
     font-weight: 100;
+  }
+  .screen-block .copyright {
+    right: -8.3%;
   }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
@@ -2079,23 +2215,15 @@ html body .wrapper .screen-block {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1;
-  }
-  .screen-block .bg-clock {
-    position: absolute;
-    top: 50%;
-    margin-top: -128px;
-    width: 100%;
-    line-height: 128px;
-    text-align: center;
-    font-size: 70vh;
-    color: #FFF;
+    z-index: 0;
   }
   .screen-block .logo {
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
     position: absolute;
     z-index: 1;
-    top: 3.5vh;
-    left: 5vh;
+    left: 2.5%;
+    top: 3.5%;
   }
   .screen-block .logo .image {
     width: 135px;
@@ -2127,10 +2255,10 @@ html body .wrapper .screen-block {
 @media (min-width: 1025px) and (max-width: 1366px) {
   .screen-block .language {
     position: absolute;
-    font-size: 1.34vh;
-    bottom: 45vh;
+    font-size: 1.0614vw;
+    bottom: 44.5%;
+    left: 2.5%;
     z-index: 1;
-    left: 5vh;
   }
   .screen-block .language div {
     width: -webkit-fit-content;
@@ -2140,10 +2268,10 @@ html body .wrapper .screen-block {
             transform: rotate(-90deg);
   }
   .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 3.5vh;
+    margin-bottom: 2.7816vw;
   }
   .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 2vh;
+    margin-bottom: 1.3176vw;
   }
   .screen-block .language div a {
     color: #999;
@@ -2157,8 +2285,8 @@ html body .wrapper .screen-block {
   .screen-block .language div a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: .15vh;
-    right: 2.5vh;
+    bottom: 15%;
+    right: 115%;
     content: '—';
   }
   .screen-block .language div a:hover {
@@ -2168,9 +2296,9 @@ html body .wrapper .screen-block {
   }
   .screen-block .social {
     position: absolute;
-    bottom: 5vh;
+    bottom: 4.5%;
     z-index: 1;
-    left: 5vh;
+    left: 2.5%;
   }
   .screen-block .social div {
     z-index: 0;
@@ -2179,12 +2307,12 @@ html body .wrapper .screen-block {
   }
   .screen-block .social div:nth-of-type(1) {
     position: absolute;
-    bottom: 29px;
+    bottom: 29.5px;
     left: 0;
   }
   .screen-block .social div:nth-of-type(2) {
     position: absolute;
-    left: 29px;
+    left: 28.5px;
     bottom: 0;
   }
   .screen-block .social div:hover::before {
@@ -2215,6 +2343,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) and (min-device-pixel-ratio: 1.5), (min-width: 1025px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1025px) and (max-width: 1366px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) and (min-device-pixel-ratio: 1.5), (min-width: 1025px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1025px) and (max-width: 1366px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -2297,29 +2455,30 @@ html body .wrapper .screen-block {
   }
   .screen-block .behance {
     position: absolute;
-    bottom: 5vh;
-    left: 23vh;
-    z-index: 1;
     padding: 0;
+    z-index: 1;
+    bottom: 5%;
     margin: 0;
+    left: 11%;
   }
   .screen-block .behance a:before {
-    top: 56%;
+    top: 52%;
     left: -1px;
     background: #FFF;
   }
   .screen-block .behance a span {
     color: #FFF;
+    font-size: 0.8784vw;
     font-weight: 100;
-    font-size: 1.3vh;
   }
   .screen-block .copyright {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     position: absolute;
-    font-size: 1.34vh;
-    right: -8.5vh;
-    bottom: 29vh;
+    font-size: 0.9516vw;
+    right: -4.3%;
+    bottom: 29%;
+    z-index: 1;
   }
   .screen-block .copyright p {
     color: #FFF;
@@ -2335,23 +2494,15 @@ html body .wrapper .screen-block {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1;
-  }
-  .screen-block .bg-clock {
-    position: absolute;
-    top: 50%;
-    margin-top: -128px;
-    width: 100%;
-    line-height: 128px;
-    text-align: center;
-    font-size: 70vh;
-    color: #FFF;
+    z-index: 0;
   }
   .screen-block .logo {
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
     position: absolute;
     z-index: 1;
-    top: 3.5vh;
-    left: 5vh;
+    left: 2.5%;
+    top: 3.5%;
   }
   .screen-block .logo .image {
     width: 135px;
@@ -2383,10 +2534,10 @@ html body .wrapper .screen-block {
 @media (min-width: 1367px) and (max-width: 1680px) {
   .screen-block .language {
     position: absolute;
-    font-size: 1.34vh;
-    bottom: 45vh;
+    font-size: 0.86304vw;
+    bottom: 44.5%;
+    left: 2.5%;
     z-index: 1;
-    left: 5vh;
   }
   .screen-block .language div {
     width: -webkit-fit-content;
@@ -2396,10 +2547,10 @@ html body .wrapper .screen-block {
             transform: rotate(-90deg);
   }
   .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 3.5vh;
+    margin-bottom: 2.26176vw;
   }
   .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 2vh;
+    margin-bottom: 1.07136vw;
   }
   .screen-block .language div a {
     color: #999;
@@ -2413,8 +2564,8 @@ html body .wrapper .screen-block {
   .screen-block .language div a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: .15vh;
-    right: 2.5vh;
+    bottom: 15%;
+    right: 115%;
     content: '—';
   }
   .screen-block .language div a:hover {
@@ -2424,9 +2575,9 @@ html body .wrapper .screen-block {
   }
   .screen-block .social {
     position: absolute;
-    bottom: 5vh;
+    bottom: 4.5%;
     z-index: 1;
-    left: 5vh;
+    left: 2.5%;
   }
   .screen-block .social div {
     z-index: 0;
@@ -2435,12 +2586,12 @@ html body .wrapper .screen-block {
   }
   .screen-block .social div:nth-of-type(1) {
     position: absolute;
-    bottom: 29px;
+    bottom: 29.5px;
     left: 0;
   }
   .screen-block .social div:nth-of-type(2) {
     position: absolute;
-    left: 29px;
+    left: 28.5px;
     bottom: 0;
   }
   .screen-block .social div:hover::before {
@@ -2471,6 +2622,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) and (min-device-pixel-ratio: 1.5), (min-width: 1367px) and (max-width: 1680px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1367px) and (max-width: 1680px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) and (min-device-pixel-ratio: 1.5), (min-width: 1367px) and (max-width: 1680px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1367px) and (max-width: 1680px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -2553,29 +2734,30 @@ html body .wrapper .screen-block {
   }
   .screen-block .behance {
     position: absolute;
-    bottom: 5vh;
-    left: 23vh;
-    z-index: 1;
     padding: 0;
+    z-index: 1;
+    bottom: 5%;
     margin: 0;
+    left: 11%;
   }
   .screen-block .behance a:before {
-    top: 56%;
+    top: 52%;
     left: -1px;
     background: #FFF;
   }
   .screen-block .behance a span {
     color: #FFF;
+    font-size: 0.71424vw;
     font-weight: 100;
-    font-size: 1.3vh;
   }
   .screen-block .copyright {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     position: absolute;
-    font-size: 1.34vh;
-    right: -8.5vh;
-    bottom: 29vh;
+    font-size: 0.77376vw;
+    right: -4.3%;
+    bottom: 29%;
+    z-index: 1;
   }
   .screen-block .copyright p {
     color: #FFF;
@@ -2591,23 +2773,15 @@ html body .wrapper .screen-block {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1;
-  }
-  .screen-block .bg-clock {
-    position: absolute;
-    top: 50%;
-    margin-top: -128px;
-    width: 100%;
-    line-height: 128px;
-    text-align: center;
-    font-size: 70vh;
-    color: #FFF;
+    z-index: 0;
   }
   .screen-block .logo {
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
     position: absolute;
     z-index: 1;
-    top: 3.5vh;
-    left: 5vh;
+    left: 2.5%;
+    top: 3.5%;
   }
   .screen-block .logo .image {
     width: 135px;
@@ -2639,10 +2813,10 @@ html body .wrapper .screen-block {
 @media (min-width: 1681px) and (max-width: 1920px) {
   .screen-block .language {
     position: absolute;
-    font-size: 1.34vh;
-    bottom: 45vh;
+    font-size: 0.75516vw;
+    bottom: 44.5%;
+    left: 2.5%;
     z-index: 1;
-    left: 5vh;
   }
   .screen-block .language div {
     width: -webkit-fit-content;
@@ -2652,10 +2826,10 @@ html body .wrapper .screen-block {
             transform: rotate(-90deg);
   }
   .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 3.5vh;
+    margin-bottom: 1.97904vw;
   }
   .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 2vh;
+    margin-bottom: 0.93744vw;
   }
   .screen-block .language div a {
     color: #999;
@@ -2669,8 +2843,8 @@ html body .wrapper .screen-block {
   .screen-block .language div a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: .15vh;
-    right: 2.5vh;
+    bottom: 15%;
+    right: 115%;
     content: '—';
   }
   .screen-block .language div a:hover {
@@ -2680,9 +2854,9 @@ html body .wrapper .screen-block {
   }
   .screen-block .social {
     position: absolute;
-    bottom: 5vh;
+    bottom: 4.5%;
     z-index: 1;
-    left: 5vh;
+    left: 2.5%;
   }
   .screen-block .social div {
     z-index: 0;
@@ -2691,12 +2865,12 @@ html body .wrapper .screen-block {
   }
   .screen-block .social div:nth-of-type(1) {
     position: absolute;
-    bottom: 29px;
+    bottom: 29.5px;
     left: 0;
   }
   .screen-block .social div:nth-of-type(2) {
     position: absolute;
-    left: 29px;
+    left: 28.5px;
     bottom: 0;
   }
   .screen-block .social div:hover::before {
@@ -2727,6 +2901,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) and (min-device-pixel-ratio: 1.5), (min-width: 1681px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1681px) and (max-width: 1920px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) and (min-device-pixel-ratio: 1.5), (min-width: 1681px) and (max-width: 1920px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1681px) and (max-width: 1920px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -2809,29 +3013,30 @@ html body .wrapper .screen-block {
   }
   .screen-block .behance {
     position: absolute;
-    bottom: 5vh;
-    left: 23vh;
-    z-index: 1;
     padding: 0;
+    z-index: 1;
+    bottom: 5%;
     margin: 0;
+    left: 11%;
   }
   .screen-block .behance a:before {
-    top: 56%;
+    top: 52%;
     left: -1px;
     background: #FFF;
   }
   .screen-block .behance a span {
     color: #FFF;
+    font-size: 0.62496vw;
     font-weight: 100;
-    font-size: 1.3vh;
   }
   .screen-block .copyright {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     position: absolute;
-    font-size: 1.34vh;
-    right: -8.5vh;
-    bottom: 29vh;
+    font-size: 0.67704vw;
+    right: -4.3%;
+    bottom: 29%;
+    z-index: 1;
   }
   .screen-block .copyright p {
     color: #FFF;
@@ -2847,23 +3052,15 @@ html body .wrapper .screen-block {
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1;
-  }
-  .screen-block .bg-clock {
-    position: absolute;
-    top: 50%;
-    margin-top: -128px;
-    width: 100%;
-    line-height: 128px;
-    text-align: center;
-    font-size: 70vh;
-    color: #FFF;
+    z-index: 0;
   }
   .screen-block .logo {
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
     position: absolute;
     z-index: 1;
-    top: 3.5vh;
-    left: 5vh;
+    left: 2.5%;
+    top: 3.5%;
   }
   .screen-block .logo .image {
     width: 135px;
@@ -2895,10 +3092,10 @@ html body .wrapper .screen-block {
 @media (min-width: 1921px) {
   .screen-block .language {
     position: absolute;
-    font-size: 1.34vh;
-    bottom: 45vh;
+    font-size: 0.56637vw;
+    bottom: 44.5%;
+    left: 2.5%;
     z-index: 1;
-    left: 5vh;
   }
   .screen-block .language div {
     width: -webkit-fit-content;
@@ -2908,10 +3105,10 @@ html body .wrapper .screen-block {
             transform: rotate(-90deg);
   }
   .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 3.5vh;
+    margin-bottom: 1.48428vw;
   }
   .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 2vh;
+    margin-bottom: 0.70308vw;
   }
   .screen-block .language div a {
     color: #999;
@@ -2925,8 +3122,8 @@ html body .wrapper .screen-block {
   .screen-block .language div a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: .15vh;
-    right: 2.5vh;
+    bottom: 15%;
+    right: 115%;
     content: '—';
   }
   .screen-block .language div a:hover {
@@ -2936,9 +3133,9 @@ html body .wrapper .screen-block {
   }
   .screen-block .social {
     position: absolute;
-    bottom: 5vh;
+    bottom: 4.5%;
     z-index: 1;
-    left: 5vh;
+    left: 2.5%;
   }
   .screen-block .social div {
     z-index: 0;
@@ -2947,12 +3144,12 @@ html body .wrapper .screen-block {
   }
   .screen-block .social div:nth-of-type(1) {
     position: absolute;
-    bottom: 29px;
+    bottom: 29.5px;
     left: 0;
   }
   .screen-block .social div:nth-of-type(2) {
     position: absolute;
-    left: 29px;
+    left: 28.5px;
     bottom: 0;
   }
   .screen-block .social div:hover::before {
@@ -2983,6 +3180,36 @@ html body .wrapper .screen-block {
     *display: inline;
     background-repeat: no-repeat;
   }
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social.png');
+    background-position: 0 -16px;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1921px) and (min-device-pixel-ratio: 1.5), (min-width: 1921px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1921px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="linkedin"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 -16px;
+  }
+}
+@media (min-width: 1921px) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social.png');
+    background-position: 0 0;
+    height: 16px;
+    width: 16px;
+  }
+}
+@media (min-width: 1921px) and (min-device-pixel-ratio: 1.5), (min-width: 1921px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1921px) and (min-resolution: 144dpi) {
+  .screen-block .social a[href*="facebook"] {
+    background-image: url('../images/social-2x.png');
+    background-size: 16px 32px;
+    background-position: 0 0;
+  }
+}
+@media (min-width: 1921px) {
   .screen-block .jump-letters a {
     display: inline-block;
     vertical-align: middle;
@@ -3065,33 +3292,53 @@ html body .wrapper .screen-block {
   }
   .screen-block .behance {
     position: absolute;
-    bottom: 5vh;
-    left: 23vh;
-    z-index: 1;
     padding: 0;
+    z-index: 1;
+    bottom: 5%;
     margin: 0;
+    left: 11%;
   }
   .screen-block .behance a:before {
-    top: 56%;
+    top: 52%;
     left: -1px;
     background: #FFF;
   }
   .screen-block .behance a span {
     color: #FFF;
+    font-size: 0.46872vw;
     font-weight: 100;
-    font-size: 1.3vh;
   }
   .screen-block .copyright {
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
     position: absolute;
-    font-size: 1.34vh;
-    right: -8.5vh;
-    bottom: 29vh;
+    font-size: 0.50778vw;
+    right: -4.3%;
+    bottom: 29%;
+    z-index: 1;
   }
   .screen-block .copyright p {
     color: #FFF;
     font-weight: 100;
+  }
+  .screen-block .language {
+    font-size: 0.76167vw;
+  }
+  .screen-block .language div:nth-of-type(1) {
+    margin-bottom: 1.71864vw;
+  }
+  .screen-block .language div:nth-of-type(2) {
+    margin-bottom: 0.85932vw;
+  }
+  .screen-block .language div a.select::before {
+    right: 120%;
+    bottom: 10%;
+  }
+  .screen-block .behance a span {
+    font-size: 0.62496vw;
+  }
+  .screen-block .copyright {
+    font-size: 0.70308vw;
   }
 }
 
@@ -3146,7 +3393,7 @@ html body .wrapper .screen-block {
     display: inherit;
   }
   .title .word:nth-of-type(1) {
-    margin-bottom: 5px;
+    margin-bottom: 1.5625vw;
   }
   .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord .75s .75s linear;
@@ -3157,6 +3404,12 @@ html body .wrapper .screen-block {
   .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord .75s 1.25s linear;
             animation: titleWord .75s 1.25s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .title .word:nth-of-type(3) span {
+    -webkit-animation: titleWord .75s 1.75s linear;
+            animation: titleWord .75s 1.75s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
@@ -3248,7 +3501,7 @@ html body .wrapper .screen-block {
     display: inherit;
   }
   .title .word:nth-of-type(1) {
-    margin-bottom: 5px;
+    margin-bottom: 0.8803vw;
   }
   .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord .75s .75s linear;
@@ -3259,6 +3512,12 @@ html body .wrapper .screen-block {
   .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord .75s 1.25s linear;
             animation: titleWord .75s 1.25s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .title .word:nth-of-type(3) span {
+    -webkit-animation: titleWord .75s 1.75s linear;
+            animation: titleWord .75s 1.75s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
@@ -3350,7 +3609,7 @@ html body .wrapper .screen-block {
     display: inherit;
   }
   .title .word:nth-of-type(1) {
-    margin-bottom: 5px;
+    margin-bottom: 0.65104vw;
   }
   .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord .75s .75s linear;
@@ -3361,6 +3620,12 @@ html body .wrapper .screen-block {
   .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord .75s 1.25s linear;
             animation: titleWord .75s 1.25s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .title .word:nth-of-type(3) span {
+    -webkit-animation: titleWord .75s 1.75s linear;
+            animation: titleWord .75s 1.75s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
@@ -3466,6 +3731,12 @@ html body .wrapper .screen-block {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
+  .title .word:nth-of-type(3) span {
+    -webkit-animation: titleWord .75s 1.75s linear;
+            animation: titleWord .75s 1.75s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
   .title .word:after {
     background-color: #0057FF;
     -webkit-animation: titleWordShape 2s .5s linear;
@@ -3565,6 +3836,12 @@ html body .wrapper .screen-block {
   .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord .75s 1.25s linear;
             animation: titleWord .75s 1.25s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .title .word:nth-of-type(3) span {
+    -webkit-animation: titleWord .75s 1.75s linear;
+            animation: titleWord .75s 1.75s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
@@ -3670,6 +3947,12 @@ html body .wrapper .screen-block {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
+  .title .word:nth-of-type(3) span {
+    -webkit-animation: titleWord .75s 1.75s linear;
+            animation: titleWord .75s 1.75s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
   .title .word:after {
     background-color: #0057FF;
     -webkit-animation: titleWordShape 2s .5s linear;
@@ -3769,6 +4052,12 @@ html body .wrapper .screen-block {
   .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord .75s 1.25s linear;
             animation: titleWord .75s 1.25s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .title .word:nth-of-type(3) span {
+    -webkit-animation: titleWord .75s 1.75s linear;
+            animation: titleWord .75s 1.75s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
@@ -3874,6 +4163,12 @@ html body .wrapper .screen-block {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
+  .title .word:nth-of-type(3) span {
+    -webkit-animation: titleWord .75s 1.75s linear;
+            animation: titleWord .75s 1.75s linear;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
   .title .word:after {
     background-color: #0057FF;
     -webkit-animation: titleWordShape 2s .5s linear;
@@ -3914,46 +4209,36 @@ html body .wrapper .screen-block {
 
 @media (max-width: 414px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 2.4vh;
-    top: 43.5vh;
+  #clock.screen-block .title {
+    top: 25.5%;
+    left: 4.5%;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -100px 0 0 0;
-    width: 28vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 8.28125vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:first-of-type {
+    margin-bottom: 3.75vw;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 2.8125vw 0 0;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 2.2vh;
-    line-height: 3vh;
+    font-size: 3.90625vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 4.7vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -3970,7 +4255,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 60.5%;
     background-size: 47%;
-    margin: 19vh auto 0;
+    margin: 34% auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -3984,7 +4269,6 @@ html body .wrapper .screen-block {
     right: 0;
     top: .5%;
     left: 4%;
-    zoom: .38;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -3998,7 +4282,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -4034,18 +4318,21 @@ html body .wrapper .screen-block {
   #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
+    zoom: .45;
   }
   #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+    zoom: .4;
   }
   #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+    zoom: .45;
   }
   @-webkit-keyframes rotate {
     100% {
@@ -4065,46 +4352,36 @@ html body .wrapper .screen-block {
 }
 @media (min-width: 415px) and (max-width: 667px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 2.4vh;
-    top: 43.5vh;
+  #clock.screen-block .title {
+    top: 25.5%;
+    left: 4.5%;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -100px 0 0 0;
-    width: 28vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 4.66559vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:first-of-type {
+    margin-bottom: 2.11272vw;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 1.58454vw 0 0;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 2.2vh;
-    line-height: 3vh;
+    font-size: 2.20075vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 4.7vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -4121,7 +4398,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 60.5%;
     background-size: 47%;
-    margin: 19vh auto 0;
+    margin: 34% auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -4135,7 +4412,6 @@ html body .wrapper .screen-block {
     right: 0;
     top: .5%;
     left: 4%;
-    zoom: .38;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -4149,7 +4425,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -4185,18 +4461,21 @@ html body .wrapper .screen-block {
   #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
+    zoom: .45;
   }
   #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+    zoom: .4;
   }
   #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+    zoom: .45;
   }
   @-webkit-keyframes rotate {
     100% {
@@ -4216,46 +4495,36 @@ html body .wrapper .screen-block {
 }
 @media (min-width: 668px) and (max-width: 768px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 2.4vh;
-    top: 43.5vh;
+  #clock.screen-block .title {
+    top: 25.5%;
+    left: 4.5%;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -100px 0 0 0;
-    width: 28vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 3.45051vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:first-of-type {
+    margin-bottom: 1.5625vw;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 1.17187vw 0 0;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 2.2vh;
-    line-height: 3vh;
+    font-size: 1.6276vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 4.7vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -4272,7 +4541,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 60.5%;
     background-size: 47%;
-    margin: 19vh auto 0;
+    margin: 34% auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -4286,7 +4555,6 @@ html body .wrapper .screen-block {
     right: 0;
     top: .5%;
     left: 4%;
-    zoom: .38;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -4300,7 +4568,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -4336,18 +4604,21 @@ html body .wrapper .screen-block {
   #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
+    zoom: .45;
   }
   #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+    zoom: .4;
   }
   #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+    zoom: .45;
   }
   @-webkit-keyframes rotate {
     100% {
@@ -4364,47 +4635,73 @@ html body .wrapper .screen-block {
   #clock.screen-block .scroll {
     display: none;
   }
+  #clock.screen-block .title {
+    top: 22%;
+    left: 11%;
+  }
+  #clock.screen-block .title .word span {
+    font-size: 5.46874vw;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 3.90624vw 0 0 1.30208vw;
+  }
+  #clock.screen-block .title .word:last-of-type span {
+    color: #0057FF;
+    font-size: 1.6276vw;
+    font-weight: 500;
+    font-family: Roboto;
+  }
+  #clock.screen-block .watch {
+    background: url("../images/watch.png") no-repeat 55.5%;
+    background-size: 40%;
+    margin: 22% auto 0;
+  }
+  #clock.screen-block .hours-container, #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
+    left: 0;
+  }
+  #clock.screen-block .hours-container {
+    zoom: .75;
+  }
+  #clock.screen-block .minutes-container {
+    zoom: .7;
+  }
+  #clock.screen-block .seconds-container {
+    zoom: .75;
+  }
+  #clock.screen-block .bg-letter {
+    background-size: 52%;
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 20vh;
-    top: 35vh;
+  #clock.screen-block .title {
+    top: 25vh;
+    left: 23vh;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -80px 0 0 1vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 5.17598vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 22px 0 0 5px;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 1.9vh;
+    font-size: 1.75788vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 5.6vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -4420,8 +4717,8 @@ html body .wrapper .screen-block {
   }
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 51.5%;
-    margin: -2vh auto 0;
     position: absolute;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
   }
@@ -4433,7 +4730,7 @@ html body .wrapper .screen-block {
     bottom: 0;
     right: 0;
     top: 0;
-    left: 0;
+    left: -1%;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -4447,7 +4744,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -4511,7 +4808,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
-    bottom: 6.6vh;
+    bottom: 6.8%;
     z-index: 1;
     right: 50%;
     left: 50%;
@@ -4568,47 +4865,73 @@ html body .wrapper .screen-block {
       opacity: 1;
     }
   }
+  #clock.screen-block .title {
+    top: 22%;
+    left: 11%;
+  }
+  #clock.screen-block .title .word span {
+    font-size: 4.10172vw;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 2.9298vw 0 0 0.9766vw;
+  }
+  #clock.screen-block .title .word:last-of-type span {
+    color: #0057FF;
+    font-size: 1.22075vw;
+    font-weight: 500;
+    font-family: Roboto;
+  }
+  #clock.screen-block .watch {
+    background: url("../images/watch.png") no-repeat 55.5%;
+    background-size: 40%;
+    margin: 13% auto 0;
+  }
+  #clock.screen-block .hours-container, #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
+    left: 0;
+  }
+  #clock.screen-block .hours-container {
+    zoom: .75;
+  }
+  #clock.screen-block .minutes-container {
+    zoom: .7;
+  }
+  #clock.screen-block .seconds-container {
+    zoom: .75;
+  }
+  #clock.screen-block .bg-letter {
+    background-size: 52%;
+  }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 20vh;
-    top: 35vh;
+  #clock.screen-block .title {
+    top: 25vh;
+    left: 23vh;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -80px 0 0 1vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 3.8796vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 22px 0 0 5px;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 1.9vh;
+    font-size: 1.3176vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 5.6vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -4624,8 +4947,8 @@ html body .wrapper .screen-block {
   }
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 51.5%;
-    margin: -2vh auto 0;
     position: absolute;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
   }
@@ -4637,7 +4960,7 @@ html body .wrapper .screen-block {
     bottom: 0;
     right: 0;
     top: 0;
-    left: 0;
+    left: -1%;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -4651,7 +4974,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -4715,7 +5038,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
-    bottom: 6.6vh;
+    bottom: 6.8%;
     z-index: 1;
     right: 50%;
     left: 50%;
@@ -4775,44 +5098,33 @@ html body .wrapper .screen-block {
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 20vh;
-    top: 35vh;
+  #clock.screen-block .title {
+    top: 25vh;
+    left: 23vh;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -80px 0 0 1vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 3.15456vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 22px 0 0 5px;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 1.9vh;
+    font-size: 1.07136vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 5.6vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -4828,8 +5140,8 @@ html body .wrapper .screen-block {
   }
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 51.5%;
-    margin: -2vh auto 0;
     position: absolute;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
   }
@@ -4841,7 +5153,7 @@ html body .wrapper .screen-block {
     bottom: 0;
     right: 0;
     top: 0;
-    left: 0;
+    left: -1%;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -4855,7 +5167,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -4919,7 +5231,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
-    bottom: 6.6vh;
+    bottom: 6.8%;
     z-index: 1;
     right: 50%;
     left: 50%;
@@ -4979,44 +5291,33 @@ html body .wrapper .screen-block {
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 20vh;
-    top: 35vh;
+  #clock.screen-block .title {
+    top: 25vh;
+    left: 23vh;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -80px 0 0 1vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 2.76024vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 22px 0 0 5px;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 1.9vh;
+    font-size: 0.93744vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 5.6vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -5032,8 +5333,8 @@ html body .wrapper .screen-block {
   }
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 51.5%;
-    margin: -2vh auto 0;
     position: absolute;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
   }
@@ -5045,7 +5346,7 @@ html body .wrapper .screen-block {
     bottom: 0;
     right: 0;
     top: 0;
-    left: 0;
+    left: -1%;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -5059,7 +5360,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -5123,7 +5424,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
-    bottom: 6.6vh;
+    bottom: 6.8%;
     z-index: 1;
     right: 50%;
     left: 50%;
@@ -5183,44 +5484,33 @@ html body .wrapper .screen-block {
 }
 @media (min-width: 1921px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 20vh;
-    top: 35vh;
+  #clock.screen-block .title {
+    top: 25vh;
+    left: 23vh;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -80px 0 0 1vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 2.07018vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 22px 0 0 5px;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 1.9vh;
+    font-size: 0.70308vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 5.6vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -5236,8 +5526,8 @@ html body .wrapper .screen-block {
   }
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 51.5%;
-    margin: -2vh auto 0;
     position: absolute;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
   }
@@ -5249,7 +5539,7 @@ html body .wrapper .screen-block {
     bottom: 0;
     right: 0;
     top: 0;
-    left: 0;
+    left: -1%;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -5263,7 +5553,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -5327,7 +5617,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
-    bottom: 6.6vh;
+    bottom: 6.8%;
     z-index: 1;
     right: 50%;
     left: 50%;
@@ -5383,6 +5673,16 @@ html body .wrapper .screen-block {
       transform: translateY(0) rotate(45deg);
       opacity: 1;
     }
+  }
+  #clock.screen-block .hours-container, #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
+    left: 0;
+  }
+  #clock.screen-block .title .word span {
+    font-size: 2.26548vw;
+  }
+  #clock.screen-block .title .word:last-of-type span {
+    font-size: 0.89838vw;
   }
 }
 
@@ -6353,6 +6653,15 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .title {
     margin: 21vh 0 0 40vh;
+  }
+  #service-one.screen-block .bg-clock {
+    position: absolute;
+    text-align: center;
+    line-height: 100%;
+    font-size: 70vh;
+    color: #FFF;
+    width: 100%;
+    top: 12%;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -6398,6 +6707,15 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title {
     margin: 21vh 0 0 40vh;
   }
+  #service-one.screen-block .bg-clock {
+    position: absolute;
+    text-align: center;
+    line-height: 100%;
+    font-size: 70vh;
+    color: #FFF;
+    width: 100%;
+    top: 12%;
+  }
   #service-one.screen-block .service-one-info {
     position: absolute;
   }
@@ -6441,6 +6759,15 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .title {
     margin: 21vh 0 0 40vh;
+  }
+  #service-one.screen-block .bg-clock {
+    position: absolute;
+    text-align: center;
+    line-height: 100%;
+    font-size: 70vh;
+    color: #FFF;
+    width: 100%;
+    top: 12%;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -6486,6 +6813,15 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title {
     margin: 21vh 0 0 40vh;
   }
+  #service-one.screen-block .bg-clock {
+    position: absolute;
+    text-align: center;
+    line-height: 100%;
+    font-size: 70vh;
+    color: #FFF;
+    width: 100%;
+    top: 12%;
+  }
   #service-one.screen-block .service-one-info {
     position: absolute;
   }
@@ -6529,6 +6865,15 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .title {
     margin: 21vh 0 0 40vh;
+  }
+  #service-one.screen-block .bg-clock {
+    position: absolute;
+    text-align: center;
+    line-height: 100%;
+    font-size: 70vh;
+    color: #FFF;
+    width: 100%;
+    top: 12%;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -7233,6 +7578,8 @@ html body .wrapper .screen-block {
     right: 0;
     z-index: 9999;
     font-family: 'Roboto';
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -7682,6 +8029,8 @@ html body .wrapper .screen-block {
     right: 0;
     z-index: 9999;
     font-family: 'Roboto';
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -14840,46 +15189,36 @@ html body .wrapper .screen-block {
 
 @media (max-width: 414px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 2.4vh;
-    top: 43.5vh;
+  #clock.screen-block .title {
+    top: 25.5%;
+    left: 4.5%;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -100px 0 0 0;
-    width: 28vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 8.28125vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:first-of-type {
+    margin-bottom: 3.75vw;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 2.8125vw 0 0;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 2.2vh;
-    line-height: 3vh;
+    font-size: 3.90625vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 4.7vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -14896,7 +15235,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 60.5%;
     background-size: 47%;
-    margin: 19vh auto 0;
+    margin: 34% auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -14910,7 +15249,6 @@ html body .wrapper .screen-block {
     right: 0;
     top: .5%;
     left: 4%;
-    zoom: .38;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -14924,7 +15262,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -14960,18 +15298,21 @@ html body .wrapper .screen-block {
   #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
+    zoom: .45;
   }
   #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+    zoom: .4;
   }
   #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+    zoom: .45;
   }
   @-webkit-keyframes rotate {
     100% {
@@ -14991,46 +15332,36 @@ html body .wrapper .screen-block {
 }
 @media (min-width: 415px) and (max-width: 667px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 2.4vh;
-    top: 43.5vh;
+  #clock.screen-block .title {
+    top: 25.5%;
+    left: 4.5%;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -100px 0 0 0;
-    width: 28vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 4.66559vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:first-of-type {
+    margin-bottom: 2.11272vw;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 1.58454vw 0 0;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 2.2vh;
-    line-height: 3vh;
+    font-size: 2.20075vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 4.7vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -15047,7 +15378,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 60.5%;
     background-size: 47%;
-    margin: 19vh auto 0;
+    margin: 34% auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -15061,7 +15392,6 @@ html body .wrapper .screen-block {
     right: 0;
     top: .5%;
     left: 4%;
-    zoom: .38;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -15075,7 +15405,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -15111,18 +15441,21 @@ html body .wrapper .screen-block {
   #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
+    zoom: .45;
   }
   #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+    zoom: .4;
   }
   #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+    zoom: .45;
   }
   @-webkit-keyframes rotate {
     100% {
@@ -15142,46 +15475,36 @@ html body .wrapper .screen-block {
 }
 @media (min-width: 668px) and (max-width: 768px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 2.4vh;
-    top: 43.5vh;
+  #clock.screen-block .title {
+    top: 25.5%;
+    left: 4.5%;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -100px 0 0 0;
-    width: 28vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 3.45051vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:first-of-type {
+    margin-bottom: 1.5625vw;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 1.17187vw 0 0;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 2.2vh;
-    line-height: 3vh;
+    font-size: 1.6276vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 4.7vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -15198,7 +15521,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 60.5%;
     background-size: 47%;
-    margin: 19vh auto 0;
+    margin: 34% auto 0;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -15212,7 +15535,6 @@ html body .wrapper .screen-block {
     right: 0;
     top: .5%;
     left: 4%;
-    zoom: .38;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -15226,7 +15548,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -15262,18 +15584,21 @@ html body .wrapper .screen-block {
   #clock.screen-block .hours-container {
     -webkit-animation: rotate 43200s infinite linear;
             animation: rotate 43200s infinite linear;
+    zoom: .45;
   }
   #clock.screen-block .minutes-container {
     -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.3s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+    zoom: .4;
   }
   #clock.screen-block .seconds-container {
     -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
     transition: transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44), -webkit-transform 0.2s cubic-bezier(0.4, 2.08, 0.55, 0.44);
+    zoom: .45;
   }
   @-webkit-keyframes rotate {
     100% {
@@ -15290,47 +15615,73 @@ html body .wrapper .screen-block {
   #clock.screen-block .scroll {
     display: none;
   }
+  #clock.screen-block .title {
+    top: 22%;
+    left: 11%;
+  }
+  #clock.screen-block .title .word span {
+    font-size: 5.46874vw;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 3.90624vw 0 0 1.30208vw;
+  }
+  #clock.screen-block .title .word:last-of-type span {
+    color: #0057FF;
+    font-size: 1.6276vw;
+    font-weight: 500;
+    font-family: Roboto;
+  }
+  #clock.screen-block .watch {
+    background: url("../images/watch.png") no-repeat 55.5%;
+    background-size: 40%;
+    margin: 22% auto 0;
+  }
+  #clock.screen-block .hours-container, #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
+    left: 0;
+  }
+  #clock.screen-block .hours-container {
+    zoom: .75;
+  }
+  #clock.screen-block .minutes-container {
+    zoom: .7;
+  }
+  #clock.screen-block .seconds-container {
+    zoom: .75;
+  }
+  #clock.screen-block .bg-letter {
+    background-size: 52%;
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 20vh;
-    top: 35vh;
+  #clock.screen-block .title {
+    top: 25vh;
+    left: 23vh;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -80px 0 0 1vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 5.17598vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 22px 0 0 5px;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 1.9vh;
+    font-size: 1.75788vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 5.6vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -15346,8 +15697,8 @@ html body .wrapper .screen-block {
   }
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 51.5%;
-    margin: -2vh auto 0;
     position: absolute;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
   }
@@ -15359,7 +15710,7 @@ html body .wrapper .screen-block {
     bottom: 0;
     right: 0;
     top: 0;
-    left: 0;
+    left: -1%;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -15373,7 +15724,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -15437,7 +15788,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
-    bottom: 6.6vh;
+    bottom: 6.8%;
     z-index: 1;
     right: 50%;
     left: 50%;
@@ -15494,47 +15845,73 @@ html body .wrapper .screen-block {
       opacity: 1;
     }
   }
+  #clock.screen-block .title {
+    top: 22%;
+    left: 11%;
+  }
+  #clock.screen-block .title .word span {
+    font-size: 4.10172vw;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 2.9298vw 0 0 0.9766vw;
+  }
+  #clock.screen-block .title .word:last-of-type span {
+    color: #0057FF;
+    font-size: 1.22075vw;
+    font-weight: 500;
+    font-family: Roboto;
+  }
+  #clock.screen-block .watch {
+    background: url("../images/watch.png") no-repeat 55.5%;
+    background-size: 40%;
+    margin: 13% auto 0;
+  }
+  #clock.screen-block .hours-container, #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
+    left: 0;
+  }
+  #clock.screen-block .hours-container {
+    zoom: .75;
+  }
+  #clock.screen-block .minutes-container {
+    zoom: .7;
+  }
+  #clock.screen-block .seconds-container {
+    zoom: .75;
+  }
+  #clock.screen-block .bg-letter {
+    background-size: 52%;
+  }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 20vh;
-    top: 35vh;
+  #clock.screen-block .title {
+    top: 25vh;
+    left: 23vh;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -80px 0 0 1vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 3.8796vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 22px 0 0 5px;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 1.9vh;
+    font-size: 1.3176vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 5.6vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -15550,8 +15927,8 @@ html body .wrapper .screen-block {
   }
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 51.5%;
-    margin: -2vh auto 0;
     position: absolute;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
   }
@@ -15563,7 +15940,7 @@ html body .wrapper .screen-block {
     bottom: 0;
     right: 0;
     top: 0;
-    left: 0;
+    left: -1%;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -15577,7 +15954,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -15641,7 +16018,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
-    bottom: 6.6vh;
+    bottom: 6.8%;
     z-index: 1;
     right: 50%;
     left: 50%;
@@ -15701,44 +16078,33 @@ html body .wrapper .screen-block {
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 20vh;
-    top: 35vh;
+  #clock.screen-block .title {
+    top: 25vh;
+    left: 23vh;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -80px 0 0 1vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 3.15456vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 22px 0 0 5px;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 1.9vh;
+    font-size: 1.07136vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 5.6vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -15754,8 +16120,8 @@ html body .wrapper .screen-block {
   }
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 51.5%;
-    margin: -2vh auto 0;
     position: absolute;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
   }
@@ -15767,7 +16133,7 @@ html body .wrapper .screen-block {
     bottom: 0;
     right: 0;
     top: 0;
-    left: 0;
+    left: -1%;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -15781,7 +16147,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -15845,7 +16211,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
-    bottom: 6.6vh;
+    bottom: 6.8%;
     z-index: 1;
     right: 50%;
     left: 50%;
@@ -15905,44 +16271,33 @@ html body .wrapper .screen-block {
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 20vh;
-    top: 35vh;
+  #clock.screen-block .title {
+    top: 25vh;
+    left: 23vh;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -80px 0 0 1vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 2.76024vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 22px 0 0 5px;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 1.9vh;
+    font-size: 0.93744vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 5.6vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -15958,8 +16313,8 @@ html body .wrapper .screen-block {
   }
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 51.5%;
-    margin: -2vh auto 0;
     position: absolute;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
   }
@@ -15971,7 +16326,7 @@ html body .wrapper .screen-block {
     bottom: 0;
     right: 0;
     top: 0;
-    left: 0;
+    left: -1%;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -15985,7 +16340,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -16049,7 +16404,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
-    bottom: 6.6vh;
+    bottom: 6.8%;
     z-index: 1;
     right: 50%;
     left: 50%;
@@ -16109,44 +16464,33 @@ html body .wrapper .screen-block {
 }
 @media (min-width: 1921px) {
   #clock.screen-block {
+    overflow: hidden;
     font-family: Raleway;
     font-weight: 400;
     background-color: #1C1C1C;
   }
-  #clock.screen-block .slogan {
-    font-weight: 800;
-    position: absolute;
-    left: 20vh;
-    top: 35vh;
+  #clock.screen-block .title {
+    top: 25vh;
+    left: 23vh;
     z-index: 1;
+    position: absolute;
+    font-weight: 800;
   }
-  #clock.screen-block .slogan .second-slogan {
-    margin: -80px 0 0 1vh;
+  #clock.screen-block .title .word span {
+    text-transform: inherit;
+    font-size: 2.07018vw;
   }
-  #clock.screen-block .slogan .second-slogan p {
+  #clock.screen-block .title .word:after {
+    display: none;
+  }
+  #clock.screen-block .title .word:last-of-type {
+    margin: 22px 0 0 5px;
+  }
+  #clock.screen-block .title .word:last-of-type span {
     color: #0057FF;
-    font-size: 1.9vh;
+    font-size: 0.70308vw;
     font-weight: 500;
     font-family: Roboto;
-  }
-  #clock.screen-block .slogan .word {
-    height: 6vh;
-  }
-  #clock.screen-block .slogan .word:nth-of-type(2) span {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s;
-  }
-  #clock.screen-block .slogan .word span {
-    opacity: 1;
-    color: #FFF;
-    display: block;
-    font-size: 5.6vh;
-    overflow: hidden;
-    position: relative;
-    -webkit-animation: titleWord .5s 1s linear;
-            animation: titleWord .5s 1s linear;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
   }
   #clock.screen-block .bg-letter {
     background: url("../images/letter-1.png") no-repeat;
@@ -16162,8 +16506,8 @@ html body .wrapper .screen-block {
   }
   #clock.screen-block .watch {
     background: url("../images/watch.png") no-repeat 51.5%;
-    margin: -2vh auto 0;
     position: absolute;
+    margin: 0 auto;
     height: 100%;
     width: 100%;
   }
@@ -16175,7 +16519,7 @@ html body .wrapper .screen-block {
     bottom: 0;
     right: 0;
     top: 0;
-    left: 0;
+    left: -1%;
     width: 300px;
     height: 300px;
     display: -webkit-inline-box;
@@ -16189,7 +16533,7 @@ html body .wrapper .screen-block {
     background-size: cover;
     position: absolute;
     height: 60px;
-    top: 29%;
+    top: 30%;
     left: 46%;
     width: 20px;
     margin: auto;
@@ -16253,7 +16597,7 @@ html body .wrapper .screen-block {
   #clock.screen-block .scroll {
     position: absolute;
     margin: 0 auto;
-    bottom: 6.6vh;
+    bottom: 6.8%;
     z-index: 1;
     right: 50%;
     left: 50%;
@@ -16309,6 +16653,16 @@ html body .wrapper .screen-block {
       transform: translateY(0) rotate(45deg);
       opacity: 1;
     }
+  }
+  #clock.screen-block .hours-container, #clock.screen-block .minutes-container,
+  #clock.screen-block .seconds-container {
+    left: 0;
+  }
+  #clock.screen-block .title .word span {
+    font-size: 2.26548vw;
+  }
+  #clock.screen-block .title .word:last-of-type span {
+    font-size: 0.89838vw;
   }
 }
 
@@ -23035,6 +23389,15 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title {
     margin: 21vh 0 0 40vh;
   }
+  #service-one.screen-block .bg-clock {
+    position: absolute;
+    text-align: center;
+    line-height: 100%;
+    font-size: 70vh;
+    color: #FFF;
+    width: 100%;
+    top: 12%;
+  }
   #service-one.screen-block .service-one-info {
     position: absolute;
   }
@@ -23078,6 +23441,15 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .title {
     margin: 21vh 0 0 40vh;
+  }
+  #service-one.screen-block .bg-clock {
+    position: absolute;
+    text-align: center;
+    line-height: 100%;
+    font-size: 70vh;
+    color: #FFF;
+    width: 100%;
+    top: 12%;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
@@ -23123,6 +23495,15 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title {
     margin: 21vh 0 0 40vh;
   }
+  #service-one.screen-block .bg-clock {
+    position: absolute;
+    text-align: center;
+    line-height: 100%;
+    font-size: 70vh;
+    color: #FFF;
+    width: 100%;
+    top: 12%;
+  }
   #service-one.screen-block .service-one-info {
     position: absolute;
   }
@@ -23167,6 +23548,15 @@ html body .wrapper .screen-block {
   #service-one.screen-block .title {
     margin: 21vh 0 0 40vh;
   }
+  #service-one.screen-block .bg-clock {
+    position: absolute;
+    text-align: center;
+    line-height: 100%;
+    font-size: 70vh;
+    color: #FFF;
+    width: 100%;
+    top: 12%;
+  }
   #service-one.screen-block .service-one-info {
     position: absolute;
   }
@@ -23210,6 +23600,15 @@ html body .wrapper .screen-block {
   }
   #service-one.screen-block .title {
     margin: 21vh 0 0 40vh;
+  }
+  #service-one.screen-block .bg-clock {
+    position: absolute;
+    text-align: center;
+    line-height: 100%;
+    font-size: 70vh;
+    color: #FFF;
+    width: 100%;
+    top: 12%;
   }
   #service-one.screen-block .service-one-info {
     position: absolute;
