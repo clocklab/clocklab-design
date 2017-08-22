@@ -7,6 +7,13 @@
         span.name span, .word span, p { color: $dark; }
         span.name:before { background: $dark; }
     }
+    &.padding {
+        p { padding: px(70) 0 0 px(170); }
+        .jump-button {
+            position: initial;
+            padding: px(70) 0 0 px(150);
+        }
+    }
     span.name {
         text-transform: uppercase;
         position: relative;

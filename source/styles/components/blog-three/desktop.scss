@@ -17,8 +17,8 @@
 
     // ----- title -----
     .title {
-        top: px(400);
-        right: px(640);
+        left: px(280);
+        bottom: px(180);
         position: absolute;
     }
 
@@ -42,9 +42,9 @@
     // ----- blue-line -----
     .blue-line {
         top: 0;
-        height: 100vh;
-        left: px(620);
-        width: px(550);
+        height: 35vh;
+        left: px(1300);
+        width: px(850);
         background: $blue;
         position: absolute;
     }
@@ -52,10 +52,10 @@
     // ----- image-block -----
     .image-block {
         z-index: 3;
-        width: px(1140);
-        height: px(1530);
-        margin-top: px(180);
-        margin-left: px(750);
+        width: px(1540);
+        height: px(1070);
+        margin-top: px(370);
+        margin-left: px(1690);
         position: relative;
         .image-container {
             width: 100%;
@@ -84,14 +84,14 @@
             padding: px(40) px(130);
             box-sizing: border-box;
             position: absolute;
-            left: -55px;
-            top: px(380);
             width: px(900);
-            color: $white;
+            right: -20px;
+            bottom: -47px;
             font-size: px(28);
+            text-align: right;
             line-height: px(30);
+            font-family: $roboto;
             transform-origin: 0 0;
-            transform: rotate(-90deg);
         }
     }
 
