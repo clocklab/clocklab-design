@@ -49,7 +49,8 @@
         }
     }
 
-    a {
+    a,
+    button {
         display: inline-block;
         width: initial;
         position: relative;
@@ -58,6 +59,7 @@
         padding: 0 px(20);
         font-size: 0;
         text-align: center;
+        background: transparent;
 
         &:before {
             display: block;
@@ -125,6 +127,50 @@
 
                 &:nth-child(9) {
                     animation-delay: $timeTickHalf * 4;
+                }
+
+                &:nth-child(10) {
+                    animation-delay: $timeTickHalf * 4.5;
+                }
+
+                &:nth-child(11) {
+                    animation-delay: $timeTickHalf * 5;
+                }
+
+                &:nth-child(12) {
+                    animation-delay: $timeTickHalf * 5.5;
+                }
+
+                &:nth-child(13) {
+                    animation-delay: $timeTickHalf * 6;
+                }
+
+                &:nth-child(14) {
+                    animation-delay: $timeTickHalf * 6.5;
+                }
+
+                &:nth-child(15) {
+                    animation-delay: $timeTickHalf * 7;
+                }
+
+                &:nth-child(16) {
+                    animation-delay: $timeTickHalf * 7.5;
+                }
+
+                &:nth-child(17) {
+                    animation-delay: $timeTickHalf * 8;
+                }
+
+                &:nth-child(18) {
+                    animation-delay: $timeTickHalf * 8.5;
+                }
+
+                &:nth-child(19) {
+                    animation-delay: $timeTickHalf * 9;
+                }
+
+                &:nth-child(20) {
+                    animation-delay: $timeTickHalf * 9.5;
                 }
             }
 
