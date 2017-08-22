@@ -1,0 +1,15 @@
+& {  
+
+    right: px(60);
+    bottom: 39vh;
+    font-size: px(24);
+    overflow: hidden;
+    transform-origin: 100% 0;
+    transform: rotate(-90deg);
+
+    p {
+        padding-bottom: px(4);
+        color: $white;
+        font-weight: $thin;
+    }
+}
