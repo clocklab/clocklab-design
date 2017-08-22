@@ -308,3 +308,51 @@ $PPTitleTextAnimationTime: $time * 3;
     // MOBILE
     $PPBackBgDelayTime: $PPRightBlockDelayTime + $PPRightBlockAnimationTime;
 // PORTFOLIO PAGE ENDS
+
+
+//  BLOG PAGE (B - Blog)
+$BColumnDelayTime: 0s;
+$BColumnAnimationTime: $time * 3;
+
+$BGridDelayTime: $BColumnDelayTime;
+$BGridAnimationTime: $BColumnAnimationTime;
+
+$BMenuDelayTime: $BGridDelayTime + $BGridAnimationTime;
+$BMenuAnimationTime: $time * 3;
+
+$BLogoDelayTime: $BMenuDelayTime;
+$BLogoAnimationTime: $BMenuAnimationTime;
+
+$BLangDelayTime: $BMenuDelayTime;
+$BLangAnimationTime: $BMenuAnimationTime;
+
+$BFilterDelayTime: $BMenuDelayTime;
+$BFilterAnimationTime: $BMenuAnimationTime;
+
+$BFilterLineDelayTime: $BFilterDelayTime;
+$BFilterLineAnimationTime: $BFilterAnimationTime;
+
+$BFilterTextDelayTime: $BFilterLineDelayTime + $BFilterLineAnimationTime;
+$BFilterTextAnimationTime: $BFilterLineAnimationTime;
+
+$BPostImageDelayTime: $BFilterTextDelayTime;
+$BPostImageAnimationTime: $BFilterTextAnimationTime * 1.2;
+
+$BPostDateNumberAnimationTime: $time;
+$BPostDateNumberDelayTime: $BPostImageDelayTime + $BPostImageAnimationTime - $BPostDateNumberAnimationTime;
+
+$BPostDateDayDelayTime: $BPostDateNumberDelayTime + $BPostDateNumberAnimationTime;
+$BPostDateDayAnimationTime: $time * 3;
+
+$BStickerLineDelayTime: $BPostDateDayDelayTime;
+$BStickerLineAnimationTime: $BPostDateDayAnimationTime;
+
+$BStickerTextDelayTime: $BStickerLineDelayTime + $BStickerLineAnimationTime;
+$BStickerTextAnimationTime: $time * 3;
+
+$BPostTitleDelayTime: $BStickerTextDelayTime;
+$BPostTitleAnimationTime: $BStickerTextAnimationTime;
+
+$BPostLinkDelayTime: $BStickerTextDelayTime;
+$BPostLinkAnimationTime: $BStickerTextAnimationTime;
+//  BLOG PAGE ENDS
