@@ -504,4 +504,24 @@
         transform: none;
     }
 }
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes widthIncreaseStickerLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: px(100);
+    }
+}
 // blog ends

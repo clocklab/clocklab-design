@@ -336,10 +336,10 @@ $BFilterTextDelayTime: $BFilterLineDelayTime + $BFilterLineAnimationTime;
 $BFilterTextAnimationTime: $BFilterLineAnimationTime;
 
 $BPostImageDelayTime: $BFilterTextDelayTime;
-$BPostImageAnimationTime: $BFilterTextAnimationTime * 2;
+$BPostImageAnimationTime: $BFilterTextAnimationTime * 1.2;
 
-$BPostDateNumberDelayTime: $BPostImageDelayTime + $BPostImageAnimationTime - $time;
 $BPostDateNumberAnimationTime: $time;
+$BPostDateNumberDelayTime: $BPostImageDelayTime + $BPostImageAnimationTime - $BPostDateNumberAnimationTime;
 
 $BPostDateDayDelayTime: $BPostDateNumberDelayTime + $BPostDateNumberAnimationTime;
 $BPostDateDayAnimationTime: $time * 3;

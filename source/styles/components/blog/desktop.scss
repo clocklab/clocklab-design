@@ -274,11 +274,14 @@
     }
 
     .feed-container {
-        margin-top: px(68);
+        position: relative;
+        margin-top: px(70);
         margin-left: $BMaginLeft;
         width: 100vw - $BMaginLeft;
         height: 2 * $BPostHeight;
         overflow-x: auto;
+        cursor: -webkit-grab;
+        user-select: none;
 
         &::-webkit-scrollbar {
             display: none;
@@ -287,14 +290,15 @@
 
     .feed {
         display: flex;
+        position: absolute;
         height: 100%;
 
         &__post {
             position: relative;
             width: $BPostWidth;
-            height: $BPostHeight;
-            border-top: 1px solid $gray;
-            border-bottom: 1px solid $gray;
+            height: $BPostHeight - px(2);
+            // border-top: 1px solid $gray;
+            // border-bottom: 1px solid $gray;
             color: $white;
 
             .image-container {
@@ -302,14 +306,14 @@
                 top: 0;
                 left: 0;
                 width: $BPostWidth;
-                height: $BPostHeight;
+                height: $BPostHeight - px(2);
                 overflow: hidden;
                 
                 img {
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    animation: right $BPostImageAnimationTime $BPostImageDelayTime both;
+                    animation: right $BPostImageAnimationTime linear $BPostImageDelayTime both;
                 }
             }
 
@@ -319,34 +323,96 @@
                 position: absolute;
                 top: 0;
                 right: 0;
+                z-index: 1;
                 padding-top: px(40);
+                font-family: $roboto;
                 font-size: px(72);
                 font-weight: 600;
                 text-align: right;
             }
 
             .number {
-                // animation: left $BPostDateNumberAnimationTime $BPostDateNumberDelayTime both;
+                animation: fadeInLeft $BPostDateNumberAnimationTime linear $BPostDateNumberDelayTime both;
+            }
+
+            @keyframes leftDay {
+                from {
+                    opacity: 0;
+                    transform: translate3d(165%, 20%, 0) rotate(90deg);
+                }
+                to {
+                    opacity: 1;
+                    transform: translate3d(65%, 20%, 0) rotate(90deg);
+                }
             }
 
             .day {
                 color: $gray;
-                transform-origin: 100% 0;
-                transform: translate3d(0, -100%, 0) rotate(90deg);
-                // animation: leftDay $BPostDateDayAnimationTime $BPostDateDayDelayTime both;
+                font-size: px(36);
+                text-transform: uppercase;
+                transform-origin: 0 0;
+                transform: translate3d(65%, 20%, 0) rotate(90deg);
+                animation: leftDay $BPostDateDayAnimationTime $BPostDateDayDelayTime both;
             }
 
             .post-info {
                 margin-top: px(290);
+                color: $white;
+                font-family: $raleway;
                 transform: translateX(px(660));
 
+                .sticker {
+                    margin-bottom: px(20);
+                    font-weight: $bold;
+                    
+                    span {
+                        color: $white;
+                        animation: FadeInRight $BStickerTextAnimationTime $BStickerTextDelayTime both;
+                    }
+
+                    &:before {
+                        background: $white;
+                        animation: widthIncreaseStickerLine $BStickerLineAnimationTime $BStickerLineDelayTime both;
+                    }
+                }
+
                 h3 {
+                    margin-bottom: px(100);
+                    max-width: px(540);
                     font-size: px(72);
                     font-weight: 800;
+                    text-transform: uppercase;
+                    animation: fadeInUp $BPostTitleAnimationTime $BPostTitleDelayTime both;
                 }
 
                 .crossed-button {
+                    align-items: center;
+                    font-family: $roboto;
                     font-size: px(24);
+                    font-weight: 600;
+                    transform: translateX(px(270));
+                    
+                    span {
+                        display: block;
+                        color: $white;
+                        animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
+
+                        &:before {
+                            background: $white;
+                        }
+
+                        &:after {
+                            content: 'Подробнее';
+                        }
+                    }
+
+                    .arrow {
+
+                        .st0,
+                        .st1 {
+                            stroke: $white;
+                        }
+                    }
                 }
             }
 
