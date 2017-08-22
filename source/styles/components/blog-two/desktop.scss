@@ -1,6 +1,5 @@
 & {
-    background: url('../images/office.jpg');
-    background-size: cover;
+    background-color: $background;
     font-family: $raleway;
     font-weight: $regular;
     z-index: 0;
@@ -9,27 +8,7 @@
     .bottom-button span:before { content: 'Все услуги'; }
 
     // ----- title -----
-    .title {
-        margin: 28vh 0 0 40vh;
-        p { padding: 5% 1vh 0; }
-    }
-
-    // ----- shadow -----
-    .shadow div {
-        position: absolute;
-        height: 100%;
-        top: 0;
-        &:first-child {
-            background: rgba(0,0,0,.7);
-            width: 100%;
-            left: 0;
-        }
-        &:last-child {
-            background: rgba(0,0,0,.5);
-            width: 50%;
-            right: 0;
-        }
-    }
+    .title { margin: 28vh 0 0 40vh; }
 
     .text-block {
         font-weight: $medium;
@@ -88,27 +67,15 @@
     // ----- service-info -----
     .service-info {
         position: absolute;
+        transform: rotate(90deg);
+        bottom: 19%;
+        width: 6%;
+        left: 18%;
         p {
             font-weight: $medium;
-            line-height: 2vh;
+            font-size: px(22);
+            line-height: 1.4;
             color: $white;
-        }
-        &.horizontal {
-            bottom: 11vh;
-            width: 55vh;
-            left: 81vh;
-            p { font-size: px(28); }
-        }
-        &.vertical {
-            transform: rotate(90deg);
-            right: 10px;
-            width: 13%;
-            p {
-                font-size: px(26);
-                line-height: 1.8vh;
-            }
-            &.one { top: 40vh; }
-            &.two { top: 72vh; }
         }
     }
 }

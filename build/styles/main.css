@@ -25798,6 +25798,7 @@ html body .wrapper .screen-block.previous {
     background-size: cover;
     font-family: Raleway;
     font-weight: 400;
+    z-index: 0;
   }
   #service-three.screen-block .bottom-button span:before {
     content: 'Все услуги';
@@ -25876,17 +25877,35 @@ html body .wrapper .screen-block.previous {
   }
   #service-three.screen-block .service-info {
     position: absolute;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    bottom: 19%;
-    width: 6%;
-    left: 18%;
   }
   #service-three.screen-block .service-info p {
     font-weight: 500;
-    font-size: 1.07426vw;
-    line-height: 1.4;
+    line-height: 2vh;
     color: #FFF;
+  }
+  #service-three.screen-block .service-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-three.screen-block .service-info.horizontal p {
+    font-size: 1.36724vw;
+  }
+  #service-three.screen-block .service-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-three.screen-block .service-info.vertical p {
+    font-size: 1.26958vw;
+    line-height: 1.8vh;
+  }
+  #service-three.screen-block .service-info.vertical.one {
+    top: 40vh;
+  }
+  #service-three.screen-block .service-info.vertical.two {
+    top: 72vh;
   }
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
@@ -25895,6 +25914,7 @@ html body .wrapper .screen-block.previous {
     background-size: cover;
     font-family: Raleway;
     font-weight: 400;
+    z-index: 0;
   }
   #service-three.screen-block .bottom-button span:before {
     content: 'Все услуги';
@@ -25973,17 +25993,35 @@ html body .wrapper .screen-block.previous {
   }
   #service-three.screen-block .service-info {
     position: absolute;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    bottom: 19%;
-    width: 6%;
-    left: 18%;
   }
   #service-three.screen-block .service-info p {
     font-weight: 500;
-    font-size: 0.8052vw;
-    line-height: 1.4;
+    line-height: 2vh;
     color: #FFF;
+  }
+  #service-three.screen-block .service-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-three.screen-block .service-info.horizontal p {
+    font-size: 1.0248vw;
+  }
+  #service-three.screen-block .service-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-three.screen-block .service-info.vertical p {
+    font-size: 0.9516vw;
+    line-height: 1.8vh;
+  }
+  #service-three.screen-block .service-info.vertical.one {
+    top: 40vh;
+  }
+  #service-three.screen-block .service-info.vertical.two {
+    top: 72vh;
   }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
@@ -25992,6 +26030,7 @@ html body .wrapper .screen-block.previous {
     background-size: cover;
     font-family: Raleway;
     font-weight: 400;
+    z-index: 0;
   }
   #service-three.screen-block .bottom-button span:before {
     content: 'Все услуги';
@@ -26070,17 +26109,35 @@ html body .wrapper .screen-block.previous {
   }
   #service-three.screen-block .service-info {
     position: absolute;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    bottom: 19%;
-    width: 6%;
-    left: 18%;
   }
   #service-three.screen-block .service-info p {
     font-weight: 500;
-    font-size: 0.65472vw;
-    line-height: 1.4;
+    line-height: 2vh;
     color: #FFF;
+  }
+  #service-three.screen-block .service-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-three.screen-block .service-info.horizontal p {
+    font-size: 0.83328vw;
+  }
+  #service-three.screen-block .service-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-three.screen-block .service-info.vertical p {
+    font-size: 0.77376vw;
+    line-height: 1.8vh;
+  }
+  #service-three.screen-block .service-info.vertical.one {
+    top: 40vh;
+  }
+  #service-three.screen-block .service-info.vertical.two {
+    top: 72vh;
   }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
@@ -26089,6 +26146,7 @@ html body .wrapper .screen-block.previous {
     background-size: cover;
     font-family: Raleway;
     font-weight: 400;
+    z-index: 0;
   }
   #service-three.screen-block .bottom-button span:before {
     content: 'Все услуги';
@@ -26167,17 +26225,35 @@ html body .wrapper .screen-block.previous {
   }
   #service-three.screen-block .service-info {
     position: absolute;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    bottom: 19%;
-    width: 6%;
-    left: 18%;
   }
   #service-three.screen-block .service-info p {
     font-weight: 500;
-    font-size: 0.57288vw;
-    line-height: 1.4;
+    line-height: 2vh;
     color: #FFF;
+  }
+  #service-three.screen-block .service-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-three.screen-block .service-info.horizontal p {
+    font-size: 0.72912vw;
+  }
+  #service-three.screen-block .service-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-three.screen-block .service-info.vertical p {
+    font-size: 0.67704vw;
+    line-height: 1.8vh;
+  }
+  #service-three.screen-block .service-info.vertical.one {
+    top: 40vh;
+  }
+  #service-three.screen-block .service-info.vertical.two {
+    top: 72vh;
   }
 }
 @media (min-width: 1921px) {
@@ -26186,6 +26262,7 @@ html body .wrapper .screen-block.previous {
     background-size: cover;
     font-family: Raleway;
     font-weight: 400;
+    z-index: 0;
   }
   #service-three.screen-block .bottom-button span:before {
     content: 'Все услуги';
@@ -26264,17 +26341,35 @@ html body .wrapper .screen-block.previous {
   }
   #service-three.screen-block .service-info {
     position: absolute;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    bottom: 19%;
-    width: 6%;
-    left: 18%;
   }
   #service-three.screen-block .service-info p {
     font-weight: 500;
-    font-size: 0.42966vw;
-    line-height: 1.4;
+    line-height: 2vh;
     color: #FFF;
+  }
+  #service-three.screen-block .service-info.horizontal {
+    bottom: 11vh;
+    width: 55vh;
+    left: 81vh;
+  }
+  #service-three.screen-block .service-info.horizontal p {
+    font-size: 0.54684vw;
+  }
+  #service-three.screen-block .service-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: 10px;
+    width: 13%;
+  }
+  #service-three.screen-block .service-info.vertical p {
+    font-size: 0.50778vw;
+    line-height: 1.8vh;
+  }
+  #service-three.screen-block .service-info.vertical.one {
+    top: 40vh;
+  }
+  #service-three.screen-block .service-info.vertical.two {
+    top: 72vh;
   }
 }
 
@@ -27328,6 +27423,543 @@ html body .wrapper .screen-block.previous {
   #blog-one.screen-block.current .image-block .image-container:before {
     -webkit-animation: beforeApear 1.8s linear 1.8s both;
             animation: beforeApear 1.8s linear 1.8s both;
+  }
+}
+
+@media (max-width: 414px) {
+  #blog-two.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #blog-two.screen-block .service-info, #blog-two.screen-block .logo, #blog-two.screen-block .menu, #blog-two.screen-block .bg-clock {
+    display: none;
+  }
+  #blog-two.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #blog-two.screen-block .jump-button {
+    left: initial;
+    right: 1.5%;
+    bottom: 8%;
+  }
+  #blog-two.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #blog-two.screen-block .jump-button a:before {
+    background: #444;
+  }
+  #blog-two.screen-block .jump-button a span {
+    color: #444;
+    font-size: 3.90625vw;
+    font-weight: 500;
+  }
+  #blog-two.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
+  #blog-two.screen-block .title {
+    margin: 20% 0 0 11%;
+  }
+  #blog-two.screen-block .title p {
+    line-height: 1.5;
+    font-size: 3.75vw;
+  }
+  #blog-two.screen-block .title span.name {
+    font-size: 4.0625vw;
+    top: -3.5vh;
+  }
+  #blog-two.screen-block .title .word span {
+    font-size: 7.34375vw;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
+  #blog-two.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #blog-two.screen-block .service-info, #blog-two.screen-block .logo, #blog-two.screen-block .menu, #blog-two.screen-block .bg-clock {
+    display: none;
+  }
+  #blog-two.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #blog-two.screen-block .jump-button {
+    left: initial;
+    right: 1.5%;
+    bottom: 8%;
+  }
+  #blog-two.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #blog-two.screen-block .jump-button a:before {
+    background: #444;
+  }
+  #blog-two.screen-block .jump-button a span {
+    color: #444;
+    font-size: 2.20075vw;
+    font-weight: 500;
+  }
+  #blog-two.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
+  #blog-two.screen-block .title {
+    margin: 20% 0 0 11%;
+  }
+  #blog-two.screen-block .title p {
+    line-height: 1.5;
+    font-size: 2.11272vw;
+  }
+  #blog-two.screen-block .title span.name {
+    font-size: 2.28878vw;
+    top: -3.5vh;
+  }
+  #blog-two.screen-block .title .word span {
+    font-size: 4.13741vw;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) {
+  #blog-two.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #blog-two.screen-block .service-info, #blog-two.screen-block .logo, #blog-two.screen-block .menu, #blog-two.screen-block .bg-clock {
+    display: none;
+  }
+  #blog-two.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #blog-two.screen-block .jump-button {
+    left: initial;
+    right: 1.5%;
+    bottom: 8%;
+  }
+  #blog-two.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #blog-two.screen-block .jump-button a:before {
+    background: #444;
+  }
+  #blog-two.screen-block .jump-button a span {
+    color: #444;
+    font-size: 1.6276vw;
+    font-weight: 500;
+  }
+  #blog-two.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
+  #blog-two.screen-block .title {
+    margin: 20% 0 0 11%;
+  }
+  #blog-two.screen-block .title p {
+    line-height: 1.5;
+    font-size: 1.5625vw;
+  }
+  #blog-two.screen-block .title span.name {
+    font-size: 1.6927vw;
+    top: -3.5vh;
+  }
+  #blog-two.screen-block .title .word span {
+    font-size: 3.05989vw;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #blog-two.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #blog-two.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #blog-two.screen-block .title {
+    margin: 28vh 0 0 40vh;
+  }
+  #blog-two.screen-block .text-block {
+    font-weight: 500;
+    position: absolute;
+    padding: 5% 1vh 0;
+    font-size: 1.36724vw;
+    line-height: 1.5;
+    color: #FFF;
+    z-index: 1;
+    width: 29%;
+    right: 11%;
+    top: 20%;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(1) {
+    left: 19vh;
+    top: 4vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(2) {
+    left: 101vh;
+    top: -12vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(3) {
+    right: 9vh;
+    top: 37vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(4) {
+    bottom: -10vh;
+    left: 30vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(5) {
+    bottom: 14vh;
+    right: 90vh;
+  }
+  #blog-two.screen-block .jump-button {
+    left: initial;
+    bottom: 20.5%;
+    right: 15.3%;
+  }
+  #blog-two.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #blog-two.screen-block .jump-button a:before {
+    background: #FFF;
+  }
+  #blog-two.screen-block .jump-button a span {
+    color: #FFF;
+    font-size: 1.22075vw;
+    font-weight: 500;
+  }
+  #blog-two.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
+  #blog-two.screen-block .service-info {
+    position: absolute;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    bottom: 19%;
+    width: 6%;
+    left: 18%;
+  }
+  #blog-two.screen-block .service-info p {
+    font-weight: 500;
+    font-size: 1.07426vw;
+    line-height: 1.4;
+    color: #FFF;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  #blog-two.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #blog-two.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #blog-two.screen-block .title {
+    margin: 28vh 0 0 40vh;
+  }
+  #blog-two.screen-block .text-block {
+    font-weight: 500;
+    position: absolute;
+    padding: 5% 1vh 0;
+    font-size: 1.0248vw;
+    line-height: 1.5;
+    color: #FFF;
+    z-index: 1;
+    width: 29%;
+    right: 11%;
+    top: 20%;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(1) {
+    left: 19vh;
+    top: 4vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(2) {
+    left: 101vh;
+    top: -12vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(3) {
+    right: 9vh;
+    top: 37vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(4) {
+    bottom: -10vh;
+    left: 30vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(5) {
+    bottom: 14vh;
+    right: 90vh;
+  }
+  #blog-two.screen-block .jump-button {
+    left: initial;
+    bottom: 20.5%;
+    right: 15.3%;
+  }
+  #blog-two.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #blog-two.screen-block .jump-button a:before {
+    background: #FFF;
+  }
+  #blog-two.screen-block .jump-button a span {
+    color: #FFF;
+    font-size: 0.915vw;
+    font-weight: 500;
+  }
+  #blog-two.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
+  #blog-two.screen-block .service-info {
+    position: absolute;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    bottom: 19%;
+    width: 6%;
+    left: 18%;
+  }
+  #blog-two.screen-block .service-info p {
+    font-weight: 500;
+    font-size: 0.8052vw;
+    line-height: 1.4;
+    color: #FFF;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
+  #blog-two.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #blog-two.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #blog-two.screen-block .title {
+    margin: 28vh 0 0 40vh;
+  }
+  #blog-two.screen-block .text-block {
+    font-weight: 500;
+    position: absolute;
+    padding: 5% 1vh 0;
+    font-size: 0.83328vw;
+    line-height: 1.5;
+    color: #FFF;
+    z-index: 1;
+    width: 29%;
+    right: 11%;
+    top: 20%;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(1) {
+    left: 19vh;
+    top: 4vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(2) {
+    left: 101vh;
+    top: -12vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(3) {
+    right: 9vh;
+    top: 37vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(4) {
+    bottom: -10vh;
+    left: 30vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(5) {
+    bottom: 14vh;
+    right: 90vh;
+  }
+  #blog-two.screen-block .jump-button {
+    left: initial;
+    bottom: 20.5%;
+    right: 15.3%;
+  }
+  #blog-two.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #blog-two.screen-block .jump-button a:before {
+    background: #FFF;
+  }
+  #blog-two.screen-block .jump-button a span {
+    color: #FFF;
+    font-size: 0.744vw;
+    font-weight: 500;
+  }
+  #blog-two.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
+  #blog-two.screen-block .service-info {
+    position: absolute;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    bottom: 19%;
+    width: 6%;
+    left: 18%;
+  }
+  #blog-two.screen-block .service-info p {
+    font-weight: 500;
+    font-size: 0.65472vw;
+    line-height: 1.4;
+    color: #FFF;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
+  #blog-two.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #blog-two.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #blog-two.screen-block .title {
+    margin: 28vh 0 0 40vh;
+  }
+  #blog-two.screen-block .text-block {
+    font-weight: 500;
+    position: absolute;
+    padding: 5% 1vh 0;
+    font-size: 0.72912vw;
+    line-height: 1.5;
+    color: #FFF;
+    z-index: 1;
+    width: 29%;
+    right: 11%;
+    top: 20%;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(1) {
+    left: 19vh;
+    top: 4vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(2) {
+    left: 101vh;
+    top: -12vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(3) {
+    right: 9vh;
+    top: 37vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(4) {
+    bottom: -10vh;
+    left: 30vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(5) {
+    bottom: 14vh;
+    right: 90vh;
+  }
+  #blog-two.screen-block .jump-button {
+    left: initial;
+    bottom: 20.5%;
+    right: 15.3%;
+  }
+  #blog-two.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #blog-two.screen-block .jump-button a:before {
+    background: #FFF;
+  }
+  #blog-two.screen-block .jump-button a span {
+    color: #FFF;
+    font-size: 0.651vw;
+    font-weight: 500;
+  }
+  #blog-two.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
+  #blog-two.screen-block .service-info {
+    position: absolute;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    bottom: 19%;
+    width: 6%;
+    left: 18%;
+  }
+  #blog-two.screen-block .service-info p {
+    font-weight: 500;
+    font-size: 0.57288vw;
+    line-height: 1.4;
+    color: #FFF;
+  }
+}
+@media (min-width: 1921px) {
+  #blog-two.screen-block {
+    background-color: #1C1C1C;
+    font-family: Raleway;
+    font-weight: 400;
+    z-index: 0;
+  }
+  #blog-two.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #blog-two.screen-block .title {
+    margin: 28vh 0 0 40vh;
+  }
+  #blog-two.screen-block .text-block {
+    font-weight: 500;
+    position: absolute;
+    padding: 5% 1vh 0;
+    font-size: 0.54684vw;
+    line-height: 1.5;
+    color: #FFF;
+    z-index: 1;
+    width: 29%;
+    right: 11%;
+    top: 20%;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(1) {
+    left: 19vh;
+    top: 4vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(2) {
+    left: 101vh;
+    top: -12vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(3) {
+    right: 9vh;
+    top: 37vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(4) {
+    bottom: -10vh;
+    left: 30vh;
+  }
+  #blog-two.screen-block .small-gray-lines .line:nth-of-type(5) {
+    bottom: 14vh;
+    right: 90vh;
+  }
+  #blog-two.screen-block .jump-button {
+    left: initial;
+    bottom: 20.5%;
+    right: 15.3%;
+  }
+  #blog-two.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #blog-two.screen-block .jump-button a:before {
+    background: #FFF;
+  }
+  #blog-two.screen-block .jump-button a span {
+    color: #FFF;
+    font-size: 0.48825vw;
+    font-weight: 500;
+  }
+  #blog-two.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
+  #blog-two.screen-block .service-info {
+    position: absolute;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    bottom: 19%;
+    width: 6%;
+    left: 18%;
+  }
+  #blog-two.screen-block .service-info p {
+    font-weight: 500;
+    font-size: 0.42966vw;
+    line-height: 1.4;
+    color: #FFF;
   }
 }
 
