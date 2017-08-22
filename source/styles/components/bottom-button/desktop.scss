@@ -3,7 +3,7 @@
     flex-direction: row-reverse;
     align-items: center;
     position: absolute;
-    bottom: px(50);
+    bottom: px(60);
     left: 0;
     z-index: 6;
     margin-left: 3%;
@@ -31,7 +31,7 @@
     span {
         position: relative;
         padding-left: px(96);
-        color: $gray;
+        color: $lightGray;
         font-size: px(24);
         line-height: 16px;
         font-weight: 700; 
@@ -56,15 +56,15 @@
         transition: opacity $timeTickHalf, transform $time;
 
         .st0 {
-            fill: $gray;
-            stroke: $gray;
+            fill: $lightGray;
+            stroke: $lightGray;
             stroke-width: 0.75;
             stroke-miterlimit: 10;
         }
 
         .st1 {
             fill: none;
-            stroke: $gray;
+            stroke: $lightGray;
             stroke-width: 0.75;
             stroke-miterlimit: 10;
         }
@@ -73,7 +73,7 @@
     .line {
         flex-grow: 1;
         height: 1px;
-        background: $gray;
+        background: $lightGray;
         transition: width $timeTick;
         // animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
     }
