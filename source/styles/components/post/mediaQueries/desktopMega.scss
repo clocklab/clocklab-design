@@ -2,7 +2,21 @@
 
 & {
 
+    header {
+        padding-left: px(800);
+    }
+
+    .image-container {
+        width: px(2300);
+        height: px(1200);
+    }
+
+    .date {
+        left: px(2870);
+    }
+
     main {
+        width: px(2400);
 
         article {
 
