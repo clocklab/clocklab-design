@@ -17,7 +17,8 @@ $(document).ready(function() {
       textShadow: true
     });
 
-    // ----- change logo and menu color -----
+    // ----- change logo, menu color and lines -----
+    $('.light div').children().addClass('light');
     $('.black a').children().addClass('black');
     $('.gray').children().addClass('gray');
 });

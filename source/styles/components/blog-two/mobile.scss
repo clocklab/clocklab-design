@@ -3,6 +3,7 @@
     background-color: $background;
     font-family: $raleway;
     font-weight: $regular;
+    z-index: 0;
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
@@ -28,7 +29,6 @@
     .title {
         margin: 20% 0 0 11%;
         p {
-            padding: 7% 0 0;
             line-height: 1.5;
             font-size: px(24);
         }
