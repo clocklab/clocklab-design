@@ -1,1 +1,15 @@
 @import '../desktop';
+
+& {
+
+    main {
+
+        article {
+
+            p {
+                font-size: px(40);
+                line-height: px(60);
+            }
+        }
+    }
+}
