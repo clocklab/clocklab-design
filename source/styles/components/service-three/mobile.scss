@@ -1,12 +1,31 @@
 & {
     .service-info, .logo, .menu, .bg-clock { display: none; }
-    background-color: $background;
     font-family: $raleway;
     font-weight: $regular;
-    z-index: 0;
+    
+    // ----- bg-image -----
+    .bg-image {
+        object-fit: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
+
+    // ----- shadow -----
+    .shadow div {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        &:first-child {
+            background: rgba(0,0,0,.7);
+            width: 100%;
+            left: 0;
+        }
+        &:last-child { display: none; }
+    }
 
     // ----- jump-button -----
     .jump-button {
@@ -17,22 +36,31 @@
             text-transform: uppercase;
             &:before { background: $darkGray; }
             span {
-                color: $darkGray;
+                color: $white;
                 font-size: px(25);
                 font-weight: $medium;
-                &:nth-of-type(10) { margin-right: 5px;}
+                &:nth-of-type(10) { margin-right: 5px; }
             }
         }
     }
     
+    .info-block {
+        padding: 7% 0 0;
+        line-height: 1.5;
+        font-size: px(24);
+        font-weight: $medium;
+        position: absolute;
+        color: $white;
+        z-index: 1;
+        width: 80%;
+        left: 11%;
+        top: 20%;
+    }
+
     // ----- title -----
     .title {
         margin: 20% 0 0 11%;
-        p {
-            padding: 7% 0 0;
-            line-height: 1.5;
-            font-size: px(24);
-        }
+        
         span.name {
             font-size: px(26);
             top: -3.5vh;

@@ -11,6 +11,7 @@
         display: block;
         height: 1px;
         width: 24vh;
+        &.light { background-color: #F1F1F1; }
         &.up { animation: lineUp 1s $time * 3 both; }
         &.down { animation: lineDown 1s $time * 3 both; }
         &:nth-of-type(1) {

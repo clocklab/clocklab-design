@@ -1,9 +1,7 @@
 // modules
-@import "compass/utilities/sprites";
 @import "compass/css3";
 
 // base
-@import "base/sprites";
 @import "base/variables";
 @import "base/mixins";
 @import "base/fonts";
@@ -41,11 +39,17 @@
 @import "components/service-two/main";
 @import "components/service-three/main";
 
+// blog on the main page
+@import "components/blog-one/main";
+@import "components/blog-two/main";
+@import "components/blog-three/main";
+
 // contacts on the main page
 @import "components/main-contacts/main";
 
 // ***** OTHER PAGES *****
-@import "components/contacts/main";
 @import "components/portfolio/main";
+@import "components/services/main";
+@import "components/contacts/main";
 @import "components/blog/main";
 @import "components/post/main";
