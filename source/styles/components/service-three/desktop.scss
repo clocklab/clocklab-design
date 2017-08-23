@@ -1,9 +1,15 @@
 & {
-    background-position: center center;
-    background-size: cover; 
     font-family: $raleway;
     font-weight: $regular;
     z-index: 0;
+    
+    // ----- bg-image -----
+    .bg-image {
+        object-fit: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
