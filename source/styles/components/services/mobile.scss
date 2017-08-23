@@ -3,66 +3,74 @@
     font-family: $raleway;
     font-weight: $regular;
     
-    // ----- title -----
-    .title {
-        display: inherit;
-        margin-top: 23vh;
-        margin-left: 3vh;
-        span.name {
-            font-size: 2.1vh;
-            left: 11vh;
-            top: -3vh;
-            span {
-                color: lighten($gray, 20%);
-                display: inherit;
-            }
-            &:before {
-                background: lighten($gray, 20%);
-                left: -11vh;
-                width: 9vh;
-                top: 1vh;
+    .know {
+            // padding-top: px(390);
+            padding-top: 20vh;
+            .container {
+                display: flex;
+                margin: 0 auto;
+                flex-wrap: wrap;
+                max-width: 1170px;
+                // @include media(phone) {
+                //     padding: 0 15px 0 30px;
+                //     width: auto;
+                // }
+                .item {
+                    width: 33.33%;
+                    position: relative;
+                    &.up { margin-bottom: 18vh; }
+                    .title {
+                        width: auto;
+                        .word {
+                            width: min-content;
+                            &:after { top: 0; }
+                        }
+                    }
+                    // @include media(phone) {
+                    //     width: 100% !important;
+                    //     padding: 0 !important;
+                    //     margin-bottom: 25px;
+                    // }
+                    span {
+                        line-height: 26px;
+                        font-size: px(50);
+                    }
+                    p {
+                        color: $white;
+                        line-height: 1.5;
+                        font-size: px(24);
+                        padding: px(48) px(130) 0 0;
+                        animation: fadeInUp 1s both;
+                    }
+                    object embed {
+                        position: absolute;
+                        left: 0;
+                        top: 50px;
+                        width: 100vh;
+                        transform-origin: 0 0;
+                        transform: rotate(-90deg);
+                        // @include media(phone) { top: initial; }
+                    }
+                    &:before {
+                        position: absolute;
+                        top: -28px;
+                        left: -25px;
+                        color: #666;
+                        font-size: px(36);
+                        font-family: $roboto;
+                        transform: rotate(-90deg);
+                        // @include media(phone) {
+                        //     top: initial;
+                        //     bottom: 0;
+                        // }
+                    }
+                    &:nth-of-type(1)::before { content: '01'; }
+                    &:nth-of-type(2)::before { content: '02'; }
+                    &:nth-of-type(3)::before { content: '03'; }
+                    &:nth-of-type(4)::before { content: '04'; }
+                    &:nth-of-type(5)::before { content: '05'; }
+                    &:nth-of-type(6)::before { content: '06'; }
+                }     
             }
         }
-        .animation-border { display: none; }
-        .word {
-            text-align: left;
-            height: 7.5vh;
-            span {
-                bottom: -100px;
-                font-size: 3.9vh;
-            }
-        }
-    }
-
-    // ----- contacts-info -----
-    .contacts-info {
-        display: inherit;
-        margin: 9vh 0 0 12.5vh;
-        li {
-            color: $white;
-            font-size: 2vh;
-            margin-bottom: 5.5vh;
-            &:nth-of-type(3) a {
-                transition: $time;
-                padding-bottom: 4px;
-                border-bottom: 1px solid;
-                &:hover { border: none; }
-            }
-            a {
-                color: $white;
-                display: block;
-                font-size: 2.6vh;
-                margin-top: -.5vh;
-            }
-        }
-    }
-
-    // ----- language -----
-    .language { top: 25vh; }
-
-    // ----- bg letter -----
-    .bg-letter { display: none; }
-
-    // ----- small-gray-lines -----
-    .small-gray-lines { display: none; }
 }

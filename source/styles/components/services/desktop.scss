@@ -3,50 +3,93 @@
     font-family: $raleway;
     font-weight: $regular;
     
-    // ----- title -----
-    .title {
-        width: 80.5vh;
-        display: inherit;
-        margin-top: 27vh;
-        margin-left: 30vh;
-        span.name { top: -2vh; }
-        .animation-border { top: 4.7vh; }
-        .word {
-            height: 7.5vh;
-            span {
-                bottom: -100px;
-                font-size: 6.3vh;
-            }
-        }
-    }
+    // ----- services-schedule -----
+    .services-schedule {
+        // padding-top: px(390);
+        padding-top: 20vh;
+        .container {
+            display: flex;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            max-width: 1170px;
+            // @include media(phone) {
+            //     padding: 0 15px 0 30px;
+            //     width: auto;
+            // }
+            .item {
+                width: 33.33%;
+                position: relative;
+                &.up { margin-bottom: 18vh; }
+                .title {
+                    width: auto;
+                    .word {
+                        width: min-content;
+                        &:after { top: 0; }
+                    }
+                }
 
-    // ----- contacts-info -----
-    .contacts-info {
-        display: inherit;
-        margin: 34.5vh 0 0 33vh;
-        li {
-            color: $white;
-            font-size: 1.3vh;
-            @include inline-block;
-            &:nth-of-type(1) { margin-right: 14vh; }
-            &:nth-of-type(2) { margin-right: 31vh; }
-            &:nth-of-type(3) a {
-                transition: $time;
-                padding-bottom: 4px;
-                border-bottom: 1px solid;
-                &:hover { border: none; }
-            }
-            a {
-                color: $white;
-                display: block;
-            }
+                // ----- bottom-button -----
+                .bottom-button {
+                    margin: 0;
+                    width: auto;
+                    bottom: -55px;
+                    .line { display: none; }
+                    .arrow-container { margin-left: 10px; }
+                    span {
+                        padding: 0;
+                        font-size: px(24);
+                        line-height: initial;
+                        font-family: $roboto;
+                        font-weight: $medium;
+                        &:hover { padding: 0; }
+                        &:before { content: 'Подробнее'; }
+                    }
+                }
+                // @include media(phone) {
+                //     width: 100% !important;
+                //     padding: 0 !important;
+                //     margin-bottom: 25px;
+                // }
+                span {
+                    line-height: 26px;
+                    font-size: px(50);
+                }
+                p {
+                    color: $white;
+                    line-height: 1.5;
+                    font-size: px(24);
+                    padding: px(48) px(130) 0 0;
+                    animation: fadeInUp 1s both;
+                }
+                object embed {
+                    position: absolute;
+                    left: -4px;
+                    top: 80vh;
+                    width: 100vh;
+                    transform-origin: 0 0;
+                    transform: rotate(-90deg);
+                    // @include media(phone) { top: initial; }
+                }
+                &:before {
+                    position: absolute;
+                    top: -28px;
+                    left: -25px;
+                    color: #666;
+                    font-size: px(36);
+                    font-family: $roboto;
+                    transform: rotate(-90deg);
+                    // @include media(phone) {
+                    //     top: initial;
+                    //     bottom: 0;
+                    // }
+                }
+                &:nth-of-type(1)::before { content: '01'; }
+                &:nth-of-type(2)::before { content: '02'; }
+                &:nth-of-type(3)::before { content: '03'; }
+                &:nth-of-type(4)::before { content: '04'; }
+                &:nth-of-type(5)::before { content: '05'; }
+                &:nth-of-type(6)::before { content: '06'; }
+            }     
         }
-    }
-
-    // ----- bg letter -----
-    .bg-letter {
-        background: url('../images/letter-2.png') no-repeat;
-        background-position: 96% 100%;
-        background-size: 28%;
     }
 }
