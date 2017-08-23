@@ -1,16 +1,22 @@
 & {
-    background: url('../images/office.jpg');
-    background-size: cover;
     font-family: $raleway;
     font-weight: $regular;
     z-index: 0;
+    
+    // ----- bg-image -----
+    .bg-image {
+        object-fit: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
 
     // ----- title -----
     .title {
-        margin: 28vh 0 0 40vh;
+        margin: 26.5vh 0 0 30vh;
         p { padding: 5% 1vh 0; }
     }
 
@@ -31,7 +37,8 @@
         }
     }
 
-    .text-block {
+    // ----- info-block -----
+    .info-block {
         font-weight: $medium;
         position: absolute;
         padding: 5% 1vh 0;
@@ -88,27 +95,29 @@
     // ----- service-info -----
     .service-info {
         position: absolute;
+        width: 6%;
         p {
             font-weight: $medium;
-            line-height: 2vh;
+            font-size: px(22);
             color: $white;
         }
         &.horizontal {
-            bottom: 11vh;
-            width: 55vh;
-            left: 81vh;
-            p { font-size: px(28); }
+            width: 18%;
+            bottom: 27%;
+            left: 15.3%;
+            p { line-height: 1.7; }
         }
         &.vertical {
-            transform: rotate(90deg);
-            right: 10px;
-            width: 13%;
-            p {
-                font-size: px(26);
-                line-height: 1.8vh;
+            transform: rotate(-90deg);
+            p { line-height: 1.4; }
+            &.one {
+                bottom: 16.5%;
+                right: 2.8%;
             }
-            &.one { top: 40vh; }
-            &.two { top: 72vh; }
+            &.two {
+                top: 42.5%;
+                left: .5%;
+            }
         }
     }
 }
