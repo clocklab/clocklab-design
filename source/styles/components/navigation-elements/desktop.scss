@@ -75,7 +75,11 @@
             display: block;
             height: px(60);
             width: px(60);
-            path { fill: $white; }
+            svg {
+                transform: translate3d(50%, 50%, 0);
+                height: 50%;
+                path { fill: $white; }
+            }
             &:before {
                 top: 15px;
                 opacity: 0;
@@ -96,19 +100,11 @@
             &:first-child {
                 transform-origin: 100% 100%;
                 animation: social $PPSocialAnimationTime $PPSocialDelayTime both;
-                svg {
-                    transform: translate3d(50%, 50%, 0);
-                    height: 50%;
-                }
             }
             &:last-child {
                 transform-origin: 0 0;
                 transform: translate3d(px(58), px(-2), 0);
                 animation: socialReversed $PPSocialAnimationTime $PPSocialDelayTime both;
-                svg {
-                    transform: translate3d(50%, 50%, 0);
-                    height: 50%;
-                }
             }
         }
     }

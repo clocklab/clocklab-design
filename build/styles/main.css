@@ -8063,7 +8063,12 @@ html body .wrapper .screen-block.previous {
     height: 2.9298vw;
     width: 2.9298vw;
   }
-  .screen-block .social a path {
+  .screen-block .social a svg {
+    -webkit-transform: translate3d(50%, 50%, 0);
+            transform: translate3d(50%, 50%, 0);
+    height: 50%;
+  }
+  .screen-block .social a svg path {
     fill: #FFF;
   }
   .screen-block .social a:before {
@@ -8090,11 +8095,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: social 0.9s 0.9s both;
             animation: social 0.9s 0.9s both;
   }
-  .screen-block .social a:first-child svg {
-    -webkit-transform: translate3d(50%, 50%, 0);
-            transform: translate3d(50%, 50%, 0);
-    height: 50%;
-  }
   .screen-block .social a:last-child {
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
@@ -8102,11 +8102,6 @@ html body .wrapper .screen-block.previous {
             transform: translate3d(2.83214vw, -0.09766vw, 0);
     -webkit-animation: socialReversed 0.9s 0.9s both;
             animation: socialReversed 0.9s 0.9s both;
-  }
-  .screen-block .social a:last-child svg {
-    -webkit-transform: translate3d(50%, 50%, 0);
-            transform: translate3d(50%, 50%, 0);
-    height: 50%;
   }
   .screen-block .jump-letters a {
     display: inline-block;
@@ -8361,7 +8356,12 @@ html body .wrapper .screen-block.previous {
     height: 2.196vw;
     width: 2.196vw;
   }
-  .screen-block .social a path {
+  .screen-block .social a svg {
+    -webkit-transform: translate3d(50%, 50%, 0);
+            transform: translate3d(50%, 50%, 0);
+    height: 50%;
+  }
+  .screen-block .social a svg path {
     fill: #FFF;
   }
   .screen-block .social a:before {
@@ -8388,11 +8388,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: social 0.9s 0.9s both;
             animation: social 0.9s 0.9s both;
   }
-  .screen-block .social a:first-child svg {
-    -webkit-transform: translate3d(50%, 50%, 0);
-            transform: translate3d(50%, 50%, 0);
-    height: 50%;
-  }
   .screen-block .social a:last-child {
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
@@ -8400,11 +8395,6 @@ html body .wrapper .screen-block.previous {
             transform: translate3d(2.1228vw, -0.0732vw, 0);
     -webkit-animation: socialReversed 0.9s 0.9s both;
             animation: socialReversed 0.9s 0.9s both;
-  }
-  .screen-block .social a:last-child svg {
-    -webkit-transform: translate3d(50%, 50%, 0);
-            transform: translate3d(50%, 50%, 0);
-    height: 50%;
   }
   .screen-block .jump-letters a {
     display: inline-block;
@@ -8656,7 +8646,12 @@ html body .wrapper .screen-block.previous {
     height: 1.7856vw;
     width: 1.7856vw;
   }
-  .screen-block .social a path {
+  .screen-block .social a svg {
+    -webkit-transform: translate3d(50%, 50%, 0);
+            transform: translate3d(50%, 50%, 0);
+    height: 50%;
+  }
+  .screen-block .social a svg path {
     fill: #FFF;
   }
   .screen-block .social a:before {
@@ -8683,11 +8678,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: social 0.9s 0.9s both;
             animation: social 0.9s 0.9s both;
   }
-  .screen-block .social a:first-child svg {
-    -webkit-transform: translate3d(50%, 50%, 0);
-            transform: translate3d(50%, 50%, 0);
-    height: 50%;
-  }
   .screen-block .social a:last-child {
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
@@ -8695,11 +8685,6 @@ html body .wrapper .screen-block.previous {
             transform: translate3d(1.72608vw, -0.05952vw, 0);
     -webkit-animation: socialReversed 0.9s 0.9s both;
             animation: socialReversed 0.9s 0.9s both;
-  }
-  .screen-block .social a:last-child svg {
-    -webkit-transform: translate3d(50%, 50%, 0);
-            transform: translate3d(50%, 50%, 0);
-    height: 50%;
   }
   .screen-block .jump-letters a {
     display: inline-block;
@@ -8951,7 +8936,12 @@ html body .wrapper .screen-block.previous {
     height: 1.5624vw;
     width: 1.5624vw;
   }
-  .screen-block .social a path {
+  .screen-block .social a svg {
+    -webkit-transform: translate3d(50%, 50%, 0);
+            transform: translate3d(50%, 50%, 0);
+    height: 50%;
+  }
+  .screen-block .social a svg path {
     fill: #FFF;
   }
   .screen-block .social a:before {
@@ -8978,11 +8968,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: social 0.9s 0.9s both;
             animation: social 0.9s 0.9s both;
   }
-  .screen-block .social a:first-child svg {
-    -webkit-transform: translate3d(50%, 50%, 0);
-            transform: translate3d(50%, 50%, 0);
-    height: 50%;
-  }
   .screen-block .social a:last-child {
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
@@ -8990,11 +8975,6 @@ html body .wrapper .screen-block.previous {
             transform: translate3d(1.51032vw, -0.05208vw, 0);
     -webkit-animation: socialReversed 0.9s 0.9s both;
             animation: socialReversed 0.9s 0.9s both;
-  }
-  .screen-block .social a:last-child svg {
-    -webkit-transform: translate3d(50%, 50%, 0);
-            transform: translate3d(50%, 50%, 0);
-    height: 50%;
   }
   .screen-block .jump-letters a {
     display: inline-block;
@@ -9246,7 +9226,12 @@ html body .wrapper .screen-block.previous {
     height: 1.1718vw;
     width: 1.1718vw;
   }
-  .screen-block .social a path {
+  .screen-block .social a svg {
+    -webkit-transform: translate3d(50%, 50%, 0);
+            transform: translate3d(50%, 50%, 0);
+    height: 50%;
+  }
+  .screen-block .social a svg path {
     fill: #FFF;
   }
   .screen-block .social a:before {
@@ -9273,11 +9258,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: social 0.9s 0.9s both;
             animation: social 0.9s 0.9s both;
   }
-  .screen-block .social a:first-child svg {
-    -webkit-transform: translate3d(50%, 50%, 0);
-            transform: translate3d(50%, 50%, 0);
-    height: 50%;
-  }
   .screen-block .social a:last-child {
     -webkit-transform-origin: 0 0;
             transform-origin: 0 0;
@@ -9285,11 +9265,6 @@ html body .wrapper .screen-block.previous {
             transform: translate3d(1.13274vw, -0.03906vw, 0);
     -webkit-animation: socialReversed 0.9s 0.9s both;
             animation: socialReversed 0.9s 0.9s both;
-  }
-  .screen-block .social a:last-child svg {
-    -webkit-transform: translate3d(50%, 50%, 0);
-            transform: translate3d(50%, 50%, 0);
-    height: 50%;
   }
   .screen-block .jump-letters a {
     display: inline-block;
@@ -10940,11 +10915,11 @@ html body .wrapper .screen-block.previous {
 
 @media (max-width: 414px) {
   .menu {
-    position: absolute;
     top: 0;
     right: 0;
     z-index: 9999;
-    font-family: 'Roboto';
+    position: absolute;
+    font-family: Roboto;
     -webkit-animation: fadeInDown 0.9s both;
             animation: fadeInDown 0.9s both;
   }
@@ -11397,11 +11372,11 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 415px) and (max-width: 667px) {
   .menu {
-    position: absolute;
     top: 0;
     right: 0;
     z-index: 9999;
-    font-family: 'Roboto';
+    position: absolute;
+    font-family: Roboto;
     -webkit-animation: fadeInDown 0.9s both;
             animation: fadeInDown 0.9s both;
   }
@@ -11854,11 +11829,13 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 668px) and (max-width: 768px) {
   .menu {
-    position: absolute;
     top: 0;
     right: 0;
     z-index: 9999;
-    font-family: 'Roboto';
+    position: absolute;
+    font-family: Roboto;
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -12310,11 +12287,13 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .menu {
-    position: absolute;
     top: 0;
     right: 0;
     z-index: 9999;
-    font-family: 'Roboto';
+    position: absolute;
+    font-family: Roboto;
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -12766,11 +12745,13 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
   .menu {
-    position: absolute;
     top: 0;
     right: 0;
     z-index: 9999;
-    font-family: 'Roboto';
+    position: absolute;
+    font-family: Roboto;
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -13222,11 +13203,13 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
   .menu {
-    position: absolute;
     top: 0;
     right: 0;
     z-index: 9999;
-    font-family: 'Roboto';
+    position: absolute;
+    font-family: Roboto;
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -13678,11 +13661,13 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
   .menu {
-    position: absolute;
     top: 0;
     right: 0;
     z-index: 9999;
-    font-family: 'Roboto';
+    position: absolute;
+    font-family: Roboto;
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;
@@ -14134,11 +14119,13 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 1921px) {
   .menu {
-    position: absolute;
     top: 0;
     right: 0;
     z-index: 9999;
-    font-family: 'Roboto';
+    position: absolute;
+    font-family: Roboto;
+    -webkit-animation: fadeInDown 0.9s both;
+            animation: fadeInDown 0.9s both;
   }
   .menu__item {
     box-sizing: border-box;

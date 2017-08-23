@@ -1,9 +1,9 @@
 & {  
-    position: absolute;
     top: 0;
     right: 0;
     z-index: 9999;
-    font-family: 'Roboto';
+    position: absolute;
+    font-family: $roboto;
     animation: fadeInDown $time * 3 both;
 
     &__item {
