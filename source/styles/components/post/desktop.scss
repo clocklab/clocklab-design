@@ -1,0 +1,394 @@
+& {  
+
+    background: $white;
+
+    .clock {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-family: $raleway;
+        text-shadow: px(6) px(6) px(26) rgba(0, 0, 0, .1);
+
+        span {
+            width: 20%;
+            color: $white;
+            font-weight: 800;
+            font-size: 0;
+            line-height: 100vh;
+            text-align: center;
+            overflow-x: hidden;
+
+            &:before {
+                display: block;
+                font-size: 30vw;
+                animation: right $POPClockAnimationTime both;                    
+            }
+
+            &:nth-child(1) {
+                
+                &:before {
+                    content: 'c';
+                }
+            }
+
+            &:nth-child(2) {
+                
+                &:before {
+                    content: 'l';
+                }
+            }
+
+            &:nth-child(3) {
+                
+                &:before {
+                    content: 'o';
+                }
+            }
+
+            &:nth-child(4) {
+                
+                &:before {
+                    content: 'c';
+                }
+            }
+
+            &:nth-child(5) {
+                
+                &:before {
+                    content: 'k';
+                }
+            }
+        }
+    }
+
+    .menu {
+        position: fixed;
+        animation: fadeIn $POPMenuAnimationTime both;
+
+        &__item {
+            border-color: $darkGray;
+
+            .symbol,
+            .name {
+                color: $darkGray;
+            }
+
+            .hamburger {
+
+                &-tick {
+
+                    .inner-tick {
+                        background: $darkGray;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo {
+        position: fixed;
+        top: 0;
+        left: px(100);
+        z-index: 2;
+        padding-top: px(60);
+        animation: fadeIn $POPLogoAnimationTime both;
+
+       .image {
+            @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
+            background-repeat: no-repeat;
+
+            &.black {
+                @include image-retina("/../images/logo-black.png", "/../images/logo-black-2x.png");
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    .language {
+        position: fixed;
+        z-index: 2;
+
+        a {
+            color: $darkGray;
+            animation-delay: 0s;
+            animation-duration: $POPLangAnimationTime;
+
+
+            &.select {
+                color: gray;
+
+                &:before {
+                    color: $gray;
+                }
+            }
+
+            &:hover {
+                color: $gray;
+            }
+        }
+    }
+
+    .crossed-button {
+        position: fixed;
+        bottom: px(80);
+        left: px(200);
+        font-family: $roboto;
+        font-weight: 600;
+        animation: fadeInLeft $POPBackAnimationTime $POPBackDelayTime both;
+
+        span {
+            color: $darkGray;
+            font-size: px(24);
+
+            &:after {
+                content: 'Назад';
+            }
+        }
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: px(370);
+        left: px(1040);
+        z-index: 3;
+        width: px(60);
+        height: px(60);
+        border: 1px solid $gray;
+        transition: border-color $time;
+        animation: fadeInDown $POPSocialAnimationTime $POPSocialDelayTime both;
+
+        svg {
+            width: 60%;
+        }
+
+        path {
+            fill: $gray;
+            transition: fill $time;
+        }
+
+        &:hover {
+            border-color: $blue;
+
+            path {
+                fill: $blue;
+            }
+        }
+    }
+
+    .nav-arrows {
+        position: fixed;
+        bottom: px(160);
+        right: px(310);
+        width: px(280);
+
+        .arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: px(140);
+            height: px(140);
+            border: 1px solid $lightBlack;
+
+            svg {
+                width: px(70);
+            }
+
+            .st0,
+            .st1 {
+                stroke: $gray;
+            }
+
+            &--next {
+                transform: translate3d(px(138), px(-2), 0);
+            }
+
+            &--prev {
+                
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        &:before,
+        &:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            width: 50%;
+            height: 100%;
+            background: $white;
+            content: '';
+        }
+
+        &:before {
+            right: 100%;
+            animation: Left $POPArrowsAnimationTime $POPArrowsDelayTime both;
+        }
+
+        &:after {
+            left: 100%;
+            animation: right $POPArrowsAnimationTime $POPArrowsDelayTime both;
+        }
+    }
+
+    header {
+        position: relative;
+        padding-left: px(520);
+    }
+
+    .image-container {
+        position: relative;
+        width: px(1980);
+        height: px(1040);
+        overflow: hidden;
+
+        img {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: Right $POPImageAnimationTime $POPImageDelayTime both;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $gray;
+            content: '';
+            animation: Right $POPImageBgAnimationTime $POPImageBgDelayTime both;
+        }
+    }
+
+    .date {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: px(2280);
+        padding: px(40) px(50);
+        width: px(420);
+        height: px(200);
+        color: $white;
+        font-weight: 600;
+        overflow: hidden;
+
+        .day {
+            display: block;
+            position: absolute;
+            font-family: $roboto;
+            font-size: px(72);
+            animation: fadeInLeft $POPDayAnimationTime $POPDayDelayTime both;
+
+            span {
+                font-size: px(32);
+                font-weight: $bold;
+                text-transform: uppercase;
+            }
+        }
+
+        @keyframes fadeInDownYear {
+            from {
+                opacity: 0;
+                transform: translateY(-100%) rotate(90deg);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) rotate(90deg);
+            }
+        }
+
+        .year {
+            position: absolute;
+            right: px(52);
+            bottom: px(24);
+            display: block;
+            color: $gray;
+            font-size: px(28);
+            font-family: $raleway;
+            transform-origin: 100% 100%;
+            transform: rotate(90deg);
+            animation: fadeInDownYear $POPYearAnimationTime $POPYearDelayTime both;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $blue;
+            content: '';
+            animation: Left $POPDateAnimationTime $POPDateDelayTime both; 
+        }
+    }
+
+    main {
+        position: relative;
+        z-index: 2;
+        margin: px(60) auto 0;
+        padding-bottom: px(150);
+        width: px(1900);
+
+        .sticker {
+            margin-left: px(200);
+
+            span {
+                animation: FadeInRight $POPStickerTextAnimationTime $POPStickerTextDelayTime both;
+
+                &:before {
+                    content: 'Блог';
+                }
+            }
+
+            &:before {
+                animation: widthIncreaseStickerLine $POPStickerLineAnimationTime $POPStickerLineDelayTime both;
+            }
+        }
+
+        h1 {
+            display: block;
+            margin-left: px(200);
+            margin-top: px(30);
+            width: px(1360);
+            font-family: $raleway;
+            font-size: px(120);
+            font-weight: 800;
+            text-transform: uppercase;
+            animation: fadeInUp $POPHeaderAnimationTime $POPHeaderDelayTime both;
+        }
+
+        article {
+            margin-left: px(400);
+            margin-top: px(60);
+
+            p {
+                margin-bottom: px(40);
+                color: $darkGray;
+                font-family: $roboto;
+                font-size: px(32);
+                line-height: px(48);
+                letter-spacing: 0;
+                animation: fadeInUp $POPArticleAnimationTime $POPArticleDelayTime both;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

@@ -357,3 +357,48 @@ $BPostTitleAnimationTime: $BStickerTextAnimationTime;
 $BPostLinkDelayTime: $BStickerTextDelayTime;
 $BPostLinkAnimationTime: $BStickerTextAnimationTime;
 //  BLOG PAGE ENDS
+
+
+//  POST PAGE (POP - Post Page)
+$POPClockAnimationTime: $time * 3;
+
+$POPMenuAnimationTime: $POPClockAnimationTime;
+$POPLogoAnimationTime: $POPClockAnimationTime;
+$POPLangAnimationTime: $POPClockAnimationTime;
+
+$POPImageBgDelayTime: 0s;
+$POPImageBgAnimationTime: $POPClockAnimationTime;
+
+$POPImageDelayTime: $POPImageBgDelayTime + $POPImageBgAnimationTime;
+$POPImageAnimationTime: $time * 3;
+
+$POPDateAnimationTime: $time * 2;
+$POPDateDelayTime: $POPImageBgDelayTime + $POPImageBgAnimationTime - $POPDateAnimationTime;
+
+$POPDayDelayTime: $POPDateAnimationTime + $POPDateDelayTime;
+$POPDayAnimationTime: $POPImageAnimationTime;
+
+$POPYearDelayTime: $POPDayDelayTime;
+$POPYearAnimationTime: $POPDayAnimationTime;
+
+$POPHeaderDelayTime: $POPYearDelayTime;
+$POPHeaderAnimationTime: $POPYearAnimationTime;
+
+$POPStickerLineDelayTime: $POPHeaderDelayTime;
+$POPStickerLineAnimationTime: $POPHeaderAnimationTime;
+
+$POPStickerTextDelayTime: $POPStickerLineDelayTime + $POPStickerLineAnimationTime;
+$POPStickerTextAnimationTime: $time * 3;
+
+$POPArticleDelayTime: $POPStickerTextDelayTime;
+$POPArticleAnimationTime: $POPStickerTextAnimationTime;
+
+$POPSocialDelayTime: $POPArticleDelayTime + $POPArticleAnimationTime - $time * 2; 
+$POPSocialAnimationTime: $time * 3;
+
+$POPBackDelayTime: $POPSocialDelayTime;
+$POPBackAnimationTime: $POPSocialAnimationTime;
+
+$POPArrowsDelayTime: $POPBackDelayTime;
+$POPArrowsAnimationTime: $POPBackAnimationTime;
+//  POST PAGE ENDS

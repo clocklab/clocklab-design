@@ -516,3 +516,14 @@
     }
 }
 // blog ends
+
+//  post
+@keyframes Left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: none;
+    }
+}
+//  post ends

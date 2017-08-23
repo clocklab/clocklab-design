@@ -1,0 +1,101 @@
+@import '../mobile';
+
+& {
+
+    .clock {
+        display: flex;
+    }
+
+    .logo {
+        left: px(50);
+        padding-top: px(60);
+    }
+
+    .language {
+        display: block;
+        top: px(820);
+        bottom: initial;
+        left: px(50);
+
+        a {
+            font-weight: 400;
+
+            &.select {
+                color: #d0d0d1;
+
+                &::before {
+                    color: #d0d0d1;
+                }
+            }
+        }
+    }
+
+    .crossed-button {
+        top: px(1600);
+        left: px(20);
+        bottom: initial;
+
+        span {
+            transform: rotate(-90deg) translateY(px(-30));
+        }
+
+        &:hover {
+
+            span {
+
+                &:before {
+                    animation: none;
+                }
+            }
+        }
+    }
+
+    .social {
+        bottom: px(320);
+        left: px(184);
+    }
+
+    .nav-arrows {
+        display: block;
+        position: absolute;
+        bottom: px(114);
+        right: px(70);
+        z-index: 3;
+        overflow: hidden;
+    }
+
+    .image-container {
+        height: px(670);
+    }
+
+    .date {
+        bottom: px(-50);
+        padding: px(28) px(24);
+        width: px(340);
+        height: px(160);
+    }
+
+    main {
+        margin-top: 0;
+        padding: px(70) px(110) px(440) px(180);
+
+        .sticker {
+            margin-left: 0;
+        }
+
+        h1 {
+            margin-top: px(50);
+            font-size: px(96);
+            line-height: px(110);
+        }
+
+        article {
+            margin-top: px(50);
+
+            p {
+                font-size: px(32);
+                line-height: px(42);
+            }
+        }
+    }
+}
