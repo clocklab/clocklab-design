@@ -1,1 +1,10 @@
-@import '../mobile';
+//@import '../mobile';
+@import '../desktop';
+
+& {
+
+    .top-panel {
+        padding-top: px(270);
+        padding-left: px(140);
+    }
+}

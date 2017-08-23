@@ -1,8 +1,12 @@
 & {  
 
-    $BMaginLeft: px(220);
-    $BPostWidth: px(840);
-    $BPostHeight: px(720);
+    // $BMaginLeft: px(220);
+    // $BPostWidth: px(840);
+    // $BPostHeight: px(720);
+
+    $BMaginLeft: 11.5vh;
+    $BPostWidth: 43.75vh;
+    $BPostHeight: 37.5vh;
 
     .page-layer {
         width: 100vw;
@@ -44,7 +48,8 @@
     }
 
     .grid {
-        position: relative;
+        display: flex;
+        position: absolute;
         z-index: 2;
         margin-top: px(330);
         padding-left: $BMaginLeft;
@@ -131,6 +136,7 @@
     .front-layer {
         position: relative;
         z-index: 2;
+        overflow: hidden;
     }
 
     .menu {
@@ -155,7 +161,7 @@
         } 
     }
 
-    .language {
+    .new-language {
         position: absolute;
         
         a {
@@ -275,9 +281,9 @@
 
     .feed-container {
         position: relative;
-        margin-top: px(70);
+        margin-top: px(66);
         margin-left: $BMaginLeft;
-        width: 100vw - $BMaginLeft;
+        width: 100vw;
         height: 2 * $BPostHeight;
         overflow-x: auto;
         cursor: -webkit-grab;
@@ -296,9 +302,7 @@
         &__post {
             position: relative;
             width: $BPostWidth;
-            height: $BPostHeight - px(2);
-            // border-top: 1px solid $gray;
-            // border-bottom: 1px solid $gray;
+            height: $BPostHeight;
             color: $white;
 
             .image-container {
@@ -306,7 +310,7 @@
                 top: 0;
                 left: 0;
                 width: $BPostWidth;
-                height: $BPostHeight - px(2);
+                height: $BPostHeight;
                 overflow: hidden;
                 
                 img {
@@ -359,7 +363,7 @@
                 margin-top: px(290);
                 color: $white;
                 font-family: $raleway;
-                transform: translateX(px(660));
+                transform: translateX(35vh);
 
                 .sticker {
                     margin-bottom: px(20);
