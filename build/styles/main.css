@@ -6633,7 +6633,7 @@ html body .wrapper .screen-block.previous {
 }
 
 @media (max-width: 414px) {
-  .language {
+  .new-language {
     bottom: 45vh;
     left: 15.625vw;
     font-family: Raleway;
@@ -6644,7 +6644,7 @@ html body .wrapper .screen-block.previous {
             transform: rotate(-90deg);
     overflow: hidden;
   }
-  .language a {
+  .new-language a {
     display: inline-block;
     padding: 0 1.5625vw;
     color: #999;
@@ -6655,21 +6655,22 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: Down 0.9s 0.9s both;
             animation: Down 0.9s 0.9s both;
   }
-  .language a.select {
+  .new-language a.select {
     color: #FFF;
   }
-  .language a.select::before {
+  .new-language a.select::before {
     position: relative;
     color: #FFF;
     content: '—';
   }
-  .language a:hover {
+  .new-language a:hover {
     color: #FFF;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
 }
 @media (min-width: 415px) and (max-width: 667px) {
-  .language {
+  .new-language {
     bottom: 45vh;
     left: 8.803vw;
     font-family: Raleway;
@@ -6680,7 +6681,7 @@ html body .wrapper .screen-block.previous {
             transform: rotate(-90deg);
     overflow: hidden;
   }
-  .language a {
+  .new-language a {
     display: inline-block;
     padding: 0 0.8803vw;
     color: #999;
@@ -6691,21 +6692,22 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: Down 0.9s 0.9s both;
             animation: Down 0.9s 0.9s both;
   }
-  .language a.select {
+  .new-language a.select {
     color: #FFF;
   }
-  .language a.select::before {
+  .new-language a.select::before {
     position: relative;
     color: #FFF;
     content: '—';
   }
-  .language a:hover {
+  .new-language a:hover {
     color: #FFF;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
 }
 @media (min-width: 668px) and (max-width: 768px) {
-  .language {
+  .new-language {
     bottom: 45vh;
     left: 6.5104vw;
     font-family: Raleway;
@@ -6716,7 +6718,7 @@ html body .wrapper .screen-block.previous {
             transform: rotate(-90deg);
     overflow: hidden;
   }
-  .language a {
+  .new-language a {
     display: inline-block;
     padding: 0 0.65104vw;
     color: #999;
@@ -6727,16 +6729,17 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: Down 0.9s 0.9s both;
             animation: Down 0.9s 0.9s both;
   }
-  .language a.select {
+  .new-language a.select {
     color: #FFF;
   }
-  .language a.select::before {
+  .new-language a.select::before {
     position: relative;
     color: #FFF;
     content: '—';
   }
-  .language a:hover {
+  .new-language a:hover {
     color: #FFF;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
 }
@@ -26056,9 +26059,9 @@ html body .wrapper .screen-block.previous {
     top: 12%;
   }
   #service-one.screen-block .jump-button {
+    bottom: 8.3011vw;
     left: initial;
     right: 29.7%;
-    bottom: 7%;
   }
   #service-one.screen-block .jump-button a {
     text-transform: uppercase;
@@ -26128,9 +26131,9 @@ html body .wrapper .screen-block.previous {
     top: 12%;
   }
   #service-one.screen-block .jump-button {
+    bottom: 6.222vw;
     left: initial;
     right: 29.7%;
-    bottom: 7%;
   }
   #service-one.screen-block .jump-button a {
     text-transform: uppercase;
@@ -26200,9 +26203,9 @@ html body .wrapper .screen-block.previous {
     top: 12%;
   }
   #service-one.screen-block .jump-button {
+    bottom: 5.0592vw;
     left: initial;
     right: 29.7%;
-    bottom: 7%;
   }
   #service-one.screen-block .jump-button a {
     text-transform: uppercase;
@@ -26272,9 +26275,9 @@ html body .wrapper .screen-block.previous {
     top: 12%;
   }
   #service-one.screen-block .jump-button {
+    bottom: 4.4268vw;
     left: initial;
     right: 29.7%;
-    bottom: 7%;
   }
   #service-one.screen-block .jump-button a {
     text-transform: uppercase;
@@ -26344,9 +26347,9 @@ html body .wrapper .screen-block.previous {
     top: 12%;
   }
   #service-one.screen-block .jump-button {
+    bottom: 3.3201vw;
     left: initial;
     right: 29.7%;
-    bottom: 7%;
   }
   #service-one.screen-block .jump-button a {
     text-transform: uppercase;
@@ -38260,6 +38263,7 @@ html body .wrapper .screen-block.previous {
     width: 9.375vw;
     height: 9.375vw;
     border: 1px solid #999;
+    -webkit-transition: border-color 0.3s;
     transition: border-color 0.3s;
     -webkit-animation: fadeInDown 0.9s 2.1s both;
             animation: fadeInDown 0.9s 2.1s both;
@@ -38269,6 +38273,7 @@ html body .wrapper .screen-block.previous {
   }
   .post .social path {
     fill: #999;
+    -webkit-transition: fill 0.3s;
     transition: fill 0.3s;
   }
   .post .social:hover {
@@ -38648,6 +38653,7 @@ html body .wrapper .screen-block.previous {
     width: 5.2818vw;
     height: 5.2818vw;
     border: 1px solid #999;
+    -webkit-transition: border-color 0.3s;
     transition: border-color 0.3s;
     -webkit-animation: fadeInDown 0.9s 2.1s both;
             animation: fadeInDown 0.9s 2.1s both;
@@ -38657,6 +38663,7 @@ html body .wrapper .screen-block.previous {
   }
   .post .social path {
     fill: #999;
+    -webkit-transition: fill 0.3s;
     transition: fill 0.3s;
   }
   .post .social:hover {
@@ -39036,6 +39043,7 @@ html body .wrapper .screen-block.previous {
     width: 3.90624vw;
     height: 3.90624vw;
     border: 1px solid #999;
+    -webkit-transition: border-color 0.3s;
     transition: border-color 0.3s;
     -webkit-animation: fadeInDown 0.9s 2.1s both;
             animation: fadeInDown 0.9s 2.1s both;
@@ -39045,6 +39053,7 @@ html body .wrapper .screen-block.previous {
   }
   .post .social path {
     fill: #999;
+    -webkit-transition: fill 0.3s;
     transition: fill 0.3s;
   }
   .post .social:hover {
@@ -39497,6 +39506,7 @@ html body .wrapper .screen-block.previous {
     width: 2.9298vw;
     height: 2.9298vw;
     border: 1px solid #999;
+    -webkit-transition: border-color 0.3s;
     transition: border-color 0.3s;
     -webkit-animation: fadeInDown 0.9s 2.1s both;
             animation: fadeInDown 0.9s 2.1s both;
@@ -39506,6 +39516,7 @@ html body .wrapper .screen-block.previous {
   }
   .post .social path {
     fill: #999;
+    -webkit-transition: fill 0.3s;
     transition: fill 0.3s;
   }
   .post .social:hover {
@@ -39918,6 +39929,7 @@ html body .wrapper .screen-block.previous {
     width: 2.196vw;
     height: 2.196vw;
     border: 1px solid #999;
+    -webkit-transition: border-color 0.3s;
     transition: border-color 0.3s;
     -webkit-animation: fadeInDown 0.9s 2.1s both;
             animation: fadeInDown 0.9s 2.1s both;
@@ -39927,6 +39939,7 @@ html body .wrapper .screen-block.previous {
   }
   .post .social path {
     fill: #999;
+    -webkit-transition: fill 0.3s;
     transition: fill 0.3s;
   }
   .post .social:hover {
@@ -40317,6 +40330,7 @@ html body .wrapper .screen-block.previous {
     width: 1.7856vw;
     height: 1.7856vw;
     border: 1px solid #999;
+    -webkit-transition: border-color 0.3s;
     transition: border-color 0.3s;
     -webkit-animation: fadeInDown 0.9s 2.1s both;
             animation: fadeInDown 0.9s 2.1s both;
@@ -40326,6 +40340,7 @@ html body .wrapper .screen-block.previous {
   }
   .post .social path {
     fill: #999;
+    -webkit-transition: fill 0.3s;
     transition: fill 0.3s;
   }
   .post .social:hover {
@@ -40706,6 +40721,7 @@ html body .wrapper .screen-block.previous {
     width: 1.5624vw;
     height: 1.5624vw;
     border: 1px solid #999;
+    -webkit-transition: border-color 0.3s;
     transition: border-color 0.3s;
     -webkit-animation: fadeInDown 0.9s 2.1s both;
             animation: fadeInDown 0.9s 2.1s both;
@@ -40715,6 +40731,7 @@ html body .wrapper .screen-block.previous {
   }
   .post .social path {
     fill: #999;
+    -webkit-transition: fill 0.3s;
     transition: fill 0.3s;
   }
   .post .social:hover {
@@ -41092,6 +41109,7 @@ html body .wrapper .screen-block.previous {
     width: 1.1718vw;
     height: 1.1718vw;
     border: 1px solid #999;
+    -webkit-transition: border-color 0.3s;
     transition: border-color 0.3s;
     -webkit-animation: fadeInDown 0.9s 2.1s both;
             animation: fadeInDown 0.9s 2.1s both;
@@ -41101,6 +41119,7 @@ html body .wrapper .screen-block.previous {
   }
   .post .social path {
     fill: #999;
+    -webkit-transition: fill 0.3s;
     transition: fill 0.3s;
   }
   .post .social:hover {
