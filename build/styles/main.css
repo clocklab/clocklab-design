@@ -7420,43 +7420,44 @@ html body .wrapper .screen-block.previous {
 }
 @media (max-width: 414px) {
   .screen-block .language {
-    position: absolute;
-    font-size: 2.1875vw;
-    bottom: 27%;
-    z-index: 1;
-    zoom: 1.8;
-    left: 4%;
-  }
-  .screen-block .language div {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+    position: absolute;
+    font-size: 4.53125vw;
+    bottom: 33.5%;
+    z-index: 1;
+    left: -10%;
   }
-  .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 6.875vw;
-  }
-  .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 3.125vw;
-  }
-  .screen-block .language div a {
+  .screen-block .language a {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    -webkit-animation: Down 1s both;
+            animation: Down 1s both;
     color: #999;
     cursor: pointer;
     font-weight: 100;
     text-transform: uppercase;
   }
-  .screen-block .language div a.select {
+  .screen-block .language a:nth-of-type(1) {
+    margin-right: 1.5625vw;
+  }
+  .screen-block .language a:nth-of-type(2) {
+    margin-right: 7.8125vw;
+  }
+  .screen-block .language a.select {
     color: #FFF;
   }
-  .screen-block .language div a.select::before {
+  .screen-block .language a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: 10%;
-    right: 115%;
+    right: 7.8125vw;
+    bottom: 0.625vw;
     content: '—';
   }
-  .screen-block .language div a:hover {
+  .screen-block .language a:hover {
     color: #FFF;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -7680,43 +7681,44 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 415px) and (max-width: 667px) {
   .screen-block .language {
-    position: absolute;
-    font-size: 1.23242vw;
-    bottom: 27%;
-    z-index: 1;
-    zoom: 1.8;
-    left: 4%;
-  }
-  .screen-block .language div {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+    position: absolute;
+    font-size: 2.55287vw;
+    bottom: 33.5%;
+    z-index: 1;
+    left: -10%;
   }
-  .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 3.87332vw;
-  }
-  .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 1.7606vw;
-  }
-  .screen-block .language div a {
+  .screen-block .language a {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    -webkit-animation: Down 1s both;
+            animation: Down 1s both;
     color: #999;
     cursor: pointer;
     font-weight: 100;
     text-transform: uppercase;
   }
-  .screen-block .language div a.select {
+  .screen-block .language a:nth-of-type(1) {
+    margin-right: 0.8803vw;
+  }
+  .screen-block .language a:nth-of-type(2) {
+    margin-right: 4.4015vw;
+  }
+  .screen-block .language a.select {
     color: #FFF;
   }
-  .screen-block .language div a.select::before {
+  .screen-block .language a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: 10%;
-    right: 115%;
+    right: 4.4015vw;
+    bottom: 0.35212vw;
     content: '—';
   }
-  .screen-block .language div a:hover {
+  .screen-block .language a:hover {
     color: #FFF;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -7940,43 +7942,44 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 668px) and (max-width: 768px) {
   .screen-block .language {
-    position: absolute;
-    font-size: 0.91146vw;
-    bottom: 27%;
-    z-index: 1;
-    zoom: 1.8;
-    left: 4%;
-  }
-  .screen-block .language div {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+    position: absolute;
+    font-size: 1.88802vw;
+    bottom: 33.5%;
+    z-index: 1;
+    left: -10%;
   }
-  .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 2.86458vw;
-  }
-  .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 1.30208vw;
-  }
-  .screen-block .language div a {
+  .screen-block .language a {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    -webkit-animation: Down 1s both;
+            animation: Down 1s both;
     color: #999;
     cursor: pointer;
     font-weight: 100;
     text-transform: uppercase;
   }
-  .screen-block .language div a.select {
+  .screen-block .language a:nth-of-type(1) {
+    margin-right: 0.65104vw;
+  }
+  .screen-block .language a:nth-of-type(2) {
+    margin-right: 3.2552vw;
+  }
+  .screen-block .language a.select {
     color: #FFF;
   }
-  .screen-block .language div a.select::before {
+  .screen-block .language a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: 10%;
-    right: 115%;
+    right: 3.2552vw;
+    bottom: 0.26042vw;
     content: '—';
   }
-  .screen-block .language div a:hover {
+  .screen-block .language a:hover {
     color: #FFF;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -8211,42 +8214,44 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .screen-block .language {
-    position: absolute;
-    font-size: 1.41607vw;
-    bottom: 44.5%;
-    left: 2.5%;
-    z-index: 1;
-  }
-  .screen-block .language div {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+    position: absolute;
+    font-size: 1.41607vw;
+    bottom: 48.5%;
+    z-index: 1;
+    left: .5%;
   }
-  .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 3.71108vw;
-  }
-  .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 1.75788vw;
-  }
-  .screen-block .language div a {
+  .screen-block .language a {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    -webkit-animation: Down 1s both;
+            animation: Down 1s both;
     color: #999;
     cursor: pointer;
     font-weight: 100;
     text-transform: uppercase;
   }
-  .screen-block .language div a.select {
+  .screen-block .language a:nth-of-type(1) {
+    margin-right: 0.4883vw;
+  }
+  .screen-block .language a:nth-of-type(2) {
+    margin-right: 2.4415vw;
+  }
+  .screen-block .language a.select {
     color: #FFF;
   }
-  .screen-block .language div a.select::before {
+  .screen-block .language a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: 15%;
-    right: 115%;
+    right: 2.9298vw;
+    bottom: 0.19532vw;
     content: '—';
   }
-  .screen-block .language div a:hover {
+  .screen-block .language a:hover {
     color: #FFF;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -8504,42 +8509,44 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
   .screen-block .language {
-    position: absolute;
-    font-size: 1.0614vw;
-    bottom: 44.5%;
-    left: 2.5%;
-    z-index: 1;
-  }
-  .screen-block .language div {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+    position: absolute;
+    font-size: 1.0614vw;
+    bottom: 48.5%;
+    z-index: 1;
+    left: .5%;
   }
-  .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 2.7816vw;
-  }
-  .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 1.3176vw;
-  }
-  .screen-block .language div a {
+  .screen-block .language a {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    -webkit-animation: Down 1s both;
+            animation: Down 1s both;
     color: #999;
     cursor: pointer;
     font-weight: 100;
     text-transform: uppercase;
   }
-  .screen-block .language div a.select {
+  .screen-block .language a:nth-of-type(1) {
+    margin-right: 0.366vw;
+  }
+  .screen-block .language a:nth-of-type(2) {
+    margin-right: 1.83vw;
+  }
+  .screen-block .language a.select {
     color: #FFF;
   }
-  .screen-block .language div a.select::before {
+  .screen-block .language a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: 15%;
-    right: 115%;
+    right: 2.196vw;
+    bottom: 0.1464vw;
     content: '—';
   }
-  .screen-block .language div a:hover {
+  .screen-block .language a:hover {
     color: #FFF;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -8794,42 +8801,44 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
   .screen-block .language {
-    position: absolute;
-    font-size: 0.86304vw;
-    bottom: 44.5%;
-    left: 2.5%;
-    z-index: 1;
-  }
-  .screen-block .language div {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+    position: absolute;
+    font-size: 0.86304vw;
+    bottom: 48.5%;
+    z-index: 1;
+    left: .5%;
   }
-  .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 2.26176vw;
-  }
-  .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 1.07136vw;
-  }
-  .screen-block .language div a {
+  .screen-block .language a {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    -webkit-animation: Down 1s both;
+            animation: Down 1s both;
     color: #999;
     cursor: pointer;
     font-weight: 100;
     text-transform: uppercase;
   }
-  .screen-block .language div a.select {
+  .screen-block .language a:nth-of-type(1) {
+    margin-right: 0.2976vw;
+  }
+  .screen-block .language a:nth-of-type(2) {
+    margin-right: 1.488vw;
+  }
+  .screen-block .language a.select {
     color: #FFF;
   }
-  .screen-block .language div a.select::before {
+  .screen-block .language a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: 15%;
-    right: 115%;
+    right: 1.7856vw;
+    bottom: 0.11904vw;
     content: '—';
   }
-  .screen-block .language div a:hover {
+  .screen-block .language a:hover {
     color: #FFF;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -9084,42 +9093,44 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
   .screen-block .language {
-    position: absolute;
-    font-size: 0.75516vw;
-    bottom: 44.5%;
-    left: 2.5%;
-    z-index: 1;
-  }
-  .screen-block .language div {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+    position: absolute;
+    font-size: 0.75516vw;
+    bottom: 48.5%;
+    z-index: 1;
+    left: .5%;
   }
-  .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 1.97904vw;
-  }
-  .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 0.93744vw;
-  }
-  .screen-block .language div a {
+  .screen-block .language a {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    -webkit-animation: Down 1s both;
+            animation: Down 1s both;
     color: #999;
     cursor: pointer;
     font-weight: 100;
     text-transform: uppercase;
   }
-  .screen-block .language div a.select {
+  .screen-block .language a:nth-of-type(1) {
+    margin-right: 0.2604vw;
+  }
+  .screen-block .language a:nth-of-type(2) {
+    margin-right: 1.302vw;
+  }
+  .screen-block .language a.select {
     color: #FFF;
   }
-  .screen-block .language div a.select::before {
+  .screen-block .language a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: 15%;
-    right: 115%;
+    right: 1.5624vw;
+    bottom: 0.10416vw;
     content: '—';
   }
-  .screen-block .language div a:hover {
+  .screen-block .language a:hover {
     color: #FFF;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -9374,42 +9385,44 @@ html body .wrapper .screen-block.previous {
 }
 @media (min-width: 1921px) {
   .screen-block .language {
-    position: absolute;
-    font-size: 0.56637vw;
-    bottom: 44.5%;
-    left: 2.5%;
-    z-index: 1;
-  }
-  .screen-block .language div {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+    position: absolute;
+    font-size: 0.56637vw;
+    bottom: 48.5%;
+    z-index: 1;
+    left: .5%;
   }
-  .screen-block .language div:nth-of-type(1) {
-    margin-bottom: 1.48428vw;
-  }
-  .screen-block .language div:nth-of-type(2) {
-    margin-bottom: 0.70308vw;
-  }
-  .screen-block .language div a {
+  .screen-block .language a {
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    -webkit-animation: Down 1s both;
+            animation: Down 1s both;
     color: #999;
     cursor: pointer;
     font-weight: 100;
     text-transform: uppercase;
   }
-  .screen-block .language div a.select {
+  .screen-block .language a:nth-of-type(1) {
+    margin-right: 0.1953vw;
+  }
+  .screen-block .language a:nth-of-type(2) {
+    margin-right: 0.9765vw;
+  }
+  .screen-block .language a.select {
     color: #FFF;
   }
-  .screen-block .language div a.select::before {
+  .screen-block .language a.select::before {
     position: absolute;
     color: #FFF;
-    bottom: 15%;
-    right: 115%;
+    right: 1.1718vw;
+    bottom: 0.07812vw;
     content: '—';
   }
-  .screen-block .language div a:hover {
+  .screen-block .language a:hover {
     color: #FFF;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -9625,8 +9638,8 @@ html body .wrapper .screen-block.previous {
     margin-bottom: 0.85932vw;
   }
   .screen-block .language div a.select::before {
-    right: 120%;
-    bottom: 10%;
+    right: 1.24992vw;
+    bottom: 0.07812vw;
   }
   .screen-block .jump-button {
     bottom: 3.5%;
@@ -30980,6 +30993,463 @@ html body .wrapper .screen-block.previous {
   #main-contacts.screen-block #map + .address {
     top: 65vh;
     right: 11%;
+  }
+}
+
+@media (max-width: 414px) {
+  #services-more.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more.screen-block .service-info, #services-more.screen-block .logo, #services-more.screen-block .menu, #services-more.screen-block .bg-clock {
+    display: none;
+  }
+  #services-more.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more.screen-block .jump-button {
+    left: initial;
+    right: 1.5%;
+    bottom: 8%;
+  }
+  #services-more.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #services-more.screen-block .jump-button a:before {
+    background: #444;
+  }
+  #services-more.screen-block .jump-button a span {
+    color: #444;
+    font-size: 3.90625vw;
+    font-weight: 500;
+  }
+  #services-more.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
+  #services-more.screen-block .title {
+    margin: 20% 0 0 11%;
+  }
+  #services-more.screen-block .title p {
+    padding: 7% 0 0;
+    line-height: 1.5;
+    font-size: 3.75vw;
+  }
+  #services-more.screen-block .title span.name {
+    font-size: 4.0625vw;
+    top: -3.5vh;
+  }
+  #services-more.screen-block .title .word span {
+    font-size: 7.34375vw;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
+  #services-more.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more.screen-block .service-info, #services-more.screen-block .logo, #services-more.screen-block .menu, #services-more.screen-block .bg-clock {
+    display: none;
+  }
+  #services-more.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more.screen-block .jump-button {
+    left: initial;
+    right: 1.5%;
+    bottom: 8%;
+  }
+  #services-more.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #services-more.screen-block .jump-button a:before {
+    background: #444;
+  }
+  #services-more.screen-block .jump-button a span {
+    color: #444;
+    font-size: 2.20075vw;
+    font-weight: 500;
+  }
+  #services-more.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
+  #services-more.screen-block .title {
+    margin: 20% 0 0 11%;
+  }
+  #services-more.screen-block .title p {
+    padding: 7% 0 0;
+    line-height: 1.5;
+    font-size: 2.11272vw;
+  }
+  #services-more.screen-block .title span.name {
+    font-size: 2.28878vw;
+    top: -3.5vh;
+  }
+  #services-more.screen-block .title .word span {
+    font-size: 4.13741vw;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) {
+  #services-more.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more.screen-block .service-info, #services-more.screen-block .logo, #services-more.screen-block .menu, #services-more.screen-block .bg-clock {
+    display: none;
+  }
+  #services-more.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more.screen-block .jump-button {
+    left: initial;
+    right: 1.5%;
+    bottom: 8%;
+  }
+  #services-more.screen-block .jump-button a {
+    text-transform: uppercase;
+  }
+  #services-more.screen-block .jump-button a:before {
+    background: #444;
+  }
+  #services-more.screen-block .jump-button a span {
+    color: #444;
+    font-size: 1.6276vw;
+    font-weight: 500;
+  }
+  #services-more.screen-block .jump-button a span:nth-of-type(10) {
+    margin-right: 5px;
+  }
+  #services-more.screen-block .title {
+    margin: 20% 0 0 11%;
+  }
+  #services-more.screen-block .title p {
+    padding: 7% 0 0;
+    line-height: 1.5;
+    font-size: 1.5625vw;
+  }
+  #services-more.screen-block .title span.name {
+    font-size: 1.6927vw;
+    top: -3.5vh;
+  }
+  #services-more.screen-block .title .word span {
+    font-size: 3.05989vw;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #services-more.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more.screen-block .title {
+    margin: 21vh 0 0 40vh;
+    position: absolute;
+    left: 47.8534vw;
+    top: 2.9298vw;
+  }
+  #services-more.screen-block .image-block {
+    z-index: 3;
+    width: 39.5523vw;
+    height: 51.2715vw;
+    margin-top: 24.9033vw;
+    margin-left: 36.6225vw;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container:before {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: #444;
+    -webkit-transform: translate3d(-90%, 90%, 0);
+            transform: translate3d(-90%, 90%, 0);
+  }
+  #services-more.screen-block .image-block p {
+    padding: 1.9532vw 6.3479vw;
+    box-sizing: border-box;
+    position: absolute;
+    left: -55px;
+    top: 18.5554vw;
+    width: 43.947vw;
+    color: #FFF;
+    font-size: 1.36724vw;
+    line-height: 1.4649vw;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  #services-more.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more.screen-block .title {
+    margin: 21vh 0 0 40vh;
+    position: absolute;
+    left: 35.868vw;
+    top: 2.196vw;
+  }
+  #services-more.screen-block .image-block {
+    z-index: 3;
+    width: 29.646vw;
+    height: 38.43vw;
+    margin-top: 18.666vw;
+    margin-left: 27.45vw;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container:before {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: #444;
+    -webkit-transform: translate3d(-90%, 90%, 0);
+            transform: translate3d(-90%, 90%, 0);
+  }
+  #services-more.screen-block .image-block p {
+    padding: 1.464vw 4.758vw;
+    box-sizing: border-box;
+    position: absolute;
+    left: -55px;
+    top: 13.908vw;
+    width: 32.94vw;
+    color: #FFF;
+    font-size: 1.0248vw;
+    line-height: 1.098vw;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
+  #services-more.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more.screen-block .title {
+    margin: 21vh 0 0 40vh;
+    position: absolute;
+    left: 29.1648vw;
+    top: 1.7856vw;
+  }
+  #services-more.screen-block .image-block {
+    z-index: 3;
+    width: 24.1056vw;
+    height: 31.248vw;
+    margin-top: 15.1776vw;
+    margin-left: 22.32vw;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container:before {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: #444;
+    -webkit-transform: translate3d(-90%, 90%, 0);
+            transform: translate3d(-90%, 90%, 0);
+  }
+  #services-more.screen-block .image-block p {
+    padding: 1.1904vw 3.8688vw;
+    box-sizing: border-box;
+    position: absolute;
+    left: -55px;
+    top: 11.3088vw;
+    width: 26.784vw;
+    color: #FFF;
+    font-size: 0.83328vw;
+    line-height: 0.8928vw;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
+  #services-more.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more.screen-block .title {
+    margin: 21vh 0 0 40vh;
+    position: absolute;
+    left: 25.5192vw;
+    top: 1.5624vw;
+  }
+  #services-more.screen-block .image-block {
+    z-index: 3;
+    width: 21.0924vw;
+    height: 27.342vw;
+    margin-top: 13.2804vw;
+    margin-left: 19.53vw;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container:before {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: #444;
+    -webkit-transform: translate3d(-90%, 90%, 0);
+            transform: translate3d(-90%, 90%, 0);
+  }
+  #services-more.screen-block .image-block p {
+    padding: 1.0416vw 3.3852vw;
+    box-sizing: border-box;
+    position: absolute;
+    left: -55px;
+    top: 9.8952vw;
+    width: 23.436vw;
+    color: #FFF;
+    font-size: 0.72912vw;
+    line-height: 0.7812vw;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+@media (min-width: 1921px) {
+  #services-more.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more.screen-block .title {
+    margin: 21vh 0 0 40vh;
+    position: absolute;
+    left: 19.1394vw;
+    top: 1.1718vw;
+  }
+  #services-more.screen-block .image-block {
+    z-index: 3;
+    width: 15.8193vw;
+    height: 20.5065vw;
+    margin-top: 9.9603vw;
+    margin-left: 14.6475vw;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container img {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative;
+  }
+  #services-more.screen-block .image-block .image-container:before {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: #444;
+    -webkit-transform: translate3d(-90%, 90%, 0);
+            transform: translate3d(-90%, 90%, 0);
+  }
+  #services-more.screen-block .image-block p {
+    padding: 0.7812vw 2.5389vw;
+    box-sizing: border-box;
+    position: absolute;
+    left: -55px;
+    top: 7.4214vw;
+    width: 17.577vw;
+    color: #FFF;
+    font-size: 0.54684vw;
+    line-height: 0.5859vw;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
   }
 }
 
