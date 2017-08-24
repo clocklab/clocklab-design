@@ -1,1 +1,15 @@
 @import '../desktop';
+
+& {
+
+    .top-panel {
+        padding-left: px(600);
+    }
+
+    .filter {
+
+        &--date {
+            margin-right: px(300);
+        }
+    }
+}

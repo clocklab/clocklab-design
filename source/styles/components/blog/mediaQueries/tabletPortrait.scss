@@ -1,1 +1,208 @@
-@import '../mobile';
+@import '../desktop';
+
+& {
+
+    $BMaginLeftTablet: 6.8vh;
+    $BPostWidthTablet: 26.4vh;
+    $BPostHeightTablet: 22vh;
+
+    .grid {
+        flex-direction: column;
+        margin-top: px(420);
+        padding-left: $BMaginLeftTablet;
+
+        &__item {
+            width: $BPostWidthTablet;
+            height: $BPostHeightTablet;
+
+            .line {
+                top: 0;
+                left: initial;
+                width: 1px;
+                height: 100vh;
+
+                &--top {
+                    left: 0;
+                }
+
+                &--bottom {
+                    bottom: initial;
+                    right: 0;
+                }
+            }
+
+            &:after {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: - $BMaginLeftTablet;
+                width: 100vw;
+                height: 1px;
+                background: $gray;
+                content: '';
+            }
+
+            &:nth-child(even) {
+                transform: translateX(100%);
+            }
+
+            &:nth-child(odd) {
+                transform: initial;
+
+                &::before,
+                &::after {
+                    top: initial;
+                    left: initial;
+                    bottom: initial;
+                    right: initial;
+                    width: initial;
+                    height: initial;
+                }
+            }
+
+            &:first-child {
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: initial;
+                    left: - $BMaginLeftTablet;
+                    width: 100vw;
+                    height: 1px;
+                    background: $gray;
+                    content: '';
+                }
+
+                &:after {
+                    top: initial;
+                    bottom: 0;
+                    left: - $BMaginLeftTablet;
+                    width: 100vw;
+                    height: 1px;
+                }
+            }
+
+            &--bordered {
+
+                &:before {
+                    top: - $BPostHeightTablet;
+                    bottom: initial;
+                    left: initial;
+                    right: 0;
+                    width: 1px;
+                    height: 100vh;
+                }
+
+                &:after {
+                    left: - $BMaginLeftTablet - $BPostWidthTablet;
+                }
+            }
+
+            &:nth-child(3) {
+
+                &:after {
+                    bottom: 0;
+                    left: - $BMaginLeftTablet;
+                    width: 100vw;
+                    height: 1px;
+                }
+            }
+
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+
+    .logo {
+        left: px(42);
+    }
+
+    .new-language {
+        left: px(46);
+    }
+
+    .jumping-button {
+
+        button {
+
+            span {
+                color: $gray;
+                font-size: px(36);
+            }
+        }
+    }
+
+    .top-panel {
+        padding-top: px(270);
+        padding-left: px(140);
+        
+        & > .jumping-button {
+            margin-right: px(140);
+
+            button {
+
+                span {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .filter {
+
+        &--date {
+            margin-right: px(190);
+        }
+    }
+
+    .feed-container {
+        margin-top: px(46);
+        margin-left: $BMaginLeftTablet;
+        height: 3 * $BPostHeightTablet;
+    }
+
+    .feed {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-right: $BPostWidthTablet;
+
+        &__post {
+            margin-right: 2 * $BPostWidthTablet;
+            width: $BPostWidthTablet;
+            height: $BPostHeightTablet;
+
+            .post-date {
+                padding-top: px(24);
+                right: px(-150);
+            }
+
+            .post-info {
+                margin-top: px(160);
+                transform: translateX(23.7vh);
+
+                .sticker {
+                    margin-bottom: px(30);
+                }
+
+                h3 {
+                    margin-bottom: px(40);
+                    font-size: px(48);
+                }
+
+                .crossed-button {
+                    transform: translateX(px(80));
+                }
+            }
+
+            &:nth-child(even) {
+                transform: initial;
+            }
+
+            &:nth-child(3n + 2) {
+                transform: translateX(100%);
+            }
+        }
+    }
+}

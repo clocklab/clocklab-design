@@ -1,1 +1,56 @@
 @import '../desktop';
+
+& {
+
+    .new-title {
+
+        span {
+            font-size: px(50);
+        }
+    }
+
+    .jumping-button {
+
+        button {
+
+            span {
+                font-size: px(30);
+            }
+        }
+    }
+
+    .top-panel {
+        padding-top: px(200);
+        padding-left: px(500);
+
+        & > .jumping-button {
+            margin-right: px(100);
+        }
+    }
+
+    .filter {
+
+        &--date {
+            margin-right: px(200);
+        }
+    }
+
+    .feed-container {
+        margin-top: px(26);
+    }
+
+    .feed {
+
+        &__post {
+
+            .post-info {
+                margin-top: px(200);
+
+                h3 {
+                    margin-bottom: px(50);
+                    font-size: px(60);
+                }
+            }
+        }
+    }
+}
