@@ -19,15 +19,19 @@
 // alta
 
 // letter
-//= components/letter.js
 
 // button-freaky
 
 // horizontal-scroll
 
 // horizontal-scroll-blog
-//= components/horizontal-scroll-blog.js
 
 // portfolio-shadow
 
 // slides changing
+
+// transition-start
+//= components/transition-start.js
+
+// transition-end
+//= components/transition-end.js
