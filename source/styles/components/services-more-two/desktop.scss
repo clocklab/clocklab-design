@@ -1,0 +1,436 @@
+& {  
+    background-color: $background;
+    font-family: $raleway;
+    
+    // ----- bottom-button -----
+    .bottom-button span:before { content: 'Все работы'; }
+
+    .page-layer {
+        top: 0;
+        left: 0;
+        &.back-layer {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        .letter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100vw;
+            height: 100vh;
+            color: rgba(0, 0, 0, .2);
+            color: $gray;
+            font-size: 12vw;
+            font-weight: 700;
+            animation: fadeIn $PPLettersAnimationTime $PPLettersDelayTime both;
+            &-c {
+                top: px(280);
+                left: px(900);
+            }
+        }
+
+        &:before,
+        &:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 50vw;
+            height: 100vh;
+            background: $white;
+            content: '';
+        }
+
+        &:before {
+            left: 0;
+            animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
+        }
+
+        &:after {
+            right: 0;
+            animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
+        }
+    }
+    }
+
+    
+
+    .front-layer {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        user-select: none;
+
+        .content-container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: flex-start;
+            padding: px(270) px(300) px(280) px(250);
+            width: 200vw;
+            height: 100%;
+            min-height: 900px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            color: $white;
+
+            .image-container {
+                position: relative;
+                overflow: hidden;
+                font-size: 0;
+
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, .4);
+                    content: '';
+                    animation: Right $PPImageBgAnimationTime  $PPImageBgDelayTime both;
+                }
+            }
+
+            img {
+                position: relative;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                user-select: none;
+                animation: Right $PPImageAnimationTime  $PPImageDelayTime both;
+            }
+
+            &--audi {
+                margin: px(320) 0;
+                margin-right: px(170);
+
+                .image-container {
+                    //width: px(860);
+                    width: 45vh;
+                    min-width: px(860);
+                    //height: px(720);
+                    height: 37.5vh;
+                    min-height: px(720);
+                }
+
+                .new-title {
+                    display: block;
+                    position: absolute;
+                    margin-top: px(30);
+                }
+            }
+
+            &--alta-capital {
+                margin-left: px(60);
+                vertical-align: bottom;
+                
+                .image-container {
+                    display: inline-block;
+                    // width: px(1000);
+                    width: 52vh;
+                    min-width: px(1000);
+                    // height: px(600);
+                    height: 31.25vh;
+                    min-height: px(600);
+                }
+
+                .new-title {
+                    display: inline-block;
+                    bottom: px(40);
+                    left: px(20);
+                }
+            }
+
+            &--vino-grad {
+                
+                .image-container {
+                    display: inline-block;
+                    // width: px(600);
+                    width: 31.25vh;
+                    min-width: px(600);
+                    // height: px(600);
+                    height: 31.25vh;
+                    min-height: px(600);
+                }
+
+                .new-title {
+                    display: inline-block;
+                    bottom: px(60);
+                    left: px(40);
+                }
+            }
+
+            &--euro-club {
+                margin-top: px(90);
+                margin-left: px(160);
+                
+                .image-container {
+                    // width: px(600);
+                    width: 31.25vh;
+                    min-width: px(600);
+                    // height: px(1060);
+                    height: 55vh;
+                    min-height: px(1060);
+                }
+
+                .new-title {
+                    display: block;
+                    position: absolute;
+                    margin-top: px(40);
+                }
+            }
+        }
+
+        .new-title {
+            position: relative;
+            padding: 0 px(16);
+            font-size: px(48);
+            font-weight: 700;
+            overflow: hidden;
+
+            span {
+                display: block;
+                position: relative;
+                z-index: 1;
+                line-height: px(60);
+                animation: Up $PPTitleTextAnimationTime $PPTitleTextDelayTime both;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: px(48);
+                background: $blue;
+                content: '';
+                animation: halfDown $PPTitleLineAnimationTime linear $PPTitleLineDelayTime both;
+            }
+        }
+
+        // menu, language, social
+        .menu,
+        .logo,
+        .language,
+        .social,
+        .copyright,
+        .jump-button {
+            position: fixed;
+            z-index: 5;
+        }
+
+        .menu {
+            z-index: 9999;
+            animation: Down $PPMenuAnimationTime $PPMenuDelayTime both;
+        }
+
+        // ----- logo -----
+        .logo {
+            top: 0;
+            left: px(100);
+            padding-top: px(60);
+            animation: Down $PPLogoAnimationTime $PPLogoDelayTime both;
+
+           .image {
+                @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
+                background-repeat: no-repeat;
+
+                &.black {
+                    @include image-retina("/../images/logo-black.png", "/../images/logo-black-2x.png");
+                    background-repeat: no-repeat;
+                }
+            } 
+        }
+
+        // ----- language -----
+        .language {
+            bottom: 45vh;
+            left: px(100);
+            font-size: 0;
+            transform-origin: 0 0;
+            transform: rotate(-90deg);
+            overflow: hidden;
+
+            a {
+                display: inline-block;
+                padding: 0 px(10);
+                color: $gray;
+                cursor: pointer;
+                font-size: px(28);
+                font-weight: $thin;
+                text-transform: uppercase;
+                animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+
+                &.select {
+                    color: $white;
+
+                    &::before {
+                        position: relative;
+                        color: $white;
+                        content: '—';
+                    }
+                }
+                
+                &:hover {
+                    color: $white;
+                    transition: $time;
+                }
+            }
+        }
+
+        // ----- social -----
+        .social {
+            bottom: px(90);
+            left: px(100);
+
+            a {
+                display: block;
+                position: relative;
+                width: px(60);
+                height: px(60);
+                border: 1px solid $white;
+                cursor: pointer;
+    
+                path {
+                    fill: $white;
+                }
+    
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: px(13);
+                    right: px(13);
+                    width: 100%;
+                    height: 100%;
+                    background: $blue;
+                    content: '';
+                    opacity: 0;
+                    transition: top $time, right $time, opacity $time;
+                }
+    
+                &:hover {
+    
+                    &:before {
+                        top: px(5);
+                        right: px(5);
+                        opacity: 1;
+                    }
+                }
+    
+                &:first-child {
+                    transform-origin: 100% 100%;
+                    //animation: social $PPSocialAnimationTime $PPSocialDelayTime both;
+    
+                    svg {
+                        height: 60%;
+                        transform: translate3d(33%, 33%, 0);
+                    }
+                }
+    
+                &:last-child {
+                    transform-origin: 0 0;
+                    transform: translate3d(px(58), px(-2), 0);
+                    animation: socialReversed $PPSocialAnimationTime $PPSocialDelayTime both;
+    
+                    svg {
+                        height: 50%;
+                        transform: translate3d(50%, 50%, 0);
+                    }
+                }
+            }
+        }
+
+        // ----- jump letters -----
+        .jump-letters a {
+            @include inline-block;
+            text-align: center;
+            position: relative;
+            padding: 0 px(20);
+            overflow: hidden;
+            width: initial;
+            font-size: 0;
+            &:before {
+                left: 0;
+                top: 45%;
+                width: 100%;
+                height: 1px;
+                content: '';
+                display: block;
+                position: absolute;
+                background: $black;
+                transform: translateX(-100%);
+            }
+            span {
+                @include inline-block;
+                font-size: px(24);
+                padding: px(10) 0;
+            }
+            &:hover {
+                span {
+                    animation-duration: .25s;
+                    animation-fill-mode: forwards;
+                    &:nth-child(odd) { animation-name: letterUp; }
+                    &:nth-child(even) { animation-name: letterDown; }
+                    &:nth-child(1) { animation-delay: 0s; }
+                    &:nth-child(2) { animation-delay: $timeTickHalf / 2; }
+                    &:nth-child(3) { animation-delay: $timeTickHalf; }
+                    &:nth-child(4) { animation-delay: $timeTickHalf * 1.5; }
+                    &:nth-child(5) { animation-delay: $timeTickHalf * 2; }
+                    &:nth-child(6) { animation-delay: $timeTickHalf * 2.5; }
+                    &:nth-child(7) { animation-delay: $timeTickHalf * 3; }
+                }
+                &:before { animation: crossAnchor $timeTick $timeTickHalf * 4 + .25s forwards; }
+            }
+        }
+
+        // ----- behance -----
+        .behance {
+            bottom: px(90);
+            left: px(440);
+            overflow: hidden;
+
+            a {
+                animation: Right $PPBehanceAnimationTime $PPBehancelDelayTime both;
+
+                span {
+                    color: $white;
+                    font-size: px(24);
+                    font-weight: $thin;
+                }
+
+                &:before {
+                    top: 50%;
+                    left: -1px;
+                    background: $white;
+                }
+            }
+        }
+
+        // ----- copyright -----
+        .copyright {
+            right: px(60);
+            bottom: 39vh;
+            font-size: px(24);
+            overflow: hidden;
+            transform-origin: 100% 0;
+            transform: rotate(-90deg);
+
+            p {
+                padding-bottom: px(4);
+                color: $white;
+                font-weight: $thin;
+                animation: Up $PPCopyAnimationTime $PPCopyDelayTime both;
+            }
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

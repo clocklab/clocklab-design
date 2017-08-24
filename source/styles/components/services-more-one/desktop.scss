@@ -14,6 +14,28 @@
         top: px(60);
     }
 
+    // ----- crossed-button -----
+    .crossed-button {
+        left: px(330);
+        bottom: px(370);
+        position: absolute;
+        align-items: center;
+        font-family: $roboto;
+        font-weight: $medium;
+        .arrow .st0, .arrow .st1 { stroke: $dark; }
+        span {
+            color: $darkGray;
+            display: block;
+            font-size: px(24);
+            animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
+            &:after { content: 'Назад'; }
+            &:before {
+                background: $dark;
+                top: px(10);
+            }
+        }
+    }
+
     // ----- image-block -----
     .image-block {
         z-index: 3;
