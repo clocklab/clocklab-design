@@ -5,12 +5,16 @@
 //= ../../bower_components/wow/dist/wow.js
 
 // shadow
+//= components/shadow.js
 
 // scripts
+//= components/scripts.js
 
 // clock
+//= components/clock.js
 
 // menu
+//= components/menu.js
 
 // alta
 
