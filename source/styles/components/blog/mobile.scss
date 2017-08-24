@@ -1,3 +1,299 @@
 & {  
 
+    .back-layer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .columns {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100%;
+
+        .column {
+            position: relative;
+            width: 25vw;
+            overflow: hidden;
+
+            &:before {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: $lightBlack;
+                content: '';
+                animation: right $BColumnAnimationTime $BColumnDelayTime both;
+            }
+        }
+    }
+
+    .front-layer {
+        position: relative;
+        z-index: 2;
+    }
+
+    .menu {
+        animation: fadeIn $BMenuAnimationTime $BMenuDelayTime both;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+        left: px(20);
+        padding-top: px(12);
+        animation: fadeIn $BLogoAnimationTime $BLogoDelayTime both;
+
+        .image {
+            @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
+            background-repeat: no-repeat;
+
+            &.black {
+                @include image-retina("/../images/logo-black.png", "/../images/logo-black-2x.png");
+                background-repeat: no-repeat;
+            }
+        } 
+    }
+
+    .new-language {
+        display: none;
+    }
+
+    .new-title {
+        margin-bottom: px(60);
+        padding: 0;
+        
+        .text-container {
+
+            &:before {
+                animation: halfDown $BFilterLineAnimationTime $BFilterLineDelayTime both;
+            }
+        }
+
+        span {
+            color: $white;
+            font-size: px(60);
+            line-height: px(74);
+            letter-spacing: 0;
+            animation: fadeInUp $BFilterTextAnimationTime $BFilterTextDelayTime both;
+        }
+    }
+
+    .jumping-button {
+        display: inline-block;
+        margin-right: px(70);
+        animation: fadeInUp $BFilterAnimationTime $BFilterDelayTime both;
+        transform: translateX(px(-20));
+
+        button {
+            text-transform: initial;
+
+            span {
+                color: $white;
+                font-size: px(32);
+                font-weight: 700;
+            }
+
+            &:before {
+                top: 50%;
+                background: $white;
+            }
+        }
+    }
+
+    .top-panel {
+        padding-top: px(200);
+        padding-left: px(30);
+        color: $white;
+
+        & > .jumping-button {
+
+            button {
+                
+                &:hover {
+                    
+                    span {
+                        animation: none;
+                    }
+
+                    &:before {
+                        animation: none;
+                    }
+                }
+
+                &:before {
+                    transform: translateX(0);
+                    animation-delay: $timeTickHalf * 4;
+                }
+            }
+        }
+    }
+
+    .filter {
+        position: relative;
+
+        button {
+            background: transparent;
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            left: 0;
+        }
+
+        &--categories {
+            display: inline-block;
+
+            .jumping-button {
+
+                button {
+
+                    span {
+
+                        &:nth-child(2) {
+                            margin-right: px(20);
+                        }
+                    }
+
+                    &:hover {
+
+                        &:before {
+                            animation-delay: $timeTickHalf * 9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .feed-container {
+        position: relative;
+        margin-top: px(60);
+    }
+
+    .feed {
+
+        &__post {
+            position: relative;
+            margin-bottom: px(150);
+            padding: 0 px(30);
+            color: $white;
+
+            .image-container {
+                width: 100%;
+                height: px(460);
+                overflow: hidden;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    animation: right $BPostImageAnimationTime linear $BPostImageDelayTime both;
+                }
+            }
+
+            .post-date {
+                display: flex;
+                align-items: flex-start;
+                z-index: 1;
+                margin-bottom: px(6);
+                font-family: $roboto;
+                font-size: px(48);
+                font-weight: 600;
+                text-align: right;
+            }
+
+            .number {
+                animation: fadeInLeft $BPostDateNumberAnimationTime linear $BPostDateNumberDelayTime both;
+            }
+
+            @keyframes leftDay {
+                from {
+                    opacity: 0;
+                    transform: translate3d(165%, 20%, 0) rotate(90deg);
+                }
+                to {
+                    opacity: 1;
+                    transform: translate3d(65%, 20%, 0) rotate(90deg);
+                }
+            }
+
+            .day {
+                color: $gray;
+                font-size: px(24);
+                text-transform: uppercase;
+                transform-origin: 0 0;
+                transform: translate3d(65%, 20%, 0) rotate(90deg);
+                animation: leftDay $BPostDateDayAnimationTime $BPostDateDayDelayTime both;
+            }
+
+            .post-info {
+                margin-top: px(40);
+                color: $white;
+                font-family: $raleway;
+
+                .sticker {
+                    display: inline-block;
+                    margin-bottom: px(30);
+                    font-weight: $bold;
+                    transform: translateX(px(122));
+                    
+                    span {
+                        color: $white;
+                        animation: FadeInRight $BStickerTextAnimationTime $BStickerTextDelayTime both;
+                    }
+
+                    &:before {
+                        background: $white;
+                        animation: widthIncreaseStickerLine $BStickerLineAnimationTime $BStickerLineDelayTime both;
+                    }
+                }
+
+                h3 {
+                    margin-bottom: px(60);
+                    font-size: px(40);
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    animation: fadeInUp $BPostTitleAnimationTime $BPostTitleDelayTime both;
+                }
+
+                .crossed-button {
+                    position: relative;
+                    align-items: center;
+                    font-family: $roboto;
+                    font-size: px(24);
+                    font-weight: 600;
+                    transform: translateX(px(-20));
+                    
+                    span {
+                        display: block;
+                        color: $white;
+                        animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
+
+                        &:before {
+                            background: $white;
+                        }
+
+                        &:after {
+                            content: 'Подробнее';
+                        }
+                    }
+
+                    .arrow {
+
+                        .st0,
+                        .st1 {
+                            stroke: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

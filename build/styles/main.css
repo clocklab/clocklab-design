@@ -4340,7 +4340,8 @@ html body .wrapper .screen-block.previous {
               transform: translateX(0%);
     }
   }
-  .jumping-button a {
+  .jumping-button a,
+  .jumping-button button {
     display: inline-block;
     width: initial;
     position: relative;
@@ -4349,8 +4350,10 @@ html body .wrapper .screen-block.previous {
     padding: 0 3.125vw;
     font-size: 0;
     text-align: center;
+    background: transparent;
   }
-  .jumping-button a:before {
+  .jumping-button a:before,
+  .jumping-button button:before {
     display: block;
     position: absolute;
     top: 45%;
@@ -4362,62 +4365,76 @@ html body .wrapper .screen-block.previous {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
-  .jumping-button a span {
+  .jumping-button a span,
+  .jumping-button button span {
     display: inline-block;
     padding: 1.5625vw 0;
     font-size: 3.75vw;
   }
-  .jumping-button a:hover span {
+  .jumping-button a:hover span,
+  .jumping-button button:hover span {
     -webkit-animation-duration: .25s;
             animation-duration: .25s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  .jumping-button a:hover span:nth-child(odd) {
+  .jumping-button a:hover span:nth-child(odd),
+  .jumping-button button:hover span:nth-child(odd) {
     -webkit-animation-name: letterUp;
             animation-name: letterUp;
   }
-  .jumping-button a:hover span:nth-child(even) {
+  .jumping-button a:hover span:nth-child(even),
+  .jumping-button button:hover span:nth-child(even) {
     -webkit-animation-name: letterDown;
             animation-name: letterDown;
   }
-  .jumping-button a:hover span:nth-child(1) {
+  .jumping-button a:hover span:nth-child(1),
+  .jumping-button button:hover span:nth-child(1) {
     -webkit-animation-delay: 0s;
             animation-delay: 0s;
   }
-  .jumping-button a:hover span:nth-child(2) {
+  .jumping-button a:hover span:nth-child(2),
+  .jumping-button button:hover span:nth-child(2) {
     -webkit-animation-delay: 0.05s;
             animation-delay: 0.05s;
   }
-  .jumping-button a:hover span:nth-child(3) {
+  .jumping-button a:hover span:nth-child(3),
+  .jumping-button button:hover span:nth-child(3) {
     -webkit-animation-delay: 0.1s;
             animation-delay: 0.1s;
   }
-  .jumping-button a:hover span:nth-child(4) {
+  .jumping-button a:hover span:nth-child(4),
+  .jumping-button button:hover span:nth-child(4) {
     -webkit-animation-delay: 0.15s;
             animation-delay: 0.15s;
   }
-  .jumping-button a:hover span:nth-child(5) {
+  .jumping-button a:hover span:nth-child(5),
+  .jumping-button button:hover span:nth-child(5) {
     -webkit-animation-delay: 0.2s;
             animation-delay: 0.2s;
   }
-  .jumping-button a:hover span:nth-child(6) {
+  .jumping-button a:hover span:nth-child(6),
+  .jumping-button button:hover span:nth-child(6) {
     -webkit-animation-delay: 0.25s;
             animation-delay: 0.25s;
   }
-  .jumping-button a:hover span:nth-child(7) {
+  .jumping-button a:hover span:nth-child(7),
+  .jumping-button button:hover span:nth-child(7) {
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
   }
-  .jumping-button a:hover span:nth-child(8) {
+  .jumping-button a:hover span:nth-child(8),
+  .jumping-button button:hover span:nth-child(8) {
     -webkit-animation-delay: 0.35s;
             animation-delay: 0.35s;
   }
-  .jumping-button a:hover span:nth-child(9) {
+  .jumping-button a:hover span:nth-child(9),
+  .jumping-button button:hover span:nth-child(9) {
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s;
   }
-  .jumping-button a:hover:before {
+  .jumping-button a:hover:before,
+  .jumping-button button:hover:before {
     -webkit-animation: crossAnchor 0.2s 0.65s forwards;
             animation: crossAnchor 0.2s 0.65s forwards;
   }
@@ -4535,7 +4552,8 @@ html body .wrapper .screen-block.previous {
               transform: translateX(0%);
     }
   }
-  .jumping-button a {
+  .jumping-button a,
+  .jumping-button button {
     display: inline-block;
     width: initial;
     position: relative;
@@ -4544,8 +4562,10 @@ html body .wrapper .screen-block.previous {
     padding: 0 1.7606vw;
     font-size: 0;
     text-align: center;
+    background: transparent;
   }
-  .jumping-button a:before {
+  .jumping-button a:before,
+  .jumping-button button:before {
     display: block;
     position: absolute;
     top: 45%;
@@ -4557,62 +4577,76 @@ html body .wrapper .screen-block.previous {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
-  .jumping-button a span {
+  .jumping-button a span,
+  .jumping-button button span {
     display: inline-block;
     padding: 0.8803vw 0;
     font-size: 2.11272vw;
   }
-  .jumping-button a:hover span {
+  .jumping-button a:hover span,
+  .jumping-button button:hover span {
     -webkit-animation-duration: .25s;
             animation-duration: .25s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  .jumping-button a:hover span:nth-child(odd) {
+  .jumping-button a:hover span:nth-child(odd),
+  .jumping-button button:hover span:nth-child(odd) {
     -webkit-animation-name: letterUp;
             animation-name: letterUp;
   }
-  .jumping-button a:hover span:nth-child(even) {
+  .jumping-button a:hover span:nth-child(even),
+  .jumping-button button:hover span:nth-child(even) {
     -webkit-animation-name: letterDown;
             animation-name: letterDown;
   }
-  .jumping-button a:hover span:nth-child(1) {
+  .jumping-button a:hover span:nth-child(1),
+  .jumping-button button:hover span:nth-child(1) {
     -webkit-animation-delay: 0s;
             animation-delay: 0s;
   }
-  .jumping-button a:hover span:nth-child(2) {
+  .jumping-button a:hover span:nth-child(2),
+  .jumping-button button:hover span:nth-child(2) {
     -webkit-animation-delay: 0.05s;
             animation-delay: 0.05s;
   }
-  .jumping-button a:hover span:nth-child(3) {
+  .jumping-button a:hover span:nth-child(3),
+  .jumping-button button:hover span:nth-child(3) {
     -webkit-animation-delay: 0.1s;
             animation-delay: 0.1s;
   }
-  .jumping-button a:hover span:nth-child(4) {
+  .jumping-button a:hover span:nth-child(4),
+  .jumping-button button:hover span:nth-child(4) {
     -webkit-animation-delay: 0.15s;
             animation-delay: 0.15s;
   }
-  .jumping-button a:hover span:nth-child(5) {
+  .jumping-button a:hover span:nth-child(5),
+  .jumping-button button:hover span:nth-child(5) {
     -webkit-animation-delay: 0.2s;
             animation-delay: 0.2s;
   }
-  .jumping-button a:hover span:nth-child(6) {
+  .jumping-button a:hover span:nth-child(6),
+  .jumping-button button:hover span:nth-child(6) {
     -webkit-animation-delay: 0.25s;
             animation-delay: 0.25s;
   }
-  .jumping-button a:hover span:nth-child(7) {
+  .jumping-button a:hover span:nth-child(7),
+  .jumping-button button:hover span:nth-child(7) {
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
   }
-  .jumping-button a:hover span:nth-child(8) {
+  .jumping-button a:hover span:nth-child(8),
+  .jumping-button button:hover span:nth-child(8) {
     -webkit-animation-delay: 0.35s;
             animation-delay: 0.35s;
   }
-  .jumping-button a:hover span:nth-child(9) {
+  .jumping-button a:hover span:nth-child(9),
+  .jumping-button button:hover span:nth-child(9) {
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s;
   }
-  .jumping-button a:hover:before {
+  .jumping-button a:hover:before,
+  .jumping-button button:hover:before {
     -webkit-animation: crossAnchor 0.2s 0.65s forwards;
             animation: crossAnchor 0.2s 0.65s forwards;
   }
@@ -4730,7 +4764,8 @@ html body .wrapper .screen-block.previous {
               transform: translateX(0%);
     }
   }
-  .jumping-button a {
+  .jumping-button a,
+  .jumping-button button {
     display: inline-block;
     width: initial;
     position: relative;
@@ -4739,8 +4774,10 @@ html body .wrapper .screen-block.previous {
     padding: 0 1.30208vw;
     font-size: 0;
     text-align: center;
+    background: transparent;
   }
-  .jumping-button a:before {
+  .jumping-button a:before,
+  .jumping-button button:before {
     display: block;
     position: absolute;
     top: 45%;
@@ -4752,62 +4789,131 @@ html body .wrapper .screen-block.previous {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
-  .jumping-button a span {
+  .jumping-button a span,
+  .jumping-button button span {
     display: inline-block;
     padding: 0.65104vw 0;
     font-size: 1.5625vw;
   }
-  .jumping-button a:hover span {
+  .jumping-button a:hover span,
+  .jumping-button button:hover span {
     -webkit-animation-duration: .25s;
             animation-duration: .25s;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  .jumping-button a:hover span:nth-child(odd) {
+  .jumping-button a:hover span:nth-child(odd),
+  .jumping-button button:hover span:nth-child(odd) {
     -webkit-animation-name: letterUp;
             animation-name: letterUp;
   }
-  .jumping-button a:hover span:nth-child(even) {
+  .jumping-button a:hover span:nth-child(even),
+  .jumping-button button:hover span:nth-child(even) {
     -webkit-animation-name: letterDown;
             animation-name: letterDown;
   }
-  .jumping-button a:hover span:nth-child(1) {
+  .jumping-button a:hover span:nth-child(1),
+  .jumping-button button:hover span:nth-child(1) {
     -webkit-animation-delay: 0s;
             animation-delay: 0s;
   }
-  .jumping-button a:hover span:nth-child(2) {
+  .jumping-button a:hover span:nth-child(2),
+  .jumping-button button:hover span:nth-child(2) {
     -webkit-animation-delay: 0.05s;
             animation-delay: 0.05s;
   }
-  .jumping-button a:hover span:nth-child(3) {
+  .jumping-button a:hover span:nth-child(3),
+  .jumping-button button:hover span:nth-child(3) {
     -webkit-animation-delay: 0.1s;
             animation-delay: 0.1s;
   }
-  .jumping-button a:hover span:nth-child(4) {
+  .jumping-button a:hover span:nth-child(4),
+  .jumping-button button:hover span:nth-child(4) {
     -webkit-animation-delay: 0.15s;
             animation-delay: 0.15s;
   }
-  .jumping-button a:hover span:nth-child(5) {
+  .jumping-button a:hover span:nth-child(5),
+  .jumping-button button:hover span:nth-child(5) {
     -webkit-animation-delay: 0.2s;
             animation-delay: 0.2s;
   }
-  .jumping-button a:hover span:nth-child(6) {
+  .jumping-button a:hover span:nth-child(6),
+  .jumping-button button:hover span:nth-child(6) {
     -webkit-animation-delay: 0.25s;
             animation-delay: 0.25s;
   }
-  .jumping-button a:hover span:nth-child(7) {
+  .jumping-button a:hover span:nth-child(7),
+  .jumping-button button:hover span:nth-child(7) {
     -webkit-animation-delay: 0.3s;
             animation-delay: 0.3s;
   }
-  .jumping-button a:hover span:nth-child(8) {
+  .jumping-button a:hover span:nth-child(8),
+  .jumping-button button:hover span:nth-child(8) {
     -webkit-animation-delay: 0.35s;
             animation-delay: 0.35s;
   }
-  .jumping-button a:hover span:nth-child(9) {
+  .jumping-button a:hover span:nth-child(9),
+  .jumping-button button:hover span:nth-child(9) {
     -webkit-animation-delay: 0.4s;
             animation-delay: 0.4s;
   }
-  .jumping-button a:hover:before {
+  .jumping-button a:hover span:nth-child(10),
+  .jumping-button button:hover span:nth-child(10) {
+    -webkit-animation-delay: 0.45s;
+            animation-delay: 0.45s;
+  }
+  .jumping-button a:hover span:nth-child(11),
+  .jumping-button button:hover span:nth-child(11) {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  .jumping-button a:hover span:nth-child(12),
+  .jumping-button button:hover span:nth-child(12) {
+    -webkit-animation-delay: 0.55s;
+            animation-delay: 0.55s;
+  }
+  .jumping-button a:hover span:nth-child(13),
+  .jumping-button button:hover span:nth-child(13) {
+    -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+  }
+  .jumping-button a:hover span:nth-child(14),
+  .jumping-button button:hover span:nth-child(14) {
+    -webkit-animation-delay: 0.65s;
+            animation-delay: 0.65s;
+  }
+  .jumping-button a:hover span:nth-child(15),
+  .jumping-button button:hover span:nth-child(15) {
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+  }
+  .jumping-button a:hover span:nth-child(16),
+  .jumping-button button:hover span:nth-child(16) {
+    -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
+  }
+  .jumping-button a:hover span:nth-child(17),
+  .jumping-button button:hover span:nth-child(17) {
+    -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+  }
+  .jumping-button a:hover span:nth-child(18),
+  .jumping-button button:hover span:nth-child(18) {
+    -webkit-animation-delay: 0.85s;
+            animation-delay: 0.85s;
+  }
+  .jumping-button a:hover span:nth-child(19),
+  .jumping-button button:hover span:nth-child(19) {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  .jumping-button a:hover span:nth-child(20),
+  .jumping-button button:hover span:nth-child(20) {
+    -webkit-animation-delay: 0.95s;
+            animation-delay: 0.95s;
+  }
+  .jumping-button a:hover:before,
+  .jumping-button button:hover:before {
     -webkit-animation: crossAnchor 0.2s 0.65s forwards;
             animation: crossAnchor 0.2s 0.65s forwards;
   }
@@ -35564,6 +35670,586 @@ html body .wrapper .screen-block.previous {
   }
 }
 
+@media (max-width: 414px) {
+  .blog .back-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .blog .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100%;
+  }
+  .blog .columns .column {
+    position: relative;
+    width: 25vw;
+    overflow: hidden;
+  }
+  .blog .columns .column:before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1C1C1C;
+    content: '';
+    -webkit-animation: right 0.9s 0s both;
+            animation: right 0.9s 0s both;
+  }
+  .blog .front-layer {
+    position: relative;
+    z-index: 2;
+  }
+  .blog .menu {
+    -webkit-animation: fadeIn 0.9s 0.9s both;
+            animation: fadeIn 0.9s 0.9s both;
+  }
+  .blog .logo {
+    position: absolute;
+    top: 0;
+    left: 3.125vw;
+    padding-top: 1.875vw;
+    -webkit-animation: fadeIn 0.9s 0.9s both;
+            animation: fadeIn 0.9s 0.9s both;
+  }
+  .blog .logo .image {
+    width: 135px;
+    height: 52px;
+    background-image: url(/../images/logo.png);
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 414px) and (min-device-pixel-ratio: 2), (max-width: 414px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 414px) and (min-resolution: 2dppx) {
+  .blog .logo .image {
+    background-size: 135px 51.5px;
+    background-image: url(/../images/logo-2x.png);
+  }
+}
+@media (max-width: 414px) {
+  .blog .logo .image.black {
+    width: 135px;
+    height: 52px;
+    background-image: url(/../images/logo-black.png);
+    background-repeat: no-repeat;
+  }
+}
+@media (max-width: 414px) and (min-device-pixel-ratio: 2), (max-width: 414px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 414px) and (min-resolution: 2dppx) {
+  .blog .logo .image.black {
+    background-size: 135px 51.5px;
+    background-image: url(/../images/logo-black-2x.png);
+  }
+}
+@media (max-width: 414px) {
+  .blog .new-language {
+    display: none;
+  }
+  .blog .new-title {
+    margin-bottom: 9.375vw;
+    padding: 0;
+  }
+  .blog .new-title .text-container:before {
+    -webkit-animation: halfDown 0.9s 0.9s both;
+            animation: halfDown 0.9s 0.9s both;
+  }
+  .blog .new-title span {
+    color: #FFF;
+    font-size: 9.375vw;
+    line-height: 11.5625vw;
+    letter-spacing: 0;
+    -webkit-animation: fadeInUp 0.9s 1.8s both;
+            animation: fadeInUp 0.9s 1.8s both;
+  }
+  .blog .jumping-button {
+    display: inline-block;
+    margin-right: 10.9375vw;
+    -webkit-animation: fadeInUp 0.9s 0.9s both;
+            animation: fadeInUp 0.9s 0.9s both;
+    -webkit-transform: translateX(-3.125vw);
+            transform: translateX(-3.125vw);
+  }
+  .blog .jumping-button button {
+    text-transform: initial;
+  }
+  .blog .jumping-button button span {
+    color: #FFF;
+    font-size: 5vw;
+    font-weight: 700;
+  }
+  .blog .jumping-button button:before {
+    top: 50%;
+    background: #FFF;
+  }
+  .blog .top-panel {
+    padding-top: 31.25vw;
+    padding-left: 4.6875vw;
+    color: #FFF;
+  }
+  .blog .top-panel > .jumping-button button:hover span {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .blog .top-panel > .jumping-button button:hover:before {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .blog .top-panel > .jumping-button button:before {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  .blog .filter {
+    position: relative;
+  }
+  .blog .filter button {
+    background: transparent;
+  }
+  .blog .filter ul {
+    display: none;
+    position: absolute;
+    left: 0;
+  }
+  .blog .filter--categories {
+    display: inline-block;
+  }
+  .blog .filter--categories .jumping-button button span:nth-child(2) {
+    margin-right: 3.125vw;
+  }
+  .blog .filter--categories .jumping-button button:hover:before {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  .blog .feed-container {
+    position: relative;
+    margin-top: 9.375vw;
+  }
+  .blog .feed__post {
+    position: relative;
+    margin-bottom: 23.4375vw;
+    padding: 0 4.6875vw;
+    color: #FFF;
+  }
+  .blog .feed__post .image-container {
+    width: 100%;
+    height: 71.875vw;
+    overflow: hidden;
+  }
+  .blog .feed__post .image-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-animation: right 1.08s linear 1.8s both;
+            animation: right 1.08s linear 1.8s both;
+  }
+  .blog .feed__post .post-date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 1;
+    margin-bottom: 0.9375vw;
+    font-family: Roboto;
+    font-size: 7.5vw;
+    font-weight: 600;
+    text-align: right;
+  }
+  .blog .feed__post .number {
+    -webkit-animation: fadeInLeft 0.3s linear 2.58s both;
+            animation: fadeInLeft 0.3s linear 2.58s both;
+  }
+  @-webkit-keyframes leftDay {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(165%, 20%, 0) rotate(90deg);
+              transform: translate3d(165%, 20%, 0) rotate(90deg);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(65%, 20%, 0) rotate(90deg);
+              transform: translate3d(65%, 20%, 0) rotate(90deg);
+    }
+  }
+  @keyframes leftDay {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(165%, 20%, 0) rotate(90deg);
+              transform: translate3d(165%, 20%, 0) rotate(90deg);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(65%, 20%, 0) rotate(90deg);
+              transform: translate3d(65%, 20%, 0) rotate(90deg);
+    }
+  }
+  .blog .feed__post .day {
+    color: #999;
+    font-size: 3.75vw;
+    text-transform: uppercase;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translate3d(65%, 20%, 0) rotate(90deg);
+            transform: translate3d(65%, 20%, 0) rotate(90deg);
+    -webkit-animation: leftDay 0.9s 2.88s both;
+            animation: leftDay 0.9s 2.88s both;
+  }
+  .blog .feed__post .post-info {
+    margin-top: 6.25vw;
+    color: #FFF;
+    font-family: Raleway;
+  }
+  .blog .feed__post .post-info .sticker {
+    display: inline-block;
+    margin-bottom: 4.6875vw;
+    font-weight: 700;
+    -webkit-transform: translateX(19.0625vw);
+            transform: translateX(19.0625vw);
+  }
+  .blog .feed__post .post-info .sticker span {
+    color: #FFF;
+    -webkit-animation: FadeInRight 0.9s 3.78s both;
+            animation: FadeInRight 0.9s 3.78s both;
+  }
+  .blog .feed__post .post-info .sticker:before {
+    background: #FFF;
+    -webkit-animation: widthIncreaseStickerLine 0.9s 2.88s both;
+            animation: widthIncreaseStickerLine 0.9s 2.88s both;
+  }
+  .blog .feed__post .post-info h3 {
+    margin-bottom: 9.375vw;
+    font-size: 6.25vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-animation: fadeInUp 0.9s 3.78s both;
+            animation: fadeInUp 0.9s 3.78s both;
+  }
+  .blog .feed__post .post-info .crossed-button {
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Roboto;
+    font-size: 3.75vw;
+    font-weight: 600;
+    -webkit-transform: translateX(-3.125vw);
+            transform: translateX(-3.125vw);
+  }
+  .blog .feed__post .post-info .crossed-button span {
+    display: block;
+    color: #FFF;
+    -webkit-animation: FadeInRight 0.9s 3.78s both;
+            animation: FadeInRight 0.9s 3.78s both;
+  }
+  .blog .feed__post .post-info .crossed-button span:before {
+    background: #FFF;
+  }
+  .blog .feed__post .post-info .crossed-button span:after {
+    content: 'Подробнее';
+  }
+  .blog .feed__post .post-info .crossed-button .arrow .st0,
+  .blog .feed__post .post-info .crossed-button .arrow .st1 {
+    stroke: #FFF;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
+  .blog .back-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .blog .columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100%;
+  }
+  .blog .columns .column {
+    position: relative;
+    width: 25vw;
+    overflow: hidden;
+  }
+  .blog .columns .column:before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #1C1C1C;
+    content: '';
+    -webkit-animation: right 0.9s 0s both;
+            animation: right 0.9s 0s both;
+  }
+  .blog .front-layer {
+    position: relative;
+    z-index: 2;
+  }
+  .blog .menu {
+    -webkit-animation: fadeIn 0.9s 0.9s both;
+            animation: fadeIn 0.9s 0.9s both;
+  }
+  .blog .logo {
+    position: absolute;
+    top: 0;
+    left: 1.7606vw;
+    padding-top: 1.05636vw;
+    -webkit-animation: fadeIn 0.9s 0.9s both;
+            animation: fadeIn 0.9s 0.9s both;
+  }
+  .blog .logo .image {
+    width: 135px;
+    height: 52px;
+    background-image: url(/../images/logo.png);
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) and (min-device-pixel-ratio: 2), (min-width: 415px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 415px) and (max-width: 667px) and (min-resolution: 2dppx) {
+  .blog .logo .image {
+    background-size: 135px 51.5px;
+    background-image: url(/../images/logo-2x.png);
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
+  .blog .logo .image.black {
+    width: 135px;
+    height: 52px;
+    background-image: url(/../images/logo-black.png);
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) and (min-device-pixel-ratio: 2), (min-width: 415px) and (max-width: 667px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 415px) and (max-width: 667px) and (min-resolution: 2dppx) {
+  .blog .logo .image.black {
+    background-size: 135px 51.5px;
+    background-image: url(/../images/logo-black-2x.png);
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
+  .blog .new-language {
+    display: none;
+  }
+  .blog .new-title {
+    margin-bottom: 5.2818vw;
+    padding: 0;
+  }
+  .blog .new-title .text-container:before {
+    -webkit-animation: halfDown 0.9s 0.9s both;
+            animation: halfDown 0.9s 0.9s both;
+  }
+  .blog .new-title span {
+    color: #FFF;
+    font-size: 5.2818vw;
+    line-height: 6.51422vw;
+    letter-spacing: 0;
+    -webkit-animation: fadeInUp 0.9s 1.8s both;
+            animation: fadeInUp 0.9s 1.8s both;
+  }
+  .blog .jumping-button {
+    display: inline-block;
+    margin-right: 6.1621vw;
+    -webkit-animation: fadeInUp 0.9s 0.9s both;
+            animation: fadeInUp 0.9s 0.9s both;
+    -webkit-transform: translateX(-1.7606vw);
+            transform: translateX(-1.7606vw);
+  }
+  .blog .jumping-button button {
+    text-transform: initial;
+  }
+  .blog .jumping-button button span {
+    color: #FFF;
+    font-size: 2.81696vw;
+    font-weight: 700;
+  }
+  .blog .jumping-button button:before {
+    top: 50%;
+    background: #FFF;
+  }
+  .blog .top-panel {
+    padding-top: 17.606vw;
+    padding-left: 2.6409vw;
+    color: #FFF;
+  }
+  .blog .top-panel > .jumping-button button:hover span {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .blog .top-panel > .jumping-button button:hover:before {
+    -webkit-animation: none;
+            animation: none;
+  }
+  .blog .top-panel > .jumping-button button:before {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+  }
+  .blog .filter {
+    position: relative;
+  }
+  .blog .filter button {
+    background: transparent;
+  }
+  .blog .filter ul {
+    display: none;
+    position: absolute;
+    left: 0;
+  }
+  .blog .filter--categories {
+    display: inline-block;
+  }
+  .blog .filter--categories .jumping-button button span:nth-child(2) {
+    margin-right: 1.7606vw;
+  }
+  .blog .filter--categories .jumping-button button:hover:before {
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  .blog .feed-container {
+    position: relative;
+    margin-top: 5.2818vw;
+  }
+  .blog .feed__post {
+    position: relative;
+    margin-bottom: 13.2045vw;
+    padding: 0 2.6409vw;
+    color: #FFF;
+  }
+  .blog .feed__post .image-container {
+    width: 100%;
+    height: 40.4938vw;
+    overflow: hidden;
+  }
+  .blog .feed__post .image-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-animation: right 1.08s linear 1.8s both;
+            animation: right 1.08s linear 1.8s both;
+  }
+  .blog .feed__post .post-date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 1;
+    margin-bottom: 0.52818vw;
+    font-family: Roboto;
+    font-size: 4.22544vw;
+    font-weight: 600;
+    text-align: right;
+  }
+  .blog .feed__post .number {
+    -webkit-animation: fadeInLeft 0.3s linear 2.58s both;
+            animation: fadeInLeft 0.3s linear 2.58s both;
+  }
+  @-webkit-keyframes leftDay {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(165%, 20%, 0) rotate(90deg);
+              transform: translate3d(165%, 20%, 0) rotate(90deg);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(65%, 20%, 0) rotate(90deg);
+              transform: translate3d(65%, 20%, 0) rotate(90deg);
+    }
+  }
+  @keyframes leftDay {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(165%, 20%, 0) rotate(90deg);
+              transform: translate3d(165%, 20%, 0) rotate(90deg);
+    }
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(65%, 20%, 0) rotate(90deg);
+              transform: translate3d(65%, 20%, 0) rotate(90deg);
+    }
+  }
+  .blog .feed__post .day {
+    color: #999;
+    font-size: 2.11272vw;
+    text-transform: uppercase;
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: translate3d(65%, 20%, 0) rotate(90deg);
+            transform: translate3d(65%, 20%, 0) rotate(90deg);
+    -webkit-animation: leftDay 0.9s 2.88s both;
+            animation: leftDay 0.9s 2.88s both;
+  }
+  .blog .feed__post .post-info {
+    margin-top: 3.5212vw;
+    color: #FFF;
+    font-family: Raleway;
+  }
+  .blog .feed__post .post-info .sticker {
+    display: inline-block;
+    margin-bottom: 2.6409vw;
+    font-weight: 700;
+    -webkit-transform: translateX(10.73966vw);
+            transform: translateX(10.73966vw);
+  }
+  .blog .feed__post .post-info .sticker span {
+    color: #FFF;
+    -webkit-animation: FadeInRight 0.9s 3.78s both;
+            animation: FadeInRight 0.9s 3.78s both;
+  }
+  .blog .feed__post .post-info .sticker:before {
+    background: #FFF;
+    -webkit-animation: widthIncreaseStickerLine 0.9s 2.88s both;
+            animation: widthIncreaseStickerLine 0.9s 2.88s both;
+  }
+  .blog .feed__post .post-info h3 {
+    margin-bottom: 5.2818vw;
+    font-size: 3.5212vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-animation: fadeInUp 0.9s 3.78s both;
+            animation: fadeInUp 0.9s 3.78s both;
+  }
+  .blog .feed__post .post-info .crossed-button {
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Roboto;
+    font-size: 2.11272vw;
+    font-weight: 600;
+    -webkit-transform: translateX(-1.7606vw);
+            transform: translateX(-1.7606vw);
+  }
+  .blog .feed__post .post-info .crossed-button span {
+    display: block;
+    color: #FFF;
+    -webkit-animation: FadeInRight 0.9s 3.78s both;
+            animation: FadeInRight 0.9s 3.78s both;
+  }
+  .blog .feed__post .post-info .crossed-button span:before {
+    background: #FFF;
+  }
+  .blog .feed__post .post-info .crossed-button span:after {
+    content: 'Подробнее';
+  }
+  .blog .feed__post .post-info .crossed-button .arrow .st0,
+  .blog .feed__post .post-info .crossed-button .arrow .st1 {
+    stroke: #FFF;
+  }
+}
 @media (min-width: 668px) and (max-width: 768px) {
   .blog .page-layer {
     width: 100vw;
@@ -35647,8 +36333,8 @@ html body .wrapper .screen-block.previous {
     display: block;
     position: absolute;
     top: 0;
-    height: 100vh;
     width: 1px;
+    height: 100vh;
     background: #999;
     content: '';
   }
@@ -35834,8 +36520,8 @@ html body .wrapper .screen-block.previous {
     position: absolute;
     top: 0;
     left: 0;
-    width: 43.75vh;
-    height: 37.5vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
   }
   .blog .feed__post .image-container img {
@@ -35962,6 +36648,165 @@ html body .wrapper .screen-block.previous {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
   }
+  .blog .grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 27.34368vw;
+    padding-left: 6.8vh;
+  }
+  .blog .grid__item {
+    width: 26.4vh;
+    height: 22vh;
+  }
+  .blog .grid__item .line {
+    top: 0;
+    left: initial;
+    width: 1px;
+    height: 100vh;
+  }
+  .blog .grid__item .line--top {
+    left: 0;
+  }
+  .blog .grid__item .line--bottom {
+    bottom: initial;
+    right: 0;
+  }
+  .blog .grid__item:after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -6.8vh;
+    width: 100vw;
+    height: 1px;
+    background: #999;
+    content: '';
+  }
+  .blog .grid__item:nth-child(even) {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  .blog .grid__item:nth-child(odd) {
+    -webkit-transform: initial;
+            transform: initial;
+  }
+  .blog .grid__item:nth-child(odd)::before, .blog .grid__item:nth-child(odd)::after {
+    top: initial;
+    left: initial;
+    bottom: initial;
+    right: initial;
+    width: initial;
+    height: initial;
+  }
+  .blog .grid__item:first-child:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: initial;
+    left: -6.8vh;
+    width: 100vw;
+    height: 1px;
+    background: #999;
+    content: '';
+  }
+  .blog .grid__item:first-child:after {
+    top: initial;
+    bottom: 0;
+    left: -6.8vh;
+    width: 100vw;
+    height: 1px;
+  }
+  .blog .grid__item--bordered:before {
+    top: -22vh;
+    bottom: initial;
+    left: initial;
+    right: 0;
+    width: 1px;
+    height: 100vh;
+  }
+  .blog .grid__item--bordered:after {
+    left: -33.2vh;
+  }
+  .blog .grid__item:nth-child(3):after {
+    bottom: 0;
+    left: -6.8vh;
+    width: 100vw;
+    height: 1px;
+  }
+  .blog .grid__item:last-child {
+    display: none;
+  }
+  .blog .logo {
+    left: 2.73437vw;
+  }
+  .blog .new-language {
+    left: 2.99478vw;
+  }
+  .blog .jumping-button button span {
+    color: #999;
+    font-size: 2.34374vw;
+  }
+  .blog .top-panel {
+    padding-top: 17.57808vw;
+    padding-left: 9.11456vw;
+  }
+  .blog .top-panel > .jumping-button {
+    margin-right: 9.11456vw;
+  }
+  .blog .top-panel > .jumping-button button span {
+    color: #FFF;
+  }
+  .blog .filter--date {
+    margin-right: 12.36976vw;
+  }
+  .blog .feed-container {
+    margin-top: 2.99478vw;
+    margin-left: 6.8vh;
+    height: 66vh;
+  }
+  .blog .feed {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-right: 26.4vh;
+  }
+  .blog .feed__post {
+    margin-right: 52.8vh;
+    width: 26.4vh;
+    height: 22vh;
+  }
+  .blog .feed__post .post-date {
+    padding-top: 1.5625vw;
+    right: -9.7656vw;
+  }
+  .blog .feed__post .post-info {
+    margin-top: 10.41664vw;
+    -webkit-transform: translateX(23.7vh);
+            transform: translateX(23.7vh);
+  }
+  .blog .feed__post .post-info .sticker {
+    margin-bottom: 1.95312vw;
+  }
+  .blog .feed__post .post-info h3 {
+    margin-bottom: 2.60416vw;
+    font-size: 3.12499vw;
+  }
+  .blog .feed__post .post-info .crossed-button {
+    -webkit-transform: translateX(5.20832vw);
+            transform: translateX(5.20832vw);
+  }
+  .blog .feed__post:nth-child(even) {
+    -webkit-transform: initial;
+            transform: initial;
+  }
+  .blog .feed__post:nth-child(3n + 2) {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .blog .page-layer {
@@ -36046,8 +36891,8 @@ html body .wrapper .screen-block.previous {
     display: block;
     position: absolute;
     top: 0;
-    height: 100vh;
     width: 1px;
+    height: 100vh;
     background: #999;
     content: '';
   }
@@ -36233,8 +37078,8 @@ html body .wrapper .screen-block.previous {
     position: absolute;
     top: 0;
     left: 0;
-    width: 43.75vh;
-    height: 37.5vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
   }
   .blog .feed__post .image-container img {
@@ -36471,8 +37316,8 @@ html body .wrapper .screen-block.previous {
     display: block;
     position: absolute;
     top: 0;
-    height: 100vh;
     width: 1px;
+    height: 100vh;
     background: #999;
     content: '';
   }
@@ -36658,8 +37503,8 @@ html body .wrapper .screen-block.previous {
     position: absolute;
     top: 0;
     left: 0;
-    width: 43.75vh;
-    height: 37.5vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
   }
   .blog .feed__post .image-container img {
@@ -36876,8 +37721,8 @@ html body .wrapper .screen-block.previous {
     display: block;
     position: absolute;
     top: 0;
-    height: 100vh;
     width: 1px;
+    height: 100vh;
     background: #999;
     content: '';
   }
@@ -37063,8 +37908,8 @@ html body .wrapper .screen-block.previous {
     position: absolute;
     top: 0;
     left: 0;
-    width: 43.75vh;
-    height: 37.5vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
   }
   .blog .feed__post .image-container img {
@@ -37278,8 +38123,8 @@ html body .wrapper .screen-block.previous {
     display: block;
     position: absolute;
     top: 0;
-    height: 100vh;
     width: 1px;
+    height: 100vh;
     background: #999;
     content: '';
   }
@@ -37465,8 +38310,8 @@ html body .wrapper .screen-block.previous {
     position: absolute;
     top: 0;
     left: 0;
-    width: 43.75vh;
-    height: 37.5vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
   }
   .blog .feed__post .image-container img {
@@ -37677,8 +38522,8 @@ html body .wrapper .screen-block.previous {
     display: block;
     position: absolute;
     top: 0;
-    height: 100vh;
     width: 1px;
+    height: 100vh;
     background: #999;
     content: '';
   }
@@ -37864,8 +38709,8 @@ html body .wrapper .screen-block.previous {
     position: absolute;
     top: 0;
     left: 0;
-    width: 43.75vh;
-    height: 37.5vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
   }
   .blog .feed__post .image-container img {
