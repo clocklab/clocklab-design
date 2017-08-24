@@ -35595,29 +35595,32 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item .title .word:after {
     top: 0;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button {
-    margin: 0;
-    width: auto;
+  #services.screen-block .services-schedule .container .item .crossed-button {
+    left: 0;
     bottom: -55px;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button .line {
-    display: none;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button .arrow-container {
-    margin-left: 10px;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button span {
-    padding: 0;
-    font-size: 1.17192vw;
-    line-height: initial;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: Roboto;
     font-weight: 500;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button span:hover {
-    padding: 0;
+  #services.screen-block .services-schedule .container .item .crossed-button .arrow .st0, #services.screen-block .services-schedule .container .item .crossed-button .arrow .st1 {
+    stroke: #FFF;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button span:before {
+  #services.screen-block .services-schedule .container .item .crossed-button span {
+    color: #FFF;
+    display: block;
+    font-size: 1.17192vw;
+    -webkit-animation: FadeInRight 0.9s 3.78s both;
+            animation: FadeInRight 0.9s 3.78s both;
+  }
+  #services.screen-block .services-schedule .container .item .crossed-button span:after {
     content: 'Подробнее';
+  }
+  #services.screen-block .services-schedule .container .item .crossed-button span:before {
+    background: #FFF;
+    top: 14px;
   }
   #services.screen-block .services-schedule .container .item span {
     line-height: 26px;
@@ -35706,29 +35709,32 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item .title .word:after {
     top: 0;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button {
-    margin: 0;
-    width: auto;
+  #services.screen-block .services-schedule .container .item .crossed-button {
+    left: 0;
     bottom: -55px;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button .line {
-    display: none;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button .arrow-container {
-    margin-left: 10px;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button span {
-    padding: 0;
-    font-size: 0.8784vw;
-    line-height: initial;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: Roboto;
     font-weight: 500;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button span:hover {
-    padding: 0;
+  #services.screen-block .services-schedule .container .item .crossed-button .arrow .st0, #services.screen-block .services-schedule .container .item .crossed-button .arrow .st1 {
+    stroke: #FFF;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button span:before {
+  #services.screen-block .services-schedule .container .item .crossed-button span {
+    color: #FFF;
+    display: block;
+    font-size: 0.8784vw;
+    -webkit-animation: FadeInRight 0.9s 3.78s both;
+            animation: FadeInRight 0.9s 3.78s both;
+  }
+  #services.screen-block .services-schedule .container .item .crossed-button span:after {
     content: 'Подробнее';
+  }
+  #services.screen-block .services-schedule .container .item .crossed-button span:before {
+    background: #FFF;
+    top: 14px;
   }
   #services.screen-block .services-schedule .container .item span {
     line-height: 26px;
@@ -35817,29 +35823,32 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item .title .word:after {
     top: 0;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button {
-    margin: 0;
-    width: auto;
+  #services.screen-block .services-schedule .container .item .crossed-button {
+    left: 0;
     bottom: -55px;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button .line {
-    display: none;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button .arrow-container {
-    margin-left: 10px;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button span {
-    padding: 0;
-    font-size: 0.71424vw;
-    line-height: initial;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: Roboto;
     font-weight: 500;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button span:hover {
-    padding: 0;
+  #services.screen-block .services-schedule .container .item .crossed-button .arrow .st0, #services.screen-block .services-schedule .container .item .crossed-button .arrow .st1 {
+    stroke: #FFF;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button span:before {
+  #services.screen-block .services-schedule .container .item .crossed-button span {
+    color: #FFF;
+    display: block;
+    font-size: 0.71424vw;
+    -webkit-animation: FadeInRight 0.9s 3.78s both;
+            animation: FadeInRight 0.9s 3.78s both;
+  }
+  #services.screen-block .services-schedule .container .item .crossed-button span:after {
     content: 'Подробнее';
+  }
+  #services.screen-block .services-schedule .container .item .crossed-button span:before {
+    background: #FFF;
+    top: 14px;
   }
   #services.screen-block .services-schedule .container .item span {
     line-height: 26px;
@@ -35928,29 +35937,32 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item .title .word:after {
     top: 0;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button {
-    margin: 0;
-    width: auto;
+  #services.screen-block .services-schedule .container .item .crossed-button {
+    left: 0;
     bottom: -55px;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button .line {
-    display: none;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button .arrow-container {
-    margin-left: 10px;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button span {
-    padding: 0;
-    font-size: 0.62496vw;
-    line-height: initial;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: Roboto;
     font-weight: 500;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button span:hover {
-    padding: 0;
+  #services.screen-block .services-schedule .container .item .crossed-button .arrow .st0, #services.screen-block .services-schedule .container .item .crossed-button .arrow .st1 {
+    stroke: #FFF;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button span:before {
+  #services.screen-block .services-schedule .container .item .crossed-button span {
+    color: #FFF;
+    display: block;
+    font-size: 0.62496vw;
+    -webkit-animation: FadeInRight 0.9s 3.78s both;
+            animation: FadeInRight 0.9s 3.78s both;
+  }
+  #services.screen-block .services-schedule .container .item .crossed-button span:after {
     content: 'Подробнее';
+  }
+  #services.screen-block .services-schedule .container .item .crossed-button span:before {
+    background: #FFF;
+    top: 14px;
   }
   #services.screen-block .services-schedule .container .item span {
     line-height: 26px;
@@ -36039,29 +36051,32 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item .title .word:after {
     top: 0;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button {
-    margin: 0;
-    width: auto;
+  #services.screen-block .services-schedule .container .item .crossed-button {
+    left: 0;
     bottom: -55px;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button .line {
-    display: none;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button .arrow-container {
-    margin-left: 10px;
-  }
-  #services.screen-block .services-schedule .container .item .bottom-button span {
-    padding: 0;
-    font-size: 0.46872vw;
-    line-height: initial;
+    position: absolute;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-family: Roboto;
     font-weight: 500;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button span:hover {
-    padding: 0;
+  #services.screen-block .services-schedule .container .item .crossed-button .arrow .st0, #services.screen-block .services-schedule .container .item .crossed-button .arrow .st1 {
+    stroke: #FFF;
   }
-  #services.screen-block .services-schedule .container .item .bottom-button span:before {
+  #services.screen-block .services-schedule .container .item .crossed-button span {
+    color: #FFF;
+    display: block;
+    font-size: 0.46872vw;
+    -webkit-animation: FadeInRight 0.9s 3.78s both;
+            animation: FadeInRight 0.9s 3.78s both;
+  }
+  #services.screen-block .services-schedule .container .item .crossed-button span:after {
     content: 'Подробнее';
+  }
+  #services.screen-block .services-schedule .container .item .crossed-button span:before {
+    background: #FFF;
+    top: 14px;
   }
   #services.screen-block .services-schedule .container .item span {
     line-height: 26px;
