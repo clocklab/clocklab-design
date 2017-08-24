@@ -35074,6 +35074,346 @@ html body .wrapper .screen-block.previous {
 }
 
 @media (max-width: 414px) {
+  #services-more-three.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more-three.screen-block .service-info, #services-more-three.screen-block .logo, #services-more-three.screen-block .menu {
+    display: none;
+  }
+  #services-more-three.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more-three.screen-block .title {
+    margin: 20% 0 0 11%;
+  }
+  #services-more-three.screen-block .title p {
+    padding: 7% 0 0;
+    line-height: 1.5;
+    font-size: 3.75vw;
+  }
+  #services-more-three.screen-block .title span.name {
+    font-size: 4.0625vw;
+    top: -3.5vh;
+  }
+  #services-more-three.screen-block .title .word span {
+    font-size: 7.34375vw;
+  }
+}
+@media (min-width: 415px) and (max-width: 667px) {
+  #services-more-three.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more-three.screen-block .service-info, #services-more-three.screen-block .logo, #services-more-three.screen-block .menu {
+    display: none;
+  }
+  #services-more-three.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more-three.screen-block .title {
+    margin: 20% 0 0 11%;
+  }
+  #services-more-three.screen-block .title p {
+    padding: 7% 0 0;
+    line-height: 1.5;
+    font-size: 2.11272vw;
+  }
+  #services-more-three.screen-block .title span.name {
+    font-size: 2.28878vw;
+    top: -3.5vh;
+  }
+  #services-more-three.screen-block .title .word span {
+    font-size: 4.13741vw;
+  }
+}
+@media (min-width: 668px) and (max-width: 768px) {
+  #services-more-three.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more-three.screen-block .service-info, #services-more-three.screen-block .logo, #services-more-three.screen-block .menu {
+    display: none;
+  }
+  #services-more-three.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more-three.screen-block .title {
+    margin: 20% 0 0 11%;
+  }
+  #services-more-three.screen-block .title p {
+    padding: 7% 0 0;
+    line-height: 1.5;
+    font-size: 1.5625vw;
+  }
+  #services-more-three.screen-block .title span.name {
+    font-size: 1.6927vw;
+    top: -3.5vh;
+  }
+  #services-more-three.screen-block .title .word span {
+    font-size: 3.05989vw;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #services-more-three.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more-three.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more-three.screen-block .title {
+    margin: 4.3vh 0 0 41vh;
+  }
+  #services-more-three.screen-block .title p {
+    padding: 3% 0 0;
+  }
+  #services-more-three.screen-block .title span.name {
+    top: -2vh;
+  }
+  #services-more-three.screen-block .title .word span {
+    font-size: 3.4181vw;
+  }
+  #services-more-three.screen-block .title .word:nth-of-type(1) {
+    margin-bottom: 10px;
+  }
+  #services-more-three.screen-block .title .word:after {
+    display: none;
+  }
+  #services-more-three.screen-block .service-info {
+    position: absolute;
+  }
+  #services-more-three.screen-block .service-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #services-more-three.screen-block .service-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: -20px;
+    width: 13%;
+  }
+  #services-more-three.screen-block .service-info.vertical p {
+    font-size: 1.26958vw;
+    line-height: 1.8vh;
+  }
+  #services-more-three.screen-block .service-info.vertical.one {
+    top: 26.5vh;
+  }
+  #services-more-three.screen-block .service-info.vertical.two {
+    top: 75vh;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  #services-more-three.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more-three.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more-three.screen-block .title {
+    margin: 4.3vh 0 0 41vh;
+  }
+  #services-more-three.screen-block .title p {
+    padding: 3% 0 0;
+  }
+  #services-more-three.screen-block .title span.name {
+    top: -2vh;
+  }
+  #services-more-three.screen-block .title .word span {
+    font-size: 2.562vw;
+  }
+  #services-more-three.screen-block .title .word:nth-of-type(1) {
+    margin-bottom: 10px;
+  }
+  #services-more-three.screen-block .title .word:after {
+    display: none;
+  }
+  #services-more-three.screen-block .service-info {
+    position: absolute;
+  }
+  #services-more-three.screen-block .service-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #services-more-three.screen-block .service-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: -20px;
+    width: 13%;
+  }
+  #services-more-three.screen-block .service-info.vertical p {
+    font-size: 0.9516vw;
+    line-height: 1.8vh;
+  }
+  #services-more-three.screen-block .service-info.vertical.one {
+    top: 26.5vh;
+  }
+  #services-more-three.screen-block .service-info.vertical.two {
+    top: 75vh;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
+  #services-more-three.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more-three.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more-three.screen-block .title {
+    margin: 4.3vh 0 0 41vh;
+  }
+  #services-more-three.screen-block .title p {
+    padding: 3% 0 0;
+  }
+  #services-more-three.screen-block .title span.name {
+    top: -2vh;
+  }
+  #services-more-three.screen-block .title .word span {
+    font-size: 2.0832vw;
+  }
+  #services-more-three.screen-block .title .word:nth-of-type(1) {
+    margin-bottom: 10px;
+  }
+  #services-more-three.screen-block .title .word:after {
+    display: none;
+  }
+  #services-more-three.screen-block .service-info {
+    position: absolute;
+  }
+  #services-more-three.screen-block .service-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #services-more-three.screen-block .service-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: -20px;
+    width: 13%;
+  }
+  #services-more-three.screen-block .service-info.vertical p {
+    font-size: 0.77376vw;
+    line-height: 1.8vh;
+  }
+  #services-more-three.screen-block .service-info.vertical.one {
+    top: 26.5vh;
+  }
+  #services-more-three.screen-block .service-info.vertical.two {
+    top: 75vh;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
+  #services-more-three.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more-three.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more-three.screen-block .title {
+    margin: 4.3vh 0 0 41vh;
+  }
+  #services-more-three.screen-block .title p {
+    padding: 3% 0 0;
+  }
+  #services-more-three.screen-block .title span.name {
+    top: -2vh;
+  }
+  #services-more-three.screen-block .title .word span {
+    font-size: 1.8228vw;
+  }
+  #services-more-three.screen-block .title .word:nth-of-type(1) {
+    margin-bottom: 10px;
+  }
+  #services-more-three.screen-block .title .word:after {
+    display: none;
+  }
+  #services-more-three.screen-block .service-info {
+    position: absolute;
+  }
+  #services-more-three.screen-block .service-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #services-more-three.screen-block .service-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: -20px;
+    width: 13%;
+  }
+  #services-more-three.screen-block .service-info.vertical p {
+    font-size: 0.67704vw;
+    line-height: 1.8vh;
+  }
+  #services-more-three.screen-block .service-info.vertical.one {
+    top: 26.5vh;
+  }
+  #services-more-three.screen-block .service-info.vertical.two {
+    top: 75vh;
+  }
+}
+@media (min-width: 1921px) {
+  #services-more-three.screen-block {
+    background-color: #FFF;
+    font-family: Raleway;
+    font-weight: 400;
+  }
+  #services-more-three.screen-block .bottom-button span:before {
+    content: 'Все услуги';
+  }
+  #services-more-three.screen-block .title {
+    margin: 4.3vh 0 0 41vh;
+  }
+  #services-more-three.screen-block .title p {
+    padding: 3% 0 0;
+  }
+  #services-more-three.screen-block .title span.name {
+    top: -2vh;
+  }
+  #services-more-three.screen-block .title .word span {
+    font-size: 1.3671vw;
+  }
+  #services-more-three.screen-block .title .word:nth-of-type(1) {
+    margin-bottom: 10px;
+  }
+  #services-more-three.screen-block .title .word:after {
+    display: none;
+  }
+  #services-more-three.screen-block .service-info {
+    position: absolute;
+  }
+  #services-more-three.screen-block .service-info p {
+    font-weight: 500;
+    line-height: 2vh;
+  }
+  #services-more-three.screen-block .service-info.vertical {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    right: -20px;
+    width: 13%;
+  }
+  #services-more-three.screen-block .service-info.vertical p {
+    font-size: 0.50778vw;
+    line-height: 1.8vh;
+  }
+  #services-more-three.screen-block .service-info.vertical.one {
+    top: 26.5vh;
+  }
+  #services-more-three.screen-block .service-info.vertical.two {
+    top: 75vh;
+  }
+}
+
+@media (max-width: 414px) {
   .portfolio {
     font-family: Raleway;
     overflow-x: hidden;
