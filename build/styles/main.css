@@ -8222,6 +8222,15 @@ html body .wrapper .screen-block.previous {
     z-index: 1;
     left: .5%;
   }
+  .screen-block .language.dark a {
+    color: #333333;
+  }
+  .screen-block .language.dark a.select {
+    color: #999;
+  }
+  .screen-block .language.dark a.select:before {
+    color: #999;
+  }
   .screen-block .language a {
     display: inline-block;
     vertical-align: middle;
@@ -8230,10 +8239,10 @@ html body .wrapper .screen-block.previous {
     *display: inline;
     -webkit-animation: Down 1s both;
             animation: Down 1s both;
-    color: #999;
-    cursor: pointer;
-    font-weight: 100;
     text-transform: uppercase;
+    font-weight: 100;
+    cursor: pointer;
+    color: #999;
   }
   .screen-block .language a:nth-of-type(1) {
     margin-right: 0.4883vw;
@@ -8517,6 +8526,15 @@ html body .wrapper .screen-block.previous {
     z-index: 1;
     left: .5%;
   }
+  .screen-block .language.dark a {
+    color: #333333;
+  }
+  .screen-block .language.dark a.select {
+    color: #999;
+  }
+  .screen-block .language.dark a.select:before {
+    color: #999;
+  }
   .screen-block .language a {
     display: inline-block;
     vertical-align: middle;
@@ -8525,10 +8543,10 @@ html body .wrapper .screen-block.previous {
     *display: inline;
     -webkit-animation: Down 1s both;
             animation: Down 1s both;
-    color: #999;
-    cursor: pointer;
-    font-weight: 100;
     text-transform: uppercase;
+    font-weight: 100;
+    cursor: pointer;
+    color: #999;
   }
   .screen-block .language a:nth-of-type(1) {
     margin-right: 0.366vw;
@@ -8809,6 +8827,15 @@ html body .wrapper .screen-block.previous {
     z-index: 1;
     left: .5%;
   }
+  .screen-block .language.dark a {
+    color: #333333;
+  }
+  .screen-block .language.dark a.select {
+    color: #999;
+  }
+  .screen-block .language.dark a.select:before {
+    color: #999;
+  }
   .screen-block .language a {
     display: inline-block;
     vertical-align: middle;
@@ -8817,10 +8844,10 @@ html body .wrapper .screen-block.previous {
     *display: inline;
     -webkit-animation: Down 1s both;
             animation: Down 1s both;
-    color: #999;
-    cursor: pointer;
-    font-weight: 100;
     text-transform: uppercase;
+    font-weight: 100;
+    cursor: pointer;
+    color: #999;
   }
   .screen-block .language a:nth-of-type(1) {
     margin-right: 0.2976vw;
@@ -9101,6 +9128,15 @@ html body .wrapper .screen-block.previous {
     z-index: 1;
     left: .5%;
   }
+  .screen-block .language.dark a {
+    color: #333333;
+  }
+  .screen-block .language.dark a.select {
+    color: #999;
+  }
+  .screen-block .language.dark a.select:before {
+    color: #999;
+  }
   .screen-block .language a {
     display: inline-block;
     vertical-align: middle;
@@ -9109,10 +9145,10 @@ html body .wrapper .screen-block.previous {
     *display: inline;
     -webkit-animation: Down 1s both;
             animation: Down 1s both;
-    color: #999;
-    cursor: pointer;
-    font-weight: 100;
     text-transform: uppercase;
+    font-weight: 100;
+    cursor: pointer;
+    color: #999;
   }
   .screen-block .language a:nth-of-type(1) {
     margin-right: 0.2604vw;
@@ -9393,6 +9429,15 @@ html body .wrapper .screen-block.previous {
     z-index: 1;
     left: .5%;
   }
+  .screen-block .language.dark a {
+    color: #333333;
+  }
+  .screen-block .language.dark a.select {
+    color: #999;
+  }
+  .screen-block .language.dark a.select:before {
+    color: #999;
+  }
   .screen-block .language a {
     display: inline-block;
     vertical-align: middle;
@@ -9401,10 +9446,10 @@ html body .wrapper .screen-block.previous {
     *display: inline;
     -webkit-animation: Down 1s both;
             animation: Down 1s both;
-    color: #999;
-    cursor: pointer;
-    font-weight: 100;
     text-transform: uppercase;
+    font-weight: 100;
+    cursor: pointer;
+    color: #999;
   }
   .screen-block .language a:nth-of-type(1) {
     margin-right: 0.1953vw;
