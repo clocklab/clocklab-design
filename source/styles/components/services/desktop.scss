@@ -5,17 +5,12 @@
     
     // ----- services-schedule -----
     .services-schedule {
-        // padding-top: px(390);
         padding-top: 20vh;
         .container {
             display: flex;
             margin: 0 auto;
             flex-wrap: wrap;
             max-width: 1170px;
-            // @include media(phone) {
-            //     padding: 0 15px 0 30px;
-            //     width: auto;
-            // }
             .item {
                 width: 33.33%;
                 position: relative;
@@ -27,29 +22,26 @@
                         &:after { top: 0; }
                     }
                 }
-
-                // ----- bottom-button -----
-                .bottom-button {
-                    margin: 0;
-                    width: auto;
+                .crossed-button {
+                    left: 0;
                     bottom: -55px;
-                    .line { display: none; }
-                    .arrow-container { margin-left: 10px; }
+                    position: absolute;
+                    align-items: center;
+                    font-family: $roboto;
+                    font-weight: $medium;
+                    .arrow .st0, .arrow .st1 { stroke: $white; }
                     span {
-                        padding: 0;
+                        color: $white;
+                        display: block;
                         font-size: px(24);
-                        line-height: initial;
-                        font-family: $roboto;
-                        font-weight: $medium;
-                        &:hover { padding: 0; }
-                        &:before { content: 'Подробнее'; }
+                        animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
+                        &:after { content: 'Подробнее'; }
+                        &:before {
+                            background: $white;
+                            top: 14px;
+                        }
                     }
                 }
-                // @include media(phone) {
-                //     width: 100% !important;
-                //     padding: 0 !important;
-                //     margin-bottom: 25px;
-                // }
                 span {
                     line-height: 26px;
                     font-size: px(50);
@@ -68,7 +60,6 @@
                     width: 100vh;
                     transform-origin: 0 0;
                     transform: rotate(-90deg);
-                    // @include media(phone) { top: initial; }
                 }
                 &:before {
                     position: absolute;
@@ -78,10 +69,6 @@
                     font-size: px(36);
                     font-family: $roboto;
                     transform: rotate(-90deg);
-                    // @include media(phone) {
-                    //     top: initial;
-                    //     bottom: 0;
-                    // }
                 }
                 &:nth-of-type(1)::before { content: '01'; }
                 &:nth-of-type(2)::before { content: '02'; }

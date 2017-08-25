@@ -29,36 +29,34 @@
 
     // ----- language -----
     .language {
+        transform: rotate(-90deg);
         position: absolute;
-        font-size: px(14);
-        bottom: 27%;
+        font-size: px(29);
+        bottom: 33.5%;
         z-index: 1;
-        zoom: 1.8;
-        left: 4%;
-        div {
-            width: fit-content;
-            transform: rotate(-90deg);
-            &:nth-of-type(1) { margin-bottom: px(44); }
-            &:nth-of-type(2) { margin-bottom: px(20); }
-            a {
-                &.select {
+        left: -10%;
+        a {
+            @include inline-block;
+            animation: Down 1s both;
+            &:nth-of-type(1) { margin-right: px(10); }
+            &:nth-of-type(2) { margin-right: px(50); }
+            &.select {
+                color: $white;
+                &::before {
+                    position: absolute;
                     color: $white;
-                    &::before {
-                        position: absolute;
-                        color: $white;
-                        bottom: 10%;
-                        right: 115%;
-                        content: '—';
-                    }
+                    right: px(50);
+                    bottom: px(4);
+                    content: '—';
                 }
-                color: $gray;
-                cursor: pointer;
-                font-weight: $thin;
-                text-transform: uppercase;
-                &:hover {
-                    color: $white;
-                    transition: $time;
-                }
+            }
+            color: $gray;
+            cursor: pointer;
+            font-weight: $thin;
+            text-transform: uppercase;
+            &:hover {
+                color: $white;
+                transition: $time;
             }
         }
     }

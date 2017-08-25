@@ -1,0 +1,50 @@
+@import '../desktop';
+
+& {
+    
+    .front-layer {
+        
+        .content-container {
+            justify-content: space-around;
+            padding: px(170) px(200) px(160);
+            min-height: 650px;
+        }
+
+        .portfolio-item {
+
+            &--audi {
+                margin: px(400) 0;
+                margin-right: px(170);
+
+                .image-container {
+                    min-width: px(600);
+                    min-height: px(500);
+                }
+            }
+
+            &--alta-capital {
+                
+                .image-container {
+                    min-width: px(600);
+                    min-height: px(350);
+                }
+            }
+
+            &--vino-grad {
+                
+                .image-container {
+                    min-width: px(400);
+                    min-height: px(400);
+                }
+            }
+
+            &--euro-club {
+                
+                .image-container {
+                    min-width: px(400);
+                    min-height: px(800);
+                }
+            }
+        }
+    }
+}

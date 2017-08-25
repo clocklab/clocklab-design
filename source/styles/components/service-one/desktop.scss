@@ -22,9 +22,9 @@
 
     // ----- jump-button -----
     .jump-button {
+        bottom: px(170);
         left: initial;
         right: 29.7%;
-        bottom: 7%;
         a {
             text-transform: uppercase;
             &:before { background: $black; }
