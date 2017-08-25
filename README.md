@@ -1,1 +1,0 @@
-Demo: [clocklab.github.io/clocklab-design/build](https://clocklab.github.io/clocklab-design/build/)
