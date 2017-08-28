@@ -1,0 +1,37 @@
+& {
+    .logo, .menu, .bg-clock { display: none; }
+    font-family: $raleway;
+    font-weight: $regular;
+    
+    // ----- bg-image -----
+    .bg-image {
+        position: absolute;
+        object-fit: cover;
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+    
+    // ----- shadow -----
+    .shadow div {
+        background: rgba(0,0,0,.7);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    // ----- title -----
+    .title {
+        margin: 20% 0 0 11%;
+        span.name {
+            font-size: px(26);
+            top: -3.5vh;
+        }
+        .word {
+            &:after { display: none; }
+            span { font-size: px(47); }
+        }
+    }
+}

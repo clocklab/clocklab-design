@@ -7,6 +7,7 @@
 @import "base/fonts";
 @import "base/reset";
 @import "base/common";
+@import "base/scroll";
 @import "base/animations";
 @import "base/small-gray-lines";
 
@@ -47,10 +48,17 @@
 // contacts on the main page
 @import "components/main-contacts/main";
 
-// ***** OTHER PAGES *****
+// ***** ABOUT COMPANY PAGE ****
+@import "components/about-company-one/main";
+@import "components/about-company-two/main";
+// @import "components/about-company-three/main";
+
+// ***** SERVICES MORE PAGE ****
 @import "components/services-more-one/main";
 @import "components/services-more-two/main";
 @import "components/services-more-three/main";
+
+// ***** OTHER PAGES *****
 @import "components/portfolio/main";
 @import "components/services/main";
 @import "components/contacts/main";
