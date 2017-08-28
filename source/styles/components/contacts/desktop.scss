@@ -15,10 +15,62 @@
             height: 7.5vh;
             span {
                 bottom: -100px;
-                font-size: 6.3vh;
+                // font-size: 6.3vh;
             }
         }
     }
+
+    // // ----- page-layer -----
+    // .page-layer {
+    //     top: 0;
+    //     left: 0;
+        
+    //     // ----- back-layer -----
+    //     &.back-layer {
+    //         position: fixed;
+    //         width: 100vw;
+    //         height: 100vh;
+    //         overflow: hidden;
+    //         .letter {
+    //             position: absolute;
+    //             top: 0;
+    //             left: 0;
+    //             z-index: 1;
+    //             width: 100vw;
+    //             height: 100vh;
+    //             color: rgba(0, 0, 0, .2);
+    //             color: $gray;
+    //             font-size: 12vw;
+    //             font-weight: 700;
+    //             animation: fadeIn $PPLettersAnimationTime $PPLettersDelayTime both;
+    //             &-c {
+    //                 top: px(280);
+    //                 left: px(900);
+    //             }
+    //         }
+
+    //         &:before,
+    //         &:after {
+    //             display: block;
+    //             position: absolute;
+    //             top: 0;
+    //             width: 50vw;
+    //             height: 100vh;
+    //             background: $background;
+    //             content: '';
+    //         }
+
+    //         &:before {
+    //             left: 0;
+    //             animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
+    //         }
+
+    //         &:after {
+    //             right: 0;
+    //             animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
+    //         }
+    //     }
+    // }
 
     // ----- contacts-info -----
     .contacts-info {

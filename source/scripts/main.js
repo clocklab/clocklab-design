@@ -17,16 +17,29 @@
 //= components/menu.js
 
 // alta
+//= components/alta.js
 
 // letter
 
+// slides-changing
+//= components/slides-changing.js
+
 // button-freaky
+//= components/button-freaky.js
 
 // horizontal-scroll
+//= components/horizontal-scroll.js
 
 // horizontal-scroll-blog
 
 // portfolio-shadow
+//= components/portfolio-shadow.js
+
+// slides changing
+//= components/slides-changing.js
+
+// transition-start
+//= components/transition-start.js
 
 // slides changing
 

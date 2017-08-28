@@ -1,0 +1,40 @@
+& {
+    background-color: $background;
+    font-family: $raleway;
+    font-weight: $regular;
+    
+    // ----- title -----
+    .title {
+        width: 80.5vh;
+        display: inherit;
+        margin-top: 10vh;
+        margin-left: px(880);
+        span.name { top: -2vh; }
+        .animation-border { top: 4.7vh; }
+        .word {
+            height: 7.5vh;
+            span {
+                bottom: -100px;
+                // font-size: 6.3vh;
+            }
+        }
+    }
+    
+    // ----- small-gray-lines ----
+    .small-gray-lines { z-index: -1; }
+
+    // ----- brands -----
+    table {
+        margin: 10vh auto 0;
+        tr {
+            display: flex;
+            margin-bottom: 8vh;
+            &:last-of-type { margin-bottom: 0; }
+            td {
+                display: block;
+                margin: auto auto;
+                padding: 0 px(125);
+            }
+        }
+    }
+}
