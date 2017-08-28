@@ -5,36 +5,6 @@
     font-weight: $regular;
     z-index: 0;
     
-    // ----- bottom-button -----
-    .bottom-button span:before { content: 'Все новости'; }
-
-    // ----- jump-button -----
-    .jump-button {
-        left: initial;
-        right: 1.5%;
-        bottom: 8%;
-        a {
-            text-transform: uppercase;
-            &:before { background: $darkGray; }
-            span {
-                color: $darkGray;
-                font-size: px(25);
-                font-weight: $medium;
-                &:nth-of-type(10) { margin-right: 5px;}
-            }
-        }
-    }
-
-    // ----- blue-line -----
-    .blue-line {
-        top: 0;
-        left: 0;
-        width: px(320);
-        height: px(320);
-        background: $blue;
-        position: absolute;
-    }
-    
     // ----- image-block -----
     .image-block {
         z-index: 3;
@@ -65,19 +35,6 @@
                 background: $darkGray;
                 transform: translate3d(-90%, 90%, 0);
             }
-        }
-        p {
-            padding: px(40) px(130);
-            box-sizing: border-box;
-            position: absolute;
-            left: -50px;
-            top: px(285);
-            width: px(900);
-            color: $white;
-            font-size: px(24);
-            line-height: px(30);
-            transform-origin: 0 0;
-            transform: rotate(-90deg);
         }
     }
     
