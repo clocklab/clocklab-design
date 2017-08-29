@@ -6,6 +6,19 @@
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
+    
+    // ----- lines -----
+    .lines {
+        div {
+            width: 1px;
+            height: 100vh;
+            background: #E0E1E0;
+            position: absolute;
+            &:nth-of-type(1) { left: px(645); }
+            &:nth-of-type(2) { left: px(1525); }
+            &:nth-of-type(3) { right: px(745); }
+        }
+    }
 
     // ----- title -----
     .title {
