@@ -73,8 +73,10 @@
 
     // ----- contacts-info -----
     .contacts-info {
-        display: inherit;
+        z-index: 1;
+        position: absolute;
         margin: 34.5vh 0 0 33vh;
+        animation: fadeInUp 1s 1.5s both;
         li {
             color: $white;
             font-size: 1.3vh;
