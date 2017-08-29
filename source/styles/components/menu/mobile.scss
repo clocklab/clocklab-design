@@ -7,18 +7,17 @@
 
     &__item {
         box-sizing: border-box;
-        display: block;
         position: relative;
         z-index: 2;
         float: right;
-        width: px(150);
-        height: px(150);
+        width: 0;
+        height: 0;
         border: 1px solid $white;
         color: $white;
         cursor: pointer;
         outline: 0;
         backface-visibility: hidden;
-        transition: transform $time;
+        transition: transform $time, width 1.6s, height 1.6s;
 
         .text-block {
             position: relative;
@@ -112,19 +111,17 @@
 
                 &-2 {
                     top: calc(100% / 3);
-                    transform: translateY(-1.5px);
                     transition: width $time;
                 }
 
                 &-3 {
                     top: calc(100% / 3 * 2);
                     width: 50%;
-                    transform: translateY(-1.5px);
                     transition: width $time;
                 }
                 
                 &-4 {
-                    bottom: 0;
+                    top: 100%;
                 }
             }
         }
@@ -159,7 +156,10 @@
         }
 
         &--open-close {
-            padding-top: px(40);
+            padding-top: px(30);
+            width: px(150);
+            height: px(150);
+            transition: none;
 
             &::before {
                 display: none;
@@ -376,15 +376,14 @@
     }
 
     &__background {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         opacity: 0;
-        visibility: hidden;
-        width: 100%;
-        height: 100%;
+        width: 0;
+        height: 0;
         background: rgba(0, 0, 0, .8);
-        transition: opacity $time;
+        transition: width 0s 1.6s, height 0s 1.6s, opacity $time * 2;
     }
 
     &.opened {
@@ -392,6 +391,8 @@
         height: 100%;
 
         .menu__item {
+            width: px(150);
+            height: px(150);
             transform: perspective(0) rotate(0);
 
             .hamburger {
@@ -492,17 +493,17 @@
             /* STYLES FOR ANIMATION */
             &--team,
             &--blog {
-                transition-delay: 0s;
+                transition: width 0s 0s, height 0s 0s, transform $time 0s;
             }
 
             &--services,
             &--contact,
             &--about-us {
-                transition-delay: $time;
+                transition: width 0s 0s, height 0s 0s, transform $time $time;
             }
 
             &--portfolio {
-                transition-delay: $time * 2;
+                transition: width 0s 0s, height 0s 0s, transform $time $time * 2;
             }
             /* STYLES FOR ANIMATION ENDS */
 
@@ -561,27 +562,10 @@
         }
 
         .menu__background {
-            visibility: visible;
+            width: 100vw;
+            height: 100vh;
             opacity: 1;
-        }
-    }
-
-    &.gray {
-        .menu__background { background: none; }
-        .menu__item {
-            border-color: $darkGray;
-
-            .symbol,
-            .name {
-                color: $darkGray;
-            }
-
-            .hamburger {
-
-                &-tick {
-                    background: $darkGray;
-                }
-            }
+            transition: width 0s, height 0s, opacity $time * 2;
         }
     }
 }
