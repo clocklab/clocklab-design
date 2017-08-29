@@ -1,0 +1,25 @@
+& {
+    .logo, .menu, .bg-clock { display: none; }
+    background: url('../images/dots.png');
+    background-color: $white;
+    font-family: $raleway;
+    font-weight: $regular;
+    
+    // ----- bottom-button -----
+    .bottom-button span:before { content: 'Все услуги'; }
+
+    // ----- title -----
+    .title {
+        margin: 20% 0 0 11%;
+        p {
+            padding: 7% 0 0;
+            line-height: 1.5;
+            font-size: px(24);
+        }
+        span.name {
+            font-size: px(26);
+            top: -3.5vh;
+        }
+        .word span { font-size: px(47); }
+    }
+}
