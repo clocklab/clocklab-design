@@ -4,9 +4,10 @@
     overflow: hidden;
     height: 100%;
     width: 100%;
-    z-index: 0;
+    z-index: 1;
     .line {
         background-color: $silver;
+        visibility: hidden;
         position: absolute;
         display: block;
         height: 1px;
