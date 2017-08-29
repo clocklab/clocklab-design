@@ -1,0 +1,27 @@
+& {
+    background: url('../images/dots.png');
+    background-color: $white;
+    font-family: $raleway;
+    font-weight: $regular;
+    
+    // ----- bottom-button -----
+    .bottom-button span:before { content: 'Все услуги'; }
+
+    // ----- title -----
+    .title {
+        margin: px(428) 0 0 39.7vw;
+        span.name { top: -1.4vh; }
+        p {
+            text-transform: uppercase;
+            font-size: px(29);
+            padding: 9vh 0 0;
+        }
+        .word {
+            word-spacing: -3px;
+            &:after { display: none; }
+            span {
+                font-size: px(60);
+            }
+        }
+    } 
+}
