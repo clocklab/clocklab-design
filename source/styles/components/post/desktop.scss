@@ -91,21 +91,8 @@
 
     .logo {
         position: fixed;
-        top: 0;
-        left: px(100);
         z-index: 2;
-        padding-top: px(60);
-        animation: fadeIn $POPLogoAnimationTime both;
-
-       .image {
-            @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
-            background-repeat: no-repeat;
-
-            &.black {
-                @include image-retina("/../images/logo-black.png", "/../images/logo-black-2x.png");
-                background-repeat: no-repeat;
-            }
-        }
+        animation: fadeIn $POPLogoAnimationTime both
     }
 
     .language {
@@ -243,10 +230,6 @@
 
     header {
         position: relative;
-
-        // WARNING
-        top: -13px;
-        
         padding-left: px(520);
     }
 

@@ -96,21 +96,8 @@
 
     .logo {
         position: absolute;
-        top: 0;
-        left: px(30);
         z-index: 2;
-        padding-top: px(30);
         animation: fadeIn $POPLogoAnimationTime both;
-
-        .image {
-            @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
-            background-repeat: no-repeat;
-
-            &.black {
-                @include image-retina("/../images/logo-black.png", "/../images/logo-black-2x.png");
-                background-repeat: no-repeat;
-            }
-        }
     }
 
     .language {

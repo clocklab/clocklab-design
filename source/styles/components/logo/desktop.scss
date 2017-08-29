@@ -1,0 +1,30 @@
+& {
+    
+    display: block;
+    position: absolute;
+    top: px(60);
+    left: px(100);
+    width: px(266);
+    height: px(102);
+
+    &-letter {
+        fill: $white;
+    }
+
+    &-arrow {
+        fill: $blue;
+
+        &--minutes {
+            // transition: transform $time * 2;
+        }
+    }
+
+    &:hover {
+
+        &-arrow {
+
+            &--minutes {
+            }
+        }
+    }
+}
