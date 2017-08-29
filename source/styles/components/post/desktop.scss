@@ -68,25 +68,6 @@
     .menu {
         position: fixed;
         animation: fadeIn $POPMenuAnimationTime both;
-
-        &__item {
-            border-color: $darkGray;
-
-            .symbol,
-            .name {
-                color: $darkGray;
-            }
-
-            .hamburger {
-
-                &-tick {
-
-                    .inner-tick {
-                        background: $darkGray;
-                    }
-                }
-            }
-        }
     }
 
     .logo {

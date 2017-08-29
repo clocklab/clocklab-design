@@ -32,13 +32,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const previousSlide = document.querySelector('.previous');
         const currentSlide = document.querySelector('.current');
         const index = slides.indexOf(currentSlide);
-    
-        previousSlide && previousSlide.classList.remove('previous');
-        currentSlide.classList.remove('current');
-        currentSlide.classList.add('previous');  
-    
-        (event.deltaY < 0 || event.keyCode === 40) && moveToNext(index);
-        (event.deltaY > 0 || event.keyCode === 38) && moveToPrevious(index);
+        
+        if (event.deltaY < 0 || event.keyCode === 40) {
+            previousSlide && previousSlide.classList.remove('previous');
+            currentSlide.classList.remove('current');
+            currentSlide.classList.add('previous');  
+
+            moveToNext(index)
+        }
+
+        if (event.deltaY > 0 || event.keyCode === 38) {
+            previousSlide && previousSlide.classList.remove('previous');
+            currentSlide.classList.remove('current');
+            currentSlide.classList.add('previous');  
+
+            moveToPrevious(index)
+        }
     }
     
     addListeners()
