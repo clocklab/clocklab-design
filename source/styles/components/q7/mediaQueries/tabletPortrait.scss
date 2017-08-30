@@ -2,6 +2,72 @@
 
 & {
 
+    .portfolio-client {
+
+        .client-name-container {
+
+            span {
+
+                &:before {
+                    content: 'Audi';
+                }
+            }
+        }
+    }
+
+    .portfolio-right-panel {
+
+        .date {
+
+            &-month {
+
+                &:before {
+                    content: 'July';
+                }
+            }
+
+            &-year {
+
+                &:after {
+                    content: '2017';
+                }
+            }
+        }
+    }
+
+    .info {
+        top: px(300);
+        padding: 0 px(180);
+    }
+
+    .new-title {
+        margin-top: px(60);
+
+        .text-container {
+            display: inline-block;
+
+            &:before {
+                display: block;
+            }
+        }
+
+        span {
+            font-size: px(96);
+            line-height: px(110);
+        }
+    }
+
+    .about-work {
+        margin-top: px(70);
+
+        p {
+            margin-bottom: px(30);
+            width: px(690);
+            font-size: px(32);
+            line-height: px(40);
+        }
+    }
+
     .car-covering-layer {
 
         img {
@@ -99,8 +165,7 @@
 
         &--center {
             width: 47vw;
-            animation: heightIncreaseTablet $portfolioAudiCenterBlockAnimationTime $portfolioAudiCenterBlockDelayTime both, 
-                       shadowAppearance $portfolioAudiCenterBlockShadowAnimationTime $portfolioAudiCenterBlockShadowDelayTime both;
+            
 
             img {
                 left: -46.5vw;
@@ -109,6 +174,20 @@
 
             &:before {
                 top: -22vh;
+            }
+        }
+    }
+
+    &.current {
+
+        .car-covering-layer {
+
+            &--center {
+                animation: heightIncreaseTablet $portfolioAudiCenterBlockAnimationTime $portfolioAudiCenterBlockDelayTime both, 
+                           shadowAppearance $portfolioAudiCenterBlockShadowAnimationTime $portfolioAudiCenterBlockShadowDelayTime both;
+            }
+
+            &:before {
                 animation-delay: $portfolioAudiCenterBlockLineDelayTime;
             }
         }

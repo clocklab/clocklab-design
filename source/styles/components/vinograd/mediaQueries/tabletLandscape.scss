@@ -1,1 +1,32 @@
 @import '../desktop';
+
+& {
+
+    .info {
+        top: px(260);
+        left: px(250);
+    }
+
+    .new-title {
+        margin-top: px(40);
+
+        span {
+            font-size: px(80);
+            line-height: px(100);
+        }
+    }
+
+    .about-work {
+        margin-top: px(40);
+
+        p {
+            font-size: px(26);
+            line-height: px(32);
+        }
+    }
+
+    .poster {
+        margin-top: px(300);
+        width: 48vw;
+    }
+}

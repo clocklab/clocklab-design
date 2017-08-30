@@ -127,6 +127,7 @@ $PAAboutAnimationTime: $time * 3;
     $portfolioAudiLeftBlockDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime;
     $PAStickerLineDelayTimeMobile: $portfolioAudiLeftBlockDelayTimeMobile + $portfolioAudiLeftBlockAnimationTime;
     $PAStickerTextDelayTimeMobile: $PAStickerLineDelayTimeMobile + $PAStickerLineAnimationTime;
+    $PATitleLineDelayTimeMobile: $PAStickerLineDelayTimeMobile;
     $PATitleDelayTimeMobile: $PAStickerLineDelayTimeMobile;
     $PATextDelayTimeMobile: $PAStickerTextDelayTimeMobile;
 
@@ -148,10 +149,13 @@ $portfolioVinogradRightBlockAnimationTime: $portfolioVinogradLeftBlockAnimationT
     $portfolioVinogradMenuDelayTime: $portfolioVinogradRightPanelDelayTime;
 
 $portfolioVinogradPosterDelayTime: $portfolioRightPanelDevicesMobileDelayTime + $portfolioRightPanelDevicesMobileAnimationTime;
-$portfolioVinogradPosterAnimationTime: $time * 6;
+$portfolioVinogradPosterAnimationTime: $time * 3;
 
 $portfolioVinogradPosterImageDelayTime: $portfolioVinogradPosterDelayTime + $portfolioVinogradPosterAnimationTime;
 $portfolioVinogradPosterImageAnimationTime: $time * 3;
+
+$PVPosterShadowDelayTime: $portfolioVinogradPosterImageDelayTime + $portfolioVinogradPosterImageAnimationTime;
+$PVPosterShadowAnimationTime: $time * 2;
 
 $portfolioVinogradPosterTextDelayTime: $portfolioVinogradPosterImageDelayTime + $portfolioVinogradPosterImageAnimationTime;
 $portfolioVinogradPosterTextAnimationTime: $time * 3;
@@ -174,6 +178,11 @@ $PVAboutAnimationTime: $time * 3;
     // MOBILE
     $portfolioVinogradPosterDelayTimeMobile: $portfolioVinogradRightBlockDelayTime + $portfolioVinogradRightBlockAnimationTime;
     $portfolioVinogradPosterImageDelayTimeMobile: $portfolioVinogradPosterDelayTimeMobile + $portfolioVinogradPosterAnimationTime;
+    $PVStickerLineDelayTimeMobile: $portfolioVinogradPosterImageDelayTimeMobile + $portfolioVinogradPosterImageAnimationTime;
+    $PVStickerTextDelayTimeMobile: $PVStickerLineDelayTimeMobile + $PVStickerLineAnimationTime;
+    $PVTitleDelayTimeMobile: $PVStickerLineDelayTimeMobile;
+    $PVTitleLineDelayTimeMobile: $PVTitleDelayTimeMobile;
+    $PVTextDelayTimeMobile: $PVStickerTextDelayTimeMobile;
 // VARIABLES FOR PORTFOLIO BLOCK VINO GRAD END
 
 

@@ -1,1 +1,8 @@
 @import '../desktop';
+
+& {
+
+    .info {
+        left: px(900);
+    }
+}

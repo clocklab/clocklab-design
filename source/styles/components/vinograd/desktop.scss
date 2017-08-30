@@ -4,10 +4,6 @@
     height: 100vh;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    
-    .logo {
-        z-index: 2;
-    }
 
     .portfolio-client {
 
@@ -67,6 +63,10 @@
             display: inline-block;
             color: $white;
             text-transform: uppercase;
+
+            &:before {
+                content: 'Портфолио';
+            }
         }
 
         &:before {
@@ -167,6 +167,15 @@
         }
     }
 
+    @keyframes shadowForPoster {
+        from {
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+        to {
+            box-shadow: 0 0 px(100) px(10) rgba(0, 0, 0, .4);
+        }
+    }
+
     .poster {
         position: relative;
         z-index: 2;
@@ -189,7 +198,19 @@
                 object-fit: cover;
             }
 
+            &:after {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .4);
+                content: '';
+            }
+
             &:before {
+                display: block;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -244,7 +265,6 @@
     }
 
     &.current {
-        animation-play-state: running;
 
         .logo {
             animation: fadeInDown $time * 3 $time * 3 both;
@@ -355,10 +375,14 @@
         .poster {
     
             .image-container {
-                animation: poster $portfolioVinogradPosterAnimationTime $portfolioVinogradPosterDelayTime both;
+                animation: shadowForPoster $PVPosterShadowAnimationTime $PVPosterShadowDelayTime both;
     
                 img {
                     animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
+                }
+
+                &:after {
+                    animation: right $portfolioVinogradPosterAnimationTime  $portfolioVinogradPosterDelayTime both;
                 }
     
                 &:before {
