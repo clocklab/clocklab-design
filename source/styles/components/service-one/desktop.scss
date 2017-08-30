@@ -31,13 +31,10 @@
         position: absolute;
         p { font-family: $roboto; }
         &.horizontal {
+            p { font-size: px(32); }
             width: px(1056);
             right: px(1224);
             bottom: 15.4vh;
-            p {
-                font-size: px(32);
-                line-height: 1.3;
-            }
         }
         &.vertical {
             transform: rotate(90deg);
