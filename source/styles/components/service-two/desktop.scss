@@ -2,14 +2,15 @@
     background-color: $background;
     font-family: $raleway;
     font-weight: $regular;
+    overflow: hidden;
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
 
     // ----- title -----
     .title {
-        margin: 28vh 0 0 40vh;
-        p { padding: 5% 1vh 0; }
+        margin: 28vh 0 0 px(780);
+        p { padding: 2vh px(8) 0; }
     }
 
     // ----- small-gray-lines -----
@@ -57,11 +58,12 @@
     
     // ----- service-info -----
     .service-info {
+        z-index: 1;
         position: absolute;
         transform: rotate(90deg);
-        bottom: 19%;
-        width: 6%;
-        left: 18%;
+        bottom: 19.5vh;
+        width: px(200);
+        left: px(720);
         p {
             font-weight: $medium;
             font-size: px(22);

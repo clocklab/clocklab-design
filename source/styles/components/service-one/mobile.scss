@@ -1,8 +1,9 @@
 & {
-    .service-info, .logo, .menu, .bg-clock { display: none; }
+    .service-info, .logo, .menu { display: none; }
     background-color: $white;
     font-family: $raleway;
     font-weight: $regular;
+    overflow: hidden;
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }

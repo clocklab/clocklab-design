@@ -3,7 +3,7 @@
     background-color: $white;
     font-family: $raleway;
     font-weight: $regular;
-    z-index: 0;
+    overflow: hidden;
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все новости'; }
@@ -29,6 +29,7 @@
     .blue-line {
         top: 0;
         right: 0;
+        z-index: 2;
         width: px(180);
         height: px(500);
         background: $blue;

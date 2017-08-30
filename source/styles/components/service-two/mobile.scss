@@ -3,6 +3,7 @@
     background-color: $background;
     font-family: $raleway;
     font-weight: $regular;
+    overflow: hidden;
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
@@ -14,9 +15,9 @@
         bottom: 8%;
         a {
             text-transform: uppercase;
-            &:before { background: $darkGray; }
+            &:before { background: $white; }
             span {
-                color: $darkGray;
+                color: $white;
                 font-size: px(25);
                 font-weight: $medium;
                 &:nth-of-type(10) { margin-right: 5px;}
