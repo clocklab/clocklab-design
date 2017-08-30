@@ -11,21 +11,21 @@
     }
 
     // ----- logo -----
-    .logo {
-        animation: fadeInDown $time * 3 both;
-        position: absolute;
-        z-index: 2;
-        left: 2.5%;
-        top: 3.5%;
-       .image {
-            @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
-            background-repeat: no-repeat;
-            &.black {
-                @include image-retina("/../images/logo-black.png", "/../images/logo-black-2x.png");
-                background-repeat: no-repeat;
-            }
-        } 
-    }
+    // .logo {
+    //     animation: fadeInDown $time * 3 both;
+    //     position: absolute;
+    //     z-index: 1;
+    //     left: 2.5%;
+    //     top: 3.5%;
+    //    .image {
+    //         @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
+    //         background-repeat: no-repeat;
+    //         &.black {
+    //             @include image-retina("/../images/logo-black.png", "/../images/logo-black-2x.png");
+    //             background-repeat: no-repeat;
+    //         }
+    //     } 
+    // }
 
     // ----- language -----
     .language {

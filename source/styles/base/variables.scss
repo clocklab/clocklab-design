@@ -122,10 +122,15 @@ $PAAboutDelayTime: $PAStickerLineDelayTime;
 $PAAboutAnimationTime: $time * 3;
 
     // MOBILE
-    $portfolioAudiCenterBlockDelayTimeMobile: 0s;
+    $portfolioAudiCenterBlockDelayTimeMobile: $time * 3;
     $portfolioAudiCenterBlockLineDelayTimeMobile: $portfolioAudiCenterBlockDelayTimeMobile + $portfolioAudiCenterBlockAnimationTime;
     $portfolioAudiCenterBlockShadowDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime - $timeTick;
     $portfolioAudiLeftBlockDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime;
+    $PAStickerLineDelayTimeMobile: $portfolioAudiLeftBlockDelayTimeMobile + $portfolioAudiLeftBlockAnimationTime;
+    $PAStickerTextDelayTimeMobile: $PAStickerLineDelayTimeMobile + $PAStickerLineAnimationTime;
+    $PATitleLineDelayTimeMobile: $PAStickerLineDelayTimeMobile;
+    $PATitleDelayTimeMobile: $PAStickerLineDelayTimeMobile;
+    $PATextDelayTimeMobile: $PAStickerTextDelayTimeMobile;
 
 // VARIABLES FOR PORTFOLIO BLOCK AUDI Q7 END
 
@@ -145,10 +150,13 @@ $portfolioVinogradRightBlockAnimationTime: $portfolioVinogradLeftBlockAnimationT
     $portfolioVinogradMenuDelayTime: $portfolioVinogradRightPanelDelayTime;
 
 $portfolioVinogradPosterDelayTime: $portfolioRightPanelDevicesMobileDelayTime + $portfolioRightPanelDevicesMobileAnimationTime;
-$portfolioVinogradPosterAnimationTime: $time * 6;
+$portfolioVinogradPosterAnimationTime: $time * 3;
 
 $portfolioVinogradPosterImageDelayTime: $portfolioVinogradPosterDelayTime + $portfolioVinogradPosterAnimationTime;
 $portfolioVinogradPosterImageAnimationTime: $time * 3;
+
+$PVPosterShadowDelayTime: $portfolioVinogradPosterImageDelayTime + $portfolioVinogradPosterImageAnimationTime;
+$PVPosterShadowAnimationTime: $time * 2;
 
 $portfolioVinogradPosterTextDelayTime: $portfolioVinogradPosterImageDelayTime + $portfolioVinogradPosterImageAnimationTime;
 $portfolioVinogradPosterTextAnimationTime: $time * 3;
@@ -171,6 +179,11 @@ $PVAboutAnimationTime: $time * 3;
     // MOBILE
     $portfolioVinogradPosterDelayTimeMobile: $portfolioVinogradRightBlockDelayTime + $portfolioVinogradRightBlockAnimationTime;
     $portfolioVinogradPosterImageDelayTimeMobile: $portfolioVinogradPosterDelayTimeMobile + $portfolioVinogradPosterAnimationTime;
+    $PVStickerLineDelayTimeMobile: $portfolioVinogradPosterImageDelayTimeMobile + $portfolioVinogradPosterImageAnimationTime;
+    $PVStickerTextDelayTimeMobile: $PVStickerLineDelayTimeMobile + $PVStickerLineAnimationTime;
+    $PVTitleDelayTimeMobile: $PVStickerLineDelayTimeMobile;
+    $PVTitleLineDelayTimeMobile: $PVTitleDelayTimeMobile;
+    $PVTextDelayTimeMobile: $PVStickerTextDelayTimeMobile;
 // VARIABLES FOR PORTFOLIO BLOCK VINO GRAD END
 
 

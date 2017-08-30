@@ -2,12 +2,27 @@
 
 & {
 
+    .info {
+        top: px(280);
+        left: px(150);
+        width: 70%;
+    }
+
+    .about-work {
+        width: 100%;
+    }
+
     .poster {
-        margin-top: px(880);
+        margin-top: px(950);
         width: 93vw;
 
         .image-container {
+            height: px(720);
             animation-name: posterTablet;
+
+            &:before {
+                opacity: .8;
+            }
         }
 
         span {

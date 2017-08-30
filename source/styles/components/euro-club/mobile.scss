@@ -22,6 +22,10 @@
     overflow: hidden;
     //animation: apear $time * 3 0s both;
 
+    .logo {
+        z-index: 3;
+    }
+
     @keyframes heightChanging {
         from {
             height: 0;

@@ -1,1 +1,13 @@
 @import '../desktop';
+
+& {
+
+    .info {
+        left: px(300);
+    }
+
+    .poster {
+        margin-top: px(320);
+        width: 50vw;
+    }
+}
