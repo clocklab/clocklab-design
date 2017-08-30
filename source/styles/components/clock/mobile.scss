@@ -37,7 +37,7 @@
     }
 
     // ----- watch -----
-    .watch-light { display: none; }
+    .watch-light, .watch-shadow { display: none; }
     .watch {
         background: url('../images/watch.png') no-repeat center;
         background-size: 47%;
