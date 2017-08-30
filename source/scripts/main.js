@@ -4,8 +4,8 @@
 // WowJS
 //= ../../bower_components/wow/dist/wow.js
 
-// shadow
-//= components/shadow.js
+// clock-bg
+//= components/clock-bg.js
 
 // scripts
 //= components/scripts.js

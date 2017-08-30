@@ -11,8 +11,8 @@ $(window).on('load', function() {
 });
 $(document).ready(function() {
 
-    // ----- text shadow -----
-    $('#bg-clock').textshadow({
+    // ----- block-bg -----
+    $('#clock-bg').textshadow({
       color: 'rgba(0,0,0,.05)',
       textShadow: true
     });
