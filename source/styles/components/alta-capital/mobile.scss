@@ -1,24 +1,10 @@
 & {  
+    
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     font-family: $raleway;
-    
-    // ----- title -----
-    .title {
-        margin: 20% 0 0 11%;
-        p {
-            padding: 7% 0 0;
-            line-height: 1.5;
-            font-size: px(24);
-        }
-        span.name {
-            font-size: px(26);
-            top: -3.5vh;
-        }
-        .word span { font-size: px(47); }
-    }
 
     @keyframes right {
         from {
@@ -49,8 +35,102 @@
         }
     }
 
-    .logo {
+    .portfolio-client {
+        
+        .client-name-container {
+
+            span {
+
+                &:before {
+                    content: 'Alta Capital';
+                }
+            }
+        }
+    }
+
+    .portfolio-right-panel {
+        
+        .date {
+
+            &-month {
+
+                &:before {
+                    content: 'April';
+                }
+            }
+
+            &-year {
+                &:after {
+                    content: '2017';
+                }
+            }
+        }
+    }
+
+    .info {
+        position: absolute;
+        top: px(730);
         z-index: 3;
+        padding: 0 px(30);
+        width: 100%;
+    }
+
+    .sticker {
+        position: relative;
+        left: px(120);
+        font-family: $raleway;
+        font-size: px(24);
+        font-weight: 700;
+
+        span {
+            display: inline-block;
+            color: $white;
+            text-transform: uppercase;
+
+            &:before {
+                content: 'Портфолио';
+            }
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: px(-120);
+            width: px(100);
+            height: 3px;
+            background: $white;
+            content: '';
+            transform: translateY(-50%);
+        }
+    }
+
+    .new-title {
+        margin-top: px(30);
+
+        .text-container {
+            position: relative;
+            overflow: hidden;
+
+            &:before {
+                display: none;
+            }
+
+            &:last-child {
+                display: inline-block;
+            }
+        }
+
+        span {
+            display: block;
+            position: relative;
+            z-index: 1;
+            color: $white;
+            font-size: px(48);
+            font-weight: 800;
+            line-height: px(60);
+            text-transform: uppercase;
+        }
     }
 
     .poster {
@@ -72,6 +152,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
 
                 &.loaded {
                     animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
@@ -107,8 +188,27 @@
             }
         }
 
-        .text {
+        & > span {
             display: none;
+        }
+
+        .text {
+            position: absolute;
+            top: px(870);
+
+            p {
+                margin-bottom: px(40);
+                padding: 0 px(30);
+                widows: 100%;
+                color: $white;
+                font-family: $roboto;
+                font-size: px(28);
+                line-height: px(34);
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 
@@ -117,7 +217,7 @@
         justify-content: space-between;
         position: relative;
         z-index: 2;
-        margin-top: px(60);
+        margin-top: px(40);
         width: 100%;
         height: px(200);
 
@@ -210,6 +310,8 @@
                 top: 0;
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
+                user-select: none;
 
                 &.current {
                     z-index: 2;
@@ -262,5 +364,51 @@
         left: 0;
         width: 100vw;
         animation: right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
+    }
+
+    &.current {
+        
+        .bottom-button {
+            
+            span {
+                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+            }
+        
+            .line {
+                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation: FadeInRight $PVStickerTextAnimationTime $PVStickerTextDelayTimeMobile both;
+            }
+    
+            &:before {
+                animation: widthIncreaseStickerLine $PVStickerLineAnimationTime $PVStickerLineDelayTimeMobile both;
+            }
+        }
+
+        .new-title {
+
+            .text-container {
+
+                &:before {
+                    animation: halfDown $PVTitleLineAnimationTime linear $PVTitleLineDelayTimeMobile both;
+                }
+            }
+    
+            span {
+                animation: Up $PVTitleLineAnimationTime $PVTitleDelayTimeMobile both;
+            }
+        }
+    
+        .text {
+    
+            p {
+                animation: fadeInUpHalf $PVAboutAnimationTime $PVTextDelayTimeMobile both;
+            }
+        }
     }
 }

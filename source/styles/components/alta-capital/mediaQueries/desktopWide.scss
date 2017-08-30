@@ -1,1 +1,19 @@
 @import '../desktop';
+
+& {
+
+    padding-top: px(180);
+
+    .info {
+        top: px(220);
+    }
+
+    .poster {
+        width: px(1300);
+        height: px(800);
+    }
+
+    .controls {
+        margin-top: px(120);
+    }
+}

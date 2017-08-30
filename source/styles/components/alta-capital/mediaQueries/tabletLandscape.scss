@@ -1,1 +1,44 @@
 @import '../desktop';
+
+& {
+
+    padding-top: px(300);
+    
+    .info {
+        top: px(250);
+        left: px(300);
+    }
+
+    .new-title {
+        margin-top: px(20);
+    }
+
+    .poster {
+        width: px(1100);
+        height: px(600);
+
+        & > span {
+            padding: px(30) px(50);
+        }
+    }
+
+    .controls {
+        margin-top: px(90);
+        width: px(300);
+        height: px(300);
+
+        .slide-controls {
+
+            &--next-slide {
+                margin-left: px(150);
+            }
+        }
+
+        .indicators {
+
+            span {
+                line-height: px(150);
+            }
+        }
+    }
+}

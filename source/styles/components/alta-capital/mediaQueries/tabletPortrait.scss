@@ -1,4 +1,3 @@
-//@import '../mobile';
 @import '../desktop';
 
 & {
@@ -7,6 +6,19 @@
 
     padding-top: px(380);
     padding-right: $afterWidth;
+
+    .info {
+        left: px(160);
+    }
+
+    .new-title {
+        font-size: px(96);
+        line-height: px(110);
+    }
+
+    .portfolio-right-panel {
+        display: none;
+    }
 
     .poster {
         width: px(1190);
@@ -30,6 +42,13 @@
         margin-top: px(250);
         margin-right: px(60);
         transform: none;
+
+        .content-container {
+
+            &:before {
+                opacity: 0;
+            }
+        }
     }
 
     &:before {
