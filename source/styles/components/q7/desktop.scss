@@ -9,30 +9,7 @@
         z-index: 2;
     }
 
-    .menu {
-
-        .menu__item {
-            border-color: $darkGray;
-
-            .symbol,
-            .name {
-                color: $darkGray;
-            }
-
-            .hamburger {
-
-                &-tick {
-
-                    .inner-tick {
-                        background: $darkGray;
-                    }
-                }
-            }
-        }
-    }
-
     .portfolio-client {
-        color: $darkGray;
 
         .client-name-container {
 
@@ -46,7 +23,22 @@
     }
 
     .portfolio-right-panel {
-        color: $darkGray;
+
+        .date {
+
+            &-month {
+
+                &:before {
+                    content: 'July';
+                }
+            }
+
+            &-year {
+                &:after {
+                    content: '2017';
+                }
+            }
+        }
     }
 
     .info {
@@ -75,6 +67,10 @@
             display: inline-block;
             color: $darkGray;
             text-transform: uppercase;
+
+            &:before {
+                content: 'Портфолио';
+            }
         }
 
         &:before {
@@ -166,7 +162,7 @@
                 position: absolute;
                 width: px(1560) * 1.5;
                 height: 1px;
-                background: rgba(0, 0, 0, .4);
+                background: rgba(0, 0, 0, .2);
 
                 &--left {
                     left: 0;
@@ -278,14 +274,14 @@
             position: relative;
             z-index: 2;
             margin: 0 auto;
-            width: 18.75vw;
+            width: 20vw;
             height: 88vh;
             box-shadow: 0 px(30) px(100) px(14) rgba(0, 0, 0, .3);
             transform: translateY(4vh);
             
             img {
                 top: -4vh;
-                left: -40.625vw;
+                left: -40vw;
             }
 
             &:before {
@@ -344,13 +340,13 @@
         .portfolio-right-panel {
             
             .date {
-                animation: rightPanelDate $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
+                animation: fadeInLeft $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
             }
         
             .devices {
                 
                 span {
-                    animation-name: rightPanelDevices;
+                    animation-name: fadeInLeft;
                     animation-fill-mode: both;
         
                     &:nth-child(1) {

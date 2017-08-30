@@ -5,7 +5,27 @@
     .car-covering-layer {
 
         img {
-            min-height: 1210px;
+            min-height: 1340px;
         }
+
+        &--left {
+            width: 56%;
+        }
+
+        &--right {
+            width: 44%;
+        }
+
+        &--center {
+            margin-left: 46vw;
+
+            img {
+                left: -46vw;
+            }
+        }
+    }
+
+    .about-work {
+        width: px(900);
     }
 }

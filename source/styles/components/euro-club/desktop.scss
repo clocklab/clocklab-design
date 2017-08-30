@@ -46,32 +46,8 @@
         z-index: 2;
     }
 
-    .menu {
-
-        .menu__item {
-            border-color: $darkGray;
-
-            .symbol,
-            .name {
-                color: $darkGray;
-            }
-
-            .hamburger {
-
-                &-tick {
-
-                    .inner-tick {
-                        background: $darkGray;
-                    }
-                }
-            }
-        }
-    }
-
     .portfolio-client {
         bottom: px(130);
-        color: $darkGray;
-
         
         .client-name-container {
             
@@ -85,7 +61,22 @@
     }
 
     .portfolio-right-panel {
-        color: $darkGray;
+        
+        .date {
+
+            &-month {
+
+                &:before {
+                    content: 'May';
+                }
+            }
+
+            &-year {
+                &:after {
+                    content: '2017';
+                }
+            }
+        }
     }
 
     .info {
@@ -332,13 +323,13 @@
         .portfolio-right-panel {
             
             .date {
-                animation: rightPanelDate $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
+                animation: fadeInLeft $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
             }
         
             .devices {
                 
                 span {
-                    animation-name: rightPanelDevices;
+                    animation-name: fadeInLeft;
                     animation-fill-mode: both;
         
                     &:nth-child(1) {

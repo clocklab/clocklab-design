@@ -2,13 +2,52 @@
 
 & {
 
+    .portfolio-client {
+        bottom: px(200);
+    }
+
+    .portfolio-right-panel {
+        bottom: px(200);
+        right: px(150);
+    }
+
+    .info {
+        top: px(250);
+        left: px(250);
+    }
+
+    .new-title {
+        margin-top: px(20);
+    }
+
     .car-covering-layer {
 
+        .lines {
+
+            .line {
+                width: px(1000);
+            }
+        }
+
+
+        img {
+            min-height: 768px;
+        }
+
+        &--left {
+            width: 64%;
+        }
+
+        &--right {
+            width: 36%;
+        }
+
         &--center {
+            margin-left: 50vw;
             width: 28vw;
 
             img {
-                left: -36vw;
+                left: -50vw;
             }
         }
     }

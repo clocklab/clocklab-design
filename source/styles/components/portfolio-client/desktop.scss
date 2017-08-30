@@ -19,7 +19,6 @@
         line-height: px(62);
         font-weight: 500;
         vertical-align: bottom;
-        // animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
 
         &-name-container {
             vertical-align: bottom;
@@ -27,10 +26,6 @@
             line-height: px(90);
             font-weight: 700;
             overflow: hidden;
-
-            span {
-                // animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
-            }
         }
     }
 

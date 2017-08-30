@@ -5,11 +5,90 @@
     overflow: hidden;
 
     .logo {
-        display: none;
+        z-index: 2;
     }
 
-    .title {
+    .info {
         position: absolute;
+        top: px(200);
+        z-index: 3;
+        padding: 0 px(30);
+        width: 100%;
+    }
+
+    .sticker {
+        position: relative;
+        left: px(120);
+        font-family: $raleway;
+        font-size: px(24);
+        font-weight: 700;
+
+        span {
+            display: inline-block;
+            color: $darkGray;
+            text-transform: uppercase;
+
+            &:before {
+                content: 'Портфолио';
+            }
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: px(-120);
+            width: px(100);
+            height: 3px;
+            background: $lightBlack;
+            content: '';
+            transform: translateY(-50%);
+        }
+    }
+
+    .new-title {
+        margin-top: px(30);
+
+        .text-container {
+            position: relative;
+            overflow: hidden;
+
+            &:before {
+                display: none;
+            }
+
+            &:last-child {
+                display: inline-block;
+            }
+        }
+
+        span {
+            display: block;
+            position: relative;
+            z-index: 1;
+            color: $black;
+            font-size: px(48);
+            font-weight: 800;
+            line-height: px(60);
+            text-transform: uppercase;
+        }
+    }
+
+    .about-work {
+        margin-top: px(40);
+
+        p {
+            display: block;
+            margin-bottom: px(40);
+            color: $darkGray;
+            font-family: $roboto;
+            font-size: px(28);
+            line-height: px(34);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     .car-covering-layer {
@@ -39,7 +118,6 @@
             .image-container {
                 position: relative;
                 height: 100vh;
-                animation: widthIncrease $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTime both;
                 overflow: hidden;
             }
 
@@ -91,8 +169,6 @@
             z-index: 2;
             margin: 0 auto;
             width: 53vw;
-            animation: heightIncreaseMobile $portfolioAudiCenterBlockAnimationTime $portfolioAudiCenterBlockDelayTimeMobile both, 
-                       shadowAppearance $portfolioAudiCenterBlockShadowAnimationTime $portfolioAudiCenterBlockShadowDelayTimeMobile both;
 
             img {
                 top: -30vh;
@@ -111,7 +187,6 @@
                 background: $blue;
                 content: '';
                 transform: rotate(-45deg);
-                animation: heightReduce $portfolioAudiCenterBlockLineAnimationTime $portfolioAudiCenterBlockLineDelayTimeMobile both;
             }
 
             &:after {
@@ -128,4 +203,70 @@
         }
     }
 
+    &.current {
+        animation: fadeIn $time * 3 0s both;
+
+        .logo {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .menu {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .bottom-button {
+            
+            span {
+                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+            }
+        
+            .line {
+                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation: FadeInRight $PAStickerTextAnimationTime $PAStickerTextDelayTimeMobile both;
+            }
+    
+            &:before {
+                animation: widthIncreaseStickerLine $PAStickerLineAnimationTime $PAStickerLineDelayTimeMobile both;
+            }
+        }
+
+        .new-title {
+    
+            span {
+                animation: Up $PVTitleLineAnimationTime $PATitleDelayTimeMobile both;
+            }
+        }
+    
+        .about-work {
+    
+            p {
+                animation: fadeInUpHalf $PVAboutAnimationTime $PATextDelayTimeMobile both;
+            }
+        }
+
+        .car-covering-layer {
+    
+            &--left {
+                
+                .image-container {
+                    animation: widthIncrease $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTimeMobile both;
+                }
+            }
+    
+            &--center {
+                animation: heightIncreaseMobile $portfolioAudiCenterBlockAnimationTime $portfolioAudiCenterBlockDelayTimeMobile both, 
+                           shadowAppearance $portfolioAudiCenterBlockShadowAnimationTime $portfolioAudiCenterBlockShadowDelayTimeMobile both;
+    
+                &:before {
+                    animation: heightReduce $portfolioAudiCenterBlockLineAnimationTime $portfolioAudiCenterBlockLineDelayTimeMobile both;
+                }
+            }
+        }
+    }
 }

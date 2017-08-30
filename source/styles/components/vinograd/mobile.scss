@@ -5,7 +5,7 @@
     overflow: hidden;
 
     .logo {
-        display: none;
+        z-index: 3;
     }
 
     .title {
@@ -51,9 +51,6 @@
             display: none;
         }
     }
-
-    // ANIMATION DELAY FOR RIGHT AND LEFT PANELS
-    // ANIMATION DELAY FOR RIGHT AND LEFT PANELS ENDS
 
     &:before,
     &:after {

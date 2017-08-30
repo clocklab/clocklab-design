@@ -121,10 +121,14 @@ $PAAboutDelayTime: $PAStickerLineDelayTime;
 $PAAboutAnimationTime: $time * 3;
 
     // MOBILE
-    $portfolioAudiCenterBlockDelayTimeMobile: 0s;
+    $portfolioAudiCenterBlockDelayTimeMobile: $time * 3;
     $portfolioAudiCenterBlockLineDelayTimeMobile: $portfolioAudiCenterBlockDelayTimeMobile + $portfolioAudiCenterBlockAnimationTime;
     $portfolioAudiCenterBlockShadowDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime - $timeTick;
     $portfolioAudiLeftBlockDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime;
+    $PAStickerLineDelayTimeMobile: $portfolioAudiLeftBlockDelayTimeMobile + $portfolioAudiLeftBlockAnimationTime;
+    $PAStickerTextDelayTimeMobile: $PAStickerLineDelayTimeMobile + $PAStickerLineAnimationTime;
+    $PATitleDelayTimeMobile: $PAStickerLineDelayTimeMobile;
+    $PATextDelayTimeMobile: $PAStickerTextDelayTimeMobile;
 
 // VARIABLES FOR PORTFOLIO BLOCK AUDI Q7 END
 

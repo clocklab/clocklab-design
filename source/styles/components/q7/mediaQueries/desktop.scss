@@ -1,1 +1,31 @@
 @import '../desktop';
+
+& {
+
+    .info {
+        left: px(700);
+    }
+
+    .car-covering-layer {
+
+        img {
+            min-height: 768px;
+        }
+
+        &--left {
+            width: 61%;
+        }
+
+        &--right {
+            width: 39%;
+        }
+
+        &--center {
+            margin-left: 51vw;
+
+            img {
+                left: -51vw;
+            }
+        }
+    }
+}

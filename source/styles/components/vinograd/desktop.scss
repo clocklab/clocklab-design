@@ -22,6 +22,25 @@
         }
     }
 
+    .portfolio-right-panel {
+        
+        .date {
+
+            &-month {
+
+                &:before {
+                    content: 'March';
+                }
+            }
+
+            &-year {
+                &:after {
+                    content: '2017';
+                }
+            }
+        }
+    }
+
     .info {
         position: absolute;
         top: px(280);
@@ -252,13 +271,13 @@
         .portfolio-right-panel {
 
             .date {
-                animation: rightPanelDate $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
+                animation: fadeInLeft $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
             }
         
             .devices {
                 
                 span {
-                    animation-name: rightPanelDevices;
+                    animation-name: fadeInLeft;
                     animation-fill-mode: both;
         
                     &:nth-child(1) {
