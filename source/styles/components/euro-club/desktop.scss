@@ -21,6 +21,16 @@
     background: $white;
     overflow: hidden;
 
+    .big-background-letter {
+
+        span {
+
+            &:before {
+                content: 'o';
+            }
+        }
+    }
+
     .small-gray-lines {
         z-index: 2;
 
@@ -294,7 +304,7 @@
             }
         }
 
-        .letter {
+        .big-background-letter {
             animation: fadeIn $portfolioEuroclubLetterAnimationTime $portfolioEuroclubLetterDelayTime both;
         }
 
@@ -364,7 +374,7 @@
         .sticker {
 
             span {
-                animation: FadeInRight $PEStickerTextAnimationTime $PEStickerTextDelayTime both;
+                animation: FadeInRightHalf $PEStickerTextAnimationTime $PEStickerTextDelayTime both;
             }
     
             &:before {

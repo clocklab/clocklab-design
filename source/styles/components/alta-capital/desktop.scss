@@ -474,7 +474,7 @@
         .sticker {
 
             span {
-                animation: FadeInRight $PACStickerTextAnimationTime $PACStickerTextDelayTime both;
+                animation: FadeInRightHalf $PACStickerTextAnimationTime $PACStickerTextDelayTime both;
             }
     
             &:before {

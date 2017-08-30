@@ -268,7 +268,7 @@
         .sticker {
 
             span {
-                animation: FadeInRight $PAStickerTextAnimationTime $PAStickerTextDelayTimeMobile both;
+                animation: FadeInRightHalf $PAStickerTextAnimationTime $PAStickerTextDelayTimeMobile both;
             }
     
             &:before {

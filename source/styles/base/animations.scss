@@ -211,6 +211,17 @@
         transform: none;
     }
 }
+
+@keyframes FadeInRightHalf {
+    from {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
 // PORTFOLIO Q7 ANIMATION ENDS
 
 
