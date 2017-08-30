@@ -1,87 +1,82 @@
 & {
-    background-color: $background;
     font-family: $raleway;
     font-weight: $regular;
     
-    // ----- title -----
-    .title {
-        width: 80.5vh;
-        display: inherit;
-        margin-top: 27vh;
-        margin-left: 30vh;
-        span.name { top: -2vh; }
-        .animation-border { top: 4.7vh; }
-        .word {
-            height: 7.5vh;
-            span {
-                bottom: -100px;
-                // font-size: 6.3vh;
+    // ----- page-layer -----
+    .page-layer {
+        top: 0;
+        left: 0;
+        
+        // ----- back-layer -----
+        &.back-layer {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            .letter {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                width: 100vw;
+                height: 100vh;
+                color: rgba(0, 0, 0, .2);
+                color: $gray;
+                font-size: 12vw;
+                font-weight: 700;
+                animation: fadeIn $PPLettersAnimationTime $PPLettersDelayTime both;
+                &-c {
+                    top: px(280);
+                    left: px(900);
+                }
+            }
+
+            &:before,
+            &:after {
+                display: block;
+                position: absolute;
+                top: 0;
+                width: 50vw;
+                height: 100vh;
+                background: $background;
+                content: '';
+            }
+
+            &:before {
+                left: 0;
+                animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
+            }
+
+            &:after {
+                right: 0;
+                animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
             }
         }
     }
-
-    // // ----- page-layer -----
-    // .page-layer {
-    //     top: 0;
-    //     left: 0;
-        
-    //     // ----- back-layer -----
-    //     &.back-layer {
-    //         position: fixed;
-    //         width: 100vw;
-    //         height: 100vh;
-    //         overflow: hidden;
-    //         .letter {
-    //             position: absolute;
-    //             top: 0;
-    //             left: 0;
-    //             z-index: 1;
-    //             width: 100vw;
-    //             height: 100vh;
-    //             color: rgba(0, 0, 0, .2);
-    //             color: $gray;
-    //             font-size: 12vw;
-    //             font-weight: 700;
-    //             animation: fadeIn $PPLettersAnimationTime $PPLettersDelayTime both;
-    //             &-c {
-    //                 top: px(280);
-    //                 left: px(900);
-    //             }
-    //         }
-
-    //         &:before,
-    //         &:after {
-    //             display: block;
-    //             position: absolute;
-    //             top: 0;
-    //             width: 50vw;
-    //             height: 100vh;
-    //             background: $background;
-    //             content: '';
-    //         }
-
-    //         &:before {
-    //             left: 0;
-    //             animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
-    //         }
-
-    //         &:after {
-    //             right: 0;
-    //             animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
-    //         }
-    //     }
-    // }
+    
+    // ----- title -----
+    .title {
+        margin: 27vh 0 0 px(590);
+        span.name { top: -2vh; }
+        .word {
+            margin-bottom: 0;
+            padding-bottom: 6px;
+            &:after { top: 33px; }
+        }
+    }
 
     // ----- contacts-info -----
     .contacts-info {
-        display: inherit;
-        margin: 34.5vh 0 0 33vh;
+        z-index: 1;
+        position: absolute;
+        margin: 35vh 0 0 px(630);
+        animation: fadeInUp 1s 1.5s both;
         li {
             color: $white;
-            font-size: 1.3vh;
+            font-size: px(24);
             @include inline-block;
-            &:nth-of-type(1) { margin-right: 14vh; }
-            &:nth-of-type(2) { margin-right: 31vh; }
+            &:nth-of-type(1) { margin-right: px(290); }
+            &:nth-of-type(2) { margin-right: px(605); }
             &:nth-of-type(3) a {
                 transition: $time;
                 padding-bottom: 4px;

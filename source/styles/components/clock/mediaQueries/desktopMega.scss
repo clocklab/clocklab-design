@@ -1,8 +1,9 @@
 @import '../desktop';
 
 // ----- watch -----
+.watch { background: url('../images/watch.png') no-repeat 52.5%; }
 .hours-container, .minutes-container,
-.seconds-container { left: 0; }
+.seconds-container { left: .5%; }
 
 // ----- title -----
 .title .word {
