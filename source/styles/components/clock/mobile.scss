@@ -37,18 +37,11 @@
     }
 
     // ----- watch -----
-    .watch-light {
-        background: url('../images/watch-light.png');
-        background-size: cover;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-    }
+    .watch-light, .watch-shadow { display: none; }
     .watch {
-        background: url('../images/watch.png') no-repeat 60.5%;
+        background: url('../images/watch.png') no-repeat center;
         background-size: 47%;
-        margin: 34% auto 0;
+        margin: 16% auto 0;
         position: absolute;
         height: 100%;
         width: 100%;
@@ -57,11 +50,11 @@
     .minutes-container,
     .seconds-container {
         position: absolute;
+        left: px(-35);
         margin: auto;
         bottom: 0;
-        right: 0;
         top: .5%;
-        left: 4%;
+        right: 0;
         width: 300px;
         height: 300px;
         display: inline-flex;
@@ -105,15 +98,15 @@
     }
     .hours-container {
         animation: rotate 43200s infinite linear;
-        zoom: .45;
+        zoom: .55;
     }
     .minutes-container {
         transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
-        zoom: .4;
+        zoom: .5;
     }
     .seconds-container {
         transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
-        zoom: .45;
+        zoom: .55;
     }
     @keyframes rotate { 100% { transform: rotateZ(360deg); } }
 

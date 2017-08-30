@@ -34,18 +34,25 @@
         background: url('../images/letter-1.png') no-repeat;
         background-size: 28%;
     }
-
+    
     // ----- watch -----
     .watch-light {
+        top: 0;
+        left: px(-35);
         background: url('../images/watch-light.png');
         background-size: cover;
         position: absolute;
         height: 100%;
         width: 100%;
-        top: 0;
+    }
+    .watch-shadow {
+        background: url('../images/watch-shadow.png') no-repeat center;
+        position: absolute;
+        height: 100%;
+        width: 100%;
     }
     .watch {
-        background: url('../images/watch.png') no-repeat 56%;
+        background: url('../images/watch.png') no-repeat center;
         position: absolute;
         margin: 0 auto;
         height: 100%;
@@ -55,11 +62,11 @@
     .minutes-container,
     .seconds-container {
         position: absolute;
+        left: px(-35);
         margin: auto;
         bottom: 0;
-        right: 0;
         top: 0;
-        left: 1%;
+        right: 0;
         width: 300px;
         height: 300px;
         display: inline-flex;

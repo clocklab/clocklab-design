@@ -19,16 +19,12 @@
 }
 
 // ----- watch -----
+.seconds-container, .hours-container { zoom: .95; }
+.minutes-container { zoom: .9; }
 .watch {
-    background: url('../images/watch.png') no-repeat 55.5%;
     background-size: 40%;
     margin: 10% auto 0;
 }
-.hours-container, .minutes-container,
-.seconds-container { left: 0; }
-.hours-container { zoom: .75; }
-.minutes-container { zoom: .7; }
-.seconds-container { zoom: .75; }
 
 // ----- bg letter -----
 .bg-letter { background-size: 52%; }
