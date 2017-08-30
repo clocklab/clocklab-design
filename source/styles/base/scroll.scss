@@ -16,7 +16,7 @@
     .arrow:before {
         @include transform(translateY(-50%) rotate(45deg));
         animation: bounce 1s infinite;
-        border: 2.5px solid $white;
+        border: 1.5px solid $white;
         animation-duration: 3s;
         position: absolute;
         display: block;
