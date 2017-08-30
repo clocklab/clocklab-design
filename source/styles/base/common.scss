@@ -1,3 +1,5 @@
+@import 'variables';
+
 html {
     body {
         min-width: 320px;
@@ -32,6 +34,12 @@ html {
                 text-overflow: ellipsis;
             }
             .screen-block {
+                @media only screen and (min-width: 415px) and (max-width: 667px) { min-height: 768px; }
+                @media only screen and (min-width: 668px) and (max-width: 768px) { min-height: 1024px; }
+                @media only screen and (min-width: 1025px) and (max-width: 1366px) { min-height: 650px; }
+                @media only screen and (min-width: 1367px) and (max-width: 1680px) { min-height: 800px; }
+                @media only screen and (min-width: 1681px) and (max-width: 1920px) { min-height: 960px; }
+                @media only screen and (min-width: 1921px) { min-height: 900px; }
                 background-color: $white;
                 position: absolute;
                 display: table;
@@ -40,13 +48,8 @@ html {
                 top: 0;
                 left: 0;
                 z-index: 0;
-                &.current {
-                    z-index: 2;
-                }              
-                
-                &.previous {
-                    z-index: 1;
-                }
+                &.current { z-index: 2; }              
+                &.previous { z-index: 1; }
             }
         }
     }
