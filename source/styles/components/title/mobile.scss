@@ -76,14 +76,17 @@
             white-space: nowrap;
             font-weight: $extra-bold;
             text-transform: uppercase;
+            letter-spacing: 3px;
             overflow: hidden;
         }
     }
     p { 
-        font-weight: $medium;
         padding: 5% 1vh 0;
-        font-size: px(28);
-        line-height: 1.5;
+        font-size: px(32);
         color: $white;
+        line-height: 1.3;
+        letter-spacing: 0;
+        font-family: $roboto;
+        font-weight: $regular;
     }
 }
