@@ -1,1 +1,15 @@
 @import '../desktop';
+
+& {
+
+    padding-left: px(650);
+
+    .info {
+        left: px(2000);
+    }
+
+    .image-block {
+        width: px(1000);
+        height: px(1000);
+    }
+}

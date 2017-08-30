@@ -1,1 +1,49 @@
-@import '../mobile';
+@import '../desktop';
+
+& {
+
+    padding-top: px(890);
+    padding-left: px(240);
+
+    .info {
+        top: px(170);
+        left: initial;
+        right: px(60);
+        width: px(760);
+    }
+
+    .new-title {
+        margin-top: px(80);
+
+        span {
+            font-size: px(96);
+            line-height: px(110);
+        }
+    }
+
+    .about-work {
+        margin-top: px(30);
+        width: 100%;
+
+        p {
+            margin-bottom: px(20);
+        }
+    }
+
+    .blue-line {
+        left: px(350);
+        width: px(260);
+    }
+
+    .image-block {
+        width: px(870);
+        height: px(870);
+
+        p {
+            top: px(-500);
+            left: px(-40);
+            padding: px(30) px(40);
+            width: px(500);
+        }
+    }
+}
