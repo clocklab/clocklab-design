@@ -1,1 +1,22 @@
 @import '../desktop';
+
+& {
+
+    padding-top: px(250);
+    padding-left: px(450);
+    
+    .info {
+        top: px(300);
+        left: px(1400);
+    }
+
+    .image-block {
+        width: px(800);
+        height: px(800);
+    }
+
+    .blue-line {
+        left: px(700);
+        width: px(400);
+    }
+}

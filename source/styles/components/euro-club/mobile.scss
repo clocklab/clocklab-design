@@ -20,10 +20,120 @@
     height: 100vh;
     background: $white;
     overflow: hidden;
-    //animation: apear $time * 3 0s both;
 
-    .logo {
+    .portfolio-client {
+        
+        .client-name-container {
+            
+            span {
+
+                &:before {
+                    content: 'Eurovision';
+                }
+            }
+        }
+    }
+
+    .portfolio-right-panel {
+        
+        .date {
+
+            &-month {
+
+                &:before {
+                    content: 'May';
+                }
+            }
+
+            &-year {
+                &:after {
+                    content: '2017';
+                }
+            }
+        }
+    }
+
+    .info {
+        position: absolute;
+        top: px(600);
         z-index: 3;
+        padding: 0 px(60) 0 px(90);
+        width: 100%;
+    }
+
+    .sticker {
+        position: relative;
+        left: px(120);
+        font-family: $raleway;
+        font-size: px(24);
+        font-weight: 700;
+
+        span {
+            display: inline-block;
+            color: $darkGray;
+            text-transform: uppercase;
+
+            &:before {
+                content: 'Портфолио';
+            }
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: px(-120);
+            width: px(100);
+            height: 3px;
+            background: $darkGray;
+            content: '';
+            transform: translateY(-50%);
+        }
+    }
+    
+    .new-title {
+        margin-top: px(20);
+
+        .text-container {
+            position: relative;
+            overflow: hidden;
+
+            &:before {
+                display: none;
+            }
+
+            &:last-child {
+                display: inline-block;
+            }
+        }
+
+        span {
+            display: block;
+            position: relative;
+            z-index: 1;
+            color: $darkGray;
+            font-size: px(48);
+            font-weight: 800;
+            line-height: px(60);
+            text-transform: uppercase;
+        }
+    }
+
+    .about-work {
+        margin-top: px(30);
+
+        p {
+            display: block;
+            margin-bottom: px(30);
+            color: $darkGray;
+            font-family: $roboto;
+            font-size: px(28);
+            line-height: px(34);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     @keyframes heightChanging {
@@ -75,9 +185,9 @@
 
     .image-block {
         position: relative;
-        width: 100%;
-        height: px(550);
-        //background: red;
+        top: px(120);
+        width: px(500);
+        height: px(400);
 
         .image-container {
             position: relative;
@@ -108,6 +218,96 @@
 
         p {
             display: none;
+        }
+    }
+
+    &.current {
+
+        .portfolio-client {
+            
+            .client {
+                animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
+        
+                &-name-container {
+        
+                    span {
+                        animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
+                    }
+                }
+            }
+        }
+
+        .portfolio-right-panel {
+            
+            .date {
+                animation: fadeInLeft $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
+            }
+        
+            .devices {
+                
+                span {
+                    animation-name: fadeInLeft;
+                    animation-fill-mode: both;
+        
+                    &:nth-child(1) {
+                        animation-duration: $portfolioRightPanelDevicesDesktopAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesDesktopDelayTime;
+                    }
+        
+                    &:nth-child(2) {
+                        animation-duration: $portfolioRightPanelDevicesTabletAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesTabletDelayTime;
+                    }
+        
+                    &:nth-child(3) {
+                        animation-duration: $portfolioRightPanelDevicesMobileAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesMobileDelayTime;
+                    }
+                }
+            }
+        }
+        
+        .bottom-button {
+            
+            span {
+                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+            }
+        
+            .line {
+                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation: FadeInRight $PVStickerTextAnimationTime $PVStickerTextDelayTimeMobile both;
+            }
+    
+            &:before {
+                animation: widthIncreaseStickerLine $PVStickerLineAnimationTime $PVStickerLineDelayTimeMobile both;
+            }
+        }
+
+        .new-title {
+
+            .text-container {
+
+                &:before {
+                    animation: halfDown $PVTitleLineAnimationTime linear $PVTitleLineDelayTimeMobile both;
+                }
+            }
+    
+            span {
+                animation: Up $PVTitleLineAnimationTime $PVTitleDelayTimeMobile both;
+            }
+        }
+    
+        .about-work {
+    
+            p {
+                animation: fadeInUpHalf $PVAboutAnimationTime $PVTextDelayTimeMobile both;
+            }
         }
     }
 }

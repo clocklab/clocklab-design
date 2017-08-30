@@ -42,10 +42,6 @@
         }
     }
 
-    .logo {
-        z-index: 2;
-    }
-
     .portfolio-client {
         bottom: px(130);
         
@@ -105,6 +101,10 @@
             display: inline-block;
             color: $darkGray;
             text-transform: uppercase;
+
+            &:before {
+                content: 'Портфолио';
+            }
         }
 
         &:before {

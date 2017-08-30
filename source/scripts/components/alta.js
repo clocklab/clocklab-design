@@ -11,12 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const setSlide = (index, direction) => {
         const currentSlides = document.querySelectorAll('.alta-capital img.current'),
+              previousSlides = document.querySelectorAll('.alta-capital img.previous'),
               nextGallerySlide = nextGallerySlides[index + 1] || nextGallerySlides[0]
               previousGallerySlide = previousGallerySlides[index - 1] || previousGallerySlides[previousGallerySlides.length - 1]
 
         currentSlideText.innerText = `${index + 1}`
 
+        previousSlides && previousSlides.forEach(slide => slide.classList.remove('previous'))
+        
         currentSlides.forEach(slide => slide.classList.remove('current', 'left', 'right'))
+        currentSlides.forEach(slide => slide.classList.add('previous'))
 
         bigGallerySlides[index].classList.add('current');
         nextGallerySlide.classList.add('current');
