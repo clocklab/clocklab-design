@@ -37,12 +37,13 @@
 
     // ----- watch -----
     .watch-light {
+        top: 0;
+        left: px(-35);
         background: url('../images/watch-light.png');
         background-size: cover;
         position: absolute;
         height: 100%;
         width: 100%;
-        top: 0;
     }
     .watch {
         background: url('../images/watch.png') no-repeat center;
