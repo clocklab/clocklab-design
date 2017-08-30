@@ -37,4 +37,18 @@
             }
         }
     }
+
+    // ----- vertical-text -----
+    .vertical-text {
+        transform: rotate(-90deg);
+        font-family: $roboto;
+        font-weight: $thin;
+        position: absolute;
+        font-size: px(20);
+        line-height: 1.4;
+        bottom: 27.5vh;
+        color: $white;
+        left: px(-76);
+        width: 12%;
+    }
 }
