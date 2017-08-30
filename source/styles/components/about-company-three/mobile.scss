@@ -1,24 +1,10 @@
 & {  
+
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    font-family: $raleway;
-    
-    // ----- title -----
-    .title {
-        margin: 20% 0 0 11%;
-        p {
-            padding: 7% 0 0;
-            line-height: 1.5;
-            font-size: px(24);
-        }
-        span.name {
-            font-size: px(26);
-            top: -3.5vh;
-        }
-        .word span { font-size: px(47); }
-    }
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 
     @keyframes right {
         from {
@@ -47,10 +33,6 @@
             opacity: 1;
             transform: translateY(0);
         }
-    }
-
-    .logo {
-        z-index: 3;
     }
 
     .poster {
@@ -107,6 +89,7 @@
             }
         }
 
+        & > span,
         .text {
             display: none;
         }

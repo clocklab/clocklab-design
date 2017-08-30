@@ -33,7 +33,7 @@
         position: absolute;
         font-size: px(29);
         bottom: 48.5%;
-        z-index: 1;
+        z-index: 2;
         left: .5%;
         &.dark a {
             color: $dark;
@@ -74,7 +74,7 @@
         position: absolute;
         bottom: px(84);
         left: px(90);
-        z-index: 1;
+        z-index: 2;
         a {
             border: 1px solid $white;
             position: relative;
@@ -172,7 +172,7 @@
     .jump-button {
         position: absolute;
         padding: 0;
-        z-index: 1;
+        z-index: 2;
         bottom: 5%;
         margin: 0;
         left: 11%;
@@ -197,7 +197,7 @@
         font-size: px(26);
         right: -4.3%;
         bottom: 29%;
-        z-index: 1;
+        z-index: 2;
         p {
             color: $white;
             font-weight: $thin;
