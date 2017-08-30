@@ -10,7 +10,7 @@
     span.name {
         text-transform: uppercase;
         position: relative;
-        font-size: 1.3vh;
+        font-size: px(28);
         top: -4vh;
         span {
             color: $white;
@@ -26,11 +26,11 @@
             background: $white;
             position: absolute;
             display: block;
-            height: 0.4vh;
-            width: 5.2vh;
-            left: -6.5vh;
+            width: px(100);
+            left: px(-124);
+            height: px(6);
             content: '';
-            top: .4vh;
+            top: px(8);
         }
     }
     .word {
