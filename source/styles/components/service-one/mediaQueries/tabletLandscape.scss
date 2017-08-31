@@ -1,1 +1,37 @@
 @import '../desktop';
+
+// ----- title -----
+.title {
+	margin: 21vh 0 0 px(250);
+	.word::after { top: 17px; }
+}
+
+// ----- jump-button -----
+.jump-button {
+	right: inherit;
+	left: px(1000);
+}
+
+// ----- service-info -----
+.service-info {
+    &.horizontal {
+        left: px(275);
+    }
+    &.vertical {
+        width: px(450);
+        right: 0;
+
+        p {
+            font-size: px(27);
+            line-height: 1.4;
+        }
+        &.one {
+            top: 39.6vh;
+            right: px(-100);
+        }
+        &.two {
+            top: 72vh;
+            right: px(-120);
+        }
+    }
+}

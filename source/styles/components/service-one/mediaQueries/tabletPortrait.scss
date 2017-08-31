@@ -1,1 +1,7 @@
-@import '../mobile';
+@import 'tabletLandscape';
+
+// ----- title -----
+.title .word {
+	span { font-size: px(80); }
+	&:after { top: 4px; }
+}
