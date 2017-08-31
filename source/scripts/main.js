@@ -4,9 +4,6 @@
 // WowJS
 //= ../../bower_components/wow/dist/wow.js
 
-// big background letter
-//= components/big-background-letter.js
-
 // clock-bg
 //= components/clock-bg.js
 
@@ -18,6 +15,9 @@
 
 // menu
 //= components/menu.js
+
+// big background letter
+//= components/big-background-letter.js
 
 // alta
 //= components/alta.js
@@ -49,3 +49,4 @@
 
 // transition-end
 //= components/transition-end.js
+

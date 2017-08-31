@@ -1,10 +1,7 @@
 @import '../desktop';
 
 // ----- title -----
-.title {
-	margin: 21vh 0 0 px(250);
-	.word::after { top: 17px; }
-}
+.title { margin: 21vh 0 0 px(250); }
 
 // ----- jump-button -----
 .jump-button {

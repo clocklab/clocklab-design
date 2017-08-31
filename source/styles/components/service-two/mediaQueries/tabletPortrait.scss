@@ -1,1 +1,10 @@
-@import '../mobile';
+@import 'tabletLandscape';
+
+// ----- title -----
+.title {
+    margin: 28vh 0 0 px(380);
+    .word {
+    	span { font-size: px(80); }
+    	&:after { display: none; }
+    }
+}
