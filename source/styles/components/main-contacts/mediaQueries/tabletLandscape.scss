@@ -3,14 +3,11 @@
 // ----- main-contacts-title -----
 .main-contacts-title {
     padding: 6.5vh 19.2vh 8.5vh 4.5vh;
-    p {
-        &:first-child {
-            font-size: px(90);
-        }
-    }
+    p:first-child { font-size: px(90); }
 }
 
 // ----- map -----
-    #map {
-        margin: 23vh 5% 0 0;
+#map {
+    margin: 23vh px(100) 0 0;
+	& + .address { right: px(800); }
 }
