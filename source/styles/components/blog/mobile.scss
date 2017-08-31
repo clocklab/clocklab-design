@@ -246,7 +246,7 @@
                     
                     span {
                         color: $white;
-                        animation: FadeInRight $BStickerTextAnimationTime $BStickerTextDelayTime both;
+                        animation: FadeInRightHalf $BStickerTextAnimationTime $BStickerTextDelayTime both;
                     }
 
                     &:before {

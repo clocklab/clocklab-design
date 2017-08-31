@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
         selectors.forEach(selector => {
 
             const parent = document.querySelector(selector),
-                  letter = document.querySelector(`${selector} .letter`),
+                  letter = document.querySelector(`${selector} .big-background-letter`),
                   koef = 10
 
-            parent.addEventListener('mousemove', event => {
+            parent && parent.addEventListener('mousemove', event => {
                 const allHeight = document.documentElement.clientHeight,
                       allWidth = document.documentElement.clientWidth,
                       currentXPos = event.clientX,
@@ -23,5 +23,5 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    move()
+    move(selectors)
 })

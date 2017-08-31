@@ -4,22 +4,23 @@
 // WowJS
 //= ../../bower_components/wow/dist/wow.js
 
+// big background letter
+//= components/big-background-letter.js
+
 // clock-bg
-//= components/clock-bg.js
+
 
 // scripts
-//= components/scripts.js
+
 
 // clock
-//= components/clock.js
+
 
 // menu
 //= components/menu.js
 
 // alta
 //= components/alta.js
-
-// letter
 
 // slides-changing
 //= components/slides-changing.js

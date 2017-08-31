@@ -330,7 +330,7 @@
             margin-left: px(200);
 
             span {
-                animation: FadeInRight $POPStickerTextAnimationTime $POPStickerTextDelayTime both;
+                animation: FadeInRightHalf $POPStickerTextAnimationTime $POPStickerTextDelayTime both;
 
                 &:before {
                     content: 'Блог';

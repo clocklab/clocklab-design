@@ -382,7 +382,7 @@
         .sticker {
 
             span {
-                animation: FadeInRight $PVStickerTextAnimationTime $PVStickerTextDelayTimeMobile both;
+                animation: FadeInRightHalf $PVStickerTextAnimationTime $PVStickerTextDelayTimeMobile both;
             }
     
             &:before {
