@@ -4,7 +4,7 @@
     
     // ----- logo and menu animation -----
     .logo, .menu { animation: fadeInDown $time * 3 both; }
-
+    
     // ----- bg letter -----
     .bg-letter {
         position: absolute;
@@ -179,12 +179,12 @@
     .copyright {
         transform: rotate(-90deg);
         position: absolute;
-        font-size: px(26);
-        right: px(-166);
+        right: px(-156);
         bottom: 29vh;
         z-index: 2;
         p {
             color: $white;
+            font-size: px(29);
             font-weight: $thin;
         }
     }
