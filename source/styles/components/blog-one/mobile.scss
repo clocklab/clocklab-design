@@ -69,10 +69,12 @@
             }
         }
         p {
+            transform: rotate(-90deg);
             position: absolute;
-            font-size: px(34);
-            left: px(-36);
-            top: 3vh;
+            font-size: px(28);
+            left: px(-58);
+            letter-spacing: .5px;
+            top: px(160);
             color: $white;
             font-weight: $thin;
             font-family: $roboto;
