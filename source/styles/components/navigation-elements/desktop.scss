@@ -5,12 +5,13 @@
     // ----- logo and menu animation -----
     .logo, .menu { animation: fadeInDown $time * 3 both; }
     
-    // ----- bg letter -----
-    .bg-letter {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        z-index: 0;
+    
+    // ----- letter c -----
+    .big-background-letter {
+        top: -75vh;
+        right: 185vh;
+        font-size: 170vh;
+        span::before  { content: 'c'; }
     }
 
     // ----- language -----

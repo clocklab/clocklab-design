@@ -29,6 +29,13 @@
     .title {
         width: 100%;
         padding: 11vh px(70) 0;
-        .word span { letter-spacing: 1px; }
+        p {
+            padding: 5% 0 0;
+            font-size: px(28);
+        }
+        .word span {
+            letter-spacing: 1px;
+            font-size: px(48);
+        }
     }
 }

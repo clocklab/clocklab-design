@@ -1,5 +1,6 @@
 // ----- wowjs -----
 new WOW().init();
+
 $(window).on('load', function() {
     
     // ----- clock -----
