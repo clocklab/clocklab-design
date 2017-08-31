@@ -1,10 +1,14 @@
-@import 'tabletLandscape';
+@import '../desktop';
 
 // ----- title -----
 .title {
-    margin: 28vh 0 0 px(380);
-    .word {
-    	span { font-size: px(80); }
-    	&:after { display: none; }
-    }
+	width: 100%;
+	padding: 26vh px(36) 0 px(170);
+	span.name { top: -3vh; }
+	.word {
+		span { font-size: px(120); }
+	}
 }
+
+// ----- service-info -----
+.service-info { left: px(76); }

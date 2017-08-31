@@ -27,17 +27,15 @@
     
     // ----- title -----
     .title {
-        padding: 20% 11% 0;
         width: 100%;
+        padding: 11vh px(70) 0;
         p {
-            padding: 7% 0 0;
-            line-height: 1.5;
-            font-size: px(24);
+            padding: 5% 0 0;
+            font-size: px(28);
         }
-        span.name {
-            font-size: px(26);
-            top: -3.5vh;
+        .word span {
+            letter-spacing: 1px;
+            font-size: px(48);
         }
-        .word span { font-size: px(47); }
     }
 }

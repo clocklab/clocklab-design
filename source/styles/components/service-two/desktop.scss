@@ -9,8 +9,16 @@
 
     // ----- title -----
     .title {
-        margin: 28vh 0 0 px(780);
+        padding: 28vh 0 0 px(780);
         p { padding: 2vh px(8) 0; }
+    }
+
+    // ----- letter c -----
+    .big-background-letter {
+        right: 5vw;
+        top: -100vh;
+        font-size: 170vh;
+        span::before { content: 'c'; }
     }
 
     // ----- small-gray-lines -----
