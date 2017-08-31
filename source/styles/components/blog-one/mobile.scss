@@ -11,9 +11,9 @@
 
     // ----- jump-button -----
     .jump-button {
+        bottom: -5vh;
         left: initial;
-        right: 1.5%;
-        bottom: 8%;
+        margin-left: -10px;
         a {
             text-transform: uppercase;
             &:before { background: $darkGray; }
@@ -69,10 +69,12 @@
             }
         }
         p {
+            transform: rotate(-90deg);
             position: absolute;
-            font-size: px(34);
-            left: px(-36);
-            top: 3vh;
+            font-size: px(28);
+            left: px(-58);
+            letter-spacing: .5px;
+            top: px(160);
             color: $white;
             font-weight: $thin;
             font-family: $roboto;
@@ -82,7 +84,8 @@
     
     // ----- title -----
     .title {
-        margin: 14% 0 0 11%;
+        padding: 14% 11% 0;
+        width: 100%;
         p {
             padding: 7% 0 0;
             line-height: 1.5;
