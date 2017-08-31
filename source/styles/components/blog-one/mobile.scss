@@ -3,6 +3,7 @@
     background-color: $white;
     font-family: $raleway;
     font-weight: $regular;
+    overflow: hidden;
     z-index: 0;
     
     // ----- bottom-button -----
@@ -18,7 +19,7 @@
             &:before { background: $darkGray; }
             span {
                 color: $darkGray;
-                font-size: px(25);
+                font-size: px(27);
                 font-weight: $medium;
                 &:nth-of-type(10) { margin-right: 5px;}
             }
@@ -29,6 +30,7 @@
     .blue-line {
         top: 0;
         left: 0;
+        z-index: 2;
         width: px(320);
         height: px(320);
         background: $blue;
@@ -67,17 +69,14 @@
             }
         }
         p {
-            padding: px(40) px(130);
-            box-sizing: border-box;
             position: absolute;
-            left: -50px;
-            top: px(285);
-            width: px(900);
+            font-size: px(34);
+            left: px(-36);
+            top: 3vh;
             color: $white;
-            font-size: px(24);
-            line-height: px(30);
+            font-weight: $thin;
+            font-family: $roboto;
             transform-origin: 0 0;
-            transform: rotate(-90deg);
         }
     }
     

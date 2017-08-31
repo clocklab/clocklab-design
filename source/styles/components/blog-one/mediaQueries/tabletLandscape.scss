@@ -1,1 +1,25 @@
 @import '../desktop';
+
+// ----- title -----
+.title {
+    bottom: 6vh;
+    top: initial;
+    left: px(200);
+    position: absolute;
+}
+
+// ----- blue-line -----
+.blue-line {
+    height: 43vh;
+    left: px(500);
+    width: px(340);
+	animation: none !important;
+}
+
+// ----- image-block -----
+.image-block {
+	width: px(755);
+	height: px(895);
+	margin-top: px(160);
+	margin-left: px(650);
+}

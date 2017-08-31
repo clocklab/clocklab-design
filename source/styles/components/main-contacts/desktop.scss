@@ -56,7 +56,7 @@
         animation-delay: .5s;
         & + .address {
             top: 65vh;
-            right: 10%;
+            right: px(390);
             position: absolute;
             transform: rotate(-90deg);
             p {

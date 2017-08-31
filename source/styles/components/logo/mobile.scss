@@ -2,11 +2,11 @@
     
     display: block;
     position: absolute;
-    top: px(30);
-    left: px(30);
+    top: px(10);
+    left: px(24);
     z-index: 10;
-    width: px(200);
-    height: px(80);
+    width: px(250);
+    height: px(92);
 
     &-letter {
         fill: $white;

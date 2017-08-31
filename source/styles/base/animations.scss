@@ -386,9 +386,9 @@
 
 // shape under title
 @keyframes titleNameShape {
-    0% { width: 0%; }
-    50% { width: 2.55vh; }
-    100% { width: 5.2vh; }
+    0% { width: 0; }
+    50% { width: 25px; }
+    100% { width: 50px; }
 }
 
 // title word

@@ -18,7 +18,8 @@
         &:before {
             display: block;
             font-size: 30vw;
-            animation: right $PPClockAnimationTime both;                    
+            animation: right $PPClockAnimationTime both;
+            @media only screen and (max-width: 768px) { text-shadow: 8px 8px 8px rgba(0,0,0,.05); }
         }
         &:nth-child(1) {
             &:before {

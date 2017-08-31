@@ -7,10 +7,12 @@
 @import "base/fonts";
 @import "base/reset";
 @import "base/common";
-@import "base/scroll";
-@import "base/clock-bg";
 @import "base/animations";
-@import "base/small-gray-lines";
+
+// modules
+@import "components/modules/small-gray-lines";
+@import "components/modules/clock-bg";
+@import "components/modules/scroll";
 
 // components
 @import "components/logo/main";

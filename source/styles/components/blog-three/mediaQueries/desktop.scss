@@ -1,1 +1,15 @@
 @import '../desktop';
+
+// ----- blue-line -----
+.blue-line { width: px(400); }
+
+// ----- image-block -----
+.image-block {
+    width: px(1027);
+    height: px(714);
+    margin-top: px(370);
+    margin-left: px(1500);
+}
+
+// ----- service-info -----
+.service-info.vertical { bottom: 22vh; }

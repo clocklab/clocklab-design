@@ -17,7 +17,7 @@
     span.name {
         text-transform: uppercase;
         position: relative;
-        font-size: 1.3vh;
+        font-size: px(28);
         top: -4vh;
         span {
             color: $white;
@@ -33,11 +33,11 @@
             background: $white;
             position: absolute;
             display: block;
-            height: 0.4vh;
-            width: 5.2vh;
-            left: -6.5vh;
+            width: px(100);
+            left: px(-124);
+            height: px(6);
             content: '';
-            top: .4vh;
+            top: px(8);
         }
     }
     .word {
@@ -70,7 +70,7 @@
             content: '';
             z-index: -1;
             width: 100%;
-            top: 27px;
+            top: 29px;
             left: 0;
         }
         span {
@@ -83,14 +83,17 @@
             white-space: nowrap;
             font-weight: $extra-bold;
             text-transform: uppercase;
+            letter-spacing: 3px;
             overflow: hidden;
         }
     }
     p { 
-        font-weight: $medium;
         padding: 5% 1vh 0;
-        font-size: px(28);
-        line-height: 1.5;
+        font-size: px(32);
         color: $white;
+        line-height: 1.3;
+        letter-spacing: 0;
+        font-family: $roboto;
+        font-weight: $regular;
     }
 }
