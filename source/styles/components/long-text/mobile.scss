@@ -53,6 +53,86 @@
         position: relative;
         z-index: 2;
         visibility: hidden;
+        width: 100vw;
+        padding: px(40) px(30) 0;
+    }
+
+    .close-long-text {
+        position: absolute;
+        top: px(60);
+        right: px(30);
+        background: transparent;
+
+        .row {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: px(30);
+            height: 4px;
+            background: $white;
+            
+            &:first-child {
+                transform: rotate(45deg);
+            }
+
+            &:last-child {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: px(30);
+        color: $white;
+        font-size: px(48);
+        font-family: $raleway;
+        font-weight: 800;
+    }
+
+    article {
+        position: relative;
+        width: 100%;
+        margin-bottom: px(30);
+
+        &:after,
+        &:before {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: px(40);
+            content: '';
+        }
+
+        &:before {
+            top: 0;
+            background: linear-gradient($darkGray, transparent);
+        }
+
+        &:after {
+            bottom: 0;
+            background: linear-gradient(transparent, $darkGray);
+        }
+    }
+
+    .text-container {
+        padding: px(30);
+        padding-left: 0;
+        height: 80vh;
+        max-height: 80vh;
+        color: $white;
+        overflow-y: auto;
+
+        p {
+            margin-bottom: px(46);
+            font-family: $roboto;
+            font-size: px(28);
+            line-height: px(34);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &.open {
@@ -64,6 +144,26 @@
             .row {
                 animation: fadeOut $time * 3 both;
             }
+        }
+
+        .content {
+            visibility: visible;
+        }
+
+        .close-long-text {
+            animation: fadeIn $time * 4 $time * 2 both; 
+        }
+
+        h2 {
+            animation: fadeInUp $time * 4 $time * 2 both;
+        }
+
+        article {
+            animation: fadeIn $time * 4 $time * 4 both; 
+        }
+
+        .back {
+            animation: fadeIn $time * 4 $time * 2 both; 
         }
     }
 }
