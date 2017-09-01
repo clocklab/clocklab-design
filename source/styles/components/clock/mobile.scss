@@ -43,8 +43,17 @@
     // ----- bg letter -----
     .bg-letter { display: none; }
 
-    // ----- watch -----
-    .watch-light, .watch-shadow { display: none; }
+    // ----- watch ----
+    .watch-shadow { display: none; }
+    .watch-light {
+        top: 0;
+        left: 0;
+        background: url('../images/watch-light.png') no-repeat center;
+        background-size: cover;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
     .watch {
         background: url('../images/watch.png') no-repeat center;
         background-size: 47%;
