@@ -28,4 +28,25 @@
     .about-work {
         width: px(900);
     }
+
+    .car-covering-layer {
+
+        .lines {
+            height: px(2000);
+        }
+
+        &--left {
+
+            .lines {
+                width: 30vw;
+            }
+        }
+
+        &--right {
+
+            .lines {
+                left: -2vw;
+            }
+        }
+    }
 }

@@ -49,6 +49,10 @@
             &:before {
                 display: block;
             }
+
+            &:first-child {
+                margin-right: px(100);
+            }
         }
 
         span {
