@@ -4,6 +4,9 @@
 // WowJS
 //= ../../bower_components/wow/dist/wow.js
 
+// horizontal-scroll-blog
+//= components/horizontal-scroll-blog.js
+
 // clock-bg
 //= components/clock-bg.js
 
@@ -33,8 +36,6 @@
 
 // horizontal-scroll
 //= components/horizontal-scroll.js
-
-// horizontal-scroll-blog
 
 // portfolio-shadow
 //= components/portfolio-shadow.js

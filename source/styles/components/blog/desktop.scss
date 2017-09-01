@@ -8,6 +8,8 @@
     $BPostWidth: 43.75vh;
     $BPostHeight: 37.5vh;
 
+    overflow: hidden;
+
     .page-layer {
         width: 100vw;
         height: 100vh;
@@ -53,7 +55,7 @@
         z-index: 2;
         margin-top: px(330);
         padding-left: $BMaginLeft;
-        font-size: 0;
+        height: 2 * $BPostHeight;
         animation: fadeIn $BGridAnimationTime $BGridDelayTime both;
 
         &__item {
@@ -122,7 +124,7 @@
 
                 &:before {
                     position: absolute;
-                    top: - $BPostHeight;
+                    top: -100%;
                     right: 0;
                     width: 1px;
                     height: 100vh;
@@ -141,24 +143,6 @@
 
     .menu {
         animation: fadeIn $BMenuAnimationTime $BMenuDelayTime both;
-    }
-
-    .logo {
-        position: absolute;
-        top: 0;
-        left: px(100);
-        padding-top: px(60);
-        animation: fadeIn $BLogoAnimationTime $BLogoDelayTime both;
-
-       .image {
-            @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
-            background-repeat: no-repeat;
-
-            &.black {
-                @include image-retina("/../images/logo-black.png", "/../images/logo-black-2x.png");
-                background-repeat: no-repeat;
-            }
-        } 
     }
 
     .language {
@@ -280,8 +264,8 @@
     }
 
     .feed-container {
-        position: relative;
-        margin-top: px(66);
+        position: absolute;
+        top: px(330);
         margin-left: $BMaginLeft;
         width: 100vw;
         height: 2 * $BPostHeight;
@@ -384,7 +368,7 @@
                     margin-bottom: px(100);
                     max-width: px(540);
                     font-size: px(72);
-                    font-weight: 800;
+                    font-weight: 700;
                     text-transform: uppercase;
                     animation: fadeInUp $BPostTitleAnimationTime $BPostTitleDelayTime both;
                 }

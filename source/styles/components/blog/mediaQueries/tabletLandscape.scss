@@ -28,20 +28,24 @@
         }
     }
 
-    .filter {
+    .grid {
+        min-height: 576px;
 
-        &--date {
-            margin-right: px(200);
+        &__item {
+            min-width: 336px;
+            min-height: 288px;
         }
     }
 
     .feed-container {
-        margin-top: px(26);
+        min-height: 576px;
     }
 
     .feed {
 
         &__post {
+            min-width: 336px;
+            min-height: 288px;
 
             .post-info {
                 margin-top: px(200);
@@ -51,6 +55,13 @@
                     font-size: px(60);
                 }
             }
+        }
+    }
+
+    .filter {
+
+        &--date {
+            margin-right: px(200);
         }
     }
 }

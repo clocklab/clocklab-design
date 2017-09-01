@@ -1,1 +1,25 @@
 @import '../desktop';
+
+& {
+
+    .grid {
+        min-height: 790px;
+
+        &__item {
+            min-width: 437.5px;
+            min-height: 395px;
+        }
+    }
+
+    .feed-container {
+        min-height: 790px;
+    }
+
+    .feed {
+
+        &__post {
+            min-width: 437.5px;
+            min-height: 395px;
+        }
+    }
+}
