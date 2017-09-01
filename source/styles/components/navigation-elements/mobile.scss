@@ -5,6 +5,12 @@
     // ----- logo and menu animation -----
     .logo, .menu { animation: fadeInDown $time * 3 both; }
 
+    // ----- logo -----
+    .logo {
+        width: px(285);
+        top: px(30);
+    }
+
     // ----- bg letter -----
     .bg-letter {
         position: absolute;
