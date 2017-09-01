@@ -158,6 +158,10 @@
                     animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
                 }
 
+                &.previous {
+                    z-index: 1;
+                }
+
                 &.current {
                     z-index: 2;
                 }
@@ -186,6 +190,18 @@
                 content: '';
                 animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
             }
+
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .4);
+                content: '';
+                transition: opacity $time;
+            }
         }
 
         & > span {
@@ -209,6 +225,18 @@
                     margin-bottom: 0;
                 }
             }
+        }
+    }
+
+    img,
+    button,
+    svg,
+    div {
+
+        &:focus,
+        &:active {
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            outline: none;
         }
     }
 
@@ -312,6 +340,12 @@
                 height: 100%;
                 object-fit: cover;
                 user-select: none;
+
+                &:focus,
+                &:active {
+                    -webkit-tap-highlight-color: rgba(0,0,0,0);
+                    outline: none;
+                }
 
                 &.current {
                     z-index: 2;
