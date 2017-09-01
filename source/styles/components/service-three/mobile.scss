@@ -1,5 +1,5 @@
 & {
-    .service-info, .logo, .menu, .bg-clock { display: none; }
+    .service-info, .bg-clock { display: none; }
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
@@ -46,7 +46,7 @@
         }
     }
     .info-block {
-        padding: 7% 0 0;
+        padding: 20vh 0 0;
         line-height: 1.5;
         font-size: px(24);
         font-weight: $medium;
@@ -60,7 +60,7 @@
 
     // ----- title -----
     .title {
-        margin: 20% 0 0 11%;
+        margin: 25vh 0 0 11%;
         span.name {
             font-size: px(26);
             top: -3.5vh;

@@ -1,5 +1,5 @@
 & {
-    .service-info, .logo, .menu, .bg-clock { display: none; }
+    .service-info, .bg-clock { display: none; }
     background-color: $background;
     font-family: $raleway;
     font-weight: $regular;
@@ -28,7 +28,7 @@
     // ----- title -----
     .title {
         width: 100%;
-        padding: 11vh px(70) 0;
+        padding: 25vh px(70) 0;
         p {
             padding: 5% 0 0;
             font-size: px(28);
