@@ -32,6 +32,8 @@
         height: $btnWidthBefore;
         border-radius: 50%;
         background: $darkGray;
+        user-select: none;
+        outline: none;
 
         .row {
             display: block;
@@ -47,6 +49,13 @@
                 transform: translate3d(-50%, -50%, 0) rotate(90deg);
             }
         }
+
+        &:focus,
+        &:hover {
+            user-select: none;
+            outline: none;
+            border: none;
+        }
     }
 
     .content {
@@ -57,7 +66,7 @@
         padding: px(40) px(30) 0;
     }
 
-    .close-long-text {
+    .cross {
         position: absolute;
         top: px(60);
         right: px(30);
@@ -82,23 +91,25 @@
     }
 
     h2 {
+        display: inline-block;
         margin-bottom: px(30);
         color: $white;
         font-size: px(48);
         font-family: $raleway;
         font-weight: 800;
+        text-transform: uppercase;
     }
 
     article {
         position: relative;
         width: 100%;
-        margin-bottom: px(30);
 
         &:after,
         &:before {
             display: block;
             position: absolute;
             left: 0;
+            z-index: 2;
             width: 100%;
             height: px(40);
             content: '';
@@ -116,10 +127,12 @@
     }
 
     .text-container {
+        position: relative;
         padding: px(30);
         padding-left: 0;
-        height: 80vh;
-        max-height: 80vh;
+        padding-bottom: px(60);
+        height: 85vh;
+        max-height: 85vh;
         color: $white;
         overflow-y: auto;
 
@@ -131,6 +144,40 @@
 
             &:last-child {
                 margin-bottom: 0;
+            }
+        }
+    }
+
+    .crossed-button {
+        position: relative;
+        background: transparent;
+
+        span {
+            padding: 0 px(10);
+            font-family: $roboto;
+            font-weight: 400;
+            color: $white;
+
+            &:after {
+                content: 'Назад';
+            }
+
+            &:before {
+                display: none;
+            }
+        }
+
+        .arrow-container {
+            transform: translateX(0%) rotate(180deg);
+        }
+
+        .arrow {
+            opacity: 1;
+            transform: none;
+
+            .st0,
+            .st1 {
+                stroke: $white;
             }
         }
     }
@@ -162,8 +209,8 @@
             animation: fadeIn $time * 4 $time * 4 both; 
         }
 
-        .back {
-            animation: fadeIn $time * 4 $time * 2 both; 
+        .crossed-button {
+            animation: fadeInLeft $time * 4 $time * 2 both; 
         }
     }
 }

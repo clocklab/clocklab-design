@@ -16,6 +16,9 @@
 // clock
 
 
+// open long text
+//= components/open-long-text.js
+
 // menu
 //= components/menu.js
 
