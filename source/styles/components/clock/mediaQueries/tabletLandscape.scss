@@ -1,5 +1,12 @@
 @import '../desktop';
 
+// ----- letter c -----
+.big-background-letter {
+    top: -37vh;
+    right: 33vh;
+    font-size: 100vh;
+}
+
 // ----- title -----
 .title {
     top: 22%;
@@ -25,6 +32,3 @@
     background-size: 20%;
     margin: 6% auto 0;
 }
-
-// ----- bg letter -----
-.bg-letter { background-size: 36%; }

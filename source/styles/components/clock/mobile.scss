@@ -4,6 +4,15 @@
     font-weight: $regular;
     background-color: $background;
     
+    // ----- letter c -----
+    .big-background-letter {
+        top: -30vh;
+        right: 23vh;
+        font-size: 75vh;
+        color: rgba(68, 68, 68, .15);
+        span::before  { content: 'c'; }
+    }
+    
     // ----- title -----
     .title {
         top: 25.5%;
