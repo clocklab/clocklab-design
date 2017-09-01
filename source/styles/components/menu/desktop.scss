@@ -385,7 +385,7 @@
         height: 0;
         background: rgba(0, 0, 0, .8);
         cursor: pointer;
-        transition: width 0s 1.6s, height 0s 1.6s, opacity $time * 2;
+        transition: width 0s 1.6s, height 0s 1.6s, opacity $time * 3 1.2s;
     }
 
     &.opened {
