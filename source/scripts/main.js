@@ -7,6 +7,9 @@
 // horizontal-scroll-blog
 //= components/horizontal-scroll-blog.js
 
+// menu
+//= components/menu.js
+
 // clock-bg
 //= components/clock-bg.js
 
@@ -18,9 +21,6 @@
 
 // open long text
 //= components/open-long-text.js
-
-// menu
-//= components/menu.js
 
 // big background letter
 //= components/big-background-letter.js

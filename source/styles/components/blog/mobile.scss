@@ -26,6 +26,9 @@
 
             &:before {
                 display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 100%;
                 height: 100%;
                 background: $lightBlack;
@@ -40,26 +43,13 @@
         z-index: 2;
     }
 
-    .menu {
+    .menu { 
         animation: fadeIn $BMenuAnimationTime $BMenuDelayTime both;
     }
 
     .logo {
-        position: absolute;
-        top: 0;
-        left: px(20);
-        padding-top: px(12);
-        animation: fadeIn $BLogoAnimationTime $BLogoDelayTime both;
-
-        .image {
-            @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
-            background-repeat: no-repeat;
-
-            &.black {
-                @include image-retina("/../images/logo-black.png", "/../images/logo-black-2x.png");
-                background-repeat: no-repeat;
-            }
-        } 
+        position: relative;
+        animation: fadeIn $BMenuAnimationTime $BMenuDelayTime both;
     }
 
     .language {
@@ -109,7 +99,7 @@
     }
 
     .top-panel {
-        padding-top: px(200);
+        margin-top: px(100);
         padding-left: px(30);
         color: $white;
 
