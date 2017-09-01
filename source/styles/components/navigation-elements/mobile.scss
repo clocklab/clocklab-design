@@ -25,7 +25,7 @@
         position: absolute;
         font-size: px(29);
         bottom: 22vh;
-        left: px(28);
+        left: 14px;
         z-index: 2;
         &.dark a {
             color: $dark;
@@ -179,12 +179,12 @@
     .copyright {
         transform: rotate(-90deg);
         position: absolute;
-        right: px(-154);
-        bottom: 21vh;
+        bottom: 150px;
+        right: -78px;
         z-index: 1;
         p {
             color: $white;
-            font-size: px(25);
+            font-size: px(24);
             font-weight: $thin;
         }
     }
