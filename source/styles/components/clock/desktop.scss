@@ -4,6 +4,15 @@
     font-weight: $regular;
     background-color: $background;
     
+    // ----- letter c -----
+    .big-background-letter {
+        top: -60vh;
+        right: 135vh;
+        font-size: 170vh;
+        color: rgba(68, 68, 68, .15);
+        span::before  { content: 'c'; }
+    }
+    
     // ----- title -----
     .title {
         top: 25vh;
@@ -28,18 +37,12 @@
             }
         }
     }
-
-    // ----- bg letter -----
-    .bg-letter {
-        background: url('../images/letter-1.png') no-repeat;
-        background-size: 28%;
-    }
     
     // ----- watch -----
     .watch-light {
         top: 0;
         left: px(-35);
-        background: url('../images/watch-light.png');
+        background: url('../images/watch-light.png') no-repeat center;
         background-size: cover;
         position: absolute;
         height: 100%;

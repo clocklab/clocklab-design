@@ -1,7 +1,17 @@
 @import '../mobile';
-        
-// ----- language -----
-.language { bottom: 46%; }
 
-// ----- behance -----
-.jump-button { left: 14%; }
+// ----- copyright -----
+.copyright {
+	right: -86px;
+	bottom: 150px;
+	p { font-size: px(30); }
+}
+
+// ----- language -----
+.language {
+	bottom: 450px;
+	left: 28px;
+}
+
+// ----- scroll -----
+.scroll { bottom: 35px; }

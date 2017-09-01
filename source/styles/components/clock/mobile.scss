@@ -4,6 +4,15 @@
     font-weight: $regular;
     background-color: $background;
     
+    // ----- letter c -----
+    .big-background-letter {
+        top: -30vh;
+        right: 23vh;
+        font-size: 75vh;
+        color: rgba(68, 68, 68, .25);
+        span::before  { content: 'c'; }
+    }
+    
     // ----- title -----
     .title {
         top: 25.5%;
@@ -20,10 +29,13 @@
             &:after { display: none; }
             &:first-of-type { margin-bottom: px(24); }
             &:last-of-type {
-                margin: px(18) 0 0;
+                margin: px(14) 0 0;
+                width: px(310);
                 span {
                     color: $blue;
-                    font-size: px(25);
+                    line-height: 1.5;
+                    font-size: px(22);
+                    white-space: normal;
                     font-weight: $medium;
                     font-family: $roboto;
                 }
@@ -34,12 +46,12 @@
     // ----- bg letter -----
     .bg-letter { display: none; }
 
-    // ----- watch -----
+    // ----- watch ----
     .watch-light, .watch-shadow { display: none; }
     .watch {
         background: url('../images/watch.png') no-repeat center;
-        background-size: 47%;
-        margin: 16% auto 0;
+        background-size: 37%;
+        margin: 30% auto 0;
         position: absolute;
         height: 100%;
         width: 100%;
@@ -96,15 +108,15 @@
     }
     .hours-container {
         animation: rotate 43200s infinite linear;
-        zoom: .55;
+        zoom: .4;
     }
     .minutes-container {
         transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
-        zoom: .5;
+        zoom: .35;
     }
     .seconds-container {
         transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
-        zoom: .55;
+        zoom: .4;
     }
     @keyframes rotate { 100% { transform: rotateZ(360deg); } }
 

@@ -1,5 +1,22 @@
 @import '../desktop';
 
+.watch-light, .watch-shadow { display: none; }
+
+// ----- watch -----
+.seconds-container, .hours-container { zoom: .65; }
+.minutes-container { zoom: .6; }
+.watch {
+    background-size: 20%;
+    margin: 6% auto 0;
+}
+
+// ----- letter c -----
+.big-background-letter {
+    top: -48vh;
+    right: 90vh;
+    font-size: 140vh;
+}
+
 // ----- title -----
 .title {
     top: 22%;
@@ -17,14 +34,3 @@
         }
     }
 }
-
-// ----- watch -----
-.seconds-container, .hours-container { zoom: .65; }
-.minutes-container { zoom: .6; }
-.watch {
-    background-size: 20%;
-    margin: 6% auto 0;
-}
-
-// ----- bg letter -----
-.bg-letter { background-size: 36%; }
