@@ -3,71 +3,12 @@
     position: relative;
     background: $white;
 
-    .clock {
+    .clock-bg {
         display: flex;
+        font-family: $raleway;
 
         // Warning
         display: none;
-
-        justify-content: space-between;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        font-family: $raleway;
-        text-shadow: px(6) px(6) px(26) rgba(0, 0, 0, .1);
-
-        span {
-            width: 20%;
-            color: $white;
-            font-weight: 800;
-            font-size: 0;
-            line-height: 100vh;
-            text-align: center;
-            overflow-x: hidden;
-
-            &:before {
-                display: block;
-                font-size: 30vw;
-                animation: right $POPClockAnimationTime both;                    
-            }
-
-            &:nth-child(1) {
-                
-                &:before {
-                    content: 'c';
-                }
-            }
-
-            &:nth-child(2) {
-                
-                &:before {
-                    content: 'l';
-                }
-            }
-
-            &:nth-child(3) {
-                
-                &:before {
-                    content: 'o';
-                }
-            }
-
-            &:nth-child(4) {
-                
-                &:before {
-                    content: 'c';
-                }
-            }
-
-            &:nth-child(5) {
-                
-                &:before {
-                    content: 'k';
-                }
-            }
-        }
     }
 
     .menu {
