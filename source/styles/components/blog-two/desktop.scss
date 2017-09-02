@@ -2,10 +2,10 @@
     background-color: $background;
     font-family: $raleway;
     font-weight: $regular;
-    z-index: 0;
+    overflow: hidden;
     
     // ----- bottom-button -----
-    .bottom-button span:before { content: 'Все услуги'; }
+    .bottom-button span:before { content: 'Все новости'; }
 
     // ----- title -----
     .title { margin: 28vh 0 0 40vh; }

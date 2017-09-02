@@ -3,9 +3,6 @@
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
-    height: 100vh;
-    width: 100vw;
-    z-index: 0;
     
     // animation for block
     @keyframes apear {
@@ -83,10 +80,11 @@
             }
         }
         p {
+            transform: rotate(-90deg);
             position: absolute;
             font-size: px(34);
-            left: px(-36);
-            top: 3vh;
+            left: px(-70);
+            top: 13vh;
             color: $white;
             font-weight: $thin;
             font-family: $roboto;
@@ -115,7 +113,7 @@
     &.current {
         .blue-line { animation: heightChanging $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
         .image-block {
-            p { animation: textApear $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
+            // p { animation: textApear $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
             .image-container {
                 animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
                 img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }

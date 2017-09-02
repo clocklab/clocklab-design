@@ -3,13 +3,19 @@
 // ----- blue-line -----
 .blue-line { width: px(400); }
 
+// ----- title -----
+.title { left: px(200); }
+
 // ----- image-block -----
 .image-block {
     width: px(1027);
     height: px(714);
     margin-top: px(370);
-    margin-left: px(1500);
+    margin-left: px(1400);
 }
 
 // ----- service-info -----
-.service-info.vertical { bottom: 22vh; }
+.service-info.vertical { 
+	right: px(-60);
+	bottom: 22vh;
+}

@@ -1,10 +1,19 @@
 & {
-    .service-info, .logo, .menu, .bg-clock { display: none; }
+    .service-info { display: none; }
     background-color: $background;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
     
+    // ----- letter c -----
+    .big-background-letter {
+        right: 0;
+        top: -48vh;
+        font-size: 100vh;
+        color: rgba(68,68,68,.2);
+        span::before { content: 'c'; }
+    }
+
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
 
@@ -28,7 +37,7 @@
     // ----- title -----
     .title {
         width: 100%;
-        padding: 11vh px(70) 0;
+        padding: 25vh px(70) 0;
         p {
             padding: 5% 0 0;
             font-size: px(28);

@@ -6,7 +6,10 @@
 	padding: 4.5vh 10% 8vh 7%;
 	margin-top: 17vh;
 	width: 84%;
-    p:first-child { font-size: px(94); }
+    p:first-child {
+        letter-spacing: 2.9px;
+        font-size: px(94);
+    }
     p:last-child {
         font-size: px(57);
         padding-top: .5vh;
@@ -33,8 +36,8 @@
     height: 49vh;
     bottom: 18vh;
     & + .address {
-    	top: 70vh;
-        left: 18%;
+    	top: 71vh;
+        left: 19%;
         display: block;
         position: absolute;
         transform: rotate(-90deg);

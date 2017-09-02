@@ -1,10 +1,15 @@
 @import 'desktop';
 
 // ----- blue-line -----
-.blue-line { left: px(600); }
+.blue-line {
+	height: 30vh;
+	left: px(600);
+}
 
 // ----- image-block -----
 .image-block {
+	width: px(685);
+    height: px(475);
 	margin-top: 7vh;
-	margin-left: px(400);
+	margin-left: px(800);
 }
