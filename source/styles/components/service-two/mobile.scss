@@ -1,10 +1,19 @@
 & {
-    .service-info, .bg-clock { display: none; }
+    .service-info { display: none; }
     background-color: $background;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
     
+    // ----- letter c -----
+    .big-background-letter {
+        right: 0;
+        top: -48vh;
+        font-size: 100vh;
+        color: rgba(68,68,68,.2);
+        span::before { content: 'c'; }
+    }
+
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
 

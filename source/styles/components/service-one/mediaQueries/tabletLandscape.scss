@@ -11,13 +11,10 @@
 
 // ----- service-info -----
 .service-info {
-    &.horizontal {
-        left: px(275);
-    }
+    &.horizontal { left: px(275); }
     &.vertical {
         width: px(450);
         right: 0;
-
         p {
             font-size: px(27);
             line-height: 1.4;

@@ -1,13 +1,38 @@
 @import 'tabletLandscape';
 
 // ----- title -----
-.title { bottom: 18vh; }
+.title {
+	bottom: 25vh;
+	left: px(180);
+	.word {
+		&:after { top: 15px; }
+		&:nth-of-type(1) { margin-bottom: 15px; }
+		span { font-size: px(94); }
+		p { padding: 5% 0 0; }
+	}
+}
 
 // ----- blue-line -----
-.blue-line { left: px(350); }
+.blue-line {
+	height: 33vh;
+	left: px(350);
+	width: px(360);
+}
 
 // ----- image-block -----
 .image-block {
-	margin-top: px(200);
-	margin-left: px(500);
+	width: px(755);
+	height: px(895);
+	margin-top: px(160);
+	margin-left: px(480);
+	p {
+		font-size: px(30);
+		top: 14vh;
+    }
+}
+
+// ----- service-info -----
+.service-info.vertical {
+	left: px(-70);
+	bottom: 68vh;
 }

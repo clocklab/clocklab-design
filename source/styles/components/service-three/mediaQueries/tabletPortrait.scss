@@ -1,1 +1,39 @@
 @import 'tabletLandscape';
+
+// ----- shadow -----
+.shadow div:last-child { display: none; }
+
+// ----- title -----
+.title {
+	margin: 25vh 0 0 px(200);
+	.word {
+		&:after { top: 15px; }
+		&:nth-of-type(1) { margin-bottom: 19px; }
+		span { font-size: px(92); }
+	}
+}
+
+// ----- service-info -----
+.service-info.vertical {
+	&.one {
+        right: px(-70);
+        bottom: 74vh;
+    }
+	&.two {
+	    left: px(-22);
+	    top: 38.5vh;
+    }
+}
+
+// ----- info-block -----
+.info-block {
+    width: px(1300);
+    left: 11%;
+    top: 37%;
+}
+
+// ----- jump-button -----
+.jump-button {
+    bottom: 22.5vh;
+    right: px(200);
+}

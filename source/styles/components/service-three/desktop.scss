@@ -24,12 +24,12 @@
         height: 100%;
         top: 0;
         &:first-child {
-            background: rgba(0,0,0,.7);
+            background: rgba(28,28,28,.8);
             width: 100%;
             left: 0;
         }
         &:last-child {
-            background: rgba(0,0,0,.5);
+            background: rgba(28,28,28,.5);
             width: 50%;
             right: 0;
         }
@@ -42,9 +42,9 @@
         padding: 5% 1vh 0;
         font-size: px(28);
         line-height: 1.5;
+        width: px(1120);
         color: $white;
         z-index: 1;
-        width: 29%;
         right: 11%;
         top: 20%;
     }
@@ -101,12 +101,12 @@
         }
         &.horizontal {
             bottom: 27.5vh;
-            width: px(650);
             left: px(590);
+            width: 325px;
         }
         &.vertical {
             transform: rotate(-90deg);
-            width: px(250);
+            width: 135px;
             &.one {
                 right: px(96);
                 bottom: 18vh;

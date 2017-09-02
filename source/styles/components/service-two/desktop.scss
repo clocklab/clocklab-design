@@ -23,28 +23,26 @@
     }
 
     // ----- small-gray-lines -----
-    .small-gray-lines {
-        .line {
-            &:nth-of-type(1) {
-                left: 19vh;
-                top: 4vh;
-            }
-            &:nth-of-type(2) {
-                left: 101vh;
-                top: -12vh;
-            }
-            &:nth-of-type(3) {
-                right: 9vh;
-                top: 37vh;
-            }
-            &:nth-of-type(4) {
-                bottom: -10vh;
-                left: 30vh;
-            }
-            &:nth-of-type(5) {
-                bottom: 14vh;
-                right: 90vh;
-            }
+    .small-gray-lines .line {
+        &:nth-of-type(1) {
+            left: 19vh;
+            top: 4vh;
+        }
+        &:nth-of-type(2) {
+            left: 101vh;
+            top: -12vh;
+        }
+        &:nth-of-type(3) {
+            right: 9vh;
+            top: 37vh;
+        }
+        &:nth-of-type(4) {
+            bottom: -10vh;
+            left: 30vh;
+        }
+        &:nth-of-type(5) {
+            bottom: 14vh;
+            right: 90vh;
         }
     }
 
@@ -67,12 +65,12 @@
     
     // ----- service-info -----
     .service-info {
-        z-index: 1;
-        position: absolute;
         transform: rotate(90deg);
+        position: absolute;
         bottom: 19.5vh;
         width: px(200);
         left: px(720);
+        z-index: 1;
         p {
             font-weight: $medium;
             font-size: px(22);

@@ -3,8 +3,18 @@
 // ----- title -----
 .title {
 	margin: 20vh 0 0 px(200);
-	.word {
-		span { font-size: px(70); }
-		&:after { display: none; }
-	}
+	.word span { font-size: px(70); }
+}
+
+// ----- service-info -----
+.service-info.horizontal {
+	p { font-size: px(28); }
+	left: px(186);
+	bottom: 8.5vh;
+}
+
+// ----- info-block -----
+.info-block {
+    width: px(800);
+    right: 4%;
 }

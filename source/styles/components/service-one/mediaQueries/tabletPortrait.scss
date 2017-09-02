@@ -1,7 +1,13 @@
 @import 'tabletLandscape';
 
 // ----- title -----
-.title .word {
-	span { font-size: px(80); }
-	&:after { top: 15px; }
+.title {
+	margin: 21vh 0 0 px(200);
+	.word {
+		span { font-size: px(80); }
+		&:after { top: 15px; }
+	}
 }
+
+// ----- service-info -----
+.service-info.horizontal { left: px(225); }

@@ -1,1 +1,10 @@
 @import '../desktop';
+
+// ----- title -----
+.title { margin: 27vh 0 0 px(250); }
+
+// ----- contacts-info -----
+.contacts-info {
+    margin: 35vh 0 0 px(430);
+    li:nth-of-type(3) { margin-top: 30px; }
+}
