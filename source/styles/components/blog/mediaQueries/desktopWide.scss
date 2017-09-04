@@ -2,6 +2,31 @@
 
 & {
 
+    .grid {
+        min-height: 600px;
+
+        &__item {
+            min-width: 350px;
+            min-height: 300px;
+        }
+    }
+
+    .feed-container {
+        min-height: 600px;
+    }
+
+    .feed {
+
+        &__post {
+            min-width: 350px;
+            min-height: 300px;
+
+            .post-info {
+                margin-top: px(200);
+            }
+        }
+    }
+
     .filter {
 
         &--date {

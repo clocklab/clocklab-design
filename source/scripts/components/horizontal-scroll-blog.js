@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const removeEvents = () => {
-        frontLayer.firstElementChild.style.cursor = ''
+        frontLayer.firstElementChild.removeAttribute('style')
         currentLeftPos = event.clientX
         currentScrollLeft = frontLayer.scrollLeft
         

@@ -2,8 +2,43 @@
 
 & {
 
+    $BPostWidth: 43.75vh;
+
     .top-panel {
+        padding-top: px(100);
         padding-left: px(600);
+    }
+
+    .grid {
+        margin-top: px(280);
+        min-height: 490px;
+
+        &__item {
+            min-width: 285px;
+            min-height: 245px;
+        }
+    }
+
+    .feed-container {
+        top: px(280);
+        min-height: 490px;
+    }
+
+    .feed {
+        padding-right: $BPostWidth;
+
+        &__post {
+            min-width: 285px;
+            min-height: 245px;
+
+            .post-info {
+                margin-top: px(150);
+
+                h3 {
+                    margin-bottom: px(50);
+                }
+            }
+        }
     }
 
     .filter {

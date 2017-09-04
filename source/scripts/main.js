@@ -10,14 +10,17 @@
 // scripts
 //= components/scripts.js
 
+// horizontal-scroll
+//= components/horizontal-scroll.js
+
+// menu
+//= components/menu.js
+
 // clock
 //= components/clock.js
 
 // open long text
 //= components/open-long-text.js
-
-// menu
-//= components/menu.js
 
 // big background letter
 //= components/big-background-letter.js
@@ -31,13 +34,11 @@
 // button-freaky
 //= components/button-freaky.js
 
-// horizontal-scroll
-//= components/horizontal-scroll.js
-
-// horizontal-scroll-blog
-
 // portfolio-shadow
 //= components/portfolio-shadow.js
+
+// horizontal-scroll-blog
+//= components/horizontal-scroll-blog.js
 
 // slides changing
 //= components/slides-changing.js

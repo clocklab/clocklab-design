@@ -3,7 +3,7 @@
 & {
 
     $BMaginLeftTablet: 6.8vh;
-    $BPostWidthTablet: 26.4vh;
+    $BPostWidthTablet: 52.8vh;
     $BPostHeightTablet: 22vh;
 
     .grid {
@@ -12,7 +12,7 @@
         padding-left: $BMaginLeftTablet;
 
         &__item {
-            width: $BPostWidthTablet;
+            width: $BPostWidthTablet / 2;
             height: $BPostHeightTablet;
 
             .line {
@@ -95,7 +95,7 @@
                 }
 
                 &:after {
-                    left: - $BMaginLeftTablet - $BPostWidthTablet;
+                    left: - $BMaginLeftTablet - $BPostWidthTablet / 2;
                 }
             }
 
@@ -113,14 +113,6 @@
                 display: none;
             }
         }
-    }
-
-    .logo {
-        left: px(42);
-    }
-
-    .language {
-        left: px(46);
     }
 
     .jumping-button {
@@ -158,7 +150,7 @@
     }
 
     .feed-container {
-        margin-top: px(46);
+        top: px(420);
         margin-left: $BMaginLeftTablet;
         height: 3 * $BPostHeightTablet;
     }
@@ -166,16 +158,21 @@
     .feed {
         flex-direction: column;
         flex-wrap: wrap;
-        padding-right: $BPostWidthTablet;
+        padding-right: $BPostWidthTablet * 2;
 
         &__post {
-            margin-right: 2 * $BPostWidthTablet;
+            margin-right: $BPostWidthTablet / 2;
             width: $BPostWidthTablet;
             height: $BPostHeightTablet;
 
+            .image-container {
+                width: $BPostWidthTablet / 2;
+            }
+
             .post-date {
+                right: initial;
+                left: 51%;
                 padding-top: px(24);
-                right: px(-150);
             }
 
             .post-info {
@@ -188,6 +185,7 @@
 
                 h3 {
                     margin-bottom: px(40);
+                    max-width: px(400);
                     font-size: px(48);
                 }
 
@@ -201,7 +199,7 @@
             }
 
             &:nth-child(3n + 2) {
-                transform: translateX(100%);
+                transform: translateX(50%);
             }
         }
     }
