@@ -8,6 +8,16 @@
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все новости'; }
 
+    // ----- letter c -----
+    .big-background-letter {
+        right: 2vh;
+        z-index: 3;
+        top: 27.5vh;
+        font-size: 40vh;
+        color: $darkGray;
+        span::before  { content: 'c'; }
+    }
+
     // ----- jump-button -----
     .jump-button {
         left: initial;
@@ -27,11 +37,11 @@
 
     // ----- blue-line -----
     .blue-line {
-        top: 15vh;
         right: 0;
+        top: 15vh;
         z-index: 2;
-        width: px(280);
-        height: px(500);
+        width: px(200);
+        height: px(300);
         background: $blue;
         position: absolute;
     }
@@ -39,16 +49,16 @@
     // ----- image-block -----
     .image-block {
         z-index: 3;
-        width: px(415);
-        height: px(250);
-        margin-top: px(240);
+        width: px(615);
+        height: px(300);
         position: relative;
+        margin-top: px(240);
         .image-container {
             width: 100%;
             height: 100%;
             overflow: hidden;
             position: relative;
-            box-shadow: 0 0 px(60) px(16) rgba(0, 0, 0, .3);
+            box-shadow: 0 0 px(60) px(16) rgba(0,0,0,.3);
             img {
                 z-index: 1;
                 width: 100%;
@@ -63,13 +73,13 @@
                 content: '';
                 position: absolute;
                 background: $darkGray;
-                transform: translate3d(-90%, 90%, 0);
+                transform: translate3d(-90%,90%,0);
             }
         }
         p {
             box-sizing: border-box;
             position: absolute;
-            left: px(200);
+            left: px(250);
             top: px(-50);
             width: px(900);
             font-size: px(26);
@@ -81,7 +91,7 @@
     
     // ----- title -----
     .title {
-        padding: 14% px(50) 0;
+        padding: 15% px(50) 0;
         width: 100%;
         p {
             padding: 7% 0 0;
