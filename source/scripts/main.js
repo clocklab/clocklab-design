@@ -4,17 +4,17 @@
 // WowJS
 //= ../../bower_components/wow/dist/wow.js
 
-// horizontal-scroll-blog
-//= components/horizontal-scroll-blog.js
-
-// menu
-//= components/menu.js
-
 // clock-bg
 //= components/clock-bg.js
 
 // scripts
 //= components/scripts.js
+
+// horizontal-scroll
+//= components/horizontal-scroll.js
+
+// menu
+//= components/menu.js
 
 // clock
 //= components/clock.js
@@ -34,11 +34,11 @@
 // button-freaky
 //= components/button-freaky.js
 
-// horizontal-scroll
-//= components/horizontal-scroll.js
-
 // portfolio-shadow
 //= components/portfolio-shadow.js
+
+// horizontal-scroll-blog
+//= components/horizontal-scroll-blog.js
 
 // slides changing
 //= components/slides-changing.js

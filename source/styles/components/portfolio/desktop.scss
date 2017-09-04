@@ -13,71 +13,11 @@
         height: 100vh;
         overflow: hidden;
 
-        .clock {
-            display: flex;
-            justify-content: space-between;
-            position: absolute;
-            top: 0;
-            left: 0;
+        .clock-bg {
             z-index: 1;
-            width: 100%;
-            height: 100%;
-            text-shadow: px(4) px(4) px(4) $black;
 
             span {
-                width: 20%;
                 color: $lightBlack;
-                font-weight: 800;
-                font-size: 0;
-                line-height: 100vh;
-                text-align: center;
-                overflow-x: hidden;
-
-                &:before {
-                    display: block;
-                    font-size: 30vw;
-                    animation: right $PPClockAnimationTime both;                    
-                }
-
-                &:nth-child(1) {
-                    
-                    &:before {
-                        content: 'c';
-                        animation-delay: $PPClockFirstDelayTime;
-                    }
-                }
-
-                &:nth-child(2) {
-                    
-                    &:before {
-                        content: 'l';
-                        animation-delay: $PPClockSecondDelayTime;
-                    }
-                }
-
-                &:nth-child(3) {
-                    
-                    &:before {
-                        content: 'o';
-                        animation-delay: $PPClockThirdDelayTime;
-                    }
-                }
-
-                &:nth-child(4) {
-                    
-                    &:before {
-                        content: 'c';
-                        animation-delay: $PPClockFourthDelayTime;
-                    }
-                }
-
-                &:nth-child(5) {
-                    
-                    &:before {
-                        content: 'k';
-                        animation-delay: $PPClockFifthDelayTime;
-                    }
-                }
             }
         }
 
@@ -140,13 +80,14 @@
         overflow-x: auto;
 
         .content-container {
+            position: absolute;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
             justify-content: space-between;
             align-content: flex-start;
             padding: px(270) px(300) px(280) px(250);
-            width: 200vw;
+            // width: 200vw;
             height: 100%;
             min-height: 900px;
         }
@@ -261,6 +202,10 @@
                     margin-top: px(40);
                 }
             }
+
+            &:last-child {
+                padding-right: px(200);
+            }
         }
 
         .new-title {
@@ -274,7 +219,9 @@
                 display: block;
                 position: relative;
                 z-index: 1;
+                font-size: px(48);
                 line-height: px(60);
+                color: $white;
                 animation: Up $PPTitleTextAnimationTime $PPTitleTextDelayTime both;
             }
 
@@ -291,218 +238,49 @@
             }
         }
 
-        // menu, language, social
-        .menu,
-        .logo,
         .language,
         .social,
-        .copyright,
-        .jump-button {
+        .new-copyright {
             position: fixed;
             z-index: 5;
         }
 
         .menu {
-            z-index: 9999;
+            position: fixed;
             animation: Down $PPMenuAnimationTime $PPMenuDelayTime both;
         }
 
-        // ----- logo -----
         .logo {
+            position: fixed;
             top: 0;
-            left: px(100);
             padding-top: px(60);
-            animation: Down $PPLogoAnimationTime $PPLogoDelayTime both;
-
-           .image {
-                @include image-retina("/../images/logo.png", "/../images/logo-2x.png");
-                background-repeat: no-repeat;
-
-                &.black {
-                    @include image-retina("/../images/logo-black.png", "/../images/logo-black-2x.png");
-                    background-repeat: no-repeat;
-                }
-            } 
+            height: px(182);
+            animation: Down $PPLogoAnimationTime $PPLogoDelayTime both; 
         }
 
-        // ----- language -----
         .language {
-            bottom: 45vh;
-            left: px(100);
-            font-size: 0;
-            transform-origin: 0 0;
-            transform: rotate(-90deg);
-            overflow: hidden;
 
             a {
-                display: inline-block;
-                padding: 0 px(10);
-                color: $gray;
-                cursor: pointer;
-                font-size: px(28);
-                font-weight: $thin;
-                text-transform: uppercase;
                 animation: Down $PPLangAnimationTime $PPLangDelayTime both;
-
-                &.select {
-                    color: $white;
-
-                    &::before {
-                        position: relative;
-                        color: $white;
-                        content: '—';
-                    }
-                }
-                
-                &:hover {
-                    color: $white;
-                    transition: $time;
-                }
             }
         }
 
-        // ----- social -----
-        .social {
-            bottom: px(90);
-            left: px(100);
-
-            a {
-                display: block;
-                position: relative;
-                width: px(60);
-                height: px(60);
-                border: 1px solid $white;
-                cursor: pointer;
-    
-                path {
-                    fill: $white;
-                }
-    
-                &:before {
-                    display: block;
-                    position: absolute;
-                    top: px(13);
-                    right: px(13);
-                    width: 100%;
-                    height: 100%;
-                    background: $blue;
-                    content: '';
-                    opacity: 0;
-                    transition: top $time, right $time, opacity $time;
-                }
-    
-                &:hover {
-    
-                    &:before {
-                        top: px(5);
-                        right: px(5);
-                        opacity: 1;
-                    }
-                }
-    
-                &:first-child {
-                    transform-origin: 100% 100%;
-                    //animation: social $PPSocialAnimationTime $PPSocialDelayTime both;
-    
-                    svg {
-                        height: 60%;
-                        transform: translate3d(33%, 33%, 0);
-                    }
-                }
-    
-                &:last-child {
-                    transform-origin: 0 0;
-                    transform: translate3d(px(58), px(-2), 0);
-                    animation: socialReversed $PPSocialAnimationTime $PPSocialDelayTime both;
-    
-                    svg {
-                        height: 50%;
-                        transform: translate3d(50%, 50%, 0);
-                    }
-                }
-            }
-        }
-
-        // ----- jump letters -----
-        .jump-letters a {
-            @include inline-block;
-            text-align: center;
-            position: relative;
-            padding: 0 px(20);
-            overflow: hidden;
-            width: initial;
-            font-size: 0;
-            &:before {
-                left: 0;
-                top: 45%;
-                width: 100%;
-                height: 1px;
-                content: '';
-                display: block;
-                position: absolute;
-                background: $black;
-                transform: translateX(-100%);
-            }
-            span {
-                @include inline-block;
-                font-size: px(24);
-                padding: px(10) 0;
-            }
-            &:hover {
-                span {
-                    animation-duration: .25s;
-                    animation-fill-mode: forwards;
-                    &:nth-child(odd) { animation-name: letterUp; }
-                    &:nth-child(even) { animation-name: letterDown; }
-                    &:nth-child(1) { animation-delay: 0s; }
-                    &:nth-child(2) { animation-delay: $timeTickHalf / 2; }
-                    &:nth-child(3) { animation-delay: $timeTickHalf; }
-                    &:nth-child(4) { animation-delay: $timeTickHalf * 1.5; }
-                    &:nth-child(5) { animation-delay: $timeTickHalf * 2; }
-                    &:nth-child(6) { animation-delay: $timeTickHalf * 2.5; }
-                    &:nth-child(7) { animation-delay: $timeTickHalf * 3; }
-                }
-                &:before { animation: crossAnchor $timeTick $timeTickHalf * 4 + .25s forwards; }
-            }
-        }
-
-        // ----- behance -----
-        .behance {
-            bottom: px(90);
-            left: px(440);
-            overflow: hidden;
-
-            a {
-                animation: Right $PPBehanceAnimationTime $PPBehancelDelayTime both;
-
-                span {
-                    color: $white;
-                    font-size: px(24);
-                    font-weight: $thin;
-                }
-
-                &:before {
-                    top: 50%;
-                    left: -1px;
-                    background: $white;
-                }
-            }
-        }
-
-        // ----- copyright -----
-        .copyright {
-            right: px(60);
-            bottom: 39vh;
-            font-size: px(24);
-            overflow: hidden;
-            transform-origin: 100% 0;
-            transform: rotate(-90deg);
+        .new-copyright {
 
             p {
-                padding-bottom: px(4);
-                color: $white;
-                font-weight: $thin;
                 animation: Up $PPCopyAnimationTime $PPCopyDelayTime both;
+            }
+        }
+
+        .social {
+
+            .facebook,
+            .instagram {
+                animation-delay: $time * 3;
+            } 
+
+            .jumping-button {
+                animation-delay: $time * 6;
             }
         }
 

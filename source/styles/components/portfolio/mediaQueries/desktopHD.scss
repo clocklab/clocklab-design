@@ -1,1 +1,8 @@
 @import '../desktop';
+
+& {
+
+    .front-layer {
+        min-height: 900px;
+    }
+}

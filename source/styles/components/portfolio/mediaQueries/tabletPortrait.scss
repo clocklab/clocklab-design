@@ -5,6 +5,13 @@
 
     .back-layer {
 
+        .clock-bg {
+
+            span {
+                text-shadow: px(4) px(4) px(4) rgba(0, 0, 0, 0.2);
+            }
+        }
+
         .letter {
             font-size: px(400);
 
@@ -95,6 +102,10 @@
                     height: px(1000);
                     min-height: px(1000);
                 }
+            }
+
+            &:last-child {
+                padding-right: px(100);
             }
         }
     }

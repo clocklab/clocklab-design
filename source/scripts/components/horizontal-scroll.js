@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const difPos = maxLeftPos - minLeftPos;
 
     const frontLayer = document.querySelector('.portfolio .front-layer')
-    const content = document.querySelector('.portfolio .front-layer .content-container')
-    const difWidth = content.getBoundingClientRect().width - frontLayer.offsetWidth
+    const content = document.querySelector('.portfolio .front-layer .content-container .portfolio-item:last-child')
+    const difWidth = content.getBoundingClientRect().right - frontLayer.offsetWidth
 
     const koef = difPos / difWidth
 
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const removeEvents = () => {
-        frontLayer.style.cursor = ''
+        frontLayer.removeAttribute('style')
         currentLeftPos = event.clientX
         currentScrollLeft = frontLayer.scrollLeft
         
