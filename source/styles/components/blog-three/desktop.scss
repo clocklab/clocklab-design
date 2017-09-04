@@ -9,6 +9,16 @@
         from { transform: translate3d(-100%, -100%, 0); }
         to { transform: translate3d(0, 0, 0); }
     }
+
+    // ----- letter c -----
+    .big-background-letter {
+        top: 0;
+        right: 7vh;
+        z-index: 3;
+        font-size: 58vh;
+        color: $darkGray;
+        span::before  { content: 'c'; }
+    }
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все новости'; }
@@ -16,7 +26,7 @@
     // ----- title -----
     .title {
         left: px(280);
-        bottom: px(180);
+        bottom: px(625);
         position: absolute;
     }
 
@@ -42,20 +52,20 @@
         top: 0;
         z-index: 2;
         height: 35vh;
-        left: px(1300);
         width: px(850);
+        right: px(1700);
         background: $blue;
         position: absolute;
     }
     
     // ----- image-block -----
     .image-block {
+        top: 19vh;
         z-index: 3;
+        right: px(600);
         width: px(1540);
         height: px(1070);
-        margin-top: 19vh;
-        margin-left: px(1690);
-        position: relative;
+        position: absolute;
         .image-container {
             width: 100%;
             height: 100%;
