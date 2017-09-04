@@ -31,7 +31,14 @@ document.addEventListener('DOMContentLoaded', () => {
             image.style.top = `${topPos}%`
             image.style.left = `${leftPos}%`
 
-            localStorage.setItem('mockup', JSON.stringify({'mockup-transition': true}))
+            localStorage.setItem('position', JSON.stringify(
+                {
+                    'left': document.body.clientWidth * 0.25,
+                    'top': document.body.clientHeight * 0.25,
+                    'width': document.body.clientWidth / 2,
+                    'height': document.body.clientHeight / 2
+                }
+            ))
 
             link.classList.add('active')
             link.parentElement.parentElement.style.zIndex = '9999'
