@@ -3,7 +3,10 @@
 // ----- title -----
 .title {
 	margin: 20vh 0 0 px(200);
-	.word span { font-size: px(70); }
+	.word {
+        &:after { top: 10px; }
+        span { font-size: px(70); }
+    }
 }
 
 // ----- service-info -----

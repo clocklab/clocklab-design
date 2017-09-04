@@ -8,8 +8,7 @@
     .bottom-button span:before { content: 'Все новости'; }
 
     // ----- title -----
-    .title { margin: 28vh 0 0 40vh; }
-
+    .title { margin: 21vh 0 0 39vh; }
     .text-block {
         font-weight: $medium;
         position: absolute;
@@ -21,30 +20,6 @@
         width: 29%;
         right: 11%;
         top: 20%;
-    }
-
-    // ----- small-gray-lines -----
-    .small-gray-lines .line {
-        &:nth-of-type(1) {
-            left: 19vh;
-            top: 4vh;
-        }
-        &:nth-of-type(2) {
-            left: 101vh;
-            top: -12vh;
-        }
-        &:nth-of-type(3) {
-            right: 9vh;
-            top: 37vh;
-        }
-        &:nth-of-type(4) {
-            bottom: -10vh;
-            left: 30vh;
-        }
-        &:nth-of-type(5) {
-            bottom: 14vh;
-            right: 90vh;
-        }
     }
 
     // ----- jump-button -----
@@ -67,15 +42,24 @@
     // ----- service-info -----
     .service-info {
         position: absolute;
-        transform: rotate(90deg);
-        bottom: 19%;
-        width: 6%;
-        left: 18%;
         p {
-            font-weight: $medium;
-            font-size: px(22);
+            font-family: $roboto;
+            font-size: px(26);
             line-height: 1.4;
             color: $white;
+        }
+        &.horizontal {
+            bottom: 27.5vh;
+            left: px(590);
+            width: 325px;
+        }
+        &.vertical {
+            transform: rotate(-90deg);
+            width: 135px;
+            &.one {
+                left: px(12);
+                top: 34.5vh;
+            }
         }
     }
 }
