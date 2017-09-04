@@ -16,6 +16,10 @@
 // menu
 //= components/menu.js
 
+// transition to mockup
+//= components/transition-to-mockup-start.js
+
+
 // clock
 //= components/clock.js
 

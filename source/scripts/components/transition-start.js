@@ -9,9 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const position = link.parentElement.parentElement.querySelector('img').getBoundingClientRect()
             const href = link.getAttribute('href')
 
-            console.log(typeof position)
-            console.log(JSON.stringify(position))
-
             localStorage.setItem('position', JSON.stringify(
                 {
                     'left': position.left,
