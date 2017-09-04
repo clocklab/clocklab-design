@@ -7,6 +7,58 @@
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все новости'; }
+    
+    // ----- image-block -----
+    .image-block {
+        position: absolute;
+        .image-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 0 px(60) px(16) rgba(0,0,0,.3);
+            img {
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: relative;
+            }
+            &:before {
+                height: 100%;
+                width: 100%;
+                z-index: 2;
+                content: '';
+                position: absolute;
+                background: $darkGray;
+                transform: translate3d(-90%, 90%, 0);
+            }
+        }
+        &.up {
+            height: px(265);
+            width: px(295);
+            top: px(200);
+            z-index: 3;
+            right: 0;
+            p {
+                transform: rotate(0);
+                position: absolute;
+                font-size: px(34);
+                bottom: -30px;
+                right: px(30);
+                color: $white;
+                font-weight: $thin;
+                font-family: $roboto;
+                transform-origin: 0 0;
+            }
+        }
+        &.down {
+            height: px(290);
+            width: px(380);
+            top: px(250);
+            z-index: 4;
+        }
+    }
 
     // ----- jump-button -----
     .jump-button {
@@ -27,7 +79,7 @@
     
     // ----- title -----
     .title {
-        padding: 45vh px(50) 0;
+        padding: 60vh px(50) 0;
         width: 100%;
         p {
             padding: 7% 0 0;
@@ -40,5 +92,18 @@
             top: -3.5vh;
         }
         .word span { font-size: px(47); }
+    }
+
+    // ----- current -----
+    &.current {
+        .blue-line { animation: heightChanging $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
+        .image-block {
+            p { animation: textApear $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
+            .image-container {
+                animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+                img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
+                &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
+            }
+        }
     }
 }

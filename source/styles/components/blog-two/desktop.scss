@@ -7,8 +7,18 @@
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все новости'; }
 
+    // ----- letter o -----
+    .big-background-letter {
+        top: 3vh;
+        z-index: 4;
+        right: 66vh;
+        color: $white;
+        font-size: 45vh;
+        span::before  { content: 'o'; }
+    }
+
     // ----- title -----
-    .title { margin: 21vh 0 0 39vh; }
+    .title { margin: 21vh 0 0 px(750); }
     .text-block {
         font-weight: $medium;
         position: absolute;
@@ -22,20 +32,73 @@
         top: 20%;
     }
 
-    // ----- jump-button -----
-    .jump-button {
-        left: initial;
-        bottom: 20.5%;
-        right: 15.3%;
-        a {
-            text-transform: uppercase;
-            &:before { background: $white; }
-            span {
-                color: $white;
-                font-size: px(25);
-                font-weight: $medium;
-                &:nth-of-type(10) { margin-right: 5px;}
+    // ----- image-block -----
+    .image-block {
+        position: absolute;
+        height: px(1050);
+        width: px(920);
+        .image-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 0 px(60) px(16) rgba(0,0,0,.3);
+            img {
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: relative;
             }
+            &:before {
+                height: 100%;
+                width: 100%;
+                z-index: 2;
+                content: '';
+                position: absolute;
+                background: $darkGray;
+                transform: translate3d(-90%, 90%, 0);
+            }
+        }
+        &.up {
+            right: px(400);
+            z-index: 3;
+            top: 0;
+            p {
+                transform: rotate(90deg);
+                position: absolute;
+                font-size: px(34);
+                right: px(-260);
+                top: px(840);
+                color: $white;
+                font-weight: $thin;
+                font-family: $roboto;
+                transform-origin: 0 0;
+            }
+            .gray {
+                background: $darkGray;
+                position: absolute;
+                height: 180px;
+                width: 180px;
+                top: px(940);
+                right: px(-240);
+            }
+        }
+        &.down {
+            right: px(836);
+            top: px(860);
+            z-index: 4;
+        }
+    }
+
+    // ----- jump-button -----
+    .jump-button a {
+        text-transform: uppercase;
+        &:before { background: $white; }
+        span {
+            color: $white;
+            font-size: px(25);
+            font-weight: $medium;
         }
     }
     
@@ -49,16 +112,29 @@
             color: $white;
         }
         &.horizontal {
-            bottom: 27.5vh;
-            left: px(590);
-            width: 325px;
+            bottom: 14.5vh;
+            width: 250px;
+            left: 75px;
         }
         &.vertical {
             transform: rotate(-90deg);
             width: 135px;
             &.one {
-                left: px(12);
+                left: 20px;
                 top: 34.5vh;
+            }
+        }
+    }
+
+    // ----- current -----
+    &.current {
+        .blue-line { animation: heightChanging $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
+        .image-block {
+            p { animation: textApear $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
+            .image-container {
+                animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+                img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
+                &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
             }
         }
     }

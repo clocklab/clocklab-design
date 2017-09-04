@@ -1,1 +1,46 @@
-@import '../desktop';
+@import 'desktop';
+
+// ----- title -----
+.title {
+	margin: 21vh 0 0 px(280);
+	.word {
+		&:after { top: 10px; }
+		span { font-size: px(70); }
+	}
+	&.padding {
+		p { padding: px(70) 0 0; }
+		.jump-button {
+			padding: px(70) 0 0 0;
+			position: absolute;
+			bottom: -50px;
+			left: -10px;
+		}
+	}
+}
+
+// ----- letter o -----
+.big-background-letter { left: 90vh; }
+
+// ----- image-block -----
+.image-block {
+    height: px(465);
+    width: px(410);
+    &.up {
+        right: px(350);
+        p { top: px(230); }
+        .gray {
+            right: px(-165);
+            top: px(400);
+        }
+    }
+    &.down {
+        right: px(600);
+        top: px(350);
+    }
+}
+
+// ----- service-info -----
+.service-info {
+    &.horizontal { left: 40px; }
+    &.vertical.one { left: -10px; }
+}
