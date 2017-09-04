@@ -1,31 +1,36 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     const slides = Array.prototype.slice.call( document.querySelectorAll('.screen-block'))
-    const events = [/*'wheel', 'scroll',*/ 'keydown']
+    const events = ['wheel', 'scroll', 'keydown']
     const animationTime = 1000
+    let freezer
+    let flag = true
     
-    const removeListeners = () => events.forEach(event => document.removeEventListener(event, move))
-    
-    const addListeners = () => events.forEach(event => document.addEventListener(event, move))
-    
+    const addListeners = () => events.forEach(event => document.addEventListener(event, freezeEvents))
+
+    const freezeEvents = () => {
+        if (flag) {
+            move()
+            flag = !flag
+        }
+
+        freezer && clearTimeout(freezer)
+
+        freezer = setTimeout(() => {
+            flag = !flag
+        }, animationTime)
+    }
+
     const moveToNext = index => {
-        removeListeners()
-    
         slides[index + 1]
         ? slides[index + 1].classList.add('current') 
         : slides[0].classList.add('current')
-    
-        setTimeout(addListeners, animationTime)
     }
     
     const moveToPrevious = (index) => {
-        removeListeners()
-    
         slides[index - 1]
         ? slides[index - 1].classList.add('current')
         : slides[slides.length - 1].classList.add('current')
-    
-        setTimeout(addListeners, animationTime)
     }
     
     const move = () => {
@@ -53,5 +58,4 @@ document.addEventListener('DOMContentLoaded', () => {
     addListeners()
     
     slides[0].classList.add('current')
-    
 })
