@@ -1,1 +1,20 @@
 @import '../mobile';
+
+// ----- title -----
+.title { padding: 50vh px(50) 0; }
+
+// ----- image-block -----
+.image-block {
+    &.up {
+        height: px(530);
+        width: px(590);
+        p {
+            bottom: -25px;
+            right: px(60);
+        }
+    }
+    &.down {
+        height: px(560);
+        width: px(760);
+    }
+}

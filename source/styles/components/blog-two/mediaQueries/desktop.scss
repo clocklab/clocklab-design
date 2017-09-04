@@ -1,1 +1,36 @@
 @import '../desktop';
+
+// ----- title -----
+.title { margin: 21vh 0 0 px(280); }
+
+// ----- letter o -----
+.big-background-letter {
+    top: 50vh;
+    left: 70vh;
+}
+
+// ----- image-block -----
+.image-block {
+    height: px(700);
+    width: px(615);
+    &.up {
+        right: px(400);
+        p { top: px(480); }
+        .gray {
+            right: px(-165);
+            height: 100px;
+            width: 100px;
+            top: px(650);
+        }
+    }
+    &.down {
+        right: px(600);
+        top: px(550);
+    }
+}
+
+// ----- service-info -----
+.service-info {
+    &.horizontal { left: 40px; }
+    &.vertical.one { left: -10px; }
+}
