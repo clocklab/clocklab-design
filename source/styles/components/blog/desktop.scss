@@ -141,6 +141,10 @@
         overflow: hidden;
     }
 
+    .logo {
+        animation: fadeIn $BLogoAnimationTime $BLogoDelayTime both;
+    }
+    
     .menu {
         animation: fadeIn $BMenuAnimationTime $BMenuDelayTime both;
     }
