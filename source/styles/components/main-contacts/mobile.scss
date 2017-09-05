@@ -37,12 +37,6 @@
             &:before { animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both; }
             &:after { animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
         }
-
-        // ----- small-gray-lines -----
-        .small-gray-lines .line {
-            animation: lineUp 1s $time * 4 both;
-            &.down { animation-name: lineDown; }
-        }
     }
     
     // ----- page-layer -----
@@ -90,9 +84,6 @@
         }
     }
 
-    // ----- small-gray-lines -----
-    .small-gray-lines { z-index: -1; }
-    
     // ----- main-contacts-info -----
     .main-contacts-info {
         display: inherit;

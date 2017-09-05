@@ -23,6 +23,12 @@
             .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
         }
 
+        // ----- small-gray-lines -----
+        .small-gray-lines .line {
+            animation: lineUp 1s $time * 3 both;
+            &.down { animation-name: lineDown; }
+        }
+            
         // ----- title -----
         .title {
             p {
@@ -45,12 +51,6 @@
                     animation: titleWord $time * 2 $time * 5 linear;
                     animation-fill-mode: forwards;
                 }
-            }
-
-            // ----- small-gray-lines -----
-            .small-gray-lines .line {
-                animation: lineUp 1s $time * 3 both;
-                &.down { animation-name: lineDown; }
             }
         }
     }

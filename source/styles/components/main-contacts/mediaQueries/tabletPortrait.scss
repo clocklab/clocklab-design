@@ -1,5 +1,8 @@
 @import '../mobile';
-.logo, .menu, .small-gray-lines { display: block; }
+.logo, .menu { display: block; }
+
+// ----- small-gray-lines -----
+.small-gray-lines { display: none; }
 
 // ----- main-contacts-title -----
 .main-contacts-title {

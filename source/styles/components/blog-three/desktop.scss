@@ -47,12 +47,12 @@
                     animation-fill-mode: forwards;
                 }
             }
+        }
 
-            // ----- small-gray-lines -----
-            .small-gray-lines .line {
-                animation: lineUp 1s $time * 3 both;
-                &.down { animation-name: lineDown; }
-            }
+        // ----- small-gray-lines -----
+        .small-gray-lines .line {
+            animation: lineUp 1s $time * 3 both;
+            &.down { animation-name: lineDown; }
         }
         
         // ----- blue-line and image-block -----
