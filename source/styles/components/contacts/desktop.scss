@@ -3,6 +3,16 @@
     font-weight: $regular;
     overflow: hidden;
     
+    // ----- letter c -----
+    .big-background-letter {
+        top: 4vh;
+        z-index: 4;
+        right: -2vh;
+        font-size: 120vh;
+        color: rgba(68,68,68,.3);
+        span::before  { content: 'c'; }
+    }
+    
     // ----- page-layer -----
     .page-layer {
         top: 0;
@@ -69,12 +79,5 @@
                 display: block;
             }
         }
-    }
-
-    // ----- bg letter -----
-    .bg-letter {
-        background: url('../images/letter-2.png') no-repeat;
-        background-position: 96% 100%;
-        background-size: 28%;
     }
 }

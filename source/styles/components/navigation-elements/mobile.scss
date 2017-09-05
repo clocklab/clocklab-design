@@ -3,13 +3,35 @@
     font-weight: $regular;
    
     // ----- logo and menu animation -----
-    // .logo, .menu { animation: fadeInDown $time * 3 both; }
-
-    // ----- logo -----
-    // .logo {
-    //     width: px(285);
-    //     top: px(30);
-    // }
+    .logo, .menu { animation: fadeInDown $time * 3 both; }
+    
+    // ----- jump-button -----
+    .jump-button {
+        position: absolute;
+        padding: 0;
+        z-index: 2;
+        bottom: 5%;
+        margin: 0;
+        left: 11%;
+        a {
+            &:before {
+                top: 52%;
+                left: -1px;
+                background: $white;
+            }
+            span {
+                color: $white;
+                font-size: px(24);
+                font-weight: $thin;
+            }
+        }
+    }
+    
+     ----- logo -----
+     .logo {
+         width: px(285);
+         top: px(30);
+     }
 
     // ----- bg letter -----
     .bg-letter {
@@ -56,121 +78,6 @@
             &:hover {
                 color: $white;
                 transition: $time;
-            }
-        }
-    }
-
-    // ----- social -----
-    .social {
-        position: absolute;
-        bottom: px(22);
-        left: px(22);
-        z-index: 1;
-        a {
-            border: 1px solid $white;
-            position: relative;
-            cursor: pointer;
-            display: block;
-            height: px(60);
-            width: px(60);
-            path { fill: $white; }
-            &:before {
-                top: 15px;
-                opacity: 0;
-                content: '';
-                right: 15px;
-                width: 100%;
-                height: 100%;
-                display: block;
-                background: $blue;
-                position: absolute;
-                transition: top $time, right $time, opacity $time;
-            }
-            &:hover::before {
-                top: 5px;
-                right: 5px;
-                opacity: 1;
-            }
-            &:first-child {
-                transform-origin: 100% 100%;
-                animation: social $PPSocialAnimationTime $PPSocialDelayTime both;
-                svg {
-                    transform: translate3d(50%, 50%, 0);
-                    height: 50%;
-                }
-            }
-            &:last-child {
-                transform-origin: 0 0;
-                transform: translate3d(px(58), px(-2), 0);
-                animation: socialReversed $PPSocialAnimationTime $PPSocialDelayTime both;
-                svg {
-                    transform: translate3d(50%, 50%, 0);
-                    height: 50%;
-                }
-            }
-        }
-    }
-    // ----- jump letters -----
-    .jump-letters a {
-        @include inline-block;
-        text-align: center;
-        position: relative;
-        padding: 0 px(20);
-        overflow: hidden;
-        width: initial;
-        font-size: 0;
-        &:before {
-            left: 0;
-            top: 45%;
-            width: 100%;
-            height: 1px;
-            content: '';
-            display: block;
-            position: absolute;
-            background: $black;
-            transform: translateX(-100%);
-        }
-        span {
-            @include inline-block;
-            font-size: px(24);
-            padding: px(10) 0;
-        }
-        &:hover {
-            span {
-                animation-duration: .25s;
-                animation-fill-mode: forwards;
-                &:nth-child(odd) { animation-name: letterUp; }
-                &:nth-child(even) { animation-name: letterDown; }
-                &:nth-child(1) { animation-delay: 0s; }
-                &:nth-child(2) { animation-delay: $timeTickHalf / 2; }
-                &:nth-child(3) { animation-delay: $timeTickHalf; }
-                &:nth-child(4) { animation-delay: $timeTickHalf * 1.5; }
-                &:nth-child(5) { animation-delay: $timeTickHalf * 2; }
-                &:nth-child(6) { animation-delay: $timeTickHalf * 2.5; }
-                &:nth-child(7) { animation-delay: $timeTickHalf * 3; }
-            }
-            &:before { animation: crossAnchor $timeTick $timeTickHalf * 4 + .25s forwards; }
-        }
-    }
-    
-    // ----- jump-button -----
-    .jump-button {
-        position: absolute;
-        bottom: 2.5%;
-        z-index: 1;
-        padding: 0;
-        margin: 0;
-        left: 26%;
-        a {
-            &:before {
-                top: 52%;
-                left: -1px;
-                background: $white;
-            }
-            span {
-                color: $white;
-                font-size: px(24);
-                font-weight: $thin;
             }
         }
     }

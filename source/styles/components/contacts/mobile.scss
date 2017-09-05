@@ -4,6 +4,16 @@
     font-weight: $regular;
     overflow: hidden;
     
+    // ----- letter c -----
+    .big-background-letter {
+        bottom: 0;
+        right: 7vh;
+        z-index: 4;
+        font-size: 60vh;
+        color: rgba(68,68,68,.3);
+        span::before  { content: 'c'; }
+    }
+    
     // ----- title -----
     .title {
         display: inherit;
@@ -65,9 +75,6 @@
         display: inherit;
         bottom: 33vh;
     }
-
-    // ----- bg letter -----
-    .bg-letter { display: none; }
 
     // ----- small-gray-lines -----
     .small-gray-lines { display: none; }

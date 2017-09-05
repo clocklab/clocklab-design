@@ -1,4 +1,15 @@
 @import '../desktop';
 
+// ----- title -----
+.title {
+	bottom: px(300);
+	.word::after { top: 19px; }
+}
+
 // ----- image-block -----
-.image-block { margin-left: px(1450); }
+.image-block {
+    width: px(1230);
+    height: px(855);
+    right: px(800);
+    top: px(100);
+}

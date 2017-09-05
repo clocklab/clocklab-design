@@ -13,6 +13,28 @@
         span::before  { content: 'c'; }
     }
 
+    // ----- jump-button -----
+    .jump-button {
+        position: absolute;
+        padding: 0;
+        z-index: 2;
+        bottom: 5%;
+        margin: 0;
+        left: 11%;
+        a {
+            &:before {
+                top: 52%;
+                left: -1px;
+                background: $white;
+            }
+            span {
+                color: $white;
+                font-size: px(24);
+                font-weight: $thin;
+            }
+        }
+    }
+
     // ----- language -----
     .language {
         transform: rotate(-90deg);
@@ -54,54 +76,7 @@
         }
     }
 
-    // ----- social -----
-    .social {
-        position: absolute;
-        bottom: px(84);
-        left: px(90);
-        z-index: 2;
-        a {
-            border: 1px solid $white;
-            position: relative;
-            cursor: pointer;
-            display: block;
-            height: px(60);
-            width: px(60);
-            svg {
-                transform: translate3d(50%, 50%, 0);
-                height: 50%;
-                path { fill: $white; }
-            }
-            &:before {
-                top: 15px;
-                opacity: 0;
-                content: '';
-                right: 15px;
-                width: 100%;
-                height: 100%;
-                display: block;
-                background: $blue;
-                position: absolute;
-                transition: top $time, right $time, opacity $time;
-            }
-            &:hover::before {
-                top: 5px;
-                right: 5px;
-                opacity: 1;
-            }
-            &:first-child {
-                transform-origin: 100% 100%;
-                animation: social $PPSocialAnimationTime $PPSocialDelayTime both;
-            }
-            &:last-child {
-                transform-origin: 0 0;
-                transform: translate3d(px(58), px(-2), 0);
-                animation: socialReversed $PPSocialAnimationTime $PPSocialDelayTime both;
-            }
-        }
-    }
-
-    // ----- jump letters -----
+        // ----- jump letters -----
     .jump-letters a {
         @include inline-block;
         text-align: center;
@@ -153,28 +128,6 @@
         }
     }
     
-    // ----- jump-button -----
-    .jump-button {
-        position: absolute;
-        padding: 0;
-        z-index: 2;
-        bottom: 5%;
-        margin: 0;
-        left: 11%;
-        a {
-            &:before {
-                top: 52%;
-                left: -1px;
-                background: $white;
-            }
-            span {
-                color: $white;
-                font-size: px(24);
-                font-weight: $thin;
-            }
-        }
-    }
-
     // ----- copyright -----
     .copyright {
         transform: rotate(-90deg);
