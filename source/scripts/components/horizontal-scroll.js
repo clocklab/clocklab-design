@@ -36,9 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
         currentLeftPos = event.clientX
         currentScrollLeft = frontLayer.scrollLeft
         
-        frontLayer.removeEventListener('mousemove', moveObjects)
-        frontLayer.removeEventListener('mouseup', removeEvents)
-        frontLayer.removeEventListener('mouseleave', removeEvents)
+        document.removeEventListener('mousemove', moveObjects)
+        document.removeEventListener('mouseup', removeEvents)
     }
 
     frontLayer.addEventListener('scroll', () => {
@@ -47,13 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
         moveLetters(newLeftPos)
     })    
 
-    frontLayer.addEventListener('mousedown', event => {
+    document.addEventListener('mousedown', event => {
         currentLeftPos = event.clientX
         currentScrollLeft = frontLayer.scrollLeft
         frontLayer.style.cursor = '-webkit-grabbing'
 
-        frontLayer.addEventListener('mousemove', moveObjects)
-        frontLayer.addEventListener('mouseup', removeEvents)
-        frontLayer.addEventListener('mouseleave', removeEvents)
+        document.addEventListener('mousemove', moveObjects)
+        document.addEventListener('mouseup', removeEvents)
     })
 })
