@@ -122,6 +122,8 @@ $PAStickerTextAnimationTime: $time * 3;
 $PAAboutDelayTime: $PAStickerLineDelayTime;
 $PAAboutAnimationTime: $time * 3;
 
+
+
     // MOBILE
     $portfolioAudiCenterBlockDelayTimeMobile: $time * 3;
     $portfolioAudiCenterBlockLineDelayTimeMobile: $portfolioAudiCenterBlockDelayTimeMobile + $portfolioAudiCenterBlockAnimationTime;
@@ -133,6 +135,8 @@ $PAAboutAnimationTime: $time * 3;
     $PATitleDelayTimeMobile: $PAStickerLineDelayTimeMobile;
     $PATextDelayTimeMobile: $PAStickerTextDelayTimeMobile;
 
+    $PALongTextAnimationTime: $time * 3;
+    $PALongTextDelayTime: $PATextDelayTimeMobile;
 // VARIABLES FOR PORTFOLIO BLOCK AUDI Q7 END
 
 
@@ -221,6 +225,9 @@ $PEAboutAnimationTime: $time * 3;
 
 $portfolioEuroclubLetterDelayTime: $portfolioEuroclubImageTextDelayTime + $portfolioEuroclubImageTextAnimationTime;
 $portfolioEuroclubLetterAnimationTime: $time * 3;
+
+$PELongTextDelayTime: $PEAboutDelayTime;
+$PELongTextAnimationTime: $PEAboutAnimationTime;
 // VARIABLES FOR PORTFOLIO BLOCK EURO CLUB END
 
 
@@ -269,6 +276,9 @@ $PACStickerTextAnimationTime: $time * 3;
     $portfolioAltaControlsRightBlockDelayTimeMobile: $portfolioAltaImageDelayTime + $portfolioAltaImageAnimationTime;
     $portfolioAltaControlsLeftBlockDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile; 
     $portfolioAltaControlsIndicatorsDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile + $portfolioAltaControlsRightBlockAimationTime;
+
+    $PALongTextDelayTime: 3.6s;
+    $PALongTextAnimationTime: $time * 3;
 // VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL ENDS 
 
 
