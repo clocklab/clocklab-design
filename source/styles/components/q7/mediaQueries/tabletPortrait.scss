@@ -63,6 +63,8 @@
 
     .about-work {
         margin-top: px(70);
+        height: initial;
+        max-height: initial;
 
         p {
             margin-bottom: px(30);
@@ -182,7 +184,7 @@
         }
     }
 
-    &.current {
+    &.current-slide {
 
         .car-covering-layer {
 
