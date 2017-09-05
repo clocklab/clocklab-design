@@ -3,6 +3,64 @@
     font-weight: $regular;
     overflow: hidden;
     
+    // ----- animation -----
+    &.current {
+        animation: fadeIn $time * 3 both;
+        
+        // ----- navigation-elements -----
+        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+        
+        // ----- shadow -----
+        .shadow div {
+            &:first-child { animation: fadeIn $time * 3 $time * 3 both; }
+            &:last-child { animation: fadeInRight $time * 3 $time * 3 both; }
+        }
+        
+        // ----- service-info -----
+        .service-info {
+            &.horizontal p { animation: fadeInUp $time * 2 $time * 8 both; }
+            &.vertical p { animation: fadeInDown $time * 2 $time * 7 both; }
+        }
+        .jump-button { animation: fadeInUp $time * 2 $time * 8 both; }
+
+        // ----- other -----
+        .bottom-button {
+            span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
+            .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
+        }
+        
+        // ----- info-block -----
+        .info-block {
+            animation: fadeInRight $time * 2 $time * 7 linear;
+            animation-fill-mode: forwards;
+        }
+
+        // ----- title -----
+        .title {
+            span.name {
+                span {
+                    animation: titleName $time * 2 $time * 8 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:before {
+                    animation: titleNameShape $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .word {
+                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+                &:nth-of-type(1) span {
+                    animation: titleWord $time * 2 $time * 5 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:nth-of-type(2) span {
+                    animation: titleWord $time * 2 $time * 6 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+    
     // ----- bg-image -----
     .bg-image {
         position: absolute;
@@ -44,33 +102,10 @@
         line-height: 1.5;
         width: px(1120);
         color: $white;
+        opacity: 0;
         z-index: 1;
         right: 11%;
         top: 20%;
-    }
-
-    // ----- small-gray-lines -----
-    .small-gray-lines .line {
-        &:nth-of-type(1) {
-            left: 19vh;
-            top: 4vh;
-        }
-        &:nth-of-type(2) {
-            left: 101vh;
-            top: -12vh;
-        }
-        &:nth-of-type(3) {
-            right: 9vh;
-            top: 37vh;
-        }
-        &:nth-of-type(4) {
-            bottom: -10vh;
-            left: 30vh;
-        }
-        &:nth-of-type(5) {
-            bottom: 14vh;
-            right: 90vh;
-        }
     }
 
     // ----- jump-button -----
