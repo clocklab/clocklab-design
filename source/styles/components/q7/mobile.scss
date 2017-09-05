@@ -4,6 +4,15 @@
     height: 100vh;
     overflow: hidden;
 
+    .long-text {
+
+        animation: fadeIn $PALongTextAnimationTime $PALongTextDelayTime both;
+
+        .open-long-text {
+            bottom: px(530);
+        }
+    }
+
     .info {
         position: absolute;
         top: px(200);
@@ -71,7 +80,11 @@
     }
 
     .about-work {
+        position: relative;
         margin-top: px(40);
+        max-height: px(80);
+        text-overflow: ellipsis;
+        overflow: hidden;
 
         p {
             display: block;

@@ -119,8 +119,21 @@
         }
     }
 
+    .long-text {
+        
+        animation: fadeIn $PELongTextAnimationTime $PELongTextDelayTime both;
+
+        .open-long-text {
+            bottom: px(90);
+        }
+    }
+
     .about-work {
+        position: relative;
         margin-top: px(30);
+        max-height: px(220);
+        text-overflow: ellipsis;
+        overflow: hidden;
 
         p {
             display: block;
@@ -133,6 +146,16 @@
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+
+        &:after {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: px(30);
+            background: linear-gradient(transparent, $white);
+            content: '';
         }
     }
 
