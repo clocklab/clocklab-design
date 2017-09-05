@@ -5,6 +5,46 @@
     font-weight: $regular;
     overflow: hidden;
     
+    // ----- animation -----
+    &.current-slide {
+
+        // ----- navigation-elements -----
+        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+
+        // ----- big-background-letter -----
+        .big-background-letter { animation: fadeIn $time * 3 $time * 4 both; }
+
+        // ----- main-contacts-title -----
+        .main-contacts-title { animation: fadeInLeftMap $time * 3 $time * 3 both; }
+
+        // ----- main-contacts-info -----
+        .main-contacts-info li {
+            &:nth-of-type(1) { animation: fadeInUp $time * 3 $time * 3 both; }
+            &:nth-of-type(2) { animation: fadeInUp $time * 3 $time * 4 both; }
+            &:nth-of-type(3) { animation: fadeInUp $time * 3 $time * 5 both; }
+        }
+
+        // ----- other -----
+        #map {
+            animation: mainConatactsMapRight $time * 3 $time * 3 linear;
+            animation-fill-mode: forwards;
+            & + .address p {
+                animation: fadeIn $time * 3 $time * 5 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .page-layer.back-layer {
+            &:before { animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both; }
+            &:after { animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
+        }
+
+        // ----- small-gray-lines -----
+        .small-gray-lines .line {
+            animation: lineUp 1s $time * 4 both;
+            &.down { animation-name: lineDown; }
+        }
+    }
+    
     // ----- page-layer -----
     .page-layer {
         top: 0;
@@ -24,14 +64,8 @@
                 content: '';
                 top: 0;
             }
-            &:before {
-                left: 0;
-                animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
-            }
-            &:after {
-                right: 0;
-                animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
-            }
+            &:before { left: 0; }
+            &:after { right: 0; }
         }
     }
     
@@ -56,36 +90,6 @@
         }
     }
 
-    // ----- page-layer -----
-   .page-layer {
-       top: 0;
-       left: 0;
-       &.back-layer {
-           position: fixed;
-           width: 100vw;
-           height: 100vh;
-           overflow: hidden;
-           &:before,
-           &:after {
-               background: $white;
-               position: absolute;
-               display: block;
-               height: 100vh;
-               width: 50vw;
-               content: '';
-               top: 0;
-           }
-           &:before {
-               left: 0;
-               animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
-           }
-           &:after {
-               right: 0;
-               animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
-           }
-       }
-   }
-    
     // ----- small-gray-lines -----
     .small-gray-lines { z-index: -1; }
     
@@ -113,9 +117,6 @@
         height: 43vh;
         position: absolute;
         visibility: hidden;
-        animation: mainConatactsMapDown .5s linear;
-        animation-fill-mode: forwards;
-        animation-delay: .5s;
         & + .address { display: none; }
     }
 }
