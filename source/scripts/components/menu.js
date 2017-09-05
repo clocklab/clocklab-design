@@ -30,4 +30,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     openCloseBtn.addEventListener('click', openMenu)
-})
+});

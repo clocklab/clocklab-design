@@ -75,6 +75,7 @@
 
     // ----- jump letters -----
     .jump-letters a {
+        animation: fadeInUp $time * 3 $time * 3 both;
         @include inline-block;
         text-align: center;
         position: relative;

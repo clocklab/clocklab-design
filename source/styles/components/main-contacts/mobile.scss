@@ -55,6 +55,36 @@
             }
         }
     }
+
+    // ----- page-layer -----
+   .page-layer {
+       top: 0;
+       left: 0;
+       &.back-layer {
+           position: fixed;
+           width: 100vw;
+           height: 100vh;
+           overflow: hidden;
+           &:before,
+           &:after {
+               background: $white;
+               position: absolute;
+               display: block;
+               height: 100vh;
+               width: 50vw;
+               content: '';
+               top: 0;
+           }
+           &:before {
+               left: 0;
+               animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
+           }
+           &:after {
+               right: 0;
+               animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
+           }
+       }
+   }
     
     // ----- small-gray-lines -----
     .small-gray-lines { z-index: -1; }

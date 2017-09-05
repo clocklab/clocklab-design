@@ -1,3 +1,13 @@
+$(window).on('load', function() {
+    
+    // ----- clock -----
+    (function() {
+      initLocalClocks();
+      moveSecondHands();
+      setUpMinuteHands();
+    })();
+});
+
 // устанавливает точку отсчета любых часов в соответствии с местным временем пользователя
 function initLocalClocks() {
 
