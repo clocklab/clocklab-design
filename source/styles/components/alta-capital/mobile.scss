@@ -134,8 +134,6 @@
     }
 
     .long-text {
-        
-        animation: fadeIn $PALongTextAnimationTime $PALongTextDelayTime both;
 
         .open-long-text {
             bottom: px(100);
@@ -162,10 +160,6 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-
-                &.loaded {
-                    animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
-                }
 
                 &.previous {
                     z-index: 1;
@@ -197,7 +191,6 @@
                 height: 100%;
                 background: $darkGray;
                 content: '';
-                animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
             }
 
             &:after {
@@ -209,7 +202,6 @@
                 height: 100%;
                 background: rgba(0, 0, 0, .4);
                 content: '';
-                animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
             }
         }
 
@@ -246,7 +238,6 @@
                 height: px(30);
                 background: linear-gradient(transparent, $lightBlack);
                 content: '';
-                animation: fadeIn $PALongTextAnimationTime $PALongTextDelayTime both;
             }
         }
     }
@@ -283,11 +274,7 @@
             cursor: pointer;
 
             &--next-slide {
-                order: 3;
-
-                .content-container {
-                    animation: right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTimeMobile both;
-                }   
+                order: 3;   
 
                 svg {
                     transform: translate3d(-50%, -50%, 0)
@@ -296,10 +283,6 @@
 
             &--previous-slide {
                 order: 1;
-
-                .content-container {
-                    animation: left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTimeMobile both;
-                }
 
                 svg {
                     transform: rotate(180deg) translate3d(50%, 50%, 0)
@@ -395,7 +378,6 @@
             font-size: 0;
             color: $white;
             text-align: center;
-            animation: up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTimeMobile both;
 
             span {
                 font-size: px(24);
@@ -420,10 +402,9 @@
     &:before {
         left: 0;
         width: 100vw;
-        animation: right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
     }
 
-    &.current {
+    &.current-slide {
         
         .bottom-button {
             
@@ -460,12 +441,66 @@
                 animation: Up $PVTitleLineAnimationTime $PVTitleDelayTimeMobile both;
             }
         }
-    
-        .text {
-    
-            p {
-                animation: fadeInUpHalf $PVAboutAnimationTime $PVTextDelayTimeMobile both;
+
+        .long-text {
+            animation: fadeIn $PALongTextAnimationTime $PALongTextDelayTime both;
+        }
+
+        .poster {
+
+            .image-container {
+
+                img {
+
+                    &.loaded {
+                        animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
+                    }
+                }
+
+                &:before,
+                &:after {
+                    animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
+                }
             }
+
+            .text {
+                
+                p {
+                    animation: fadeInUpHalf $PVAboutAnimationTime $PVTextDelayTimeMobile both;
+                }
+
+                &:after {
+                    animation: fadeIn $PALongTextAnimationTime $PALongTextDelayTime both;
+                }
+            }
+        }
+
+        .controls {
+            
+            .slide-controls {
+
+                &--next-slide {
+
+                    .content-container {
+                        animation: right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTimeMobile both;
+                    }
+                }
+
+                &--previous-slide {
+                    
+                    .content-container {
+                        animation: left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTimeMobile both;
+                    }
+                }
+            }
+
+            .indicators {
+                animation: up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTimeMobile both;
+            }
+        }
+
+        &:before {
+            animation: right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
         }
     }
 }

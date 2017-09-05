@@ -4,6 +4,9 @@
 // WowJS
 //= ../../bower_components/wow/dist/wow.js
 
+// slides changing
+//= components/slides-changing-mobile.js
+
 // clock-bg
 //= components/clock-bg.js
 

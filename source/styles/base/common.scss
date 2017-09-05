@@ -49,6 +49,14 @@ html {
                 z-index: 0;
                 &.current { z-index: 2; }              
                 &.previous { z-index: 1; }
+                @media only screen and (max-width: 1024px) {
+                    position: relative;
+                    z-index: 1;
+                    &.current,
+                    &.previous {
+                        z-index: 1;
+                    }
+                }
             }
         }
     }

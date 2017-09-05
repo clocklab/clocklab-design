@@ -120,8 +120,6 @@
     }
 
     .long-text {
-        
-        animation: fadeIn $PELongTextAnimationTime $PELongTextDelayTime both;
 
         .open-long-text {
             bottom: px(90);
@@ -173,7 +171,6 @@
         left: 0;
         width: px(54);
         background: $blue;
-        animation: heightChanging $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both;
     }
 
     @keyframes beforeApear {
@@ -224,7 +221,6 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both;
             }
 
             &:before {
@@ -234,7 +230,6 @@
                 height: 100%;
                 background: $darkGray;
                 content: '';
-                animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both;
             }
         }
 
@@ -243,7 +238,7 @@
         }
     }
 
-    &.current {
+    &.current-slide {
 
         .portfolio-client {
             
@@ -300,6 +295,10 @@
             }
         }
 
+        .long-text {
+            animation: fadeIn $PELongTextAnimationTime $PELongTextDelayTime both;
+        }
+
         .sticker {
 
             span {
@@ -329,6 +328,24 @@
     
             p {
                 animation: fadeInUpHalf $PVAboutAnimationTime $PVTextDelayTimeMobile both;
+            }
+        }
+
+        .blue-line {
+            animation: heightChanging $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both;
+        }
+
+        .image-block {
+
+            .image-container {
+
+                img {
+                    animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both;
+                }
+
+                &:before {
+                    animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both;
+                }
             }
         }
     }
