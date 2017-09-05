@@ -34,6 +34,7 @@
             padding: px(220);
             width: initial;
             min-height: 1024px;
+            max-height: 1024px;
         }
 
         .portfolio-item {
@@ -136,5 +137,9 @@
                 padding-right: px(100);
             }
         }
+    }
+
+    .new-copyright {
+        display: none;
     }
 }
