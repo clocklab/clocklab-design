@@ -1,1 +1,29 @@
-@import '../mobile';
+@import 'tabletLandscape';
+
+// ----- letter c -----
+.big-background-letter {
+    top: 38vh;
+    z-index: 4;
+    right: -2vh;
+    font-size: 75vh;
+    color: rgba(68,68,68,.3);
+    span::before  { content: 'c'; }
+}
+
+// ----- title -----
+.title {
+    margin: 26vh 0 0 px(160);
+    .word {
+        span { font-size: px(98); }
+        &:after { top: 19px; }
+    }
+}
+
+// ----- copyright -----
+.copyright { bottom: px(300); }
+
+// ----- contacts-info -----
+.contacts-info {
+	margin: 30vh 0 0 px(180);
+	li:nth-of-type(2) { margin-right: 200px; }
+}
