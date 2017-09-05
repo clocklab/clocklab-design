@@ -1,16 +1,22 @@
 @import '../desktop';
 
 // ----- blue-line -----
-.blue-line { width: px(400); }
+.blue-line {
+	width: px(400);
+	right: px(1400);
+}
 
 // ----- title -----
-.title { left: px(200); }
+.title {
+	left: px(200);
+	bottom: px(175);
+}
 
 // ----- image-block -----
 .image-block {
     width: px(1027);
     height: px(714);
-    margin-top: px(370);
+    margin-top: px(-200);
     margin-left: px(1400);
 }
 

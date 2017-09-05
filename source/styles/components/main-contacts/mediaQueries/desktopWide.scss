@@ -1,4 +1,6 @@
 @import '../desktop';
 
 // ----- map -----
-#map + .address { right: px(300); }
+#map { margin: 23vh px(350) 0 0;
+	& + .address { right: px(300); }
+}
