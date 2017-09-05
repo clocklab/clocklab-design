@@ -1,5 +1,5 @@
 & {
-    background-color: $background;
+    background-color: $white;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
@@ -19,8 +19,8 @@
       }
     }
 
-       // ----- page-layer -----
-   .page-layer {
+    // ----- page-layer -----
+    .page-layer {
        top: 0;
        left: 0;
        &.back-layer {
@@ -48,7 +48,7 @@
         padding: 28vh 0 0 px(780);
         p { padding: 2vh px(8) 0; }
     }
-    
+
     // ----- letter c -----
     .big-background-letter {
         right: 5vw;

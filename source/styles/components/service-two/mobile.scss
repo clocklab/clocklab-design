@@ -1,6 +1,6 @@
 & {
     .service-info { display: none; }
-    background-color: $background;
+    background-color: $white;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
@@ -50,6 +50,27 @@
         span::before { content: 'c'; }
     }
 
+    // ----- page-layer -----
+    .page-layer {
+        top: 0;
+        left: 0;
+        &.back-layer {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            &:after {
+                background: $background;
+                position: absolute;
+                display: block;
+                height: 100vh;
+                width: 100vw;
+                content: '';
+                top: 0;
+            }
+        }
+    }
+
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
 
@@ -82,5 +103,11 @@
             letter-spacing: 1px;
             font-size: px(48);
         }
+    }
+    
+    // ----- animation -----
+    &.current {
+        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+        .page-layer.back-layer::after { animation: Down $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
     }
 }

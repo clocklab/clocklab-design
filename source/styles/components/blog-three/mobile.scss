@@ -30,6 +30,28 @@
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все новости'; }
 
+    // ----- page-layer -----
+    .page-layer {
+        top: 0;
+        left: 0;
+        &.back-layer {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            &:after {
+                animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
+                background: $white;
+                position: absolute;
+                display: block;
+                height: 100vh;
+                width: 100vw;
+                content: '';
+                top: 0;
+            }
+        }
+    }
+
     // ----- letter c -----
     .big-background-letter {
         right: 2vh;

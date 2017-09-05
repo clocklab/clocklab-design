@@ -2,9 +2,6 @@
     font-family: $raleway;
     font-weight: $regular;
     
-    // ----- logo and menu animation -----
-    // .logo, .menu { animation: fadeInDown $time * 3 both; }
-    
     // ----- letter c -----
     .big-background-letter {
         top: -75vh;
@@ -140,6 +137,7 @@
             color: $white;
             font-size: px(29);
             font-weight: $thin;
+            animation: fadeInUp $time * 3 $time * 3 both;
         }
     }
 }

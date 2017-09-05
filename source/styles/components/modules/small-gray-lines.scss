@@ -16,12 +16,12 @@
         &.up {
            animation: lineUp 1s $time * 3 both;
            transform: rotate(-65deg) translate3d(100%, 0, 0);
-       }
-       &.down {
+        }
+        &.down {
            transform: rotate(-65deg) translate3d(100%, 0, 0);
            animation: lineDown 1s $time * 3 both;
-       }
-       &.up, &.down { animation: none; }
+        }
+        &.up, &.down { animation: none; }
         &:nth-of-type(1) {
             left: 18vh;
             top: -3vh;
