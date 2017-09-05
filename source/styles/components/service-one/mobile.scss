@@ -1,9 +1,68 @@
 & {
     .service-info { display: none; }
-    background-color: $white;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
+    
+    // ----- animation -----
+    &.current {
+        animation: fadeIn $time * 3 both;
+        
+        // ----- clock-bg -----
+        .clock-bg span {
+            &:before { animation: right $PPClockAnimationTime both; }
+            &:nth-child(1):before { animation-delay: $PPClockFirstDelayTime; }
+            &:nth-child(2):before { animation-delay: $PPClockSecondDelayTime; }
+            &:nth-child(3):before { animation-delay: $PPClockThirdDelayTime; }
+            &:nth-child(4):before { animation-delay: $PPClockFourthDelayTime; }
+            &:nth-child(5):before { animation-delay: $PPClockFifthDelayTime; }
+        }
+
+        // ----- navigation-elements -----
+        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+
+        // ----- service-info -----
+        .service-info {
+            &.horizontal p { animation: fadeInUp $time * 2 $time * 9 both; }
+            &.vertical p { animation: fadeInDown $time * 2 $time * 9 both; }
+        }
+        .jump-button { animation: fadeInUp $time * 2 $time * 9 both; }
+
+        // ----- other -----
+        .bottom-button {
+            span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
+            .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
+        }
+
+        // ----- title -----
+        .title {
+            p {
+                animation: fadeInUp $time * 2 $time * 7 linear;
+                animation-fill-mode: forwards;
+            }
+            span.name {
+                span {
+                    animation: titleName $time * 2 $time * 8 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:before {
+                    animation: titleNameShape $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .word {
+                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+                &:nth-of-type(1) span {
+                    animation: titleWord $time * 2 $time * 5 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:nth-of-type(2) span {
+                    animation: titleWord $time * 2 $time * 6 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }

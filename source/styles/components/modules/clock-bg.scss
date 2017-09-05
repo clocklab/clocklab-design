@@ -18,38 +18,12 @@
         &:before {
             display: block;
             font-size: 30vw;
-            animation: right $PPClockAnimationTime both;
             @media only screen and (max-width: 1024px) { text-shadow: 8px 8px 8px rgba(0,0,0,.05); }
         }
-        &:nth-child(1) {
-            &:before {
-                content: 'c';
-                animation-delay: $PPClockFirstDelayTime;
-            }
-        }
-        &:nth-child(2) {
-            &:before {
-                content: 'l';
-                animation-delay: $PPClockSecondDelayTime;
-            }
-        }
-        &:nth-child(3) {
-            &:before {
-                content: 'o';
-                animation-delay: $PPClockThirdDelayTime;
-            }
-        }
-        &:nth-child(4) {
-            &:before {
-                content: 'c';
-                animation-delay: $PPClockFourthDelayTime;
-            }
-        }
-        &:nth-child(5) {
-            &:before {
-                content: 'k';
-                animation-delay: $PPClockFifthDelayTime;
-            }
-        }
+        &:nth-child(1):before { content: 'c'; }
+        &:nth-child(2):before { content: 'l'; }
+        &:nth-child(3):before { content: 'o'; }
+        &:nth-child(4):before { content: 'c'; }
+        &:nth-child(5):before { content: 'k'; }
     }
 }
