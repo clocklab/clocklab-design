@@ -17,8 +17,6 @@
     .page-layer {
         top: 0;
         left: 0;
-        
-        // ----- back-layer -----
         &.back-layer {
             position: fixed;
             width: 100vw;
@@ -31,8 +29,8 @@
                 top: 0;
                 width: 50vw;
                 height: 100vh;
-                background: $background;
                 content: '';
+                background: $background;
             }
             &:before {
                 left: 0;
@@ -61,7 +59,6 @@
         z-index: 1;
         position: absolute;
         margin: 35vh 0 0 px(630);
-        animation: fadeInUp 1s 1.5s both;
         li {
             color: $white;
             font-size: px(24);
@@ -79,5 +76,19 @@
                 display: block;
             }
         }
+    }
+
+    // ----- animation -----
+    .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+    .logo { animation: fadeInDown $PPLogoAnimationTime $time * 3 both; }
+    .contacts-info {
+        li:nth-of-type(1) { animation: fadeInUp $time * 3 $time both; }
+        li:nth-of-type(2) { animation: fadeInUp $time * 6 $time both; }
+        li:nth-of-type(3) { animation: fadeInUp $time * 9 $time both; }
+    }
+    .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+    .social {
+        .facebook, .instagram { animation-delay: $time * 3; } 
+        .jumping-button { animation-delay: $time * 6; }
     }
 }
