@@ -33,6 +33,11 @@
                 .image-container {
                     min-width: px(600);
                     min-height: px(500);
+
+                    img {
+                        min-width: px(600);
+                        min-height: px(500);
+                    }
                 }
             }
 
@@ -41,6 +46,11 @@
                 .image-container {
                     min-width: px(800);
                     min-height: px(400);
+
+                    img {
+                        min-width: px(800);
+                        min-height: px(400);
+                    }
                 }
             }
 
@@ -49,6 +59,11 @@
                 .image-container {
                     min-width: px(400);
                     min-height: px(400);
+
+                    img {
+                        min-width: px(400);
+                        min-height: px(400);
+                    }
                 }
             }
 
@@ -57,6 +72,11 @@
                 .image-container {
                     min-width: px(400);
                     min-height: px(800);
+
+                    img {
+                        min-width: px(400);
+                        min-height: px(800);
+                    }
                 }
             }
         }
