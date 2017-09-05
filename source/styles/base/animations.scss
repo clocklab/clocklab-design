@@ -32,7 +32,6 @@
     }
 }
 
-
 // ANIMATION FOR HAMBURGER TICKS
 @keyframes innerTickAnimation1 {
     from {
@@ -486,6 +485,10 @@
 // portfolio ends
 
 // blog
+@keyframes heightChangingBlogThree {
+    from { height: 0; }
+    to { height: 35vh; }
+}
 @keyframes fadeInUp {
     from, to { visibility: visible; }
     from {
