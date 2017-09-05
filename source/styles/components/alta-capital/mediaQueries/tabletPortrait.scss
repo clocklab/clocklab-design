@@ -58,4 +58,198 @@
     &:after {
         width: $afterWidth;
     }
+
+    &.current-slide {
+        
+        .logo {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .menu {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .portfolio-client {
+
+            .client {
+                animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
+        
+                &-name-container {
+        
+                    span {
+                        animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
+                    }
+                }
+            }
+        }
+
+        .portfolio-right-panel {
+
+            .date {
+                animation: fadeInLeft $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
+            }
+        
+            .devices {
+                
+                span {
+                    animation-name: fadeInLeft;
+                    animation-fill-mode: both;
+        
+                    &:nth-child(1) {
+                        animation-duration: $portfolioRightPanelDevicesDesktopAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesDesktopDelayTime;
+                    }
+        
+                    &:nth-child(2) {
+                        animation-duration: $portfolioRightPanelDevicesTabletAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesTabletDelayTime;
+                    }
+        
+                    &:nth-child(3) {
+                        animation-duration: $portfolioRightPanelDevicesMobileAnimationTime;
+                        animation-delay: $portfolioRightPanelDevicesMobileDelayTime;
+                    }
+                }
+            }
+        }
+
+        .bottom-button {
+
+            span {
+                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+            }
+        
+            .line {
+                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation: FadeInRightHalf $PACStickerTextAnimationTime $PACStickerTextDelayTime both;
+            }
+    
+            &:before {
+                animation: widthIncreaseStickerLine $PACStickerLineAnimationTime $PACStickerLineDelayTime both;
+            }
+        }
+
+        .new-title {
+    
+            .text-container {
+    
+                &:before {
+                    animation: halfDown $PACTitleLineAnimationTime linear $PACTitleLineDelayTime both;
+                }
+            }
+    
+            span {
+                animation: Up $PACTitleTextAnimationTime $PACTitleTextDelayTime both;
+            }
+        }
+
+        .small-gray-lines {
+            
+            .line {
+                animation: lineUp 1s $time * 3 both;
+
+                &.down {
+                    animation-name: lineDown; 
+                }
+            }
+        }
+
+        .poster {
+            
+            .image-container {
+    
+                img {
+    
+                    &.loaded {
+                        animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
+                    }
+    
+                    &.left {
+                        animation-duration: $time;
+                        animation-name: left;
+                        animation-fill-mode: both;
+                    }
+    
+                    &.right {
+                        animation-duration: $time;
+                        animation-name: right;
+                        animation-fill-mode: both;
+                    }
+                }
+    
+                &:before {
+                    animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
+                }
+            }
+    
+            & > span {
+                animation: posterTextApear $portfolioAltaPosterTextAnimationTime $portfolioAltaPosterTextDelayTime both;
+            }
+    
+            .text {
+    
+                p {
+                    animation: up $portfolioAltaPosterParagraphAnimationTime $portfolioAltaPosterParagraphDelayTime both;
+                }
+            }
+        }
+    
+        .controls {
+    
+            .gallery {
+    
+                img {
+    
+                    &.left {
+                        animation-delay: 0;
+                        animation-fill-mode: both;
+                        animation-duration: $time;
+                        animation-name: left;
+                    }
+    
+                    &.right {
+                        animation-delay: 0;
+                        animation-fill-mode: both;
+                        animation-duration: $time;
+                        animation-name: right;
+                    }
+                }
+            }
+    
+            .slide-controls {
+    
+                &--next-slide {
+    
+                    .content-container {
+                        animation: right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTime both;
+                    }   
+                }
+    
+                &--previous-slide {
+    
+                    .content-container {
+                        animation: left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTime both;
+                    }
+                }
+            }
+    
+            .indicators {
+                animation: up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTime both;
+            }
+        }
+
+        &:before {
+            animation: right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
+        }
+
+        &:after {
+            animation: left $portfolioAltaRightBlockAnimationTime $portfolioAltaRightBlockDelayTime both;
+        }
+    }
 }

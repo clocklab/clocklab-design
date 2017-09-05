@@ -6,8 +6,6 @@
 
     .long-text {
 
-        animation: fadeIn $PALongTextAnimationTime $PALongTextDelayTime both;
-
         .open-long-text {
             bottom: px(530);
         }
@@ -82,6 +80,7 @@
     .about-work {
         position: relative;
         margin-top: px(40);
+        height: px(80);
         max-height: px(80);
         text-overflow: ellipsis;
         overflow: hidden;
@@ -212,7 +211,7 @@
         }
     }
 
-    &.current {
+    &.current-slide {
         animation: fadeIn $time * 3 0s both;
 
         .logo {
@@ -221,6 +220,10 @@
 
         .menu {
             animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .long-text {
+            animation: fadeIn $PALongTextAnimationTime $PALongTextDelayTime both;
         }
 
         .portfolio-client {

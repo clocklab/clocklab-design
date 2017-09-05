@@ -97,14 +97,12 @@
             height: px(426);
             box-shadow: 0 0 px(100) px(10) rgba(0, 0, 0, .4);
             overflow: hidden;
-            animation: poster $portfolioVinogradPosterAnimationTime $portfolioVinogradPosterDelayTimeMobile both;
 
             img {
                 position: relative;
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
             }
 
             &:before {
@@ -117,7 +115,6 @@
                 background: rgba(0, 0, 0, .4);
                 content: '';
                 transition: opacity $time;
-                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
             }
         }
 
@@ -140,15 +137,13 @@
 
     &:before {
         left: 0;
-        animation: down $portfolioVinogradLeftBlockAnimationTime $portfolioVinogradLeftBlockDelayTime both; 
     }
 
     &:after {
         right: 0;
-        animation: up $portfolioVinogradRightBlockAnimationTime $portfolioVinogradRightBlockDelayTime both;
     }
 
-    &.current {
+    &.current-slide {
 
         .bottom-button {
             
@@ -191,6 +186,29 @@
             p {
                 animation: fadeInUpHalf $PVAboutAnimationTime $PVTextDelayTimeMobile both;
             }
+        }
+
+        .poster {
+
+            .image-container {
+                animation: poster $portfolioVinogradPosterAnimationTime $portfolioVinogradPosterDelayTimeMobile both;
+            }
+
+            img {
+                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
+            }
+
+            &:before {
+                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
+            }
+        }
+
+        &:before {
+            animation: down $portfolioVinogradLeftBlockAnimationTime $portfolioVinogradLeftBlockDelayTime both; 
+        }
+
+        &:after {
+            animation: up $portfolioVinogradRightBlockAnimationTime $portfolioVinogradRightBlockDelayTime both;
         }
     }
 }
