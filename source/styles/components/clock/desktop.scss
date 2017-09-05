@@ -1,8 +1,26 @@
 & {
     overflow: hidden;
+    visibility: hidden;
     font-family: $raleway;
     font-weight: $regular;
-    background-color: $background;
+    background: $background;
+    animation-fill-mode: forwards;
+    animation: fadeIn $time * 3 both;
+    
+    // ----- animation -----
+    &.current {
+        .watch { animation: fadeIn $time * 2 $time * 4 both; }
+        .watch-shadow { animation: fadeIn $time * 2 $time * 5 both; }
+        .watch-light { animation: fadeIn $time * 2 $time * 6 both; }
+        .scroll { animation: fadeInUp $time * 2 $time * 7 both; }
+        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+        .logo { animation: fadeInDown $PPLogoAnimationTime $time * 3 both; }
+        .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+        .social {
+            .facebook, .instagram { animation-delay: $time * 3; } 
+            .jumping-button { animation-delay: $time * 6; }
+        }
+    }
     
     // ----- letter c -----
     .big-background-letter {
