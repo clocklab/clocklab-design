@@ -24,12 +24,12 @@
             display: block;
             visibility: hidden;
             font-weight: $bold;
-            animation: titleName $time * 2 $time * 8 linear;
-            animation-fill-mode: forwards;
+            // animation: titleName $time * 2 $time * 8 linear;
+            // animation-fill-mode: forwards;
         }
         &:before {
-            animation: titleNameShape $time * 2 $time * 7 linear;
-            animation-fill-mode: forwards;
+            // animation: titleNameShape $time * 2 $time * 7 linear;
+            // animation-fill-mode: forwards;
             background: $white;
             visibility: hidden;
             position: absolute;
@@ -63,7 +63,7 @@
         &:after {
             background-color: $blue;
             transform: translate3d(0, 50%, 0);
-            animation: halfDown $time * 2 linear $time * 4 both;
+            // animation: halfDown $time * 2 linear $time * 4 both;
             position: absolute;
             background: $blue;
             display: block;
@@ -88,7 +88,8 @@
             overflow: hidden;
         }
     }
-    p { 
+    p {
+        visibility: hidden;
         padding: 5% 1vh 0;
         font-size: px(32);
         color: $white;

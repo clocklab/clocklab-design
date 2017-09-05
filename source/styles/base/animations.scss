@@ -487,6 +487,7 @@
 
 // blog
 @keyframes fadeInUp {
+    from, to { visibility: visible; }
     from {
         opacity: 0;
         transform: translateY(100%);
