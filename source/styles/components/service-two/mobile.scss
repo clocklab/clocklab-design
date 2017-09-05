@@ -5,6 +5,42 @@
     font-weight: $regular;
     overflow: hidden;
     
+        // ----- animation -----
+        &.current {
+          .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+          .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+          .page-layer.back-layer::after { animation: Down $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
+          .bottom-button {
+              span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
+              .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
+          }
+          .small-gray-lines .line {
+              animation: lineUp 1s $time * 3 both;
+              &.down { animation-name: lineDown;  }
+          }
+      }
+
+      // ----- page-layer -----
+   .page-layer {
+       top: 0;
+       left: 0;
+       &.back-layer {
+           position: fixed;
+           width: 100vw;
+           height: 100vh;
+           overflow: hidden;
+           &:after {
+               background: $background;
+               position: absolute;
+               display: block;
+               height: 100vh;
+               width: 100vw;
+               content: '';
+               top: 0;
+           }
+       }
+   }
+
     // ----- letter c -----
     .big-background-letter {
         right: 0;

@@ -52,7 +52,7 @@
         }
         a {
             @include inline-block;
-            animation: Down 1s both;
+            animation: fadeInDown $time * 3 $time * 3 both;
             text-transform: uppercase;
             font-weight: $thin;
             cursor: pointer;
@@ -76,8 +76,9 @@
         }
     }
 
-        // ----- jump letters -----
+    // ----- jump letters -----
     .jump-letters a {
+        animation: fadeInUp $time * 3 $time * 3 both;
         @include inline-block;
         text-align: center;
         position: relative;
