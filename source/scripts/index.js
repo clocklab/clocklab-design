@@ -7,6 +7,9 @@
 // clock-bg
 //= components/clock-bg.js
 
+// home clock-bg
+//= components/home-clock-bg.js
+
 // slides-changing
 //= components/slides-changing.js
 
