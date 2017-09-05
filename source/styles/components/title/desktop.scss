@@ -62,7 +62,7 @@
         }
         &:after {
             background-color: $blue;
-            transform: translate3d(0, 50%, 0);
+            transform: translate3d(0,50%,0);
             // animation: halfDown $time * 2 linear $time * 4 both;
             position: absolute;
             background: $blue;

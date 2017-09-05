@@ -5,7 +5,7 @@
     overflow: hidden;
     
     // ----- animation -----
-    &.current {
+    &.current-slide {
         animation: fadeIn $time * 3 both;
         
         // ----- clock-bg -----

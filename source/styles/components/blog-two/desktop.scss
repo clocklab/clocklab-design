@@ -1,8 +1,112 @@
 & {
-    background-color: $background;
     font-family: $raleway;
     font-weight: $regular;
+    background: $white;
     overflow: hidden;
+    
+    // ----- animation -----
+    &.current {
+
+        // ----- navigation-elements -----
+        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+
+        // ----- big-background-letter -----
+        .big-background-letter { animation: fadeIn $time * 3 $time * 9 both; }
+        
+        // ----- page-layer -----
+        .page-layer.back-layer {
+            &:before { animation: left $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both; }
+            &:after { animation: right $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
+        }
+        
+        // ----- service-info -----
+        .service-info {
+            &.horizontal p { animation: fadeInUp $time * 2 $time * 7 both; }
+            &.vertical p { animation: fadeInDown $time * 2 $time * 7 both; }
+        }
+        .jump-button { animation: fadeInUp $time * 2 $time * 8 both; }
+
+        // ----- other -----
+        .bottom-button {
+            span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
+            .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
+        }
+        
+        // ----- info-block -----
+        .info-block {
+            animation: fadeInRight $time * 2 $time * 7 linear;
+            animation-fill-mode: forwards;
+        }
+
+        // ----- title -----
+        .title {
+            p {
+                animation: fadeInUp $time * 2 $time * 7 linear;
+                animation-fill-mode: forwards;
+            }
+            span.name {
+                span {
+                    animation: titleName $time * 2 $time * 8 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:before {
+                    animation: titleNameShape $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .word {
+                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+                &:nth-of-type(1) span {
+                    animation: titleWord $time * 2 $time * 5 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:nth-of-type(2) span {
+                    animation: titleWord $time * 2 $time * 6 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+
+        // ----- blue-line and image-block -----
+        .image-block {
+            p { animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
+            &.up {
+                .gray { animation: fadeIn $time * 3 $time * 10 both; }
+                .image-container {
+                    animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+                    img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime * .25 both; }
+                    &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime * .25 both; }
+                }
+            }
+            &.down .image-container {
+                animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+                img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
+                &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
+            }
+        }
+    }
+
+    // ----- page-layer -----
+    .page-layer {
+        top: 0;
+        left: 0;
+        &.back-layer {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            overflow: hidden;
+            &:before, &:after {
+                background: $background;
+                position: absolute;
+                display: block;
+                height: 50vh;
+                width: 100vw;
+                content: '';
+            }
+            &:before { top: 0; }
+            &:after { bottom: 0; }
+        }
+    }
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все новости'; }
@@ -122,19 +226,6 @@
             &.one {
                 left: 20px;
                 top: 34.5vh;
-            }
-        }
-    }
-
-    // ----- current -----
-    &.current {
-        .blue-line { animation: heightChanging $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
-        .image-block {
-            p { animation: textApear $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
-            .image-container {
-                animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
-                img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
-                &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
             }
         }
     }

@@ -57,7 +57,7 @@
         
         // ----- blue-line and image-block -----
         .blue-line { animation: heightChangingBlogThree $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
-        .image-block  {
+        .image-block {
             p { animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
             .image-container {
                 animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
