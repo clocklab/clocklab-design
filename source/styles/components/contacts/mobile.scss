@@ -2,14 +2,15 @@
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
+    z-index: 0;
     
     // ----- animation -----
      .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
      .logo { animation: fadeInDown $PPLogoAnimationTime $time * 3 both; }
      .contacts-info {
-         li:nth-of-type(1) { animation: fadeInUp $time * 3 $time both; }
-         li:nth-of-type(2) { animation: fadeInUp $time * 6 $time both; }
-         li:nth-of-type(3) { animation: fadeInUp $time * 9 $time both; }
+         li:nth-of-type(1) { animation: fadeInUp $time * 6 $time both; }
+         li:nth-of-type(2) { animation: fadeInUp $time * 9 $time both; }
+         li:nth-of-type(3) { animation: fadeInUp $time * 12 $time both; }
      }
      .menu { animation: fadeInDown $time * 3 $time * 3 both; }
      .social {
@@ -22,19 +23,17 @@
         top: 0;
         left: 0;
         &.back-layer {
-            position: fixed;
             width: 100vw;
             height: 100vh;
+            position: fixed;
             overflow: hidden;
-            &:before,
-            &:after {
-                display: block;
+            &:before, &:after {
                 position: absolute;
-                top: 0;
-                width: 50vw;
+                display: block;
                 height: 100vh;
                 content: '';
-                background: $background;
+                width: 50vw;
+                top: 0;
             }
             &:before {
                 left: 0;
