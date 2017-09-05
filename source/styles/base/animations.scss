@@ -389,6 +389,7 @@
     0% { width: 0; }
     50% { width: 25px; }
     100% { width: 50px; }
+    from, to { visibility: visible; }
 }
 
 // title word
@@ -398,28 +399,6 @@
     50% { transform: translateY(-50px); }
     75% { transform: translateY(-75px); }
     100% { transform: translateY(-100px); }
-}
-
-// shape title word
-@keyframes titleWordShape {
-    0% {
-        transform: translateY(0);
-        visibility: visible;
-        height: 30px;
-        width: 0%;
-    }
-    50% {
-        transform: translateY(0);
-        visibility: visible;
-        height: 30px;
-        width: 50%;
-    }
-    100% {
-        transform: translateY(15px);
-        visibility: visible;
-        height: 15px;
-        width: 100%;
-    }
 }
 
 // line animation on contacts page

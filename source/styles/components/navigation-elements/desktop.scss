@@ -34,6 +34,7 @@
 
     // ----- language -----
     .language {
+        overflow: visible;
         transform: rotate(-90deg);
         position: absolute;
         font-size: px(29);
@@ -48,9 +49,9 @@
             }
         }
         a {
-            @include inline-block;
             animation: fadeInDown $time * 3 $time * 3 both;
             text-transform: uppercase;
+            @include inline-block;
             font-weight: $thin;
             cursor: pointer;
             color: $gray;
@@ -75,7 +76,6 @@
 
     // ----- jump letters -----
     .jump-letters a {
-        animation: fadeInUp $time * 3 $time * 3 both;
         @include inline-block;
         text-align: center;
         position: relative;
