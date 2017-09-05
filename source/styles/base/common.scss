@@ -44,9 +44,9 @@ html {
                 display: table;
                 height: 100vh;
                 width: 100%;
-                top: 0;
+                z-index: -1;
                 left: 0;
-                z-index: 0;
+                top: 0;
                 &.current { z-index: 2; }              
                 &.previous { z-index: 1; }
             }

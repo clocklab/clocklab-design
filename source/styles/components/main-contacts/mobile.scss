@@ -1,10 +1,39 @@
 & {
     .logo, .menu, .small-gray-lines { display: none; }
-    background-color: $white;
+    background: $background;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
-    z-index: 0;
+    
+    // ----- page-layer -----
+    .page-layer {
+        top: 0;
+        left: 0;
+        &.back-layer {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            &:before,
+            &:after {
+                background: $white;
+                position: absolute;
+                display: block;
+                height: 100vh;
+                width: 50vw;
+                content: '';
+                top: 0;
+            }
+            &:before {
+                left: 0;
+                animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
+            }
+            &:after {
+                right: 0;
+                animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
+            }
+        }
+    }
     
     // ----- main-contacts-title -----
     .main-contacts-title {
