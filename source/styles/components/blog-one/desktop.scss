@@ -151,17 +151,15 @@
     // ----- service-info -----
     .service-info {
         position: absolute;
-        z-index: 1;
-        &.vertical {
-            transform: rotate(90deg);
-            width: px(300);
-            right: px(70);
-            bottom: 29vh;
-            p {
-                font-weight: $medium;
-                font-size: px(22);
-                line-height: 1.4;
-            }
+        transform: rotate(90deg);
+        width: px(300);
+        right: px(70);
+        bottom: 29vh;
+        z-index: 2;
+        p {
+            font-weight: $medium;
+            font-size: px(22);
+            line-height: 1.4;
         }
     }
 }

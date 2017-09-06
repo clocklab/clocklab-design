@@ -57,7 +57,7 @@
         }
 
         // ----- blue-line and image-block -----
-        .blue-line { animation: heightChanging $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
+        .blue-line { animation: heightChangingBlogThree $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
         .image-block {
             p { animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
             .image-container {
