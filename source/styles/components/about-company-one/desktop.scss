@@ -1,7 +1,36 @@
 & {
     font-family: $raleway;
     font-weight: $regular;
+    overflow: hidden;
     z-index: 0;
+    
+    // ----- animation -----
+    background: $background;
+    animation: fadeIn $time * 3 both;
+    
+    // ----- navigation-elements -----
+    .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
+    .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+    .scroll { animation: fadeInUp $time * 2 $time * 7 both; }
+
+    // ----- social -----
+    .social {
+        .facebook, .instagram { animation-delay: $time * 3; } 
+        .jumping-button { animation-delay: $time * 6; }
+    }
+
+    // ----- shadow -----
+    .shadow div { animation: fadeIn $time * 3 $time * 3 both; }
+
+    // ----- title -----
+    .word:nth-of-type(1) span {
+        animation: titleWord $time * 2 $time * 5 linear;
+        animation-fill-mode: forwards;
+    }
+    .word:nth-of-type(2) span {
+        animation: titleWord $time * 2 $time * 6 linear;
+        animation-fill-mode: forwards;
+    }
     
     // ----- bg-image -----
     .bg-image {
