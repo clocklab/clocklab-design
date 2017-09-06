@@ -19,10 +19,6 @@
 
     // ----- title -----
     .title {
-        p {
-            animation: fadeInUp $time * 2 $time * 7 linear;
-            animation-fill-mode: forwards;
-        }
         span.name {
             span {
                 animation: titleName $time * 2 $time * 8 linear;
@@ -37,10 +33,6 @@
             &:after { animation: halfDown $time * 2 linear $time * 4 both; }
             &:nth-of-type(1) span {
                 animation: titleWord $time * 2 $time * 5 linear;
-                animation-fill-mode: forwards;
-            }
-            &:nth-of-type(2) span {
-                animation: titleWord $time * 2 $time * 6 linear;
                 animation-fill-mode: forwards;
             }
         }
