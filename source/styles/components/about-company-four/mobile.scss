@@ -1,25 +1,89 @@
 & {
-    .logo, .menu, .bg-clock { display: none; }
     background: url('../images/dots.png');
     background-color: $white;
     font-family: $raleway;
     font-weight: $regular;
+    overflow: hidden;
+    z-index: 0;
+    
+    animation: fadeIn $time * 3 both;
+    
+    // ----- big-background-letter -----
+    .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+    
+    // ----- lines -----
+    .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+    
+    // ----- navigation-elements -----
+    .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+
+    // ----- title -----
+    .title {
+        p {
+            animation: fadeInUp $time * 2 $time * 7 linear;
+            animation-fill-mode: forwards;
+        }
+        span.name {
+            span {
+                animation: titleName $time * 2 $time * 8 linear;
+                animation-fill-mode: forwards;
+            }
+            &:before {
+                animation: titleNameShape $time * 2 $time * 7 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .word {
+            &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+            &:nth-of-type(1) span {
+                animation: titleWord $time * 2 $time * 5 linear;
+                animation-fill-mode: forwards;
+            }
+            &:nth-of-type(2) span {
+                animation: titleWord $time * 2 $time * 6 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
 
+    // ----- letter o -----
+    .big-background-letter {
+        top: 28vh;
+        z-index: 3;
+        left: 16vh;
+        font-size: 75vh;
+        span::before  { content: 'o'; }
+    }
+    
+    // ----- lines -----
+    .lines div {
+        width: 1px;
+        height: 100vh;
+        background: #E0E1E0;
+        position: absolute;
+        &:nth-of-type(1) { left: px(645); }
+        &:nth-of-type(2) { left: px(1525); }
+        &:nth-of-type(3) { right: px(745); }
+    }
+
     // ----- title -----
     .title {
-        margin: 20% 0 0 11%;
+        margin: px(428) 0 0 39.7vw;
+        span.name { top: -1.4vh; }
         p {
-            padding: 7% 0 0;
-            line-height: 1.5;
-            font-size: px(24);
+            text-transform: uppercase;
+            font-size: px(29);
+            padding: 9vh 0 0;
         }
-        span.name {
-            font-size: px(26);
-            top: -3.5vh;
+        .word {
+            word-spacing: -3px;
+            &:after { display: none; }
+            span {
+                font-size: px(60);
+            }
         }
-        .word span { font-size: px(47); }
-    }
+    } 
 }

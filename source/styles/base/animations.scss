@@ -495,6 +495,12 @@
     from { height: 0; }
     to { height: 35vh; }
 }
+
+// company
+@keyframes heightChangingCompany {
+    from { height: 0; }
+    to { height: 290px; }
+}
 @keyframes fadeInUp {
     from, to { visibility: visible; }
     from {

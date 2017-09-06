@@ -1,18 +1,59 @@
 & {
-    background-color: $white;
     font-family: $raleway;
     font-weight: $regular;
-    height: 100vh;
-    width: 100vw;
+    overflow: hidden;
     z-index: 0;
     
-    // animation for block
-    @keyframes apear {
-        from { transform: translate3d(-100%, -100%, 0); }
-        to { transform: translate3d(0, 0, 0); }
-    }
+    // ----- animation -----
+    animation: fadeIn $time * 3 both;
     
-    // ----- title text-indent: -9999px;--
+    // ----- navigation-elements -----
+    .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+
+    // ----- service-info -----
+    .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
+    .jump-button { animation: fadeInUp $time * 2 $time * 9 both; }
+
+    // ----- title -----
+    .title {
+        p {
+            animation: fadeInUp $time * 2 $time * 7 linear;
+            animation-fill-mode: forwards;
+        }
+        span.name {
+            span {
+                animation: titleName $time * 2 $time * 8 linear;
+                animation-fill-mode: forwards;
+            }
+            &:before {
+                animation: titleNameShape $time * 2 $time * 7 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .word {
+            &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+            &:nth-of-type(1) span {
+                animation: titleWord $time * 2 $time * 5 linear;
+                animation-fill-mode: forwards;
+            }
+            &:nth-of-type(2) span {
+                animation: titleWord $time * 2 $time * 6 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+
+    // ----- image-block -----
+    .image-block {
+        p { animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
+        .image-container {
+            animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+            img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
+            &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
+        }
+    }
+
+    // ----- title ------
     .title {
         top: px(520);
         left: px(540);
@@ -32,7 +73,7 @@
             height: 100%;
             overflow: hidden;
             position: relative;
-            box-shadow: 0 0 px(60) px(16) rgba(0, 0, 0, .3);
+            box-shadow: 0 0 px(60) px(16) rgba(0,0,0,.3);
             img {
                 z-index: 1;
                 width: 100%;
@@ -55,29 +96,15 @@
     // ----- service-info -----
     .service-info {
         position: absolute;
-        &.vertical {
-            transform: rotate(90deg);
-            bottom: px(550);
-            width: px(300);
-            right: px(70);
-            p {
-                font-weight: $medium;
-                line-height: 1.8vh;
-                font-size: px(20);
-            }
-        }
-    }
-
-    // ----- current -----
-    &.current {
-        .blue-line { animation: heightChanging $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
-        .image-block {
-            p { animation: textApear $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
-            .image-container {
-                animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
-                img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
-                &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
-            }
+        transform: rotate(90deg);
+        width: px(300);
+        right: px(70);
+        bottom: 22vh;
+        z-index: 2;
+        p {
+            font-weight: $medium;
+            font-size: px(22);
+            line-height: 1.4;
         }
     }
 }
