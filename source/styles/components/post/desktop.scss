@@ -4,6 +4,48 @@
 
     .clock-bg {
         font-family: $raleway;
+
+        span {
+
+            &:before {
+                animation: right $PPClockAnimationTime both;
+            }
+
+            &:nth-child(1) {
+
+                &:before {
+                    animation-delay: $PPClockFirstDelayTime;
+                }
+            }
+
+            &:nth-child(2) {
+
+                &:before {
+                    animation-delay: $PPClockSecondDelayTime;
+                }
+            }
+
+            &:nth-child(3) {
+
+                &:before {
+                    animation-delay: $PPClockThirdDelayTime;
+                }
+            }
+
+            &:nth-child(4) {
+
+                &:before {
+                    animation-delay: $PPClockFourthDelayTime;
+                }
+            }
+
+            &:nth-child(5) {
+
+                &:before {
+                    animation-delay: $PPClockFifthDelayTime;
+                }
+            }
+        }
     }
 
     .menu {
