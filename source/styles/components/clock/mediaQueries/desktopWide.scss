@@ -1,8 +1,14 @@
 @import '../desktop';
 
+// ----- title -----
+.title {
+    top: 21vh;
+    left: 12vh;
+}
+
 // ----- letter c -----
 .big-background-letter {
     top: -50vh;
-    right: 90vh;
+    right: 72vw;
     font-size: 120vh;
 }
