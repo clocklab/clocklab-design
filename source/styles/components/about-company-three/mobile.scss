@@ -3,8 +3,10 @@
     position: relative;
     width: 100vw;
     height: 100vh;
+    
+    font-family: $raleway;
     overflow: hidden;
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    z-index: 0;
 
     @keyframes right {
         from {
