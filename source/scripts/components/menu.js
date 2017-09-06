@@ -1,33 +1,38 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const openCloseBtn = document.querySelector('.menu__item--open-close'),
-          menu = document.querySelector('.menu'),
-          menuItems = document.querySelectorAll('.menu__item'),
-          menuBackground = document.querySelector('.menu__background'),
+    const openCloseBtns = document.querySelectorAll('.menu__item--open-close'),
           animationTime = 1600
 
-    const closeMenu = event => {
+    function openMenu (event) {
         event.preventDefault()
-        menu.classList.remove('opened')
-        menuBackground.removeEventListener('click', closeMenu)
-        openCloseBtn.removeEventListener('click', closeMenu)
-        document.body.style.overflow = ''
 
-        setTimeout(() => {
-            openCloseBtn.addEventListener('click', openMenu)
-        }, animationTime)
-    }
+        const menu = this.parentElement
+        const menuBackground = menu.querySelector('.menu__background')
 
-    const openMenu = event => {
-        event.preventDefault()
         menu.classList.add('opened')
-        openCloseBtn.removeEventListener('click', openMenu)
         document.body.style.overflow = 'hidden'
 
+        this.removeEventListener('click', openMenu)
+
+        function closeMenu (event) {
+            event.preventDefault()
+    
+            menu.classList.remove('opened')
+            menuBackground.removeEventListener('click', closeMenu)
+            this.removeEventListener('click', closeMenu)
+            document.body.removeAttribute('style')
+    
+            setTimeout(() => {
+                this.addEventListener('click', openMenu)
+            }, animationTime)
+        }
+        
         setTimeout(() => {
-            openCloseBtn.addEventListener('click', closeMenu)
+            this.addEventListener('click', closeMenu)
             menuBackground.addEventListener('click', closeMenu)
         }, animationTime)
     }
 
-    openCloseBtn.addEventListener('click', openMenu)
+    openCloseBtns.forEach(openCloseBtn => {
+        openCloseBtn.addEventListener('click', openMenu)  
+    })
 });
