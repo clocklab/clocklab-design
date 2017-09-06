@@ -5,18 +5,18 @@
     z-index: 0;
     
     // ----- animation -----
-     .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-     .logo { animation: fadeInDown $PPLogoAnimationTime $time * 3 both; }
-     .contacts-info {
-         li:nth-of-type(1) { animation: fadeInUp $time * 6 $time both; }
-         li:nth-of-type(2) { animation: fadeInUp $time * 9 $time both; }
-         li:nth-of-type(3) { animation: fadeInUp $time * 12 $time both; }
-     }
-     .menu { animation: fadeInDown $time * 3 $time * 3 both; }
-     .social {
-         .facebook, .instagram { animation-delay: $time * 3; } 
-         .jumping-button { animation-delay: $time * 6; }
-     }
+    .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+    .logo { animation: fadeInDown $PPLogoAnimationTime $time * 3 both; }
+    .contacts-info {
+        li:nth-of-type(1) { animation: fadeInUp $time * 3 $time * 3 both; }
+        li:nth-of-type(2) { animation: fadeInUp $time * 3 $time * 4 both; }
+        li:nth-of-type(3) { animation: fadeInUp $time * 3 $time * 5 both; }
+    }
+    .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+    .social {
+        .facebook, .instagram { animation-delay: $time * 3; } 
+        .jumping-button { animation-delay: $time * 6; }
+    }
 
     // ----- page-layer -----
     .page-layer {

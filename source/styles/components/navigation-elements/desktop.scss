@@ -49,7 +49,7 @@
             }
         }
         a {
-            animation: fadeInDown $time * 3 $time * 3 both;
+            // animation: fadeInDown $time * 3 $time * 3 both;
             text-transform: uppercase;
             @include inline-block;
             font-weight: $thin;
@@ -66,7 +66,6 @@
                     content: '—';
                 }
             }
-            
             &:hover {
                 color: $white;
                 transition: $time;
@@ -84,8 +83,8 @@
         width: initial;
         font-size: 0;
         &:before {
-            left: 0;
             top: 45%;
+            left: -1px;
             width: 100%;
             height: 1px;
             content: '';
@@ -122,7 +121,7 @@
                 &:nth-child(15) { animation-delay: $timeTickHalf * 7; }
                 &:nth-child(16) { animation-delay: $timeTickHalf * 7.5; }
             }
-            &:before { animation: crossAnchor $timeTick $timeTickHalf * 4 + .25s forwards; }
+            &:before { animation: crossAnchor $timeTick $timeTickHalf * 7.5 + .25s forwards; }
         }
     }
     
@@ -137,7 +136,7 @@
             color: $white;
             font-size: px(29);
             font-weight: $thin;
-            animation: fadeInUp $time * 3 $time * 3 both;
+            // animation: fadeInUp $time * 3 $time * 3 both;
         }
     }
 }

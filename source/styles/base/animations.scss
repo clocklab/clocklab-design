@@ -22,7 +22,15 @@
     from { transform: rotateX(-90deg) rotateY(-90deg) perspective(300px) translate3d(px(58), px(-2), 0); }
     to { transform: translate3d(px(58), px(-2), 0); }
 }
-
+// ----- scroll -----
+@include keyframes(bounce) {
+    50% { @include transform(translateY(300%) rotate(45deg)); }
+    0%, 50%, 60%, 80%, 100% { opacity: 0; }
+    10%, 20%, 30%, 40% {
+        @include transform(translateY(0) rotate(45deg));
+        opacity: 1;
+    }
+}
 
 // ANIMATION FOR HAMBURGER TICKS
 @keyframes innerTickAnimation1 {
@@ -459,7 +467,6 @@
 }
 
 @keyframes fadeIn {
-    from, to { visibility: visible; }
     from { opacity: 0; }
     to { opacity: 1; }
 }
@@ -477,8 +484,19 @@
 }
 // portfolio ends
 
+// services
+@keyframes widthChanging {
+    from { width: 0; }
+    to { width: 100vh; }
+}
+
 // blog
+@keyframes heightChangingBlogThree {
+    from { height: 0; }
+    to { height: 35vh; }
+}
 @keyframes fadeInUp {
+    from, to { visibility: visible; }
     from {
         opacity: 0;
         transform: translateY(100%);
@@ -497,6 +515,17 @@
     to {
         opacity: 1;
         transform: none;
+    }
+}
+
+@keyframes fadeInLeftMap {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 

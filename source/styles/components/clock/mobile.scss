@@ -2,14 +2,52 @@
     overflow: hidden;
     font-family: $raleway;
     font-weight: $regular;
-    background-color: $background;
+    
+    // ----- animation -----
+    &.current-slide {
+        background: $background;
+        animation: fadeIn $time * 3 both;
+        
+        // ----- big-background-letter -----
+        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+        
+        // ----- navigation-elements -----
+        .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
+        .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+        .scroll { animation: fadeInUp $time * 2 $time * 7 both; }
+
+        // ----- social -----
+        .social {
+            .facebook, .instagram { animation-delay: $time * 3; } 
+            .jumping-button { animation-delay: $time * 6; }
+        }
+        
+        // ----- watch -----
+        .watch { animation: fadeIn $time * 2 $time * 4 both; }
+        .watch-shadow { animation: fadeIn $time * 2 $time * 5 both; }
+        .watch-light { animation: fadeIn $time * 2 $time * 6 both; }
+
+        // ----- title -----
+        .word:nth-of-type(1) span {
+            animation: titleWord $time * 2 $time * 5 linear;
+            animation-fill-mode: forwards;
+        }
+        .word:nth-of-type(2) span {
+            animation: titleWord $time * 2 $time * 6 linear;
+            animation-fill-mode: forwards;
+        }
+        .word:nth-of-type(3) span {
+            animation: titleWord $time * 2 $time * 7 linear;
+            animation-fill-mode: forwards;
+        }
+    }
     
     // ----- letter c -----
     .big-background-letter {
         top: -30vh;
         right: 23vh;
         font-size: 75vh;
-        color: rgba(68, 68, 68, .25);
+        color: rgba(68,68,68,.25);
         span::before  { content: 'c'; }
     }
     

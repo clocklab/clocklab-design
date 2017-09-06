@@ -4,6 +4,69 @@
     font-weight: $regular;
     overflow: hidden;
     
+    // ----- animation -----
+    &.current {
+
+        // ----- navigation-elements -----
+        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+
+        // ----- big-background-letter -----
+        .big-background-letter { animation: fadeIn $time * 3 $time * 9 both; }
+
+        // ----- service-info -----
+        .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
+        .jump-button { animation: fadeInUp $time * 2 $time * 9 both; }
+
+        // ----- other -----
+        .page-layer.back-layer::after { animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
+        .bottom-button {
+            span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
+            .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
+        }
+
+        // ----- title -----
+        .title {
+            p {
+                animation: fadeInUp $time * 2 $time * 7 linear;
+                animation-fill-mode: forwards;
+            }
+            span.name {
+                span {
+                    animation: titleName $time * 2 $time * 8 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:before {
+                    animation: titleNameShape $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .word {
+                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+                &:nth-of-type(1) span {
+                    animation: titleWord $time * 2 $time * 5 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+
+        // ----- small-gray-lines -----
+        .small-gray-lines .line {
+            animation: lineUp 1s $time * 3 both;
+            &.down { animation-name: lineDown; }
+        }
+        
+        // ----- blue-line and image-block -----
+        .blue-line { animation: heightChangingBlogThree $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
+        .image-block {
+            p { animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
+            .image-container {
+                animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+                img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
+                &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
+            }
+        }
+    }
+    
     // ----- page-layer -----
     .page-layer {
         top: 0;
@@ -14,7 +77,6 @@
             height: 100vh;
             overflow: hidden;
             &:after {
-                animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
                 background: $white;
                 position: absolute;
                 display: block;
@@ -26,12 +88,6 @@
         }
     }
     
-    // animation for block
-    @keyframes apear {
-        from { transform: translate3d(-100%, -100%, 0); }
-        to { transform: translate3d(0, 0, 0); }
-    }
-
     // ----- letter c -----
     .big-background-letter {
         top: 0;
@@ -52,7 +108,6 @@
             height: 100vh;
             overflow: hidden;
             &:after {
-                animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
                 background: $white;
                 position: absolute;
                 display: block;
@@ -95,7 +150,6 @@
     .blue-line {
         top: 0;
         z-index: 2;
-        height: 35vh;
         width: px(850);
         right: px(1700);
         background: $blue;
@@ -155,19 +209,6 @@
                 font-weight: $medium;
                 font-size: px(22);
                 line-height: 1.3;
-            }
-        }
-    }
-
-    // ----- current -----
-    &.current {
-        // .blue-line { animation: heightChanging $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
-        .image-block {
-            // p { animation: textApear $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
-            .image-container {
-                animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
-                img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
-                &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
             }
         }
     }
