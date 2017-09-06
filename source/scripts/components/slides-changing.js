@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     const move = () => {
-        const previousSlide = document.querySelector('.previous');
-        const currentSlide = document.querySelector('.current');
+        const previousSlide = document.querySelector('.screen-block.previous');
+        const currentSlide = document.querySelector('.screen-block.current');
         const index = slides.indexOf(currentSlide);
         
         if (event.deltaY < 0 || event.keyCode === 40) {
