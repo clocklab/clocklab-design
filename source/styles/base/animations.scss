@@ -484,6 +484,12 @@
 }
 // portfolio ends
 
+// services
+@keyframes widthChanging {
+    from { width: 0; }
+    to { width: 100vh; }
+}
+
 // blog
 @keyframes heightChangingBlogThree {
     from { height: 0; }
