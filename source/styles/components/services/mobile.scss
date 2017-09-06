@@ -60,6 +60,8 @@
                 width: 100%;
                 position: relative;
                 &.up { margin-bottom: 18vh; }
+                &:nth-of-type(3), &:nth-of-type(4)
+                &:nth-of-type(5) { display: none; }
                 .title {
                     width: auto;
                     p {
@@ -98,9 +100,9 @@
                     }
                 }
                 object embed {
+                    left: -6px;
+                    top: 100vh;
                     position: absolute;
-                    left: -4px;
-                    top: 85vh;
                     transform-origin: 0 0;
                     transform: rotate(-90deg);
                 }
