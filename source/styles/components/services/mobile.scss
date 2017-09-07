@@ -61,19 +61,23 @@
             .item {
                 width: 100%;
                 position: relative;
+                &:nth-of-type(4),
+                &:nth-of-type(5),
+                &:nth-of-type(6) {
+                    margin-bottom: 18vh;
+                    .services-line { display: none; }
+                }
                 &.up {
                     margin-bottom: 18vh;
                     .services-line {
                         left: 0;
-                        top: -20vh;
+                        top: 10px;
                         width: 1px;
                         height: 100vh;
                         position: absolute;
                         background: $darkGray;
                     }
                 }
-                &:nth-of-type(3), &:nth-of-type(4)
-                &:nth-of-type(5) { display: none; }
                 .title {
                     width: auto;
                     p {

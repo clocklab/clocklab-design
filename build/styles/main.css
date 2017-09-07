@@ -55820,20 +55820,22 @@ html body .wrapper .screen-block.previous {
     width: 100%;
     position: relative;
   }
+  #services.screen-block .services-schedule .container .item:nth-of-type(4), #services.screen-block .services-schedule .container .item:nth-of-type(5), #services.screen-block .services-schedule .container .item:nth-of-type(6) {
+    margin-bottom: 18vh;
+  }
+  #services.screen-block .services-schedule .container .item:nth-of-type(4) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(5) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(6) .services-line {
+    display: none;
+  }
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
   }
   #services.screen-block .services-schedule .container .item.up .services-line {
     left: 0;
-    top: -20vh;
+    top: 10px;
     width: 1px;
     height: 100vh;
     position: absolute;
     background: #444;
-  }
-  #services.screen-block .services-schedule .container .item:nth-of-type(3), #services.screen-block .services-schedule .container .item:nth-of-type(4)
-  #services.screen-block .services-schedule .container .item:nth-of-type(5) {
-    display: none;
   }
   #services.screen-block .services-schedule .container .item .title {
     width: auto;
@@ -55994,20 +55996,22 @@ html body .wrapper .screen-block.previous {
     width: 100%;
     position: relative;
   }
+  #services.screen-block .services-schedule .container .item:nth-of-type(4), #services.screen-block .services-schedule .container .item:nth-of-type(5), #services.screen-block .services-schedule .container .item:nth-of-type(6) {
+    margin-bottom: 18vh;
+  }
+  #services.screen-block .services-schedule .container .item:nth-of-type(4) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(5) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(6) .services-line {
+    display: none;
+  }
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
   }
   #services.screen-block .services-schedule .container .item.up .services-line {
     left: 0;
-    top: -20vh;
+    top: 10px;
     width: 1px;
     height: 100vh;
     position: absolute;
     background: #444;
-  }
-  #services.screen-block .services-schedule .container .item:nth-of-type(3), #services.screen-block .services-schedule .container .item:nth-of-type(4)
-  #services.screen-block .services-schedule .container .item:nth-of-type(5) {
-    display: none;
   }
   #services.screen-block .services-schedule .container .item .title {
     width: auto;
@@ -56168,20 +56172,22 @@ html body .wrapper .screen-block.previous {
     width: 100%;
     position: relative;
   }
+  #services.screen-block .services-schedule .container .item:nth-of-type(4), #services.screen-block .services-schedule .container .item:nth-of-type(5), #services.screen-block .services-schedule .container .item:nth-of-type(6) {
+    margin-bottom: 18vh;
+  }
+  #services.screen-block .services-schedule .container .item:nth-of-type(4) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(5) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(6) .services-line {
+    display: none;
+  }
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
   }
   #services.screen-block .services-schedule .container .item.up .services-line {
     left: 0;
-    top: -20vh;
+    top: 10px;
     width: 1px;
     height: 100vh;
     position: absolute;
     background: #444;
-  }
-  #services.screen-block .services-schedule .container .item:nth-of-type(3), #services.screen-block .services-schedule .container .item:nth-of-type(4)
-  #services.screen-block .services-schedule .container .item:nth-of-type(5) {
-    display: none;
   }
   #services.screen-block .services-schedule .container .item .title {
     width: auto;
@@ -56362,6 +56368,9 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item {
     width: 33.33%;
     position: relative;
+  }
+  #services.screen-block .services-schedule .container .item:nth-of-type(4) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(5) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(6) .services-line {
+    display: none;
   }
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
@@ -56558,6 +56567,9 @@ html body .wrapper .screen-block.previous {
     width: 33.33%;
     position: relative;
   }
+  #services.screen-block .services-schedule .container .item:nth-of-type(4) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(5) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(6) .services-line {
+    display: none;
+  }
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
   }
@@ -56752,6 +56764,9 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item {
     width: 33.33%;
     position: relative;
+  }
+  #services.screen-block .services-schedule .container .item:nth-of-type(4) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(5) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(6) .services-line {
+    display: none;
   }
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
@@ -56948,6 +56963,9 @@ html body .wrapper .screen-block.previous {
     width: 33.33%;
     position: relative;
   }
+  #services.screen-block .services-schedule .container .item:nth-of-type(4) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(5) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(6) .services-line {
+    display: none;
+  }
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
   }
@@ -57142,6 +57160,9 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item {
     width: 33.33%;
     position: relative;
+  }
+  #services.screen-block .services-schedule .container .item:nth-of-type(4) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(5) .services-line, #services.screen-block .services-schedule .container .item:nth-of-type(6) .services-line {
+    display: none;
   }
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
