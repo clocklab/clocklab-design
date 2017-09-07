@@ -109,7 +109,11 @@ html {
             }
         }
 
-        &__background {
+        // &__background {
+        //     background: $white;
+        // }
+
+        &.opened {
             background: rgba(255, 255, 255, .95);
         }
     }

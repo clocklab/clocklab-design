@@ -4,10 +4,15 @@
     
     // ----- letter c -----
     .big-background-letter {
+
+        // Надо вынести в отдельный блок
+        
         top: -75vh;
         right: 185vh;
         font-size: 170vh;
         span::before  { content: 'c'; }
+
+        // Надо вынести в отдельный блок
     }
 
     // ----- jump-button -----
