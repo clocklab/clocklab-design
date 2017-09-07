@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const slides = Array.prototype.slice.call( document.querySelectorAll('.screen-block'))
     const events = ['wheel', 'scroll', 'keydown']
-    const animationTime = 1000
+    const animationTime = 500
     let freezer
     let flag = true
     
@@ -58,4 +58,47 @@ document.addEventListener('DOMContentLoaded', () => {
     addListeners()
     
     slides[0].classList.add('current')
+
+
+    // --- MENU ---
+    const openCloseBtns = document.querySelectorAll('.menu__item--open-close'),
+          animationTimeMenu = 1600
+
+    function openMenu (event) {
+        event.preventDefault()
+
+        flag = !flag
+
+        const menu = this.parentElement
+        const menuBackground = menu.querySelector('.menu__background')
+
+        menu.classList.add('opened')
+        document.body.style.overflow = 'hidden'
+
+        this.removeEventListener('click', openMenu)
+
+        function closeMenu (event) {
+            event.preventDefault()
+
+            flag = !flag
+
+            menu.classList.remove('opened')
+            menuBackground.removeEventListener('click', closeMenu)
+            this.removeEventListener('click', closeMenu)
+            document.body.removeAttribute('style')
+
+            setTimeout(() => {
+                this.addEventListener('click', openMenu)
+            }, animationTimeMenu)
+        }
+        
+        setTimeout(() => {
+            this.addEventListener('click', closeMenu)
+            menuBackground.addEventListener('click', closeMenu)
+        }, animationTimeMenu)
+    }
+
+    openCloseBtns.forEach(openCloseBtn => {
+        openCloseBtn.addEventListener('click', openMenu)  
+    })
 })
