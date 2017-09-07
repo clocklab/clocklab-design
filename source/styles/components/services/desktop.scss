@@ -78,6 +78,10 @@
             .item {
                 width: 33.33%;
                 position: relative;
+                &:nth-of-type(4) .services-line,
+                &:nth-of-type(5) .services-line,
+                &:nth-of-type(6) .services-line
+                { display: none; }
                 &.up {
                     margin-bottom: 18vh;
                     .services-line {

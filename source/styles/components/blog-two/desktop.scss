@@ -71,7 +71,7 @@
         .image-block {
             p { animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
             &.up {
-                .gray { animation: fadeIn $time * 3 $time * 10 both; }
+                .gray::before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
                 .image-container {
                     animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
                     img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime * .25 both; }
@@ -167,7 +167,7 @@
         &.up {
             right: px(400);
             z-index: 3;
-            top: 0;
+            top: 5vh;
             p {
                 transform: rotate(90deg);
                 position: absolute;
@@ -180,12 +180,21 @@
                 transform-origin: 0 0;
             }
             .gray {
-                background: $darkGray;
                 position: absolute;
-                right: px(-240);
-                height: 180px;
-                width: 180px;
-                top: px(940);
+                overflow: hidden;
+                height: 100%;
+                width: 100%;
+                top: px(200);
+                right: px(-1100);
+                &:before {
+                    height: 100%;
+                    width: 100%;
+                    z-index: 2;
+                    content: '';
+                    position: absolute;
+                    background: $darkGray;
+                    transform: translate3d(-90%, 90%, 0);
+                }
             }
         }
         &.down {

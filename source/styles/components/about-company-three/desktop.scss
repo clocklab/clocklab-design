@@ -2,51 +2,51 @@
     position: relative;
     padding-top: px(200);
     padding-right: 25vw;
-    width: 100vw;
     height: 100vh;
-    
-
+    width: 100vw;
     font-family: $raleway;
     overflow: hidden;
-    z-index: 0;
     
-
-
     // ----- animation -----
-    background: $background;
-    animation: fadeIn $time * 3 both;
+    &.current {
+        background: $background;
+        animation: fadeIn $time * 3 both;
 
-    // ----- navigation-elements -----
-    .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+        // ----- navigation-elements -----
+        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
 
-    // ----- title -----
-    .title {
-        p {
-            animation: fadeInUp $time * 2 $time * 7 linear;
-            animation-fill-mode: forwards;
-        }
-        span.name {
-            span {
-                animation: titleName $time * 2 $time * 8 linear;
+        // ----- title -----
+        .title {
+            p {
+                animation: fadeInUp $time * 2 $time * 7 linear;
                 animation-fill-mode: forwards;
             }
-            &:before {
-                animation: titleNameShape $time * 2 $time * 7 linear;
-                animation-fill-mode: forwards;
+            span.name {
+                span {
+                    animation: titleName $time * 2 $time * 8 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:before {
+                    animation: titleNameShape $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
             }
-        }
-        .word {
-            &:after { animation: halfDown $time * 2 linear $time * 4 both; }
-            &:nth-of-type(1) span {
-                animation: titleWord $time * 2 $time * 5 linear;
-                animation-fill-mode: forwards;
-            }
-            &:nth-of-type(2) span {
-                animation: titleWord $time * 2 $time * 6 linear;
-                animation-fill-mode: forwards;
+            .word {
+                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+                &:nth-of-type(1) span {
+                    animation: titleWord $time * 2 $time * 5 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:nth-of-type(2) span {
+                    animation: titleWord $time * 2 $time * 6 linear;
+                    animation-fill-mode: forwards;
+                }
             }
         }
     }
+
+
+    
 
     // ----- blue-line and image-block -----
     .blue-line { animation: heightChangingCompany $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
