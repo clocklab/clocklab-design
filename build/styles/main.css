@@ -37064,9 +37064,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-two.screen-block.current .image-block.up .gray {
-    -webkit-animation: fadeIn 0.9s 3s both;
-            animation: fadeIn 0.9s 3s both;
+  #blog-two.screen-block.current .image-block.up .gray::before {
+    -webkit-animation: beforeApear 1.8s linear 1.8s both;
+            animation: beforeApear 1.8s linear 1.8s both;
   }
   #blog-two.screen-block.current .image-block.up .image-container {
     -webkit-animation: shadowAppearance 0.9s 2.7s both;
@@ -37177,7 +37177,7 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block.up {
     right: 26.0416vw;
     z-index: 3;
-    top: 0;
+    top: 5vh;
   }
   #blog-two.screen-block .image-block.up p {
     -webkit-transform: rotate(90deg);
@@ -37193,12 +37193,22 @@ html body .wrapper .screen-block.previous {
             transform-origin: 0 0;
   }
   #blog-two.screen-block .image-block.up .gray {
-    background: #444;
     position: absolute;
-    right: -15.62496vw;
-    height: 180px;
-    width: 180px;
-    top: 61.19776vw;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 13.0208vw;
+    right: -71.6144vw;
+  }
+  #blog-two.screen-block .image-block.up .gray:before {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: #444;
+    -webkit-transform: translate3d(-90%, 90%, 0);
+            transform: translate3d(-90%, 90%, 0);
   }
   #blog-two.screen-block .image-block.down {
     right: 54.42694vw;
@@ -37458,9 +37468,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-two.screen-block.current .image-block.up .gray {
-    -webkit-animation: fadeIn 0.9s 3s both;
-            animation: fadeIn 0.9s 3s both;
+  #blog-two.screen-block.current .image-block.up .gray::before {
+    -webkit-animation: beforeApear 1.8s linear 1.8s both;
+            animation: beforeApear 1.8s linear 1.8s both;
   }
   #blog-two.screen-block.current .image-block.up .image-container {
     -webkit-animation: shadowAppearance 0.9s 2.7s both;
@@ -37571,7 +37581,7 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block.up {
     right: 19.532vw;
     z-index: 3;
-    top: 0;
+    top: 5vh;
   }
   #blog-two.screen-block .image-block.up p {
     -webkit-transform: rotate(90deg);
@@ -37587,12 +37597,22 @@ html body .wrapper .screen-block.previous {
             transform-origin: 0 0;
   }
   #blog-two.screen-block .image-block.up .gray {
-    background: #444;
     position: absolute;
-    right: -11.7192vw;
-    height: 180px;
-    width: 180px;
-    top: 45.9002vw;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 9.766vw;
+    right: -53.713vw;
+  }
+  #blog-two.screen-block .image-block.up .gray:before {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: #444;
+    -webkit-transform: translate3d(-90%, 90%, 0);
+            transform: translate3d(-90%, 90%, 0);
   }
   #blog-two.screen-block .image-block.down {
     right: 40.82188vw;
@@ -37799,9 +37819,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-two.screen-block.current .image-block.up .gray {
-    -webkit-animation: fadeIn 0.9s 3s both;
-            animation: fadeIn 0.9s 3s both;
+  #blog-two.screen-block.current .image-block.up .gray::before {
+    -webkit-animation: beforeApear 1.8s linear 1.8s both;
+            animation: beforeApear 1.8s linear 1.8s both;
   }
   #blog-two.screen-block.current .image-block.up .image-container {
     -webkit-animation: shadowAppearance 0.9s 2.7s both;
@@ -37912,7 +37932,7 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block.up {
     right: 14.64vw;
     z-index: 3;
-    top: 0;
+    top: 5vh;
   }
   #blog-two.screen-block .image-block.up p {
     -webkit-transform: rotate(90deg);
@@ -37928,12 +37948,22 @@ html body .wrapper .screen-block.previous {
             transform-origin: 0 0;
   }
   #blog-two.screen-block .image-block.up .gray {
-    background: #444;
     position: absolute;
-    right: -8.784vw;
-    height: 180px;
-    width: 180px;
-    top: 34.404vw;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 7.32vw;
+    right: -40.26vw;
+  }
+  #blog-two.screen-block .image-block.up .gray:before {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: #444;
+    -webkit-transform: translate3d(-90%, 90%, 0);
+            transform: translate3d(-90%, 90%, 0);
   }
   #blog-two.screen-block .image-block.down {
     right: 30.5976vw;
@@ -38095,9 +38125,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-two.screen-block.current .image-block.up .gray {
-    -webkit-animation: fadeIn 0.9s 3s both;
-            animation: fadeIn 0.9s 3s both;
+  #blog-two.screen-block.current .image-block.up .gray::before {
+    -webkit-animation: beforeApear 1.8s linear 1.8s both;
+            animation: beforeApear 1.8s linear 1.8s both;
   }
   #blog-two.screen-block.current .image-block.up .image-container {
     -webkit-animation: shadowAppearance 0.9s 2.7s both;
@@ -38208,7 +38238,7 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block.up {
     right: 11.904vw;
     z-index: 3;
-    top: 0;
+    top: 5vh;
   }
   #blog-two.screen-block .image-block.up p {
     -webkit-transform: rotate(90deg);
@@ -38224,12 +38254,22 @@ html body .wrapper .screen-block.previous {
             transform-origin: 0 0;
   }
   #blog-two.screen-block .image-block.up .gray {
-    background: #444;
     position: absolute;
-    right: -7.1424vw;
-    height: 180px;
-    width: 180px;
-    top: 27.9744vw;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 5.952vw;
+    right: -32.736vw;
+  }
+  #blog-two.screen-block .image-block.up .gray:before {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: #444;
+    -webkit-transform: translate3d(-90%, 90%, 0);
+            transform: translate3d(-90%, 90%, 0);
   }
   #blog-two.screen-block .image-block.down {
     right: 24.87936vw;
@@ -38364,9 +38404,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-two.screen-block.current .image-block.up .gray {
-    -webkit-animation: fadeIn 0.9s 3s both;
-            animation: fadeIn 0.9s 3s both;
+  #blog-two.screen-block.current .image-block.up .gray::before {
+    -webkit-animation: beforeApear 1.8s linear 1.8s both;
+            animation: beforeApear 1.8s linear 1.8s both;
   }
   #blog-two.screen-block.current .image-block.up .image-container {
     -webkit-animation: shadowAppearance 0.9s 2.7s both;
@@ -38477,7 +38517,7 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block.up {
     right: 10.416vw;
     z-index: 3;
-    top: 0;
+    top: 5vh;
   }
   #blog-two.screen-block .image-block.up p {
     -webkit-transform: rotate(90deg);
@@ -38493,12 +38533,22 @@ html body .wrapper .screen-block.previous {
             transform-origin: 0 0;
   }
   #blog-two.screen-block .image-block.up .gray {
-    background: #444;
     position: absolute;
-    right: -6.2496vw;
-    height: 180px;
-    width: 180px;
-    top: 24.4776vw;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 5.208vw;
+    right: -28.644vw;
+  }
+  #blog-two.screen-block .image-block.up .gray:before {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: #444;
+    -webkit-transform: translate3d(-90%, 90%, 0);
+            transform: translate3d(-90%, 90%, 0);
   }
   #blog-two.screen-block .image-block.down {
     right: 21.76944vw;
@@ -38627,9 +38677,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-two.screen-block.current .image-block.up .gray {
-    -webkit-animation: fadeIn 0.9s 3s both;
-            animation: fadeIn 0.9s 3s both;
+  #blog-two.screen-block.current .image-block.up .gray::before {
+    -webkit-animation: beforeApear 1.8s linear 1.8s both;
+            animation: beforeApear 1.8s linear 1.8s both;
   }
   #blog-two.screen-block.current .image-block.up .image-container {
     -webkit-animation: shadowAppearance 0.9s 2.7s both;
@@ -38740,7 +38790,7 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block.up {
     right: 7.812vw;
     z-index: 3;
-    top: 0;
+    top: 5vh;
   }
   #blog-two.screen-block .image-block.up p {
     -webkit-transform: rotate(90deg);
@@ -38756,12 +38806,22 @@ html body .wrapper .screen-block.previous {
             transform-origin: 0 0;
   }
   #blog-two.screen-block .image-block.up .gray {
-    background: #444;
     position: absolute;
-    right: -4.6872vw;
-    height: 180px;
-    width: 180px;
-    top: 18.3582vw;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 3.906vw;
+    right: -21.483vw;
+  }
+  #blog-two.screen-block .image-block.up .gray:before {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    content: '';
+    position: absolute;
+    background: #444;
+    -webkit-transform: translate3d(-90%, 90%, 0);
+            transform: translate3d(-90%, 90%, 0);
   }
   #blog-two.screen-block .image-block.down {
     right: 16.32708vw;
@@ -38884,10 +38944,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-three.screen-block.current-slide .image-block .image-container {
-    -webkit-animation: shadowAppearance 0.9s 2.7s both;
-            animation: shadowAppearance 0.9s 2.7s both;
-  }
   #blog-three.screen-block.current-slide .image-block .image-container img {
     -webkit-animation: imageApear 0.9s linear 1.8s both;
             animation: imageApear 0.9s linear 1.8s both;
@@ -38968,7 +39024,6 @@ html body .wrapper .screen-block.previous {
     height: 100%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 9.375vw 2.5vw rgba(0, 0, 0, 0.3);
   }
   #blog-three.screen-block .image-block .image-container img {
     z-index: 1;
@@ -39098,10 +39153,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-three.screen-block.current-slide .image-block .image-container {
-    -webkit-animation: shadowAppearance 0.9s 2.7s both;
-            animation: shadowAppearance 0.9s 2.7s both;
-  }
   #blog-three.screen-block.current-slide .image-block .image-container img {
     -webkit-animation: imageApear 0.9s linear 1.8s both;
             animation: imageApear 0.9s linear 1.8s both;
@@ -39182,7 +39233,6 @@ html body .wrapper .screen-block.previous {
     height: 100%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 5.2818vw 1.40848vw rgba(0, 0, 0, 0.3);
   }
   #blog-three.screen-block .image-block .image-container img {
     z-index: 1;
@@ -39317,10 +39367,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-three.screen-block.current .image-block .image-container {
-    -webkit-animation: shadowAppearance 0.9s 2.7s both;
-            animation: shadowAppearance 0.9s 2.7s both;
-  }
   #blog-three.screen-block.current .image-block .image-container img {
     -webkit-animation: imageApear 0.9s linear 1.8s both;
             animation: imageApear 0.9s linear 1.8s both;
@@ -39425,7 +39471,6 @@ html body .wrapper .screen-block.previous {
     height: 100%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 3.90624vw 1.04166vw rgba(0, 0, 0, 0.3);
   }
   #blog-three.screen-block .image-block .image-container img {
     z-index: 1;
@@ -39621,10 +39666,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-three.screen-block.current .image-block .image-container {
-    -webkit-animation: shadowAppearance 0.9s 2.7s both;
-            animation: shadowAppearance 0.9s 2.7s both;
-  }
   #blog-three.screen-block.current .image-block .image-container img {
     -webkit-animation: imageApear 0.9s linear 1.8s both;
             animation: imageApear 0.9s linear 1.8s both;
@@ -39729,7 +39770,6 @@ html body .wrapper .screen-block.previous {
     height: 100%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 2.9298vw 0.78128vw rgba(0, 0, 0, 0.3);
   }
   #blog-three.screen-block .image-block .image-container img {
     z-index: 1;
@@ -39896,10 +39936,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-three.screen-block.current .image-block .image-container {
-    -webkit-animation: shadowAppearance 0.9s 2.7s both;
-            animation: shadowAppearance 0.9s 2.7s both;
-  }
   #blog-three.screen-block.current .image-block .image-container img {
     -webkit-animation: imageApear 0.9s linear 1.8s both;
             animation: imageApear 0.9s linear 1.8s both;
@@ -40004,7 +40040,6 @@ html body .wrapper .screen-block.previous {
     height: 100%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 2.196vw 0.5856vw rgba(0, 0, 0, 0.3);
   }
   #blog-three.screen-block .image-block .image-container img {
     z-index: 1;
@@ -40151,10 +40186,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-three.screen-block.current .image-block .image-container {
-    -webkit-animation: shadowAppearance 0.9s 2.7s both;
-            animation: shadowAppearance 0.9s 2.7s both;
-  }
   #blog-three.screen-block.current .image-block .image-container img {
     -webkit-animation: imageApear 0.9s linear 1.8s both;
             animation: imageApear 0.9s linear 1.8s both;
@@ -40259,7 +40290,6 @@ html body .wrapper .screen-block.previous {
     height: 100%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 1.7856vw 0.47616vw rgba(0, 0, 0, 0.3);
   }
   #blog-three.screen-block .image-block .image-container img {
     z-index: 1;
@@ -40400,10 +40430,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-three.screen-block.current .image-block .image-container {
-    -webkit-animation: shadowAppearance 0.9s 2.7s both;
-            animation: shadowAppearance 0.9s 2.7s both;
-  }
   #blog-three.screen-block.current .image-block .image-container img {
     -webkit-animation: imageApear 0.9s linear 1.8s both;
             animation: imageApear 0.9s linear 1.8s both;
@@ -40508,7 +40534,6 @@ html body .wrapper .screen-block.previous {
     height: 100%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 1.5624vw 0.41664vw rgba(0, 0, 0, 0.3);
   }
   #blog-three.screen-block .image-block .image-container img {
     z-index: 1;
@@ -40637,10 +40662,6 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeIn 0.9s 3.6s both;
             animation: fadeIn 0.9s 3.6s both;
   }
-  #blog-three.screen-block.current .image-block .image-container {
-    -webkit-animation: shadowAppearance 0.9s 2.7s both;
-            animation: shadowAppearance 0.9s 2.7s both;
-  }
   #blog-three.screen-block.current .image-block .image-container img {
     -webkit-animation: imageApear 0.9s linear 1.8s both;
             animation: imageApear 0.9s linear 1.8s both;
@@ -40745,7 +40766,6 @@ html body .wrapper .screen-block.previous {
     height: 100%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 0 1.1718vw 0.31248vw rgba(0, 0, 0, 0.3);
   }
   #blog-three.screen-block .image-block .image-container img {
     z-index: 1;
@@ -42301,42 +42321,43 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-one.screen-block.current {
     background: #1C1C1C;
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-one.screen-block .logo, #about-company-one.screen-block .menu, #about-company-one.screen-block .language a {
+  #about-company-one.screen-block.current .logo, #about-company-one.screen-block.current .menu, #about-company-one.screen-block.current .language a {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .copyright p {
+  #about-company-one.screen-block.current .copyright p {
     -webkit-animation: fadeInUp 0.9s 0.9s both;
             animation: fadeInUp 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .scroll {
+  #about-company-one.screen-block.current .scroll {
     -webkit-animation: fadeInUp 0.6s 2.1s both;
             animation: fadeInUp 0.6s 2.1s both;
   }
-  #about-company-one.screen-block .social .facebook, #about-company-one.screen-block .social .instagram {
+  #about-company-one.screen-block.current .social .facebook, #about-company-one.screen-block.current .social .instagram {
     -webkit-animation-delay: 0.9s;
             animation-delay: 0.9s;
   }
-  #about-company-one.screen-block .social .jumping-button {
+  #about-company-one.screen-block.current .social .jumping-button {
     -webkit-animation-delay: 1.8s;
             animation-delay: 1.8s;
   }
-  #about-company-one.screen-block .shadow div {
+  #about-company-one.screen-block.current .shadow div {
     -webkit-animation: fadeIn 0.9s 0.9s both;
             animation: fadeIn 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .word:nth-of-type(1) span {
+  #about-company-one.screen-block.current .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-one.screen-block .word:nth-of-type(2) span {
+  #about-company-one.screen-block.current .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -42397,42 +42418,43 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-one.screen-block.current {
     background: #1C1C1C;
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-one.screen-block .logo, #about-company-one.screen-block .menu, #about-company-one.screen-block .language a {
+  #about-company-one.screen-block.current .logo, #about-company-one.screen-block.current .menu, #about-company-one.screen-block.current .language a {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .copyright p {
+  #about-company-one.screen-block.current .copyright p {
     -webkit-animation: fadeInUp 0.9s 0.9s both;
             animation: fadeInUp 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .scroll {
+  #about-company-one.screen-block.current .scroll {
     -webkit-animation: fadeInUp 0.6s 2.1s both;
             animation: fadeInUp 0.6s 2.1s both;
   }
-  #about-company-one.screen-block .social .facebook, #about-company-one.screen-block .social .instagram {
+  #about-company-one.screen-block.current .social .facebook, #about-company-one.screen-block.current .social .instagram {
     -webkit-animation-delay: 0.9s;
             animation-delay: 0.9s;
   }
-  #about-company-one.screen-block .social .jumping-button {
+  #about-company-one.screen-block.current .social .jumping-button {
     -webkit-animation-delay: 1.8s;
             animation-delay: 1.8s;
   }
-  #about-company-one.screen-block .shadow div {
+  #about-company-one.screen-block.current .shadow div {
     -webkit-animation: fadeIn 0.9s 0.9s both;
             animation: fadeIn 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .word:nth-of-type(1) span {
+  #about-company-one.screen-block.current .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-one.screen-block .word:nth-of-type(2) span {
+  #about-company-one.screen-block.current .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -42493,42 +42515,43 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-one.screen-block.current {
     background: #1C1C1C;
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-one.screen-block .logo, #about-company-one.screen-block .menu, #about-company-one.screen-block .language a {
+  #about-company-one.screen-block.current .logo, #about-company-one.screen-block.current .menu, #about-company-one.screen-block.current .language a {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .copyright p {
+  #about-company-one.screen-block.current .copyright p {
     -webkit-animation: fadeInUp 0.9s 0.9s both;
             animation: fadeInUp 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .scroll {
+  #about-company-one.screen-block.current .scroll {
     -webkit-animation: fadeInUp 0.6s 2.1s both;
             animation: fadeInUp 0.6s 2.1s both;
   }
-  #about-company-one.screen-block .social .facebook, #about-company-one.screen-block .social .instagram {
+  #about-company-one.screen-block.current .social .facebook, #about-company-one.screen-block.current .social .instagram {
     -webkit-animation-delay: 0.9s;
             animation-delay: 0.9s;
   }
-  #about-company-one.screen-block .social .jumping-button {
+  #about-company-one.screen-block.current .social .jumping-button {
     -webkit-animation-delay: 1.8s;
             animation-delay: 1.8s;
   }
-  #about-company-one.screen-block .shadow div {
+  #about-company-one.screen-block.current .shadow div {
     -webkit-animation: fadeIn 0.9s 0.9s both;
             animation: fadeIn 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .word:nth-of-type(1) span {
+  #about-company-one.screen-block.current .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-one.screen-block .word:nth-of-type(2) span {
+  #about-company-one.screen-block.current .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -42589,42 +42612,43 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-one.screen-block.current {
     background: #1C1C1C;
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-one.screen-block .logo, #about-company-one.screen-block .menu, #about-company-one.screen-block .language a {
+  #about-company-one.screen-block.current .logo, #about-company-one.screen-block.current .menu, #about-company-one.screen-block.current .language a {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .copyright p {
+  #about-company-one.screen-block.current .copyright p {
     -webkit-animation: fadeInUp 0.9s 0.9s both;
             animation: fadeInUp 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .scroll {
+  #about-company-one.screen-block.current .scroll {
     -webkit-animation: fadeInUp 0.6s 2.1s both;
             animation: fadeInUp 0.6s 2.1s both;
   }
-  #about-company-one.screen-block .social .facebook, #about-company-one.screen-block .social .instagram {
+  #about-company-one.screen-block.current .social .facebook, #about-company-one.screen-block.current .social .instagram {
     -webkit-animation-delay: 0.9s;
             animation-delay: 0.9s;
   }
-  #about-company-one.screen-block .social .jumping-button {
+  #about-company-one.screen-block.current .social .jumping-button {
     -webkit-animation-delay: 1.8s;
             animation-delay: 1.8s;
   }
-  #about-company-one.screen-block .shadow div {
+  #about-company-one.screen-block.current .shadow div {
     -webkit-animation: fadeIn 0.9s 0.9s both;
             animation: fadeIn 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .word:nth-of-type(1) span {
+  #about-company-one.screen-block.current .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-one.screen-block .word:nth-of-type(2) span {
+  #about-company-one.screen-block.current .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -42685,42 +42709,43 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-one.screen-block.current {
     background: #1C1C1C;
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-one.screen-block .logo, #about-company-one.screen-block .menu, #about-company-one.screen-block .language a {
+  #about-company-one.screen-block.current .logo, #about-company-one.screen-block.current .menu, #about-company-one.screen-block.current .language a {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .copyright p {
+  #about-company-one.screen-block.current .copyright p {
     -webkit-animation: fadeInUp 0.9s 0.9s both;
             animation: fadeInUp 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .scroll {
+  #about-company-one.screen-block.current .scroll {
     -webkit-animation: fadeInUp 0.6s 2.1s both;
             animation: fadeInUp 0.6s 2.1s both;
   }
-  #about-company-one.screen-block .social .facebook, #about-company-one.screen-block .social .instagram {
+  #about-company-one.screen-block.current .social .facebook, #about-company-one.screen-block.current .social .instagram {
     -webkit-animation-delay: 0.9s;
             animation-delay: 0.9s;
   }
-  #about-company-one.screen-block .social .jumping-button {
+  #about-company-one.screen-block.current .social .jumping-button {
     -webkit-animation-delay: 1.8s;
             animation-delay: 1.8s;
   }
-  #about-company-one.screen-block .shadow div {
+  #about-company-one.screen-block.current .shadow div {
     -webkit-animation: fadeIn 0.9s 0.9s both;
             animation: fadeIn 0.9s 0.9s both;
   }
-  #about-company-one.screen-block .word:nth-of-type(1) span {
+  #about-company-one.screen-block.current .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-one.screen-block .word:nth-of-type(2) span {
+  #about-company-one.screen-block.current .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -42962,51 +42987,52 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-two.screen-block.current {
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-two.screen-block .logo, #about-company-two.screen-block .menu {
+  #about-company-two.screen-block.current .logo, #about-company-two.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-two.screen-block .service-info p {
+  #about-company-two.screen-block.current .service-info p {
     -webkit-animation: fadeInDown 0.6s 2.7s both;
             animation: fadeInDown 0.6s 2.7s both;
   }
-  #about-company-two.screen-block .jump-button {
+  #about-company-two.screen-block.current .jump-button {
     -webkit-animation: fadeInUp 0.6s 2.7s both;
             animation: fadeInUp 0.6s 2.7s both;
   }
-  #about-company-two.screen-block .title p {
+  #about-company-two.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title span.name span {
+  #about-company-two.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title span.name:before {
+  #about-company-two.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title .word:after {
+  #about-company-two.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-two.screen-block .title .word:nth-of-type(1) span {
+  #about-company-two.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title .word:nth-of-type(2) span {
+  #about-company-two.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -43086,51 +43112,52 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-two.screen-block.current {
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-two.screen-block .logo, #about-company-two.screen-block .menu {
+  #about-company-two.screen-block.current .logo, #about-company-two.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-two.screen-block .service-info p {
+  #about-company-two.screen-block.current .service-info p {
     -webkit-animation: fadeInDown 0.6s 2.7s both;
             animation: fadeInDown 0.6s 2.7s both;
   }
-  #about-company-two.screen-block .jump-button {
+  #about-company-two.screen-block.current .jump-button {
     -webkit-animation: fadeInUp 0.6s 2.7s both;
             animation: fadeInUp 0.6s 2.7s both;
   }
-  #about-company-two.screen-block .title p {
+  #about-company-two.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title span.name span {
+  #about-company-two.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title span.name:before {
+  #about-company-two.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title .word:after {
+  #about-company-two.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-two.screen-block .title .word:nth-of-type(1) span {
+  #about-company-two.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title .word:nth-of-type(2) span {
+  #about-company-two.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -43210,51 +43237,52 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-two.screen-block.current {
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-two.screen-block .logo, #about-company-two.screen-block .menu {
+  #about-company-two.screen-block.current .logo, #about-company-two.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-two.screen-block .service-info p {
+  #about-company-two.screen-block.current .service-info p {
     -webkit-animation: fadeInDown 0.6s 2.7s both;
             animation: fadeInDown 0.6s 2.7s both;
   }
-  #about-company-two.screen-block .jump-button {
+  #about-company-two.screen-block.current .jump-button {
     -webkit-animation: fadeInUp 0.6s 2.7s both;
             animation: fadeInUp 0.6s 2.7s both;
   }
-  #about-company-two.screen-block .title p {
+  #about-company-two.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title span.name span {
+  #about-company-two.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title span.name:before {
+  #about-company-two.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title .word:after {
+  #about-company-two.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-two.screen-block .title .word:nth-of-type(1) span {
+  #about-company-two.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title .word:nth-of-type(2) span {
+  #about-company-two.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -43334,51 +43362,52 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-two.screen-block.current {
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-two.screen-block .logo, #about-company-two.screen-block .menu {
+  #about-company-two.screen-block.current .logo, #about-company-two.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-two.screen-block .service-info p {
+  #about-company-two.screen-block.current .service-info p {
     -webkit-animation: fadeInDown 0.6s 2.7s both;
             animation: fadeInDown 0.6s 2.7s both;
   }
-  #about-company-two.screen-block .jump-button {
+  #about-company-two.screen-block.current .jump-button {
     -webkit-animation: fadeInUp 0.6s 2.7s both;
             animation: fadeInUp 0.6s 2.7s both;
   }
-  #about-company-two.screen-block .title p {
+  #about-company-two.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title span.name span {
+  #about-company-two.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title span.name:before {
+  #about-company-two.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title .word:after {
+  #about-company-two.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-two.screen-block .title .word:nth-of-type(1) span {
+  #about-company-two.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title .word:nth-of-type(2) span {
+  #about-company-two.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -43458,51 +43487,52 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-two.screen-block.current {
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-two.screen-block .logo, #about-company-two.screen-block .menu {
+  #about-company-two.screen-block.current .logo, #about-company-two.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-two.screen-block .service-info p {
+  #about-company-two.screen-block.current .service-info p {
     -webkit-animation: fadeInDown 0.6s 2.7s both;
             animation: fadeInDown 0.6s 2.7s both;
   }
-  #about-company-two.screen-block .jump-button {
+  #about-company-two.screen-block.current .jump-button {
     -webkit-animation: fadeInUp 0.6s 2.7s both;
             animation: fadeInUp 0.6s 2.7s both;
   }
-  #about-company-two.screen-block .title p {
+  #about-company-two.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title span.name span {
+  #about-company-two.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title span.name:before {
+  #about-company-two.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title .word:after {
+  #about-company-two.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-two.screen-block .title .word:nth-of-type(1) span {
+  #about-company-two.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-two.screen-block .title .word:nth-of-type(2) span {
+  #about-company-two.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -44444,48 +44474,49 @@ html body .wrapper .screen-block.previous {
     position: relative;
     padding-top: 9.766vw;
     padding-right: 25vw;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
     font-family: Raleway;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-three.screen-block.current {
     background: #1C1C1C;
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-three.screen-block .logo, #about-company-three.screen-block .menu {
+  #about-company-three.screen-block.current .logo, #about-company-three.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-three.screen-block .title p {
+  #about-company-three.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title span.name span {
+  #about-company-three.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title span.name:before {
+  #about-company-three.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title .word:after {
+  #about-company-three.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-three.screen-block .title .word:nth-of-type(1) span {
+  #about-company-three.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title .word:nth-of-type(2) span {
+  #about-company-three.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -44985,48 +45016,49 @@ html body .wrapper .screen-block.previous {
     position: relative;
     padding-top: 7.32vw;
     padding-right: 25vw;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
     font-family: Raleway;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-three.screen-block.current {
     background: #1C1C1C;
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-three.screen-block .logo, #about-company-three.screen-block .menu {
+  #about-company-three.screen-block.current .logo, #about-company-three.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-three.screen-block .title p {
+  #about-company-three.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title span.name span {
+  #about-company-three.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title span.name:before {
+  #about-company-three.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title .word:after {
+  #about-company-three.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-three.screen-block .title .word:nth-of-type(1) span {
+  #about-company-three.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title .word:nth-of-type(2) span {
+  #about-company-three.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -45526,48 +45558,49 @@ html body .wrapper .screen-block.previous {
     position: relative;
     padding-top: 5.952vw;
     padding-right: 25vw;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
     font-family: Raleway;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-three.screen-block.current {
     background: #1C1C1C;
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-three.screen-block .logo, #about-company-three.screen-block .menu {
+  #about-company-three.screen-block.current .logo, #about-company-three.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-three.screen-block .title p {
+  #about-company-three.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title span.name span {
+  #about-company-three.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title span.name:before {
+  #about-company-three.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title .word:after {
+  #about-company-three.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-three.screen-block .title .word:nth-of-type(1) span {
+  #about-company-three.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title .word:nth-of-type(2) span {
+  #about-company-three.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -46061,54 +46094,58 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: left 0.9s 0s both;
             animation: left 0.9s 0s both;
   }
+  #about-company-three.screen-block .title {
+    right: 5.952vw;
+  }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
   #about-company-three.screen-block {
     position: relative;
     padding-top: 5.208vw;
     padding-right: 25vw;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
     font-family: Raleway;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-three.screen-block.current {
     background: #1C1C1C;
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-three.screen-block .logo, #about-company-three.screen-block .menu {
+  #about-company-three.screen-block.current .logo, #about-company-three.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-three.screen-block .title p {
+  #about-company-three.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title span.name span {
+  #about-company-three.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title span.name:before {
+  #about-company-three.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title .word:after {
+  #about-company-three.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-three.screen-block .title .word:nth-of-type(1) span {
+  #about-company-three.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title .word:nth-of-type(2) span {
+  #about-company-three.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -46608,48 +46645,49 @@ html body .wrapper .screen-block.previous {
     position: relative;
     padding-top: 3.906vw;
     padding-right: 25vw;
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
     font-family: Raleway;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-three.screen-block.current {
     background: #1C1C1C;
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-three.screen-block .logo, #about-company-three.screen-block .menu {
+  #about-company-three.screen-block.current .logo, #about-company-three.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-three.screen-block .title p {
+  #about-company-three.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title span.name span {
+  #about-company-three.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title span.name:before {
+  #about-company-three.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title .word:after {
+  #about-company-three.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-three.screen-block .title .word:nth-of-type(1) span {
+  #about-company-three.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-three.screen-block .title .word:nth-of-type(2) span {
+  #about-company-three.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -47467,39 +47505,104 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-four.screen-block .jelly {
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 35px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    text-transform: uppercase;
+    outline: 0;
+    position: absolute;
+    border-radius: 100px;
+    -webkit-animation: anim 2s ease-in infinite;
+    animation: anim 2s ease-in infinite;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    background: #0057FF;
+    color: #FFF !important;
+    overflow: hidden;
+    text-decoration: none;
+    right: 58.596vw;
+    bottom: 30vh;
+  }
+  #about-company-four.screen-block .jelly:active {
+    background: #4786b5;
+  }
+  @-webkit-keyframes anim {
+    5% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+    10% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+      transform: scale(0.9, 1.1) translateY(-0.5rem);
+    }
+    15% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes anim {
+    5% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+    10% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+      transform: scale(0.9, 1.1) translateY(-0.5rem);
+    }
+    15% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (max-width: 640px) {
+  #about-company-four.screen-block .jelly {
+    padding: 25px 50px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  #about-company-four.screen-block.current {
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-four.screen-block .big-background-letter {
+  #about-company-four.screen-block.current .big-background-letter {
     -webkit-animation: fadeIn 0.9s 0.9s both;
             animation: fadeIn 0.9s 0.9s both;
   }
-  #about-company-four.screen-block .lines div {
+  #about-company-four.screen-block.current .lines div {
     -webkit-animation: heightChanging 2.7s 0.9s both;
             animation: heightChanging 2.7s 0.9s both;
   }
-  #about-company-four.screen-block .logo, #about-company-four.screen-block .menu {
+  #about-company-four.screen-block.current .logo, #about-company-four.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-four.screen-block .title span.name span {
+  #about-company-four.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-four.screen-block .title span.name:before {
+  #about-company-four.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-four.screen-block .title .word:after {
+  #about-company-four.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-four.screen-block .title .word:nth-of-type(1) span {
+  #about-company-four.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -47560,39 +47663,104 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-four.screen-block .jelly {
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 35px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    text-transform: uppercase;
+    outline: 0;
+    position: absolute;
+    border-radius: 100px;
+    -webkit-animation: anim 2s ease-in infinite;
+    animation: anim 2s ease-in infinite;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    background: #0057FF;
+    color: #FFF !important;
+    overflow: hidden;
+    text-decoration: none;
+    right: 43.92vw;
+    bottom: 30vh;
+  }
+  #about-company-four.screen-block .jelly:active {
+    background: #4786b5;
+  }
+  @-webkit-keyframes anim {
+    5% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+    10% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+      transform: scale(0.9, 1.1) translateY(-0.5rem);
+    }
+    15% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes anim {
+    5% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+    10% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+      transform: scale(0.9, 1.1) translateY(-0.5rem);
+    }
+    15% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1366px) and (max-width: 640px) {
+  #about-company-four.screen-block .jelly {
+    padding: 25px 50px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1366px) {
+  #about-company-four.screen-block.current {
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-four.screen-block .big-background-letter {
+  #about-company-four.screen-block.current .big-background-letter {
     -webkit-animation: fadeIn 0.9s 0.9s both;
             animation: fadeIn 0.9s 0.9s both;
   }
-  #about-company-four.screen-block .lines div {
+  #about-company-four.screen-block.current .lines div {
     -webkit-animation: heightChanging 2.7s 0.9s both;
             animation: heightChanging 2.7s 0.9s both;
   }
-  #about-company-four.screen-block .logo, #about-company-four.screen-block .menu {
+  #about-company-four.screen-block.current .logo, #about-company-four.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-four.screen-block .title span.name span {
+  #about-company-four.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-four.screen-block .title span.name:before {
+  #about-company-four.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-four.screen-block .title .word:after {
+  #about-company-four.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-four.screen-block .title .word:nth-of-type(1) span {
+  #about-company-four.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -47653,39 +47821,104 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-four.screen-block .jelly {
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 35px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    text-transform: uppercase;
+    outline: 0;
+    position: absolute;
+    border-radius: 100px;
+    -webkit-animation: anim 2s ease-in infinite;
+    animation: anim 2s ease-in infinite;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    background: #0057FF;
+    color: #FFF !important;
+    overflow: hidden;
+    text-decoration: none;
+    right: 35.712vw;
+    bottom: 30vh;
+  }
+  #about-company-four.screen-block .jelly:active {
+    background: #4786b5;
+  }
+  @-webkit-keyframes anim {
+    5% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+    10% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+      transform: scale(0.9, 1.1) translateY(-0.5rem);
+    }
+    15% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes anim {
+    5% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+    10% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+      transform: scale(0.9, 1.1) translateY(-0.5rem);
+    }
+    15% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+}
+@media only screen and (min-width: 1367px) and (max-width: 1680px) and (max-width: 640px) {
+  #about-company-four.screen-block .jelly {
+    padding: 25px 50px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1367px) and (max-width: 1680px) {
+  #about-company-four.screen-block.current {
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-four.screen-block .big-background-letter {
+  #about-company-four.screen-block.current .big-background-letter {
     -webkit-animation: fadeIn 0.9s 0.9s both;
             animation: fadeIn 0.9s 0.9s both;
   }
-  #about-company-four.screen-block .lines div {
+  #about-company-four.screen-block.current .lines div {
     -webkit-animation: heightChanging 2.7s 0.9s both;
             animation: heightChanging 2.7s 0.9s both;
   }
-  #about-company-four.screen-block .logo, #about-company-four.screen-block .menu {
+  #about-company-four.screen-block.current .logo, #about-company-four.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-four.screen-block .title span.name span {
+  #about-company-four.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-four.screen-block .title span.name:before {
+  #about-company-four.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-four.screen-block .title .word:after {
+  #about-company-four.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-four.screen-block .title .word:nth-of-type(1) span {
+  #about-company-four.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -47746,39 +47979,104 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-four.screen-block .jelly {
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 35px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    text-transform: uppercase;
+    outline: 0;
+    position: absolute;
+    border-radius: 100px;
+    -webkit-animation: anim 2s ease-in infinite;
+    animation: anim 2s ease-in infinite;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    background: #0057FF;
+    color: #FFF !important;
+    overflow: hidden;
+    text-decoration: none;
+    right: 31.248vw;
+    bottom: 30vh;
+  }
+  #about-company-four.screen-block .jelly:active {
+    background: #4786b5;
+  }
+  @-webkit-keyframes anim {
+    5% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+    10% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+      transform: scale(0.9, 1.1) translateY(-0.5rem);
+    }
+    15% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes anim {
+    5% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+    10% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+      transform: scale(0.9, 1.1) translateY(-0.5rem);
+    }
+    15% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+}
+@media only screen and (min-width: 1681px) and (max-width: 1920px) and (max-width: 640px) {
+  #about-company-four.screen-block .jelly {
+    padding: 25px 50px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1681px) and (max-width: 1920px) {
+  #about-company-four.screen-block.current {
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-four.screen-block .big-background-letter {
+  #about-company-four.screen-block.current .big-background-letter {
     -webkit-animation: fadeIn 0.9s 0.9s both;
             animation: fadeIn 0.9s 0.9s both;
   }
-  #about-company-four.screen-block .lines div {
+  #about-company-four.screen-block.current .lines div {
     -webkit-animation: heightChanging 2.7s 0.9s both;
             animation: heightChanging 2.7s 0.9s both;
   }
-  #about-company-four.screen-block .logo, #about-company-four.screen-block .menu {
+  #about-company-four.screen-block.current .logo, #about-company-four.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-four.screen-block .title span.name span {
+  #about-company-four.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-four.screen-block .title span.name:before {
+  #about-company-four.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-four.screen-block .title .word:after {
+  #about-company-four.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-four.screen-block .title .word:nth-of-type(1) span {
+  #about-company-four.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -47839,39 +48137,104 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
+  }
+  #about-company-four.screen-block .jelly {
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 35px 20px;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    *zoom: 1;
+    *display: inline;
+    text-transform: uppercase;
+    outline: 0;
+    position: absolute;
+    border-radius: 100px;
+    -webkit-animation: anim 2s ease-in infinite;
+    animation: anim 2s ease-in infinite;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    background: #0057FF;
+    color: #FFF !important;
+    overflow: hidden;
+    text-decoration: none;
+    right: 23.436vw;
+    bottom: 30vh;
+  }
+  #about-company-four.screen-block .jelly:active {
+    background: #4786b5;
+  }
+  @-webkit-keyframes anim {
+    5% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+    10% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+      transform: scale(0.9, 1.1) translateY(-0.5rem);
+    }
+    15% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+  @keyframes anim {
+    5% {
+      -webkit-transform: scale(1.1, 0.9);
+      transform: scale(1.1, 0.9);
+    }
+    10% {
+      -webkit-transform: scale(0.9, 1.1) translateY(-0.5rem);
+      transform: scale(0.9, 1.1) translateY(-0.5rem);
+    }
+    15% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+  }
+}
+@media only screen and (min-width: 1921px) and (max-width: 640px) {
+  #about-company-four.screen-block .jelly {
+    padding: 25px 50px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1921px) {
+  #about-company-four.screen-block.current {
     -webkit-animation: fadeIn 0.9s both;
             animation: fadeIn 0.9s both;
   }
-  #about-company-four.screen-block .big-background-letter {
+  #about-company-four.screen-block.current .big-background-letter {
     -webkit-animation: fadeIn 0.9s 0.9s both;
             animation: fadeIn 0.9s 0.9s both;
   }
-  #about-company-four.screen-block .lines div {
+  #about-company-four.screen-block.current .lines div {
     -webkit-animation: heightChanging 2.7s 0.9s both;
             animation: heightChanging 2.7s 0.9s both;
   }
-  #about-company-four.screen-block .logo, #about-company-four.screen-block .menu {
+  #about-company-four.screen-block.current .logo, #about-company-four.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-four.screen-block .title span.name span {
+  #about-company-four.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-four.screen-block .title span.name:before {
+  #about-company-four.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-four.screen-block .title .word:after {
+  #about-company-four.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-four.screen-block .title .word:nth-of-type(1) span {
+  #about-company-four.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
@@ -48211,45 +48574,44 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
   }
-  #about-company-five.screen-block .vertical-text, #about-company-five.screen-block table {
+  #about-company-five.screen-block.current .vertical-text, #about-company-five.screen-block.current table {
     -webkit-animation: fadeIn 1.8s 1.8s both;
             animation: fadeIn 1.8s 1.8s both;
   }
-  #about-company-five.screen-block .logo, #about-company-five.screen-block .menu {
+  #about-company-five.screen-block.current .logo, #about-company-five.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-five.screen-block .title p {
+  #about-company-five.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title span.name span {
+  #about-company-five.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title span.name:before {
+  #about-company-five.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title .word:after {
+  #about-company-five.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-five.screen-block .title .word:nth-of-type(1) span {
+  #about-company-five.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title .word:nth-of-type(2) span {
+  #about-company-five.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -48304,45 +48666,44 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
   }
-  #about-company-five.screen-block .vertical-text, #about-company-five.screen-block table {
+  #about-company-five.screen-block.current .vertical-text, #about-company-five.screen-block.current table {
     -webkit-animation: fadeIn 1.8s 1.8s both;
             animation: fadeIn 1.8s 1.8s both;
   }
-  #about-company-five.screen-block .logo, #about-company-five.screen-block .menu {
+  #about-company-five.screen-block.current .logo, #about-company-five.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-five.screen-block .title p {
+  #about-company-five.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title span.name span {
+  #about-company-five.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title span.name:before {
+  #about-company-five.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title .word:after {
+  #about-company-five.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-five.screen-block .title .word:nth-of-type(1) span {
+  #about-company-five.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title .word:nth-of-type(2) span {
+  #about-company-five.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -48390,6 +48751,12 @@ html body .wrapper .screen-block.previous {
     left: -2.7816vw;
     width: 12%;
   }
+  #about-company-five.screen-block .title {
+    margin-left: 16.104vw;
+  }
+  #about-company-five.screen-block table {
+    zoom: .6;
+  }
 }
 @media (min-width: 1367px) and (max-width: 1680px) {
   #about-company-five.screen-block {
@@ -48397,45 +48764,44 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
   }
-  #about-company-five.screen-block .vertical-text, #about-company-five.screen-block table {
+  #about-company-five.screen-block.current .vertical-text, #about-company-five.screen-block.current table {
     -webkit-animation: fadeIn 1.8s 1.8s both;
             animation: fadeIn 1.8s 1.8s both;
   }
-  #about-company-five.screen-block .logo, #about-company-five.screen-block .menu {
+  #about-company-five.screen-block.current .logo, #about-company-five.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-five.screen-block .title p {
+  #about-company-five.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title span.name span {
+  #about-company-five.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title span.name:before {
+  #about-company-five.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title .word:after {
+  #about-company-five.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-five.screen-block .title .word:nth-of-type(1) span {
+  #about-company-five.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title .word:nth-of-type(2) span {
+  #about-company-five.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -48483,6 +48849,9 @@ html body .wrapper .screen-block.previous {
     left: -2.26176vw;
     width: 12%;
   }
+  #about-company-five.screen-block table {
+    zoom: .7;
+  }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
   #about-company-five.screen-block {
@@ -48490,45 +48859,44 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
   }
-  #about-company-five.screen-block .vertical-text, #about-company-five.screen-block table {
+  #about-company-five.screen-block.current .vertical-text, #about-company-five.screen-block.current table {
     -webkit-animation: fadeIn 1.8s 1.8s both;
             animation: fadeIn 1.8s 1.8s both;
   }
-  #about-company-five.screen-block .logo, #about-company-five.screen-block .menu {
+  #about-company-five.screen-block.current .logo, #about-company-five.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-five.screen-block .title p {
+  #about-company-five.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title span.name span {
+  #about-company-five.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title span.name:before {
+  #about-company-five.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title .word:after {
+  #about-company-five.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-five.screen-block .title .word:nth-of-type(1) span {
+  #about-company-five.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title .word:nth-of-type(2) span {
+  #about-company-five.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -48576,6 +48944,9 @@ html body .wrapper .screen-block.previous {
     left: -1.97904vw;
     width: 12%;
   }
+  #about-company-five.screen-block table {
+    zoom: .9;
+  }
 }
 @media (min-width: 1921px) {
   #about-company-five.screen-block {
@@ -48583,45 +48954,44 @@ html body .wrapper .screen-block.previous {
     font-family: Raleway;
     font-weight: 400;
     overflow: hidden;
-    z-index: 0;
   }
-  #about-company-five.screen-block .vertical-text, #about-company-five.screen-block table {
+  #about-company-five.screen-block.current .vertical-text, #about-company-five.screen-block.current table {
     -webkit-animation: fadeIn 1.8s 1.8s both;
             animation: fadeIn 1.8s 1.8s both;
   }
-  #about-company-five.screen-block .logo, #about-company-five.screen-block .menu {
+  #about-company-five.screen-block.current .logo, #about-company-five.screen-block.current .menu {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #about-company-five.screen-block .title p {
+  #about-company-five.screen-block.current .title p {
     -webkit-animation: fadeInUp 0.6s 2.1s linear;
             animation: fadeInUp 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title span.name span {
+  #about-company-five.screen-block.current .title span.name span {
     -webkit-animation: titleName 0.6s 2.4s linear;
             animation: titleName 0.6s 2.4s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title span.name:before {
+  #about-company-five.screen-block.current .title span.name:before {
     -webkit-animation: titleNameShape 0.6s 2.1s linear;
             animation: titleNameShape 0.6s 2.1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title .word:after {
+  #about-company-five.screen-block.current .title .word:after {
     -webkit-animation: halfDown 0.6s linear 1.2s both;
             animation: halfDown 0.6s linear 1.2s both;
   }
-  #about-company-five.screen-block .title .word:nth-of-type(1) span {
+  #about-company-five.screen-block.current .title .word:nth-of-type(1) span {
     -webkit-animation: titleWord 0.6s 1.5s linear;
             animation: titleWord 0.6s 1.5s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-  #about-company-five.screen-block .title .word:nth-of-type(2) span {
+  #about-company-five.screen-block.current .title .word:nth-of-type(2) span {
     -webkit-animation: titleWord 0.6s 1.8s linear;
             animation: titleWord 0.6s 1.8s linear;
     -webkit-animation-fill-mode: forwards;
@@ -56859,6 +57229,9 @@ html body .wrapper .screen-block.previous {
   }
   #services.screen-block .services-schedule .container .item:nth-of-type(6)::before {
     content: '06';
+  }
+  #services.screen-block .services-schedule .container {
+    max-width: 850px;
   }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
