@@ -48,7 +48,7 @@ var source = 'source',
 
 gulp.task('default', ['build', 'server', 'watch']);
 
-gulp.task('build', ['html', 'fonts', 'videos', 'images', 'compass', 'libs', 'scripts', 'projects']);
+gulp.task('build', ['html', 'fonts', 'videos', 'images', 'compass', 'scripts', 'projects']);
 
 gulp.task('html', function() {
     gulp.src(path.source.html)

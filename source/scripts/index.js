@@ -1,5 +1,5 @@
-// menu
-//= components/menu.js
+// slides-changing
+//= components/slides-changing.js
 
 // clock
 //= components/clock.js
@@ -9,9 +9,6 @@
 
 // home clock-bg
 //= components/home-clock-bg.js
-
-// slides-changing
-//= components/slides-changing.js
 
 // slides changing mobile
 //= components/slides-changing-mobile.js

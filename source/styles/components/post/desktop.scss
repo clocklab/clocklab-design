@@ -227,9 +227,7 @@
         &.active {
 
             img {
-                // transition: top $POPImageAnimationTime, left $POPImageAnimationTime;
-                animation-name: fadeIn;
-                animation-delay: 0s;
+                animation: none;
             }
 
             &:before {
