@@ -12126,7 +12126,7 @@ html body .wrapper .screen-block.previous {
   }
   #clock.screen-block .big-background-letter {
     top: -48vh;
-    right: 90vh;
+    right: 65vw;
     font-size: 140vh;
   }
   #clock.screen-block .title {
@@ -12167,7 +12167,7 @@ html body .wrapper .screen-block.previous {
   }
   #clock.screen-block .big-background-letter {
     top: -37vh;
-    right: 46vh;
+    right: 60vw;
     font-size: 100vh;
   }
 }
@@ -12388,7 +12388,7 @@ html body .wrapper .screen-block.previous {
   }
   #clock.screen-block .big-background-letter {
     top: -48vh;
-    right: 90vh;
+    right: 65vw;
     font-size: 140vh;
   }
   #clock.screen-block .title {
@@ -12612,7 +12612,7 @@ html body .wrapper .screen-block.previous {
   }
   #clock.screen-block .big-background-letter {
     top: -38vh;
-    right: 62vh;
+    right: 72vw;
     font-size: 100vh;
   }
   #clock.screen-block .watch {
@@ -12830,9 +12830,13 @@ html body .wrapper .screen-block.previous {
               transform: rotateZ(360deg);
     }
   }
+  #clock.screen-block .title {
+    top: 21vh;
+    left: 12vh;
+  }
   #clock.screen-block .big-background-letter {
     top: -50vh;
-    right: 90vh;
+    right: 72vw;
     font-size: 120vh;
   }
 }
@@ -33980,7 +33984,7 @@ html body .wrapper .screen-block.previous {
   }
   #service-three.screen-block .jump-button a span {
     color: #FFF;
-    font-size: 1.6276vw;
+    font-size: 3.2552vw;
     font-weight: 500;
   }
   #service-three.screen-block .jump-button a span:nth-of-type(10) {
@@ -34197,7 +34201,7 @@ html body .wrapper .screen-block.previous {
   }
   #service-three.screen-block .jump-button a span {
     color: #FFF;
-    font-size: 1.22075vw;
+    font-size: 2.4415vw;
     font-weight: 500;
   }
   #service-three.screen-block .jump-button a span:nth-of-type(10) {
@@ -34382,7 +34386,7 @@ html body .wrapper .screen-block.previous {
   }
   #service-three.screen-block .jump-button a span {
     color: #FFF;
-    font-size: 0.915vw;
+    font-size: 1.83vw;
     font-weight: 500;
   }
   #service-three.screen-block .jump-button a span:nth-of-type(10) {
@@ -34559,7 +34563,7 @@ html body .wrapper .screen-block.previous {
   }
   #service-three.screen-block .jump-button a span {
     color: #FFF;
-    font-size: 0.744vw;
+    font-size: 1.488vw;
     font-weight: 500;
   }
   #service-three.screen-block .jump-button a span:nth-of-type(10) {
@@ -34591,6 +34595,9 @@ html body .wrapper .screen-block.previous {
   #service-three.screen-block .service-info.vertical.two {
     left: 0.35712vw;
     top: 41.5vh;
+  }
+  #service-three.screen-block .title {
+    margin: 22.5vh 0 0 7.1424vw;
   }
 }
 @media (min-width: 1681px) and (max-width: 1920px) {
@@ -34724,7 +34731,7 @@ html body .wrapper .screen-block.previous {
   }
   #service-three.screen-block .jump-button a span {
     color: #FFF;
-    font-size: 0.651vw;
+    font-size: 1.302vw;
     font-weight: 500;
   }
   #service-three.screen-block .jump-button a span:nth-of-type(10) {
@@ -34889,7 +34896,7 @@ html body .wrapper .screen-block.previous {
   }
   #service-three.screen-block .jump-button a span {
     color: #FFF;
-    font-size: 0.48825vw;
+    font-size: 0.9765vw;
     font-weight: 500;
   }
   #service-three.screen-block .jump-button a span:nth-of-type(10) {
@@ -37140,7 +37147,7 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block {
     position: absolute;
     height: 68.3592vw;
-    width: 59.89568vw;
+    width: 68.3592vw;
   }
   #blog-two.screen-block .image-block .image-container {
     width: 100%;
@@ -37188,10 +37195,10 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block.up .gray {
     background: #444;
     position: absolute;
+    right: -15.62496vw;
     height: 180px;
     width: 180px;
     top: 61.19776vw;
-    right: -15.62496vw;
   }
   #blog-two.screen-block .image-block.down {
     right: 54.42694vw;
@@ -37534,7 +37541,7 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block {
     position: absolute;
     height: 51.2715vw;
-    width: 44.9236vw;
+    width: 51.2715vw;
   }
   #blog-two.screen-block .image-block .image-container {
     width: 100%;
@@ -37582,10 +37589,10 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block.up .gray {
     background: #444;
     position: absolute;
+    right: -11.7192vw;
     height: 180px;
     width: 180px;
     top: 45.9002vw;
-    right: -11.7192vw;
   }
   #blog-two.screen-block .image-block.down {
     right: 40.82188vw;
@@ -37875,7 +37882,7 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block {
     position: absolute;
     height: 38.43vw;
-    width: 33.672vw;
+    width: 38.43vw;
   }
   #blog-two.screen-block .image-block .image-container {
     width: 100%;
@@ -37923,10 +37930,10 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block.up .gray {
     background: #444;
     position: absolute;
+    right: -8.784vw;
     height: 180px;
     width: 180px;
     top: 34.404vw;
-    right: -8.784vw;
   }
   #blog-two.screen-block .image-block.down {
     right: 30.5976vw;
@@ -38171,7 +38178,7 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block {
     position: absolute;
     height: 31.248vw;
-    width: 27.3792vw;
+    width: 31.248vw;
   }
   #blog-two.screen-block .image-block .image-container {
     width: 100%;
@@ -38219,10 +38226,10 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block.up .gray {
     background: #444;
     position: absolute;
+    right: -7.1424vw;
     height: 180px;
     width: 180px;
     top: 27.9744vw;
-    right: -7.1424vw;
   }
   #blog-two.screen-block .image-block.down {
     right: 24.87936vw;
@@ -38440,7 +38447,7 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block {
     position: absolute;
     height: 27.342vw;
-    width: 23.9568vw;
+    width: 27.342vw;
   }
   #blog-two.screen-block .image-block .image-container {
     width: 100%;
@@ -38488,10 +38495,10 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block.up .gray {
     background: #444;
     position: absolute;
+    right: -6.2496vw;
     height: 180px;
     width: 180px;
     top: 24.4776vw;
-    right: -6.2496vw;
   }
   #blog-two.screen-block .image-block.down {
     right: 21.76944vw;
@@ -38703,7 +38710,7 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block {
     position: absolute;
     height: 20.5065vw;
-    width: 17.9676vw;
+    width: 20.5065vw;
   }
   #blog-two.screen-block .image-block .image-container {
     width: 100%;
@@ -38751,10 +38758,10 @@ html body .wrapper .screen-block.previous {
   #blog-two.screen-block .image-block.up .gray {
     background: #444;
     position: absolute;
+    right: -4.6872vw;
     height: 180px;
     width: 180px;
     top: 18.3582vw;
-    right: -4.6872vw;
   }
   #blog-two.screen-block .image-block.down {
     right: 16.32708vw;
@@ -40901,7 +40908,7 @@ html body .wrapper .screen-block.previous {
   #main-contacts.screen-block #map {
     bottom: 0;
     width: 100%;
-    height: 43vh;
+    height: 41vh;
     position: absolute;
     visibility: hidden;
   }
@@ -41027,7 +41034,7 @@ html body .wrapper .screen-block.previous {
   #main-contacts.screen-block #map {
     bottom: 0;
     width: 100%;
-    height: 43vh;
+    height: 41vh;
     position: absolute;
     visibility: hidden;
   }
@@ -41153,7 +41160,7 @@ html body .wrapper .screen-block.previous {
   #main-contacts.screen-block #map {
     bottom: 0;
     width: 100%;
-    height: 43vh;
+    height: 41vh;
     position: absolute;
     visibility: hidden;
   }
@@ -55750,9 +55757,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #services.screen-block object embed {
-    -webkit-animation: widthChanging 2.7s 0.9s both;
-            animation: widthChanging 2.7s 0.9s both;
+  #services.screen-block .services-line {
+    -webkit-animation: heightChanging 2.7s 0.9s both;
+            animation: heightChanging 2.7s 0.9s both;
   }
   #services.screen-block .crossed-button span {
     -webkit-animation: FadeInRight 0.9s 3.78s both;
@@ -55815,6 +55822,14 @@ html body .wrapper .screen-block.previous {
   }
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
+  }
+  #services.screen-block .services-schedule .container .item.up .services-line {
+    left: 0;
+    top: -20vh;
+    width: 1px;
+    height: 100vh;
+    position: absolute;
+    background: #444;
   }
   #services.screen-block .services-schedule .container .item:nth-of-type(3), #services.screen-block .services-schedule .container .item:nth-of-type(4)
   #services.screen-block .services-schedule .container .item:nth-of-type(5) {
@@ -55869,15 +55884,6 @@ html body .wrapper .screen-block.previous {
     background: #FFF;
     top: 14px;
   }
-  #services.screen-block .services-schedule .container .item object embed {
-    left: -6px;
-    top: 100vh;
-    position: absolute;
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-  }
   #services.screen-block .services-schedule .container .item:before {
     top: 8px;
     left: -27px;
@@ -55925,9 +55931,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #services.screen-block object embed {
-    -webkit-animation: widthChanging 2.7s 0.9s both;
-            animation: widthChanging 2.7s 0.9s both;
+  #services.screen-block .services-line {
+    -webkit-animation: heightChanging 2.7s 0.9s both;
+            animation: heightChanging 2.7s 0.9s both;
   }
   #services.screen-block .crossed-button span {
     -webkit-animation: FadeInRight 0.9s 3.78s both;
@@ -55990,6 +55996,14 @@ html body .wrapper .screen-block.previous {
   }
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
+  }
+  #services.screen-block .services-schedule .container .item.up .services-line {
+    left: 0;
+    top: -20vh;
+    width: 1px;
+    height: 100vh;
+    position: absolute;
+    background: #444;
   }
   #services.screen-block .services-schedule .container .item:nth-of-type(3), #services.screen-block .services-schedule .container .item:nth-of-type(4)
   #services.screen-block .services-schedule .container .item:nth-of-type(5) {
@@ -56044,15 +56058,6 @@ html body .wrapper .screen-block.previous {
     background: #FFF;
     top: 14px;
   }
-  #services.screen-block .services-schedule .container .item object embed {
-    left: -6px;
-    top: 100vh;
-    position: absolute;
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-  }
   #services.screen-block .services-schedule .container .item:before {
     top: 8px;
     left: -27px;
@@ -56100,9 +56105,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation: fadeInDown 0.9s 0.9s both;
             animation: fadeInDown 0.9s 0.9s both;
   }
-  #services.screen-block object embed {
-    -webkit-animation: widthChanging 2.7s 0.9s both;
-            animation: widthChanging 2.7s 0.9s both;
+  #services.screen-block .services-line {
+    -webkit-animation: heightChanging 2.7s 0.9s both;
+            animation: heightChanging 2.7s 0.9s both;
   }
   #services.screen-block .crossed-button span {
     -webkit-animation: FadeInRight 0.9s 3.78s both;
@@ -56166,6 +56171,14 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
   }
+  #services.screen-block .services-schedule .container .item.up .services-line {
+    left: 0;
+    top: -20vh;
+    width: 1px;
+    height: 100vh;
+    position: absolute;
+    background: #444;
+  }
   #services.screen-block .services-schedule .container .item:nth-of-type(3), #services.screen-block .services-schedule .container .item:nth-of-type(4)
   #services.screen-block .services-schedule .container .item:nth-of-type(5) {
     display: none;
@@ -56218,15 +56231,6 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item .crossed-button span:before {
     background: #FFF;
     top: 14px;
-  }
-  #services.screen-block .services-schedule .container .item object embed {
-    left: -6px;
-    top: 100vh;
-    position: absolute;
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
   }
   #services.screen-block .services-schedule .container .item:before {
     top: 8px;
@@ -56288,9 +56292,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation-delay: 1.8s;
             animation-delay: 1.8s;
   }
-  #services.screen-block object embed {
-    -webkit-animation: widthChanging 2.7s 0.9s both;
-            animation: widthChanging 2.7s 0.9s both;
+  #services.screen-block .services-line {
+    -webkit-animation: heightChanging 2.7s 0.9s both;
+            animation: heightChanging 2.7s 0.9s both;
   }
   #services.screen-block .crossed-button span {
     -webkit-animation: FadeInRight 0.9s 3.78s both;
@@ -56362,6 +56366,18 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
   }
+  #services.screen-block .services-schedule .container .item.up .services-line {
+    left: 0;
+    top: -20vh;
+    width: 1px;
+    height: 100vh;
+    position: absolute;
+    background: #444;
+  }
+  #services.screen-block .services-schedule .container .item.up .services-line.right {
+    left: initial;
+    right: 0;
+  }
   #services.screen-block .services-schedule .container .item .title {
     width: auto;
   }
@@ -56410,15 +56426,6 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item .crossed-button span:before {
     background: #FFF;
     top: 14px;
-  }
-  #services.screen-block .services-schedule .container .item object embed {
-    top: 80vh;
-    left: -4px;
-    position: absolute;
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
   }
   #services.screen-block .services-schedule .container .item:before {
     top: -28px;
@@ -56480,9 +56487,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation-delay: 1.8s;
             animation-delay: 1.8s;
   }
-  #services.screen-block object embed {
-    -webkit-animation: widthChanging 2.7s 0.9s both;
-            animation: widthChanging 2.7s 0.9s both;
+  #services.screen-block .services-line {
+    -webkit-animation: heightChanging 2.7s 0.9s both;
+            animation: heightChanging 2.7s 0.9s both;
   }
   #services.screen-block .crossed-button span {
     -webkit-animation: FadeInRight 0.9s 3.78s both;
@@ -56554,6 +56561,18 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
   }
+  #services.screen-block .services-schedule .container .item.up .services-line {
+    left: 0;
+    top: -20vh;
+    width: 1px;
+    height: 100vh;
+    position: absolute;
+    background: #444;
+  }
+  #services.screen-block .services-schedule .container .item.up .services-line.right {
+    left: initial;
+    right: 0;
+  }
   #services.screen-block .services-schedule .container .item .title {
     width: auto;
   }
@@ -56602,15 +56621,6 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item .crossed-button span:before {
     background: #FFF;
     top: 14px;
-  }
-  #services.screen-block .services-schedule .container .item object embed {
-    top: 80vh;
-    left: -4px;
-    position: absolute;
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
   }
   #services.screen-block .services-schedule .container .item:before {
     top: -28px;
@@ -56672,9 +56682,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation-delay: 1.8s;
             animation-delay: 1.8s;
   }
-  #services.screen-block object embed {
-    -webkit-animation: widthChanging 2.7s 0.9s both;
-            animation: widthChanging 2.7s 0.9s both;
+  #services.screen-block .services-line {
+    -webkit-animation: heightChanging 2.7s 0.9s both;
+            animation: heightChanging 2.7s 0.9s both;
   }
   #services.screen-block .crossed-button span {
     -webkit-animation: FadeInRight 0.9s 3.78s both;
@@ -56746,6 +56756,18 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
   }
+  #services.screen-block .services-schedule .container .item.up .services-line {
+    left: 0;
+    top: -20vh;
+    width: 1px;
+    height: 100vh;
+    position: absolute;
+    background: #444;
+  }
+  #services.screen-block .services-schedule .container .item.up .services-line.right {
+    left: initial;
+    right: 0;
+  }
   #services.screen-block .services-schedule .container .item .title {
     width: auto;
   }
@@ -56794,15 +56816,6 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item .crossed-button span:before {
     background: #FFF;
     top: 14px;
-  }
-  #services.screen-block .services-schedule .container .item object embed {
-    top: 80vh;
-    left: -4px;
-    position: absolute;
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
   }
   #services.screen-block .services-schedule .container .item:before {
     top: -28px;
@@ -56864,9 +56877,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation-delay: 1.8s;
             animation-delay: 1.8s;
   }
-  #services.screen-block object embed {
-    -webkit-animation: widthChanging 2.7s 0.9s both;
-            animation: widthChanging 2.7s 0.9s both;
+  #services.screen-block .services-line {
+    -webkit-animation: heightChanging 2.7s 0.9s both;
+            animation: heightChanging 2.7s 0.9s both;
   }
   #services.screen-block .crossed-button span {
     -webkit-animation: FadeInRight 0.9s 3.78s both;
@@ -56938,6 +56951,18 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
   }
+  #services.screen-block .services-schedule .container .item.up .services-line {
+    left: 0;
+    top: -20vh;
+    width: 1px;
+    height: 100vh;
+    position: absolute;
+    background: #444;
+  }
+  #services.screen-block .services-schedule .container .item.up .services-line.right {
+    left: initial;
+    right: 0;
+  }
   #services.screen-block .services-schedule .container .item .title {
     width: auto;
   }
@@ -56986,15 +57011,6 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item .crossed-button span:before {
     background: #FFF;
     top: 14px;
-  }
-  #services.screen-block .services-schedule .container .item object embed {
-    top: 80vh;
-    left: -4px;
-    position: absolute;
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
   }
   #services.screen-block .services-schedule .container .item:before {
     top: -28px;
@@ -57056,9 +57072,9 @@ html body .wrapper .screen-block.previous {
     -webkit-animation-delay: 1.8s;
             animation-delay: 1.8s;
   }
-  #services.screen-block object embed {
-    -webkit-animation: widthChanging 2.7s 0.9s both;
-            animation: widthChanging 2.7s 0.9s both;
+  #services.screen-block .services-line {
+    -webkit-animation: heightChanging 2.7s 0.9s both;
+            animation: heightChanging 2.7s 0.9s both;
   }
   #services.screen-block .crossed-button span {
     -webkit-animation: FadeInRight 0.9s 3.78s both;
@@ -57130,6 +57146,18 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item.up {
     margin-bottom: 18vh;
   }
+  #services.screen-block .services-schedule .container .item.up .services-line {
+    left: 0;
+    top: -20vh;
+    width: 1px;
+    height: 100vh;
+    position: absolute;
+    background: #444;
+  }
+  #services.screen-block .services-schedule .container .item.up .services-line.right {
+    left: initial;
+    right: 0;
+  }
   #services.screen-block .services-schedule .container .item .title {
     width: auto;
   }
@@ -57178,15 +57206,6 @@ html body .wrapper .screen-block.previous {
   #services.screen-block .services-schedule .container .item .crossed-button span:before {
     background: #FFF;
     top: 14px;
-  }
-  #services.screen-block .services-schedule .container .item object embed {
-    top: 80vh;
-    left: -4px;
-    position: absolute;
-    -webkit-transform-origin: 0 0;
-            transform-origin: 0 0;
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg);
   }
   #services.screen-block .services-schedule .container .item:before {
     top: -28px;

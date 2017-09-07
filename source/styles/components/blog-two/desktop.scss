@@ -140,7 +140,7 @@
     .image-block {
         position: absolute;
         height: px(1050);
-        width: px(920);
+        width: px(1050);
         .image-container {
             width: 100%;
             height: 100%;
@@ -182,10 +182,10 @@
             .gray {
                 background: $darkGray;
                 position: absolute;
+                right: px(-240);
                 height: 180px;
                 width: 180px;
                 top: px(940);
-                right: px(-240);
             }
         }
         &.down {

@@ -21,9 +21,11 @@
         .facebook, .instagram { animation-delay: $time * 3; } 
         .jumping-button { animation-delay: $time * 6; }
     }
+    
+    // ----- services-line -----
+    .services-line { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
 
     // ----- other -----
-    object embed { animation: widthChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
     .crossed-button span { animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
     .services-schedule .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
@@ -76,7 +78,21 @@
             .item {
                 width: 33.33%;
                 position: relative;
-                &.up { margin-bottom: 18vh; }
+                &.up {
+                    margin-bottom: 18vh;
+                    .services-line {
+                        left: 0;
+                        top: -20vh;
+                        width: 1px;
+                        height: 100vh;
+                        position: absolute;
+                        background: $darkGray;
+                        &.right {
+                            left: initial;
+                            right: 0;
+                        }
+                    }
+                }
                 .title {
                     width: auto;
                     p {
@@ -113,13 +129,6 @@
                             top: 14px;
                         }
                     }
-                }
-                object embed {
-                    top: 80vh;
-                    left: -4px;
-                    position: absolute;
-                    transform-origin: 0 0;
-                    transform: rotate(-90deg);
                 }
                 &:before {
                     top: -28px;

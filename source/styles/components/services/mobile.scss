@@ -13,8 +13,10 @@
     // ----- navigation-elements -----
     .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
 
+    // ----- services-line -----
+    .services-line { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+
     // ----- other -----
-    object embed { animation: widthChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
     .crossed-button span { animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
     .services-schedule .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
@@ -59,7 +61,17 @@
             .item {
                 width: 100%;
                 position: relative;
-                &.up { margin-bottom: 18vh; }
+                &.up {
+                    margin-bottom: 18vh;
+                    .services-line {
+                        left: 0;
+                        top: -20vh;
+                        width: 1px;
+                        height: 100vh;
+                        position: absolute;
+                        background: $darkGray;
+                    }
+                }
                 &:nth-of-type(3), &:nth-of-type(4)
                 &:nth-of-type(5) { display: none; }
                 .title {
@@ -98,13 +110,6 @@
                             top: 14px;
                         }
                     }
-                }
-                object embed {
-                    left: -6px;
-                    top: 100vh;
-                    position: absolute;
-                    transform-origin: 0 0;
-                    transform: rotate(-90deg);
                 }
                 &:before {
                     top: 8px;

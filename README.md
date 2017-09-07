@@ -1,1 +1,1 @@
-Demo: [clocklab.github.io/clocklab-design/build](https://clocklab.github.io/clocklab-design/build/)
+Demo: [clocklab.github.io/clocklab-design/build/index.html](https://clocklab.github.io/clocklab-design/build/index.html)
