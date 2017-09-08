@@ -5,73 +5,13 @@
     font-weight: $regular;
     overflow: hidden;
     
-
-
-.jelly {
-    font-size:24px;
-    border: none;
-    cursor: pointer;
-    padding: 35px 20px;
-    @include inline-block;
-    text-transform: uppercase;
-    outline: 0;
-    position: absolute;
-    border-radius: 100px;
-    -webkit-animation:  anim 2s ease-in infinite;
-    animation:  anim 2s ease-in infinite;
-    transition: all .3s;
-    background: $blue;
-    color: $white !important;
-    overflow: hidden;
-    text-decoration:none;
-    right: px(1200);
-    bottom: 30vh;
-}
-
-.jelly:active  {
-    background: #4786b5;
-}
-
-@-webkit-keyframes anim {
-    5% {
-    -webkit-transform: scale(1.1, .9);
-    transform: scale(1.1, .9);
-}
-10% {
-    -webkit-transform: scale(.9, 1.1) translateY(-.5rem);
-    transform: scale(.9, 1.1) translateY(-.5rem);
-}
-15% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-}
-@keyframes anim {
-    5% {
-    -webkit-transform: scale(1.1, .9);
-    transform: scale(1.1, .9);
-}
-10% {
-    -webkit-transform: scale(.9, 1.1) translateY(-.5rem);
-    transform: scale(.9, 1.1) translateY(-.5rem);
-}
-15% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
-}
-
-@media only screen and (max-width:640px) {  
-.jelly {
-    padding: 25px 50px;
-    font-size: 16px;
-}
-}
-    
     // ----- animation -----
     &.current {
         animation: fadeIn $time * 3 both;
-    
+        
+        // ----- jelly-button -----
+        .jelly-button { animation: fadeIn $time * 9 both; }
+        
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
         
@@ -83,6 +23,10 @@
 
         // ----- title -----
         .title {
+            p {
+                animation: fadeInUp $time * 2 $time * 7 linear;
+                animation-fill-mode: forwards;
+            }
             span.name {
                 span {
                     animation: titleName $time * 2 $time * 8 linear;
@@ -99,6 +43,74 @@
                     animation: titleWord $time * 2 $time * 5 linear;
                     animation-fill-mode: forwards;
                 }
+            }
+        }
+    }
+    
+    // ----- social-panel -----
+    .social-panel {
+        position: absolute;
+        left: px(1524);
+        z-index: 3;
+        top: 46vh;
+        .instagram, .facebook {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: px(60);
+            height: px(60);
+            border: 1px solid $darkGray;
+            path, circle {
+                fill: $darkGray
+            }
+
+            svg {
+                width: 60%;
+                z-index: 2;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 100%;
+                height: 100%;
+                background: $blue;
+                content: '';
+                opacity: 0;
+                transition: top $time, right $time, opacity $time;
+            }
+
+            &:hover {
+                path, circle { fill: $white; }
+                &:before {
+                    top: 3px;
+                    right: 3px;
+                    opacity: 1;
+                }
+            }
+        }
+
+        .instagram {
+            top: px(-24);
+            animation: social $time * 3 both;
+            .big-circle {
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+            }
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .facebook {
+            animation: socialReversed $time * 3 both;
+            svg {
+                width: 55%;
             }
         }
     }
@@ -142,5 +154,5 @@
                 font-size: px(60);
             }
         }
-    } 
+    }
 }
