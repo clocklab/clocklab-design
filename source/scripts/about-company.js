@@ -6,3 +6,6 @@
 
 // big-background-letter
 //= components/big-background-letter.js
+
+// jelly-button
+//= components/jelly-button.min.js
