@@ -1,1 +1,28 @@
 @import '../desktop';
+
+& {
+
+
+    .steps {
+        padding-bottom: px(500);
+    }
+
+    .questions {
+        bottom: 15vh;
+    }
+
+    .back-layer {
+        padding-right: px(300);
+    }
+
+    form {
+        width: px(900);
+    }
+
+    &.opened {
+        
+        .front-layer {
+            transform: rotateY(20deg);
+        }
+    }
+}

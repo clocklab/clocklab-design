@@ -3,6 +3,15 @@
     $paddingTop: px(400);
 
     position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: $raleway;
+    overflow: hidden;
+
+    .language {
+        position: absolute;
+        z-index: 3;
+    }
 
     .columns {
         display: flex;
@@ -31,6 +40,8 @@
         display: flex;
         justify-content: space-between;
         position: relative;
+        z-index: 2;
+        margin: 0 auto;
         padding: $paddingTop 0 px(350); 
         width: 61%;
         min-width: px(2340);
@@ -40,7 +51,7 @@
         h2 {
             align-self: center;
             position: relative;
-            top: px(-200);
+            top: px(-250);
             padding-right: px(150); 
             width: 33%;
             font-size: px(96);
@@ -54,8 +65,8 @@
 
         .index {
             position: absolute;
-            top: 0;
-            right: 100%;
+            top: px(-40);
+            left: px(-40);
             color: $gray;
             font-family: $roboto;
             font-size: px(32);
@@ -68,8 +79,10 @@
         }
 
         h3 {
+            display: inline-block;
             position: relative;
             margin-bottom: px(70);
+            color: $white;
             font-size: px(48);
             line-height: px(60);
             font-weight: 700;
@@ -78,9 +91,10 @@
             &:before {
                 display: block;
                 position: absolute;
+                z-index: -1;
                 bottom: 0;
                 left: 0;
-                width: 100%;
+                width: 0;
                 height: px(20);
                 background: $blue;
                 content: '';
@@ -91,17 +105,32 @@
         p {
             margin-bottom: px(90);
             padding-right: px(180);
+            color: $white;
             font-family: $roboto;
             font-size: px(28);
             line-height: 1.4;
         }
 
         .crossed-button {
+            position: relative;
 
             span {
+                color: $white;
+
+                &:after {
+                    content: 'Подробнее';
+                }
 
                 &:before {
-                    content: 'Подробнее';
+                    background: $white;
+                }
+            }
+
+            .arrow {
+
+                .st0,
+                .st1 {
+                    stroke: $white;
                 }
             }
         }
@@ -115,6 +144,7 @@
             height: 61.5vh;
 
             &__item {
+                display: block;
                 position: relative;
                 width: 50%;
 

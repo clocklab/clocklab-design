@@ -1,1 +1,59 @@
 @import '../desktop';
+
+& {
+
+    .container {
+        width: 80%;
+    }
+
+    .result {
+        padding-top: px(250);
+    }
+
+    .new-title {
+        margin-top: px(35);
+
+        .text-container {
+            margin-bottom: px(10);
+
+            span {
+                font-size: px(86);
+                line-height: px(100);
+            }
+        }
+    }
+
+    .step {
+
+        h3 {
+            font-size: px(37);
+        }
+    }
+
+    .questions {
+        h3 {
+            font-size: px(42);
+            line-height: px(45);
+        }
+    }
+
+    .back-layer {
+        padding-right: px(80);
+    }
+
+    form {
+        padding-top: px(150);
+        width: px(650);
+        height: px(900);
+
+        h3 {
+            margin-bottom: px(150);
+            font-size: px(46);
+        }
+
+        .send {
+            width: px(300);
+            height: px(70);
+        }
+    }
+}

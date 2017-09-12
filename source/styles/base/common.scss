@@ -130,6 +130,10 @@ html {
 
             &.select {
                 color: $gray;
+
+                &:before {
+                    color: $gray;
+                }
             }
 
             &:hover {

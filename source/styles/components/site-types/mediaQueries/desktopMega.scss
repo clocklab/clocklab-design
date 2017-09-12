@@ -1,1 +1,30 @@
 @import '../desktop';
+
+& {
+
+    $paddingTopMega: 25vh;
+
+    .container {
+        padding: $paddingTopMega 0 0;
+
+        h2 {
+            top: -20vh;
+        }
+
+        .types {
+            height: 40vh;
+
+            &__item {
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    margin-bottom: px(100);
+
+                    &:before {
+                        top: - $paddingTopMega;
+                    }
+                }
+            }
+        }
+    }
+}
