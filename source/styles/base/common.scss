@@ -120,6 +120,26 @@ html {
 }
 
 
+// ---- LANGUAGE ----
+.dark-language {
+
+    .language {
+
+        a {
+            color: $darkGray;
+
+            &.select {
+                color: $gray;
+            }
+
+            &:hover {
+                color: $gray;
+            }
+        }
+    }
+}
+
+
 // ---- PORTFOLIO CLIENT ----   
 .dark-portfolio-client {
 

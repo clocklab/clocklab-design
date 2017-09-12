@@ -1,0 +1,18 @@
+// base
+@import "base/reset";
+@import "base/fonts";
+@import "base/variables";
+@import "base/common";
+@import "base/animations";
+
+// components
+@import "components/logo/main";
+@import "components/menu/main";
+@import "components/language/main";
+@import "components/crossed-button/main";
+@import "components/new-title/main";
+@import "components/sticker/main";
+
+// screens
+@import "components/site-types/main";
+@import "components/work-flow/main";
