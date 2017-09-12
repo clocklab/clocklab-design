@@ -23,14 +23,14 @@
     to { transform: translate3d(px(58), px(-2), 0); }
 }
 // ----- scroll -----
-@include keyframes(bounce) {
-    50% { @include transform(translateY(300%) rotate(45deg)); }
-    0%, 50%, 60%, 80%, 100% { opacity: 0; }
-    10%, 20%, 30%, 40% {
-        @include transform(translateY(0) rotate(45deg));
-        opacity: 1;
-    }
-}
+// @include keyframes(bounce) {
+//     50% { @include transform(translateY(300%) rotate(45deg)); }
+//     0%, 50%, 60%, 80%, 100% { opacity: 0; }
+//     10%, 20%, 30%, 40% {
+//         @include transform(translateY(0) rotate(45deg));
+//         opacity: 1;
+//     }
+// }
 
 // ANIMATION FOR HAMBURGER TICKS
 @keyframes innerTickAnimation1 {

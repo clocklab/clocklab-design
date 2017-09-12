@@ -5,6 +5,14 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
+var page = 'mockup-audi'
+
+var sass = require('gulp-ruby-sass');
+var rename = require('gulp-rename');
+var sourceMaps = require('gulp-sourcemaps');
+var autoPrefixer = require('gulp-autoprefixer');
+var cleanCSS = require('gulp-clean-css');
+
 var source = 'source',
     build = 'build',
     config = {
@@ -29,7 +37,7 @@ var source = 'source',
             html: source + '/*.html',
             fonts: source + '/fonts/**/*.*',
             videos: source + '/videos/*.*',
-            images: source + '/images/**/*.*',
+            images: source + '/images/**/**/*.*',
             styles: source + '/styles/*.*',
             scripts: source + '/scripts/*.*',
             projects: source + '/projects/**/*'
@@ -48,7 +56,7 @@ var source = 'source',
 
 gulp.task('default', ['build', 'server', 'watch']);
 
-gulp.task('build', ['html', 'fonts', 'videos', 'images', 'compass', 'scripts', 'projects']);
+gulp.task('build', ['html', 'fonts', 'videos', 'images', 'sass', 'scripts', 'projects']);
 
 gulp.task('html', function() {
     gulp.src(path.source.html)
@@ -72,40 +80,28 @@ gulp.task('videos', function() {
 
 gulp.task('images', function() {
     gulp.src(path.source.images)
-        .pipe(plugins.imagemin({
-            progressive: true,
-            use: [plugins.imageminPngquant()]
-        }))
+        // .pipe(plugins.imagemin({
+        //     progressive: true,
+        //     use: [plugins.imageminPngquant()]
+        // }))
         .pipe(gulp.dest(path.build.images))
         .pipe(plugins.browserSync.reload({
             stream: true
         }));
 });
 
-gulp.task('compass', function() {
-    gulp.src(path.source.styles)
-        .pipe(plugins.plumber())
-        .pipe(plugins.compass({
-            config_file: 'config.rb',
-            image: source + '/images',
-            sass: source + '/styles',
-            css: path.build.styles
-        }))
-        .pipe(plugins.autoprefixer())
-        .pipe(gulp.dest(path.build.styles))
+gulp.task('sass', function() {
+    return sass(`source/styles/${page}.scss`, { sourcemap: false, style: 'compact' })
+        .on('error', sass.logError)
+        // .pipe(sourceMaps.init({loadMaps: true}))
+        .pipe(autoPrefixer('last 2 version'))
+        .pipe(rename(`${page}.css`))
+        .pipe(cleanCSS())
+        // .pipe(sourceMaps.write())
+        .pipe(gulp.dest('build/styles'))
         .pipe(plugins.browserSync.reload({
             stream: true
         }));
-});
-
-gulp.task('libs', function() {
-    gulp.src('./bower.json')
-        .pipe(plugins.mainBowerFiles('**/*.css'))
-        .pipe(plugins.concatCss('libs.min.css'))
-        .pipe(plugins.cleanCss({
-            keepSpecialComments: 0
-        }))
-        .pipe(gulp.dest(path.build.styles));
 });
 
 gulp.task('scripts', function() {
@@ -152,7 +148,7 @@ gulp.task('watch', function() {
         gulp.start('scripts');
     });
     plugins.watch([path.watch.styles], function(event, cb) {
-        gulp.start('compass');
+        gulp.start('sass');
     });
     plugins.watch([path.watch.projects], function(event, cb) {
         gulp.start('projects');

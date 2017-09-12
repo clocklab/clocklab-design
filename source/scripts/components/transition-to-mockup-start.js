@@ -20,16 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const animationTime = 900
 
     links.forEach(link => {
+
         link.addEventListener('click', event => {
             event.preventDefault()
-            
+
             const href = link.getAttribute('href')
             const image = link.firstElementChild
             const topPos = image.getBoundingClientRect().top / document.body.clientHeight * 100
             const leftPos = image.getBoundingClientRect().left / document.body.clientWidth * 100
 
-            image.style.top = `${topPos}%`
-            image.style.left = `${leftPos}%`
+            image.style.position = 'fixed'
+            image.style.top = `${topPos}vh`
+            image.style.left = `${leftPos}vw`
+            image.style.animation = 'none'
 
             localStorage.setItem('position', JSON.stringify(
                 {
@@ -43,9 +46,10 @@ document.addEventListener('DOMContentLoaded', () => {
             link.classList.add('active')
             link.parentElement.parentElement.style.zIndex = '9999'
 
+
             animate((timePassed) => {
-                image.style.top = `${topPos + timePassed / (animationTime / (25 - topPos))}%`
-                image.style.left = `${leftPos + timePassed / (animationTime / (25 - leftPos))}%`
+                image.style.top = `${topPos + timePassed / (animationTime / (25 - topPos))}vh`
+                image.style.left = `${leftPos + timePassed / (animationTime / (25 - leftPos))}vw`
             }, animationTime)
 
             setTimeout(() => {
