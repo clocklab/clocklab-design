@@ -428,3 +428,49 @@ $POPBackAnimationTime: $POPSocialAnimationTime;
 $POPArrowsDelayTime: $POPBackDelayTime;
 $POPArrowsAnimationTime: $POPBackAnimationTime;
 //  POST PAGE ENDS
+
+
+//  WEB PRODUCTION PAGE (WPP - Web Production Page)
+
+// WE CAN BLOCK (WC - We Can)
+$WCBeforeDelayTime: 0s;
+$WCBeforeAnimationTime: $time * 3;
+
+$WCBorderElDelayTime: $WCBeforeDelayTime + $WCBeforeAnimationTime;
+$WCBorderElAnimationTime: $time * 3;
+
+$WCClockAnimationTime: $time * 3;
+$WCClockFirstDelayTime: $WCBorderElDelayTime;
+$WCClockSecondDelayTime: $WCClockFirstDelayTime + $time;
+$WCClockThirdDelayTime: $WCClockSecondDelayTime + $time;
+$WCClockFourthDelayTime: $WCClockThirdDelayTime + $time;
+$WCClockFifthDelayTime: $WCClockFourthDelayTime + $time;
+
+$WCTitleLineDelayTime: $WCClockFifthDelayTime;
+$WCTitleLineAnimationTime: $time * 3;
+
+$WCTitleTextDelayTime: $WCTitleLineDelayTime + $WCTitleLineAnimationTime;
+$WCTitleTextAnimationTime: $time * 3;
+
+$WCImageAfterDelayTime: $WCTitleLineDelayTime;
+$WCImageAfterAnimationTime: $time * 3;
+
+$WCImageBeforeDelayTime: $WCImageAfterDelayTime + $WCImageAfterAnimationTime;
+$WCImageBeforeAnimationTime: $time * 3;
+
+$WCImageDelayTime: $WCImageBeforeDelayTime + $WCImageBeforeAnimationTime;
+$WCImageAnimationTime: $time * 3;
+
+$WCStickerLineDelayTime: $WCTitleTextDelayTime + $WCTitleTextAnimationTime;
+$WCStickerLineAnimationTime: $time * 3;
+$WCStickerTextDelayTime: $WCStickerLineDelayTime + $WCStickerLineAnimationTime;
+$WCStickerTextAnimationTime: $time * 3;
+
+$WCTextDelayTime: $WCStickerLineDelayTime;
+$WCTextAnimationTime: $WCStickerLineAnimationTime;
+
+$WCCrossedBtnDelayTime: $WCStickerTextDelayTime; 
+$WCCrossedBtnAnimationTime: $WCStickerTextAnimationTime;
+// WE CAN BLOCK
+
+//  WEB PRODUCTION PAGE
