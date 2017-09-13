@@ -498,4 +498,46 @@ $STTextThirdColumnThreeDelayTime: $STTextThirdColumnTwoDelayTime + $timeTick;
 $STTextThirdColumnFourDelayTime: $STTextThirdColumnThreeDelayTime  + $timeTick;
 // SITE TYPES 
 
+// WORK FLOW (WF - Work flow)
+$WFBeforeDelayTime: 0s;
+$WFBeforeAnimationTime: $time * 3;
+
+$WFBorderElDelayTime: $WFBeforeDelayTime + $WFBeforeAnimationTime;
+$WFBorderElAnimationTime: $time * 3;
+
+$WFTitleLineDelayTime: $WFBorderElDelayTime + $WFBorderElAnimationTime;
+$WFTitleLineAnimationTime: $time * 3;
+
+$WFTitleTextDelayTime: $WFTitleLineDelayTime + $WFTitleLineAnimationTime;
+$WFTitleTextAnimationTime: $time * 3;
+
+$WFStickerLineDelayTime: $WFTitleTextDelayTime + $WFTitleTextAnimationTime;
+$WFStickerLineAnimationTime: $time * 3;
+$WFStickerTextDelayTime: $WFStickerLineDelayTime + $WFStickerLineAnimationTime;
+$WFStickerTextAnimationTime: $time * 3;
+
+$WFLineAnimationTime: $time * 3;
+$WFLineOneDelayTime: $WFStickerLineDelayTime + $WFStickerLineAnimationTime;
+$WFLineTwoDelayTime: $WFLineOneDelayTime + $time * 1;
+$WFLineThreeDelayTime: $WFLineTwoDelayTime + $time * 1;
+$WFLineFourDelayTime: $WFLineThreeDelayTime + $time * 1;
+$WFLineFiveDelayTime: $WFLineFourDelayTime + $time * 1;
+
+$WFTextColumnAnimationTime: $time * 3;
+$WFTextFirstColumnDelayTime: $WFLineOneDelayTime + $WFLineAnimationTime;
+$WFTextSecondColumnDelayTime: $WFLineTwoDelayTime + $WFLineAnimationTime;
+$WFTextThirdColumnDelayTime: $WFLineThreeDelayTime + $WFLineAnimationTime;
+$WFTextFourthColumnDelayTime: $WFLineFourDelayTime + $WFLineAnimationTime;
+$WFTextFifthColumnDelayTime: $WFLineFiveDelayTime + $WFLineAnimationTime;
+
+$WFQustionsDelayTime: $WFTextFifthColumnDelayTime + $WFTextColumnAnimationTime;
+$WFQustionsAnimationTime: $time * 3;
+
+$WFFrontLayerDelayTime: $WFQustionsDelayTime + $WFQustionsAnimationTime;
+$WFFrontLayerAnimationTime: $time;
+
+$WFBackLayerDelayTime: $WFFrontLayerDelayTime + $WFFrontLayerAnimationTime;
+$WFBackLayerAnimationTime: $WFFrontLayerAnimationTime;
+// WORK FLOW
+
 //  WEB PRODUCTION PAGE

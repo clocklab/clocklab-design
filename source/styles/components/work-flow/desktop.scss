@@ -35,6 +35,10 @@
     .language {
         position: absolute;
         z-index: 5;
+
+        a {
+            animation: none;
+        }
     }
 
     .container {
@@ -98,23 +102,20 @@
             position: absolute;
             top: px(-110);
             right: 100%;
-            padding: px(20) px(10);
-            width: px(150);
             color: $gray;
             font-size: px(36);
             text-transform: lowercase;
+            overflow: hidden;
 
-            &:before {
+            span {
                 display: block;
-                position: absolute;
-                bottom: 0;
-                right: -4px;
-                width: 8px;
-                height: 8px;
-                background: $blue;
-                border-radius: 50%;
-                content: "";
+                padding: px(20) px(10);
+                width: px(150);
             }
+        }
+
+        .content {
+            overflow: hidden;
         }
 
         h3 {
@@ -129,6 +130,18 @@
             padding-right: px(40);
             font-size: px(28);
             line-height: 1.4;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: px(-45);
+            left: -4px;
+            width: 8px;
+            height: 8px;
+            background: $blue;
+            border-radius: 50%;
+            content: "";
         }
 
         &:nth-child(1) {
@@ -194,6 +207,7 @@
         right: 0;
         z-index: 3;
         width: 20%;
+        overflow: hidden;
 
         h3 {
             margin-bottom: px(34);
@@ -360,6 +374,22 @@
         }
     }
 
+    &:before,
+    &:after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        background: $white;
+        content: '';
+    }
+
+    &:after {
+        left: 50%;
+    }
+
     &.opened {
 
         .front-layer {
@@ -368,6 +398,212 @@
             &:after {
                 z-index: 9999;
                 opacity: 1;
+            }
+        }
+    }
+
+    &.current {
+
+        &:before,
+        &:after {
+            animation: Right $WFBeforeAnimationTime $WFBeforeDelayTime both;
+        }
+
+        &:after {
+            animation-name: Left;
+        }
+
+        .logo {
+            animation: fadeInDown $WFBorderElAnimationTime $WFBorderElDelayTime both;
+        }
+
+        .menu {
+            animation: fadeInDown $WFBorderElAnimationTime $WFBorderElDelayTime both;
+        }
+
+        .language {
+
+            a {
+                animation: Down $WFBorderElAnimationTime $WFBorderElDelayTime both;
+            }
+        }
+
+        .sticker {
+            
+            span {
+                animation: FadeInRightHalf $WFStickerTextAnimationTime $WFStickerTextDelayTime both;
+            }
+
+            &:before {
+                animation: widthIncreaseStickerLine $WFStickerLineAnimationTime $WFStickerLineDelayTime both;
+            }
+        }
+
+        .new-title {
+            
+            .text-container {
+    
+                &:before {
+                    animation: halfDown $WFTitleLineAnimationTime linear $WFTitleLineDelayTime both;
+                }
+            }
+    
+            span {
+                animation: Up $WFTitleTextAnimationTime $WFTitleTextDelayTime both;
+            }
+        }
+
+        .lines {
+            
+            .line {
+                animation: heightIncreaseFull $WFLineAnimationTime $WFLineOneDelayTime both;
+
+                &--2 {
+                    animation-delay: $WFLineTwoDelayTime;
+                }
+
+                &--3 {
+                    animation-delay: $WFLineThreeDelayTime;
+                }
+
+                &--4 {
+                    animation-delay: $WFLineFourDelayTime;
+                }
+
+                &--5 {
+                    animation-delay: $WFLineFiveDelayTime;
+                }
+            }
+        }
+
+        .step {
+
+            .index {
+
+                span {
+                    animation: Left $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
+                }
+            }
+
+            h3 {
+                animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
+            }
+
+            p {
+                animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
+            }
+
+            &:before {
+                animation: fadeIn $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
+            }
+
+            &:nth-child(2) {
+
+                .index {
+                    
+                    span {
+                        animation-delay: $WFTextSecondColumnDelayTime;
+                    }
+                }
+    
+                h3 {
+                    animation-delay: $WFTextSecondColumnDelayTime;
+                }
+    
+                p {
+                    animation-delay: $WFTextSecondColumnDelayTime;
+                }
+    
+                &:before {
+                    animation-delay: $WFTextSecondColumnDelayTime;
+                }
+            }
+
+            &:nth-child(3) {
+                
+                .index {
+                    
+                    span {
+                        animation-delay: $WFTextThirdColumnDelayTime;
+                    }
+                }
+    
+                h3 {
+                    animation-delay: $WFTextThirdColumnDelayTime;
+                }
+    
+                p {
+                    animation-delay: $WFTextThirdColumnDelayTime;
+                }
+    
+                &:before {
+                    animation-delay: $WFTextThirdColumnDelayTime;
+                }
+            }
+
+            &:nth-child(4) {
+                
+                .index {
+                    
+                    span {
+                        animation-delay: $WFTextFourthColumnDelayTime;
+                    }
+                }
+    
+                h3 {
+                    animation-delay: $WFTextFourthColumnDelayTime;
+                }
+    
+                p {
+                    animation-delay: $WFTextFourthColumnDelayTime;
+                }
+    
+                &:before {
+                    animation-delay: $WFTextFourthColumnDelayTime;
+                }
+            }
+
+            &:nth-child(5) {
+                
+                .index {
+                    
+                    span {
+                        animation-delay: $WFTextFifthColumnDelayTime;
+                    }
+                }
+    
+                h3 {
+                    animation-delay: $WFTextFifthColumnDelayTime;
+                }
+    
+                p {
+                    animation-delay: $WFTextFifthColumnDelayTime;
+                }
+    
+                &:before {
+                    animation-delay: $WFTextFifthColumnDelayTime;
+                }
+            }
+        }
+
+        .questions {
+
+            h3,
+            p,
+            button {
+                animation: Right $WFQustionsAnimationTime $WFQustionsDelayTime both;
+            }
+        }
+
+        .back-layer {
+            animation: fadeIn $WFBackLayerAnimationTime $WFBackLayerDelayTime both;
+        }
+
+        .front-layer {
+
+            &:before,
+            &:after {
+                animation: fadeIn $WFFrontLayerAnimationTime $WFFrontLayerDelayTime both;
             }
         }
     }
