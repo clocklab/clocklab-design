@@ -1,1 +1,38 @@
 @import '../desktop';
+
+& {
+
+    .images {
+        top: -4vh;
+
+        .image-container {
+
+            &--1 {
+                height: px(750);
+
+                &:after {
+                    width: px(100);
+                    height: px(200);
+                }
+            }
+        }
+    }
+
+    .info {
+        top: 0;
+    }
+
+    .new-title {
+        margin-top: px(50);
+        margin-bottom: px(50);
+        
+        span {
+            font-size: px(80);
+            line-height: px(90);
+        }
+    }
+
+    .crossed-button {
+        position: relative;
+    }
+}

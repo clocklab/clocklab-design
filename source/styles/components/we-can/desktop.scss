@@ -5,18 +5,24 @@
         z-index: 3;
     }
 
+    .clock-bg {
+        font-family: $raleway;
+        font-weight: 500;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         position: relative;
         margin: 0 auto;
-        padding: 7.3vh 0 0 px(150);
-        width: 81%;
+        padding-left: px(150);
+        width: 80%;
         height: 100vh;
     }
 
     .images {
-        padding-top: px(140);
+        position: relative;
         width: 40%;
 
         .image-container {
@@ -24,6 +30,8 @@
             overflow: hidden;
 
             img {
+                position: relative;
+                z-index: 1;
                 display: block;
                 width: 100%;
                 height: 100%;
@@ -43,13 +51,14 @@
 
             &--1 {
                 width: 100%;
-                height: 950px;
+                height: px(950);
 
                 &:after {
                     display: block;
                     position: absolute;
+                    z-index: 2;
                     top: 0;
-                    left: 0;
+                    right: 0;
                     width: px(140);
                     height: px(340);
                     background: $white;
@@ -59,8 +68,8 @@
 
             &--2 {
                 position: absolute;
-                bottom: 1.2vh;
-                left: px(770);
+                bottom: px(-260);
+                right: px(-200);
                 width: px(820);
                 height: px(440);
             }
@@ -68,6 +77,8 @@
     }
 
     .info {
+        position: relative;
+        top: -7vh;
         width: 60%;
     }
 
@@ -84,6 +95,7 @@
     .new-title {
         margin-top: px(80);
         margin-bottom: px(80);
+        font-family: $raleway;
         
         .text-container {
             display: inline-block;
@@ -92,11 +104,12 @@
         }
     }
 
-    .article {
+    article {
         padding-left: px(330);
 
         p {
             margin-bottom: px(50);
+            font-family: $roboto;
             font-size: px(28);
             line-height: 1.4;
         }
@@ -104,6 +117,14 @@
 
     .crossed-button {
         margin-top: px(50);
+        margin-left: px(330);
+        font-family: $raleway;
+
+        span {
+            &:after {
+                content: 'Читать далее';
+            }
+        }
     }
 
     .long-read {
