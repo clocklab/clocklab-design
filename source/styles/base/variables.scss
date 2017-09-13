@@ -473,4 +473,29 @@ $WCCrossedBtnDelayTime: $WCStickerTextDelayTime;
 $WCCrossedBtnAnimationTime: $WCStickerTextAnimationTime;
 // WE CAN BLOCK
 
+// SITE TYPES (ST - Site types)
+$STBorderElDelayTime: $BColumnDelayTime + $BColumnAnimationTime;
+$STBorderElAnimationTime: $time * 3;
+
+$STLineAnimationTime: $time * 3;
+$STLineOneDelayTime: $STBorderElDelayTime + $STBorderElAnimationTime;
+$STLineTwoDelayTime: $STLineOneDelayTime + $time;
+$STLineThreeDelayTime: $STLineTwoDelayTime + $time;
+$STLineFourDelayTime: $STLineThreeDelayTime + $time;
+
+$STTextColumnAnimationTime: $time * 3;
+
+$STTextFirstColumnDelayTime: $STLineOneDelayTime + $STLineAnimationTime;
+
+$STTextSecondColumnDelayTime: $STLineTwoDelayTime + $STLineAnimationTime;
+$STTextSecondColumnTwoDelayTime: $STTextSecondColumnDelayTime + $timeTick;
+$STTextSecondColumnThreeDelayTime: $STTextSecondColumnTwoDelayTime + $timeTick;
+$STTextSecondColumnFourDelayTime: $STTextSecondColumnThreeDelayTime  + $timeTick;
+
+$STTextThirdColumnDelayTime: $STLineThreeDelayTime + $STLineAnimationTime;
+$STTextThirdColumnTwoDelayTime: $STTextThirdColumnDelayTime + $timeTick;
+$STTextThirdColumnThreeDelayTime: $STTextThirdColumnTwoDelayTime + $timeTick;
+$STTextThirdColumnFourDelayTime: $STTextThirdColumnThreeDelayTime  + $timeTick;
+// SITE TYPES 
+
 //  WEB PRODUCTION PAGE
