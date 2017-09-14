@@ -1,0 +1,205 @@
+& {  
+
+    position: relative;
+    background: $lightBlack;
+
+    .big-background-letter {
+
+    }
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        padding-top: px(650);
+        width: 81%;
+        height: px(2520);
+
+        & > div {
+            width: 100%;
+        }
+    }
+
+    .column {
+
+        &-1 {
+            width: 26%;
+        }
+        
+        &-2 {
+            width: 30%;
+        }
+
+        &-3 {
+            width: 44%;
+        }
+    }
+
+    .lines {
+
+        .line {
+            position: absolute;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: $gray;
+
+            &--1 {
+                left: 0;   
+            }
+
+            &--2 {
+                left: 26%;   
+            }
+
+            &--3 {
+                left: 56%;   
+            }
+
+            &--4 {
+                left: 100%;   
+            }
+        }
+    }
+
+    .answers {
+
+        h2 {
+            font-family: $raleway;
+            font-size: px(96);
+            font-weight: 800;
+
+            span {
+                display: block;
+                margin-top: px(40);
+                color: $blue;
+                font-size: px(48);
+            }
+        }
+
+        .column-2,
+        .column-3 {
+            padding-top: px(50);
+        }
+
+        li {
+            display: block;
+            margin-bottom: px(130);
+            padding-right: px(440);
+            color: $white;
+            font-family: $raleway;
+
+            &:nth-child(2) {
+                padding-right: px(220);
+            }
+        }
+
+        button {
+            display: block;
+            position: relative;
+            // color: $white;
+            // font-family: $raleway;
+            font-size: px(36);
+            transition: color $time;
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: px(20);
+                left: px(30);
+                transform-origin: 0 100%;
+                transform: rotate(-90deg);
+                transition: color $time;
+            }
+
+            &:hover {
+                color: $blue;
+
+                &:before {
+                    color: $blue;
+                }
+            }
+        }
+
+        .step {
+            position: relative;
+            color: $white;
+            font-family: $roboto;
+    
+            .index {
+                position: absolute;
+                top: px(-110);
+                right: 100%;
+                color: $gray;
+                font-size: px(36);
+                text-transform: lowercase;
+                overflow: hidden;
+    
+                span {
+                    display: block;
+                    padding: px(20) px(10);
+                    width: px(150);
+                }
+            }
+    
+            .content {
+                overflow: hidden;
+            }
+    
+            h4 {
+                margin-bottom: px(60);
+                font-family: $raleway;
+                font-weight: 700;
+                font-size: px(48);
+                text-transform: uppercase;
+            }
+    
+            p {
+                margin-bottom: px(50);
+                padding-right: px(40);
+                font-size: px(32);
+                line-height: 1.4;
+            }   
+        }
+    }
+
+    .more {
+
+        h3 {
+            font-family: $raleway;
+            font-size: px(96);
+            font-weight: 800;
+        }
+
+        span {
+            display: block;
+            margin-top: px(40);
+            color: $blue;
+            font-size: px(48);
+        }
+
+        ul {
+            display: flex;
+            margin-top: px(200);
+            width: 100%;
+        }
+
+        .crossed-button {
+
+            span {
+                transition: padding $time, color $time;
+            }
+
+            .st0,
+            .st1 {
+                stroke: $blue;
+            }
+
+            &:hover {
+
+                span {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+& {  
+
+    height: px(1220);
+    background: $lightBlack;
+
+    blockquote {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+        padding-left: px(200);
+        width: px(1850);
+        height: 100%;
+    }
+
+    p {
+        position: relative;
+        color: $darkWhite;
+        font-family: $roboto;
+        font-size: px(48);
+        font-style: italic;
+        font-weight: 400;
+        line-height: 1.4;
+
+        span {
+            color: $blue;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            left: px(-220);
+            top: px(-100);
+            width: px(266);
+            height: px(176);
+            background: url('../images/web-production/quotes.png') center no-repeat;
+            background-size: cover;
+            content: '';
+        }
+    }
+}

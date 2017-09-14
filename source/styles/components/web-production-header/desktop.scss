@@ -17,16 +17,27 @@
         top: 50vh;
     }
 
-    .big-bg-letter-c {
-        position: absolute;
-        top: 98vh;
-        left: px(-640);
+    .big-bg-letter-c,
+    .big-bg-letter-o {
+        font-family: $raleway;
+        font-weight: 800;
+        text-transform: uppercase;
 
         .big-background-letter {
             top: initial;
             left: initial;
             bottom: initial;
             right: initial;
+            font-size: px(2000);
+        }
+    }
+
+    .big-bg-letter-c {
+        position: absolute;
+        top: 75vh;
+        left: px(-500);
+
+        .big-background-letter {
 
             span {
                 
@@ -39,14 +50,10 @@
 
     .big-bg-letter-o {
         position: absolute;
-        bottom: px(120);
-        right: px(-600);
+        top: 70%;
+        left: 73%;
 
         .big-background-letter {
-            top: initial;
-            left: initial;
-            bottom: initial;
-            right: initial;
 
             span {
 
@@ -312,7 +319,7 @@
             position: relative;
             margin-bottom: px(150);
             padding-left: px(70);
-            width: px(1140);
+            width: px(1280);
             font-size: px(32);
             line-height: 1.4;
 
