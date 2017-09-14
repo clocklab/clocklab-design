@@ -1,0 +1,33 @@
+@import '../desktop';
+
+& {
+
+    $paddingTopDesktop: 14vh;
+
+    .container {
+        padding: $paddingTopDesktop 0 0;
+        min-width: 70%;
+
+        h2 {
+            padding-right: px(0);
+            font-size: px(90);
+            line-height: px(100);
+        }
+
+        .types {
+            //height: 40vh;
+
+            &__item {
+
+                &:nth-child(1),
+                &:nth-child(2) {
+                    margin-bottom: px(100);
+
+                    &:before {
+                        top: - $paddingTopDesktop;
+                    }
+                }
+            }
+        }
+    }
+}

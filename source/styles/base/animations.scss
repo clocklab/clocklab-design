@@ -557,6 +557,18 @@
 //  post ends
 
 
+// web-production
+@keyframes heightIncreaseFull {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100vh;
+    }
+}
+// web-production ends
+
+
 //  long text component
 
 //  long text component ends

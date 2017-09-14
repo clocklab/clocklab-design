@@ -1,0 +1,315 @@
+& {  
+
+    .language {
+        position: absolute;
+        z-index: 3;
+
+        a {
+            animation: none;
+        }
+    }
+
+    .clock-bg {
+        z-index: 1;
+        font-family: $raleway;
+        font-weight: 500;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        padding-left: px(150);
+        width: 80%;
+        height: 100vh;
+    }
+
+    .images {
+        position: relative;
+        width: 40%;
+
+        .image-container {
+            position: relative;
+            overflow: hidden;
+
+            img {
+                position: relative;
+                z-index: 1;
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: $darkGray;
+                content: '';
+            }
+
+            &--1 {
+                width: 100%;
+                height: px(950);
+
+                &:after {
+                    display: block;
+                    position: absolute;
+                    z-index: 2;
+                    top: 0;
+                    right: 0;
+                    width: px(140);
+                    height: px(340);
+                    background: $white;
+                    content: '';
+                }
+            }
+
+            &--2 {
+                position: absolute;
+                bottom: px(-260);
+                right: px(-200);
+                width: px(820);
+                height: px(440);
+            }
+        }
+    }
+
+    .info {
+        position: relative;
+        top: -7vh;
+        width: 60%;
+    }
+
+    .sticker {
+        
+        span {
+
+            &:before {
+                content: 'Услуги web-production'
+            }
+        }
+    }
+
+    .new-title {
+        margin-top: px(80);
+        margin-bottom: px(80);
+        font-family: $raleway;
+        
+        .text-container {
+            display: inline-block;
+            margin-bottom: px(10);
+            font-weight: 800;
+        }
+    }
+
+    article {
+        padding-left: px(330);
+
+        p {
+            margin-bottom: px(50);
+            font-family: $roboto;
+            font-size: px(28);
+            line-height: 1.4;
+        }
+    }
+
+    .crossed-button {
+        margin-top: px(50);
+        margin-left: px(330);
+        font-family: $raleway;
+
+        span {
+            &:after {
+                content: 'Читать далее';
+            }
+        }
+    }
+
+    .long-read {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+
+        &:after {
+            display: block;
+            position: absolute;
+            bottom: 1.2vh;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: $gray;
+            content: '';
+            transition: height $time * 2, bottom $time * 2;
+        }
+
+        &.opened {
+            z-index: 9999;
+            
+            &:after {
+                bottom: 0;
+                height: 100vh;
+            }
+        }
+    }
+
+    &:before {
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        background: $white;
+        content: '';
+    }
+
+    &:before {
+        left: 0;
+    }
+
+    @keyframes leftWidthIncrease {
+        from {
+            left: 50%;
+            width: 0;
+        }
+        to {
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    &.current {
+
+        &:before {
+            animation: leftWidthIncrease $WCBeforeAnimationTime $WCBeforeDelayTime both;
+        }
+
+        .logo {
+            animation: fadeInDown $WCBorderElAnimationTime $WCBorderElDelayTime both;
+        }
+
+        .menu {
+            animation: fadeInDown $WCBorderElAnimationTime $WCBorderElDelayTime both;
+        }
+
+        .language {
+
+            a {
+                animation: Down $WCBorderElAnimationTime $WCBorderElDelayTime both;
+            }
+        }
+
+        .clock-bg {
+
+            span {
+                
+                &:before {
+                    animation: right $WCClockAnimationTime both;
+                }
+    
+                &:nth-child(1) {
+    
+                    &:before {
+                        animation-delay: $WCClockFirstDelayTime;
+                    }
+                }
+    
+                &:nth-child(2) {
+    
+                    &:before {
+                        animation-delay: $WCClockSecondDelayTime;
+                    }
+                }
+    
+                &:nth-child(3) {
+    
+                    &:before {
+                        animation-delay: $WCClockThirdDelayTime;
+                    }
+                }
+    
+                &:nth-child(4) {
+    
+                    &:before {
+                        animation-delay: $WCClockFourthDelayTime;
+                    }
+                }
+    
+                &:nth-child(5) {
+    
+                    &:before {
+                        animation-delay: $WCClockFifthDelayTime;
+                    }
+                }
+            }
+        }
+
+        .new-title {
+            
+            .text-container {
+    
+                &:before {
+                    animation: halfDown $WCTitleLineAnimationTime linear $WCTitleLineDelayTime both;
+                }
+            }
+    
+            span {
+                animation: Up $WCTitleTextAnimationTime $WCTitleTextDelayTime both;
+            }
+        }
+
+        article {
+
+            p {
+                animation: fadeInUp $WCTextAnimationTime $WCTextDelayTime both;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation: FadeInRightHalf $WCStickerTextAnimationTime $WCStickerTextDelayTime both;
+            }
+
+            &:before {
+                animation: widthIncreaseStickerLine $WCStickerLineAnimationTime $WCStickerLineDelayTime both;
+            }
+        }
+
+        .images {
+    
+            .image-container {
+    
+                img {
+                    animation: right $WCImageAnimationTime $WCImageDelayTime both;
+                }
+    
+                &:before {
+                    animation: right $WCImageBeforeAnimationTime $WCImageBeforeDelayTime both;
+                }
+    
+                &--1 {
+    
+                    &:after {
+                        animation: fadeIn $WCImageAfterAnimationTime $WCImageAfterDelayTime both;
+                    }
+                }
+            }
+        }
+
+        .crossed-button {
+            animation: FadeInRight $WCCrossedBtnAnimationTime $WCCrossedBtnDelayTime both;
+        }
+    }
+}

@@ -5,7 +5,7 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
-var page = 'mockup-audi'
+var page = 'web-production'
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
