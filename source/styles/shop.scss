@@ -1,0 +1,12 @@
+//common
+@import 'base/reset';
+@import 'base/animate';
+@import 'base/fonts';
+@import 'base/variables.scss';
+
+//helpers 
+@import 'components/modules/small-gray-lines';
+
+//components
+@import 'components/web-production-header/main';
+@import 'components/web-production-footer/main';
