@@ -1,1 +1,32 @@
 @import '../desktop';
+
+& {
+
+    .front-layer,
+    .back-layer {
+        height: px(1750);
+    }
+
+    .front-layer {
+
+        .container {
+            width: 95%;
+        }
+
+        h2 {
+            margin-right: px(100);
+            font-size: px(80);
+        }
+
+        .works {
+            width: px(1400);
+        }
+
+        .work {
+
+            &--audi {
+                left: px(50);
+            }
+        }
+    }
+}
