@@ -198,6 +198,18 @@
 
             &.current {
                 z-index: 2;
+
+                .index {
+
+                    span {
+                        animation: Up $time * 2 both;
+                    }
+                }
+
+                h4,
+                p {
+                    animation: Right $time * 2 both;
+                }
             }
 
             &.previous {

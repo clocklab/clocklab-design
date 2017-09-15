@@ -3,4 +3,62 @@
 & {
 
     height: px(800);
+
+    .clock-bg {
+        
+        span {
+
+            &:before {
+                font-size: 25vw;
+            }
+        }
+    }
+
+    .jumping-button {
+        bottom: px(30);
+    }
+
+    .advantages {
+        padding-top: px(180);
+        padding-right: px(100);
+
+        h2,
+        ul {
+            width: 42%;
+        }
+
+        h2 {
+            font-size: px(84);
+            line-height: px(92);
+        }
+
+        li {
+            margin-bottom: px(100);
+        }
+    }
+
+    &--landing {
+        height: px(1000);
+
+        .clock-bg {
+            top: px(120);
+        }
+
+        .lists {
+            padding-top: px(100);
+            padding-right: px(100);
+    
+            ul {
+    
+                &:first-child,
+                &:last-child {
+                    width: 45%;
+                }
+            }
+    
+            li {
+                margin-bottom: px(30);
+            }
+        }
+    }
 }

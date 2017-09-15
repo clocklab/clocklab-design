@@ -64,5 +64,15 @@
         ul {
             height: px(1200);
         }
+
+        &--corporate {
+
+            &--landing {
+
+                ul {
+                    height: px(1400);
+                }
+            }
+        }
     }
 }

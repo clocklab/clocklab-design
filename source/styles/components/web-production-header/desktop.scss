@@ -2,13 +2,18 @@
 
     position: relative;
     font-family: $roboto;
+    overflow: hidden;
 
-    .logo {
+    .dark-logo {
 
     }
 
-    .menu {
+    .dark-menu {
 
+    }
+
+    .dark-language {
+        
     }
 
     .language {
@@ -85,6 +90,34 @@
             transform-origin: 0 0;
             transform: rotate(90deg);
         }
+
+        &--card {
+
+            &:after {
+                content: 'Сайт-визитка – это эффективная возможность повысить доходы для Вас и вашего бизнеса';
+            }
+        }
+
+        &--landing {
+            padding-bottom: px(80);
+            
+            & > h2 {
+                color: $darkGray;
+                font-family: $raleway;
+                font-size: px(144);
+                font-weight: 800;
+
+                span {
+                    display: block;
+                    margin-top: px(40);
+                    color: $blue;
+                }
+            }
+
+            &:after {
+                content: 'Лэндинг — содержательный и ёмкий призыв к действию.';
+            }
+        }
     }
 
     header {
@@ -115,6 +148,7 @@
             font-size: px(520);
             font-weight: 800;
             text-transform: uppercase;
+            opacity: .9;
 
             span {
 
@@ -213,9 +247,14 @@
         padding-left: px(200);
 
         p {
+            margin-bottom: px(60);
             font-family: $roboto;
             font-size: px(32);
             line-height: 1.4;
+
+            span {
+                text-decoration: underline;
+            }
 
             &.big {
                 margin-bottom: px(110);
@@ -263,6 +302,53 @@
                 background: $blue;
                 border-radius: 50%;
                 content: '';
+            }
+        }
+    }
+
+    .declaration {
+        
+        h3 {
+            margin-bottom: px(280);
+            font-size: px(72);
+            font-weight: 700;
+            line-height: px(80);
+
+            span {
+                color: $blue;
+            }
+        }
+
+        p {
+            margin-bottom: px(60);
+            font-family: $roboto;
+            font-size: px(32);
+            line-height: 1.4;
+
+            span {
+                text-decoration: underline;
+            }
+
+            &.bordered {
+                margin: px(120) 0;
+                padding-left: px(60);
+                border-left: 9px solid $blue;
+                font-size: px(50);
+                font-weight: 700;
+                font-style: italic;
+            }
+
+            &.bold {
+                font-weight: 700;
+            }
+        }
+
+        &--card {
+            p {
+
+                &:first-of-type {
+                    margin-bottom: px(280);
+                }
             }
         }
     }
@@ -342,6 +428,26 @@
             font-family: $raleway;
             font-size: px(72);
             font-weight: 800;
+        }
+
+        &--corporate {
+            flex-direction: row;
+
+            h2 {
+                position: relative;
+                top: px(180);
+            }
+
+            ul {
+                width: px(1140);
+            }
+
+            &--landing {
+
+                ul {
+                    height: px(1450);
+                }
+            }
         }
     }
 }

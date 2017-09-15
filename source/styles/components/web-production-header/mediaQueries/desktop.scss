@@ -134,5 +134,17 @@
             margin-bottom: px(100);
             width: 45%;
         }
+
+        &--corporate {
+
+            ul {
+                width: 42%;
+                height: initial;
+            }
+
+            li {
+                width: 100%;
+            }
+        }
     }
 }
