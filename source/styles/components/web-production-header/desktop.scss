@@ -1,0 +1,453 @@
+& {  
+
+    position: relative;
+    font-family: $roboto;
+    overflow: hidden;
+
+    .dark-logo {
+
+    }
+
+    .dark-menu {
+
+    }
+
+    .dark-language {
+        
+    }
+
+    .language {
+        position: absolute;
+        z-index: 5;
+        top: 50vh;
+    }
+
+    .big-bg-letter-c,
+    .big-bg-letter-o {
+        font-family: $raleway;
+        font-weight: 800;
+        text-transform: uppercase;
+
+        .big-background-letter {
+            top: initial;
+            left: initial;
+            bottom: initial;
+            right: initial;
+            font-size: px(2000);
+        }
+    }
+
+    .big-bg-letter-c {
+        position: absolute;
+        top: 75vh;
+        left: px(-500);
+
+        .big-background-letter {
+
+            span {
+                
+                &:before {
+                    content: 'c';
+                }
+            }
+        }
+    }
+
+    .big-bg-letter-o {
+        position: absolute;
+        top: 70%;
+        left: 73%;
+
+        .big-background-letter {
+
+            span {
+
+                &:before {
+                    content: 'o';
+                }
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        padding-right: px(380);
+        padding-bottom: px(350);
+        width: 81%;
+
+        &:after {
+            display: block;
+            position: absolute;
+            top: px(600);
+            right: px(-760);
+            width: px(680);
+            content: 'Ежегодно продажи в сети динамически увеличиваются на 15%';
+            color: $darkGray;
+            font-size: px(32);
+            font-family: $roboto;
+            line-height: 1.4;
+            transform-origin: 0 0;
+            transform: rotate(90deg);
+        }
+
+        &--card {
+
+            &:after {
+                content: 'Сайт-визитка – это эффективная возможность повысить доходы для Вас и вашего бизнеса';
+            }
+        }
+
+        &--landing {
+            padding-bottom: px(80);
+            
+            & > h2 {
+                color: $darkGray;
+                font-family: $raleway;
+                font-size: px(144);
+                font-weight: 800;
+
+                span {
+                    display: block;
+                    margin-top: px(40);
+                    color: $blue;
+                }
+            }
+
+            &:after {
+                content: 'Лэндинг — содержательный и ёмкий призыв к действию.';
+            }
+        }
+    }
+
+    header {
+        position: relative;
+        padding-top: px(240);
+        height: 100vh;
+        min-height: 650px;
+        max-height: 1100px;
+
+        .image-container {
+            position: relative;
+            z-index: 2;
+            width: px(2500);
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .big-background-letter {
+            top: px(170);
+            right: px(-90);
+            color: $darkGray;
+            font-family: $raleway;
+            font-size: px(520);
+            font-weight: 800;
+            text-transform: uppercase;
+            opacity: .9;
+
+            span {
+
+                &:before {
+                    content: 'c';
+                }
+            }
+        }
+    }
+
+    .about,
+    .cases,
+    .advantages {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+
+        & > div {
+
+            &:first-child {
+                width: px(1190);
+            }
+
+            &:last-child {
+                width: px(1140);
+            }
+        }
+    }
+
+    .about {
+        position: relative;
+        z-index: 2;
+
+        & > div {
+
+            &:last-child {
+                width: px(1600);
+            }
+        }
+    }
+
+    .description {
+        padding: px(420) px(140) 0 0;
+        
+        p {
+            padding-bottom: px(60);
+            border-bottom: 1px solid $gray;
+            font-family: $roboto;
+            font-size: px(36);
+            line-height: 1.4;
+            font-style: italic;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .info {
+        position: relative;
+        top: px(-468);
+        padding-left: px(256);
+        padding-top: px(160);
+        background: $white;
+    }
+
+    .sticker {
+            
+        span {
+
+            &:before {
+                content: 'Услуги web-production';
+            }
+        }
+    }
+
+    .new-title {
+        margin-top: px(80);
+        margin-bottom: px(220);
+        font-family: $raleway;
+        
+        .text-container {
+            display: inline-block;
+            margin-bottom: px(10);
+            font-weight: 800;
+
+            span {
+                font-size: px(96);
+                line-height: px(104);
+            }
+        }
+    }
+
+    article {
+        padding-left: px(200);
+
+        p {
+            margin-bottom: px(60);
+            font-family: $roboto;
+            font-size: px(32);
+            line-height: 1.4;
+
+            span {
+                text-decoration: underline;
+            }
+
+            &.big {
+                margin-bottom: px(110);
+                font-size: px(48);
+            }
+
+            &.bold {
+                margin-bottom: px(60);
+                font-weight: 700;
+            }
+        }
+    }
+
+    .cases {
+        margin-top: px(-200);
+    }
+
+    .list {
+
+        h3 {
+            margin-bottom: px(280);
+            font-size: px(72);
+            font-weight: 700;
+            line-height: px(80);
+
+            span {
+                color: $blue;
+            }
+        }
+
+        li {
+            position: relative;
+            margin-bottom: px(106);
+            padding-left: px(70);
+            font-size: px(32);
+            line-height: 1.4;
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 7px;
+                left: 7px;
+                width: 7px;
+                height: 7px;
+                background: $blue;
+                border-radius: 50%;
+                content: '';
+            }
+        }
+    }
+
+    .declaration {
+        
+        h3 {
+            margin-bottom: px(280);
+            font-size: px(72);
+            font-weight: 700;
+            line-height: px(80);
+
+            span {
+                color: $blue;
+            }
+        }
+
+        p {
+            margin-bottom: px(60);
+            font-family: $roboto;
+            font-size: px(32);
+            line-height: 1.4;
+
+            span {
+                text-decoration: underline;
+            }
+
+            &.bordered {
+                margin: px(120) 0;
+                padding-left: px(60);
+                border-left: 9px solid $blue;
+                font-size: px(50);
+                font-weight: 700;
+                font-style: italic;
+            }
+
+            &.bold {
+                font-weight: 700;
+            }
+        }
+
+        &--card {
+            p {
+
+                &:first-of-type {
+                    margin-bottom: px(280);
+                }
+            }
+        }
+    }
+
+    .images {
+        position: relative;
+
+        img {
+
+            &:first-child {
+                position: absolute;
+                top: 0;
+                left: px(360);
+                width: px(1330);
+                height: px(800);
+            }
+
+            &:last-child {
+                position: relative;
+                top: px(300);
+                z-index: 2;
+                width: px(770);
+                height: px(900);
+            }
+        }
+    }
+
+    .advantages {
+        flex-direction: column;
+        margin-top: px(300);
+        
+        h2 {
+            margin-bottom: px(300);
+            width: px(1000);
+            font-size: px(96);
+            font-weight: 800;
+            line-height: 1.2;
+
+            span {
+                color: $blue;
+            }
+        }
+
+        ul {
+            width: 100%;
+            height: px(1150);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-content: space-between;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: px(150);
+            padding-left: px(70);
+            width: px(1280);
+            font-size: px(32);
+            line-height: 1.4;
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: px(-30);
+                left: 0;
+                width: px(70);
+                height: px(70);
+                background: $lightGray;
+                content: '';
+            }
+        }
+
+        .index {
+            position: absolute;
+            top: px(-90);
+            left: px(-16);
+            font-family: $raleway;
+            font-size: px(72);
+            font-weight: 800;
+        }
+
+        &--corporate {
+            flex-direction: row;
+
+            h2 {
+                position: relative;
+                top: px(180);
+            }
+
+            ul {
+                width: px(1140);
+            }
+
+            &--landing {
+
+                ul {
+                    height: px(1450);
+                }
+            }
+        }
+    }
+}

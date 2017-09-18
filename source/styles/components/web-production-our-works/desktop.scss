@@ -1,0 +1,385 @@
+& {  
+
+    position: relative;
+    height: px(2500);
+    background: $white;
+
+    .front-layer,
+    .back-layer {
+        height: px(1920);
+    }
+
+    .front-layer {
+        position: relative;
+        z-index: 2;
+        background: $white;
+        overflow: hidden;
+        transform-origin: 0 50%;
+        transform-style: preserve-3d;
+        transition: transform $time * 2;
+
+        .small-gray-lines {
+            z-index: 1;
+    
+            .line {
+                visibility: visible;
+                background: gray;
+                opacity: .2;
+    
+                &.up {
+                    transform: rotate(-65deg) translate3d(100%, 0, 0);
+                }
+    
+                &.down {
+                    transform: rotate(-65deg) translate3d(-100%, 0, 0);
+                }
+    
+                &.up,
+                &.down {
+                    animation: none;
+                }
+            }
+        }
+
+        .big-background-letter {
+            top: 15vh;
+            right: initial;
+            width: 100%;
+            font-family: $raleway;
+            font-size: px(1500);
+            font-weight: 800;
+            text-align: center;
+            text-transform: uppercase;
+
+            span {
+
+                &:before {
+                    content: 'c';
+                }
+            }
+        }
+
+        .container {
+            display: flex;
+            position: relative;
+            z-index: 3;
+            margin: 0 auto;
+            padding-top: px(80);
+            width: 81%;
+        }
+
+        h2 {
+            margin-right: px(180);
+            align-self: center;
+            color: $darkGray;
+            font-size: px(96);
+            font-family: $raleway;
+            font-weight: 700;
+            transform: translateY(px(70));
+
+            span {
+                display: block;
+                color: $blue;
+            }
+        }
+
+        .works {
+            position: relative;
+            width: px(1800);
+            height: px(1400);
+        }
+
+        .work {
+            position: absolute;
+
+            span {
+                display: block;
+                margin-top: px(20);
+                color: $darkGray;
+                font-size: px(40);
+                font-family: $raleway;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            img {
+                object-fit: cover;
+            }
+
+            &--eurovision {
+                top: 0;
+                left: 0;
+                
+                img {
+                    width: px(500);
+                    height: px(820);
+                }
+            }
+
+            &--alta {
+                top: px(40);
+                right: 0;
+                
+                img {
+                    width: px(820);
+                    height: px(500);
+                }
+            }
+
+            &--audi {
+                bottom: 0;
+                left: px(360);
+                
+                img {
+                    width: px(710);
+                    height: px(400);
+                }
+            }
+
+            &--vinograd {
+                bottom: px(140);
+                right: px(70);
+                
+                img {
+                    width: px(490);
+                    height: px(490);
+                }
+            }
+        }
+
+        .crossed-button {
+            position: relative;
+            margin-left: px(90);
+            align-self: flex-end;
+            font-family: $roboto;
+            font-size: px(32);
+
+            span {
+
+                &:after {
+                    content: 'Посмотреть все работы';
+                }
+            }
+        }
+
+        &:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, .4);
+            content: '';
+            opacity: 0;
+            transition: opacity $time;
+        }
+    }
+
+    // .back-layer {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     background: $black;
+    // }
+
+    .back-layer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding-right: px(140);
+        width: 100%;
+        background: $black;
+    }
+
+    form {
+        position: relative;
+        padding-top: px(250);
+        width: px(830);
+        height: px(1200);
+        color: $white;
+        font-family: $roboto;
+
+        .close-form {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: px(56);
+            height: px(56);
+            background: transparent;
+
+            &:before,
+            &:after {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: px(40);
+                height: 2px;
+                background: $gray;
+                content: '';
+                transition: background $time;
+            }
+
+            &:before {
+                transform: rotate(45deg);
+            }
+
+            &:after {
+                transform: rotate(-45deg);
+            }
+
+            &:hover {
+
+                &:before,
+                &:after {
+                    background: $white;
+                }
+            }
+        }
+
+        h3 {
+            margin-bottom: px(220);
+            font-family: $raleway;
+            font-size: px(60);
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        label {
+            display: block;
+            position: relative;
+            padding: 0 px(20);
+            width: 100%;
+            margin-bottom: px(60);
+            border-bottom: 1px solid $gray;
+
+            span {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: px(20);
+                margin-bottom: px(16);
+                height: 100%;
+                color: $gray;
+                font-family: $roboto;
+                font-size: px(34);
+                line-height: 100%;
+                text-transform: uppercase;
+                transition: top $timeHalf, color $timeHalf, font-size $timeHalf;
+            }
+
+            input {
+                display: block;
+                position: relative;
+                z-index: 2;
+                padding: px(5) 0;
+                width: 100%;
+                height: px(40);
+                background: transparent;
+                border: none;
+                outline: none;
+                color: $white;
+                font-size: px(32);
+
+                &:focus,
+                &.filled {
+                    
+                    & ~ span {
+                        top: px(-30);
+                        color: $white;
+                        font-size: px(24);
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                margin-bottom: px(150);
+            }
+        }
+
+        .send {
+            display: block;
+            margin: px(90) 0 0 auto;
+            width: px(340);
+            height: px(90);
+            background: $blue;
+            border: 2px solid $blue;
+            color: $white;
+            font-family: $roboto;
+            font-size: px(28);
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: color $time, background $time;
+
+            &:hover {
+                background: $white;
+                color: $blue;
+            }
+        }
+    }
+
+    .discuss {
+        position: relative;
+        z-index: 3;
+        margin: px(50) auto 0;
+        width: px(720);
+        text-align: center;
+
+        h3 {
+            margin-bottom: px(24);
+            color: $darkGray;
+            font-family: $raleway;
+            font-size: px(48);
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-bottom: px(66);
+            padding: 0 px(50);
+            color: $gray;
+            font-family: $roboto;
+            font-size: px(28);
+            line-height: 1.4;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            width: px(420);
+            height: px(110);
+            background: $blue;
+            border: 2px solid $blue;
+            color: $white;
+            font-family: $roboto;
+            font-size: px(32);
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: color $time, background $time;
+
+            &:hover {
+                background: transparent;
+                color: $blue;
+            }
+        }
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(30deg);
+    
+            &:after {
+                z-index: 9999;
+                opacity: 1;
+            }
+        }
+    }
+}
