@@ -1,0 +1,7 @@
+@import '../desktop';
+
+// ----- services-schedule -----
+.services-schedule .container {
+	max-width: 700px;
+	.service-line.right { display: none; }
+}

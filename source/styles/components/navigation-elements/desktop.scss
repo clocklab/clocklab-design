@@ -48,13 +48,14 @@
         z-index: 2;
         &.dark a {
             color: $dark;
+            &:hover { color: $gray; }
             &.select {
                 color: $gray;
+                &:hover { color: $black; }
                 &:before { color: $gray; }
             }
         }
         a {
-            // animation: fadeInDown $time * 3 $time * 3 both;
             text-transform: uppercase;
             @include inline-block;
             font-weight: $thin;
@@ -66,8 +67,8 @@
                 &::before {
                     position: absolute;
                     color: $white;
-                    right: px(60);
-                    bottom: px(4);
+                    bottom: 1.5px;
+                    right: 30px;
                     content: '—';
                 }
             }

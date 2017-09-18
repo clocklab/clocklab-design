@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const selectors = ['.euro-club', '#clock', '#service-two', '#blog-two', '#blog-three', '#main-contacts', '#contacts', '#services', '#about-company-four']
+    const selectors = ['.euro-club', '#clock', '#service-two', '#blog-two', '#blog-three', '#main-contacts', '#contacts', '#services', '#about-company-four', '#design-one', '#design-three']
 
     const move = selectors => {
 
