@@ -4,9 +4,8 @@
     font-weight: $regular;
     overflow: hidden;
     
+    // ----- animation -----
     &.current {
-
-        // ----- animation -----
         animation: fadeIn $time * 3 both;
         
         // ----- big-background-letter -----
