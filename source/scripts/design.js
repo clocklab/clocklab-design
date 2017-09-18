@@ -15,3 +15,7 @@
 
 // open form
 //= components/open-form.js
+
+// ----- change lines and language color -----
+$('.light div').children().addClass('light');
+$('.dark').children().addClass('dark');
