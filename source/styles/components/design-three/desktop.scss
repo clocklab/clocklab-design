@@ -1,0 +1,430 @@
+& { 
+    font-family: $raleway;
+    font-weight: $regular;
+    position: relative;
+    transition: perspective $time * 2;
+
+    // ----- front-layer -----
+    .front-layer {
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        transform-origin: 0 50%;
+        transform-style: preserve-3d;
+        transition: transform $time * 2;
+        &:before, &:after {
+            position: absolute;
+            background: $white;
+            display: block;
+            height: 100vh;
+            width: 100%;
+            content: '';
+            left: 0;
+            top: 0;
+        }
+        &:after {
+            opacity: 0;
+            z-index: -1;
+            transition: opacity $time;
+            background: rgba(0,0,0,.4);
+        }
+
+        // ----- language -----
+        .language {
+            overflow: visible;
+            transform: rotate(-90deg);
+            position: absolute;
+            font-size: px(29);
+            left: px(105);
+            bottom: 42vh;
+            z-index: 4;
+            &.dark a {
+                color: $dark;
+                &:hover { color: $gray; }
+                &.select {
+                    color: $gray;
+                    &:hover { color: $black; }
+                    &:before { color: $gray; }
+                }
+            }
+            a {
+                text-transform: uppercase;
+                display: inline-block;
+                font-weight: $thin;
+                cursor: pointer;
+                color: $gray;
+                &:nth-of-type(2) { margin-right: px(30); }
+                &.select {
+                    color: $white;
+                    &::before {
+                        position: absolute;
+                        color: $white;
+                        bottom: 1.5px;
+                        right: 30px;
+                        content: '—';
+                    }
+                }
+                &:hover {
+                    color: $white;
+                    transition: $time;
+                }
+            }
+        }
+
+        // ----- letter c -----
+        .big-background-letter {
+            top: -70vh;
+            z-index: 3;
+            left: -3vw;
+            font-family: $raleway;
+            font-size: 175vh;
+            color: rgba(68,68,68,.2);
+            span::before  { content: 'с'; }
+        }
+
+        // ---- container -----
+        .container {
+            position: relative;
+            margin: 0 auto;
+            height: 100vh;
+            width: 80%;
+            .title { margin-top: px(330); }
+            .result {
+                padding-top: px(260);
+                position: relative;
+                z-index: 3;
+            }
+        }
+
+        // ----- lines -----
+        .lines {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            .line {
+                top: 0;
+                width: 1px;
+                height: 100vh;
+                position: absolute;
+                background: $darkWhite;
+                &--1 { left: 40%;}
+                &--2 { left: 60%;}
+                &--3 { left: 80%;}
+            }
+        }
+
+        // ----- steps -----
+        .steps {
+            padding-bottom: px(230);
+            align-items: flex-end;
+            position: absolute;
+            display: flex;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            .step {
+                z-index: 2;
+                width: 30%;
+                color: $darkGray;
+                font-family: $roboto;
+                position: relative;
+                .index {
+                    right: 100%;
+                    color: $gray;
+                    top: px(-110);
+                    font-size: px(36);
+                    text-transform: lowercase;
+                    position: absolute;
+                    overflow: hidden;
+                    span {
+                        display: block;
+                        width: px(75);
+                    }
+                }
+                .content {
+                    overflow: hidden;
+                    h3 {
+                        text-transform: uppercase;
+                        margin-bottom: px(24);
+                        font-family: $raleway;
+                        font-size: px(48);
+                        font-weight: 700;
+                    }
+                    p {
+                        padding-right: px(40);
+                        font-size: px(28);
+                        line-height: 1.4;
+                    }
+                }
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: px(-45);
+                    left: -4px;
+                    width: 8px;
+                    height: 8px;
+                    background: $blue;
+                    border-radius: 50%;
+                    content: "";
+                }
+                &:nth-child(1) {
+                    bottom: 58vh;
+                    left: 40%;
+                }
+                &:nth-child(2) {
+                    bottom: 8vh;
+                    left: 10%;
+                }
+                &:nth-child(3) {
+                    bottom: 35vh;
+                    left: 0;
+                }
+            }
+        }
+    }
+    
+    // ----- questions -----
+    .questions {
+        position: absolute;
+        overflow: hidden;
+        bottom: 8.5vh;
+        z-index: 3;
+        width: 20%;
+        right: 0;
+        h3 {
+            color: $darkGray;
+            font-weight: 800;
+            font-size: px(48);
+            margin-bottom: px(34);
+            font-family: $raleway;
+            text-transform: uppercase;
+        }
+        p {
+            margin-bottom: px(66);
+            font-family: $roboto;
+            font-size: px(28);
+            line-height: 1.4;
+            color: $gray;
+        }
+        button {
+            color: $white;
+            display: block;
+            width: px(332);
+            height: px(90);
+            font-weight: 700;
+            font-size: px(28);
+            background: $blue;
+            font-family: $roboto;
+            border: 2px solid $blue;
+            text-transform: uppercase;
+            transition: color $time, background $time;
+            &:hover {
+                background: transparent;
+                color: $blue;
+            }
+        }
+    }
+
+    // ----- back-layer -----
+    .back-layer {
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
+        padding-right: px(140);
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        background: $black;
+        height: 100vh;
+        width: 100%;
+    }
+    form {
+        width: px(830);
+        height: px(1200);
+        padding-top: px(250);
+        font-family: $roboto;
+        position: relative;
+        color: $white;
+        .close-form {
+            top: 0;
+            right: 0;
+            width: px(56);
+            height: px(56);
+            position: absolute;
+            background: transparent;
+            &:before, &:after {
+                left: 0;
+                top: 50%;
+                height: 2px;
+                content: '';
+                width: px(40);
+                display: block;
+                background: $gray;
+                position: absolute;
+                transition: background $time;
+            }
+            &:before { transform: rotate(45deg); }
+            &:after { transform: rotate(-45deg); }
+            &:hover {
+                &:before, &:after { background: $white; }
+            }
+        }
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: px(220);
+            font-family: $raleway;
+            font-size: px(60);
+            font-weight: 800;
+        }
+        label {
+            width: 100%;
+            display: block;
+            padding: 0 px(20);
+            margin-bottom: px(56);
+            border-bottom: 1px solid $gray;
+            span {
+                display: block;
+                margin-bottom: px(16);
+                font-family: $roboto;
+                font-size: px(30);
+            }
+            .mistake {
+                position: absolute;
+                padding-top: px(6);
+                font-size: px(24);
+                color: $red;
+                opacity: 0;
+                top: 100%;
+            }
+            input {
+                width: 100%;
+                border: none;
+                color: $white;
+                display: block;
+                padding: px(5) 0;
+                font-size: px(32);
+                background: transparent;
+            }
+            &:nth-of-type(2) { margin-bottom: px(150); }
+        }
+        .send {
+            border: 2px solid $blue;
+            font-family: $roboto;
+            background: $blue;
+            display: block;
+            height: px(90);
+            width: px(340);
+            color: $white;
+            font-weight: 500;
+            font-size: px(28);
+            margin: px(90) 0 0 auto;
+            text-transform: uppercase;
+            transition: color $time, background $time;
+            &:hover {
+                background: $white;
+                color: $blue;
+            }
+        }
+    }
+    &:after { left: 50%; }
+    &:before, &:after {
+        background: $white;
+        position: absolute;
+        display: block;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 100vh;
+    }
+    &.opened .front-layer {
+        transform: rotateY(30deg);
+        &:after {
+            z-index: 9999;
+            opacity: 1;
+        }
+    }
+
+    // ----- animation -----
+    &.current {
+        .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
+        .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
+        .title {
+            animation: fadeIn $time * 2 $time * 6 linear;
+            animation-fill-mode: forwards;
+            span.name {
+                span {
+                    animation: titleName $time * 2 $time * 12 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:before {
+                    animation: titleNameShape $time * 2 $time * 11 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .word {
+                &:after { animation: halfDown $time * 2 linear $time * 8 both; }
+                span {
+                    animation: titleWord $time * 2 $time * 9 linear;
+                    animation-fill-mode: forwards;
+                }
+                span {
+                    animation: titleWord $time * 2 $time * 11 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+        &:before, &:after { animation: Right $WFBeforeAnimationTime $WFBeforeDelayTime both; }
+        &:after { animation-name: Left; }
+        .lines .line {
+            animation: heightIncreaseFull $WFLineAnimationTime $WFLineOneDelayTime both;
+            &--2 { animation-delay: $WFLineTwoDelayTime; }
+            &--3 { animation-delay: $WFLineThreeDelayTime; }
+            &--4 { animation-delay: $WFLineFourDelayTime; }
+            &--5 { animation-delay: $WFLineFiveDelayTime; }
+        }
+        .step {
+            .index span { animation: Left $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+            h3 { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+            p { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+            &:before { animation: fadeIn $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+            &:nth-child(2) {
+                .index span { animation-delay: $WFTextSecondColumnDelayTime; }
+                h3 { animation-delay: $WFTextSecondColumnDelayTime; }
+                p { animation-delay: $WFTextSecondColumnDelayTime; }
+                &:before { animation-delay: $WFTextSecondColumnDelayTime; }
+            }
+            &:nth-child(3) {
+                .index span { animation-delay: $WFTextThirdColumnDelayTime; }
+                h3 { animation-delay: $WFTextThirdColumnDelayTime; }
+                p { animation-delay: $WFTextThirdColumnDelayTime; }
+                &:before { animation-delay: $WFTextThirdColumnDelayTime; }
+            }
+            &:nth-child(4) {
+                .index span { animation-delay: $WFTextFourthColumnDelayTime; }
+                h3 { animation-delay: $WFTextFourthColumnDelayTime; }
+                p { animation-delay: $WFTextFourthColumnDelayTime; }
+                &:before { animation-delay: $WFTextFourthColumnDelayTime; }
+            }
+            &:nth-child(5) {
+                .index span { animation-delay: $WFTextFifthColumnDelayTime; }
+                h3 { animation-delay: $WFTextFifthColumnDelayTime; }
+                p { animation-delay: $WFTextFifthColumnDelayTime; }
+                &:before { animation-delay: $WFTextFifthColumnDelayTime; }
+            }
+        }
+        .questions {
+            h3, p, button { animation: Right $WFQustionsAnimationTime $WFQustionsDelayTime both; }
+        }
+        .back-layer { animation: fadeIn $WFBackLayerAnimationTime $WFBackLayerDelayTime both; }
+        .front-layer {
+            &:before, &:after { animation: fadeIn $WFFrontLayerAnimationTime $WFFrontLayerDelayTime both; }
+        }
+    }
+}

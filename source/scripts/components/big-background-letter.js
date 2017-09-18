@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+ 
     const move = () => {
         const letters = document.querySelectorAll('.big-background-letter'),
               koef = 10

@@ -1,6 +1,6 @@
 const openBtn = document.querySelector('.questions .open-form'),
       closeBtn = document.querySelector('.back-layer .close-form'),
-      workFlow = document.querySelector('.work-flow'),
+      workFlow = document.querySelector('.work-flow, #design-three'),
       menu = document.querySelector('.front-layer .menu'),
       animationTime = 700;
 

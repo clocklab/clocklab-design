@@ -1,0 +1,136 @@
+& {
+    .copyright, .social, .language { display: none; }
+    background-color: $background;
+    background: $background;
+    font-family: $raleway;
+    font-weight: $regular;
+    overflow: hidden;
+    z-index: 0;
+    
+    // ----- animation -----
+    animation: fadeIn $time * 3 both;
+    
+    // ----- navigation-elements -----
+    .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
+
+    // ----- services-line -----
+    .services-line { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+
+    // ----- other -----
+    .crossed-button span { animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+    .services-schedule .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+
+    // ----- title -----
+    .title {
+        p {
+            animation: fadeInUp $time * 2 $time * 7 linear;
+            animation-fill-mode: forwards;
+        }
+        span.name {
+            span {
+                animation: titleName $time * 2 $time * 8 linear;
+                animation-fill-mode: forwards;
+            }
+            &:before {
+                animation: titleNameShape $time * 2 $time * 7 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .word {
+            &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+            &:nth-of-type(1) span {
+                animation: titleWord $time * 2 $time * 5 linear;
+                animation-fill-mode: forwards;
+            }
+            &:nth-of-type(2) span {
+                animation: titleWord $time * 2 $time * 6 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+
+    // ----- services-schedule -----
+    .services-schedule {
+        padding-top: 27vh;
+        padding-left: 40px;
+        .container {
+            display: flex;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            max-width: 1170px;
+            .item {
+                width: 100%;
+                position: relative;
+                &:nth-of-type(4),
+                &:nth-of-type(5),
+                &:nth-of-type(6) {
+                    margin-bottom: 18vh;
+                    .services-line { display: none; }
+                }
+                &.up {
+                    margin-bottom: 18vh;
+                    .services-line {
+                        left: 0;
+                        top: 10px;
+                        width: 1px;
+                        height: 100vh;
+                        position: absolute;
+                        background: $darkGray;
+                    }
+                }
+                .title {
+                    width: auto;
+                    p {
+                        color: $white;
+                        line-height: 1.5;
+                        font-size: px(28);
+                        padding: px(48) px(130) 0 0;
+                    }
+                    span.name { top: -6vh; }
+                    .word {
+                        width: min-content;
+                        &:after { top: 0; }
+                        span {
+                            line-height: 26px;
+                            font-size: px(36);
+                        }
+                    }
+                }
+                .crossed-button {
+                    left: 0;
+                    bottom: -55px;
+                    position: absolute;
+                    align-items: center;
+                    font-family: $roboto;
+                    font-weight: $medium;
+                    .arrow .st0, .arrow .st1 { stroke: $white; }
+                    span {
+                        color: $white;
+                        display: block;
+                        font-size: px(24);
+                        &:after { content: 'Подробнее'; }
+                        &:before {
+                            background: $white;
+                            top: 14px;
+                        }
+                    }
+                }
+                &:before {
+                    top: 8px;
+                    left: -27px;
+                    color: #666;
+                    font-size: px(36);
+                    position: absolute;
+                    font-family: $roboto;
+                    transform: rotate(-90deg);
+                }
+                &:nth-of-type(1)::before { content: '01'; }
+                &:nth-of-type(2)::before { content: '02'; }
+                &:nth-of-type(3)::before { content: '03'; }
+                &:nth-of-type(4)::before { content: '04'; }
+                &:nth-of-type(5)::before { content: '05'; }
+                &:nth-of-type(6)::before { content: '06'; }
+            }     
+        }
+    }
+}

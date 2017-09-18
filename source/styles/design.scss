@@ -1,0 +1,25 @@
+// base
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/reset";
+@import "base/common";
+@import "base/animations";
+
+// modules
+@import "components/modules/small-gray-lines";
+
+// components
+@import "components/big-background-letter/main";
+@import "components/crossed-button/main";
+@import "components/language/main";
+@import "components/logo/main";
+@import "components/menu/main";
+@import "components/title/main";
+@import "components/new-title/main";
+@import "components/euro-club/main";
+
+// screens
+@import "components/design-one/main";
+@import "components/design-two/main";
+@import "components/design-three/main";
