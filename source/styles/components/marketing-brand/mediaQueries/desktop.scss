@@ -1,1 +1,70 @@
 @import '../desktop';
+
+& {
+
+    .development {
+        top: -10vh;
+
+        h2 {
+            width: px(850);
+        }
+    }
+
+    h2 {
+        margin-top: px(40);
+        width: px(900);
+        font-size: px(100);
+    }
+
+    .lines {
+
+        .line {
+
+            &--2 {
+                left: px(850);
+            }
+
+            &--3 {
+                left: px(1500);
+            }
+        }
+    }
+
+    .steps {
+        width: px(1500);
+    }
+
+    .step {
+        margin-bottom: px(70);
+        padding-right: px(100);
+        width: px(650);
+    }
+
+    .questions {
+        width: px(550);
+
+        p {
+            padding-right: px(100);
+        }
+    }
+
+    .back-layer {
+        padding-right: px(80);
+    }
+
+    form {
+        padding-top: px(150);
+        width: px(650);
+        height: px(900);
+
+        h3 {
+            margin-bottom: px(150);
+            font-size: px(46);
+        }
+
+        .send {
+            width: px(300);
+            height: px(70);
+        }
+    }
+}

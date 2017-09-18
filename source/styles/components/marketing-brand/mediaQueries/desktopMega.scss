@@ -1,1 +1,37 @@
 @import '../desktop';
+
+& {
+
+    h2 {
+        width: px(1500);
+    }
+
+    .lines {
+        
+        .line {
+
+            &--2 {
+                left: px(1500);
+            }
+
+            &--3 {
+                left: px(2560);
+            }
+        }
+    }
+
+    .back-layer {
+        padding-right: px(300);
+    }
+
+    form {
+        width: px(900);
+    }
+
+    &.opened {
+        
+        .front-layer {
+            transform: rotateY(20deg);
+        }
+    }
+}

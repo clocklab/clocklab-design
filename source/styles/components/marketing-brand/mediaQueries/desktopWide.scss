@@ -1,1 +1,33 @@
 @import '../desktop';
+
+& {
+
+    h2 {
+        margin-top: px(40);
+        width: px(1100);
+        font-size: px(120);
+    }
+
+    .lines {
+
+        .line {
+
+            &--2 {
+                left: px(1100);
+            }
+
+            &--3 {
+                left: px(1870);
+            }
+        }
+    }
+
+    .steps {
+        width: px(2000);
+    }
+
+    .step {
+        padding-right: px(100);
+        width: px(770);
+    }
+}
