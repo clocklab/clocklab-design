@@ -1,0 +1,275 @@
+& {  
+
+    position: relative;
+    background: $black;
+    overflow: hidden;
+
+    .big-background-letter {
+        position: absolute;
+        top: px(-300);
+        left: px(-160);
+        color: rgba(68, 68, 68, .5);
+        font-family: $raleway;
+        font-size: px(1700);
+
+        span {
+
+            &:before {
+                content: 'c';
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        padding-top: px(650);
+        width: 81%;
+        height: px(2520);
+
+        & > div {
+            display: flex;
+            width: 100%;
+            color: $white;
+        }
+    }
+
+    .column {
+
+        &-1 {
+            width: 26%;
+        }
+        
+        &-2 {
+            width: 30%;
+        }
+
+        &-3 {
+            width: 44%;
+        }
+    }
+
+    .lines {
+
+        .line {
+            position: absolute;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: $gray;
+            opacity: .2;
+
+            &--1 {
+                left: 0;   
+            }
+
+            &--2 {
+                left: 26%;   
+            }
+
+            &--3 {
+                left: 56%;   
+            }
+
+            &--4 {
+                left: 100%;   
+            }
+        }
+    }
+
+    .answers {
+
+        h2 {
+            font-family: $raleway;
+            font-size: px(96);
+            font-weight: 600;
+
+            span {
+                display: block;
+                margin-top: px(40);
+                color: $blue;
+                font-size: px(48);
+            }
+        }
+
+        .column-2 {
+            padding-top: px(50);
+        }
+
+        .question {
+            display: block;
+            margin-bottom: px(130);
+            padding-right: px(300);
+            color: $white;
+            font-family: $raleway;
+
+            &--2 {
+                padding-right: px(220);
+
+                button {
+
+                    &:before {
+                        content: '02';
+                    }
+                }
+            }
+
+            &.current {
+
+                button {
+                    color: $blue;
+                }
+            }
+        }
+
+        button {
+            display: block;
+            position: relative;
+            padding: 0;
+            color: $white;
+            font-size: px(36);
+            text-align: left;
+            transition: color $time;
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: px(-60);
+                left: px(0);
+                content: '01';
+                transform-origin: 0 100%;
+                transform: rotate(-90deg);
+            }
+
+            &:hover {
+                color: $blue;
+            }
+        }
+
+        .column-3 {
+            position: relative;
+            padding-right: px(200);
+        }
+
+        .answer {
+            position: absolute;
+            top: px(50);
+            left: 0;
+            width: 82%;
+            color: $white;
+            font-family: $roboto;
+            background: $black;
+            transform: translateX(1px);
+    
+            .index {
+                position: absolute;
+                top: px(-50);
+                left: px(-10);
+                background: $black;
+                color: $white;
+                font-size: px(36);
+                overflow: hidden;
+                transform-origin: 0 100%;
+                transform: rotate(-90deg);
+    
+                span {
+                    display: block;
+                }
+            }
+    
+            .content {
+                overflow: hidden;
+            }
+    
+            h4 {
+                margin-bottom: px(60);
+                font-family: $raleway;
+                font-weight: 600;
+                font-size: px(48);
+            }
+    
+            p {
+                margin-bottom: px(50);
+                padding-right: px(40);
+                font-size: px(32);
+                line-height: 1.4;
+            }   
+
+            &.current {
+                z-index: 2;
+
+                .index {
+
+                    span {
+                        animation: Up $time * 2 both;
+                    }
+                }
+
+                h4,
+                p {
+                    animation: Right $time * 2 both;
+                }
+            }
+
+            &.previous {
+                z-index: 1;
+            }
+        }
+    }
+
+    .more {
+        flex-wrap: wrap;
+        margin-top: px(760);
+
+        h3 {
+            width: 100%;
+            font-family: $raleway;
+            font-size: px(96);
+            font-weight: 600;
+
+            span {
+                display: block;
+                margin-top: px(40);
+                color: $blue;
+                font-size: px(48);
+            }
+        }
+
+        ul {
+            display: flex;
+            margin-top: px(200);
+            width: 100%;
+        }
+
+        .crossed-button {
+
+            span {
+                color: $white;
+                font-family: $raleway;
+                font-size: px(28);
+                transition: padding $time, color $time;
+
+                &:before {
+                    background: $blue;
+                }
+
+                &:after {
+                    content: '';
+                }
+            }
+
+            .st0,
+            .st1 {
+                stroke: $blue;
+            }
+
+            &:hover {
+
+                span {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
