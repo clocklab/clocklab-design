@@ -1,0 +1,30 @@
+@import '../desktop';
+
+& {
+
+    height: px(1700);
+
+    h2 {
+        margin-bottom: px(140);
+        width: 50%;
+    }
+
+    .container {
+        padding-top: px(100);
+    }
+
+    li {
+        margin-bottom: px(80);
+    }
+
+    &--strategy {
+        
+        li {
+    
+            &:nth-child(1),
+            &:nth-child(2) {
+                margin-bottom: px(150);
+            }
+        }
+    }
+}

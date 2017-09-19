@@ -1,0 +1,325 @@
+& {  
+
+    position: relative;
+    overflow: hidden;
+
+    .language {
+        position: absolute;
+        top: px(1000);
+        z-index: 5;
+    }
+
+    .big-bg-letter-o {
+
+        .big-background-letter {
+            right: initial;
+            left: px(-700);
+            bottom: px(-500);
+            top: initial;
+            font-family: $raleway;
+            font-size: px(2000);
+            text-transform: uppercase;
+        }
+        
+        span {
+
+            &:before {
+                content: 'o';
+            }
+        }
+    }
+
+    header {
+        position: relative;
+
+        .image-container {
+            position: absolute;
+            top: px(240);
+            right: 0;
+            z-index: 1;
+            width: px(1920);
+            height: px(1480);
+
+            img {
+                position: relative;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .big-background-letter {
+            display: block;
+            top: px(-450);
+            right: initial;
+            left: px(-800);
+            width: px(1400);
+            height: px(1800);
+            color: $gray;
+            font-family: $raleway;
+            font-size: px(1800);
+            text-transform: uppercase;
+            overflow: hidden;
+
+            span {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 50%;
+                overflow: hidden;
+
+                &:before {
+                    position: absolute;
+                    content: 'C';
+                }
+            }
+
+            &:nth-child(2) {
+                z-index: 3;
+
+                span {
+                    top: 49.8%;
+
+                    &:before {
+                        top: -100%;
+                    }
+                }
+            }
+        }
+
+        & > img {
+            object-fit: cover;
+            width: 60%;
+            height: px(1460);
+        }
+    }
+
+    .sticker {
+        margin-bottom: px(40);
+
+        span {
+
+            &:before {
+                content: 'Услуги маркетинга';
+            }
+        }
+    }
+
+    .new-title {
+        width: px(800);
+
+        .text-container {
+            margin-top: px(20);
+            display: inline-block;
+            font-family: $raleway;
+        }
+    }
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        padding-bottom: px(450);
+        width: 81%;
+
+        &__item {
+            display: flex;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+
+            &--1 {
+                display: block;
+                top: px(-50);
+            }
+
+            &--2 {
+                margin-top: px(180);
+
+                .big {
+                    padding-right: px(100);
+                    width: 66%;
+                }
+
+                .italic {
+                    position: relative;
+                    padding-bottom: px(40);
+                    width: 33%;
+                    opacity: .5;
+
+                    span {
+                        font-weight: 700;
+                    }
+
+                    &:after {
+                        display: block;
+                        position: absolute;
+                        bottom: 0;
+                        left: 2%;
+                        width: 96%;
+                        height: 1px;
+                        background: $darkGray;
+                        content: '';
+                        opacity: .5;
+                    }
+                }
+            }
+
+            &--3 {
+                margin-top: px(230);
+
+                div {
+                    width: 33%;
+                }
+
+                .bold {
+                    margin: px(60) 0;
+                }
+            }
+
+            &--4 {
+                margin-top: px(200);
+
+                img,
+                p {
+                    width: 33%;
+                }
+
+                img {
+                    margin-left: 33%;
+                    height: px(620);
+                    object-fit: cover;
+                }
+
+                p {
+                    padding-left: px(40);
+
+                    span {
+                        color: $blue;
+                    }
+                }
+            }
+
+            &--5 {
+
+                div {
+                    width: 33%;
+
+                    &:nth-child(2) {
+                        padding: px(250) px(80) 0 px(40);
+                    }
+
+                    &:nth-child(3) {
+                        padding: px(250) px(120) 0 0;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: px(900);
+                    object-fit: cover;
+                }
+
+                .bold {
+                    margin-top: px(50);
+                }
+            }
+
+            &--6 {
+                margin-top: px(270);
+
+                p {
+                    position: relative;
+                    margin-left: 33%;
+                    padding: 0 px(70) px(50) px(100);
+                    width: 66%;
+
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 9px;
+                        height: 100%;
+                        background: $blue;
+                        content: '';
+                    }
+                }
+            }
+
+            &--7 {
+                margin-top: px(220);
+
+                p {
+                    width: 33%;
+
+                    &:nth-child(2) {
+                        padding-right: px(90);
+                    }
+                }
+
+                .underlined {
+                    margin-left: 33%;
+                    padding-right: px(40);
+                }
+            }
+        }
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .line {
+            position: absolute;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: $darkWhite;
+
+            &--1 {
+                left: 0;
+            }
+
+            &--2 {
+                left: 33%;
+            }
+
+            &--3 {
+                left: 66%;
+            }
+
+            &--4 {
+                left: 100%;
+            }
+        }
+    }
+
+    p {
+        color: $darkGray;
+        font-family: $roboto;
+        font-size: px(32);
+        line-height: 1.4;
+
+        &.big {
+            font-size: px(48);
+        }
+
+        &.bold {
+            font-weight: 800;
+        }
+
+        &.italic {
+            font-style: italic;
+        }
+
+        &.underlined {
+
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+}
