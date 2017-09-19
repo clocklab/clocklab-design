@@ -32,6 +32,10 @@
     header {
         position: relative;
 
+        img {
+            display: block;
+        }
+
         .image-container {
             position: absolute;
             top: px(240);
@@ -271,6 +275,7 @@
         left: 0;
         width: 100%;
         height: 100%;
+        overflow: hidden;
 
         .line {
             position: absolute;
