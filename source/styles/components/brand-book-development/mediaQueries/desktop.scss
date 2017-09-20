@@ -1,0 +1,17 @@
+@import '../desktop';
+
+& {
+
+    .big-background-letter {
+        top: px(-700);
+    }
+
+    .container {
+        padding-top: px(250);
+        height: px(2000);
+    }
+
+    .more {
+        margin-top: px(500);
+    }
+}

@@ -1,9 +1,9 @@
 //common
-@import 'base/reset';
+@import 'base/variables';
 @import 'base/animate';
 @import 'base/common';
 @import 'base/fonts';
-@import 'base/variables.scss';
+@import 'base/reset';
 
 //helpers 
 @import 'components/modules/small-gray-lines';
@@ -11,8 +11,9 @@
 @import 'components/jumping-button/main';
 
 //components
-@import 'components/web-production-clock/main';
-@import 'components/web-production-clock/main';
-@import 'components/web-production-our-works/main';
+@import 'components/brand-book-header/main';
+@import 'components/brand-book-development/main';
+@import 'components/brand-book-plan/main';
+@import 'components/brand-book-our-works/main';
 @import 'components/web-production-answers/main';
-@import 'components/web-production-footer/main';
+@import 'components/brand-book-footer/main';
