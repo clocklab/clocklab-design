@@ -16,7 +16,7 @@
     
     // ----- container -----
     .container {
-        padding-top: px(350);
+        padding-top: px(300);
         position: relative;
         height: px(2520);
         margin: 0 auto;
@@ -29,7 +29,7 @@
         }
         h2 {
             color: $darkGray;
-            margin-top: 31vh;
+            margin-top: 18vh;
             font-family: $raleway;
             font-size: px(100);
             font-weight: 600;
@@ -41,7 +41,7 @@
             }
         }
         ul li {
-            margin-bottom: px(170);
+            margin-bottom: px(360);
             padding-left: px(84);
             padding-top: px(14);
             position: relative;
@@ -89,10 +89,7 @@
         }
         .column {
             &-1 { min-width: 42%; }
-            &-2 {
-                min-width: 31%;
-                padding-top: px(50);
-            }
+            &-2 { min-width: 31%; }
             &-3 {
                 min-width: 35%;
                 padding-top: px(45);

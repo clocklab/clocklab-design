@@ -1,0 +1,150 @@
+@import '../desktop';
+
+& {
+
+    .container {
+        padding-right: px(100);
+        padding-bottom: px(80);
+    }
+
+    header {
+        max-height: 900px;
+
+        .image-container {
+            width: px(2000);
+        }
+    }
+
+    .about,
+    .cases,
+    .advantages {
+
+        & > div {
+
+            &:first-child {
+                width: 42%;
+            }
+
+            &:last-child {
+                width: 42%;
+            }
+        }
+    }
+
+    .about {
+
+        & > div {
+
+            &:last-child {
+                width: 57%;
+            }
+        }
+    }
+
+    .description {
+        padding: px(250) px(40) 0 0;
+
+        span {
+            display: block;
+        }
+    }
+
+    .info {
+        top: px(-300);
+        padding-top: px(80);
+        padding-left: px(160);
+    }
+
+    .new-title {
+        margin-top: px(50);
+        margin-bottom: px(80);
+
+        .text-container {
+
+            span {
+                font-size: px(80);
+            }
+        }
+    }
+
+    article {
+        padding-left: 15%;
+
+        p {
+
+            &.big {
+                margin-bottom: px(60);
+            }
+        }
+    }
+
+    .cases {
+        margin-top: px(-120);
+    }
+
+    .list {
+
+        h3 {
+            margin-bottom: px(150);
+            font-size: px(66);
+            line-height: px(70);
+
+            span {
+                display: block;
+            }
+        }
+    }
+
+    .images {
+
+        img {
+
+            &:first-child {
+                left: px(100);
+                width: px(1000);
+                height: px(600);
+            }
+
+            &:last-child {
+                top: px(200);
+                width: px(600);
+                height: px(800);
+            }
+        }
+    }
+
+    .advantages {
+        margin-top: px(220);
+
+        h2 {
+            margin-bottom: px(180);
+            font-size: px(84);
+            line-height: px(92);
+
+            span {
+                display: block;
+            }
+        }
+
+        ul {
+            height: px(950);
+        }
+
+        li {
+            margin-bottom: px(100);
+            width: 45%;
+        }
+
+        &--corporate {
+
+            ul {
+                width: 42%;
+                height: initial;
+            }
+
+            li {
+                width: 100%;
+            }
+        }
+    }
+}
