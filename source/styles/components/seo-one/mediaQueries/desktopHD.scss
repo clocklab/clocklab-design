@@ -1,1 +1,18 @@
 @import '../desktop';
+
+// ----- crossed-button -----
+.crossed-button { left: 0; }
+
+// ----- title -----
+.title {
+	margin-top: px(500);
+	margin-left: px(900);
+}
+
+// ----- image-block -----
+.image-block {
+    width: px(1585);
+    height: px(1025);
+    margin-top: px(350);
+    margin-left: px(250);
+}
