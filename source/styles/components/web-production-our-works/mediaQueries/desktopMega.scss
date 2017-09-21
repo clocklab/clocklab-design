@@ -60,7 +60,7 @@
     &.opened {
         
         .front-layer {
-            transform: rotateY(20deg);
+            transform: rotateY(10deg) scaleX(.85);
         }
     }
 }

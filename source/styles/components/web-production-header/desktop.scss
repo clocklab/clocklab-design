@@ -197,8 +197,10 @@
         p {
             padding-bottom: px(60);
             border-bottom: 1px solid $gray;
+            color: $darkGray;
             font-family: $roboto;
             font-size: px(36);
+            font-weight: 300;
             line-height: 1.4;
             font-style: italic;
 
@@ -248,6 +250,7 @@
 
         p {
             margin-bottom: px(60);
+            color: $darkGray;
             font-family: $roboto;
             font-size: px(32);
             line-height: 1.4;
@@ -276,6 +279,7 @@
 
         h3 {
             margin-bottom: px(280);
+            color: $darkGray;
             font-size: px(72);
             font-weight: 700;
             line-height: px(80);
@@ -307,6 +311,7 @@
     }
 
     .declaration {
+        color: $darkGray;
         
         h3 {
             margin-bottom: px(280);
@@ -379,6 +384,7 @@
     .advantages {
         flex-direction: column;
         margin-top: px(300);
+        color: $darkGray;
         
         h2 {
             margin-bottom: px(300);

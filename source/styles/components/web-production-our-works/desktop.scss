@@ -99,10 +99,16 @@
                 font-family: $raleway;
                 font-weight: 700;
                 text-transform: uppercase;
+                letter-spacing: .5px;
             }
 
             img {
                 object-fit: cover;
+                transition: transform $timeHalf;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
 
             &--eurovision {
@@ -151,9 +157,9 @@
             margin-left: px(90);
             align-self: flex-end;
             font-family: $roboto;
-            font-size: px(32);
-
+            
             span {
+                font-size: px(32);
 
                 &:after {
                     content: 'Посмотреть все работы';
@@ -260,8 +266,9 @@
                 height: 100%;
                 color: $gray;
                 font-family: $roboto;
-                font-size: px(34);
+                font-size: px(30);
                 line-height: 100%;
+                letter-spacing: 1px;
                 text-transform: uppercase;
                 transition: top $timeHalf, color $timeHalf, font-size $timeHalf;
             }
@@ -287,7 +294,22 @@
                         color: $white;
                         font-size: px(24);
                     }
+
+                    & ~ .tick {
+                        width: 100%;
+                    }
                 }
+            }
+
+            .tick {
+                display: block;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background: $white;
+                transition: width $timeHalf;
             }
 
             &:nth-of-type(2) {
@@ -297,21 +319,43 @@
 
         .send {
             display: block;
+            position: relative;
             margin: px(90) 0 0 auto;
             width: px(340);
             height: px(90);
             background: $blue;
-            border: 2px solid $blue;
             color: $white;
             font-family: $roboto;
             font-size: px(28);
             font-weight: 500;
             text-transform: uppercase;
-            transition: color $time, background $time;
+
+            span {
+                position: relative;
+                z-index: 2;
+                letter-spacing: 1px;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: px(24);
+                left: px(-24);
+                width: 100%;
+                height: 100%;
+                background: $darkGray;
+                content: '';
+                opacity: 0;
+                transition: top $time, left $time, opacity $time;
+            }
 
             &:hover {
-                background: $white;
-                color: $blue;
+                
+                &:before {
+                    top: px(10);
+                    left: px(-10);
+                    opacity: 1;
+                }
             }
         }
     }
@@ -347,23 +391,45 @@
             line-height: 1.4;
         }
 
-        button {
+        .open-form {
             display: block;
+            position: relative;
             margin: 0 auto;
             width: px(420);
             height: px(110);
             background: $blue;
-            border: 2px solid $blue;
             color: $white;
             font-family: $roboto;
             font-size: px(32);
             font-weight: 700;
             text-transform: uppercase;
-            transition: color $time, background $time;
+
+            span {
+                position: relative;
+                z-index: 2;
+                letter-spacing: 1px;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: px(24);
+                left: px(-24);
+                width: 100%;
+                height: 100%;
+                background: $darkGray;
+                content: '';
+                opacity: 0;
+                transition: top $time, left $time, opacity $time;
+            }
 
             &:hover {
-                background: transparent;
-                color: $blue;
+                
+                &:before {
+                    top: px(10);
+                    left: px(-10);
+                    opacity: 1;
+                }
             }
         }
     }
@@ -408,7 +474,7 @@
     &.opened {
 
         .front-layer {
-            transform: rotateY(30deg);
+            transform: rotateY(15deg) scaleX(.85);
     
             &:after {
                 z-index: 9999;
