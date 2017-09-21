@@ -1,0 +1,20 @@
+@import '../desktop';
+
+& {
+
+    .front-layer,
+    .back-layer {
+        height: px(1750);
+    }
+
+    .front-layer {
+
+        .container {
+            width: 90%;
+        }
+
+        h2 {
+            margin-right: px(100);
+        }
+    }
+}

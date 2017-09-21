@@ -10,10 +10,10 @@
         height: 4px;
         margin-left: -10px;
         background: $white;
-        @include border-radius(50px);
+        border-radius: 50px;
     }
     .arrow:before {
-        @include transform(translateY(-50%) rotate(45deg));
+        transform: translateY(-50%) rotate(45deg);
         animation: bounce 3s 1s infinite;
         border: 1.5px solid $white;
         position: absolute;

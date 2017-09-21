@@ -1,8 +1,9 @@
 & { 
+    transition: perspective $time * 2;
     font-family: $raleway;
     font-weight: $regular;
     position: relative;
-    transition: perspective $time * 2;
+    overflow: hidden;
 
     // ----- front-layer -----
     .front-layer {

@@ -1,0 +1,171 @@
+& {  
+
+    position: relative;
+    height: px(1920);
+    overflow: hidden;
+
+    .blue-line {
+        position: absolute;
+        top: 0;
+        left: px(368);
+        width: px(560);
+        height: 100%;
+        background: $blue;
+    }
+
+    .small-gray-lines {
+        z-index: 1;
+
+        .line {
+            visibility: visible;
+            background: gray;
+            opacity: .2;
+
+            &.up {
+                transform: rotate(-65deg) translate3d(100%, 0, 0);
+            }
+
+            &.down {
+                transform: rotate(-65deg) translate3d(-100%, 0, 0);
+            }
+
+            &.up,
+            &.down {
+                animation: none;
+            }
+        }
+    }
+
+    .bottom-button {
+
+        span {
+            font-family: $raleway;
+        }
+    }
+
+    .container {
+        display: flex;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        padding-top: px(180);
+        width: 81%;
+        
+        &:after {
+            display: block;
+            position: absolute;
+            top: px(1200);
+            left: 105%;
+            width: px(280);
+            color: $darkGray;
+            content: 'Lorem ipsum dolor sit amet consectetu adipisi';
+            font-family: $roboto;
+            font-size: px(24);
+            line-height: 1.4;
+            transform-origin: 0 0;
+            transform: rotate(90deg);
+        }
+    }
+
+    .image-block {
+        position: relative;
+        padding-left: px(120);
+    }
+
+    .date {
+        position: absolute;
+        right: 95%;
+        top: px(50);
+        width: px(220);
+        color: $white;
+        font-family: $roboto;
+        font-weight: 300;
+        font-size: px(32);
+        transform-origin: 100% 0;
+        transform: rotate(-90deg);
+    }
+
+    .image-container {
+        position: relative;
+        width: px(1140);
+        height: px(1520);
+        overflow: hidden;
+
+        img {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $gray;
+            content: '';
+        }
+    }
+
+    .info {
+        margin-left: px(300);
+        padding-top: px(130);
+        width: px(1520);
+    }
+
+    .sticker {
+            
+        span {
+
+            &:before {
+                content: 'Блог';
+            }
+        }
+    }
+
+    .new-title {
+        margin-top: px(80);
+        margin-bottom: px(80);
+        font-family: $raleway;
+        
+        .text-container {
+            display: inline-block;
+            margin-bottom: px(10);
+            font-weight: 800;
+
+            span {
+                font-size: px(96);
+                line-height: px(104);
+            }
+        }
+    }
+
+    article {
+        padding-left: px(200);
+        padding-right: px(380);
+
+        p {
+            margin-bottom: px(50);
+            font-family: $roboto;
+            font-size: px(28);
+            line-height: 1.4;
+        }
+    }
+
+    .crossed-button {
+        margin-top: px(50);
+        margin-left: px(200);
+        font-family: $raleway;
+
+        span {
+            &:after {
+                content: 'Подробнее';
+            }
+        }
+    } 
+}
