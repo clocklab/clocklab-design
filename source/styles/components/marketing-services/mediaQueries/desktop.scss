@@ -1,0 +1,14 @@
+@import '../desktop';
+
+& {
+
+    .container {
+        min-width: 70%;
+
+        h2 {
+            padding-right: px(0);
+            font-size: px(90);
+            line-height: px(100);
+        }
+    }
+}

@@ -1,0 +1,127 @@
+& {  
+
+    position: relative;
+    width: 100%;
+    height: px(1800);
+    background: $lightBlack;
+    overflow: hidden;
+
+    .clock-bg {
+        top: px(200);
+        
+        span {
+            position: relative;
+            color: $lightBlack;
+            font-family: $raleway;
+            font-weight: 700;
+            line-height: initial;
+
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                display: block;
+                background: url('../images/marketing/marketing-clock.png');
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 30vw;
+                text-align: center;
+                text-shadow: none;
+                width: 100%;
+            }
+
+            &:nth-child(1):after { content: 'c'; }
+            &:nth-child(2):after { content: 'l'; }
+            &:nth-child(3):after { content: 'o'; }
+
+            &:nth-child(4),
+            &:nth-child(5) {
+                -webkit-text-fill-color: $lightBlack;
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        padding-top: px(290);
+        width: 81%;
+        height: 100%;
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .line {
+            position: absolute;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: $darkWhite;
+            opacity: .1;
+
+            &--1 {
+                left: 0;
+            }
+
+            &--2 {
+                left: 33%;
+            }
+
+            &--3 {
+                left: 66%;
+            }
+
+            &--4 {
+                right: 0;
+            }
+        }
+    }
+
+    h2 {
+        position: relative;
+        z-index: 2;
+        margin-bottom: px(200);
+        width: px(1260);
+        color: $white;
+        font-family: $raleway;
+        font-size: px(88);
+        font-weight: 800;
+        line-height: px(96);
+
+        span {
+            color: $blue;
+        }
+    }
+
+    ul {
+        margin-left: 66%;
+        width: 33%;
+        font-family: $roboto;
+    }
+
+    li {
+        position: relative;
+        margin-bottom: px(100);
+        padding-left: px(30);
+        color: $darkWhite;
+        font-size: px(36);
+        line-height: 1.4;
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -1px;
+            width: 3px;
+            height: px(46);
+            background: $blue;
+            content: '';
+        }
+    }
+}

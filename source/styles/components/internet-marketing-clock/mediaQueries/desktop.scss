@@ -1,0 +1,22 @@
+@import '../desktop';
+
+& {
+
+    height: px(1200);
+
+    .clock-bg {
+        top: px(100);
+    }
+
+    .container {
+        padding-top: px(150);
+    }
+
+    h2 {
+        margin-bottom: px(120);
+    }
+
+    li {
+        margin-bottom: px(70);
+    }
+}

@@ -1,0 +1,25 @@
+@import '../desktop';
+
+& {
+
+    padding-top: 20vh;
+
+    .container {
+        padding-right: px(200);
+        height: 75vh;
+    }
+
+    .info {
+        width: px(1100);
+    }
+
+    article {
+        padding-bottom: px(100);
+        padding-right: px(160);
+    }
+
+    .image-container {
+        width: px(1100);
+        height: px(900);
+    }
+}

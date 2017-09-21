@@ -40,6 +40,10 @@
 
         span {
             font-family: $raleway;
+
+            &:before {
+                content: 'Все новости';
+            }
         }
     }
 
@@ -167,5 +171,5 @@
                 content: 'Подробнее';
             }
         }
-    } 
+    }
 }

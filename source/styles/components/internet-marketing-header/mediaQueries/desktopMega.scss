@@ -1,0 +1,17 @@
+@import '../desktop';
+
+& {
+
+    header {
+
+        .image-container {
+            width: 60%;
+            height: px(1700);
+        }
+
+        & > img {
+            width: 60%;
+            height: px(1700);
+        }
+    }
+}

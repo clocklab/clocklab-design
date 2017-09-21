@@ -5,7 +5,7 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
-var page = 'ux-ui'
+var page = 'complex'
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');

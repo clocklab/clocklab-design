@@ -1,0 +1,18 @@
+@import '../desktop';
+
+& {
+
+    .container {
+        justify-content: center;
+        width: 99%;
+    }
+
+    article {
+        padding-bottom: px(400);
+    }
+
+    .image-container {
+        width: px(1800);
+        height: px(1500); 
+    }
+}
