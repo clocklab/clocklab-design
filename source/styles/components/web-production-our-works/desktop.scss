@@ -169,21 +169,13 @@
             left: 0;
             z-index: -1;
             width: 100%;
-            height: 100vh;
+            height: 100%;
             background: rgba(0, 0, 0, .4);
             content: '';
             opacity: 0;
             transition: opacity $time;
         }
     }
-
-    // .back-layer {
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 100%;
-    //     background: $black;
-    // }
 
     .back-layer {
         display: flex;
@@ -326,24 +318,30 @@
     }
 
     .discuss {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         position: relative;
+        left: px(-150);
         z-index: 3;
-        margin: px(50) auto 0;
-        width: px(720);
-        text-align: center;
+        margin: px(250) auto 0;
+        width: px(1960);
+
+        .offer {
+            width: px(1050);
+        }
 
         h3 {
             margin-bottom: px(24);
             color: $darkGray;
             font-family: $raleway;
-            font-size: px(48);
+            font-size: px(72);
             font-weight: 800;
             text-transform: uppercase;
         }
 
         p {
-            margin-bottom: px(66);
-            padding: 0 px(50);
+            padding-right: px(150);
             color: $gray;
             font-family: $roboto;
             font-size: px(28);
@@ -367,6 +365,43 @@
             &:hover {
                 background: transparent;
                 color: $blue;
+            }
+        }
+    }
+
+    &--dark {
+
+        .front-layer {
+            background: $lightBlack;
+
+            h2 {
+                color: $white;
+            }
+
+            .work {
+
+                span {
+                    color: $white;
+                }
+            }
+
+            .crossed-button {
+
+                span {
+                    color: $white;
+
+                    &:before {
+                        background: $white;
+                    }
+                }
+
+                .arrow {
+                    
+                    .st0,
+                    .st1 {
+                        stroke: $white;
+                    }                        
+                }
             }
         }
     }

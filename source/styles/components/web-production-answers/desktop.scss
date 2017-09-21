@@ -272,4 +272,11 @@
             }
         }
     }
+
+    &--complex {
+
+        .container {
+            height: px(1980);
+        }
+    }
 }

@@ -1,0 +1,25 @@
+@import '../desktop';
+
+& {
+
+    .language {
+        top: px(700);
+    }
+
+    header {
+
+        .image-container {
+            width: px(1500);
+            height: px(1200);
+        }
+
+        .big-background-letter {
+            left: px(-600);
+        }
+
+        & > img {
+            height: px(1000);
+            width: 60%;
+        }
+    }
+}

@@ -14,4 +14,11 @@
     .more {
         margin-top: px(500);
     }
+
+    &--complex {
+
+        .container {
+            height: px(1600);
+        }
+    }
 }
