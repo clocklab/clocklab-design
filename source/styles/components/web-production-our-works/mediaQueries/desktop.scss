@@ -18,6 +18,10 @@
             font-size: px(80);
         }
 
+        .crossed-button {
+            margin-left: px(20);
+        }
+
         .works {
             width: px(1400);
         }
@@ -47,6 +51,13 @@
         .send {
             width: px(300);
             height: px(70);
+        }
+    }
+
+    &.opened {
+        
+        .front-layer {
+            transform: rotateY(15deg) scaleX(.8);
         }
     }
 }

@@ -87,6 +87,10 @@
         font-size: px(32);
         transform-origin: 100% 0;
         transform: rotate(-90deg);
+
+        span {
+            display: block;
+        }
     }
 
     .image-container {
@@ -155,6 +159,7 @@
 
         p {
             margin-bottom: px(50);
+            color: $darkGray;
             font-family: $roboto;
             font-size: px(28);
             line-height: 1.4;

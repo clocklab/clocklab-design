@@ -48,6 +48,7 @@
         padding-top: px(290);
         width: 81%;
         height: 100%;
+        overflow: hidden;
     }
 
     .lines {
@@ -92,7 +93,7 @@
         font-family: $raleway;
         font-size: px(88);
         font-weight: 800;
-        line-height: px(96);
+        line-height: px(102);
 
         span {
             color: $blue;
@@ -109,19 +110,32 @@
         position: relative;
         margin-bottom: px(100);
         padding-left: px(30);
-        color: $darkWhite;
+        color: #ccc;
         font-size: px(36);
+        font-weight: 300;
         line-height: 1.4;
 
-        &:before {
+        span {
             display: block;
+        }
+
+        .text-container,
+        .tick {
+            overflow: hidden;
+        }
+        
+        .tick {
             position: absolute;
             top: 0;
             left: -1px;
             width: 3px;
             height: px(46);
-            background: $blue;
-            content: '';
+
+            span {
+                width: 100%;
+                height: 100%;
+                background: $blue;
+            }
         }
     }
 }
