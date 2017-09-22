@@ -28,6 +28,7 @@
         padding-top: px(290);
         width: 81%;
         height: 100%;
+        overflow: hidden;
     }
 
     .lines {
@@ -57,7 +58,7 @@
             }
 
             &--4 {
-                left: 100%;
+                right: 0;
             }
         }
     }
@@ -67,6 +68,7 @@
         z-index: 2;
         margin-bottom: px(200);
         width: 39%;
+        color: $darkGray;
         font-family: $raleway;
         font-size: px(96);
         font-weight: 800;
@@ -94,14 +96,7 @@
         font-size: px(32);
         line-height: 1.4;
 
-        span {
-            display: block;
-            margin-bottom: px(30);
-            font-weight: 700;
-        }
-
-        &:before {
-            display: block;
+        .circle {
             position: absolute;
             top: 3px;
             left: -4px;
@@ -109,7 +104,21 @@
             height: 8px;
             border-radius: 50%;
             background: $blue;
-            content: '';
+        }
+
+        h4 {
+            margin-bottom: px(30);
+            font-size: px(36);
+            font-weight: 700;
+            overflow: hidden;
+            
+            span {
+                display: block;
+            }
+        }
+
+        .text-container {
+            overflow: hidden;
         }
     }
 
@@ -121,16 +130,6 @@
 
         li {  
             padding-left: 0;
-    
-            &:before {
-                top: px(-30);
-                left: initial;
-                right: 100%;
-                width: px(70);
-                height: px(70);
-                background: $lightGray;
-                border-radius: 0;
-            }
     
             &:nth-child(1),
             &:nth-child(2) {
@@ -152,15 +151,30 @@
                 padding-right: px(80);
             }
         }
-    
+
+        .rect {
+            position: absolute;
+            top: px(-30);
+            left: initial;
+            right: 100%;
+            width: px(70);
+            height: px(70);
+            background: $lightGray;
+        }
     
         .index {
             position: absolute;
+            z-index: 1;
             top: px(-90);
             right: 100%;
             font-family: $raleway;
             font-size: px(72);
             font-weight: 800;
+            overflow: hidden;
+
+            span {
+                display: block;
+            }
         }
     }
 }
