@@ -27,15 +27,25 @@
         padding-left: px(200);
         width: px(1850);
         height: 100%;
+
+        p {
+
+            &:first-of-type {
+
+                &:before {
+                    display: block;
+                }
+            }
+        }
     }
 
     p {
         position: relative;
-        color: $darkWhite;
+        color: #ccc;
         font-family: $roboto;
         font-size: px(48);
         font-style: italic;
-        font-weight: 400;
+        font-weight: 300;
         line-height: 1.4;
 
         span {
@@ -164,13 +174,17 @@
         padding-top: px(200);
         padding-right: px(380);
         width: 81%;
-        color: $white;
+        color: #ccc;
         font-family: $roboto;
 
         ul {
 
             &:first-child {
                 width: px(1190);
+
+                h3 {
+                    color: $white;
+                }
             }
     
             &:last-child {

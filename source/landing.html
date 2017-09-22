@@ -259,16 +259,21 @@
                     <label class="name">
                         <input type="text" required>
                         <span>имя</span>
+                        <div class="tick"></div>
                     </label>
                     <label class="phone">
                         <input type="text" required>
                         <span>телефон</span>
+                        <div class="tick"></div>
                     </label>
                     <label class="question">
                         <input type="text">
                         <span>Ваш вопрос</span>
+                        <div class="tick"></div>
                     </label>
-                    <button class="send">Отправить</button>
+                    <button class="send">
+                        <span>Отправить</span>
+                    </button>
                 </form>
             </div>
 
@@ -280,7 +285,9 @@
                         adipisicing elit, sed do eiusmod tempor incid
                     </p>
                 </div>
-                <button class="open-form">Обсудить</button>
+                <button class="open-form">
+                    <span>Обсудить</span>
+                </button>
             </div>
         </div>
 
@@ -290,43 +297,51 @@
             <div class="container">
                 <div class="lines">
                     <div class="line line--1 wow slideInDown"></div>
-                    <div class="line line--2 wow slideInDown" data-wow-delay=".3"></div>
-                    <div class="line line--3 wow slideInDown" data-wow-delay=".6"></div>
-                    <div class="line line--4 wow slideInDown" data-wow-delay=".9"></div>
+                    <div class="line line--2 wow slideInDown" data-wow-delay=".3s"></div>
+                    <div class="line line--3 wow slideInDown" data-wow-delay=".6s"></div>
+                    <div class="line line--4 wow slideInDown" data-wow-delay=".9s"></div>
                 </div>
 
                 <div class="answers">
                     <div class="column-1">
-                        <h2 class="wow fadeInUp">
+                        <h2 class="wow slideInLeft">
                             Ответы
                             <span>на часто задаваемые вопросы</span>
                         </h2>
                     </div>
                     <div class="column-2">
                         <ul>
-                            <li class="question question--1 current wow fadeInUp">
+                            <li class="question question--1 current">
+                                <div class="index">
+                                    <span class="wow slideInUp" data-wow-delay=".3s">01</span>
+                                </div>
                                 <button>
-                                    Правда ли, что Landing Page хуже, чем полноценный сайт?
+                                    <span class="wow slideInLeft" data-wow-delay=".3s">Правда ли, что Landing Page хуже, чем полноценный сайт?</span>
                                 </button>
                             </li>
-                            <li class="question question--2 wow fadeInUp">
+                            <li class="question question--2">
+                                <div class="index">
+                                    <span class="wow slideInUp" data-wow-delay=".3s">02</span>
+                                </div>
                                 <button>
-                                    Есть ли необходимость в полноценном сайте после запуска Landing Page?                                    
+                                    <span class="wow slideInLeft" data-wow-delay=".3s">Есть ли необходимость в полноценном сайте после запуска Landing Page?</span>
                                 </button>
                             </li>
                         </ul>
                     </div>
-                    <div class="column-3 wow fadeInUp">
+                    <div class="column-3">
                         <div class="answer answer--1 current">
                             <div class="index">
-                                <span>01</span>
+                                <span>
+                                    <span class="wow slideInUp" data-wow-delay=".6s">01</span>
+                                </span>
                             </div>
                             <div class="content">
                                 <h4>
-                                    Правда ли, что Landing Page хуже, чем полноценный сайт?
+                                    <span class="wow slideInLeft" data-wow-delay=".6s">Правда ли, что Landing Page хуже, чем полноценный сайт?</span>
                                 </h4>
                                 <div class="text">
-                                    <p>
+                                    <p class="wow slideInLeft" data-wow-delay=".6s">
                                         Нет, такое сравнение некорректно. Формат Landing page 
                                         разработан для решения конкретных задач и эффективно 
                                         справляется с ними. По сути, это тоже полноценный 
@@ -334,7 +349,7 @@
                                         и недостатки — выбор в пользу того или иного формата 
                                         сайта зависит от ваших требований и амбиций. 
                                     </p>
-                                    <p>
+                                    <p class="wow slideInLeft" data-wow-delay=".6s">
                                         Одним из основных преимуществ лэндинга является высокая 
                                         конверсия и генерация лидов — это обусловлено тем, что 
                                         в рамках одной страницы (в одном месте) вы даёте максимум 
@@ -345,14 +360,16 @@
                         </div>
                         <div class="answer answer--2">
                             <div class="index">
-                                <span>02</span>
+                                <span>
+                                    <span class="wow slideInUp" data-wow-delay=".3s">02</span>
+                                </span>
                             </div>
                             <div class="content">
                                 <h4>
-                                    Правда ли, что SPA хуже, чем полноценный сайт?
+                                    <span class="wow slideInLeft" data-wow-delay=".6s">Правда ли, что SPA хуже, чем полноценный сайт?</span>
                                 </h4>
                                 <div class="text">
-                                    <p>
+                                    <p class="wow slideInLeft" data-wow-delay=".6s">
                                         Нет, такое сравнение некорректно. Формат Landing page 
                                         разработан для решения конкретных задач и эффективно 
                                         справляется с ними. По сути, это тоже полноценный 
@@ -360,7 +377,7 @@
                                         и недостатки — выбор в пользу того или иного формата 
                                         сайта зависит от ваших требований и амбиций. 
                                     </p>
-                                    <p>
+                                    <p class="wow slideInLeft" data-wow-delay=".6s">
                                         Одним из основных преимуществ лэндинга является высокая 
                                         конверсия и генерация лидов — это обусловлено тем, что 
                                         в рамках одной страницы (в одном месте) вы даёте максимум 
@@ -373,13 +390,15 @@
                 </div>
 
                 <div class="more">
-                    <h3 class="wow fadeInUp">
-                        Больше услуг
-                        <span>web-production</span>
-                    </h3>
-                    <ul class="wow fadeInUp">
+                    <div class="column-1">
+                        <h3 class="wow fadeInLeft">
+                            Больше услуг
+                            <span>web-production</span>
+                        </h3>
+                    </div>
+                    <ul>
                         <li class="column-1">
-                            <a class="crossed-button">
+                            <a class="crossed-button wow fadeInLeft">
                                 <span>Корпоративный сайт</span>
                                 <div class="arrow-container">
                                     <svg class="arrow" x="0px" y="0px"
@@ -392,7 +411,7 @@
                             </a>
                         </li>
                         <li class="column-2">
-                            <a class="crossed-button">
+                            <a class="crossed-button wow fadeInLeft" data-wow-delay=".3s">
                                 <span>Интернет магазин</span>
                                 <div class="arrow-container">
                                     <svg class="arrow" x="0px" y="0px"
@@ -405,7 +424,7 @@
                             </a>
                         </li>
                         <li class="column-3">
-                            <a class="crossed-button">
+                            <a class="crossed-button wow fadeInLeft" data-wow-delay=".6s">
                                 <span>Сайт-визитка</span>
                                 <div class="arrow-container">
                                     <svg class="arrow" x="0px" y="0px"
@@ -429,9 +448,9 @@
             <div class="blue-line wow slideInDown"></div>
 
             <div class="container">
-                <div class="image-block wow fadeInUp">
-                    <div class="date wow fadeInLeft">
-                        <span>20 April 2017</span>
+                <div class="image-block">
+                    <div class="date">
+                        <span class="wow fadeInUp" data-wow-delay=".3s">20 April 2017</span>
                     </div>
                     <div class="image-container wow fadeInUp">
                         <img src="images/web-production/landing-footer.jpg" alt="shop-footer">

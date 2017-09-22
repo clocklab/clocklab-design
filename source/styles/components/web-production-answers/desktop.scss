@@ -1,7 +1,7 @@
 & {  
 
     position: relative;
-    background: $black;
+    background: #1c1c1c;
     overflow: hidden;
 
     .big-background-letter {
@@ -51,6 +51,7 @@
     }
 
     .lines {
+        overflow: hidden;
 
         .line {
             position: absolute;
@@ -80,6 +81,10 @@
 
     .answers {
 
+        .column-1 {
+            overflow: hidden;
+        }
+
         h2 {
             font-family: $raleway;
             font-size: px(96);
@@ -99,51 +104,62 @@
 
         .question {
             display: block;
+            position: relative;
             margin-bottom: px(130);
             padding-right: px(300);
             color: $white;
             font-family: $raleway;
 
-            &--2 {
-                padding-right: px(220);
+            button {
+                display: block;
+                position: relative;
+                padding: 0;
+                color: $white;
+                font-size: px(36);
+                text-align: left;
+                transition: color $time;
+                overflow: hidden;
 
-                button {
-
-                    &:before {
-                        content: '02';
-                    }
+                span {
+                    display: block;
                 }
             }
 
-            &.current {
-
-                button {
-                    color: $blue;
-                }
-            }
-        }
-
-        button {
-            display: block;
-            position: relative;
-            padding: 0;
-            color: $white;
-            font-size: px(36);
-            text-align: left;
-            transition: color $time;
-
-            &:before {
+            .index {
                 display: block;
                 position: absolute;
                 top: px(-60);
                 left: px(0);
-                content: '01';
+                font-family: $roboto;
+                font-size: px(32);
+                transition: color $time;
                 transform-origin: 0 100%;
                 transform: rotate(-90deg);
+                overflow: hidden;
+
+                span {
+                    display: block;
+                }
             }
 
             &:hover {
-                color: $blue;
+
+                button,
+                .index {
+                    color: $blue;
+                }
+            }
+
+            &--2 {
+                padding-right: px(220);
+            }
+
+            &.current {
+
+                button,
+                .index {
+                    color: $blue;
+                }
             }
         }
 
@@ -159,14 +175,14 @@
             width: 82%;
             color: $white;
             font-family: $roboto;
-            background: $black;
+            background: #1c1c1c;
             transform: translateX(1px);
     
             .index {
                 position: absolute;
                 top: px(-50);
                 left: px(-10);
-                background: $black;
+                background: #1c1c1c;
                 color: $white;
                 font-size: px(36);
                 overflow: hidden;
@@ -187,12 +203,18 @@
                 font-family: $raleway;
                 font-weight: 600;
                 font-size: px(48);
+
+                span {
+                    display: block;
+                }
             }
     
             p {
                 margin-bottom: px(50);
                 padding-right: px(40);
+                color: #ccc;
                 font-size: px(32);
+                font-weight: 300;
                 line-height: 1.4;
             }   
 
@@ -201,13 +223,13 @@
 
                 .index {
 
-                    span {
+                    & > span {
                         animation: Up $time * 2 both;
                     }
                 }
 
                 h4,
-                p {
+                .text {
                     animation: Right $time * 2 both;
                 }
             }
@@ -221,6 +243,12 @@
     .more {
         flex-wrap: wrap;
         margin-top: px(760);
+
+        .column-1,
+        .column-2,
+        .column-3 {
+            overflow: hidden;
+        }
 
         h3 {
             width: 100%;
@@ -243,6 +271,7 @@
         }
 
         .crossed-button {
+            position: relative;
 
             span {
                 color: $white;

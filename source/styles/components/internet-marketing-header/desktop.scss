@@ -63,6 +63,7 @@
             color: $gray;
             font-family: $raleway;
             font-size: px(1800);
+            font-weight: 800;
             text-transform: uppercase;
             overflow: hidden;
 
@@ -149,6 +150,7 @@
                     position: relative;
                     padding-bottom: px(40);
                     width: 33%;
+                    font-weight: 300;
                     opacity: .5;
 
                     span {
@@ -303,10 +305,11 @@
     }
 
     p {
+        padding-right: px(40);
         color: $darkGray;
         font-family: $roboto;
         font-size: px(32);
-        line-height: 1.4;
+        line-height: 1.5;
 
         &.big {
             font-size: px(48);
