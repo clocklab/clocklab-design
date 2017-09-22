@@ -131,7 +131,6 @@
         .arrow .st0, .arrow .st1 { stroke: $white; }
         span {
             animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
-            font-family: $raleway;
             font-weight: $bold;
             color: $white;
             font-size: px(26);

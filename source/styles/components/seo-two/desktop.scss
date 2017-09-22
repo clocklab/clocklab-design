@@ -2,7 +2,6 @@
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
-    z-index: 0;
     
     // ----- animation -----
     &.current {
@@ -71,7 +70,6 @@
                 display: block;
                 margin-top: 19vh;
                 position: absolute;
-                font-family: $raleway;
                 font-weight: $extra-bold;
                 .word {
                     &:after { display: none; }

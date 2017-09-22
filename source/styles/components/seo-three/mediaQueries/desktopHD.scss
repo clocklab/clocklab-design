@@ -1,0 +1,9 @@
+@import '../desktop';
+
+// ----- table -----
+.table .container .lines div {
+    &:nth-of-type(1) { left: 0; }
+    &:nth-of-type(2) { left: px(890); }
+    &:nth-of-type(3) { right: px(890); }
+    &:nth-of-type(4) { right: 0; }
+}
