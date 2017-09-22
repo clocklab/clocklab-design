@@ -1,7 +1,22 @@
 @import '../desktop';
 
-// ----- title -----
-.title { margin-left: px(440); }
-
-// ----- brands -----
-table { zoom: .6; }
+// ----- table -----
+.table .container {
+	max-width: 700px;
+	
+	// ----- vertical-text -----
+	.vertical-text { left: px(-20); }
+	
+	// ----- item -----
+	.item {
+		.block {
+			margin-top: 37vh;
+			img {
+			    max-width: 150px;
+			    max-height: 25px;
+			    margin-bottom: 8vh;
+			}
+		}
+		& + .title { margin-top: 20vh; }
+	}
+}
