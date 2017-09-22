@@ -9,7 +9,7 @@
         animation: fadeIn $time * 3 both;
         
         // ----- navigation-elements -----
-        .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
+        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
         .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
         .scroll { animation: fadeInUp $time * 2 $time * 7 both; }
 
@@ -47,6 +47,11 @@
         margin: 64.5vh 0 0 39vh;
         p { padding: 5% 1vh 0; }
         .word {
+            &:nth-of-type(1) span span {
+                display: inline-flex;
+                color: $blue;
+                width: auto;
+            }
             &:after { display: none; }
             span {
                 font-size: px(108);

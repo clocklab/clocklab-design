@@ -1,0 +1,31 @@
+// base
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/reset";
+@import "base/common";
+@import "base/animations";
+
+// modules
+@import "components/modules/small-gray-lines";
+@import "components/modules/jelly-button";
+@import "components/modules/clock-bg";
+@import "components/modules/scroll";
+
+// components
+@import "components/navigation-elements/main";
+@import "components/big-background-letter/main";
+@import "components/crossed-button/main";
+@import "components/menu/main";
+@import "components/title/main";
+@import "components/social/main";
+@import "components/new-title/main";
+@import "components/euro-club/main";
+
+// screens
+@import "components/about-company-one/main";
+@import "components/about-company-two/main";
+@import "components/about-company-three/main";
+@import "components/about-company-four/main";
+@import "components/about-company-five/main";
+@import "components/about-company-six/main";

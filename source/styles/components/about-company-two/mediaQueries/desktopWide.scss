@@ -1,1 +1,24 @@
 @import '../desktop';
+
+// ----- title ------
+.title { left: px(300); }
+
+// ----- image-block -----
+.image-block {
+    z-index: 3;
+    position: absolute;
+    &.one { right: px(340); }
+    &.two {
+    	height: px(800);
+    	width: px(800);
+    }
+}
+
+// ----- service-info -----
+.service-info {
+    right: 0;
+    top: 32vh;
+}
+
+// ----- jump-button -----
+.jump-button { left: px(1000); }

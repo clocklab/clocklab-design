@@ -8,8 +8,11 @@
         background: $background;
         animation: fadeIn $time * 3 both;
         
+        // ----- other -----
+        .vertical-text, .item p { animation: fadeIn $time * 6 $time * 15 both; }
+
         // ----- navigation-elements -----
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
@@ -23,7 +26,6 @@
         // ----- other -----
         .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
         .table .container .item img { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime both; }
-        .open-form { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
 
         // ----- title -----
         .title {
@@ -49,13 +51,18 @@
         }
     }
 
-    // ----- letter o -----
-    .big-background-letter {
-        right: 0;
-        top: 37vh;
-        font-size: 75vh;
-        color: rgba(68,68,68,.1);
-        span::before  { content: 'o'; }
+    // ----- vertical-text -----
+    .vertical-text {
+        transform: rotate(-90deg);
+        font-family: $roboto;
+        font-weight: $thin;
+        position: absolute;
+        font-size: px(26);
+        line-height: 1.4;
+        bottom: 30.5vh;
+        color: $white;
+        left: px(-76);
+        width: 12%;
     }
 
     // ----- table -----
@@ -71,6 +78,28 @@
         .item {
             width: 25%;
             position: relative;
+            .block {
+                display: grid;
+                margin-top: 29vh;
+                img {
+                    max-width: 250px;
+                    max-height: 50px;
+                    margin-bottom: 8vh;
+                    &:last-of-type { margin-bottom: 0; }
+                }
+                p {
+                    font-weight: $extra-bold;
+                    padding-top: 6.5vh;
+                    line-height: 1.5;
+                    font-size: px(48);
+                    color: $white;
+                    span {
+                        font-weight: $extra-bold;
+                        font-size: px(48);
+                        color: $blue;
+                    }
+                }
+            }
             .line {
                 top: 0;
                 left: 0;
@@ -84,7 +113,7 @@
             }
             & + .title {
                 display: block;
-                margin-top: 21vh;
+                margin-top: 12vh;
                 position: absolute;
                 font-family: $raleway;
                 font-weight: $extra-bold;
@@ -92,9 +121,6 @@
                     font-size: px(88);
                     margin-bottom: 5px;
                 }
-            }
-            img {
-                margin-top: 51vh;
             }
         }
     }

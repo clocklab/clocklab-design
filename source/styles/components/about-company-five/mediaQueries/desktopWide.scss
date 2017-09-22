@@ -1,4 +1,7 @@
 @import '../desktop';
 
-// ----- brands -----
-table { zoom: .7; }
+// ----- title -----
+.title { margin: px(428) 0 0 px(484); }
+
+// ----- lines -----
+.lines div:nth-of-type(1) { left: px(484); }

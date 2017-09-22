@@ -523,6 +523,7 @@ $WFLineTwoDelayTime: $WFLineOneDelayTime + $time * 1;
 $WFLineThreeDelayTime: $WFLineTwoDelayTime + $time * 1;
 $WFLineFourDelayTime: $WFLineThreeDelayTime + $time * 1;
 $WFLineFiveDelayTime: $WFLineFourDelayTime + $time * 1;
+$WFLineSixDelayTime: $WFLineFiveDelayTime + $time * 1;
 
 $WFTextColumnAnimationTime: $time * 3;
 $WFTextFirstColumnDelayTime: $WFLineOneDelayTime + $WFLineAnimationTime;
@@ -530,8 +531,9 @@ $WFTextSecondColumnDelayTime: $WFLineTwoDelayTime + $WFLineAnimationTime;
 $WFTextThirdColumnDelayTime: $WFLineThreeDelayTime + $WFLineAnimationTime;
 $WFTextFourthColumnDelayTime: $WFLineFourDelayTime + $WFLineAnimationTime;
 $WFTextFifthColumnDelayTime: $WFLineFiveDelayTime + $WFLineAnimationTime;
+$WFTextSixthColumnDelayTime: $WFLineSixDelayTime + $WFLineAnimationTime;
 
-$WFQustionsDelayTime: $WFTextFifthColumnDelayTime + $WFTextColumnAnimationTime;
+$WFQustionsDelayTime: $WFTextSixthColumnDelayTime + $WFTextColumnAnimationTime;
 $WFQustionsAnimationTime: $time * 3;
 
 $WFFrontLayerDelayTime: $WFQustionsDelayTime + $WFQustionsAnimationTime;
