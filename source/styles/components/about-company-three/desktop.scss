@@ -1,568 +1,101 @@
-& {  
-    position: relative;
-    padding-top: px(200);
-    padding-right: 25vw;
-    height: 100vh;
-    width: 100vw;
+& {
     font-family: $raleway;
+    font-weight: $regular;
     overflow: hidden;
     
     // ----- animation -----
     &.current {
         background: $background;
         animation: fadeIn $time * 3 both;
-
+        
         // ----- navigation-elements -----
-        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+
+        // ----- big-background-letter -----
+        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+
+        // ----- name -----
+        .name { animation: fadeIn $time * 3 both; }
+        
+        // ----- line -----
+        .line { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+
+        // ----- other -----
+        .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
+        .table .container .item img { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+        .open-form { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
 
         // ----- title -----
         .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 7 linear;
-                animation-fill-mode: forwards;
-            }
+            animation: fadeIn $time * 2 $time * 5 linear;
+            animation-fill-mode: forwards;
             span.name {
                 span {
-                    animation: titleName $time * 2 $time * 8 linear;
+                    animation: titleName $time * 2 $time * 11 linear;
                     animation-fill-mode: forwards;
                 }
                 &:before {
-                    animation: titleNameShape $time * 2 $time * 7 linear;
+                    animation: titleNameShape $time * 2 $time * 10 linear;
                     animation-fill-mode: forwards;
                 }
             }
             .word {
-                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
-                &:nth-of-type(1) span {
-                    animation: titleWord $time * 2 $time * 5 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-of-type(2) span {
-                    animation: titleWord $time * 2 $time * 6 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
-    }
-
-
-    
-
-    // ----- blue-line and image-block -----
-    .blue-line { animation: heightChangingCompany $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
-    .image-block {
-        p { animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
-        .image-container {
-            animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
-            img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
-            &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
-        }
-    }
-   
-    // ----- small-gray-lines -----
-    .small-gray-lines .line {
-        animation: lineUp 1s $time * 4 both;
-        &.down { animation-name: lineDown; }
-    }
-
-    // ----- title -----
-    .title {
-        position: absolute;
-        right: px(462);
-        top: 21vh;
-    }
-
-    // ----- blue-line -----
-    .blue-line {
-        z-index: 1;
-        top: 51.5vh;
-        left: px(210);
-        width: px(570);
-        background: $blue;
-        position: absolute;
-    }
-
-    .logo {
-        z-index: 2;
-    }
-
-    .portfolio-client {
-
-        .client-name-container {
-
-            span {
-
-                &:before {
-                    content: 'Alta Capital';
-                }
-            }
-        }
-    }
-
-    
-    @keyframes widthIncreaseStickerLine {
-        from {
-            width: 0;
-        }
-        to {
-            width: px(100);
-        }
-    }
-
-
-    .small-gray-lines {
-        z-index: 2;
-
-        .line {
-
-            &.up {
-                transform: rotate(-65deg) translate3d(100%, 0, 0);
-            }
-
-            &.down {
-                transform: rotate(-65deg) translate3d(-100%, 0, 0);
-            }
-
-            &.up,
-            &.down {
-                animation: none;
-            }
-        }
-    }
-
-    @keyframes right {
-        from {
-            transform: translateX(-100%);
-        }
-        to {
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes left {
-        from {
-            transform: translateX(100%);
-        }
-        to {
-            transform: translateX(0);
-        }
-    }
-
-    @keyframes posterTextApear {
-        from {
-            opacity: 0;
-            transform: rotate(-90deg) translateY(100%);
-        }
-        to {
-            opacity: 1;
-            transform: rotate(-90deg) translateY(0);
-        }
-    }
-
-    @keyframes up {
-        from {
-            opacity: 0;
-            transform: translateY(100%);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
-
-    .poster {
-        position: relative;
-        z-index: 2;
-        margin-top: 8vh;
-        margin-left: px(390);
-        width: px(1560);
-        height: px(1030);
-
-        .image-container {
-            position: relative;
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-
-                &.current {
-                    z-index: 2;
-                }
-            }
-
-            &:before {
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: $darkGray;
-                content: '';
-            }
-        }
-
-        & > span {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: 1;
-            padding: px(50) px(180);
-            color: $white;
-            font-size: px(28);
-            letter-spacing: 7px;
-            transform-origin: 0 100%;
-            opacity: 1;
-            transform: rotate(-90deg);
-
-            &:first-letter {
-                padding-right: 2px;
-            }
-        }
-    }
-
-    .controls {
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        z-index: 2;
-        margin-left: px(1750);
-        margin-top: 0;
-        width: px(400);
-        height: px(400);
-        transform: translateX(50%);
-
-        & > div {
-            position: relative;
-            width: 50%;
-            height: 50%;
-            overflow: hidden;
-        }
-
-        svg {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            z-index: 2;
-            width: px(72);
-            transform-origin: 50% 50%;
-
-            .st0 {
-                fill: $white;
-                stroke: $white;
-                stroke-width: 0.75;
-                stroke-miterlimit: 10;
-            }
-
-            .st1 {
-                fill: none;
-                stroke: $white;
-                stroke-width: 0.75;
-                stroke-miterlimit: 10;
-            }
-        }
-
-        .gallery {
-            position: relative;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-
-            img {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-
-                &.current {
-                    z-index: 2;
-                }
-            }
-        }
-
-        .content-container {
-            width: 100%;
-            height: 100%;
-            position: relative;
-
-            &:before {
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: 1;
-                width: 100%;
-                height: 100%;
-                background: rgba(0, 0, 0, .5);
-                content: '';
-                transition: opacity $time;
-            }
-        }
-
-        .slide-controls {
-            cursor: pointer;
-
-            &--next-slide {
-                margin-left: px(200); 
-
-                svg {
-                    transform: translate3d(-50%, -50%, 0)
-                }
-            }
-
-            &--previous-slide {
-
-                svg {
-                    transform: rotate(180deg) translate3d(50%, 50%, 0)
-                }
-            }
-
-            &:hover {
-
-                .content-container {
-
-                    &:before {
-                        opacity: 0;
-                    }
-                }
-            }
-        }
-
-        .indicators {
-            font-size: 0;
-            color: $white;
-            text-align: center;
-
-            span {
-                font-size: px(30);
-                line-height: px(200);
-            }
-
-            .all-slides {
-                color: $gray;
-            }
-        }
-    }
-
-    &:before,
-    &:after {
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        height: 100vh;
-        background: $lightBlack;
-        content: '';
-    }
-
-    &:before {
-        left: 0;
-        width: 75vw;
-    }
-
-    &:after {
-        right: 0;
-        width: 25vw;
-    }
-
-    &.current {
-
-        .logo {
-            animation: fadeInDown $time * 3 $time * 3 both;
-        }
-
-        .menu {
-            animation: fadeInDown $time * 3 $time * 3 both;
-        }
-
-        .portfolio-client {
-
-            .client {
-                animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
-        
-                &-name-container {
-        
-                    span {
-                        animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
-                    }
-                }
-            }
-        }
-
-        .portfolio-right-panel {
-
-            .date {
-                animation: rightPanelDate $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
-            }
-        
-            .devices {
-                
+                &:after { animation: halfDown $time * 2 linear $time * 7 both; }
                 span {
-                    animation-name: rightPanelDevices;
-                    animation-fill-mode: both;
-        
-                    &:nth-child(1) {
-                        animation-duration: $portfolioRightPanelDevicesDesktopAnimationTime;
-                        animation-delay: $portfolioRightPanelDevicesDesktopDelayTime;
-                    }
-        
-                    &:nth-child(2) {
-                        animation-duration: $portfolioRightPanelDevicesTabletAnimationTime;
-                        animation-delay: $portfolioRightPanelDevicesTabletDelayTime;
-                    }
-        
-                    &:nth-child(3) {
-                        animation-duration: $portfolioRightPanelDevicesMobileAnimationTime;
-                        animation-delay: $portfolioRightPanelDevicesMobileDelayTime;
-                    }
+                    animation: titleWord $time * 2 $time * 8 linear;
+                    animation-fill-mode: forwards;
                 }
             }
         }
+    }
 
-        .bottom-button {
+    // ----- letter o -----
+    .big-background-letter {
+        right: 0;
+        top: 37vh;
+        font-size: 75vh;
+        color: rgba(68,68,68,.1);
+        span::before  { content: 'o'; }
+    }
 
-            span {
-                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
-            }
-        
+    // ----- table -----
+    .table .container {
+        height: 100vh;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        max-width: 1170px;
+        position: relative;
+
+        // ----- item -----
+        .item {
+            width: 25%;
+            position: relative;
             .line {
-                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
-            }
-        }
-
-        .sticker {
-
-            span {
-                animation: FadeInRightHalf $PACStickerTextAnimationTime $PACStickerTextDelayTime both;
-            }
-    
-            &:before {
-                animation: widthIncreaseStickerLine $PACStickerLineAnimationTime $PACStickerLineDelayTime both;
-            }
-        }
-
-        .new-title {
-    
-            .text-container {
-    
-                &:before {
-                    animation: halfDown $PACTitleLineAnimationTime linear $PACTitleLineDelayTime both;
+                top: 0;
+                left: 0;
+                width: 1px;
+                position: absolute;
+                background: $darkGray;
+                &.right {
+                    right: 0;
+                    left: inherit;
                 }
             }
-    
-            span {
-                animation: Up $PACTitleTextAnimationTime $PACTitleTextDelayTime both;
-            }
-        }
-
-        .small-gray-lines {
-            
-            .line {
-                animation: lineUp 1s $time * 3 both;
-
-                &.down {
-                    animation-name: lineDown; 
+            & + .title {
+                display: block;
+                margin-top: 21vh;
+                position: absolute;
+                font-family: $raleway;
+                font-weight: $extra-bold;
+                .word span {
+                    font-size: px(88);
+                    margin-bottom: 5px;
                 }
             }
-        }
-
-        .poster {
-            
-            .image-container {
-    
-                img {
-    
-                    &.loaded {
-                        animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
-                    }
-    
-                    &.left {
-                        animation-duration: $time;
-                        animation-name: left;
-                        animation-fill-mode: both;
-                    }
-    
-                    &.right {
-                        animation-duration: $time;
-                        animation-name: right;
-                        animation-fill-mode: both;
-                    }
-                }
-    
-                &:before {
-                    animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
-                }
+            img {
+                margin-top: 51vh;
             }
-    
-            & > span {
-                animation: posterTextApear $portfolioAltaPosterTextAnimationTime $portfolioAltaPosterTextDelayTime both;
-            }
-    
-            .text {
-    
-                p {
-                    animation: up $portfolioAltaPosterParagraphAnimationTime $portfolioAltaPosterParagraphDelayTime both;
-                }
-            }
-        }
-    
-        .controls {
-    
-            .gallery {
-    
-                img {
-    
-                    &.left {
-                        animation-delay: 0;
-                        animation-fill-mode: both;
-                        animation-duration: $time;
-                        animation-name: left;
-                    }
-    
-                    &.right {
-                        animation-delay: 0;
-                        animation-fill-mode: both;
-                        animation-duration: $time;
-                        animation-name: right;
-                    }
-                }
-            }
-    
-            .slide-controls {
-    
-                &--next-slide {
-    
-                    .content-container {
-                        animation: right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTime both;
-                    }   
-                }
-    
-                &--previous-slide {
-    
-                    .content-container {
-                        animation: left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTime both;
-                    }
-                }
-            }
-    
-            .indicators {
-                animation: up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTime both;
-            }
-        }
-
-        &:before {
-            animation: right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
-        }
-
-        &:after {
-            animation: left $portfolioAltaRightBlockAnimationTime $portfolioAltaRightBlockDelayTime both;
         }
     }
 }
