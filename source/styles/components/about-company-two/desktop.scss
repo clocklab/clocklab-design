@@ -12,32 +12,28 @@
 
         // ----- service-info -----
         .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
-        .jump-button { animation: fadeInUp $time * 2 $time * 9 both; }
+        .crossed-button, .jump-button { animation: fadeInUp $time * 2 $time * 14 both; }
 
         // ----- title -----
         .title {
             p {
-                animation: fadeInUp $time * 2 $time * 7 linear;
+                animation: fadeInUp $time * 2 $time * 12 linear;
                 animation-fill-mode: forwards;
             }
             span.name {
                 span {
-                    animation: titleName $time * 2 $time * 8 linear;
+                    animation: titleName $time * 2 $time * 13 linear;
                     animation-fill-mode: forwards;
                 }
                 &:before {
-                    animation: titleNameShape $time * 2 $time * 7 linear;
+                    animation: titleNameShape $time * 2 $time * 12 linear;
                     animation-fill-mode: forwards;
                 }
             }
             .word {
-                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+                &:after { animation: halfDown $time * 2 linear $time * 9 both; }
                 &:nth-of-type(1) span {
-                    animation: titleWord $time * 2 $time * 5 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-of-type(2) span {
-                    animation: titleWord $time * 2 $time * 6 linear;
+                    animation: titleWord $time * 2 $time * 10 linear;
                     animation-fill-mode: forwards;
                 }
             }
@@ -46,35 +42,78 @@
 
     // ----- image-block -----
     .image-block {
-        p { animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
-        .image-container {
-            animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+        &.one .image-container {
             img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
             &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
+        }
+        &.two .image-container {
+            img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime * 1.25 both; }
+            &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime * 1.25 both; }
         }
     }
 
     // ----- title ------
     .title {
-        top: px(520);
-        left: px(540);
+        top: px(480);
+        left: px(560);
         position: absolute;
+        span.name { top: -3vh; }
+        p { padding: px(80) 0 0; }
+        .word span { font-size: px(94); }
+        .crossed-button {
+            margin: 37px 0 0 -13px;
+            span {
+                color: $dark;
+                font-size: px(26);
+                &:after { content: 'Читать далее'; }
+            }
+        }
+    }
+
+    // ----- jump-button -----
+    .jump-button {
+        left: px(1220);
+        bottom: 9vh;
+        a {
+            text-transform: uppercase;
+            &:before { background: $dark; }
+            span {
+                color: $dark;
+                font-size: px(32);
+                font-weight: $bold;
+                &:nth-of-type(7) { margin-right: 5px;}
+            }
+        }
+    }
+
+    // ----- letter c -----
+    .big-background-letter {
+        top: 28vh;
+        left: -6vh;
+        right: inherit;
+        font-size: 85vh;
+        color: rgba(68,68,68,.1);
+        span::before  { content: 'c'; }
     }
     
     // ----- image-block -----
     .image-block {
         z-index: 3;
-        width: px(1280);
-        height: px(1100);
-        margin-top: px(390);
-        margin-left: px(1690);
-        position: relative;
+        position: absolute;
+        &.one {
+            right: px(700);
+            width: px(1660);
+            height: px(1920);
+        }
+        &.two {
+            right: px(262);
+            bottom: px(186);
+        }
         .image-container {
             width: 100%;
             height: 100%;
             overflow: hidden;
             position: relative;
-            box-shadow: 0 0 px(60) px(16) rgba(0,0,0,.3);
             img {
                 z-index: 1;
                 width: 100%;
@@ -98,10 +137,10 @@
     .service-info {
         position: absolute;
         transform: rotate(90deg);
-        width: px(300);
-        right: px(70);
-        bottom: 22vh;
+        width: px(500);
+        right: px(180);
         z-index: 2;
+        top: 26vh;
         p {
             font-weight: $medium;
             font-size: px(22);
