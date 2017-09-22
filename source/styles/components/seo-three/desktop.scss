@@ -22,6 +22,7 @@
         // ----- other -----
         .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
         .table .container .item span { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+        .open-form { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
 
         // ----- title -----
         .title {
@@ -59,6 +60,56 @@
         color: rgba(68,68,68,.1);
         span::before  { content: 'c'; }
     }
+    
+    // ----- open-form -----
+    .open-form {
+        left: 2px;
+        bottom: 11vh;
+        color: $white;
+        width: px(334);
+        height: px(90);
+        display: block;
+        background: $blue;
+        font-size: px(32);
+        font-weight: $bold;
+        position: absolute;
+        font-family: $roboto;
+        text-transform: uppercase;
+        .active { display: none; }
+        span {
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 2;
+        }
+        &:before {
+            content: '';
+            opacity: 0;
+            top: px(24);
+            width: 100%;
+            height: 100%;
+            left: px(-24);
+            display: block;
+            position: absolute;
+            background: $darkGray;
+            transition: top $time, left $time, opacity $time;
+        }
+        &:hover {
+            color: $white;
+            .active {
+                display: block;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 13px;
+                left: 0;
+            }
+            &:before {
+                left: px(-10);
+                top: px(10);
+                opacity: 1;
+            }
+        }
+    }
 
     // ----- table -----
     .table .container {
@@ -86,19 +137,20 @@
             }
             & + .title {
                 display: block;
-                margin-top: 19vh;
+                margin-top: 21vh;
                 position: absolute;
                 font-family: $raleway;
                 font-weight: $extra-bold;
                 .word {
                     &:after { display: none; }
                     &:nth-of-type(1) {
-                        margin-bottom: 14px;
+                        margin-bottom: 5px;
                         span span { display: inline-grid; }
                     }
                     span {
                         color: $dark;
                         font-size: px(88);
+                        text-transform: initial;
                         span { color: $blue; }
                     }
                 }
