@@ -489,6 +489,10 @@
     from { width: 0; }
     to { width: 100vh; }
 }
+@keyframes heightPercentChanging {
+    from { height: 0; }
+    to { height: 100%; }
+}
 
 // blog
 @keyframes heightChangingBlogThree {

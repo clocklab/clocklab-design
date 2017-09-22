@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 1936.6 970.3" style="enable-background:new 0 0 1936.6 970.3;" xml:space="preserve">
+    <style type="text/css">
+        .st0 {
+            fill: none;
+            stroke-width: 7;
+            visibility: hidden;
+            stroke: url(#SVGID_1_);
+            stroke-miterlimit: 10;
+            stroke-linecap: round;
+            animation-name: line;
+            animation-delay: 2.4s;
+            stroke-dasharray: 4430;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+        }
+        .st1 { opacity: 0.6; }
+        .st2 {
+            opacity: 0.6;
+            fill: url(#SVGID_2_);
+        }
+        .st3 {
+            opacity: 3.000000e-02;
+            fill: #FFFFFF;
+        }
+        .st4 {
+            opacity: 0.1;
+            fill: #FFFFFF;
+        }
+        .st5 { fill: #6F639B; }
+        .st6 { fill: #666766; }
+        .st7 { font-family: 'Roboto-Medium'; }
+        .st8 { font-size: 18px; }
+        @keyframes line {
+            from, to { visibility: visible; }
+            from { stroke-dashoffset: 4430; }
+            to { stroke-dashoffset: 0; }
+        }
+    </style>
+    <g id="layer0">
+        <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="2.8585" y1="350.8826" x2="1940.0778" y2="350.8826">
+            <stop  offset="5.078125e-04" style="stop-color:#C84081"/>
+            <stop  offset="1" style="stop-color:#3A367C"/>
+        </linearGradient>
+        <path class="st0" d="M6.4,638.3c0,0,600.3,119.2,1158.5-266C1658.7,31.7,1733.1,69.1,1936.6,46"/>
+    </g>
+    <g id="layer1" class="st1">
+        <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="477.3437" x2="1936.2773" y2="477.3437">
+            <stop  offset="5.078125e-04" style="stop-color:#C84081"/>
+            <stop  offset="1" style="stop-color:#3A367C"/>
+        </linearGradient>
+        <path class="st2" d="M1936.3,47v860.8H0v-270c0,0,360,79,792-75.9c6.1,5,315.7-129,377.8-192.8c63.4-65.2,403.5-257.1,511.7-281.2
+            C1782.3,55.6,1936.3,47,1936.3,47z"/>
+        <animate attributeType="CSS" attributeName="opacity" 
+               from="0" to="1" dur="2s" repeatCount="0"/>
+    </g>
+    <g id="layer2">
+        <circle class="st3" cx="1502" cy="161" r="30.7"/>
+        <circle class="st4" cx="1502" cy="161" r="13.6"/>
+        <circle class="st5" cx="1502" cy="161" r="9.5"/>
+        <text transform="matrix(1 0 0 1 1445.333 87.3856)" class="st6 st7 st8">+ 7.68</text>
+    </g>
+    <g id="layer3">
+        <circle class="st4" cx="1286.7" cy="288" r="13.6"/>
+        <circle class="st5" cx="1286.7" cy="288" r="9.5"/>
+        <text transform="matrix(1 0 0 1 1252.333 235.3856)" class="st6 st7 st8">+ 2.45</text>
+    </g>
+</svg>

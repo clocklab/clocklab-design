@@ -1,0 +1,177 @@
+& {
+    font-family: $raleway;
+    font-weight: $regular;
+    overflow: hidden;
+    
+    // ----- animation -----
+    &.current {
+        background: $background;
+        animation: fadeIn $time * 3 both;
+
+        // ----- navigation-elements -----
+        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+
+        // ----- lines -----
+        .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+        
+        // ----- crossed-button -----
+        .crossed-button { animation: fadeInUp $time * 2 $time * 12 both; }
+
+        // ----- image-block -----
+        .image-block .image-container {
+            img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
+            &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
+        }
+
+        // ----- title -----
+        .title {
+            animation: fadeIn $time * 2 $time * 5 linear;
+            animation-fill-mode: forwards;
+            p {
+                animation: fadeInUp $time * 2 $time * 10 linear;
+                animation-fill-mode: forwards;
+            }
+            span.name {
+                span {
+                    animation: titleName $time * 2 $time * 11 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:before {
+                    animation: titleNameShape $time * 2 $time * 10 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .word {
+                &:after { animation: halfDown $time * 2 linear $time * 7 both; }
+                span {
+                    animation: titleWord $time * 2 $time * 8 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+    
+    // ----- graph -----
+    .graph {
+        bottom: 0;
+        margin-bottom: -8vh;
+        position: absolute;
+        .st0 {
+            fill: none;
+            stroke-width: 7;
+            visibility: hidden;
+            animation-name: line;
+            animation-delay: 2.4s;
+            stroke-miterlimit: 10;
+            stroke-linecap: round;
+            stroke: url(#SVGID_1_);
+            stroke-dasharray: 4444;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+        }
+        .st1 { opacity: 0.6; }
+        .st2 {
+            opacity: 0.6;
+            fill: url(#SVGID_2_);
+        }
+        .st3 {
+            opacity: 3.000000e-02;
+            fill: #FFFFFF;
+        }
+        .st4 {
+            opacity: 0.1;
+            fill: #FFFFFF;
+        }
+        .st5 { fill: #6F639B; }
+        .st6 { fill: #666766; }
+        .st7 {
+            font-family: $roboto;
+            font-weight: $medium;
+        }
+        .st8 { font-size: 18px; }
+        @keyframes line {
+            from, to { visibility: visible; }
+            from { stroke-dashoffset: 4444; }
+            to { stroke-dashoffset: 0; }
+        }
+    }
+
+    // ----- lines -----
+    .lines div {
+        width: 1px;
+        height: 100vh;
+        position: absolute;
+        background: rgba(102,102,102,.5);
+        &:nth-of-type(1) { left: px(750); }
+        &:nth-of-type(2) { left: px(1525); }
+        &:nth-of-type(3) { right: px(1525); }
+        &:nth-of-type(4) { right: px(750); }
+    }
+
+    // ----- title -----
+    .title {
+        margin: 21vh 0 0 40vh;
+        position: absolute;
+        left: px(1220);
+        top: px(652);
+        &.padding p {
+            width: px(1500);
+            padding: px(70) 0 0 px(320);
+        }
+    }
+
+    // ----- crossed-button -----
+    .crossed-button {
+        left: px(308);
+        bottom: px(-108);
+        position: absolute;
+        align-items: center;
+        font-family: $roboto;
+        font-weight: $medium;
+        .arrow .st0, .arrow .st1 { stroke: $white; }
+        span {
+            animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
+            font-weight: $bold;
+            color: $white;
+            font-size: px(26);
+            display: block;
+            &:after { content: 'Читать далее'; }
+            &:before {
+                background: $white;
+                left: -1px;
+            }
+        }
+    }
+
+    // ----- image-block -----
+    .image-block {
+        z-index: 3;
+        width: px(1424);
+        height: px(1098);
+        margin-top: px(482);
+        margin-left: px(396);
+        position: relative;
+        .image-container {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            img {
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: relative;
+            }
+            &:before {
+                height: 100%;
+                width: 100%;
+                z-index: 2;
+                content: '';
+                position: absolute;
+                background: $darkGray;
+                transform: translate3d(-90%, 90%, 0);
+            }
+        }
+    }
+}
