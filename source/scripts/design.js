@@ -10,9 +10,6 @@
 // menu
 //= components/menu.js
 
-// jQuery
-//= components/jquery.min.js
-
 // open form
 //= components/open-form.js
 

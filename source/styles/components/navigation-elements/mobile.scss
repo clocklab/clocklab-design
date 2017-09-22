@@ -29,7 +29,7 @@
 
     // ----- jump letters -----
     .jump-letters a {
-        @include inline-block;
+        display: inline-block;
         text-align: center;
         position: relative;
         padding: 0 px(20);
@@ -48,7 +48,7 @@
             transform: translateX(-100%);
         }
         span {
-            @include inline-block;
+            display: inline-block;
             font-size: px(24);
             padding: px(10) 0;
         }
@@ -110,7 +110,7 @@
             }
         }
         a {
-            @include inline-block;
+            display: inline-block;
             animation: Down 1s both;
             text-transform: uppercase;
             font-weight: $thin;

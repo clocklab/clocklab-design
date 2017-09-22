@@ -1,7 +1,10 @@
 @import '../desktop';
 
 // ----- title -----
-.title { margin-left: px(440); }
+.title { margin: px(428) 0 0 px(484); }
 
-// ----- brands -----
-table { zoom: .6; }
+// ----- lines -----
+.lines div:nth-of-type(1) { left: px(484); }
+
+// ----- jelly-button -----
+.jelly-button { bottom: 20vh; }

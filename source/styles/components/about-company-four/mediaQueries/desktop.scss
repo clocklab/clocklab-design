@@ -1,1 +1,7 @@
 @import '../desktop';
+
+// ----- front-layer -----
+.front-layer {
+	.steps .step { width: 55%; }
+	.container .title .word span { font-size: px(90); }
+}

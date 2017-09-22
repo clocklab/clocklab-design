@@ -1,14 +1,26 @@
 & {
-    background-color: $background;
+    background: url('../images/dots.png');
+    background-color: $white;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
     
     // ----- animation -----
     &.current {
-
+        animation: fadeIn $time * 3 both;
+        
         // ----- other -----
-        .vertical-text, table { animation: fadeIn $time * 6 $time * 6 both; }
+        .jelly-button { animation: fadeIn $time $time * 9 both; }
+        .social-panel {
+            .instagram { animation: social $time * 3 $time * 9 both; }
+            .facebook { animation: social $time * 3 $time * 9 both; }
+        } 
+        
+        // ----- big-background-letter -----
+        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+        
+        // ----- lines -----
+        .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
         
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -35,52 +47,106 @@
                     animation: titleWord $time * 2 $time * 5 linear;
                     animation-fill-mode: forwards;
                 }
-                &:nth-of-type(2) span {
-                    animation: titleWord $time * 2 $time * 6 linear;
-                    animation-fill-mode: forwards;
+            }
+        }
+    }
+    
+    // ----- social-panel -----
+    .social-panel {
+        position: absolute;
+        left: px(1524);
+        z-index: 3;
+        top: 46vh;
+        .instagram, .facebook {
+            display: flex;
+            border: 1px solid $darkGray;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: px(60);
+            height: px(60);
+            path, circle { fill: $darkGray }
+            svg {
+                width: 60%;
+                z-index: 2;
+            }
+            &:before {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 100%;
+                height: 100%;
+                background: $blue;
+                content: '';
+                opacity: 0;
+                transition: top $time, right $time, opacity $time;
+            }
+            &:hover {
+                path, circle { fill: $white; }
+                &:before {
+                    top: 3px;
+                    right: 3px;
+                    opacity: 1;
                 }
             }
         }
-    }
-    
-    // ----- title -----
-    .title {
-        width: 80.5vh;
-        display: inherit;
-        margin-top: 10vh;
-        margin-left: px(880);
-        span.name { top: -2vh; }
-    }
-    
-    // ----- small-gray-lines ----
-    .small-gray-lines { z-index: -1; }
-
-    // ----- brands -----
-    table {
-        margin: 10vh auto 0;
-        tr {
-            display: flex;
-            margin-bottom: 8vh;
-            &:last-of-type { margin-bottom: 0; }
-            td {
-                display: block;
-                margin: auto auto;
-                padding: 0 px(125);
+        .instagram {
+            top: px(-24);
+            animation: social $time * 3 both;
+            .big-circle {
+                stroke-width: 2;
+                stroke-miterlimit: 10;
+            }
+            svg {
+                width: 100%;
+                height: 100%;
             }
         }
+        .facebook {
+            animation: socialReversed $time * 3 both;
+            svg { width: 55%; }
+        }
+    }
+    
+    // ----- bottom-button -----
+    .bottom-button span:before { content: 'Все услуги'; }
+
+    // ----- letter o -----
+    .big-background-letter {
+        top: 28vh;
+        z-index: 3;
+        left: 16vh;
+        font-size: 75vh;
+        span::before  { content: 'o'; }
+    }
+    
+    // ----- lines -----
+    .lines div {
+        width: 1px;
+        height: 100vh;
+        background: #E0E1E0;
+        position: absolute;
+        &:nth-of-type(1) { left: px(645); }
+        &:nth-of-type(2) { left: px(1525); }
+        &:nth-of-type(3) { right: px(745); }
     }
 
-    // ----- vertical-text -----
-    .vertical-text {
-        transform: rotate(-90deg);
-        font-family: $roboto;
-        font-weight: $thin;
-        position: absolute;
-        font-size: px(26);
-        line-height: 1.4;
-        bottom: 27.5vh;
-        color: $white;
-        left: px(-76);
-        width: 12%;
+    // ----- title -----
+    .title {
+        margin: px(428) 0 0 39.7vw;
+        span.name { top: -1.4vh; }
+        p {
+            text-transform: uppercase;
+            font-size: px(29);
+            padding: 9vh 0 0;
+        }
+        .word {
+            word-spacing: -3px;
+            &:after { display: none; }
+            span {
+                font-size: px(60);
+            }
+        }
     }
 }

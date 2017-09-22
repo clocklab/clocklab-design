@@ -1,0 +1,41 @@
+& {
+    overflow: visible;
+    transform: rotate(-90deg);
+    position: absolute;
+    font-size: px(29);
+    left: px(16);
+    top: 47.7vh;
+    z-index: 2;
+    &.dark a {
+        color: $dark;
+        &:hover { color: $gray; }
+        &.select {
+            color: $gray;
+            &:hover { color: $black; }
+            &:before { color: $gray; }
+        }
+    }
+    a {
+        text-transform: uppercase;
+        display: inline-block;
+        font-family: $raleway;
+        cursor: pointer;
+        color: $gray;
+        &:nth-of-type(1) { margin-right: 7px; }
+        &:nth-of-type(2) { margin-right: 29px; }
+        &.select {
+            color: $white;
+            &::before {
+                position: absolute;
+                color: $white;
+                bottom: 1.5px;
+                right: 23px;
+                content: '—';
+            }
+        }
+        &:hover {
+            color: $white;
+            transition: $time;
+        }
+    }
+}

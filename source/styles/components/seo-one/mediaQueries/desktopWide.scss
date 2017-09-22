@@ -1,0 +1,23 @@
+@import '../desktop';
+
+// ----- crossed-button -----
+.crossed-button { left: 0; }
+
+// ----- title -----
+.title {
+	margin-top: px(400);
+	margin-left: px(900);
+	.word span { font-size: px(90); }
+	&.padding p {
+		padding: px(70) 0 0 0;
+		width: px(1000);
+	}
+}
+
+// ----- image-block -----
+.image-block {
+    width: px(1585);
+    height: px(1025);
+    margin-top: px(350);
+    margin-left: px(250);
+}

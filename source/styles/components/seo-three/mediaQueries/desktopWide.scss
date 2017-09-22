@@ -1,0 +1,14 @@
+@import '../desktop';
+
+// ----- table -----
+.table .container {
+	max-width: 1000px;
+	
+	// ----- lines -----
+    .lines div {
+        &:nth-of-type(1) { left: 0; }
+        &:nth-of-type(2) { left: px(820); }
+        &:nth-of-type(3) { right: px(820); }
+        &:nth-of-type(4) { right: 0; }
+    }
+}
