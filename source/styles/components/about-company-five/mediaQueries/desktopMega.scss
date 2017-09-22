@@ -1,1 +1,7 @@
 @import '../desktop';
+
+// ----- title -----
+.title { margin: px(428) 0 0 px(1525); }
+
+// ----- lines -----
+.lines div:nth-of-type(2) { left: px(1525); }
