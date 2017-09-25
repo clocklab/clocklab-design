@@ -9,7 +9,8 @@ html {
             height: 100%;
             display: flex;
             flex-direction: column;
-            background: $white;
+            background: $black;
+            overflow: hidden;
             .cyrillic { font-family: $roboto; }
             // nav ul li { @include inline-block; }
             input, button { outline: none; }
@@ -39,7 +40,6 @@ html {
                 @media only screen and (min-width: 1367px) and (max-width: 1680px) { min-height: 800px; }
                 @media only screen and (min-width: 1681px) and (max-width: 1920px) { min-height: 960px; }
                 @media only screen and (min-width: 1921px) { min-height: 900px; }
-                background-color: $white;
                 position: absolute;
                 display: table;
                 height: 100vh;
@@ -47,7 +47,9 @@ html {
                 z-index: -1;
                 left: 0;
                 top: 0;
-                &.current { z-index: 2; }              
+                &.previous-back { z-index: 3; }
+                &.current,
+                &.current-back { z-index: 2; }              
                 &.previous { z-index: 1; }
                 @media only screen and (max-width: 1024px) {
                     position: relative;

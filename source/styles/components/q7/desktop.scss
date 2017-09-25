@@ -3,7 +3,8 @@
     width: 100vw;
     height: 100vh;
     background: $white;
-    overflow: hidden;
+    box-shadow: 0px 0px 20px $black;
+    // overflow: hidden;
     
     .logo {
         z-index: 2;
@@ -312,8 +313,11 @@
         }
     }
 
-    &.current {
-        animation: fadeIn $time * 3 0s both;
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Up $time * 3 0s both;
 
         .logo {
             animation: fadeInDown $time * 3 $time * 3 both;
@@ -478,4 +482,129 @@
             }
         }
     }
+
+    &.previous,
+    &.previous-back {
+        animation: slideDown $time * 3 0s both;
+        animation-play-state: paused;
+
+        .logo {
+            animation-play-state: paused;
+        }
+
+        .menu {
+            animation-play-state: paused;
+        }
+
+        .portfolio-client {
+            
+            .client {
+                animation-play-state: paused;
+        
+                &-name-container {
+        
+                    span {
+                        animation-play-state: paused;
+                    }
+                }
+            }
+        }
+
+        .portfolio-right-panel {
+            
+            .date {
+                animation-play-state: paused;
+            }
+        
+            .devices {
+                
+                span {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
+        .bottom-button {
+            
+            span {
+                animation-play-state: paused;
+            }
+        
+            .line {
+                animation-play-state: paused;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation-play-state: paused;
+            }
+    
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .new-title {
+    
+            .text-container {
+    
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+    
+            span {
+                animation-play-state: paused;
+            }
+        }
+    
+        .about-work {
+    
+            p {
+                animation-play-state: paused;
+            }
+        }
+
+        .car-covering-layer {
+    
+            .lines {
+    
+                .line {
+    
+                    &--left {
+                        animation-play-state: paused;
+                    }
+    
+                    &--right {
+                        animation-play-state: paused;
+                    }
+                }
+            }
+    
+            &--left {
+                
+                .image-container {
+                    animation-play-state: paused;
+                }
+            }
+    
+            &--center {
+                animation-play-state: paused;
+    
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
+    }    
 }

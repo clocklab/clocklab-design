@@ -570,3 +570,43 @@
         height: 100vh;
     }
 }
+// web-production ends
+
+
+// MAIN
+@keyframes slideDown {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateY(101%);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateY(-101%);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateX(-101%);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateX(101%);
+    }
+}
+// MAIN ends

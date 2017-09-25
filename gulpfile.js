@@ -5,7 +5,7 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
-var page = 'sanctions'
+var page = 'main'
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');

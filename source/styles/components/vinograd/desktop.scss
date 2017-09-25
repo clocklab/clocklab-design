@@ -2,6 +2,7 @@
 
     width: 100vw;
     height: 100vh;
+    background: #1c1c1c;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 
@@ -244,27 +245,11 @@
         }
     }
 
-    &:before,
-    &:after {
-        display: block;
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        width: 50%;
-        height: 100vh;
-        background: #1c1c1c;
-        content: '';
-    }
-
-    &:before {
-        left: 0;
-    }
-
-    &:after {
-        right: 0;
-    }
-
-    &.current {
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Right $time * 3 0s both;
 
         .logo {
             animation: fadeInDown $time * 3 $time * 3 both;
@@ -394,13 +379,128 @@
                 animation: posterTextApearVinograd $portfolioVinogradPosterTextAnimationTime $portfolioVinogradPosterTextDelayTime both;
             }
         }
+    }
 
-        &:before {
-            animation: down $portfolioVinogradLeftBlockAnimationTime $portfolioVinogradLeftBlockDelayTime both; 
+    &.previous,
+    &.previous-back {
+        animation: slideLeft $time * 3 0s both;
+        animation-play-state: paused;
+
+        .logo {
+            animation-play-state: paused;
         }
 
-        &:after {
-            animation: up $portfolioVinogradRightBlockAnimationTime $portfolioVinogradRightBlockDelayTime both;
+        .menu {
+            animation-play-state: paused;
         }
+
+        .portfolio-client {
+
+            .client {
+                animation-play-state: paused;
+        
+                &-name-container {
+        
+                    span {
+                        animation-play-state: paused;
+                    }
+                }
+            }
+        }
+
+        .portfolio-right-panel {
+
+            .date {
+                animation-play-state: paused;
+            }
+        
+            .devices {
+                
+                span {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
+        .bottom-button {
+
+            span {
+                animation-play-state: paused;
+            }
+        
+            .line {
+                animation-play-state: paused;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation-play-state: paused;
+            }
+    
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .new-title {
+    
+            .text-container {
+    
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+    
+            span {
+                animation-play-state: paused;
+            }
+        }
+    
+        .about-work {
+    
+            p {
+                animation-play-state: paused;
+            }
+        }
+
+        .small-gray-lines {
+
+            .line {
+                animation-play-state: paused;
+            }
+        }
+
+        .poster {
+    
+            .image-container {
+                animation-play-state: paused;
+    
+                img {
+                    animation-play-state: paused;
+                }
+
+                &:after {
+                    animation-play-state: paused;
+                }
+    
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+    
+            span {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
     }
 }
