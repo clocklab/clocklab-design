@@ -1,0 +1,21 @@
+//common
+@import 'base/reset';
+@import 'base/animate';
+@import 'base/common';
+@import 'base/fonts';
+@import 'base/variables.scss';
+
+//helpers 
+@import 'components/modules/small-gray-lines';
+@import 'components/modules/clock-bg';
+@import 'components/jumping-button/main';
+
+@import 'components/title/main';
+
+//components
+@import 'components/audit-header/main';
+@import 'components/sanctions-plan/main';
+@import 'components/sanctions-graph/main';
+@import 'components/web-production-our-works/main';
+@import 'components/web-production-answers/main';
+@import 'components/web-production-footer/main';

@@ -1,0 +1,37 @@
+@import '../desktop';
+
+& {
+
+    header {
+        height: px(2000);
+
+        img {
+            height: px(1700);
+        }
+    }
+
+    .big-bg-letter-o {
+
+        .big-background-letter {
+            top: 30%;
+            left: px(1000);
+        }
+    }
+
+    .container {
+
+        &__item {
+
+            &--1 { margin-top: px(200); }
+            &--3 {
+
+                .column {
+
+                    img {
+                        height: px(1500);
+                    }
+                }
+            }
+        }
+    }
+}
