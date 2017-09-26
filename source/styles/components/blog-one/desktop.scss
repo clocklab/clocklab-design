@@ -3,9 +3,74 @@
     font-family: $raleway;
     font-weight: $regular;
     
-    // ----- animation -----
-    &.current {
-        animation: fadeIn $time * 3 both;
+    // ----- animation down -----
+    &.current, &.current-back,
+    &.previous, &.previous-back {
+        animation: Down $time * 3 both;
+        
+        // ----- navigation-elements -----
+        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+
+        // ----- service-info -----
+        .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
+        .jump-button { animation: fadeInUp $time * 2 $time * 9 both; }
+
+        // ----- other -----
+        .bottom-button {
+            span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
+            .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
+        }
+
+        // ----- title -----
+        .title {
+            p {
+                animation: fadeInUp $time * 2 $time * 7 linear;
+                animation-fill-mode: forwards;
+            }
+            span.name {
+                span {
+                    animation: titleName $time * 2 $time * 8 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:before {
+                    animation: titleNameShape $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .word {
+                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+                &:nth-of-type(1) span {
+                    animation: titleWord $time * 2 $time * 5 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:nth-of-type(2) span {
+                    animation: titleWord $time * 2 $time * 6 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+
+        // ----- small-gray-lines -----
+        .small-gray-lines .line {
+            animation: lineUp 1s $time * 3 both;
+            &.down { animation-name: lineDown; }
+        }
+
+        // ----- blue-line and image-block -----
+        .blue-line { animation: heightChanging $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
+        .image-block {
+            p { animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
+            .image-container {
+                animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+                img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
+                &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
+            }
+        }
+    }
+
+    // ----- animation up -----
+    &.previous, &.previous-back {
+        animation: slideUp $time * 3 both;
         
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
