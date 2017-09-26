@@ -291,8 +291,11 @@
         }
     }
 
-    &.current {
-        animation: apear $time * 3 0s both;
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Down $time * 3 0s both;
 
         .small-gray-lines {
             
@@ -426,5 +429,133 @@
                 animation: textApear $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both;
             }
         }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideUp $time * 3 0s both;
+        animation-play-state: paused;
+
+        .small-gray-lines {
+            
+            .line {
+                animation-play-state: paused;
+            }
+        }
+
+        .big-background-letter {
+            animation-play-state: paused;
+        }
+
+        .logo {
+            animation-play-state: paused;
+        }
+
+        .menu {
+            animation-play-state: paused;
+        }
+
+        .portfolio-client {
+            
+            .client {
+                animation-play-state: paused;
+        
+                &-name-container {
+        
+                    span {
+                        animation-play-state: paused;
+                    }
+                }
+            }
+        }
+
+        .portfolio-right-panel {
+            
+            .date {
+                animation-play-state: paused;
+            }
+        
+            .devices {
+                
+                span {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
+        .bottom-button {
+            
+            span {
+                animation-play-state: paused;
+            }
+        
+            .line {
+                animation-play-state: paused;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation-play-state: paused;
+            }
+    
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .new-title {
+    
+            .text-container {
+    
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+    
+            span {
+                animation-play-state: paused;
+            }
+        }
+    
+        .about-work {
+    
+            p {
+                animation-play-state: paused;
+            }
+        }
+
+        .blue-line {
+            animation-play-state: paused;
+        }
+
+        .image-block {
+    
+            .image-container {
+                animation-play-state: paused;
+    
+                img {
+                    animation-play-state: paused;
+                }
+    
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+    
+            p {
+                animation-play-state: paused;
+            }
+        }
+        
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
     }
 }

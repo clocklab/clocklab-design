@@ -1,24 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     const slides = Array.prototype.slice.call( document.querySelectorAll('.screen-block'))
-    const events = ['wheel', 'scroll', 'keydown']
-    const animationTime = 500
-    let freezer
+    const events = ['wheel', 'keydown']
+    const animationTime = 1000
     let flag = true
+    let firstLap = true
+    let freezer
     
     const addListeners = () => events.forEach(event => document.addEventListener(event, freezeEvents))
 
     const freezeEvents = () => {
         if (flag) {
             move()
+
             flag = !flag
+
+            setTimeout(() => {
+                flag = !flag
+            }, animationTime)
         }
-
-        freezer && clearTimeout(freezer)
-
-        freezer = setTimeout(() => {
-            flag = !flag
-        }, animationTime)
     }
 
     const moveToNext = index => {
@@ -29,29 +29,47 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const moveToPrevious = (index) => {
         slides[index - 1]
-        ? slides[index - 1].classList.add('current')
-        : slides[slides.length - 1].classList.add('current')
+        ? slides[index - 1].classList.add('current-back')
+        : slides[slides.length - 1].classList.add('current-back')
+    }
+
+    const setClasses = (currentSlide, previousSlide, currentClass) => {
+        previousSlide && previousSlide.classList.remove('previous', 'previous-back');
+        currentSlide.classList.remove('current', 'current-back');
+        currentSlide.classList.add(currentClass);
+    }
+
+    const resetAnimation = (currentSlide, currentClass) => {
+        setTimeout(() => {
+            currentSlide.classList.remove(currentClass);
+        }, animationTime)
     }
     
     const move = () => {
-        const previousSlide = document.querySelector('.screen-block.previous');
-        const currentSlide = document.querySelector('.screen-block.current');
+        const previousSlide = document.querySelector('.screen-block.previous') || document.querySelector('.screen-block.previous-back');
+        const currentSlide = document.querySelector('.screen-block.current') || document.querySelector('.screen-block.current-back');
         const index = slides.indexOf(currentSlide);
         
         if (event.deltaY < 0 || event.keyCode === 40) {
-            previousSlide && previousSlide.classList.remove('previous');
-            currentSlide.classList.remove('current');
-            currentSlide.classList.add('previous');  
-
+            setClasses(currentSlide, previousSlide, 'previous')
+            resetAnimation(currentSlide, 'previous')
             moveToNext(index)
+
+            if (index === slides.length - 1) firstLap = false
         }
 
         if (event.deltaY > 0 || event.keyCode === 38) {
-            previousSlide && previousSlide.classList.remove('previous');
-            currentSlide.classList.remove('current');
-            currentSlide.classList.add('previous');  
-
-            moveToPrevious(index)
+            if (firstLap) {
+                if (slides[index - 1]) {
+                    setClasses(currentSlide, previousSlide, 'previous-back')
+                    resetAnimation(currentSlide, 'previous-back')
+                    slides[index - 1].classList.add('current-back')
+                }
+            } else {
+                setClasses(currentSlide, previousSlide, 'previous-back')
+                resetAnimation(currentSlide, 'previous-back')
+                moveToPrevious(index)
+            }
         }
     }
     

@@ -1,6 +1,10 @@
 // modules
 // @import "compass/css3";
 
+body {
+    overflow: hidden;
+}
+
 // base
 @import "base/variables";
 @import "base/mixins";

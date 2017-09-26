@@ -5,6 +5,7 @@
     padding-right: 25vw;
     width: 100vw;
     height: 100vh;
+    background: $black;
     overflow: hidden;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
 
@@ -386,27 +387,11 @@
         }
     }
 
-    &:before,
-    &:after {
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        height: 100vh;
-        background: $lightBlack;
-        content: '';
-    }
-
-    &:before {
-        left: 0;
-        width: 75%;
-    }
-
-    &:after {
-        right: 0;
-        width: 25%;
-    }
-
-    &.current {
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Right $time * 3 0s both;
 
         .logo {
             animation: fadeInDown $time * 3 $time * 3 both;
@@ -590,13 +575,150 @@
                 animation: up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTime both;
             }
         }
+    }
 
-        &:before {
-            animation: right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
+    &.previous,
+    &.previous-back {
+        animation: slideLeft $time * 3 0s both;
+        animation-play-state: paused;
+
+        .logo {
+            animation-play-state: paused;
         }
 
-        &:after {
-            animation: left $portfolioAltaRightBlockAnimationTime $portfolioAltaRightBlockDelayTime both;
+        .menu {
+            animation-play-state: paused;
         }
+
+        .portfolio-client {
+
+            .client {
+                animation-play-state: paused;
+        
+                &-name-container {
+        
+                    span {
+                        animation-play-state: paused;
+                    }
+                }
+            }
+        }
+
+        .portfolio-right-panel {
+
+            .date {
+                animation-play-state: paused;
+            }
+        
+            .devices {
+                
+                span {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
+        .bottom-button {
+
+            span {
+                animation-play-state: paused;
+            }
+        
+            .line {
+                animation-play-state: paused;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation-play-state: paused;
+            }
+    
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .new-title {
+    
+            .text-container {
+    
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+    
+            span {
+                animation-play-state: paused;
+            }
+        }
+
+        .small-gray-lines {
+            
+            .line {
+                animation-play-state: paused;
+            }
+        }
+
+        .poster {
+            
+            .image-container {
+    
+                img {
+    
+                    &.loaded {
+                        animation-play-state: paused;
+                    }
+                }
+    
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+    
+            & > span {
+                animation-play-state: paused;
+            }
+    
+            .text {
+    
+                p {
+                    animation-play-state: paused;
+                }
+            }
+        }
+    
+        .controls {
+    
+            .slide-controls {
+    
+                &--next-slide {
+    
+                    .content-container {
+                        animation-play-state: paused;
+                    }   
+                }
+    
+                &--previous-slide {
+    
+                    .content-container {
+                        animation-play-state: paused;
+                    }
+                }
+            }
+    
+            .indicators {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
     }
 }
