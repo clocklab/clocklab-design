@@ -11,6 +11,10 @@
         // ----- navigation-elements -----
         .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
 
+        // ----- graph -----
+        .st1, .st6, .st7, .st8 { animation: fadeIn $time * 3 $time * 12 both }
+        .st5 { animation: fadeIn $time * 3 $time * 14 both }
+
         // ----- lines -----
         .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
         
@@ -60,14 +64,12 @@
             fill: none;
             stroke-width: 7;
             visibility: hidden;
-            animation-name: line;
             animation-delay: 2.4s;
             stroke-miterlimit: 10;
             stroke-linecap: round;
             stroke: url(#SVGID_1_);
             stroke-dasharray: 4444;
-            animation-duration: 5s;
-            animation-timing-function: linear;
+            animation: line 5s 2.4s forwards;
         }
         .st1 { opacity: 0.6; }
         .st2 {
