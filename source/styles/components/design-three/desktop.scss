@@ -352,8 +352,89 @@
         }
     }
 
-    // ----- animation -----
-    &.current {
+    // ----- animation left -----
+    &.current, &.current-back,
+    &.previous, &.previous-back {
+        animation: Left $time * 3 0 both;
+        .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
+        .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
+        .title {
+            animation: fadeIn $time * 2 $time * 6 linear;
+            animation-fill-mode: forwards;
+            span.name {
+                span {
+                    animation: titleName $time * 2 $time * 12 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:before {
+                    animation: titleNameShape $time * 2 $time * 11 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .word {
+                &:after { animation: halfDown $time * 2 linear $time * 8 both; }
+                span {
+                    animation: titleWord $time * 2 $time * 9 linear;
+                    animation-fill-mode: forwards;
+                }
+                span {
+                    animation: titleWord $time * 2 $time * 11 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+        &:before, &:after { animation: Right $WFBeforeAnimationTime $WFBeforeDelayTime both; }
+        &:after { animation-name: Left; }
+        .lines .line {
+            animation: heightIncreaseFull $WFLineAnimationTime $WFLineOneDelayTime both;
+            &--2 { animation-delay: $WFLineTwoDelayTime; }
+            &--3 { animation-delay: $WFLineThreeDelayTime; }
+            &--4 { animation-delay: $WFLineFourDelayTime; }
+            &--5 { animation-delay: $WFLineFiveDelayTime; }
+        }
+        .step {
+            .index span { animation: Left $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+            h3 { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+            p { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+            &:before { animation: fadeIn $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+            &:nth-child(2) {
+                .index span { animation-delay: $WFTextSecondColumnDelayTime; }
+                h3 { animation-delay: $WFTextSecondColumnDelayTime; }
+                p { animation-delay: $WFTextSecondColumnDelayTime; }
+                &:before { animation-delay: $WFTextSecondColumnDelayTime; }
+            }
+            &:nth-child(3) {
+                .index span { animation-delay: $WFTextThirdColumnDelayTime; }
+                h3 { animation-delay: $WFTextThirdColumnDelayTime; }
+                p { animation-delay: $WFTextThirdColumnDelayTime; }
+                &:before { animation-delay: $WFTextThirdColumnDelayTime; }
+            }
+            &:nth-child(4) {
+                .index span { animation-delay: $WFTextFourthColumnDelayTime; }
+                h3 { animation-delay: $WFTextFourthColumnDelayTime; }
+                p { animation-delay: $WFTextFourthColumnDelayTime; }
+                &:before { animation-delay: $WFTextFourthColumnDelayTime; }
+            }
+            &:nth-child(5) {
+                .index span { animation-delay: $WFTextFifthColumnDelayTime; }
+                h3 { animation-delay: $WFTextFifthColumnDelayTime; }
+                p { animation-delay: $WFTextFifthColumnDelayTime; }
+                &:before { animation-delay: $WFTextFifthColumnDelayTime; }
+            }
+        }
+        .questions {
+            h3, p, button { animation: Right $WFQustionsAnimationTime $WFQustionsDelayTime both; }
+        }
+        .back-layer { animation: fadeIn $WFBackLayerAnimationTime $WFBackLayerDelayTime both; }
+        .front-layer {
+            &:before, &:after { animation: fadeIn $WFFrontLayerAnimationTime $WFFrontLayerDelayTime both; }
+        }
+    }
+
+    // ----- animation right -----
+    &.previous, &.previous-back {
+    animation: slideRight $time * 3 0 both;
+    animation-play-state: paused;
         .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
         .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
         .title {
