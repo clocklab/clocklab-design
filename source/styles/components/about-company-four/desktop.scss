@@ -390,7 +390,7 @@
                 }
             }
             .word {
-                &:after { animation: halfDown $time * 2 linear $time * 8 both; }
+                &:after { animation: halfDown $time * 2 linear $time * 8 both; 
                 span {
                     animation: titleWord $time * 2 $time * 9 linear;
                     animation-fill-mode: forwards;

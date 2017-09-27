@@ -5,9 +5,57 @@
     font-weight: $regular;
     overflow: hidden;
     
-    // ----- animation -----
-    &.current {
-        animation: fadeIn $time * 3 both;
+    // ----- animation right -----
+    &.current, &.current-back,
+    &.previous, &.previous-back {
+        animation: Right $time * 3 0s both;
+        
+        // ----- other -----
+        .jelly-button { animation: fadeIn $time $time * 9 both; }
+        .social-panel {
+            .instagram { animation: social $time * 3 $time * 9 both; }
+            .facebook { animation: social $time * 3 $time * 9 both; }
+        } 
+        
+        // ----- big-background-letter -----
+        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+        
+        // ----- lines -----
+        .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+        
+        // ----- navigation-elements -----
+        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+
+        // ----- title -----
+        .title {
+            p {
+                animation: fadeInUp $time * 2 $time * 7 linear;
+                animation-fill-mode: forwards;
+            }
+            span.name {
+                span {
+                    animation: titleName $time * 2 $time * 8 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:before {
+                    animation: titleNameShape $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+            .word {
+                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+                &:nth-of-type(1) span {
+                    animation: titleWord $time * 2 $time * 5 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+    
+    // ----- animation left -----
+    &.previous, &.previous-back {
+        animation: slideLeft $time * 3 0s both;
+        animation-play-state: paused;
         
         // ----- other -----
         .jelly-button { animation: fadeIn $time $time * 9 both; }
