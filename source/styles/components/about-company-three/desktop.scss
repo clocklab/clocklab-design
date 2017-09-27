@@ -7,6 +7,7 @@
     &.current, &.current-back,
     &.previous, &.previous-back {
         animation: Left $time * 3 0 both;
+        background: $background;
         
         // ----- navigation-elements -----
         .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
