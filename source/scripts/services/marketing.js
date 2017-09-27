@@ -1,3 +1,8 @@
-//= components/menu.js
+// menu
+//= ../components/menu.js
 
-//= components/marketing-open-form.js
+// slides changing
+//= ../components/slides-changing-services.js
+
+// open form
+//= ../components/marketing-open-form.js

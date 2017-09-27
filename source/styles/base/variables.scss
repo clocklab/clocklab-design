@@ -544,3 +544,69 @@ $WFBackLayerAnimationTime: $WFFrontLayerAnimationTime;
 // WORK FLOW
 
 //  WEB PRODUCTION PAGE
+
+
+//  MARKETING PAGE
+
+// MARKETING HEADER BLOCK (MH)
+$MHGrayBlockDelayTime: $time * 6;
+$MHGrayBlockAnimationTime: $time * 3;
+
+$MHBlueBlockDelayTime: $MHGrayBlockDelayTime;
+$MHBlueBlockAnimationTime: $MHGrayBlockAnimationTime;
+
+$MHImageBeforeDelayTime: $MHGrayBlockDelayTime + $MHGrayBlockAnimationTime;
+$MHImageBeforeAnimationTime: $time * 3;
+
+$MHImageDelayTime: $MHImageBeforeDelayTime + $MHImageBeforeAnimationTime;
+$MHImageAnimationTime: $time * 3;
+
+$MHTitleLineDelayTime: $MHImageBeforeDelayTime;
+$MHTitleLineAnimationTime: $time * 3;
+
+$MHTitleTextDelayTime: $MHTitleLineDelayTime + $MHTitleLineAnimationTime;
+$MHTitleTextAnimationTime: $time * 3;
+
+$MHArticleDelayTime: $MHTitleLineDelayTime;
+$MHArticleAnimationTime: $time * 3;
+
+$MHTextDelayTime: $MHTitleTextDelayTime;
+$MHTextAnimationTime: $time * 3;
+// MARKETING HEADER BLOCK (MH)
+
+// MARKETING BRAND BLOCK (MH)
+$MBLine1DelayTime: $time * 6;
+$MBLine1AnimationTime: $time * 3;
+
+$MBLine2DelayTime: $MBLine1DelayTime + $MBLine1AnimationTime - $time * 2;
+$MBLine2AnimationTime: $MBLine1AnimationTime;
+
+$MBLine3DelayTime: $MBLine2DelayTime + $MBLine2AnimationTime - $time * 2;
+$MBLine3AnimationTime: $MBLine1AnimationTime;
+
+$MBColumn1DelayTime: $MBLine1DelayTime + $time;
+$MBColumn1AnimationTime: $time * 3;
+
+$MBColumn2DelayTime: $MBLine2DelayTime + $time;
+$MBColumn2AnimationTime: $time * 3;
+
+$MBColumn3DelayTime: $MBLine3DelayTime + $time;
+$MBColumn3AnimationTime: $time * 3;
+
+$MBStickerTextDelayTime: $MBColumn1DelayTime;
+$MBStickerTextAnimationTime: $time * 3;
+// MARKETING BRAND BLOCK (MH)
+
+// MARKETING SERVICES BLOCK (MS)
+$MSLine1DelayTime: $time * 6;
+$MSLineAnimationTime: $time * 3;
+$MSLine2DelayTime: $MSLine1DelayTime + $MSLineAnimationTime - $time * 2;
+$MSLine3DelayTime: $MSLine2DelayTime + $MSLineAnimationTime - $time * 2;
+
+$MSColumn1DelayTime: $MSLine1DelayTime + $time;
+$MSColumnAnimationTime: $time * 3;
+$MSColumn2DelayTime: $MSLine2DelayTime + $time;
+$MSColumn3DelayTime: $MSLine3DelayTime + $time;
+// MARKETING SERVICES BLOCK (MS)
+
+//  MARKETING PAGE

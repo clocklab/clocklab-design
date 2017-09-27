@@ -10,6 +10,10 @@
     .language {
         position: absolute;
         z-index: 5;
+
+        a {
+            animation: none;
+        }
     }
 
     .container {
@@ -22,25 +26,40 @@
         width: 98%;
         height: 82.3vh;
 
-        &:before,
-        &:after {
-            display: block;
+        .gray-block,
+        .blue-block {
             position: absolute;
             top: 0;
             height: 100%;
-            content: '';
+            overflow: hidden;
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: '';
+            }
         }
 
-        &:before {
+        .gray-block {
             left: 0;
             width: 74%;
-            background: $lightBlack;
+
+            &:before {
+                background: $lightBlack;
+            }
         }
 
-        &:after {
+        .blue-block {
             right: 0;
             width: 24%;
-            background: $blue;
+            
+            &:before {
+                background: $blue;
+            }
         }
     }
 
@@ -71,6 +90,7 @@
 
     .new-title {
         position: relative;
+        z-index: 2;
         top: px(140);
         margin-top: px(80);
         margin-bottom: px(80);
@@ -90,6 +110,7 @@
     article {
         padding: px(140) px(110) px(300) 0;
         background: $lightBlack;
+        overflow: hidden;
 
         p {
             margin-bottom: px(50);
@@ -116,6 +137,7 @@
         z-index: 2;
         width: px(1650);
         height: px(1360);
+        overflow: hidden;
 
         img {
             position: relative;
@@ -137,7 +159,154 @@
         }
     }
 
-    &.current {
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Down $time * 3 0s both;
 
+        .logo {
+            animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
+        }
+
+        .menu {
+            animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
+        }
+
+        .language {
+
+            a {
+                animation: Down $STBorderElAnimationTime $STBorderElDelayTime both;
+            }
+        }
+
+        .container {
+
+            .gray-block {
+
+                &:before {
+                    animation: Right $MHGrayBlockAnimationTime $MHGrayBlockDelayTime both;
+                }
+            }
+
+            .blue-block {
+
+                &:before {
+                    animation: Left $MHBlueBlockAnimationTime $MHBlueBlockDelayTime both;
+                }
+            } 
+        }
+
+        .image-container {
+
+            img {
+                animation: Right $MHImageAnimationTime $MHImageDelayTime both;
+            }
+
+            &:before {
+                animation: Right $MHImageBeforeAnimationTime $MHImageBeforeDelayTime both;
+            }
+        }
+
+        .new-title {
+
+            .text-container {
+
+                span {
+                    animation: Up $MHTitleTextAnimationTime $MHTitleTextDelayTime both;
+                }
+
+                &:before {
+                    animation: halfDown $MHTitleLineAnimationTime $MHTitleLineDelayTime both;
+                }
+            }
+        }
+
+        article {
+            animation: fadeIn $MHArticleAnimationTime $MHArticleDelayTime both;
+
+            p {
+                animation: fadeInUp $MHTextAnimationTime $MHTextDelayTime both;
+            }
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideUp $time * 3 0s both;
+        animation-play-state: paused;
+
+        .logo {
+            animation-play-state: paused;
+        }
+
+        .menu {
+            animation-play-state: paused;
+        }
+
+        .language {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
+
+        .container {
+
+            .gray-block {
+
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+
+            .blue-block {
+
+                &:before {
+                    animation-play-state: paused;
+                }
+            } 
+        }
+
+        .image-container {
+
+            img {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .new-title {
+
+            .text-container {
+
+                span {
+                    animation-play-state: paused;
+                }
+
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
+        article {
+            animation-play-state: paused;
+
+            p {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
     }
 }

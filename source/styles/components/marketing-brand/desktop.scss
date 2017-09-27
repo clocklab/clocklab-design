@@ -6,6 +6,10 @@
     .language {
         position: absolute;
         z-index: 5;
+
+        a {
+            animation: none;
+        }
     }
 
     .front-layer {
@@ -61,6 +65,10 @@
                 content: 'Услуги маркетинга';
             }
         }
+
+        &:before {
+            top: 40%;
+        }
     }
 
     h2 {
@@ -68,6 +76,7 @@
         width: px(1200);
         font-size: px(144);
         font-weight: 800;
+        overflow: hidden;
         
         span {
             display: block;
@@ -84,6 +93,7 @@
         left: 0;
         width: 100%;
         height: 100vh;
+        overflow: hidden;
 
         .line {
             position: absolute;
@@ -351,5 +361,194 @@
                 opacity: 1;
             }
         }
+    }
+
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Up $time * 3 0s both;
+
+        .logo {
+            animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
+        }
+
+        .menu {
+            animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
+        }
+
+        .language {
+
+            a {
+                animation: Down $STBorderElAnimationTime $STBorderElDelayTime both;
+            }
+        }
+
+        .lines {
+
+            .line {
+
+                &--1 {
+                    animation: Down $MBLine1AnimationTime $MBLine1DelayTime both;
+                }
+
+                &--2 {
+                    animation: Down $MBLine2AnimationTime $MBLine2DelayTime both;
+                }
+
+                &--3 {
+                    animation: Down $MBLine3AnimationTime $MBLine3DelayTime both;
+                }
+            }
+        }
+
+        h2 {
+
+            span {
+                animation: Right $MBColumn1AnimationTime $MBColumn1DelayTime both;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation: fadeInRight $MBStickerTextAnimationTime $MBStickerTextDelayTime both;
+            }
+
+            &:before {
+                animation: fadeInRight $MBStickerTextAnimationTime $MBStickerTextDelayTime both;
+            }
+        }
+
+        .step {
+
+            .index {
+
+                span {
+                    animation: Up $MBColumn2AnimationTime $MBColumn2DelayTime both;
+                }
+            }
+
+            h3,
+            p {
+                animation: Right $MBColumn2AnimationTime $MBColumn2DelayTime both;
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(4) {
+
+                h3,
+                p {
+                    animation: Right $MBColumn3AnimationTime $MBColumn3DelayTime both;
+                }   
+            }
+        }
+
+        .questions {
+
+            h3,
+            p,
+            button {
+                animation: Right $MBColumn3AnimationTime $MBColumn3DelayTime both;
+            }
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideDown $time * 3 0s both;
+        animation-play-state: paused;
+
+        .logo {
+            animation-play-state: paused;
+        }
+
+        .menu {
+            animation-play-state: paused;
+        }
+
+        .language {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
+
+        .lines {
+
+            .line {
+
+                &--1 {
+                    animation-play-state: paused;
+                }
+
+                &--2 {
+                    animation-play-state: paused;
+                }
+
+                &--3 {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
+        h2 {
+
+            span {
+                animation-play-state: paused;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .step {
+
+            .index {
+
+                span {
+                    animation-play-state: paused;
+                }
+            }
+
+            h3,
+            p {
+                animation-play-state: paused;
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(4) {
+
+                h3,
+                p {
+                    animation-play-state: paused;
+                }   
+            }
+        }
+
+        .questions {
+
+            h3,
+            p,
+            button {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
     }
 }

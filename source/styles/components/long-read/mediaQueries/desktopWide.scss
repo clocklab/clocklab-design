@@ -1,0 +1,77 @@
+@import '../desktop';
+
+& {
+
+    .long-read-container {
+        padding: px(300) px(200) px(160) px(250);
+    }
+    
+    .row {
+    
+        &--2 {
+
+            & > div {
+
+                &:nth-child(1) {
+                    padding-right: px(350);
+                }
+            }
+        }
+    
+        &--4 {
+
+            & > div {
+
+                &:nth-child(1) {
+                    padding-right: px(600);
+                }
+            }
+        }
+    
+        &--8 {
+
+            & > div {
+
+                &:nth-child(1) {
+                    padding-right: px(600);
+                }
+            }
+        }
+    }
+
+    ul {
+
+        &.circled {
+
+            li {
+                padding-left: px(40);
+            }
+        }
+
+        &.circled-double {
+            height: px(500);
+
+            li {
+                width: px(700);
+            }
+        }
+
+        &.indexed-double {
+
+            li {
+                padding-left: px(40);
+                width: px(650); 
+
+                &:nth-child(2),
+                &:nth-child(4) {
+                    width: px(700);
+                }
+
+                &:nth-child(1),
+                &:nth-child(3) {
+                    padding-left: px(90);
+                }
+            }
+        }
+    }
+}

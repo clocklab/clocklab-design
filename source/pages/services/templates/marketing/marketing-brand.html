@@ -1,22 +1,22 @@
-<div class="marketing-brand">
+<div class="marketing-brand screen-block">
     <div class="front-layer">
                 
         <div class="dark-logo">
-            //= templates/modules/logo.html
+            @@include('./components/logo.html')    
         </div>
         
         <div class="dark-menu">
-            //= templates/modules/menu.html
+            @@include('./components/menu.html')    
         </div>
     
         <div class="dark-language">
-            //= templates/modules/language.html
+            @@include('./components/language.html')
         </div>
 
         <div class="container">
             
             <div class="development">
-                //= templates/modules/sticker.html
+                @@include('./components/sticker.html')
                 
                 <h2>
                     <span>Разработка</span>
@@ -107,7 +107,7 @@
     </div>
     
     <div class="back-layer">
-        //= templates/modules/big-background-letter.html
+        @@include('./components/big-background-letter.html')
         <form action="">
             <button class="close-form"></button>
             <h3>Задать вопрос</h3>
