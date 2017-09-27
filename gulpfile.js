@@ -5,7 +5,7 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
-var page = 'portfolio'
+var page = 'ux-ui'
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
@@ -61,7 +61,7 @@ gulp.task('default', ['build', 'server', 'watch']);
 
 gulp.task('build', ['html', 'fonts', 'videos', 'images', 'sass', 'scripts', 'projects']);
 
-gulp.task('html', function() {
+gulp.task('html', function() {5
     gulp.src(path.source.html)
         .pipe(plugins.plumber())
         .pipe(fileinclude({

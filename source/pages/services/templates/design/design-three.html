@@ -1,0 +1,118 @@
+<div id="design-three" class="screen-block">
+
+    <!-- front-layer -->
+    <div class="front-layer">
+
+        <!-- logo -->
+        <div class="dark-logo">
+            @@include('./components/logo.html')
+        </div>
+    
+        <!-- menu -->
+        <div class="dark-menu">
+            @@include('./components/menu.html')
+        </div>
+    
+        <!-- language -->
+        <div class="dark">
+            @@include('./components/language.html')
+        </div>
+
+        <!-- big-background-letter -->
+        @@include('./components/big-background-letter.html')
+        
+        <!-- container -->
+        <div class="container">
+            <div class="result">
+
+                <!-- title -->
+                <div class="title dark">
+                    <span class="name"><span class="cyrillic">услуги дизайна</span></span>
+                    <div class="word">
+                        <span>почему стоит</span>
+                    </div>
+                    <div class="word">
+                        <span>выбрать нас?</span>
+                    </div>
+                </div>  
+            </div>
+
+            <!-- lines -->
+            <div class="lines">
+                <div class="line line--1"></div>
+                <div class="line line--2"></div>
+                <div class="line line--3"></div>
+            </div>
+
+            <!-- steps -->
+            <div class="steps">
+                <div class="step">
+                    <div class="index">
+                        <span>01</span>
+                    </div>
+                    <div class="content">
+                        <h3>Мы сохраняем баланс</h3>
+                        <p>
+                            Нас выбирают, потому что мы помешаны на уникальном дизайне и не предлагаем тривиальных решений. К каждому проекту мы подходим с душой, пытаясь найти лучшее воплощение для вашей идеи.
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="index">
+                        <span>03</span>
+                    </div>
+                    <div class="content">
+                        <h3>Мы страдаем хроническим перфекционизмом</h3>
+                        <p>
+                            Мы знаем, что неважных мелочей не бывает — каждый элемент, даже самый маленький, играет свою роль и имеет свое предназначение. Мы прорисовываем все детали сайта в соответствии с общей креативной концепцией. Мы умеем расставлять акценты и знаем, как управлять вниманием пользователя.
+                        </p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="index">
+                        <span>02</span>
+                    </div>
+                    <div class="content">
+                        <h3>Мы бесстыдно креативим</h3>
+                        <p>
+                            Мы свободно чувствуем себя в любом стилевом направлении. Мы постоянно занимаемся трендспоттингом, поэтому хорошо разбираемся в современных тенденциях в сфере веб-дизайна. Мы вам подскажем, какое решение является универсальным, а какие идеи быстро выйдут из моды.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- questions -->
+            <div class="questions">
+                <h3>Появились вопросы ?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+                <button class="open-form">Да</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- back-layer -->
+    <div class="back-layer">
+
+        <!-- big-brackground-letter -->
+        @@include('./components/big-background-letter.html')
+        
+        <form action="#">
+            <button class="close-form"></button>
+            <h3>Задать вопрос</h3>
+            <label for="">
+                <span>имя</span>
+                <input type="text" required>
+                <span class="mistake">ошибка заполнения</span>
+            </label>
+            <label for="">
+                <span>телефон</span>
+                <input type="text" required>
+                <span class="mistake">ошибка заполнения</span>
+            </label>
+            <label for="">
+                <input type="text" placeholder="ВАШ ВОПРОС">
+            </label>
+            <button class="send">Отправить</button>
+        </form>
+    </div>
+</div>
