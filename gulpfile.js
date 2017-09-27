@@ -5,7 +5,7 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
-var page = 'marketing'
+var page = 'marketing-strategy'
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
@@ -14,6 +14,7 @@ var autoPrefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
 var fileinclude = require('gulp-file-include');
 var jsImport = require('gulp-js-import');
+var include = require("gulp-include");
 
 var source = 'source',
     build = 'build',
@@ -105,7 +106,8 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
     gulp.src(path.source.scripts)
         .pipe(plugins.plumber())
-        .pipe(plugins.rigger())
+        .pipe(include())
+            .on('error', console.log)
         // .pipe(plugins.uglify())
         // .pipe(jsImport({hideConsole: true}))
         .pipe(plugins.rename({
