@@ -433,8 +433,8 @@
 
     // ----- animation right -----
     &.previous, &.previous-back {
-    animation: slideRight $time * 3 0 both;
-    animation-play-state: paused;
+        animation: slideRight $time * 3 0 both;
+        animation-play-state: paused;
         .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
         .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
         .title {
