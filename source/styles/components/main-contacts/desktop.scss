@@ -4,8 +4,51 @@
     font-weight: $regular;
     overflow: hidden;
     
-    // ----- animation -----
-    &.current {
+    // ----- animation right -----
+    &.current, &.current-back,
+    &.previous, &.previous-back {
+        animation: Right $time * 3 0 both;
+
+        // ----- navigation-elements -----
+        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+
+        // ----- big-background-letter -----
+        .big-background-letter { animation: fadeIn $time * 3 $time * 4 both; }
+
+        // ----- main-contacts-title -----
+        .main-contacts-title { animation: fadeInLeftMap $time * 3 $time * 3 both; }
+
+        // ----- main-contacts-info -----
+        .main-contacts-info li {
+            &:nth-of-type(1) { animation: fadeInUp $time * 3 $time * 3 both; }
+            &:nth-of-type(2) { animation: fadeInUp $time * 3 $time * 4 both; }
+        }
+
+        // ----- other -----
+        #map {
+            animation: mainConatactsMapRight $time * 3 $time * 3 linear;
+            animation-fill-mode: forwards;
+            & + .address p {
+                animation: fadeIn $time * 3 $time * 5 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .page-layer.back-layer {
+            &:before { animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both; }
+            &:after { animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
+        }
+
+        // ----- small-gray-lines -----
+        .small-gray-lines .line {
+            animation: lineUp 1s $time * 4 both;
+            &.down { animation-name: lineDown; }
+        }
+    }
+
+    // ----- animation left -----
+    &.previous, &.previous-back {
+        animation: slideLeft $time * 3 0 both;
+        animation-play-state: paused;
 
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
