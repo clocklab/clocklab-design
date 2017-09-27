@@ -4,6 +4,6 @@
 
 //=include ./../components/clock-bg.js
 
-//=include ./../components/open-form.js
+//=include ./modules/post/post-clock-bg.js
 
-//=include ./../components/slides-changing-services.js
+//=include ./modules/post/transition-end.js

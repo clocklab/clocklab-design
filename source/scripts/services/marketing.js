@@ -1,8 +1,5 @@
-// menu
-//= ../components/menu.js
+//=include ./../components/menu.js
 
-// slides changing
-//= ../components/slides-changing-services.js
+//=include ./../components/slides-changing-services.js
 
-// open form
-//= ../components/marketing-open-form.js
+//=include modules/marketing/marketing-open-form.js
