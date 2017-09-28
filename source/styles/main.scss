@@ -24,19 +24,17 @@ body { overflow: hidden; }
 @import "components/languages/main";
 /* в дальнейшем свести к одному */
 
+@import "components/long-text/main";
+@import "components/rotate-smartphone/main";
 @import "components/big-background-letter/main";
-@import "components/bottom-button/main";
-@import "components/crossed-button/main";
-@import "components/jumping-button/main";
 @import "components/portfolio-right-panel/main";
 @import "components/portfolio-client/main";
-
+@import "components/crossed-button/main";
+@import "components/jumping-button/main";
+@import "components/bottom-button/main";
 @import "components/copyright/main";
 @import "components/sticker/main";
 @import "components/social/main";
-@import "components/rotate-smartphone/main";
-@import "components/long-text/main";
-
 
 // ***** MAIN PAGE *****
 @import "components/clock/main";
@@ -63,7 +61,7 @@ body { overflow: hidden; }
 
 // ***** ABOUT COMPANY PAGE ****
 // @import "components/about-company-one/main";
-// @import "components/about-company-two/main";
+@import "components/about-company-two/main";
 // @import "components/about-company-three/main";
 // @import "components/about-company-four/main";
 // @import "components/about-company-five/main";

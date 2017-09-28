@@ -6,14 +6,15 @@
     // ----- animation up -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        animation: Up $time * 3 0 both;
-    
+        animation: Up $time * 3 0s both;
+        background: $white;
+        
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- service-info -----
         .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
-        .crossed-button, .jump-button { animation: fadeInUp $time * 2 $time * 14 both; }
+        .crossed-button, .jumping-button { animation: fadeInUp $time * 2 $time * 14 both; }
 
         // ----- title -----
         .title {
@@ -57,13 +58,14 @@
     &.previous, &.previous-back {
         animation: slideDown $time * 3 0s both;
         animation-play-state: paused;
+        background: $white;
     
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- service-info -----
         .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
-        .crossed-button, .jump-button { animation: fadeInUp $time * 2 $time * 14 both; }
+        .crossed-button, .jumping-button { animation: fadeInUp $time * 2 $time * 14 both; }
 
         // ----- title -----
         .title {
@@ -121,8 +123,9 @@
         }
     }
 
-    // ----- jump-button -----
-    .jump-button {
+    // ----- jumping-button -----
+    .jumping-button {
+        position: absolute;
         left: px(1220);
         bottom: 9vh;
         a {
