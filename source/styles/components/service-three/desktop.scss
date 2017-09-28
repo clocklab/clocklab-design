@@ -1,12 +1,13 @@
 & {
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
     
-    // ----- animation up -----
+    // ----- animation right -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        animation: Up $time * 3 both;
+        animation: Right $time * 3 0s both;
         
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -22,7 +23,9 @@
             &.horizontal p { animation: fadeInUp $time * 2 $time * 8 both; }
             &.vertical p { animation: fadeInDown $time * 2 $time * 7 both; }
         }
-        .jump-button { animation: fadeInUp $time * 2 $time * 8 both; }
+        
+        // ----- jumping-button -----
+        .jumping-button { animation: fadeInUp $time * 2 $time * 8 both; }
 
         // ----- other -----
         .bottom-button {
@@ -62,9 +65,10 @@
         }
     }
 
-    // ----- animation down -----
+    // ----- animation left -----
     &.previous, &.previous-back {
-        animation: slideDown $time * 3 both;
+        animation: slideLeft $time * 3 0s both;
+        animation-play-state: paused;
         
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -80,7 +84,9 @@
             &.horizontal p { animation: fadeInUp $time * 2 $time * 8 both; }
             &.vertical p { animation: fadeInDown $time * 2 $time * 7 both; }
         }
-        .jump-button { animation: fadeInUp $time * 2 $time * 8 both; }
+        
+        // ----- jumping-button -----
+        .jumping-button { animation: fadeInUp $time * 2 $time * 8 both; }
 
         // ----- other -----
         .bottom-button {
@@ -119,6 +125,8 @@
             }
         }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
     
     // ----- bg-image -----
     .bg-image {
@@ -167,11 +175,12 @@
         top: 20%;
     }
 
-    // ----- jump-button -----
-    .jump-button {
-        left: initial;
+    // ----- jumping-button -----
+    .jumping-button {
+        position: absolute;
         bottom: 20.5vh;
         right: px(610);
+        left: initial;
         a {
             text-transform: uppercase;
             &:before { background: $white; }
