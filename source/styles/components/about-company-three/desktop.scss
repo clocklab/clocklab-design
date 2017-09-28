@@ -1,13 +1,14 @@
 & {
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    background: $background;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
     
-    // ----- animation left -----
+    // ----- animation right -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        animation: Left $time * 3 0 both;
-        background: $background;
+        animation: Right $time * 3 0s both;
         
         // ----- navigation-elements -----
         .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -50,9 +51,9 @@
         }
     }
 
-    // ----- animation right -----
+    // ----- animation left -----
     &.previous, &.previous-back {
-        animation: slideRight $time * 3 0 both;
+        animation: slideLeft $time * 3 0s both;
         animation-play-state: paused;
         
         // ----- navigation-elements -----
@@ -95,7 +96,9 @@
             }
         }
     }
-
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
+    
     // ----- letter o -----
     .big-background-letter {
         right: 0;
