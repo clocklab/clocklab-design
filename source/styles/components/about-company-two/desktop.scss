@@ -9,6 +9,9 @@
         animation: Up $time * 3 0s both;
         background: $white;
         
+        // ----- big-background-letter -----
+        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+        
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
 
