@@ -68,7 +68,6 @@
     .instagram {
         top: px(-60);
         left: px(2);
-        animation: social $time * 3 both;
 
         .big-circle {
             fill: none;
@@ -88,8 +87,6 @@
     }
 
     .facebook {
-        // transform-origin: 0 0;
-        animation: socialReversed $time * 3 both;
 
         path {
             fill: $white
@@ -101,10 +98,9 @@
     }
 
     .jumping-button {
-        //desktop
         margin-left: px(230);
         font-size: 0;
-        animation: FadeInRight $time * 3 both;
+        
 
         a {
             text-transform: lowercase;
