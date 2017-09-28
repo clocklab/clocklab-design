@@ -1,123 +1,59 @@
 <div id="main-contacts" class="screen-block">
-
-    <!-- logo -->
     <div class="dark-logo">
+
+        <!-- logo -->
         @@include('./components/logo.html')
     </div>
-
-    <!-- menu -->
     <div class="dark-menu">
+
+        <!-- menu -->
         @@include('./components/menu.html')
     </div>
-
-    <!-- small-gray-lines -->
     <div class="light">
+
+        <!-- small-gray-lines -->
         @@include('./components/small-gray-lines.html')
     </div>
 
-    <!-- letter o -->
+    <!-- big-background-letter -->
     @@include('./components/big-background-letter.html')
-
-    <!-- back-layer -->
-    <div class="page-layer back-layer"></div>
 
     <!-- main-contacts-title -->
     <div class="main-contacts-title">
         <p>Есть что сказать?</p>
         <p>пишите или звоните нам</p>
     </div>
-    <div id="map"></div>
-    <div class="address">
-        <p class="cyrillic">Соломенская площадь, 2</p>
-    </div>
 
+    <!-- form -->
+    <div class="form valign">
+        <form action="#">
+            <h3>Задать вопрос</h3>
+            <label class="name">
+                <input type="text" required>
+                <span>имя</span>
+            </label>
+            <label class="phone">
+                <input type="text" required>
+                <span>телефон</span>
+            </label>
+            <label class="question">
+                <input type="text">
+                <span>Ваш вопрос</span>
+            </label>
+            <button class="send">Отправить</button>
+        </form>
+    </div>
+    
     <!-- main-contacts-info -->
     <ul class="main-contacts-info">
-        <li class="cyrillic">Телефоны<br><br>
-            <a href="tel:+380673959192">+380 (67) 395-91-92</a><br><br>
-            <a href="tel:+380449999999">+380 (44) 999-99-99</a>
+        <li class="cyrillic">Телефон<br><br>
+            <a href="tel:+380673959192">+380 (67) 395-91-92</a>
         </li>
         <li>E-mail<br><br>
             <a href="mailto:hello@clocklab.design">hello@clocklab.design</a>
         </li>
         <li class="cyrillic">Адрес<br><br>
-            <a href="https://www.google.com.ua/maps/place/%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC'%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%BF%D0%BB%D0%BE%D1%89%D0%B0,+2,+%D0%9A%D0%B8%D1%97%D0%B2/@50.431399, 30.472858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cebfa52cd7bf:0x2169dd9a939a0aa8!8m2!3d50.431644!4d30.473207" target="_blank">Соломенская площадь, 2</a>
+            <a href="https://www.google.com.ua/maps/place/%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC'%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%BF%D0%BB%D0%BE%D1%89%D0%B0,+2,+%D0%9A%D0%B8%D1%97%D0%B2/@50.431644,30.4710183,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cebfa52cd7bf:0x2169dd9a939a0aa8!8m2!3d50.431644!4d30.473207" target="_blank">Соломенская площадь, 2</a><br><br>
         </li>
     </ul>
 </div>
-<script>
-
-    // ----- google map -----
-    function initialize() {
-
-        // ----- определяем настройки отображения карты -----
-        var settings = {
-            center: new google.maps.LatLng(50.431399, 30.472858),
-            streetViewControl: false,
-            mapTypeControl: false,
-            scaleControl: false,
-            scrollwheel: false,
-            panControl: false,
-            zoomControl: true,
-            zoom: 16,
-            panControlOptions: {
-                position: google.maps.ControlPosition.RIGHT_CENTER
-            },
-            zoomControlOptions: {
-                style: google.maps.ZoomControlStyle.LARGE,
-                position: google.maps.ControlPosition.LEFT_CENTER
-            },
-            streetViewControlOptions: {
-                position: google.maps.ControlPosition.RIGHT_CENTER
-            },
-            mapTypeId: google.maps.MapTypeId.ROADMAP,
-            styles: [
-                {"featureType": "water", "elementType": "geometry", "stylers": [{"color": "#2D333C"}]},
-                {"stylers": [
-                    {"hue": "#ff1a00"},
-                    {"invert_lightness": true},
-                    {"saturation": -100},
-                    {"lightness": 33},
-                    {"gamma": 0.5}
-                ]}
-            ]
-        };
-
-        // ----- определяем карту -----
-        var map = new google.maps.Map(document.getElementById("map"), settings);
-
-            // ----- инициализируем карту ---
-            setMarkers(map, pointer);
-    }  
-
-    function setMarkers(map, locations) {
-
-        // ----- определяем область показа маркеров -----
-        var latlngbounds = new google.maps.LatLngBounds();  
-        var image = new google.maps.MarkerImage('/images/clock-pointer.png',
-                    new google.maps.Size(46, 62),      
-                    new google.maps.Point(0, 0)); 
-         
-        for (var i = 0; i < pointer.length; i++) {
-            var myLatLng = new google.maps.LatLng(locations[i][1], locations[i][2]);
-
-            latlngbounds.extend(myLatLng);
-
-            // ----- определяем настройки маркера -----
-            var marker = new google.maps.Marker({
-                title: locations[i][0],
-                position: myLatLng,
-                icon: image,
-                map: map
-            }); 
-         }
-
-        // ----- центрируем и масштабируем карту =====
-        map.setCenter(latlngbounds.getCenter());     
-    };
-
-    // ----- определяем места на карте -----
-    var pointer = [['pointer', 50.431399, 30.472858]];
-
-    initialize();
-</script>

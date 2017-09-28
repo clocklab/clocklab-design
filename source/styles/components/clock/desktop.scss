@@ -4,8 +4,6 @@
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
-    &.current-back { animation: none; }
-    &.previous-back { animation-play-state: running; }
     
     // ----- animation fade -----
     &.current, &.current-back,
