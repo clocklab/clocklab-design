@@ -5,3 +5,5 @@
 //=include ./components/big-background-letter.js
 
 //=include ./modules/index/alta.js
+
+//=include ./components/clock.js
