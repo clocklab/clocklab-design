@@ -1,25 +1,7 @@
-//JQuery
-//= components/jquery.min.js
+//=include ./libraries/jquery.min.js
 
-// slides-changing
-//= components/slides-changing.js
+//=include ./components/slides-changing.js
 
-// clock
+//=include ./components/big-background-letter.js
 
-
-// clock-bg
-
-
-// home clock-bg
-
-
-// slides changing mobile
-
-
-// open long text
-
-
-// big background letter
-//= components/big-background-letter.js
-
-// alta
+//=include ./modules/index/alta.js

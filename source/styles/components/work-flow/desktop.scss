@@ -1,6 +1,7 @@
 & {  
 
     position: relative;
+    background: $white;
     transition: perspective $time * 2;
 
     .front-layer {
@@ -374,22 +375,6 @@
         }
     }
 
-    &:before,
-    &:after {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 100vh;
-        background: $white;
-        content: '';
-    }
-
-    &:after {
-        left: 50%;
-    }
-
     &.opened {
 
         .front-layer {
@@ -402,7 +387,11 @@
         }
     }
 
-    &.current {
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Left $time * 3 0s both;
 
         &:before,
         &:after {
@@ -606,5 +595,109 @@
                 animation: fadeIn $WFFrontLayerAnimationTime $WFFrontLayerDelayTime both;
             }
         }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideRight $time * 3 0s both;
+        animation-play-state: paused;
+
+        .logo {
+            animation-play-state: paused;
+        }
+
+        .menu {
+            animation-play-state: paused;
+        }
+
+        .language {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
+
+        .sticker {
+            
+            span {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .new-title {
+            
+            .text-container {
+    
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+    
+            span {
+                animation-play-state: paused;
+            }
+        }
+
+        .lines {
+            
+            .line {
+                animation-play-state: paused;
+            }
+        }
+
+        .step {
+
+            .index {
+
+                span {
+                    animation-play-state: paused;
+                }
+            }
+
+            h3 {
+                animation-play-state: paused;
+            }
+
+            p {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .questions {
+
+            h3,
+            p,
+            button {
+                animation-play-state: paused;
+            }
+        }
+
+        .back-layer {
+            animation-play-state: paused;
+        }
+
+        .front-layer {
+
+            &:before,
+            &:after {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
     }
 }

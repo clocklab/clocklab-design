@@ -1,11 +1,9 @@
-// menu
-//= components/menu.js
+//=include ./../components/menu.js
 
-// clock-bg
-//= components/clock-bg.js
+//=include ./../libraries/jquery.min.js
 
-// post clock-bg
-//= components/post-clock-bg.js
+//=include ./../components/clock-bg.js
 
-// transition-end
-//= components/transition-end.js
+//=include ./modules/post/post-clock-bg.js
+
+//=include ./modules/post/transition-end.js

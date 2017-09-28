@@ -124,7 +124,8 @@
         li {
             color: $white;
             font-size: px(24);
-            @include inline-block;
+            display: inline-block;
+            // @include inline-block;
             &:nth-of-type(1) { margin-right: px(290); }
             &:nth-of-type(2) { margin-right: px(605); }
             &:nth-of-type(3) a {

@@ -2,21 +2,22 @@
 <html lang="en">
     <head>
         <title>clocklab design | seo</title>
-        //= templates/modules/head.html
-        <link rel="stylesheet" href="styles/seo.css">
+        @@include('./components/head.html')
+        <link rel="stylesheet" href="../../styles/seo.css">
     </head>
     <body>
         <div class="wrapper">
 
             <!-- seo-one -->
-            //= templates/seo-one.html
+            @@include('./services/templates/seo/seo-one.html')
 
             <!-- seo-two -->
-            //= templates/seo-two.html
+            @@include('./services/templates/seo/seo-two.html')
 
             <!-- seo-three -->
-            //= templates/seo-three.html
+            @@include('./services/templates/seo/seo-three.html')
         </div>
-        <script src="scripts/seo.min.js"></script>
+        
+        <script src="../../scripts/services/seo.min.js"></script>
     </body>
 </html>

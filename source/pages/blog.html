@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <title>clocklab design | blog</title>
-    //= templates/modules/head.html
-    <script src="scripts/blog.min.js"></script>
+    <!-- @@include('./components/head.html') -->
+    <link rel="stylesheet" href="../styles/blog.css">
 </head>
 <body>
 
@@ -30,13 +30,13 @@
         <div class="page-layer front-layer">
 
             <!-- menu -->
-            //= templates/modules/menu.html
+            @@include('./components/menu.html')
             
             <!-- logo -->
-            //= templates/modules/logo.html
+            @@include('./components/logo.html')
 
             <!-- language -->
-            //= templates/modules/language.html
+            @@include('./components/language.html')
 
             <div class="top-panel">
                 <div class="filter filter--date">
@@ -95,14 +95,14 @@
                             <span class="day">Пн</span>
                         </div>
                         <div class="image-container">
-                            <img src="images/post1.jpg" alt="post-image" draggable="false">
+                            <img src="../images/blog/post1.jpg" alt="post-image" draggable="false">
                         </div>
                         <div class="post-info">
                             <div class="sticker">
                                 <span>Блог</span>
                             </div>
                             <h3>Lorem ipsum dolor</h3>
-                            <a href="post.html" class="crossed-button">
+                            <a href="blog/post.html" class="crossed-button">
                                 <span></span>
                                 <div class="arrow-container">
                                     <svg class="arrow" x="0px" y="0px"
@@ -121,7 +121,7 @@
                             <span class="day">Пт</span>
                         </div>
                         <div class="image-container">
-                            <img src="images/post2.jpg" alt="post-image" draggable="false">
+                            <img src="../images/blog/post2.jpg" alt="post-image" draggable="false">
                         </div>
                         <div class="post-info">
                             <div class="sticker">
@@ -147,14 +147,14 @@
                             <span class="day">Пт</span>
                         </div>
                         <div class="image-container">
-                            <img src="images/post3.jpg" alt="post-image" draggable="false">
+                            <img src="../images/blog/post3.jpg" alt="post-image" draggable="false">
                         </div>
                         <div class="post-info">
                             <div class="sticker">
                                 <span>Блог</span>
                             </div>
                             <h3>Lorem ipsum dolor</h3>
-                            <a href="post.html" class="crossed-button">
+                            <a href="blog/post.html" class="crossed-button">
                                 <span></span>
                                 <div class="arrow-container">
                                     <svg class="arrow" x="0px" y="0px"
@@ -173,14 +173,14 @@
                             <span class="day">Чт</span>
                         </div>
                         <div class="image-container">
-                            <img src="images/post4.jpg" alt="post-image" draggable="false">
+                            <img src="../images/blog/post4.jpg" alt="post-image" draggable="false">
                         </div>
                         <div class="post-info">
                             <div class="sticker">
                                 <span>Блог</span>
                             </div>
                             <h3>Lorem ipsum dolor</h3>
-                            <a href="post.html" class="crossed-button">
+                            <a href="blog/post.html" class="crossed-button">
                                 <span></span>
                                 <div class="arrow-container">
                                     <svg class="arrow" x="0px" y="0px"
@@ -199,14 +199,14 @@
                             <span class="day">Пн</span>
                         </div>
                         <div class="image-container">
-                            <img src="images/post1.jpg" alt="post-image" draggable="false">
+                            <img src="../images/blog/post1.jpg" alt="post-image" draggable="false">
                         </div>
                         <div class="post-info">
                             <div class="sticker">
                                 <span>Блог</span>
                             </div>
                             <h3>Lorem ipsum dolor</h3>
-                            <a href="post.html" class="crossed-button">
+                            <a href="blog/post.html" class="crossed-button">
                                 <span></span>
                                 <div class="arrow-container">
                                     <svg class="arrow" x="0px" y="0px"
@@ -225,14 +225,14 @@
                             <span class="day">Пт</span>
                         </div>
                         <div class="image-container">
-                            <img src="images/post2.jpg" alt="post-image" draggable="false">
+                            <img src="../images/blog/post2.jpg" alt="post-image" draggable="false">
                         </div>
                         <div class="post-info">
                             <div class="sticker">
                                 <span>Блог</span>
                             </div>
                             <h3>Lorem ipsum dolor</h3>
-                            <a href="post.html" class="crossed-button">
+                            <a href="blog/post.html" class="crossed-button">
                                 <span></span>
                                 <div class="arrow-container">
                                     <svg class="arrow" x="0px" y="0px"
@@ -251,14 +251,14 @@
                             <span class="day">Пт</span>
                         </div>
                         <div class="image-container">
-                            <img src="images/post3.jpg" alt="post-image" draggable="false">
+                            <img src="../images/blog/post3.jpg" alt="post-image" draggable="false">
                         </div>
                         <div class="post-info">
                             <div class="sticker">
                                 <span>Блог</span>
                             </div>
                             <h3>Lorem ipsum dolor</h3>
-                            <a href="post.html" class="crossed-button">
+                            <a href="blog/post.html" class="crossed-button">
                                 <span></span>
                                 <div class="arrow-container">
                                     <svg class="arrow" x="0px" y="0px"
@@ -277,14 +277,14 @@
                             <span class="day">Чт</span>
                         </div>
                         <div class="image-container">
-                            <img src="images/post4.jpg" alt="post-image" draggable="false">
+                            <img src="../images/blog/post4.jpg" alt="post-image" draggable="false">
                         </div>
                         <div class="post-info">
                             <div class="sticker">
                                 <span>Блог</span>
                             </div>
                             <h3>Lorem ipsum dolor</h3>
-                            <a href="post.html" class="crossed-button">
+                            <a href="blog/post.html" class="crossed-button">
                                 <span></span>
                                 <div class="arrow-container">
                                     <svg class="arrow" x="0px" y="0px"
@@ -302,5 +302,7 @@
 
         </div>
     </div>
+
+    <script src="../scripts/blog.min.js"></script>
 </body>
 </html>

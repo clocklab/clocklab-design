@@ -2,21 +2,22 @@
 <html lang="en">
     <head>
         <title>clocklab design | design</title>
-        //= templates/modules/head.html
-        <link rel="stylesheet" href="styles/design.css">
+        @@include('./components/head.html')
+        <link rel="stylesheet" href="../../styles/design.css">
     </head>
     <body>
         <div class="wrapper">
 
             <!-- design-one -->
-            //= templates/design-one.html
+            @@include('./services/templates/design/design-one.html')
 
             <!-- design-two -->
-            //= templates/design-two.html
+            @@include('./services/templates/design/design-two.html')
 
             <!-- design-three -->
-            //= templates/design-three.html
+            @@include('./services/templates/design/design-three.html')
         </div>
-        <script src="scripts/design.min.js"></script>
+
+        <script src="../../scripts/services/design.min.js"></script>
     </body>
 </html>

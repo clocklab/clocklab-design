@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <title>clocklab design | portfolio</title>
-    //= templates/modules/head.html
-    <script src="scripts/main.min.js"></script>
-    <script src="scripts/portfolio.min.js"></script>
+    <!-- @@include('./components/head.html') -->
+    <link rel="stylesheet" href="../styles/portfolio.css">
 </head>
 <body>
 
@@ -13,7 +12,7 @@
         <div class="page-layer back-layer">
             
             <!-- clock bg -->
-            //= templates/modules/clock-bg.html
+            @@include('./components/clock-bg.html')
 
             <div class="letters">
                 <span class="letter letter-c">
@@ -29,7 +28,7 @@
             <div class="content-container">
                 <div class="portfolio-item portfolio-item--audi">
                     <a href="" class="image-container">
-                        <img src="images/audi.jpg" alt="audi" draggable="false">
+                        <img src="../images/portfolio/audi.jpg" alt="audi" draggable="false">
                     </a>
                     <span class="new-title">
                         <span>AUDI Q7</span>
@@ -37,7 +36,7 @@
                 </div>
                 <div class="portfolio-item portfolio-item--alta-capital">
                     <a href="" class="image-container">
-                        <img src="images/alta-capital.jpg" alt="alta capital" draggable="false">
+                        <img src="../images/portfolio/alta-capital.jpg" alt="alta capital" draggable="false">
                     </a>
                     <span class="new-title">
                         <span>ALTA CAPITAL</span>
@@ -45,7 +44,7 @@
                 </div>
                 <div class="portfolio-item portfolio-item--vino-grad">
                     <a href="vinograd-mockup.html" class="image-container">
-                        <img src="images/vinograd.jpg" alt="vino grad" draggable="false">
+                        <img src="../images/portfolio/vinograd.jpg" alt="vino grad" draggable="false">
                     </a>
                     <span class="new-title">
                         <span>VINO GRAD</span>
@@ -53,7 +52,7 @@
                 </div>
                 <div class="portfolio-item portfolio-item--euro-club">
                     <a href="euroclub-mockup.html" class="image-container">
-                        <img src="images/euro-club.jpg" alt="euro club" draggable="false">
+                        <img src="../images/portfolio/euro-club.jpg" alt="euro club" draggable="false">
                     </a>
                     <span class="new-title">
                         <span>EURO CLUB</span>
@@ -62,21 +61,22 @@
             </div>
 
             <!-- menu -->
-            //= templates/modules/menu.html
-
+            @@include('./components/menu.html')
+            
             <!-- logo -->
-            //= templates/modules/logo.html
+            @@include('./components/logo.html')
 
             <!-- language -->
-            //= templates/modules/language.html
+            @@include('./components/language.html')
 
             <!-- social -->
-            //= templates/modules/social.html
+            @@include('./components/social.html')
 
             <!-- copyright -->
-            //= templates/modules/copyright.html
+            @@include('./components/copyright.html')
         </div>
-    
     </div>
+
+    <script src="../scripts/portfolio.min.js"></script>
 </body>
 </html>

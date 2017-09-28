@@ -1,34 +1,30 @@
-<div class="we-can">
+<div class="we-can screen-block">
 
-    <!-- logo -->
     <div class="dark-logo">
-        //= modules/logo.html
+        @@include('./components/logo.html')    
     </div>
     
-    <!-- menu -->
     <div class="dark-menu">
-        //= modules/menu.html
+        @@include('./components/menu.html')    
     </div>
 
-    <!-- languages -->
     <div class="dark-language">
-        //= modules/language.html
+        @@include('./components/language.html')
     </div>
 
-    <!-- clock-bg -->
-    //= modules/clock-bg.html
+    @@include('./components/clock-bg.html')
 
     <div class="container">
         <div class="images">
             <div class="image-container image-container--1">
-                <img src="../images/we-can-1.jpg" alt="we-can-1">
+                <img src="../../../../images/services/web-production/we-can-1.jpg" alt="we-can-1">
             </div>
             <div class="image-container image-container--2">
-                <img src="../images/we-can-2.jpg" alt="we-can-2">
+                <img src="../../../../images/services/web-production/we-can-2.jpg" alt="we-can-2">
             </div>
         </div>
         <div class="info">
-            //= modules/sticker.html
+            @@include('./components/sticker.html')
             <h1 class="new-title">
                 <div class="text-container">
                     <span>Мы умеем делать крутые</span>
@@ -65,7 +61,7 @@
                     quaerat voluptatem.
                 </p>
             </article>
-            //= modules/crossed-button.html
+            @@include('./components/crossed-button.html')
         </div>
     </div>
 

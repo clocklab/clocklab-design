@@ -1,17 +1,17 @@
 // jQuery
-//= components/jquery.min.js
+//=include ./libraries/jquery.min.js
 
 // menu
-//= components/menu.js
+//=include ./components/menu.js
 
 // slides-changing
-//= components/slides-changing.js
+//=include ./components/slides-changing.js
 
 // jelly-button
-//= components/jelly-button.min.js
+//=include ./components/jelly-button.min.js
 
 // big-background-letter
-//= components/big-background-letter.js
+//=include ./components/big-background-letter.js
 
 // ----- change lines and language color -----
 $('.light div').children().addClass('light');

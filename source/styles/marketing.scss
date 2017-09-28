@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 // base
 @import "base/reset";
 @import "base/fonts";
@@ -12,6 +16,8 @@
 @import "components/crossed-button/main";
 @import "components/new-title/main";
 @import "components/sticker/main";
+@import "components/jumping-button/main";
+@import "components/long-read/main";
 
 // screens
 @import "components/marketing-header/main";

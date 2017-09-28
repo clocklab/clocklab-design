@@ -1,16 +1,16 @@
 // menu
-//= components/menu.js
+//=include ./../../components/menu.js
 
-//= components/jquery.min.js
+//=include ./../../libraries/jquery.min.js
 
-//= components/wow.js
+//=include ./../../libraries/wow.js
 
-//= components/big-background-letter.js
+//=include ./../../components/big-background-letter.js
 
-//= components/web-production-questions.js
+//=include ./../modules/web-production/web-production-questions.js
 
-//= components/web-production-open-form.js
+//=include ./../modules/web-production/web-production-open-form.js
 
-//= components/complex-time.js
+//=include ./../modules/complex/complex-time.js
 
 new WOW().init();

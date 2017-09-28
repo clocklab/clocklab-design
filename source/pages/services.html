@@ -2,20 +2,21 @@
 <html lang="en">
     <head>
         <title>clocklab design | services</title>
-        //= templates/modules/head.html
+        <!-- @@include('./components/head.html') -->
+        <link rel="stylesheet" href="../styles/services.css">
     </head>
     <body>
         <div class="wrapper">
             <div id="services" class="screen-block">
 
                 <!-- menu -->
-                //= templates/modules/menu.html
+                @@include('./components/menu.html')
     
                 <!-- navigation-elements -->
-                //= templates/modules/navigation-elements.html
+                @@include('./components/navigation-elements.html')
 
                 <!-- big-background-letter -->
-                //= templates/modules/big-background-letter.html
+                @@include('./components/big-background-letter.html')
 
                 <!-- services-schedule -->
                 <div class="services-schedule">      
@@ -35,7 +36,7 @@
                             <div class="services-line"></div>
 
                             <!-- crossed-button -->
-                            //= templates/modules/crossed-button.html
+                            @@include('./components/crossed-button.html')
                         </div>
                         <div class="item up">
                             <section class="title">
@@ -50,7 +51,7 @@
                             <div class="services-line"></div>
 
                             <!-- crossed-button -->
-                            //= templates/modules/crossed-button.html
+                            @@include('./components/crossed-button.html')
                         </div>
                         <div class="item up">
                             <section class="title">
@@ -67,7 +68,7 @@
                             <div class="services-line right"></div>
 
                             <!-- crossed-button -->
-                            //= templates/modules/crossed-button.html
+                            @@include('./components/crossed-button.html')
                         </div>
                         <div class="item">
                             <section class="title">
@@ -82,7 +83,7 @@
                             <div class="services-line"></div>
 
                             <!-- crossed-button -->
-                            //= templates/modules/crossed-button.html
+                            @@include('./components/crossed-button.html')
                         </div>
                         <div class="item">
                             <section class="title">
@@ -98,7 +99,7 @@
                             <div class="services-line"></div>
 
                             <!-- crossed-button -->
-                            //= templates/modules/crossed-button.html
+                            @@include('./components/crossed-button.html')
                         </div>
                         <div class="item">
                             <section class="title">
@@ -113,11 +114,13 @@
                             <div class="services-line"></div>
 
                             <!-- crossed-button -->
-                            //= templates/modules/crossed-button.html
+                            @@include('./components/crossed-button.html')
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script src="../scripts/services.min.js"></script>
     </body>
 </html>

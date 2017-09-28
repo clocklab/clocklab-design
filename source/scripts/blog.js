@@ -1,8 +1,5 @@
-// menu
-//= components/menu.js
+//=include ./components/menu.js
 
-// horizontal-scroll-blog
-//= components/horizontal-scroll-blog.js
+//=include ./modules/blog/horizontal-scroll-blog.js
 
-// transition-start
-//= components/transition-start.js
+//=include ./modules/blog/transition-start.js

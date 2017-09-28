@@ -1,14 +1,14 @@
 // jQuery
-//= components/jquery.min.js
-
-// menu
-//= components/menu.js
+//=include ./../libraries/jquery.min.js
 
 // slides-changing
-//= components/slides-changing.js
+//=include ./../components/slides-changing.js
 
 // big-background-letter
-//= components/big-background-letter.js
+//=include ./../components/big-background-letter.js
+
+// menu
+//=include ./../components/menu.js
 
 // ----- change lines and language color -----
 $('.light div').children().addClass('light');

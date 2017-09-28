@@ -1,5 +1,7 @@
 & {  
 
+    background: $white;
+
     .language {
         position: absolute;
         z-index: 3;
@@ -133,50 +135,35 @@
         }
     }
 
-    .long-read {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 100%;
-        height: 100vh;
+    // .long-read {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     z-index: -1;
+    //     width: 100%;
+    //     height: 100vh;
 
-        &:after {
-            display: block;
-            position: absolute;
-            bottom: 1.2vh;
-            left: 0;
-            width: 100%;
-            height: 0;
-            background: $gray;
-            content: '';
-            transition: height $time * 2, bottom $time * 2;
-        }
+    //     &:after {
+    //         display: block;
+    //         position: absolute;
+    //         bottom: 1.2vh;
+    //         left: 0;
+    //         width: 100%;
+    //         height: 0;
+    //         background: $gray;
+    //         content: '';
+    //         transition: height $time * 2, bottom $time * 2;
+    //     }
 
-        &.opened {
-            z-index: 9999;
+    //     &.opened {
+    //         z-index: 9999;
             
-            &:after {
-                bottom: 0;
-                height: 100vh;
-            }
-        }
-    }
-
-    &:before {
-        display: block;
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        width: 100%;
-        height: 100vh;
-        background: $white;
-        content: '';
-    }
-
-    &:before {
-        left: 0;
-    }
+    //         &:after {
+    //             bottom: 0;
+    //             height: 100vh;
+    //         }
+    //     }
+    // }
 
     @keyframes leftWidthIncrease {
         from {
@@ -189,11 +176,11 @@
         }
     }
 
-    &.current {
-
-        &:before {
-            animation: leftWidthIncrease $WCBeforeAnimationTime $WCBeforeDelayTime both;
-        }
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Down $time * 3 0s both;
 
         .logo {
             animation: fadeInDown $WCBorderElAnimationTime $WCBorderElDelayTime both;
@@ -311,5 +298,136 @@
         .crossed-button {
             animation: FadeInRight $WCCrossedBtnAnimationTime $WCCrossedBtnDelayTime both;
         }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideUp $time * 3 0s both;
+        animation-play-state: paused;
+
+        .logo {
+            animation-play-state: paused;
+        }
+
+        .menu {
+            animation-play-state: paused;
+        }
+
+        .language {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
+
+        .clock-bg {
+
+            span {
+                
+                &:before {
+                    animation-play-state: paused;
+                }
+    
+                &:nth-child(1) {
+    
+                    &:before {
+                        animation-delay: $WCClockFirstDelayTime;
+                    }
+                }
+    
+                &:nth-child(2) {
+    
+                    &:before {
+                        animation-delay: $WCClockSecondDelayTime;
+                    }
+                }
+    
+                &:nth-child(3) {
+    
+                    &:before {
+                        animation-delay: $WCClockThirdDelayTime;
+                    }
+                }
+    
+                &:nth-child(4) {
+    
+                    &:before {
+                        animation-delay: $WCClockFourthDelayTime;
+                    }
+                }
+    
+                &:nth-child(5) {
+    
+                    &:before {
+                        animation-delay: $WCClockFifthDelayTime;
+                    }
+                }
+            }
+        }
+
+        .new-title {
+            
+            .text-container {
+    
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+    
+            span {
+                animation-play-state: paused;
+            }
+        }
+
+        article {
+
+            p {
+                animation-play-state: paused;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .images {
+    
+            .image-container {
+    
+                img {
+                    animation-play-state: paused;
+                }
+    
+                &:before {
+                    animation-play-state: paused;
+                }
+    
+                &--1 {
+    
+                    &:after {
+                        animation-play-state: paused;
+                    }
+                }
+            }
+        }
+
+        .crossed-button {
+            animation-play-state: paused;
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
     }
 }

@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <title>clocklab design | ux / ui</title>
-        //= templates/modules/head.html
-        <link rel="stylesheet" href="styles/ux-ui.css">
+        @@include('./components/head.html')
+        <link rel="stylesheet" href="../../../styles/ux-ui.css">
     </head>
     <body>
 
@@ -12,22 +12,22 @@
 
             <!-- logo -->
             <div class="dark-logo">
-                //= templates/modules/logo.html
+                @@include('./components/logo.html')
             </div>
 
             <!-- menu -->
             <div class="dark-menu">
-                //= templates/modules/menu.html
+                @@include('./components/menu.html')
             </div>
 
             <!-- language -->
             <div class="dark">
-                //= templates/modules/language.html
+                @@include('./components/language.html')
             </div>
 
             <!-- big-bg-letter-c -->
             <div class="big-bg-letter-c">
-                //= templates/modules/big-background-letter.html
+                @@include('./components/big-background-letter.html')
             </div>
 
             <!-- container -->
@@ -37,10 +37,10 @@
                 <div class="header">
 
                     <!-- big-background-letter -->
-                    //= templates/modules/big-background-letter.html
+                    @@include('./components/big-background-letter.html')
 
                     <div class="image-container wow fadeIn">
-                        <img src="images/ux-ui/ux-ui-header.png" alt="ux-ui-header">
+                        <img src="../../../images/services/design/ux-ui/ux-ui-header.png" alt="ux-ui-header">
                     </div>    
                 </div>
 
@@ -54,7 +54,7 @@
                     <div class="info wow fadeInUp">
 
                         <!-- sticker -->
-                        //= templates/modules/sticker.html
+                        @@include('./components/sticker.html')
 
                         <h1 class="new-title">
                             <div class="text-container">
@@ -76,7 +76,7 @@
                 <!-- cases -->
                 <div class="cases">
                     <div class="images wow fadeInUp">
-                        <img src="images/ux-ui/ux-ui-photo-1.jpg" alt="ux-ui-1">
+                        <img src="../../../images/services/design/ux-ui/ux-ui-photo-1.jpg" alt="ux-ui-1">
                     </div>
                     <div>
                         <h3 class="wow fadeInUp"><span>UI</span> — внешний вид сайта, а <span>UX</span> — это логика вашего веб-продукта</h3>
@@ -95,7 +95,7 @@
         <div class="ux-ui-development">
 
             <!-- big-background-letter -->
-            //= templates/modules/big-background-letter.html
+            @@include('./components/big-background-letter.html')
 
             <div class="container">
                 <div>
@@ -119,7 +119,7 @@
         <div class="ux-ui-plan">
 
             <!-- clock-bg -->
-            //= templates/modules/clock-bg.html
+            @@include('./components/clock-bg.html')
 
             <div class="container">
                 <div class="lines">
@@ -171,10 +171,10 @@
             <div class="front-layer">
 
                 <!-- small-gray-lines -->
-                //= templates/modules/small-gray-lines.html
-
+                @@include('./components/small-gray-lines.html')
+                
                 <!-- big-background-letter -->
-                //= templates/modules/big-background-letter.html
+                @@include('./components/big-background-letter.html')
 
                 <div class="container">
                     <h2 class="wow fadeIn">Примеры<span>наших работ</span></h2>
@@ -182,26 +182,26 @@
                     <!-- works -->
                     <div class="works dark wow fadeInUp">
                         <div class="work work--eurovision">
-                            <img src="images/web-production/eurovision.jpg" alt="eurovision">
+                            <img src="../../../images/services/eurovision.jpg" alt="eurovision">
                             <span>Eurovision</span>
                         </div>
                         <div class="work work--alta">
-                            <img src="images/web-production/alta.jpg" alt="eurovision">
+                            <img src="../../../images/services/alta.jpg" alt="eurovision">
                             <span>Alta capital</span>
                         </div>
                         <div class="work work--audi">
-                            <img src="images/web-production/audi.jpg" alt="eurovision">
+                            <img src="../../../images/services/audi.jpg" alt="eurovision">
                             <span>Audi</span>
                         </div>
                         <div class="work work--vinograd">
-                            <img src="images/web-production/vinograd.jpg" alt="eurovision">
+                            <img src="../../../images/services/vinograd.jpg" alt="eurovision">
                             <span>Vino grad</span>
                         </div>
                     </div>
                     <div class="dark">
 
                         <!-- crossed-button -->
-                        //= templates/modules/crossed-button.html
+                        @@include('./components/crossed-button.html')
                     </div>
                 </div>
             </div>
@@ -210,7 +210,7 @@
             <div class="back-layer">
 
                 <!-- big-background-letter -->
-                //= templates/modules/big-background-letter.html
+                @@include('./components/big-background-letter.html')
                 
                 <!-- form -->
                 <form action="#">
@@ -248,7 +248,7 @@
         <div class="web-production-answers">
 
             <!-- big-background-letter -->
-            //= templates/modules/big-background-letter.html
+            @@include('./components/big-background-letter.html')
 
             <div class="container">
                 <div class="lines">
@@ -340,10 +340,10 @@
         <div class="brand-book-footer">
 
             <!-- small-gray-lines -->
-            //= templates/modules/small-gray-lines.html
+            @@include('./components/small-gray-lines.html')
 
             <!-- bottom-button -->
-            //= templates/modules/bottom-button.html
+            @@include('./components/bottom-button.html')
 
             <div class="blue-line wow slideInDown"></div>
             <div class="container">
@@ -352,7 +352,7 @@
                         <span>20 April 2017</span>
                     </div>
                     <div class="image-container wow fadeInUp">
-                        <img src="images/ux-ui/ux-ui-footer.jpg" alt="ux-ui-footer">
+                        <img src="../../../images/services/design/ux-ui/ux-ui-footer.jpg" alt="ux-ui-footer">
                     </div>
                 </div>
 
@@ -360,7 +360,7 @@
                 <div class="info wow fadeInUp">
 
                     <!-- sticker -->
-                    //= templates/modules/sticker.html
+                    @@include('./components/sticker.html')
                     
                     <h1 class="new-title">
                         <div class="text-container">
@@ -375,10 +375,10 @@
                     </article>
 
                     <!-- crossed-button -->
-                    //= templates/modules/crossed-button.html
+                    @@include('./components/crossed-button.html')
                 </div>
             </div>
         </div>
-        <script src="scripts/brand-book.min.js"></script>
+        <script src="../../../scripts/services/design/brand-book.min.js"></script>
     </body>
 </html>

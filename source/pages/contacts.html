@@ -2,24 +2,24 @@
 <html lang="en">
     <head>
         <title>clocklab design | contacts</title>
-        //= templates/modules/head.html
-        <script src="scripts/contacts.min.js"></script>
+        <!-- @@include('./components/head.html') -->
+        <link rel="stylesheet" href="../styles/contacts.css">
     </head>
     <body>
         <div class="wrapper">
             <div id="contacts" class="screen-block">
     
                 <!-- navigation-elements -->
-                //= templates/modules/navigation-elements.html
+                @@include('./components/navigation-elements.html')
 
                 <!-- small-gray-lines -->
-                //= templates/modules/small-gray-lines.html
+                @@include('./components/small-gray-lines.html')
 
                 <!-- menu -->
-                //= templates/modules/menu.html
+                @@include('./components/menu.html')
 
                 <!-- letter c -->
-                //= templates/modules/big-background-letter.html
+                @@include('./components/big-background-letter.html')\
 
                 <!-- back-layer -->
                 <div class="page-layer back-layer"></div>
@@ -46,5 +46,7 @@
                 </ul>
             </div>
         </div>
+
+        <script src="../scripts/contacts.min.js"></script>
     </body>
 </html>

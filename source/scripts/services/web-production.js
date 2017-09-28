@@ -1,11 +1,9 @@
-// menu
-//= components/menu.js
+//=include ./../components/menu.js
 
-// jQuery
-//= components/jquery.min.js
+//=include ./../libraries/jquery.min.js
 
-// clock bg
-//= components/clock-bg.js
+//=include ./../components/clock-bg.js
 
-// open form
-//= components/open-form.js
+//=include ./../components/open-form.js
+
+//=include ./../components/slides-changing-services.js

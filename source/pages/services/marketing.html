@@ -2,20 +2,19 @@
 <html lang="en">
     <head>
         <title>clocklab design | marketing</title>
-        <!-- //= templates/modules/head.html -->
-        <link rel="stylesheet" href="styles/marketing.css">
+        <link rel="stylesheet" href="../../styles/marketing.css">
     </head>
     <body>
         <div class="wrapper">
 
-            //= templates/marketing/marketing-header.html
+        @@include('./services/templates/marketing/marketing-header.html')
 
-            //= templates/marketing/marketing-services.html
+        @@include('./services/templates/marketing/marketing-brand.html')
 
-            //= templates/marketing/marketing-brand.html
-            
+        @@include('./services/templates/marketing/marketing-services.html')
+
         </div>
 
-        <script src="scripts/marketing.min.js"></script>
+        <script src="../../scripts/services/marketing.min.js"></script>
     </body>
 </html>

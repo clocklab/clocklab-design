@@ -1,17 +1,17 @@
 // jQuery
-//= components/jquery.min.js
+//=include ./../libraries/jquery.min.js
 
 // slides-changing
-//= components/slides-changing.js
+//=include ./../components/slides-changing.js
 
 // big-background-letter
-//= components/big-background-letter.js
+//=include ./../components/big-background-letter.js
 
 // menu
-//= components/menu.js
+//=include ./../components/menu.js
 
 // open form
-//= components/open-form.js
+//=include ./../components/open-form.js
 
 // ----- change lines and language color -----
 $('.light div').children().addClass('light');

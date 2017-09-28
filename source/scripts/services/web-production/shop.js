@@ -1,18 +1,17 @@
-// menu
-//= components/menu.js
+//=include ./../../components/menu.js
 
-//= components/jquery.min.js
+//=include ./../../libraries/jquery.min.js
 
-//= components/wow.js
+//=include ./../../libraries/wow.js
 
-//= components/clock-bg.js
+//=include ./../../components/clock-bg.js
 
-//= components/web-production-clock-bg.js
+//=include ./../../components/big-background-letter.js
 
-//= components/big-background-letter.js
+//=include ./../modules/web-production/web-production-clock-bg.js
 
-//= components/web-production-questions.js
+//=include ./../modules/web-production/web-production-questions.js
 
-//= components/web-production-open-form.js
+//=include ./../modules/web-production/web-production-open-form.js
 
 new WOW().init();

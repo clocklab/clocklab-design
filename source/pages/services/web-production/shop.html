@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <title>clocklab design | shop</title>
-    //= templates/modules/head.html
-    <link rel="stylesheet" href="styles/shop.css">
+    <!-- @@include('./components/head.html') -->
+    <link rel="stylesheet" href="../../../styles/shop.css">
 </head>
 <body>
 
@@ -11,33 +11,33 @@
 
         <div class="web-production-header">
             <div class="dark-logo wow fadeIn">
-                //= templates/modules/logo.html
+                @@include('./components/logo.html')
             </div>
 
             <div class="dark-menu wow fadeIn">
-                //= templates/modules/menu.html
+                @@include('./components/menu.html')
             </div>
 
             <div class="dark-language wow fadeIn">
-                //= templates/modules/language.html
-            </div>
-
-            <div class="big-bg-letter-c wow fadeIn">
-                //= templates/modules/big-background-letter.html
+                @@include('./components/language.html')
             </div>
 
             <div class="big-bg-letter-o wow fadeIn">
-                //= templates/modules/big-background-letter.html
+                @@include('./components/big-background-letter.html')
+            </div>
+
+            <div class="big-bg-letter-c wow fadeIn">
+                @@include('./components/big-background-letter.html')
             </div>
 
             <div class="container">
 
                 <header>
                     <div class="wow fadeIn">
-                        //= templates/modules/big-background-letter.html
+                        @@include('./components/big-background-letter.html')
                     </div>
                     <div class="image-container wow fadeInUp">
-                        <img src="images/web-production/shop-header.jpg" alt="shop-header">
+                        <img src="../../../images/services/web-production/shop/shop-header.jpg" alt="shop-header">
                     </div>    
                 </header>
 
@@ -49,7 +49,7 @@
                         </p>
                     </div>
                     <div class="info wow fadeInUp">
-                        //= templates/modules/sticker.html
+                        @@include('./components/sticker.html')
                         <h1 class="new-title">
                             <div class="text-container">
                                 <span>Интернет магазин</span>
@@ -98,8 +98,8 @@
                         </ul>
                     </div>
                     <div class="images wow fadeInUp">
-                        <img src="images/web-production/shop-photo-1.jpg" alt="shop-img-1">
-                        <img src="images/web-production/shop-photo-2.jpg" alt="shop-img-1">
+                        <img src="../../../images/services/web-production/shop/shop-photo-1.jpg" alt="shop-img-1">
+                        <img src="../../../images/services/web-production/shop/shop-photo-2.jpg" alt="shop-img-1">
                     </div>
                 </div>
 
@@ -161,7 +161,7 @@
         </div>
         
         <div class="web-production-clock">
-            //= templates/modules/clock-bg.html
+            @@include('./components/clock-bg.html')
             <blockquote>
                 <p class="wow fadeIn">
                     Современный интернет-магазин с понятной и 
@@ -176,8 +176,8 @@
 
         <div class="web-production-our-works">
             <div class="front-layer">
-                //= templates/modules/small-gray-lines.html
-                //= templates/modules/big-background-letter.html
+                @@include('./components/small-gray-lines.html')
+                @@include('./components/big-background-letter.html')
 
                 <div class="container">
                     <h2 class="wow fadeIn">
@@ -186,28 +186,28 @@
                     </h2>
                     <div class="works wow fadeInUp">
                         <div class="work work--eurovision">
-                            <img src="images/web-production/eurovision.jpg" alt="eurovision">
+                            <img src="../../../images/services/eurovision.jpg" alt="eurovision">
                             <span>Eurovision</span>
                         </div>
                         <div class="work work--alta">
-                            <img src="images/web-production/alta.jpg" alt="eurovision">
+                            <img src="../../../images/services/alta.jpg" alt="alta">
                             <span>Alta capital</span>
                         </div>
                         <div class="work work--audi">
-                            <img src="images/web-production/audi.jpg" alt="eurovision">
+                            <img src="../../../images/services/audi.jpg" alt="audi">
                             <span>Audi</span>
                         </div>
                         <div class="work work--vinograd">
-                            <img src="images/web-production/vinograd.jpg" alt="eurovision">
+                            <img src="../../../images/services/vinograd.jpg" alt="vinograd">
                             <span>Vino grad</span>
                         </div>
                     </div>
-                    //= templates/modules/crossed-button.html
+                    @@include('./components/crossed-button.html')
                 </div>
             </div>
 
             <div class="back-layer">
-                //= templates/modules/big-background-letter.html
+                @@include('./components/big-background-letter.html')
                 <form action="">
                     <button class="close-form"></button>
                     <h3>Задать вопрос</h3>
@@ -247,7 +247,7 @@
         </div>
 
         <div class="web-production-answers">
-            //= templates/modules/big-background-letter.html
+            @@include('./components/big-background-letter.html')
 
             <div class="container">
                 <div class="lines">
@@ -397,8 +397,8 @@
         </div>
 
         <footer class="web-production-footer">
-            //= templates/modules/small-gray-lines.html
-            //= templates/modules/bottom-button.html
+            @@include('./components/small-gray-lines.html')
+            @@include('./components/bottom-button.html')
 
             <div class="blue-line wow slideInDown"></div>
 
@@ -408,11 +408,11 @@
                         <span>20 April 2017</span>
                     </div>
                     <div class="image-container wow fadeInUp">
-                        <img src="images/web-production/shop-footer.jpg" alt="shop-footer">
+                        <img src="../../../images/services/web-production/shop/shop-footer.jpg" alt="shop-footer">
                     </div>
                 </div>
                 <div class="info wow fadeInUp">
-                    //= templates/modules/sticker.html
+                    @@include('./components/sticker.html')
                     <h1 class="new-title">
                         <div class="text-container">
                             <span>Примеры и опыт успешных</span>
@@ -440,13 +440,13 @@
                             et quasi architecto beatae vitae dicta sunt explicabo.
                         </p>
                     </article>
-                    //= templates/modules/crossed-button.html
+                    @@include('./components/crossed-button.html')
                 </div>
             </div>
         </footer>
         
     </div>
 
-    <script src="scripts/shop.min.js"></script>
+    <script src="../../../scripts/services/web-production/shop.min.js"></script>
 </body>
 </html>

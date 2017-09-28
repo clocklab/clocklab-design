@@ -1,14 +1,11 @@
-// menu
-//= components/menu.js
+//=include ./components/menu.js
 
-// clock-bg
-//= components/clock-bg.js
+//=include ./libraries/jquery.min.js
 
-// portfolio clock-bg
-//= components/portfolio-clock-bg.js
+//=include ./components/clock-bg.js
 
-// horizontal-scroll
-//= components/horizontal-scroll.js
+//=include ./modules/portfolio/portfolio-clock-bg.js
 
-// transition to mockup
-//= components/transition-to-mockup-start.js
+//=include ./modules/portfolio/horizontal-scroll.js
+
+/*    //=include ./modules/portfolio/transition-to-mockup-start.js    */

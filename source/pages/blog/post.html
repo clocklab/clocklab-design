@@ -2,32 +2,31 @@
 <html lang="en">
 <head>
     <title>clocklab design | post</title>
-    //= templates/modules/head.html
-    <script src="scripts/main.min.js"></script>
-    <script src="scripts/post.min.js"></script>
+    <!-- @@include('./components/head.html') -->
+    <link rel="stylesheet" href="../../styles/post.css">
 </head>
 <body>
 
     <div class="post">
         
         <!-- clock -->
-        //= templates/modules/clock-bg.html
+        @@include('./components/clock-bg.html')
         
         <!-- menu -->
         <div class="dark-menu">
-            //= templates/modules/menu.html
+            @@include('./components/menu.html')
         </div>
         
         <!-- logo -->
         <div class="dark-logo">
-            //= templates/modules/logo.html
+            @@include('./components/logo.html')
         </div>
 
         <!-- language -->
-        //= templates/modules/language.html
+        @@include('./components/language.html')
 
         <!-- crossed button -->
-        <a href="/blog.html" class="crossed-button reversed">
+        <a href="../blog.html" class="crossed-button reversed">
             <span></span>
             <div class="arrow-container">
                 <svg class="arrow" x="0px" y="0px"
@@ -70,7 +69,7 @@
         <!-- header -->
         <header>
             <div class="image-container">
-                <img src="images/post.jpg" alt="post image">
+                <img src="../../images/blog/post/post.jpg" alt="post image">
             </div>
             <div class="date">
                 <span class="day">
@@ -84,7 +83,7 @@
         <!-- main -->
         <main>
             <!-- sticker -->
-            //= templates/modules/sticker.html
+            @@include('./components/sticker.html')
 
             <h1>nsectetur adipisicing elit</h1>
             <article>
@@ -142,5 +141,7 @@
         </main>
 
     </div>
+
+    <script src="../../scripts/blog/post.min.js"></script>
 </body>
 </html>

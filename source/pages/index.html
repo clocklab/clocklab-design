@@ -2,49 +2,49 @@
 <html lang="en">
     <head>
         <title>clocklab design | home</title>
-        //= templates/modules/head.html
-        <link rel="stylesheet" href="styles/main.css">
+        @@include('./components/head.html')
+        <link rel="stylesheet" href="./../styles/main.css">
     </head>
     <body>
         <div class="wrapper">
 
             <!-- clock -->
-            <!-- //= templates/clock.html -->
+            <!-- @@include('./templates/index/clock.html')  -->
                 
             <!-- q7 -->
-            //= templates/q7.html
+            @@include('./templates/index/q7.html')
 
             <!-- vinograd -->
-            //= templates/vinograd.html
+            @@include('./templates/index/vinograd.html') 
             
             <!-- euro-club -->
-            //= templates/euro-club.html
+            @@include('./templates/index/euro-club.html') 
 
             <!-- alta-capital -->
-            //= templates/alta-capital.html
+            @@include('./templates/index/alta-capital.html') 
 
             <!-- service-one -->
-            <!-- //= templates/service-one.html -->
+            <!-- @@include('./templates/index/service-one.html') -->
 
             <!-- service-two -->
-            <!-- //= templates/service-two.html -->
+            <!-- @@include('./templates/index/service-two.html') -->
 
             <!-- service-three -->
-            <!-- //= templates/service-three.html -->
+            <!-- @@include('./templates/index/service-three.html') -->
 
             <!-- blog-one -->
-            <!-- //= templates/blog-one.html -->
+            <!-- @@include('./templates/index/blog-one.html') -->
 
             <!-- blog-two -->
-            <!-- //= templates/blog-two.html -->
+            <!-- @@include('./templates/index/blog-two.html') -->
 
             <!-- blog-three -->
-            <!-- //= templates/blog-three.html -->
+            <!-- @@include('./templates/index/blog-three.html') -->
 
             <!-- main-contacts -->
-            <!-- //= templates/main-contacts.html -->
+            <!-- @@include('./templates/index/main-contacts.html') -->
         </div>
 
-        <script src="scripts/index.min.js"></script>
+        <script src="../scripts/index.min.js"></script>
     </body>
 </html>

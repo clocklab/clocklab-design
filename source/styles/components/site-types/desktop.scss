@@ -248,14 +248,18 @@
         right: 0;
     }
 
-    &.current {
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Up $time * 3 0s both;
 
         .columns {
 
             .column {
 
                 &:before {
-                    animation: right $BColumnAnimationTime $BColumnDelayTime both;
+                    animation: none;
                 }
             }
         }
@@ -370,5 +374,66 @@
         &:after {
             animation: Down;
         }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideDown $time * 3 0s both;
+        animation-play-state: paused;
+
+        .logo {
+            animation-play-state: paused;
+        }
+
+        .menu {
+            animation-play-state: paused;
+        }
+
+        .language {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
+
+        .container {
+
+            .lines {
+
+                .line {
+                    animation-play-state: paused;
+                }
+            }
+
+            h2 > span,
+            h3,
+            p,
+            .crossed-button {
+                animation-play-state: paused;
+            }
+
+            .index {
+
+                span {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
+        &:before {
+            animation-play-state: paused;
+        }
+
+        &:after {
+            animation-play-state: paused;
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
     }
 }

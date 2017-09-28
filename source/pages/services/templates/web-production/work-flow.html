@@ -1,26 +1,23 @@
-<div class="work-flow">
+<div class="work-flow screen-block">
     
     <div class="front-layer">
 
-        <!-- logo -->
         <div class="dark-logo">
-            //= modules/logo.html
+            @@include('./components/logo.html')    
         </div>
         
-        <!-- menu -->
         <div class="dark-menu">
-            //= modules/menu.html
+            @@include('./components/menu.html')    
         </div>
     
-        <!-- languages -->
         <div class="dark-language">
-            //= modules/language.html
+            @@include('./components/language.html')
         </div>
 
         <div class="container">
             
             <div class="result">
-                //= modules/sticker.html
+                @@include('./components/sticker.html')
                 
                 <h2 class="new-title">
                     <div class="text-container">
@@ -121,7 +118,7 @@
     </div>
     
     <div class="back-layer">
-        //= modules/big-background-letter.html
+        @@include('./components/big-background-letter.html')
         <form action="">
             <button class="close-form"></button>
             <h3>Задать вопрос</h3>
