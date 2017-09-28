@@ -107,6 +107,8 @@
             }
         }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
 
     // ----- title ------
     .title {
