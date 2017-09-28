@@ -5,7 +5,7 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
-var page = 'services'
+var page = 'main'
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
@@ -39,7 +39,7 @@ var source = 'source',
         source: {
             html: source + '/pages/**/**/**/**/*.html',
             fonts: source + '/fonts/**/*.*',
-            videos: source + '/videos/*.*',
+            videos: source + '/videos/**/**/**/*.*',
             images: source + '/images/**/**/**/*.*',
             styles: source + '/styles/*.*',
             scripts: source + '/scripts/**/**/**/*.*',
@@ -48,7 +48,7 @@ var source = 'source',
         watch: {
             html: source + '/pages/**/**/**/**/*.html',
             fonts: source + '/fonts/**/*.*',
-            videos: source + '/videos/*.*',
+            videos: source + '/videos/**/**/**/*.*',
             images: source + '/images/**/**/**/*.*',
             styles: source + '/styles/**/*.*',
             scripts: source + '/scripts/**/**/**/*.*',
