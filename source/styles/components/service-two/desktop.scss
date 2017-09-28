@@ -1,5 +1,6 @@
 & {
-    background-color: $white;
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    background: $background;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
@@ -7,7 +8,7 @@
     // ----- animation down -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        animation: Down $time * 3 both;
+        animation: Down $time * 3 0s both;
 
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -16,10 +17,9 @@
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
 
         // ----- service-info -----
-        .service-info p, .jump-button { animation: fadeInUp $time * 2 $time * 7 both; }
+        .service-info p, .jumping-button { animation: fadeInUp $time * 2 $time * 7 both; }
 
-        // ----- other -----
-        .page-layer.back-layer::after { animation: Down $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
+        // ----- bottom-button -----
         .bottom-button {
             span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
             .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
@@ -59,7 +59,7 @@
 
     // ----- animation up -----
     &.previous, &.previous-back {
-        animation: slideUp $time * 3 both;
+        animation: slideUp $time * 3 0s both;
 
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -68,10 +68,9 @@
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
 
         // ----- service-info -----
-        .service-info p, .jump-button { animation: fadeInUp $time * 2 $time * 7 both; }
+        .service-info p, .jumping-button { animation: fadeInUp $time * 2 $time * 7 both; }
 
-        // ----- other -----
-        .page-layer.back-layer::after { animation: Down $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
+        // ----- bottom-button -----
         .bottom-button {
             span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
             .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
@@ -108,28 +107,9 @@
             }
         }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
 
-    // ----- page-layer -----
-    .page-layer {
-       top: 0;
-       left: 0;
-       &.back-layer {
-           position: fixed;
-           width: 100vw;
-           height: 100vh;
-           overflow: hidden;
-           &:after {
-               background: $background;
-               position: absolute;
-               display: block;
-               height: 100vh;
-               width: 100vw;
-               content: '';
-               top: 0;
-           }
-       }
-   }
-    
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
 
@@ -172,17 +152,18 @@
         }
     }
 
-    // ----- jump-button -----
-    .jump-button {
-        left: initial;
+    // ----- jumping-button -----
+    .jumping-button {
+        position: absolute;
         bottom: 19.5%;
+        left: initial;
         right: 29.7%;
         a {
             text-transform: uppercase;
             &:before { background: $white; }
             span {
                 color: $white;
-                font-size: px(25);
+                font-size: px(32);
                 font-weight: $medium;
                 &:nth-of-type(10) { margin-right: 5px;}
             }
