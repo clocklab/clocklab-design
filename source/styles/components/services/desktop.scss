@@ -1,4 +1,6 @@
 & {
+    box-shadow: 0px 0px 20px $black;
+    background: $background;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
@@ -7,7 +9,6 @@
     &.current, &.current-back,
     &.previous, &.previous-back {
         animation: Left $time * 3 0s both;
-        background: $background;
         
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
@@ -64,7 +65,6 @@
     &.previous, &.previous-back {
         animation: slideRight $time * 3 0s both;
         animation-play-state: paused;
-        background: $background;
         
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }

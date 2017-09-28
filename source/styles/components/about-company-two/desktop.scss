@@ -1,13 +1,14 @@
 & {
+    box-shadow: 0px 0px 20px $black;
     font-family: $raleway;
     font-weight: $regular;
+    background: $white;
     overflow: hidden;
     
     // ----- animation up -----
     &.current, &.current-back,
     &.previous, &.previous-back {
         animation: Up $time * 3 0s both;
-        background: $white;
         
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
@@ -61,7 +62,6 @@
     &.previous, &.previous-back {
         animation: slideDown $time * 3 0s both;
         animation-play-state: paused;
-        background: $white;
     
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
