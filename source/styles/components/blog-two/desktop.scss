@@ -86,6 +86,7 @@
     // ----- animation down -----
     &.previous, &.previous-back {
         animation: slideDown $time * 3 both;
+        animation-play-state: paused;
 
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }

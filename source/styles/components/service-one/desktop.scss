@@ -1,12 +1,14 @@
 & {
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $raleway;
     font-weight: $regular;
+    background: $white;
     overflow: hidden;
     
-    // ----- animation right -----
+    // ----- animation up -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        animation: Right $time * 3 0 both;
+        animation: Up $time * 3 0s both;
         
         // ----- clock-bg -----
         .clock-bg span {
@@ -26,7 +28,9 @@
             &.horizontal p { animation: fadeInUp $time * 2 $time * 9 both; }
             &.vertical p { animation: fadeInDown $time * 2 $time * 9 both; }
         }
-        .jump-button { animation: fadeInUp $time * 2 $time * 9 both; }
+
+        // ----- jumping-button -----
+        .jumping-button { animation: fadeInUp $time * 2 $time * 9 both; }
 
         // ----- other -----
         .bottom-button {
@@ -64,9 +68,9 @@
         }
     }
 
-    // ----- animation left -----
+    // ----- animation down -----
     &.previous, &.previous-back {
-        animation: slideLeft $time * 3 0 both;
+        animation: slideDown $time * 3 both;
         animation-play-state: paused;
         
         // ----- clock-bg -----
@@ -87,7 +91,9 @@
             &.horizontal p { animation: fadeInUp $time * 2 $time * 9 both; }
             &.vertical p { animation: fadeInDown $time * 2 $time * 9 both; }
         }
-        .jump-button { animation: fadeInUp $time * 2 $time * 9 both; }
+
+        // ----- jumping-button -----
+        .jumping-button { animation: fadeInUp $time * 2 $time * 9 both; }
 
         // ----- other -----
         .bottom-button {
@@ -124,6 +130,8 @@
             }
         }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
 
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все услуги'; }
@@ -132,7 +140,8 @@
     .title { margin: 21vh 0 0 px(770); }
 
     // ----- jump-button -----
-    .jump-button {
+    .jumping-button {
+        position: absolute;
         right: px(1156);
         left: initial;
         bottom: 9vh;

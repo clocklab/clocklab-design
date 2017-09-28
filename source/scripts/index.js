@@ -4,6 +4,10 @@
 
 //= include ./components/big-background-letter.js
 
+//=include ./components/jelly-button.min.js
+
+//= include ./components/clock-bg.js
+
 //= include ./modules/index/alta.js
 
 //= include ./components/clock.js
