@@ -195,7 +195,12 @@
                 animation: Right $PPImageAnimationTime  $PPImageDelayTime both;
             }
 
-            &--audi {
+            &--audi,
+            &--zabirie-landing,
+            &--rs,
+            &--stem,
+            &--walker,
+            &--pepe-jeans {
                 margin: px(320) 0;
                 margin-right: px(170);
 
@@ -222,7 +227,12 @@
                 }
             }
 
-            &--alta-capital {
+            &--dela,
+            &--alta-capital,
+            &--lets-help,
+            &--diesel,
+            &--gant,
+            &--tommy-hilfiger {
                 margin-left: px(60);
                 vertical-align: bottom;
                 
@@ -250,7 +260,11 @@
                 }
             }
 
-            &--vino-grad {
+            &--vino-grad,
+            &--bobo, 
+            &--doberman,
+            &--g-star,
+            &--zabirie {
                 
                 .image-container {
                     display: inline-block;
@@ -276,9 +290,14 @@
                 }
             }
 
-            &--euro-club {
+            &--euro-club,
+            &--q7,
+            &--a5-q3,
+            &--preppy,
+            &--shell {
                 margin-top: px(90);
                 margin-left: px(160);
+                margin-right: px(520);
                 
                 .image-container {
                     // width: px(600);
@@ -340,7 +359,7 @@
 
         .language,
         .social,
-        .new-copyright {
+        .copyright {
             position: fixed;
             z-index: 5;
         }
@@ -366,7 +385,9 @@
             }
         }
 
-        .new-copyright {
+        .copyright {
+            right: px(64);
+            bottom: px(740);
 
             p {
                 animation: Up $PPCopyAnimationTime $PPCopyDelayTime both;
@@ -377,11 +398,15 @@
 
             .facebook,
             .instagram {
-                animation-delay: $time * 3;
+                animation: social $time * 3 $time * 3 both;
             } 
 
+            .facebook {
+                animation-name: socialReversed;
+            }
+
             .jumping-button {
-                animation-delay: $time * 6;
+                animation: FadeInRight $time * 3 $time * 6 both;
             }
         }
 
