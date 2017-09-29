@@ -146,7 +146,7 @@
             }
         }
     
-        &--8 {
+        &--8, &--9 {
             margin-top: px(450);
 
             & > div {
@@ -335,6 +335,20 @@
                         content: '05';
                     }
                 }
+
+                &:nth-child(6) {
+                    
+                    &:before {
+                        content: '06';
+                    }
+                }
+
+                &:nth-child(7) {
+                    
+                    &:before {
+                        content: '07';
+                    }
+                }
             }
 
             h4 {
@@ -410,7 +424,7 @@
         }
     }
 
-    &--web-production, &--design, &--about-company {
+    &--web-production, &--design, &--about-company, &--seo {
 
         .long-read-background {
             background: lighten($darkWhite, 5%);
