@@ -137,6 +137,13 @@
     
         &--7 {
             margin-top: px(360);
+            
+            & > div {
+
+                &:nth-child(1) {
+                    padding-right: px(390);
+                }
+            }
         }
     
         &--8 {
@@ -393,7 +400,7 @@
         }
     }
 
-    &--web-production {
+    &--web-production, &--design {
 
         .long-read-background {
             background: lighten($darkWhite, 5%);

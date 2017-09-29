@@ -1,18 +1,18 @@
-// jQuery
-//=include ./../libraries/jquery.min.js
+//= include ./../libraries/jquery.min.js
 
-// slides-changing
-//=include ./../components/slides-changing.js
+//= include ./../libraries/wow.js
 
-// big-background-letter
-//=include ./../components/big-background-letter.js
+//= include ./../components/menu.js
 
-// menu
-//=include ./../components/menu.js
+//= include modules/open-long-read.js
 
-// open form
-//=include ./../components/open-form.js
+//= include ./../components/open-form.js
+
+//= include ./../components/slides-changing.js
+
+//= include ./../components/big-background-letter.js
 
 // ----- change lines and language color -----
+
 $('.light div').children().addClass('light');
 $('.dark').children().addClass('dark');
