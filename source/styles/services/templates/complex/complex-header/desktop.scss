@@ -158,6 +158,34 @@
         }
     }
 
+    ul {
+
+        &.circled {
+            margin-top: px(60);
+    
+            li {
+                position: relative;
+                margin-bottom: px(40);
+                padding-left: px(60);
+                color: $darkGray;
+                font-family: $roboto;
+                font-weight: 700;
+    
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: -4px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: $blue;
+                    content: '';
+                }
+            }
+        }
+    }
+
     .new-title {
 
         .text-container {
