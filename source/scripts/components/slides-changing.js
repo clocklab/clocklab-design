@@ -72,10 +72,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+
+    const changeFirstSlideAnimation = () => {
+        slides[0].classList.remove('first-slide')
+        
+        events.forEach(event => {
+            document.removeEventListener(event, changeFirstSlideAnimation)
+        })    
+    }
+
+    events.forEach(event => {
+        document.addEventListener(event, changeFirstSlideAnimation)
+    })
     
     addListeners()
     
     slides[0].classList.add('current')
+    slides[0].classList.add('first-slide')
 
 
     // --- MENU ---
