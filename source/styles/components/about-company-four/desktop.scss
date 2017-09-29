@@ -1,8 +1,9 @@
 & { 
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     transition: perspective $time * 2;
     font-family: $raleway;
     font-weight: $regular;
-    position: relative;
+    background: $white;
     overflow: hidden;
 
     // ----- front-layer -----
@@ -11,6 +12,7 @@
         width: 100%;
         height: 100vh;
         position: relative;
+        background: $white;
         transform-origin: 0 50%;
         transform-style: preserve-3d;
         transition: transform $time * 2;
@@ -366,10 +368,6 @@
                 p { animation-delay: $WFTextSixthColumnDelayTime; }
             }
         }
-        .back-layer { animation: fadeIn $WFBackLayerAnimationTime $WFBackLayerDelayTime both; }
-        .front-layer {
-            &:before, &:after { animation: fadeIn $WFFrontLayerAnimationTime $WFFrontLayerDelayTime both; }
-        }
     }
     
     // ----- animation down -----
@@ -392,7 +390,7 @@
                 }
             }
             .word {
-                &:after { animation: halfDown $time * 2 linear $time * 8 both; 
+                &:after { animation: halfDown $time * 2 linear $time * 8 both; }
                 span {
                     animation: titleWord $time * 2 $time * 9 linear;
                     animation-fill-mode: forwards;
@@ -443,7 +441,7 @@
                 p { animation-delay: $WFTextSixthColumnDelayTime; }
             }
         }
-        .back-layer { animation: fadeIn $WFBackLayerAnimationTime $WFBackLayerDelayTime both; }
-        .front-layer { &:before, &:after { animation: fadeIn $WFFrontLayerAnimationTime $WFFrontLayerDelayTime both; } }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
 }

@@ -1,3 +1,5 @@
+body { overflow: hidden; }
+
 // base
 @import "base/variables";
 @import "base/mixins";
@@ -6,6 +8,9 @@
 @import "base/common";
 @import "base/animations";
 
+// тут хранится анимация для некоторых элементов
+@import "components/euro-club/main";
+
 // modules
 @import "components/modules/small-gray-lines";
 @import "components/modules/jelly-button";
@@ -13,16 +18,19 @@
 @import "components/modules/scroll";
 
 // components
-@import "components/big-background-letter/main";
-@import "components/crossed-button/main";
-@import "components/menu/main";
-@import "components/title/main";
-@import "components/social/main";
-@import "components/new-title/main";
-@import "components/euro-club/main";
-
-// YEVHEN ADDED THIS
 @import "components/logo/main";
+@import "components/menu/main";
+@import "components/social/main";
+@import "components/copyright/main";
+@import "components/crossed-button/main";
+@import "components/big-background-letter/main";
+
+/* в дальнейшем свести к одному */
+@import "components/title/main";     
+@import "components/new-title/main";
+@import "components/language/main";
+@import "components/languages/main";
+/* в дальнейшем свести к одному */
 
 // screens
 @import "components/about-company-one/main";
