@@ -1,20 +1,18 @@
-// YEVHEN ADDED THIS FILE
-
 // base
+@import "base/variables";
 @import "base/reset";
 @import "base/fonts";
-@import "base/variables";
 @import "base/common";
 @import "base/animations";
 
 // components
-@import "components/logo/main";
 @import "components/menu/main";
-@import "components/languages/main";
-@import "components/crossed-button/main";
+@import "components/logo/main";
 @import "components/title/main";
+@import "components/languages/main";
+@import "components/copyright/main";
+@import "components/crossed-button/main";
 @import "components/big-background-letter/main";
-@import "components/navigation-elements/main";
 
 // main
 @import "components/services/main";
