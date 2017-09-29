@@ -1,4 +1,8 @@
 & {
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    background: url('../images/seo/seo-bg.jpg') no-repeat;
+    background-color: $background;
+    background-size: cover;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
@@ -6,10 +10,7 @@
     // ----- animation up -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        animation: Up $time * 3 0 both;
-        background: url('../images/seo/seo-bg.jpg') no-repeat;
-        background-color: $background;
-        background-size: cover;
+        animation: Up $time * 3 0s both;
         
         // ----- navigation-elements -----
         .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -49,9 +50,6 @@
     &.previous, &.previous-back {
         animation: slideDown $time * 3 0s both;
         animation-play-state: paused;
-        background: url('../images/seo/seo-bg.jpg') no-repeat;
-        background-color: $background;
-        background-size: cover;
         
         // ----- navigation-elements -----
         .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -86,6 +84,8 @@
             }
         }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
 
     // ----- table -----
     .table .container {

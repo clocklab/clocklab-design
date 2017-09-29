@@ -1,4 +1,6 @@
 & {
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    background: $background;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
@@ -6,8 +8,7 @@
     // ----- animation fade -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        animation: fadeIn $time * 3 0 both;
-        background: $background;
+        animation: fadeIn $time * 3 0s both;
 
         // ----- navigation-elements -----
         .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -17,9 +18,25 @@
         
         // ----- crossed-button -----
         .crossed-button { animation: fadeInUp $time * 2 $time * 12 both; }
+        
+        // ----- graph -----
+        @keyframes fadeInThree {
+            from { opacity: 0; }
+            to { opacity: 3.000000e-02; }
+        }
+        @keyframes fadeInFour {
+            from { opacity: 0; }
+            to { opacity: .1; }
+        }
+        .st2 { animation: fadeIn $time * 3 $time * 12  both; }
+        .st3 { animation: fadeInThree $time * 6 $time * 10 both; }
+        .st4 { animation: fadeInFour $time * 6 $time * 11 both; }
+        .st5 { animation: fadeIn $time * 6 $time * 12 both; }
+        .st6, .st7, .st8 { animation: fadeIn $time * 6 $time * 15 both; }
 
         // ----- image-block -----
         .image-block .image-container {
+            animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
             img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
             &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
         }
@@ -51,24 +68,23 @@
             }
         }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
     
     // ----- graph -----
     .graph {
         bottom: 0;
-        margin-bottom: -8vh;
         position: absolute;
+        margin-bottom: -8vh;
         .st0 {
-            fill: none;
-            stroke-width: 7;
-            visibility: hidden;
-            animation-name: line;
-            animation-delay: 2.4s;
+            animation: line 5s 2.5s both;
+            stroke-dasharray: 4444;
             stroke-miterlimit: 10;
             stroke-linecap: round;
             stroke: url(#SVGID_1_);
-            stroke-dasharray: 4444;
-            animation-duration: 5s;
-            animation-timing-function: linear;
+            visibility: hidden;
+            stroke-width: 7;
+            fill: none;
         }
         .st1 { opacity: 0.6; }
         .st2 {

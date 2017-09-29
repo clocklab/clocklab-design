@@ -1,4 +1,6 @@
 & {
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    background: $background;
     font-family: $raleway;
     font-weight: $regular;
     overflow: hidden;
@@ -6,8 +8,7 @@
     // ----- animation fade -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        animation: fadeIn $time * 3 0 both;
-        background: $background;
+        animation: fadeIn $time * 3 0s both;
         
         // ----- navigation-elements -----
         .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -16,8 +17,9 @@
 
         // ----- social -----
         .social {
-            .facebook, .instagram { animation-delay: $time * 3; } 
-            .jumping-button { animation-delay: $time * 6; }
+            .instagram {  animation: social $time * 3 $time * 3 both; }
+            .facebook { animation: socialReversed $time * 3 $time * 3 both; }
+            .jumping-button { animation: FadeInRight $time * 3 $time * 3 both; }
         }
 
         // ----- shadow -----
@@ -33,6 +35,8 @@
             animation-fill-mode: forwards;
         }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
     
     // ----- bg-image -----
     .bg-image {
