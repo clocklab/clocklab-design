@@ -191,4 +191,21 @@
     .jumping-button {
         margin: px(50) auto 0;
     }
+
+    &--web-production {
+
+        .row {
+
+            &--6 {
+
+                ul {
+                    margin: px(70) 0 0 px(70);
+                }
+            }
+        }
+
+        .jumping-button {
+            margin-top: px(170);
+        }
+    }
 }

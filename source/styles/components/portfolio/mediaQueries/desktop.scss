@@ -12,7 +12,12 @@
 
         .portfolio-item {
 
-            &--audi {
+            &--audi,
+            &--zabirie-landing,
+            &--rs,
+            &--stem,
+            &--walker,
+            &--pepe-jeans {
                 margin: px(400) 0;
                 margin-right: px(170);
 
@@ -27,7 +32,12 @@
                 }
             }
 
-            &--alta-capital {
+            &--dela,
+            &--alta-capital,
+            &--lets-help,
+            &--diesel,
+            &--gant,
+            &--tommy-hilfiger {
                 
                 .image-container {
                     min-width: px(600);
@@ -40,7 +50,11 @@
                 }
             }
 
-            &--vino-grad {
+            &--vino-grad,
+            &--bobo, 
+            &--doberman,
+            &--g-star,
+            &--zabirie {
                 
                 .image-container {
                     min-width: px(400);
@@ -53,7 +67,11 @@
                 }
             }
 
-            &--euro-club {
+            &--euro-club,
+            &--q7,
+            &--a5-q3,
+            &--preppy,
+            &--shell {
                 
                 .image-container {
                     min-width: px(400);

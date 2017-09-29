@@ -10,11 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const content = document.querySelector('.portfolio .front-layer .content-container .portfolio-item:last-child')
     const difWidth = content.getBoundingClientRect().right - frontLayer.offsetWidth
 
+    const portfolioLinks = document.querySelectorAll('.portfolio a.image-container')
+
     const koef = difPos / difWidth
 
     let currentScrollLeft = 0
     let currentLeftPos
-
+    
 
     const moveLetters = newPos => {
         letterC.style.transform = `translateX(${newPos}px)`
@@ -45,6 +47,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         moveLetters(newLeftPos)
     })    
+
+    function goToPage() {
+        document.location.href = this.href
+        this.removeEventListener('mouseup', goToPage)
+    }
+
+    portfolioLinks.forEach(link => {
+        link.addEventListener('mousedown', event => {
+            event.preventDefault()
+
+            link.addEventListener('mouseup', goToPage)
+        })
+    })
 
     document.addEventListener('mousedown', event => {
         currentLeftPos = event.clientX

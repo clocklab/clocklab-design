@@ -126,8 +126,22 @@
         font-family: $raleway;
 
         span {
+
             &:after {
+                color: $white;
                 content: 'Читать далее';
+            }
+
+            &:before {
+                background: $white;
+            }
+        }
+
+        .arrow {
+
+            .st0,
+            .st1 {
+                stroke: $white;
             }
         }
     }
@@ -208,6 +222,17 @@
             }
         }
 
+        .sticker {
+
+            span {
+                animation: fadeInLeft $MHTitleTextAnimationTime $MHTitleTextDelayTime both;           
+            }
+
+            &:before {
+                animation: fadeInLeft $MHTitleLineAnimationTime $MHTitleLineDelayTime both;
+            }
+        }
+
         .new-title {
 
             .text-container {
@@ -228,6 +253,10 @@
             p {
                 animation: fadeInUp $MHTextAnimationTime $MHTextDelayTime both;
             }
+        }
+
+        .crossed-button {
+            animation: fadeInUp $MHTextAnimationTime $MHTextDelayTime both;
         }
     }
 
@@ -279,6 +308,17 @@
             }
         }
 
+        .sticker {
+
+            span {
+                animation-play-state: paused;        
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
         .new-title {
 
             .text-container {
@@ -299,6 +339,10 @@
             p {
                 animation-play-state: paused;
             }
+        }
+
+        .crossed-button {
+            animation-play-state: paused;
         }
     }
 
