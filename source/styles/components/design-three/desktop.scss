@@ -1,4 +1,5 @@
 & { 
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     transition: perspective $time * 2;
     font-family: $raleway;
     font-weight: $regular;
@@ -355,8 +356,8 @@
     // ----- animation left -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        animation: Left $time * 3 0 both;
-        .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
+        animation: Left $time * 3 0s both;
+        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
         .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
         .title {
             animation: fadeIn $time * 2 $time * 6 linear;
@@ -424,18 +425,14 @@
         }
         .questions {
             h3, p, button { animation: Right $WFQustionsAnimationTime $WFQustionsDelayTime both; }
-        }
-        .back-layer { animation: fadeIn $WFBackLayerAnimationTime $WFBackLayerDelayTime both; }
-        .front-layer {
-            &:before, &:after { animation: fadeIn $WFFrontLayerAnimationTime $WFFrontLayerDelayTime both; }
         }
     }
 
     // ----- animation right -----
     &.previous, &.previous-back {
-        animation: slideRight $time * 3 0 both;
+        animation: slideRight $time * 3 0s both;
         animation-play-state: paused;
-        .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
+        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
         .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
         .title {
             animation: fadeIn $time * 2 $time * 6 linear;
@@ -504,9 +501,7 @@
         .questions {
             h3, p, button { animation: Right $WFQustionsAnimationTime $WFQustionsDelayTime both; }
         }
-        .back-layer { animation: fadeIn $WFBackLayerAnimationTime $WFBackLayerDelayTime both; }
-        .front-layer {
-            &:before, &:after { animation: fadeIn $WFFrontLayerAnimationTime $WFFrontLayerDelayTime both; }
-        }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
 }

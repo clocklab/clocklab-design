@@ -170,6 +170,114 @@
                 &:nth-child(6) { top: 85vh; }
             }
         }
+        
+        // ----- form -----
+        form {
+            width: px(830);
+            height: px(1200);
+            padding-top: px(250);
+            font-family: $roboto;
+            position: relative;
+            color: $white;
+            .close-form {
+                top: 0;
+                right: 0;
+                width: px(56);
+                height: px(56);
+                position: absolute;
+                background: transparent;
+                &:before, &:after {
+                    left: 0;
+                    top: 50%;
+                    height: 2px;
+                    content: '';
+                    width: px(40);
+                    display: block;
+                    background: $gray;
+                    position: absolute;
+                    transition: background $time;
+                }
+                &:before { transform: rotate(45deg); }
+                &:after { transform: rotate(-45deg); }
+                &:hover {
+                    &:before, &:after { background: $white; }
+                }
+            }
+            h3 {
+                text-transform: uppercase;
+                margin-bottom: px(220);
+                font-family: $raleway;
+                font-size: px(60);
+                font-weight: 800;
+            }
+            label {
+                width: 100%;
+                display: block;
+                padding: 0 px(20);
+                margin-bottom: px(56);
+                border-bottom: 1px solid $gray;
+                span {
+                    display: block;
+                    margin-bottom: px(16);
+                    font-family: $roboto;
+                    font-size: px(30);
+                }
+                .mistake {
+                    position: absolute;
+                    padding-top: px(6);
+                    font-size: px(24);
+                    color: $red;
+                    opacity: 0;
+                    top: 100%;
+                }
+                input {
+                    width: 100%;
+                    border: none;
+                    color: $white;
+                    display: block;
+                    padding: px(5) 0;
+                    font-size: px(32);
+                    background: transparent;
+                }
+                &:nth-of-type(2) { margin-bottom: px(150); }
+            }
+            .send {
+                border: 2px solid $blue;
+                font-family: $roboto;
+                background: $blue;
+                display: block;
+                height: px(90);
+                width: px(340);
+                color: $white;
+                font-weight: 500;
+                font-size: px(28);
+                margin: px(90) 0 0 auto;
+                text-transform: uppercase;
+                transition: color $time, background $time;
+                &:hover {
+                    background: $white;
+                    color: $blue;
+                }
+            }
+        }
+        &:after { left: 50%; }
+        &:before, &:after {
+            background: $white;
+            position: absolute;
+            display: block;
+            content: '';
+            left: 0;
+            top: 0;
+            width: 50%;
+            height: 100vh;
+        }
+        &.opened .front-layer {
+            transform: rotateY(30deg);
+            &:after {
+                z-index: 9999;
+                opacity: 1;
+            }
+        }
     }
 
     // ----- back-layer -----
@@ -186,113 +294,7 @@
         height: 100vh;
         width: 100%;
     }
-    form {
-        width: px(830);
-        height: px(1200);
-        padding-top: px(250);
-        font-family: $roboto;
-        position: relative;
-        color: $white;
-        .close-form {
-            top: 0;
-            right: 0;
-            width: px(56);
-            height: px(56);
-            position: absolute;
-            background: transparent;
-            &:before, &:after {
-                left: 0;
-                top: 50%;
-                height: 2px;
-                content: '';
-                width: px(40);
-                display: block;
-                background: $gray;
-                position: absolute;
-                transition: background $time;
-            }
-            &:before { transform: rotate(45deg); }
-            &:after { transform: rotate(-45deg); }
-            &:hover {
-                &:before, &:after { background: $white; }
-            }
-        }
-        h3 {
-            text-transform: uppercase;
-            margin-bottom: px(220);
-            font-family: $raleway;
-            font-size: px(60);
-            font-weight: 800;
-        }
-        label {
-            width: 100%;
-            display: block;
-            padding: 0 px(20);
-            margin-bottom: px(56);
-            border-bottom: 1px solid $gray;
-            span {
-                display: block;
-                margin-bottom: px(16);
-                font-family: $roboto;
-                font-size: px(30);
-            }
-            .mistake {
-                position: absolute;
-                padding-top: px(6);
-                font-size: px(24);
-                color: $red;
-                opacity: 0;
-                top: 100%;
-            }
-            input {
-                width: 100%;
-                border: none;
-                color: $white;
-                display: block;
-                padding: px(5) 0;
-                font-size: px(32);
-                background: transparent;
-            }
-            &:nth-of-type(2) { margin-bottom: px(150); }
-        }
-        .send {
-            border: 2px solid $blue;
-            font-family: $roboto;
-            background: $blue;
-            display: block;
-            height: px(90);
-            width: px(340);
-            color: $white;
-            font-weight: 500;
-            font-size: px(28);
-            margin: px(90) 0 0 auto;
-            text-transform: uppercase;
-            transition: color $time, background $time;
-            &:hover {
-                background: $white;
-                color: $blue;
-            }
-        }
-    }
-    &:after { left: 50%; }
-    &:before, &:after {
-        background: $white;
-        position: absolute;
-        display: block;
-        content: '';
-        left: 0;
-        top: 0;
-        width: 50%;
-        height: 100vh;
-    }
-    &.opened .front-layer {
-        transform: rotateY(30deg);
-        &:after {
-            z-index: 9999;
-            opacity: 1;
-        }
-    }
-    
+
     // ----- animation up -----
     &.current, &.current-back,
     &.previous, &.previous-back {
@@ -442,8 +444,6 @@
             }
         }
         .back-layer { animation: fadeIn $WFBackLayerAnimationTime $WFBackLayerDelayTime both; }
-        .front-layer {
-            &:before, &:after { animation: fadeIn $WFFrontLayerAnimationTime $WFFrontLayerDelayTime both; }
-        }
+        .front-layer { &:before, &:after { animation: fadeIn $WFFrontLayerAnimationTime $WFFrontLayerDelayTime both; } }
     }
 }

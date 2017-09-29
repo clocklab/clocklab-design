@@ -1,24 +1,23 @@
 & {
-    background: $background;
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $raleway;
     font-weight: $regular;
+    background: $white;
     overflow: hidden;
     
     // ----- animation fade -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        animation: fadeIn $time * 3 0 both;
-        background: $background;
+        animation: fadeIn $time * 3 0s both;
 
         // ----- navigation-elements -----
-        .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
+        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 9 both; }
 
         // ----- other -----
         .crossed-button { animation: fadeInUp $time * 2 $time * 9 both; }
-        .page-layer.back-layer::after { animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
 
         // ----- title -----
         .title {
@@ -60,70 +59,9 @@
             &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
         }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
 
-    // ----- language -----
-    .language {
-        overflow: visible;
-        transform: rotate(-90deg);
-        position: absolute;
-        font-size: px(29);
-        left: px(105);
-        bottom: 42vh;
-        z-index: 2;
-        &.dark a {
-            color: $dark;
-            &:hover { color: $gray; }
-            &.select {
-                color: $gray;
-                &:hover { color: $black; }
-                &:before { color: $gray; }
-            }
-        }
-        a {
-            text-transform: uppercase;
-            display: inline-block;
-            font-weight: $thin;
-            cursor: pointer;
-            color: $gray;
-            &:nth-of-type(2) { margin-right: px(30); }
-            &.select {
-                color: $white;
-                &::before {
-                    position: absolute;
-                    color: $white;
-                    bottom: 1.5px;
-                    right: 30px;
-                    content: '—';
-                }
-            }
-            &:hover {
-                color: $white;
-                transition: $time;
-            }
-        }
-    }
-    
-    // ----- page-layer -----
-    .page-layer {
-        top: 0;
-        left: 0;
-        &.back-layer {
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            &:after {
-                background: $white;
-                position: absolute;
-                display: block;
-                height: 100vh;
-                width: 100vw;
-                content: '';
-                top: 0;
-            }
-        }
-    }
-    
     // ----- letter o -----
     .big-background-letter {
         top: 30vh;
@@ -151,8 +89,8 @@
         span::after { content: 'Читать далее'; }
     }
 
-    // ----- jump-button -----
-    .jump-button {
+    // ----- jumping-button -----
+    .jumping-button {
         left: initial;
         right: px(1380);
         bottom: px(580);
