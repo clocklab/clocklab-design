@@ -353,4 +353,8 @@
     &.previous-back {
         animation-play-state: running;
     }
+
+    &.first-slide {
+        animation: fadeIn $time * 3 0s both;
+    }
 }

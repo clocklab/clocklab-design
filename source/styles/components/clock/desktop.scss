@@ -158,4 +158,10 @@
     .minutes-container { transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44); }
     .seconds-container { transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44); }
     @keyframes rotate { 100% { transform: rotateZ(360deg); } }
+
+
+    // YEVHEN ADDED THIS
+    &.first-slide {
+        animation: fadeIn $time * 3 0s both;
+    }
 }

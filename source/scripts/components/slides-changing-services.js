@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const events = ['wheel', 'keydown']
     const animationTime = 1000
     let flag = true
-    let firstLap = true
     let freezer
     
     const addListeners = () => events.forEach(event => document.addEventListener(event, freezeEvents))
@@ -20,19 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, animationTime)
         }
     }
-
-    const moveToNext = index => {
-        slides[index + 1]
-        ? slides[index + 1].classList.add('current') 
-        : slides[0].classList.add('current')
-    }
     
-    const moveToPrevious = (index) => {
-        slides[index - 1]
-        ? slides[index - 1].classList.add('current-back')
-        : slides[slides.length - 1].classList.add('current-back')
-    }
-
     const setClasses = (currentSlide, previousSlide, currentClass) => {
         previousSlide && previousSlide.classList.remove('previous', 'previous-back');
         currentSlide.classList.remove('current', 'current-back');
@@ -51,31 +38,38 @@ document.addEventListener('DOMContentLoaded', () => {
         const index = slides.indexOf(currentSlide);
         
         if (event.deltaY < 0 || event.keyCode === 40) {
-            setClasses(currentSlide, previousSlide, 'previous')
-            resetAnimation(currentSlide, 'previous')
-            moveToNext(index)
-
-            if (index === slides.length - 1) firstLap = false
+            if (slides[index + 1]) {
+                setClasses(currentSlide, previousSlide, 'previous')
+                resetAnimation(currentSlide, 'previous')
+                slides[index + 1].classList.add('current') 
+            }
         }
 
         if (event.deltaY > 0 || event.keyCode === 38) {
-            if (firstLap) {
-                if (slides[index - 1]) {
-                    setClasses(currentSlide, previousSlide, 'previous-back')
-                    resetAnimation(currentSlide, 'previous-back')
-                    slides[index - 1].classList.add('current-back')
-                }
-            } else {
+            if (slides[index - 1]) {
                 setClasses(currentSlide, previousSlide, 'previous-back')
                 resetAnimation(currentSlide, 'previous-back')
-                moveToPrevious(index)
+                slides[index - 1].classList.add('current-back')
             }
         }
     }
+
+    const changeFirstSlideAnimation = () => {
+        slides[0].classList.remove('first-slide')
+        
+        events.forEach(event => {
+            document.removeEventListener(event, changeFirstSlideAnimation)
+        })    
+    }
+
+    events.forEach(event => {
+        document.addEventListener(event, changeFirstSlideAnimation)
+    })
     
     addListeners()
     
     slides[0].classList.add('current')
+    slides[0].classList.add('first-slide')
 
 
     // --- MENU ---
