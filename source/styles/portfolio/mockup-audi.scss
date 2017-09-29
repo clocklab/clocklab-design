@@ -1,0 +1,1276 @@
+@import '../base/reset';
+@import '../base/animate';
+@import '../base/fonts';
+
+// --- COMMON STYLES ---
+.wrapper {
+    font-family: 'Audi';
+    // --- Discuss mobile version ---
+    // @media (max-width: 1200px) {
+    //     display: none;
+    // }
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    min-width: 1200px;
+}
+
+.inner-container {
+    margin: 0 auto;
+    width: 61%;
+    min-width: 1024px;
+
+    img,
+    video {
+        width: 100%;
+    }
+}
+
+.rotated-text {
+    display: inline-block;
+    position: absolute;
+    font-size: 12px;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+
+    span {
+        display: block;
+    }
+
+    &.device {
+        color: #adadad;
+    }
+}
+
+p {
+    margin-bottom: 25px;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.4;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h4 {
+    margin-bottom: 30px;
+    color: #444;
+    font-size: 24px;
+    font-weight: 700;
+}
+// --- COMMON STYLES ---
+
+
+// --- HEADER ---
+header {
+    position: relative;
+
+    .container {
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+
+    .top-panel {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 90%;
+        min-width: 1024px;
+    }
+
+    .logo {
+        width: 145px;
+        height: 20px;
+        background: url('../images/mockups/audi/logo.png') no-repeat center;
+        background-size: contain;
+    }
+
+    .year {
+        color: #444;
+        font-size: 8px;
+        font-weight: 700;
+
+        span {
+            display: block;
+            transform: rotate(-90deg) translateX(-10px);
+        }
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+// --- HEADER ---
+
+
+// --- MACBOOK-1 ---
+.macbook-1 {
+    position: relative;
+    margin-top: -370px;
+
+    .inner-container {
+        position: relative;
+        padding: 0 25px;
+        width: 63%;
+    }
+
+    .video-block {
+        position: relative;
+    }
+
+    video {
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        z-index: 2;
+        margin: 0 auto;
+        width: 79%;
+        transform: translateX(-50%);
+    }
+
+    .page,
+    .device {
+        bottom: 0;
+        left: 1%;
+        padding-left: 125px;
+        color: #adadad;
+    }
+
+    .device {
+        width: 40%;
+        left: 98%;
+        right: 10px;
+        color: #444;
+    }
+}
+// --- MACBOOK-1 ---
+
+
+// --- ABOUT-PROJECT ---
+.about-project {
+    margin-top: 100px;
+    padding-bottom: 220px;
+
+    h3 {
+        display: block;
+        padding: 30px 64px 30px 230px;
+        width: 530px;
+        background: #000;
+        color: #FFF;
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .inner-container {
+        margin-top: 60px;
+    }
+
+    .rotated-text {
+        padding-left: 30px;
+    }
+
+    article {
+        margin: 0 auto;
+        width: 750px;
+    }
+}
+// --- ABOUT-PROJECT ---
+
+
+// --- MODEL-LINE ---
+.model-line {
+
+    video {
+        width: 100%;
+    }
+}
+// --- MODEL-LINE ---
+
+
+// --- A8 ---
+.a8 {
+    margin-top: 190px;
+    background: url('../images/mockups/audi/A8-background.png') no-repeat center 1000px;
+    background-size: contain;
+    font-size: 0;
+
+    img {
+        width: 100%;
+    }
+
+    &-3 {
+        position: relative;
+        margin-top: 55px;
+
+        .iphone {
+            position: absolute;
+            top: -130px;
+            right: -60px;
+            z-index: 2;
+            width: 410px;
+        }
+
+        video {
+            position: absolute;
+            top: 110px;
+            left: 50%;
+            width: 80%;
+            transform: translateX(-50%);
+        }
+
+        .rotated-text {
+            bottom: 70px;
+            padding-left: 70px;
+            width: 50%;
+            color: #adadad;
+        }
+    }
+
+    &-4 {
+        position: relative;
+
+        .iphone-with-photo {
+            position: absolute;
+            bottom: -70px;
+            left: -90px;
+            z-index: 2;
+            width: 410px;
+        }
+    }
+
+    &-5 {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        padding: 40px 5%;
+        background: rgb(219, 216, 212);
+
+        .video-container {
+            width: 40%;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+            width: 60%;
+            background: #000;
+            color: #fff;
+        }
+
+        h4 {
+            margin-bottom: 50px;
+            width: 100%;
+            color: #fff;
+            font-size: 35px;
+            line-height: 55px;
+        }
+
+        p {
+            color: #fff;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &-7 {
+        background: #000;
+
+        .inner-container {
+            position: relative;
+        }
+
+        .rotated-text {
+            left: 0;
+            bottom: 0;
+            padding-left: 220px;
+            width: 50%;
+            color: #adadad;
+        }
+
+        .row {
+            position: relative;
+            z-index: 2;
+            margin-top: -180px;
+
+            img {
+
+                &:first-child {
+                    width: 30%;
+                }
+
+                &:nth-child(2) {
+                    position: relative;
+                    left: -80px;
+                    width: 32%;
+                }
+
+                &:nth-child(3) {
+                    position: relative;
+                    left: -130px;
+                    width: 14%;
+                }
+            }
+
+            .text {
+                position: absolute;
+                right: 3%;
+                top: 190px;
+                width: 31%;
+
+                h4 {
+                    color: #adadad;
+                }
+
+                p {
+                    margin-bottom: 25px;
+                    color: #adadad;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+// --- A8 ---
+
+
+// --- Q5 ---
+.q5 {
+    margin-top: 230px;
+
+    .inner-container {
+        position: relative;
+    }
+
+    &-1 {
+
+        .page {
+            top: 20px;
+            left: -20px;
+        }
+
+        .device {
+            bottom: 0;
+            right: -120px;
+        }
+    }
+
+    &-2 {
+        margin-top: 250px;
+        background: url('../images/mockups/audi/q5-background.png') 0 top no-repeat;
+        background-size: contain;
+
+        .inner-container {
+
+            & > video {
+                position: absolute;
+                top: -50px;
+                left: 50px;
+                width: 45%;
+            }
+        }
+
+        .ipad-block {
+            position: relative;
+            margin: 110px 90px 0 auto;
+            width: 980px;
+
+            video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 730px;
+                transform: translate3d(-50%, -50%, 0);
+            }
+
+            .device {
+                top: 0;
+                right: -150px;
+                padding-left: 50px;
+            }
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 100px;
+
+            .iphone-block {
+                position: relative;
+                width: 410px;
+                min-width: 410px;
+
+                img {
+                    width: 100%;
+                }
+
+                video {
+                    position: absolute;
+                    top: 40px;
+                    left: 50%;
+                    width: 370px;
+                    transform: translateX(-50%);
+                }
+            }
+
+            .text-block {
+                margin-left: 180px;
+                width: 670px;
+            }
+        }
+    }
+
+    &-3 {
+
+        .inner-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .video {
+
+            &-8 {
+                width: 63%;
+            }
+
+            &-9 {
+                position: relative;
+                top: 260px;
+                width: 28%;
+            }
+        }
+
+        .text-block {
+            width: 630px;
+        }
+    }
+}
+// --- Q5 ---
+
+
+// --- A4 ---
+.a4 {
+    margin-top: 300px;
+
+    &-1 {
+        position: relative;
+
+        img {
+            width: 68%;
+            min-width: 1100px;
+        }
+
+        .inner-container {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            transform: translateX(-50%);
+        }
+
+        .page {
+            top: 0;
+            left: 0;
+            padding-left: 150px;
+        }
+
+        .device {
+            top: 260px;
+            right: 0;
+        }
+    }
+
+    &-2 {
+        margin-top: 100px;
+        background: url('../images/mockups/audi/a4-background.png') 0 100px no-repeat;
+        background-size: contain;
+
+        .inner-container {
+            position: relative;
+        }
+
+        .text-block {
+            margin-bottom: 200px;
+            width: 640px;
+        }
+
+        .device {
+            right: 0;
+            top: 180px;
+        }
+
+        .pictures-block {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 100%;
+
+            img {
+                display: block;
+                object-fit: contain;
+
+                &:first-child {
+                    width: 65%;
+                }
+
+                &:last-child {
+                    position: relative;
+                    top: 230px;
+                    left: -15%;
+                    width: 55%;
+                }
+            }
+        }
+    }
+
+    &-3 {
+        margin-top: 230px;
+
+        .inner-container {
+            position: relative;
+            padding-bottom: 100px;
+            background: url('../images/mockups/audi/a4-background-2.png') no-repeat center bottom;
+        }
+
+        .a4-3-image {
+            width: 71%;
+        }
+
+        .device {
+            top: 320px;
+            right: -80px;
+        }
+
+        .iphone-with-photo-a4 {
+            position: absolute;
+            top: 390px;
+            right: -30px;
+            width: 410px;
+        }
+
+        .text-block {
+            margin-top: 190px;
+            width: 620px;
+        }
+
+        video {
+            display: block;
+            margin: 350px auto 420px;
+            width: 77%;
+            min-width: 900px; 
+        }
+
+        .image-block {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                width: 48%;
+                object-fit: contain;
+
+                &:first-child {
+                    position: relative;
+                    top: -270px;
+                }
+            }
+        }
+    }
+}
+// --- A4 ---
+
+
+// --- BOTTOM BLOCK ---
+.bottom-block {
+    margin-top: 150px;
+    padding-bottom: 100px;
+
+    .inner-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .text-block {
+        width: 63%;
+    }
+
+    a {
+        width: 240px;
+        min-width: 240px;
+        height: 45px;
+        background: #000;
+        border: 2px solid #000;
+        color: #FFF;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: center;
+        transition: color .3s, background .3s;
+
+        &:hover {
+            background: transparent;
+            color: #000;
+        }
+    }
+}
+// --- BOTTOM BLOCK ---
+
+
+
+// --- TABLET VERSION ---
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .container {
+        padding: 0 25px;
+        width: 100%;
+        min-width: 100%;
+
+        & > .inner-container {
+            padding: 0;
+            width: 100%;    
+            min-width: 100%;
+        }
+    }
+
+    header {
+
+        .top-panel {
+            min-width: 100%;
+        }
+    }
+
+    .about-project {
+        margin-top: 60px;
+        padding-bottom: 100px;
+
+        .rotated-text {
+            left: 20px;
+        }
+    }
+
+    .a8 {
+        margin-top: 100px;
+
+        .inner-container {
+
+            & > .rotated-text {
+                left: 20px;
+            }
+        }
+
+        &-3 {
+            margin-top: 100px;
+
+            .iphone {
+                right: 30px;
+            }
+        }
+
+        &-4 {
+
+            .iphone-with-photo {
+                left: 0;
+            }
+        }
+
+        &-5 {
+
+            h4 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+
+        &-7 {
+
+            .row {
+                margin-top: -110px;
+
+                img {
+                    
+                    &:first-child {
+                        width: 40%;
+                    }
+    
+                    &:nth-child(2) {
+                        position: relative;
+                        left: -80px;
+                        width: 40%;
+                    }
+    
+                    &:nth-child(3) {
+                        position: relative;
+                        left: -130px;
+                        width: 20%;
+                    }
+                }
+
+                .text {
+                    position: relative;
+                    top: initial;
+                    right: 0;
+                    margin-left: auto;
+                    padding: 50px 15px 20px;
+                    width: 80%;
+                }
+            }
+
+            .rotated-text {
+                padding-left: 130px;
+            }
+        }
+    }
+
+    .q5 {
+        margin-top: 120px;
+
+        &-1 {
+
+            .page {
+                top: -10px;
+                left: 20px;
+            }
+    
+            .device {
+                bottom: -90px;
+                right: -80px;
+            }
+        }
+
+        &-2 {
+            margin-top: 150px;
+
+            .ipad-block {
+                margin: 0;
+                margin-top: 40px;
+                padding-left: 30px;
+                width: 70%;
+    
+                img {
+                    width: 100%;
+                }
+    
+                video {
+                    width: 78%;
+                    transform: translate3d(-47%, -50%, 0);
+                }
+    
+                .device {
+                    right: -200px;
+                    top: 50%;
+                }
+            }
+
+            .about {
+                margin-top: 40px;
+
+                .text-block {
+                    margin-left: 70px;
+                }
+            }
+        }
+
+        &-3 {
+            margin-top: -100px;
+
+            .video {
+
+                &-9 {
+                    width: 32%;
+                }
+            }
+
+            .text-block {
+                padding-left: 20px;
+                width: 63%;
+            }
+        }
+    }
+
+    .a4 {
+        margin-top: 210px;
+
+        &-1 {
+
+            img {
+                display: block;
+                margin: 0 auto;
+                min-width: 75%;
+            }
+
+            .page {
+                left: 20px;
+                padding-left: 50px;
+            }
+
+            .device {
+
+            }
+        }
+
+        &-2 {
+            margin-top: 80px;
+
+            .text-block {
+                margin-bottom: 40px;
+                padding-left: 20px;
+            }
+
+            .pictures-block {
+
+                img {
+                    height: 100%;
+                    
+                    &:first-child {
+                        width: 60%;
+                    }
+
+                    &:last-child {
+                        width: 50%;
+                        left: -10%;
+                    }
+                }
+            }
+        }
+
+        &-3 {
+            margin-top: 150px;
+
+            .inner-container {
+                padding-bottom: 20px;
+            }
+
+            .device {
+                top: 250px;
+                right: -60px;
+            }
+
+            .iphone-with-photo-a4 {
+                top: 250px;
+                right: 0;
+            }
+
+            .text-block {
+                padding-left: 20px;
+                margin-top: 60px;
+                width: 55%;
+            }
+
+            video {
+                margin: 200px auto 220px;
+            }
+
+            .image-block {
+
+                img {
+
+                    &:first-child {
+                        top: -160px;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-block {
+        margin-top: 30px;
+        padding: 0 20px 50px;
+
+        .inner-container {
+            padding: 0 20px;
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+}
+// --- TABLET VERSION ---
+
+
+
+// --- MOBILE VERSION ---
+@media (max-width: 1023px) {
+    .container {
+        width: 100%;
+        min-width: 100%;
+        padding: 0 15px;
+
+        & > .inner-container {
+            padding: 0;
+        }
+    }
+
+    .inner-container {
+        width: 100%;
+        min-width: 100%;
+        padding: 0 15px;
+    }
+
+    .rotated-text {
+        display: none;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    header {
+
+        .container {
+            top: 15px;
+        }
+
+        .top-panel {
+            width: 100%;
+            min-width: 100%;
+        }
+
+        img {
+            position: relative;
+            top: 50px;
+        }
+    }
+
+    .macbook-1 {
+        margin-top: -15%;
+
+        .inner-container {
+            padding: 0 15px;
+            width: 100%;
+        }
+        
+        .video-block {
+            width: 100%;
+        }
+
+        video {
+            top: 10%;
+        }
+    }
+
+    .about-project {
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+        h3 {
+            display: block;
+            padding: 10px 4% 10px 4%;
+            width: 50%;
+            font-size: 18px;
+            text-align: right;
+        }
+
+        .inner-container {
+            margin-top: 10px;
+        }
+
+        article {
+            width: 100%;
+        }
+    }
+
+    .model-line {
+        height: 100px;
+
+        video {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .a8 {
+        margin-top: 30px;
+
+        &-3 {
+            margin-top: 20px;
+
+            .iphone {
+                position: relative;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+
+            video {
+                top: 13%;
+            }
+        }
+
+        &-4 {
+
+            .iphone-with-photo {
+                position: relative;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+            }
+        }
+
+        &-5 {
+            display: block;
+            padding: 10px 2%;
+
+            .video-container {
+                width: 100%;
+            }
+
+            .text {
+                display: none;
+                padding: 10px;
+                width: 100%;
+            }
+
+            h4 {
+                margin-bottom: 15px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+
+        &-6 {
+            display: none;
+        }
+
+        &-7 {
+
+            .row {
+                margin-top: 0;
+
+                img {
+
+                    &:nth-child(1),
+                    &:nth-child(3) {
+                        display: none;
+                    }
+
+                    &:nth-child(2) {
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+
+                .text {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    padding: 10px 15px;
+
+                    h4 {
+                        margin-bottom: 20px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    .q5 {
+        margin-top: 25px;
+
+        &-2 {
+            margin-top: 15px;
+
+            .inner-container {
+
+                & > video {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    margin-bottom: 15px;
+                    width: 100%;
+                }
+            }
+
+            .ipad-block {
+                margin: 0;
+                margin-top: 15px;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+                video {
+                    width: 80%;
+                }
+            }
+
+            .about {
+                display: block;
+                margin-top: 15px;
+
+                .iphone-block {
+                    width: 100%;
+                    min-width: 100%;
+
+                    video {
+                        top: 10%;
+                        width: 80%;
+                    }
+                }
+
+                .text-block {
+                    margin-top: 15px;
+                    margin-left: 0;
+                    width: 100%;
+
+                    h4 {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        &-3 {
+            margin-top: 15px;
+
+            .inner-container {
+                display: block;
+
+                .video {
+
+                    &-8,
+                    &-9 {
+                        top: 0;
+                        width: 100%;
+                    }
+                }
+
+                .text-block {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .a4 {
+        margin-top: 20px;
+
+        &-1 {
+
+            img {
+                width: 100%;
+                min-width: 100%;
+            }
+        }
+
+        &-2 {
+            margin-top: 15px;
+
+            .text-block {
+                margin-bottom: 20px;
+                width: 100%;
+
+                h4 {
+                    margin-bottom: 15px;
+                }
+            }
+
+            .pictures-block {
+                display: block;
+
+                img {
+                    
+                    &:first-child,
+                    &:last-child {
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &-3 {
+            margin-top: 15px;
+
+            .inner-container {
+                padding-bottom: 20px;
+            }
+
+            .a4-3-image {
+                width: 100%;
+            }
+
+            .iphone-with-photo-a4 {
+                position: relative;
+                top: 0;
+                right: 0;
+                width: 100%;
+            }
+
+            .text-block {
+                margin-top: 20px;
+                width: 100%;
+            }
+
+            video {
+                margin: 20px 0;
+                width: 100%;
+                min-width: 100%;
+            }
+
+            .image-block {
+                display: block;
+
+                img {
+                    width: 100%;
+
+                    &:first-child {
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-block {
+        margin-top: 10px;
+        padding-bottom: 25px;
+
+        .inner-container {
+            display: block;
+        }
+
+        .text-block {
+            width: 100%;
+        }
+
+        a {
+            display: block;
+            margin: 20px auto;
+            width: 210px;
+            min-width: 210px;
+        }
+    }
+}
+// --- MOBILE VERSION ---

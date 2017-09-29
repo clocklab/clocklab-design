@@ -1,0 +1,30 @@
+//common
+@import '../../base/reset';
+@import '../../base/animate';
+@import '../../base/common';
+@import '../../base/fonts';
+@import '../../base/variables';
+
+// helpers 
+@import '../../components/modules/small-gray-lines';
+@import '../../components/jumping-button/main';
+@import '../../components/modules/clock-bg';
+@import '../../components/title/main';
+
+// YEVHEN ADDED THIS
+@import '../../components/new-title/main';
+@import '../../components/bottom-button/main';
+@import '../../components/sticker/main';
+@import '../../components/crossed-button/main';
+@import '../../components/big-background-letter/main';
+@import '../../components/logo/main';
+@import '../../components/menu/main';
+@import '../../components/languages/main';
+
+//components
+@import 'templates/audit/audit-header/main';
+@import 'templates/audit/sanctions-plan/main';
+@import 'templates/audit/sanctions-graph/main';
+@import '../web-production/templates/shop/web-production-our-works/main';
+@import '../web-production/templates/shop/web-production-answers/main';
+@import '../web-production/templates/shop/web-production-footer/main';

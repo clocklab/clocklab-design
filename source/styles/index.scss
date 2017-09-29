@@ -1,0 +1,68 @@
+body { overflow: hidden; }
+
+// base
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/reset";
+@import "base/common";
+@import "base/animations";
+
+// modules
+@import "components/modules/small-gray-lines";
+@import "components/modules/jelly-button";
+@import "components/modules/clock-bg";
+@import "components/modules/scroll";
+
+// components
+@import "components/logo/main";
+@import "components/long-text/main";
+@import "components/rotate-smartphone/main";
+@import "components/big-background-letter/main";
+@import "components/portfolio-right-panel/main";
+@import "components/portfolio-client/main";
+@import "components/crossed-button/main";
+@import "components/jumping-button/main";
+@import "components/bottom-button/main";
+@import "components/copyright/main";
+@import "components/sticker/main";
+@import "components/social/main";
+
+/* в дальнейшем свести к одному */
+@import "components/title/main";     
+@import "components/new-title/main";
+@import "components/language/main";
+@import "components/languages/main";
+/* в дальнейшем свести к одному */
+
+// ***** MAIN PAGE *****
+@import "templates/index/clock/main";
+@import "components/menu/main";
+
+// portfolio on the main page
+@import "templates/index/q7/main";
+@import "templates/index/vinograd/main";
+@import "templates/index/euro-club/main";
+@import "templates/index/alta-capital/main";
+
+// services on the main page
+@import "templates/index/service-one/main";
+@import "templates/index/service-two/main";
+@import "templates/index/service-three/main";
+
+// blog on the main page
+@import "templates/index/blog-one/main";
+@import "templates/index/blog-two/main";
+@import "templates/index/blog-three/main";
+
+// contacts on the main page
+@import "templates/index/main-contacts/main";
+
+// ***** ABOUT COMPANY PAGE ****
+@import "templates/about-company/about-company-two/main";
+@import "templates/about-company/about-company-three/main";
+@import "templates/about-company/about-company-five/main";
+@import "templates/about-company/about-company-six/main";
+
+// ***** OTHER PAGES *****
+@import "templates/services/services/main";

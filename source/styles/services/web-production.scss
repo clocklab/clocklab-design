@@ -1,0 +1,27 @@
+body {
+    overflow: hidden;
+}
+
+// base
+@import "../base/reset";
+@import "../base/fonts";
+@import "../base/variables";
+@import "../base/common";
+@import "../base/animate";
+@import "../base/animations";
+
+// components
+@import "../components/logo/main";
+@import "../components/menu/main";
+@import "../components/language/main";
+@import "../components/crossed-button/main";
+@import "../components/new-title/main";
+@import "../components/sticker/main";
+@import "../components/modules/clock-bg";
+@import "../components/jumping-button/main";
+@import "../components/long-read/main";
+
+// screens
+@import "templates/web-production/we-can/main";
+@import "templates/web-production/site-types/main";
+@import "templates/web-production/work-flow/main";
