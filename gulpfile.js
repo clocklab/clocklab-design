@@ -5,7 +5,7 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
-var page = 'about-company'
+var page = 'services/web-production/shop'
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
@@ -41,7 +41,7 @@ var source = 'source',
             fonts: source + '/fonts/**/*.*',
             videos: source + '/videos/**/**/**/*.*',
             images: source + '/images/**/**/**/*.*',
-            styles: source + '/styles/*.*',
+            styles: source + '/styles/**/**/**/*.*',
             scripts: source + '/scripts/**/**/**/*.*',
             projects: source + '/projects/**/*'
         },
@@ -50,7 +50,7 @@ var source = 'source',
             fonts: source + '/fonts/**/*.*',
             videos: source + '/videos/**/**/**/*.*',
             images: source + '/images/**/**/**/*.*',
-            styles: source + '/styles/**/*.*',
+            styles: source + '/styles/**/**/**/*.*',
             scripts: source + '/scripts/**/**/**/*.*',
             projects: source + '/projects/**/*'
         },

@@ -1,0 +1,26 @@
+body {
+    overflow: hidden;
+}
+
+// base
+@import "../base/reset";
+@import "../base/fonts";
+@import "../base/variables";
+@import "../base/common";
+@import "../base/animate";
+@import "../base/animations";
+
+// components
+@import "../components/logo/main";
+@import "../components/menu/main";
+@import "../components/language/main";
+@import "../components/crossed-button/main";
+@import "../components/new-title/main";
+@import "../components/sticker/main";
+@import "../components/jumping-button/main";
+@import "../components/long-read/main";
+
+// screens
+@import "templates/marketing/marketing-header/main";
+@import "templates/marketing/marketing-services/main";
+@import "templates/marketing/marketing-brand/main";

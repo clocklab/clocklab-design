@@ -9,7 +9,7 @@ body { overflow: hidden; }
 @import "base/animations";
 
 // тут хранится анимация для некоторых элементов
-@import "components/euro-club/main";
+@import "templates/index/euro-club/main";
 
 // modules
 @import "components/modules/small-gray-lines";
@@ -33,9 +33,9 @@ body { overflow: hidden; }
 /* в дальнейшем свести к одному */
 
 // screens
-@import "components/about-company-one/main";
-@import "components/about-company-two/main";
-@import "components/about-company-three/main";
-@import "components/about-company-four/main";
-@import "components/about-company-five/main";
-@import "components/about-company-six/main";
+@import "templates/about-company/about-company-one/main";
+@import "templates/about-company/about-company-two/main";
+@import "templates/about-company/about-company-three/main";
+@import "templates/about-company/about-company-four/main";
+@import "templates/about-company/about-company-five/main";
+@import "templates/about-company/about-company-six/main";
