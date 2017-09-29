@@ -6,6 +6,7 @@ body { overflow: hidden; }
 @import "base/fonts";
 @import "base/reset";
 @import "base/common";
+@import "base/animate";
 @import "base/animations";
 
 // modules
@@ -24,6 +25,7 @@ body { overflow: hidden; }
 @import "components/crossed-button/main";
 @import "components/jumping-button/main";
 @import "components/bottom-button/main";
+@import "components/long-read/main";
 @import "components/copyright/main";
 @import "components/sticker/main";
 @import "components/social/main";
