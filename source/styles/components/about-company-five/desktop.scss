@@ -1,4 +1,5 @@
 & {
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     background: url('../images/dots.png');
     background-color: $white;
     font-family: $raleway;
@@ -10,12 +11,14 @@
     &.previous, &.previous-back {
         animation: Right $time * 3 0s both;
         
-        // ----- other -----
+        // ----- jelly-button -----
         .jelly-button { animation: fadeIn $time $time * 9 both; }
+
+        // ----- social -----
         .social-panel {
             .instagram { animation: social $time * 3 $time * 9 both; }
-            .facebook { animation: social $time * 3 $time * 9 both; }
-        } 
+            .facebook { animation: socialReversed $time * 3 $time * 9 both; }
+        }
         
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
@@ -57,11 +60,13 @@
         animation: slideLeft $time * 3 0s both;
         animation-play-state: paused;
         
-        // ----- other -----
+        // ----- jelly-button -----
         .jelly-button { animation: fadeIn $time $time * 9 both; }
+
+        // ----- social -----
         .social-panel {
-            .instagram { animation: social $time * 3 $time * 9 both; }
-            .facebook { animation: social $time * 3 $time * 9 both; }
+            .instagram {  animation: social $time * 3 $time * 9 both; }
+            .facebook { animation: socialReversed $time * 3 $time * 9 both; }
         } 
         
         // ----- big-background-letter -----
@@ -98,6 +103,8 @@
             }
         }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
     
     // ----- social-panel -----
     .social-panel {
@@ -119,15 +126,15 @@
                 z-index: 2;
             }
             &:before {
-                display: block;
-                position: absolute;
                 top: 10px;
+                opacity: 0;
+                content: '';
                 right: 10px;
                 width: 100%;
                 height: 100%;
+                display: block;
+                position: absolute;
                 background: $blue;
-                content: '';
-                opacity: 0;
                 transition: top $time, right $time, opacity $time;
             }
             &:hover {
@@ -139,9 +146,9 @@
                 }
             }
         }
+        .facebook svg { width: 55%; }
         .instagram {
             top: px(-24);
-            animation: social $time * 3 both;
             .big-circle {
                 stroke-width: 2;
                 stroke-miterlimit: 10;
@@ -151,10 +158,6 @@
                 height: 100%;
             }
         }
-        .facebook {
-            animation: socialReversed $time * 3 both;
-            svg { width: 55%; }
-        }
     }
     
     // ----- bottom-button -----
@@ -163,7 +166,6 @@
     // ----- letter o -----
     .big-background-letter {
         top: 28vh;
-        z-index: 3;
         left: 16vh;
         font-size: 75vh;
         span::before  { content: 'o'; }

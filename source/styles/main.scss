@@ -1,9 +1,4 @@
-// modules
-// @import "compass/css3";
-
-body {
-    overflow: hidden;
-}
+body { overflow: hidden; }
 
 // base
 @import "base/variables";
@@ -21,26 +16,28 @@ body {
 
 // components
 @import "components/logo/main";
-// @import "components/title/main";
-@import "components/big-background-letter/main";
-@import "components/bottom-button/main";
-@import "components/crossed-button/main";
-@import "components/jumping-button/main";
-@import "components/portfolio-right-panel/main";
-@import "components/portfolio-client/main";
+
+/* в дальнейшем свести к одному */
+@import "components/title/main";     
+@import "components/new-title/main";
 @import "components/language/main";
 @import "components/languages/main";
-@import "components/new-title/main";
+/* в дальнейшем свести к одному */
+
+@import "components/long-text/main";
+@import "components/rotate-smartphone/main";
+@import "components/big-background-letter/main";
+@import "components/portfolio-right-panel/main";
+@import "components/portfolio-client/main";
+@import "components/crossed-button/main";
+@import "components/jumping-button/main";
+@import "components/bottom-button/main";
 @import "components/copyright/main";
 @import "components/sticker/main";
-// @import "components/social/main";
-@import "components/rotate-smartphone/main";
-@import "components/long-text/main";
-
+@import "components/social/main";
 
 // ***** MAIN PAGE *****
-// @import "components/navigation-elements/main";
-// @import "components/clock/main";
+@import "components/clock/main";
 @import "components/menu/main";
 
 // portfolio on the main page
@@ -50,30 +47,23 @@ body {
 @import "components/alta-capital/main";
 
 // services on the main page
-// @import "components/service-one/main";
-// @import "components/service-two/main";
-// @import "components/service-three/main";
+@import "components/service-one/main";
+@import "components/service-two/main";
+@import "components/service-three/main";
 
 // blog on the main page
-// @import "components/blog-one/main";
-// @import "components/blog-two/main";
-// @import "components/blog-three/main";
+@import "components/blog-one/main";
+@import "components/blog-two/main";
+@import "components/blog-three/main";
 
 // contacts on the main page
-// @import "components/main-contacts/main";
+@import "components/main-contacts/main";
 
 // ***** ABOUT COMPANY PAGE ****
-// @import "components/about-company-one/main";
-// @import "components/about-company-two/main";
-// @import "components/about-company-three/main";
-// @import "components/about-company-four/main";
-// @import "components/about-company-five/main";
-
-// ***** SERVICES MORE PAGE ****
-// @import "components/services-more-one/main";
-// @import "components/services-more-two/main";
-// @import "components/services-more-three/main";
+@import "components/about-company-two/main";
+@import "components/about-company-three/main";
+@import "components/about-company-five/main";
+@import "components/about-company-six/main";
 
 // ***** OTHER PAGES *****
-// @import "components/services/main";
-// @import "components/contacts/main";
+@import "components/services/main";

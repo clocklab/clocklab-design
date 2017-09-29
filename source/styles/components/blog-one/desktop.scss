@@ -1,19 +1,21 @@
 & {
-    overflow: hidden;
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $raleway;
     font-weight: $regular;
+    background: $white;
+    overflow: hidden;
     
     // ----- animation down -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        animation: Down $time * 3 both;
+        animation: Down $time * 3 0s both;
         
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- service-info -----
         .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
-        .jump-button { animation: fadeInUp $time * 2 $time * 9 both; }
+        .jumping-button { animation: fadeInUp $time * 2 $time * 9 both; }
 
         // ----- other -----
         .bottom-button {
@@ -70,14 +72,14 @@
 
     // ----- animation up -----
     &.previous, &.previous-back {
-        animation: slideUp $time * 3 both;
+        animation: slideUp $time * 3 0s both;
         
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- service-info -----
         .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
-        .jump-button { animation: fadeInUp $time * 2 $time * 9 both; }
+        .jumping-button { animation: fadeInUp $time * 2 $time * 9 both; }
 
         // ----- other -----
         .bottom-button {
@@ -131,6 +133,8 @@
             }
         }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
     
     // ----- bottom-button -----
     .bottom-button span:before { content: 'Все новости'; }
@@ -142,8 +146,8 @@
         position: absolute;
     }
 
-    // ----- jump-button -----
-    .jump-button {
+    // ----- jumping-button -----
+    .jumping-button {
         left: initial;
         right: px(1380);
         bottom: px(580);

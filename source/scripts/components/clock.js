@@ -1,6 +1,6 @@
 $(window).on('load', function() {
     
-    // ----- clock -----
+    // инициализация функций
     (function() {
       initLocalClocks();
       moveSecondHands();

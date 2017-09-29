@@ -1,19 +1,24 @@
 & {
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $raleway;
     font-weight: $regular;
+    background: $white;
     overflow: hidden;
     
     // ----- animation up -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        animation: Up $time * 3 0 both;
-    
+        animation: Up $time * 3 0s both;
+        
+        // ----- big-background-letter -----
+        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+        
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- service-info -----
         .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
-        .crossed-button, .jump-button { animation: fadeInUp $time * 2 $time * 14 both; }
+        .crossed-button, .jumping-button { animation: fadeInUp $time * 2 $time * 14 both; }
 
         // ----- title -----
         .title {
@@ -63,7 +68,7 @@
 
         // ----- service-info -----
         .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
-        .crossed-button, .jump-button { animation: fadeInUp $time * 2 $time * 14 both; }
+        .crossed-button, .jumping-button { animation: fadeInUp $time * 2 $time * 14 both; }
 
         // ----- title -----
         .title {
@@ -102,6 +107,8 @@
             }
         }
     }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
 
     // ----- title ------
     .title {
@@ -121,8 +128,9 @@
         }
     }
 
-    // ----- jump-button -----
-    .jump-button {
+    // ----- jumping-button -----
+    .jumping-button {
+        position: absolute;
         left: px(1220);
         bottom: 9vh;
         a {
