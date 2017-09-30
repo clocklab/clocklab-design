@@ -18,7 +18,7 @@
 
         // ----- service-info -----
         .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
-        .crossed-button, .jumping-button { animation: fadeInUp $time * 2 $time * 14 both; }
+        .crossed-button, .jumping-button.second { animation: fadeInUp $time * 2 $time * 14 both; }
 
         // ----- title -----
         .title {
@@ -68,7 +68,7 @@
 
         // ----- service-info -----
         .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
-        .crossed-button, .jumping-button { animation: fadeInUp $time * 2 $time * 14 both; }
+        .crossed-button, .jumping-button.second { animation: fadeInUp $time * 2 $time * 14 both; }
 
         // ----- title -----
         .title {
@@ -129,7 +129,7 @@
     }
 
     // ----- jumping-button -----
-    .jumping-button {
+    .jumping-button.second {
         position: absolute;
         left: px(1220);
         bottom: 9vh;

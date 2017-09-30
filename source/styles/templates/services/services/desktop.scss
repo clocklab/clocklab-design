@@ -27,8 +27,7 @@
         // ----- services-line -----
         .services-line { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
     
-        // ----- other -----
-        .crossed-button span { animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+        // ----- service-schedule -----
         .services-schedule .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
         // ----- title -----
@@ -83,8 +82,7 @@
         // ----- services-line -----
         .services-line { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
 
-        // ----- other -----
-        .crossed-button span { animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+        // ----- service-schedule -----
         .services-schedule .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
         // ----- title -----
@@ -174,22 +172,6 @@
                             line-height: 26px;
                             font-size: px(50);
                         }
-                    }
-                }
-                .crossed-button {
-                    left: 0;
-                    bottom: -55px;
-                    position: absolute;
-                    align-items: center;
-                    font-family: $roboto;
-                    font-weight: $medium;
-                    .arrow .st0, .arrow .st1 { stroke: $white; }
-                    span {
-                        color: $white;
-                        display: block;
-                        font-size: px(24);
-                        &:after { content: 'Подробнее'; }
-                        &:before { background: $white; }
                     }
                 }
                 &:before {

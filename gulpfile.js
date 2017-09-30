@@ -5,7 +5,7 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
-var page = 'services/web-production/shop'
+var page = 'services'
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
@@ -20,7 +20,7 @@ var source = 'source',
     build = 'build',
     config = {
         port: 9000,
-        tunnel: true,
+        tunnel: false,
         notify: false,
         host: 'localhost',
         logPrefix: 'Gontarenko',
