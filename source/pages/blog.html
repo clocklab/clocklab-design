@@ -1,308 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>clocklab design | blog</title>
-    <!-- @@include('./components/head.html') -->
-    <link rel="stylesheet" href="../styles/blog.css">
-</head>
-<body>
+    <head>
+        <title>clocklab design | blog</title>
+        @@include('./components/head.html')
+        <link rel="stylesheet" href="../styles/blog.css">
+    </head>
+    <body>
 
-    <div class="blog">
+        <div class="blog">
 
-        <div class="page-layer back-layer">
-            <div class="columns">
-                <div class="column column--1"></div>
-                <div class="column column--2"></div>
-                <div class="column column--3"></div>
-                <div class="column column--4"></div>
+            <div class="page-layer back-layer">
+                <div class="columns">
+                    <div class="column column--1"></div>
+                    <div class="column column--2"></div>
+                    <div class="column column--3"></div>
+                    <div class="column column--4"></div>
+                </div>
+                <div class="grid">
+                    <div class="grid__item">
+                        <div class="line line--top"></div>
+                        <div class="line line--bottom"></div>
+                    </div>
+                    <div class="grid__item grid__item--bordered"></div>
+                    <div class="grid__item"></div>
+                    <div class="grid__item"></div>
+                </div>
             </div>
-            <div class="grid">
-                <div class="grid__item">
-                    <div class="line line--top"></div>
-                    <div class="line line--bottom"></div>
-                </div>
-                <div class="grid__item grid__item--bordered"></div>
-                <div class="grid__item"></div>
-                <div class="grid__item"></div>
-            </div>
-        </div>
-    
-        <div class="page-layer front-layer">
+        
+            <div class="page-layer front-layer">
 
-            <!-- menu -->
-            @@include('./components/menu.html')
-            
-            <!-- logo -->
-            @@include('./components/logo.html')
+                <!-- menu -->
+                @@include('./components/menu.html')
+                
+                <!-- logo -->
+                @@include('./components/logo.html')
 
-            <!-- language -->
-            @@include('./components/language.html')
+                <!-- language -->
+                @@include('./components/language.html')
 
-            <div class="top-panel">
-                <div class="filter filter--date">
-                    <button class="new-title">
-                        <div class="text-container">
-                            <span>Июль 2017</span>
-                        </div>
-                    </button>
-                    <ul>
-                        <li>Июнь 2017</li>
-                        <li>Май 2017</li>
-                        <li>Март 2017</li>
-                        <li>Январь 2017</li>
-                        <li>Сентябрь 2016</li>
-                    </ul>
-                </div>
-                <div class="jumping-button jump-letters">
-                    <button>
-                        <span>В</span>
-                        <span>с</span>
-                        <span>е</span>
-                    </button>
-                </div>
-                <div class="filter filter--categories">
+                <div class="top-panel">
+                    <div class="filter filter--date">
+                        <button class="new-title">
+                            <div class="text-container">
+                                <span>Июль 2017</span>
+                            </div>
+                        </button>
+                        <ul>
+                            <li>Июнь 2017</li>
+                            <li>Май 2017</li>
+                            <li>Март 2017</li>
+                            <li>Январь 2017</li>
+                            <li>Сентябрь 2016</li>
+                        </ul>
+                    </div>
                     <div class="jumping-button jump-letters">
                         <button>
-                            <span>П</span>
-                            <span>о</span>
-                            <span>к</span>
-                            <span>а</span>
-                            <span>т</span>
+                            <span>В</span>
+                            <span>с</span>
                             <span>е</span>
-                            <span>г</span>
-                            <span>о</span>
-                            <span>р</span>
-                            <span>и</span>
-                            <span>я</span>
-                            <span>м</span>
                         </button>
                     </div>
-                    <ul>
-                        <li>Lorum dolor</li>
-                        <li>Lorum dolor</li>
-                        <li>Lorum dolor</li>
-                        <li>Lorum dolor</li>
-                        <li>Lorum dolor</li>
-                    </ul>
+                    <div class="filter filter--categories">
+                        <div class="jumping-button jump-letters">
+                            <button>
+                                <span>П</span>
+                                <span>о</span>
+                                <span>к</span>
+                                <span>а</span>
+                                <span>т</span>
+                                <span>е</span>
+                                <span>г</span>
+                                <span>о</span>
+                                <span>р</span>
+                                <span>и</span>
+                                <span>я</span>
+                                <span>м</span>
+                            </button>
+                        </div>
+                        <ul>
+                            <li>Lorum dolor</li>
+                            <li>Lorum dolor</li>
+                            <li>Lorum dolor</li>
+                            <li>Lorum dolor</li>
+                            <li>Lorum dolor</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="feed-container"> 
+                    <div class="feed">
+                        <div class="feed__post">
+                            <div class="post-date">
+                                <span class="number">3</span>
+                                <span class="day">Пн</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="../images/blog/post1.jpg" alt="post-image" draggable="false">
+                            </div>
+                            <div class="post-info">
+                                <div class="sticker">
+                                    <span>Блог</span>
+                                </div>
+                                <h3>Lorem ipsum dolor</h3>
+                                <a href="blog/post.html" class="crossed-button">
+                                    <span></span>
+                                    <div class="arrow-container">
+                                        <svg class="arrow" x="0px" y="0px"
+                                            viewBox="0 0 34.8 7.3">
+                                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                                        </svg>     
+                                    </div>
+                                </a>      
+                            </div>
+                        </div>
+                        <div class="feed__post">
+                            <div class="post-date">
+                                <span class="number">7</span>
+                                <span class="day">Пт</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="../images/blog/post2.jpg" alt="post-image" draggable="false">
+                            </div>
+                            <div class="post-info">
+                                <div class="sticker">
+                                    <span>Блог</span>
+                                </div>
+                                <h3>Lorem ipsum dolor</h3>
+                                <a href="post.html" class="crossed-button">
+                                    <span></span>
+                                    <div class="arrow-container">
+                                        <svg class="arrow" x="0px" y="0px"
+                                            viewBox="0 0 34.8 7.3">
+                                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                                        </svg>     
+                                    </div>
+                                </a>      
+                            </div>
+                        </div>
+                        <div class="feed__post">
+                            <div class="post-date">
+                                <span class="number">21</span>
+                                <span class="day">Пт</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="../images/blog/post3.jpg" alt="post-image" draggable="false">
+                            </div>
+                            <div class="post-info">
+                                <div class="sticker">
+                                    <span>Блог</span>
+                                </div>
+                                <h3>Lorem ipsum dolor</h3>
+                                <a href="blog/post.html" class="crossed-button">
+                                    <span></span>
+                                    <div class="arrow-container">
+                                        <svg class="arrow" x="0px" y="0px"
+                                            viewBox="0 0 34.8 7.3">
+                                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                                        </svg>     
+                                    </div>
+                                </a>      
+                            </div>
+                        </div>
+                        <div class="feed__post">
+                            <div class="post-date">
+                                <span class="number">27</span>
+                                <span class="day">Чт</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="../images/blog/post4.jpg" alt="post-image" draggable="false">
+                            </div>
+                            <div class="post-info">
+                                <div class="sticker">
+                                    <span>Блог</span>
+                                </div>
+                                <h3>Lorem ipsum dolor</h3>
+                                <a href="blog/post.html" class="crossed-button">
+                                    <span></span>
+                                    <div class="arrow-container">
+                                        <svg class="arrow" x="0px" y="0px"
+                                            viewBox="0 0 34.8 7.3">
+                                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                                        </svg>     
+                                    </div>
+                                </a>      
+                            </div>
+                        </div>
+                        <div class="feed__post">
+                            <div class="post-date">
+                                <span class="number">3</span>
+                                <span class="day">Пн</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="../images/blog/post1.jpg" alt="post-image" draggable="false">
+                            </div>
+                            <div class="post-info">
+                                <div class="sticker">
+                                    <span>Блог</span>
+                                </div>
+                                <h3>Lorem ipsum dolor</h3>
+                                <a href="blog/post.html" class="crossed-button">
+                                    <span></span>
+                                    <div class="arrow-container">
+                                        <svg class="arrow" x="0px" y="0px"
+                                            viewBox="0 0 34.8 7.3">
+                                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                                        </svg>     
+                                    </div>
+                                </a>      
+                            </div>
+                        </div>
+                        <div class="feed__post">
+                            <div class="post-date">
+                                <span class="number">7</span>
+                                <span class="day">Пт</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="../images/blog/post2.jpg" alt="post-image" draggable="false">
+                            </div>
+                            <div class="post-info">
+                                <div class="sticker">
+                                    <span>Блог</span>
+                                </div>
+                                <h3>Lorem ipsum dolor</h3>
+                                <a href="blog/post.html" class="crossed-button">
+                                    <span></span>
+                                    <div class="arrow-container">
+                                        <svg class="arrow" x="0px" y="0px"
+                                            viewBox="0 0 34.8 7.3">
+                                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                                        </svg>     
+                                    </div>
+                                </a>      
+                            </div>
+                        </div>
+                        <div class="feed__post">
+                            <div class="post-date">
+                                <span class="number">21</span>
+                                <span class="day">Пт</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="../images/blog/post3.jpg" alt="post-image" draggable="false">
+                            </div>
+                            <div class="post-info">
+                                <div class="sticker">
+                                    <span>Блог</span>
+                                </div>
+                                <h3>Lorem ipsum dolor</h3>
+                                <a href="blog/post.html" class="crossed-button">
+                                    <span></span>
+                                    <div class="arrow-container">
+                                        <svg class="arrow" x="0px" y="0px"
+                                            viewBox="0 0 34.8 7.3">
+                                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                                        </svg>     
+                                    </div>
+                                </a>      
+                            </div>
+                        </div>
+                        <div class="feed__post">
+                            <div class="post-date">
+                                <span class="number">27</span>
+                                <span class="day">Чт</span>
+                            </div>
+                            <div class="image-container">
+                                <img src="../images/blog/post4.jpg" alt="post-image" draggable="false">
+                            </div>
+                            <div class="post-info">
+                                <div class="sticker">
+                                    <span>Блог</span>
+                                </div>
+                                <h3>Lorem ipsum dolor</h3>
+                                <a href="blog/post.html" class="crossed-button">
+                                    <span></span>
+                                    <div class="arrow-container">
+                                        <svg class="arrow" x="0px" y="0px"
+                                            viewBox="0 0 34.8 7.3">
+                                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                                        </svg>     
+                                    </div>
+                                </a>      
+                            </div>
+                        </div>
+                    </div>       
                 </div>
             </div>
-
-            <div class="feed-container"> 
-                <div class="feed">
-                    <div class="feed__post">
-                        <div class="post-date">
-                            <span class="number">3</span>
-                            <span class="day">Пн</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="../images/blog/post1.jpg" alt="post-image" draggable="false">
-                        </div>
-                        <div class="post-info">
-                            <div class="sticker">
-                                <span>Блог</span>
-                            </div>
-                            <h3>Lorem ipsum dolor</h3>
-                            <a href="blog/post.html" class="crossed-button">
-                                <span></span>
-                                <div class="arrow-container">
-                                    <svg class="arrow" x="0px" y="0px"
-                                        viewBox="0 0 34.8 7.3">
-                                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                    </svg>     
-                                </div>
-                            </a>      
-                        </div>
-                    </div>
-                    <div class="feed__post">
-                        <div class="post-date">
-                            <span class="number">7</span>
-                            <span class="day">Пт</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="../images/blog/post2.jpg" alt="post-image" draggable="false">
-                        </div>
-                        <div class="post-info">
-                            <div class="sticker">
-                                <span>Блог</span>
-                            </div>
-                            <h3>Lorem ipsum dolor</h3>
-                            <a href="post.html" class="crossed-button">
-                                <span></span>
-                                <div class="arrow-container">
-                                    <svg class="arrow" x="0px" y="0px"
-                                        viewBox="0 0 34.8 7.3">
-                                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                    </svg>     
-                                </div>
-                            </a>      
-                        </div>
-                    </div>
-                    <div class="feed__post">
-                        <div class="post-date">
-                            <span class="number">21</span>
-                            <span class="day">Пт</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="../images/blog/post3.jpg" alt="post-image" draggable="false">
-                        </div>
-                        <div class="post-info">
-                            <div class="sticker">
-                                <span>Блог</span>
-                            </div>
-                            <h3>Lorem ipsum dolor</h3>
-                            <a href="blog/post.html" class="crossed-button">
-                                <span></span>
-                                <div class="arrow-container">
-                                    <svg class="arrow" x="0px" y="0px"
-                                        viewBox="0 0 34.8 7.3">
-                                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                    </svg>     
-                                </div>
-                            </a>      
-                        </div>
-                    </div>
-                    <div class="feed__post">
-                        <div class="post-date">
-                            <span class="number">27</span>
-                            <span class="day">Чт</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="../images/blog/post4.jpg" alt="post-image" draggable="false">
-                        </div>
-                        <div class="post-info">
-                            <div class="sticker">
-                                <span>Блог</span>
-                            </div>
-                            <h3>Lorem ipsum dolor</h3>
-                            <a href="blog/post.html" class="crossed-button">
-                                <span></span>
-                                <div class="arrow-container">
-                                    <svg class="arrow" x="0px" y="0px"
-                                        viewBox="0 0 34.8 7.3">
-                                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                    </svg>     
-                                </div>
-                            </a>      
-                        </div>
-                    </div>
-                    <div class="feed__post">
-                        <div class="post-date">
-                            <span class="number">3</span>
-                            <span class="day">Пн</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="../images/blog/post1.jpg" alt="post-image" draggable="false">
-                        </div>
-                        <div class="post-info">
-                            <div class="sticker">
-                                <span>Блог</span>
-                            </div>
-                            <h3>Lorem ipsum dolor</h3>
-                            <a href="blog/post.html" class="crossed-button">
-                                <span></span>
-                                <div class="arrow-container">
-                                    <svg class="arrow" x="0px" y="0px"
-                                        viewBox="0 0 34.8 7.3">
-                                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                    </svg>     
-                                </div>
-                            </a>      
-                        </div>
-                    </div>
-                    <div class="feed__post">
-                        <div class="post-date">
-                            <span class="number">7</span>
-                            <span class="day">Пт</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="../images/blog/post2.jpg" alt="post-image" draggable="false">
-                        </div>
-                        <div class="post-info">
-                            <div class="sticker">
-                                <span>Блог</span>
-                            </div>
-                            <h3>Lorem ipsum dolor</h3>
-                            <a href="blog/post.html" class="crossed-button">
-                                <span></span>
-                                <div class="arrow-container">
-                                    <svg class="arrow" x="0px" y="0px"
-                                        viewBox="0 0 34.8 7.3">
-                                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                    </svg>     
-                                </div>
-                            </a>      
-                        </div>
-                    </div>
-                    <div class="feed__post">
-                        <div class="post-date">
-                            <span class="number">21</span>
-                            <span class="day">Пт</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="../images/blog/post3.jpg" alt="post-image" draggable="false">
-                        </div>
-                        <div class="post-info">
-                            <div class="sticker">
-                                <span>Блог</span>
-                            </div>
-                            <h3>Lorem ipsum dolor</h3>
-                            <a href="blog/post.html" class="crossed-button">
-                                <span></span>
-                                <div class="arrow-container">
-                                    <svg class="arrow" x="0px" y="0px"
-                                        viewBox="0 0 34.8 7.3">
-                                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                    </svg>     
-                                </div>
-                            </a>      
-                        </div>
-                    </div>
-                    <div class="feed__post">
-                        <div class="post-date">
-                            <span class="number">27</span>
-                            <span class="day">Чт</span>
-                        </div>
-                        <div class="image-container">
-                            <img src="../images/blog/post4.jpg" alt="post-image" draggable="false">
-                        </div>
-                        <div class="post-info">
-                            <div class="sticker">
-                                <span>Блог</span>
-                            </div>
-                            <h3>Lorem ipsum dolor</h3>
-                            <a href="blog/post.html" class="crossed-button">
-                                <span></span>
-                                <div class="arrow-container">
-                                    <svg class="arrow" x="0px" y="0px"
-                                        viewBox="0 0 34.8 7.3">
-                                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                    </svg>     
-                                </div>
-                            </a>      
-                        </div>
-                    </div>
-                </div>       
-            </div>
-
         </div>
-    </div>
-
-    <script src="../scripts/blog.min.js"></script>
-</body>
+        <script src="../scripts/blog.min.js"></script>
+    </body>
 </html>

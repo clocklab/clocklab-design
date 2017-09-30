@@ -6,10 +6,8 @@ body { overflow: hidden; }
 @import "../base/fonts";
 @import "../base/reset";
 @import "../base/common";
+@import "../base/animate";
 @import "../base/animations";
-
-// тут хранится анимация для некоторых элементов
-@import "../templates/index/euro-club/main";
 
 // modules
 @import "../components/modules/small-gray-lines";
@@ -17,6 +15,7 @@ body { overflow: hidden; }
 // components
 @import "../components/logo/main";
 @import "../components/menu/main";
+@import "../components/long-read/main";
 @import "../components/crossed-button/main";
 @import "../components/big-background-letter/main";
 
@@ -26,6 +25,9 @@ body { overflow: hidden; }
 @import "../components/language/main";
 @import "../components/languages/main";
 /* в дальнейшем свести к одному */
+
+// тут хранится анимация для некоторых элементов
+@import "../templates/index/euro-club/main";
 
 // screens
 @import "templates/design/design-one/main";

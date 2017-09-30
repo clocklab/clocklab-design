@@ -20,7 +20,7 @@ var source = 'source',
     build = 'build',
     config = {
         port: 9000,
-        tunnel: true,
+        tunnel: false,
         notify: false,
         host: 'localhost',
         logPrefix: 'Gontarenko',
