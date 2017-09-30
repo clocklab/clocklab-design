@@ -1,0 +1,22 @@
+
+// YEVHEN ADDED THIS FILE
+
+// base
+@import "base/reset";
+@import "base/fonts";
+@import "base/variables";
+@import "base/common";
+@import "base/animations";
+
+// components
+@import "components/logo/main";
+@import "components/menu/main";
+@import "components/languages/main";
+@import "components/crossed-button/main";
+@import "components/title/main";
+@import "components/big-background-letter/main";
+// @import "components/navigation-elements/main";
+@import "components/social/main";
+
+// main
+@import "templates/services/services/main";
