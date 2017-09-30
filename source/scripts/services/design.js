@@ -1,17 +1,16 @@
-// jQuery
-//=include ./../libraries/jquery.min.js
+//= include modules/open-long-read.js
 
-// slides-changing
-//=include ./../components/slides-changing.js
+//= include ./../libraries/jquery.min.js
 
-// big-background-letter
-//=include ./../components/big-background-letter.js
+//= include ./../components/big-background-letter.js
 
-// menu
-//=include ./../components/menu.js
+//= include ./../components/slides-changing.js
 
-// open form
-//=include ./../components/open-form.js
+//= include ./../components/open-form.js
+
+//= include ./../components/menu.js
+
+//= include ./../libraries/wow.js
 
 // ----- change lines and language color -----
 $('.light div').children().addClass('light');

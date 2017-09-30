@@ -137,9 +137,16 @@
     
         &--7 {
             margin-top: px(360);
+            
+            & > div {
+
+                &:nth-child(1) {
+                    padding-right: px(390);
+                }
+            }
         }
     
-        &--8 {
+        &--8, &--9 {
             margin-top: px(450);
 
             & > div {
@@ -175,7 +182,17 @@
         margin-bottom: px(60);
         font-size: px(32);
         line-height: 1.5;
-    
+        
+        &.italic {
+            font-weight: 400;
+            font-size: px(48);
+            font-style: italic;
+            span {
+                font-weight: 400;
+                color: $blue;
+            }
+        }
+
         &.bordered {
             margin-top: px(160);
             padding: px(80) 0;
@@ -318,6 +335,20 @@
                         content: '05';
                     }
                 }
+
+                &:nth-child(6) {
+                    
+                    &:before {
+                        content: '06';
+                    }
+                }
+
+                &:nth-child(7) {
+                    
+                    &:before {
+                        content: '07';
+                    }
+                }
             }
 
             h4 {
@@ -393,7 +424,7 @@
         }
     }
 
-    &--web-production {
+    &--web-production, &--design, &--about-company, &--seo {
 
         .long-read-background {
             background: lighten($darkWhite, 5%);
@@ -454,6 +485,22 @@
 
                 ul {
                     margin: px(200) 0 0 px(70);
+                }
+            }
+        }
+    }
+
+    &--about-company {
+
+        .row {
+
+            &--6 {
+
+                h4 {
+
+                    &.big {
+                        margin-top: 0;
+                    }
                 }
             }
         }

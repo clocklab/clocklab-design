@@ -14,7 +14,6 @@
     }
     .arrow:before {
         transform: translateY(-50%) rotate(45deg);
-        animation: bounce 3s 1s infinite;
         border: 1.5px solid $white;
         position: absolute;
         display: block;

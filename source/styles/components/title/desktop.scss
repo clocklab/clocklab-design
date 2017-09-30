@@ -80,5 +80,6 @@
         letter-spacing: 0;
         font-family: $roboto;
         font-weight: $regular;
+        .bold { font-weight: $bold; }
     }
 }
