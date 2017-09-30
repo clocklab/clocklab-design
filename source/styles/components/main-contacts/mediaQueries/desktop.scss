@@ -1,9 +1,0 @@
-@import '../desktop';
-
-// ----- main-contacts-title -----
-.main-contacts-title p:first-child { font-size: px(100); }
-
-// ----- map -----
-#map { margin: 23vh px(200) 0 0;
-	& + .address { right: px(-20); }
-}
