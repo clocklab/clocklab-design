@@ -21,7 +21,7 @@
         // ----- social -----
         .social {
             .instagram {  animation: social $time * 3 $time * 3 both; }
-            .facebook { animation: socialReversed $time * 3 $time * 3 both; }
+            .facebook { animation: socialReverse $time * 3 $time * 3 both; }
             .jumping-button { animation: FadeInRight $time * 3 $time * 3 both; }
         }
         

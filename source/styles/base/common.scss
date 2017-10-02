@@ -12,7 +12,6 @@ html {
             background: $black;
             overflow: hidden;
             .cyrillic { font-family: $roboto; }
-            // nav ul li { @include inline-block; }
             input, button { outline: none; }
             button { border: none; }
             header { flex: 0 0 auto; }
