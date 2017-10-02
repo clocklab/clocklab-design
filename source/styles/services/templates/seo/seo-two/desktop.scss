@@ -180,10 +180,7 @@
                     display: block;
                     font-size: px(26);
                     &:after { content: 'Подробнее'; }
-                    &:before {
-                        background: $white;
-                        top: 14px;
-                    }
+                    &:before { background: $white; }
                 }
             }
             &:before {
