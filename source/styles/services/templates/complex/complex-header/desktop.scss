@@ -16,13 +16,15 @@
         width: 100%;
         height: px(240);
         background: transparent;
-        transition: top $time * 7 linear, background $time;
+        transition: top $time * 2 ease-out, background $time, opacity $time * 2 ease-out;
 
         &.active {
-            background: rgba(238, 238, 238, .85);
+            background: rgba(238, 238, 238, .70);
+            opacity: 1;
 
             &.scrolled {
-                top: -101%;
+                top: px(-242);
+                opacity: 0;
             }
         }
     }

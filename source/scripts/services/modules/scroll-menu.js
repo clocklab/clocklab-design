@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const topPanel = document.querySelector('.top-panel')
-    const delay = 300
+    const delay = 500
     let freezer
 
     document.addEventListener('scroll', () => {
