@@ -65,6 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
             resetAnimation(currentSlide, 'previous')
             moveToNext(index)
 
+            slides[0].classList.contains('first-slide') && slides[0].classList.remove('first-slide')
+
             if (index === slides.length - 1) firstLap = false
         }
 
@@ -82,18 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-
-    const changeFirstSlideAnimation = () => {
-        slides[0].classList.remove('first-slide')
-        
-        events.forEach(event => {
-            document.removeEventListener(event, changeFirstSlideAnimation)
-        })    
-    }
-
-    events.forEach(event => {
-        document.addEventListener(event, changeFirstSlideAnimation)
-    })
     
     addListeners()
     

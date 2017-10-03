@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const index = slides.indexOf(currentSlide);
         
         if (event.deltaY > 0 || event.keyCode === 40) {
-
+            slides[0].classList.contains('first-slide') && slides[0].classList.remove('first-slide')
             
             if (slides[index + 1]) {
                 setClasses(currentSlide, previousSlide, 'previous')
@@ -66,18 +66,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
-
-    const changeFirstSlideAnimation = () => {
-        slides[0].classList.remove('first-slide')
-        
-        events.forEach(event => {
-            document.removeEventListener(event, changeFirstSlideAnimation)
-        })    
-    }
-
-    events.forEach(event => {
-        document.addEventListener(event, changeFirstSlideAnimation)
-    })
     
     addListeners()
     
