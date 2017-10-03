@@ -14,7 +14,10 @@
 			    margin-bottom: 8vh;
 			}
 		}
-		& + .title { margin-top: 20vh; }
+		& + .title {
+			margin-top: 20vh;
+			.word span { font-size: px(65); }
+		}
 	}
 }
 

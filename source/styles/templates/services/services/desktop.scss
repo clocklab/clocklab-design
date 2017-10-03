@@ -183,7 +183,10 @@
                         line-height: 1.5;
                         padding: px(48) px(130) 0 0;
                     }
-                    span.name { top: -11vh; }
+                    span.name {
+                        top: -11vh;
+                        position: absolute;
+                    }
                     .both:hover .word::after { visibility: visible; }
                     .word {
                         width: min-content;
