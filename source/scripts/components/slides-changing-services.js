@@ -3,12 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = Array.prototype.slice.call( document.querySelectorAll('.screen-block'))
     const events = ['wheel', 'keydown']
     const animationTime = 1000
+    const minLimit = - 30
+    const maxLimit = 30
     let flag = true
     let freezer
     
     const addListeners = () => events.forEach(event => document.addEventListener(event, freezeEvents))
 
-    const freezeEvents = () => {
+    const checkFlag = () => {
         if (flag) {
             move()
 
@@ -17,6 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => {
                 flag = !flag
             }, animationTime)
+        }
+    }
+
+    const freezeEvents = () => {
+        if (event.deltaY) {
+            if (event.deltaY > maxLimit || event.deltaY < minLimit) checkFlag()
+        } else {
+            checkFlag()
         }
     }
     
@@ -37,7 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentSlide = document.querySelector('.screen-block.current') || document.querySelector('.screen-block.current-back');
         const index = slides.indexOf(currentSlide);
         
-        if (event.deltaY < 0 || event.keyCode === 40) {
+        if (event.deltaY > 0 || event.keyCode === 40) {
+
+            
             if (slides[index + 1]) {
                 setClasses(currentSlide, previousSlide, 'previous')
                 resetAnimation(currentSlide, 'previous')
@@ -45,7 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        if (event.deltaY > 0 || event.keyCode === 38) {
+        if (event.deltaY < 0 || event.keyCode === 38) {
+
             if (slides[index - 1]) {
                 setClasses(currentSlide, previousSlide, 'previous-back')
                 resetAnimation(currentSlide, 'previous-back')
@@ -70,47 +83,4 @@ document.addEventListener('DOMContentLoaded', () => {
     
     slides[0].classList.add('current')
     slides[0].classList.add('first-slide')
-
-
-    // --- MENU ---
-    const openCloseBtns = document.querySelectorAll('.menu__item--open-close'),
-          animationTimeMenu = 1600
-
-    function openMenu (event) {
-        event.preventDefault()
-
-        flag = !flag
-
-        const menu = this.parentElement
-        const menuBackground = menu.querySelector('.menu__background')
-
-        menu.classList.add('opened')
-        document.body.style.overflow = 'hidden'
-
-        this.removeEventListener('click', openMenu)
-
-        function closeMenu (event) {
-            event.preventDefault()
-
-            flag = !flag
-
-            menu.classList.remove('opened')
-            menuBackground.removeEventListener('click', closeMenu)
-            this.removeEventListener('click', closeMenu)
-            document.body.removeAttribute('style')
-
-            setTimeout(() => {
-                this.addEventListener('click', openMenu)
-            }, animationTimeMenu)
-        }
-        
-        setTimeout(() => {
-            this.addEventListener('click', closeMenu)
-            menuBackground.addEventListener('click', closeMenu)
-        }, animationTimeMenu)
-    }
-
-    openCloseBtns.forEach(openCloseBtn => {
-        openCloseBtn.addEventListener('click', openMenu)  
-    })
 })
