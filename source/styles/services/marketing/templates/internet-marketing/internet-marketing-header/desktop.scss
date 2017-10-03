@@ -3,6 +3,25 @@
     position: relative;
     overflow: hidden;
 
+    .top-panel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9998;
+        width: 100%;
+        height: px(240);
+        background: transparent;
+        transition: top $time * 7 linear, background $time;
+
+        &.active {
+            background: rgba(238, 238, 238, .85);
+
+            &.scrolled {
+                top: -101%;
+            }
+        }
+    }
+
     .language {
         position: absolute;
         top: px(1000);
