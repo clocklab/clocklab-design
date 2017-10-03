@@ -1,6 +1,7 @@
 @import '../base/reset';
 @import '../base/animate';
 @import '../base/fonts';
+@import '../base/variables';
 
 // --- COMMON STYLES ---
 .wrapper {
@@ -197,7 +198,7 @@ header {
 // --- A8 ---
 .a8 {
     margin-top: 190px;
-    background: url('../images/mockups/audi/A8-background.png') no-repeat center 1000px;
+    background: url('../../images/portfolio/audi/a8-background.png') no-repeat center 1000px;
     background-size: contain;
     font-size: 0;
 
@@ -329,20 +330,72 @@ header {
                 }
             }
 
-            .text {
+            .list {
                 position: absolute;
-                right: 3%;
-                top: 190px;
-                width: 31%;
+                bottom: 160px;
+                right: 0;
+                padding: 80px 140px 124px 94px;
+                width: 42%;
+                background: $white;
 
                 h4 {
-                    color: #adadad;
+                    color: $darkGray;
+                    font-size: 28px;
                 }
 
-                p {
-                    margin-bottom: 25px;
-                    color: #adadad;
-                    font-size: 14px;
+                ul {
+                    margin-top: 60px;
+                    color: $darkGray;
+                    font-size: 16px;
+                }
+
+                li {
+                    position: relative;
+                    margin-bottom: 45px;
+                    padding-left: 65px;
+
+                    &:before {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        font-size: 36px;
+                        font-weight: 700;
+                    }
+
+                    &:nth-child(1) {
+
+                        &:before {
+                            content: '1.';
+                        }
+                    }
+
+                    &:nth-child(2) {
+
+                        &:before {
+                            content: '2.';
+                        }
+                    }
+
+                    &:nth-child(3) {
+
+                        &:before {
+                            content: '3.';
+                        }
+                    }
+
+                    &:nth-child(4) {
+
+                        &:before {
+                            content: '4.';
+                        }
+                    }
+
+                    &:nth-child(5) {
+
+                        &:before {
+                            content: '5.';
+                        }
+                    }
                 }
             }
         }
@@ -361,6 +414,11 @@ header {
 
     &-1 {
 
+        .text {
+            margin: 0 auto 100px;
+            width: 55%;
+        }
+
         .page {
             top: 20px;
             left: -20px;
@@ -374,7 +432,7 @@ header {
 
     &-2 {
         margin-top: 250px;
-        background: url('../images/mockups/audi/q5-background.png') 0 top no-repeat;
+        background: url('../../images/portfolio/audi/q5-background.png') 0 top no-repeat;
         background-size: contain;
 
         .inner-container {
@@ -501,7 +559,7 @@ header {
 
     &-2 {
         margin-top: 100px;
-        background: url('../images/mockups/audi/a4-background.png') 0 100px no-repeat;
+        background: url('../../images/portfolio/audi/a4-background.png') 0 100px no-repeat;
         background-size: contain;
 
         .inner-container {
@@ -548,7 +606,7 @@ header {
         .inner-container {
             position: relative;
             padding-bottom: 100px;
-            background: url('../images/mockups/audi/a4-background-2.png') no-repeat center bottom;
+            background: url('../../images/portfolio/audi/a4-background-2.png') no-repeat center bottom;
         }
 
         .a4-3-image {
@@ -567,9 +625,67 @@ header {
             width: 410px;
         }
 
-        .text-block {
-            margin-top: 190px;
-            width: 620px;
+        .list-block {
+            position: relative;
+            left: 120px;
+            margin-top: 50px;
+            width: 48%;
+
+            h4 {
+                font-size: 48px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            ul {
+                margin-top: 60px;
+                color: $darkGray;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            li {
+                position: relative;
+                margin-bottom: 45px;
+
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: -60px;
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+
+                &:nth-child(1) {
+
+                    &:before {
+                        content: '1.';
+                    }
+                }
+
+                &:nth-child(2) {
+
+                    &:before {
+                        content: '2.';
+                    }
+                }
+
+                &:nth-child(3) {
+
+                    &:before {
+                        content: '3.';
+                    }
+                }
+
+                &:nth-child(4) {
+
+                    &:before {
+                        content: '4.';
+                    }
+                }
+            }
         }
 
         video {
@@ -603,17 +719,18 @@ header {
     margin-top: 150px;
     padding-bottom: 100px;
 
-    .inner-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .text-block {
+        margin: 0 auto;
+        width: 68%;
     }
 
-    .text-block {
-        width: 63%;
+    h4 {
+        font-size: 48px;
     }
 
     a {
+        display: block;
+        margin: 130px 0 0 auto;
         width: 240px;
         min-width: 240px;
         height: 45px;
@@ -724,13 +841,28 @@ header {
                     }
                 }
 
-                .text {
-                    position: relative;
-                    top: initial;
-                    right: 0;
-                    margin-left: auto;
-                    padding: 50px 15px 20px;
-                    width: 80%;
+                .list {
+                    bottom: 150px;
+                    padding: 30px;
+
+                    h4 {
+                        font-size: 20px;
+                    }
+
+                    ul {
+                        margin-top: 20px;
+                        color: $darkGray;
+                        font-size: 16px;
+                    }
+    
+                    li {
+                        margin-bottom: 20px;
+                        padding-left: 40px;
+
+                        &:before {
+                            font-size: 16px;
+                        }
+                    }    
                 }
             }
 
@@ -821,10 +953,6 @@ header {
                 left: 20px;
                 padding-left: 50px;
             }
-
-            .device {
-
-            }
         }
 
         &-2 {
@@ -869,10 +997,12 @@ header {
                 right: 0;
             }
 
-            .text-block {
-                padding-left: 20px;
-                margin-top: 60px;
-                width: 55%;
+            .list-block {
+                left: 80px;
+
+                h4 {
+                    font-size: 36px;
+                }
             }
 
             video {
@@ -899,6 +1029,10 @@ header {
             padding: 0 20px;
             width: 100%;
             min-width: 100%;
+        }
+
+        h4 {
+            font-size: 40px;
         }
     }
 }
@@ -1077,16 +1211,30 @@ header {
                     }
                 }
 
-                .text {
+                .list {
                     position: relative;
-                    top: 0;
-                    left: 0;
+                    bottom: initial;
+                    right: initial;
                     width: 100%;
                     padding: 10px 15px;
 
                     h4 {
                         margin-bottom: 20px;
                         font-size: 18px;
+                    }
+
+                    ul {
+                        margin-top: 20px;
+                    }
+
+                    li {
+                        margin-bottom: 15px;
+                        padding-left: 25px;
+                        font-size: 16px;
+
+                        &:before {
+                            font-size: 16px;
+                        }
                     }
                 }
             }
@@ -1095,6 +1243,14 @@ header {
 
     .q5 {
         margin-top: 25px;
+
+        &-1 {
+
+            .text {
+                margin-bottom: 30px;
+                width: 100%;
+            }
+        }
 
         &-2 {
             margin-top: 15px;
@@ -1228,9 +1384,28 @@ header {
                 width: 100%;
             }
 
-            .text-block {
+            .list-block {
+                left: 0;
                 margin-top: 20px;
                 width: 100%;
+
+                h4 {
+                    font-size: 18px;
+                }
+
+                ul {
+                    margin: 20px;
+                }
+
+                li {
+                    padding-left: 30px;
+                    margin-bottom: 15px;
+
+                    &:before {
+                        left: 0;
+                        font-size: 16px;
+                    }
+                }
             }
 
             video {
@@ -1263,6 +1438,11 @@ header {
 
         .text-block {
             width: 100%;
+        }
+
+        h4 {
+            font-size: 18px;
+            line-height: 22px;
         }
 
         a {

@@ -1,1 +1,11 @@
 @import '../desktop';
+
+& {
+
+    ul {
+
+        &.circled {
+            height: px(600);
+        }
+    }
+}
