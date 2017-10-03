@@ -12,4 +12,6 @@
 
 //=include modules/complex/complex-time.js
 
+//=include ./modules/scroll-menu.js
+
 new WOW().init();

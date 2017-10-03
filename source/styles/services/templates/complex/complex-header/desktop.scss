@@ -8,6 +8,30 @@
         top: px(1020);
     }
 
+    .top-panel {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9998;
+        width: 100%;
+        height: px(240);
+        background: transparent;
+        transition: top $time * 7 linear, background $time;
+
+        &.active {
+            background: rgba(238, 238, 238, .85);
+
+            &.scrolled {
+                top: -101%;
+            }
+        }
+    }
+
+    .logo,
+    .menu {
+        animation: fadeIn $time * 3 both;
+    }
+
     .big-bg-letter-c {
 
         .big-background-letter {
@@ -297,8 +321,8 @@
 
                 .italic {
                     padding-bottom: px(36);
-                    border-bottom: 1px solid $darkGray;
-                    opacity: .4;
+                    border-bottom: 1px solid lighten($darkGray, 35%);;
+                    color: lighten($darkGray, 35%);
                 }
 
                 .column-2 {

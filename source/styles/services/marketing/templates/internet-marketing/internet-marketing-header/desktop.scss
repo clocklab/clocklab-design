@@ -22,6 +22,11 @@
         }
     }
 
+    .logo,
+    .menu {
+        animation: fadeIn $time * 3 both;
+    }
+
     .language {
         position: absolute;
         top: px(1000);
@@ -170,8 +175,8 @@
                     position: relative;
                     padding-bottom: px(40);
                     width: 33%;
+                    color: lighten($darkGray, 35%);
                     font-weight: 300;
-                    opacity: .5;
 
                     span {
                         font-weight: 700;
@@ -184,7 +189,7 @@
                         left: 2%;
                         width: 96%;
                         height: 1px;
-                        background: $darkGray;
+                        background: lighten($darkGray, 35%);
                         content: '';
                         opacity: .5;
                     }
