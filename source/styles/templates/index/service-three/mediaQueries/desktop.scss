@@ -3,11 +3,11 @@
 // ----- title -----
 .title {
 	margin: 20vh 0 0 px(240);
-	.word {
-        &:after { top: 12px; }
-        span { font-size: px(84); }
-    }
+	.word span { font-size: px(60); }
 }
 
 // ----- info-block -----
 .info-block { right: 4%; }
+
+// ----- service-info -----
+.service-info.vertical.two { left: px(-50); }

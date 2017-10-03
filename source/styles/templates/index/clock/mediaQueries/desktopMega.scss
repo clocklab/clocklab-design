@@ -5,3 +5,6 @@
     span { font-size: px(116); }
     &:last-of-type span { font-size: px(46); }
 }
+
+// ----- scroll -----
+.scroll .arrow:before { right: 3.5px; }

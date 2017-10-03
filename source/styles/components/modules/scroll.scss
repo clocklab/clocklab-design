@@ -1,7 +1,7 @@
 .scroll {
     position: absolute;
     margin: 0 auto;
-    bottom: 6.8vh;
+    bottom: 7vh;
     z-index: 1;
     right: 50%;
     left: 50%;
@@ -18,8 +18,8 @@
         position: absolute;
         display: block;
         height: .5rem;
-        bottom: -2vh;
-        right: 4px;
+        bottom: -20px;
+        right: 3px;
         content: '';
         width: .5rem;
         border-top: 0;

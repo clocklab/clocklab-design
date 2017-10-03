@@ -1,7 +1,10 @@
 @import '../desktop';
 
 // ----- title -----
-.title { left: px(1500); }
+.title {
+	left: px(1500);
+	.word span { font-size: px(55); }
+}
 
 // ----- blue-line -----
 .blue-line { left: px(450); }
