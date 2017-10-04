@@ -119,24 +119,7 @@
     
     <div class="back-layer">
         @@include('./components/big-background-letter.html')
-        <form action="">
-            <button class="close-form"></button>
-            <h3>Задать вопрос</h3>
-            <label for="">
-                <span>имя</span>
-                <input type="text" required>
-                <span class="mistake">ошибка заполнения</span>
-            </label>
-            <label for="">
-                <span>телефон</span>
-                <input type="text" required>
-                <span class="mistake">ошибка заполнения</span>
-            </label>
-            <label for="">
-                <input type="text" placeholder="ВАШ ВОПРОС">
-            </label>
-            <button class="send">Отправить</button>
-        </form>
+        @@include('./components/form.html')
     </div>
 
 </div>
