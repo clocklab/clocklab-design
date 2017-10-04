@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const openBtn = document.querySelector('.discuss .open-form'),
+    const openBtn = document.querySelector('.open-form'),
           closeBtn = document.querySelector('.back-layer .close-form'),
           frontLayer = document.querySelector('.front-layer'),
           topPanel = document.querySelector('.top-panel'),
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ourWorks.removeAttribute('style')
         }, animationTime)
 
-        topPanel.classList.remove('form-opened')
+        topPanel && topPanel.classList.remove('form-opened')
         document.removeEventListener('scroll', checkFormPos)
     }
 
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.documentElement.scrollTop = currentTopPos + timePassed / (scrollTime / wantedTopPos)
         }, scrollTime)
 
-        topPanel.classList.add('form-opened')
+        topPanel && topPanel.classList.add('form-opened')
         document.addEventListener('scroll', checkFormPos)
     })
 
