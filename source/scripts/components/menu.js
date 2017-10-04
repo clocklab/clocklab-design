@@ -1,17 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const openCloseBtns = document.querySelectorAll('.menu__item--open-close'),
-          animationTime = 1600
+          animationTime = 1600,
+          events = ['wheel', 'keydown', 'scroll']
+
+    function preventScroll() {
+        event.stopPropagation()
+    }
 
     function openMenu (event) {
         event.preventDefault()
-
-        const menu = this.parentElement
-        const menuBackground = menu.querySelector('.menu__background')
-
-        menu.classList.add('opened')
-        document.body.style.overflow = 'hidden'
-
-        this.removeEventListener('click', openMenu)
 
         function closeMenu (event) {
             event.preventDefault()
@@ -23,9 +20,24 @@ document.addEventListener('DOMContentLoaded', () => {
     
             setTimeout(() => {
                 this.addEventListener('click', openMenu)
+                events.forEach(event => {
+                    menu.removeEventListener(event, preventScroll)
+                })
             }, animationTime)
         }
-        
+
+        const menu = this.parentElement
+        const menuBackground = menu.querySelector('.menu__background')
+
+        menu.classList.add('opened')
+        document.body.style.overflow = 'hidden'
+
+        events.forEach(event => {
+            menu.addEventListener(event, preventScroll)
+        })
+
+        this.removeEventListener('click', openMenu)
+
         setTimeout(() => {
             this.addEventListener('click', closeMenu)
             menuBackground.addEventListener('click', closeMenu)

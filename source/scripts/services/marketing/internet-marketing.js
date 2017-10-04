@@ -14,4 +14,6 @@
 
 //=include ./../modules/web-production/web-production-open-form.js
 
+//=include ./../modules/scroll-menu.js
+
 new WOW().init();
