@@ -1,0 +1,140 @@
+& {  
+    position: relative;
+    overflow: hidden;
+    height: px(1920);
+    
+    // ----- bkue-line -----
+    .blue-line {
+        position: absolute;
+        background: $blue;
+        width: px(560);
+        left: px(368);
+        height: 100%;
+        top: 0;
+    }
+
+    // ----- small-gray-lines -----
+    .small-gray-lines {
+        z-index: 1;
+        .line {
+            visibility: visible;
+            background: gray;
+            opacity: .2;
+            &.up { transform: rotate(-65deg) translate3d(100%, 0, 0); }
+            &.down { transform: rotate(-65deg) translate3d(-100%, 0, 0); }
+            &.up, &.down { animation: none; }
+        }
+    }
+    .bottom-button span { font-family: $raleway; }
+
+    // ----- container -----
+    .container {
+        padding-top: px(180);
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        z-index: 2;
+        width: 81%;
+        &:after {
+            content: 'Lorem ipsum dolor sit amet consectetu adipisi';
+            transform: rotate(90deg);
+            font-family: $roboto;
+            position: absolute;
+            display: block;
+            top: px(1200);
+            left: 105%;
+            width: px(280);
+            line-height: 1.4;
+            color: $darkGray;
+            font-size: px(24);
+            transform-origin: 0 0;
+        }
+    }
+
+    // ----- image-block -----
+    .image-block {
+        position: relative;
+        padding-left: px(120);
+    }
+    .date {
+        position: absolute;
+        width: px(220);
+        top: px(50);
+        right: 95%;
+        color: $white;
+        font-weight: 300;
+        font-size: px(32);
+        font-family: $roboto;
+        transform-origin: 100% 0;
+        transform: rotate(-90deg);
+    }
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        height: px(1520);
+        width: px(1140);
+        img {
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+        }
+        &:before {
+            position: absolute;
+            background: $gray;
+            display: block;
+            content: '';
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .info {
+        margin-left: px(300);
+        padding-top: px(130);
+        width: px(1520);
+    }
+
+    // ----- sticker -----
+    .sticker { span { &:before { content: 'Блог'; } } }
+    
+    // ----- new-title -----
+    .new-title {
+        margin-top: px(80);
+        margin-bottom: px(80);
+        font-family: $raleway;
+        .text-container {
+            display: inline-block;
+            margin-bottom: px(10);
+            font-weight: 800;
+            span {
+                font-size: px(96);
+                line-height: px(104);
+            }
+        }
+    }
+
+    // ----- article -----
+    article {
+        padding-left: px(200);
+        padding-right: px(380);
+
+        p {
+            margin-bottom: px(50);
+            font-family: $roboto;
+            font-size: px(28);
+            line-height: 1.4;
+        }
+    }
+    
+    // ----- crossed-button -----
+    .crossed-button {
+        margin-top: px(50);
+        margin-left: px(200);
+        font-family: $raleway;
+        span { &:after { content: 'Подробнее'; } }
+    } 
+}

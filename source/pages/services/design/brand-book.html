@@ -7,26 +7,26 @@
     </head>
     <body>
 
-        <!-- brand-book-header -->
-        <div class="brand-book-header">
-
-            <!-- logo -->
+        <!-- services-header -->
+        <div class="services-header">
             <div class="dark-logo">
+                
+                <!-- logo -->
                 @@include('./components/logo.html')
             </div>
-
-            <!-- menu -->
             <div class="dark-menu">
+                
+                <!-- menu -->
                 @@include('./components/menu.html')
             </div>
-
-            <!-- language -->
             <div class="dark">
-                @@include('./components/language.html')
-            </div>
 
-            <!-- big-bg-letter-c -->
+                <!-- languages -->
+                @@include('./components/languages.html')
+            </div>
             <div class="big-bg-letter-c">
+                
+                <!-- big-background-letter -->
                 @@include('./components/big-background-letter.html')
             </div>
 
@@ -104,20 +104,27 @@
             </div>
         </div>
         
-        <!-- brand-book-development -->
-        <div class="brand-book-development">
+        <!-- services-development -->
+        <div class="services-development">
 
             <!-- big-background-letter -->
             @@include('./components/big-background-letter.html')
-
+            
+            <!-- container -->
             <div class="container">
                 <div>
+
+                    <!-- line -->
                     <div class="line"></div>
+
+                    <!-- column-1 -->
                     <div class="column-1">
                         <h2 class="wow fadeInUp"><span>Разработка</span>Brand Book</h2>
                         <p class="wow fadeInLeft">Мы предлагаем полный спектр услуг по<br>
                         созданию фирменного стиля компании:</p>
                     </div>
+
+                    <!-- column-2 -->
                     <div class="column-2 wow fadeInUp">
                        <ul>
                            <li>Разработка имени бренда (нейминг)</li>
@@ -127,6 +134,8 @@
                            <li>Дизайн упаковки/этикеток</li>
                        </ul>
                     </div>
+
+                    <!-- column-3 -->
                     <div class="column-3 wow fadeInUp">
                         <ul>
                            <li>Дизайн печатной / наружной рекламы</li>
@@ -141,23 +150,29 @@
             </div>
         </div>
         
-        <!-- brand-book-plan -->
-        <div class="brand-book-plan">
+        <!-- services-plan -->
+        <div class="services-plan">
 
             <!-- clock-bg -->
             @@include('./components/clock-bg.html')
-
+            
+            <!-- container -->
             <div class="container">
+
+                <!-- lines -->
                 <div class="lines">
                     <div class="line line--1 wow slideInDown"></div>
                     <div class="line line--2 wow slideInDown" data-wow-delay=".3"></div>
                     <div class="line line--3 wow slideInDown" data-wow-delay=".6"></div>
                 </div>
                 <div>
+
+                    <!-- column-1 -->
                     <div class="column-1">
-                        <h2 class="wow fadeInLeft">Как мы создаем<br>
-                        <span>Brand Book</span>?</h2>
+                        <h2 class="wow fadeInLeft">Как мы создаем<br><span>Brand Book</span>?</h2>
                     </div>
+
+                    <!-- column-2 -->
                     <div class="column-2 wow fadeInUp" data-wow-delay="1s">
                         <ul>
                             <li>
@@ -177,6 +192,8 @@
                             </li>
                         </ul>
                     </div>
+
+                    <!-- column-3 -->
                     <div class="column-3 wow fadeInUp" data-wow-delay="1.5s">
                         <ul>
                             <li>
@@ -195,8 +212,8 @@
             </div>
         </div>
         
-        <!-- brand-book-our-works -->
-        <div class="brand-book-our-works">
+        <!-- services-our-works -->
+        <div class="services-our-works services-our-works--dark">
 
             <!-- front-layer -->
             <div class="front-layer">
@@ -206,37 +223,44 @@
 
                 <!-- big-background-letter -->
                 @@include('./components/big-background-letter.html')
-
+                
+                <!-- container -->
                 <div class="container">
-                    <h2 class="wow fadeIn">Примеры<span>наших работ</span></h2>
+                    <h2 class="wow fadeIn">Примеры <span>наших работ</span></h2>
 
                     <!-- works -->
-                    <div class="works dark wow fadeInUp">
+                    <div class="works wow fadeInUp">
+
+                        <!-- eurovision -->
                         <div class="work work--eurovision">
                             <img src="../../../images/services/eurovision.jpg" alt="eurovision">
                             <span>Eurovision</span>
                         </div>
+
+                        <!-- alta -->
                         <div class="work work--alta">
-                            <img src="../../../images/services/alta.jpg" alt="eurovision">
+                            <img src="../../../images/services/alta.jpg" alt="alta">
                             <span>Alta capital</span>
                         </div>
+
+                        <!-- audi -->
                         <div class="work work--audi">
-                            <img src="../../../images/services/audi.jpg" alt="eurovision">
+                            <img src="../../../images/services/audi.jpg" alt="audi">
                             <span>Audi</span>
                         </div>
+
+                        <!-- vinograd -->
                         <div class="work work--vinograd">
-                            <img src="../../../images/services/vinograd.jpg" alt="eurovision">
+                            <img src="../../../images/services/vinograd.jpg" alt="vinograd">
                             <span>Vino grad</span>
                         </div>
                     </div>
-                    <div class="dark">
 
-                        <!-- crossed-button -->
-                        @@include('./components/crossed-button.html')
-                    </div>
+                    <!-- croseed-button -->
+                    @@include('./components/crossed-button.html')
                 </div>
             </div>
-        
+            
             <!-- back-layer -->
             <div class="back-layer">
 
@@ -250,82 +274,122 @@
                     <label class="name">
                         <input type="text" required>
                         <span>имя</span>
+                        <div class="tick"></div>
                     </label>
                     <label class="phone">
                         <input type="text" required>
                         <span>телефон</span>
+                        <div class="tick"></div>
                     </label>
                     <label class="question">
                         <input type="text">
                         <span>Ваш вопрос</span>
+                        <div class="tick"></div>
                     </label>
-                    <button class="send">Отправить</button>
+                    <button class="send">
+                        <span>Отправить</span>
+                    </button>
                 </form>
             </div>
             
             <!-- discuss -->
             <div class="discuss wow fadeInUp">
-                <div class="block">
+                <div class="offer">
                     <h3>Хотите обсудить проект?</h3>
-                    <p>Заполните бриф</p>
+                    <p>Для экономии Вашего времени и нервов просто обратитесь к нам за успехом для Вашего бизнеса.</p>
                 </div>
-                <div class="block">
-                    <button class="open-form">Обсудить</button>
-                </div>
+                <button class="open-form">
+                    <span>Обсудить</span>
+                </button>
             </div>
         </div>
         
-        <!-- web-production-answers -->
-        <div class="web-production-answers">
+        <!-- services-answers -->
+        <div class="services-answers">
 
             <!-- big-background-letter -->
             @@include('./components/big-background-letter.html')
-
+            
+            <!-- container -->
             <div class="container">
+
+                <!-- lines -->
                 <div class="lines">
                     <div class="line line--1 wow slideInDown"></div>
-                    <div class="line line--2 wow slideInDown" data-wow-delay=".3"></div>
-                    <div class="line line--3 wow slideInDown" data-wow-delay=".6"></div>
-                    <div class="line line--4 wow slideInDown" data-wow-delay=".9"></div>
+                    <div class="line line--2 wow slideInDown" data-wow-delay=".3s"></div>
+                    <div class="line line--3 wow slideInDown" data-wow-delay=".6s"></div>
+                    <div class="line line--4 wow slideInDown" data-wow-delay=".9s"></div>
                 </div>
-
+                
                 <!-- answers -->
                 <div class="answers">
+
+                    <!-- column-1 -->
                     <div class="column-1">
-                        <h2 class="wow fadeInUp">Ответы<span>на часто задаваемые вопросы</span></h2>
+                        <h2 class="wow slideInLeft">Ответы <span>на часто задаваемые вопросы</span></h2>
                     </div>
+
+                    <!-- column-2 -->
                     <div class="column-2">
                         <ul>
-                            <li class="question question--1 current wow fadeInUp">
-                                <button>Правда ли, что Landing Page хуже, чем полноценный сайт?</button>
+
+                            <!-- question-1 -->
+                            <li class="question question--1 current">
+                                <div class="index">
+                                    <span class="wow slideInUp" data-wow-delay=".3s">01</span>
+                                </div>
+                                <button>
+                                    <span class="wow slideInLeft" data-wow-delay=".3s">Правда ли, что Landing Page хуже, чем полноценный сайт?</span>
+                                </button>
                             </li>
-                            <li class="question question--2 wow fadeInUp">
-                                <button>Есть ли необходимость в полноценном сайте после запуска Landing Page?</button>
+
+                            <!-- question-2 -->
+                            <li class="question question--2">
+                                <div class="index">
+                                    <span class="wow slideInUp" data-wow-delay=".3s">02</span>
+                                </div>
+                                <button>
+                                    <span class="wow slideInLeft" data-wow-delay=".3s">Есть ли необходимость в полноценном сайте после запуска Landing Page?</span>
+                                </button>
                             </li>
                         </ul>
                     </div>
-                    <div class="column-3 wow fadeInUp">
+
+                    <!-- column-3 -->
+                    <div class="column-3">
+
+                        <!-- answer-1 -->
                         <div class="answer answer--1 current">
                             <div class="index">
-                                <span>01</span>
+                                <span>
+                                    <span class="wow slideInUp" data-wow-delay=".6s">01</span>
+                                </span>
                             </div>
                             <div class="content">
-                                <h4>Правда ли, что Landing Page хуже, чем полноценный сайт?</h4>
+                                <h4>
+                                    <span class="wow slideInLeft" data-wow-delay=".6s">Правда ли, что Landing Page хуже, чем полноценный сайт?</span>
+                                </h4>
                                 <div class="text">
-                                    <p>Нет, такое сравнение некорректно. Формат Landing page разработан для решения конкретных задач и эффективно справляется с ними. По сути, это тоже полноценный одностраничный сайт, у него есть свои преимущества и недостатки — выбор в пользу того или иного формата сайта зависит от ваших требований и амбиций.</p>
-                                    <p>Одним из основных преимуществ лэндинга является высокая конверсия и генерация лидов — это обусловлено тем, что в рамках одной страницы (в одном месте) вы даёте максимум информации о товаре/услуге/мероприятии потенциальным клиентам.</p>
+                                    <p class="wow slideInLeft" data-wow-delay=".6s">Нет, такое сравнение некорректно. Формат Landing page разработан для решения конкретных задач и эффективно справляется с ними. По сути, это тоже полноценный одностраничный сайт, у него есть свои преимущества и недостатки — выбор в пользу того или иного формата сайта зависит от ваших требований и амбиций.</p>
+                                    <p class="wow slideInLeft" data-wow-delay=".6s">Одним из основных преимуществ лэндинга является высокая конверсия и генерация лидов — это обусловлено тем, что в рамках одной страницы (в одном месте) вы даёте максимум информации о товаре/услуге/мероприятии  потенциальным клиентам.</p>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- answer-2 -->
                         <div class="answer answer--2">
                             <div class="index">
-                                <span>02</span>
+                                <span>
+                                    <span class="wow slideInUp" data-wow-delay=".3s">02</span>
+                                </span>
                             </div>
                             <div class="content">
-                                <h4>Правда ли, что SPA хуже, чем полноценный сайт?</h4>
+                                <h4>
+                                    <span class="wow slideInLeft" data-wow-delay=".6s">Правда ли, что SPA хуже, чем полноценный сайт?</span>
+                                </h4>
                                 <div class="text">
-                                    <p>Нет, такое сравнение некорректно. Формат Landing page разработан для решения конкретных задач и эффективно справляется с ними. По сути, это тоже полноценный одностраничный сайт, у него есть свои преимущества и недостатки — выбор в пользу того или иного формата сайта зависит от ваших требований и амбиций.</p>
-                                    <p>Одним из основных преимуществ лэндинга является высокая конверсия и генерация лидов — это обусловлено тем, что в рамках одной страницы (в одном месте) вы даёте максимум информации о товаре/услуге/мероприятии потенциальным клиентам.</p>
+                                    <p class="wow slideInLeft" data-wow-delay=".6s">Нет, такое сравнение некорректно. Формат Landing page разработан для решения конкретных задач и эффективно справляется с ними. По сути, это тоже полноценный одностраничный сайт, у него есть свои преимущества и недостатки — выбор в пользу того или иного формата сайта зависит от ваших требований и амбиций.</p>
+                                    <p class="wow slideInLeft" data-wow-delay=".6s">Одним из основных преимуществ лэндинга является высокая конверсия и генерация лидов — это обусловлено тем, что в рамках одной страницы (в одном месте) вы даёте максимум информации о товаре/услуге/мероприятии  потенциальным клиентам.</p>
                                 </div>
                             </div>
                         </div>
@@ -334,24 +398,16 @@
 
                 <!-- more -->
                 <div class="more">
-                    <h3 class="wow fadeInUp">Больше услуг<span>дизайна</span></h3>
-                    <ul class="wow fadeInUp">
-                        <li class="column-1">
-                            <a class="crossed-button">
-                                <span>Landing page</span>
-                                <div class="arrow-container">
-                                    <svg class="arrow" x="0px" y="0px"
-                                        viewBox="0 0 34.8 7.3">
-                                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                    </svg>      
-                                </div>
-                            </a>
-                        </li>
+                    <div class="column-1">
+                        <h3 class="wow fadeInLeft">Больше услуг<span>дизайна</span></h3>
+                    </div>
+                    <ul>
+                        <li class="column-1"></li>
                         <li class="column-2">
-                            <a class="crossed-button">
-                                <span>UX / UI (web дизайн)</span>
+
+                            <!-- crossed-button -->
+                            <a href="ux-ui.html" class="crossed-button wow fadeInLeft" data-wow-delay=".3s">
+                                <span>UX/UI (WEB-дизайн)</span>
                                 <div class="arrow-container">
                                     <svg class="arrow" x="0px" y="0px"
                                         viewBox="0 0 34.8 7.3">
@@ -362,22 +418,28 @@
                                 </div>
                             </a>
                         </li>
+                        <li class="column-3"></li>
                     </ul>
                 </div>
             </div>
         </div>
         
-        <!-- brand-book-footer -->
-        <div class="brand-book-footer">
+        <!-- services-footer -->
+        <div class="services-footer">
 
             <!-- small-gray-lines -->
             @@include('./components/small-gray-lines.html')
 
             <!-- bottom-button -->
             @@include('./components/bottom-button.html')
-
+            
+            <!-- blue-line -->
             <div class="blue-line wow slideInDown"></div>
+
+            <!-- container -->
             <div class="container">
+
+                <!-- image-block -->
                 <div class="image-block wow fadeInUp">
                     <div class="date wow fadeInLeft">
                         <span>20 April 2017</span>
@@ -393,6 +455,7 @@
                     <!-- sticker -->
                     @@include('./components/sticker.html')
                     
+                    <!-- new-title -->
                     <h1 class="new-title">
                         <div class="text-container">
                             <span>Почему так важен брендбук</span>

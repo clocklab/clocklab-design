@@ -1,0 +1,31 @@
+@import '../desktop';
+& {
+    .container {
+        padding-right: px(100);
+        padding-bottom: px(100);
+    }
+    .description { padding-top: px(250); }
+    .info {
+        top: px(-400);
+        padding-top: px(120);
+    }
+    .new-title { margin-bottom: px(80); }
+    article { p { &.big { margin-bottom: px(60); } } }
+    .cases { margin-top: px(-120); }
+    .list { h3 { margin-bottom: px(200); } }
+    .images {
+        img {
+            &:first-child { left: px(-160); }
+            &:last-child {
+                top: px(325);
+                width: px(1000);
+                height: auto;
+            }
+        }
+    }
+    .advantages {
+        ul { height: px(1200); }
+        h2 { margin-bottom: px(180); }
+        &--corporate { &--landing { ul { height: px(1400); } } }
+    }
+}

@@ -1,0 +1,11 @@
+@import '../desktop';
+& {
+    .big-background-letter { top: px(-700); }
+    .more { margin-top: px(500); }
+    .container {
+    	.column { &-2, &-3 { padding-top: px(350); } }
+        p { margin: 6vh 0;}
+        padding-top: px(250);
+        height: auto;
+    }
+}
