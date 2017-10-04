@@ -254,10 +254,10 @@
             position: relative;
             padding: 0 px(20);
             width: 100%;
-            margin-bottom: px(60);
+            margin-bottom: px(100);
             border-bottom: 1px solid $gray;
 
-            span {
+            .placeholder {
                 display: block;
                 position: absolute;
                 top: 0;
@@ -289,7 +289,7 @@
                 &:focus,
                 &.filled {
                     
-                    & ~ span {
+                    & ~ .placeholder {
                         top: px(-30);
                         color: $white;
                         font-size: px(24);
@@ -301,6 +301,14 @@
                 }
             }
 
+            .message {
+                position: absolute;
+                top: 100%;
+                padding-top: px(10);
+                color: $red;
+                visibility: hidden;
+            }
+
             .tick {
                 display: block;
                 position: absolute;
@@ -309,7 +317,22 @@
                 width: 0;
                 height: 1px;
                 background: $white;
-                transition: width $timeHalf;
+                transition: width $timeHalf, background $timeHalf;
+            }
+
+            &.wrong {
+                
+                input {
+
+                    & ~ .tick {
+                        width: 100%;
+                        background: $red;
+                    }
+                }
+
+                .message {
+                    visibility: visible;
+                }
             }
 
             &:nth-of-type(2) {

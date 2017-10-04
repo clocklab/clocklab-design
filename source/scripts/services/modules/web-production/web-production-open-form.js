@@ -63,21 +63,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     closeBtn.addEventListener('click', closeForm)
 
-    const inputs = document.querySelectorAll('.back-layer input'),
-          numberInput = document.querySelector('.back-layer .phone > input'),
-          nameInput = document.querySelector('.back-layer .name > input'),
+    const form = document.querySelector('.back-layer form'),
+          inputs = document.querySelectorAll('.back-layer input'),
+          nameLabel = form.querySelector('.name'),
+          nameInput = nameLabel.querySelector('input'),
+          nameMessage = nameLabel.querySelector('.message'),
+          numberLabel = form.querySelector('.number'),
+          numberInput = numberLabel.querySelector('input'),
+          numberMessage = numberLabel.querySelector('.message'),
           sendBtn = document.querySelector('form .send'),
           messages = {
               empty: 'данное поле не должно быть пустым',
               wrongFormat: 'номер телефона не должен содержать букв'
           }
 
+
     sendBtn.addEventListener('click', event => {
+        event.preventDefault()
         
-        if (/[а-яА-Яё-їЁ-ЇЄ-єІ-іa-zA-Z]/.test(numberInput.value.trim())) {
-            numberInput.classList.add('wrong')
+        const numberValue = numberInput.value.trim(),
+              nameValue = nameInput.value.trim()
+
+        if (/[а-яА-Яё-їЁ-ЇЄ-єІ-іa-zA-Z]/.test(numberValue) || !numberValue) {
+            numberLabel.classList.add('wrong')
+
+            numberMessage.innerText = !numberValue
+            ? messages.empty
+            : messages.wrongFormat
+        } else {
+            numberLabel.classList.remove('wrong')
+            numberMessage.innerText = ''
         }
 
+        if (!nameValue) {
+            nameLabel.classList.add('wrong')
+            nameMessage.innerText = messages.empty
+        } else {
+            nameLabel.classList.remove('wrong')
+            nameMessage.innerText = ''
+        }
+
+        const wrongFields = form.querySelectorAll('.wrong')
+
+        wrongFields.length
+        ? wrongFields[0].querySelector('input').focus()
+        : form.submit()
     })
 
     inputs.forEach(input => {
@@ -85,6 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
             input.value.trim()
             ? input.classList.add('filled')
             : input.classList.remove('filled')
+
+            input.parentElement.classList.remove('wrong')
         })
     })
 })

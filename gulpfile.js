@@ -61,7 +61,7 @@ gulp.task('default', ['build', 'server', 'watch']);
 
 gulp.task('build', ['html', 'fonts', 'videos', 'images', 'sass', 'scripts', 'projects']);
 
-gulp.task('html', function() {5
+gulp.task('html', function() {
     gulp.src(path.source.html)
         .pipe(plugins.plumber())
         .pipe(fileinclude({
