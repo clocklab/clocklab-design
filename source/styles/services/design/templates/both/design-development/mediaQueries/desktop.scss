@@ -1,0 +1,23 @@
+@import '../desktop';
+& {
+	&.brand-book {
+		.big-background-letter { top: px(-700); }
+    	.more { margin-top: px(500); }
+	    .container {
+	    	.column { &-2, &-3 { padding-top: px(350); } }
+	        p { margin: 6vh 0;}
+	        padding-top: px(250);
+	        height: auto;
+	    }
+	}
+    &.ui-ux {
+    	.column-1 h2 {
+    		font-size: px(100);
+    		span { font-size: px(100); }
+    	}
+    	.column-3 {
+    		width: 100%;
+    		padding-left: px(100);
+		}
+    }
+}

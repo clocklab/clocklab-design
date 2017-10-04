@@ -1,0 +1,7 @@
+@import '../desktop';
+
+& {
+    .container { width: 65%; }
+    header .image-container { width: 100%; }
+	.images { img { &:last-child { width: px(1200); } } }
+}

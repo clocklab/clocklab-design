@@ -1,0 +1,18 @@
+@import '../desktop';
+& {
+	.clock-bg span { line-height: 125vh; }
+    .big-background-letter { top: px(-700); }
+    .more { margin-top: px(500); }
+    .container {
+    	padding-top: px(250);
+    	ul li { min-height: 35vh; }
+    	h2 { margin-top: 43vh; }
+	}
+    &.ui-ux {
+        .clock-bg span { line-height: 110vh; }
+        .container {
+    		ul li { min-height: 38vh; }
+        	h2 {  margin-top: 35vh; }
+        }
+    }
+}

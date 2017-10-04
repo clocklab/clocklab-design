@@ -1,6 +1,6 @@
 const openBtn = document.querySelector('.discuss .open-form'),
       closeBtn = document.querySelector('.back-layer .close-form'),
-      ourWorks = document.querySelector('.our-works'),
+      ourWorks = document.querySelector('.design-our-works'),
       animationTime = 700;
 
 openBtn.addEventListener('click', () => {
