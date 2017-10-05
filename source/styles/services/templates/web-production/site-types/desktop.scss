@@ -49,6 +49,7 @@
         width: 61%;
         min-width: px(2340);
         height: 100vh;
+        min-height: 800px;
         color: $white;
 
         .lines {
@@ -187,6 +188,7 @@
             &__item {
                 display: block;
                 position: relative;
+                margin-bottom: px(50);
                 width: 50%;
                 
                 .content {
