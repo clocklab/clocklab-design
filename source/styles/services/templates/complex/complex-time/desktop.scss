@@ -537,6 +537,8 @@
         &:before,
         &:after {
             position: absolute;
+            top: px((420 - 500) / 2);
+            left: px((420 - 500) / 2);
             z-index: -1;
             display: block;
             width: px(500);
@@ -545,10 +547,13 @@
             border-radius: 50%;
             content: '';
             opacity: .5;
+            transform: translate3d(px(-220), px(-220), 0);
             animation: pulse $time * 5 infinite both;
         }
 
         &:after {
+            top: px((420 - 640) / 2);
+            left: px((420 - 640) / 2);
             width: px(640);
             height: px(640);
             opacity: .3;

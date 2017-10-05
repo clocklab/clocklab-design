@@ -33,8 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    const closeForm = () => {
-        event.preventDefault()
+    const closeForm = event => {
+        event && event.preventDefault()
 
         ourWorks.classList.remove('opened')
 
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     openBtn.addEventListener('click', () => {
-        const currentTopPos = document.documentElement.scrollTop
+        const currentTopPos = document.documentElement.scrollTop || document.body.scrollTop
         const wantedTopPos = frontLayer.getBoundingClientRect().top
 
         ourWorks.classList.add('opened')
@@ -55,10 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         animate((timePassed) => {
             document.documentElement.scrollTop = currentTopPos + timePassed / (scrollTime / wantedTopPos)
+            document.body.scrollTop = currentTopPos + timePassed / (scrollTime / wantedTopPos)
         }, scrollTime)
 
         topPanel && topPanel.classList.add('form-opened')
-        document.addEventListener('scroll', checkFormPos)
+        setTimeout(() => {
+            document.addEventListener('scroll', checkFormPos)
+        }, scrollTime)
     })
 
     closeBtn.addEventListener('click', closeForm)
