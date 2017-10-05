@@ -1,1 +1,11 @@
 @import '../desktop';
+
+& {
+
+    .answers {
+
+        h2 {
+            padding-right: px(50);
+        }
+    }
+}

@@ -3,27 +3,6 @@
     position: relative;
     overflow: hidden;
 
-    .top-panel {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9998;
-        width: 100%;
-        height: px(240);
-        background: transparent;
-        transition: top $time * 2 ease-out, background $time, opacity $time * 2 ease-out;
-
-        &.active {
-            background: rgba(238, 238, 238, .70);
-            opacity: 1;
-
-            &.scrolled {
-                top: px(-242);
-                opacity: 0;
-            }
-        }
-    }
-
     .logo,
     .menu {
         animation: fadeIn $time * 3 both;

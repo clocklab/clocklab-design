@@ -2,8 +2,14 @@
 
 & {
 
+    .front-layer,
+    .back-layer {
+        min-height: 650px;
+    }
+
     .container {
         width: 80%;
+        min-height: 650px;
     }
 
     .result {
