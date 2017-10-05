@@ -5,7 +5,7 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
-var page = 'services/marketing'
+var page = 'portfolio'
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
