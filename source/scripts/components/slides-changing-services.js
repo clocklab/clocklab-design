@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const addListeners = () => events.forEach(event => document.addEventListener(event, freezeEvents))
 
-    const checkFlag = () => {
+    const checkFlag = event => {
         if (flag) {
-            move()
+            move(event)
 
             flag = !flag
 
@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    const freezeEvents = () => {
+    const freezeEvents = event => {
         if (event.deltaY) {
-            if (event.deltaY > maxLimit || event.deltaY < minLimit) checkFlag()
+            if (event.deltaY > maxLimit || event.deltaY < minLimit) checkFlag(event)
         } else {
-            checkFlag()
+            checkFlag(event)
         }
     }
     
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, animationTime)
     }
     
-    const move = () => {
+    const move = event => {
         const previousSlide = document.querySelector('.screen-block.previous') || document.querySelector('.screen-block.previous-back');
         const currentSlide = document.querySelector('.screen-block.current') || document.querySelector('.screen-block.current-back');
         const index = slides.indexOf(currentSlide);
