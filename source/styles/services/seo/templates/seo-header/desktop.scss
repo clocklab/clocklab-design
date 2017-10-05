@@ -1,0 +1,396 @@
+& {  
+    background: $background;
+    font-family: $raleway;
+    font-weight: $regular;
+    position: relative;
+    
+    // ----- animation -----
+    animation: fadeIn $time * 3 both;
+    
+    // ----- big-bg-letters -----
+    .big-background-letter, .big-bg-letter-c { animation: fadeIn $time * 3 $time * 3 both; }
+    
+    // ----- lines -----
+    .lines div { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+    
+    // ----- navigation-elements -----
+    .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 6 both; }
+    .header-image { animation: fadeInFive $time * 6 $time * 9 both; }
+    
+    // ----- title -----
+    .title {
+        p {
+            animation: fadeInUp $time * 2 $time * 7 linear;
+            animation-fill-mode: forwards;
+        }
+        span.name {
+            span {
+                animation: titleName $time * 2 $time * 8 linear;
+                animation-fill-mode: forwards;
+            }
+            &:before {
+                animation: titleNameShape $time * 2 $time * 7 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .word {
+            &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+            &:nth-of-type(1) span {
+                animation: titleWord $time * 2 $time * 5 linear;
+                animation-fill-mode: forwards;
+            }
+            &:nth-of-type(2) span {
+                animation: titleWord $time * 2 $time * 6 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+
+    // ----- graph -----
+    @keyframes fadeInThree {
+        from { opacity: 0; }
+        to { opacity: 3.000000e-02; }
+    }
+    @keyframes fadeInFour {
+        from { opacity: 0; }
+        to { opacity: .1; }
+    }
+    @keyframes fadeInFive {
+        from { opacity: 0; }
+        to { opacity: .15; }
+    }
+    .st7 { animation: fadeIn $time * 6 $time * 3 both; }
+    .st8 { animation: fadeIn $time * 6 $time * 3.2 both; }
+    .st9 { animation: fadeIn $time * 6 $time * 3.3 both; }
+    .st5 { animation: fadeInThree $time * 3 $time * 8 both; }
+    .st6 { animation: fadeInFour $time * 6 $time * 10 both; }
+    .st2, .st3, .st4 { animation: fadeIn $time * 6 $time * 15 both; }
+
+    // ----- big-background-letter -----
+    .big-background-letter {
+        top: 40vh;
+        right: px(14);
+        font-size: px(3000);
+        font-weight: $extra-bold;
+        span:before { content: 'c'; }
+    }
+    
+    // ----- main-block -----
+    .main-block {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        
+        // ----- header-container -----
+        .header-container {
+            position: relative;
+            margin: 0 auto;
+            width: 81%;
+
+            // ----- title -----
+            .title {
+                left: 0;
+                top: 35vh;
+                z-index: 2;
+                position: absolute;
+                font-weight: $extra-bold;
+                &.creating p { width: 100%; }
+                &.audit p { width: 350%; }
+                p {
+                    width: 165%;
+                    color: $white;
+                    padding-left: 0;
+                    font-size: px(48);
+                    font-family: $roboto;
+                }
+                .word {
+                    width: fit-content;
+                    span {
+                        font-size: px(106);
+                        color: $white;
+                    }
+                }
+            }
+
+            // ----- lines -----
+            .lines {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 500vh;
+                position: absolute;
+                div {
+                    width: 1px;
+                    z-index: 1;
+                    height: 100%;
+                    position: absolute;
+                    background: rgba(102,102,102,.5);
+                    &:nth-of-type(1) { left: px(0); }
+                    &:nth-of-type(2) { left: 33.33%; }
+                    &:nth-of-type(3) { right: 33.33%; }
+                    &:nth-of-type(4) { right: px(0); }
+                }
+            }
+        }
+        
+        // ----- header-image -----
+        .header-image {
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        // ----- graph -----
+        .graph {
+            width: 100%;
+            bottom: -1vh;
+            position: absolute;
+            .st0 { fill: $background; }
+            .st1 {
+                animation: line 5s $time both;
+                stroke-dasharray: 4444;
+                stroke-miterlimit: 10;
+                stroke-width: 10.2689;
+                stroke-linecap: round;
+                stroke: url(#SVGID_1_);
+                visibility: hidden;
+                fill: none;
+            }
+            .st2 { fill: #666667; }
+            .st3 {
+                font-family: $roboto;
+                font-weight: $medium;
+            }
+            .st4 { font-size: 29.3479px; }
+            .st5 {
+                opacity: 3.000000e-02;
+                fill: #FFFFFF;
+                enable-background: new;
+            }
+            .st6 {
+                opacity: 0.1;
+                fill: #FFFFFF;
+                enable-background: new;
+            }
+            .st7 { fill: #953C7F; }
+            .st8 { fill: #62417C; }
+            .st9 { fill: #773D75; }
+            @keyframes line {
+                from, to { visibility: visible; }
+                from { stroke-dashoffset: 4444; }
+                to { stroke-dashoffset: 0; }
+            }
+        }
+    }
+    .bordered-left-blue {
+        line-height: 1.7;
+        margin-top: px(180);
+        padding: 0 px(30) 0 px(40);
+        border-left: 10px solid $blue;
+    }
+    .dotted-list {
+        margin: px(56) px(48);
+        list-style: none;
+        padding: 0;
+        li {
+            position: relative;
+            margin-bottom: px(45);
+            padding-left: px(20);
+            font-family: $roboto;
+            font-size: px(32);
+            line-height: 1.4;
+            color: $white;
+            &:before {
+                position: absolute;
+                font-size: 3vh;
+                height: px(20);
+                content: "•";
+                color: $blue;
+                top: -1.25vh;
+                left: -10px;
+            }
+        }
+    }
+    h3 {
+        color: $white;
+        line-height: 1.2;
+        font-weight: $bold;
+        font-family: $roboto;
+        span { color: $blue; }
+    }
+    p {
+        font-family: $roboto;
+        font-size: px(32);
+        line-height: 1.4;
+        color: #CCC;
+        &.big {
+            border-bottom: 1px solid $gray;
+            border-top: 1px solid $gray;
+            padding: px(60) 0;
+            font-size: px(48);
+        }
+        &.bold {
+            font-size: px(36);
+            font-weight: $extra-bold;
+        }
+        &.italic {
+            font-style: italic;
+            font-weight: 300;
+        }
+        &.underlined span { text-decoration: underline; }
+    }
+    .column {
+        &-1 {
+            padding-right: 6.5%;
+            width: 33.33%;
+        }
+        &-2 {
+            padding-right: 2.5%;
+            width: 33.33%;
+        }
+        &-3 { width: 33.33%;}
+    }
+    .numbered-list li {
+        &:last-of-type { margin-bottom: 0; }
+        margin-bottom: px(125);
+        font-family: $roboto;
+        position: relative;
+        font-size: px(32);
+        line-height: 1.4;
+        color: #CCC;
+        &:before {
+            background: $dark;
+            position: absolute;
+            display: block;
+            left: px(-68);
+            top: px(-30);
+            content: '';
+            z-index: -1;
+            width: px(70);
+            height: px(70);
+        }
+        .index {
+            font-family: $raleway;
+            position: absolute;
+            font-weight: $bold;
+            color: #CCC;
+            top: px(-86);
+            left: px(-86);
+            font-size: px(72);
+        }
+    }
+    .double { width: 66%; }
+    .info {
+        z-index: 2;
+        width: 62%;
+        background: $white;
+        position: relative;
+        padding: px(110) 0 px(60) 6.5%;
+        .big { margin: px(120) 0 px(90); }
+    }
+    .container {
+        padding-bottom: px(320);
+        position: relative;
+        margin: 0 auto;
+        width: 81%;
+        &.creating {
+            padding-bottom: px(270);
+            .container {
+                &__item {
+                    &--4 {
+                        margin-top: px(45);
+                        p:first-of-type { margin-bottom: px(60); }
+                    }
+                    &--5 {
+                        .bordered-left-blue {
+                            margin-top: 0;
+                            line-height: 1.4;
+                            font-size: px(48);
+                            font-weight: $medium;
+                        }
+                    }
+                    &--6 { margin-top: px(90); }
+                }
+            }
+        }
+        &__item {
+            position: relative;
+            display: flex;
+            width: 100%;
+            z-index: 2;
+            &--1 {
+                .column-2 {
+                    margin-top: px(-60);
+                    p {
+                        &.bold {
+                            margin-top: px(140);
+                            color: $white;
+                        }
+                        &:nth-of-type(1) { margin-bottom: px(60); }
+                        &:last-of-type { margin-top: px(40); }
+                    }
+                }
+                .column-3 {
+                    margin-top: px(-512);
+                    .italic {
+                        opacity: .4;
+                        margin: 0 px(20);
+                        font-size: px(36);
+                        padding-bottom: px(36);
+                        border-bottom: 1px solid $darkGray;
+                        & + p {
+                            padding-top: px(215);
+                            span { font-weight: $extra-bold; }
+                        }
+                    }
+                }
+            }
+            &--2 {
+                margin-top: px(420);
+                .column-1 {
+                    padding-right: 0;
+                    img { width: 100%; }
+                }
+                .double {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-left: px(65);
+                    justify-content: space-between;
+                }
+                h3 {
+                    margin-bottom: px(160);
+                    font-size: px(72);
+                    width: 100%;
+                }
+            }
+            &--3 {
+                margin-top: px(-300);
+                .column {
+                    padding-right: px(130);
+                    width: 74%;
+                }
+                .column-2 { padding-left: px(65); }
+                .column-3 {
+                    p { margin-bottom: px(90); }
+                }
+            }
+            &--4 {
+                margin-top: px(230);
+                h3 { font-size: px(102); }
+                .numbered-list { margin-top: px(440); }
+                .column-1 {
+                    position: relative;
+                    p {
+                        top: px(560);
+                        width: px(600);
+                        position: relative;
+                        transform-origin: 0 0;
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+        }
+    }
+}

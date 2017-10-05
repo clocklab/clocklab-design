@@ -15,4 +15,9 @@
         	h2 {  margin-top: 35vh; }
         }
     }
+    &.creating {
+        .container {
+            h2, span { font-size: px(68); }
+        }
+    }
 }

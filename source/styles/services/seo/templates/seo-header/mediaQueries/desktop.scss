@@ -1,120 +1,71 @@
 @import '../desktop';
-
 & {
-
+    .dotted-list li:before { top: -1vh; }
+    .main-block .header-container .title {
+        top: 26vh;
+        .word {
+            &:after { height: px(30); }
+            span { font-size: px(50); }
+        }
+        p {
+            font-size: px(28);
+            width: 130%;
+        }
+    }
     .new-title {
-
         span {
             font-size: px(86);
             line-height: px(96);
         }
     }
-
     .big-bg-letter-o {
-
         .big-background-letter {
             top: 30%;
             left: px(1000);
         }
     }
-
     .big-bg-letter-c {
-
         .big-background-letter {
             left: px(-400);
             bottom: px(-200);
         }
     }
-
     p {
-
         &.big {
             padding: px(40) 0;
             font-size: px(42);
         }
-
-        &.bold {
-            font-size: px(34);
-        }
+        &.bold { font-size: px(34); }
     }
-
-    .column {
-
-        &-2 {
-            padding-right: px(80);
-        }
-    }
-
+    .column { &-2 { padding-right: px(80); } }
     header {
         height: px(1500);
-
-        img {
-            height: px(1260);
-        }
+        img { height: px(1260); }
     }
-
     .info {
         padding: px(80) 0 px(60) 6.5%; 
-
-        .big {
-            margin: px(80) 0 px(60);
-        }
+        .big { margin: px(80) 0 px(60); }
     }
-
     .container {
         padding-bottom: px(200);
-
         &__item {
-
-            &--1 {
-                margin-top: px(120);
-            }
-
+            &--1 { margin-top: px(120); }
             &--2 {
                 margin-top: px(100);
-
                 h3 {
                     margin-bottom: px(50);
-                    font-size: px(70);
                     line-height: px(80);
+                    font-size: px(70);
                 }
             }
-
             &--3 {
                 margin-top: px(120);
-
-                .column {
-
-                    img {
-                        height: px(830);
-                    }
-                }
+                .column { img { height: px(830); } }
             }
-
             &--4 {
-                margin-top: px(120);
-
-                .column-1 {
-
-                    p {
-                        font-size: px(60);
-                    }
-                }
-            }
-
-            &--5 {
                 margin-top: px(100);
-
-                .double {
-
-                    p {
-                        font-size: px(42);
-                    }
-                }
-            }
-
-            &--6 {
-                margin-top: px(120);
+                h3 { font-size: px(70); }
+                .double { p { font-size: px(42); } }
             }
         }
     }

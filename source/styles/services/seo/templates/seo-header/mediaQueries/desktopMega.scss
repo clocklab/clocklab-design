@@ -1,33 +1,21 @@
 @import '../desktop';
-
 & {
-
-    .new-title {
-
-        span {
-            font-size: px(100);
-            line-height: px(105);
-        }
+    header {
+        height: px(2000);
+        img { height: px(1700); }
     }
-
     .big-bg-letter-o {
-
         .big-background-letter {
             top: 30%;
             left: px(1000);
         }
     }
-
     .container {
-
         &__item {
-
             &--3 {
-
                 .column {
-
                     img {
-                        height: px(1000);
+                        height: px(1500);
                     }
                 }
             }

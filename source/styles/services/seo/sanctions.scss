@@ -1,28 +1,32 @@
-//common
-@import '../../base/reset';
-@import '../../base/animate';
+// base
+@import '../../base/variables';
 @import '../../base/common';
 @import '../../base/fonts';
-@import '../../base/variables';
+@import '../../base/reset';
+@import '../../base/animate';
+@import '../../base/animations';
 
-// helpers 
+// components 
 @import '../../components/modules/small-gray-lines';
 @import '../../components/jumping-button/main';
 @import '../../components/modules/clock-bg';
-@import '../../components/title/main';
-
-// YEVHEN ADDED THIS
-@import '../../components/new-title/main';
-@import '../../components/bottom-button/main';
-@import '../../components/sticker/main';
-@import '../../components/crossed-button/main';
-@import '../../components/big-background-letter/main';
 @import '../../components/logo/main';
 @import '../../components/menu/main';
-@import '../../components/languages/main';
+@import '../../components/sticker/main';
+@import '../../components/bottom-button/main';
+@import '../../components/crossed-button/main';
+@import '../../components/big-background-letter/main';
 
-//components
-@import 'templates/sanctions/sanctions-header/main';
-@import '../web-production/templates/shop/web-production-our-works/main';
-@import '../web-production/templates/shop/web-production-answers/main';
-@import '../web-production/templates/shop/web-production-footer/main';
+/* в дальнейшем свести к одному */
+@import "../../components/title/main";     
+@import "../../components/new-title/main";
+@import "../../components/language/main";
+@import "../../components/languages/main";
+/* в дальнейшем свести к одному */
+
+// templates
+@import 'templates/seo-header/main';
+@import '../design/templates/design-plan/main';
+@import '../design/templates/design-our-works/main';
+@import '../design/templates/design-answers/main';
+@import '../design/templates/design-footer/main';
