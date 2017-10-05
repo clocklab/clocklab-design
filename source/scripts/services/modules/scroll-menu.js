@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let freezer
 
     document.addEventListener('scroll', () => {
-        if (document.documentElement.scrollTop !== 0) {
+        if (document.documentElement.scrollTop !== 0 || document.body.scrollTop !==0) {
             !topPanel.classList.contains('active') && topPanel.classList.add('active')
             !topPanel.classList.contains('scrolled') && topPanel.classList.add('scrolled')
 
