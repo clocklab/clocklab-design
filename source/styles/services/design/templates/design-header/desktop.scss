@@ -4,6 +4,15 @@
     position: relative;
     overflow: hidden;
     
+    // ----- animation -----
+    animation: fadeIn $time * 3 both;
+    
+    // ----- big-bg-letters -----
+    .big-background-letter, .big-bg-letter-c { animation: fadeIn $time * 3 $time * 3 both; }
+    
+    // ----- navigation-elements -----
+    .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+
     // ----- top-panel -----
     .top-panel {
         top: 0;
@@ -50,15 +59,6 @@
             column-gap: px(200);
         }
     }
-
-    // ----- animation -----
-    animation: fadeIn $time * 3 both;
-    
-    // ----- big-bg-letters -----
-    .big-background-letter, .big-bg-letter-c { animation: fadeIn $time * 3 $time * 3 both; }
-    
-    // ----- navigation-elements -----
-    .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
     
     // ----- big-bg-letter-c -----
     .big-bg-letter-c {
