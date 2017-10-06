@@ -6,7 +6,7 @@
 
 //= include ./../components/slides-changing-services.js
 
-//= include ./../components/open-form.js
+//= include ./modules/web-production/web-production-open-form.js
 
 //= include ./../components/menu.js
 

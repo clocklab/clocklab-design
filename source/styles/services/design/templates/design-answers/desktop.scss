@@ -9,8 +9,8 @@
         left: px(-160);
         position: absolute;
         font-size: px(1700);
-        font-family: $raleway;
         color: rgba(68,68,68,.5);
+        font-family: $Raleway-Regular;
         span:before { content: 'c'; }
     }
     
@@ -54,9 +54,8 @@
     // ----- answers -----
     .answers {
         h2 {
-            font-family: $raleway;
+            font-family: $Raleway-SemiBold;
             font-size: px(96);
-            font-weight: 600;
             span {
                 color: $blue;
                 display: block;
@@ -78,7 +77,7 @@
             position: relative;
             margin-bottom: px(130);
             padding-right: px(300);
-            font-family: $raleway;
+            font-family: $Raleway-Regular;
             button {
                 padding: 0;
                 color: $white;
@@ -97,10 +96,10 @@
                 overflow: hidden;
                 font-size: px(32);
                 position: absolute;
-                font-family: $roboto;
                 transition: color $time;
                 transform-origin: 0 100%;
                 transform: rotate(-90deg);
+                font-family: $Roboto-Regular;
                 span { display: block; }
             }
             &:hover { button, .index { color: $blue; } }
@@ -115,9 +114,9 @@
             top: px(50);
             color: $white;
             position: absolute;
-            font-family: $roboto;
             background: $background;
             transform: translateX(1px);
+            font-family: $Roboto-Regular;
             .content { overflow: hidden; }
             .index {
                 top: px(-50);
@@ -132,17 +131,16 @@
                 span { display: block; }
             }
             h4 {
-                font-weight: 600;
                 font-size: px(48);
                 margin-bottom: px(60);
-                font-family: $raleway;
+                font-family: $Raleway-SemiBold;
                 span { display: block; }
             }
             p {
+                font-family: $Roboto-Light;
                 margin-bottom: px(50);
                 padding-right: px(40);
                 font-size: px(32);
-                font-weight: 300;
                 line-height: 1.4;
                 color: #CCC;
             }   
@@ -162,9 +160,8 @@
         .column-1, .column-2,
         .column-3 { overflow: hidden; }
         h3 {
-            font-family: $raleway;
+            font-family: $Raleway-SemiBold;
             font-size: px(96);
-            font-weight: 600;
             width: 100%;
             span {
                 color: $blue;
@@ -185,7 +182,7 @@
             span {
                 color: $white;
                 font-size: px(28);
-                font-family: $raleway;
+                font-family: $Raleway-Regular;
                 transition: padding $time, color $time;
                 &:before { background: $blue; }
                 &:after { content: ''; }

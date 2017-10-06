@@ -4,4 +4,8 @@
 .services-schedule .container {
 	max-width: 700px;
 	.service-line.right { display: none; }
+	.item {
+		&:nth-of-type(1) .name span { font-size: px(88); }
+		&.up { margin-bottom: 5vh; }
+	}
 }

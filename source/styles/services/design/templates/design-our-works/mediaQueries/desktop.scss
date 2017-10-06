@@ -25,5 +25,6 @@
             height: px(70);
         }
     }
+    .back-layer { padding-right: px(80); }
     &.opened { .front-layer { transform: rotateY(15deg) scaleX(.8); } }
 }

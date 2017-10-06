@@ -3,13 +3,14 @@
 // ----- title -----
 .title {
 	left: px(200);
+	padding: 10vh;
 	bottom: px(175);
 }
 
 // ----- image-block -----
 .image-block {
-    width: px(1710);
-    height: px(1190);
+    top: 15vh;
+    height: 65vh;
     right: px(300);
-    top: px(300);
+    width: px(1500);
 }

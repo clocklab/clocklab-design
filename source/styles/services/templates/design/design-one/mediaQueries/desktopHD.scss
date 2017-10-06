@@ -1,1 +1,12 @@
 @import '../desktop';
+
+// ----- title -----
+.title { bottom: px(250); }
+
+// ----- image-block -----
+.image-block {
+    top: 13vh;
+    height: 65vh;
+    right: px(520);
+    width: px(2400);
+}
