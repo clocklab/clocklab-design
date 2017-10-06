@@ -16,9 +16,9 @@
     }
     span.name {
         text-transform: uppercase;
-        position: relative;
+        position: absolute;
         font-size: px(28);
-        top: -4vh;
+        top: -5vh;
         span {
             color: $white;
             display: block;
@@ -40,7 +40,7 @@
     .word {
         position: relative;
         overflow: hidden;
-        display: inherit;
+        width: inherit;
         &:nth-of-type(1) {
             margin-bottom: 5px;
         }
