@@ -14,6 +14,8 @@
 
 //= include ./../../components/big-background-letter.js
 
+//= include ./../modules/scroll-menu.js
+
 // change language color
 $('.dark').children().addClass('dark');
 
