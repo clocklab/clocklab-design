@@ -54,7 +54,6 @@
         
         // ----- image-block -----
         .image-block .image-container {
-            animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
             img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
             &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
         }
@@ -119,7 +118,6 @@
             height: 100%;
             overflow: hidden;
             position: relative;
-            box-shadow: 0 0 px(60) px(16) rgba(0, 0, 0, .3);
             img {
                 z-index: 1;
                 width: 100%;
