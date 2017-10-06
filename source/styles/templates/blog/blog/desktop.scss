@@ -275,10 +275,16 @@
         height: 2 * $BPostHeight;
         overflow-x: auto;
         cursor: -webkit-grab;
+        cursor: grab;
         user-select: none;
 
         &::-webkit-scrollbar {
             display: none;
+        }
+
+        &.active {
+            cursor: -webkit-grabbing;
+            cursor: grabbing;
         }
     }
 

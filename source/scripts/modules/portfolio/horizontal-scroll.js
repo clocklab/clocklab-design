@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const removeEvents = event => {
-        frontLayer.removeAttribute('style')
+        frontLayer.classList.remove('active')
         currentLeftPos = event.clientX
         currentScrollLeft = frontLayer.scrollLeft
         
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('mousedown', event => {
         currentLeftPos = event.clientX
         currentScrollLeft = frontLayer.scrollLeft
-        frontLayer.style.cursor = '-webkit-grabbing'
+        frontLayer.classList.add('active')
 
         document.addEventListener('mousemove', moveObjects)
         document.addEventListener('mouseup', removeEvents)

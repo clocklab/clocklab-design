@@ -269,6 +269,13 @@
         background: $black;
     }
 
+    &.screen-block {
+
+        &.current {
+            display: block;
+        }
+    }
+
     &.opened {
 
         .front-layer {
