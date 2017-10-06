@@ -3,12 +3,14 @@
 // ----- table -----
 .table .container {
 	max-width: 700px;
-	
-	// ----- lines -----
-    .lines div {
-        &:nth-of-type(1) { left: 0; }
-        &:nth-of-type(2) { left: px(620); }
-        &:nth-of-type(3) { right: px(620); }
-        &:nth-of-type(4) { right: 0; }
-    }
+	.item {
+		span {
+			font-size: px(40);
+			line-height: 1.4;
+		}
+		& + .title .word span {
+			font-size: px(70);
+			letter-spacing: 1px;
+		}
+	}
 }
