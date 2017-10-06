@@ -1,7 +1,6 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    font-family: $raleway;
-    font-weight: $regular;
+    font-family: $Raleway-Regular;
     background: $white;
     overflow: hidden;
     
@@ -107,130 +106,297 @@
     &.current-back { animation: none; }
     &.previous-back { animation-play-state: running; }
 
-    // ----- letter c -----
-    .big-background-letter {
-        top: 37vh;
-        right: inherit;
-        font-size: 75vh;
-        color: rgba(68,68,68,.1);
-        span::before  { content: 'c'; }
-    }
-    
-    // ----- open-form -----
-    .open-form {
-        left: 2px;
-        bottom: 11vh;
-        color: $white;
-        width: px(334);
-        height: px(90);
-        display: block;
-        background: $blue;
-        font-size: px(32);
-        font-weight: $bold;
-        position: absolute;
-        font-family: $roboto;
-        text-transform: uppercase;
-        .active { display: none; }
-        span {
-            letter-spacing: 1px;
-            position: relative;
-            z-index: 2;
-        }
-        &:before {
-            content: '';
+    // ----- front-layer -----
+    .front-layer {
+        z-index: 2;
+        overflow: hidden;
+        position: relative;
+        background: $white;
+        transform-origin: 0 50%;
+        transform-style: preserve-3d;
+        transition: transform $time * 2;
+        &:after {
+            top: 0;
+            left: 0;
             opacity: 0;
-            top: px(24);
             width: 100%;
+            content: '';
+            z-index: -1;
             height: 100%;
-            left: px(-24);
             display: block;
             position: absolute;
-            background: $darkGray;
-            transition: top $time, left $time, opacity $time;
+            transition: opacity $time;
+            background: rgba(0,0,0,.4);
         }
-        &:hover {
-            color: $white;
-            .active {
+
+        // ----- big-background-letter -----
+        .big-background-letter {
+            top: 37vh;
+            right: inherit;
+            font-size: 75vh;
+            color: rgba(68,68,68,.1);
+            span::before  { content: 'c'; }
+        }
+
+        // ----- questions -----
+        .questions {
+            position: absolute;
+            margin: 0 auto;
+            bottom: 11vh;
+            width: 100%;
+            z-index: 3;
+            .open-form {
+                position: relative;
                 display: block;
-                position: absolute;
-                height: 100%;
-                width: 100%;
-                top: 13px;
-                left: 0;
+                margin: 0 auto;
+                width: px(420);
+                height: px(110);
+                color: $white;
+                font-size: px(32);
+                background: $blue;
+                font-family: $Roboto-Bold;
+                text-transform: uppercase;
+                span {
+                    position: relative;
+                    letter-spacing: 1px;
+                    z-index: 2;
+                }
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: px(24);
+                    left: px(-24);
+                    width: 100%;
+                    height: 100%;
+                    background: $darkGray;
+                    content: '';
+                    opacity: 0;
+                    transition: top $time, left $time, opacity $time;
+                }
+                &:hover:before {
+                    top: px(10);
+                    left: px(-10);
+                    opacity: 1;
+                }
             }
-            &:before {
-                left: px(-10);
-                top: px(10);
-                opacity: 1;
+        }
+        
+        // ----- table -----
+        .table .container {
+            height: 100vh;
+            display: flex;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            max-width: 1170px;
+            position: relative;
+
+            // ----- item -----
+            .item {
+                width: 33.33%;
+                position: relative;
+                .line {
+                    top: 0;
+                    left: 0;
+                    width: 1px;
+                    position: absolute;
+                    background: $darkWhite;
+                    &.right {
+                        right: 0;
+                        left: inherit;
+                    }
+                }
+                & + .title {
+                    display: block;
+                    margin-top: 21vh;
+                    position: absolute;
+                    font-family: $Raleway-ExtraBold;
+                    .word {
+                        &:after { display: none; }
+                        &:nth-of-type(1) {
+                            margin-bottom: 5px;
+                            span span { display: inline-grid; }
+                        }
+                        span {
+                            color: $dark;
+                            font-size: px(88);
+                            text-transform: initial;
+                            span { color: $blue; }
+                        }
+                    }
+                }
+                span {
+                    color: $dark;
+                    font-size: px(48);
+                    line-height: 26px;
+                    padding-top: 51vh;
+                    padding-right: px(90);
+                    font-family: $Raleway-Bold;
+                    display: -webkit-inline-box;
+                }
+                &:before {
+                    top: 45vh;
+                    left: -30px;
+                    color: $gray;
+                    font-size: px(36);
+                    position: absolute;
+                    transform: rotate(-90deg);
+                    font-family: $Roboto-Regular;
+                }
+                &:nth-of-type(1)::before { content: '01'; }
+                &:nth-of-type(2)::before { content: '02'; }
+                &:nth-of-type(3)::before { content: '03'; }
             }
         }
     }
 
-    // ----- table -----
-    .table .container {
-        height: 100vh;
+    // ----- back-layer -----
+    .back-layer {
+        top: 0;
+        left: 0;
+        z-index: 1;
         display: flex;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        max-width: 1170px;
-        position: relative;
-
-        // ----- item -----
-        .item {
-            width: 33.33%;
+        padding-right: px(140);
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        background: $black;
+        height: 100vh;
+        width: 100%;
+        
+        // ----- form -----
+        form {
+            font-family: $Roboto-Regular;
+            padding-top: px(250);
             position: relative;
-            .line {
+            height: px(1200);
+            width: px(830);
+            color: $white;
+            .close-form {
                 top: 0;
-                left: 0;
-                width: 1px;
+                right: 0;
+                width: px(56);
+                height: px(56);
                 position: absolute;
-                background: $darkWhite;
-                &.right {
-                    right: 0;
-                    left: inherit;
+                background: transparent;
+                &:before, &:after {
+                    position: absolute;
+                    display: block;
+                    width: px(40);
+                    height: 2px;
+                    top: 50%;
+                    left: 0;
+                    content: '';
+                    background: $gray;
+                    transition: background $time;
                 }
+                &:before { transform: rotate(45deg); }
+                &:after { transform: rotate(-45deg); }
+                &:hover { &:before, &:after { background: $white; } }
             }
-            & + .title {
+            h3 {
+                font-size: px(60);
+                margin-bottom: px(220);
+                text-transform: uppercase;
+                font-family: $Raleway-ExtraBold
+            }
+            label {
+                width: 100%;
                 display: block;
-                margin-top: 21vh;
-                position: absolute;
-                font-family: $raleway;
-                font-weight: $extra-bold;
-                .word {
-                    &:after { display: none; }
-                    &:nth-of-type(1) {
-                        margin-bottom: 5px;
-                        span span { display: inline-grid; }
-                    }
-                    span {
-                        color: $dark;
-                        font-size: px(88);
-                        text-transform: initial;
-                        span { color: $blue; }
+                padding: 0 px(20);
+                position: relative;
+                margin-bottom: px(60);
+                border-bottom: 1px solid $gray;
+                &:nth-of-type(2) { margin-bottom: px(150); }
+                span {
+                    top: 0;
+                    left: px(20);
+                    height: 100%;
+                    color: $gray;
+                    display: block;
+                    font-size: px(30);
+                    line-height: 100%;
+                    position: absolute;
+                    letter-spacing: 1px;
+                    margin-bottom: px(16);
+                    text-transform: uppercase;
+                    font-family: $Roboto-Regular;
+                    transition: top $timeHalf, color $timeHalf, font-size $timeHalf;
+                }
+                input {
+                    background: transparent;
+                    position: relative;
+                    padding: px(5) 0;
+                    display: block;
+                    height: px(40);
+                    z-index: 2;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    color: $white;
+                    font-size: px(32);
+                    &:focus, &.filled {
+                        & ~ .tick { width: 100%; }
+                        & ~ span {
+                            top: px(-30);
+                            color: $white;
+                            font-size: px(24);
+                        }
                     }
                 }
+                .tick {
+                    left: 0;
+                    width: 0;
+                    top: 100%;
+                    height: 1px;
+                    display: block;
+                    position: absolute;
+                    background: $white;
+                    transition: width $timeHalf;
+                }
             }
-            span {
-                color: $dark;
-                font-size: px(48);
-                line-height: 26px;
-                padding-top: 51vh;
-                font-weight: $bold;
-                padding-right: px(90);
-                display: -webkit-inline-box;
+            .send {
+                margin: px(90) 0 0 auto;
+                position: relative;
+                display: block;
+                width: px(340);
+                height: px(90);
+                color: $white;
+                font-size: px(28);
+                background: $blue;
+                text-transform: uppercase;
+                font-family: $Roboto-Medium;
+                span {
+                    z-index: 2;
+                    position: relative;
+                    letter-spacing: 1px;
+                }
+                &:before {
+                    transition: top $time, left $time, opacity $time;
+                    background: $darkGray;
+                    position: absolute;
+                    display: block;
+                    left: px(-24);
+                    height: 100%;
+                    width: 100%;
+                    top: px(24);
+                    opacity: 0;
+                    content: '';
+                }
+                &:hover:before {
+                    top: px(10);
+                    left: px(-10);
+                    opacity: 1;
+                }
             }
-            &:before {
-                top: 45vh;
-                left: -30px;
-                color: $gray;
-                font-size: px(36);
-                position: absolute;
-                font-family: $roboto;
-                transform: rotate(-90deg);
-            }
-            &:nth-of-type(1)::before { content: '01'; }
-            &:nth-of-type(2)::before { content: '02'; }
-            &:nth-of-type(3)::before { content: '03'; }
+        }
+    }
+
+    // ----- opened -----
+    &.opened .front-layer {
+        transform: rotateY(15deg) scaleX(.85);
+        &:after {
+            z-index: 9999;
+            opacity: 1;
         }
     }
 }

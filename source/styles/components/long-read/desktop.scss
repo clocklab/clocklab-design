@@ -65,7 +65,7 @@
         margin: 0 auto;
         padding: px(300) px(260) px(160) px(370);
         color: $darkGray;
-        font-family: $roboto;
+        font-family: $Roboto-Regular;
         opacity: 0;
     }
     
@@ -160,7 +160,7 @@
     
     h3 {
         font-size: px(96);
-        font-weight: 700;
+        font-family: $Raleway-Bold;
         line-height: px(110);
     
         span {
@@ -170,7 +170,7 @@
     
     h4 {
         font-size: px(36);
-        font-weight: 700;
+        font-family: $Raleway-Bold;
 
         &.big {
             margin-bottom: px(40);
@@ -184,11 +184,11 @@
         line-height: 1.5;
         
         &.italic {
-            font-weight: 400;
+            font-family: $Raleway-Regular;
             font-size: px(48);
             font-style: italic;
             span {
-                font-weight: 400;
+                font-family: $Raleway-Regular;
                 color: $blue;
             }
         }
@@ -224,7 +224,7 @@
         }
 
         span {
-            font-weight: 700;
+            font-family: $Raleway-Bold;
         }
     }
     
@@ -286,9 +286,8 @@
                     top: px(-110);
                     left: px(-80);
                     color: $darkGray;
-                    font-family: $raleway;
+                    font-family: $Raleway-ExtraBold;
                     font-size: px(96);
-                    font-weight: 800;
                 }
 
                 &:after {
@@ -354,11 +353,11 @@
             h4 {
                 margin-bottom: px(40);
                 font-size: px(36);
-                font-weight: 700;
+                font-family: $Raleway-Bold;
             }
 
             span {
-                font-weight: 700;
+                font-family: $Raleway-Bold;
             }
         }
 
@@ -399,14 +398,14 @@
     .jumping-button {
         margin: px(330) auto 0;
         color: $darkGray;
-        font-family: $roboto;
+        font-family: $Roboto-Bold;
         font-size: px(28);
-        font-weight: 700;
         text-align: center;
 
         span {
             font-size: px(28);
-            font-weight: 700;
+            font-family: $Raleway-Bold;
+            
         }
     
         &:before {

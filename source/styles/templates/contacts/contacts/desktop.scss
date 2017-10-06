@@ -1,29 +1,36 @@
 & {
-    font-family: $raleway;
-    font-weight: $regular;
+    font-family: $Raleway-Regular;
     overflow: hidden;
     z-index: 0;
     
     // ----- animation -----
     animation: fadeIn $time * 3 both;
     
+    // ----- big-background-letter -----
+    .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+    
     // ----- navigation-elements -----
-    .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+    .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+    .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
 
     // ----- social -----
     .social {
-        .facebook, .instagram { animation-delay: $time * 3; } 
-        .jumping-button { animation-delay: $time * 6; }
+        .instagram {  animation: social $time * 3 $time * 3 both; }
+        .facebook { animation: socialReverse $time * 3 $time * 3 both; }
+        .jumping-button { animation: FadeInRight $time * 3 $time * 3 both; }
     }
-
-    // ----- big-background-letter -----
-    .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
 
     // ----- contacts-info -----
     .contacts-info {
         li:nth-of-type(1) { animation: fadeInUp $time * 3 $time * 3 both; }
         li:nth-of-type(2) { animation: fadeInUp $time * 3 $time * 4 both; }
         li:nth-of-type(3) { animation: fadeInUp $time * 3 $time * 5 both; }
+    }
+    
+    // ----- small-gray-lines -----
+    .small-gray-lines .line {
+        animation: lineUp 1s $time * 4 both;
+        &.down { animation-name: lineDown; }
     }
 
     // ----- title -----
@@ -37,35 +44,7 @@
         }
     }
     
-    // ----- page-layer -----
-    .page-layer {
-        top: 0;
-        left: 0;
-        &.back-layer {
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            overflow: hidden;
-            &:before, &:after {
-                position: absolute;
-                display: block;
-                height: 100vh;
-                content: '';
-                width: 50vw;
-                top: 0;
-            }
-            &:before {
-                left: 0;
-                animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
-            }
-            &:after {
-                right: 0;
-                animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
-            }
-        }
-    }
-    
-    // ----- letter c -----
+    // ----- bi-background-letter -----
     .big-background-letter {
         top: 4vh;
         z-index: 4;
@@ -73,36 +52,6 @@
         font-size: 120vh;
         color: rgba(68,68,68,.3);
         span::before  { content: 'c'; }
-    }
-    
-    // ----- page-layer -----
-    .page-layer {
-        top: 0;
-        left: 0;
-        &.back-layer {
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            &:before,
-            &:after {
-                display: block;
-                position: absolute;
-                top: 0;
-                width: 50vw;
-                height: 100vh;
-                content: '';
-                background: $background;
-            }
-            &:before {
-                left: 0;
-                animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
-            }
-            &:after {
-                right: 0;
-                animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
-            }
-        }
     }
     
     // ----- title -----
@@ -125,7 +74,7 @@
             color: $white;
             font-size: px(24);
             display: inline-block;
-            // @include inline-block;
+            font-family: $Roboto-Regular;
             &:nth-of-type(1) { margin-right: px(290); }
             &:nth-of-type(2) { margin-right: px(605); }
             &:nth-of-type(3) a {

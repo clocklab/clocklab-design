@@ -7,7 +7,7 @@
     width: px(240);
     height: px(240);
     background: transparent;
-    font-family: $roboto;
+    font-family: $Roboto-Regular;
     transition: background $time * 2 1s, width 0s $time * 2 + 1s, height 0s $time * 2 + 1s;
 
     &__item {
@@ -50,7 +50,7 @@
         }
 
         .symbol {
-            font-family: 'Raleway';
+            font-family: $Raleway-Regular;
         }
 
         .name {
