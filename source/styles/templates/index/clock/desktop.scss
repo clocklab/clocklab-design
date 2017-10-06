@@ -6,6 +6,7 @@
     overflow: hidden;
     
     // ----- animation fade -----
+    &.first-slide { animation: fadeIn $time * 3 0s both; }
     &.current, &.current-back,
     &.previous, &.previous-back {
         animation: fadeIn $time * 3 0s both;
@@ -21,7 +22,7 @@
         // ----- social -----
         .social {
             .instagram {  animation: social $time * 3 $time * 3 both; }
-            .facebook { animation: socialReversed $time * 3 $time * 3 both; }
+            .facebook { animation: socialReverse $time * 3 $time * 3 both; }
             .jumping-button { animation: FadeInRight $time * 3 $time * 3 both; }
         }
         
@@ -74,6 +75,7 @@
                 span {
                     color: $blue;
                     font-size: px(36);
+                    letter-spacing: 1px;
                     font-weight: $medium;
                     font-family: $roboto;
                 }
@@ -158,10 +160,4 @@
     .minutes-container { transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44); }
     .seconds-container { transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44); }
     @keyframes rotate { 100% { transform: rotateZ(360deg); } }
-
-
-    // YEVHEN ADDED THIS
-    &.first-slide {
-        animation: fadeIn $time * 3 0s both;
-    }
 }

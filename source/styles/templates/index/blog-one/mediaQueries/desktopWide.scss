@@ -1,4 +1,13 @@
 @import '../desktop';
 
 // ----- title -----
-// .title { left: px(1790); }
+.title {
+	left: px(2100);
+	.word {
+		span { font-size: px(60); }
+		&:after { height: px(35); }
+	}
+}
+
+// ----- service-info -----
+.service-info { right: px(-40); }

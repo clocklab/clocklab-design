@@ -196,13 +196,13 @@
     .service-info {
         position: absolute;
         transform: rotate(90deg);
-        width: px(500);
+        width: px(400);
         right: px(180);
         z-index: 2;
         top: 26vh;
         p {
             font-weight: $medium;
-            font-size: px(22);
+            font-size: px(24);
             line-height: 1.4;
         }
     }

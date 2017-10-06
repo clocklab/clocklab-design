@@ -20,7 +20,7 @@
         // ----- social -----
         .social {
             .instagram {  animation: social $time * 3 $time * 3 both; }
-            .facebook { animation: socialReversed $time * 3 $time * 3 both; }
+            .facebook { animation: socialReverse $time * 3 $time * 3 both; }
             .jumping-button { animation: FadeInRight $time * 3 $time * 3 both; }
         }
         
@@ -28,11 +28,14 @@
         .services-line { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
     
         // ----- service-schedule -----
-        .services-schedule .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+        .services-schedule .container .item {
+            &:before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+            &:last-of-type::after { animation: halfDown $time * 2 linear $time * 4 both; }
+        }
 
         // ----- title -----
         .title {
-            p {
+            p, ul {
                 animation: fadeInUp $time * 2 $time * 7 linear;
                 animation-fill-mode: forwards;
             }
@@ -47,7 +50,6 @@
                 }
             }
             .word {
-                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
                 &:nth-of-type(1) span {
                     animation: titleWord $time * 2 $time * 5 linear;
                     animation-fill-mode: forwards;
@@ -75,7 +77,7 @@
         // ----- social -----
         .social {
             .instagram {  animation: social $time * 3 $time * 3 both; }
-            .facebook { animation: socialReversed $time * 3 $time * 3 both; }
+            .facebook { animation: socialReverse $time * 3 $time * 3 both; }
             .jumping-button { animation: FadeInRight $time * 3 $time * 3 both; }
         }
         
@@ -83,11 +85,14 @@
         .services-line { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
 
         // ----- service-schedule -----
-        .services-schedule .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+        .services-schedule .container .item {
+            &:before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+            &:last-of-type::after { animation: halfDown $time * 2 linear $time * 4 both; }
+        }
 
         // ----- title -----
         .title {
-            p {
+            p, ul {
                 animation: fadeInUp $time * 2 $time * 7 linear;
                 animation-fill-mode: forwards;
             }
@@ -102,7 +107,6 @@
                 }
             }
             .word {
-                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
                 &:nth-of-type(1) span {
                     animation: titleWord $time * 2 $time * 5 linear;
                     animation-fill-mode: forwards;
@@ -133,14 +137,13 @@
             display: flex;
             margin: 0 auto;
             flex-wrap: wrap;
-            max-width: 1170px;
+            max-width: 1440px;
             .item {
                 width: 33.33%;
                 position: relative;
-                &:nth-of-type(4) .services-line,
-                &:nth-of-type(5) .services-line,
-                &:nth-of-type(6) .services-line
-                { display: none; }
+                &:last-of-type::after { display: block; }
+                &:nth-of-type(4) .services-line, &:nth-of-type(5) .services-line,
+                &:nth-of-type(6) .services-line { display: none; }
                 &.up {
                     margin-bottom: 18vh;
                     .services-line {
@@ -158,27 +161,54 @@
                 }
                 .title {
                     width: auto;
+                    p, a {
+                        font-family: $roboto;
+                        font-size: px(32);
+                    }
+                    ul {
+                        visibility: hidden;
+                        margin-top: px(80);
+                        li.word {
+                            width: fit-content;
+                            margin-bottom: px(30);
+                            a { color: $white; }
+                            &:after {
+                                height: px(30);
+                                z-index: -1;
+                            }
+                        }
+                    }
                     p {
-                        color: $white;
+                        color: $gray;
                         line-height: 1.5;
-                        font-size: px(24);
                         padding: px(48) px(130) 0 0;
                     }
-                    span.name { top: -11vh; }
+                    span.name {
+                        top: -11vh;
+                        position: absolute;
+                    }
+                    .both:hover .word::after { visibility: visible; }
                     .word {
                         width: min-content;
-                        &:after { top: 0; }
+                        &:hover::after { visibility: visible; }
+                        &:after { visibility: hidden; }
                         span {
                             line-height: 26px;
                             font-size: px(50);
+                            cursor: pointer;
                         }
                     }
+                }
+                &:hover::before {
+                    color: $blue;
+                    transition: $time;
                 }
                 &:before {
                     top: -28px;
                     left: -25px;
                     color: #666;
                     font-size: px(36);
+                    transition: $time;
                     position: absolute;
                     font-family: $roboto;
                     transform: rotate(-90deg);

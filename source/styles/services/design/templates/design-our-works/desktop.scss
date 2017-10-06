@@ -1,0 +1,384 @@
+& {  
+    height: px(2500);
+    position: relative;
+    background: $white;
+    .front-layer, .back-layer { height: px(1920); }
+
+    // ----- front-layer -----
+    .front-layer {
+        z-index: 2;
+        overflow: hidden;
+        position: relative;
+        background: $white;
+        transform-origin: 0 50%;
+        transform-style: preserve-3d;
+        transition: transform $time * 2;
+        &:after {
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            content: '';
+            z-index: -1;
+            height: 100%;
+            display: block;
+            position: absolute;
+            transition: opacity $time;
+            background: rgba(0,0,0,.4);
+        }
+        
+        // ----- small-gray-lines -----
+        .small-gray-lines {
+            z-index: 1;
+            .line {
+                opacity: .2;
+                background: gray;
+                visibility: visible;
+                &.up { transform: rotate(-65deg) translate3d(100%,0,0); }
+                &.down { transform: rotate(-65deg) translate3d(-100%,0,0); }
+                &.up, &.down { animation: none; }
+            }
+        }
+        
+        // ----- big-background-letter ------
+        .big-background-letter {
+            top: 15vh;
+            width: 100%;
+            right: initial;
+            text-align: center;
+            font-size: px(1500);
+            font-family: $raleway;
+            font-weight: $extra-bold;
+            text-transform: uppercase;
+            span:before { content: 'c'; }
+        }
+
+        // ----- container -----
+        .container {
+            padding-top: px(80);
+            position: relative;
+            margin: 0 auto;
+            display: flex;
+            z-index: 3;
+            width: 85%;
+        }
+        h2 {
+            color: $darkGray;
+            font-size: px(96);
+            font-weight: $bold;
+            align-self: center;
+            margin-right: px(180);
+            font-family: $raleway;
+            transform: translateY(px(70));
+            span {
+                display: block;
+                color: $blue;
+            }
+        }
+
+        // ----- works -----
+        .works {
+            width: px(1800);
+            height: px(1400);
+            position: relative;
+        }
+        .work {
+            position: absolute;
+            span {
+                display: block;
+                color: $darkGray;
+                font-size: px(40);
+                margin-top: px(20);
+                font-weight: $bold;
+                letter-spacing: .5px;
+                font-family: $raleway;
+                text-transform: uppercase;
+            }
+            img {
+                object-fit: cover;
+                transition: transform $timeHalf;
+                &:hover { transform: scale(1.05); }
+            }
+
+            // ----- eurovision -----
+            &--eurovision {
+                left: 0;
+                top: 0;
+                img {
+                    width: px(500);
+                    height: px(820);
+                }
+            }
+            
+            // ----- alta -----
+            &--alta {
+                top: px(40);
+                right: 0;
+                img {
+                    width: px(820);
+                    height: px(500);
+                }
+            }
+
+            // ----- audi -----
+            &--audi {
+                bottom: 0;
+                left: px(360);
+                img {
+                    width: px(710);
+                    height: px(400);
+                }
+            }
+
+            // ----- vinograd -----
+            &--vinograd {
+                bottom: px(140);
+                right: px(70);
+                img {
+                    width: px(490);
+                    height: px(490);
+                }
+            }
+        }
+        // ----- crossed-button -----
+        .crossed-button {
+            position: relative;
+            margin-left: px(90);
+            align-self: flex-end;
+            font-family: $roboto;
+            span {
+                font-size: px(32);
+                &:after { content: 'Посмотреть все работы'; }
+            }
+        }
+    }
+    
+    // ----- back-layer -----
+    .back-layer {
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        position: absolute;
+        background: $black;
+        align-items: center;
+        padding-right: px(140);
+        justify-content: flex-end;
+        
+        // ----- form -----
+        form {
+            font-family: $roboto;
+            padding-top: px(250);
+            position: relative;
+            height: px(1200);
+            width: px(830);
+            color: $white;
+            .close-form {
+                top: 0;
+                right: 0;
+                width: px(56);
+                height: px(56);
+                position: absolute;
+                background: transparent;
+                &:before, &:after {
+                    position: absolute;
+                    display: block;
+                    width: px(40);
+                    height: 2px;
+                    top: 50%;
+                    left: 0;
+                    content: '';
+                    background: $gray;
+                    transition: background $time;
+                }
+                &:before { transform: rotate(45deg); }
+                &:after { transform: rotate(-45deg); }
+                &:hover { &:before, &:after { background: $white; } }
+            }
+            h3 {
+                font-size: px(60);
+                font-family: $raleway;
+                margin-bottom: px(220);
+                font-weight: $extra-bold;
+                text-transform: uppercase;
+            }
+            label {
+                width: 100%;
+                display: block;
+                padding: 0 px(20);
+                position: relative;
+                margin-bottom: px(60);
+                border-bottom: 1px solid $gray;
+                &:nth-of-type(2) { margin-bottom: px(150); }
+                span {
+                    top: 0;
+                    left: px(20);
+                    height: 100%;
+                    color: $gray;
+                    display: block;
+                    font-size: px(30);
+                    line-height: 100%;
+                    position: absolute;
+                    letter-spacing: 1px;
+                    font-family: $roboto;
+                    margin-bottom: px(16);
+                    text-transform: uppercase;
+                    transition: top $timeHalf, color $timeHalf, font-size $timeHalf;
+                }
+                input {
+                    background: transparent;
+                    position: relative;
+                    padding: px(5) 0;
+                    display: block;
+                    height: px(40);
+                    z-index: 2;
+                    width: 100%;
+                    border: none;
+                    outline: none;
+                    color: $white;
+                    font-size: px(32);
+                    &:focus, &.filled {
+                        & ~ .tick { width: 100%; }
+                        & ~ span {
+                            top: px(-30);
+                            color: $white;
+                            font-size: px(24);
+                        }
+                    }
+                }
+                .tick {
+                    left: 0;
+                    width: 0;
+                    top: 100%;
+                    height: 1px;
+                    display: block;
+                    position: absolute;
+                    background: $white;
+                    transition: width $timeHalf;
+                }
+            }
+            .send {
+                margin: px(90) 0 0 auto;
+                position: relative;
+                display: block;
+                width: px(340);
+                height: px(90);
+                color: $white;
+                font-weight: 500;
+                font-size: px(28);
+                background: $blue;
+                font-family: $roboto;
+                text-transform: uppercase;
+                span {
+                    z-index: 2;
+                    position: relative;
+                    letter-spacing: 1px;
+                }
+                &:before {
+                    transition: top $time, left $time, opacity $time;
+                    background: $darkGray;
+                    position: absolute;
+                    display: block;
+                    left: px(-24);
+                    height: 100%;
+                    width: 100%;
+                    top: px(24);
+                    opacity: 0;
+                    content: '';
+                }
+                &:hover:before {
+                    top: px(10);
+                    left: px(-10);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    // ----- discuss -----
+    .discuss {
+        z-index: 3;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+        margin: px(250) auto 0;
+        width: px(1960);
+        left: px(-150);
+        .offer { width: px(1050); }
+        h3 {
+            color: $darkGray;
+            font-size: px(72);
+            margin-bottom: px(24);
+            font-family: $raleway;
+            font-weight: $extra-bold;
+            text-transform: uppercase;
+        }
+        p {
+            padding-right: px(150);
+            font-family: $roboto;
+            font-size: px(28);
+            line-height: 1.4;
+            color: $gray;
+        }
+        .open-form {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            width: px(420);
+            height: px(110);
+            color: $white;
+            font-size: px(32);
+            background: $blue;
+            font-weight: $bold;
+            font-family: $roboto;
+            text-transform: uppercase;
+            span {
+                position: relative;
+                letter-spacing: 1px;
+                z-index: 2;
+            }
+            &:before {
+                display: block;
+                position: absolute;
+                top: px(24);
+                left: px(-24);
+                width: 100%;
+                height: 100%;
+                background: $darkGray;
+                content: '';
+                opacity: 0;
+                transition: top $time, left $time, opacity $time;
+            }
+            &:hover:before {
+                top: px(10);
+                left: px(-10);
+                opacity: 1;
+            }
+        }
+    }
+
+    // ----- dark -----
+    &--dark .front-layer {
+        background: $lightBlack;
+        h2 { color: $white; }
+        .work span { color: $white; }
+        .crossed-button {
+            span {
+                color: $white;
+                &:before { background: $white; }
+            }
+            .arrow { .st0, .st1 { stroke: $white; } }
+        }
+    }
+    
+    // ----- opened -----
+    &.opened .front-layer {
+        transform: rotateY(15deg) scaleX(.85);
+        &:after {
+            z-index: 9999;
+            opacity: 1;
+        }
+    }
+}

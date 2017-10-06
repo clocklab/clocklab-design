@@ -1,0 +1,225 @@
+& {  
+    font-weight: $regular;
+    font-family: $roboto;
+    position: relative;
+    overflow: hidden;
+    
+    // ----- article -----
+    article { width: 112%; }
+    p {
+        line-height: 1.4;
+        color: $darkGray;
+        font-size: px(32);
+        span { font-weight: $bold; }
+        &.percent { width: 48%; }
+        &.big {
+            font-size: px(48);
+            margin-bottom: px(100);
+            padding: px(56) 0 px(72);
+            border-top: 1px solid #DBDBDB;
+            border-bottom: 1px solid #DBDBDB;
+        }
+        &.bold {
+            line-height: 1.3;
+            font-size: px(36);
+            font-weight: $bold;
+            margin: px(70) 0 px(100);
+        }
+        &.half {
+            column-count: 2;
+            column-gap: px(200);
+        }
+    }
+
+    // ----- animation -----
+    animation: fadeIn $time * 3 both;
+    
+    // ----- big-bg-letters -----
+    .big-background-letter, .big-bg-letter-c { animation: fadeIn $time * 3 $time * 3 both; }
+    
+    // ----- navigation-elements -----
+    .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+    
+    // ----- big-bg-letter-c -----
+    .big-bg-letter-c {
+        position: absolute;
+        text-transform: uppercase;
+        font-family: $raleway;
+        font-weight: 800;
+        left: px(-500);
+        z-index: 2;
+        top: 35vh;
+        .big-background-letter {
+            span::before { content: 'c'; }
+            font-size: 100vh;
+            bottom: initial;
+            right: initial;
+            left: px(1060);
+            top: 62vh;
+        }
+    }
+
+    // ----- container -----
+    .container {
+        padding-bottom: px(320);
+        position: relative;
+        margin: 0 auto;
+        width: 81%;
+        
+        // ----- images -----
+        .images {
+            position: relative;
+            img {
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+        }
+
+        // ----- info -----
+        .info {
+            padding-left: px(300);
+            padding-top: px(70);
+            position: relative;
+            right: px(200);
+            top: px(-94);
+            width: 60%;
+            .white-bg {
+                background: $white;
+                position: absolute;
+                height: px(200);
+                width: 100%;
+                left: 0;
+                top: 0;
+            }
+            .sticker span::before { content: 'Услуги дизайна'; }
+            .new-title {
+                font-family: $raleway;
+                margin-bottom: px(220);
+                white-space: nowrap;
+                margin-top: px(80);
+                .text-container {
+                    display: inline-block;
+                    margin-bottom: px(10);
+                    font-weight: 800;
+                    span {
+                        font-size: px(120);
+                        line-height: px(104);
+                    }
+                }
+            }
+        }
+    
+        // ----- header -----
+        .header {
+            padding-top: px(240);
+            position: relative;
+            max-height: 1100px;
+            min-height: 650px;
+            height: 89vh;
+            .image-container {
+                position: relative;
+                height: 100%;
+                z-index: 2;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .big-background-letter {
+                font-family: $raleway;
+                color: $darkGray;
+                right: inherit;
+                top: px(920);
+                left: px(-40);
+                font-weight: 800;
+                font-size: px(520);
+                text-transform: uppercase;
+                span::before { content: 'o'; }
+            }
+        }
+
+        // ----- about ---
+        .about {
+            z-index: 2;
+            position: relative;
+            .description {
+                width: 40%;
+                z-index: 1;
+                padding: px(250) px(150) 0 0;
+                p {
+                    border-bottom: 1px solid #DBDBDB;
+                    padding-bottom: px(60);
+                    font-style: italic;
+                    font-size: px(36);
+                    font-weight: 300;
+                    line-height: 1.4;
+                    color: $gray;
+                }
+            }
+        }
+
+        // ----- cases -----
+        .cases {
+            .images { width: 40%; }
+            .list {
+                width: 60%;
+                h3 {
+                    margin: px(165) 0 px(110) px(88);
+                    font-weight: $bold;
+                    font-size: px(92);
+                    line-height: 1.3;
+                    span {
+                        display: -webkit-inline-box;
+                        color: $blue;
+                    }
+                }
+                p { padding-left: px(85); }
+                li {
+                    &:last-of-type { margin-bottom: 0; }
+                    margin-bottom: px(72);
+                    padding-left: px(85);
+                    position: relative;
+                    font-size: px(32);
+                    line-height: 1.4;
+                    span {
+                        margin-bottom: px(-25);
+                        font-weight: $bold;
+                        display: block;
+                    }
+                    &:before {
+                        top: 7px;
+                        left: 7px;
+                        width: 7px;
+                        height: 7px;
+                        display: block;
+                        background: $blue;
+                        border-radius: 50%;
+                        position: absolute;
+                        content: '';
+                    }
+                }
+            }
+        }
+
+        // ----- about and cases -----
+        .about, .cases {
+            justify-content: space-between;
+            align-items: flex-start;
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    // ----- ui-ux -----
+    &.ui-ux {
+        .images { top: px(-570); }
+        .cases h3 {
+            margin: px(165) 0 px(110) px(76);
+            line-height: px(80);
+            font-size: px(92);
+            font-weight: $bold;
+            span { color: $blue; }
+        }
+    }
+}

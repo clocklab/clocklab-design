@@ -9,7 +9,8 @@
 // ----- title -----
 .title {
 	left: px(200);
-	bottom: px(175);
+	bottom: px(300);
+	.word span { font-size: px(65); }
 }
 
 // ----- image-block -----

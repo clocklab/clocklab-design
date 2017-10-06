@@ -1,97 +1,69 @@
 & {
-    
     display: flex;
     align-items: center;
     position: absolute;
     bottom: px(82);
     left: px(90);
     z-index: 2;
-
-
-    .instagram,
-    .facebook {
-        display: flex;
+    .instagram, .facebook {
+        border: 1px solid $white;
         justify-content: center;
         align-items: center;
         position: relative;
+        display: flex;
         width: px(60);
         height: px(60);
-        border: 1px solid $white;
-
         svg {
             width: 60%;
             z-index: 2;
         }
-
         &:before {
-            display: block;
-            position: absolute;
+            content: '';
+            opacity: 0;
             top: 10px;
             right: 10px;
             width: 100%;
             height: 100%;
+            display: block;
             background: $blue;
-            content: '';
-            opacity: 0;
+            position: absolute;
             transition: top $time, right $time, opacity $time;
         }
-
-        &:hover {
-        
-            &:before {
-                top: 3px;
-                right: 3px;
-                opacity: 1;
-            }
+        &:hover::before {
+            top: 3px;
+            right: 3px;
+            opacity: 1;
         }
     }
-
     .instagram {
         top: px(-60);
         left: px(2);
-
         .big-circle {
             fill: none;
             stroke: $white;
             stroke-width: 2;
             stroke-miterlimit: 10;
         }
-    
-        .small-circle {
-            fill: $white;
-        }
-
+        .small-circle { fill: $white; }
         svg {
             width: 100%;
             height: 100%;
         }
     }
-
     .facebook {
-
-        path {
-            fill: $white
-        }
-        
-        svg {
-            width: 55%;
-        }
+        path { fill: $white }
+        svg { width: 55%; }
     }
-
     .jumping-button {
         margin-left: px(230);
         font-size: 0;
-        
-
         a {
             text-transform: lowercase;
-
             span {
                 color: $white;
                 font-family: $raleway;
                 font-weight: thin;
             }
-
             &:before {
                 top: 50%;
                 background: $white;

@@ -1,7 +1,10 @@
 @import '../desktop';
 
 // ----- title -----
-.title { margin: 21vh 0 0 px(280); }
+.title {
+    margin: 21vh 0 0 px(325);
+    .word span { font-size: px(60); }
+}
 
 // ----- letter o -----
 .big-background-letter { right: 49vh; }

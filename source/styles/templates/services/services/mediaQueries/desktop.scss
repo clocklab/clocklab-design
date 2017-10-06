@@ -1,1 +1,16 @@
 @import '../desktop';
+
+// ----- services-schedule -----
+.services-schedule {
+	padding-top: 25vh;
+	.container {
+		width: 700px;
+		.item {
+			.title span.name { top: -10vh; }
+			&.up {
+				margin-bottom: 8vh;
+				.services-line { top: -25vh; }
+			}
+		}
+	}
+}

@@ -1,1 +1,7 @@
 @import '../desktop';
+
+// ----- title -----
+.title {
+	margin: 20vh 0 0 px(350);
+	.word span { font-size: px(80); }
+}

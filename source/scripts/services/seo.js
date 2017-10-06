@@ -4,7 +4,7 @@
 
 //= include ./../components/big-background-letter.js
 
-//= include ./../components/slides-changing.js
+//= include ./../components/slides-changing-services.js
 
 //= include ./../components/open-form.js
 
