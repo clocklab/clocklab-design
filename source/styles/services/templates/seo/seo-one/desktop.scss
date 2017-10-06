@@ -16,7 +16,7 @@
         .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
         
         // ----- crossed-button -----
-        .crossed-button { animation: fadeInUp $time * 2 $time * 14 both; }
+        .crossed-button { animation: fadeInUp $time * 2 $time * 16 both; }
         
         // ----- graph -----
         @keyframes fadeInThree {
