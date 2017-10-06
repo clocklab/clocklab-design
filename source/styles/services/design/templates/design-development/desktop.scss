@@ -1,7 +1,6 @@
 & {  
+    font-family: $Roboto-Regular;
     background: $black;
-    font-weight: $regular;
-    font-family: $roboto;
     position: relative;
     overflow: hidden;
     
@@ -13,8 +12,8 @@
         bottom: -25vh;
         left: px(-450);
         font-size: 115vh;
-        font-family: $raleway;
         color: rgba(68,68,68,.2);
+        font-family: $Raleway-Regular;
         span::before { content: 'o'; }
     }
 
@@ -52,9 +51,8 @@
             &-1 {
                 width: 60%;
                 h2 {
-                    font-family: $raleway;
+                    font-family: $Raleway-SemiBold;
                     font-size: px(152);
-                    font-weight: 600;
                     span {
                         color: $blue;
                         display: block;
@@ -92,8 +90,8 @@
             font-size: px(32);
             line-height: 1.4;
             span {
+                font-family: $Raleway-Bold;
                 margin-bottom: px(-25);
-                font-weight: $bold;
                 display: block;
             }
             &:before {
@@ -118,9 +116,8 @@
             &-1 {
                 width: 68%;
                 h2 {
-                    font-family: $raleway;
+                    font-family: $Raleway-SemiBold;
                     font-size: px(152);
-                    font-weight: 600;
                     span {
                         color: $blue;
                         display: block;
@@ -135,7 +132,7 @@
                 .label {
                     font-size: px(400);
                     min-height: px(400);
-                    font-weight: $extra-black;
+                    font-family: $Roboto-Bold;
                     span { color: $blue; }
                     &:last-of-type {
                         text-align: right;

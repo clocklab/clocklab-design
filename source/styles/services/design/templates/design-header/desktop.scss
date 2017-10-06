@@ -1,6 +1,5 @@
 & {  
-    font-weight: $regular;
-    font-family: $roboto;
+    font-family: $Roboto-Regular;
     position: relative;
     overflow: hidden;
     
@@ -39,7 +38,7 @@
         line-height: 1.4;
         color: $darkGray;
         font-size: px(32);
-        span { font-weight: $bold; }
+        span { font-family: $Roboto-Bold; }
         &.percent { width: 48%; }
         &.big {
             font-size: px(48);
@@ -51,8 +50,8 @@
         &.bold {
             line-height: 1.3;
             font-size: px(36);
-            font-weight: $bold;
             margin: px(70) 0 px(100);
+            font-family: $Roboto-Bold;
         }
         &.half {
             column-count: 2;
@@ -64,8 +63,7 @@
     .big-bg-letter-c {
         position: absolute;
         text-transform: uppercase;
-        font-family: $raleway;
-        font-weight: 800;
+        font-family: $Raleway-ExtraBold;
         left: px(-500);
         z-index: 2;
         top: 35vh;
@@ -114,14 +112,14 @@
             }
             .sticker span::before { content: 'Услуги дизайна'; }
             .new-title {
-                font-family: $raleway;
+                font-family: $Raleway-Regular;
                 margin-bottom: px(220);
                 white-space: nowrap;
                 margin-top: px(80);
                 .text-container {
                     display: inline-block;
                     margin-bottom: px(10);
-                    font-weight: 800;
+                    font-family: $Raleway-ExtraBold;
                     span {
                         font-size: px(120);
                         line-height: px(104);
@@ -144,15 +142,15 @@
                 img {
                     width: 100%;
                     height: 100%;
+                    object-fit: cover;
                 }
             }
             .big-background-letter {
-                font-family: $raleway;
+                font-family: $Raleway-ExtraBold;
                 color: $darkGray;
                 right: inherit;
                 top: px(920);
                 left: px(-40);
-                font-weight: 800;
                 font-size: px(520);
                 text-transform: uppercase;
                 span::before { content: 'o'; }
@@ -169,10 +167,10 @@
                 padding: px(250) px(150) 0 0;
                 p {
                     border-bottom: 1px solid #DBDBDB;
+                    font-family: $Roboto-Light;
                     padding-bottom: px(60);
                     font-style: italic;
                     font-size: px(36);
-                    font-weight: 300;
                     line-height: 1.4;
                     color: $gray;
                 }
@@ -186,7 +184,7 @@
                 width: 60%;
                 h3 {
                     margin: px(165) 0 px(110) px(88);
-                    font-weight: $bold;
+                    font-family: $Roboto-Bold;
                     font-size: px(92);
                     line-height: 1.3;
                     span {
@@ -203,8 +201,8 @@
                     font-size: px(32);
                     line-height: 1.4;
                     span {
+                        font-family: $Roboto-Bold;
                         margin-bottom: px(-25);
-                        font-weight: $bold;
                         display: block;
                     }
                     &:before {
@@ -236,9 +234,9 @@
         .images { top: px(-570); }
         .cases h3 {
             margin: px(165) 0 px(110) px(76);
+            font-family: $Roboto-Bold;
             line-height: px(80);
             font-size: px(92);
-            font-weight: $bold;
             span { color: $blue; }
         }
     }

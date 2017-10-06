@@ -1,6 +1,5 @@
 & {  
-    font-weight: $regular;
-    font-family: $roboto;
+    font-family: $Roboto-Regular;
     position: relative;
     overflow: hidden;
     
@@ -28,11 +27,10 @@
             width: 100%;
         }
         h2 {
+            font-family: $Raleway-SemiBold;
+            font-size: px(100);
             color: $darkGray;
             margin-top: 22vh;
-            font-family: $raleway;
-            font-size: px(100);
-            font-weight: 600;
             span {
                 display: -webkit-inline-box;
                 margin-top: px(20);
@@ -51,8 +49,8 @@
             min-height: 16vh;
             width: 82%;
             span {
+                font-family: $Roboto-Bold;
                 margin-bottom: px(-20);
-                font-weight: $bold;
                 font-size: px(36);
                 display: block;
             }
@@ -68,13 +66,12 @@
                 height: px(92);
             }
             .index {
-                font-family: $raleway;
+                font-family: $Raleway-ExtraBold;
                 position: absolute;
+                font-size: px(90);
                 color: $darkGray;
                 top: px(-100);
                 left: px(-24);
-                font-weight: 800;
-                font-size: px(90);
             }
         }
         .lines .line {
@@ -130,8 +127,8 @@
                 width: 81%;
                 min-height: auto;
                 &:last-of-type { margin-bottom: 0; }
+                font-family: $Roboto-Regular;
                 margin-bottom: px(185);
-                font-family: $roboto;
                 position: relative;
                 font-size: px(32);
                 line-height: 1.4;
@@ -147,12 +144,11 @@
                     height: px(70);
                 }
                 .index {
-                    font-family: $raleway;
+                    font-family: $Raleway-Bold;
                     position: absolute;
-                    font-weight: $bold;
-                    top: px(-86);
-                    left: px(-86);
                     font-size: px(72);
+                    left: px(-86);
+                    top: px(-86);
                 }
             }
             .lines .line {

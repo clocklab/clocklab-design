@@ -47,9 +47,8 @@
             right: initial;
             text-align: center;
             font-size: px(1500);
-            font-family: $raleway;
-            font-weight: $extra-bold;
             text-transform: uppercase;
+            font-family: $Raleway-ExtraBold;
             span:before { content: 'c'; }
         }
 
@@ -65,10 +64,9 @@
         h2 {
             color: $darkGray;
             font-size: px(96);
-            font-weight: $bold;
             align-self: center;
             margin-right: px(180);
-            font-family: $raleway;
+            font-family: $Raleway-Bold;
             transform: translateY(px(70));
             span {
                 display: block;
@@ -89,10 +87,9 @@
                 color: $darkGray;
                 font-size: px(40);
                 margin-top: px(20);
-                font-weight: $bold;
                 letter-spacing: .5px;
-                font-family: $raleway;
                 text-transform: uppercase;
+                font-family: $Raleway-Bold;
             }
             img {
                 object-fit: cover;
@@ -145,7 +142,7 @@
             position: relative;
             margin-left: px(90);
             align-self: flex-end;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             span {
                 font-size: px(32);
                 &:after { content: 'Посмотреть все работы'; }
@@ -182,13 +179,12 @@
             color: $darkGray;
             font-size: px(72);
             margin-bottom: px(24);
-            font-family: $raleway;
-            font-weight: $extra-bold;
             text-transform: uppercase;
+            font-family: $Raleway-ExtraBold;
         }
         p {
+            font-family: $Roboto-Regular;
             padding-right: px(150);
-            font-family: $roboto;
             font-size: px(28);
             line-height: 1.4;
             color: $gray;
@@ -202,8 +198,7 @@
             color: $white;
             font-size: px(32);
             background: $blue;
-            font-weight: $bold;
-            font-family: $roboto;
+            font-family: $Roboto-Bold;
             text-transform: uppercase;
             span {
                 position: relative;
