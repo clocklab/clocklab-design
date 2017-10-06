@@ -1,3 +1,13 @@
 @import '../desktop';
 
 .back-layer { padding-right: px(80); }
+.title .word span { font-size: px(80); }
+.front-layer {
+	.container .title { margin-top: px(100); }
+	.steps .step {
+		.content p { font-size: px(18); }
+		&:nth-child(1) { bottom: 54vh; }
+		&:nth-child(2) { bottom: -5vh; }
+		&:nth-child(3) { bottom: 26vh; }
+	}
+}
