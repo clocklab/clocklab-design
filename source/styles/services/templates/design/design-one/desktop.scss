@@ -63,7 +63,7 @@
     // ----- letter o -----
     .big-background-letter {
         top: 30vh;
-        z-index: 3;
+        z-index: 1;
         right: -2vw;
         font-size: 78vh;
         color: rgba(68,68,68,.2);
@@ -107,7 +107,6 @@
     // ----- image-block -----
     .image-block {
         top: 13vh;
-        z-index: 3;
         right: px(520);
         width: px(2700);
         height: px(1520);
