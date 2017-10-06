@@ -23,7 +23,7 @@
             color: $white;
             display: block;
             visibility: hidden;
-            font-weight: $bold;
+            font-family: $Raleway-Bold;
         }
         &:before {
             background: $white;
@@ -64,7 +64,7 @@
             font-size: px(120);
             position: relative;
             white-space: nowrap;
-            font-weight: $extra-bold;
+            font-family: $Raleway-ExtraBold;
             text-transform: uppercase;
             letter-spacing: 3px;
             overflow: hidden;
@@ -77,8 +77,7 @@
         color: $white;
         line-height: 1.4;
         letter-spacing: 0;
-        font-family: $roboto;
-        font-weight: $regular;
-        .bold { font-weight: $bold; }
+        font-family: $Roboto-Regular;
+        .bold { font-family: $Roboto-Bold; }
     }
 }

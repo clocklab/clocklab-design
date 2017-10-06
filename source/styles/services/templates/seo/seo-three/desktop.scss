@@ -1,7 +1,6 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    font-family: $raleway;
-    font-weight: $regular;
+    font-family: $Raleway-Regular;
     background: $white;
     overflow: hidden;
     
@@ -155,8 +154,7 @@
                 color: $white;
                 font-size: px(32);
                 background: $blue;
-                font-weight: $bold;
-                font-family: $roboto;
+                font-family: $Roboto-Bold;
                 text-transform: uppercase;
                 span {
                     position: relative;
@@ -211,8 +209,7 @@
                     display: block;
                     margin-top: 21vh;
                     position: absolute;
-                    font-family: $raleway;
-                    font-weight: $extra-bold;
+                    font-family: $Raleway-ExtraBold;
                     .word {
                         &:after { display: none; }
                         &:nth-of-type(1) {
@@ -232,8 +229,8 @@
                     font-size: px(48);
                     line-height: 26px;
                     padding-top: 51vh;
-                    font-weight: $bold;
                     padding-right: px(90);
+                    font-family: $Raleway-Bold;
                     display: -webkit-inline-box;
                 }
                 &:before {
@@ -242,8 +239,8 @@
                     color: $gray;
                     font-size: px(36);
                     position: absolute;
-                    font-family: $roboto;
                     transform: rotate(-90deg);
+                    font-family: $Roboto-Regular;
                 }
                 &:nth-of-type(1)::before { content: '01'; }
                 &:nth-of-type(2)::before { content: '02'; }
@@ -268,7 +265,7 @@
         
         // ----- form -----
         form {
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             padding-top: px(250);
             position: relative;
             height: px(1200);
@@ -298,10 +295,9 @@
             }
             h3 {
                 font-size: px(60);
-                font-family: $raleway;
                 margin-bottom: px(220);
-                font-weight: $extra-bold;
                 text-transform: uppercase;
+                font-family: $Raleway-ExtraBold
             }
             label {
                 width: 100%;
@@ -321,9 +317,9 @@
                     line-height: 100%;
                     position: absolute;
                     letter-spacing: 1px;
-                    font-family: $roboto;
                     margin-bottom: px(16);
                     text-transform: uppercase;
+                    font-family: $Roboto-Regular;
                     transition: top $timeHalf, color $timeHalf, font-size $timeHalf;
                 }
                 input {
@@ -365,11 +361,10 @@
                 width: px(340);
                 height: px(90);
                 color: $white;
-                font-weight: 500;
                 font-size: px(28);
                 background: $blue;
-                font-family: $roboto;
                 text-transform: uppercase;
+                font-family: $Roboto-Medium;
                 span {
                     z-index: 2;
                     position: relative;
