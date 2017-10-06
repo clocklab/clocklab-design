@@ -51,5 +51,15 @@
         width: px(340);
         height: px(340);
         font-size: px(40);
+
+        &:before {
+            top: px((340 - 500) / 2);
+            left: px((340 - 500) / 2);
+        }
+
+        &:after {
+            top: px((340 - 640) / 2);
+            left: px((340 - 640) / 2);
+        }
     }
 }

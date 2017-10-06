@@ -2,7 +2,7 @@
 
 & {
 
-    height: px(1700);
+    height: px(1800);
 
     h2 {
         margin-bottom: px(140);
@@ -18,6 +18,10 @@
     }
 
     &--strategy {
+
+        h2 {
+            width: 90%;
+        }
         
         li {
     

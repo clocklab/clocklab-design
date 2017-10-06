@@ -8,6 +8,11 @@
         top: px(1020);
     }
 
+    .logo,
+    .menu {
+        animation: fadeIn $time * 3 both;
+    }
+
     .big-bg-letter-c {
 
         .big-background-letter {
@@ -158,6 +163,101 @@
         }
     }
 
+    ul {
+
+        &.circled {
+    
+            li {
+                position: relative;
+                margin-bottom: px(40);
+                padding-left: px(60);
+                color: $darkGray;
+                font-family: $roboto;
+    
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: -4px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: $blue;
+                    content: '';
+                }
+            }
+        }
+
+        &.bold {
+
+            li {
+                font-weight: 700;
+            }
+        }
+
+        &.indexed {
+
+            li {
+                position: relative;
+                margin-bottom: px(180);
+
+                &:before,
+                &:after {
+                    display: block;
+                    position: absolute;
+                }
+
+                &:before {
+                    z-index: 2;
+                    top: px(-110);
+                    left: px(-80);
+                    color: $darkGray;
+                    font-family: $raleway;
+                    font-size: px(96);
+                    font-weight: 800;
+                }
+
+                &:after {
+                    z-index: -1;
+                    top: px(-50);
+                    left: px(-40);
+                    width: px(88);
+                    height: px(88);
+                    background: $darkWhite;
+                    content: '';
+                }
+
+                &:nth-child(1) {
+
+                    &:before {
+                        content: '01';
+                    }
+                }
+
+                &:nth-child(2) {
+
+                    &:before {
+                        content: '02';
+                    }
+                }
+
+                &:nth-child(3) {
+
+                    &:before {
+                        content: '03';
+                    }
+                }
+
+                &:nth-child(4) {
+
+                    &:before {
+                        content: '04';
+                    }
+                }
+            }
+        }
+    }
+
     .new-title {
 
         .text-container {
@@ -173,6 +273,24 @@
         padding-bottom: px(450);
         width: 81%;
 
+        h3 {
+            color: $darkGray;
+            font-family: $roboto;
+            font-size: px(96);
+            font-weight: 700;
+            line-height: 1.2;
+
+            span {
+                color: $blue;
+            }
+        }
+
+        h4 {
+            margin-bottom: px(20);
+            font-family: $roboto;
+            font-weight: 700;
+        }
+
         &__item {
             display: flex;
             position: relative;
@@ -184,8 +302,8 @@
 
                 .italic {
                     padding-bottom: px(36);
-                    border-bottom: 1px solid $darkGray;
-                    opacity: .4;
+                    border-bottom: 1px solid lighten($darkGray, 35%);;
+                    color: lighten($darkGray, 35%);
                 }
 
                 .column-2 {
@@ -271,17 +389,8 @@
             &--4 {
                 margin-top: px(230);
 
-                .column-1 {
-
-                    p {
-                        font-size: px(72);
-                        font-weight: 700;
-                        line-height: 1.2;
-                    }
-
-                    span {
-                        color: $blue;
-                    }
+                ul {
+                    margin-top: px(60);
                 }
 
                 .column-2 {
@@ -349,10 +458,42 @@
             }
 
             &--7 {
+                flex-wrap: wrap;
                 margin-top: px(110);
+
+                h3 {
+                    margin-bottom: px(140);
+                }
 
                 .column {
                     margin-left: 44.5%;
+
+                    &-2 {
+                        margin-left: 44.5%;
+                    }
+                }
+            }
+
+            &--8 {
+                margin-top: px(450);
+
+                ul {
+                    line-height: 1.4;
+                }
+            }
+
+            &--9 {
+                margin-top: px(370);
+
+                ul {
+                    padding-top: px(100);
+                }
+
+                p {
+
+                    &.big {
+                        margin-top: px(400);
+                    }
                 }
             }
         }

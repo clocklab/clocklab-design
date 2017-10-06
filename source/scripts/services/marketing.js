@@ -6,6 +6,6 @@
 
 //=include ./../components/slides-changing-services.js
 
-//=include modules/marketing/marketing-open-form.js
+//=include ./modules/web-production/web-production-open-form.js
 
-//=include modules/open-long-read.js
+//=include ./modules/open-long-read.js
