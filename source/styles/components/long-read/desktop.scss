@@ -503,6 +503,55 @@
         }
     }
 
+    &--design {
+
+        .row {
+            
+            &--5 {
+
+                ul.indexed {
+                    padding-top: 0 !important;
+                    padding-bottom: px(180);
+                    display: inherit;
+                    column-count: 2;
+
+                    li {
+                        padding: px(72) px(30) 0 30px !important;
+                        margin-bottom: 0;
+                        min-height: 78px;
+
+                        &:after { top: px(60); }
+
+                        &:before {
+                            left: px(-60) !important;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+
+            &--6 {
+
+                h4.big {
+                    font-size: px(40);
+                }
+                
+                ul.circled {
+
+                    li {
+
+                        &:before {
+                            top: 8px;
+                        }
+                    }
+                }
+                ul {
+                    margin: px(120) 0 0 px(70);
+                }
+            }
+        }
+    }
+
     &--seo {
 
         .row {
@@ -547,7 +596,9 @@
 
                 ul.circled li {
                     
-                    &:before { top: 8px; }
+                    &:before {
+                        top: 8px;
+                    }
 
                     span {
                         font-family: $Raleway-Bold;
