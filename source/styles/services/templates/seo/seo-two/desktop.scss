@@ -1,10 +1,7 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    background: url('../images/seo/seo-bg.jpg') no-repeat;
-    background-color: $background;
-    background-size: cover;
-    font-family: $raleway;
-    font-weight: $regular;
+    font-family: $Raleway-Regular;
+    background: $background;
     overflow: hidden;
     
     // ----- animation up -----
@@ -113,7 +110,7 @@
                 display: block;
                 margin-top: 19vh;
                 position: absolute;
-                font-weight: $extra-bold;
+                font-family: $Raleway-ExtraBold;
                 .word {
                     &:after { display: none; }
                     &:nth-of-type(1) {
@@ -172,7 +169,7 @@
                 margin-top: 5.5vh;
                 position: absolute;
                 align-items: center;
-                font-weight: $medium;
+                font-family: $Raleway-Medium;
                 .arrow .st0, .arrow .st1 { stroke: $white; }
                 span {
                     color: $white;
@@ -188,7 +185,7 @@
                 color: #666;
                 font-size: px(30);
                 position: absolute;
-                font-family: $roboto;
+                font-family: $Roboto-Regular;
             }
             &:nth-of-type(1)::before { content: '01'; }
             &:nth-of-type(2)::before { content: '02'; }
