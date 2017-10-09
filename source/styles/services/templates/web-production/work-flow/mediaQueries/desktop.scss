@@ -46,4 +46,11 @@
     .back-layer {
         padding-right: px(80);
     }
+
+    &.opened {
+
+        .fornt-layer {
+            transform: rotateY(15deg) scaleX(.8);
+        }
+    }
 }

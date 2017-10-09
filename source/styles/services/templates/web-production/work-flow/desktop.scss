@@ -2,7 +2,8 @@
 
     position: relative;
     background: $white;
-    transition: perspective $time * 2;
+    // transition: perspective $time * 2;
+    perspective: 800px;
 
     .front-layer,
     .back-layer {
@@ -268,10 +269,17 @@
         background: $black;
     }
 
+    &.screen-block {
+
+        &.current {
+            display: block;
+        }
+    }
+
     &.opened {
 
         .front-layer {
-            transform: rotateY(30deg);
+            transform: rotateY(15deg) scaleX(.85);
 
             &:after {
                 z-index: 9999;
