@@ -1,8 +1,7 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    font-family: $Raleway-Regular;
     background: $background;
-    font-family: $raleway;
-    font-weight: $regular;
     overflow: hidden;
     
     // ----- animation up -----
@@ -130,7 +129,7 @@
                     padding-top: 20vh;
                     position: absolute;
                     span:first-child { color: $blue; }
-                    font-weight: $extra-bold;
+                    font-family: $Raleway-ExtraBold;
                     font-size: px(104);
                     color: $white;
                 }
@@ -166,7 +165,7 @@
                         width: min-content;
                         &:after { top: 0; }
                         span {
-                            font-weight: $medium;
+                            font-family: $Raleway-Medium;
                             letter-spacing: 0;
                             line-height: 26px;
                             font-size: px(50);
@@ -178,8 +177,7 @@
                     bottom: -55px;
                     position: absolute;
                     align-items: center;
-                    font-family: $roboto;
-                    font-weight: $medium;
+                    font-family: $Roboto-Medium;
                     .arrow .st0, .arrow .st1 { stroke: $white; }
                     span {
                         color: $white;
@@ -195,8 +193,8 @@
                     color: #666;
                     font-size: px(36);
                     position: absolute;
-                    font-family: $roboto;
                     transform: rotate(-90deg);
+                    font-family: $Roboto-Regular;
                 }
                 &:nth-of-type(2)::before { content: '01'; }
                 &:nth-of-type(6)::before { content: '02'; }

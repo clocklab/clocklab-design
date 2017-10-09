@@ -34,15 +34,34 @@ $darkWhite: #EEE;
 // COLORS VARIABLES END
 
 // FONT VARIABLES
-$roboto: Roboto;
+$Raleway-Thin: 'Raleway Thin'; // 100
+$Raleway-Light: 'Raleway Light'; // 300
+$Raleway-Regular: 'Raleway Regular'; // 400
+$Raleway-Medium: 'Raleway Medium'; // 500
+$Raleway-SemiBold: 'Raleway SemiBold'; // 600
+$Raleway-Bold: 'Raleway Bold'; // 700
+$Raleway-ExtraBold: 'Raleway ExtraBold'; // 800
+
+$Roboto-Thin: 'Roboto Thin'; // 100
+$Roboto-Light: 'Roboto Light'; // 300
+$Roboto-Regular: 'Roboto Regular'; // 400
+$Roboto-Medium: 'Roboto Medium'; // 500
+$Roboto-Bold: 'Roboto Bold'; // 700
+
+$Audi-Regular: 'Audi Regular'; // 400
+$Audi-Bold: 'Audi Bold'; // 700
+// FONT VARIABLES END
+
+// ДЛЯ РАБОТЫ НА ЛОКАЛКЕ - НА ПРОДАКШН НЕ ПОПАДАЕТ
 $raleway: Raleway;
-$extra-black: 900;
-$extra-bold: 800;
+$roboto: Roboto;
+$thin: 100;
+$light: 300;
 $regular: 400;
 $medium: 500;
 $bold: 700;
-$thin: 100;
-// FONT VARIABLES END
+$extra-bold: 800;
+$extra-black: 900;
 
 // TIME CONSTANTS
 $time: .3s;

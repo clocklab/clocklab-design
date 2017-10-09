@@ -26,15 +26,14 @@
             margin-top: 0;
             .list {
                 width: 77%;
-                h3 { margin: 0 0 px(110) px(88); }
+                h3 {
+                    margin: 0 0 px(110) px(88);
+                    line-height: px(80);
+                    font-size: px(66);
+                }
             }
         }
-        .list h3 {
-            margin-bottom: px(150);
-            line-height: px(80);
-            font-size: px(66);
-            span { display: block; }
-        }
+        
         .images img {
              &:first-child {
                 left: px(100);

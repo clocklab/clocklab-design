@@ -1,7 +1,6 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    font-family: $raleway;
-    font-weight: $regular;
+    font-family: $Raleway-Regular;
     background: $white;
     overflow: hidden;
     
@@ -54,7 +53,6 @@
         
         // ----- image-block -----
         .image-block .image-container {
-            animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
             img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
             &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
         }
@@ -65,7 +63,7 @@
     // ----- letter o -----
     .big-background-letter {
         top: 30vh;
-        z-index: 3;
+        z-index: 1;
         right: -2vw;
         font-size: 78vh;
         color: rgba(68,68,68,.2);
@@ -100,7 +98,7 @@
             span {
                 color: $black;
                 font-size: px(25);
-                font-weight: $medium;
+                font-family: $Raleway-Medium;
                 &:nth-of-type(10) { margin-right: 5px;}
             }
         }
@@ -109,7 +107,6 @@
     // ----- image-block -----
     .image-block {
         top: 13vh;
-        z-index: 3;
         right: px(520);
         width: px(2700);
         height: px(1520);
@@ -119,7 +116,6 @@
             height: 100%;
             overflow: hidden;
             position: relative;
-            box-shadow: 0 0 px(60) px(16) rgba(0, 0, 0, .3);
             img {
                 z-index: 1;
                 width: 100%;

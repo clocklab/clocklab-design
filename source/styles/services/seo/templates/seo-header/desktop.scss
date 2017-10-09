@@ -1,7 +1,6 @@
 & {  
+    font-family: $Raleway-Regular;
     background: $background;
-    font-family: $raleway;
-    font-weight: $regular;
     position: relative;
     
     // ----- animation -----
@@ -16,6 +15,26 @@
     // ----- navigation-elements -----
     .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 6 both; }
     .header-image { animation: fadeInFive $time * 6 $time * 9 both; }
+
+    // ----- top-panel -----
+    .top-panel {
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9998;
+        height: px(240);
+        position: fixed;
+        background: transparent;
+        transition: top $time * 2 ease-out, background $time, opacity $time * 2 ease-out;
+        &.active {
+            opacity: 1;
+            background: rgba(238,238,238,.70);
+            &.scrolled, &.form-opened {
+                top: px(-242);
+                opacity: 0;
+            } 
+        }
+    }
     
     // ----- title -----
     .title {
@@ -71,7 +90,7 @@
         top: 40vh;
         right: px(14);
         font-size: px(3000);
-        font-weight: $extra-bold;
+        font-family: $Raleway-ExtraBold;
         span:before { content: 'c'; }
     }
     
@@ -93,7 +112,7 @@
                 top: 35vh;
                 z-index: 2;
                 position: absolute;
-                font-weight: $extra-bold;
+                font-family: $Raleway-ExtraBold;
                 &.creating p { width: 100%; }
                 &.audit p { width: 350%; }
                 p {
@@ -101,7 +120,7 @@
                     color: $white;
                     padding-left: 0;
                     font-size: px(48);
-                    font-family: $roboto;
+                    font-family: $Roboto-Regular;
                 }
                 .word {
                     width: fit-content;
@@ -136,6 +155,7 @@
         // ----- header-image -----
         .header-image {
             position: absolute;
+            object-fit: cover;
             height: 100vh;
             width: 100%;
             left: 0;
@@ -159,10 +179,7 @@
                 fill: none;
             }
             .st2 { fill: #666667; }
-            .st3 {
-                font-family: $roboto;
-                font-weight: $medium;
-            }
+            .st3 { font-family: $Roboto-Medium; }
             .st4 { font-size: 29.3479px; }
             .st5 {
                 opacity: 3.000000e-02;
@@ -195,10 +212,10 @@
         list-style: none;
         padding: 0;
         li {
-            position: relative;
+            font-family: $Roboto-Regular;
             margin-bottom: px(45);
             padding-left: px(20);
-            font-family: $roboto;
+            position: relative;
             font-size: px(32);
             line-height: 1.4;
             color: $white;
@@ -216,12 +233,11 @@
     h3 {
         color: $white;
         line-height: 1.2;
-        font-weight: $bold;
-        font-family: $roboto;
+        font-family: $Roboto-Bold;
         span { color: $blue; }
     }
     p {
-        font-family: $roboto;
+        font-family: $Roboto-Regular;
         font-size: px(32);
         line-height: 1.4;
         color: #CCC;
@@ -233,11 +249,11 @@
         }
         &.bold {
             font-size: px(36);
-            font-weight: $extra-bold;
+            font-family: $Raleway-ExtraBold;
         }
         &.italic {
+            font-family: $Raleway-Light;
             font-style: italic;
-            font-weight: 300;
         }
         &.underlined span { text-decoration: underline; }
     }
@@ -254,8 +270,8 @@
     }
     .numbered-list li {
         &:last-of-type { margin-bottom: 0; }
+        font-family: $Roboto-Regular;
         margin-bottom: px(125);
-        font-family: $roboto;
         position: relative;
         font-size: px(32);
         line-height: 1.4;
@@ -272,13 +288,12 @@
             height: px(70);
         }
         .index {
-            font-family: $raleway;
+            font-family: $Raleway-Bold;
             position: absolute;
-            font-weight: $bold;
-            color: #CCC;
-            top: px(-86);
-            left: px(-86);
             font-size: px(72);
+            left: px(-86);
+            top: px(-86);
+            color: #CCC;
         }
     }
     .double { width: 66%; }
@@ -308,7 +323,7 @@
                             margin-top: 0;
                             line-height: 1.4;
                             font-size: px(48);
-                            font-weight: $medium;
+                            font-family: $Raleway-Medium;
                         }
                     }
                     &--6 { margin-top: px(90); }
@@ -342,7 +357,7 @@
                         border-bottom: 1px solid $darkGray;
                         & + p {
                             padding-top: px(215);
-                            span { font-weight: $extra-bold; }
+                            span { font-family: $Raleway-ExtraBold; }
                         }
                     }
                 }

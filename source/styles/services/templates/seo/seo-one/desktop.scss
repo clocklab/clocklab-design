@@ -1,8 +1,7 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    font-family: $Raleway-Regular;
     background: $background;
-    font-family: $raleway;
-    font-weight: $regular;
     overflow: hidden;
     
     // ----- animation fade -----
@@ -17,7 +16,7 @@
         .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
         
         // ----- crossed-button -----
-        .crossed-button { animation: fadeInUp $time * 2 $time * 14 both; }
+        .crossed-button { animation: fadeInUp $time * 2 $time * 16 both; }
         
         // ----- graph -----
         @keyframes fadeInThree {
@@ -74,6 +73,7 @@
     // ----- graph -----
     .graph {
         bottom: 0;
+        z-index: -1;
         position: absolute;
         margin-bottom: -8vh;
         .st0 {
@@ -101,10 +101,7 @@
         }
         .st5 { fill: #6F639B; }
         .st6 { fill: #666766; }
-        .st7 {
-            font-family: $roboto;
-            font-weight: $medium;
-        }
+        .st7 { font-family: $Roboto-Medium; }
         .st8 { font-size: 18px; }
         @keyframes line {
             from, to { visibility: visible; }
@@ -123,6 +120,7 @@
         // ----- lines -----
         .lines div {
             width: 1px;
+            z-index: -1;
             height: 100vh;
             position: absolute;
             background: rgba(102,102,102,.5);
@@ -136,10 +134,10 @@
 
     // ----- title -----
     .title {
-        margin: 21vh 0 0 40vh;
+        margin: 22vh 0 0 40vh;
         position: absolute;
         left: px(1220);
-        top: px(652);
+        top: 34vh;
         &.padding p {
             width: px(1500);
             padding: px(70) 0 0 px(320);
@@ -152,14 +150,13 @@
         bottom: px(-108);
         position: absolute;
         align-items: center;
-        font-family: $roboto;
-        font-weight: $medium;
+        font-family: $Roboto-Medium;
         .arrow .st0, .arrow .st1 { stroke: $white; }
         span {
             animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
-            font-weight: $bold;
-            color: $white;
+            font-family: $Raleway-Bold;
             font-size: px(26);
+            color: $white;
             display: block;
             &:after { content: 'Читать далее'; }
             &:before {

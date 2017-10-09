@@ -1,5 +1,3 @@
-// YEVHEN ADDED THIS FILE
-
 // base
 @import "base/variables";
 @import "base/fonts";
@@ -10,10 +8,12 @@
 // components
 @import "components/logo/main";
 @import "components/menu/main";
-@import "components/languages/main";
-@import "components/big-background-letter/main";
 @import "components/title/main";
+@import "components/social/main";
+@import "components/languages/main";
+@import "components/copyright/main";
 @import "components/modules/small-gray-lines";
+@import "components/big-background-letter/main";
 
-// main
+// templates
 @import "templates/contacts/contacts/main";

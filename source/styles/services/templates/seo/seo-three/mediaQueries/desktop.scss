@@ -1,7 +1,7 @@
 @import '../desktop';
 
-// ----- table -----
-.table .container {
+.back-layer { padding-right: px(80); }   
+.front-layer .table .container {
 	max-width: 700px;
 	.item {
 		span {

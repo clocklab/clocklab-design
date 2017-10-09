@@ -5,7 +5,7 @@
     width: px(830);
     height: px(1200);
     color: $white;
-    font-family: $roboto;
+    font-family: $Roboto-Regular;
 
     .close-form {
         position: absolute;
@@ -47,9 +47,8 @@
 
     h3 {
         margin-bottom: px(220);
-        font-family: $raleway;
+        font-family: $Raleway-ExtraBold;
         font-size: px(60);
-        font-weight: 800;
         text-transform: uppercase;
     }
 
@@ -69,7 +68,7 @@
             margin-bottom: px(16);
             height: 100%;
             color: $gray;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(30);
             line-height: 100%;
             letter-spacing: 1px;
@@ -152,9 +151,8 @@
         height: px(90);
         background: $blue;
         color: $white;
-        font-family: $roboto;
+        font-family: $Roboto-Medium;
         font-size: px(28);
-        font-weight: 500;
         text-transform: uppercase;
 
         span {
