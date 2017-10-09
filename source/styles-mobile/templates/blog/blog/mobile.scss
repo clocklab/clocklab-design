@@ -1,0 +1,57 @@
+& {  
+
+    padding-top: px(300);
+    background: $lightBlack;
+
+    .feed {
+        padding: 0 px(30) px(150);
+
+        &__item {
+            display: block;
+            margin-bottom: px(150);
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: px(460);
+                object-fit: cover;
+            }
+
+            .info {
+                margin-top: px(50);
+                color: $gray;
+                font-family: $Roboto-Regular;
+                font-size: px(24);
+            }
+
+            .date {
+                position: relative;
+                padding-right: px(20);
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    content: '.';
+                }
+            }
+
+            .read-duration {
+                padding-left: px(20);
+            }
+
+            h2 {
+                margin-top: px(40);
+                padding-right: px(50);
+                color: $white;
+                font-family: $Roboto-Black;
+                font-size: px(60);
+                line-height: px(72);
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

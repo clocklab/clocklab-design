@@ -185,7 +185,7 @@
             span {
                 color: $white;
                 font-size: px(48);
-                font-weight: 700;
+                font-family: $Raleway-Bold;
             }
 
             &:before {
@@ -203,6 +203,9 @@
         color: $white;
 
         & > .jumping-button {
+            // WARNING
+            display: none;
+            // WARNING
             margin-right: px(190);
 
             button {
@@ -246,6 +249,9 @@
         &--categories {
 
             .jumping-button {
+                // WARNING
+                display: none;
+                // WARNING
 
                 button {
 
@@ -317,9 +323,8 @@
                 right: 0;
                 z-index: 1;
                 padding-top: px(40);
-                font-family: $roboto;
+                font-family: $Roboto-Medium;
                 font-size: px(72);
-                font-weight: 600;
                 text-align: right;
             }
 
@@ -350,12 +355,11 @@
             .post-info {
                 margin-top: px(290);
                 color: $white;
-                font-family: $raleway;
                 transform: translateX(35vh);
 
                 .sticker {
                     margin-bottom: px(20);
-                    font-weight: $bold;
+                    font-family: $Raleway-Bold;
                     
                     span {
                         color: $white;
@@ -371,17 +375,16 @@
                 h3 {
                     margin-bottom: px(100);
                     max-width: px(540);
+                    font-family: $Raleway-ExtraBold;
                     font-size: px(72);
-                    font-weight: 700;
                     text-transform: uppercase;
                     animation: fadeInUp $BPostTitleAnimationTime $BPostTitleDelayTime both;
                 }
 
                 .crossed-button {
                     align-items: center;
-                    font-family: $roboto;
+                    font-family: $Roboto-Medium;
                     font-size: px(24);
-                    font-weight: 600;
                     transform: translateX(px(270));
                     
                     span {

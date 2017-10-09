@@ -1,0 +1,59 @@
+& {  
+        
+    display: flex;
+
+    span {
+        position: relative;
+        padding: 0 px(30);
+        color: rgba(0, 0, 0, 1);
+        font-size: px(24);
+        line-height: 16px;
+        font-weight: 700; 
+        overflow: hidden;
+        text-transform: uppercase;
+        transition: padding $time;
+    }
+
+    .arrow-container {
+        width: px(72);
+        overflow: hidden;
+        transform: translateX(-20%);
+        transition: transform $timeTick linear $time;
+    }
+
+    .arrow {
+        width: 100%;
+        opacity: 1;
+
+        .st0 {
+            fill: none;
+            stroke: $black;
+            stroke-width: 1;
+            stroke-miterlimit: 10;
+        }
+
+        .st1 {
+            fill: none;
+            stroke: $black;
+            stroke-width: 0.75;
+            stroke-miterlimit: 10;
+        }
+    }
+
+    // Button reversed
+    &.reversed {
+        flex-direction: row-reverse;
+
+        span {
+
+            &:before {
+                top: 7px;
+                transform: translateX(100%);
+            }
+        }
+
+        .arrow-container {
+            transform: rotate(180deg);
+        }
+    }
+}

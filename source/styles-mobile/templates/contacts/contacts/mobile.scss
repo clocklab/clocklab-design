@@ -1,0 +1,67 @@
+& {
+
+    position: relative;
+    padding: px(240) px(30) 0;
+    width: 100vw;
+    height: 100vh;
+    background: $lightBlack;
+    overflow: hidden;
+
+    .top-panel-mobile {
+        background: transparent;
+    }
+    
+    h2 {
+        color: $gray;
+        font-family: $Raleway-Bold;
+        font-size: px(22);
+        text-transform: uppercase;
+
+        span {
+            display: block;
+            margin-top: px(36);
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: px(44);
+        }
+    }
+
+    .contacts-info {
+        margin-top: px(160);
+
+        li {
+            margin-bottom: px(80); 
+            font-family: $Roboto-Medium;
+            font-size: px(28);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        span {
+            display: block;
+            margin-bottom: px(10);
+            color: $white;
+        }
+
+        a {
+            color: $gray;
+        }
+    }
+
+    .open-form {
+        display: block;
+        margin: px(110) auto 0;
+        padding: px(30) 0;
+        width: 100%;
+        max-width: 400px;
+        height: px(90);
+        background: $blue;
+        color: $white;
+        font-family: $Roboto-Medium;
+        font-size: px(28);
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
