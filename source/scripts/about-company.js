@@ -12,6 +12,8 @@
 
 //= include ./components/slides-changing-services.js
 
+//= include ./services/modules/web-production/web-production-open-form.js
+
 // ----- change lines and language color -----
 $('.light div').children().addClass('light');
 $('.dark').children().addClass('dark');

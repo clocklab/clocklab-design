@@ -1,7 +1,6 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    font-family: $raleway;
-    font-weight: $regular;
+    font-family: $Raleway-Regular;
     background: $white;
     overflow: hidden;
     
@@ -163,6 +162,8 @@
             right: px(700);
             width: px(1660);
             height: px(1920);
+            display: block;
+            z-index: -1;
         }
         &.two {
             right: px(262);

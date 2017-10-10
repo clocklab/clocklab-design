@@ -115,7 +115,7 @@
     
     // ----- services-schedule -----
     .services-schedule {
-        padding-top: 21.5vh;
+        padding-top: 16.5vh;
         .container {
             display: flex;
             margin: 0 auto;
@@ -183,7 +183,7 @@
                         color: $white;
                         display: block;
                         font-size: px(24);
-                        &:after { content: 'Подробнее'; }
+                        &:after { content: ''; }
                         &:before { background: $white; }
                     }
                 }

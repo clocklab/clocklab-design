@@ -3,6 +3,7 @@
     background: $black;
     position: relative;
     overflow: hidden;
+    z-index: -1;
     
     // ----- big-background-letter -----
     .big-background-letter {
@@ -13,7 +14,6 @@
         left: px(-450);
         font-size: 115vh;
         color: rgba(68,68,68,.2);
-        font-family: $Raleway-Regular;
         span::before { content: 'o'; }
     }
 

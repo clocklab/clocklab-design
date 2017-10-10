@@ -1,5 +1,7 @@
 & {  
+    z-index: -1;
     height: px(2500);
+    overflow: hidden;
     position: relative;
     background: $white;
     .front-layer, .back-layer { height: px(1920); }

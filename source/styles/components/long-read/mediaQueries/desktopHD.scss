@@ -1,1 +1,20 @@
 @import '../desktop';
+
+&.long-read--seo {
+
+    .row {
+
+        &--4 {
+
+            ul.indexed {
+
+                li {
+
+                    &:before {
+                        top: px(-22);
+                    }
+                }
+            }
+        }
+   }
+}

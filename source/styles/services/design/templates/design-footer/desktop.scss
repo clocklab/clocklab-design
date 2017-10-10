@@ -2,8 +2,9 @@
     position: relative;
     overflow: hidden;
     height: px(1920);
+    z-index: -1;
     
-    // ----- bkue-line -----
+    // ----- blue-line -----
     .blue-line {
         position: absolute;
         background: $blue;
@@ -25,7 +26,10 @@
             &.up, &.down { animation: none; }
         }
     }
-    .bottom-button span { font-family: $Raleway-Regular; }
+    .bottom-button span {
+        font-family: $Raleway-Regular;
+        &:before { content: 'Все новости'; }
+    }
 
     // ----- container -----
     .container {
@@ -66,6 +70,7 @@
         transform-origin: 100% 0;
         font-family: $Roboto-Light;
         transform: rotate(-90deg);
+        span { display: block; }
     }
     .image-container {
         position: relative;
