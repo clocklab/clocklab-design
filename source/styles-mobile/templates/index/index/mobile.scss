@@ -1,10 +1,88 @@
 & {  
 
+    header {
+        background: $lightBlack;
+        padding: px(160) px(30) 0;
+        width: 100vw;
+        height: 100vh;
+
+        img {
+            display: block;
+            margin-left: px(160);
+            width: px(376);
+            height: px(786);
+            object-fit: cover;
+        }
+
+        .slogan {
+            margin-top: px(-100);
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: px(48);
+            text-transform: uppercase;
+
+            span {
+                display: block;
+                margin-top: px(10);
+                color: $blue;
+            }
+        }
+
+        .slogan-translation {
+            display: block;
+            margin-top: px(30);
+            color: $gray;
+            font-family: $Roboto-Medium;
+            font-size: px(28);
+        }
+    }
+
+    .about-company {
+        position: relative;
+        padding: px(260) px(30) 0;
+        width: 100vw;
+        height: 100vh;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        & > span,
+        .title {
+            position: relative;
+            z-index: 2;
+        }
+
+        & > span {
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: px(22);
+        }
+
+        .title {
+            margin-top: px(60);
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: px(120);
+
+            .blue {
+                color: $blue;
+            }
+        }
+    }
+
     .our-clients {
+        position: relative;
         padding: px(90) px(30) 0;
         width: 100vw;
         height: 100vh;
         background: $lightBlack;
+        overflow: hidden;
 
         & > span {
             color: #666;
@@ -75,7 +153,6 @@
             z-index: 2;
             width: 300%;
             height: 100%;
-            // transition: left .4s ease;
         }
 
         .slide {
@@ -90,7 +167,7 @@
             &__item {
                 display: flex;
                 justify-content: center;
-                align-content: center;
+                align-items: center;
                 padding: px(20);
                 width: 50%;
                 height: 25%;
@@ -100,18 +177,153 @@
                     height: 100%;
                     object-fit: contain;
                 }
+
+                &--audi {
+
+                    img {
+                        height: 50%;
+                    }   
+                }
+
+                &--tommy-hilfiger {
+
+                    img {
+                        height: 50%;
+                    }   
+                }
+
+                &--gstar-raw {
+
+                    img {
+                        height: 50%;
+                    }   
+                }
+
+                &--dkny-men {
+
+                    img {
+                        height: 20%;
+                    }   
+                }
+
+                &--fornarina {
+
+                    img {
+                        height: 30%;
+                    }   
+                }
+
+                &--accessorize {
+
+                    img {
+                        height: 30%;
+                    }   
+                }
+
+                &--doberman {
+
+                    img {
+                        height: 70%;
+                    }   
+                }
+
+                &--lets-help {
+
+                    img {
+                        height: 70%;
+                    }   
+                }
+
+                &--seven-hills {
+
+                    img {
+                        height: 60%;
+                    }   
+                }
+
+                &--park-avenue {
+
+                    img {
+                        height: 80%;
+                    }   
+                }
+
+                &--gogol {
+
+                    img {
+                        height: 80%;
+                    }   
+                }
+
+                &--preppy {
+
+                    img {
+                        height: 80%;
+                    }   
+                }
+
+                &--pepe-jeans {
+
+                    img {
+                        height: 60%;
+                    }   
+                }
+
+                &--gant {
+
+                    img {
+                        height: 20%;
+                    }   
+                }
+
+                &--diesel {
+
+                    img {
+                        height: 50%;
+                    }   
+                }
+
+                &--oodji {
+
+                    img {
+                        height: 60%;
+                    }   
+                }
+
+                &--shell {
+
+                    img {
+                        height: 50%;
+                    }   
+                }
+
+                &--jti {
+
+                    img {
+                        height: 50%;
+                    }   
+                }
+
+                &--stem {
+
+                    img {
+                        height: 30%;
+                    }   
+                }
             }
 
             .open-form {
                 position: absolute;
                 bottom: 0;
                 right: 0;
-                padding-left: px(40);
+                padding: 0;
+                padding-left: px(10);
                 width: 50%;
                 height: 25%;
                 color: $white;
                 font-family: $Roboto-Bold;
-                font-size: px(36);
+                font-family: $Roboto-Black;
+                font-size: px(44);
                 text-align: left;
 
                 span {

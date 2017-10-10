@@ -8,18 +8,19 @@
     </head>
     <body>
         <div class="index-mobile">
-            <!-- @@include('./components/top-panel-mobile.html') -->
+            @@include('./components/top-panel-mobile.html')
 
-            <header style="display: none">
-                <img src="" alt="">
+            <header>
+                <img src="../images/index/watches-mobile.png" alt="watches">
                 <div class="slogan">
                     <h1>Let's rock the world</h1>
                     <span>with our ideas</span>
-                    <span class="slogan-translation">Підкорюйте світ разом з нашими ідеями</span>
                 </div>
+                <span class="slogan-translation">Підкорюйте світ разом з нашими ідеями</span>
             </header>
 
-            <div class="about-company" style="display: none">
+            <div class="about-company">
+                <img src="../images/index/office-mobile.jpg" alt="office">
                 <span>о компании</span>
                 <div class="title">
                     <span>Clock</span>
@@ -42,65 +43,65 @@
                     </div>
                     <div class="slider-clients">
                         <div class="slide">
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--audi">
                                 <img src="../images/about-company/brands/audi.png" alt="audi">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--tommy-hilfiger">
                                 <img src="../images/about-company/brands/tommy-hilfiger.png" alt="tommy-hilfiger">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--gstar-raw">
                                 <img src="../images/about-company/brands/gstar-raw.png" alt="gstar-raw">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--dkny-men">
                                 <img src="../images/about-company/brands/dkny-men.png" alt="dkny-men">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--fornarina">
                                 <img src="../images/about-company/brands/fornarina.png" alt="fornarina">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--accessorize">
                                 <img src="../images/about-company/brands/accessorize.png" alt="accessorize">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--doberman">
                                 <img src="../images/about-company/brands/doberman.png" alt="doberman">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--lets-help">
                                 <img src="../images/about-company/brands/lets-help.png" alt="lets-help">
                             </div>
                         </div>
                         <div class="slide">
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--seven-hills">
                                 <img src="../images/about-company/brands/seven-hills.png" alt="seven-hills">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--park-avenue">
                                 <img src="../images/about-company/brands/park-avenue.png" alt="park-avenue">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--gogol">
                                 <img src="../images/about-company/brands/gogol.png" alt="gogol">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--preppy">
                                 <img src="../images/about-company/brands/preppy.png" alt="preppy">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--pepe-jeans">
                                 <img src="../images/about-company/brands/pepe-jeans.png" alt="pepe-jeans">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--gant">
                                 <img src="../images/about-company/brands/gant.png" alt="gant">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--diesel">
                                 <img src="../images/about-company/brands/diesel.png" alt="diesel">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--oodji">
                                 <img src="../images/about-company/brands/oodji.png" alt="oodji">
                             </div>
                         </div>
                         <div class="slide">
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--shell">
                                 <img src="../images/about-company/brands/shell.png" alt="shell">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--jti">
                                 <img src="../images/about-company/brands/jti.png" alt="jti">
                             </div>
-                            <div class="slide__item">
+                            <div class="slide__item slide__item--stem">
                                 <img src="../images/about-company/brands/stem.png" alt="stem">
                             </div>
                             <button class="open-form">
@@ -110,6 +111,8 @@
                         </div>
                     </div>
                 </div>
+                
+                @@include('./components/form-mobile.html')
             </div>
         </div>
     </body>
