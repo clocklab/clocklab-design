@@ -1,0 +1,614 @@
+// UNIVERSAL MIXIN
+@mixin animation-mixin($name, $from, $to) {
+    @keyframes #{$name} {
+        from {
+            transform: translate3d($from, 0, 0);
+            #{$name}: 0;
+        }
+        to {
+            transform: translate3d($to, 0, 0); 
+            #{$name}: 1;
+        }
+    }
+}
+// UNIVERSAL MIXIN ENDS
+
+// ANIMATION FOR HAMBURGER TICKS
+@keyframes innerTickAnimation1 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(101%);
+    }
+}
+
+@keyframes innerTickAnimation2 {
+    from {
+        transform: translateX(-101%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes innerTickOpenedAnimation1 {
+    from {
+        left: 10%;
+    }
+    to {
+        left: 101%;
+    }
+}
+
+@keyframes innerTickOpenedAnimation2 {
+    from {
+        left: -101%;
+    }
+    to {
+        left: 10%;
+    }
+}
+// ANIMATION FOR HAMBURGER TICKS ENDS
+
+// RORTFOLIO CLIENT
+@keyframes client {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes clientName {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+// RORTFOLIO CLIENT ENDS
+
+
+// RORTFOLIO RIGHT PANEL
+@keyframes rightPanelDate {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 60vh, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 60vh, 0);
+    }
+}
+
+@keyframes rightPanelDevices {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+// RORTFOLIO RIGHT PANEL ENDS
+
+
+// PORTFOLIO Q7 ANIMATION
+@keyframes widthIncrease {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes heightIncreaseDesktop {
+    from {
+        height: 0vh;
+        transform: translateY(40vh);
+    }
+    to {
+        height: 88vh;
+        transform: translateY(4vh);
+    }
+}
+
+@keyframes heightIncreaseTablet {
+    from {
+        height: 0vh;
+        transform: translateY(56vh);
+    }
+    to {
+        height: 72vh;
+        transform: translateY(20vh);
+    }
+}
+
+@keyframes heightIncreaseMobile {
+    from {
+        height: 0vh;
+        transform: translateY(60vh);
+    }
+    to {
+        height: 60vh;
+        transform: translateY(30vh);
+    }
+}
+
+@keyframes rightDown {
+    from {
+        transform: rotate(45deg) translate3d(-100%, 0, 0);
+    }
+    to {
+        transform: rotate(45deg) translate3d(100%, 0, 0);
+    }
+}
+
+@keyframes leftDown {
+    from {
+        transform: rotate(-45deg) translate3d(100%, 0, 0);
+    }
+    to {
+        transform: rotate(-45deg) translate3d(-20%, 0, 0);
+    }
+}
+
+@keyframes rightDownTablet {
+    from {
+        transform: rotate(45deg) translate3d(-100%, 0, 0);
+    }
+    to {
+        transform: rotate(45deg) translate3d(100%, 0, 0);
+    }
+}
+
+@keyframes leftDownTablet {
+    from {
+        transform: rotate(-45deg) translate3d(100%, 0, 0);
+    }
+    to {
+        transform: rotate(-45deg) translate3d(-10%, 0, 0);
+    }
+}
+
+@keyframes fadeInUpHalf {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes FadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes FadeInRightHalf {
+    from {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+// PORTFOLIO Q7 ANIMATION ENDS
+
+
+// PORTFOLIO VINO GRAD ANIMATION
+@keyframes up {
+    from {
+        transform: translateY(100%);
+    }   
+    to {
+        transform: translateY(0);
+    } 
+}
+
+@keyframes down {
+    from {
+        transform: translateY(-100%);
+    }   
+    to {
+        transform: translateY(0);
+    } 
+}
+
+@keyframes right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+// ----- social icons -----
+@keyframes social {
+    from { transform: rotateX(-90deg) rotateY(-90deg) perspective(300px); }
+    to { transform: none; }
+}
+@keyframes socialReverse {
+    from {  transform: rotateX(90deg) rotateY(90deg) perspective(300px) }
+    to {  transform: none;  }
+}
+
+@keyframes posterTablet {
+    from {
+        width: 0;
+        height: 0;
+        transform: translateY(36vh);
+    }
+    50% {
+        width: 0;
+        height: 36vh;
+        transform: translateY(0);
+    }
+    to {
+        width: 100%;
+        height: 36vh;
+        transform: translateY(0);
+    }
+}
+
+@keyframes posterMobile {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100vw;
+    }
+}
+// PORTFOLIO VINO GRAD ANIMATION ENDS
+
+// parent for button with jump letters
+@keyframes letterUp {
+    0%, 100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    49% {
+        opacity: 1;
+        transform: translate3d(0, 100%, 0);
+    }
+    50% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+    51% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+}
+
+// parent for button with down letters
+@keyframes letterDown {
+    0%, 100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    49% {
+        opacity: 1;
+        transform: translate3d(0, -100%, 0);
+    }
+    50% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    51% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+}
+@keyframes crossAnchor {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0%); }
+}
+
+// word under title
+@keyframes titleName {
+    0% {
+        opacity: 0;
+        visibility: visible;
+        transform: translateX(-15px);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+// MAIN CONTACTS MAP ANIMATION
+@keyframes mainConatactsMapRight {
+    0% {
+        opacity: 0;
+        visibility: visible;
+        transform: translateX(10vh);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+@keyframes mainConatactsMapDown {
+    0% {
+        opacity: 0;
+        visibility: visible;
+        transform: translateY(10vh);
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+// MAIN CONTACTS MAP ENDS
+
+// shape under title
+@keyframes titleNameShape {
+    0% { width: 0; }
+    50% { width: 25px; }
+    100% { width: 50px; }
+    from, to { visibility: visible; }
+}
+
+// title word
+@keyframes titleWord {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-25px); }
+    50% { transform: translateY(-50px); }
+    75% { transform: translateY(-75px); }
+    100% { transform: translateY(-100px); }
+}
+
+// line animation on contacts page
+@keyframes lineDown {
+    from { transform: rotate(-65deg) translate3d(100%, 0, 0); }
+    to {
+        transform: rotate(-65deg) translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+}
+@keyframes lineUp {
+    from { transform: rotate(-65deg) translate3d(-100%, 0, 0); }
+    to {
+        transform: rotate(-65deg) translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+}
+
+// animation for menu
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+// animation for menu ends
+
+
+// portfolio
+@keyframes Down {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: none;
+    }
+}
+@keyframes Up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes Right {
+    from {
+        transform: translateX(-101%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes halfDown {
+    from {
+        transform: translate3d(-100%, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 50%, 0);
+    }
+}
+// portfolio ends
+
+// services
+@keyframes widthChanging {
+    from { width: 0; }
+    to { width: 100vh; }
+}
+@keyframes heightPercentChanging {
+    from { height: 0; }
+    to { height: 100%; }
+}
+
+// blog
+@keyframes heightChangingBlogThree {
+    from { height: 0; }
+    to { height: 35vh; }
+}
+
+// company
+@keyframes heightChangingCompany {
+    from { height: 0; }
+    to { height: 290px; }
+}
+@keyframes fadeInUp {
+    from, to { visibility: visible; }
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeftMap {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes widthIncreaseStickerLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: px(100);
+    }
+}
+// blog ends
+
+//  post
+@keyframes Left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: none;
+    }
+}
+//  post ends
+
+
+// web-production
+@keyframes heightIncreaseFull {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100vh;
+    }
+}
+// web-production ends
+
+
+// MAIN
+@keyframes slideDown {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateY(101%);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateY(-101%);
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateX(-101%);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateX(101%);
+    }
+}
+// MAIN ends
+
+
+// WEB PRODUCTION
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+// WEB PRODUCTION
+
+
+// MARKETING
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+  
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+// MARKETING
