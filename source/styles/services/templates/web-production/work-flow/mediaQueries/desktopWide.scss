@@ -9,4 +9,11 @@
     .back-layer {
         padding-right: px(100);
     }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(20deg) scaleX(.8);
+        }
+    }
 }

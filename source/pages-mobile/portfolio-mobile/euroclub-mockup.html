@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>EuroClub 2017 | Home</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet">
+        <link rel="icon"  href="images/favicon.ico" type="image/vnd.microsoft.icon">
+        
+
+
+        <!-- <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/libs.min.css">
+        <link rel="stylesheet" href="styles/mockup.css"> -->
+        
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="block">
+                <img src="../../images/portfolio/euroclub/block-1.jpg" alt="">
+                <img class="wow fadeIn" src="../../images/portfolio/euroclub/block-1.jpg" alt="">
+            </div>
+            <div class="image" data-type="background" data-speed="2"></div>
+            <div class="block">
+                <img class="wow fadeInLeft" src="../../images/portfolio/euroclub/block-2.png" alt="">
+                <div class="text wow fadeInRight" data-wow-delay=".25s">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi expedita praesentium, omnis voluptates, recusandae obcaecati, quaerat doloribus placeat rerum dolore aliquam in culpa. Doloremque fugit quod perferendis labore, dignissimos sunt.<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est aut officiis, incidunt, quibusdam, at cupiditate non similique eum modi praesentium rerum, voluptatibus laborum nulla! Accusamus, cum, recusandae. Consectetur, numquam!</p>
+                </div>
+            </div>
+            <div class="block">
+                <img class="wow fadeInUp" src="../../images/portfolio/euroclub/block-3.png" alt="">
+                <div class="text wow fadeInUp" data-wow-delay=".25s">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi expedita praesentium, omnis voluptates, recusandae obcaecati, quaerat doloribus placeat rerum dolore aliquam in culpa. Doloremque fugit quod perferendis labore, dignissimos sunt.</p>
+                </div>
+            </div>
+            <div class="block">
+                <img class="wow rollIn" src="../../images/portfolio/euroclub/block-4.png" alt="">
+                <div class="text wow fadeInRight" data-wow-delay=".25s">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi expedita praesentium, omnis voluptates, recusandae obcaecati, quaerat doloribus placeat rerum dolore aliquam in culpa. Doloremque fugit quod perferendis labore, dignissimos sunt.</p>
+                </div>
+            </div>
+            <div class="block">
+                <img class="wow fadeInUp" src="../../images/portfolio/euroclub/block-5.png" alt="">
+                <div class="text wow fadeInRight" data-wow-delay=".25s">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi expedita praesentium, omnis voluptates, recusandae obcaecati, quaerat doloribus placeat rerum dolore aliquam in culpa. Doloremque fugit quod perferendis labore, dignissimos sunt.</p>
+                    <a class="button" href="#">Посетить веб-сайт</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- SCRIPT -->
+        <script src="../../scripts/portfolio/euroclub-mockup.min.js"></script>
+        <script>
+        
+        	// ----- wow.js animation -----
+            new WOW().init();
+        
+            // makes the parallax elements
+        	function parallaxIt() {
+        		
+        	  // create variables
+        	  var $fwindow = $(window);
+        	  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        	  var $contents = [];
+        	  var $backgrounds = [];
+        
+        	  // for each of content parallax element
+        	  $('[data-type="content"]').each(function(index, e) {
+        	    var $contentObj = $(this);
+        
+        	    $contentObj.__speed = ($contentObj.data('speed') || 1);
+        	    $contentObj.__fgOffset = $contentObj.offset().top;
+        	    $contents.push($contentObj);
+        	  });
+        
+        	  // for each of background parallax element
+        	  $('[data-type="background"]').each(function() {
+        	    var $backgroundObj = $(this);
+        
+        	    $backgroundObj.__speed = ($backgroundObj.data('speed') || 1);
+        	    $backgroundObj.__fgOffset = $backgroundObj.offset().top;
+        	    $backgrounds.push($backgroundObj);
+        	  });
+        
+        	  // update positions
+        	  $fwindow.on('scroll resize', function() {
+        	    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        
+        	    $contents.forEach(function($contentObj) {
+        	      var yPos = $contentObj.__fgOffset - scrollTop / $contentObj.__speed;
+        
+        	      $contentObj.css('top', yPos);
+        	    })
+        
+        	    $backgrounds.forEach(function($backgroundObj) {
+        	      var yPos = -((scrollTop - $backgroundObj.__fgOffset) / $backgroundObj.__speed);
+        
+        	      $backgroundObj.css({
+        	        backgroundPosition: '0 ' + yPos + 'px'
+        	      });
+        	    });
+        	  });
+        
+        	  // triggers winodw scroll for refresh
+        	  $fwindow.trigger('scroll');
+        	};
+        
+        	parallaxIt();
+        </script>
+    </body>
+</html>

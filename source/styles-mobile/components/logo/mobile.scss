@@ -1,0 +1,18 @@
+& {
+    
+    display: block;
+    position: absolute;
+    top: px(30);
+    left: px(30);
+    z-index: 10;
+    width: px(150);
+    height: px(64);
+
+    &-letter {
+        fill: $white;
+    }
+
+    &-arrow {
+        fill: $blue;
+    }
+}

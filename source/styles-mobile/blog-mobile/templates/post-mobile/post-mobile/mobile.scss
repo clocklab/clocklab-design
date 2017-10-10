@@ -1,0 +1,172 @@
+& {  
+    
+    .crossed-button {
+        position: absolute;
+        bottom: px(100);
+        left: px(140);
+        z-index: 3;
+        font-family: $roboto;
+        font-weight: 600;
+        animation: fadeInLeft $POPBackAnimationTime $POPBackDelayTime both;
+
+        span {
+            color: $darkGray;
+            font-size: px(24);
+
+            &:after {
+                content: 'Назад';
+            }
+        }
+    }
+
+    header {
+        position: relative;
+        width: 100%;
+        height: px(600);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .date {
+        position: absolute;
+        z-index: 2;
+        bottom: px(-50);
+        right: px(30);
+        padding: px(20) px(26);
+        width: px(260);
+        height: px(120);
+        background: $blue;
+        color: $white;
+        font-weight: 600;
+
+        .day {
+            display: block;
+            position: absolute;
+            font-family: $Roboto-Regular;
+            font-size: px(48);
+
+            span {
+                font-size: px(24);
+                font-family: $Roboto-Bold;
+                text-transform: uppercase;
+            }
+        }
+
+        .year {
+            position: absolute;
+            right: px(40);
+            bottom: px(18);
+            display: block;
+            color: $gray;
+            font-size: px(28);
+            font-family: $Raleway-Medium;
+            transform-origin: 100% 100%;
+            transform: rotate(90deg);
+        }
+    }
+
+    main {
+        position: relative;
+        z-index: 2;
+        margin-top: px(100);
+        padding: 0 px(30) px(80);
+
+        h1 {
+            color: $darkGray;
+            font-family: $Roboto-Black;
+            font-size: px(60);
+            line-height: px(72);
+
+            &:first-letter {
+                text-transform: uppercase;
+            }
+        }
+
+        .reading-duration {
+            margin-top: px(10);
+            color: $gray;
+            font-family: $Roboto-Regular;
+            font-size: px(24);
+        }
+
+        article {
+            margin-top: px(50);
+
+            p,
+            blockquote {
+                margin-bottom: px(50);
+                color: $darkGray;
+                font-family: $Roboto-Regular;
+                font-size: px(32);
+                line-height: 1.4;
+                letter-spacing: 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            blockquote {
+                position: relative;
+                padding-top: px(50);
+                font-style: italic;
+    
+                .circles {
+                    display: flex;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    opacity: .4;
+                }
+
+                .circle {
+                    margin-right: 15px;
+                    width: 5px;
+                    height: 5px;
+                    border-radius: 50%;
+                    background: $darkGray;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        .bottom-panel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: px(90);
+
+            .crossed-button {
+                position: relative;
+                bottom: initial;
+                left: initial;
+            }
+
+            .facebook {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: px(60);
+                height: px(60);
+                border: 1px solid $darkGray;
+
+                svg { 
+                    width: 55%;
+                }
+
+                path { 
+                    fill: $darkGray;
+                }
+            }
+        }
+    }
+}

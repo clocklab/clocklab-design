@@ -1,0 +1,49 @@
+@import '../desktop';
+
+& {
+
+    .crossed-button {
+        left: px(70);
+    }
+
+    .social {
+        bottom: px(300);
+        left: px(300);
+    }
+
+    .nav-arrows {
+        bottom: px(30);
+        right: px(30);
+    }
+
+    header {
+        padding-left: px(550);
+    }
+
+    .image-container {
+        width: px(1100);
+        height: px(730);
+    }
+
+    .date {
+        left: px(1450);
+        width: px(330);
+        height: px(160);
+    }
+
+    main {
+        width: px(1300);
+
+        .sticker {
+            margin-left: px(170);
+        }
+
+        h1 {
+            margin-left: px(170);
+        }
+
+        article {
+            margin-left: px(250);
+        }
+    }
+}

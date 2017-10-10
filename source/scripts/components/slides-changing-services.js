@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const slides = Array.prototype.slice.call( document.querySelectorAll('.screen-block'))
     const events = ['wheel', 'keydown']
     const animationTime = 1000
-    const minLimit = - 30
-    const maxLimit = 30
+    const minLimit = - 4
+    const maxLimit = 4
     let flag = true
     let freezer
     

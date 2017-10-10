@@ -3,14 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
           animationTime = 1600,
           events = ['wheel', 'keydown', 'scroll']
 
-    function preventScroll() {
+    function preventScroll(event) {
         event.stopPropagation()
     }
 
-    function openMenu (event) {
+    function openMenu(event) {
         event.preventDefault()
 
-        function closeMenu (event) {
+        function closeMenu(event) {
             event.preventDefault()
     
             menu.classList.remove('opened')
