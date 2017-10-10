@@ -2,6 +2,7 @@
     font-family: $Roboto-Regular;
     position: relative;
     overflow: hidden;
+    z-index: -1;
     
     // ----- clock-bg -----
     .clock-bg span {

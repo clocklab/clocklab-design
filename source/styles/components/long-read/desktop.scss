@@ -578,7 +578,10 @@
                         min-height: 102px;
                         margin-bottom: 0;
 
-                        &:after { top: px(60); }
+                        &:after {
+                            left: px(-40);
+                            top: px(60);
+                        }
 
                         &:before {
                             left: px(-60) !important;

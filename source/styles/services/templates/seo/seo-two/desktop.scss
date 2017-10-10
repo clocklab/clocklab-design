@@ -175,7 +175,7 @@
                     color: $white;
                     display: block;
                     font-size: px(26);
-                    &:after { content: 'Подробнее'; }
+                    &:after { content: ''; }
                     &:before { background: $white; }
                 }
             }

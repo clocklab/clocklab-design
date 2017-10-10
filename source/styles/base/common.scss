@@ -11,7 +11,6 @@ html {
             flex-direction: column;
             background: $black;
             overflow: hidden;
-            .cyrillic { font-family: $roboto; }
             input, button { outline: none; }
             button { border: none; }
             header { flex: 0 0 auto; }

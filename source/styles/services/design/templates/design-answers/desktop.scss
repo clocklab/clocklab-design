@@ -2,6 +2,7 @@
     background: $background;
     position: relative;
     overflow: hidden;
+    z-index: -1;
     
     // ----- big-background-letter -----
     .big-background-letter {
@@ -60,6 +61,7 @@
                 display: block;
                 font-size: px(48);
                 margin-top: px(40);
+                padding-right: px(40);
             }
         }
         .column-1 { overflow: hidden; }

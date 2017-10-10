@@ -1,72 +1,93 @@
 <div id="about-company-six" class="screen-block">
 
-    <!-- logo -->
-    @@include('./components/logo.html')
+    <!-- front-layer -->
+    <div class="front-layer">
 
-    <!-- menu -->
-    @@include('./components/menu.html')
+        <!-- logo -->
+        @@include('./components/logo.html')
 
-    <!-- table -->
-    <div class="table">
-        <div class="container">  
+        <!-- menu -->
+        @@include('./components/menu.html')
 
-            <!-- item -->
-            <div class="item">
-                <div class="block">
-                    <img src="../images/about-company/brands/audi.png" alt="Audi">
-                    <img src="../images/about-company/brands/diesel.png" alt="Diesel">
-                    <img src="../images/about-company/brands/tommy-hilfiger.png" alt="Tommy Hilfiger">
-                    <img src="../images/about-company/brands/gstar-raw.png" alt="G-Star Raw">
-                    <img src="../images/about-company/brands/shell.png" alt="Shell">
+        <!-- table -->
+        <div class="table">
+            <div class="container">  
+
+                <!-- item -->
+                <div class="item">
+                    <div class="block">
+                        <img src="../images/about-company/brands/audi.png" alt="Audi">
+                        <img src="../images/about-company/brands/diesel.png" alt="Diesel">
+                        <img src="../images/about-company/brands/tommy-hilfiger.png" alt="Tommy Hilfiger">
+                        <img src="../images/about-company/brands/gstar-raw.png" alt="G-Star Raw">
+                        <img src="../images/about-company/brands/shell.png" alt="Shell">
+                    </div>
+                    <div class="line"></div>
                 </div>
-                <div class="line"></div>
-            </div>
 
-            <!-- item -->
-            <div class="item">
-                <div class="block">
-                    <img src="../images/about-company/brands/dkny-men.png" alt="DKNY">
-                <img src="../images/about-company/brands/oodji.png" alt="Oodji">
-                <img src="../images/about-company/brands/fornarina.png" alt="Fornarina">
-                <img src="../images/about-company/brands/accessorize.png" alt="Accessorize">
-                <img src="../images/about-company/brands/stem.png" alt="Stem">
+                <!-- item -->
+                <div class="item">
+                    <div class="block">
+                        <img src="../images/about-company/brands/dkny-men.png" alt="DKNY">
+                    <img src="../images/about-company/brands/oodji.png" alt="Oodji">
+                    <img src="../images/about-company/brands/fornarina.png" alt="Fornarina">
+                    <img src="../images/about-company/brands/accessorize.png" alt="Accessorize">
+                    <img src="../images/about-company/brands/stem.png" alt="Stem">
+                    </div>
+                    <div class="line"></div>
                 </div>
-                <div class="line"></div>
-            </div>
 
-            <!-- item -->
-            <div class="item">
-                <div class="block">
-                    <img src="../images/about-company/brands/pepe-jeans.png" alt="Pepe Jeans">
-                    <img src="../images/about-company/brands/gant.png" alt="GANT">
-                    <img src="../images/about-company/brands/seven-hills.png" alt="SevenHills">
-                    <img src="../images/about-company/brands/lets-help.png" alt="Давай допоможемо">
-                    <img src="../images/about-company/brands/jti.png" alt="JTI">
+                <!-- item -->
+                <div class="item">
+                    <div class="block">
+                        <img src="../images/about-company/brands/pepe-jeans.png" alt="Pepe Jeans">
+                        <img src="../images/about-company/brands/gant.png" alt="GANT">
+                        <img src="../images/about-company/brands/seven-hills.png" alt="SevenHills">
+                        <img src="../images/about-company/brands/lets-help.png" alt="Давай допоможемо">
+                        <img src="../images/about-company/brands/jti.png" alt="JTI">
+                    </div>
+                    <div class="line"></div>
                 </div>
-                <div class="line"></div>
-            </div>
 
-            <!-- item -->
-            <div class="item">
-                <div class="block">
-                    <img src="../images/about-company/brands/doberman.png" alt="Доберман">
-                    <img src="../images/about-company/brands/gogol.png" alt="Гоголь">
-                    <img src="../images/about-company/brands/park-avenue.png" alt="Park Avenue">
-                    <img src="../images/about-company/brands/preppy.png" alt="Preppy">
-                    <p><span>Стать нашим</span><br> клиентом</p>
+                <!-- item -->
+                <div class="item">
+                    <div class="block">
+                        <img src="../images/about-company/brands/doberman.png" alt="Доберман">
+                        <img src="../images/about-company/brands/gogol.png" alt="Гоголь">
+                        <img src="../images/about-company/brands/park-avenue.png" alt="Park Avenue">
+                        <img src="../images/about-company/brands/preppy.png" alt="Preppy">
+                        <!-- <p><span>Стать нашим</span><br> клиентом</p> -->
+
+                        <!-- questions -->
+                        <div class="questions wow fadeInUp">
+                            <button class="open-form">
+                                <span>Заказать</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="line right"></div>
                 </div>
-                <div class="line"></div>
-                <div class="line right"></div>
-            </div>
 
-            <!-- title -->
-            <div class="title">
-                <span class="name"><span class="cyrillic">Наши клиенты</span></span>
-                <div class="word">
-                    <span>Нам доверяют, нас знают, нас ценят</span>
+                <!-- title -->
+                <div class="title">
+                    <span class="name"><span class="cyrillic">Наши клиенты</span></span>
+                    <div class="word">
+                        <span>Нам доверяют, нас знают, нас ценят</span>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- back-layer -->
+    <div class="back-layer">
+
+        <!-- big-background-letter -->
+        @@include('./components/big-background-letter.html')
+        
+        <!-- form -->
+        @@include('./components/form.html')
     </div>
 
     <!-- vertical-text -->
