@@ -1,36 +1,60 @@
 function sliderForClients() {
     const sliderClients = document.querySelector('.slider-clients')
     const slides = sliderClients.querySelectorAll('.slide')
-    const minDif = 2
+    const minDif = 0.2
     const limit = - (slides.length - 1) * 100
-    let startPos = null
+    const animationTime = 300
+    let koef = 0.8
+    let sliderClientsWrapperWidth = null
+    let startTouchPos = null
+    let startLeftValue = null
     let lastMove = null
 
-    const rememberLastMove = event => lastMove = event
+    const moveSlider = event => {
+        lastMove = event
 
-    function moveSlider() {
-        const endPos = lastMove.touches[0].clientX
-        const previousValue = parseInt(sliderClients.style.left) || 0 
+        const endTouchPos = lastMove.touches[0].clientX
+        const previousLeftValue = parseInt(sliderClients.style.left) || 0 
 
-        sliderClients.style.left = endPos > startPos
-        ? 
-            previousValue !== 0 
-            ? `${previousValue + 100}%`
-            : sliderClients.style.left
-        :   
-            previousValue !== limit
-            ? `${previousValue - 100}%`
-            : sliderClients.style.left
-
-        sliderClients.removeEventListener('touchmove', rememberLastMove)
-        sliderClients.removeEventListener('touchend', moveSlider)
+        sliderClients.style.left = `${startLeftValue + (endTouchPos - startTouchPos) / sliderClientsWrapperWidth * 100 * koef}%`
     }
 
-    sliderClients.addEventListener('touchstart', event => {
-        startPos = event.touches[0].clientX
 
-        sliderClients.addEventListener('touchmove', rememberLastMove)
-        sliderClients.addEventListener('touchend', moveSlider)
+    const setLeftPosition = () => {
+        const endTouchPos = lastMove.touches[0].clientX
+        const dif = Math.abs(endTouchPos - startTouchPos) / sliderClientsWrapperWidth
+
+        sliderClients.style.transition = `left ${animationTime}ms ease`
+
+        sliderClients.style.left = dif < minDif
+        ? `${startLeftValue}%`
+        :
+            endTouchPos > startTouchPos
+            ? 
+                startLeftValue !== 0
+                ? `${startLeftValue + 100}%`
+                : `${startLeftValue}%`
+            : 
+                startLeftValue !== limit  
+                ? `${startLeftValue - 100}%`
+                : `${startLeftValue}%`
+
+        setTimeout(() => {
+            sliderClients.style.transition = null
+        }, animationTime + 100)
+        
+        sliderClients.removeEventListener('touchmove', moveSlider)
+        sliderClients.removeEventListener('touchend', setLeftPosition)
+    }
+
+
+    sliderClients.addEventListener('touchstart', event => {
+        sliderClientsWrapperWidth = sliderClients.parentElement.getBoundingClientRect().width
+        startTouchPos = event.touches[0].clientX
+        startLeftValue = parseInt(sliderClients.style.left) || 0
+
+        sliderClients.addEventListener('touchmove', moveSlider)
+        sliderClients.addEventListener('touchend', setLeftPosition)
     })
 }
 
