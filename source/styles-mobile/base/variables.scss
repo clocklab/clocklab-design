@@ -1,0 +1,637 @@
+// GLOBAL VARIABLES
+$browser-context: 16;
+
+// GLOBAL VARIABLES END
+
+// MEDIA QUERIES
+$phonePortrait:   '(max-width: 414px)';
+$phoneLandscape:  '(min-width: 415px) and (max-width: 667px)';
+$tabletPortrait:  '(min-width: 668px) and (max-width: 768px)';
+$tabletLandscape: '(min-width: 769px) and (max-width: 1024px)';
+$desktop:         '(min-width: 1025px) and (max-width: 1366px)';
+$desktopWide:     '(min-width: 1367px) and (max-width: 1680px)';
+$desktopHD:       '(min-width: 1681px) and (max-width: 1920px)';
+$desktopMega:     '(min-width: 1921px)';
+
+// MEDIA QUERIES END
+
+// COLORS VARIABLES
+$background: #1C1C1C;
+$silver: #2D2D2D;
+$blue: #0057FF;
+$dark: #333333;
+$white: #FFF;
+$black: #000;
+$lightBlack: #1C1C1C;
+$lightGray: #D7D7D7;
+$gray: #999;
+$darkGray: #444;
+$secondary: #FAFBFC;
+$primary: #24292E;
+$border: #E1E4E8;
+$red: #b60000;
+$darkWhite: #EEE;
+// COLORS VARIABLES END
+
+// FONT VARIABLES
+$Raleway-Thin: 'Raleway Thin'; // 100
+$Raleway-Light: 'Raleway Light'; // 300
+$Raleway-Regular: 'Raleway Regular'; // 400
+$Raleway-Medium: 'Raleway Medium'; // 500
+$Raleway-SemiBold: 'Raleway SemiBold'; // 600
+$Raleway-Bold: 'Raleway Bold'; // 700
+$Raleway-ExtraBold: 'Raleway ExtraBold'; // 800
+
+$Roboto-Thin: 'Roboto Thin'; // 100
+$Roboto-Light: 'Roboto Light'; // 300
+$Roboto-Regular: 'Roboto Regular'; // 400
+$Roboto-Medium: 'Roboto Medium'; // 500
+$Roboto-Bold: 'Roboto Bold'; // 700
+$Roboto-Black: 'Roboto Black'; // 900
+
+$Audi-Regular: 'Audi Regular'; // 400
+$Audi-Bold: 'Audi Bold'; // 700
+// FONT VARIABLES END
+
+// ДЛЯ РАБОТЫ НА ЛОКАЛКЕ - НА ПРОДАКШН НЕ ПОПАДАЕТ
+$raleway: Raleway;
+$roboto: Roboto;
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$bold: 700;
+$extra-bold: 800;
+$extra-black: 900;
+
+// TIME CONSTANTS
+$time: .3s;
+$timeHalf: $time / 2;
+$timeDif: .1s;
+
+$timeTick: .2s;
+$timeTickHalf: $timeTick / 2;
+// TIME CONSTANTS END
+
+// VARIABLES FOR PORTFOLIO CLIENT
+//$portfolioClientDelayTime: 0s;
+$portfolioClientDelayTime: $time * 3;
+$portfolioClientAnimationTime: $time;
+
+$portfolioClientNameDelayTime: $portfolioClientDelayTime + $portfolioClientAnimationTime;
+$portfolioClientNameAnimationTime: $time;
+// VARIABLES FOR PORTFOLIO CLIENT END
+
+// VARIABLES FOR PORTFOLIO BOTTOM BUTTON
+$portfolioBottomLineDelayTime: $portfolioClientNameDelayTime;
+$portfolioBottomLineAnimationTime: $time * 3;
+
+$portfolioBottomTextDelayTime: $portfolioBottomLineDelayTime + $portfolioBottomLineAnimationTime;
+$portfolioBottomTextAnimationTime: $time * 3;
+// VARIABLES FOR PORTFOLIO BOTTOM BUTTON END
+
+// VARIABLES FOR PORTFOLIO RIGHT PANEL
+$portfolioRightPanelDateDelayTime: $portfolioClientDelayTime;
+$portfolioRightPanelDateAnimationTime: $time;
+
+$portfolioRightPanelDevicesDesktopDelayTime: $portfolioRightPanelDateDelayTime + $portfolioRightPanelDateAnimationTime;
+$portfolioRightPanelDevicesDesktopAnimationTime: $time;
+
+$portfolioRightPanelDevicesTabletDelayTime: $portfolioRightPanelDevicesDesktopDelayTime + $portfolioRightPanelDevicesDesktopAnimationTime;
+$portfolioRightPanelDevicesTabletAnimationTime: $time;
+
+$portfolioRightPanelDevicesMobileDelayTime: $portfolioRightPanelDevicesTabletDelayTime + $portfolioRightPanelDevicesTabletAnimationTime;
+$portfolioRightPanelDevicesMobileAnimationTime: $time;
+// VARIABLES FOR PORTFOLIO RIGHT PANEL END
+
+
+// VARIABLES FOR PORTFOLIO BLOCK AUDI Q7 (PA - Portfolio Audi)
+$portfolioAudiLeftBlockLeftLineDelayTime: $portfolioClientDelayTime;
+$portfolioAudiLeftBlockLeftLineAnimationTime: $time * 9;
+
+$portfolioAudiLeftBlockRightLineDelayTime: $portfolioAudiLeftBlockLeftLineDelayTime + $portfolioAudiLeftBlockLeftLineAnimationTime / 10;
+$portfolioAudiLeftBlockRightLineAnimationTime: $time * 9;
+
+$portfolioAudiRightBlockLeftLineDelayTime: $portfolioAudiLeftBlockLeftLineDelayTime + $time;
+$portfolioAudiRightBlockLeftLineAnimationTime: $time * 9 - $time;
+
+$portfolioAudiRightBlockRightLineDelayTime: $portfolioAudiRightBlockLeftLineDelayTime + $portfolioAudiRightBlockLeftLineAnimationTime / 10;
+$portfolioAudiRightBlockRightLineAnimationTime: $time * 9;
+
+$portfolioAudiCenterBlockDelayTime: $portfolioRightPanelDevicesMobileDelayTime + $portfolioRightPanelDevicesMobileAnimationTime;
+$portfolioAudiCenterBlockAnimationTime: $time * 3;
+
+$portfolioAudiCenterBlockLineDelayTime: $portfolioAudiCenterBlockDelayTime + $portfolioAudiCenterBlockAnimationTime;
+$portfolioAudiCenterBlockLineAnimationTime: $time * 3;
+
+$portfolioAudiCenterBlockShadowDelayTime: $portfolioAudiCenterBlockLineDelayTime + $portfolioAudiCenterBlockLineAnimationTime - $timeTick;
+$portfolioAudiCenterBlockShadowAnimationTime: $time * 3;
+
+$portfolioAudiLeftBlockDelayTime: $portfolioAudiCenterBlockLineDelayTime + $portfolioAudiCenterBlockLineAnimationTime;
+$portfolioAudiLeftBlockAnimationTime: $time * 3;
+
+$PATitleLineDelayTime: $portfolioAudiLeftBlockDelayTime;
+$PATitleLineAnimationTime: $portfolioAudiLeftBlockAnimationTime;
+
+$PATitleTextDelayTime: $PATitleLineDelayTime + $PATitleLineAnimationTime;
+$PATitleTextAnimationTime: $time * 3;
+
+$PAStickerLineDelayTime: $PATitleTextDelayTime + $PATitleTextAnimationTime;
+$PAStickerLineAnimationTime: $time * 3;
+
+$PAStickerTextDelayTime: $PAStickerLineDelayTime + $PAStickerLineAnimationTime;
+$PAStickerTextAnimationTime: $time * 3;
+
+$PAAboutDelayTime: $PAStickerLineDelayTime;
+$PAAboutAnimationTime: $time * 3;
+
+
+
+    // MOBILE
+    $portfolioAudiCenterBlockDelayTimeMobile: $time * 3;
+    $portfolioAudiCenterBlockLineDelayTimeMobile: $portfolioAudiCenterBlockDelayTimeMobile + $portfolioAudiCenterBlockAnimationTime;
+    $portfolioAudiCenterBlockShadowDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime - $timeTick;
+    $portfolioAudiLeftBlockDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime;
+    $PAStickerLineDelayTimeMobile: $portfolioAudiLeftBlockDelayTimeMobile + $portfolioAudiLeftBlockAnimationTime;
+    $PAStickerTextDelayTimeMobile: $PAStickerLineDelayTimeMobile + $PAStickerLineAnimationTime;
+    $PATitleLineDelayTimeMobile: $PAStickerLineDelayTimeMobile;
+    $PATitleDelayTimeMobile: $PAStickerLineDelayTimeMobile;
+    $PATextDelayTimeMobile: $PAStickerTextDelayTimeMobile;
+
+    $PALongTextAnimationTime: $time * 3;
+    $PALongTextDelayTime: $PATextDelayTimeMobile;
+// VARIABLES FOR PORTFOLIO BLOCK AUDI Q7 END
+
+
+// VARIABLES FOR PORTFOLIO BLOCK VINO GRAD (PV - Portfolio Vinograd)
+$portfolioVinogradLeftBlockDelayTime: 0s;
+$portfolioVinogradLeftBlockAnimationTime: $time * 3;
+
+$portfolioVinogradRightBlockDelayTime: $portfolioVinogradLeftBlockDelayTime;
+$portfolioVinogradRightBlockAnimationTime: $portfolioVinogradLeftBlockAnimationTime;
+
+    // COMPONENTS
+    $portfolioVinogradRightPanelDelayTime: $portfolioVinogradLeftBlockDelayTime + $portfolioVinogradLeftBlockAnimationTime;
+    $portfolioVinogradClientDelayTime: $portfolioVinogradRightPanelDelayTime;
+    $portfolioVinogradClientNameDelayTime: $portfolioVinogradClientDelayTime + $portfolioClientAnimationTime;
+    $portfolioVinogradLogoDelayTime: $portfolioVinogradRightPanelDelayTime;
+    $portfolioVinogradMenuDelayTime: $portfolioVinogradRightPanelDelayTime;
+
+$portfolioVinogradPosterDelayTime: $portfolioRightPanelDevicesMobileDelayTime + $portfolioRightPanelDevicesMobileAnimationTime;
+$portfolioVinogradPosterAnimationTime: $time * 3;
+
+$portfolioVinogradPosterImageDelayTime: $portfolioVinogradPosterDelayTime + $portfolioVinogradPosterAnimationTime;
+$portfolioVinogradPosterImageAnimationTime: $time * 3;
+
+$PVPosterShadowDelayTime: $portfolioVinogradPosterImageDelayTime + $portfolioVinogradPosterImageAnimationTime;
+$PVPosterShadowAnimationTime: $time * 2;
+
+$portfolioVinogradPosterTextDelayTime: $portfolioVinogradPosterImageDelayTime + $portfolioVinogradPosterImageAnimationTime;
+$portfolioVinogradPosterTextAnimationTime: $time * 3;
+
+$PVTitleLineDelayTime: $portfolioVinogradPosterImageDelayTime + $portfolioVinogradPosterImageAnimationTime;
+$PVTitleLineAnimationTime: $portfolioVinogradPosterTextAnimationTime;
+
+$PVTitleTextDelayTime: $PVTitleLineDelayTime + $PVTitleLineAnimationTime;
+$PVTitleTextAnimationTime: $time * 3;
+
+$PVStickerLineDelayTime: $PVTitleTextDelayTime + $PVTitleTextAnimationTime;
+$PVStickerLineAnimationTime: $time * 3;
+
+$PVStickerTextDelayTime: $PVStickerLineDelayTime + $PVStickerLineAnimationTime;
+$PVStickerTextAnimationTime: $time * 3;
+
+$PVAboutDelayTime: $PVStickerLineDelayTime;
+$PVAboutAnimationTime: $time * 3;
+
+    // MOBILE
+    $portfolioVinogradPosterDelayTimeMobile: $portfolioVinogradRightBlockDelayTime + $portfolioVinogradRightBlockAnimationTime;
+    $portfolioVinogradPosterImageDelayTimeMobile: $portfolioVinogradPosterDelayTimeMobile + $portfolioVinogradPosterAnimationTime;
+    $PVStickerLineDelayTimeMobile: $portfolioVinogradPosterImageDelayTimeMobile + $portfolioVinogradPosterImageAnimationTime;
+    $PVStickerTextDelayTimeMobile: $PVStickerLineDelayTimeMobile + $PVStickerLineAnimationTime;
+    $PVTitleDelayTimeMobile: $PVStickerLineDelayTimeMobile;
+    $PVTitleLineDelayTimeMobile: $PVTitleDelayTimeMobile;
+    $PVTextDelayTimeMobile: $PVStickerTextDelayTimeMobile;
+// VARIABLES FOR PORTFOLIO BLOCK VINO GRAD END
+
+
+// VARIABLES FOR PORTFOLIO BLOCK EURO CLUB (PE - Portfolio Euro Club)
+$portfolioEuroclubBlueLineDelayTime: $time * 3;
+$portfolioEuroclubBlueLineAnimationTime: $time * 3;
+
+$portfolioEuroclubGrayBlockDelayTime: $portfolioEuroclubBlueLineDelayTime + $portfolioEuroclubBlueLineAnimationTime;
+$portfolioEuroclubGrayBlockAnimationTime: $time * 6;
+
+$portfolioEuroclubImageDelayTime: $portfolioEuroclubBlueLineDelayTime + $portfolioEuroclubBlueLineAnimationTime;
+$portfolioEuroclubImageAnimationTime: $portfolioEuroclubGrayBlockAnimationTime / 2;
+
+$portfolioEuroclubImageShadowDelayTime: $portfolioEuroclubBlueLineDelayTime + $portfolioEuroclubGrayBlockAnimationTime;
+$portfolioEuroclubImageShadowAnimationTime: $time * 3;
+
+$portfolioEuroclubImageTextDelayTime: $portfolioEuroclubImageShadowDelayTime + $portfolioEuroclubImageShadowAnimationTime;
+$portfolioEuroclubImageTextAnimationTime: $time * 3;
+
+$PETitleLineDelayTime: $portfolioEuroclubImageTextDelayTime;
+$PETitleLineAnimationTime: $portfolioEuroclubImageTextAnimationTime;
+
+$PETitleTextDelayTime: $PETitleLineDelayTime + $PETitleLineAnimationTime;
+$PETitleTextAnimationTime: $time * 3;
+
+$PEStickerLineDelayTime: $PETitleTextDelayTime + $PETitleTextAnimationTime;
+$PEStickerLineAnimationTime: $time * 3;
+
+$PEStickerTextDelayTime: $PEStickerLineDelayTime + $PEStickerLineAnimationTime;
+$PEStickerTextAnimationTime: $time * 3;
+
+$PEAboutDelayTime: $PEStickerLineDelayTime;
+$PEAboutAnimationTime: $time * 3;
+
+$portfolioEuroclubLetterDelayTime: $portfolioEuroclubImageTextDelayTime + $portfolioEuroclubImageTextAnimationTime;
+$portfolioEuroclubLetterAnimationTime: $time * 3;
+
+$PELongTextDelayTime: $PEAboutDelayTime;
+$PELongTextAnimationTime: $PEAboutAnimationTime;
+// VARIABLES FOR PORTFOLIO BLOCK EURO CLUB END
+
+
+// VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL (PAC - Portfolio Alta Capital)
+$portfolioAltaLeftBlockDelayTime: 0s;
+$portfolioAltaLeftBlockAnimationTime: $time * 3;
+
+$portfolioAltaRightBlockDelayTime: $portfolioAltaLeftBlockDelayTime;
+$portfolioAltaRightBlockAnimationTime: $portfolioAltaLeftBlockAnimationTime;
+
+$portfolioAltaGrayBlockDelayTime: $portfolioAltaRightBlockDelayTime + $portfolioAltaRightBlockAnimationTime;
+$portfolioAltaGrayBlockAnimationTime: $time * 3;
+
+$portfolioAltaImageDelayTime: $portfolioAltaGrayBlockDelayTime + $portfolioAltaGrayBlockAnimationTime;
+$portfolioAltaImageAnimationTime: $time * 3;
+
+$portfolioAltaPosterTextDelayTime: $portfolioAltaImageDelayTime + $portfolioAltaImageAnimationTime;
+$portfolioAltaPosterTextAnimationTime: $time * 3;
+
+$portfolioAltaPosterParagraphDelayTime: $portfolioAltaPosterTextDelayTime + $portfolioAltaPosterTextAnimationTime;
+$portfolioAltaPosterParagraphAnimationTime: $time * 3;
+
+$portfolioAltaControlsRightBlockDelayTime: $portfolioAltaPosterParagraphDelayTime + $portfolioAltaPosterParagraphAnimationTime;
+$portfolioAltaControlsRightBlockAimationTime: $time * 3;
+
+$portfolioAltaControlsLeftBlockDelayTime: $portfolioAltaControlsRightBlockDelayTime;
+$portfolioAltaControlsLeftBlockAimationTime: $portfolioAltaControlsRightBlockAimationTime;
+
+$portfolioAltaControlsIndicatorsDelayTime: $portfolioAltaControlsRightBlockDelayTime + $portfolioAltaControlsRightBlockAimationTime;
+$portfolioAltaControlsIndicatorsAimationTime: $time * 3;
+
+$PACTitleLineDelayTime: $portfolioAltaControlsRightBlockDelayTime;
+$PACTitleLineAnimationTime: $portfolioEuroclubImageTextAnimationTime;
+
+$PACTitleTextDelayTime: $PACTitleLineDelayTime + $PACTitleLineAnimationTime;
+$PACTitleTextAnimationTime: $time * 3;
+
+$PACStickerLineDelayTime: $PACTitleTextDelayTime + $PACTitleTextAnimationTime;
+$PACStickerLineAnimationTime: $time * 3;
+
+$PACStickerTextDelayTime: $PACStickerLineDelayTime + $PACStickerLineAnimationTime;
+$PACStickerTextAnimationTime: $time * 3;
+
+
+    // MOBILE
+    $portfolioAltaControlsRightBlockDelayTimeMobile: $portfolioAltaImageDelayTime + $portfolioAltaImageAnimationTime;
+    $portfolioAltaControlsLeftBlockDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile; 
+    $portfolioAltaControlsIndicatorsDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile + $portfolioAltaControlsRightBlockAimationTime;
+
+    $PALongTextDelayTime: 3.6s;
+    $PALongTextAnimationTime: $time * 3;
+// VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL ENDS 
+
+// PORTFOLIO PAGE (PP - Portfolio Page)
+$PPLeftBlockDelayTime: 0s; 
+$PPLeftBlockAnimationTime: $time * 3;
+
+$PPRightBlockDelayTime: $PPLeftBlockDelayTime; 
+$PPRightBlockAnimationTime: $PPLeftBlockAnimationTime;
+
+$PPMenuDelayTime: $PPRightBlockDelayTime + $PPRightBlockAnimationTime;
+$PPMenuAnimationTime: $time * 3;
+
+$PPLogoDelayTime: $PPMenuDelayTime; 
+$PPLogoAnimationTime: $PPMenuAnimationTime;
+
+$PPLangDelayTime: $PPMenuDelayTime;
+$PPLangAnimationTime: $PPMenuAnimationTime;
+
+$PPCopyDelayTime: $PPMenuDelayTime;
+$PPCopyAnimationTime: $PPMenuAnimationTime;
+
+$PPSocialDelayTime: $PPMenuDelayTime;
+$PPSocialAnimationTime: $PPMenuAnimationTime;
+
+$PPBehancelDelayTime: $PPSocialDelayTime + $PPSocialAnimationTime;
+$PPBehanceAnimationTime: $time;
+
+$PPClockAnimationTime: $time * 2;
+
+$PPClockFirstDelayTime: $PPCopyDelayTime + $PPCopyAnimationTime;
+$PPClockSecondDelayTime: $PPClockFirstDelayTime + $PPClockAnimationTime / 3;
+$PPClockThirdDelayTime: $PPClockSecondDelayTime + $PPClockAnimationTime / 3;
+$PPClockFourthDelayTime: $PPClockThirdDelayTime + $PPClockAnimationTime / 3;
+$PPClockFifthDelayTime: $PPClockFourthDelayTime + $PPClockAnimationTime / 3;
+
+$PPLettersDelayTime: $PPClockFifthDelayTime + $PPClockAnimationTime;
+$PPLettersAnimationTime: $time;
+
+$PPImageBgDelayTime: $PPLettersDelayTime + $PPLettersAnimationTime;
+$PPImageBgAnimationTime: $time * 3;
+
+$PPImageDelayTime: $PPImageBgDelayTime + $PPImageBgAnimationTime;
+$PPImageAnimationTime: $time * 3;
+
+$PPTitleLineDelayTime: $PPImageDelayTime + $PPImageAnimationTime;
+$PPTitleLineAnimationTime: $time * 3;
+
+$PPTitleTextDelayTime: $PPTitleLineDelayTime + $PPTitleLineAnimationTime;
+$PPTitleTextAnimationTime: $time * 3; 
+
+    // MOBILE
+    $PPBackBgDelayTime: $PPRightBlockDelayTime + $PPRightBlockAnimationTime;
+    $PPTitleTextDelayTimeMobile: $PPImageDelayTime + $PPImageAnimationTime;
+// PORTFOLIO PAGE ENDS
+
+
+//  BLOG PAGE (B - Blog)
+$BColumnDelayTime: 0s;
+$BColumnAnimationTime: $time * 3;
+
+$BGridDelayTime: $BColumnDelayTime;
+$BGridAnimationTime: $BColumnAnimationTime;
+
+$BMenuDelayTime: $BGridDelayTime + $BGridAnimationTime;
+$BMenuAnimationTime: $time * 3;
+
+$BLogoDelayTime: $BMenuDelayTime;
+$BLogoAnimationTime: $BMenuAnimationTime;
+
+$BLangDelayTime: $BMenuDelayTime;
+$BLangAnimationTime: $BMenuAnimationTime;
+
+$BFilterDelayTime: $BMenuDelayTime;
+$BFilterAnimationTime: $BMenuAnimationTime;
+
+$BFilterLineDelayTime: $BFilterDelayTime;
+$BFilterLineAnimationTime: $BFilterAnimationTime;
+
+$BFilterTextDelayTime: $BFilterLineDelayTime + $BFilterLineAnimationTime;
+$BFilterTextAnimationTime: $BFilterLineAnimationTime;
+
+$BPostImageDelayTime: $BFilterTextDelayTime;
+$BPostImageAnimationTime: $BFilterTextAnimationTime * 1.2;
+
+$BPostDateNumberAnimationTime: $time;
+$BPostDateNumberDelayTime: $BPostImageDelayTime + $BPostImageAnimationTime - $BPostDateNumberAnimationTime;
+
+$BPostDateDayDelayTime: $BPostDateNumberDelayTime + $BPostDateNumberAnimationTime;
+$BPostDateDayAnimationTime: $time * 3;
+
+$BStickerLineDelayTime: $BPostDateDayDelayTime;
+$BStickerLineAnimationTime: $BPostDateDayAnimationTime;
+
+$BStickerTextDelayTime: $BStickerLineDelayTime + $BStickerLineAnimationTime;
+$BStickerTextAnimationTime: $time * 3;
+
+$BPostTitleDelayTime: $BStickerTextDelayTime;
+$BPostTitleAnimationTime: $BStickerTextAnimationTime;
+
+$BPostLinkDelayTime: $BStickerTextDelayTime;
+$BPostLinkAnimationTime: $BStickerTextAnimationTime;
+//  BLOG PAGE ENDS
+
+
+//  POST PAGE (POP - Post Page)
+$POPClockAnimationTime: $time * 3;
+
+$POPMenuAnimationTime: $POPClockAnimationTime;
+$POPLogoAnimationTime: $POPClockAnimationTime;
+$POPLangAnimationTime: $POPClockAnimationTime;
+
+$POPImageBgDelayTime: 0s;
+$POPImageBgAnimationTime: $POPClockAnimationTime;
+
+$POPImageDelayTime: $POPImageBgDelayTime + $POPImageBgAnimationTime;
+$POPImageAnimationTime: $time * 3;
+
+$POPDateAnimationTime: $time * 2;
+$POPDateDelayTime: $POPImageBgDelayTime + $POPImageBgAnimationTime - $POPDateAnimationTime;
+
+$POPDayDelayTime: $POPDateAnimationTime + $POPDateDelayTime;
+$POPDayAnimationTime: $POPImageAnimationTime;
+
+$POPYearDelayTime: $POPDayDelayTime;
+$POPYearAnimationTime: $POPDayAnimationTime;
+
+$POPHeaderDelayTime: $POPYearDelayTime;
+$POPHeaderAnimationTime: $POPYearAnimationTime;
+
+$POPStickerLineDelayTime: $POPHeaderDelayTime;
+$POPStickerLineAnimationTime: $POPHeaderAnimationTime;
+
+$POPStickerTextDelayTime: $POPStickerLineDelayTime + $POPStickerLineAnimationTime;
+$POPStickerTextAnimationTime: $time * 3;
+
+$POPArticleDelayTime: $POPStickerTextDelayTime;
+$POPArticleAnimationTime: $POPStickerTextAnimationTime;
+
+$POPSocialDelayTime: $POPArticleDelayTime + $POPArticleAnimationTime - $time * 2; 
+$POPSocialAnimationTime: $time * 3;
+
+$POPBackDelayTime: $POPSocialDelayTime;
+$POPBackAnimationTime: $POPSocialAnimationTime;
+
+$POPArrowsDelayTime: $POPBackDelayTime;
+$POPArrowsAnimationTime: $POPBackAnimationTime;
+//  POST PAGE ENDS
+
+
+//  WEB PRODUCTION PAGE (WPP - Web Production Page)
+
+// WE CAN BLOCK (WC - We Can)
+$WCBeforeDelayTime: 0s;
+$WCBeforeAnimationTime: $time * 3;
+
+$WCBorderElDelayTime: $WCBeforeDelayTime + $WCBeforeAnimationTime;
+$WCBorderElAnimationTime: $time * 3;
+
+$WCClockAnimationTime: $time * 3;
+$WCClockFirstDelayTime: $WCBorderElDelayTime;
+$WCClockSecondDelayTime: $WCClockFirstDelayTime + $time;
+$WCClockThirdDelayTime: $WCClockSecondDelayTime + $time;
+$WCClockFourthDelayTime: $WCClockThirdDelayTime + $time;
+$WCClockFifthDelayTime: $WCClockFourthDelayTime + $time;
+
+$WCTitleLineDelayTime: $WCClockFifthDelayTime;
+$WCTitleLineAnimationTime: $time * 3;
+
+$WCTitleTextDelayTime: $WCTitleLineDelayTime + $WCTitleLineAnimationTime;
+$WCTitleTextAnimationTime: $time * 3;
+
+$WCImageAfterDelayTime: $WCTitleLineDelayTime;
+$WCImageAfterAnimationTime: $time * 3;
+
+$WCImageBeforeDelayTime: $WCImageAfterDelayTime + $WCImageAfterAnimationTime;
+$WCImageBeforeAnimationTime: $time * 3;
+
+$WCImageDelayTime: $WCImageBeforeDelayTime + $WCImageBeforeAnimationTime;
+$WCImageAnimationTime: $time * 3;
+
+$WCStickerLineDelayTime: $WCTitleTextDelayTime + $WCTitleTextAnimationTime;
+$WCStickerLineAnimationTime: $time * 3;
+$WCStickerTextDelayTime: $WCStickerLineDelayTime + $WCStickerLineAnimationTime;
+$WCStickerTextAnimationTime: $time * 3;
+
+$WCTextDelayTime: $WCStickerLineDelayTime;
+$WCTextAnimationTime: $WCStickerLineAnimationTime;
+
+$WCCrossedBtnDelayTime: $WCStickerTextDelayTime; 
+$WCCrossedBtnAnimationTime: $WCStickerTextAnimationTime;
+// WE CAN BLOCK
+
+// SITE TYPES (ST - Site types)
+$STBorderElDelayTime: $BColumnDelayTime + $BColumnAnimationTime;
+$STBorderElAnimationTime: $time * 3;
+
+$STLineAnimationTime: $time * 3;
+$STLineOneDelayTime: $STBorderElDelayTime + $STBorderElAnimationTime;
+$STLineTwoDelayTime: $STLineOneDelayTime + $time;
+$STLineThreeDelayTime: $STLineTwoDelayTime + $time;
+$STLineFourDelayTime: $STLineThreeDelayTime + $time;
+
+$STTextColumnAnimationTime: $time * 3;
+
+$STTextFirstColumnDelayTime: $STLineOneDelayTime + $STLineAnimationTime;
+
+$STTextSecondColumnDelayTime: $STLineTwoDelayTime + $STLineAnimationTime;
+$STTextSecondColumnTwoDelayTime: $STTextSecondColumnDelayTime + $timeTick;
+$STTextSecondColumnThreeDelayTime: $STTextSecondColumnTwoDelayTime + $timeTick;
+$STTextSecondColumnFourDelayTime: $STTextSecondColumnThreeDelayTime  + $timeTick;
+
+$STTextThirdColumnDelayTime: $STLineThreeDelayTime + $STLineAnimationTime;
+$STTextThirdColumnTwoDelayTime: $STTextThirdColumnDelayTime + $timeTick;
+$STTextThirdColumnThreeDelayTime: $STTextThirdColumnTwoDelayTime + $timeTick;
+$STTextThirdColumnFourDelayTime: $STTextThirdColumnThreeDelayTime  + $timeTick;
+// SITE TYPES 
+
+// WORK FLOW (WF - Work flow)
+$WFBeforeDelayTime: 0s;
+$WFBeforeAnimationTime: $time * 3;
+
+$WFBorderElDelayTime: $WFBeforeDelayTime + $WFBeforeAnimationTime;
+$WFBorderElAnimationTime: $time * 3;
+
+$WFTitleLineDelayTime: $WFBorderElDelayTime + $WFBorderElAnimationTime;
+$WFTitleLineAnimationTime: $time * 3;
+
+$WFTitleTextDelayTime: $WFTitleLineDelayTime + $WFTitleLineAnimationTime;
+$WFTitleTextAnimationTime: $time * 3;
+
+$WFStickerLineDelayTime: $WFTitleTextDelayTime + $WFTitleTextAnimationTime;
+$WFStickerLineAnimationTime: $time * 3;
+$WFStickerTextDelayTime: $WFStickerLineDelayTime + $WFStickerLineAnimationTime;
+$WFStickerTextAnimationTime: $time * 3;
+
+$WFLineAnimationTime: $time * 3;
+$WFLineOneDelayTime: $WFStickerLineDelayTime + $WFStickerLineAnimationTime;
+$WFLineTwoDelayTime: $WFLineOneDelayTime + $time * 1;
+$WFLineThreeDelayTime: $WFLineTwoDelayTime + $time * 1;
+$WFLineFourDelayTime: $WFLineThreeDelayTime + $time * 1;
+$WFLineFiveDelayTime: $WFLineFourDelayTime + $time * 1;
+$WFLineSixDelayTime: $WFLineFiveDelayTime + $time * 1;
+
+$WFTextColumnAnimationTime: $time * 3;
+$WFTextFirstColumnDelayTime: $WFLineOneDelayTime + $WFLineAnimationTime;
+$WFTextSecondColumnDelayTime: $WFLineTwoDelayTime + $WFLineAnimationTime;
+$WFTextThirdColumnDelayTime: $WFLineThreeDelayTime + $WFLineAnimationTime;
+$WFTextFourthColumnDelayTime: $WFLineFourDelayTime + $WFLineAnimationTime;
+$WFTextFifthColumnDelayTime: $WFLineFiveDelayTime + $WFLineAnimationTime;
+$WFTextSixthColumnDelayTime: $WFLineSixDelayTime + $WFLineAnimationTime;
+
+$WFQustionsDelayTime: $WFTextSixthColumnDelayTime + $WFTextColumnAnimationTime;
+$WFQustionsAnimationTime: $time * 3;
+
+$WFFrontLayerDelayTime: $WFQustionsDelayTime + $WFQustionsAnimationTime;
+$WFFrontLayerAnimationTime: $time;
+
+$WFBackLayerDelayTime: $WFFrontLayerDelayTime + $WFFrontLayerAnimationTime;
+$WFBackLayerAnimationTime: $WFFrontLayerAnimationTime;
+// WORK FLOW
+
+//  WEB PRODUCTION PAGE
+
+
+//  MARKETING PAGE
+
+// MARKETING HEADER BLOCK (MH)
+$MHGrayBlockDelayTime: $time * 6;
+$MHGrayBlockAnimationTime: $time * 3;
+
+$MHBlueBlockDelayTime: $MHGrayBlockDelayTime;
+$MHBlueBlockAnimationTime: $MHGrayBlockAnimationTime;
+
+$MHImageBeforeDelayTime: $MHGrayBlockDelayTime + $MHGrayBlockAnimationTime;
+$MHImageBeforeAnimationTime: $time * 3;
+
+$MHImageDelayTime: $MHImageBeforeDelayTime + $MHImageBeforeAnimationTime;
+$MHImageAnimationTime: $time * 3;
+
+$MHTitleLineDelayTime: $MHImageBeforeDelayTime;
+$MHTitleLineAnimationTime: $time * 3;
+
+$MHTitleTextDelayTime: $MHTitleLineDelayTime + $MHTitleLineAnimationTime;
+$MHTitleTextAnimationTime: $time * 3;
+
+$MHArticleDelayTime: $MHTitleLineDelayTime;
+$MHArticleAnimationTime: $time * 3;
+
+$MHTextDelayTime: $MHTitleTextDelayTime;
+$MHTextAnimationTime: $time * 3;
+// MARKETING HEADER BLOCK (MH)
+
+// MARKETING BRAND BLOCK (MH)
+$MBLine1DelayTime: $time * 6;
+$MBLine1AnimationTime: $time * 3;
+
+$MBLine2DelayTime: $MBLine1DelayTime + $MBLine1AnimationTime - $time * 2;
+$MBLine2AnimationTime: $MBLine1AnimationTime;
+
+$MBLine3DelayTime: $MBLine2DelayTime + $MBLine2AnimationTime - $time * 2;
+$MBLine3AnimationTime: $MBLine1AnimationTime;
+
+$MBColumn1DelayTime: $MBLine1DelayTime + $time;
+$MBColumn1AnimationTime: $time * 3;
+
+$MBColumn2DelayTime: $MBLine2DelayTime + $time;
+$MBColumn2AnimationTime: $time * 3;
+
+$MBColumn3DelayTime: $MBLine3DelayTime + $time;
+$MBColumn3AnimationTime: $time * 3;
+
+$MBStickerTextDelayTime: $MBColumn1DelayTime;
+$MBStickerTextAnimationTime: $time * 3;
+// MARKETING BRAND BLOCK (MH)
+
+// MARKETING SERVICES BLOCK (MS)
+$MSLine1DelayTime: $time * 6;
+$MSLineAnimationTime: $time * 3;
+$MSLine2DelayTime: $MSLine1DelayTime + $MSLineAnimationTime - $time * 2;
+$MSLine3DelayTime: $MSLine2DelayTime + $MSLineAnimationTime - $time * 2;
+
+$MSColumn1DelayTime: $MSLine1DelayTime + $time;
+$MSColumnAnimationTime: $time * 3;
+$MSColumn2DelayTime: $MSLine2DelayTime + $time;
+$MSColumn3DelayTime: $MSLine3DelayTime + $time;
+// MARKETING SERVICES BLOCK (MS)
+
+
+
+
+// MENU MOBILE
+$menuMobileAnimationTime: $time * 1.2;
+// MENU MOBILE ENDS
