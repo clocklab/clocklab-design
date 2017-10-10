@@ -227,7 +227,7 @@
     }
     
     ul {
-        li { line-height: 1.5; }
+        
         &.circled {
     
             li {
@@ -488,6 +488,8 @@
     }
 
     &--about-company {
+        
+        ul li { line-height: 1.5; }
 
         .row {
 
@@ -504,6 +506,8 @@
     }
 
     &--design {
+        
+        ul li { line-height: 1.5; }
 
         .row {
             
@@ -553,6 +557,8 @@
     }
 
     &--seo {
+        
+        ul li { line-height: 1.5; }
 
         .row {
 
