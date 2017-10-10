@@ -2,7 +2,7 @@
 
     bottom: 45vh;
     left: px(100);
-    font-family: $raleway;
+    font-family: $Raleway-Regular;
     font-size: 0;
     transform-origin: 0 0;
     transform: rotate(-90deg);
@@ -14,7 +14,6 @@
         color: $gray;
         cursor: pointer;
         font-size: px(28);
-        font-weight: $thin;
         text-transform: uppercase;
         animation: Down $PPLangAnimationTime $PPLangDelayTime both;
 

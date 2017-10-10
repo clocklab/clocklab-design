@@ -1,6 +1,6 @@
 & {  
 
-    font-family: $raleway;
+    font-family: $Raleway-Regular;
 
     .page-layer {
         top: 0;
@@ -69,8 +69,8 @@
             height: 100vh;
             color: rgba(0, 0, 0, .2);
             color: $gray;
+            font-family: $Raleway-Bold;
             font-size: 12vw;
-            font-weight: 700;
         }
 
         .letter {
@@ -331,8 +331,8 @@
         .new-title {
             position: relative;
             padding: 0 px(16);
+            font-family: $Raleway-ExtraBold;
             font-size: px(48);
-            font-weight: 700;
             overflow: hidden;
 
             span {
