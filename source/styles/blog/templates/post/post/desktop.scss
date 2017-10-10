@@ -3,7 +3,7 @@
     background: $white;
 
     .clock-bg {
-        font-family: $raleway;
+        font-family: $Raleway-Medium;
 
         span {
 
@@ -87,8 +87,7 @@
         position: fixed;
         bottom: px(80);
         left: px(200);
-        font-family: $roboto;
-        font-weight: 600;
+        font-family: $Roboto-Medium;
         animation: fadeInLeft $POPBackAnimationTime $POPBackDelayTime both;
 
         span {
@@ -246,19 +245,18 @@
         width: px(420);
         height: px(200);
         color: $white;
-        font-weight: 600;
         overflow: hidden;
 
         .day {
             display: block;
             position: absolute;
-            font-family: $roboto;
+            font-family: $Roboto-Medium;
             font-size: px(72);
             animation: fadeInLeft $POPDayAnimationTime $POPDayDelayTime both;
 
             span {
+                font-family: $Roboto-Bold;
                 font-size: px(32);
-                font-weight: $bold;
                 text-transform: uppercase;
             }
         }
@@ -280,8 +278,8 @@
             bottom: px(24);
             display: block;
             color: $gray;
+            font-family: $Raleway-Medium;
             font-size: px(28);
-            font-family: $raleway;
             transform-origin: 100% 100%;
             transform: rotate(90deg);
             animation: fadeInDownYear $POPYearAnimationTime $POPYearDelayTime both;
@@ -328,9 +326,8 @@
             margin-left: px(200);
             margin-top: px(30);
             width: px(1360);
-            font-family: $raleway;
+            font-family: $Raleway-ExtraBold;
             font-size: px(120);
-            font-weight: 800;
             text-transform: uppercase;
             animation: fadeInUp $POPHeaderAnimationTime $POPHeaderDelayTime both;
         }
