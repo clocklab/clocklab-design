@@ -1,7 +1,6 @@
 & {  
     font-family: $Roboto-Regular;
     position: relative;
-    overflow: hidden;
     
     // ----- animation -----
     animation: fadeIn $time * 3 both;
@@ -143,6 +142,7 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                    object-position: left;
                 }
             }
             .big-background-letter {
@@ -185,12 +185,9 @@
                 h3 {
                     margin: px(165) 0 px(110) px(88);
                     font-family: $Roboto-Bold;
-                    font-size: px(92);
+                    font-size: px(80);
                     line-height: 1.3;
-                    span {
-                        display: -webkit-inline-box;
-                        color: $blue;
-                    }
+                    span { color: $blue; }
                 }
                 p { padding-left: px(85); }
                 li {

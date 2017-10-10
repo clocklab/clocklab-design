@@ -1,9 +1,8 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     background: url('../images/dots.png');
+    font-family: $Raleway-Regular;
     background-color: $white;
-    font-family: $raleway;
-    font-weight: $regular;
     overflow: hidden;
     
     // ----- animation right -----
@@ -38,7 +37,7 @@
             span.name {
                 span {
                     animation: titleName $time * 2 $time * 8 linear;
-                    animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;    
                 }
                 &:before {
                     animation: titleNameShape $time * 2 $time * 7 linear;
@@ -87,7 +86,7 @@
             span.name {
                 span {
                     animation: titleName $time * 2 $time * 8 linear;
-                    animation-fill-mode: forwards;
+                    animation-fill-mode: forwards;    
                 }
                 &:before {
                     animation: titleNameShape $time * 2 $time * 7 linear;
@@ -185,7 +184,6 @@
     // ----- title -----
     .title {
         margin: px(428) 0 0 39.7vw;
-        span.name { top: -1.4vh; }
         p {
             text-transform: uppercase;
             font-size: px(29);
@@ -194,9 +192,7 @@
         .word {
             word-spacing: -3px;
             &:after { display: none; }
-            span {
-                font-size: px(60);
-            }
+            span { font-size: px(60); }
         }
     }
 }

@@ -1,8 +1,7 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    font-family: $Raleway-Regular;
     background: $background;
-    font-family: $raleway;
-    font-weight: $regular;
     overflow: hidden;
     
     // ----- animation left -----
@@ -103,11 +102,36 @@
     &.current-back { animation: none; }
     &.previous-back { animation-play-state: running; }
 
+    // ----- front-layer -----
+    // .front-layer {
+    //     z-index: 2;
+    //     overflow: hidden;
+    //     position: relative;
+    //     background: $white;
+    //     transform-origin: 0 50%;
+    //     transform-style: preserve-3d;
+    //     transition: transform $time * 2;
+    //     &:after {
+    //         top: 0;
+    //         left: 0;
+    //         opacity: 0;
+    //         width: 100%;
+    //         content: '';
+    //         z-index: -1;
+    //         height: 100%;
+    //         display: block;
+    //         position: absolute;
+    //         transition: opacity $time;
+    //         background: rgba(0,0,0,.4);
+    //     }
+
+        
+    // }
+
     // ----- vertical-text -----
     .vertical-text {
+        font-family: $Roboto-Thin;
         transform: rotate(-90deg);
-        font-family: $roboto;
-        font-weight: $thin;
         position: absolute;
         font-size: px(26);
         line-height: 1.4;
@@ -140,13 +164,13 @@
                     &:last-of-type { margin-bottom: 0; }
                 }
                 p {
-                    font-weight: $extra-bold;
+                    font-family: $Raleway-ExtraBold;
                     padding-top: 6.5vh;
                     line-height: 1.5;
                     font-size: px(48);
                     color: $white;
                     span {
-                        font-weight: $extra-bold;
+                        font-family: $Raleway-ExtraBold;
                         font-size: px(48);
                         color: $blue;
                     }
@@ -167,13 +191,36 @@
                 display: block;
                 margin-top: 12vh;
                 position: absolute;
-                font-family: $raleway;
-                font-weight: $extra-bold;
+                font-family: $Raleway-ExtraBold;
                 .word span {
                     font-size: px(88);
                     margin-bottom: 5px;
                 }
             }
+        }
+    }
+
+    // ----- back-layer -----
+    .back-layer {
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: flex;
+        padding-right: px(140);
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        background: $black;
+        height: 100vh;
+        width: 100%;
+    }
+
+    // ----- opened -----
+    &.opened .front-layer {
+        transform: rotateY(30deg);
+        &:after {
+            z-index: 9999;
+            opacity: 1;
         }
     }
 }

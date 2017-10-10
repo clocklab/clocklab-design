@@ -2,6 +2,7 @@
     background: $background;
     position: relative;
     overflow: hidden;
+    z-index: -1;
     
     // ----- big-background-letter -----
     .big-background-letter {
@@ -10,7 +11,6 @@
         position: absolute;
         font-size: px(1700);
         color: rgba(68,68,68,.5);
-        font-family: $Raleway-Regular;
         span:before { content: 'c'; }
     }
     
@@ -61,6 +61,7 @@
                 display: block;
                 font-size: px(48);
                 margin-top: px(40);
+                padding-right: px(40);
             }
         }
         .column-1 { overflow: hidden; }
