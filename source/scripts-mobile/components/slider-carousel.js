@@ -50,10 +50,6 @@ function sliderCarousel() {
         }, animationTime)
     }
 
-    const check = () => {
-        console.log('hre')
-    }
-
     const setLeftPosition = () => {
         const endTouchPos = lastMove && lastMove.touches[0].clientX
         const dif = Math.abs(endTouchPos - startTouchPos) / sliderCarouselWrapperWidth
@@ -67,7 +63,7 @@ function sliderCarousel() {
             ? `${startLeftValue + 100}%`
             : `${startLeftValue - 100}%`
 
-        if (dif > minDif) {
+          if (dif > minDif) {
             endTouchPos > startTouchPos 
             ? startLeftValue === bottomLimit && resetCarousel('end')
             : startLeftValue === topLimit && resetCarousel('start')
@@ -75,52 +71,70 @@ function sliderCarousel() {
             if (endTouchPos > startTouchPos) {
                 switch (startLeftValue) {
                     case bottomLimit:
-                        dots[0].classList.remove('active')
-                        dots[0].classList.add('small')
+                        console.log('bottomLimit')
                         dots[dots.length - 1].classList.remove('small')
                         dots[dots.length - 1].classList.add('active')
+                        dots[0].classList.remove('active')
+                        dots[0].classList.add('small')
                         break
-                    case bottomLimit - 100:
-                        dots[0].classList.remove('small')
+                    case topLimit:
+                    case topLimit + 100:
+                        console.log('topLimit, topLimit + 100')
                         changeActiveDot('prev')
-                    case bottomLimit - 200:
-                        dots[0].classList.remove('small')    
                         break
                     case topLimit + 200:
-                        dots[dots.length - 1].classList.add('small')                        
+                        console.log('topLimit + 200')
+                        dots[dots.length - 1].classList.add('small')
                         break
-                    case topLimit + 100:
-                    case topLimit:
-                        changeActiveDot('prev')
-                        break
-                    default:
+                    case bottomLimit - 200:
+                        console.log('bottomLimit - 200')
                         if (!dots[1].classList.contains('active')) {
                             changeActiveDot('prev')
-                        } 
+                        }
+                        dots[0].classList.remove('small')
+                        break
+                    case bottomLimit - 100:
+                        console.log('bottomLimit - 100')
+                        changeActiveDot('prev')
+                        break   
+                    default:
+                        console.log('default')
+                        if (!dots[1].classList.contains('active')) {
+                            changeActiveDot('prev')
+                        }
                         break
                 }
             } else {
                 switch (startLeftValue) {
-                    case bottomLimit:
-                    case - 200:
-                        changeActiveDot('next')
-                        break
-                    case - 300:
-                        dots[0].classList.add('small')
-                        break
-                    case topLimit + 200:
-                        dots[dots.length - 1].classList.remove('small')
-                        break
-                    case topLimit + 100:
-                        changeActiveDot('next')
-                        break
                     case topLimit:
+                        console.log('topLimint')
                         dots[dots.length - 1].classList.remove('active')
                         dots[dots.length - 1].classList.add('small')
                         dots[0].classList.remove('small')
                         dots[0].classList.add('active')
                         break
+                    case bottomLimit:
+                    case bottomLimit - 100:
+                        console.log('bottomLimit, bottomLimit - 100')
+                        changeActiveDot('next')
+                        break
+                    case bottomLimit - 200:
+                        console.log('bottomLimit - 200')
+                        dots[0].classList.add('small')
+                        break
+                    case topLimit + 200:
+                        console.log('topLimit + 200')
+                        if (!dots[2].classList.contains('active')) {
+                            changeActiveDot('next')
+                        }
+                        dots[dots.length - 1].classList.remove('small')
+                        break
+                    case topLimit + 100:
+                        console.log('topLimit + 100')
+                        changeActiveDot('next')
+                        break
                     default:
+                        console.log('default')
                         if (!dots[2].classList.contains('active')) {
                             changeActiveDot('next')
                         }
