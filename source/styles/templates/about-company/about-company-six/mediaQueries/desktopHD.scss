@@ -13,12 +13,9 @@
 		// ----- item -----
 		.item {
 			.block {
+				height: 55%;
 				margin-top: 37vh;
-				img {
-				    max-width: 200px;
-				    max-height: 35px;
-				    margin-bottom: 8vh;
-				}
+				img { margin-bottom: 8vh; }	
 			}
 			& + .title { margin-top: 20vh; }
 		}

@@ -140,8 +140,8 @@
             font-size: px(26);
             line-height: 1.4;
             bottom: 30.5vh;
+            left: px(-160);
             color: $white;
-            left: px(-76);
             width: 12%;
         }
 
@@ -158,15 +158,11 @@
             .item {
                 width: 25%;
                 position: relative;
+                display: -webkit-inline-box;
                 .block {
+                    height: 40%;
                     display: grid;
-                    margin-top: 29vh;
-                    img {
-                        max-width: 250px;
-                        max-height: 50px;
-                        margin-bottom: 8vh;
-                        &:last-of-type { margin-bottom: 0; }
-                    }
+                    margin: 29vh 0 auto;
                     .questions {
                         margin-top: 6.5vh;
                         .open-form {

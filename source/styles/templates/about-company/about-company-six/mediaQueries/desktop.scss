@@ -13,18 +13,14 @@
 		// ----- item -----
 		.item {
 			.block {
-				margin-top: 37vh;
-				img {
-				    max-width: 150px;
-				    max-height: 25px;
-				    margin-bottom: 8vh;
-				}
+				height: 60%;
+				margin-top: 30vh;
+				img { max-width: 150px; }
 			}
 			& + .title {
-				margin-top: 20vh;
+				margin-top: 18vh;
 				.word span { font-size: px(65); }
 			}
 		}
 	}
 }
-
