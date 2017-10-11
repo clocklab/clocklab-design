@@ -12,8 +12,7 @@
         span {
             position: relative;
             color: $lightBlack;
-            font-family: $raleway;
-            font-weight: 700;
+            font-family: $Raleway-Bold;
             line-height: initial;
 
             &:after {
@@ -90,9 +89,8 @@
         margin-bottom: px(200);
         width: px(1260);
         color: $white;
-        font-family: $raleway;
+        font-family: $Raleway-ExtraBold;
         font-size: px(88);
-        font-weight: 800;
         line-height: px(102);
 
         span {
@@ -103,7 +101,7 @@
     ul {
         margin-left: 66%;
         width: 33%;
-        font-family: $roboto;
+        font-family: $Roboto-Regular;
     }
 
     li {
@@ -111,8 +109,8 @@
         margin-bottom: px(100);
         padding-left: px(30);
         color: #ccc;
+        font-family: $Roboto-Light;
         font-size: px(36);
-        font-weight: 300;
         line-height: 1.4;
 
         span {

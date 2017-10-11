@@ -1,7 +1,7 @@
 & {  
 
     position: relative;
-    font-family: $roboto;
+    font-family: $Roboto-Regular;
     overflow: hidden;
 
     .top-panel {
@@ -39,8 +39,7 @@
 
     .big-bg-letter-c,
     .big-bg-letter-o {
-        font-family: $raleway;
-        font-weight: 800;
+        font-family: $Raleway-ExtraBold;
         text-transform: uppercase;
 
         .big-background-letter {
@@ -100,7 +99,7 @@
             content: 'Ежегодно продажи в сети динамически увеличиваются на 15%';
             color: $darkGray;
             font-size: px(32);
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             line-height: 1.4;
             transform-origin: 0 0;
             transform: rotate(90deg);
@@ -118,9 +117,8 @@
             
             & > h2 {
                 color: $darkGray;
-                font-family: $raleway;
+                font-family: $Raleway-ExtraBold;
                 font-size: px(144);
-                font-weight: 800;
 
                 span {
                     display: block;
@@ -159,9 +157,8 @@
             top: px(170);
             right: px(-90);
             color: $darkGray;
-            font-family: $raleway;
+            font-family: $Raleway-ExtraBold;
             font-size: px(520);
-            font-weight: 800;
             text-transform: uppercase;
             opacity: .9;
 
@@ -213,14 +210,13 @@
             padding-bottom: px(60);
             border-bottom: 1px solid $gray;
             color: $darkGray;
-            font-family: $roboto;
+            font-family: $Roboto-Light;
             font-size: px(36);
-            font-weight: 300;
             line-height: 1.4;
             font-style: italic;
 
             span {
-                font-weight: 700;
+                font-family: $Roboto-Bold;
             }
         }
     }
@@ -246,12 +242,12 @@
     .new-title {
         margin-top: px(80);
         margin-bottom: px(220);
-        font-family: $raleway;
+        font-family: $Raleway-Regular;
         
         .text-container {
             display: inline-block;
             margin-bottom: px(10);
-            font-weight: 800;
+            font-family: $Raleway-ExtraBold;
 
             span {
                 font-size: px(96);
@@ -266,7 +262,7 @@
         p {
             margin-bottom: px(60);
             color: $darkGray;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(32);
             line-height: 1.4;
 
@@ -281,7 +277,7 @@
 
             &.bold {
                 margin-bottom: px(60);
-                font-weight: 700;
+                font-family: $Roboto-Bold;
             }
         }
     }
@@ -296,7 +292,7 @@
             margin-bottom: px(280);
             color: $darkGray;
             font-size: px(72);
-            font-weight: 700;
+            font-family: $Roboto-Bold;
             line-height: px(80);
 
             span {
@@ -331,7 +327,7 @@
         h3 {
             margin-bottom: px(280);
             font-size: px(72);
-            font-weight: 700;
+            font-family: $Roboto-Bold;
             line-height: px(80);
 
             span {
@@ -341,7 +337,7 @@
 
         p {
             margin-bottom: px(60);
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(32);
             line-height: 1.4;
 
@@ -354,12 +350,12 @@
                 padding-left: px(60);
                 border-left: 9px solid $blue;
                 font-size: px(50);
-                font-weight: 700;
+                font-family: $Roboto-Bold;
                 font-style: italic;
             }
 
             &.bold {
-                font-weight: 700;
+                font-family: $Roboto-Bold;
             }
         }
 
@@ -405,7 +401,7 @@
             margin-bottom: px(300);
             width: px(1000);
             font-size: px(96);
-            font-weight: 800;
+            font-family: $Raleway-ExtraBold;
             line-height: 1.2;
 
             span {
@@ -446,9 +442,8 @@
             position: absolute;
             top: px(-90);
             left: px(-16);
-            font-family: $raleway;
+            font-family: $Raleway-ExtraBold;
             font-size: px(72);
-            font-weight: 800;
         }
 
         &--corporate {

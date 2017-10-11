@@ -9,7 +9,7 @@
         top: px(-300);
         left: px(-160);
         color: rgba(68, 68, 68, .5);
-        font-family: $raleway;
+        font-family: $Raleway-Bold;
         font-size: px(1700);
 
         span {
@@ -86,9 +86,8 @@
         }
 
         h2 {
-            font-family: $raleway;
+            font-family: $Raleway-Medium;
             font-size: px(96);
-            font-weight: 600;
 
             span {
                 display: block;
@@ -108,7 +107,7 @@
             margin-bottom: px(130);
             padding-right: px(300);
             color: $white;
-            font-family: $raleway;
+            font-family: $Raleway-Regular;
 
             button {
                 display: block;
@@ -130,7 +129,7 @@
                 position: absolute;
                 top: px(-60);
                 left: px(0);
-                font-family: $roboto;
+                font-family: $Roboto-Regular;
                 font-size: px(32);
                 transition: color $time;
                 transform-origin: 0 100%;
@@ -174,7 +173,7 @@
             left: 0;
             width: 82%;
             color: $white;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             background: #1c1c1c;
             transform: translateX(1px);
     
@@ -200,8 +199,7 @@
     
             h4 {
                 margin-bottom: px(60);
-                font-family: $raleway;
-                font-weight: 600;
+                font-family: $Raleway-Medium;
                 font-size: px(48);
 
                 span {
@@ -213,8 +211,8 @@
                 margin-bottom: px(50);
                 padding-right: px(40);
                 color: #ccc;
+                font-family: $Roboto-Light;
                 font-size: px(32);
-                font-weight: 300;
                 line-height: 1.4;
             }   
 
@@ -252,9 +250,8 @@
 
         h3 {
             width: 100%;
-            font-family: $raleway;
+            font-family: $Raleway-Medium;
             font-size: px(96);
-            font-weight: 600;
 
             span {
                 display: block;
@@ -275,7 +272,7 @@
 
             span {
                 color: $white;
-                font-family: $raleway;
+                font-family: $Raleway-Regular;
                 font-size: px(28);
                 transition: padding $time, color $time;
 
