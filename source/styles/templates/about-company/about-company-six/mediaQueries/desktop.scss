@@ -7,21 +7,23 @@
 	.vertical-text { left: 0; }
 
 	// ----- table -----
-	.table .container { max-width: 700px; }
-
-	// ----- item -----
-	.item {
-		.block {
-			margin-top: 37vh;
-			img {
-			    max-width: 150px;
-			    max-height: 25px;
-			    margin-bottom: 8vh;
+	.table .container {
+		max-width: 700px;
+		
+		// ----- item -----
+		.item {
+			.block {
+				margin-top: 37vh;
+				img {
+				    max-width: 150px;
+				    max-height: 25px;
+				    margin-bottom: 8vh;
+				}
 			}
-		}
-		& + .title {
-			margin-top: 20vh;
-			.word span { font-size: px(65); }
+			& + .title {
+				margin-top: 20vh;
+				.word span { font-size: px(65); }
+			}
 		}
 	}
 }

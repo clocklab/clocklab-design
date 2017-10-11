@@ -49,6 +49,7 @@
         top: 4vh;
         z-index: 4;
         right: -2vh;
+        position: fixed;
         font-size: 120vh;
         color: rgba(68,68,68,.3);
         span::before  { content: 'c'; }
