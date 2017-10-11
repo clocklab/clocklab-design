@@ -1,12 +1,13 @@
 @import '../desktop';
 
 // ----- table -----
-.table .container {
-	max-width: 1000px;
-	
+.front-layer {
 	// ----- vertical-text -----
 	.vertical-text { left: px(-5); }
 	
+	// ----- table -----
+	.table .container { max-width: 1000px; }
+		
 	// ----- item -----
 	.item {
 		.block {

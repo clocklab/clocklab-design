@@ -1,8 +1,13 @@
 @import '../desktop';
 
 // ----- table -----
-.table .container {
-	max-width: 700px;
+.front-layer {
+
+	// ----- vertical-text -----
+	.vertical-text { left: 0; }
+
+	// ----- table -----
+	.table .container { max-width: 700px; }
 
 	// ----- item -----
 	.item {
@@ -21,5 +26,3 @@
 	}
 }
 
-// ----- vertical-text -----
-.vertical-text { left: px(20); }
