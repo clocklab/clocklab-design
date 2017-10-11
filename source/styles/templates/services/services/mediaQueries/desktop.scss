@@ -5,8 +5,25 @@
 	padding-top: 25vh;
 	.container {
 		width: 700px;
+		span.name {
+			left: .5vh;
+			top: -8vh;
+		}
 		.item {
-			.title span.name { top: -10vh; }
+			.types__item {
+				margin-bottom: 0;
+				width: 95%;
+			}
+			.content {
+				padding-left: .5vh;
+				h3 { font-size: px(30); }
+				p { font-size: px(25); }
+				ul li {
+					line-height: 1.2;
+					margin-bottom: 0;
+					a { font-size: px(25); }
+				}
+			}
 			&.up {
 				margin-bottom: 8vh;
 				.services-line { top: -25vh; }
