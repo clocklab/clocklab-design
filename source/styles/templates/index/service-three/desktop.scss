@@ -1,7 +1,6 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    font-family: $raleway;
-    font-weight: $regular;
+    font-family: $Raleway-Regular;
     overflow: hidden;
     
     // ----- animation right -----
@@ -15,7 +14,7 @@
         // ----- shadow -----
         .shadow div {
             &:first-child { animation: fadeIn $time * 3 $time * 3 both; }
-            &:last-child { animation: fadeInRight $time * 3 $time * 3 both; }
+            &:last-child { animation: fadeInLeft $time * 3 $time * 3 both; }
         }
         
         // ----- service-info -----
@@ -29,13 +28,13 @@
 
         // ----- other -----
         .bottom-button {
-            span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
+            span { animation: FadeInLeft $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
             .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
         }
         
         // ----- info-block -----
         .info-block {
-            animation: fadeInRight $time * 2 $time * 7 linear;
+            animation: fadeInLeft $time * 2 $time * 7 linear;
             animation-fill-mode: forwards;
         }
 
@@ -76,7 +75,7 @@
         // ----- shadow -----
         .shadow div {
             &:first-child { animation: fadeIn $time * 3 $time * 3 both; }
-            &:last-child { animation: fadeInRight $time * 3 $time * 3 both; }
+            &:last-child { animation: fadeInLeft $time * 3 $time * 3 both; }
         }
         
         // ----- service-info -----
@@ -90,13 +89,13 @@
 
         // ----- other -----
         .bottom-button {
-            span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
+            span { animation: FadeInLeft $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
             .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
         }
         
         // ----- info-block -----
         .info-block {
-            animation: fadeInRight $time * 2 $time * 7 linear;
+            animation: fadeInLeft $time * 2 $time * 7 linear;
             animation-fill-mode: forwards;
         }
 
@@ -162,7 +161,7 @@
 
     // ----- info-block -----
     .info-block {
-        font-weight: $medium;
+        font-family: $Raleway-Medium;
         position: absolute;
         padding: 5% 1vh 0;
         font-size: px(28);
@@ -187,7 +186,7 @@
             span {
                 color: $white;
                 font-size: px(50);
-                font-weight: $medium;
+                font-family: $Raleway-Medium;
                 &:nth-of-type(10) { margin-right: 5px;}
             }
         }
@@ -197,7 +196,7 @@
     .service-info {
         position: absolute;
         p {
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(26);
             line-height: 1.4;
             color: $white;
