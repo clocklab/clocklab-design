@@ -29,6 +29,30 @@
                 </div>
             </div>
 
+            <!-- <div class="services">
+                <div class="services-slider-wrapper">
+                    <div class="services-slider">
+                        <div class="service"></div>
+                        <div class="service"></div>
+                        <div class="service"></div>
+                        <div class="service"></div>
+                    </div>
+                </div>  
+            </div> -->
+
+            <div class="portfolio">
+                <div class="carousel-slider-wrapper">
+                    <div class="carousel-slider">
+                        <div class="slide">
+                            <img src="../images/portfolio/audi.jpg" alt="audi">
+                            <span>портфолио</span>
+                            <h3>Audi</h3>
+                            <a href="">посмотреть работу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="our-clients">
                 <span>наши клиеты</span>
                 <div class="slogan">
@@ -104,16 +128,49 @@
                             <div class="slide__item slide__item--stem">
                                 <img src="../images/about-company/brands/stem.png" alt="stem">
                             </div>
-                            <button class="open-form">
+                            <button class="open-form" data-form-id="questions">
                                 <span>Стать нашим</span>
                                 клиентом
                             </button>
                         </div>
                     </div>
                 </div>
+
+                <div class="dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
                 
-                @@include('./components/form-mobile.html')
+                @@include('./components/form-become-client-mobile.html')
             </div>
+
+            <div class="questions">
+                <h3>Есть что сказать?</h3>
+                <span>пишите или звоните нам</span>
+    
+                <ul class="contacts-info">
+                    <li>
+                        <span>Телефон</span>
+                        <a href="tel:+380673959192">+380 (67) 395-91-92</a>
+                    </li>
+                    <li>
+                        <span>E-mail</span>
+                        <a href="mailto:hello@clocklab.design">hello@clocklab.design</a>
+                    </li>
+                    <li>
+                        <span>Адрес</span>
+                        <a href="https://www.google.com.ua/maps/place/%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC'%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%BF%D0%BB%D0%BE%D1%89%D0%B0,+2,+%D0%9A%D0%B8%D1%97%D0%B2/@50.431644,30.4710183,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cebfa52cd7bf:0x2169dd9a939a0aa8!8m2!3d50.431644!4d30.473207" target="_blank">Соломенская площадь, 2</a>
+                    </li>
+                </ul>
+    
+                <button class="open-form" data-form-id="questions">
+                    <span>Задать вопрос</span>
+                </button>
+    
+                @@include('./components/form-questions-mobile.html')
+            </div>
+            
         </div>
     </body>
 </html>

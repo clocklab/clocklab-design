@@ -332,5 +332,106 @@
                 }
             }
         }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: px(40);
+
+            .dot {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: px(8);
+                width: 8px;
+                height: 8px;
+
+                &:before {
+                    display: block;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    background: $gray;
+                    content: '';
+                    transition: width $timeTick, height $timeTick, background $timeTick;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &.active {
+
+                    &:before {
+                        background: $blue;
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .questions {
+        padding: px(200) px(30) 0;
+        width: 100vw;
+        height: 100vh;
+        background: $lightBlack;
+
+        h3 {
+            margin-bottom: px(24);
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: px(48);
+            text-transform: uppercase;
+        }
+
+        & > span {
+            display: block;
+            margin-bottom: px(190);
+            color: $blue;
+            font-family: $Roboto-Medium;
+            font-size: px(32);
+        }
+    
+        .contacts-info {
+            margin-top: px(160);
+    
+            li {
+                margin-bottom: px(80); 
+                font-family: $Roboto-Medium;
+                font-size: px(28);
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+    
+            span {
+                display: block;
+                margin-bottom: px(10);
+                color: $white;
+            }
+    
+            a {
+                color: $gray;
+            }
+        }
+    
+        .open-form {
+            display: block;
+            margin: px(110) auto 0;
+            padding: px(30) 0;
+            width: 100%;
+            max-width: 400px;
+            height: px(90);
+            background: $blue;
+            color: $white;
+            font-family: $Roboto-Medium;
+            font-size: px(28);
+            text-align: center;
+            text-transform: uppercase;
+        }
     }
 }

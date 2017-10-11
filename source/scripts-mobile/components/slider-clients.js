@@ -1,6 +1,7 @@
 function sliderForClients() {
     const sliderClients = document.querySelector('.slider-clients')
     const slides = sliderClients.querySelectorAll('.slide')
+    const dots = document.querySelector('.our-clients .dots')
     const minDif = 0.2
     const limit = - (slides.length - 1) * 100
     const animationTime = 300
@@ -19,6 +20,14 @@ function sliderForClients() {
         sliderClients.style.left = `${startLeftValue + (endTouchPos - startTouchPos) / sliderClientsWrapperWidth * 100 * koef}%`
     }
 
+    const changeActiveDot = direction => {
+        const activeDot = dots.querySelector('.active')
+
+        activeDot.classList.remove('active')
+        direction === 'next'
+        ? activeDot.nextElementSibling.classList.add('active')
+        : activeDot.previousElementSibling.classList.add('active')
+    }
 
     const setLeftPosition = () => {
         const endTouchPos = lastMove.touches[0].clientX
@@ -39,6 +48,11 @@ function sliderForClients() {
                 ? `${startLeftValue - 100}%`
                 : `${startLeftValue}%`
 
+        dif > minDif && 
+        endTouchPos > startTouchPos
+        ? startLeftValue !== 0 && changeActiveDot('prev')
+        : startLeftValue !== limit && changeActiveDot('next')
+
         setTimeout(() => {
             sliderClients.style.transition = null
         }, animationTime + 100)
@@ -46,7 +60,6 @@ function sliderForClients() {
         sliderClients.removeEventListener('touchmove', moveSlider)
         sliderClients.removeEventListener('touchend', setLeftPosition)
     }
-
 
     sliderClients.addEventListener('touchstart', event => {
         sliderClientsWrapperWidth = sliderClients.parentElement.getBoundingClientRect().width

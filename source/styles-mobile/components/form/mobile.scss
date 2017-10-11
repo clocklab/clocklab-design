@@ -164,4 +164,11 @@
     &.opened {
         left: 0;
     }
+
+    &--become-client {
+        
+        h3 {
+            margin-bottom: px(140);
+        }
+    }
 }
