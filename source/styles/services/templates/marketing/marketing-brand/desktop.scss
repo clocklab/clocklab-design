@@ -60,7 +60,7 @@
         position: relative;
         top: -18vh;
         z-index: 3;
-        font-family: $raleway;
+        font-family: $Raleway-Regular;
     }
 
     .sticker {
@@ -80,8 +80,8 @@
     h2 {
         margin-top: px(60);
         width: px(1200);
+        font-family: $Raleway-ExtraBold;
         font-size: px(144);
-        font-weight: 800;
         overflow: hidden;
         
         span {
@@ -138,14 +138,14 @@
         padding-right: px(250);
         width: 50%;
         color: $darkGray;
-        font-family: $roboto;
+        font-family: $Roboto-Regular;
 
         .index {
             position: absolute;
             top: px(-40);
             left: px(-40);
             color: $gray;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(32);
             transform: rotate(-90deg);
             overflow: hidden;
@@ -161,8 +161,7 @@
 
         h3 {
             margin-bottom: px(24);
-            font-family: $raleway;
-            font-weight: 700;
+            font-family: $Raleway-Bold;
             font-size: px(48);
         }
 
@@ -182,9 +181,8 @@
         h3 {
             margin-bottom: px(34);
             color: $darkGray;
-            font-family: $raleway;
+            font-family: $Raleway-ExtraBold;
             font-size: px(48);
-            font-weight: 800;
             text-transform: uppercase;
         }
 
@@ -192,7 +190,7 @@
             margin-bottom: px(66);
             padding-right: px(300);
             color: $gray;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(28);
             line-height: 1.4;
         }
@@ -204,9 +202,8 @@
             background: $blue;
             border: 2px solid $blue;
             color: $white;
-            font-family: $roboto;
+            font-family: $Roboto-Bold;
             font-size: px(28);
-            font-weight: 700;
             text-transform: uppercase;
             transition: color $time, background $time;
 
