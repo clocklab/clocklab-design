@@ -30,7 +30,7 @@ function sliderForClients() {
     }
 
     const setLeftPosition = () => {
-        const endTouchPos = lastMove.touches[0].clientX
+        const endTouchPos = lastMove && lastMove.touches[0].clientX
         const dif = Math.abs(endTouchPos - startTouchPos) / sliderClientsWrapperWidth
 
         sliderClients.style.transition = `left ${animationTime}ms ease`
@@ -48,10 +48,11 @@ function sliderForClients() {
                 ? `${startLeftValue - 100}%`
                 : `${startLeftValue}%`
 
-        dif > minDif && 
-        endTouchPos > startTouchPos
-        ? startLeftValue !== 0 && changeActiveDot('prev')
-        : startLeftValue !== limit && changeActiveDot('next')
+        if (dif > minDif) {
+            endTouchPos > startTouchPos
+            ? startLeftValue !== 0 && changeActiveDot('prev')
+            : startLeftValue !== limit && changeActiveDot('next')
+        }
 
         setTimeout(() => {
             sliderClients.style.transition = null
