@@ -39,7 +39,7 @@
     .bottom-button {
 
         span {
-            font-family: $raleway;
+            font-family: $Raleway-Regular;
 
             &:before {
                 content: 'Все новости';
@@ -63,7 +63,7 @@
             width: px(280);
             color: $darkGray;
             content: '';
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(24);
             line-height: 1.4;
             transform-origin: 0 0;
@@ -82,8 +82,7 @@
         top: px(50);
         width: px(250);
         color: $white;
-        font-family: $roboto;
-        font-weight: 300;
+        font-family: $Roboto-Light;
         font-size: px(32);
         transform-origin: 100% 0;
         transform: rotate(-90deg);
@@ -162,7 +161,7 @@
         p {
             margin-bottom: px(50);
             color: $darkGray;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(32);
             line-height: 1.4;
         }
@@ -171,7 +170,7 @@
     .crossed-button {
         margin-top: px(50);
         margin-left: px(200);
-        font-family: $raleway;
+        font-family: $Raleway-Regular;
 
         span {
             &:after {
