@@ -76,24 +76,25 @@
         }
     }
 
-    .portfolio {
+    .portfolio,
+    .services {
         position: relative;
         width: 100vw;
         height: 100vh;
-        
-        .carousel-slider-wrapper {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }   
+    }
+
+    .carousel-slider-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
 
         .carousel-slider {
             display: flex;
             position: absolute;
             top: 0;
             left: 0;
-
+    
             &__item {
                 position: relative;
                 padding: px(340) px(30) 0;
@@ -112,6 +113,7 @@
     
                 span,
                 h3,
+                h4,
                 a {
                     position: relative;
                     z-index: 2;
@@ -128,6 +130,12 @@
                     font-family: $Roboto-Black;
                     font-size: px(120);
                 }
+
+                h4 {
+                    color: $blue;
+                    font-family: $Roboto-Black;
+                    font-size: px(72);
+                }
     
                 a {
                     color: $white;
@@ -135,7 +143,7 @@
                     font-size: px(24);
                     text-transform: uppercase;
                 }
-
+    
                 &:before {
                     display: block;
                     position: absolute;
@@ -144,29 +152,29 @@
                     z-index: 1;
                     width: 100%;
                     height: 100%;
-                    background: rgba(0, 0, 0, .5);
+                    background: rgba(0, 0, 0, .4);
                     content: '';
                 }
-
+    
                 &--audi {
-
+    
                     img {
                         object-position: px(-160) 0;
                     }
                 }
             }
         }
-
+    
         .dots {
             display: flex;
             justify-content: center;
             align-items: center;
             position: absolute;
-            bottom: px(90);
+            bottom: px(120);
             z-index: 5;
             width: 100%;
         }
-
+    
         .dot {
             display: flex;
             justify-content: center;
@@ -174,7 +182,7 @@
             margin-right: px(8);
             width: 8px;
             height: 8px;
-
+    
             &:before {
                 display: block;
                 width: 6px;
@@ -184,25 +192,47 @@
                 content: '';
                 transition: width $timeTick, height $timeTick, background $timeTick;
             }
-
+    
             &:last-child {
                 margin-right: 0;
             }
-
+    
             &.active {
-
+    
                 &:before {
                     background: $blue;
                     width: 8px;
                     height: 8px;
                 }
             }
-
+    
             &.small {
-
+    
                 &:before {
                     width: 3px;
                     height: 3px;
+                }
+            }
+        }
+    }   
+
+    .services {
+
+        .carousel-slider-wrapper {
+
+            .carousel-slider {
+
+                &__item {
+                    padding-top: px(460);
+
+                    h3 {
+                        margin: px(32) 0 px(26);
+                        font-size: px(72);
+                    }
+
+                    h4 {
+                        margin-bottom: px(40);
+                    }
                 }
             }
         }

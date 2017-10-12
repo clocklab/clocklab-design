@@ -16,5 +16,7 @@
 
 //= include ./components/big-background-letter.js
 
+//= include ./components/menu.js
+
 // ----- change lines color -----
 $('.light div').children().addClass('light');
