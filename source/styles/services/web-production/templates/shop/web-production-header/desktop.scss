@@ -90,28 +90,6 @@
         padding-bottom: px(350);
         width: 81%;
 
-        &:after {
-            display: block;
-            position: absolute;
-            top: px(600);
-            right: px(-760);
-            width: px(680);
-            content: 'Ежегодно продажи в сети динамически увеличиваются на 15%';
-            color: $darkGray;
-            font-size: px(32);
-            font-family: $Roboto-Regular;
-            line-height: 1.4;
-            transform-origin: 0 0;
-            transform: rotate(90deg);
-        }
-
-        &--card {
-
-            &:after {
-                content: 'Сайт-визитка – это эффективная возможность повысить доходы для Вас и вашего бизнеса';
-            }
-        }
-
         &--landing {
             padding-bottom: px(80);
             
@@ -126,10 +104,6 @@
                     color: $blue;
                 }
             }
-
-            &:after {
-                content: 'Лэндинг — содержательный и ёмкий призыв к действию.';
-            }
         }
     }
 
@@ -139,6 +113,20 @@
         height: 100vh;
         min-height: 650px;
         max-height: 1100px;
+
+        .header-addition {
+            display: block;
+            position: absolute;
+            top: px(600);
+            right: px(-760);
+            width: px(680);
+            color: $darkGray;
+            font-size: px(32);
+            font-family: $Roboto-Regular;
+            line-height: 1.4;
+            transform-origin: 0 0;
+            transform: rotate(90deg);
+        }
 
         .image-container {
             position: relative;
