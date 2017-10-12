@@ -62,7 +62,7 @@
     }
     .date {
         position: absolute;
-        width: px(220);
+        width: px(250);
         top: px(50);
         right: 95%;
         color: $white;
@@ -114,9 +114,13 @@
             display: inline-block;
             margin-bottom: px(10);
             font-family: $Raleway-ExtraBold;
+            &:before {
+                height: px(20);
+                bottom: px(20);
+            }
             span {
-                font-size: px(96);
-                line-height: px(104);
+                font-size: px(60);
+                line-height: px(90);
             }
         }
     }

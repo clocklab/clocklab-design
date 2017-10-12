@@ -2,6 +2,17 @@
 & {
     .blue-line { left: px(300); }
     .info { margin-left: px(200); }
-    .new-title { .text-container { span { font-size: px(80); } } }
+    .new-title {
+    	.text-container {
+    		&:before {
+                height: px(12);
+                bottom: px(6);
+            }
+            span {
+                font-size: px(50);
+                line-height: px(50);
+            }
+		}
+	}
     article { padding-right: px(300); }
 }
