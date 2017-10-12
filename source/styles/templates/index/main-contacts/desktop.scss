@@ -1,7 +1,6 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    font-family: $raleway;
-    font-weight: $regular;
+    font-family: $Raleway-Regular;
     background: $white;
     overflow: hidden;
     
@@ -100,10 +99,9 @@
             color: $white;
             width: 100%;
             h3 {
+                font-family: $Raleway-ExtraBold;
                 text-transform: uppercase;
-                font-weight: $extra-bold;
                 margin-bottom: px(220);
-                font-family: $raleway;
                 font-size: px(60);
             }
             label {
@@ -123,9 +121,9 @@
                     font-size: px(34);
                     line-height: 100%;
                     position: absolute;
-                    font-family: $roboto;
                     margin-bottom: px(16);
                     text-transform: uppercase;
+                    font-family: $Roboto-Regular;
                     transition: top $timeHalf, color $timeHalf, font-size $timeHalf;
                 }
                 input {
@@ -154,12 +152,12 @@
                 display: block;
                 width: px(340);
                 height: px(90);
-                font-weight: 500;
                 font-size: px(28);
                 background: $blue;
                 border: 2px solid $blue;
                 margin: px(90) 0 0 auto;
                 text-transform: uppercase;
+                font-family: $Raleway-Medium;
                 transition: color $time, background $time;
                 &:hover {
                     background: $white;
@@ -177,7 +175,7 @@
         background-color: $lightBlack;
         padding: 6.5vh 9.5% 8.5vh 5.5%;
         p {
-            font-weight: $extra-bold;
+            font-family: $Raleway-ExtraBold;
             &:first-child {
                 color: $white;
                 font-size: px(118);

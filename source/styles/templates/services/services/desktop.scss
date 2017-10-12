@@ -1,15 +1,43 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    font-family: $Raleway-Regular;
     background: $background;
-    font-family: $raleway;
-    font-weight: $regular;
     overflow: hidden;
-    
+
     // ----- animation left -----
     &.current, &.current-back,
     &.previous, &.previous-back {
         animation: Left $time * 3 0s both;
-        
+        .crossed-button, h3, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+        .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+        span.name {
+            span {
+                animation: titleName $time * 2 $time * 11 linear;
+                animation-fill-mode: forwards;
+            }
+            &:before {
+                animation: titleNameShape $time * 2 $time * 10 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .types {
+            &__item {
+                &:nth-child(1),
+                &:nth-child(3) {
+                    .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
+                    h3 { animation-delay: $STTextSecondColumnDelayTime; }
+                    p { animation-delay: $STTextSecondColumnTwoDelayTime; }
+                    .crossed-button { animation-delay: $STTextSecondColumnThreeDelayTime; }
+                }
+                &:nth-child(2), &:nth-child(4) {
+                    .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
+                    h3 { animation-delay: $STTextThirdColumnDelayTime; }
+                    p { animation-delay: $STTextThirdColumnTwoDelayTime; }
+                    .crossed-button { animation-delay: $STTextThirdColumnThreeDelayTime; }
+                }
+            }
+        }
+            
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
         
@@ -25,48 +53,44 @@
         }
         
         // ----- services-line -----
-        .services-line { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+        .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
     
-        // ----- service-schedule -----
-        .services-schedule .container .item {
-            &:before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
-            &:last-of-type::after { animation: halfDown $time * 2 linear $time * 4 both; }
-        }
-
-        // ----- title -----
-        .title {
-            p, ul {
-                animation: fadeInUp $time * 2 $time * 7 linear;
-                animation-fill-mode: forwards;
-            }
-            span.name {
-                span {
-                    animation: titleName $time * 2 $time * 8 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:before {
-                    animation: titleNameShape $time * 2 $time * 7 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-            .word {
-                &:nth-of-type(1) span {
-                    animation: titleWord $time * 2 $time * 5 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-of-type(2) span {
-                    animation: titleWord $time * 2 $time * 6 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
     }
 
     // ----- animation right -----
     &.previous, &.previous-back {
         animation: slideRight $time * 3 0s both;
         animation-play-state: paused;
-        
+        .crossed-button, h3, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+        .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+        span.name {
+            span {
+                animation: titleName $time * 2 $time * 11 linear;
+                animation-fill-mode: forwards;
+            }
+            &:before {
+                animation: titleNameShape $time * 2 $time * 10 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .types {
+            &__item {
+                &:nth-child(1),
+                &:nth-child(3) {
+                    .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
+                    h3 { animation-delay: $STTextSecondColumnDelayTime; }
+                    p { animation-delay: $STTextSecondColumnTwoDelayTime; }
+                    .crossed-button { animation-delay: $STTextSecondColumnThreeDelayTime; }
+                }
+                &:nth-child(2), &:nth-child(4) {
+                    .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
+                    h3 { animation-delay: $STTextThirdColumnDelayTime; }
+                    p { animation-delay: $STTextThirdColumnTwoDelayTime; }
+                    .crossed-button { animation-delay: $STTextThirdColumnThreeDelayTime; }
+                }
+            }
+        }
+            
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
         
@@ -82,50 +106,29 @@
         }
         
         // ----- services-line -----
-        .services-line { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
-
-        // ----- service-schedule -----
-        .services-schedule .container .item {
-            &:before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
-            &:last-of-type::after { animation: halfDown $time * 2 linear $time * 4 both; }
-        }
-
-        // ----- title -----
-        .title {
-            p, ul {
-                animation: fadeInUp $time * 2 $time * 7 linear;
-                animation-fill-mode: forwards;
-            }
-            span.name {
-                span {
-                    animation: titleName $time * 2 $time * 8 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:before {
-                    animation: titleNameShape $time * 2 $time * 7 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-            .word {
-                &:nth-of-type(1) span {
-                    animation: titleWord $time * 2 $time * 5 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-of-type(2) span {
-                    animation: titleWord $time * 2 $time * 6 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
+        .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
     }
     &.current-back { animation: none; }
     &.previous-back { animation-play-state: running; }
-    
+
+    // ----- crossed-button -----
+    .crossed-button {
+        position: relative;
+        margin-top: px(50);
+        .arrow .st0, .st1 { stroke: $white; }
+        span {
+            color: $white;
+            &:after { content: 'Подробнее'; }
+            &:before { background: $white; }
+        }
+    }
+
     // ----- letter o -----
     .big-background-letter {
         top: 10vh;
         z-index: 3;
         right: -4vh;
+        position: fixed;
         font-size: 110vh;
         span::before  { content: 'o'; }
     }
@@ -138,6 +141,30 @@
             margin: 0 auto;
             flex-wrap: wrap;
             max-width: 1440px;
+            position: relative;
+            span.name {
+                text-transform: uppercase;
+                position: absolute;
+                font-size: px(28);
+                top: -10vh;
+                span {
+                    color: $white;
+                    display: block;
+                    visibility: hidden;
+                    font-family: $Raleway-Bold;
+                }
+                &:before {
+                    background: $white;
+                    visibility: hidden;
+                    position: absolute;
+                    display: block;
+                    width: px(100);
+                    left: -62px;
+                    height: px(6);
+                    content: '';
+                    top: px(8);
+                }
+            }
             .item {
                 width: 33.33%;
                 position: relative;
@@ -159,67 +186,86 @@
                         }
                     }
                 }
-                .title {
-                    width: auto;
-                    p, a {
-                        font-family: $roboto;
-                        font-size: px(32);
+                .content {
+                    overflow: hidden;
+                    p {
+                        color: $white;
+                        line-height: 1.5;
                     }
-                    ul {
-                        visibility: hidden;
-                        margin-top: px(80);
-                        li.word {
-                            width: fit-content;
-                            margin-bottom: px(30);
-                            a { color: $white; }
-                            &:after {
-                                height: px(30);
-                                z-index: -1;
+                    ul li {
+                        line-height: 1.5;
+                        margin-bottom: px(20);
+                        a {
+                            color: $white;
+                            transition: $time;
+                            &:hover {
+                                color: $blue;
+                                transition: $time;
                             }
                         }
                     }
-                    p {
-                        color: $gray;
-                        line-height: 1.5;
-                        padding: px(48) px(130) 0 0;
-                    }
-                    span.name {
-                        top: -11vh;
-                        position: absolute;
-                    }
-                    .both:hover .word::after { visibility: visible; }
-                    .word {
-                        width: min-content;
-                        &:hover::after { visibility: visible; }
-                        &:after { visibility: hidden; }
-                        span {
-                            line-height: 26px;
-                            font-size: px(50);
-                            cursor: pointer;
+                    &:hover {
+                        h3:before { width: 100%; }
+                        .crossed-button {
+                            span {
+                                padding: 0 px(10); 
+                                &:before { animation: spanCrossAnimation $time linear forwards; }
+                            }
+                            .arrow-container { transform: translateX(0%); }
+                            .arrow { animation: arrowAnimation $time $timeTickHalf linear forwards; }
                         }
                     }
                 }
-                &:hover::before {
-                    color: $blue;
-                    transition: $time;
+                .types {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-content: space-between;
+                    height: 61.5vh;
+                    width: 66%;
+                    &__item {
+                        width: 75%;
+                        display: block;
+                        position: relative;
+                        margin-bottom: px(50);
+                        &:hover .index { color: $blue; }
+                        .index {
+                            color: $gray;
+                            top: px(-40);
+                            left: px(-40);
+                            position: absolute;
+                            font-family: $Roboto-Regular;
+                            transform: rotate(-90deg);
+                            transition: color $time;
+                            overflow: hidden;
+                            font-size: px(32);
+                            span { display: block; }
+                        }
+                        h3 {
+                            color: $white;
+                            font-size: px(48);
+                            position: relative;
+                            line-height: px(60);
+                            display: inline-block;
+                            font-family: $Raleway-Bold;
+                            text-transform: uppercase;
+                            &:last-of-type {  margin-bottom: px(50); }
+                            &:before {
+                                position: absolute;
+                                display: block;
+                                z-index: -1;
+                                bottom: 0;
+                                left: 0;
+                                width: 0;
+                                content: '';
+                                height: px(20);
+                                background: $blue;
+                                transition: width $time;
+                            }
+                        }
+                    }
                 }
-                &:before {
-                    top: -28px;
-                    left: -25px;
-                    color: #666;
-                    font-size: px(36);
-                    transition: $time;
-                    position: absolute;
-                    font-family: $roboto;
-                    transform: rotate(-90deg);
-                }
-                &:nth-of-type(1)::before { content: '01'; }
-                &:nth-of-type(2)::before { content: '02'; }
-                &:nth-of-type(3)::before { content: '03'; }
-                &:nth-of-type(4)::before { content: '04'; }
-                &:nth-of-type(5)::before { content: '05'; }
-                &:nth-of-type(6)::before { content: '06'; }
-            }     
+            }    
         }
     }
 }

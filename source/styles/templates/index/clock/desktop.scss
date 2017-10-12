@@ -1,8 +1,7 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    font-family: $Raleway-Regular;
     background: $background;
-    font-family: $raleway;
-    font-weight: $regular;
     overflow: hidden;
     
     // ----- animation fade -----
@@ -63,7 +62,7 @@
         left: 23vh;
         z-index: 1;
         position: absolute;
-        font-weight: $extra-bold;
+        font-family: $Raleway-ExtraBold;
         .word {
             span {
                 text-transform: inherit;
@@ -76,8 +75,7 @@
                     color: $blue;
                     font-size: px(36);
                     letter-spacing: 1px;
-                    font-weight: $medium;
-                    font-family: $roboto;
+                    font-family: $Roboto-Medium;
                 }
             }
         }

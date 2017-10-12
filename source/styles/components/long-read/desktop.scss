@@ -581,8 +581,12 @@
 
                     li {
                         padding: px(72) px(30) 0 30px;
+                        display: -webkit-inline-box;
                         min-height: 102px;
                         margin-bottom: 0;
+                        line-height: 1;
+                        
+                        span { line-height: 1.5; }
 
                         &:after {
                             left: px(-40);

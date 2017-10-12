@@ -1,22 +1,22 @@
 @import '../desktop';
 
 // ----- table -----
-.table .container {
-	max-width: 1000px;
-	
+.front-layer {
 	// ----- vertical-text -----
 	.vertical-text { left: px(-5); }
 	
-	// ----- item -----
-	.item {
-		.block {
-			margin-top: 37vh;
-			img {
-			    max-width: 200px;
-			    max-height: 35px;
-			    margin-bottom: 8vh;
+	// ----- table -----
+	.table .container {
+		max-width: 1000px;
+		
+		// ----- item -----
+		.item {
+			.block {
+				height: 55%;
+				margin-top: 37vh;
+				img { margin-bottom: 8vh; }
 			}
-		}
-		& + .title { margin-top: 20vh; }
+			& + .title { margin-top: 20vh; }
+		}	
 	}
 }

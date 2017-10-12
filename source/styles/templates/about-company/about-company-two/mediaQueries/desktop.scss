@@ -1,7 +1,10 @@
 @import '../desktop';
 
 // ----- title ------
-.title { left: px(300); }
+.title {
+    left: px(300);
+    top: px(270);
+}
 
 // ----- image-block -----
 .image-block {
