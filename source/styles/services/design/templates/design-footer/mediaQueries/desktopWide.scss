@@ -9,10 +9,13 @@
                 bottom: px(6);
             }
             span {
-                font-size: px(50);
+                font-size: px(45);
                 line-height: px(50);
             }
 		}
 	}
-    article { padding-right: px(300); }
+    article {
+    	padding-right: px(300);
+    	p { font-size: px(32); }
+	}
 }

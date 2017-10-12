@@ -40,7 +40,7 @@
         z-index: 2;
         width: 81%;
         &:after {
-            content: 'Lorem ipsum dolor sit amet consectetu adipisi';
+            content: '';
             font-family: $Roboto-Regular;
             transform: rotate(90deg);
             position: absolute;
@@ -133,7 +133,7 @@
         p {
             font-family: $Roboto-Regular;
             margin-bottom: px(50);
-            font-size: px(28);
+            font-size: px(32);
             line-height: 1.4;
         }
     }
