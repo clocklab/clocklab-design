@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 var mobile = ''
 // var mobile = '-mobile'
 
-var page = `services/design/brand-book`
+var page = `services/seo/creating`
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
