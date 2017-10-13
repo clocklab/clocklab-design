@@ -1,0 +1,13 @@
+@import '../desktop';
+
+// ----- watch -----
+.watch { background-size: 25%; }
+
+// ----- alert -----
+.alert {
+    top: 17.5%;
+    span {
+        &:first-of-type { margin-right: 15%; }
+        &:last-of-type { margin-left: 15%; }
+    }
+}
