@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     const openCloseBtn = document.querySelector('.menu__item--open-close'),
           animationTime = 2000,
           events = ['wheel', 'keydown', 'scroll']
@@ -9,6 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function openMenu (event) {
         event.preventDefault()
+
+        // Full screen
+        if(document.documentElement.requestFullScreen) {
+            document.documentElement.requestFullScreen();
+        } else if(document.documentElement.mozRequestFullScreen) {
+            document.documentElement.mozRequestFullScreen();
+        } else if(document.documentElement.webkitRequestFullScreen) {
+            document.documentElement.webkitRequestFullScreen();
+        }
 
         function closeMenu (event) {
             event.preventDefault()
