@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             background.filter(number => number < 100).length
             ? topPanel.classList.remove('dark')
             : topPanel.classList.add('dark')
-        })
+        }, animationDeltaTime)
     }
 
     const freezeEvents = event => {
@@ -120,6 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     addListeners()
+    setTopPanelStyle()
     
     slides[0].classList.add('current')
     slides[0].classList.add('first-slide')
