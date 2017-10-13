@@ -5,7 +5,7 @@
 
 // --- COMMON STYLES ---
 .wrapper {
-    font-family: 'Audi';
+    font-family: $Audi-Regular;
     // --- Discuss mobile version ---
     // @media (max-width: 1200px) {
     //     display: none;
@@ -59,8 +59,8 @@ p {
 h4 {
     margin-bottom: 30px;
     color: #444;
+    font-family: $Audi-Bold;
     font-size: 24px;
-    font-weight: 700;
 }
 // --- COMMON STYLES ---
 
@@ -93,8 +93,8 @@ header {
 
     .year {
         color: #444;
+        font-family: $Audi-Bold;
         font-size: 8px;
-        font-weight: 700;
 
         span {
             display: block;
@@ -165,8 +165,8 @@ header {
         width: 530px;
         background: #000;
         color: #FFF;
+        font-family: $Audi-Bold;
         font-size: 36px;
-        font-weight: 700;
     }
 
     .inner-container {
@@ -358,8 +358,8 @@ header {
                         position: absolute;
                         top: 0;
                         left: 0;
+                        font-family: $Audi-Bold;
                         font-size: 36px;
-                        font-weight: 700;
                     }
 
                     &:nth-child(1) {
@@ -654,8 +654,8 @@ header {
                     position: absolute;
                     top: 0;
                     left: -60px;
+                    font-family: $Audi-Bold;
                     font-size: 36px;
-                    font-weight: 700;
                 }
 
                 &:nth-child(1) {
@@ -738,8 +738,8 @@ header {
         border: 2px solid #000;
         color: #FFF;
         cursor: pointer;
+        font-family: $Audi-Bold;
         font-size: 14px;
-        font-weight: 700;
         line-height: 45px;
         text-align: center;
         transition: color .3s, background .3s;

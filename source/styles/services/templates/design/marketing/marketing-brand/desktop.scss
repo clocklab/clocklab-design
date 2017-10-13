@@ -1,0 +1,441 @@
+& {  
+
+    width: 100vw;
+    height: 100vh;
+
+    .language {
+        position: absolute;
+        z-index: 5;
+
+        a {
+            animation: none;
+        }
+    }
+
+    .front-layer,
+    .back-layer {
+        min-height: 900px;
+    }
+
+    .front-layer {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        transform-origin: 0 50%;
+        transform-style: preserve-3d;
+        transition: transform $time * 2;
+
+        &:before,
+        &:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $white;
+            content: '';
+        }
+
+        &:after {
+            z-index: -1;
+            background: rgba(0, 0, 0, .4);
+            opacity: 0;
+            transition: opacity $time;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 0 auto;
+        width: 79%;
+        height: 100vh;
+        min-height: 900px;
+    }
+
+    .development {
+        position: relative;
+        top: -18vh;
+        z-index: 3;
+        font-family: $raleway;
+    }
+
+    .sticker {
+
+        span {
+
+            &:before {
+                content: 'Услуги маркетинга';
+            }
+        }
+
+        &:before {
+            top: 40%;
+        }
+    }
+
+    h2 {
+        margin-top: px(60);
+        width: px(1200);
+        font-size: px(144);
+        font-weight: 800;
+        overflow: hidden;
+        
+        span {
+            display: block;
+
+            &.blue {
+                color: $blue;
+            }
+        }
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+
+        .line {
+            position: absolute;
+            top: 0;
+            width: 1px;
+            height: 100vh;
+            background: $darkWhite;
+
+            &--1 {
+                left: 0;
+            }
+
+            &--2 {
+                left: px(1200);
+            }
+
+            &--3 {
+                left: px(2120);
+            }
+        }
+    }
+
+    .steps {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        top: 3vh;
+        z-index: 1;
+        width: px(2120);
+    }
+
+    .step {
+        position: relative;
+        z-index: 2;
+        margin-bottom: px(100);
+        padding-right: px(250);
+        width: 50%;
+        color: $darkGray;
+        font-family: $roboto;
+
+        .index {
+            position: absolute;
+            top: px(-40);
+            left: px(-40);
+            color: $gray;
+            font-family: $roboto;
+            font-size: px(32);
+            transform: rotate(-90deg);
+            overflow: hidden;
+
+            span {
+                display: block;
+            }
+        }
+
+        .content {
+            overflow: hidden;
+        }
+
+        h3 {
+            margin-bottom: px(24);
+            font-family: $raleway;
+            font-weight: 700;
+            font-size: px(48);
+        }
+
+        p {
+            padding-right: px(40);
+            font-size: px(28);
+            line-height: 1.4;
+        }
+    }
+
+    .questions {
+        z-index: 3;
+        margin-left: auto;
+        width: 50%;
+        overflow: hidden;
+
+        h3 {
+            margin-bottom: px(34);
+            color: $darkGray;
+            font-family: $raleway;
+            font-size: px(48);
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-bottom: px(66);
+            padding-right: px(300);
+            color: $gray;
+            font-family: $roboto;
+            font-size: px(28);
+            line-height: 1.4;
+        }
+
+        button {
+            display: block;
+            width: px(332);
+            height: px(90);
+            background: $blue;
+            border: 2px solid $blue;
+            color: $white;
+            font-family: $roboto;
+            font-size: px(28);
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: color $time, background $time;
+
+            &:hover {
+                background: transparent;
+                color: $blue;
+            }
+        }
+    }
+
+    .back-layer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding-right: px(140);
+        width: 100%;
+        height: 100vh;
+        background: $black;
+    }
+
+    &.opened {
+        
+        .front-layer {
+            transform: rotateY(30deg);
+    
+            &:after {
+                z-index: 9999;
+                opacity: 1;
+            }
+        }
+    }
+
+    &.screen-block {
+
+        &.current {
+            display: block;
+        }
+    }
+
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Up $time * 3 0s both;
+
+        .logo {
+            animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
+        }
+
+        .menu {
+            animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
+        }
+
+        .language {
+
+            a {
+                animation: Down $STBorderElAnimationTime $STBorderElDelayTime both;
+            }
+        }
+
+        .lines {
+
+            .line {
+
+                &--1 {
+                    animation: Down $MBLine1AnimationTime $MBLine1DelayTime both;
+                }
+
+                &--2 {
+                    animation: Down $MBLine2AnimationTime $MBLine2DelayTime both;
+                }
+
+                &--3 {
+                    animation: Down $MBLine3AnimationTime $MBLine3DelayTime both;
+                }
+            }
+        }
+
+        h2 {
+
+            span {
+                animation: Right $MBColumn1AnimationTime $MBColumn1DelayTime both;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation: fadeInRight $MBStickerTextAnimationTime $MBStickerTextDelayTime both;
+            }
+
+            &:before {
+                animation: fadeInRight $MBStickerTextAnimationTime $MBStickerTextDelayTime both;
+            }
+        }
+
+        .step {
+
+            .index {
+
+                span {
+                    animation: Up $MBColumn2AnimationTime $MBColumn2DelayTime both;
+                }
+            }
+
+            h3,
+            p {
+                animation: Right $MBColumn2AnimationTime $MBColumn2DelayTime both;
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(4) {
+
+                h3,
+                p {
+                    animation: Right $MBColumn3AnimationTime $MBColumn3DelayTime both;
+                }   
+            }
+        }
+
+        .questions {
+
+            h3,
+            p,
+            button {
+                animation: Right $MBColumn3AnimationTime $MBColumn3DelayTime both;
+            }
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideDown $time * 3 0s both;
+        animation-play-state: paused;
+
+        .logo {
+            animation-play-state: paused;
+        }
+
+        .menu {
+            animation-play-state: paused;
+        }
+
+        .language {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
+
+        .lines {
+
+            .line {
+
+                &--1 {
+                    animation-play-state: paused;
+                }
+
+                &--2 {
+                    animation-play-state: paused;
+                }
+
+                &--3 {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
+        h2 {
+
+            span {
+                animation-play-state: paused;
+            }
+        }
+
+        .sticker {
+
+            span {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .step {
+
+            .index {
+
+                span {
+                    animation-play-state: paused;
+                }
+            }
+
+            h3,
+            p {
+                animation-play-state: paused;
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(4) {
+
+                h3,
+                p {
+                    animation-play-state: paused;
+                }   
+            }
+        }
+
+        .questions {
+
+            h3,
+            p,
+            button {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
+    }
+}

@@ -12,7 +12,7 @@
         bottom: px(-900);
 
         span {
-            font-family: $raleway;
+            font-family: $Raleway-ExtraBold;
             font-size: px(1700);
             text-transform: uppercase;
 
@@ -69,9 +69,8 @@
         margin-bottom: px(200);
         width: 45%;
         color: $darkGray;
-        font-family: $raleway;
+        font-family: $Raleway-ExtraBold;
         font-size: px(96);
-        font-weight: 800;
         line-height: px(120);
 
         span {
@@ -84,7 +83,7 @@
         flex-wrap: wrap;
         margin-left: 33%;
         width: 66%;
-        font-family: $roboto;
+        font-family: $Roboto-Regular;
     }
 
     li {
@@ -109,7 +108,7 @@
         h4 {
             margin-bottom: px(30);
             font-size: px(36);
-            font-weight: 700;
+            font-family: $Roboto-Bold;
             overflow: hidden;
             
             span {
@@ -167,9 +166,8 @@
             z-index: 1;
             top: px(-90);
             right: 100%;
-            font-family: $raleway;
+            font-family: $Raleway-ExtraBold;
             font-size: px(72);
-            font-weight: 800;
             overflow: hidden;
 
             span {
