@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const moveObjects = event => {
         const newLeftPos = currentLeftPos - event.clientX
         
+        frontLayer.style.pointerEvents = 'none'
+
         moveFrontLayer(newLeftPos)
     }
 
@@ -37,6 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
         frontLayer.classList.remove('active')
         currentLeftPos = event.clientX
         currentScrollLeft = frontLayer.scrollLeft
+
+        frontLayer.style.pointerEvents = 'all'
         
         document.removeEventListener('mousemove', moveObjects)
         document.removeEventListener('mouseup', removeEvents)
@@ -46,29 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const newLeftPos = frontLayer.scrollLeft * koef
 
         moveLetters(newLeftPos)
-    })    
-
-    function goToPage() {
-        this.removeEventListener('mouseup', goToPage)
-        document.location.href = this.href
-    }
-
-    function preventGoToPage(event) {
-        event.preventDefault()
-        this.removeEventListener('click', preventGoToPage)
-    }
-
-    portfolioLinks.forEach(link => {
-        link.addEventListener('mousedown', event => {
-            event.preventDefault()
-
-            link.addEventListener('mouseup', goToPage)
-
-            link.addEventListener('mousemove', () => {
-                link.removeEventListener('mouseup', goToPage)
-                link.addEventListener('click', preventGoToPage)
-            })
-        })
     })
 
     document.addEventListener('mousedown', event => {

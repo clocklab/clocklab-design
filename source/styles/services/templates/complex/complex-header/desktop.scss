@@ -20,7 +20,7 @@
             right: initial;
             bottom: px(0);
             left: px(-200);
-            font-family: $raleway;
+            font-family: $Raleway-ExtraBold;
             font-size: px(2000);
 
             span {
@@ -38,7 +38,7 @@
             top: 35%;
             right: initial;
             left: px(500);
-            font-family: $raleway;
+            font-family: $Raleway-ExtraBold;
             font-size: px(2000);
 
             span {
@@ -52,7 +52,7 @@
 
     p {
         color: $darkGray;
-        font-family: $roboto;
+        font-family: $Roboto-Regular;
         font-size: px(32);
         line-height: 1.4;
 
@@ -65,7 +65,7 @@
 
         &.bold {
             font-size: px(36);
-            font-weight: 800;
+            font-family: $Roboto-Bold;
         }
 
         &.italic {
@@ -131,7 +131,7 @@
 
             span {
                 color: $darkGray;
-                font-family: $raleway;
+                font-family: $Raleway-ExtraBold;
 
                 &:before {
                     content: 'o';
@@ -172,7 +172,7 @@
                 margin-bottom: px(40);
                 padding-left: px(60);
                 color: $darkGray;
-                font-family: $roboto;
+                font-family: $Roboto-Regular;
     
                 &:before {
                     display: block;
@@ -191,7 +191,7 @@
         &.bold {
 
             li {
-                font-weight: 700;
+                font-family: $Roboto-Bold;
             }
         }
 
@@ -212,9 +212,8 @@
                     top: px(-110);
                     left: px(-80);
                     color: $darkGray;
-                    font-family: $raleway;
+                    font-family: $Raleway-ExtraBold;
                     font-size: px(96);
-                    font-weight: 800;
                 }
 
                 &:after {
@@ -263,7 +262,7 @@
         .text-container {
             margin-top: px(20);
             display: inline-block;
-            font-family: $raleway;
+            font-family: $Raleway-Regular;
         }
     }
 
@@ -275,9 +274,8 @@
 
         h3 {
             color: $darkGray;
-            font-family: $roboto;
+            font-family: $Roboto-Bold;
             font-size: px(96);
-            font-weight: 700;
             line-height: 1.2;
 
             span {
@@ -287,8 +285,7 @@
 
         h4 {
             margin-bottom: px(20);
-            font-family: $roboto;
-            font-weight: 700;
+            font-family: $Roboto-Bold;
         }
 
         &__item {
@@ -333,7 +330,7 @@
                     p {
 
                         span {
-                            font-weight: 700;
+                            font-family: $Roboto-Bold;
                         }
 
                         &:first-of-type {
@@ -350,10 +347,9 @@
                 h3 {
                     margin-bottom: px(160);
                     width: 100%;
-                    font-family: $roboto;
+                    font-family: $Roboto-Bold;
                     font-size: px(96);
                     line-height: px(110);
-                    font-weight: 700;
 
                     span {
                         color: $blue;
@@ -381,7 +377,7 @@
                     }
 
                     span {
-                        font-weight: 700;
+                        font-family: $Roboto-Bold;
                     }
                 }
             }
@@ -404,7 +400,7 @@
                 .column-3 {
 
                     span {
-                        font-weight: 700;
+                        font-family: $Roboto-Bold;
                     }
                 }
             }
@@ -430,7 +426,7 @@
                         position: relative;
                         padding: 0 px(70) px(50) px(100);
                         font-size: px(48);
-                        font-weight: 700;
+                        font-family: $Roboto-Bold;
     
                         &:before {
                             position: absolute;
@@ -453,7 +449,7 @@
                 }
 
                 span {
-                    font-weight: 700;
+                    font-family: $Roboto-Bold;
                 }
             }
 
