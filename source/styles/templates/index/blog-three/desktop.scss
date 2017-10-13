@@ -53,6 +53,10 @@
                     animation: titleWord $time * 2 $time * 6 linear;
                     animation-fill-mode: forwards;
                 }
+                &:nth-of-type(3) span {
+                    animation: titleWord $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
             }
         }
 
@@ -122,6 +126,10 @@
                     animation: titleWord $time * 2 $time * 6 linear;
                     animation-fill-mode: forwards;
                 }
+                &:nth-of-type(3) span {
+                    animation: titleWord $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
             }
         }
 
@@ -162,6 +170,7 @@
         left: px(280);
         bottom: px(625);
         position: absolute;
+        .word:nth-of-type(2) { margin-bottom: 5px; }
     }
 
     // ----- jumping-button -----

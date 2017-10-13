@@ -3,22 +3,25 @@
 // ----- blue-line -----
 .blue-line {
 	width: px(400);
-	right: px(1400);
+	right: px(1200);
 }
 
 // ----- title -----
 .title {
 	left: px(200);
 	bottom: px(300);
-	.word span { font-size: px(65); }
+	.word {
+        span { font-size: px(55); }
+        &:after { height: px(35); }
+    }
 }
 
 // ----- image-block -----
 .image-block {
+    right: px(400);
     width: px(1027);
     height: px(714);
     margin-top: px(-200);
-    margin-left: px(1400);
 }
 
 // ----- service-info -----

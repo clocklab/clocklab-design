@@ -3,7 +3,10 @@
 // ----- title -----
 .title {
     margin: 21vh 0 0 px(280);
-    .word span { font-size: px(55); }
+    .word {
+        span { font-size: px(55); }
+        &:after { height: px(35); }
+    }
 }
 
 // ----- letter o -----
@@ -18,7 +21,7 @@
     width: px(615);
     &.up {
         right: px(400);
-        p { top: px(480); }
+        p { top: px(425); }
         .gray {
             right: px(-165);
             height: 100px;
