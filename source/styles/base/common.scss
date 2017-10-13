@@ -9,7 +9,7 @@ html {
             height: 100%;
             display: flex;
             flex-direction: column;
-            background: $black;
+            background: $white;
             overflow: hidden;
             input, button { outline: none; }
             button { border: none; }
@@ -43,12 +43,21 @@ html {
                 height: 100vh;
                 width: 100%;
                 z-index: -1;
-                left: 0;
+                left: 101%;
                 top: 0;
-                &.previous-back { z-index: 3; }
+                &.previous-back { 
+                    z-index: 3;
+                    left: 0;
+                }
                 &.current,
-                &.current-back { z-index: 2; }              
-                &.previous { z-index: 1; }
+                &.current-back { 
+                    z-index: 2;
+                    left: 0;
+                }              
+                &.previous { 
+                    z-index: 1;
+                    left: 0;
+                }
                 @media only screen and (max-width: 1024px) {
                     position: relative;
                     z-index: 1;
