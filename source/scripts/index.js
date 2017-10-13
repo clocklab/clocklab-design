@@ -16,7 +16,10 @@
 
 //= include ./components/big-background-letter.js
 
+//= include ./components/menu.js
+
 //= include ./services/modules/web-production/web-production-open-form.js
+
 
 // ----- change lines color -----
 $('.light div').children().addClass('light');

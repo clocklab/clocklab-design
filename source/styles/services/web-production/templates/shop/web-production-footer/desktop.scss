@@ -55,14 +55,13 @@
         padding-top: px(180);
         width: 81%;
         
-        &:after {
+        &-addition {
             display: block;
             position: absolute;
             top: px(1200);
             left: 105%;
             width: px(280);
             color: $darkGray;
-            content: '';
             font-family: $Roboto-Regular;
             font-size: px(24);
             line-height: 1.4;
@@ -173,6 +172,7 @@
         font-family: $Raleway-Regular;
 
         span {
+
             &:after {
                 content: 'Подробнее';
             }

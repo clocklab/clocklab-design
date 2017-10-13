@@ -44,9 +44,8 @@
             top: 15vh;
             right: initial;
             width: 100%;
-            font-family: $raleway;
+            font-family: $Raleway-Bold;
             font-size: px(1500);
-            font-weight: 800;
             text-align: center;
             text-transform: uppercase;
 
@@ -72,8 +71,7 @@
             align-self: center;
             color: $darkGray;
             font-size: px(96);
-            font-family: $raleway;
-            font-weight: 700;
+            font-family: $Raleway-Bold;
             transform: translateY(px(70));
 
             span {
@@ -96,8 +94,7 @@
                 margin-top: px(20);
                 color: $darkGray;
                 font-size: px(40);
-                font-family: $raleway;
-                font-weight: 700;
+                font-family: $Raleway-Bold;
                 text-transform: uppercase;
                 letter-spacing: .5px;
             }
@@ -156,7 +153,7 @@
             position: relative;
             margin-left: px(90);
             align-self: flex-end;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             
             span {
                 font-size: px(32);
@@ -212,16 +209,15 @@
         h3 {
             margin-bottom: px(24);
             color: $darkGray;
-            font-family: $raleway;
+            font-family: $Raleway-ExtraBold;
             font-size: px(72);
-            font-weight: 800;
             text-transform: uppercase;
         }
 
         p {
             padding-right: px(150);
             color: $gray;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(28);
             line-height: 1.4;
         }
@@ -234,9 +230,8 @@
             height: px(110);
             background: $blue;
             color: $white;
-            font-family: $roboto;
+            font-family: $Roboto-Bold;
             font-size: px(32);
-            font-weight: 700;
             text-transform: uppercase;
 
             span {

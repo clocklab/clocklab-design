@@ -1,0 +1,302 @@
+& {  
+
+    header {
+        background: $lightBlack;
+        padding: px(160) px(30) 0;
+        width: 100vw;
+        height: 100vh;
+
+        img {
+            display: block;
+            margin-left: px(160);
+            width: px(376);
+            height: px(786);
+            object-fit: cover;
+        }
+
+        .slogan {
+            margin-top: px(-100);
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: px(48);
+            text-transform: uppercase;
+
+            span {
+                display: block;
+                margin-top: px(10);
+                color: $blue;
+            }
+        }
+
+        .slogan-translation {
+            display: block;
+            margin-top: px(30);
+            color: $gray;
+            font-family: $Roboto-Medium;
+            font-size: px(28);
+        }
+    }
+
+    .about-company {
+        position: relative;
+        padding: px(260) px(30) 0;
+        width: 100vw;
+        height: 100vh;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        & > span,
+        .title {
+            position: relative;
+            z-index: 2;
+        }
+
+        & > span {
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: px(22);
+        }
+
+        .title {
+            margin-top: px(60);
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: px(120);
+
+            .blue {
+                color: $blue;
+            }
+        }
+    }
+
+    .portfolio,
+    .services {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .carousel-slider-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .carousel-slider {
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+    
+            &__item {
+                position: relative;
+                padding: px(340) px(30) 0;
+                width: 100vw;
+                height: 100vh;
+                color: $white;
+    
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+    
+                span,
+                h3,
+                h4,
+                a {
+                    position: relative;
+                    z-index: 2;
+                }
+    
+                span {
+                   font-family: $Raleway-Bold;
+                   font-size: px(22); 
+                   text-transform: uppercase;
+                }
+    
+                h3 {
+                    margin: px(32) 0 px(56);
+                    font-family: $Roboto-Black;
+                    font-size: px(120);
+                }
+
+                h4 {
+                    color: $blue;
+                    font-family: $Roboto-Black;
+                    font-size: px(72);
+                }
+    
+                a {
+                    color: $white;
+                    font-family: $Raleway-Bold;
+                    font-size: px(24);
+                    text-transform: uppercase;
+                }
+    
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, .4);
+                    content: '';
+                }
+    
+                &--audi {
+    
+                    img {
+                        object-position: px(-160) 0;
+                    }
+                }
+            }
+        }
+    
+        .dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: px(120);
+            z-index: 5;
+            width: 100%;
+        }
+    
+        .dot {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: px(8);
+            width: 8px;
+            height: 8px;
+    
+            &:before {
+                display: block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: $gray;
+                content: '';
+                transition: width $timeTick, height $timeTick, background $timeTick;
+            }
+    
+            &:last-child {
+                margin-right: 0;
+            }
+    
+            &.active {
+    
+                &:before {
+                    background: $blue;
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+    
+            &.small {
+    
+                &:before {
+                    width: 3px;
+                    height: 3px;
+                }
+            }
+        }
+    }   
+
+    .services {
+
+        .carousel-slider-wrapper {
+
+            .carousel-slider {
+
+                &__item {
+                    padding-top: px(460);
+
+                    h3 {
+                        margin: px(32) 0 px(26);
+                        font-size: px(72);
+                    }
+
+                    h4 {
+                        margin-bottom: px(40);
+                    }
+                }
+            }
+        }
+    }
+
+    .questions {
+        padding: px(200) px(30) 0;
+        width: 100vw;
+        height: 100vh;
+        background: $lightBlack;
+
+        h3 {
+            margin-bottom: px(24);
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: px(48);
+            text-transform: uppercase;
+        }
+
+        & > span {
+            display: block;
+            margin-bottom: px(190);
+            color: $blue;
+            font-family: $Roboto-Medium;
+            font-size: px(32);
+        }
+    
+        .contacts-info {
+            margin-top: px(160);
+    
+            li {
+                margin-bottom: px(80); 
+                font-family: $Roboto-Medium;
+                font-size: px(28);
+    
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+    
+            span {
+                display: block;
+                margin-bottom: px(10);
+                color: $white;
+            }
+    
+            a {
+                color: $gray;
+            }
+        }
+    
+        .open-form {
+            display: block;
+            margin: px(110) auto 0;
+            padding: px(30) 0;
+            width: 100%;
+            max-width: 400px;
+            height: px(90);
+            background: $blue;
+            color: $white;
+            font-family: $Roboto-Medium;
+            font-size: px(28);
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}

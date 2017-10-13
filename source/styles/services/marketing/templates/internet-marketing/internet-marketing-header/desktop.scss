@@ -21,7 +21,7 @@
             left: px(-700);
             bottom: px(-500);
             top: initial;
-            font-family: $raleway;
+            font-family: $Raleway-ExtraBold;
             font-size: px(2000);
             text-transform: uppercase;
         }
@@ -66,9 +66,8 @@
             width: px(1400);
             height: px(1800);
             color: $gray;
-            font-family: $raleway;
+            font-family: $Raleway-ExtraBold;
             font-size: px(1800);
-            font-weight: 800;
             text-transform: uppercase;
             overflow: hidden;
 
@@ -122,7 +121,7 @@
         .text-container {
             margin-top: px(20);
             display: inline-block;
-            font-family: $raleway;
+            font-family: $Raleway-Regular;
         }
     }
 
@@ -131,7 +130,7 @@
         margin: 0 auto;
         padding-bottom: px(450);
         width: 81%;
-        font-family: $roboto;
+        font-family: $Roboto-Regular;
 
         &__item {
             display: flex;
@@ -157,10 +156,10 @@
                     padding-bottom: px(40);
                     width: 33%;
                     color: lighten($darkGray, 35%);
-                    font-weight: 300;
+                    font-family: $Roboto-Regular;
 
                     span {
-                        font-weight: 700;
+                        font-family: $Roboto-Bold;
                     }
 
                     &:after {
@@ -232,8 +231,7 @@
                 h3 {
                     margin-bottom: px(60);
                     padding-left: px(80);
-                    font-family: $roboto;
-                    font-weight: 700;
+                    font-family: $Roboto-Bold;
                     font-size: px(48);
                     color: $blue;
                 }
@@ -249,7 +247,7 @@
                 div {
 
                     span {
-                        font-weight: 700;
+                        font-family: $Roboto-Bold;
                     }
 
                     &:nth-child(1) {
@@ -299,7 +297,7 @@
                 h3 {
                     margin-bottom: px(70);
                     font-size: px(48);
-                    font-weight: 700;
+                    font-family: $Roboto-Bold;
 
                     span {
                         color: $blue;
@@ -309,7 +307,7 @@
                 h4 {
                     margin-bottom: px(40);
                     font-size: px(32);
-                    font-weight: 700;
+                    font-family: $Roboto-Bold;
                 }
 
                 p {
@@ -333,7 +331,7 @@
                 h3 {
                     margin-bottom: px(70);
                     font-size: px(48);
-                    font-weight: 700;
+                    font-family: $Roboto-Bold;
 
                     span {
                         color: $blue;
@@ -379,7 +377,7 @@
     p {
         padding-right: px(40);
         color: $darkGray;
-        font-family: $roboto;
+        font-family: $Roboto-Regular;
         font-size: px(32);
         line-height: 1.5;
 
@@ -388,7 +386,7 @@
         }
 
         &.bold {
-            font-weight: 800;
+            font-family: $Roboto-Bold;
         }
 
         &.italic {
@@ -407,7 +405,7 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        font-family: $roboto;
+        font-family: $Roboto-Regular;
 
         &.circled {
             height: px(550);
@@ -434,7 +432,7 @@
 
             h4 {
                 font-size: px(32);
-                font-weight: 700;
+                font-family: $Roboto-Bold;
                 margin-bottom: px(14);
             }
         }
@@ -469,7 +467,7 @@
                             h3 {
                                 margin-bottom: px(40);
                                 font-size: px(32);
-                                font-weight: 700;
+                                font-family: $Roboto-Bold;
                             }
                         }
 

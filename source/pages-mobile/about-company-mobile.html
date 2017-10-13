@@ -2,30 +2,95 @@
 <html lang="en">
     <head>
         <title>clocklab design | about company</title>
-        <!-- @@include('./components/head.html') -->
-        <!-- <link rel="stylesheet" href="./../styles/about-company.css"> -->
+        @@include('./components/head.html')
+        <link rel="stylesheet" href="./../styles-mobile/about-company-mobile.css">
+        <script src="../scripts-mobile/about-company-mobile.min.js" defer></script>
     </head>
     <body>
-        <div class="wrapper">
+        <div class="about-company-mobile">
+            @@include('./components/top-panel-mobile.html')
 
-            <!-- about-company-one -->
-            <!-- @@include('./templates/about-company/about-company-one.html') -->
+            <header>
+                <img src="../images/index/office.jpg" alt="office">
+                <div class="slogan">
+                    <h1>Clock creative lab - </h1>
+                    <span>Время больших идей</span>
+                </div>
+            </header>
 
-            <!-- about-company-two -->
-            <!-- @@include('./templates/about-company/about-company-two.html') -->
+            <div class="about-our-company">
+                <span>о компании</span>
+                <span class="name">
+                    Clock <span>Creative Lab</span>
+                </span>
+                <img src="../images/about-company/about-company-3.png" alt="about-our-company">
+            </div>
 
-            <!-- about-company-three -->
-            <!-- @@include('./templates/about-company/about-company-three.html') -->
+            <div class="our-honors" style="display: none">
+                <span>о компании</span>
+                <span class="name">
+                    <span>Наши</span> награды и достижения
+                </span>
+                <div class="honors">
+                    <div class="lines">
+                        <div class="line line--1"></div>
+                        <div class="line line--2"></div>
+                        <div class="line line--3 vertical"></div>
+                    </div>
 
-            <!-- about-company-four -->
-            <!-- @@include('./templates/about-company/about-company-four.html') -->
+                </div>
+            </div>             
 
-            <!-- about-company-five -->
-            <!-- @@include('./templates/about-company/about-company-five.html') -->
+            <div class="work-flow">
+                <span class="name">
+                    Наш рабочий <span>процесс</span>:
+                </span>
+                <ul>
+                    <li>
+                        <h3>1. Анализ</h3>
+                        <p>
+                            Проводится анализ рынка. Мониторинг всех возможных конкурентов
+                        </p>
+                    </li>
+                    <li>
+                        <h3>2. Выдвигаем наше видение</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+                            do eiusmod tempor incididunt 
+                        </p>
+                    </li>
+                    <li>
+                        <h3>3. Масштабируем</h3>
+                        <p>
+                            Разрабатывается индивидуальный дизайн в соответствии с 
+                            тематикой товаров или услуг
+                        </p>
+                    </li>
+                    <li>
+                        <h3>4. Воплощаем</h3>
+                        <p>
+                            Внедряются самые последние стандарты. Сайт будет максимально 
+                            быстро и корректно работать во всех браузера
+                        </p>
+                    </li>
+                    <li>
+                        <h3>5. Конечный результат</h3>
+                        <p>
+                            Перед запуском, сайт детально проходит тестирование для 
+                            выявления и исправления ошибок
+                        </p>
+                    </li>
+                    <li>
+                        <h3>6. Празднуем победу</h3>
+                        <p>
+                            Перед запуском, сайт детально проходит тестирование для выявления 
+                            и исправления ошибок
+                        </p>
+                    </li>
+                </ul>
+            </div>
 
-            <!-- about-company-six -->
-            <!-- @@include('./templates/about-company/about-company-six.html') -->
+            @@include('./components/our-clients-mobile.html')
         </div>
-        <!-- <script src="../scripts/about-company.min.js"></script> -->
     </body>
 </html>

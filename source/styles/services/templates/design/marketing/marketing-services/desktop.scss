@@ -1,0 +1,404 @@
+& {  
+
+    width: 100vw;
+    height: 100vh;
+    background: $white;
+    overflow: hidden;
+
+    .marketing-services-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .language {
+        position: absolute;
+        z-index: 5;
+
+        a {
+            animation: none;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        width: 61%;
+        min-width: px(2340);
+        height: 100vh;
+        min-height: 700px;
+        color: $darkGray;
+        font-family: $raleway;
+
+        .lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            .line {
+                position: absolute;
+                top: 0;
+                width: 1px;
+                height: 100vh;
+                background: $gray;
+
+                &--1 {
+                    left: 0;
+                }
+
+                &--2 {
+                    left: 33%;
+                }
+
+                &--3 {
+                    left: 66%;
+                }
+
+                &--4 {
+                    left: 100%;
+                }
+            }
+        }
+
+        h2 {
+            align-self: center;
+            position: relative;
+            top: 8vh;
+            padding-right: px(150); 
+            width: 33%;
+            font-size: px(96);
+            font-weight: 800;
+            line-height: px(110);
+            overflow: hidden;
+
+            & > span {
+                display: block;
+
+                span {
+                    color: $blue;
+                }
+            }
+        }
+
+        .index {
+            position: absolute;
+            top: px(-40);
+            left: px(-40);
+            color: $gray;
+            font-family: $roboto;
+            font-size: px(32);
+            transform: rotate(-90deg);
+            transition: color $time;
+            overflow: hidden;
+
+            span {
+                display: block;
+            }
+        }
+
+        h3 {
+            display: inline-block;
+            position: relative;
+            margin-bottom: px(70);
+            color: $darkGray;
+            font-size: px(48);
+            line-height: px(60);
+            font-weight: 700;
+            text-transform: uppercase;
+
+            span {
+                position: relative;
+                display: inline-block;
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    z-index: -1;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: px(20);
+                    background: $blue;
+                    content: '';
+                    transition: width $time;
+                }
+            }
+
+        }
+
+        p {
+            margin-bottom: px(90);
+            padding-right: px(180);
+            color: $darkGray;
+            font-family: $roboto;
+            font-size: px(28);
+            line-height: 1.4;
+        }
+
+        .crossed-button {
+            position: relative;
+
+            span {
+                color: $darkGray;
+
+                &:after {
+                    content: 'Подробнее';
+                }
+
+                &:before {
+                    background: $darkGray;
+                }
+            }
+
+            .arrow {
+
+                .st0,
+                .st1 {
+                    stroke: $darkGray;
+                }
+            }
+        }
+
+        .types {
+            display: flex;
+            width: 66%;
+
+            &__item {
+                display: block;
+                position: relative;
+                width: 50%;
+                
+                .content {
+                    overflow: hidden;
+                }
+
+                &:hover {
+
+                    .index {
+                        color: $blue;
+                    }
+
+                    h3 {
+
+                        span {
+
+                            &:before {
+                                width: 100%;
+                            }
+                        }
+
+                    }
+
+                    .crossed-button {
+
+                        span {
+                            padding: 0 px(10); 
+                
+                            &:before {
+                                animation: spanCrossAnimation $time linear forwards;
+                            }
+                        }
+                
+                        .arrow-container {
+                            transform: translateX(0%);
+                        }
+                
+                        .arrow {
+                            animation: arrowAnimation $time $timeTickHalf linear forwards;
+                        }
+                    }
+                }
+
+                &:nth-child(1) {
+                    top: -3vh;
+
+                    h3 {
+
+                        span {
+
+                            &:nth-child(2) {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                &:nth-child(2) {
+                    top: 20vh;
+                }
+            }
+        }
+    }
+
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Left $time * 3 0s both;
+
+        .logo {
+            animation: fadeInDown $WFBorderElAnimationTime $WFBorderElDelayTime both;
+        }
+
+        .menu {
+            animation: fadeInDown $WFBorderElAnimationTime $WFBorderElDelayTime both;
+        }
+
+        .language {
+
+            a {
+                animation: Down $WFBorderElAnimationTime $WFBorderElDelayTime both;
+            }
+        }
+
+        .container {
+
+            .lines {
+
+                .line {
+                    animation: Down $MSLineAnimationTime $MSLine1DelayTime both;
+
+                    &--2 {
+                        animation-delay: $MSLine2DelayTime;
+                    }
+
+                    &--3 {
+                        animation-delay: $MSLine3DelayTime;
+                    }
+                }
+            }
+
+            h2 {
+
+                span {
+                    animation: Right $MSColumnAnimationTime $MSColumn1DelayTime both;    
+                }
+            }
+
+            h3,
+            p,
+            .crossed-button {
+                animation: Right $MSColumnAnimationTime $MSColumn2DelayTime both;
+            }
+
+            .index {
+
+                span {
+                    animation: Up $MSColumnAnimationTime $MSColumn2DelayTime both;
+                }
+            }
+        }
+
+        .types {
+
+            &__item {
+
+                &:nth-child(2) {
+
+                    h3,
+                    p,
+                    .crossed-button {
+                        animation: Right $MSColumnAnimationTime $MSColumn3DelayTime both;
+                    }
+        
+                    .index {
+        
+                        span {
+                            animation: Up $MSColumnAnimationTime $MSColumn3DelayTime both;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideRight $time * 3 0s both;
+        animation-play-state: paused;
+
+        .logo {
+            animation-play-state: paused;
+        }
+
+        .menu {
+            animation-play-state: paused;
+        }
+
+        .language {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
+
+        .container {
+
+            .lines {
+
+                .line {
+                    animation-play-state: paused;
+                }
+            }
+
+            h2 {
+
+                span {
+                    animation-play-state: paused;  
+                }
+            }
+
+            h3,
+            p,
+            .crossed-button {
+                animation-play-state: paused;
+            }
+
+            .index {
+
+                span {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
+        .types {
+
+            &__item {
+
+                &:nth-child(2) {
+
+                    h3,
+                    p,
+                    .crossed-button {
+                        animation-play-state: paused;
+                    }
+        
+                    .index {
+        
+                        span {
+                            animation-play-state: paused;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
+    }
+}

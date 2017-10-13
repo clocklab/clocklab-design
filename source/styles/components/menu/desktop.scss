@@ -24,7 +24,7 @@
         cursor: pointer;
         outline: 0;
         backface-visibility: hidden;
-        transition: transform $time * 2;
+        transition: transform $HomeMenuBlockAnimationTime;
 
         .text-block {
             position: relative;
@@ -67,7 +67,7 @@
             right: 100%;
             width: 1px;
             height: 0;
-            background: $gray;
+            background: $white;
             transition: height $time; 
         }
 
@@ -77,7 +77,7 @@
             right: 0;
             width: 0;
             height: 1px;
-            background: $gray;
+            background: $white;
             transition: width $time;
         }
 
@@ -103,6 +103,7 @@
                     width: 100%;
                     height: 100%;
                     background: $white;
+                    mix-blend-mode: darken;
                     border-radius: 3px;
                     transition: transform $time;
 
@@ -263,13 +264,6 @@
             }
         }
 
-        // &--team {
-        //     z-index: 4;
-        //     right: px(238);
-        //     transform-origin: 100% 50%;
-        //     transform: perspective(300px) rotateY(-90deg);
-        // }
-
         &--blog {
             z-index: 5;
             top: px(238);
@@ -299,7 +293,15 @@
         }
 
         &--portfolio {
+            z-index: 3;
             right: px(238) * 2;
+            transform-origin: 100% 50%;
+            transform: perspective(300px) rotateY(-90deg);
+        }
+
+        &--home {
+            z-index: 2;
+            right: px(238) * 3;
             transform-origin: 100% 50%;
             transform: perspective(300px) rotateY(-90deg);
         }
@@ -307,13 +309,17 @@
         /* STYLES FOR ANIMATION */
         &--blog,
         &--about-us {
-            transition-delay: $timeDif * 6 + $time * 3; 
+            transition-delay: $HomeMenuBlock1DelayTimeReversed;
         }
 
         &--services,
         &--contact,
         &--portfolio {
-            transition-delay: $timeDif * 6 + $time; 
+            transition-delay: $HomeMenuBlock2DelayTimeReversed; 
+        }
+
+        &--home {
+            transition-delay: $HomeMenuBlock3DelayTimeReversed;
         }
         /* STYLES FOR ANIMATION END */
 
@@ -321,25 +327,32 @@
         &--open-close {
 
             .border-left {
-                transition-delay: 0s;
+                transition-delay: $HomeMenuLine7DelayTimeReversed;
             }
 
             .border-bottom {
-                transition-delay: $timeDif * 6;   
+                transition-delay: $HomeMenuLine1DelayTimeReversed;   
             }
         }
 
         &--contact {
 
             .border-bottom {
-                transition-delay: $timeDif * 4;
+                transition-delay: $HomeMenuLine3DelayTimeReversed;
             }
         }
 
         &--portfolio {
 
             .border-left {
-                transition-delay: $timeDif * 3;
+                transition-delay: $HomeMenuLine5DelayTimeReversed;
+            }
+        }
+
+        &--home {
+
+            .border-left {
+                transition-delay: $HomeMenuLine4DelayTimeReversed;
             }
         }
 
@@ -347,12 +360,12 @@
 
             .border-left {
                 top: -100%;
-                transition-delay: $timeDif;
+                transition-delay: $HomeMenuLine6DelayTimeReversed;
             }
 
             .border-bottom {
                 right: -100%;
-                transition-delay: $timeDif * 5;   
+                transition-delay: $HomeMenuLine2DelayTimeReversed;
             }
         }
         /* STYLES FOR BORDER ANIMATION ENDS */
@@ -475,13 +488,17 @@
             /* STYLES FOR ANIMATION */
             &--blog,
             &--about-us {
-                transition-delay: 0s; 
+                transition-delay: $HomeMenuBlock1DelayTime; 
             }
 
             &--services,
             &--contact,
             &--portfolio {
-                transition-delay: $time * 2; 
+                transition-delay: $HomeMenuBlock2DelayTime; 
+            }
+
+            &--home {
+                transition-delay: $HomeMenuBlock3DelayTime;
             }
             /* STYLES FOR ANIMATION ENDS */
 
@@ -497,36 +514,43 @@
             &--open-close {
 
                 .border-left {
-                    transition-delay: $time * 3 + $timeDif * 6;
+                    transition-delay: $HomeMenuLine7DelayTime;
                 }
 
                 .border-bottom {
-                    transition-delay: $time * 3;   
+                    transition-delay: $HomeMenuLine1DelayTime;   
                 }
             }
 
             &--services {
 
                 .border-left {
-                    transition-delay: $time * 3 + $timeDif * 5;
+                    transition-delay: $HomeMenuLine6DelayTime;
                 }
 
                 .border-bottom {
-                    transition-delay: $time * 3 + $timeDif;   
+                    transition-delay: $HomeMenuLine2DelayTime;   
+                }
+            }
+
+            &--home {
+
+                .border-left {
+                    transition-delay: $HomeMenuLine4DelayTime;
                 }
             }
 
             &--contact {
 
                 .border-bottom {
-                    transition-delay: $time * 3 + $timeDif * 2;
+                    transition-delay: $HomeMenuLine3DelayTime;
                 }
             }
 
             &--portfolio {
 
                 .border-left {
-                    transition-delay: $time * 3 + $timeDif * 3;
+                    transition-delay: $HomeMenuLine5DelayTime;
                 }
             }
             /* STYLES FOR BORDER ANIMATION ENDS */

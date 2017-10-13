@@ -1,6 +1,6 @@
 & {  
     
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 101%;
     z-index: 9999;
@@ -163,5 +163,12 @@
 
     &.opened {
         left: 0;
+    }
+
+    &--become-client {
+        
+        h3 {
+            margin-bottom: px(140);
+        }
     }
 }

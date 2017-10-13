@@ -1,0 +1,14 @@
+@import '../desktop';
+
+& {
+
+    .container {
+        padding-right: px(100);
+        min-height: 670px;
+    }
+
+    .image-container {
+        width: px(1400);
+        height: px(1100);
+    }
+}
