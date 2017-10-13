@@ -1,0 +1,10 @@
+@import '../desktop';
+
+// ----- alert -----
+.alert {
+    top: 20%;
+    span {
+        &:first-of-type { margin-right: 15%; }
+        &:last-of-type { margin-left: 15%; }
+    }
+}
