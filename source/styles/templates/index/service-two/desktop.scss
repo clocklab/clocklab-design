@@ -62,7 +62,7 @@
 
     // ----- animation up -----
     &.previous, &.previous-back {
-        animation: slideUp $time * 3 0s both;
+        animation: slideUp $time * 3 $topPanelAnimationTime both;
 
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }

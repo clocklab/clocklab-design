@@ -5,10 +5,17 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
+<<<<<<< Updated upstream
 // var mobile = '-mobile'
 var mobile = ''
 
 var page = `services/web-production/shop${mobile}`
+=======
+var mobile = '-mobile'
+var mobile = ''
+
+var page = `index${mobile}`
+>>>>>>> Stashed changes
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');

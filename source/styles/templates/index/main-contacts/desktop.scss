@@ -40,7 +40,7 @@
 
     // ----- animation left -----
     &.previous, &.previous-back {
-        animation: slideLeft $time * 3 0s both;
+        animation: slideLeft $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;
 
         // ----- navigation-elements -----

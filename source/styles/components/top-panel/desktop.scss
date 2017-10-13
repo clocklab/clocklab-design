@@ -7,7 +7,10 @@
     width: 100%;
     height: px(240);
     background: transparent;
+    // background: red;
+    transform: translateY(-101%);
     transition: top $time * 2 ease-out, background $time, opacity $time * 2 ease-out;
+    animation: Down $topPanelAnimationTime $time * 3 ease-out forwards;
 
     &.active {
         background: rgba(238, 238, 238, 0.70);
@@ -17,6 +20,61 @@
         &.form-opened {
             top: px(-242);
             opacity: 0;
+        }
+    }
+
+    &.back {
+        animation: slideUp $topPanelAnimationTime ease-out both;
+    }
+
+    &.dark {
+
+        .logo {
+
+            &-letter {
+                fill: $black;
+            }
+        }
+
+        .menu {
+            
+            &__item {
+                border-color: $darkGray;
+    
+                .symbol,
+                .name {
+                    color: $darkGray;
+                }
+
+                .border-left,
+                .border-bottom {
+                    background: $darkGray;
+                }
+    
+                .hamburger {
+    
+                    &-tick {
+    
+                        .inner-tick {
+                            background: $darkGray;
+                        }
+                    }
+                }
+    
+                &--open-close {
+    
+                    &:hover {
+    
+                        .name {
+                            color: $darkGray;
+                        }
+                    }
+                }
+            }
+    
+            &.opened {
+                background: rgba(255, 255, 255, .95);
+            }
         }
     }
 }

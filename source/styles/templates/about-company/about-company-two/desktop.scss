@@ -59,7 +59,7 @@
 
     // ----- animation down -----
     &.previous, &.previous-back {
-        animation: slideDown $time * 3 0s both;
+        animation: slideDown $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;
     
         // ----- navigation-elements -----
