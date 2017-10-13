@@ -79,7 +79,7 @@
         position: absolute;
         right: 95%;
         top: px(50);
-        width: px(220);
+        width: px(250);
         color: $white;
         font-family: $Roboto-Light;
         font-size: px(32);
@@ -138,15 +138,17 @@
         margin-top: px(80);
         margin-bottom: px(80);
         font-family: $Raleway-Regular;
-        
         .text-container {
             display: inline-block;
             margin-bottom: px(10);
             font-family: $Raleway-ExtraBold;
-
+            &:before {
+                height: px(20);
+                bottom: px(20);
+            }
             span {
-                font-size: px(96);
-                line-height: px(104);
+                font-size: px(50);
+                line-height: px(90);
             }
         }
     }
@@ -159,7 +161,7 @@
             margin-bottom: px(50);
             color: $darkGray;
             font-family: $Roboto-Regular;
-            font-size: px(28);
+            font-size: px(32);
             line-height: 1.4;
         }
     }

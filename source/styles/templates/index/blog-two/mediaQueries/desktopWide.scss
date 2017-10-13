@@ -2,9 +2,12 @@
 
 // ----- title -----
 .title {
-    margin: 21vh 0 0 px(325);
+    margin: 20vh 0 0 px(275);
     .word span { font-size: px(60); }
 }
+
+// ----- image-block -----
+.image-block.down { right: px(700); }
 
 // ----- letter o -----
 .big-background-letter { right: 49vh; }

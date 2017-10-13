@@ -39,9 +39,14 @@
 
         .text-container {
 
+            &:before {
+                height: px(12);
+                bottom: px(6);
+            }
+
             span {
-                font-size: px(70);
-                line-height: px(80);
+                font-size: px(38);
+                line-height: px(40);
             }
         }
     }

@@ -60,6 +60,10 @@
                     animation: titleWord $time * 2 $time * 6 linear;
                     animation-fill-mode: forwards;
                 }
+                &:nth-of-type(3) span {
+                    animation: titleWord $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
             }
         }
 
@@ -138,6 +142,10 @@
                     animation: titleWord $time * 2 $time * 6 linear;
                     animation-fill-mode: forwards;
                 }
+                &:nth-of-type(3) span {
+                    animation: titleWord $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
             }
         }
 
@@ -169,14 +177,18 @@
     .big-background-letter {
         top: 3vh;
         z-index: 4;
-        right: 66vh;
+        right: 50vh;
         color: $white;
         font-size: 45vh;
         span::before  { content: 'o'; }
     }
 
     // ----- title -----
-    .title { margin: 21vh 0 0 px(750); }
+    .title {
+        z-index: 4;
+        margin: 21vh 0 0 px(750);
+        .word:nth-of-type(2) { margin-bottom: 5px; }
+    }
     .text-block {
         font-family: $Raleway-Medium;
         position: absolute;
@@ -226,8 +238,8 @@
                 transform: rotate(90deg);
                 position: absolute;
                 font-size: px(34);
-                right: px(-260);
-                top: px(840);
+                right: px(-325);
+                top: px(800);
                 color: $white;
                 transform-origin: 0 0;
                 font-family: $Roboto-Thin;
@@ -238,7 +250,7 @@
                 height: 100%;
                 width: 100%;
                 top: px(200);
-                right: px(-1100);
+                right: px(-900);
                 &:before {
                     height: 100%;
                     width: 100%;

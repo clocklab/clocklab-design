@@ -15,13 +15,23 @@
 
         .text-container {
 
+            &:before {
+                height: px(12);
+                bottom: px(6);
+            }
+
             span {
-                font-size: px(80);
+                font-size: px(40);
+                line-height: px(50);
             }
         }
     }
 
     article {
         padding-right: px(300);
+        
+        p {
+            font-size: px(32);
+        }
     }
 }

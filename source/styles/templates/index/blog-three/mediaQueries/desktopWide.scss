@@ -3,13 +3,19 @@
 // ----- title -----
 .title {
 	bottom: px(300);
-	.word::after { top: 19px; }
+	.word span { font-size: px(90); }
+}
+
+// ----- blue-line -----
+.blue-line {
+	width: px(600);
+	right: px(1200);
 }
 
 // ----- image-block -----
 .image-block {
     width: px(1230);
     height: px(855);
-    right: px(800);
+    right: px(400);
     top: px(100);
 }
