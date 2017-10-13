@@ -13,8 +13,7 @@
 
     .clock-bg {
         z-index: 1;
-        font-family: $raleway;
-        font-weight: 500;
+        font-family: $Raleway-Medium;
     }
 
     .container {
@@ -104,12 +103,11 @@
     .new-title {
         margin-top: px(80);
         margin-bottom: px(80);
-        font-family: $raleway;
+        font-family: $Raleway-ExtraBold;
         
         .text-container {
             display: inline-block;
             margin-bottom: px(10);
-            font-weight: 800;
         }
     }
 
@@ -118,8 +116,8 @@
 
         p {
             margin-bottom: px(50);
-            font-family: $roboto;
-            font-size: px(28);
+            font-family: $Roboto-Regular;
+            font-size: px(32);
             line-height: 1.4;
         }
     }
@@ -127,7 +125,7 @@
     .crossed-button {
         margin-top: px(50);
         margin-left: px(330);
-        font-family: $raleway;
+        font-family: $Raleway-Bold;
 
         span {
             &:after {

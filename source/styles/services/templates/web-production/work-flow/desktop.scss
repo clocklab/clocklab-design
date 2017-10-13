@@ -61,7 +61,7 @@
         position: relative;
         z-index: 3;
         padding-top: px(380);
-        font-family: $raleway;
+        font-family: $Raleway-Regular;
     }
 
     .sticker {
@@ -81,7 +81,7 @@
         .text-container {
             display: inline-block;
             margin-bottom: px(30);
-            font-weight: 800;
+            font-family: $Raleway-ExtraBold;
         }
     }
 
@@ -105,7 +105,7 @@
         z-index: 2;
         width: 100% / $steps;
         color: $darkGray;
-        font-family: $roboto;
+        font-family: $Roboto-Regular;
 
         .index {
             position: absolute;
@@ -129,8 +129,7 @@
 
         h3 {
             margin-bottom: px(24);
-            font-family: $raleway;
-            font-weight: 700;
+            font-family: $Raleway-Bold;
             font-size: px(48);
             text-transform: uppercase;
         }
@@ -221,16 +220,15 @@
         h3 {
             margin-bottom: px(34);
             color: $darkGray;
-            font-family: $raleway;
+            font-family: $Raleway-ExtraBold;
             font-size: px(48);
-            font-weight: 800;
             text-transform: uppercase;
         }
 
         p {
             margin-bottom: px(66);
             color: $gray;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(28);
             line-height: 1.4;
         }
@@ -242,9 +240,8 @@
             background: $blue;
             border: 2px solid $blue;
             color: $white;
-            font-family: $roboto;
+            font-family: $Roboto-Bold;
             font-size: px(28);
-            font-weight: 700;
             text-transform: uppercase;
             transition: color $time, background $time;
 

@@ -1,8 +1,7 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    font-family: $Raleway-Regular;
     background: $background;
-    font-family: $raleway;
-    font-weight: $regular;
     overflow: hidden;
     
     // ----- animation down -----
@@ -172,7 +171,7 @@
             span {
                 color: $white;
                 font-size: px(32);
-                font-weight: $medium;
+                font-family: $Raleway-Medium;
                 &:nth-of-type(10) { margin-right: 5px;}
             }
         }
@@ -187,7 +186,7 @@
         left: px(650);
         z-index: 2;
         p {
-            font-weight: $medium;
+            font-family: $Raleway-Medium;
             font-size: px(22);
             line-height: 1.4;
             color: $white;

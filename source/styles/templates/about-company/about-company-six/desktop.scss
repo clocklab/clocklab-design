@@ -1,7 +1,6 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $Raleway-Regular;
-    background: $background;
     overflow: hidden;
     
     // ----- animation left -----
@@ -10,7 +9,11 @@
         animation: Left $time * 3 0s both;
         
         // ----- other -----
-        .vertical-text, .item p { animation: fadeIn $time * 6 $time * 15 both; }
+        .back-layer {
+            animation: fadeInUp $time * 3 0s both;
+            animation-fill-mode: forwards;
+        }
+        .vertical-text, .questions { animation: fadeIn $time * 6 $time * 15 both; }
 
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -58,7 +61,11 @@
         animation-play-state: paused;
         
         // ----- other -----
-        .vertical-text, .item p { animation: fadeIn $time * 6 $time * 15 both; }
+        .back-layer {
+            animation: fadeInUp $time * 3 0s both;
+            animation-fill-mode: forwards;
+        }
+        .vertical-text, .questions { animation: fadeIn $time * 6 $time * 15 both; }
 
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -103,98 +110,97 @@
     &.previous-back { animation-play-state: running; }
 
     // ----- front-layer -----
-    // .front-layer {
-    //     z-index: 2;
-    //     overflow: hidden;
-    //     position: relative;
-    //     background: $white;
-    //     transform-origin: 0 50%;
-    //     transform-style: preserve-3d;
-    //     transition: transform $time * 2;
-    //     &:after {
-    //         top: 0;
-    //         left: 0;
-    //         opacity: 0;
-    //         width: 100%;
-    //         content: '';
-    //         z-index: -1;
-    //         height: 100%;
-    //         display: block;
-    //         position: absolute;
-    //         transition: opacity $time;
-    //         background: rgba(0,0,0,.4);
-    //     }
-
-        
-    // }
-
-    // ----- vertical-text -----
-    .vertical-text {
-        font-family: $Roboto-Thin;
-        transform: rotate(-90deg);
-        position: absolute;
-        font-size: px(26);
-        line-height: 1.4;
-        bottom: 30.5vh;
-        color: $white;
-        left: px(-76);
-        width: 12%;
-    }
-
-    // ----- table -----
-    .table .container {
-        height: 100vh;
-        display: flex;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        max-width: 1170px;
+    .front-layer {
+        z-index: 2;
+        overflow: hidden;
         position: relative;
+        background: $background;
+        transform-origin: 0 50%;
+        transform-style: preserve-3d;
+        transition: transform $time * 2;
+        &:after {
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            content: '';
+            z-index: -1;
+            height: 100%;
+            display: block;
+            position: absolute;
+            transition: opacity $time;
+            background: rgba(0,0,0,.4);
+        }
 
-        // ----- item -----
-        .item {
-            width: 25%;
+        // ----- vertical-text -----
+        .vertical-text {
+            font-family: $Roboto-Thin;
+            transform: rotate(-90deg);
+            position: absolute;
+            font-size: px(26);
+            line-height: 1.4;
+            bottom: 30.5vh;
+            left: px(-160);
+            color: $white;
+            width: 12%;
+        }
+
+        // ----- table -----
+        .table .container {
+            height: 100vh;
+            display: flex;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            max-width: 1170px;
             position: relative;
-            .block {
-                display: grid;
-                margin-top: 29vh;
-                img {
-                    max-width: 250px;
-                    max-height: 50px;
-                    margin-bottom: 8vh;
-                    &:last-of-type { margin-bottom: 0; }
-                }
-                p {
-                    font-family: $Raleway-ExtraBold;
-                    padding-top: 6.5vh;
-                    line-height: 1.5;
-                    font-size: px(48);
-                    color: $white;
-                    span {
-                        font-family: $Raleway-ExtraBold;
-                        font-size: px(48);
-                        color: $blue;
+
+            // ----- item -----
+            .item {
+                width: 25%;
+                position: relative;
+                display: -webkit-inline-box;
+                .block {
+                    height: 40%;
+                    display: grid;
+                    margin: 29vh 0 auto;
+                    .questions {
+                        margin-top: 6.5vh;
+                        .open-form {
+                            text-align: left;
+                            span {
+                                font-family: $Raleway-ExtraBold;
+                                line-height: 1.5;
+                                font-size: px(48);
+                                color: $white;
+                                span {
+                                    font-family: $Raleway-ExtraBold;
+                                    font-size: px(48);
+                                    color: $blue;
+                                }
+                            }
+                        }
                     }
                 }
-            }
-            .line {
-                top: 0;
-                left: 0;
-                width: 1px;
-                position: absolute;
-                background: $darkGray;
-                &.right {
-                    right: 0;
-                    left: inherit;
+                .line {
+                    top: 0;
+                    left: 0;
+                    width: 1px;
+                    position: absolute;
+                    background: $darkGray;
+                    &.right {
+                        right: 0;
+                        left: inherit;
+                    }
                 }
-            }
-            & + .title {
-                display: block;
-                margin-top: 12vh;
-                position: absolute;
-                font-family: $Raleway-ExtraBold;
-                .word span {
-                    font-size: px(88);
-                    margin-bottom: 5px;
+                & + .title {
+                    display: block;
+                    margin-top: 12vh;
+                    position: absolute;
+                    font-family: $Raleway-ExtraBold;
+                    .word span {
+                        font-size: px(88);
+                        margin-bottom: 5px;
+                    }
                 }
             }
         }
@@ -206,6 +212,7 @@
         left: 0;
         z-index: 1;
         display: flex;
+        visibility: hidden;
         padding-right: px(140);
         justify-content: flex-end;
         align-items: center;

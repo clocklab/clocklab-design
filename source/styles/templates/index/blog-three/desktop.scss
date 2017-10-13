@@ -1,7 +1,6 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    font-family: $raleway;
-    font-weight: $regular;
+    font-family: $Raleway-Regular;
     background: $white;
     overflow: hidden;
     
@@ -174,7 +173,7 @@
             span {
                 color: $black;
                 font-size: px(25);
-                font-weight: $medium;
+                font-family: $Raleway-Medium;
                 &:nth-of-type(10) { margin-right: 5px;}
             }
         }
@@ -224,8 +223,8 @@
             right: px(90);
             bottom: px(-58);
             font-size: px(32);
-            font-family: $roboto;
             position: absolute;
+            font-family: $Roboto-Regular;
         }
     }
 
@@ -239,7 +238,7 @@
             right: px(72);
             bottom: 29vh;
             p {
-                font-weight: $medium;
+                font-family: $Raleway-Medium;
                 font-size: px(22);
                 line-height: 1.3;
             }

@@ -1,1 +1,33 @@
 @import '../desktop';
+
+// ----- services-schedule -----
+.services-schedule {
+	padding-top: 25vh;
+	.container {
+		width: 1280px;
+		span.name {
+			left: .5vh;
+			top: -8vh;
+		}
+		.item {
+			.types__item {
+				margin-bottom: 0;
+				width: 80%;
+			}
+			.content {
+				padding-left: .5vh;
+				h3 { font-size: px(45); }
+				p { font-size: px(34); }
+				ul li {
+					line-height: 1.5;
+					margin-bottom: 0;
+					a { font-size: px(34); }
+				}
+			}
+			&.up {
+				margin-bottom: 8vh;
+				.services-line { top: -25vh; }
+			}
+		}
+	}
+}

@@ -3,7 +3,7 @@ body { overflow: hidden; }
 // base
 @import "base/variables";
 @import "base/mixins";
-@import "base/fonts";
+// @import "base/fonts";
 @import "base/reset";
 @import "base/common";
 @import "base/animate";
@@ -17,6 +17,7 @@ body { overflow: hidden; }
 
 // components
 @import "components/logo/main";
+@import "components/form/main";
 @import "components/long-read/main";
 @import "components/rotate-smartphone/main";
 @import "components/big-background-letter/main";

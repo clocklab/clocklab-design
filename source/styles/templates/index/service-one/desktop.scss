@@ -1,7 +1,6 @@
 & {
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    font-family: $raleway;
-    font-weight: $regular;
+    font-family: $Raleway-Regular;
     background: $white;
     overflow: hidden;
     
@@ -151,7 +150,7 @@
             span {
                 color: $black;
                 font-size: px(25);
-                font-weight: $medium;
+                font-family: $Raleway-Medium;
                 &:nth-of-type(10) { margin-right: 5px;}
             }
         }
@@ -161,7 +160,7 @@
     .service-info {
         z-index: 1;
         position: absolute;
-        p { font-family: $roboto; }
+        p { font-family: $Roboto-Regular; }
         &.horizontal {
             p {
                 font-size: px(32);

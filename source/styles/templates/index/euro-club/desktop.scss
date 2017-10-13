@@ -11,7 +11,7 @@
     }
     // Animation for block ends
 
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: $Raleway-Regular;
     cursor: default;
     position: relative;
     padding-top: px(300);
@@ -103,9 +103,8 @@
 
     .sticker {
         position: relative;
-        font-family: $raleway;
+        font-family: $Raleway-Bold;
         font-size: px(24);
-        font-weight: 700;
 
         span {
             display: inline-block;
@@ -160,7 +159,7 @@
             z-index: 1;
             color: $black;
             font-size: px(120);
-            font-weight: 800;
+            font-family: $Raleway-ExtraBold;
             line-height: px(125);
             text-transform: uppercase;
         }
@@ -174,7 +173,7 @@
             display: block;
             margin-bottom: px(30);
             color: $darkGray;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(32);
             line-height: px(40);
 

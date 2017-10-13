@@ -25,6 +25,10 @@
         .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
         .table .container .item span { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime both; }
         .open-form { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
+        .back-layer {
+            animation: fadeInUp $time * 3 0s both;
+            animation-fill-mode: forwards;
+        }
 
         // ----- title -----
         .title {
@@ -75,6 +79,10 @@
         .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
         .table .container .item span { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime both; }
         .open-form { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
+        .back-layer {
+            animation: fadeInUp $time * 3 0s both;
+            animation-fill-mode: forwards;
+        }
 
         // ----- title -----
         .title {
@@ -255,6 +263,7 @@
         left: 0;
         z-index: 1;
         display: flex;
+        visibility: hidden;
         padding-right: px(140);
         justify-content: flex-end;
         align-items: center;

@@ -5,7 +5,7 @@
     position: relative;
     width: 100vw;
     height: 100vh;
-    font-family: $raleway;
+    font-family: $Raleway-Regular;
     overflow: hidden;
 
     .language {
@@ -90,8 +90,8 @@
             top: px(-250);
             padding-right: px(150); 
             width: 33%;
+            font-family: $Raleway-ExtraBold;
             font-size: px(96);
-            font-weight: 800;
             line-height: px(110);
             overflow: hidden;
 
@@ -109,7 +109,7 @@
             top: px(-40);
             left: px(-40);
             color: $gray;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(32);
             transform: rotate(-90deg);
             transition: color $time;
@@ -125,9 +125,9 @@
             position: relative;
             margin-bottom: px(70);
             color: $white;
+            font-family: $Raleway-Bold;
             font-size: px(48);
             line-height: px(60);
-            font-weight: 700;
             text-transform: uppercase;
 
             &:before {
@@ -148,7 +148,7 @@
             margin-bottom: px(90);
             padding-right: px(180);
             color: $white;
-            font-family: $roboto;
+            font-family: $Roboto-Regular;
             font-size: px(28);
             line-height: 1.4;
         }
