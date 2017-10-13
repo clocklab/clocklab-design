@@ -1,6 +1,5 @@
 // GLOBAL VARIABLES
 $browser-context: 16;
-
 // GLOBAL VARIABLES END
 
 // MEDIA QUERIES
@@ -12,7 +11,6 @@ $desktop:         '(min-width: 1025px) and (max-width: 1366px)';
 $desktopWide:     '(min-width: 1367px) and (max-width: 1680px)';
 $desktopHD:       '(min-width: 1681px) and (max-width: 1920px)';
 $desktopMega:     '(min-width: 1921px)';
-
 // MEDIA QUERIES END
 
 // COLORS VARIABLES
@@ -71,6 +69,10 @@ $timeDif: .1s;
 $timeTick: .2s;
 $timeTickHalf: $timeTick / 2;
 // TIME CONSTANTS END
+
+// TOP PANEL
+$topPanelAnimationTime: $time * 2;
+// TOP PANEL ENDS
 
 // VARIABLES FOR PORTFOLIO CLIENT
 //$portfolioClientDelayTime: 0s;

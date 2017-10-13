@@ -57,7 +57,7 @@
 
    // ----- animation right -----
     &.previous, &.previous-back {
-        animation: slideRight $time * 3 0s both;
+        animation: slideRight $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;
         
         // ----- other -----

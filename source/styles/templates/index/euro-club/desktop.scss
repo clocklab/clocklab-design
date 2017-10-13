@@ -432,7 +432,7 @@
 
     &.previous,
     &.previous-back {
-        animation: slideUp $time * 3 0s both;
+        animation: slideUp $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;
 
         .small-gray-lines {

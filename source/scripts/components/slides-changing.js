@@ -1,14 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     const slides = Array.prototype.slice.call( document.querySelectorAll('.screen-block'))
+    const topPanel = document.querySelector('.top-panel')
     const events = ['wheel', 'keydown']
     const animationTime = 1000
+    const animationDeltaTime = 600
     const minLimit = - 30
     const maxLimit = 30
+    const lightSlides = [1, 3, 4, 5, 10, 11, 13, 14, 17]
     let flag = true
     let firstLap = true
     let freezer
-    
+
     const addListeners = () => events.forEach(event => document.addEventListener(event, freezeEvents))
 
     const checkFlag = event => {
@@ -21,6 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 flag = !flag
             }, animationTime)
         }
+    }
+
+    setTopPanelStyle = index => {
+        setTimeout(() => {
+            lightSlides.includes(index)
+            ? topPanel.classList.add('dark')
+            : topPanel.classList.remove('dark')
+        }, animationDeltaTime)
     }
 
     const freezeEvents = event => {
@@ -52,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resetAnimation = (currentSlide, currentClass) => {
         setTimeout(() => {
             currentSlide.classList.remove(currentClass);
-        }, animationTime)
+        }, animationTime + animationDeltaTime)
     }
     
     const move = event => {
@@ -66,6 +77,13 @@ document.addEventListener('DOMContentLoaded', () => {
             moveToNext(index)
 
             slides[0].classList.contains('first-slide') && slides[0].classList.remove('first-slide')
+            topPanel.classList.add('back')
+
+            setTimeout(() => {
+                topPanel.classList.remove('back')
+            }, animationDeltaTime)
+
+            setTopPanelStyle(slides[index + 1] ? index + 1 : 0)
 
             if (index === slides.length - 1) firstLap = false
         }
@@ -75,12 +93,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (slides[index - 1]) {
                     setClasses(currentSlide, previousSlide, 'previous-back')
                     resetAnimation(currentSlide, 'previous-back')
+                    setTopPanelStyle(slides[index - 1] ? index - 1 : slides.length - 1)
+
+                    setTimeout(() => {
+                        topPanel.classList.remove('back');
+                    }, animationDeltaTime)
+
                     slides[index - 1].classList.add('current-back')
+                    topPanel.classList.add('back')
                 }
             } else {
                 setClasses(currentSlide, previousSlide, 'previous-back')
                 resetAnimation(currentSlide, 'previous-back')
                 moveToPrevious(index)
+                setTopPanelStyle(slides[index - 1] ? index - 1 : slides.length - 1)
+
+                setTimeout(() => {
+                    topPanel.classList.remove('back');
+                }, animationDeltaTime)
+
+                topPanel.classList.add('back')
             }
         }
     }
