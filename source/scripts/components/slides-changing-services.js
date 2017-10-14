@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     const slides = Array.prototype.slice.call( document.querySelectorAll('.screen-block'))
+    const topPanel = document.querySelector('.top-panel')
     const events = ['wheel', 'keydown']
     const animationTime = 1000
+    const animationDeltaTime = 600
     const minLimit = - 4
     const maxLimit = 4
     let flag = true
@@ -20,6 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 flag = !flag
             }, animationTime)
         }
+    }
+
+    setTopPanelStyle = index => {
+        const background = getComputedStyle(slides[index]).backgroundColor.replace(/rgb|rgba|\(|\)/g, '').split(', ')
+
+        setTimeout(() => {
+            background.filter(number => number < 100).length
+            ? topPanel.classList.remove('dark')
+            : topPanel.classList.add('dark')
+        }, animationDeltaTime)
     }
 
     const freezeEvents = event => {
@@ -53,7 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
             if (slides[index + 1]) {
                 setClasses(currentSlide, previousSlide, 'previous')
                 resetAnimation(currentSlide, 'previous')
+
                 slides[index + 1].classList.add('current') 
+                topPanel.classList.add('back')
+
+                setTimeout(() => {
+                    topPanel.classList.remove('back')
+                }, animationDeltaTime)
+    
+                setTopPanelStyle(slides[index + 1] ? index + 1 : 0)
             }
         }
 
@@ -63,12 +83,21 @@ document.addEventListener('DOMContentLoaded', () => {
                 setClasses(currentSlide, previousSlide, 'previous-back')
                 resetAnimation(currentSlide, 'previous-back')
                 slides[index - 1].classList.add('current-back')
+
+                setTopPanelStyle(slides[index - 1] ? index - 1 : slides.length - 1)
+
+                setTimeout(() => {
+                    topPanel.classList.remove('back');
+                }, animationDeltaTime)
+
+                topPanel.classList.add('back')
             }
         }
     }
     
     addListeners()
-    
+    setTopPanelStyle(0)
+
     slides[0].classList.add('current')
     slides[0].classList.add('first-slide')
 })

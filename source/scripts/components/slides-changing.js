@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const animationDeltaTime = 600
     const minLimit = - 30
     const maxLimit = 30
-    const lightSlides = [1, 3, 4, 5, 10, 11, 13, 14, 17]
+    // const lightSlides = [1, 3, 4, 5, 10, 12, 13, 16]
     let flag = true
     let firstLap = true
     let freezer
@@ -27,10 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     setTopPanelStyle = index => {
+        const background = getComputedStyle(slides[index]).backgroundColor.replace(/rgb|rgba|\(|\)/g, '').split(', ')
+
         setTimeout(() => {
-            lightSlides.includes(index)
-            ? topPanel.classList.add('dark')
-            : topPanel.classList.remove('dark')
+            background.filter(number => number < 100).length
+            ? topPanel.classList.remove('dark')
+            : topPanel.classList.add('dark')
         }, animationDeltaTime)
     }
 
@@ -118,6 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     addListeners()
+    setTopPanelStyle()
     
     slides[0].classList.add('current')
     slides[0].classList.add('first-slide')
