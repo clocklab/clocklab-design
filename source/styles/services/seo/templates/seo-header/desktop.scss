@@ -13,7 +13,7 @@
     .lines div { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
     
     // ----- navigation-elements -----
-    .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 6 both; }
+    .languages a { animation: fadeInDown $time * 3 $time * 6 both; }
     .header-image { animation: fadeInFive $time * 6 $time * 9 both; }
 
     // ----- top-panel -----

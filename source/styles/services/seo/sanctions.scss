@@ -31,3 +31,6 @@
 @import '../design/templates/design-our-works/main';
 @import '../design/templates/design-answers/main';
 @import '../design/templates/design-footer/main';
+
+// logo and menu animation
+.logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
