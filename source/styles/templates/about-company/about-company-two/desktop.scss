@@ -12,9 +12,6 @@
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
         
-        // ----- navigation-elements -----
-        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
-
         // ----- service-info -----
         .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
         .crossed-button, .jumping-button.second { animation: fadeInUp $time * 2 $time * 14 both; }
@@ -62,9 +59,6 @@
         animation: slideDown $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;
     
-        // ----- navigation-elements -----
-        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
-
         // ----- service-info -----
         .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
         .crossed-button, .jumping-button.second { animation: fadeInUp $time * 2 $time * 14 both; }
