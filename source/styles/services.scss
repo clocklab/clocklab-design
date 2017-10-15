@@ -16,3 +16,6 @@
 
 // main
 @import "templates/services/services/main";
+
+// logo and menu animation
+.logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
