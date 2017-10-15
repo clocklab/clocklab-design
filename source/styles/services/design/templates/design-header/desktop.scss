@@ -8,8 +8,8 @@
     // ----- big-bg-letters -----
     .big-background-letter, .big-bg-letter-c { animation: fadeIn $time * 3 $time * 3 both; }
     
-    // ----- navigation-elements -----
-    .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+    // ----- languages -----
+    .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
 
     // ----- top-panel -----
     .top-panel {
