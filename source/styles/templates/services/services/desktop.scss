@@ -2,132 +2,166 @@
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $Raleway-Regular;
     background: $background;
+    position: absolute;
     overflow: hidden;
+    z-index: 1;
+    left: 0;
+    top: 0;
 
     // ----- animation left -----
-    &.current, &.current-back,
-    &.previous, &.previous-back {
-        animation: Left $time * 3 0s both;
-        .crossed-button, h3, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-        .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-        span.name {
-            span {
-                animation: titleName $time * 2 $time * 11 linear;
-                animation-fill-mode: forwards;
-            }
-            &:before {
-                animation: titleNameShape $time * 2 $time * 10 linear;
-                animation-fill-mode: forwards;
-            }
-        }
-        .types {
-            &__item {
-                &:nth-child(1),
-                &:nth-child(3) {
-                    .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
-                    h3 { animation-delay: $STTextSecondColumnDelayTime; }
-                    p { animation-delay: $STTextSecondColumnTwoDelayTime; }
-                    .crossed-button { animation-delay: $STTextSecondColumnThreeDelayTime; }
-                }
-                &:nth-child(2), &:nth-child(4) {
-                    .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
-                    h3 { animation-delay: $STTextThirdColumnDelayTime; }
-                    p { animation-delay: $STTextThirdColumnTwoDelayTime; }
-                    .crossed-button { animation-delay: $STTextThirdColumnThreeDelayTime; }
-                }
-            }
-        }
+    // &.current, &.current-back,
+    // &.previous, &.previous-back {
+    //     animation: Left $time * 3 0s both;
+    //     h3, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+    //     .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+    //     span.name {
+    //         span {
+    //             animation: titleName $time * 2 $time * 11 linear;
+    //             animation-fill-mode: forwards;
+    //         }
+    //         &:before {
+    //             animation: titleNameShape $time * 2 $time * 10 linear;
+    //             animation-fill-mode: forwards;
+    //         }
+    //     }
+    //     .types {
+    //         &__item {
+    //             &:nth-child(1),
+    //             &:nth-child(3) {
+    //                 .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
+    //                 h3 { animation-delay: $STTextSecondColumnDelayTime; }
+    //                 p { animation-delay: $STTextSecondColumnTwoDelayTime; }
+    //             }
+    //             &:nth-child(2), &:nth-child(4) {
+    //                 .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
+    //                 h3 { animation-delay: $STTextThirdColumnDelayTime; }
+    //                 p { animation-delay: $STTextThirdColumnTwoDelayTime; }
+    //             }
+    //         }
+    //     }
             
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+    //     // ----- big-background-letter -----
+    //     .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
         
-        // ----- navigation-elements -----
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
-        .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+    //     // ----- navigation-elements -----
+    //     .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+    //     .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
 
-        // ----- social -----
-        .social {
-            .instagram {  animation: social $time * 3 $time * 3 both; }
-            .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-            .jumping-button { animation: FadeInRight $time * 3 $time * 3 both; }
-        }
+    //     // ----- social -----
+    //     .social {
+    //         .instagram {  animation: social $time * 3 $time * 3 both; }
+    //         .facebook { animation: socialReverse $time * 3 $time * 3 both; }
+    //         .jumping-button { animation: FadeInRight $time * 3 $time * 3 both; }
+    //     }
         
-        // ----- services-line -----
-        .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+    //     // ----- services-line -----
+    //     .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
     
-    }
+    // }
+
+    // // ----- animation right -----
+    // &.previous, &.previous-back {
+    //     animation: slideRight $time * 3 0s both;
+    //     animation-play-state: paused;
+    //     h3, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+    //     .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+    //     span.name {
+    //         span {
+    //             animation: titleName $time * 2 $time * 11 linear;
+    //             animation-fill-mode: forwards;
+    //         }
+    //         &:before {
+    //             animation: titleNameShape $time * 2 $time * 10 linear;
+    //             animation-fill-mode: forwards;
+    //         }
+    //     }
+    //     .types {
+    //         &__item {
+    //             &:nth-child(1),
+    //             &:nth-child(3) {
+    //                 .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
+    //                 h3 { animation-delay: $STTextSecondColumnDelayTime; }
+    //                 p { animation-delay: $STTextSecondColumnTwoDelayTime; }
+    //             }
+    //             &:nth-child(2), &:nth-child(4) {
+    //                 .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
+    //                 h3 { animation-delay: $STTextThirdColumnDelayTime; }
+    //                 p { animation-delay: $STTextThirdColumnTwoDelayTime; }
+    //             }
+    //         }
+    //     }
+    // }
 
     // ----- animation right -----
-    &.previous, &.previous-back {
-        animation: slideRight $time * 3 0s both;
-        animation-play-state: paused;
-        .crossed-button, h3, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-        .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-        span.name {
-            span {
-                animation: titleName $time * 2 $time * 11 linear;
-                animation-fill-mode: forwards;
-            }
-            &:before {
-                animation: titleNameShape $time * 2 $time * 10 linear;
-                animation-fill-mode: forwards;
-            }
-        }
-        .types {
-            &__item {
-                &:nth-child(1),
-                &:nth-child(3) {
-                    .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
-                    h3 { animation-delay: $STTextSecondColumnDelayTime; }
-                    p { animation-delay: $STTextSecondColumnTwoDelayTime; }
-                    .crossed-button { animation-delay: $STTextSecondColumnThreeDelayTime; }
-                }
-                &:nth-child(2), &:nth-child(4) {
-                    .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
-                    h3 { animation-delay: $STTextThirdColumnDelayTime; }
-                    p { animation-delay: $STTextThirdColumnTwoDelayTime; }
-                    .crossed-button { animation-delay: $STTextThirdColumnThreeDelayTime; }
-                }
-            }
-        }
-    }
-
-    // ----- animation right -----
-    &.previous, &.previous-back {
-        animation: slideRight $time * 3 $topPanelAnimationTime both;
-        animation-play-state: paused;
+    // &.previous, &.previous-back {
+    //     animation: slideRight $time * 3 $topPanelAnimationTime both;
+    //     animation-play-state: paused;
         
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+    //     // ----- big-background-letter -----
+    //     .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
         
-        // ----- navigation-elements -----
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
-        .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+    //     // ----- navigation-elements -----
+    //     .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+    //     .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
 
-        // ----- social -----
-        .social {
-            .instagram {  animation: social $time * 3 $time * 3 both; }
-            .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-            .jumping-button { animation: FadeInRight $time * 3 $time * 3 both; }
-        }
+    //     // ----- social -----
+    //     .social {
+    //         .instagram {  animation: social $time * 3 $time * 3 both; }
+    //         .facebook { animation: socialReverse $time * 3 $time * 3 both; }
+    //         .jumping-button { animation: FadeInRight $time * 3 $time * 3 both; }
+    //     }
         
-        // ----- services-line -----
-        .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
-    }
-    &.current-back { animation: none; }
-    &.previous-back { animation-play-state: running; }
+    //     // ----- services-line -----
+    //     .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+    // }
+    // &.current-back { animation: none; }
+    // &.previous-back { animation-play-state: running; }
 
-    // ----- crossed-button -----
-    .crossed-button {
-        position: relative;
-        margin-top: px(50);
-        .arrow .st0, .st1 { stroke: $white; }
+    animation: fadeIn $time * 3 0s both;
+    h3, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+    .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+    span.name {
         span {
-            color: $white;
-            &:after { content: 'Подробнее'; }
-            &:before { background: $white; }
+            animation: titleName $time * 2 $time * 11 linear;
+            animation-fill-mode: forwards;
+        }
+        &:before {
+            animation: titleNameShape $time * 2 $time * 10 linear;
+            animation-fill-mode: forwards;
         }
     }
+    .types {
+        &__item {
+            &:nth-child(1),
+            &:nth-child(3) {
+                .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
+                h3 { animation-delay: $STTextSecondColumnDelayTime; }
+                p { animation-delay: $STTextSecondColumnTwoDelayTime; }
+            }
+            &:nth-child(2), &:nth-child(4) {
+                .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
+                h3 { animation-delay: $STTextThirdColumnDelayTime; }
+                p { animation-delay: $STTextThirdColumnTwoDelayTime; }
+            }
+        }
+    }
+        
+    // ----- big-background-letter -----
+    .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+    
+    // ----- navigation-elements -----
+    .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
+    .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+
+    // ----- social -----
+    .social {
+        .instagram {  animation: social $time * 3 $time * 3 both; }
+        .facebook { animation: socialReverse $time * 3 $time * 3 both; }
+        .jumping-button { animation: FadeInRight $time * 3 $time * 3 both; }
+    }
+    
+    // ----- services-line -----
+    .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
 
     // ----- letter o -----
     .big-background-letter {
@@ -252,19 +286,19 @@
                             font-size: px(48);
                             position: relative;
                             line-height: px(60);
-                            display: inline-block;
-                            font-family: $Raleway-Bold;
+                            display: inline-block;  
                             text-transform: uppercase;
-                            &:last-of-type {  margin-bottom: px(50); }
+                            font-family: $Raleway-Bold;
+                            &:last-of-type { margin-bottom: px(50); }
                             &:before {
                                 position: absolute;
                                 display: block;
                                 z-index: -1;
-                                bottom: 0;
-                                left: 0;
                                 width: 0;
+                                left: 0;
                                 content: '';
-                                height: px(20);
+                                height: px(15);
+                                bottom: px(7.5);
                                 background: $blue;
                                 transition: width $time;
                             }
