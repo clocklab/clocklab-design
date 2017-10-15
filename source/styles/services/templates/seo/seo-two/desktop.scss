@@ -9,9 +9,6 @@
     &.previous, &.previous-back {
         animation: Up $time * 3 0s both;
         
-        // ----- navigation-elements -----
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
-
         // ----- name -----
         .name { animation: fadeIn $time * 3 both; }
         
