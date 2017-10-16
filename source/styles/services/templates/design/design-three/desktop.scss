@@ -264,7 +264,6 @@
     &.current, &.current-back,
     &.previous, &.previous-back {
         animation: Left $time * 3 0s both;
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
         .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
         .title {
             animation: fadeIn $time * 2 $time * 6 linear;
@@ -339,7 +338,6 @@
     &.previous, &.previous-back {
         animation: slideRight $time * 3 0s both;
         animation-play-state: paused;
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
         .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
         .title {
             animation: fadeIn $time * 2 $time * 6 linear;

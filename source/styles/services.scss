@@ -12,8 +12,10 @@
 @import "components/social/main";
 @import "components/languages/main";
 @import "components/copyright/main";
-@import "components/crossed-button/main";
 @import "components/big-background-letter/main";
 
 // main
 @import "templates/services/services/main";
+
+// logo and menu animation
+.logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }

@@ -9,8 +9,8 @@
     &.previous, &.previous-back {
         animation: Right $time * 3 0s both;
         
-        // ----- navigation-elements -----
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+        // ----- languages -----
+        .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
@@ -55,8 +55,8 @@
         animation: slideLeft $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;
         
-        // ----- navigation-elements -----
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+        // ----- languages -----
+        .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }

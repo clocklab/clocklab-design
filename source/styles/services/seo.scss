@@ -35,3 +35,6 @@ body { overflow: hidden; }
 @import "templates/seo/seo-one/main";
 @import "templates/seo/seo-two/main";
 @import "templates/seo/seo-three/main";
+
+// logo and menu animation
+.logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }

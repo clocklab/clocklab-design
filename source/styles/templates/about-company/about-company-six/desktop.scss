@@ -15,9 +15,6 @@
         }
         .vertical-text, .questions { animation: fadeIn $time * 6 $time * 15 both; }
 
-        // ----- navigation-elements -----
-        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
-
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
 
@@ -66,9 +63,6 @@
             animation-fill-mode: forwards;
         }
         .vertical-text, .questions { animation: fadeIn $time * 6 $time * 15 both; }
-
-        // ----- navigation-elements -----
-        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- big-background-letter -----
         .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }

@@ -24,9 +24,6 @@
         
         // ----- lines -----
         .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
-        
-        // ----- navigation-elements -----
-        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- title -----
         .title {
@@ -73,9 +70,6 @@
         
         // ----- lines -----
         .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
-        
-        // ----- navigation-elements -----
-        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- title -----
         .title {

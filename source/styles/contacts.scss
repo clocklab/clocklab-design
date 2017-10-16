@@ -1,6 +1,6 @@
 // base
 @import "base/variables";
-@import "base/fonts";
+// @import "base/fonts";
 @import "base/reset";
 @import "base/common";
 @import "base/animations";
@@ -17,3 +17,6 @@
 
 // templates
 @import "templates/contacts/contacts/main";
+
+// logo and menu animation
+.logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }

@@ -9,7 +9,7 @@
         animation: fadeIn $time * 3 0s both;
         
         // ----- navigation-elements -----
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+        .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
         .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
         .scroll { animation: fadeInUp $time * 2 $time * 7 both; }
 

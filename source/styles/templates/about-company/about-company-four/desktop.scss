@@ -9,7 +9,6 @@
     &.current, &.current-back,
     &.previous, &.previous-back {
         animation: Up $time * 3 0s both;
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
         .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
         .title {
             p {
@@ -84,7 +83,6 @@
     &.previous, &.previous-back {
         animation: slideDown $time * 3 0s both;
         animation-play-state: paused;
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
         .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
         .title {
             p {

@@ -1,16 +1,19 @@
 & {
     font-family: $Raleway-Regular;
+    background: $background;
+    position: absolute;
     overflow: hidden;
-    z-index: 0;
-    
+    z-index: 1;
+    left: 0;
+    top: 0;
+
     // ----- animation -----
     animation: fadeIn $time * 3 both;
     
     // ----- big-background-letter -----
     .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
     
-    // ----- navigation-elements -----
-    .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+    // ----- copyright -----    
     .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
 
     // ----- social -----

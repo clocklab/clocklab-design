@@ -3,14 +3,11 @@
     font-family: $Raleway-Regular;
     background: $background;
     overflow: hidden;
-    
+
     // ----- animation fade -----
     &.current, &.current-back,
     &.previous, &.previous-back {
         animation: fadeIn $time * 3 0s both;
-
-        // ----- navigation-elements -----
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
 
         // ----- lines -----
         .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
