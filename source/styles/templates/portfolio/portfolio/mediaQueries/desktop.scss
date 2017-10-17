@@ -72,6 +72,7 @@
             &--a5-q3,
             &--preppy,
             &--shell {
+                margin-right: px(200);
                 
                 .image-container {
                     min-width: px(400);
@@ -81,6 +82,13 @@
                         min-width: px(400);
                         min-height: px(800);
                     }
+                }
+            }
+
+            &--q7 {
+
+                .new-title {
+                    width: px(500);
                 }
             }
         }

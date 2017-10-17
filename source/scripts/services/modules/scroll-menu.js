@@ -16,4 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
             topPanel.classList.contains('active') && topPanel.classList.remove('active', 'scrolled')
         }
     })
+
+    // setTopPanelStyle = () => {
+    //     const firstBlock = 
+    //     const background = getComputedStyle(slides[index]).backgroundColor.replace(/rgb|rgba|\(|\)/g, '').split(', ')
+
+    //     setTimeout(() => {
+    //         background.filter(number => number < 100).length
+    //         ? topPanel.classList.remove('dark')
+    //         : topPanel.classList.add('dark')
+    //     }, animationDeltaTime)
+    // }
 })

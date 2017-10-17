@@ -16,7 +16,7 @@ body { overflow: hidden; }
 @import "components/modules/scroll";
 
 // components
-@import "components/logo/main";
+@import "components/top-panel/main";
 @import "components/form/main";
 @import "components/long-read/main";
 @import "components/rotate-smartphone/main";
@@ -29,7 +29,6 @@ body { overflow: hidden; }
 @import "components/copyright/main";
 @import "components/sticker/main";
 @import "components/social/main";
-@import "components/top-panel/main";
 
 /* в дальнейшем свести к одному */
 @import "components/title/main";     
@@ -40,7 +39,6 @@ body { overflow: hidden; }
 
 // ***** MAIN PAGE *****
 @import "templates/index/clock/main";
-@import "components/menu/main";
 
 // portfolio on the main page
 @import "templates/index/q7/main";

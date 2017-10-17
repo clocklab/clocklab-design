@@ -8,19 +8,17 @@
 @import '../../base/animate.scss';
 
 //helpers 
+@import '../../components/top-panel/main';
 @import '../../components/modules/small-gray-lines';
 @import '../../components/modules/clock-bg';
 @import '../../components/jumping-button/main';
-@import '../../components/logo/main';
 @import '../../components/language/main';
-@import '../../components/menu/main';
 @import '../../components/big-background-letter/main';
 @import '../../components/sticker/main';
 @import '../../components/new-title/main';
 @import '../../components/crossed-button/main';
 @import '../../components/bottom-button/main';
 @import '../../components/form/main';
-@import '../../components/top-panel/main';
 
 //components
 @import 'templates/internet-marketing/internet-marketing-header/main';

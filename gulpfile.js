@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 var mobile = '-mobile'
 var mobile = ''
 
-var page = `services/web-production${mobile}`
+var page = `portfolio${mobile}`
 
 
 var sass = require('gulp-ruby-sass');
@@ -94,12 +94,12 @@ gulp.task('images', function() {
 });
 
 gulp.task('sass', function() {
-    return sass(`source/styles${mobile}/${page}.scss`, { sourcemap: false, style: 'compact' })
+    return sass(`source/styles${mobile}/${page}.scss`, { sourcemap: false/*, style: 'compact'*/ })
         .on('error', sass.logError)
         // .pipe(sourceMaps.init({loadMaps: true}))
         .pipe(autoPrefixer('last 2 version'))
         .pipe(rename(`${page}.css`))
-        .pipe(cleanCSS())
+        // .pipe(cleanCSS())
         // .pipe(sourceMaps.write())
         .pipe(gulp.dest(path.build.styles))
         .pipe(plugins.browserSync.reload({
