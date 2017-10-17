@@ -15,6 +15,7 @@
 
         .clock-bg {
             z-index: 1;
+            user-select: none;
 
             span {
                 color: $lightBlack;
@@ -71,6 +72,7 @@
             color: $gray;
             font-family: $Raleway-Bold;
             font-size: 12vw;
+            user-select: none;
         }
 
         .letter {
@@ -365,20 +367,6 @@
             z-index: 5;
         }
 
-        .menu {
-            position: fixed;
-            z-index: 9998;
-            animation: Down $PPMenuAnimationTime $PPMenuDelayTime both;
-        }
-
-        .logo {
-            position: fixed;
-            top: 0;
-            padding-top: px(60);
-            height: px(182);
-            animation: Down $PPLogoAnimationTime $PPLogoDelayTime both; 
-        }
-
         .language {
 
             a {
@@ -417,5 +405,10 @@
             cursor: -webkit-grabbing;
             cursor: grabbing;
         }
+    }
+
+    &.active {
+        cursor: -webkit-grabbing;
+        cursor: grabbing;
     }
 }
