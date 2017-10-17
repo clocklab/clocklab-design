@@ -190,6 +190,8 @@
     
                 span {
                     display: block;
+                    position: relative;
+                    left: 101%;
                 }
             }
     
@@ -204,10 +206,14 @@
 
                 span {
                     display: block;
+                    position: relative;
+                    left: 101%;
                 }
             }
     
             p {
+                position: relative;
+                left: 101%;
                 margin-bottom: px(50);
                 padding-right: px(40);
                 color: #ccc;
@@ -224,11 +230,29 @@
                     & > span {
                         animation: Up $time * 2 both;
                     }
+
+                    span {
+                        left: initial;
+                    }
                 }
 
                 h4,
                 .text {
                     animation: Right $time * 2 both;
+                }
+
+                h4 {
+
+                    span {
+                        left: initial;
+                    }
+                }
+
+                .text {
+                     
+                    p {
+                        left: initial;
+                    }
                 }
             }
 
@@ -240,6 +264,8 @@
 
     .more {
         flex-wrap: wrap;
+        position: absolute;
+        bottom: px(160);
         margin-top: px(760);
 
         .column-1,

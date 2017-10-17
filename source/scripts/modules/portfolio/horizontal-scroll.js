@@ -36,11 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const removeEvents = event => {
-        frontLayer.classList.remove('active')
+        frontLayer.parentElement.classList.remove('active')
         currentLeftPos = event.clientX
         currentScrollLeft = frontLayer.scrollLeft
 
-        frontLayer.style.pointerEvents = 'all'
+        frontLayer.removeAttribute('style')
         
         document.removeEventListener('mousemove', moveObjects)
         document.removeEventListener('mouseup', removeEvents)
@@ -52,10 +52,10 @@ document.addEventListener('DOMContentLoaded', () => {
         moveLetters(newLeftPos)
     })
 
-    document.addEventListener('mousedown', event => {
+    frontLayer.addEventListener('mousedown', event => {
         currentLeftPos = event.clientX
         currentScrollLeft = frontLayer.scrollLeft
-        frontLayer.classList.add('active')
+        frontLayer.parentElement.classList.add('active')
 
         document.addEventListener('mousemove', moveObjects)
         document.addEventListener('mouseup', removeEvents)

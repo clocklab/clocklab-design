@@ -11,8 +11,7 @@ body {
 @import "../base/animations";
 
 // components
-@import "../components/logo/main";
-@import "../components/menu/main";
+@import "../components/top-panel/main";
 @import "../components/language/main";
 @import "../components/crossed-button/main";
 @import "../components/new-title/main";
@@ -20,7 +19,6 @@ body {
 @import "../components/jumping-button/main";
 @import "../components/long-read/main";
 @import "../components/form/main";
-@import "../components/top-panel/main";
 
 // screens
 @import "templates/marketing/marketing-header/main";

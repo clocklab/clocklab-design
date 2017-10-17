@@ -71,58 +71,6 @@ html {
     }
 }
 
-// ---- LOGO ----    
-.dark-logo {
-
-    .logo {
-
-        &-letter {
-            fill: $black;
-        }
-    }
-}
-
-
-// ---- MENU ----    
-.dark-menu {
-
-    .menu {
-        
-        &__item {
-            border-color: $darkGray;
-
-            .symbol,
-            .name {
-                color: $darkGray;
-            }
-
-            .hamburger {
-
-                &-tick {
-
-                    .inner-tick {
-                        background: $darkGray;
-                    }
-                }
-            }
-
-            &--open-close {
-
-                &:hover {
-
-                    .name {
-                        color: $darkGray;
-                    }
-                }
-            }
-        }
-
-        &.opened {
-            background: rgba(255, 255, 255, .95);
-        }
-    }
-}
-
 // ---- LANGUAGE ----
 .dark-language {
 
@@ -146,7 +94,6 @@ html {
     }
 }
 
-
 // ---- PORTFOLIO CLIENT ----   
 .dark-portfolio-client {
 
@@ -154,7 +101,6 @@ html {
         color: $darkGray;
     }
 }
-
 
 // ---- PORTFOLIO RIGHT PANEL ----   
 .dark-portfolio-right-panel {

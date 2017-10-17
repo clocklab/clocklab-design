@@ -14,4 +14,6 @@
 
 //=include ./modules/scroll-menu.js
 
+//=include ./modules/make-top-panel-dark.js
+
 new WOW().init();

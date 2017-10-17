@@ -7,57 +7,18 @@
 @import '../base/animations.scss';
 @import '../base/animate.scss';
 
-// --- Roboto ---
-@font-face {
-    font-family: 'Roboto';
-   src: url('../../fonts/Roboto/Roboto-Regular.ttf');
-   font-style: normal;
-   font-weight: normal;
-}
-
-@font-face {
-   font-family: 'Roboto';
-   src: url('../../fonts/Roboto/Roboto-Bold.ttf');
-   font-style: normal;
-   font-weight: 700;
-}
-
-// --- Raleway ---
-@font-face {
-    font-family: 'Raleway';
-   src: url('../../fonts/Raleway/Raleway-Medium.ttf');
-   font-style: normal;
-   font-weight: 500;
-}
-
-@font-face {
-    font-family: 'Raleway';
-   src: url('../../fonts/Raleway/Raleway-Bold.ttf');
-   font-style: normal;
-   font-weight: 700;
-}
-
-@font-face {
-    font-family: 'Raleway';
-   src: url('../../fonts/Raleway/Raleway-ExtraBold.ttf');
-   font-style: normal;
-   font-weight: 800;
-}
-
 //helpers 
+@import '../components/top-panel/main';
 @import '../components/modules/small-gray-lines';
 @import '../components/modules/clock-bg';
 @import '../components/jumping-button/main';
-@import '../components/logo/main';
 @import '../components/language/main';
-@import '../components/menu/main';
 @import '../components/big-background-letter/main';
 @import '../components/sticker/main';
 @import '../components/new-title/main';
 @import '../components/crossed-button/main';
 @import '../components/bottom-button/main';
 @import '../components/form/main';
-@import '../components/top-panel/main';
 
 //components
 @import 'templates/complex/complex-header/main';
