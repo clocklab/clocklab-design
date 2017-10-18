@@ -403,12 +403,12 @@
         .portfolio-client {
 
             .client {
-                animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
+                animation: fadeInRight $portfolioClientAnimationTime $portfolioClientDelayTime both;
         
                 &-name-container {
         
                     span {
-                        animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
+                        animation: Right $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
                     }
                 }
             }
