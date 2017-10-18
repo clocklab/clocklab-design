@@ -33,7 +33,7 @@
                 height: 100%;
                 background: $lightBlack;
                 content: '';
-                animation: right $BColumnAnimationTime $BColumnDelayTime both;
+                animation: Right $BColumnAnimationTime $BColumnDelayTime both;
             }
         }
     }
@@ -186,7 +186,7 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
-                    animation: right $BPostImageAnimationTime linear $BPostImageDelayTime both;
+                    animation: Right $BPostImageAnimationTime linear $BPostImageDelayTime both;
                 }
             }
 

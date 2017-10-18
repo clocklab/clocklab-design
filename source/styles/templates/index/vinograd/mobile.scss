@@ -152,7 +152,7 @@
             }
         
             .line {
-                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+                animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
             }
         }
 
@@ -195,11 +195,11 @@
             }
 
             img {
-                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
+                animation: Right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
             }
 
             &:before {
-                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
+                animation: Right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
             }
         }
 

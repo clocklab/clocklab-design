@@ -7,7 +7,7 @@
     // ----- clock-bg -----
     .clock-bg span {
         line-height: 72.5vh;
-        &:before { animation: right $PPClockAnimationTime both; }
+        &:before { animation: Right $PPClockAnimationTime both; }
         &:nth-child(1):before { animation-delay: $PPClockFirstDelayTime; }
         &:nth-child(2):before { animation-delay: $PPClockSecondDelayTime; }
         &:nth-child(3):before { animation-delay: $PPClockThirdDelayTime; }

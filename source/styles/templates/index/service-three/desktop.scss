@@ -29,7 +29,7 @@
         // ----- other -----
         .bottom-button {
             span { animation: FadeInLeft $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
-            .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
+            .line { animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
         }
         
         // ----- info-block -----
@@ -90,7 +90,7 @@
         // ----- other -----
         .bottom-button {
             span { animation: FadeInLeft $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
-            .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
+            .line { animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
         }
         
         // ----- info-block -----

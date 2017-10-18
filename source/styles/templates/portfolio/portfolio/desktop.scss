@@ -21,7 +21,7 @@
                 color: $lightBlack;
 
                 &:before {
-                    animation: right $PPClockAnimationTime both;
+                    animation: Right $PPClockAnimationTime both;
                 }
 
                 &:nth-child(1) {

@@ -451,7 +451,7 @@
             }
         
             .line {
-                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+                animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
             }
         }
 
@@ -541,14 +541,14 @@
                         animation-delay: 0;
                         animation-fill-mode: both;
                         animation-duration: $time;
-                        animation-name: left;
+                        animation-name: Left;
                     }
     
                     &.right {
                         animation-delay: 0;
                         animation-fill-mode: both;
                         animation-duration: $time;
-                        animation-name: right;
+                        animation-name: Right;
                     }
                 }
             }
@@ -558,14 +558,14 @@
                 &--next-slide {
     
                     .content-container {
-                        animation: right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTime both;
+                        animation: Right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTime both;
                     }   
                 }
     
                 &--previous-slide {
     
                     .content-container {
-                        animation: left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTime both;
+                        animation: Left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTime both;
                     }
                 }
             }

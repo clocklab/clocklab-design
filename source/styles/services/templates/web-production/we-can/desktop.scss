@@ -171,7 +171,7 @@
             span {
                 
                 &:before {
-                    animation: right $WCClockAnimationTime both;
+                    animation: Right $WCClockAnimationTime both;
                 }
     
                 &:nth-child(1) {
@@ -248,11 +248,11 @@
             .image-container {
     
                 img {
-                    animation: right $WCImageAnimationTime $WCImageDelayTime both;
+                    animation: Right $WCImageAnimationTime $WCImageDelayTime both;
                 }
     
                 &:before {
-                    animation: right $WCImageBeforeAnimationTime $WCImageBeforeDelayTime both;
+                    animation: Right $WCImageBeforeAnimationTime $WCImageBeforeDelayTime both;
                 }
     
                 &--1 {

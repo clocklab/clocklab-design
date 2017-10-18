@@ -58,7 +58,7 @@
                 height: 100%;
 
                 &.loaded {
-                    animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
+                    animation: Left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
                 }
 
                 &.current {
@@ -67,13 +67,13 @@
 
                 &.left {
                     animation-duration: $time;
-                    animation-name: left;
+                    animation-name: Left;
                     animation-fill-mode: both;
                 }
 
                 &.right {
                     animation-duration: $time;
-                    animation-name: right;
+                    animation-name: Right;
                     animation-fill-mode: both;
                 }
             }
@@ -87,7 +87,7 @@
                 height: 100%;
                 background: $darkGray;
                 content: '';
-                animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
+                animation: Left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
             }
         }
 
@@ -120,7 +120,7 @@
                 order: 3;
 
                 .content-container {
-                    animation: right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTimeMobile both;
+                    animation: Right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTimeMobile both;
                 }   
 
                 svg {
@@ -132,7 +132,7 @@
                 order: 1;
 
                 .content-container {
-                    animation: left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTimeMobile both;
+                    animation: Left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTimeMobile both;
                 }
 
                 svg {
@@ -204,14 +204,14 @@
                     animation-delay: 0;
                     animation-fill-mode: both;
                     animation-duration: $time;
-                    animation-name: left;
+                    animation-name: Left;
                 }
 
                 &.right {
                     animation-delay: 0;
                     animation-fill-mode: both;
                     animation-duration: $time;
-                    animation-name: right;
+                    animation-name: Right;
                 }
             }
         }
@@ -246,6 +246,6 @@
     &:before {
         left: 0;
         width: 100vw;
-        animation: right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
+        animation: Right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
     }
 }

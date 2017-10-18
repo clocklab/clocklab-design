@@ -24,7 +24,7 @@
         // ----- bottom-button -----
         .bottom-button {
             span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
-            .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
+            .line { animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
         }
 
         // ----- title -----
@@ -97,7 +97,7 @@
         // ----- bottom-button -----
         .bottom-button {
             span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
-            .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
+            .line { animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
         }
 
         // ----- title -----
