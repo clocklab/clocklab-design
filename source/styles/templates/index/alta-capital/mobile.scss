@@ -171,13 +171,13 @@
 
                 &.left {
                     animation-duration: $time;
-                    animation-name: left;
+                    animation-name: Left;
                     animation-fill-mode: both;
                 }
 
                 &.right {
                     animation-duration: $time;
-                    animation-name: right;
+                    animation-name: Right;
                     animation-fill-mode: both;
                 }
             }
@@ -361,14 +361,14 @@
                     animation-delay: 0;
                     animation-fill-mode: both;
                     animation-duration: $time;
-                    animation-name: left;
+                    animation-name: Left;
                 }
 
                 &.right {
                     animation-delay: 0;
                     animation-fill-mode: both;
                     animation-duration: $time;
-                    animation-name: right;
+                    animation-name: Right;
                 }
             }
         }

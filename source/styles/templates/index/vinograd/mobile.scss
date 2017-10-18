@@ -204,11 +204,11 @@
         }
 
         &:before {
-            animation: down $portfolioVinogradLeftBlockAnimationTime $portfolioVinogradLeftBlockDelayTime both; 
+            animation: Down $portfolioVinogradLeftBlockAnimationTime $portfolioVinogradLeftBlockDelayTime both; 
         }
 
         &:after {
-            animation: up $portfolioVinogradRightBlockAnimationTime $portfolioVinogradRightBlockDelayTime both;
+            animation: Up $portfolioVinogradRightBlockAnimationTime $portfolioVinogradRightBlockDelayTime both;
         }
     }
 }

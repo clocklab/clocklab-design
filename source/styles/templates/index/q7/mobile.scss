@@ -318,7 +318,7 @@
             &--left {
                 
                 .image-container {
-                    animation: widthIncrease $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTimeMobile both;
+                    animation: widthToParent $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTimeMobile both;
                 }
             }
     

@@ -159,7 +159,7 @@
             &--left {
                 
                 .image-container {
-                    animation: widthIncrease $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTime both;
+                    animation: widthToParent $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTime both;
                 }
     
                 .lines {

@@ -62,15 +62,6 @@
 
 
 // PORTFOLIO Q7 ANIMATION
-@keyframes widthIncrease {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
 @keyframes heightIncreaseDesktop {
     from {
         height: 0vh;
@@ -174,34 +165,6 @@
 }
 // PORTFOLIO Q7 ANIMATION ENDS
 
-
-// PORTFOLIO VINO GRAD ANIMATION
-@keyframes up {
-    from {
-        transform: translateY(100%);
-    }   
-    to {
-        transform: translateY(0);
-    } 
-}
-
-@keyframes down {
-    from {
-        transform: translateY(-100%);
-    }   
-    to {
-        transform: translateY(0);
-    } 
-}
-
-@keyframes right {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
 
 // ----- social icons -----
 @keyframes social {
