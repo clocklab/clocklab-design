@@ -60,7 +60,7 @@
         height: px(240);
         background: transparent;
         font-family: $Roboto-Regular;
-        transition: background $time * 2 1s, width 0s $time * 2 + 1s, height 0s $time * 2 + 1s;
+        transition: background $time * 2 2s, width 0s $time * 2 + 2s, height 0s $time * 2 + 2s;
 
         &__item {
             box-sizing: border-box;

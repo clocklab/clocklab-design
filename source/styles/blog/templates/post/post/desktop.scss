@@ -1,5 +1,16 @@
 & {  
 
+    @keyframes fadeInDownYear {
+        from {
+            opacity: 0;
+            transform: translateY(-100%) rotate(90deg);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) rotate(90deg);
+        }
+    }
+
     background: $white;
 
     .clock-bg {
@@ -8,7 +19,7 @@
         span {
 
             &:before {
-                animation: right $PPClockAnimationTime both;
+                animation: Right $PPClockAnimationTime both;
             }
 
             &:nth-child(1) {
@@ -187,7 +198,7 @@
 
         &:after {
             left: 100%;
-            animation: right $POPArrowsAnimationTime $POPArrowsDelayTime both;
+            animation: Right $POPArrowsAnimationTime $POPArrowsDelayTime both;
         }
     }
 
@@ -258,17 +269,6 @@
                 font-family: $Roboto-Bold;
                 font-size: px(32);
                 text-transform: uppercase;
-            }
-        }
-
-        @keyframes fadeInDownYear {
-            from {
-                opacity: 0;
-                transform: translateY(-100%) rotate(90deg);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) rotate(90deg);
             }
         }
 
