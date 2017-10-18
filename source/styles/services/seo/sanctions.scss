@@ -7,11 +7,10 @@
 @import '../../base/animations';
 
 // components 
+// @import '../../components/top-panel/main';
 @import '../../components/modules/small-gray-lines';
 @import '../../components/jumping-button/main';
 @import '../../components/modules/clock-bg';
-@import '../../components/logo/main';
-@import '../../components/menu/main';
 @import '../../components/form/main';
 @import '../../components/sticker/main';
 @import '../../components/bottom-button/main';
@@ -29,7 +28,7 @@
 @import 'templates/seo-header/main';
 @import '../design/templates/design-plan/main';
 @import '../design/templates/design-our-works/main';
-@import '../design/templates/design-answers/main';
+@import '../web-production/templates/shop/web-production-answers/main';
 @import '../design/templates/design-footer/main';
 
 // logo and menu animation
