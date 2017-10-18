@@ -17,7 +17,7 @@
 
         // ----- other -----
         .bottom-button {
-            span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
+            span { animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
             .line { animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
         }
 

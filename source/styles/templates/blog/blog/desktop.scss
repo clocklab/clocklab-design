@@ -396,7 +396,7 @@
                     span {
                         display: block;
                         color: $white;
-                        animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
+                        animation: fadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
 
                         &:before {
                             background: $white;

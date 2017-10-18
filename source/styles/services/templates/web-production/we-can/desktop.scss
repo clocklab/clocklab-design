@@ -265,7 +265,7 @@
         }
 
         .crossed-button {
-            animation: FadeInRight $WCCrossedBtnAnimationTime $WCCrossedBtnDelayTime both;
+            animation: fadeInRight $WCCrossedBtnAnimationTime $WCCrossedBtnDelayTime both;
         }
     }
 

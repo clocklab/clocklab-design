@@ -17,7 +17,7 @@
 
         // ----- other -----
         .name { animation: fadeIn $time * 3 $time * 9 both; }
-        .crossed-button span { animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime * 1.5 both; }
+        .crossed-button span { animation: fadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime * 1.5 both; }
         .services-schedule .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
         // ----- title -----
@@ -62,7 +62,7 @@
 
         // ----- other -----
         .name { animation: fadeIn $time * 3 $time * 9 both; }
-        .crossed-button span { animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime * 1.5 both; }
+        .crossed-button span { animation: fadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime * 1.5 both; }
         .services-schedule .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
         // ----- title -----

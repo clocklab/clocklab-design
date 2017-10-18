@@ -119,17 +119,6 @@
     }
 }
 
-@keyframes FadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
 @keyframes FadeInRightHalf {
     from {
         opacity: 0;

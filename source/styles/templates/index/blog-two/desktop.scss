@@ -24,7 +24,7 @@
         // ----- other -----
         .jumping-button { animation: fadeInUp $time * 2 $time * 8 both; }
         .bottom-button {
-            span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
+            span { animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
             .line { animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
         }
         
@@ -106,7 +106,7 @@
         // ----- other -----
         .jumping-button { animation: fadeInUp $time * 2 $time * 8 both; }
         .bottom-button {
-            span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
+            span { animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
             .line { animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
         }
         

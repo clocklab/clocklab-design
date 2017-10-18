@@ -150,7 +150,7 @@
         font-family: $Roboto-Medium;
         .arrow .st0, .arrow .st1 { stroke: $white; }
         span {
-            animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
+            animation: fadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
             font-family: $Raleway-Bold;
             font-size: px(26);
             color: $white;

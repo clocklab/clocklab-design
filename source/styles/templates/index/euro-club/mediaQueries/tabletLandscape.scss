@@ -96,7 +96,7 @@
         .bottom-button {
             
             span {
-                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+                animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
             }
         
             .line {

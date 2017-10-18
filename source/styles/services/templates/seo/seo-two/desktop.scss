@@ -17,7 +17,7 @@
         .line { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime * 3 both; }
 
         // ----- other -----
-        .crossed-button span { animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+        .crossed-button span { animation: fadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
         .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
         // ----- title -----
@@ -56,7 +56,7 @@
         .line { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime * 3 both; }
 
         // ----- other -----
-        .crossed-button span { animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+        .crossed-button span { animation: fadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
         .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
         // ----- title -----
