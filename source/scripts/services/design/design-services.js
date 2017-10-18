@@ -16,6 +16,8 @@
 
 //= include ./../modules/scroll-menu.js
 
+//=include ./../modules/make-top-panel-dark.js
+
 // change language color
 $('.dark').children().addClass('dark');
 

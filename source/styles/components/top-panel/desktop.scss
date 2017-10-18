@@ -8,6 +8,46 @@
             transform: none;
         }
     }
+    @keyframes toUp {
+        from {
+            transform: none;
+        }
+        to {
+            transform: translateY(-101%);
+        }
+    }   
+    @keyframes innerTickAnimation1 {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(101%);
+        }
+    }
+    @keyframes innerTickAnimation2 {
+        from {
+            transform: translateX(-101%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+    @keyframes innerTickOpenedAnimation1 {
+        from {
+            left: 10%;
+        }
+        to {
+            left: 101%;
+        }
+    }
+    @keyframes innerTickOpenedAnimation2 {
+        from {
+            left: -101%;
+        }
+        to {
+            left: 10%;
+        }
+    }
 
     position: fixed;
     top: 0;
@@ -160,7 +200,7 @@
                         transition: transform $time;
 
                         &-2 {
-                            transform: translateX(-100%);
+                            transform: translateX(-101%);
                         }
                     }
 
@@ -202,10 +242,14 @@
 
             &:hover {
 
-                .symbol,
-                .name {
-                    color: $white;
+                .text-block {
+
+                    .symbol,
+                    .name {
+                        color: $white;
+                    }
                 }
+
 
                 &::before {
                     top: px(10);
@@ -626,7 +670,7 @@
     }
 
     &.back {
-        animation: slideUp $topPanelAnimationTime ease-out both;
+        animation: toUp $topPanelAnimationTime ease-out both;
     }
 
     &.dark {

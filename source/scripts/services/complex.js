@@ -1,5 +1,7 @@
 //=include ./../components/menu.js
 
+//=include ./modules/make-top-panel-dark.js
+
 //=include ./../libraries/jquery.min.js
 
 //=include ./../libraries/wow.js
@@ -13,7 +15,5 @@
 //=include modules/complex/complex-time.js
 
 //=include ./modules/scroll-menu.js
-
-//=include ./modules/make-top-panel-dark.js
 
 new WOW().init();

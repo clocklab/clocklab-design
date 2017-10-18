@@ -13,44 +13,6 @@
 }
 // UNIVERSAL MIXIN ENDS
 
-// ANIMATION FOR HAMBURGER TICKS
-@keyframes innerTickAnimation1 {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(101%);
-    }
-}
-
-@keyframes innerTickAnimation2 {
-    from {
-        transform: translateX(-101%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes innerTickOpenedAnimation1 {
-    from {
-        left: 10%;
-    }
-    to {
-        left: 101%;
-    }
-}
-
-@keyframes innerTickOpenedAnimation2 {
-    from {
-        left: -101%;
-    }
-    to {
-        left: 10%;
-    }
-}
-// ANIMATION FOR HAMBURGER TICKS ENDS
-
 // RORTFOLIO CLIENT
 @keyframes client {
     from {
