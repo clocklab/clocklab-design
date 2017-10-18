@@ -7,3 +7,5 @@
 //=include ./modules/post/post-clock-bg.js
 
 //=include ./modules/post/transition-end.js
+
+//=include ./../services/modules/make-top-panel-dark.js
