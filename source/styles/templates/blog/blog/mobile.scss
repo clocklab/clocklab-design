@@ -247,7 +247,8 @@
                     }
                 }
 
-                h3 {
+                .title {
+                    display: block;
                     margin-bottom: px(60);
                     font-size: px(40);
                     font-weight: 800;

@@ -85,7 +85,7 @@
             overflow: hidden;
         }
 
-        h2 {
+        .answers-title {
             font-family: $Raleway-Medium;
             font-size: px(96);
 
@@ -199,7 +199,8 @@
                 overflow: hidden;
             }
     
-            h4 {
+            .content-title {
+                display: block;
                 margin-bottom: px(60);
                 font-family: $Raleway-Medium;
                 font-size: px(48);
@@ -236,12 +237,12 @@
                     }
                 }
 
-                h4,
+                .content-title,
                 .text {
                     animation: Right $time * 2 both;
                 }
 
-                h4 {
+                .content-title {
 
                     span {
                         left: initial;

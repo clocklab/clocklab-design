@@ -116,7 +116,7 @@
     // &.previous-back { animation-play-state: running; }
 
     animation: fadeIn $time * 3 0s both;
-    h3, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+    .content-title, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
     .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
     span.name {
         span {
@@ -133,12 +133,12 @@
             &:nth-child(1),
             &:nth-child(3) {
                 .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
-                h3 { animation-delay: $STTextSecondColumnDelayTime; }
+                .content-title { animation-delay: $STTextSecondColumnDelayTime; }
                 p { animation-delay: $STTextSecondColumnTwoDelayTime; }
             }
             &:nth-child(2), &:nth-child(4) {
                 .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
-                h3 { animation-delay: $STTextThirdColumnDelayTime; }
+                .content-title { animation-delay: $STTextThirdColumnDelayTime; }
                 p { animation-delay: $STTextThirdColumnTwoDelayTime; }
             }
         }
@@ -172,6 +172,8 @@
     
     // ----- services-schedule -----
     .services-schedule {
+        position: relative;
+        z-index: 4;
         padding-top: 20vh;
         .container {
             display: flex;
@@ -242,7 +244,7 @@
                         }
                     }
                     &:hover {
-                        h3:before { width: 100%; }
+                        .content-title:before { width: 100%; }
                         .crossed-button {
                             span {
                                 padding: 0 px(10); 
@@ -278,7 +280,7 @@
                             font-size: px(32);
                             span { display: block; }
                         }
-                        h3 {
+                        .content-title {
                             color: $white;
                             font-size: px(48);
                             position: relative;

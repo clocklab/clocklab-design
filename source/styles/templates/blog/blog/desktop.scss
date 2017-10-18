@@ -378,7 +378,8 @@
                     }
                 }
 
-                h3 {
+                .title {
+                    display: block;
                     margin-bottom: px(100);
                     max-width: px(540);
                     font-family: $Raleway-ExtraBold;

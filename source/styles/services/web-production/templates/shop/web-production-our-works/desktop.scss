@@ -66,7 +66,8 @@
             width: 85%;
         }
 
-        h2 {
+        .our-works-title {
+            display: block;
             margin-right: px(180);
             align-self: center;
             color: $darkGray;
@@ -206,7 +207,7 @@
             width: px(1050);
         }
 
-        h3 {
+        .offer-title {
             margin-bottom: px(24);
             color: $darkGray;
             font-family: $Raleway-ExtraBold;

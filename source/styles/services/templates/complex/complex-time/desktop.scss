@@ -37,7 +37,7 @@
         &--1 {
 
             p {
-                transform: translateX(100%);
+                transform: translateX(101%);
 
                 &.current {
                     animation: Left $time both;
@@ -54,7 +54,7 @@
         &--3 {
             
             p {
-                transform: translateX(-100%);
+                transform: translateX(-101%);
 
                 &.current {
                     animation: Right $time both;
@@ -97,7 +97,8 @@
         }
     }
 
-    h2 {
+    .complex-time-title {
+        display: block;
         position: relative;
         z-index: 2;
         margin-bottom: px(150);
