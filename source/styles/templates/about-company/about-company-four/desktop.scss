@@ -274,7 +274,8 @@
             }
             .content {
                 overflow: hidden;
-                h3 {
+                .content-title {
+                    display: block;
                     font-family: $Raleway-Bold;
                     margin-bottom: px(24);
                     font-size: px(76);

@@ -50,7 +50,8 @@
         .column {
             &-1 {
                 width: 60%;
-                h2 {
+                .development-title {
+                    display: block;
                     font-family: $Raleway-SemiBold;
                     font-size: px(152);
                     span {
@@ -115,7 +116,8 @@
         .column {
             &-1 {
                 width: 68%;
-                h2 {
+                .development-title {
+                    display: block;
                     font-family: $Raleway-SemiBold;
                     font-size: px(152);
                     span {

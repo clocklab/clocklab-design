@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 var mobile = '-mobile'
 var mobile = ''
 
-var page = `services/web-production/shop${mobile}`
+var page = `services/design/brand-book${mobile}`
 
 
 var sass = require('gulp-ruby-sass');
@@ -18,7 +18,7 @@ var autoPrefixer = require('gulp-autoprefixer');
 var cleanCSS = require('gulp-clean-css');
 var fileinclude = require('gulp-file-include');
 var jsImport = require('gulp-js-import');
-var include = require("gulp-include");
+var include = require('gulp-include');
 
 var source = 'source',
     build = 'build',

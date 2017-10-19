@@ -27,7 +27,8 @@
             color: $white;
             width: 100%;
         }
-        h2 {
+        .plan-title {
+            display: block;
             font-family: $Raleway-Bold;
             font-size: px(90);
             color: $darkGray;
@@ -101,7 +102,7 @@
 
     // ----- ui-ux -----
     &.ui-ux {
-        .container h2 { margin-top: 17.5vh; }
+        .container .plan-title { margin-top: 17.5vh; }
         .clock-bg span { line-height: 60vh; }
     }
 
