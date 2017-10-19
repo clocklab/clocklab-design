@@ -1,7 +1,7 @@
 // base
 @import '../../base/variables';
 @import '../../base/common';
-// @import '../../base/fonts';
+@import '../../base/fonts';
 @import '../../base/reset';
 @import '../../base/animate';
 @import '../../base/animations';
@@ -27,7 +27,7 @@
 // templates
 @import 'templates/seo-header/main';
 @import '../design/templates/design-plan/main';
-@import '../design/templates/design-our-works/main';
+@import '../web-production/templates/shop/web-production-our-works/main';
 @import '../web-production/templates/shop/web-production-answers/main';
 @import '../design/templates/design-footer/main';
 

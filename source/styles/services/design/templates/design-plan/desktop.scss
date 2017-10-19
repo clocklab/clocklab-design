@@ -113,7 +113,7 @@
         // ----- creating -----
         &.creating {
             .container {
-                h2 { margin-top: 5.5vh; }
+                .plan-title { margin-top: 5.5vh; }
                 ul li { margin-bottom: px(125); }
                 .column-1 { padding-right: px(110); }
                 .column-2, .column-3 { padding-top: px(570); }
@@ -121,7 +121,7 @@
         }
         .container {
             padding: px(350) 0 px(630);
-            h2 {
+            .plan-title {
                 margin-top: 10vh;
                 span { margin-top: 0; }
             }

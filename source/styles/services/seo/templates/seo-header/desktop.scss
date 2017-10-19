@@ -211,7 +211,8 @@
             }
         }
     }
-    h3 {
+    .column-title {
+        display: block;
         color: $white;
         line-height: 1.2;
         font-family: $Roboto-Bold;
@@ -356,7 +357,7 @@
                     padding-left: px(65);
                     justify-content: space-between;
                 }
-                h3 {
+                .column-title {
                     margin-bottom: px(160);
                     font-size: px(72);
                     width: 100%;
@@ -375,7 +376,7 @@
             }
             &--4 {
                 margin-top: px(230);
-                h3 { font-size: px(102); }
+                .column-title { font-size: px(102); }
                 .numbered-list { margin-top: px(440); }
                 .column-1 {
                     position: relative;
