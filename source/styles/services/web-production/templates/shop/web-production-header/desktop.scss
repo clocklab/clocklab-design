@@ -66,7 +66,7 @@
         &--landing {
             padding-bottom: px(80);
             
-            & > h2 {
+            .clock-landing-title {
                 color: $darkGray;
                 font-family: $Raleway-ExtraBold;
                 font-size: px(144);
@@ -286,7 +286,8 @@
     .declaration {
         color: $darkGray;
         
-        h3 {
+        .declaration-title {
+            display: block;
             margin-bottom: px(280);
             font-size: px(72);
             font-family: $Roboto-Bold;
@@ -412,7 +413,7 @@
         &--corporate {
             flex-direction: row;
 
-            h2 {
+            .advantages-title {
                 position: relative;
                 top: px(180);
             }
