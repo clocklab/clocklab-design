@@ -51,7 +51,7 @@
         &__item {
             &--2 {
                 margin-top: px(100);
-                h3 {
+                .column-title {
                     margin-bottom: px(50);
                     line-height: px(80);
                     font-size: px(70);
@@ -63,7 +63,7 @@
             }
             &--4 {
                 margin-top: px(100);
-                h3 { font-size: px(70); }
+                .column-title { font-size: px(70); }
                 .double { p { font-size: px(42); } }
             }
         }
