@@ -208,6 +208,7 @@
         }
 
         .offer-title {
+            display: block;
             margin-bottom: px(24);
             color: $darkGray;
             font-family: $Raleway-ExtraBold;
@@ -270,7 +271,7 @@
         .front-layer {
             background: $lightBlack;
 
-            h2 {
+            .our-works-title {
                 color: $white;
             }
 

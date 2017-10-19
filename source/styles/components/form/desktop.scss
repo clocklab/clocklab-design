@@ -45,7 +45,8 @@
         }
     }
 
-    h3 {
+    .form-title {
+        display: block;
         margin-bottom: px(220);
         font-family: $Raleway-ExtraBold;
         font-size: px(60);

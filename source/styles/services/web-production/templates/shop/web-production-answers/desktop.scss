@@ -86,12 +86,14 @@
         }
 
         .answers-title {
+            display: block;
             font-family: $Raleway-Medium;
             font-size: px(96);
 
             span {
                 display: block;
                 margin-top: px(40);
+                padding-right: px(40);
                 color: $blue;
                 font-size: px(48);
             }
@@ -274,7 +276,8 @@
             overflow: hidden;
         }
 
-        h3 {
+        .more-title {
+            display: block;
             width: 100%;
             font-family: $Raleway-Medium;
             font-size: px(96);

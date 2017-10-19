@@ -4,33 +4,6 @@
     font-family: $Roboto-Regular;
     overflow: hidden;
 
-    .top-panel {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9998;
-        width: 100%;
-        height: px(240);
-        background: transparent;
-        transition: top $time * 2 ease-out, background $time, opacity $time * 2 ease-out;
-
-        &.active {
-            background: rgba(238, 238, 238, .70);
-            opacity: 1;
-
-            &.scrolled,
-            &.form-opened {
-                top: px(-242);
-                opacity: 0;
-            } 
-        }
-    }
-
-    .logo,
-    .menu {
-        animation: fadeIn $time * 3 both;
-    }
-
     .language {
         position: absolute;
         z-index: 5;
@@ -276,7 +249,8 @@
 
     .list {
 
-        h3 {
+        .list-title {
+            display: block;
             margin-bottom: px(280);
             color: $darkGray;
             font-size: px(72);
@@ -385,7 +359,8 @@
         margin-top: px(300);
         color: $darkGray;
         
-        h2 {
+        .advantages-title {
+            display: block;
             margin-bottom: px(300);
             width: px(1000);
             font-size: px(96);

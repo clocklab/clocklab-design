@@ -63,7 +63,8 @@
         }
     }
 
-    h2 {
+    .includes-title {
+        display: block;
         position: relative;
         z-index: 2;
         margin-bottom: px(200);
@@ -105,7 +106,8 @@
             background: $blue;
         }
 
-        h4 {
+        .list-item-title {
+            display: block;
             margin-bottom: px(30);
             font-size: px(36);
             font-family: $Roboto-Bold;
@@ -123,7 +125,7 @@
 
     &--strategy {
 
-        h2 {
+        .includes-title {
             width: 70%;
         }
 

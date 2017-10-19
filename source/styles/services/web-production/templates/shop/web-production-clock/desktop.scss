@@ -179,7 +179,7 @@
             &:first-child {
                 width: px(1190);
 
-                h3 {
+                .list-title {
                     color: $white;
                 }
             }
@@ -213,7 +213,8 @@
             }
         }
 
-        h3 {
+        .list-title {
+            display: block;
             margin-bottom: px(80);
             font-family: $Raleway-Bold;
             font-size: px(48);
