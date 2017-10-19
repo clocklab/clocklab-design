@@ -42,8 +42,7 @@
             animation: fadeIn $time * 2 $time * 5 linear;
             animation-fill-mode: forwards;
             p {
-                animation: fadeInUp $time * 2 $time * 10 linear;
-                animation-fill-mode: forwards;
+                animation: fadeInUp $time * 2 $time * 10 linear both;
             }
             span.name {
                 span {

@@ -78,7 +78,8 @@
         }
     }
 
-    h2 {
+    .marketing-brand-title {
+        display: block;
         margin-top: px(60);
         width: px(1200);
         font-family: $Raleway-ExtraBold;
@@ -160,7 +161,8 @@
             overflow: hidden;
         }
 
-        h3 {
+        .content-title {
+            display: block;
             margin-bottom: px(24);
             font-family: $Raleway-Bold;
             font-size: px(48);
@@ -179,7 +181,8 @@
         width: 50%;
         overflow: hidden;
 
-        h3 {
+        .questions-title {
+            display: block;
             margin-bottom: px(34);
             color: $darkGray;
             font-family: $Raleway-ExtraBold;
@@ -254,14 +257,6 @@
     &.previous-back {
         animation: Up $time * 3 0s both;
 
-        .logo {
-            animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
-        }
-
-        .menu {
-            animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
-        }
-
         .language {
 
             a {
@@ -287,7 +282,7 @@
             }
         }
 
-        h2 {
+        .marketing-brand-title {
 
             span {
                 animation: Right $MBColumn1AnimationTime $MBColumn1DelayTime both;
@@ -314,7 +309,7 @@
                 }
             }
 
-            h3,
+            .content-title,
             p {
                 animation: Right $MBColumn2AnimationTime $MBColumn2DelayTime both;
             }
@@ -322,7 +317,7 @@
             &:nth-of-type(2),
             &:nth-of-type(4) {
 
-                h3,
+                .content-title,
                 p {
                     animation: Right $MBColumn3AnimationTime $MBColumn3DelayTime both;
                 }   
@@ -331,7 +326,7 @@
 
         .questions {
 
-            h3,
+            .questions-title,
             p,
             button {
                 animation: Right $MBColumn3AnimationTime $MBColumn3DelayTime both;
@@ -343,14 +338,6 @@
     &.previous-back {
         animation: slideDown $time * 3 0s both;
         animation-play-state: paused;
-
-        .logo {
-            animation-play-state: paused;
-        }
-
-        .menu {
-            animation-play-state: paused;
-        }
 
         .language {
 
@@ -377,7 +364,7 @@
             }
         }
 
-        h2 {
+        .marketing-brand-title {
 
             span {
                 animation-play-state: paused;
@@ -404,7 +391,7 @@
                 }
             }
 
-            h3,
+            .content-title,
             p {
                 animation-play-state: paused;
             }
@@ -412,7 +399,7 @@
             &:nth-of-type(2),
             &:nth-of-type(4) {
 
-                h3,
+                .content-title,
                 p {
                     animation-play-state: paused;
                 }   
@@ -421,7 +408,7 @@
 
         .questions {
 
-            h3,
+            .questions-title,
             p,
             button {
                 animation-play-state: paused;

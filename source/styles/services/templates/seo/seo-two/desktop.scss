@@ -23,8 +23,7 @@
         // ----- title -----
         .title {
             p {
-                animation: fadeInUp $time * 2 $time * 10 linear;
-                animation-fill-mode: forwards;
+                animation: fadeInUp $time * 2 $time * 10 linear both;
             }
             .word {
                 &:after { animation: halfDown $time * 2 linear $time * 7 both; }

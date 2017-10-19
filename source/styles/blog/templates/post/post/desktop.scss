@@ -59,17 +59,6 @@
         }
     }
 
-    .menu {
-        position: fixed;
-        animation: fadeIn $POPMenuAnimationTime both;
-    }
-
-    .logo {
-        position: fixed;
-        z-index: 2;
-        animation: fadeIn $POPLogoAnimationTime both
-    }
-
     .language {
         position: fixed;
         z-index: 2;
@@ -321,7 +310,7 @@
             }
         }
 
-        h1 {
+        .title {
             display: block;
             margin-left: px(200);
             margin-top: px(30);

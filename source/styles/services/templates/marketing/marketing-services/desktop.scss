@@ -69,7 +69,8 @@
             }
         }
 
-        h2 {
+        .marketing-services-title {
+            display: block;
             align-self: center;
             position: relative;
             top: 8vh;
@@ -105,7 +106,7 @@
             }
         }
 
-        h3 {
+        .content-title {
             display: inline-block;
             position: relative;
             margin-bottom: px(70);
@@ -187,7 +188,7 @@
                         color: $blue;
                     }
 
-                    h3 {
+                    .content-title {
 
                         span {
 
@@ -221,7 +222,7 @@
                 &:nth-child(1) {
                     top: -3vh;
 
-                    h3 {
+                    .content-title {
 
                         span {
 
@@ -277,14 +278,14 @@
                 }
             }
 
-            h2 {
+            .marketing-services-title {
 
                 span {
                     animation: Right $MSColumnAnimationTime $MSColumn1DelayTime both;    
                 }
             }
 
-            h3,
+            .content-title,
             p,
             .crossed-button {
                 animation: Right $MSColumnAnimationTime $MSColumn2DelayTime both;
@@ -304,7 +305,7 @@
 
                 &:nth-child(2) {
 
-                    h3,
+                    .content-title,
                     p,
                     .crossed-button {
                         animation: Right $MSColumnAnimationTime $MSColumn3DelayTime both;
@@ -350,14 +351,14 @@
                 }
             }
 
-            h2 {
+            .marketing-services-title {
 
                 span {
                     animation-play-state: paused;  
                 }
             }
 
-            h3,
+            .content-title,
             p,
             .crossed-button {
                 animation-play-state: paused;
@@ -377,7 +378,7 @@
 
                 &:nth-child(2) {
 
-                    h3,
+                    .content-title,
                     p,
                     .crossed-button {
                         animation-play-state: paused;
