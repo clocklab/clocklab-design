@@ -3,11 +3,6 @@
     position: relative;
     overflow: hidden;
 
-    .logo,
-    .menu {
-        animation: fadeIn $time * 3 both;
-    }
-
     .language {
         position: absolute;
         top: px(1000);
@@ -228,7 +223,8 @@
                     object-fit: cover;
                 }
 
-                h3 {
+                .container-item-title {
+                    display: block;
                     margin-bottom: px(60);
                     padding-left: px(80);
                     font-family: $Roboto-Bold;
@@ -294,7 +290,8 @@
                     }
                 }
 
-                h3 {
+                .container-item-title {
+                    display: block;
                     margin-bottom: px(70);
                     font-size: px(48);
                     font-family: $Roboto-Bold;
@@ -304,7 +301,8 @@
                     }
                 }
 
-                h4 {
+                .text-title {
+                    display: block;
                     margin-bottom: px(40);
                     font-size: px(32);
                     font-family: $Roboto-Bold;
@@ -328,7 +326,7 @@
                     }
                 }
 
-                h3 {
+                .container-item-title {
                     margin-bottom: px(70);
                     font-size: px(48);
                     font-family: $Roboto-Bold;
@@ -430,7 +428,8 @@
                 }
             }
 
-            h4 {
+            .list-item-title {
+                display: block;
                 font-size: px(32);
                 font-family: $Roboto-Bold;
                 margin-bottom: px(14);
@@ -464,7 +463,8 @@
 
                         &:nth-child(1) {
                             
-                            h3 {
+                            .container-item-title {
+                                display: block;
                                 margin-bottom: px(40);
                                 font-size: px(32);
                                 font-family: $Roboto-Bold;

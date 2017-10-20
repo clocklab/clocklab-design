@@ -43,12 +43,12 @@
         .portfolio-client {
 
             .client {
-                animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
+                animation: fadeInRight $portfolioClientAnimationTime $portfolioClientDelayTime both;
         
                 &-name-container {
         
                     span {
-                        animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
+                        animation: Right $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
                     }
                 }
             }
@@ -87,11 +87,11 @@
         .bottom-button {
 
             span {
-                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+                animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
             }
         
             .line {
-                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+                animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
             }
         }
 
@@ -144,15 +144,15 @@
                 animation: shadowForPoster $PVPosterShadowAnimationTime $PVPosterShadowDelayTime both;
     
                 img {
-                    animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
+                    animation: Right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
                 }
 
                 &:after {
-                    animation: right $portfolioVinogradPosterAnimationTime  $portfolioVinogradPosterDelayTime both;
+                    animation: Right $portfolioVinogradPosterAnimationTime  $portfolioVinogradPosterDelayTime both;
                 }
     
                 &:before {
-                    animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
+                    animation: Right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTime both;
                 }
             }
     
@@ -162,11 +162,11 @@
         }
 
         &:before {
-            animation: down $portfolioVinogradLeftBlockAnimationTime $portfolioVinogradLeftBlockDelayTime both; 
+            animation: Down $portfolioVinogradLeftBlockAnimationTime $portfolioVinogradLeftBlockDelayTime both; 
         }
 
         &:after {
-            animation: up $portfolioVinogradRightBlockAnimationTime $portfolioVinogradRightBlockDelayTime both;
+            animation: Up $portfolioVinogradRightBlockAnimationTime $portfolioVinogradRightBlockDelayTime both;
         }
     }
 }

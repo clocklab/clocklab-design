@@ -83,7 +83,8 @@
         }
     }
 
-    h2 {
+    .clock-title {
+        display: block;
         position: relative;
         z-index: 2;
         margin-bottom: px(200);

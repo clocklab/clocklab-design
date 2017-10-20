@@ -17,7 +17,7 @@
     .services-line { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
 
     // ----- other -----
-    .crossed-button span { animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+    .crossed-button span { animation: fadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
     .services-schedule .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
     // ----- title -----

@@ -16,8 +16,8 @@
         
         // ----- page-layer -----
         .page-layer.back-layer {
-            &:before { animation: left $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both; }
-            &:after { animation: right $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
+            &:before { animation: Left $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both; }
+            &:after { animation: Right $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
         }
         
         // ----- jump-button -----
@@ -25,8 +25,8 @@
 
         // ----- other -----
         .bottom-button {
-            span { animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
-            .line { animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
+            span { animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
+            .line { animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
         }
         
         // ----- info-block -----

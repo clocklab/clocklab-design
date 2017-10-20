@@ -21,7 +21,7 @@
                 color: $lightBlack;
 
                 &:before {
-                    animation: right $PPClockAnimationTime both;
+                    animation: Right $PPClockAnimationTime both;
                 }
 
                 &:nth-child(1) {
@@ -393,7 +393,7 @@
             } 
 
             .jumping-button {
-                animation: FadeInRight $time * 3 $time * 6 both;
+                animation: fadeInRight $time * 3 $time * 6 both;
             }
         }
 

@@ -12,7 +12,7 @@
     .new-title { margin-bottom: px(80); }
     article { p { &.big { margin-bottom: px(60); } } }
     .cases { margin-top: px(-120); }
-    .list { h3 { margin-bottom: px(200); } }
+    .list { .list-title { margin-bottom: px(200); } }
     .images {
         img {
             &:first-child { left: px(-160); }
@@ -22,10 +22,5 @@
                 height: auto;
             }
         }
-    }
-    .advantages {
-        ul { height: px(1200); }
-        h2 { margin-bottom: px(180); }
-        &--corporate { &--landing { ul { height: px(1400); } } }
     }
 }

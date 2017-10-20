@@ -8,7 +8,7 @@
         span {
 
             &:before {
-                animation: right $PPClockAnimationTime both;
+                animation: Right $PPClockAnimationTime both;
             }
 
             &:nth-child(1) {
@@ -188,7 +188,7 @@
 
         &:after {
             left: 100%;
-            animation: right $POPArrowsAnimationTime $POPArrowsDelayTime both;
+            animation: Right $POPArrowsAnimationTime $POPArrowsDelayTime both;
         }
     }
 

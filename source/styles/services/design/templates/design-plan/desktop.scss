@@ -7,7 +7,7 @@
     // ----- clock-bg -----
     .clock-bg span {
         line-height: 72.5vh;
-        &:before { animation: right $PPClockAnimationTime both; }
+        &:before { animation: Right $PPClockAnimationTime both; }
         &:nth-child(1):before { animation-delay: $PPClockFirstDelayTime; }
         &:nth-child(2):before { animation-delay: $PPClockSecondDelayTime; }
         &:nth-child(3):before { animation-delay: $PPClockThirdDelayTime; }
@@ -27,7 +27,8 @@
             color: $white;
             width: 100%;
         }
-        h2 {
+        .plan-title {
+            display: block;
             font-family: $Raleway-Bold;
             font-size: px(90);
             color: $darkGray;
@@ -101,7 +102,7 @@
 
     // ----- ui-ux -----
     &.ui-ux {
-        .container h2 { margin-top: 17.5vh; }
+        .container .plan-title { margin-top: 17.5vh; }
         .clock-bg span { line-height: 60vh; }
     }
 
@@ -112,7 +113,7 @@
         // ----- creating -----
         &.creating {
             .container {
-                h2 { margin-top: 5.5vh; }
+                .plan-title { margin-top: 5.5vh; }
                 ul li { margin-bottom: px(125); }
                 .column-1 { padding-right: px(110); }
                 .column-2, .column-3 { padding-top: px(570); }
@@ -120,7 +121,7 @@
         }
         .container {
             padding: px(350) 0 px(630);
-            h2 {
+            .plan-title {
                 margin-top: 10vh;
                 span { margin-top: 0; }
             }

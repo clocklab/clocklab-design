@@ -20,7 +20,7 @@
     .social {
         .instagram {  animation: social $time * 3 $time * 3 both; }
         .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-        .jumping-button { animation: FadeInRight $time * 3 $time * 3 both; }
+        .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
     }
 
     // ----- contacts-info -----

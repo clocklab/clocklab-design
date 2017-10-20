@@ -84,7 +84,8 @@
             }
         }
 
-        h2 {
+        .site-types-title {
+            display: block;
             align-self: center;
             position: relative;
             top: px(-250);
@@ -120,7 +121,7 @@
             }
         }
 
-        h3 {
+        .content-title {
             display: inline-block;
             position: relative;
             margin-bottom: px(70);
@@ -201,7 +202,7 @@
                         color: $blue;
                     }
 
-                    h3 {
+                    .content-title {
 
                         &:before {
                             width: 100%;
@@ -302,8 +303,8 @@
                 }
             }
 
-            h2 > span,
-            h3,
+            .site-types-title > span,
+            .content-title,
             p,
             .crossed-button {
                 animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both;
@@ -330,7 +331,7 @@
                             }
                         }
 
-                        h3 {
+                        .content-title {
                             animation-delay: $STTextSecondColumnDelayTime;
                         }
 
@@ -353,7 +354,7 @@
                             }
                         }
 
-                        h3 {
+                        .content-title {
                             animation-delay: $STTextThirdColumnDelayTime;
                         }
 
@@ -407,8 +408,8 @@
                 }
             }
 
-            h2 > span,
-            h3,
+            .site-types-title > span,
+            .content-title,
             p,
             .crossed-button {
                 animation-play-state: paused;

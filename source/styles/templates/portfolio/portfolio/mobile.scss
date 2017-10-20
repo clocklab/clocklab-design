@@ -37,7 +37,7 @@
                     width: 100%;
                     font-size: 130vw;
                     text-shadow: px(4) px(4) px(4) $black;
-                    animation: FadeInRight $PPClockAnimationTime both;                    
+                    animation: fadeInRight $PPClockAnimationTime both;                    
                 }
 
                 &:nth-child(1) {

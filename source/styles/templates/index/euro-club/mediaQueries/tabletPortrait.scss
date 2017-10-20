@@ -75,12 +75,12 @@
         .portfolio-client {
             
             .client {
-                animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
+                animation: fadeInRight $portfolioClientAnimationTime $portfolioClientDelayTime both;
         
                 &-name-container {
         
                     span {
-                        animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
+                        animation: Right $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
                     }
                 }
             }
@@ -119,11 +119,11 @@
         .bottom-button {
             
             span {
-                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+                animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
             }
         
             .line {
-                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+                animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
             }
         }
 

@@ -37,7 +37,7 @@
         line-height: 16px;
         text-transform: uppercase;
         transition: padding $timeTick;
-        // animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+        // animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
 
         &:before {
             content: 'К портфолио';
@@ -75,6 +75,6 @@
         height: 1px;
         background: $lightGray;
         transition: width $timeTick;
-        // animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+        // animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
     }
 }

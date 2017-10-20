@@ -144,7 +144,8 @@
             }
         }
     
-        &--8, &--9 {
+        &--8,
+        &--9 {
             margin-top: px(450);
 
             & > div {
@@ -156,7 +157,8 @@
         }
     }
     
-    h3 {
+    .row-title {
+        display: block;
         font-size: px(96);
         font-family: $Raleway-Bold;
         line-height: px(110);
@@ -166,7 +168,8 @@
         }
     }
     
-    h4 {
+    .list-item-title {
+        display: block;
         font-size: px(36);
         font-family: $Raleway-Bold;
 
@@ -248,7 +251,7 @@
                 }
             }
 
-            h4 {
+            .list-item-title {
                 margin-bottom: px(30);
             }
         }
@@ -348,7 +351,7 @@
                 }
             }
 
-            h4 {
+            .list-item-title {
                 margin-bottom: px(40);
                 font-size: px(36);
                 font-family: $Raleway-Bold;
@@ -436,7 +439,7 @@
             &--3 {
                 margin-top: px(340);
 
-                h3 {
+                .row-title {
                     margin-bottom: px(220);
                 }
             }
@@ -473,7 +476,7 @@
                     }
                 }
 
-                h4 {
+                .list-item-title {
 
                     &.big {
                         margin-top: px(390);
@@ -495,7 +498,7 @@
 
             &--6 {
 
-                h4 {
+                .list-item-title {
 
                     &.big {
                         margin-top: 0;
@@ -536,7 +539,7 @@
 
             &--6 {
 
-                h4.big {
+                .list-item-title.big {
                     font-size: px(40);
                 }
                 

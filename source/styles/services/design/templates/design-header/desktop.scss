@@ -10,26 +10,6 @@
     
     // ----- languages -----
     .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
-
-    // ----- top-panel -----
-    .top-panel {
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 9998;
-        height: px(240);
-        position: fixed;
-        background: transparent;
-        transition: top $time * 2 ease-out, background $time, opacity $time * 2 ease-out;
-        &.active {
-            opacity: 1;
-            background: rgba(238,238,238,.70);
-            &.scrolled, &.form-opened {
-                top: px(-242);
-                opacity: 0;
-            } 
-        }
-    }
     
     // ----- article -----
     article { width: 112%; }
@@ -182,7 +162,8 @@
             .images { width: 40%; }
             .list {
                 width: 60%;
-                h3 {
+                .list-title {
+                    display: block;
                     margin: px(165) 0 px(110) px(88);
                     font-family: $Roboto-Bold;
                     font-size: px(80);
@@ -229,7 +210,7 @@
     // ----- ui-ux -----
     &.ui-ux {
         .images { top: px(-570); }
-        .cases h3 {
+        .cases .list-title {
             margin: px(165) 0 px(110) px(76);
             font-family: $Roboto-Bold;
             line-height: px(80);

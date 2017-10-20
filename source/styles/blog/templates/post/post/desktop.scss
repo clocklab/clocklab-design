@@ -1,5 +1,16 @@
 & {  
 
+    @keyframes fadeInDownYear {
+        from {
+            opacity: 0;
+            transform: translateY(-100%) rotate(90deg);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) rotate(90deg);
+        }
+    }
+
     background: $white;
 
     .clock-bg {
@@ -8,7 +19,7 @@
         span {
 
             &:before {
-                animation: right $PPClockAnimationTime both;
+                animation: Right $PPClockAnimationTime both;
             }
 
             &:nth-child(1) {
@@ -46,17 +57,6 @@
                 }
             }
         }
-    }
-
-    .menu {
-        position: fixed;
-        animation: fadeIn $POPMenuAnimationTime both;
-    }
-
-    .logo {
-        position: fixed;
-        z-index: 2;
-        animation: fadeIn $POPLogoAnimationTime both
     }
 
     .language {
@@ -187,7 +187,7 @@
 
         &:after {
             left: 100%;
-            animation: right $POPArrowsAnimationTime $POPArrowsDelayTime both;
+            animation: Right $POPArrowsAnimationTime $POPArrowsDelayTime both;
         }
     }
 
@@ -261,17 +261,6 @@
             }
         }
 
-        @keyframes fadeInDownYear {
-            from {
-                opacity: 0;
-                transform: translateY(-100%) rotate(90deg);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) rotate(90deg);
-            }
-        }
-
         .year {
             position: absolute;
             right: px(52);
@@ -321,7 +310,7 @@
             }
         }
 
-        h1 {
+        .title {
             display: block;
             margin-left: px(200);
             margin-top: px(30);

@@ -171,13 +171,13 @@
 
                 &.left {
                     animation-duration: $time;
-                    animation-name: left;
+                    animation-name: Left;
                     animation-fill-mode: both;
                 }
 
                 &.right {
                     animation-duration: $time;
-                    animation-name: right;
+                    animation-name: Right;
                     animation-fill-mode: both;
                 }
             }
@@ -361,14 +361,14 @@
                     animation-delay: 0;
                     animation-fill-mode: both;
                     animation-duration: $time;
-                    animation-name: left;
+                    animation-name: Left;
                 }
 
                 &.right {
                     animation-delay: 0;
                     animation-fill-mode: both;
                     animation-duration: $time;
-                    animation-name: right;
+                    animation-name: Right;
                 }
             }
         }
@@ -409,11 +409,11 @@
         .bottom-button {
             
             span {
-                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+                animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
             }
         
             .line {
-                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+                animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
             }
         }
 
@@ -453,13 +453,13 @@
                 img {
 
                     &.loaded {
-                        animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
+                        animation: Left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
                     }
                 }
 
                 &:before,
                 &:after {
-                    animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
+                    animation: Left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
                 }
             }
 
@@ -482,25 +482,25 @@
                 &--next-slide {
 
                     .content-container {
-                        animation: right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTimeMobile both;
+                        animation: Right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTimeMobile both;
                     }
                 }
 
                 &--previous-slide {
                     
                     .content-container {
-                        animation: left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTimeMobile both;
+                        animation: Left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTimeMobile both;
                     }
                 }
             }
 
             .indicators {
-                animation: up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTimeMobile both;
+                animation: Up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTimeMobile both;
             }
         }
 
         &:before {
-            animation: right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
+            animation: Right $portfolioAltaLeftBlockAnimationTime $portfolioAltaLeftBlockDelayTime both;
         }
     }
 }

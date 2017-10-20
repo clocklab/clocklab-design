@@ -13,67 +13,6 @@
 }
 // UNIVERSAL MIXIN ENDS
 
-// ANIMATION FOR HAMBURGER TICKS
-@keyframes innerTickAnimation1 {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(101%);
-    }
-}
-
-@keyframes innerTickAnimation2 {
-    from {
-        transform: translateX(-101%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-@keyframes innerTickOpenedAnimation1 {
-    from {
-        left: 10%;
-    }
-    to {
-        left: 101%;
-    }
-}
-
-@keyframes innerTickOpenedAnimation2 {
-    from {
-        left: -101%;
-    }
-    to {
-        left: 10%;
-    }
-}
-// ANIMATION FOR HAMBURGER TICKS ENDS
-
-// RORTFOLIO CLIENT
-@keyframes client {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes clientName {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-// RORTFOLIO CLIENT ENDS
-
-
 // RORTFOLIO RIGHT PANEL
 @keyframes rightPanelDate {
     from {
@@ -100,15 +39,6 @@
 
 
 // PORTFOLIO Q7 ANIMATION
-@keyframes widthIncrease {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
 @keyframes heightIncreaseDesktop {
     from {
         height: 0vh;
@@ -189,17 +119,6 @@
     }
 }
 
-@keyframes FadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
 @keyframes FadeInRightHalf {
     from {
         opacity: 0;
@@ -212,34 +131,6 @@
 }
 // PORTFOLIO Q7 ANIMATION ENDS
 
-
-// PORTFOLIO VINO GRAD ANIMATION
-@keyframes up {
-    from {
-        transform: translateY(100%);
-    }   
-    to {
-        transform: translateY(0);
-    } 
-}
-
-@keyframes down {
-    from {
-        transform: translateY(-100%);
-    }   
-    to {
-        transform: translateY(0);
-    } 
-}
-
-@keyframes right {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
 
 // ----- social icons -----
 @keyframes social {
@@ -397,52 +288,8 @@
     }
 }
 
-// animation for menu
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-// animation for menu ends
-
 
 // portfolio
-@keyframes Down {
-    from {
-        transform: translateY(-101%);
-    }
-    to {
-        transform: none;
-    }
-}
-@keyframes Up {
-    from {
-        transform: translateY(100%);
-    }
-    to {
-        transform: none;
-    }
-}
-
-@keyframes Right {
-    from {
-        transform: translateX(-101%);
-    }
-    to {
-        transform: none;
-    }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 @keyframes halfDown {
     from {
         transform: translate3d(-100%, 0, 0);
@@ -489,17 +336,6 @@
     }
 }
 
-@keyframes fadeInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
-}
-
 @keyframes fadeInLeftMap {
     from {
         opacity: 0;
@@ -520,17 +356,6 @@
     }
 }
 // blog ends
-
-//  post
-@keyframes Left {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: none;
-    }
-}
-//  post ends
 
 
 // web-production
@@ -584,31 +409,251 @@
 // MAIN ends
 
 
-// WEB PRODUCTION
-@keyframes fadeInRight {
+
+
+
+
+// -------- OUR PERSONAL ANIMATIONS --------
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+    }
+    to { 
+        opacity: 1; 
+    }
+}
+@keyframes fadeOut {
+    from { 
+        opacity: 1; 
+    }
+    to { 
+        opacity: 0;
+    }
+}
+
+@keyframes Up {
+    from {
+        transform: translateY(101%);
+    }
+    to {
+        transform: none;
+    }
+}    
+@keyframes Down {
+    from {
+        transform: translateY(-101%);
+    }
+    to {
+        transform: none;
+    }
+}
+@keyframes Left {
+    from {
+        transform: translateX(101%);
+    }
+    to {
+        transform: none;
+    }
+}
+@keyframes Right {
+    from {
+        transform: translateX(-101%);
+    }
+    to {
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translate3d(-100%, 0, 0);
+        transform: translateY(101%);
     }
-  
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}    
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-101%);
+    }
     to {
         opacity: 1;
         transform: none;
     }
 }
-// WEB PRODUCTION
-
-
-// MARKETING
 @keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translate3d(100%, 0, 0);
+        transform: translateX(101%);
     }
-  
     to {
         opacity: 1;
         transform: none;
     }
 }
-// MARKETING
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-101%);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes toUp {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateY(-101%);
+    }
+}    
+@keyframes toDown {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateY(101%);
+    }
+}
+@keyframes toLeft {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateX(-101%);
+    }
+}
+@keyframes toRight {
+    from {
+        transform: none;
+    }
+    to {
+        transform: translateX(101%);
+    }
+}
+
+@keyframes fadeInToUp {
+    from {
+        opacity: 1;
+        transform: none;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-101%);
+    }
+}    
+@keyframes fadeInToDown {
+    from {
+        opacity: 1;
+        transform: none;
+    }
+    to {
+        opacity: 0;
+        transform: translateY(101%);
+    }
+}
+@keyframes fadeInToLeft {
+    from {
+        opacity: 1;
+        transform: none;
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-101%);
+    }
+}
+@keyframes fadeInToRight {
+    from {
+        opacity: 1;
+        transform: none;
+    }
+    to {
+        opacity: 0;
+        transform: translateX(101%);
+    }
+}
+
+@keyframes widthToParent {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes heightToParent {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}
+@keyframes widthToScreen {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100vw;
+    }
+}
+@keyframes heightToScreen {
+    from {
+        height: 0;
+    }
+    to {
+        height: 100vh;
+    }
+}
+
+@keyframes widthFromParent {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+@keyframes heightFromParent {
+    from {
+        height: 100%;
+    }
+    to {
+        height: 0;
+    }
+}
+@keyframes widthFromScreen {
+    from {
+        width: 100vw;
+    }
+    to {
+        width: 0;
+    }
+}
+@keyframes heightFromScreen {
+    from {
+        height: 100vh;
+    }
+    to {
+        height: 0;
+    }
+}
+
+@keyframes pulse {
+    0%, 30%, 60%, 100% { 
+        transform: scale(1); 
+    }
+    40%, 50% { 
+        transform: scale(1.08); 
+    }
+    50%, 80% { 
+        transform: scale(.95); 
+    }
+}
+// -------- OUR PERSONAL ANIMATIONS END --------

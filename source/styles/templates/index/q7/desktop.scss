@@ -4,10 +4,6 @@
     height: 100vh;
     background: $white;
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    
-    .logo {
-        z-index: 2;
-    }
 
     .portfolio-client {
 
@@ -317,23 +313,15 @@
     &.previous-back {
         animation: Up $time * 3 0s both;
 
-        .logo {
-            animation: fadeInDown $time * 3 $time * 3 both;
-        }
-
-        .menu {
-            animation: fadeInDown $time * 3 $time * 3 both;
-        }
-
         .portfolio-client {
             
             .client {
-                animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
+                animation: fadeInRight $portfolioClientAnimationTime $portfolioClientDelayTime both;
         
                 &-name-container {
         
                     span {
-                        animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
+                        animation: Right $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
                     }
                 }
             }
@@ -372,11 +360,11 @@
         .bottom-button {
             
             span {
-                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+                animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
             }
         
             .line {
-                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+                animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
             }
         }
 
@@ -431,7 +419,7 @@
             &--left {
                 
                 .image-container {
-                    animation: widthIncrease $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTime both;
+                    animation: widthToParent $portfolioAudiLeftBlockAnimationTime $portfolioAudiLeftBlockDelayTime both;
                 }
     
                 .lines {
@@ -485,14 +473,6 @@
     &.previous-back {
         animation: slideDown $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;
-
-        .logo {
-            animation-play-state: paused;
-        }
-
-        .menu {
-            animation-play-state: paused;
-        }
 
         .portfolio-client {
             

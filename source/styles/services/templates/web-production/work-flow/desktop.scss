@@ -127,7 +127,8 @@
             overflow: hidden;
         }
 
-        h3 {
+        .content-title {
+            display: block;
             margin-bottom: px(24);
             font-family: $Raleway-Bold;
             font-size: px(48);
@@ -217,7 +218,8 @@
         width: 20%;
         overflow: hidden;
 
-        h3 {
+        .questions-title {
+            display: block;
             margin-bottom: px(34);
             color: $darkGray;
             font-family: $Raleway-ExtraBold;
@@ -372,7 +374,7 @@
                 }
             }
 
-            h3 {
+            .content-title {
                 animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
             }
 
@@ -393,7 +395,7 @@
                     }
                 }
     
-                h3 {
+                .content-title {
                     animation-delay: $WFTextSecondColumnDelayTime;
                 }
     
@@ -415,7 +417,7 @@
                     }
                 }
     
-                h3 {
+                .content-title {
                     animation-delay: $WFTextThirdColumnDelayTime;
                 }
     
@@ -437,7 +439,7 @@
                     }
                 }
     
-                h3 {
+                .content-title {
                     animation-delay: $WFTextFourthColumnDelayTime;
                 }
     
@@ -459,7 +461,7 @@
                     }
                 }
     
-                h3 {
+                .content-title {
                     animation-delay: $WFTextFifthColumnDelayTime;
                 }
     
@@ -475,7 +477,7 @@
 
         .questions {
 
-            h3,
+            .questions-title,
             p,
             button {
                 animation: Right $WFQustionsAnimationTime $WFQustionsDelayTime both;
@@ -556,7 +558,7 @@
                 }
             }
 
-            h3 {
+            .content-title {
                 animation-play-state: paused;
             }
 
@@ -571,7 +573,7 @@
 
         .questions {
 
-            h3,
+            .questions-title,
             p,
             button {
                 animation-play-state: paused;

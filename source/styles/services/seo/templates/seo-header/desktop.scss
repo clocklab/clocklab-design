@@ -15,32 +15,11 @@
     // ----- navigation-elements -----
     .languages a { animation: fadeInDown $time * 3 $time * 6 both; }
     .header-image { animation: fadeInFive $time * 6 $time * 9 both; }
-
-    // ----- top-panel -----
-    .top-panel {
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 9998;
-        height: px(240);
-        position: fixed;
-        background: transparent;
-        transition: top $time * 2 ease-out, background $time, opacity $time * 2 ease-out;
-        &.active {
-            opacity: 1;
-            background: rgba(0,0,0,.70);
-            &.scrolled, &.form-opened {
-                top: px(-242);
-                opacity: 0;
-            } 
-        }
-    }
     
     // ----- title -----
     .title {
         p {
-            animation: fadeInUp $time * 2 $time * 7 linear;
-            animation-fill-mode: forwards;
+            animation: fadeInUp $time * 2 $time * 7 linear both;
         }
         span.name {
             span {
@@ -232,7 +211,8 @@
             }
         }
     }
-    h3 {
+    .column-title {
+        display: block;
         color: $white;
         line-height: 1.2;
         font-family: $Roboto-Bold;
@@ -377,7 +357,7 @@
                     padding-left: px(65);
                     justify-content: space-between;
                 }
-                h3 {
+                .column-title {
                     margin-bottom: px(160);
                     font-size: px(72);
                     width: 100%;
@@ -396,7 +376,7 @@
             }
             &--4 {
                 margin-top: px(230);
-                h3 { font-size: px(102); }
+                .column-title { font-size: px(102); }
                 .numbered-list { margin-top: px(440); }
                 .column-1 {
                     position: relative;

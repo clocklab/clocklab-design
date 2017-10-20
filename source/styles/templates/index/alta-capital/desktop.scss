@@ -403,12 +403,12 @@
         .portfolio-client {
 
             .client {
-                animation: client $portfolioClientAnimationTime $portfolioClientDelayTime both;
+                animation: fadeInRight $portfolioClientAnimationTime $portfolioClientDelayTime both;
         
                 &-name-container {
         
                     span {
-                        animation: clientName $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
+                        animation: Right $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
                     }
                 }
             }
@@ -447,11 +447,11 @@
         .bottom-button {
 
             span {
-                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+                animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
             }
         
             .line {
-                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+                animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
             }
         }
 
@@ -498,24 +498,24 @@
                 img {
     
                     &.loaded {
-                        animation: left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
+                        animation: Left $portfolioAltaImageAnimationTime $portfolioAltaImageDelayTime both;
                     }
     
                     &.left {
                         animation-duration: $time;
-                        animation-name: left;
+                        animation-name: Left;
                         animation-fill-mode: both;
                     }
     
                     &.right {
                         animation-duration: $time;
-                        animation-name: right;
+                        animation-name: Right;
                         animation-fill-mode: both;
                     }
                 }
     
                 &:before {
-                    animation: left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
+                    animation: Left $portfolioAltaGrayBlockAnimationTime $portfolioAltaGrayBlockDelayTime both;
                 }
             }
     
@@ -526,7 +526,7 @@
             .text {
     
                 p {
-                    animation: up $portfolioAltaPosterParagraphAnimationTime $portfolioAltaPosterParagraphDelayTime both;
+                    animation: Up $portfolioAltaPosterParagraphAnimationTime $portfolioAltaPosterParagraphDelayTime both;
                 }
             }
         }
@@ -541,14 +541,14 @@
                         animation-delay: 0;
                         animation-fill-mode: both;
                         animation-duration: $time;
-                        animation-name: left;
+                        animation-name: Left;
                     }
     
                     &.right {
                         animation-delay: 0;
                         animation-fill-mode: both;
                         animation-duration: $time;
-                        animation-name: right;
+                        animation-name: Right;
                     }
                 }
             }
@@ -558,20 +558,20 @@
                 &--next-slide {
     
                     .content-container {
-                        animation: right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTime both;
+                        animation: Right $portfolioAltaControlsRightBlockAimationTime $portfolioAltaControlsRightBlockDelayTime both;
                     }   
                 }
     
                 &--previous-slide {
     
                     .content-container {
-                        animation: left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTime both;
+                        animation: Left $portfolioAltaControlsLeftBlockAimationTime $portfolioAltaControlsLeftBlockDelayTime both;
                     }
                 }
             }
     
             .indicators {
-                animation: up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTime both;
+                animation: Up $portfolioAltaControlsIndicatorsAimationTime $portfolioAltaControlsIndicatorsDelayTime both;
             }
         }
     }

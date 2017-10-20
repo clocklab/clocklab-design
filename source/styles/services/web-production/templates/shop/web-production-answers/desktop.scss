@@ -85,13 +85,15 @@
             overflow: hidden;
         }
 
-        h2 {
+        .answers-title {
+            display: block;
             font-family: $Raleway-Medium;
             font-size: px(96);
 
             span {
                 display: block;
                 margin-top: px(40);
+                padding-right: px(40);
                 color: $blue;
                 font-size: px(48);
             }
@@ -199,7 +201,8 @@
                 overflow: hidden;
             }
     
-            h4 {
+            .content-title {
+                display: block;
                 margin-bottom: px(60);
                 font-family: $Raleway-Medium;
                 font-size: px(48);
@@ -236,12 +239,12 @@
                     }
                 }
 
-                h4,
+                .content-title,
                 .text {
                     animation: Right $time * 2 both;
                 }
 
-                h4 {
+                .content-title {
 
                     span {
                         left: initial;
@@ -266,7 +269,6 @@
         flex-wrap: wrap;
         position: absolute;
         bottom: px(160);
-        margin-top: px(760);
 
         .column-1,
         .column-2,
@@ -274,7 +276,8 @@
             overflow: hidden;
         }
 
-        h3 {
+        .more-title {
+            display: block;
             width: 100%;
             font-family: $Raleway-Medium;
             font-size: px(96);

@@ -148,11 +148,11 @@
         .bottom-button {
             
             span {
-                animation: FadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+                animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
             }
         
             .line {
-                animation: right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+                animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
             }
         }
 
@@ -195,20 +195,20 @@
             }
 
             img {
-                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
+                animation: Right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
             }
 
             &:before {
-                animation: right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
+                animation: Right $portfolioVinogradPosterImageAnimationTime  $portfolioVinogradPosterImageDelayTimeMobile both;
             }
         }
 
         &:before {
-            animation: down $portfolioVinogradLeftBlockAnimationTime $portfolioVinogradLeftBlockDelayTime both; 
+            animation: Down $portfolioVinogradLeftBlockAnimationTime $portfolioVinogradLeftBlockDelayTime both; 
         }
 
         &:after {
-            animation: up $portfolioVinogradRightBlockAnimationTime $portfolioVinogradRightBlockDelayTime both;
+            animation: Up $portfolioVinogradRightBlockAnimationTime $portfolioVinogradRightBlockDelayTime both;
         }
     }
 }

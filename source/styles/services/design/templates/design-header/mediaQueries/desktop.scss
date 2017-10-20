@@ -26,7 +26,7 @@
             margin-top: 0;
             .list {
                 width: 77%;
-                h3 {
+                .list-title {
                     margin: 0 0 px(110) px(88);
                     line-height: px(80);
                     font-size: px(66);
@@ -45,20 +45,6 @@
                 height: auto;
                 width: px(650);
                 top: px(300);
-            }
-        }
-        .advantages {
-            margin-top: px(220);
-            h2 {
-                font-size: px(84);
-                line-height: px(92);
-                margin-bottom: px(180);
-                span { display: block; }
-            }
-            ul { height: px(950); }
-            li {
-                margin-bottom: px(100);
-                width: 45%;
             }
         }
     }

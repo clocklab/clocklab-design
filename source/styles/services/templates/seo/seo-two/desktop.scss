@@ -17,14 +17,13 @@
         .line { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime * 3 both; }
 
         // ----- other -----
-        .crossed-button span { animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+        .crossed-button span { animation: fadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
         .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
         // ----- title -----
         .title {
             p {
-                animation: fadeInUp $time * 2 $time * 10 linear;
-                animation-fill-mode: forwards;
+                animation: fadeInUp $time * 2 $time * 10 linear both;
             }
             .word {
                 &:after { animation: halfDown $time * 2 linear $time * 7 both; }
@@ -56,7 +55,7 @@
         .line { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime * 3 both; }
 
         // ----- other -----
-        .crossed-button span { animation: FadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+        .crossed-button span { animation: fadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both; }
         .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
         // ----- title -----

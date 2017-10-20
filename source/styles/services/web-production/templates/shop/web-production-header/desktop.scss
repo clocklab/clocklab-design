@@ -4,33 +4,6 @@
     font-family: $Roboto-Regular;
     overflow: hidden;
 
-    .top-panel {
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9998;
-        width: 100%;
-        height: px(240);
-        background: transparent;
-        transition: top $time * 2 ease-out, background $time, opacity $time * 2 ease-out;
-
-        &.active {
-            background: rgba(238, 238, 238, .70);
-            opacity: 1;
-
-            &.scrolled,
-            &.form-opened {
-                top: px(-242);
-                opacity: 0;
-            } 
-        }
-    }
-
-    .logo,
-    .menu {
-        animation: fadeIn $time * 3 both;
-    }
-
     .language {
         position: absolute;
         z-index: 5;
@@ -93,7 +66,7 @@
         &--landing {
             padding-bottom: px(80);
             
-            & > h2 {
+            .clock-landing-title {
                 color: $darkGray;
                 font-family: $Raleway-ExtraBold;
                 font-size: px(144);
@@ -276,7 +249,8 @@
 
     .list {
 
-        h3 {
+        .list-title {
+            display: block;
             margin-bottom: px(280);
             color: $darkGray;
             font-size: px(72);
@@ -312,7 +286,8 @@
     .declaration {
         color: $darkGray;
         
-        h3 {
+        .declaration-title {
+            display: block;
             margin-bottom: px(280);
             font-size: px(72);
             font-family: $Roboto-Bold;
@@ -385,7 +360,8 @@
         margin-top: px(300);
         color: $darkGray;
         
-        h2 {
+        .advantages-title {
+            display: block;
             margin-bottom: px(300);
             width: px(1000);
             font-size: px(96);
@@ -437,7 +413,7 @@
         &--corporate {
             flex-direction: row;
 
-            h2 {
+            .advantages-title {
                 position: relative;
                 top: px(180);
             }
