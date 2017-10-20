@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     addListeners()
-    setTopPanelStyle()
+    setTopPanelStyle(0)
     
     slides[0].classList.add('current')
     slides[0].classList.add('first-slide')

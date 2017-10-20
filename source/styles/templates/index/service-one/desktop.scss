@@ -40,8 +40,7 @@
         // ----- title -----
         .title {
             p {
-                animation: fadeInUp $time * 2 $time * 7 linear;
-                animation-fill-mode: forwards;
+                animation: fadeInUp $time * 2 $time * 7 linear both;
             }
             span.name {
                 span {
@@ -63,6 +62,9 @@
                     animation: titleWord $time * 2 $time * 6 linear;
                     animation-fill-mode: forwards;
                 }
+            }
+            .crossed-button {
+                animation: fadeInUp $time * 2 $time * 9 linear both;
             }
         }
     }
@@ -103,8 +105,7 @@
         // ----- title -----
         .title {
             p {
-                animation: fadeInUp $time * 2 $time * 7 linear;
-                animation-fill-mode: forwards;
+                animation: fadeInUp $time * 2 $time * 7 linear both;
             }
             span.name {
                 span {
@@ -127,6 +128,9 @@
                     animation-fill-mode: forwards;
                 }
             }
+            .crossed-button {
+                animation-play-state: paused;
+            }
         }
     }
     &.current-back { animation: none; }
@@ -143,7 +147,7 @@
         position: absolute;
         right: px(1156);
         left: initial;
-        bottom: 9vh;
+        bottom: 12vh;
         a {
             text-transform: uppercase;
             &:before { background: $black; }
@@ -152,6 +156,18 @@
                 font-size: px(25);
                 font-family: $Raleway-Medium;
                 &:nth-of-type(10) { margin-right: 5px;}
+            }
+        }
+    }
+
+    .crossed-button {
+        margin-top: px(80);
+
+        span {
+            font-size: px(32);
+
+            &:after {
+                content: '';
             }
         }
     }
@@ -168,7 +184,7 @@
             }
             width: px(1056);
             right: px(1224);
-            bottom: 15.4vh;
+            bottom: 18.4vh;
         }
         &.vertical {
             transform: rotate(90deg);

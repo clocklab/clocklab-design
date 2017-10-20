@@ -2,163 +2,168 @@
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $Raleway-Regular;
     background: $background;
-    position: absolute;
+    // position: absolute;
     overflow: hidden;
-    z-index: 1;
-    left: 0;
-    top: 0;
+    // z-index: 1;
+    // left: 0;
+    // top: 0;
 
+    // ----------------- ANIMATIONS FOR MAIN PAGE -----------------
     // ----- animation left -----
-    // &.current, &.current-back,
-    // &.previous, &.previous-back {
-    //     animation: Left $time * 3 0s both;
-    //     h3, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    //     .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    //     span.name {
-    //         span {
-    //             animation: titleName $time * 2 $time * 11 linear;
-    //             animation-fill-mode: forwards;
-    //         }
-    //         &:before {
-    //             animation: titleNameShape $time * 2 $time * 10 linear;
-    //             animation-fill-mode: forwards;
-    //         }
-    //     }
-    //     .types {
-    //         &__item {
-    //             &:nth-child(1),
-    //             &:nth-child(3) {
-    //                 .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
-    //                 h3 { animation-delay: $STTextSecondColumnDelayTime; }
-    //                 p { animation-delay: $STTextSecondColumnTwoDelayTime; }
-    //             }
-    //             &:nth-child(2), &:nth-child(4) {
-    //                 .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
-    //                 h3 { animation-delay: $STTextThirdColumnDelayTime; }
-    //                 p { animation-delay: $STTextThirdColumnTwoDelayTime; }
-    //             }
-    //         }
-    //     }
+    &.current, &.current-back,
+    &.previous, &.previous-back {
+        animation: Left $time * 3 0s both;
+        .content-title, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+        .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+        span.name {
+            span {
+                animation: titleName $time * 2 $time * 11 linear;
+                animation-fill-mode: forwards;
+            }
+            &:before {
+                animation: titleNameShape $time * 2 $time * 10 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .types {
+            &__item {
+                &:nth-child(1),
+                &:nth-child(3) {
+                    .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
+                    .content-title { animation-delay: $STTextSecondColumnDelayTime; }
+                    p { animation-delay: $STTextSecondColumnTwoDelayTime; }
+                }
+                &:nth-child(2), &:nth-child(4) {
+                    .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
+                    .content-title { animation-delay: $STTextThirdColumnDelayTime; }
+                    p { animation-delay: $STTextThirdColumnTwoDelayTime; }
+                }
+            }
+        }
             
-    //     // ----- big-background-letter -----
-    //     .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+        // ----- big-background-letter -----
+        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
         
-    //     // ----- copyright -----
-    //     .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+        // ----- copyright -----
+        .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
 
-    //     // ----- social -----
-    //     .social {
-    //         .instagram {  animation: social $time * 3 $time * 3 both; }
-    //         .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-    //         .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
-    //     }
+        // ----- social -----
+        .social {
+            .instagram {  animation: social $time * 3 $time * 3 both; }
+            .facebook { animation: socialReverse $time * 3 $time * 3 both; }
+            .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
+        }
         
-    //     // ----- services-line -----
-    //     .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+        // ----- services-line -----
+        .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
     
-    // }
-
-    // // ----- animation right -----
-    // &.previous, &.previous-back {
-    //     animation: slideRight $time * 3 0s both;
-    //     animation-play-state: paused;
-    //     h3, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    //     .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    //     span.name {
-    //         span {
-    //             animation: titleName $time * 2 $time * 11 linear;
-    //             animation-fill-mode: forwards;
-    //         }
-    //         &:before {
-    //             animation: titleNameShape $time * 2 $time * 10 linear;
-    //             animation-fill-mode: forwards;
-    //         }
-    //     }
-    //     .types {
-    //         &__item {
-    //             &:nth-child(1),
-    //             &:nth-child(3) {
-    //                 .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
-    //                 h3 { animation-delay: $STTextSecondColumnDelayTime; }
-    //                 p { animation-delay: $STTextSecondColumnTwoDelayTime; }
-    //             }
-    //             &:nth-child(2), &:nth-child(4) {
-    //                 .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
-    //                 h3 { animation-delay: $STTextThirdColumnDelayTime; }
-    //                 p { animation-delay: $STTextThirdColumnTwoDelayTime; }
-    //             }
-    //         }
-    //     }
-    // }
+    }
 
     // ----- animation right -----
-    // &.previous, &.previous-back {
-    //     animation: slideRight $time * 3 $topPanelAnimationTime both;
-    //     animation-play-state: paused;
-        
-    //     // ----- big-background-letter -----
-    //     .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-        
-    //     // ----- copyright -----
-    //     .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+    &.previous, &.previous-back {
+        animation: slideRight $time * 3 0s both;
+        animation-play-state: paused;
+        .content-title, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+        .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+        span.name {
+            span {
+                animation: titleName $time * 2 $time * 11 linear;
+                animation-fill-mode: forwards;
+            }
+            &:before {
+                animation: titleNameShape $time * 2 $time * 10 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .types {
+            &__item {
+                &:nth-child(1),
+                &:nth-child(3) {
+                    .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
+                    .content-title { animation-delay: $STTextSecondColumnDelayTime; }
+                    p { animation-delay: $STTextSecondColumnTwoDelayTime; }
+                }
+                &:nth-child(2), &:nth-child(4) {
+                    .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
+                    .content-title { animation-delay: $STTextThirdColumnDelayTime; }
+                    p { animation-delay: $STTextThirdColumnTwoDelayTime; }
+                }
+            }
+        }
+    }
 
-    //     // ----- social -----
-    //     .social {
-    //         .instagram {  animation: social $time * 3 $time * 3 both; }
-    //         .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-    //         .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
+    // ----- animation right -----
+    &.previous, &.previous-back {
+        animation: slideRight $time * 3 $topPanelAnimationTime both;
+        animation-play-state: paused;
+        
+        // ----- big-background-letter -----
+        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+        
+        // ----- copyright -----
+        .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+
+        // ----- social -----
+        .social {
+            .instagram {  animation: social $time * 3 $time * 3 both; }
+            .facebook { animation: socialReverse $time * 3 $time * 3 both; }
+            .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
+        }
+        
+        // ----- services-line -----
+        .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+    }
+    &.current-back { animation: none; }
+    &.previous-back { animation-play-state: running; }
+    // ----------------- ANIMATIONS FOR MAIN PAGE END -----------------
+
+
+    // ----------------- ANIMATIONS FOR SERVICES PAGE -----------------
+    // animation: fadeIn $time * 3 0s both;
+    // .content-title, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+    // .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
+    // span.name {
+    //     span {
+    //         animation: titleName $time * 2 $time * 11 linear;
+    //         animation-fill-mode: forwards;
     //     }
-        
-    //     // ----- services-line -----
-    //     .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+    //     &:before {
+    //         animation: titleNameShape $time * 2 $time * 10 linear;
+    //         animation-fill-mode: forwards;
+    //     }
     // }
-    // &.current-back { animation: none; }
-    // &.previous-back { animation-play-state: running; }
-
-    animation: fadeIn $time * 3 0s both;
-    .content-title, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    span.name {
-        span {
-            animation: titleName $time * 2 $time * 11 linear;
-            animation-fill-mode: forwards;
-        }
-        &:before {
-            animation: titleNameShape $time * 2 $time * 10 linear;
-            animation-fill-mode: forwards;
-        }
-    }
-    .types {
-        &__item {
-            &:nth-child(1),
-            &:nth-child(3) {
-                .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
-                .content-title { animation-delay: $STTextSecondColumnDelayTime; }
-                p { animation-delay: $STTextSecondColumnTwoDelayTime; }
-            }
-            &:nth-child(2), &:nth-child(4) {
-                .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
-                .content-title { animation-delay: $STTextThirdColumnDelayTime; }
-                p { animation-delay: $STTextThirdColumnTwoDelayTime; }
-            }
-        }
-    }
+    // .types {
+    //     &__item {
+    //         &:nth-child(1),
+    //         &:nth-child(3) {
+    //             .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
+    //             .content-title { animation-delay: $STTextSecondColumnDelayTime; }
+    //             p { animation-delay: $STTextSecondColumnTwoDelayTime; }
+    //         }
+    //         &:nth-child(2), &:nth-child(4) {
+    //             .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
+    //             .content-title { animation-delay: $STTextThirdColumnDelayTime; }
+    //             p { animation-delay: $STTextThirdColumnTwoDelayTime; }
+    //         }
+    //     }
+    // }
         
-    // ----- big-background-letter -----
-    .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+    // // ----- big-background-letter -----
+    // .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
     
-    // ----- navigation-elements -----
-    .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+    // // ----- navigation-elements -----
+    // .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
 
-    // ----- social -----
-    .social {
-        .instagram {  animation: social $time * 3 $time * 3 both; }
-        .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-        .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
-    }
+    // // ----- social -----
+    // .social {
+    //     .instagram {  animation: social $time * 3 $time * 3 both; }
+    //     .facebook { animation: socialReverse $time * 3 $time * 3 both; }
+    //     .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
+    // }
     
-    // ----- services-line -----
-    .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+    // // ----- services-line -----
+    // .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+    // ----------------- ANIMATIONS FOR SERVICES PAGE END -----------------
 
     // ----- letter o -----
     .big-background-letter {

@@ -115,7 +115,16 @@
             span {
                 color: $dark;
                 font-size: px(26);
-                &:after { content: 'Читать далее'; }
+                &:after { content: 'Узнать больше'; }
+            }
+            &.open-long-read {
+
+                span {
+
+                    &:after {
+                        content: 'Читать далее';
+                    }
+                }
             }
         }
     }

@@ -137,6 +137,31 @@
         }
     }
 
+    .crossed-button {
+        margin-top: px(80);
+
+        span {
+            color: $white;
+            font-size: px(32);
+
+            &:before {
+                background: $white;
+            }
+
+            &:after {
+                content: '';
+            }
+        }
+
+        .arrow {
+
+            .st0,
+            .st1 {
+                stroke: $white;
+            }
+        }
+    }
+
     .small-gray-lines {
         z-index: 2;
 
@@ -346,6 +371,10 @@
             }
         }
 
+        .crossed-button {
+            animation: fadeInUp $PVAboutAnimationTime $PVAboutDelayTime + $PVAboutAnimationTime both;
+        }
+
         .small-gray-lines {
 
             .line {
@@ -463,6 +492,10 @@
             p {
                 animation-play-state: paused;
             }
+        }
+
+        .crossed-button {
+            animation-play-state: paused;
         }
 
         .small-gray-lines {
