@@ -49,31 +49,31 @@
         }
         .step {
             .index span { animation: Left $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
-            h3 { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+            .content-title { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
             p { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
             &:nth-child(2) {
                 .index span { animation-delay: $WFTextSecondColumnDelayTime; }
-                h3 { animation-delay: $WFTextSecondColumnDelayTime; }
+                .content-title { animation-delay: $WFTextSecondColumnDelayTime; }
                 p { animation-delay: $WFTextSecondColumnDelayTime; }
             }
             &:nth-child(3) {
                 .index span { animation-delay: $WFTextThirdColumnDelayTime; }
-                h3 { animation-delay: $WFTextThirdColumnDelayTime; }
+                .content-title { animation-delay: $WFTextThirdColumnDelayTime; }
                 p { animation-delay: $WFTextThirdColumnDelayTime; }
             }
             &:nth-child(4) {
                 .index span { animation-delay: $WFTextFourthColumnDelayTime; }
-                h3 { animation-delay: $WFTextFourthColumnDelayTime; }
+                .content-title { animation-delay: $WFTextFourthColumnDelayTime; }
                 p { animation-delay: $WFTextFourthColumnDelayTime; }
             }
             &:nth-child(5) {
                 .index span { animation-delay: $WFTextFifthColumnDelayTime; }
-                h3 { animation-delay: $WFTextFifthColumnDelayTime; }
+                .content-title { animation-delay: $WFTextFifthColumnDelayTime; }
                 p { animation-delay: $WFTextFifthColumnDelayTime; }
             }
             &:nth-child(6) {
                 .index span { animation-delay: $WFTextSixthColumnDelayTime; }
-                h3 { animation-delay: $WFTextSixthColumnDelayTime; }
+                .content-title { animation-delay: $WFTextSixthColumnDelayTime; }
                 p { animation-delay: $WFTextSixthColumnDelayTime; }
             }
         }
@@ -123,31 +123,31 @@
         }
         .step {
             .index span { animation: Left $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
-            h3 { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+            .content-title { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
             p { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
             &:nth-child(2) {
                 .index span { animation-delay: $WFTextSecondColumnDelayTime; }
-                h3 { animation-delay: $WFTextSecondColumnDelayTime; }
+                .content-title { animation-delay: $WFTextSecondColumnDelayTime; }
                 p { animation-delay: $WFTextSecondColumnDelayTime; }
             }
             &:nth-child(3) {
                 .index span { animation-delay: $WFTextThirdColumnDelayTime; }
-                h3 { animation-delay: $WFTextThirdColumnDelayTime; }
+                .content-title { animation-delay: $WFTextThirdColumnDelayTime; }
                 p { animation-delay: $WFTextThirdColumnDelayTime; }
             }
             &:nth-child(4) {
                 .index span { animation-delay: $WFTextFourthColumnDelayTime; }
-                h3 { animation-delay: $WFTextFourthColumnDelayTime; }
+                .content-title { animation-delay: $WFTextFourthColumnDelayTime; }
                 p { animation-delay: $WFTextFourthColumnDelayTime; }
             }
             &:nth-child(5) {
                 .index span { animation-delay: $WFTextFifthColumnDelayTime; }
-                h3 { animation-delay: $WFTextFifthColumnDelayTime; }
+                .content-title { animation-delay: $WFTextFifthColumnDelayTime; }
                 p { animation-delay: $WFTextFifthColumnDelayTime; }
             }
             &:nth-child(6) {
                 .index span { animation-delay: $WFTextSixthColumnDelayTime; }
-                h3 { animation-delay: $WFTextSixthColumnDelayTime; }
+                .content-title { animation-delay: $WFTextSixthColumnDelayTime; }
                 p { animation-delay: $WFTextSixthColumnDelayTime; }
             }
         }
