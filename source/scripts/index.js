@@ -1,7 +1,5 @@
 //= include ./components/slides-changing.js
 
-//= include ./services/modules/open-long-read.js
-
 //= include ./libraries/jquery.min.js
 
 //= include ./components/clock.js

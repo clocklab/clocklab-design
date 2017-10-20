@@ -159,10 +159,10 @@
                 text-transform: uppercase;
                 font-family: $Raleway-Medium;
                 transition: color $time, background $time;
-                &:hover {
-                    background: $white;
-                    color: $blue;
-                }
+                // &:hover {
+                //     background: $white;
+                //     color: $blue;
+                // }
             }
         }
     }

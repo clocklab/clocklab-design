@@ -36,7 +36,7 @@
             }
         }
     }
-
+    
     .info {
         position: absolute;
         top: px(200);
@@ -88,6 +88,10 @@
             position: relative;
             overflow: hidden;
 
+            span {
+                text-transform: initial;
+            }
+
             &:before {
                 display: block;
                 position: absolute;
@@ -131,6 +135,23 @@
 
             &:last-child {
                 margin-bottom: 0;
+            }
+        }
+
+        span {
+            color: $blue;
+        }
+    }
+
+    .crossed-button {
+        position: relative;
+        margin-top: px(80);
+
+        span {
+            font-size: px(32);
+
+            &:after {
+                content: '';
             }
         }
     }
@@ -250,7 +271,7 @@
             }
             to {
                 margin-top: 40vh;
-                height: px(60);
+                height: 0;
                 opacity: .7;
             }
         }
@@ -400,6 +421,10 @@
             }
         }
 
+        .crossed-button {
+            animation: fadeInUp $PVAboutAnimationTime $PVAboutDelayTime + $PVAboutAnimationTime both;
+        }
+
         .car-covering-layer {
     
             .lines {
@@ -543,6 +568,10 @@
             p {
                 animation-play-state: paused;
             }
+        }
+
+        .crossed-button {
+            animation-play-state: paused;
         }
 
         .car-covering-layer {

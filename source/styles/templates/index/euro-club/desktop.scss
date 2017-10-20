@@ -183,6 +183,18 @@
         }
     }
 
+    .crossed-button {
+        margin-top: px(80);
+
+        span {
+            font-size: px(32);
+
+            &:after {
+                content: '';
+            }
+        }
+    }
+
     @keyframes heightChanging {
         from {
             height: 0;
@@ -404,6 +416,10 @@
             p {
                 animation: fadeInUpHalf $PEAboutAnimationTime $PEAboutDelayTime both;
             }
+        }
+
+        .crossed-button {
+            animation: fadeInUp $PEAboutAnimationTime $PEAboutDelayTime + $PEAboutAnimationTime both;
         }
 
         .blue-line {

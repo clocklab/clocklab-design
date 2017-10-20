@@ -30,7 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const moveObjects = event => {
         const newLeftPos = currentLeftPos - event.clientX
         
-        frontLayer.style.pointerEvents = 'none'
+        if (!frontLayer.style.pointerEvents && newLeftPos > 3) {
+            frontLayer.style.pointerEvents = 'none'
+        }
 
         moveFrontLayer(newLeftPos)
     }
