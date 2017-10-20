@@ -10,8 +10,7 @@
         
         // ----- other -----
         .back-layer {
-            animation: fadeInUp $time * 3 0s both;
-            animation-fill-mode: forwards;
+            animation: fadeIn 0s 0s both;
         }
         .vertical-text, .questions { animation: fadeIn $time * 6 $time * 15 both; }
 
@@ -59,8 +58,7 @@
         
         // ----- other -----
         .back-layer {
-            animation: fadeInUp $time * 3 0s both;
-            animation-fill-mode: forwards;
+            animation: fadeIn 0s 0s both;
         }
         .vertical-text, .questions { animation: fadeIn $time * 6 $time * 15 both; }
 
@@ -206,7 +204,6 @@
         left: 0;
         z-index: 1;
         display: flex;
-        visibility: hidden;
         padding-right: px(140);
         justify-content: flex-end;
         align-items: center;
