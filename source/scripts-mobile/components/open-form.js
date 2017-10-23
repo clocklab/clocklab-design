@@ -6,6 +6,7 @@ function openForm() {
           }
 
     openBtns.forEach(openBtn => {
+
         const form = document.querySelector(`.form--${openBtn.dataset.formId}`),
               closeBtn = form.querySelector('.close-form'),
               inputs = form.querySelectorAll('input'),
