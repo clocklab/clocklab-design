@@ -1,0 +1,13 @@
+// base
+@import "../base/reset";
+@import "../base/variables";
+@import "../base/fonts";
+
+// components
+@import "../components/logo/main";
+@import "../components/menu/main";
+@import "../components/top-panel/main";
+@import "../components/form/main";
+
+// main
+@import "templates/web-production/web-production/main";
