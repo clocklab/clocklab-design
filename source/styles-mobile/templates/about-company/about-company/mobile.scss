@@ -216,10 +216,11 @@
             font-size: px(24);
             text-transform: uppercase;
             overflow: hidden;
+            transition: bottom $time;
 
             .text-container {
                 width: 100%;
-                transition: transform $time, background $time;
+                transition: transform $time * 2, background $time;
             }
 
             .open,

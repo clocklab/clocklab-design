@@ -5,23 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialMaxHeight = 380
     const animationTime = 400
 
-    const animate = (draw, duration) => {
-        const start = performance.now();
-        
-        requestAnimationFrame(function animate(time) {
-            let timePassed = time - start;
-        
-            timePassed = timePassed > duration
-            ? duration
-            : timePassed
-        
-            draw(timePassed);
-        
-            timePassed < duration &&
-            requestAnimationFrame(animate)
-        });
-    }
-
     const checkLongReadBottomPos = ()=> {
         const longReadContainerSizes = longReadContainer.getBoundingClientRect()
 
@@ -36,28 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const openLongRead = () => {
-        const newMaxHeight = longRead.clientHeight
-
-        animate((timePassed) => {
-            longReadContainer.style.maxHeight = `${initialMaxHeight + timePassed * newMaxHeight / animationTime}px`
-        }, animationTime)   
-
-        setTimeout(() => {
-            longReadContainer.removeAttribute('style')
-        }, animationTime + 100)
-
         document.addEventListener('scroll', checkLongReadBottomPos)
     }
 
     const closeLongRead = () => {
-        const currentMaxHeight = longRead.clientHeight
-
-        animate((timePassed) => {
-            longReadContainer.style.maxHeight = `${currentMaxHeight - timePassed * (currentMaxHeight - initialMaxHeight) / animationTime}px`
-        }, animationTime)
-
+        window.scrollTo(0, longReadContainer.getBoundingClientRect().top + window.pageYOffset - 300)
         openButton.removeAttribute('style')
-
         document.removeEventListener('scroll', checkLongReadBottomPos)
     }
 
@@ -67,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
         : openLongRead()
 
         openButton.classList.toggle('opened')
+        longReadContainer.classList.toggle('opened')
     })
-
-    longReadContainer.style.maxHeight = `${initialMaxHeight}px`
 })
