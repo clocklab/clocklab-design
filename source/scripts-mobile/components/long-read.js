@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const longReadContainer = longRead.parentElement
     const initialMaxHeight = 380
     const animationTime = 400
+    let initialBottomPos = null
 
     const checkLongReadBottomPos = ()=> {
         const longReadContainerSizes = longReadContainer.getBoundingClientRect()
@@ -23,12 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const closeLongRead = () => {
-        window.scrollTo(0, longReadContainer.getBoundingClientRect().top + window.pageYOffset - 300)
+        window.scrollTo(0, initialBottomPos)
         openButton.removeAttribute('style')
         document.removeEventListener('scroll', checkLongReadBottomPos)
     }
 
     openButton.addEventListener('click', () => {
+        initialBottomPos = initialBottomPos || 
+                           longReadContainer.parentElement.getBoundingClientRect().bottom + document.documentElement.scrollTop - document.documentElement.clientHeight
+
         openButton.classList.contains('opened')
         ? closeLongRead()
         : openLongRead()
