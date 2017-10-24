@@ -424,7 +424,10 @@
         }
     }
 
-    &--web-production, &--design, &--about-company, &--seo {
+    &--web-production, 
+    &--design, 
+    &--about-company, 
+    &--seo {
 
         .long-read-background {
             background: lighten($darkWhite, 5%);
@@ -487,6 +490,29 @@
                     margin: px(200) 0 0 px(70);
                 }
             }
+        }
+    }
+
+    &--web-production,
+    &--design,
+    &--seo,
+    &--marketing {
+        position: relative;
+        z-index: 1;
+        height: initial;
+        visibility: visible;
+        opacity: 1;
+
+        .cross {
+            display: none;
+        }
+
+        .long-read-container {
+            opacity: 1;
+        }
+
+        .jumping-button {
+            display: none;
         }
     }
 
