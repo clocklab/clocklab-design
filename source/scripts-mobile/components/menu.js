@@ -12,13 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault()
 
         // Full screen
-        if(document.documentElement.requestFullScreen) {
-            document.documentElement.requestFullScreen();
-        } else if(document.documentElement.mozRequestFullScreen) {
-            document.documentElement.mozRequestFullScreen();
-        } else if(document.documentElement.webkitRequestFullScreen) {
-            document.documentElement.webkitRequestFullScreen();
-        }
+        // if(document.documentElement.requestFullScreen) {
+        //     document.documentElement.requestFullScreen();
+        // } else if(document.documentElement.mozRequestFullScreen) {
+        //     document.documentElement.mozRequestFullScreen();
+        // } else if(document.documentElement.webkitRequestFullScreen) {
+        //     document.documentElement.webkitRequestFullScreen();
+        // }
 
         function closeMenu (event) {
             event.preventDefault()

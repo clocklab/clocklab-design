@@ -1,54 +1,15 @@
 & {  
 
     & > header {
-        position: relative;
-        padding: px(720) px(30) 0;
-        width: 100vw;
-        height: 100vh;
 
         img {
-            position: absolute;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
+            height: px(600);
             object-fit: cover;
         }
 
-        .slogan {
-            position: relative;
-            z-index: 2;
-            color: $white;       
-            font-family: $Raleway-ExtraBold;
-            font-size: px(48);
-            text-transform: uppercase;
-
-            span {
-                display: block;
-                margin-top: px(10);
-                color: $blue;
-            }
-        }
-
-        &:before {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, .4);
-            content: '';
-        }
-    }
-
-    .about-our-company {
-        position: relative;
-        padding: px(170) 0 px(200);
-
         .title {
-            margin-left: px(30);
+            margin-top: px(70);
             color: $gray;
             font-family: $Raleway-ExtraBold;
             font-size: px(22);
@@ -57,34 +18,19 @@
 
         .title-name {
             display: block;
-            margin: px(40) 0 px(60) px(30);
+            margin-top: px(20);
             font-family: $Roboto-Black;
             font-size: px(60);
             color: $darkGray;
-            text-transform: initial;
 
             span {
                 color: $blue;
             }
         }
 
-        .about-our-company-photo {
-            display: block;
-            margin-bottom: px(80);
-            padding: 0 px(30);
-            width: 100%;
-            height: px(450);
-            object-fit: cover;
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
         .long-read-container {
             position: relative;
-            max-height: px(380);
+            max-height: px(1290);
             overflow: hidden;
 
             &:before {
@@ -259,134 +205,6 @@
                     transform: translateY(-50%);
                     background: #f9f9f9;
                 }
-            }
-        }
-    }
-
-    .our-honors {
-        padding: px(110) px(30) 0;
-        width: 100vw;
-        height: 100vh;
-        background: $lightBlack;
-
-        .title {
-            color: $gray;
-            font-family: $Raleway-Bold;
-            font-size: px(22);
-            text-transform: uppercase;
-        }
-
-        .title-name {
-            display: block;
-            margin-top: px(46);
-            width: 60%;
-            color: $white;
-            font-family: $Roboto-Black;
-            font-size: px(48);
-            line-height: 1.4;
-
-            span {
-                color: $blue;
-            }
-        }
-
-        .honors-container {
-            position: relative;
-            margin-top: px(60);
-            width: 100%;
-            height: px(720);
-        }
-
-        .lines {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .line {
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background: $gray;
-
-            &--1 {
-                top: 33%;
-            }
-
-            &--2 {
-                top: 66%;
-            }
-
-            &.vertical {
-                width: 1px;
-                height: 100%;
-                top: 0;
-                left: 50%;
-            }
-        }
-
-        .honors {
-            display: flex;
-            flex-wrap: wrap;
-            align-content: flex-start;
-            width: 100%;
-            height: 100%;
-        }
-
-        .honors-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 50%;
-            height: 33%;
-        }
-
-        .honors-item-image {
-            width: 100%;
-            height: 55%;
-            object-fit: contain;
-        }
-    }
-
-    .work-flow {
-        padding: px(180) px(30) px(150);
-
-        .name {
-            color: $darkGray;
-            font-family: $Roboto-Black;
-            font-size: px(72);
-            line-height: 1.3;
-
-            span {
-                color: $blue;
-            }
-        }
-
-        ul {
-            margin-top: px(80);
-
-            li {
-                margin-bottom: px(70);
-                color: $darkGray;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-
-            h3 {
-                margin-bottom: px(30);
-                font-family: $Roboto-Black;
-                font-size: px(48);
-            }
-            
-            p {
-                font-family: $Roboto-Regular;
-                font-size: px(32);
-                line-height: 1.4;
             }
         }
     }
