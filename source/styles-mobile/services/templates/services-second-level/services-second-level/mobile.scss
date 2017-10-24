@@ -1,6 +1,8 @@
 & {  
 
     & > header {
+        position: relative;
+        padding-bottom: px(200);
 
         img {
             width: 100%;
@@ -9,7 +11,9 @@
         }
 
         .title {
+            display: block;
             margin-top: px(70);
+            padding-left: px(30);
             color: $gray;
             font-family: $Raleway-ExtraBold;
             font-size: px(22);
@@ -19,6 +23,8 @@
         .title-name {
             display: block;
             margin-top: px(20);
+            padding-left: px(30);
+            padding-right: px(40);
             font-family: $Roboto-Black;
             font-size: px(60);
             color: $darkGray;
@@ -30,7 +36,8 @@
 
         .long-read-container {
             position: relative;
-            max-height: px(1290);
+            margin-top: px(70);
+            max-height: px(1280);
             overflow: hidden;
 
             &:before {
@@ -51,6 +58,14 @@
                 &:before {
                     background: transparent;
                 }
+            }
+
+            &--seo {
+                max-height: px(1100);
+            }
+
+            &--design {
+                max-height: px(800);
             }
         }
 
@@ -80,6 +95,10 @@
                     }
                 }
 
+                &.bold {
+                    font-family: $Roboto-Bold;
+                }
+
                 &.italic {
                     font-style: italic;
                 }
@@ -102,6 +121,60 @@
                     padding: px(40) 0;
                     border-top: 1px solid $gray;
                     border-bottom: 1px solid $gray;
+                }
+            }
+
+            ul {
+                font-family: $Roboto-Regular;
+                font-size: px(32);
+                line-height: 1.4;
+            }
+
+            .indexed {
+
+                .list-item-title {
+                    display: block;
+                    margin-bottom: px(40);
+                    font-family: $Roboto-Black;
+                    font-size: px(48);
+                    line-height: 1.2;
+                }
+            }
+
+            .blue {
+                color: $blue;
+            }
+
+            .list-title {
+                display: block;
+                margin-bottom: px(40);
+                font-family: $Roboto-Black;
+                font-size: px(36);
+            }
+
+            .circled {
+
+                .list-item-title {
+                    display: block;
+                    font-family: $Roboto-Black;
+                }
+
+                li {
+                    position: relative;
+                    padding-left: px(70);
+                    margin-bottom: px(50);
+
+                    &:before {
+                        display: block;
+                        position: absolute;
+                        top: 7px;
+                        left: px(30);
+                        width: 7px;
+                        height: 7px;
+                        border-radius: 50%;
+                        background: $blue;
+                        content: '';
+                    }
                 }
             }
 
@@ -129,6 +202,20 @@
                 }
             }
 
+            
+
+            span {
+
+                .bold {
+                    padding-left: px(40);
+
+                    span {
+                        color: $blue;
+                    }
+                }
+            }
+                
+
             .text-title {
                 font-family: $Roboto-Black;
                 font-size: px(36);
@@ -147,13 +234,39 @@
                 font-family: $Roboto-Bold;
                 font-size: px(48);
             }
+
+            &--seo,
+            &--design {
+
+                .indexed {
+                    margin-bottom: px(90);
+
+                    li {
+                        margin-bottom: px(40);
+                        padding-left: px(40);
+                    }
+                }
+
+                .bold {
+                    display: block;
+                    padding-left: 0;
+                }
+
+                .bolder {
+                    font-family: $Roboto-Bold;
+                }
+
+                .blue {
+                    font-family: $Roboto-Black;
+                }
+            }
         }
 
         .open-close-long-read {
             display: block;
             position: absolute;
             z-index: 3;
-            bottom: px(80);
+            bottom: px(60);
             padding: 0;
             width: 100vw;
             height: px(100);
@@ -206,6 +319,110 @@
                     background: #f9f9f9;
                 }
             }
+        }
+    }
+
+    .services {
+        margin-top: px(70);
+        padding: px(80) px(30) px(40);
+        background: $lightBlack;
+
+        .title {
+            padding-right: px(30);
+            margin-bottom: px(80);
+            color: $white;
+            font-family: $Roboto-Black;
+            font-size: px(72);
+            line-height: 1.2;
+
+            span {
+                color: $blue;
+            }
+        }
+
+        li {
+            margin-bottom: px(88);
+            color: $white;
+        }
+
+        .list-item-title {
+            display: block;
+            position: relative;
+            margin-bottom: px(30);
+            padding-left: px(40);
+            font-family: $Roboto-Black;
+            font-size: px(48);
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 6px;
+                left: 0;
+                width: 9px;
+                height: 14px;
+                background: url('../../../../../images/services/arrow-mobile.png') no-repeat center;
+                content: '';
+            }
+        }
+
+        p {
+            color: $lightGray;
+            font-family: $Roboto-Regular;
+            font-size: px(32);
+            line-height: 1.4;
+        }
+    }
+
+    .work-flow {
+        padding: px(120) px(30) px(80);
+        color: $darkGray;
+
+        .indexed {
+            padding-left: px(40);
+        }
+
+        .title {
+            margin-bottom: px(80);
+            font-family: $Roboto-Black;
+            font-size: px(72);
+            line-height: 1.2;
+
+            span {
+                color: $blue;
+            }
+        }
+
+        li {
+            margin-bottom: px(90);
+        }
+
+        .list-item-title {
+            display: block;
+            margin-bottom: px(30);
+            font-family: $Roboto-Black;
+            font-size: px(48);
+            line-height: 1.2;
+        }
+
+        .blue {
+            color: $blue;
+            font-family: $Roboto-Black;
+        }
+
+        p {
+            font-family: $Roboto-Regular;
+            font-size: px(32);
+            line-height: 1.4;
+        }
+    }
+
+    form {
+        position: relative;
+        left: initial;
+        z-index: 1;
+
+        h3 {
+            font-size: px(46);
         }
     }
 }
