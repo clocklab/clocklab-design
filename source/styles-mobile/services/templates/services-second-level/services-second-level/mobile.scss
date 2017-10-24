@@ -59,6 +59,14 @@
                     background: transparent;
                 }
             }
+
+            &--seo {
+                max-height: px(1100);
+            }
+
+            &--design {
+                max-height: px(800);
+            }
         }
 
         .long-read {
@@ -85,6 +93,10 @@
                     span {
                         color: $blue;
                     }
+                }
+
+                &.bold {
+                    font-family: $Roboto-Bold;
                 }
 
                 &.italic {
@@ -127,6 +139,17 @@
                     font-size: px(48);
                     line-height: 1.2;
                 }
+            }
+
+            .blue {
+                color: $blue;
+            }
+
+            .list-title {
+                display: block;
+                margin-bottom: px(40);
+                font-family: $Roboto-Black;
+                font-size: px(36);
             }
 
             .circled {
@@ -179,13 +202,19 @@
                 }
             }
 
-            .bold {
-                padding-left: px(40);
+            
 
-                span {
-                    color: $blue;
+            span {
+
+                .bold {
+                    padding-left: px(40);
+
+                    span {
+                        color: $blue;
+                    }
                 }
             }
+                
 
             .text-title {
                 font-family: $Roboto-Black;
@@ -204,6 +233,32 @@
                 color: $blue;
                 font-family: $Roboto-Bold;
                 font-size: px(48);
+            }
+
+            &--seo,
+            &--design {
+
+                .indexed {
+                    margin-bottom: px(90);
+
+                    li {
+                        margin-bottom: px(40);
+                        padding-left: px(40);
+                    }
+                }
+
+                .bold {
+                    display: block;
+                    padding-left: 0;
+                }
+
+                .bolder {
+                    font-family: $Roboto-Bold;
+                }
+
+                .blue {
+                    font-family: $Roboto-Black;
+                }
             }
         }
 
@@ -322,6 +377,10 @@
         padding: px(120) px(30) px(80);
         color: $darkGray;
 
+        .indexed {
+            padding-left: px(40);
+        }
+
         .title {
             margin-bottom: px(80);
             font-family: $Roboto-Black;
@@ -343,6 +402,11 @@
             font-family: $Roboto-Black;
             font-size: px(48);
             line-height: 1.2;
+        }
+
+        .blue {
+            color: $blue;
+            font-family: $Roboto-Black;
         }
 
         p {
