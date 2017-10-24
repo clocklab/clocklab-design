@@ -216,7 +216,6 @@
         right: 0;
         z-index: 3;
         width: 20%;
-        overflow: hidden;
 
         .questions-title {
             display: block;
@@ -235,8 +234,9 @@
             line-height: 1.4;
         }
 
-        button {
+        .open-form {
             display: block;
+            position: relative;
             width: px(332);
             height: px(90);
             background: $blue;
@@ -245,11 +245,33 @@
             font-family: $Roboto-Bold;
             font-size: px(28);
             text-transform: uppercase;
-            transition: color $time, background $time;
+
+            span {
+                position: relative;
+                letter-spacing: 1px;
+                z-index: 2;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: px(24);
+                left: px(-24);
+                width: 100%;
+                height: 100%;
+                background: $darkGray;
+                content: '';
+                opacity: 0;
+                transition: top $time, left $time, opacity $time;
+            }
 
             &:hover {
-                background: transparent;
-                color: $blue;
+
+                &:before {
+                    top: px(10);
+                    left: px(-10);
+                    opacity: 1;
+                }
             }
         }
     }
@@ -268,12 +290,12 @@
         background: $black;
     }
 
-    &.screen-block {
+    // &.screen-block {
 
-        &.current {
-            display: block;
-        }
-    }
+    //     &.current {
+    //         display: block;
+    //     }
+    // }
 
     &.opened {
 
@@ -287,317 +309,317 @@
         }
     }
 
-    &.current,
-    &.current-back,
-    &.previous,
-    &.previous-back {
-        animation: Left $time * 3 0s both;
+    // &.current,
+    // &.current-back,
+    // &.previous,
+    // &.previous-back {
+    //     animation: Left $time * 3 0s both;
 
-        &:before,
-        &:after {
-            animation: Right $WFBeforeAnimationTime $WFBeforeDelayTime both;
-        }
+    //     &:before,
+    //     &:after {
+    //         animation: Right $WFBeforeAnimationTime $WFBeforeDelayTime both;
+    //     }
 
-        &:after {
-            animation-name: Left;
-        }
+    //     &:after {
+    //         animation-name: Left;
+    //     }
 
-        .logo {
-            animation: fadeInDown $WFBorderElAnimationTime $WFBorderElDelayTime both;
-        }
+    //     .logo {
+    //         animation: fadeInDown $WFBorderElAnimationTime $WFBorderElDelayTime both;
+    //     }
 
-        .menu {
-            animation: fadeInDown $WFBorderElAnimationTime $WFBorderElDelayTime both;
-        }
+    //     .menu {
+    //         animation: fadeInDown $WFBorderElAnimationTime $WFBorderElDelayTime both;
+    //     }
 
-        .language {
+    //     .language {
 
-            a {
-                animation: Down $WFBorderElAnimationTime $WFBorderElDelayTime both;
-            }
-        }
+    //         a {
+    //             animation: Down $WFBorderElAnimationTime $WFBorderElDelayTime both;
+    //         }
+    //     }
 
-        .sticker {
+    //     .sticker {
             
-            span {
-                animation: FadeInRightHalf $WFStickerTextAnimationTime $WFStickerTextDelayTime both;
-            }
+    //         span {
+    //             animation: FadeInRightHalf $WFStickerTextAnimationTime $WFStickerTextDelayTime both;
+    //         }
 
-            &:before {
-                animation: widthIncreaseStickerLine $WFStickerLineAnimationTime $WFStickerLineDelayTime both;
-            }
-        }
+    //         &:before {
+    //             animation: widthIncreaseStickerLine $WFStickerLineAnimationTime $WFStickerLineDelayTime both;
+    //         }
+    //     }
 
-        .new-title {
+    //     .new-title {
             
-            .text-container {
+    //         .text-container {
     
-                &:before {
-                    animation: halfDown $WFTitleLineAnimationTime linear $WFTitleLineDelayTime both;
-                }
-            }
+    //             &:before {
+    //                 animation: halfDown $WFTitleLineAnimationTime linear $WFTitleLineDelayTime both;
+    //             }
+    //         }
     
-            span {
-                animation: Up $WFTitleTextAnimationTime $WFTitleTextDelayTime both;
-            }
-        }
+    //         span {
+    //             animation: Up $WFTitleTextAnimationTime $WFTitleTextDelayTime both;
+    //         }
+    //     }
 
-        .lines {
+    //     .lines {
             
-            .line {
-                animation: heightIncreaseFull $WFLineAnimationTime $WFLineOneDelayTime both;
+    //         .line {
+    //             animation: heightIncreaseFull $WFLineAnimationTime $WFLineOneDelayTime both;
 
-                &--2 {
-                    animation-delay: $WFLineTwoDelayTime;
-                }
+    //             &--2 {
+    //                 animation-delay: $WFLineTwoDelayTime;
+    //             }
 
-                &--3 {
-                    animation-delay: $WFLineThreeDelayTime;
-                }
+    //             &--3 {
+    //                 animation-delay: $WFLineThreeDelayTime;
+    //             }
 
-                &--4 {
-                    animation-delay: $WFLineFourDelayTime;
-                }
+    //             &--4 {
+    //                 animation-delay: $WFLineFourDelayTime;
+    //             }
 
-                &--5 {
-                    animation-delay: $WFLineFiveDelayTime;
-                }
-            }
-        }
+    //             &--5 {
+    //                 animation-delay: $WFLineFiveDelayTime;
+    //             }
+    //         }
+    //     }
 
-        .step {
+    //     .step {
 
-            .index {
+    //         .index {
 
-                span {
-                    animation: Left $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
-                }
-            }
+    //             span {
+    //                 animation: Left $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
+    //             }
+    //         }
 
-            .content-title {
-                animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
-            }
+    //         .content-title {
+    //             animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
+    //         }
 
-            p {
-                animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
-            }
+    //         p {
+    //             animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
+    //         }
 
-            &:before {
-                animation: fadeIn $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
-            }
+    //         &:before {
+    //             animation: fadeIn $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both;
+    //         }
 
-            &:nth-child(2) {
+    //         &:nth-child(2) {
 
-                .index {
+    //             .index {
                     
-                    span {
-                        animation-delay: $WFTextSecondColumnDelayTime;
-                    }
-                }
+    //                 span {
+    //                     animation-delay: $WFTextSecondColumnDelayTime;
+    //                 }
+    //             }
     
-                .content-title {
-                    animation-delay: $WFTextSecondColumnDelayTime;
-                }
+    //             .content-title {
+    //                 animation-delay: $WFTextSecondColumnDelayTime;
+    //             }
     
-                p {
-                    animation-delay: $WFTextSecondColumnDelayTime;
-                }
+    //             p {
+    //                 animation-delay: $WFTextSecondColumnDelayTime;
+    //             }
     
-                &:before {
-                    animation-delay: $WFTextSecondColumnDelayTime;
-                }
-            }
+    //             &:before {
+    //                 animation-delay: $WFTextSecondColumnDelayTime;
+    //             }
+    //         }
 
-            &:nth-child(3) {
+    //         &:nth-child(3) {
                 
-                .index {
+    //             .index {
                     
-                    span {
-                        animation-delay: $WFTextThirdColumnDelayTime;
-                    }
-                }
+    //                 span {
+    //                     animation-delay: $WFTextThirdColumnDelayTime;
+    //                 }
+    //             }
     
-                .content-title {
-                    animation-delay: $WFTextThirdColumnDelayTime;
-                }
+    //             .content-title {
+    //                 animation-delay: $WFTextThirdColumnDelayTime;
+    //             }
     
-                p {
-                    animation-delay: $WFTextThirdColumnDelayTime;
-                }
+    //             p {
+    //                 animation-delay: $WFTextThirdColumnDelayTime;
+    //             }
     
-                &:before {
-                    animation-delay: $WFTextThirdColumnDelayTime;
-                }
-            }
+    //             &:before {
+    //                 animation-delay: $WFTextThirdColumnDelayTime;
+    //             }
+    //         }
 
-            &:nth-child(4) {
+    //         &:nth-child(4) {
                 
-                .index {
+    //             .index {
                     
-                    span {
-                        animation-delay: $WFTextFourthColumnDelayTime;
-                    }
-                }
+    //                 span {
+    //                     animation-delay: $WFTextFourthColumnDelayTime;
+    //                 }
+    //             }
     
-                .content-title {
-                    animation-delay: $WFTextFourthColumnDelayTime;
-                }
+    //             .content-title {
+    //                 animation-delay: $WFTextFourthColumnDelayTime;
+    //             }
     
-                p {
-                    animation-delay: $WFTextFourthColumnDelayTime;
-                }
+    //             p {
+    //                 animation-delay: $WFTextFourthColumnDelayTime;
+    //             }
     
-                &:before {
-                    animation-delay: $WFTextFourthColumnDelayTime;
-                }
-            }
+    //             &:before {
+    //                 animation-delay: $WFTextFourthColumnDelayTime;
+    //             }
+    //         }
 
-            &:nth-child(5) {
+    //         &:nth-child(5) {
                 
-                .index {
+    //             .index {
                     
-                    span {
-                        animation-delay: $WFTextFifthColumnDelayTime;
-                    }
-                }
+    //                 span {
+    //                     animation-delay: $WFTextFifthColumnDelayTime;
+    //                 }
+    //             }
     
-                .content-title {
-                    animation-delay: $WFTextFifthColumnDelayTime;
-                }
+    //             .content-title {
+    //                 animation-delay: $WFTextFifthColumnDelayTime;
+    //             }
     
-                p {
-                    animation-delay: $WFTextFifthColumnDelayTime;
-                }
+    //             p {
+    //                 animation-delay: $WFTextFifthColumnDelayTime;
+    //             }
     
-                &:before {
-                    animation-delay: $WFTextFifthColumnDelayTime;
-                }
-            }
-        }
+    //             &:before {
+    //                 animation-delay: $WFTextFifthColumnDelayTime;
+    //             }
+    //         }
+    //     }
 
-        .questions {
+    //     .questions {
 
-            .questions-title,
-            p,
-            button {
-                animation: Right $WFQustionsAnimationTime $WFQustionsDelayTime both;
-            }
-        }
+    //         .questions-title,
+    //         p,
+    //         button {
+    //             animation: Right $WFQustionsAnimationTime $WFQustionsDelayTime both;
+    //         }
+    //     }
 
-        .back-layer {
-            animation: fadeIn $WFBackLayerAnimationTime $WFBackLayerDelayTime both;
-        }
+    //     .back-layer {
+    //         animation: fadeIn $WFBackLayerAnimationTime $WFBackLayerDelayTime both;
+    //     }
 
-        .front-layer {
+    //     .front-layer {
 
-            &:before,
-            &:after {
-                animation: fadeIn $WFFrontLayerAnimationTime $WFFrontLayerDelayTime both;
-            }
-        }
-    }
+    //         &:before,
+    //         &:after {
+    //             animation: fadeIn $WFFrontLayerAnimationTime $WFFrontLayerDelayTime both;
+    //         }
+    //     }
+    // }
 
-    &.previous,
-    &.previous-back {
-        animation: slideRight $time * 3 0s both;
-        animation-play-state: paused;
+    // &.previous,
+    // &.previous-back {
+    //     animation: slideRight $time * 3 0s both;
+    //     animation-play-state: paused;
 
-        .logo {
-            animation-play-state: paused;
-        }
+    //     .logo {
+    //         animation-play-state: paused;
+    //     }
 
-        .menu {
-            animation-play-state: paused;
-        }
+    //     .menu {
+    //         animation-play-state: paused;
+    //     }
 
-        .language {
+    //     .language {
 
-            a {
-                animation-play-state: paused;
-            }
-        }
+    //         a {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .sticker {
+    //     .sticker {
             
-            span {
-                animation-play-state: paused;
-            }
+    //         span {
+    //             animation-play-state: paused;
+    //         }
 
-            &:before {
-                animation-play-state: paused;
-            }
-        }
+    //         &:before {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .new-title {
+    //     .new-title {
             
-            .text-container {
+    //         .text-container {
     
-                &:before {
-                    animation-play-state: paused;
-                }
-            }
+    //             &:before {
+    //                 animation-play-state: paused;
+    //             }
+    //         }
     
-            span {
-                animation-play-state: paused;
-            }
-        }
+    //         span {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .lines {
+    //     .lines {
             
-            .line {
-                animation-play-state: paused;
-            }
-        }
+    //         .line {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .step {
+    //     .step {
 
-            .index {
+    //         .index {
 
-                span {
-                    animation-play-state: paused;
-                }
-            }
+    //             span {
+    //                 animation-play-state: paused;
+    //             }
+    //         }
 
-            .content-title {
-                animation-play-state: paused;
-            }
+    //         .content-title {
+    //             animation-play-state: paused;
+    //         }
 
-            p {
-                animation-play-state: paused;
-            }
+    //         p {
+    //             animation-play-state: paused;
+    //         }
 
-            &:before {
-                animation-play-state: paused;
-            }
-        }
+    //         &:before {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .questions {
+    //     .questions {
 
-            .questions-title,
-            p,
-            button {
-                animation-play-state: paused;
-            }
-        }
+    //         .questions-title,
+    //         p,
+    //         button {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .back-layer {
-            animation-play-state: paused;
-        }
+    //     .back-layer {
+    //         animation-play-state: paused;
+    //     }
 
-        .front-layer {
+    //     .front-layer {
 
-            &:before,
-            &:after {
-                animation-play-state: paused;
-            }
-        }
-    }
+    //         &:before,
+    //         &:after {
+    //             animation-play-state: paused;
+    //         }
+    //     }
+    // }
 
-    &.current-back {
-        animation: none;
-    }
+    // &.current-back {
+    //     animation: none;
+    // }
 
-    &.previous-back {
-        animation-play-state: running;
-    }
+    // &.previous-back {
+    //     animation-play-state: running;
+    // }
 }

@@ -173,188 +173,188 @@
         }
     }
 
-    &.current,
-    &.current-back,
-    &.previous,
-    &.previous-back {
-        animation: Down $time * 3 0s both;
+    // &.current,
+    // &.current-back,
+    // &.previous,
+    // &.previous-back {
+    //     animation: Down $time * 3 0s both;
 
-        .logo {
-            animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
-        }
+    //     .logo {
+    //         animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
+    //     }
 
-        .menu {
-            animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
-        }
+    //     .menu {
+    //         animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
+    //     }
 
-        .language {
+    //     .language {
 
-            a {
-                animation: Down $STBorderElAnimationTime $STBorderElDelayTime both;
-            }
-        }
+    //         a {
+    //             animation: Down $STBorderElAnimationTime $STBorderElDelayTime both;
+    //         }
+    //     }
 
-        .container {
+    //     .container {
 
-            .gray-block {
+    //         .gray-block {
 
-                &:before {
-                    animation: Right $MHGrayBlockAnimationTime $MHGrayBlockDelayTime both;
-                }
-            }
+    //             &:before {
+    //                 animation: Right $MHGrayBlockAnimationTime $MHGrayBlockDelayTime both;
+    //             }
+    //         }
 
-            .blue-block {
+    //         .blue-block {
 
-                &:before {
-                    animation: Left $MHBlueBlockAnimationTime $MHBlueBlockDelayTime both;
-                }
-            } 
-        }
+    //             &:before {
+    //                 animation: Left $MHBlueBlockAnimationTime $MHBlueBlockDelayTime both;
+    //             }
+    //         } 
+    //     }
 
-        .image-container {
+    //     .image-container {
 
-            img {
-                animation: Right $MHImageAnimationTime $MHImageDelayTime both;
-            }
+    //         img {
+    //             animation: Right $MHImageAnimationTime $MHImageDelayTime both;
+    //         }
 
-            &:before {
-                animation: Right $MHImageBeforeAnimationTime $MHImageBeforeDelayTime both;
-            }
-        }
+    //         &:before {
+    //             animation: Right $MHImageBeforeAnimationTime $MHImageBeforeDelayTime both;
+    //         }
+    //     }
 
-        .sticker {
+    //     .sticker {
 
-            span {
-                animation: fadeInLeft $MHTitleTextAnimationTime $MHTitleTextDelayTime both;           
-            }
+    //         span {
+    //             animation: fadeInLeft $MHTitleTextAnimationTime $MHTitleTextDelayTime both;           
+    //         }
 
-            &:before {
-                animation: fadeInLeft $MHTitleLineAnimationTime $MHTitleLineDelayTime both;
-            }
-        }
+    //         &:before {
+    //             animation: fadeInLeft $MHTitleLineAnimationTime $MHTitleLineDelayTime both;
+    //         }
+    //     }
 
-        .new-title {
+    //     .new-title {
 
-            .text-container {
+    //         .text-container {
 
-                span {
-                    animation: Up $MHTitleTextAnimationTime $MHTitleTextDelayTime both;
-                }
+    //             span {
+    //                 animation: Up $MHTitleTextAnimationTime $MHTitleTextDelayTime both;
+    //             }
 
-                &:before {
-                    animation: halfDown $MHTitleLineAnimationTime $MHTitleLineDelayTime both;
-                }
-            }
-        }
+    //             &:before {
+    //                 animation: halfDown $MHTitleLineAnimationTime $MHTitleLineDelayTime both;
+    //             }
+    //         }
+    //     }
 
-        article {
-            animation: fadeIn $MHArticleAnimationTime $MHArticleDelayTime both;
+    //     article {
+    //         animation: fadeIn $MHArticleAnimationTime $MHArticleDelayTime both;
 
-            p {
-                animation: fadeInUp $MHTextAnimationTime $MHTextDelayTime both;
-            }
-        }
+    //         p {
+    //             animation: fadeInUp $MHTextAnimationTime $MHTextDelayTime both;
+    //         }
+    //     }
 
-        .crossed-button {
-            animation: fadeInUp $MHTextAnimationTime $MHTextDelayTime both;
-        }
-    }
+    //     .crossed-button {
+    //         animation: fadeInUp $MHTextAnimationTime $MHTextDelayTime both;
+    //     }
+    // }
 
-    &.previous,
-    &.previous-back {
-        animation: slideUp $time * 3 0s both;
-        animation-play-state: paused;
+    // &.previous,
+    // &.previous-back {
+    //     animation: slideUp $time * 3 0s both;
+    //     animation-play-state: paused;
 
-        .logo {
-            animation-play-state: paused;
-        }
+    //     .logo {
+    //         animation-play-state: paused;
+    //     }
 
-        .menu {
-            animation-play-state: paused;
-        }
+    //     .menu {
+    //         animation-play-state: paused;
+    //     }
 
-        .language {
+    //     .language {
 
-            a {
-                animation-play-state: paused;
-            }
-        }
+    //         a {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .container {
+    //     .container {
 
-            .gray-block {
+    //         .gray-block {
 
-                &:before {
-                    animation-play-state: paused;
-                }
-            }
+    //             &:before {
+    //                 animation-play-state: paused;
+    //             }
+    //         }
 
-            .blue-block {
+    //         .blue-block {
 
-                &:before {
-                    animation-play-state: paused;
-                }
-            } 
-        }
+    //             &:before {
+    //                 animation-play-state: paused;
+    //             }
+    //         } 
+    //     }
 
-        .image-container {
+    //     .image-container {
 
-            img {
-                animation-play-state: paused;
-            }
+    //         img {
+    //             animation-play-state: paused;
+    //         }
 
-            &:before {
-                animation-play-state: paused;
-            }
-        }
+    //         &:before {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .sticker {
+    //     .sticker {
 
-            span {
-                animation-play-state: paused;        
-            }
+    //         span {
+    //             animation-play-state: paused;        
+    //         }
 
-            &:before {
-                animation-play-state: paused;
-            }
-        }
+    //         &:before {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .new-title {
+    //     .new-title {
 
-            .text-container {
+    //         .text-container {
 
-                span {
-                    animation-play-state: paused;
-                }
+    //             span {
+    //                 animation-play-state: paused;
+    //             }
 
-                &:before {
-                    animation-play-state: paused;
-                }
-            }
-        }
+    //             &:before {
+    //                 animation-play-state: paused;
+    //             }
+    //         }
+    //     }
 
-        article {
-            animation-play-state: paused;
+    //     article {
+    //         animation-play-state: paused;
 
-            p {
-                animation-play-state: paused;
-            }
-        }
+    //         p {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .crossed-button {
-            animation-play-state: paused;
-        }
-    }
+    //     .crossed-button {
+    //         animation-play-state: paused;
+    //     }
+    // }
 
-    &.current-back {
-        animation: none;
-    }
+    // &.current-back {
+    //     animation: none;
+    // }
 
-    &.previous-back {
-        animation-play-state: running;
-    }
+    // &.previous-back {
+    //     animation-play-state: running;
+    // }
 
-    &.first-slide {
-        animation: fadeIn $time * 3 0s both;
-    }
+    // &.first-slide {
+    //     animation: fadeIn $time * 3 0s both;
+    // }
 }

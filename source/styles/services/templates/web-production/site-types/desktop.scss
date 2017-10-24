@@ -251,192 +251,192 @@
         right: 0;
     }
 
-    &.current,
-    &.current-back,
-    &.previous,
-    &.previous-back {
-        animation: Up $time * 3 0s both;
+    // &.current,
+    // &.current-back,
+    // &.previous,
+    // &.previous-back {
+    //     animation: Up $time * 3 0s both;
 
-        .columns {
+    //     .columns {
 
-            .column {
+    //         .column {
 
-                &:before {
-                    animation: none;
-                }
-            }
-        }
+    //             &:before {
+    //                 animation: none;
+    //             }
+    //         }
+    //     }
 
-        .logo {
-            animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
-        }
+    //     .logo {
+    //         animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
+    //     }
 
-        .menu {
-            animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
-        }
+    //     .menu {
+    //         animation: fadeInDown $STBorderElAnimationTime $STBorderElDelayTime both;
+    //     }
 
-        .language {
+    //     .language {
 
-            a {
-                animation: Down $STBorderElAnimationTime $STBorderElDelayTime both;
-            }
-        }
+    //         a {
+    //             animation: Down $STBorderElAnimationTime $STBorderElDelayTime both;
+    //         }
+    //     }
 
-        .container {
+    //     .container {
 
-            .lines {
+    //         .lines {
 
-                .line {
-                    animation: heightIncreaseFull $STLineAnimationTime $STLineOneDelayTime both;
+    //             .line {
+    //                 animation: heightIncreaseFull $STLineAnimationTime $STLineOneDelayTime both;
 
-                    &--2 {
-                        animation-delay: $STLineTwoDelayTime;
-                    }
+    //                 &--2 {
+    //                     animation-delay: $STLineTwoDelayTime;
+    //                 }
 
-                    &--3 {
-                        animation-delay: $STLineThreeDelayTime;
-                    }
+    //                 &--3 {
+    //                     animation-delay: $STLineThreeDelayTime;
+    //                 }
 
-                    &--4 {
-                        animation-delay: $STLineFourDelayTime;
-                    }
-                }
-            }
+    //                 &--4 {
+    //                     animation-delay: $STLineFourDelayTime;
+    //                 }
+    //             }
+    //         }
 
-            .site-types-title > span,
-            .content-title,
-            p,
-            .crossed-button {
-                animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both;
-            }
+    //         .site-types-title > span,
+    //         .content-title,
+    //         p,
+    //         .crossed-button {
+    //             animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both;
+    //         }
 
-            .index {
+    //         .index {
 
-                span {
-                    animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both;
-                }
-            }
+    //             span {
+    //                 animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both;
+    //             }
+    //         }
 
-            .types {
+    //         .types {
 
-                &__item {
+    //             &__item {
     
-                    &:nth-child(1),
-                    &:nth-child(3) {
+    //                 &:nth-child(1),
+    //                 &:nth-child(3) {
 
-                        .index {
+    //                     .index {
 
-                            span {
-                                animation-delay: $STTextSecondColumnFourDelayTime;
-                            }
-                        }
+    //                         span {
+    //                             animation-delay: $STTextSecondColumnFourDelayTime;
+    //                         }
+    //                     }
 
-                        .content-title {
-                            animation-delay: $STTextSecondColumnDelayTime;
-                        }
+    //                     .content-title {
+    //                         animation-delay: $STTextSecondColumnDelayTime;
+    //                     }
 
-                        p {
-                            animation-delay: $STTextSecondColumnTwoDelayTime;
-                        }
+    //                     p {
+    //                         animation-delay: $STTextSecondColumnTwoDelayTime;
+    //                     }
 
-                        .crossed-button {
-                            animation-delay: $STTextSecondColumnThreeDelayTime;
-                        }
-                    }
+    //                     .crossed-button {
+    //                         animation-delay: $STTextSecondColumnThreeDelayTime;
+    //                     }
+    //                 }
 
-                    &:nth-child(2),
-                    &:nth-child(4) {
+    //                 &:nth-child(2),
+    //                 &:nth-child(4) {
 
-                        .index {
+    //                     .index {
                             
-                            span {
-                                animation-delay: $STTextThirdColumnFourDelayTime;
-                            }
-                        }
+    //                         span {
+    //                             animation-delay: $STTextThirdColumnFourDelayTime;
+    //                         }
+    //                     }
 
-                        .content-title {
-                            animation-delay: $STTextThirdColumnDelayTime;
-                        }
+    //                     .content-title {
+    //                         animation-delay: $STTextThirdColumnDelayTime;
+    //                     }
 
-                        p {
-                            animation-delay: $STTextThirdColumnTwoDelayTime;
-                        }
+    //                     p {
+    //                         animation-delay: $STTextThirdColumnTwoDelayTime;
+    //                     }
 
-                        .crossed-button {
-                            animation-delay: $STTextThirdColumnThreeDelayTime;
-                        }
-                    }
-                }
-            }
-        }
+    //                     .crossed-button {
+    //                         animation-delay: $STTextThirdColumnThreeDelayTime;
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
 
-        &:before {
-            animation: Up;
-        }
+    //     &:before {
+    //         animation: Up;
+    //     }
 
-        &:after {
-            animation: Down;
-        }
-    }
+    //     &:after {
+    //         animation: Down;
+    //     }
+    // }
 
-    &.previous,
-    &.previous-back {
-        animation: slideDown $time * 3 0s both;
-        animation-play-state: paused;
+    // &.previous,
+    // &.previous-back {
+    //     animation: slideDown $time * 3 0s both;
+    //     animation-play-state: paused;
 
-        .logo {
-            animation-play-state: paused;
-        }
+    //     .logo {
+    //         animation-play-state: paused;
+    //     }
 
-        .menu {
-            animation-play-state: paused;
-        }
+    //     .menu {
+    //         animation-play-state: paused;
+    //     }
 
-        .language {
+    //     .language {
 
-            a {
-                animation-play-state: paused;
-            }
-        }
+    //         a {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .container {
+    //     .container {
 
-            .lines {
+    //         .lines {
 
-                .line {
-                    animation-play-state: paused;
-                }
-            }
+    //             .line {
+    //                 animation-play-state: paused;
+    //             }
+    //         }
 
-            .site-types-title > span,
-            .content-title,
-            p,
-            .crossed-button {
-                animation-play-state: paused;
-            }
+    //         .site-types-title > span,
+    //         .content-title,
+    //         p,
+    //         .crossed-button {
+    //             animation-play-state: paused;
+    //         }
 
-            .index {
+    //         .index {
 
-                span {
-                    animation-play-state: paused;
-                }
-            }
-        }
+    //             span {
+    //                 animation-play-state: paused;
+    //             }
+    //         }
+    //     }
 
-        &:before {
-            animation-play-state: paused;
-        }
+    //     &:before {
+    //         animation-play-state: paused;
+    //     }
 
-        &:after {
-            animation-play-state: paused;
-        }
-    }
+    //     &:after {
+    //         animation-play-state: paused;
+    //     }
+    // }
 
-    &.current-back {
-        animation: none;
-    }
+    // &.current-back {
+    //     animation: none;
+    // }
 
-    &.previous-back {
-        animation-play-state: running;
-    }
+    // &.previous-back {
+    //     animation-play-state: running;
+    // }
 }

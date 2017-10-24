@@ -1,5 +1,6 @@
 & {  
 
+    position: relative;
     width: 100vw;
     height: 100vh;
     background: $white;
@@ -179,7 +180,6 @@
         z-index: 3;
         margin-left: auto;
         width: 50%;
-        overflow: hidden;
 
         .questions-title {
             display: block;
@@ -199,8 +199,9 @@
             line-height: 1.4;
         }
 
-        button {
+        .open-form {
             display: block;
+            position: relative;
             width: px(332);
             height: px(90);
             background: $blue;
@@ -209,11 +210,33 @@
             font-family: $Roboto-Bold;
             font-size: px(28);
             text-transform: uppercase;
-            transition: color $time, background $time;
+
+            span {
+                position: relative;
+                letter-spacing: 1px;
+                z-index: 2;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: px(24);
+                left: px(-24);
+                width: 100%;
+                height: 100%;
+                background: $darkGray;
+                content: '';
+                opacity: 0;
+                transition: top $time, left $time, opacity $time;
+            }
 
             &:hover {
-                background: transparent;
-                color: $blue;
+
+                &:before {
+                    top: px(10);
+                    left: px(-10);
+                    opacity: 1;
+                }
             }
         }
     }
@@ -244,183 +267,183 @@
         }
     }
 
-    &.screen-block {
+    // &.screen-block {
 
-        &.current {
-            display: block;
-        }
-    }
+    //     &.current {
+    //         display: block;
+    //     }
+    // }
 
-    &.current,
-    &.current-back,
-    &.previous,
-    &.previous-back {
-        animation: Up $time * 3 0s both;
+    // &.current,
+    // &.current-back,
+    // &.previous,
+    // &.previous-back {
+    //     animation: Up $time * 3 0s both;
 
-        .language {
+    //     .language {
 
-            a {
-                animation: Down $STBorderElAnimationTime $STBorderElDelayTime both;
-            }
-        }
+    //         a {
+    //             animation: Down $STBorderElAnimationTime $STBorderElDelayTime both;
+    //         }
+    //     }
 
-        .lines {
+    //     .lines {
 
-            .line {
+    //         .line {
 
-                &--1 {
-                    animation: Down $MBLine1AnimationTime $MBLine1DelayTime both;
-                }
+    //             &--1 {
+    //                 animation: Down $MBLine1AnimationTime $MBLine1DelayTime both;
+    //             }
 
-                &--2 {
-                    animation: Down $MBLine2AnimationTime $MBLine2DelayTime both;
-                }
+    //             &--2 {
+    //                 animation: Down $MBLine2AnimationTime $MBLine2DelayTime both;
+    //             }
 
-                &--3 {
-                    animation: Down $MBLine3AnimationTime $MBLine3DelayTime both;
-                }
-            }
-        }
+    //             &--3 {
+    //                 animation: Down $MBLine3AnimationTime $MBLine3DelayTime both;
+    //             }
+    //         }
+    //     }
 
-        .marketing-brand-title {
+    //     .marketing-brand-title {
 
-            span {
-                animation: Right $MBColumn1AnimationTime $MBColumn1DelayTime both;
-            }
-        }
+    //         span {
+    //             animation: Right $MBColumn1AnimationTime $MBColumn1DelayTime both;
+    //         }
+    //     }
 
-        .sticker {
+    //     .sticker {
 
-            span {
-                animation: fadeInRight $MBStickerTextAnimationTime $MBStickerTextDelayTime both;
-            }
+    //         span {
+    //             animation: fadeInRight $MBStickerTextAnimationTime $MBStickerTextDelayTime both;
+    //         }
 
-            &:before {
-                animation: fadeInRight $MBStickerTextAnimationTime $MBStickerTextDelayTime both;
-            }
-        }
+    //         &:before {
+    //             animation: fadeInRight $MBStickerTextAnimationTime $MBStickerTextDelayTime both;
+    //         }
+    //     }
 
-        .step {
+    //     .step {
 
-            .index {
+    //         .index {
 
-                span {
-                    animation: Up $MBColumn2AnimationTime $MBColumn2DelayTime both;
-                }
-            }
+    //             span {
+    //                 animation: Up $MBColumn2AnimationTime $MBColumn2DelayTime both;
+    //             }
+    //         }
 
-            .content-title,
-            p {
-                animation: Right $MBColumn2AnimationTime $MBColumn2DelayTime both;
-            }
+    //         .content-title,
+    //         p {
+    //             animation: Right $MBColumn2AnimationTime $MBColumn2DelayTime both;
+    //         }
 
-            &:nth-of-type(2),
-            &:nth-of-type(4) {
+    //         &:nth-of-type(2),
+    //         &:nth-of-type(4) {
 
-                .content-title,
-                p {
-                    animation: Right $MBColumn3AnimationTime $MBColumn3DelayTime both;
-                }   
-            }
-        }
+    //             .content-title,
+    //             p {
+    //                 animation: Right $MBColumn3AnimationTime $MBColumn3DelayTime both;
+    //             }   
+    //         }
+    //     }
 
-        .questions {
+    //     .questions {
 
-            .questions-title,
-            p,
-            button {
-                animation: Right $MBColumn3AnimationTime $MBColumn3DelayTime both;
-            }
-        }
-    }
+    //         .questions-title,
+    //         p,
+    //         button {
+    //             animation: Right $MBColumn3AnimationTime $MBColumn3DelayTime both;
+    //         }
+    //     }
+    // }
 
-    &.previous,
-    &.previous-back {
-        animation: slideDown $time * 3 0s both;
-        animation-play-state: paused;
+    // &.previous,
+    // &.previous-back {
+    //     animation: slideDown $time * 3 0s both;
+    //     animation-play-state: paused;
 
-        .language {
+    //     .language {
 
-            a {
-                animation-play-state: paused;
-            }
-        }
+    //         a {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .lines {
+    //     .lines {
 
-            .line {
+    //         .line {
 
-                &--1 {
-                    animation-play-state: paused;
-                }
+    //             &--1 {
+    //                 animation-play-state: paused;
+    //             }
 
-                &--2 {
-                    animation-play-state: paused;
-                }
+    //             &--2 {
+    //                 animation-play-state: paused;
+    //             }
 
-                &--3 {
-                    animation-play-state: paused;
-                }
-            }
-        }
+    //             &--3 {
+    //                 animation-play-state: paused;
+    //             }
+    //         }
+    //     }
 
-        .marketing-brand-title {
+    //     .marketing-brand-title {
 
-            span {
-                animation-play-state: paused;
-            }
-        }
+    //         span {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .sticker {
+    //     .sticker {
 
-            span {
-                animation-play-state: paused;
-            }
+    //         span {
+    //             animation-play-state: paused;
+    //         }
 
-            &:before {
-                animation-play-state: paused;
-            }
-        }
+    //         &:before {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .step {
+    //     .step {
 
-            .index {
+    //         .index {
 
-                span {
-                    animation-play-state: paused;
-                }
-            }
+    //             span {
+    //                 animation-play-state: paused;
+    //             }
+    //         }
 
-            .content-title,
-            p {
-                animation-play-state: paused;
-            }
+    //         .content-title,
+    //         p {
+    //             animation-play-state: paused;
+    //         }
 
-            &:nth-of-type(2),
-            &:nth-of-type(4) {
+    //         &:nth-of-type(2),
+    //         &:nth-of-type(4) {
 
-                .content-title,
-                p {
-                    animation-play-state: paused;
-                }   
-            }
-        }
+    //             .content-title,
+    //             p {
+    //                 animation-play-state: paused;
+    //             }   
+    //         }
+    //     }
 
-        .questions {
+    //     .questions {
 
-            .questions-title,
-            p,
-            button {
-                animation-play-state: paused;
-            }
-        }
-    }
+    //         .questions-title,
+    //         p,
+    //         button {
+    //             animation-play-state: paused;
+    //         }
+    //     }
+    // }
 
-    &.current-back {
-        animation: none;
-    }
+    // &.current-back {
+    //     animation: none;
+    // }
 
-    &.previous-back {
-        animation-play-state: running;
-    }
+    // &.previous-back {
+    //     animation-play-state: running;
+    // }
 }

@@ -1,5 +1,6 @@
 & {  
 
+    position: relative;
     background: $white;
 
     .language {
@@ -145,262 +146,262 @@
         }
     }
 
-    &.current,
-    &.current-back,
-    &.previous,
-    &.previous-back {
-        animation: Down $time * 3 0s both;
+    // &.current,
+    // &.current-back,
+    // &.previous,
+    // &.previous-back {
+    //     animation: Down $time * 3 0s both;
 
-        .logo {
-            animation: fadeInDown $WCBorderElAnimationTime $WCBorderElDelayTime both;
-        }
+    //     .logo {
+    //         animation: fadeInDown $WCBorderElAnimationTime $WCBorderElDelayTime both;
+    //     }
 
-        .menu {
-            animation: fadeInDown $WCBorderElAnimationTime $WCBorderElDelayTime both;
-        }
+    //     .menu {
+    //         animation: fadeInDown $WCBorderElAnimationTime $WCBorderElDelayTime both;
+    //     }
 
-        .language {
+    //     .language {
 
-            a {
-                animation: Down $WCBorderElAnimationTime $WCBorderElDelayTime both;
-            }
-        }
+    //         a {
+    //             animation: Down $WCBorderElAnimationTime $WCBorderElDelayTime both;
+    //         }
+    //     }
 
-        .clock-bg {
+    //     .clock-bg {
 
-            span {
+    //         span {
                 
-                &:before {
-                    animation: Right $WCClockAnimationTime both;
-                }
+    //             &:before {
+    //                 animation: Right $WCClockAnimationTime both;
+    //             }
     
-                &:nth-child(1) {
+    //             &:nth-child(1) {
     
-                    &:before {
-                        animation-delay: $WCClockFirstDelayTime;
-                    }
-                }
+    //                 &:before {
+    //                     animation-delay: $WCClockFirstDelayTime;
+    //                 }
+    //             }
     
-                &:nth-child(2) {
+    //             &:nth-child(2) {
     
-                    &:before {
-                        animation-delay: $WCClockSecondDelayTime;
-                    }
-                }
+    //                 &:before {
+    //                     animation-delay: $WCClockSecondDelayTime;
+    //                 }
+    //             }
     
-                &:nth-child(3) {
+    //             &:nth-child(3) {
     
-                    &:before {
-                        animation-delay: $WCClockThirdDelayTime;
-                    }
-                }
+    //                 &:before {
+    //                     animation-delay: $WCClockThirdDelayTime;
+    //                 }
+    //             }
     
-                &:nth-child(4) {
+    //             &:nth-child(4) {
     
-                    &:before {
-                        animation-delay: $WCClockFourthDelayTime;
-                    }
-                }
+    //                 &:before {
+    //                     animation-delay: $WCClockFourthDelayTime;
+    //                 }
+    //             }
     
-                &:nth-child(5) {
+    //             &:nth-child(5) {
     
-                    &:before {
-                        animation-delay: $WCClockFifthDelayTime;
-                    }
-                }
-            }
-        }
+    //                 &:before {
+    //                     animation-delay: $WCClockFifthDelayTime;
+    //                 }
+    //             }
+    //         }
+    //     }
 
-        .new-title {
+    //     .new-title {
             
-            .text-container {
+    //         .text-container {
     
-                &:before {
-                    animation: halfDown $WCTitleLineAnimationTime linear $WCTitleLineDelayTime both;
-                }
-            }
+    //             &:before {
+    //                 animation: halfDown $WCTitleLineAnimationTime linear $WCTitleLineDelayTime both;
+    //             }
+    //         }
     
-            span {
-                animation: Up $WCTitleTextAnimationTime $WCTitleTextDelayTime both;
-            }
-        }
+    //         span {
+    //             animation: Up $WCTitleTextAnimationTime $WCTitleTextDelayTime both;
+    //         }
+    //     }
 
-        article {
+    //     article {
 
-            p {
-                animation: fadeInUp $WCTextAnimationTime $WCTextDelayTime both;
-            }
-        }
+    //         p {
+    //             animation: fadeInUp $WCTextAnimationTime $WCTextDelayTime both;
+    //         }
+    //     }
 
-        .sticker {
+    //     .sticker {
 
-            span {
-                animation: FadeInRightHalf $WCStickerTextAnimationTime $WCStickerTextDelayTime both;
-            }
+    //         span {
+    //             animation: FadeInRightHalf $WCStickerTextAnimationTime $WCStickerTextDelayTime both;
+    //         }
 
-            &:before {
-                animation: widthIncreaseStickerLine $WCStickerLineAnimationTime $WCStickerLineDelayTime both;
-            }
-        }
+    //         &:before {
+    //             animation: widthIncreaseStickerLine $WCStickerLineAnimationTime $WCStickerLineDelayTime both;
+    //         }
+    //     }
 
-        .images {
+    //     .images {
     
-            .image-container {
+    //         .image-container {
     
-                img {
-                    animation: Right $WCImageAnimationTime $WCImageDelayTime both;
-                }
+    //             img {
+    //                 animation: Right $WCImageAnimationTime $WCImageDelayTime both;
+    //             }
     
-                &:before {
-                    animation: Right $WCImageBeforeAnimationTime $WCImageBeforeDelayTime both;
-                }
+    //             &:before {
+    //                 animation: Right $WCImageBeforeAnimationTime $WCImageBeforeDelayTime both;
+    //             }
     
-                &--1 {
+    //             &--1 {
     
-                    &:after {
-                        animation: fadeIn $WCImageAfterAnimationTime $WCImageAfterDelayTime both;
-                    }
-                }
-            }
-        }
+    //                 &:after {
+    //                     animation: fadeIn $WCImageAfterAnimationTime $WCImageAfterDelayTime both;
+    //                 }
+    //             }
+    //         }
+    //     }
 
-        .crossed-button {
-            animation: fadeInRight $WCCrossedBtnAnimationTime $WCCrossedBtnDelayTime both;
-        }
-    }
+    //     .crossed-button {
+    //         animation: fadeInRight $WCCrossedBtnAnimationTime $WCCrossedBtnDelayTime both;
+    //     }
+    // }
 
-    &.previous,
-    &.previous-back {
-        animation: slideUp $time * 3 0s both;
-        animation-play-state: paused;
+    // &.previous,
+    // &.previous-back {
+    //     animation: slideUp $time * 3 0s both;
+    //     animation-play-state: paused;
 
-        .logo {
-            animation-play-state: paused;
-        }
+    //     .logo {
+    //         animation-play-state: paused;
+    //     }
 
-        .menu {
-            animation-play-state: paused;
-        }
+    //     .menu {
+    //         animation-play-state: paused;
+    //     }
 
-        .language {
+    //     .language {
 
-            a {
-                animation-play-state: paused;
-            }
-        }
+    //         a {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .clock-bg {
+    //     .clock-bg {
 
-            span {
+    //         span {
                 
-                &:before {
-                    animation-play-state: paused;
-                }
+    //             &:before {
+    //                 animation-play-state: paused;
+    //             }
     
-                &:nth-child(1) {
+    //             &:nth-child(1) {
     
-                    &:before {
-                        animation-delay: $WCClockFirstDelayTime;
-                    }
-                }
+    //                 &:before {
+    //                     animation-delay: $WCClockFirstDelayTime;
+    //                 }
+    //             }
     
-                &:nth-child(2) {
+    //             &:nth-child(2) {
     
-                    &:before {
-                        animation-delay: $WCClockSecondDelayTime;
-                    }
-                }
+    //                 &:before {
+    //                     animation-delay: $WCClockSecondDelayTime;
+    //                 }
+    //             }
     
-                &:nth-child(3) {
+    //             &:nth-child(3) {
     
-                    &:before {
-                        animation-delay: $WCClockThirdDelayTime;
-                    }
-                }
+    //                 &:before {
+    //                     animation-delay: $WCClockThirdDelayTime;
+    //                 }
+    //             }
     
-                &:nth-child(4) {
+    //             &:nth-child(4) {
     
-                    &:before {
-                        animation-delay: $WCClockFourthDelayTime;
-                    }
-                }
+    //                 &:before {
+    //                     animation-delay: $WCClockFourthDelayTime;
+    //                 }
+    //             }
     
-                &:nth-child(5) {
+    //             &:nth-child(5) {
     
-                    &:before {
-                        animation-delay: $WCClockFifthDelayTime;
-                    }
-                }
-            }
-        }
+    //                 &:before {
+    //                     animation-delay: $WCClockFifthDelayTime;
+    //                 }
+    //             }
+    //         }
+    //     }
 
-        .new-title {
+    //     .new-title {
             
-            .text-container {
+    //         .text-container {
     
-                &:before {
-                    animation-play-state: paused;
-                }
-            }
+    //             &:before {
+    //                 animation-play-state: paused;
+    //             }
+    //         }
     
-            span {
-                animation-play-state: paused;
-            }
-        }
+    //         span {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        article {
+    //     article {
 
-            p {
-                animation-play-state: paused;
-            }
-        }
+    //         p {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .sticker {
+    //     .sticker {
 
-            span {
-                animation-play-state: paused;
-            }
+    //         span {
+    //             animation-play-state: paused;
+    //         }
 
-            &:before {
-                animation-play-state: paused;
-            }
-        }
+    //         &:before {
+    //             animation-play-state: paused;
+    //         }
+    //     }
 
-        .images {
+    //     .images {
     
-            .image-container {
+    //         .image-container {
     
-                img {
-                    animation-play-state: paused;
-                }
+    //             img {
+    //                 animation-play-state: paused;
+    //             }
     
-                &:before {
-                    animation-play-state: paused;
-                }
+    //             &:before {
+    //                 animation-play-state: paused;
+    //             }
     
-                &--1 {
+    //             &--1 {
     
-                    &:after {
-                        animation-play-state: paused;
-                    }
-                }
-            }
-        }
+    //                 &:after {
+    //                     animation-play-state: paused;
+    //                 }
+    //             }
+    //         }
+    //     }
 
-        .crossed-button {
-            animation-play-state: paused;
-        }
-    }
+    //     .crossed-button {
+    //         animation-play-state: paused;
+    //     }
+    // }
 
-    &.current-back {
-        animation: none;
-    }
+    // &.current-back {
+    //     animation: none;
+    // }
 
-    &.previous-back {
-        animation-play-state: running;
-    }
+    // &.previous-back {
+    //     animation-play-state: running;
+    // }
 
-    &.first-slide {
-        animation: fadeIn $time * 3 0s both;
-    }
+    // &.first-slide {
+    //     animation: fadeIn $time * 3 0s both;
+    // }
 }

@@ -8,6 +8,20 @@
 
 //=include ./modules/web-production/web-production-open-form.js
 
-//=include ./../components/slides-changing-services.js
+
+
+
+
+/* NEW */
+
+//=include ./modules/scroll-menu.js
+//=include ./modules/make-top-panel-dark.js
+
+
+
+/*  USELESS
 
 //=include modules/open-long-read.js
+//=include ./../components/slides-changing-services.js
+
+*/
