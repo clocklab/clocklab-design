@@ -6,9 +6,9 @@ var gulp = require('gulp'),
     });
 
 var mobile = '-mobile'
-// var mobile = ''
+var mobile = ''
 
-var page = `services/services-second-level${mobile}`
+var page = `services/seo/seo-audit${mobile}`
 
 
 var sass = require('gulp-ruby-sass');

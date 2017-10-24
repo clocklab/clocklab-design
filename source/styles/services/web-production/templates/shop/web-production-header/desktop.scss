@@ -200,21 +200,13 @@
         }
     }
 
-    .new-title {
-        margin-top: px(80);
-        margin-bottom: px(220);
-        font-family: $Raleway-Regular;
-        
-        .text-container {
-            display: inline-block;
-            margin-bottom: px(10);
-            font-family: $Raleway-ExtraBold;
-
-            span {
-                font-size: px(96);
-                line-height: px(104);
-            }
-        }
+    .new-header {
+        margin: px(80) 0;
+        color: $black;
+        font-family: $Raleway-ExtraBold;
+        font-size: px(96);
+        line-height: px(104);
+        text-transform: uppercase;
     }
 
     article {

@@ -110,14 +110,13 @@
         }
     }
 
-    .new-title {
-        width: px(800);
-
-        .text-container {
-            margin-top: px(20);
-            display: inline-block;
-            font-family: $Raleway-Regular;
-        }
+    .new-header {
+        margin-top: px(20);
+        color: $black;
+        font-family: $Raleway-ExtraBold;
+        font-size: px(120);
+        line-height: px(125);
+        text-transform: uppercase;
     }
 
     .container {
@@ -438,6 +437,10 @@
     }
 
     &--strategy {
+
+        .new-header {
+            width: 33%;
+        }
 
         .container {
 

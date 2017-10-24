@@ -123,12 +123,11 @@
                     font-size: px(48);
                     font-family: $Roboto-Regular;
                 }
-                .word {
-                    width: fit-content;
-                    span {
-                        font-size: px(106);
-                        color: $white;
-                    }
+                .new-header {
+                    margin-bottom: px(30);
+                    width: 165%;
+                    color: $white;
+                    font-size: px(106);
                 }
             }
         }
