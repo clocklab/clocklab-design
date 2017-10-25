@@ -31,42 +31,43 @@ html {
                 white-space: nowrap;
                 text-overflow: ellipsis;
             }
-            .screen-block {
-                @media only screen and (min-width: 668px) and (max-width: 768px) { min-height: 1024px; }
-                @media only screen and (min-width: 769px) and (max-width: 1024px) { min-height: 768px; }
-                @media only screen and (min-width: 1025px) and (max-width: 1366px) { min-height: 650px; }
-                @media only screen and (min-width: 1367px) and (max-width: 1680px) { min-height: 800px; }
-                @media only screen and (min-width: 1681px) and (max-width: 1920px) { min-height: 960px; }
-                @media only screen and (min-width: 1921px) { min-height: 900px; }
-                position: absolute;
-                display: table;
-                height: 100vh;
-                width: 100%;
-                z-index: -1;
-                left: 101%;
-                top: 0;
-                &.previous-back { 
-                    z-index: 3;
-                    left: 0;
-                }
-                &.current,
-                &.current-back { 
-                    z-index: 2;
-                    left: 0;
-                }              
-                &.previous { 
-                    z-index: 1;
-                    left: 0;
-                }
-                @media only screen and (max-width: 1024px) {
-                    position: relative;
-                    z-index: 1;
-                    &.current,
-                    &.previous {
-                        z-index: 1;
-                    }
-                }
-            }
+        }
+    }
+}
+
+.screen-block {
+    @media only screen and (min-width: 668px) and (max-width: 768px) { min-height: 1024px; }
+    @media only screen and (min-width: 769px) and (max-width: 1024px) { min-height: 768px; }
+    @media only screen and (min-width: 1025px) and (max-width: 1366px) { min-height: 650px; }
+    @media only screen and (min-width: 1367px) and (max-width: 1680px) { min-height: 800px; }
+    @media only screen and (min-width: 1681px) and (max-width: 1920px) { min-height: 960px; }
+    @media only screen and (min-width: 1921px) { min-height: 900px; }
+    position: absolute;
+    display: table;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    left: 101%;
+    top: 0;
+    &.previous-back { 
+        z-index: 3;
+        left: 0;
+    }
+    &.current,
+    &.current-back { 
+        z-index: 2;
+        left: 0;
+    }              
+    &.previous { 
+        z-index: 1;
+        left: 0;
+    }
+    @media only screen and (max-width: 1024px) {
+        position: relative;
+        z-index: 1;
+        &.current,
+        &.previous {
+            z-index: 1;
         }
     }
 }

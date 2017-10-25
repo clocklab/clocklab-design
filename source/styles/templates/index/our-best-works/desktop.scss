@@ -1,0 +1,507 @@
+& {  
+
+    $paddingLeft: px(740);
+    $infoWidth: px(600);
+    $marginLeft: px(440);
+    $portfolioWidth: px(1440);
+    
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: $lightBlack;
+    overflow: hidden;
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+
+    .front-layer,
+    .back-layer {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .front-layer {
+        position: relative;
+        z-index: 2;
+        background: $lightBlack;
+        overflow: hidden;
+        transform-origin: 0 50%;
+        transform-style: preserve-3d;
+        transition: transform $time * 2;
+
+        &:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .4);
+            content: '';
+            opacity: 0;
+            transition: opacity $time;
+        }
+    }
+
+    .back-layer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        padding-right: px(140);
+        width: 100%;
+        background: $black;
+    }
+
+    .big-background-letter {
+        right: px(100);
+        top: -100%;
+
+        span {
+            font-size: px(3800);
+
+            &:before {
+
+                content: 'O';
+            }
+        }
+    }
+
+    .lines {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        .line {
+            position: absolute;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: $gray;
+            opacity: .2;
+    
+            &--1 {
+                left: $paddingLeft;
+            }
+    
+            &--2 {
+                left: $paddingLeft + $infoWidth;
+            }
+    
+            &--3 {
+                left: $paddingLeft + $infoWidth + ($marginLeft + $portfolioWidth / 2) / 2;
+            }
+    
+            &--4 {
+                left: $paddingLeft + $infoWidth + $marginLeft + $portfolioWidth / 2;
+            }
+    
+            &--5 {
+                left: $paddingLeft + $infoWidth + $marginLeft * 3 / 2 + $portfolioWidth * 3 / 4;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        padding-left: $paddingLeft;
+        width: 100%;
+        height: 100%;
+    }
+
+    .info {
+        width: $infoWidth;
+    }
+
+    .sticker {
+        
+        span {
+            color: $white;
+        }
+
+        &:before {
+            background: $white;
+        }
+    }
+
+    .new-title {
+        margin-top: px(50);
+        
+        .text-container {
+            
+            span {
+                color: $white;
+                font-family: $Raleway-ExtraBold;
+                font-size: px(144);
+                line-height: 1.2;
+                text-transform: initial;
+            }
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    .special-button {
+        display: block;
+        position: relative;
+        margin-top: px(140);
+        width: 100%;
+        height: px(110);
+        color: $white;
+        font-family: $Roboto-Black;
+        font-size: px(28);
+        line-height: px(110);
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+
+        &-text {
+            position: relative;
+            z-index: 2;
+        }
+
+        &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 15%;
+            background: $blue;
+            content: '';
+            transition: height $timeHalf ease-out;
+        }
+
+        &:hover {
+
+            &:after {
+                height: 100%;
+            }
+        }
+    }
+    
+    .portfolio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        margin-left: $marginLeft;
+        width: $portfolioWidth;
+        height: 100%;
+
+        &__item {
+            position: relative;
+            width: $portfolioWidth / 2;   
+            height: $portfolioWidth / 2;
+
+            &:hover {
+
+                .project-name {
+                    opacity: 0;
+                    transition-delay: 0s;
+                }
+
+                .back {
+
+                    &:before {
+                        transform: none;
+                        transition-delay: 0s;
+                    }
+                }
+
+                .project-logo,
+                .project-description,
+                .go-to-project {
+                    opacity: 1;
+                    transform: none;
+                    transition-delay: $time;
+                }
+            }
+
+            &--audi {
+                left: px(-120); 
+                top: px(-120);
+
+                .project-name {
+                    top: 0;
+                    left: px(-80);
+                }
+            }
+
+            &--dela {
+
+                .project-name {
+                    top: 0;
+                    right: px(-260);
+                }
+            }
+
+            &--euro-club {
+                
+                .project-name {
+                    bottom: 0;
+                    left: px(-330);
+                }
+            }
+
+            &--your-project {
+                left: px(120); 
+                top: px(120);
+                cursor: pointer;
+
+                .front {
+                    // position: relative;
+                }
+
+                .project-name {
+                    bottom: 0;
+                    right: px(-440);
+                }
+
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: darken($gray, 20%);
+                    content: '';
+                }
+
+                &:hover {
+
+                    .project-name {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    .front,
+    .back {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .back {
+        padding: px(60);
+        overflow: hidden;
+
+        &:before {
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            z-index: 2;
+            width: 101%;
+            height: 101%;
+            background: rgba(0, 0, 0, .9);
+            content: '';
+            transform: translateY(101%);
+            transition: transform $time $time * 2;
+        }
+    }
+
+    .project-name {
+        display: block;
+        position: absolute;
+        z-index: 3;
+        padding: px(30) px(80);
+        background: $lightBlack;
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: px(96);
+        transition: opacity $timeTick $time * 2;
+    }
+
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        img {
+            display: block;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $gray;
+            content: '';
+        }
+    }
+
+    .project-logo,
+    .project-description,
+    .go-to-project {
+        position: relative;
+        z-index: 2;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: opacity $time * 2 0s, transform $time * 2 0s;
+    }
+
+    .project-logo {
+        width: px(200);
+        height: px(100);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .project-description {
+        margin-top: px(40);
+        color: $lightGray;
+        font-family: $Roboto-Regular;
+        font-size: px(28);
+        line-height: 1.4;
+        transform: translateY(20%);
+    }
+
+    .go-to-project {
+        display: block;
+        margin-top: px(40);
+        color: $blue;
+        font-family: $Roboto-Black;
+        font-size: px(28);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .plus {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: px(140);
+        height: px(30);
+        transform: translate3d(-50%, -50%, 0);
+
+        &-row {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: lighten($darkGray, 5%);
+
+            &--2 {
+                transform-origin: 50% 50%;
+                transform: rotate(90deg);
+            }
+        }
+    }    
+
+    .bottom-button {
+
+        span {
+
+            &:before {
+                content: 'К портфолио';
+            }
+        }
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(15deg) scaleX(.85);
+    
+            &:after {
+                z-index: 9999;
+                opacity: 1;
+            }
+        }
+    }
+
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Down $time * 3 0s both;
+
+        .big-background-letter {
+            animation: fadeIn $time * 3 $time * 3 both;
+        }
+
+        .lines {
+            animation: fadeIn $time * 3 $time * 3 both;
+        }
+
+        .info {
+            animation: fadeIn $time * 3 $time * 6 both;
+        }
+
+        .portfolio {
+
+            &__item {
+                animation: fadeIn $time * 3 $time * 8 both;     
+            }
+        }
+
+        .bottom-button {
+            animation: fadeIn $time * 3 $time * 3 both; 
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: toUp $time * 3 $topPanelAnimationTime both;
+        animation-play-state: paused;
+
+        .big-background-letter {
+            animation-play-state: paused;
+        }
+
+        .lines {
+            animation-play-state: paused;
+        }
+
+        .info {
+            animation-play-state: paused;
+        }
+
+        .portfolio {
+
+            &__item {
+                animation-play-state: paused;
+            }
+        }
+
+        .bottom-button {
+            animation-play-state: paused;
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
+    }
+}

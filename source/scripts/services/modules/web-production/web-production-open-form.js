@@ -46,7 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.removeEventListener('scroll', checkFormPos)
     }
 
-    openBtn.addEventListener('click', () => {
+    openBtn.addEventListener('click', (event) => {
+        event && event.preventDefault()
+        
         const currentTopPos = document.documentElement.scrollTop || document.body.scrollTop
         const wantedTopPos = frontLayer.getBoundingClientRect().top
 
