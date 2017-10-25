@@ -26,14 +26,11 @@
         top: 0;
     }
 
-    .new-title {
+    .new-header {
         margin-top: px(50);
         margin-bottom: px(50);
-        
-        span {
-            font-size: px(80);
-            line-height: px(90);
-        }
+        font-size: px(80);
+        line-height: px(90);
     }
 
     .crossed-button {
