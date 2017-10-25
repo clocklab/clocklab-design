@@ -69,9 +69,19 @@
         }
     }
 
+    .new-header {
+        margin: 27vh 0 0 px(590);
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: px(120);
+        text-transform: uppercase;
+        animation: fadeInUp $time * 2 linear $time * 4 both;
+
+    }
+
     // ----- contacts-info -----
     .contacts-info {
-        z-index: 1;
+        z-index: 4;
         position: absolute;
         margin: 35vh 0 0 px(630);
         li {
@@ -90,6 +100,7 @@
             a {
                 color: $white;
                 display: block;
+                margin-bottom: px(20);
             }
         }
     }

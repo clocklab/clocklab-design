@@ -55,16 +55,10 @@
         padding-left: px(160);
     }
 
-    .new-title {
+    .new-header {
         margin-top: px(50);
         margin-bottom: px(80);
-
-        .text-container {
-
-            span {
-                font-size: px(80);
-            }
-        }
+        font-size: px(80);
     }
 
     article {

@@ -101,15 +101,13 @@
         }
     }
 
-    .new-title {
+    .new-header {
         margin-top: px(80);
         margin-bottom: px(80);
         font-family: $Raleway-ExtraBold;
-        
-        .text-container {
-            display: inline-block;
-            margin-bottom: px(10);
-        }
+        font-size: px(110);
+        line-height: px(120);
+        text-transform: uppercase;
     }
 
     article {

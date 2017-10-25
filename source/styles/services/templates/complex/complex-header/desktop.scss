@@ -8,11 +8,6 @@
         top: px(1020);
     }
 
-    .logo,
-    .menu {
-        animation: fadeIn $time * 3 both;
-    }
-
     .big-bg-letter-c {
 
         .big-background-letter {
@@ -257,13 +252,13 @@
         }
     }
 
-    .new-title {
-
-        .text-container {
-            margin-top: px(20);
-            display: inline-block;
-            font-family: $Raleway-Regular;
-        }
+    .new-header {
+        margin-top: px(20);
+        color: $black;
+        font-family: $Raleway-ExtraBold;
+        font-size: px(120);
+        line-height: px(125);
+        text-transform: uppercase;
     }
 
     .container {

@@ -89,22 +89,18 @@
         }
     }
 
-    .new-title {
+    .new-header {
         position: relative;
         z-index: 2;
         top: px(140);
-        margin-top: px(80);
+        display: inline-block;
+        margin-top: px(40);
         margin-bottom: px(80);
+        color: $white;
         font-family: $Raleway-ExtraBold;
-        
-        .text-container {
-            display: inline-block;
-            margin-bottom: px(10);
-
-            span {
-                color: $white;
-            }
-        }
+        font-size: px(120);
+        line-height: px(125);
+        text-transform: uppercase;
     }
 
     article {
