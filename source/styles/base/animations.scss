@@ -505,6 +505,47 @@
     }
 }
 
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        transform: translateY(101%);
+    }
+    to {
+        opacity: 0;
+        transform: none;
+    }
+}    
+@keyframes fadeOutDown {
+    from {
+        opacity: 1;
+        transform: translateY(-101%);
+    }
+    to {
+        opacity: 0;
+        transform: none;
+    }
+}
+@keyframes fadeOutLeft {
+    from {
+        opacity: 1;
+        transform: translateX(101%);
+    }
+    to {
+        opacity: 0;
+        transform: none;
+    }
+}
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(-101%);
+    }
+    to {
+        opacity: 0;
+        transform: none;
+    }
+}
+
 @keyframes toUp {
     from {
         transform: none;
@@ -540,6 +581,47 @@
 
 @keyframes fadeInToUp {
     from {
+        opacity: 0;
+        transform: none;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-101%);
+    }
+}    
+@keyframes fadeInToDown {
+    from {
+        opacity: 0;
+        transform: none;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(101%);
+    }
+}
+@keyframes fadeInToLeft {
+    from {
+        opacity: 0;
+        transform: none;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-101%);
+    }
+}
+@keyframes fadeInToRight {
+    from {
+        opacity: 0;
+        transform: none;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(101%);
+    }
+}
+
+@keyframes fadeOutToUp {
+    from {
         opacity: 1;
         transform: none;
     }
@@ -548,7 +630,7 @@
         transform: translateY(-101%);
     }
 }    
-@keyframes fadeInToDown {
+@keyframes fadeOutToDown {
     from {
         opacity: 1;
         transform: none;
@@ -558,7 +640,7 @@
         transform: translateY(101%);
     }
 }
-@keyframes fadeInToLeft {
+@keyframes fadeOutToLeft {
     from {
         opacity: 1;
         transform: none;
@@ -568,7 +650,7 @@
         transform: translateX(-101%);
     }
 }
-@keyframes fadeInToRight {
+@keyframes fadeOutToRight {
     from {
         opacity: 1;
         transform: none;

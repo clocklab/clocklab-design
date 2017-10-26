@@ -45,6 +45,7 @@ $Roboto-Light: 'Roboto Light'; // 300
 $Roboto-Regular: 'Roboto Regular'; // 400
 $Roboto-Medium: 'Roboto Medium'; // 500
 $Roboto-Bold: 'Roboto Bold'; // 700
+$Roboto-Black: 'Roboto Black';
 
 $Audi-Regular: 'Audi Regular'; // 400
 $Audi-Bold: 'Audi Bold'; // 700
@@ -662,3 +663,33 @@ $HomeMenuBlock3DelayTimeReversed: $HomeMenuLine1DelayTimeReversed + $HomeMenuLin
 $HomeMenuBlock2DelayTimeReversed: $HomeMenuBlock3DelayTimeReversed + $HomeMenuBlockAnimationTime;
 $HomeMenuBlock1DelayTimeReversed: $HomeMenuBlock2DelayTimeReversed + $HomeMenuBlockAnimationTime;
 // MAIN MENU ENDS
+
+
+
+
+// OUR BEST WORKS (MAIN PAGE) OBW - (our best works)
+$OBWLineAnimationTime: $time * 2;
+$OBWLine1DelayTime: $time * 3;
+$OBWLine2DelayTime: $OBWLine1DelayTime + $timeDif;
+$OBWLine3DelayTime: $OBWLine2DelayTime + $timeDif;
+$OBWLine4DelayTime: $OBWLine3DelayTime + $timeDif;
+$OBWLine5DelayTime: $OBWLine4DelayTime + $timeDif;
+
+$OBWBigLetterDelayTime: $OBWLine5DelayTime + $OBWLineAnimationTime;
+$OBWBigLetterAnimationTime: $time;
+
+$OBWStickerLineDelayTime: $OBWLine1DelayTime + $OBWLineAnimationTime;
+$OBWStickerLineAnimationTime: $time * 3;
+$OBWStickerTextDelayTime: $OBWStickerLineDelayTime + $OBWStickerLineAnimationTime;
+$OBWStickerTextAnimationTime: $OBWStickerLineAnimationTime;
+
+$OBWFirstBlocksBeforeDelayTime: $OBWLine4DelayTime + $OBWLineAnimationTime;
+$OBWFirstBlocksBeforeAnimationTime: $time * 3;
+$OBWFirstBlocksImageDelayTime: $OBWFirstBlocksBeforeDelayTime + $OBWFirstBlocksBeforeAnimationTime;
+$OBWFirstBlocksImageAnimationTime: $OBWFirstBlocksBeforeAnimationTime;
+$OBWSecondBlocksBeforeDelayTime: $OBWFirstBlocksBeforeDelayTime + $OBWFirstBlocksBeforeAnimationTime;
+$OBWSecondBlocksBeforeAnimationTime: $OBWFirstBlocksBeforeAnimationTime;
+$OBWSecondBlocksImageDelayTime: $OBWSecondBlocksBeforeDelayTime + $OBWFirstBlocksBeforeAnimationTime;
+$OBWSecondBlocksImageAnimationTime: $OBWSecondBlocksBeforeAnimationTime;
+
+// OUR BEST WORKS (MAIN PAGE)

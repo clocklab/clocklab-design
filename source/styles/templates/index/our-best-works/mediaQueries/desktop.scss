@@ -1,0 +1,125 @@
+@import '../desktop';
+
+& { 
+
+    $paddingLeft: px(400);
+    $infoWidth: px(500);
+    $marginLeft: px(320);
+    $portfolioWidth: px(1000);
+
+    .back-layer {
+        padding-right: px(80);
+    }
+
+    .lines {
+
+        .line {
+    
+            &--1 {
+                left: $paddingLeft;
+            }
+    
+            &--2 {
+                left: $paddingLeft + $infoWidth;
+            }
+    
+            &--3 {
+                left: $paddingLeft + $infoWidth + ($marginLeft + $portfolioWidth / 2) / 2;
+            }
+    
+            &--4 {
+                left: $paddingLeft + $infoWidth + $marginLeft + $portfolioWidth / 2;
+            }
+    
+            &--5 {
+                left: $paddingLeft + $infoWidth + $marginLeft * 3 / 2 + $portfolioWidth * 3 / 4;
+            }
+        }
+    }
+
+    .container {
+        padding-left: $paddingLeft;
+    }
+
+    .info {
+        width: $infoWidth;
+    }
+
+    .new-title {
+        margin-top: px(30);
+
+        .text-container {
+
+            span {
+                font-size: px(100);
+            }
+        }
+    }
+
+    .special-button {
+        margin-top: px(90);
+        letter-spacing: 1px;
+    }
+
+    .portfolio {
+        margin-left: $marginLeft;
+        width: $portfolioWidth;
+
+        &__item {
+            width: $portfolioWidth / 2;   
+            height: $portfolioWidth / 2;
+
+            &--audi {
+                left: px(-80); 
+                top: px(-40);
+
+                .project-name {
+                    left: px(-120);
+                }
+            }
+
+            &--dela {
+
+                .project-name {
+                    right: px(-200);
+                }
+            }
+            
+            &--euro-club {
+
+                .project-name {
+                    left: px(-250);
+                }
+            }
+
+            &--your-project {
+                left: px(80); 
+                top: px(40);
+
+                .project-name {
+                    right: px(-300);
+                }
+            }
+        }
+    }   
+    
+    .back {
+        padding: px(30);
+    }
+
+    .project-name {
+        padding: px(20) px(50);
+        font-size: px(70);
+    }
+
+    .bottom-button {
+        bottom: px(30);
+    }
+
+    &.opened {
+        
+        .front-layer {
+            transform: rotateY(15deg) scaleX(.8);
+        }
+    }
+}
