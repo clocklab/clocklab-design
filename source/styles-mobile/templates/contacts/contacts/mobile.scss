@@ -11,7 +11,8 @@
         background: transparent;
     }
     
-    h2 {
+    .page-title {
+        display: block;
         color: $gray;
         font-family: $Raleway-Bold;
         font-size: px(22);

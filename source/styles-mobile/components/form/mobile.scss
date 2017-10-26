@@ -43,7 +43,8 @@
         }
     }
 
-    h3 {
+    .form-title {
+        display: block;
         font-family: $Raleway-ExtraBold;
         font-size: px(48);
         text-transform: uppercase;
