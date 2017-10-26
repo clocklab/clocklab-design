@@ -195,7 +195,7 @@
         }
     }
 
-    .top-panel {
+    .blog-top-panel {
         display: flex;
         align-items: center;
         padding-top: px(160);
@@ -227,6 +227,14 @@
                 }
             }
         }
+    }
+
+    .new-header {
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: px(96);
+        text-transform: uppercase;
+        animation: fadeInUp $time * 3 $time * 6 both;
     }
 
     .filter {
