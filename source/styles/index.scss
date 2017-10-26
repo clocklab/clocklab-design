@@ -43,7 +43,7 @@ body { overflow: hidden; }
 // portfolio on the main page
 @import "templates/index/our-best-works/main";
 
-// @import "templates/index/q7/main";
+@import "templates/index/q7/main";
 // @import "templates/index/vinograd/main";
 // @import "templates/index/euro-club/main";
 // @import "templates/index/alta-capital/main";
@@ -55,17 +55,17 @@ body { overflow: hidden; }
 
 // blog on the main page
 // @import "templates/index/blog-one/main";
-// @import "templates/index/blog-two/main";
-// @import "templates/index/blog-three/main";
+@import "templates/index/blog-two/main";
+@import "templates/index/blog-three/main";
 
 // contacts on the main page
-// @import "templates/index/main-contacts/main";
+@import "templates/index/main-contacts/main";
 
 // ***** ABOUT COMPANY PAGE ****
-// @import "templates/about-company/about-company-two/main";
+@import "templates/about-company/about-company-two/main";
 // @import "templates/about-company/about-company-three/main";
 // @import "templates/about-company/about-company-five/main";
-// @import "templates/about-company/about-company-six/main";
+@import "templates/about-company/about-company-six/main";
 
 // ***** OTHER PAGES *****
-// @import "templates/services/services/main";
+@import "templates/services/services/main";
