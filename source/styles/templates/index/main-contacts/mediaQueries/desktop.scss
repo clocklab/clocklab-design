@@ -1,7 +1,17 @@
 @import '../desktop';
 
 // ----- main-contacts-title -----
-.main-contacts-title p:first-child { font-size: px(100); }
+.main-contacts-title {
+	padding: 10.5vh 4.5% 8.5vh 5.5%;
+	p:first-child { font-size: px(100); }
+}
 
-// ----- form -----
-.form { right: 7.5%; }
+// ----- main-form -----
+.main-form {
+	right: 4.5%;
+    top: 8%;
+    form {
+    	padding-right: px(130);
+        padding-left: px(130);
+    }
+}

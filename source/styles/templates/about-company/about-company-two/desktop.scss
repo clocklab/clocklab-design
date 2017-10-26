@@ -18,9 +18,7 @@
 
         // ----- title -----
         .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 12 both;
-            }
+            p { animation: fadeInUp $time * 2 $time * 12 both; }
             span.name {
                 span {
                     animation: titleName $time * 2 $time * 13 linear;
@@ -76,10 +74,7 @@
 
         // ----- title -----
         .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 12 linear;
-                animation-fill-mode: forwards;
-            }
+            p { animation: fadeInUp $time * 2 $time * 12 linear; }
             span.name {
                 span {
                     animation: titleName $time * 2 $time * 13 linear;
