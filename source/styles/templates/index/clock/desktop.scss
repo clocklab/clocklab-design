@@ -31,7 +31,7 @@
         .watch-light { animation: fadeIn $time * 2 $time * 6 both; }
 
         // ----- title -----
-        .word:nth-of-type(1) span {
+        .word:nth-of-type(1) h1 {
             animation: titleWord $time * 2 $time * 5 linear;
             animation-fill-mode: forwards;
         }
@@ -64,7 +64,7 @@
         position: absolute;
         font-family: $Raleway-ExtraBold;
         .word {
-            span {
+            span, h1 {
                 text-transform: inherit;
                 font-size: px(106);
             }
