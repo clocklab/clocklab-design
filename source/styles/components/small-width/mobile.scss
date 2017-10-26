@@ -1,0 +1,71 @@
+& {  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: px(50) 0;
+    width: 100vw;
+    height: 100vh;
+    background: $black;
+    text-align: center;
+
+    .slogan {
+        width: 60%;
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: px(120);
+    }
+
+    .image-container {
+        position: relative;
+        width: 100vw;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &:before,
+        &:after {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: px(40);
+            content: '';
+        }
+
+        &:before {
+            top: 0;
+            background: linear-gradient(180deg, $black 0%, transparent 100%);
+        }
+
+        &:after {
+            bottom: 0;
+            background: linear-gradient(00deg, $black 0%, transparent 100%);
+        }
+    }
+
+    .question {
+        width: 50%;
+
+        .blue {
+            color: $blue;
+            font-family: $Roboto-Black;
+            font-size: px(72);
+        }
+
+        .gray {
+            display: block;
+            margin-top: px(40);
+            color: $gray;
+            font-family: $Roboto-Medium;
+            font-size: px(36);
+        }
+    }
+}

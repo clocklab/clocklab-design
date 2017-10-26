@@ -1,0 +1,55 @@
+<div class="audi-new screen-block">
+
+    <img src="../../../images/index/audi-rs4-mirror.jpg">
+
+    <div id="mirror">
+        <img src="../../../images/index/audi-rs4-mirror.jpg">
+    </div>
+
+    <div class="dark-portfolio-client">
+        @@include('./components/portfolio-client.html')
+    </div>
+
+    <span class="project-name">Audi</span>
+
+    <div class="info">
+        @@include('./components/sticker.html')
+
+        <div class="about-work">
+            <p>
+                Мы обеспечили официальному представителю
+                Audi лидерство на украинском рынке!
+            </p>
+        </div>
+
+        <a class="special-button" href="">
+            <span class="special-button-text">Посмотреть проект</span>
+        </a>
+    </div>
+
+    <div class="dark-portfolio-right-panel">
+        <div class="portfolio-right-panel">
+            <div class="date">
+                <span class="date-month"></span>
+                <span class="date-year">/</span>
+            </div>
+            <div class="devices">
+                <span>Development</span>
+                <span>Marketing</span>
+                <span>SEO</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ссылка на страницу portfolio.html -->
+    @@include('./components/bottom-button.html')
+
+    <script>
+        var substrate = document.querySelector('.audi-new'),
+            mirror = substrate.querySelector("#mirror > img");
+
+        substrate.onmousemove = function(e) {
+            mirror.style.clipPath="inset(0 " + (mirror.offsetWidth / 2.2 + e.clientX * 0.03) + "px 0 " + (mirror.offsetWidth / 3.5 - e.clientX * 0.03) + "px)";
+        }
+    </script>
+</div>
