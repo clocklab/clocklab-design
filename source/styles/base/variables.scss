@@ -691,5 +691,15 @@ $OBWSecondBlocksBeforeDelayTime: $OBWFirstBlocksBeforeDelayTime + $OBWFirstBlock
 $OBWSecondBlocksBeforeAnimationTime: $OBWFirstBlocksBeforeAnimationTime;
 $OBWSecondBlocksImageDelayTime: $OBWSecondBlocksBeforeDelayTime + $OBWFirstBlocksBeforeAnimationTime;
 $OBWSecondBlocksImageAnimationTime: $OBWSecondBlocksBeforeAnimationTime;
-
 // OUR BEST WORKS (MAIN PAGE)
+
+
+//  MAIN PAGE AUDI-NEW BLOCK ANB(Audi New Block)
+$ANBStickerLineDelayTime: $topPanelAnimationTime + $time * 3;
+$ANBStickerLineAnimationTime: $time * 3;
+$ANBStickerTextDelayTime: $ANBStickerLineDelayTime + $ANBStickerLineAnimationTime;
+$ANBStickerTextAnimationTime: $ANBStickerLineAnimationTime;
+
+$ANBAboutDelayTime: $ANBStickerLineDelayTime;
+$ANBAboutAnimationTime: $ANBStickerLineAnimationTime;
+//  MAIN PAGE AUDI-NEW BLOCK END
