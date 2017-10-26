@@ -1,0 +1,41 @@
+@import '../desktop';
+
+& {
+
+   img {
+        min-height: 800px;
+   }
+
+   .portfolio-right-panel {
+    
+        .date {
+            margin-bottom: px(150);
+        }
+    }
+
+   .project-name {
+        top: px(300);
+        right: px(700);
+        font-size: px(300);
+    }
+
+    .info {
+        top: px(200);
+        right: px(300);
+        width: px(1100);
+    }
+
+    .about-work {
+        margin-top: px(450);
+        width: px(800);
+
+        p {
+            font-size: px(50);
+        }
+    }
+
+    .special-button {
+        margin-right: px(150);
+        width: px(490);
+    }
+}
