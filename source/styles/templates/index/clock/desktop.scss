@@ -56,6 +56,12 @@
         span::before  { content: 'c'; }
     }
     
+    // ----- scroll -----
+    .scroll {
+        .circle { animation: bounce 2s 2s infinite; }
+        .arrow { animation: bounce 2s 2.03s infinite; }
+    }
+    
     // ----- title -----
     .title {
         top: 25vh;
