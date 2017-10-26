@@ -90,6 +90,17 @@
             }
         }
 
+        .new-header {
+            position: absolute;
+            top: px(360);
+            left: px(250);
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: px(96);
+            text-transform: uppercase;
+            animation: fadeInUp $time * 3 $time * 6 both;
+        }
+
         &:before,
         &:after {
             display: block;
