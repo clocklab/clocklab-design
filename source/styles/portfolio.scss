@@ -1,12 +1,12 @@
 // base
 @import "base/variables";
-// @import "base/fonts";
+@import "base/fonts";
 @import "base/reset";
 @import "base/common";
 @import "base/animations";
 
 // components
-// @import "components/top-panel/main";
+@import "components/top-panel/main";
 @import "components/language/main";
 @import "components/social/main";
 @import "components/copyright/main";

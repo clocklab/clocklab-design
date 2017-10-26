@@ -1,0 +1,18 @@
+@import '../desktop';
+
+& {
+
+    img {
+        min-height: 900px;
+    }
+
+    .project-name {
+        top: px(300);
+        right: px(1000);
+    }
+
+    .info {
+        top: px(240);
+        right: px(850);
+    }
+}

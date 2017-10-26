@@ -29,6 +29,7 @@ body { overflow: hidden; }
 @import "components/copyright/main";
 @import "components/sticker/main";
 @import "components/social/main";
+@import "components/small-width/main";
 
 /* в дальнейшем свести к одному */
 @import "components/title/main";     
@@ -43,7 +44,8 @@ body { overflow: hidden; }
 // portfolio on the main page
 @import "templates/index/our-best-works/main";
 
-@import "templates/index/q7/main";
+// @import "templates/index/q7/main";
+@import "templates/index/audi-new/main";
 // @import "templates/index/vinograd/main";
 // @import "templates/index/euro-club/main";
 // @import "templates/index/alta-capital/main";
