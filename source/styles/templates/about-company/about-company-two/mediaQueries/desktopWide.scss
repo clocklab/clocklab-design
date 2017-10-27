@@ -2,9 +2,13 @@
 
 // ----- title ------
 .title {
-    top: px(450);
-    left: px(350);
+    &.long {
+        top: px(450);
+        left: px(350);
+    }
     &.main {
+        top: px(450);
+        left: px(350);
         p { font-size: px(40); }
         .crossed-button { margin: 75px 0 0 -10px; }
         .word {

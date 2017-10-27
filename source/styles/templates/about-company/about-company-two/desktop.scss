@@ -4,7 +4,6 @@
     background: $white;
     position: relative;
     min-height: auto;
-    overflow: hidden;
     z-index: 1;
     left: 0;
     
@@ -30,7 +29,7 @@
         }
         .word {
             &:after { animation: halfDown $time * 2 linear $time * 9 both; }
-            &:nth-of-type(1) span {
+            &:nth-of-type(1) span, &:nth-of-type(1) h1 {
                 animation: titleWord $time * 2 $time * 10 linear;
                 animation-fill-mode: forwards;
             }
@@ -88,7 +87,10 @@
             position: absolute;
             span.name { top: -3vh; }
             p { padding: px(80) 0 0; }
-            .word span { font-size: px(94); }
+            .word h1 {
+                font-size: px(94);
+                color: $black;
+            }
             .crossed-button {
                 margin: 37px 0 0 -13px;
                 span {

@@ -2,10 +2,14 @@
 
 // ----- title ------
 .title {
-    top: px(350);
-    left: px(350);
+    &.long {
+        top: px(250);
+        left: px(200);
+    }
     &.main {
-       p { font-size: px(30); }
+        top: px(350);
+        left: px(350);
+        p { font-size: px(30); }
         .crossed-button { margin: 50px 0 0 -10px; }
         .word {
             &:nth-of-type(1) span, &:nth-of-type(2) span,
