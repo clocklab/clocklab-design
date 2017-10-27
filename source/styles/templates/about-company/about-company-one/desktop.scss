@@ -197,9 +197,7 @@
 }
 
 .clouds {
-    background: url(http://www.waterplea.com/codepen//clouds.jpg) 0 0;
     mix-blend-mode: screen;
-    background-size: cover;
     animation: spin 9s linear infinite;
     transform-origin: top;
     transform: rotateX(30deg) scale(0.4);
