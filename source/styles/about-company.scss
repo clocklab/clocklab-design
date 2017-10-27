@@ -3,7 +3,7 @@ body { overflow: hidden; }
 // base
 @import "base/variables";
 @import "base/mixins";
-@import "base/fonts";
+// @import "base/fonts";
 @import "base/reset";
 @import "base/common";
 @import "base/animate";
@@ -29,7 +29,7 @@ body { overflow: hidden; }
 @import "components/big-background-letter/main";
 
 /* в дальнейшем свести к одному */
-@import "components/title/main";     
+@import "components/title/main";
 @import "components/new-title/main";
 @import "components/language/main";
 @import "components/languages/main";

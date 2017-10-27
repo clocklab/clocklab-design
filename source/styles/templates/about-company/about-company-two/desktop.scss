@@ -18,9 +18,7 @@
 
         // ----- title -----
         .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 12 both;
-            }
+            p { animation: fadeInUp $time * 2 $time * 12 both; }
             span.name {
                 span {
                     animation: titleName $time * 2 $time * 13 linear;
@@ -35,6 +33,18 @@
                 &:after { animation: halfDown $time * 2 linear $time * 9 both; }
                 &:nth-of-type(1) span {
                     animation: titleWord $time * 2 $time * 10 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:nth-of-type(2) span {
+                    animation: titleWord $time * 2 $time * 11 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:nth-of-type(3) span {
+                    animation: titleWord $time * 2 $time * 12 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:nth-of-type(4) span {
+                    animation: titleWord $time * 2 $time * 13 linear;
                     animation-fill-mode: forwards;
                 }
             }
@@ -64,10 +74,7 @@
 
         // ----- title -----
         .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 12 linear;
-                animation-fill-mode: forwards;
-            }
+            p { animation: fadeInUp $time * 2 $time * 12 linear; }
             span.name {
                 span {
                     animation: titleName $time * 2 $time * 13 linear;
@@ -82,6 +89,18 @@
                 &:after { animation: halfDown $time * 2 linear $time * 9 both; }
                 &:nth-of-type(1) span {
                     animation: titleWord $time * 2 $time * 10 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:nth-of-type(2) span {
+                    animation: titleWord $time * 2 $time * 11 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:nth-of-type(3) span {
+                    animation: titleWord $time * 2 $time * 12 linear;
+                    animation-fill-mode: forwards;
+                }
+                &:nth-of-type(4) span {
+                    animation: titleWord $time * 2 $time * 13 linear;
                     animation-fill-mode: forwards;
                 }
             }
@@ -104,25 +123,79 @@
 
     // ----- title ------
     .title {
-        top: px(480);
+        top: px(560);
         left: px(560);
         position: absolute;
-        span.name { top: -3vh; }
-        p { padding: px(80) 0 0; }
-        .word span { font-size: px(94); }
-        .crossed-button {
-            margin: 37px 0 0 -13px;
-            span {
-                color: $dark;
-                font-size: px(26);
-                &:after { content: 'Узнать больше'; }
-            }
-            &.open-long-read {
-
+        &.long {
+            top: px(480);
+            left: px(560);
+            position: absolute;
+            span.name { top: -3vh; }
+            p { padding: px(80) 0 0; }
+            .word span { font-size: px(94); }
+            .crossed-button {
+                margin: 37px 0 0 -13px;
                 span {
+                    color: $dark;
+                    font-size: px(26);
+                    &:after { content: 'Узнать больше'; }
+                }
+                &.open-long-read {
 
-                    &:after {
-                        content: 'Читать далее';
+                    span {
+
+                        &:after {
+                            content: 'Читать далее';
+                        }
+                    }
+                }
+            }
+        }
+        &.main {
+            p {
+                padding: px(120) 0 0;
+                font-size: px(60);
+            }
+            .word {
+                &:after { display: none; }
+                &:nth-of-type(1) span, &:nth-of-type(2) span,
+                &:nth-of-type(3) span {
+                    font-family: $Raleway-Bold;
+                    text-transform: initial;
+                    font-size: px(175);
+                    color: $blue;
+                }
+                &:nth-of-type(4) {
+                    margin-top: px(50);
+                    span {
+                        font-family: $Raleway-Medium;
+                        text-transform: initial;
+                        font-size: px(100);
+                        color: $gray;
+                    }
+                }
+            }
+            .crossed-button {
+                margin: 100px 0 0 -10px;
+                position: initial;
+                float: right;
+                span {
+                    color: $blue;
+                    font-size: px(40);
+                    margin-top: px(-10);
+                    padding-top: px(10);
+                    &:before {
+                        background: $blue;
+                        top: 13px;
+                    }
+                    &:after { content: 'Перейти на страницу'; }
+                }
+                .arrow-container { .st0, .st1 { stroke: $blue; } }
+                &.open-long-read {
+                    span {
+                        &:after {
+                            content: 'Читать далее';
+                        }
                     }
                 }
             }

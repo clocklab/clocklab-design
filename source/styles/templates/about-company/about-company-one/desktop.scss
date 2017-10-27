@@ -2,23 +2,24 @@
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $Raleway-Regular;
     overflow: hidden;
-    
+
     // ----- animation fade -----
     &.current, &.current-back,
     &.previous, &.previous-back {
         animation: fadeIn $time * 3 0s both;
         
+        // ----- wrapper -----
+        .wrapper { animation: fadeInUp $time * 3 $time * 3 both; }
+        .sun { animation: fadeIn $time * 3 $time * 3 both; }
+
+
         // ----- navigation-elements -----
         .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
         .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
         .scroll { animation: fadeInUp $time * 2 $time * 7 both; }
 
-        // ----- social -----
-        .social {
-            .instagram {  animation: social $time * 3 $time * 3 both; }
-            .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-            .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
-        }
+        // ----- networks -----
+        .networks { animation: fadeInRight $time * 3 $time * 3 both; }
 
         // ----- shadow -----
         .shadow div { animation: fadeIn $time * 3 $time * 3 both; }
@@ -32,46 +33,241 @@
             animation: titleWord $time * 2 $time * 6 linear;
             animation-fill-mode: forwards;
         }
+        .word:nth-of-type(3) span {
+            animation: titleWord $time * 2 $time * 7 linear;
+            animation-fill-mode: forwards;
+        }
+        .word:nth-of-type(4) span {
+            animation: titleWord $time * 2 $time * 8 linear;
+            animation-fill-mode: forwards;
+        }
     }
     &.current-back { animation: none; }
     &.previous-back { animation-play-state: running; }
-    
-    // ----- bg-image -----
-    .bg-image {
-        position: absolute;
-        object-fit: cover;
-        display: block;
-        height: 100%;
-        width: 100%;
+
+    // ----- scroll -----
+    .scroll {
+        .circle { animation: bounce 2s 2s infinite; }
+        .arrow { animation: bounce 2s 2.03s infinite; }
     }
     
-    // ----- title -----
-    .title {
-        margin: 64.5vh 0 0 39vh;
-        p { padding: 5% 1vh 0; }
-        .word {
-            &:nth-of-type(1) span span {
-                display: inline-flex;
-                color: $blue;
-                width: auto;
-            }
-            &:after { display: none; }
-            span {
-                font-size: px(108);
-                text-transform: initial;
+    // ----- networks -----
+    .networks {
+        display: -webkit-inline-box;
+        position: absolute;
+        bottom: 7vh;
+        z-index: 5;
+        left: 23vh;
+        li {
+            margin-right: px(100);
+            &:last-of-type { margin-right: 0; }
+            a {
+                color: $white;
+                transition: $time;
+                font-size: px(50);
+                font-family: $Roboto-Regular;
+                &:hover { color: $blue; }
             }
         }
     }
 
-    // ----- shadow -----
-    .shadow div {
-        background: rgba(28,28,28,.7);
+    // ----- title -----
+    .title {
+        top: 25vh;
+        left: 23vh;
+        z-index: 1;
         position: absolute;
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
+        font-family: $Raleway-ExtraBold;
+        .word {
+            span {
+                text-transform: inherit;
+                font-size: px(106);
+            }
+            &:after { display: none; }
+            &:nth-of-type(1) span, &:nth-of-type(2) span {
+                font-family: $Raleway-Medium;
+                font-size: px(150);
+            }
+            &:nth-of-type(3) { margin: 22px 0 0 5px; }
+            &:nth-of-type(4) { margin: 0 0 0 5px; }
+            &:nth-of-type(3) span, &:nth-of-type(4) span {
+                color: $gray;
+                font-size: px(85);
+                letter-spacing: 1px;
+                font-family: $Roboto-Regular;
+            }
+        }
     }
+    @keyframes spin {
+    to {
+        background-position: 0 200%;
+    }
+}
+
+@keyframes spinMask {
+    to {
+        -webkit-mask-position: 0 200%;
+    }
+}
+
+.wrapper,
+.wrapper-earth {
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+    bottom: -84vw;
+    left: 0;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    box-shadow: 0.5vw 0 1vw #6dcfff, 1vw 0 5vw rgba(255, 255, 255, 0.5), 3vw -8vw 6vw -9vw rgba(201, 237, 255, 0.5);
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+
+    &::before {
+        box-shadow: inset 0 0 3vw 1.5vw rgba(201, 237, 255, 0.83);
+    }
+
+    &::after {
+        top: 200vw;
+        box-shadow: -8vw -196vw 10vw black;
+    }
+}
+
+.wrapper-earth {
+    bottom: -84.5vw;
+    box-shadow: 0 0 0 0.5vw rgba(201, 237, 255, 0.5);
+}
+
+.planet,
+.planet-clouds {
+    perspective: 39vw;
+}
+
+.planet-clouds {
+    mix-blend-mode: screen;
+}
+
+.planet,
+.planet-clouds,
+.water,
+.earth,
+.clouds {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.earth {
+    animation: spin 10s linear infinite;
+    transform-origin: top;
+    transform: rotateX(30deg) scale(0.4);
+}
+
+.water {
+    animation: spinMask 10s linear infinite;
+    transform-origin: top;
+    transform: rotateX(30deg) scale(0.4);
+    mix-blend-mode: lighten;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -20%;
+        left: 70%;
+        width: 40%;
+        height: 35%;
+        border-radius: 100%;
+        box-shadow: 0 0 15vw 20vw #ffb400;
+    }
+}
+
+.clouds {
+    mix-blend-mode: screen;
+    animation: spin 9s linear infinite;
+    transform-origin: top;
+    transform: rotateX(30deg) scale(0.4);
+}
+
+.wrapper-earth .clouds {  
+    mix-blend-mode: multiply;
+    filter: invert(100%);
+    opacity: 0.5;
+}
+
+.sun {
+    mix-blend-mode: screen;
+
+    &::before {
+        content: '';
+        position: fixed;
+        bottom: 0;
+        right: 14vw;
+        width: 50vw;
+        height: 40vw;
+        opacity: 0.2;
+    }
+
+    .flare {
+        position: fixed;
+        width: 6vw;
+        height: 68vw;
+        right: 34vw;
+        bottom: 0;
+        overflow: hidden;
+        opacity: 0.2;
+        filter: blur(2px);
+        transform: rotate(30deg);
+
+        &:nth-child(2) {
+            transform: rotate(-30deg);
+        }
+
+        &:nth-child(3) {
+            transform: rotate(60deg);
+        }
+
+        &:nth-child(4) {
+            transform: rotate(120deg);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 30vw;
+            width: 8vw;
+            height: 8vw;
+            border-radius: 100%;
+            box-shadow: 0 0 30vw white;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: fixed;
+        bottom: 30vw;
+        right: 33vw;
+        width: 8vw;
+        height: 8vw;
+        border-radius: 100%;
+        background: white;
+        box-shadow: 0 0 4vw white, 0 0 10vw fade(orange, 50%), 0 0 10vw fade(white, 20%), 0 0 1vw white, 0 0 2vw white;
+    }
+}
 
     // ----- small-gray-lines -----
     .small-gray-lines .line {
