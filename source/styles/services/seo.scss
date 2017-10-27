@@ -23,8 +23,8 @@
 /* в дальнейшем свести к одному */
 @import "../components/title/main";     
 @import "../components/new-title/main";
-@import "../components/language/main";
 @import "../components/languages/main";
+@import "../components/language/main";
 /* в дальнейшем свести к одному */
 
 // тут хранится анимация для некоторых элементов
@@ -34,5 +34,3 @@
 @import "templates/seo/seo-one/main";
 @import "templates/seo/seo-two/main";
 @import "templates/seo/seo-three/main";
-
-// logo and menu animation
