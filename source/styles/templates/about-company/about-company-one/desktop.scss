@@ -179,8 +179,6 @@
 }
 
 .water {
-    -webkit-mask-image: url(http://www.waterplea.com/codepen//water.png);
-    -webkit-mask-size: cover;
     animation: spinMask 10s linear infinite;
     transform-origin: top;
     transform: rotateX(30deg) scale(0.4);
