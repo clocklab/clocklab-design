@@ -24,6 +24,10 @@
             span {
                 display: block;
                 margin-top: px(10);
+                color: $white;
+            }
+
+            .blue {
                 color: $blue;
             }
         }
@@ -112,8 +116,8 @@
                 }
     
                 span,
-                h3,
-                h4,
+                .slider-item-title,
+                .slider-item-name,
                 a {
                     position: relative;
                     z-index: 2;
@@ -125,13 +129,15 @@
                    text-transform: uppercase;
                 }
     
-                h3 {
+                .slider-item-title {
+                    display: block;
                     margin: px(32) 0 px(56);
                     font-family: $Roboto-Black;
                     font-size: px(120);
                 }
 
-                h4 {
+                .slider-item-name {
+                    display: block;
                     color: $blue;
                     font-family: $Roboto-Black;
                     font-size: px(72);
@@ -142,18 +148,6 @@
                     font-family: $Raleway-Bold;
                     font-size: px(24);
                     text-transform: uppercase;
-                }
-    
-                &:before {
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    z-index: 1;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba(0, 0, 0, .4);
-                    content: '';
                 }
     
                 &--audi {
@@ -225,13 +219,25 @@
                 &__item {
                     padding-top: px(460);
 
-                    h3 {
+                    .slider-item-title {
                         margin: px(32) 0 px(26);
                         font-size: px(72);
                     }
 
-                    h4 {
+                    .slider-item-name {
                         margin-bottom: px(40);
+                    }
+
+                    &:before {
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: 1;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0, 0, 0, .4);
+                        content: '';
                     }
                 }
             }
@@ -244,7 +250,7 @@
         height: 100vh;
         background: $lightBlack;
 
-        h3 {
+        .questions-title {
             margin-bottom: px(24);
             color: $white;
             font-family: $Raleway-ExtraBold;

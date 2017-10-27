@@ -4,7 +4,8 @@
     padding: px(200) px(76);
     background: $lightBlack;
 
-    h2 {
+    .page-title {
+        display: block;
         margin-bottom: px(64);
         color: $white;
         font-family: $Raleway-Bold;

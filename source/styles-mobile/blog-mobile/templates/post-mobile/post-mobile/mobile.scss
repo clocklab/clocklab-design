@@ -75,7 +75,8 @@
         margin-top: px(100);
         padding: 0 px(30) px(80);
 
-        h1 {
+        .post-title {
+            display: block;
             color: $darkGray;
             font-family: $Roboto-Black;
             font-size: px(60);

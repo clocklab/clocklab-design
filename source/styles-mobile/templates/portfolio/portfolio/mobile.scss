@@ -18,14 +18,14 @@
             object-fit: cover;
         }
 
-        h2,
+        .portfolio-item-title,
         a {
             position: relative;
             z-index: 2;
             color: $white;
         }
 
-        h2 {
+        .portfolio-item-title {
             font-family: $Roboto-Black;
             font-size: px(96);
             line-height: px(100);
