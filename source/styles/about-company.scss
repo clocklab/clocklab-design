@@ -1,4 +1,4 @@
-body { overflow: hidden; }
+// body { overflow: hidden; }
 
 // base
 @import "base/variables";
@@ -19,10 +19,10 @@ body { overflow: hidden; }
 @import "components/modules/scroll";
 
 // components
-@import "components/top-panel/main";
 @import "components/form/main";
 @import "components/social/main";
 @import "components/copyright/main";
+@import "components/top-panel/main";
 @import "components/long-read/main";
 @import "components/jumping-button/main";
 @import "components/crossed-button/main";
@@ -42,6 +42,3 @@ body { overflow: hidden; }
 @import "templates/about-company/about-company-four/main";
 @import "templates/about-company/about-company-five/main";
 @import "templates/about-company/about-company-six/main";
-
-// logo and menu animation
-.logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }

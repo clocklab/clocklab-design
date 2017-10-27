@@ -1,49 +1,52 @@
 & {
-    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    // box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $Raleway-Regular;
+    position: relative;
+    min-height: auto;
     overflow: hidden;
+    z-index: 1;
+    left: 0;
+    
+    // ----- bg-image -----
+    .bg-image { animation: fadeIn $time * 3 $time * 3 both; }
+
+    // ----- navigation-elements -----
+    .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+    .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+    .scroll { animation: fadeInUp $time * 2 $time * 7 both; }
+
+    // ----- networks -----
+    .networks { animation: fadeInRight $time * 3 $time * 3 both; }
+
+    // ----- shadow -----
+    .shadow div { animation: fadeIn $time * 3 $time * 3 both; }
+
+    // ----- title -----
+    .word:nth-of-type(1) span {
+        animation: titleWord $time * 2 $time * 5 linear;
+        animation-fill-mode: forwards;
+    }
+    .word:nth-of-type(2) span {
+        animation: titleWord $time * 2 $time * 6 linear;
+        animation-fill-mode: forwards;
+    }
+    .word:nth-of-type(3) span {
+        animation: titleWord $time * 2 $time * 7 linear;
+        animation-fill-mode: forwards;
+    }
+    .word:nth-of-type(4) span {
+        animation: titleWord $time * 2 $time * 8 linear;
+        animation-fill-mode: forwards;
+    }
 
     // ----- animation fade -----
-    &.current, &.current-back,
-    &.previous, &.previous-back {
-        animation: fadeIn $time * 3 0s both;
+    // &.current, &.current-back,
+    // &.previous, &.previous-back {
+    //     animation: fadeIn $time * 3 0s both;
         
-        // ----- wrapper -----
-        .wrapper { animation: fadeInUp $time * 3 $time * 3 both; }
-        .sun { animation: fadeIn $time * 3 $time * 3 both; }
-
-
-        // ----- navigation-elements -----
-        .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
-        .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
-        .scroll { animation: fadeInUp $time * 2 $time * 7 both; }
-
-        // ----- networks -----
-        .networks { animation: fadeInRight $time * 3 $time * 3 both; }
-
-        // ----- shadow -----
-        .shadow div { animation: fadeIn $time * 3 $time * 3 both; }
-
-        // ----- title -----
-        .word:nth-of-type(1) span {
-            animation: titleWord $time * 2 $time * 5 linear;
-            animation-fill-mode: forwards;
-        }
-        .word:nth-of-type(2) span {
-            animation: titleWord $time * 2 $time * 6 linear;
-            animation-fill-mode: forwards;
-        }
-        .word:nth-of-type(3) span {
-            animation: titleWord $time * 2 $time * 7 linear;
-            animation-fill-mode: forwards;
-        }
-        .word:nth-of-type(4) span {
-            animation: titleWord $time * 2 $time * 8 linear;
-            animation-fill-mode: forwards;
-        }
-    }
-    &.current-back { animation: none; }
-    &.previous-back { animation-play-state: running; }
+    // }
+    // &.current-back { animation: none; }
+    // &.previous-back { animation-play-state: running; }
 
     // ----- scroll -----
     .scroll {
@@ -70,6 +73,20 @@
             }
         }
     }
+    
+    // ----- bg-image -----
+    .bg-image {
+        height: 100%;
+        width: 100%;
+        img {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+    }
 
     // ----- title -----
     .title {
@@ -78,7 +95,7 @@
         z-index: 1;
         position: absolute;
         font-family: $Raleway-ExtraBold;
-        .word {
+        .word { 
             span {
                 text-transform: inherit;
                 font-size: px(106);
@@ -98,176 +115,6 @@
             }
         }
     }
-    @keyframes spin {
-    to {
-        background-position: 0 200%;
-    }
-}
-
-@keyframes spinMask {
-    to {
-        -webkit-mask-position: 0 200%;
-    }
-}
-
-.wrapper,
-.wrapper-earth {
-    position: absolute;
-    width: 100vw;
-    height: 100vw;
-    bottom: -84vw;
-    left: 0;
-    border-radius: 100%;
-    overflow: hidden;
-}
-
-.wrapper {
-    box-shadow: 0.5vw 0 1vw #6dcfff, 1vw 0 5vw rgba(255, 255, 255, 0.5), 3vw -8vw 6vw -9vw rgba(201, 237, 255, 0.5);
-
-    &::before,
-    &::after {
-        content: '';
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 100%;
-    }
-
-    &::before {
-        box-shadow: inset 0 0 3vw 1.5vw rgba(201, 237, 255, 0.83);
-    }
-
-    &::after {
-        top: 200vw;
-        box-shadow: -8vw -196vw 10vw black;
-    }
-}
-
-.wrapper-earth {
-    bottom: -84.5vw;
-    box-shadow: 0 0 0 0.5vw rgba(201, 237, 255, 0.5);
-}
-
-.planet,
-.planet-clouds {
-    perspective: 39vw;
-}
-
-.planet-clouds {
-    mix-blend-mode: screen;
-}
-
-.planet,
-.planet-clouds,
-.water,
-.earth,
-.clouds {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.earth {
-    animation: spin 10s linear infinite;
-    transform-origin: top;
-    transform: rotateX(30deg) scale(0.4);
-}
-
-.water {
-    animation: spinMask 10s linear infinite;
-    transform-origin: top;
-    transform: rotateX(30deg) scale(0.4);
-    mix-blend-mode: lighten;
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: -20%;
-        left: 70%;
-        width: 40%;
-        height: 35%;
-        border-radius: 100%;
-        box-shadow: 0 0 15vw 20vw #ffb400;
-    }
-}
-
-.clouds {
-    mix-blend-mode: screen;
-    animation: spin 9s linear infinite;
-    transform-origin: top;
-    transform: rotateX(30deg) scale(0.4);
-}
-
-.wrapper-earth .clouds {  
-    mix-blend-mode: multiply;
-    filter: invert(100%);
-    opacity: 0.5;
-}
-
-.sun {
-    mix-blend-mode: screen;
-
-    &::before {
-        content: '';
-        position: fixed;
-        bottom: 0;
-        right: 14vw;
-        width: 50vw;
-        height: 40vw;
-        opacity: 0.2;
-    }
-
-    .flare {
-        position: fixed;
-        width: 6vw;
-        height: 68vw;
-        right: 34vw;
-        bottom: 0;
-        overflow: hidden;
-        opacity: 0.2;
-        filter: blur(2px);
-        transform: rotate(30deg);
-
-        &:nth-child(2) {
-            transform: rotate(-30deg);
-        }
-
-        &:nth-child(3) {
-            transform: rotate(60deg);
-        }
-
-        &:nth-child(4) {
-            transform: rotate(120deg);
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 30vw;
-            width: 8vw;
-            height: 8vw;
-            border-radius: 100%;
-            box-shadow: 0 0 30vw white;
-        }
-    }
-
-    &::after {
-        content: '';
-        position: fixed;
-        bottom: 30vw;
-        right: 33vw;
-        width: 8vw;
-        height: 8vw;
-        border-radius: 100%;
-        background: white;
-        box-shadow: 0 0 4vw white, 0 0 10vw fade(orange, 50%), 0 0 10vw fade(white, 20%), 0 0 1vw white, 0 0 2vw white;
-    }
-}
 
     // ----- small-gray-lines -----
     .small-gray-lines .line {

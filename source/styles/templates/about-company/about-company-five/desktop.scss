@@ -1,103 +1,69 @@
 & {
-    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    // box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     background: url('../images/dots.png');
     font-family: $Raleway-Regular;
     background-color: $white;
+    position: relative;
+    min-height: auto;
     overflow: hidden;
+    z-index: 1;
+    left: 0;
+    
+    // ----- jelly-button -----
+    .jelly-button { animation: fadeIn $time $time * 9 both; }
+
+    // ----- social -----
+    .social-panel {
+        .instagram { animation: social $time * 3 $time * 9 both; }
+        .facebook { animation: socialReverse $time * 3 $time * 9 both; }
+    }
+    
+    // ----- big-background-letter -----
+    .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+    
+    // ----- lines -----
+    .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+
+    // ----- title -----
+    .title {
+        p {
+            animation: fadeInUp $time * 2 $time * 7 linear;
+            animation-fill-mode: forwards;
+        }
+        span.name {
+            span {
+                animation: titleName $time * 2 $time * 8 linear;
+                animation-fill-mode: forwards;    
+            }
+            &:before {
+                animation: titleNameShape $time * 2 $time * 7 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .word {
+            &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+            &:nth-of-type(1) span {
+                animation: titleWord $time * 2 $time * 5 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
     
     // ----- animation right -----
-    &.current, &.current-back,
-    &.previous, &.previous-back {
-        animation: Right $time * 3 0s both;
+    // &.current, &.current-back,
+    // &.previous, &.previous-back {
+    //     animation: Right $time * 3 0s both;
         
-        // ----- jelly-button -----
-        .jelly-button { animation: fadeIn $time $time * 9 both; }
-
-        // ----- social -----
-        .social-panel {
-            .instagram { animation: social $time * 3 $time * 9 both; }
-            .facebook { animation: socialReverse $time * 3 $time * 9 both; }
-        }
-        
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-        
-        // ----- lines -----
-        .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
-
-        // ----- title -----
-        .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 7 linear;
-                animation-fill-mode: forwards;
-            }
-            span.name {
-                span {
-                    animation: titleName $time * 2 $time * 8 linear;
-                    animation-fill-mode: forwards;    
-                }
-                &:before {
-                    animation: titleNameShape $time * 2 $time * 7 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-            .word {
-                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
-                &:nth-of-type(1) span {
-                    animation: titleWord $time * 2 $time * 5 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
-    }
+    // }
     
-    // ----- animation left -----
-    &.previous, &.previous-back {
-        animation: slideLeft $time * 3 $topPanelAnimationTime both;
-        animation-play-state: paused;
+    // // ----- animation left -----
+    // &.previous, &.previous-back {
+    //     animation: slideLeft $time * 3 $topPanelAnimationTime both;
+    //     animation-play-state: paused;
         
-        // ----- jelly-button -----
-        .jelly-button { animation: fadeIn $time $time * 9 both; }
-
-        // ----- social -----
-        .social-panel {
-            .instagram {  animation: social $time * 3 $time * 9 both; }
-            .facebook { animation: socialReverse $time * 3 $time * 9 both; }
-        } 
-        
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-        
-        // ----- lines -----
-        .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
-
-        // ----- title -----
-        .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 7 linear;
-                animation-fill-mode: forwards;
-            }
-            span.name {
-                span {
-                    animation: titleName $time * 2 $time * 8 linear;
-                    animation-fill-mode: forwards;    
-                }
-                &:before {
-                    animation: titleNameShape $time * 2 $time * 7 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-            .word {
-                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
-                &:nth-of-type(1) span {
-                    animation: titleWord $time * 2 $time * 5 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
-    }
-    &.current-back { animation: none; }
-    &.previous-back { animation-play-state: running; }
+    // }
+    // &.current-back { animation: none; }
+    // &.previous-back { animation-play-state: running; }
     
     // ----- social-panel -----
     .social-panel {
