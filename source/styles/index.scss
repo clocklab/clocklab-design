@@ -3,7 +3,7 @@ body { overflow: hidden; }
 // base
 @import "base/variables";
 @import "base/mixins";
-// @import "base/fonts";
+@import "base/fonts";
 @import "base/reset";
 @import "base/common";
 @import "base/animate";
@@ -47,7 +47,7 @@ body { overflow: hidden; }
 // @import "templates/index/q7/main";
 @import "templates/index/audi-new/main";
 // @import "templates/index/vinograd/main";
-// @import "templates/index/euro-club/main";
+@import "templates/index/euro-club/main";
 // @import "templates/index/alta-capital/main";
 
 // services on the main page

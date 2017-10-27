@@ -4,7 +4,7 @@
 
 //= include ./modules/web-production/web-production-open-form.js
 
-//=include ./../components/menu.js
+//= include ./../components/menu.js
 
 //= include ./../libraries/wow.js
 
