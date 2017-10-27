@@ -33,7 +33,7 @@
         }
         .word {
             &:after { animation: halfDown $time * 2 linear $time * 4 both; }
-            span {
+            span, h1 {
                 animation: titleWord $time * 2 $time * 5 linear;
                 animation-fill-mode: forwards;
             }
@@ -79,6 +79,7 @@
         padding: 90px 70px;
         position: absolute;
         background-color: $white;
+        h1 { color: $black; }
     }
     
     // ----- crossed-button -----

@@ -55,7 +55,7 @@
         }
         .word {
             &:after { animation: halfDown $time * 2 linear $time * 7 both; }
-            span {
+            h1 {
                 animation: titleWord $time * 2 $time * 8 linear;
                 animation-fill-mode: forwards;
             }
@@ -70,14 +70,6 @@
     // }
     // &.current-back { animation: none; }
     // &.previous-back { animation-play-state: running; }
-
-    .long-read {
-            position: relative;
-    z-index: 1;
-    height: initial;
-    visibility: visible;
-    opacity: 1;
-    }
     
     // ----- graph -----
     .graph {
