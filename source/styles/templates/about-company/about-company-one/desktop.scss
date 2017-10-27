@@ -173,8 +173,6 @@
 }
 
 .earth {
-    background: url(http://www.waterplea.com/codepen//earth.jpg) 0 0;
-    background-size: cover;
     animation: spin 10s linear infinite;
     transform-origin: top;
     transform: rotateX(30deg) scale(0.4);
