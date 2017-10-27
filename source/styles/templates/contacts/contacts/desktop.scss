@@ -40,7 +40,7 @@
     .title {
         .word {
             &:after { animation: halfDown $time * 2 linear $time * 4 both; }
-            &:nth-of-type(1) span {
+            &:nth-of-type(1) h1 {
                 animation: titleWord $time * 2 $time * 5 linear;
                 animation-fill-mode: forwards;
             }
@@ -61,22 +61,11 @@
     // ----- title -----
     .title {
         margin: 27vh 0 0 px(590);
-        span.name { top: -2vh; }
         .word {
             margin-bottom: 0;
             padding-bottom: 6px;
             &:after { top: 33px; }
         }
-    }
-
-    .new-header {
-        margin: 27vh 0 0 px(590);
-        color: $white;
-        font-family: $Raleway-ExtraBold;
-        font-size: px(120);
-        text-transform: uppercase;
-        animation: fadeInUp $time * 2 linear $time * 4 both;
-
     }
 
     // ----- contacts-info -----
