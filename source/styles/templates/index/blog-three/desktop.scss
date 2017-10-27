@@ -32,9 +32,7 @@
 
         // ----- title -----
         .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 7 linear both;
-            }
+            p { animation: fadeInUp $time * 2 $time * 7 linear both; }
             span.name {
                 span {
                     animation: titleName $time * 2 $time * 8 linear;
@@ -107,9 +105,7 @@
 
         // ----- title -----
         .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 7 linear both;
-            }
+            p { animation: fadeInUp $time * 2 $time * 7 linear both; }
             span.name {
                 span {
                     animation: titleName $time * 2 $time * 8 linear;
@@ -245,13 +241,13 @@
                 -webkit-transform: scale(.15);
             }
             &.option::before {
-                border-left: 3px solid $black;
-                border-bottom: 3px solid $black;
+                border-left: 2px solid $black;
+                border-bottom: 2px solid $black;
                 -webkit-transform-origin: 0 100%;
             }
             &.option::after {
-                border-top: 3px solid $black;
-                border-right: 3px solid $black;
+                border-top: 2px solid $black;
+                border-right: 2px solid $black;
                 -webkit-transform-origin: 100% 0%;
             }
         }

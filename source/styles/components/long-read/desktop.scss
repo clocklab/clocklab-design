@@ -494,7 +494,9 @@
     }
 
     &--web-production,
-    &--marketing {
+    &--marketing,
+    &--design,
+    &--seo {
         position: relative;
         z-index: 1;
         height: initial;

@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 var mobile = '-mobile'
 // var mobile = ''
 
-var page = `index`
+var page = `services/seo`
 
 
 var sass = require('gulp-ruby-sass');

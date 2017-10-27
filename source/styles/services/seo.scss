@@ -1,9 +1,9 @@
-body { overflow: hidden; }
+// body { overflow: hidden; }
 
 // base
 @import "../base/variables";
 @import "../base/mixins";
-@import "../base/fonts";
+// @import "../base/fonts";
 @import "../base/reset";
 @import "../base/common";
 @import "../base/animate";
@@ -13,8 +13,8 @@ body { overflow: hidden; }
 @import "../components/modules/small-gray-lines";
 
 // components
-@import "../components/top-panel/main";
 @import "../components/form/main";
+@import "../components/top-panel/main";
 @import "../components/long-read/main";
 @import "../components/crossed-button/main";
 @import "../components/jumping-button/main";
@@ -36,4 +36,3 @@ body { overflow: hidden; }
 @import "templates/seo/seo-three/main";
 
 // logo and menu animation
-.logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }

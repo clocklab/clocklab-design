@@ -1,70 +1,83 @@
 & {
-    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    // box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $Raleway-Regular;
     background: $background;
+    position: relative;
+    min-height: auto;
     overflow: hidden;
+    z-index: 1;
+    left: 0;
+    
+    // ----- lines -----
+    .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+    
+    // ----- crossed-button -----
+    .crossed-button { animation: fadeInUp $time * 2 $time * 16 both; }
+    
+    // ----- graph -----
+    @keyframes fadeInThree {
+        from { opacity: 0; }
+        to { opacity: 3.000000e-02; }
+    }
+    @keyframes fadeInFour {
+        from { opacity: 0; }
+        to { opacity: .1; }
+    }
+    .st2 { animation: fadeIn $time * 3 $time * 12  both; }
+    .st3 { animation: fadeInThree $time * 6 $time * 10 both; }
+    .st4 { animation: fadeInFour $time * 6 $time * 11 both; }
+    .st5 { animation: fadeIn $time * 6 $time * 12 both; }
+    .st6, .st7, .st8 { animation: fadeIn $time * 6 $time * 15 both; }
 
-    // ----- animation fade -----
-    &.current, &.current-back,
-    &.previous, &.previous-back {
-        animation: fadeIn $time * 3 0s both;
+    // ----- image-block -----
+    .image-block .image-container {
+        animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+        img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
+        &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
+    }
 
-        // ----- lines -----
-        .lines div { animation: heightChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
-        
-        // ----- crossed-button -----
-        .crossed-button { animation: fadeInUp $time * 2 $time * 16 both; }
-        
-        // ----- graph -----
-        @keyframes fadeInThree {
-            from { opacity: 0; }
-            to { opacity: 3.000000e-02; }
+    // ----- title -----
+    .title {
+        animation: fadeIn $time * 2 $time * 5 linear;
+        animation-fill-mode: forwards;
+        p {
+            animation: fadeInUp $time * 2 $time * 10 linear both;
         }
-        @keyframes fadeInFour {
-            from { opacity: 0; }
-            to { opacity: .1; }
-        }
-        .st2 { animation: fadeIn $time * 3 $time * 12  both; }
-        .st3 { animation: fadeInThree $time * 6 $time * 10 both; }
-        .st4 { animation: fadeInFour $time * 6 $time * 11 both; }
-        .st5 { animation: fadeIn $time * 6 $time * 12 both; }
-        .st6, .st7, .st8 { animation: fadeIn $time * 6 $time * 15 both; }
-
-        // ----- image-block -----
-        .image-block .image-container {
-            animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
-            img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
-            &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
-        }
-
-        // ----- title -----
-        .title {
-            animation: fadeIn $time * 2 $time * 5 linear;
-            animation-fill-mode: forwards;
-            p {
-                animation: fadeInUp $time * 2 $time * 10 linear both;
+        span.name {
+            span {
+                animation: titleName $time * 2 $time * 11 linear;
+                animation-fill-mode: forwards;
             }
-            span.name {
-                span {
-                    animation: titleName $time * 2 $time * 11 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:before {
-                    animation: titleNameShape $time * 2 $time * 10 linear;
-                    animation-fill-mode: forwards;
-                }
+            &:before {
+                animation: titleNameShape $time * 2 $time * 10 linear;
+                animation-fill-mode: forwards;
             }
-            .word {
-                &:after { animation: halfDown $time * 2 linear $time * 7 both; }
-                span {
-                    animation: titleWord $time * 2 $time * 8 linear;
-                    animation-fill-mode: forwards;
-                }
+        }
+        .word {
+            &:after { animation: halfDown $time * 2 linear $time * 7 both; }
+            span {
+                animation: titleWord $time * 2 $time * 8 linear;
+                animation-fill-mode: forwards;
             }
         }
     }
-    &.current-back { animation: none; }
-    &.previous-back { animation-play-state: running; }
+
+    // ----- animation fade -----
+    // &.current, &.current-back,
+    // &.previous, &.previous-back {
+    //     animation: fadeIn $time * 3 0s both;
+
+    // }
+    // &.current-back { animation: none; }
+    // &.previous-back { animation-play-state: running; }
+
+    .long-read {
+            position: relative;
+    z-index: 1;
+    height: initial;
+    visibility: visible;
+    opacity: 1;
+    }
     
     // ----- graph -----
     .graph {
