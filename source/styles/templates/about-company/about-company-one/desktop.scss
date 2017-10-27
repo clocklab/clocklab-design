@@ -6,9 +6,7 @@
     // ----- animation fade -----
     &.current, &.current-back,
     &.previous, &.previous-back {
-        background: url(http://www.waterplea.com/codepen//sky.jpg);
         animation: fadeIn $time * 3 0s both;
-        background-size: cover;
         
         // ----- wrapper -----
         .wrapper { animation: fadeInUp $time * 3 $time * 3 both; }
