@@ -8,6 +8,9 @@
     &.current, &.current-back,
     &.previous, &.previous-back {
         animation: Right $time * 3 0s both;
+        
+        // ----- special-buttons -----
+        .special-buttons { animation: fadeInUp $ANBStickerTextAnimationTime $ANBStickerTextDelayTime both; }
 
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -80,6 +83,9 @@
     &.previous, &.previous-back {
         animation: slideLeft $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;
+        
+        // ----- special-buttons -----
+        .special-buttons { animation-play-state: paused; }
 
         // ----- navigation-elements -----
         .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
@@ -170,21 +176,101 @@
         position: absolute;
         .word:nth-of-type(2) { margin-bottom: 5px; }
     }
-
-    // ----- jumping-button -----
-    .jumping-button {
-        position: absolute;
-        a {
+    
+    // ----- special-buttons -----
+    .special-buttons {
+        display: -webkit-inline-box;
+        margin: px(60) 0 0 px(170);
+        .special-button {
+            margin-right: px(100);
+            line-height: px(110);
+            position: relative;
+            height: px(110);
+            display: block;
+            width: px(510);
+            color: $blue;
+            font-size: px(28);
+            transition: $time;
+            text-align: center;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            &:before { background: $black; }
-            span {
-                color: $black;
-                font-size: px(25);
-                font-family: $Raleway-Medium;
-                &:nth-of-type(10) { margin-right: 5px;}
+            font-family: $Roboto-Black;
+            &-text {
+                position: relative;
+                z-index: 2;
+            }
+            &:after {
+                position: absolute;
+                display: block;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 15%;
+                content: '';
+                background: $blue;
+                transition: height $timeHalf ease-out;
+            }
+            &:hover {
+                color: $white;
+                &:after { height: 100%; }
+            }
+        }
+        .animated-button {
+            vertical-align: middle;
+            display: inline-block;
+            line-height: px(110);
+            text-align: center;
+            position: relative;
+            height: px(110);
+            color: $black;
+            width: px(300);
+            cursor: pointer;
+            padding: 0 20px;
+            transition: $time;
+            font-size: px(28);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: $Roboto-Black;
+            &:hover::after, &:hover::before { -webkit-transform: scale(1); }
+            &::before, &::after {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                z-index: 3;
+                content: '';
+                transition: $time;
+                box-sizing: border-box;
+                -webkit-transform: scale(.15);
+            }
+            &.option::before {
+                border-left: 3px solid $black;
+                border-bottom: 3px solid $black;
+                -webkit-transform-origin: 0 100%;
+            }
+            &.option::after {
+                border-top: 3px solid $black;
+                border-right: 3px solid $black;
+                -webkit-transform-origin: 100% 0%;
             }
         }
     }
+
+    // ----- jumping-button -----
+    // .jumping-button {
+    //     position: absolute;
+    //     a {
+    //         text-transform: uppercase;
+    //         &:before { background: $black; }
+    //         span {
+    //             color: $black;
+    //             font-size: px(25);
+    //             font-family: $Raleway-Medium;
+    //             &:nth-of-type(10) { margin-right: 5px;}
+    //         }
+    //     }
+    // }
     
     // ----- blue-line -----
     .blue-line {
