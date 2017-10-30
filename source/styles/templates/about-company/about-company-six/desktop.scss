@@ -1,5 +1,5 @@
 & {
-    // box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $Raleway-Regular;
     overflow: hidden;
     
@@ -155,20 +155,17 @@
                     height: 40%;
                     display: grid;
                     margin: 29vh 0 auto;
-                    .questions {
-                        // margin-top: 6.5vh;
-                        .open-form {
-                            text-align: left;
+                    .questions .open-form {
+                        text-align: left;
+                        span {
+                            font-family: $Raleway-ExtraBold;
+                            line-height: 1.5;
+                            font-size: px(48);
+                            color: $white;
                             span {
                                 font-family: $Raleway-ExtraBold;
-                                line-height: 1.5;
                                 font-size: px(48);
-                                color: $white;
-                                span {
-                                    font-family: $Raleway-ExtraBold;
-                                    font-size: px(48);
-                                    color: $blue;
-                                }
+                                color: $blue;
                             }
                         }
                     }

@@ -66,7 +66,10 @@
         position: absolute;
         font-family: $Raleway-ExtraBold;
         .word {
+            margin: 0;
+            width: auto;
             h1 {
+                bottom: -107px;
                 white-space: pre;
                 &:first-line { font-size: px(123); }
             }
