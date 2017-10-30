@@ -66,6 +66,7 @@
         position: absolute;
         font-family: $Raleway-ExtraBold;
         .word {
+            h1::first-line { font-size: px(123); }
             span, h1 {
                 text-transform: inherit;
                 font-size: px(106);
