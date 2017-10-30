@@ -10,15 +10,15 @@
 
 //= include ./../modules/design/questions.js
 
-//=include ./../modules/web-production/web-production-open-form.js
+//= include ./../modules/web-production/web-production-open-form.js
 
 //= include ./../../components/big-background-letter.js
 
 //= include ./../modules/scroll-menu.js
 
-//=include ./../modules/make-top-panel-dark.js
+/* //= include ./../modules/make-top-panel-dark.js */
 
 // change language color
-$('.dark').children().addClass('dark');
+// $('.dark').children().addClass('dark');
 
 new WOW().init();
