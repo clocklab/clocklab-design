@@ -28,6 +28,10 @@
                 margin-top: px(10);
                 color: $blue;
             }
+
+            .page-title {
+                color: $white;
+            }
         }
 
         &:before {
@@ -377,7 +381,8 @@
                 }
             }
 
-            h3 {
+            .list-item-title {
+                display: block;
                 margin-bottom: px(30);
                 font-family: $Roboto-Black;
                 font-size: px(48);

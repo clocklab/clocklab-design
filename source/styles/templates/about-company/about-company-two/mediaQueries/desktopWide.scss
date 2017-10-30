@@ -1,7 +1,23 @@
 @import '../desktop';
 
 // ----- title ------
-.title { left: px(300); }
+.title {
+    &.long {
+        top: px(450);
+        left: px(350);
+    }
+    &.main {
+        top: px(450);
+        left: px(350);
+        p { font-size: px(40); }
+        .crossed-button { margin: 75px 0 0 -10px; }
+        .word {
+            &:nth-of-type(1) span, &:nth-of-type(2) span,
+            &:nth-of-type(3) span { font-size: px(125); }
+            &:nth-of-type(4) span { font-size: px(75); }
+        }
+    }
+}
 
 // ----- image-block -----
 .image-block {

@@ -1,5 +1,5 @@
 & {
-    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    // box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $Raleway-Regular;
     overflow: hidden;
     
@@ -48,10 +48,10 @@
                     animation-fill-mode: forwards;
                 }
             }
-        }
+        }  
     }
 
-   // ----- animation right -----
+    // ----- animation right -----
     &.previous, &.previous-back {
         animation: slideRight $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;

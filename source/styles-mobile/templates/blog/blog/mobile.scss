@@ -40,7 +40,8 @@
                 padding-left: px(20);
             }
 
-            h2 {
+            .feed-item-title {
+                display: block;
                 margin-top: px(40);
                 padding-right: px(50);
                 color: $white;

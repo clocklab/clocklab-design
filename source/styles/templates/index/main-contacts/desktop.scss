@@ -25,8 +25,8 @@
             &:nth-of-type(3) { animation: fadeInUp $time * 3 $time * 5 both; }
         }
 
-        // ----- form -----
-        .form {
+        // ----- main-form -----
+        .main-form {
             animation: mainConatactsMapRight $time * 3 $time * 3 linear;
             animation-fill-mode: forwards;
         }
@@ -59,8 +59,8 @@
             &:nth-of-type(3) { animation: fadeInUp $time * 3 $time * 5 both; }
         }
 
-        // ----- form -----
-        .form {
+        // ----- main-form -----
+        .main-form {
             animation: mainConatactsMapRight $time * 3 $time * 3 linear;
             animation-fill-mode: forwards;
         }
@@ -83,25 +83,27 @@
         span::before  { content: 'o'; }
     }
     
-    // ----- form -----
-    .form {
+    // ----- main-form -----
+    .main-form {
         width: 40%;
         z-index: 2;
-        height: 55.5vh;
         visibility: hidden;
         background-color: $lightBlack;
         position: absolute;
         right: 14.5%;
         top: 32.5vh;
         form {
+            padding-bottom: px(130);
+            padding-right: px(260);
+            padding-left: px(260);
             position: relative;
-            padding: 0 px(260);
+            display: table;
             color: $white;
             width: 100%;
             .form-title {
                 font-family: $Raleway-ExtraBold;
                 text-transform: uppercase;
-                margin-bottom: px(220);
+                margin-bottom: px(175);
                 font-size: px(60);
             }
             label {
@@ -111,7 +113,7 @@
                 position: relative;
                 margin-bottom: px(60);
                 border-bottom: 1px solid $gray;
-                &:nth-of-type(2) { margin-bottom: px(150); }
+                &:nth-of-type(2) { margin-bottom: px(200); }
                 span {
                     top: 0;
                     left: px(20);

@@ -1,159 +1,99 @@
 & { 
-    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    // box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     transition: perspective $time * 2;
     font-family: $Raleway-Regular;
     background: $white;
+    position: relative;
+    min-height: auto;
     overflow: hidden;
+    z-index: 1;
+    left: 0;
+    
+    // ----- animation -----
+    .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
+    .title {
+        p {
+            animation: fadeInUp $time * 2 $time * 12 linear;
+            animation-fill-mode: forwards;
+        }
+        span.name {
+            span {
+                animation: titleName $time * 2 $time * 13 linear;
+                animation-fill-mode: forwards;
+            }
+            &:before {
+                animation: titleNameShape $time * 2 $time * 12 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .word {
+            &:after { animation: halfDown $time * 2 linear $time * 9 both; }
+            &:nth-of-type(1) span {
+                animation: titleWord $time * 2 $time * 10 linear;
+                animation-fill-mode: forwards;
+            }
+            &:nth-of-type(2) span {
+                animation: titleWord $time * 2 $time * 11 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+    &:before, &:after { animation: Right $WFBeforeAnimationTime $WFBeforeDelayTime both; }
+    &:after { animation-name: Left; }
+    .lines .line {
+        animation: heightIncreaseFull $WFLineAnimationTime $WFLineOneDelayTime both;
+        &--1 { animation-delay: $WFLineOneDelayTime; }
+        &--2 { animation-delay: $WFLineTwoDelayTime; }
+        &--3 { animation-delay: $WFLineThreeDelayTime; }
+        &--4 { animation-delay: $WFLineFourDelayTime; }
+        &--5 { animation-delay: $WFLineFiveDelayTime; }
+    }
+    .step {
+        .index span { animation: Left $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+        .content-title { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+        p { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
+        &:nth-child(2) {
+            .index span { animation-delay: $WFTextSecondColumnDelayTime; }
+            .content-title { animation-delay: $WFTextSecondColumnDelayTime; }
+            p { animation-delay: $WFTextSecondColumnDelayTime; }
+        }
+        &:nth-child(3) {
+            .index span { animation-delay: $WFTextThirdColumnDelayTime; }
+            .content-title { animation-delay: $WFTextThirdColumnDelayTime; }
+            p { animation-delay: $WFTextThirdColumnDelayTime; }
+        }
+        &:nth-child(4) {
+            .index span { animation-delay: $WFTextFourthColumnDelayTime; }
+            .content-title { animation-delay: $WFTextFourthColumnDelayTime; }
+            p { animation-delay: $WFTextFourthColumnDelayTime; }
+        }
+        &:nth-child(5) {
+            .index span { animation-delay: $WFTextFifthColumnDelayTime; }
+            .content-title { animation-delay: $WFTextFifthColumnDelayTime; }
+            p { animation-delay: $WFTextFifthColumnDelayTime; }
+        }
+        &:nth-child(6) {
+            .index span { animation-delay: $WFTextSixthColumnDelayTime; }
+            .content-title { animation-delay: $WFTextSixthColumnDelayTime; }
+            p { animation-delay: $WFTextSixthColumnDelayTime; }
+        }
+    }
 
     // ----- animation up -----
-    &.current, &.current-back,
-    &.previous, &.previous-back {
-        animation: Up $time * 3 0s both;
-        .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
-        .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 12 linear;
-                animation-fill-mode: forwards;
-            }
-            span.name {
-                span {
-                    animation: titleName $time * 2 $time * 13 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:before {
-                    animation: titleNameShape $time * 2 $time * 12 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-            .word {
-                &:after { animation: halfDown $time * 2 linear $time * 9 both; }
-                &:nth-of-type(1) span {
-                    animation: titleWord $time * 2 $time * 10 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-of-type(2) span {
-                    animation: titleWord $time * 2 $time * 11 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
-        &:before, &:after { animation: Right $WFBeforeAnimationTime $WFBeforeDelayTime both; }
-        &:after { animation-name: Left; }
-        .lines .line {
-            animation: heightIncreaseFull $WFLineAnimationTime $WFLineOneDelayTime both;
-            &--1 { animation-delay: $WFLineOneDelayTime; }
-            &--2 { animation-delay: $WFLineTwoDelayTime; }
-            &--3 { animation-delay: $WFLineThreeDelayTime; }
-            &--4 { animation-delay: $WFLineFourDelayTime; }
-            &--5 { animation-delay: $WFLineFiveDelayTime; }
-        }
-        .step {
-            .index span { animation: Left $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
-            .content-title { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
-            p { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
-            &:nth-child(2) {
-                .index span { animation-delay: $WFTextSecondColumnDelayTime; }
-                .content-title { animation-delay: $WFTextSecondColumnDelayTime; }
-                p { animation-delay: $WFTextSecondColumnDelayTime; }
-            }
-            &:nth-child(3) {
-                .index span { animation-delay: $WFTextThirdColumnDelayTime; }
-                .content-title { animation-delay: $WFTextThirdColumnDelayTime; }
-                p { animation-delay: $WFTextThirdColumnDelayTime; }
-            }
-            &:nth-child(4) {
-                .index span { animation-delay: $WFTextFourthColumnDelayTime; }
-                .content-title { animation-delay: $WFTextFourthColumnDelayTime; }
-                p { animation-delay: $WFTextFourthColumnDelayTime; }
-            }
-            &:nth-child(5) {
-                .index span { animation-delay: $WFTextFifthColumnDelayTime; }
-                .content-title { animation-delay: $WFTextFifthColumnDelayTime; }
-                p { animation-delay: $WFTextFifthColumnDelayTime; }
-            }
-            &:nth-child(6) {
-                .index span { animation-delay: $WFTextSixthColumnDelayTime; }
-                .content-title { animation-delay: $WFTextSixthColumnDelayTime; }
-                p { animation-delay: $WFTextSixthColumnDelayTime; }
-            }
-        }
-    }
+    // &.current, &.current-back,
+    // &.previous, &.previous-back {
+    //     animation: Up $time * 3 0s both;
+        
+    // }
     
     // ----- animation down -----
-    &.previous, &.previous-back {
-        animation: slideDown $time * 3 0s both;
-        animation-play-state: paused;
-        .big-background-letter { animation: fadeIn $time * 3 $time * 15 both; }
-        .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 12 linear;
-                animation-fill-mode: forwards;
-            }
-            span.name {
-                span {
-                    animation: titleName $time * 2 $time * 13 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:before {
-                    animation: titleNameShape $time * 2 $time * 12 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-            .word {
-                &:after { animation: halfDown $time * 2 linear $time * 9 both; }
-                &:nth-of-type(1) span {
-                    animation: titleWord $time * 2 $time * 10 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-of-type(2) span {
-                    animation: titleWord $time * 2 $time * 11 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
-        &:before, &:after { animation: Right $WFBeforeAnimationTime $WFBeforeDelayTime both; }
-        &:after { animation-name: Left; }
-        .lines .line {
-            animation: heightIncreaseFull $WFLineAnimationTime $WFLineOneDelayTime both;
-            &--1 { animation-delay: $WFLineOneDelayTime; }
-            &--2 { animation-delay: $WFLineTwoDelayTime; }
-            &--3 { animation-delay: $WFLineThreeDelayTime; }
-            &--4 { animation-delay: $WFLineFourDelayTime; }
-            &--5 { animation-delay: $WFLineFiveDelayTime; }
-        }
-        .step {
-            .index span { animation: Left $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
-            .content-title { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
-            p { animation: Right $WFTextColumnAnimationTime $WFTextFirstColumnDelayTime both; }
-            &:nth-child(2) {
-                .index span { animation-delay: $WFTextSecondColumnDelayTime; }
-                .content-title { animation-delay: $WFTextSecondColumnDelayTime; }
-                p { animation-delay: $WFTextSecondColumnDelayTime; }
-            }
-            &:nth-child(3) {
-                .index span { animation-delay: $WFTextThirdColumnDelayTime; }
-                .content-title { animation-delay: $WFTextThirdColumnDelayTime; }
-                p { animation-delay: $WFTextThirdColumnDelayTime; }
-            }
-            &:nth-child(4) {
-                .index span { animation-delay: $WFTextFourthColumnDelayTime; }
-                .content-title { animation-delay: $WFTextFourthColumnDelayTime; }
-                p { animation-delay: $WFTextFourthColumnDelayTime; }
-            }
-            &:nth-child(5) {
-                .index span { animation-delay: $WFTextFifthColumnDelayTime; }
-                .content-title { animation-delay: $WFTextFifthColumnDelayTime; }
-                p { animation-delay: $WFTextFifthColumnDelayTime; }
-            }
-            &:nth-child(6) {
-                .index span { animation-delay: $WFTextSixthColumnDelayTime; }
-                .content-title { animation-delay: $WFTextSixthColumnDelayTime; }
-                p { animation-delay: $WFTextSixthColumnDelayTime; }
-            }
-        }
-    }
-    &.current-back { animation: none; }
-    &.previous-back { animation-play-state: running; }
+    // &.previous, &.previous-back {
+    //     animation: slideDown $time * 3 0s both;
+    //     animation-play-state: paused;
+      
+    // }
+    // &.current-back { animation: none; }
+    // &.previous-back { animation-play-state: running; }
 
     // ----- language -----
     .language {
