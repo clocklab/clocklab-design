@@ -2,6 +2,8 @@
 
 //=include ./../../components/open-form.js
 
+//=include ./../../components/answers.js
+
 
 
 

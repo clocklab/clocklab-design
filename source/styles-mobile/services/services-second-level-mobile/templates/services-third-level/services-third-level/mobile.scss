@@ -739,7 +739,7 @@
         &-list {
             margin-top: px(160);
 
-            li {
+            .list-item {
                 margin-bottom: px(80);
             }
 
@@ -757,13 +757,16 @@
             }
 
             .text-container {
+                height: 0;
                 color: $lightGray; 
                 font-family: $Roboto-Regular;
                 font-size: px(32);
                 line-height: 1.4;
+                overflow: hidden;
 
                 p {
                     margin-bottom: px(60);
+                    margin-top: 0;
                 }
             }
         }
