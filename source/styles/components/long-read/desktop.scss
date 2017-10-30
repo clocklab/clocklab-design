@@ -492,9 +492,12 @@
             }
         }
     }
-
+    
     &--web-production,
-    &--marketing {
+    &--about-company,
+    &--marketing,
+    &--design,
+    &--seo {
         position: relative;
         z-index: 1;
         height: initial;
