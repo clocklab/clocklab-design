@@ -6,10 +6,15 @@
 
     // ---- common style ----
     p {
-        margin-bottom: px(60);
+        margin: px(60) 0;
         font-family: $Roboto-Regular;
         font-size: px(32);
         line-height: 1.4;
+
+        a {
+            color: $blue;
+            text-decoration: underline;
+        }
     }
 
     .italic {
@@ -43,7 +48,7 @@
 
     .big {
         display: block;
-        margin-bottom: px(70);
+        margin: px(70) 0;
         font-family: $Roboto-Black;
         font-size: px(60);
         line-height: 1.1;
@@ -58,6 +63,10 @@
 
     .blue {
         color: $blue;
+    }
+
+    .gray {
+        color: $gray;
     }
 
     .list-item-title {
@@ -171,13 +180,19 @@
             transform: translateX(px(-30));
 
             &-title {
+                display: block;
+                margin-bottom: px(110);
                 font-family: $Roboto-Black;
                 font-size: px(60);
                 line-height: 1.2;
             }
 
-            .circled {
-                margin-top: px(110);
+            p {
+                color: $lightGray;
+            }
+
+            ul {
+                margin-bottom: px(150);
             }
         }
     }
@@ -771,6 +786,10 @@
 
         &-list {
             margin-top: px(120);
+
+            li {
+                margin-bottom: px(60);
+            }
 
             a {
                 display: flex;
