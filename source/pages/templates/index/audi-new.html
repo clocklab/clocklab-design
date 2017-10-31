@@ -10,7 +10,9 @@
         @@include('./components/portfolio-client.html')
     </div>
 
-    <span class="project-name">Audi</span>
+    <div class="project-name-container">
+        <span class="project-name">Audi</span>
+    </div>
 
     <div class="info">
         @@include('./components/sticker.html')
@@ -46,10 +48,10 @@
 
     <script>
         var substrate = document.querySelector('.audi-new'),
-            mirror = substrate.querySelector("#mirror > img");
+            ttl = substrate.querySelector('.project-name')
 
         substrate.onmousemove = function(e) {
-            mirror.style.clipPath="inset(0 " + (mirror.offsetWidth / 2.2 + e.clientX * 0.03) + "px 0 " + (mirror.offsetWidth / 3.5 - e.clientX * 0.03) + "px)";
+            ttl.style.transform = `translateX(${- e.clientX * 0.03}px)`;
         }
     </script>
 </div>

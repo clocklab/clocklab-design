@@ -29,7 +29,6 @@
     }
 
     .feed {
-        padding-right: $BPostWidth;
 
         &__post {
             min-width: 285px;
@@ -40,6 +39,8 @@
 
                 .title {
                     margin-bottom: px(50);
+                    font-size: px(38);
+                    line-height: 1.1;
                 }
             }
         }

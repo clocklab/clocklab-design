@@ -18,6 +18,11 @@
         z-index: 2;
         width: 100%;
         filter: drop-shadow(0 0 30px $black);
+
+        & > img {
+		    -webkit-clip-path:inset(0 50% 0 22%);
+            clip-path:inset(0 50% 0 22%);
+        }
     }
 
     .portfolio-client {
@@ -53,10 +58,15 @@
         }
     }
 
-    .project-name {
+    .project-name-container {
         position: absolute;
         top: px(240);
         right: px(480);
+        z-index: 1;
+    }
+
+    .project-name {
+        display: block;
         font-family: $Audi-Bold;
         font-size: px(500);
     }
@@ -70,7 +80,6 @@
     }
 
     .sticker {
-        font-family: $Raleway-Bold;
         font-size: px(24);
 
         span {
@@ -103,7 +112,7 @@
 
         p {
             color: $white;
-            font-family: $Roboto-Bold;
+            font-family: $Roboto-Light;
             font-size: px(60);
             line-height: 1.4;
         }
@@ -116,7 +125,7 @@
         height: px(110);
         width: px(510);
         color: $white;
-        font-family: $Roboto-Black;
+        font-family: $Roboto-Light;
         font-size: px(28);  
         line-height: px(110); 
         letter-spacing: 2px;
@@ -240,7 +249,7 @@
             }
         }
 
-        .project-name {
+        .project-name-container {
             animation: fadeInRight $ANBStickerTextAnimationTime $ANBStickerTextDelayTime both;
         }
     
@@ -311,7 +320,7 @@
             }
         }
 
-        .project-name {
+        .project-name-container {
             animation-play-state: paused;
         }
     

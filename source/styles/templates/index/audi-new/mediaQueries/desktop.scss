@@ -13,9 +13,12 @@
         }
     }
 
-   .project-name {
+   .project-name-container {
         top: px(170);
         right: px(730);
+    }
+    
+    .project-name {
         font-size: px(200);
     }
 
