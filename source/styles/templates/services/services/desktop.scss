@@ -308,6 +308,13 @@
                         }
                     }
                 }
+
+                &:hover {
+
+                    .index {
+                        color: $blue;
+                    }
+                }
             }    
         }
     }

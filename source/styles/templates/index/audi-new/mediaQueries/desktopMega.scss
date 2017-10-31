@@ -8,11 +8,19 @@
 
     .project-name-container {
         top: px(300);
-        right: px(1000);
+        right: px(900);
+    }
+
+    .project-name {
+        font-size: px(600);
     }
 
     .info {
         top: px(240);
         right: px(850);
+    }
+
+    .about-work {
+        margin-top: px(700);
     }
 }
