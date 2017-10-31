@@ -141,14 +141,6 @@
         overflow: hidden;
     }
 
-    .logo {
-        animation: fadeIn $BLogoAnimationTime $BLogoDelayTime both;
-    }
-    
-    .menu {
-        animation: fadeIn $BMenuAnimationTime $BMenuDelayTime both;
-    }
-
     .language {
         position: absolute;
         
@@ -305,6 +297,7 @@
     .feed {
         display: flex;
         position: absolute;
+        padding-right: 43.75vh * 1.5;
         height: 100%;
 
         &__post {
@@ -367,7 +360,7 @@
             }
 
             .post-info {
-                margin-top: px(290);
+                margin-top: px(200);
                 color: $white;
                 transform: translateX(35vh);
 
@@ -389,7 +382,7 @@
                 .title {
                     display: block;
                     margin-bottom: px(100);
-                    max-width: px(540);
+                    max-width: px(1100);
                     font-family: $Raleway-ExtraBold;
                     font-size: px(72);
                     text-transform: uppercase;

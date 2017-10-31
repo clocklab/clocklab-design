@@ -256,8 +256,9 @@
                 top: px(120);
                 cursor: pointer;
 
-                .front {
-                    // position: relative;
+                .project-description {
+                    font-size: px(32);
+                    line-height: 1.4;
                 }
 
                 .project-name {
@@ -273,13 +274,6 @@
                     height: 100%;
                     background: darken($gray, 20%);
                     content: '';
-                }
-
-                &:hover {
-
-                    .project-name {
-                        opacity: 1;
-                    }
                 }
             }
         }
@@ -319,8 +313,8 @@
         padding: px(30) px(80);
         background: $lightBlack;
         color: $white;
-        font-family: $Raleway-ExtraBold;
-        font-size: px(96);
+        font-family: $Raleway-Medium;
+        font-size: px(82);
         transition: opacity $timeTick $time * 2;
     }
 
