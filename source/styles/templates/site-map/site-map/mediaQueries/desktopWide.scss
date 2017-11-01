@@ -1,0 +1,37 @@
+@import '../desktop';
+
+& {
+    
+    $contentWidth: px(2500);
+
+    a {
+        width: $contentWidth / 4;
+
+        &.middle {
+            font-size: px(54);
+        }
+    }
+
+    .content {
+
+        &-second-level {
+            width: $contentWidth / 4 * 3;
+        }
+
+        &-third-level {
+            width: $contentWidth / 2;
+        }
+
+        &-fourth-level {
+            width: $contentWidth / 4;
+        }
+    }
+
+    .container {
+        width: $contentWidth;
+    }
+
+    .page-title {
+        font-size: px(90);
+    }
+}

@@ -1,0 +1,29 @@
+@import '../desktop';
+
+& {
+    
+    $contentWidth: px(4000);
+
+    a {
+        width: $contentWidth / 4;
+    }
+
+    .content {
+
+        &-second-level {
+            width: $contentWidth / 4 * 3;
+        }
+
+        &-third-level {
+            width: $contentWidth / 2;
+        }
+
+        &-fourth-level {
+            width: $contentWidth / 4;
+        }
+    }
+
+    .container {
+        width: $contentWidth;
+    }
+}
