@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 var mobile = '-mobile'
 // var mobile = ''
 
-var page = `services/services-second-level-mobile/services-third-level${mobile}`
+var page = `about-company`
 
 
 var sass = require('gulp-ruby-sass');
@@ -32,30 +32,30 @@ var source = 'source',
     },
     path = {
         build: {
-            html: build + `/pages${mobile}`,
+            html: build + `/pages`,
             fonts: build + '/fonts',
             videos: build + '/videos',
             images: build + '/images',
-            styles: build + `/styles${mobile}`,
-            scripts: build + `/scripts${mobile}`,
+            styles: build + `/styles`,
+            scripts: build + `/scripts`,
             projects: build + '/projects'
         },
         source: {
-            html: source + `/pages${mobile}/**/**/**/**/*.html`,
+            html: source + `/pages/**/**/**/**/*.html`,
             fonts: source + '/fonts/**/*.*',
             videos: source + '/videos/**/**/**/*.*',
             images: source + '/images/**/**/**/*.*',
-            styles: source + `/styles${mobile}/**/**/**/*.*`,
-            scripts: source + `/scripts${mobile}/**/**/**/*.*`,
+            styles: source + `/styles/**/**/**/*.*`,
+            scripts: source + `/scripts/**/**/**/*.*`,
             projects: source + '/projects/**/*'
         },
         watch: {
-            html: source + `/pages${mobile}/**/**/**/**/*.html`,
+            html: source + `/pages/**/**/**/**/*.html`,
             fonts: source + '/fonts/**/*.*',
             videos: source + '/videos/**/**/**/*.*',
             images: source + '/images/**/**/**/*.*',
-            styles: source + `/styles${mobile}/**/**/**/*.*`,
-            scripts: source + `/scripts${mobile}/**/**/**/*.*`,
+            styles: source + `/styles/**/**/**/*.*`,
+            scripts: source + `/scripts/**/**/**/*.*`,
             projects: source + '/projects/**/*'
         },
         clean: 'build'
@@ -70,7 +70,7 @@ gulp.task('html', function() {
         .pipe(plugins.plumber())
         .pipe(fileinclude({
             prefix: '@@',
-            basepath: `source/pages${mobile}/`
+            basepath: `source/pages/`
         }))
         .pipe(gulp.dest(path.build.html))
         .pipe(plugins.browserSync.reload({
@@ -94,7 +94,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('sass', function() {
-    return sass(`source/styles${mobile}/${page}.scss`, { sourcemap: false/*, style: 'compact'*/ })
+    return sass(`source/styles/${page}.scss`, { sourcemap: false/*, style: 'compact'*/ })
         .on('error', sass.logError)
         // .pipe(sourceMaps.init({loadMaps: true}))
         .pipe(autoPrefixer('last 2 version'))
