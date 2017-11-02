@@ -10,13 +10,36 @@ document.addEventListener('DOMContentLoaded', () => {
     const content = document.querySelector('.portfolio .front-layer .content-container .portfolio-item:last-child')
     const difWidth = content.getBoundingClientRect().right - frontLayer.offsetWidth
 
+    const navArrows = document.querySelectorAll('.nav-arrows .arrow')
+
     const portfolioLinks = document.querySelectorAll('.portfolio a.image-container')
+
+    const animationTime = 200
 
     const koef = difPos / difWidth
 
     let currentScrollLeft = 0
     let currentLeftPos
-    
+
+    let flag = true
+
+
+    const animate = (draw, duration) => {
+        const start = performance.now();
+        
+        requestAnimationFrame(function animate(time) {
+            let timePassed = time - start;
+        
+            timePassed = timePassed > duration
+            ? duration
+            : timePassed
+        
+            draw(timePassed);
+        
+            timePassed < duration &&
+            requestAnimationFrame(animate)
+        });
+    }
 
     const moveLetters = newPos => {
         letterC.style.transform = `translateX(${newPos}px)`
@@ -25,6 +48,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const moveFrontLayer = newPos => {
         frontLayer.scrollLeft = currentScrollLeft + newPos
+    }
+
+    function moveFrontLayerPartially(event) {
+        event.stopPropagation()
+
+        if (flag) {
+            const frontLayerWidth = this.classList.contains('arrow--next')
+            ? frontLayer.offsetWidth / 3
+            : - frontLayer.offsetWidth / 3
+
+            flag = !flag
+    
+            currentScrollLeft = frontLayer.scrollLeft
+    
+            animate((timePassed) => {
+                frontLayer.scrollLeft = currentScrollLeft + timePassed * frontLayerWidth / animationTime
+            }, animationTime)
+    
+            setTimeout(() => {
+                flag = !flag
+            }, animationTime + 100)
+        }
     }
 
     const moveObjects = event => {
@@ -54,6 +99,15 @@ document.addEventListener('DOMContentLoaded', () => {
         moveLetters(newLeftPos)
     })
 
+    frontLayer.addEventListener('wheel', event => {
+        currentScrollLeft = frontLayer.scrollLeft
+
+        if (event.deltaY !== 0) {
+            event.preventDefault()
+            moveFrontLayer(event.deltaY)
+        }
+    })
+
     frontLayer.addEventListener('mousedown', event => {
         currentLeftPos = event.clientX
         currentScrollLeft = frontLayer.scrollLeft
@@ -61,5 +115,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.addEventListener('mousemove', moveObjects)
         document.addEventListener('mouseup', removeEvents)
+    })
+
+    navArrows.forEach(arrow => {
+        arrow.addEventListener('mousedown', moveFrontLayerPartially)
     })
 })

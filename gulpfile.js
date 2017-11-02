@@ -6,10 +6,10 @@ var gulp = require('gulp'),
     });
 
 var mobile = '-mobile'
-// var mobile = ''
 
-var page = `services/services-second-level-mobile/services-third-level${mobile}`
+var mobile = ''
 
+var page = `site-map${mobile}`
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');

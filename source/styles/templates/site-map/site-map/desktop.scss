@@ -1,0 +1,182 @@
+& {
+    
+    $contentWidth: px(3000);
+    $columnWidth: $contentWidth / 4; 
+
+    position: relative;
+    background: $lightBlack;
+
+    // ---- common style ----
+    a {
+        display: block;
+        padding-right: px(30);
+        width: $contentWidth / 4;
+        line-height: 1.2;
+        transition: color $time;
+        animation: Right $time * 3 $time * 3 both;
+    }
+
+    .tree-level {
+        position: relative;
+        z-index: 2;
+        margin-left: $columnWidth;
+        overflow-x: hidden;
+    }
+    // ---- common style ----
+
+    .big-background-letter {
+        font-size: px(1700);
+        animation: fadeIn $time * 3 $time * 3 both;
+        
+        span {
+            font-family: $Raleway-ExtraBold;
+            text-transform: uppercase;
+        }
+
+        &--c {
+            right: initial;
+            top: 100vh;
+            left: px(-400);
+        }
+
+        &--o {
+            top: initial;
+            bottom: 60vh;
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        padding-top: px(380);
+        width: $contentWidth;
+
+        & > .tree-level {
+            margin-left: 0;
+            padding-bottom: px(460);
+    
+            & > a {
+                margin-bottom: px(80);
+                color: $blue;
+                font-family: $Roboto-Black;
+                font-size: px(72);
+                text-transform: uppercase;
+    
+                &:hover {
+                    color: $white;
+                }
+            }
+            
+            & > .tree-level {
+    
+                & > a {
+                    margin-bottom: px(100);
+                    color: $white;
+                    font-family: $Roboto-Bold;
+                    font-size: px(60);
+                    animation-delay: $time * 3 + $timeTick;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+    
+                & > .tree-level {
+    
+                    & > a {
+                        margin-bottom: px(70);
+                        color: $lightGray;
+                        font-family: $Roboto-Medium;
+                        font-size: px(44);
+                        animation-delay: $time * 3 + $timeTick * 2; 
+
+                        &:hover {
+                            color: $blue;
+                        }
+                    }
+    
+                    .tree-level {
+    
+                        a {
+                            margin-bottom: px(40);
+                            color: $gray;
+                            font-family: $Roboto-Regular;
+                            font-size: px(36);
+                            animation-delay: $time * 3 + $timeTick * 3;
+
+                            &:hover {
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .line {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: $gray;
+        opacity: .3;
+        animation: Down $time * 6 $time * 3 both;
+
+        &--1 {
+            left: 1px;
+        }
+
+        &--2 {
+            left: 25%;
+            animation-delay: $time * 3 + $timeTick;
+        }
+
+        &--3 {
+            left: 50%;
+            animation-delay: $time * 3 + $timeTick * 2;
+        }
+
+        &--4 {
+            left: 75%;
+            animation-delay: $time * 3 + $timeTick * 3;
+        }
+
+        &--5 {
+            right: 1px;
+            animation-delay: $time * 3 + $timeTick * 4;
+        }
+    }
+
+    .content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+
+    .page-title {
+        display: block;
+        padding-bottom: px(100);
+        width: $columnWidth;
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: px(96);
+        text-transform: uppercase;
+        overflow: hidden;
+        
+        span {
+            display: block;
+            animation: Right $time * 3 $time * 3 both;
+        }
+    }
+}

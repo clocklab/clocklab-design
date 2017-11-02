@@ -13,10 +13,13 @@
         }
     }
 
+    .project-name-container {
+        top: px(250);
+        right: px(550);
+    }
+
    .project-name {
-        top: px(300);
-        right: px(700);
-        font-size: px(300);
+        font-size: px(400);
     }
 
     .info {
