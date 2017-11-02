@@ -11,6 +11,7 @@
         padding-right: px(30);
         width: $contentWidth / 4;
         line-height: 1.2;
+        transition: color $time;
         animation: Right $time * 3 $time * 3 both;
 
         &.big {
@@ -18,6 +19,10 @@
             font-family: $Roboto-Black;
             font-size: px(72);
             text-transform: uppercase;
+
+            &:hover {
+                color: $white;
+            }
         }
 
         &.middle {
@@ -40,6 +45,17 @@
             font-size: px(36);
             animation-delay: $time * 3 + $timeTick * 3;
         }
+
+        &.big,
+        &.middle,
+        &.small,
+        &.tiny {
+
+            &:hover {
+                color: $blue;
+            }
+        }
+
     }
 
     .content {
