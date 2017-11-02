@@ -33,11 +33,13 @@
         }
         .word {
             &:after { animation: halfDown $time * 2 linear $time * 4 both; }
-            &:nth-of-type(1) span {
+            &:nth-of-type(1) span,
+            &:nth-of-type(1) h1 {
                 animation: titleWord $time * 2 $time * 5 linear;
                 animation-fill-mode: forwards;
             }
-            &:nth-of-type(2) span {
+            &:nth-of-type(2) span,
+            &:nth-of-type(2) h1 {
                 animation: titleWord $time * 2 $time * 6 linear;
                 animation-fill-mode: forwards;
             }
@@ -215,9 +217,9 @@
         color: $white;
         line-height: 1.2;
         font-family: $Roboto-Bold;
-        span { color: $blue; }
+        &--blue { color: $blue; }
     }
-    p {
+    p, h2, h3 {
         font-family: $Roboto-Regular;
         font-size: px(32);
         line-height: 1.4;
