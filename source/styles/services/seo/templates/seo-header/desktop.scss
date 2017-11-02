@@ -18,9 +18,7 @@
     
     // ----- title -----
     .title {
-        p {
-            animation: fadeInUp $time * 2 $time * 7 linear both;
-        }
+        h2 { animation: fadeInUp $time * 2 $time * 7 linear both; }
         span.name {
             span {
                 animation: titleName $time * 2 $time * 8 linear;
@@ -117,8 +115,7 @@
                 position: absolute;
                 font-family: $Raleway-ExtraBold;
                 &.creating p { width: 100%; }
-                &.audit p { width: 350%; }
-                p {
+                p, h2 {
                     width: 165%;
                     color: $white;
                     padding-left: 0;
