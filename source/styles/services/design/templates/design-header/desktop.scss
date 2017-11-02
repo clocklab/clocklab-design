@@ -214,7 +214,7 @@
             font-family: $Roboto-Bold;
             line-height: px(80);
             font-size: px(92);
-            span { color: $blue; }
+            &--blue { color: $blue; }
         }
     }
 }
