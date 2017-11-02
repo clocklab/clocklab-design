@@ -1,112 +1,26 @@
 & {
     
     $contentWidth: px(3000);
+    $columnWidth: $contentWidth / 4; 
 
     position: relative;
     background: $lightBlack;
 
     // ---- common style ----
     a {
-        align-self: flex-start;
+        display: block;
         padding-right: px(30);
         width: $contentWidth / 4;
         line-height: 1.2;
         transition: color $time;
         animation: Right $time * 3 $time * 3 both;
-
-        &.big {
-            color: $blue;
-            font-family: $Roboto-Black;
-            font-size: px(72);
-            text-transform: uppercase;
-
-            &:hover {
-                color: $white;
-            }
-        }
-
-        &.middle {
-            color: $white;
-            font-family: $Roboto-Bold;
-            font-size: px(60);
-            animation-delay: $time * 3 + $timeTick;
-        }
-
-        &.small {
-            color: $lightGray;
-            font-family: $Roboto-Medium;
-            font-size: px(44);
-            animation-delay: $time * 3 + $timeTick * 2; 
-        }
-
-        &.tiny {
-            color: $gray;
-            font-family: $Roboto-Regular;
-            font-size: px(36);
-            animation-delay: $time * 3 + $timeTick * 3;
-        }
-
-        &.big,
-        &.middle,
-        &.small,
-        &.tiny {
-
-            &:hover {
-                color: $blue;
-            }
-        }
-
     }
 
-    .content {
-        padding-bottom: px(460);
+    .tree-level {
+        position: relative;
+        z-index: 2;
+        margin-left: $columnWidth;
         overflow-x: hidden;
-
-        &-second-level {
-            padding-top: px(40);
-            width: $contentWidth / 4 * 3;
-        }
-
-        &-third-level {
-            padding-top: px(30);
-            width: $contentWidth / 2;
-        }
-
-        &-fourth-level {
-            padding-top: px(20);
-            width: $contentWidth / 4;
-        }
-
-        &-second-level,
-        &-third-level,
-        &-fourth-level {
-            overflow-x: hidden;
-        }
-    }
-
-    .row {
-        display: flex;
-        margin-bottom: px(80);
-        width: 100%;
-
-        &-second-level {
-            margin-bottom: px(100);
-        }
-
-        &-third-level {
-            margin-bottom: px(70);
-        }
-
-        &-fourth-level {
-            margin-bottom: px(40);
-        }
-
-        &-second-level,
-        &-third-level,
-        &-fourth-level {
-            display: flex;
-            width: 100%;
-        }
     }
     // ---- common style ----
 
@@ -137,6 +51,68 @@
         margin: 0 auto;
         padding-top: px(380);
         width: $contentWidth;
+
+        & > .tree-level {
+            margin-left: 0;
+            padding-bottom: px(460);
+    
+            & > a {
+                margin-bottom: px(80);
+                color: $blue;
+                font-family: $Roboto-Black;
+                font-size: px(72);
+                text-transform: uppercase;
+    
+                &:hover {
+                    color: $white;
+                }
+            }
+            
+            & > .tree-level {
+    
+                & > a {
+                    margin-bottom: px(100);
+                    color: $white;
+                    font-family: $Roboto-Bold;
+                    font-size: px(60);
+                    animation-delay: $time * 3 + $timeTick;
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+    
+                & > .tree-level {
+    
+                    & > a {
+                        margin-bottom: px(70);
+                        color: $lightGray;
+                        font-family: $Roboto-Medium;
+                        font-size: px(44);
+                        animation-delay: $time * 3 + $timeTick * 2; 
+
+                        &:hover {
+                            color: $blue;
+                        }
+                    }
+    
+                    .tree-level {
+    
+                        a {
+                            margin-bottom: px(40);
+                            color: $gray;
+                            font-family: $Roboto-Regular;
+                            font-size: px(36);
+                            animation-delay: $time * 3 + $timeTick * 3;
+
+                            &:hover {
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .lines {
@@ -189,11 +165,18 @@
     }
 
     .page-title {
+        display: block;
         padding-bottom: px(100);
+        width: $columnWidth;
         color: $white;
         font-family: $Raleway-ExtraBold;
         font-size: px(96);
         text-transform: uppercase;
-        animation: Right $time * 3 $time * 3 both;
+        overflow: hidden;
+        
+        span {
+            display: block;
+            animation: Right $time * 3 $time * 3 both;
+        }
     }
 }

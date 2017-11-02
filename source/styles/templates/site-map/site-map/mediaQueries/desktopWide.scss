@@ -3,35 +3,34 @@
 & {
     
     $contentWidth: px(2500);
+    $columnWidth: $contentWidth / 4;
 
     a {
         width: $contentWidth / 4;
-
-        &.middle {
-            font-size: px(54);
-        }
     }
 
-    .content {
-
-        &-second-level {
-            width: $contentWidth / 4 * 3;
-        }
-
-        &-third-level {
-            width: $contentWidth / 2;
-        }
-
-        &-fourth-level {
-            width: $contentWidth / 4;
-        }
+    .tree-level {
+        margin-left: $columnWidth;
     }
 
     .container {
+        padding-top: px(280);
         width: $contentWidth;
+
+        & > .tree-level {
+            margin-left: 0;
+            
+            & > .tree-level {
+    
+                & > a {
+                    font-size: px(54);
+                }
+            }
+        }
     }
 
     .page-title {
+        width: $columnWidth;
         font-size: px(90);
     }
 }
