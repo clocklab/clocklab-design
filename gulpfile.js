@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     });
 
 var mobile = '-mobile'
+
 var mobile = ''
 
 var page = `site-map${mobile}`

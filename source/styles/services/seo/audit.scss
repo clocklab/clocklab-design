@@ -1,7 +1,7 @@
 // base
 @import '../../base/variables';
 @import '../../base/common';
-@import '../../base/fonts';
+// @import '../../base/fonts';
 @import '../../base/reset';
 @import '../../base/animate';
 @import '../../base/animations';
@@ -30,6 +30,3 @@
 @import '../web-production/templates/shop/web-production-our-works/main';
 @import '../web-production/templates/shop/web-production-answers/main';
 @import '../design/templates/design-footer/main';
-
-// logo and menu animation
-.logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }

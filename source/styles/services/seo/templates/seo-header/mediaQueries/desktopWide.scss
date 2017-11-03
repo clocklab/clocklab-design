@@ -1,6 +1,7 @@
 @import '../desktop';
 & {
     .main-block .header-container .title {
+        &.sanctions h1 { font-size: px(100); }
         &.audit p { width: 275%; }
         top: 22vh;
     }

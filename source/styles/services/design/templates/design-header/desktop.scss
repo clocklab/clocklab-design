@@ -13,11 +13,10 @@
     
     // ----- article -----
     article { width: 112%; }
-    p {
+    p, h2, h3 {
         line-height: 1.4;
         color: $darkGray;
         font-size: px(32);
-        span { font-family: $Roboto-Bold; }
         &.percent { width: 48%; }
         &.big {
             font-size: px(48);
@@ -168,7 +167,7 @@
                     font-family: $Roboto-Bold;
                     font-size: px(80);
                     line-height: 1.3;
-                    span { color: $blue; }
+                    &--blue { color: $blue; }
                 }
                 p { padding-left: px(85); }
                 li {
@@ -215,7 +214,7 @@
             font-family: $Roboto-Bold;
             line-height: px(80);
             font-size: px(92);
-            span { color: $blue; }
+            &--blue { color: $blue; }
         }
     }
 }
