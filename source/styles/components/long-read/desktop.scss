@@ -163,7 +163,8 @@
         font-family: $Raleway-Bold;
         line-height: px(110);
         
-        span, &--blue {
+        span,
+        &--blue {
             color: $blue;
         }
     }
@@ -179,7 +180,9 @@
         }
     }
     
-    p, h2, h3 {
+    p,
+    h2,
+    h3 {
         margin-bottom: px(60);
         font-size: px(32);
         line-height: 1.5;
