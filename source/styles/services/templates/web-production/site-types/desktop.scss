@@ -96,7 +96,9 @@
             line-height: px(110);
             overflow: hidden;
             
-            &--blue { color: $blue; }
+            &--blue {
+                color: $blue;
+            }
 
             & > span {
                 display: block;
