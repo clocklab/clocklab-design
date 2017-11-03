@@ -3,6 +3,7 @@
     .dotted-list li:before { top: -1vh; }
     .main-block .header-container .title {
         top: 26vh;
+        &.sanctions h1 { font-size: px(70); }
         .word {
             &:after { height: px(30); }
             span { font-size: px(50); }

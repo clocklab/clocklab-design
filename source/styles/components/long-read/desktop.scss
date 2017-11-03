@@ -162,8 +162,9 @@
         font-size: px(96);
         font-family: $Raleway-Bold;
         line-height: px(110);
-    
-        span {
+        
+        span,
+        &--blue {
             color: $blue;
         }
     }
@@ -179,7 +180,9 @@
         }
     }
     
-    p {
+    p,
+    h2,
+    h3 {
         margin-bottom: px(60);
         font-size: px(32);
         line-height: 1.5;
@@ -546,18 +549,26 @@
                 ul.indexed {
                     padding-top: 0;
                     padding-bottom: px(180);
-                    display: inherit;
-                    column-count: 2;
 
                     li {
-                        padding: px(72) px(30) 0 30px;
+                        padding: px(55) 0 px(100) px(65);
+                        display: -webkit-inline-box;
+                        min-height: 100px;
                         margin-bottom: 0;
-                        min-height: 78px;
+                        line-height: 1;
+                        
+                        span {
+                            line-height: 1.5;
+                            position: absolute;
+                        }
 
-                        &:after { top: px(60); }
+                        &:after {
+                            left: px(-40);
+                            top: px(60);
+                        }
 
                         &:before {
-                            left: px(-60);
+                            left: px(-85);
                             top: 0;
                         }
                     }
@@ -606,17 +617,18 @@
                 ul.indexed {
                     padding-top: 0;
                     padding-bottom: px(180);
-                    display: inherit;
-                    column-count: 2;
 
                     li {
-                        padding: px(72) px(30) 0 30px;
+                        padding: px(55) 0 px(100) px(65);
                         display: -webkit-inline-box;
-                        min-height: 102px;
+                        min-height: 100px;
                         margin-bottom: 0;
                         line-height: 1;
                         
-                        span { line-height: 1.5; }
+                        span {
+                            line-height: 1.5;
+                            position: absolute;
+                        }
 
                         &:after {
                             left: px(-40);
@@ -624,7 +636,7 @@
                         }
 
                         &:before {
-                            left: px(-60);
+                            left: px(-85);
                             top: 0;
                         }
                     }
@@ -667,18 +679,26 @@
                 ul.indexed {
                     padding-top: 0;
                     padding-bottom: px(180);
-                    display: inherit;
-                    column-count: 2;
 
                     li {
-                        padding: px(72) px(30) 0 30px;
-                        min-height: 102px;
+                        padding: px(55) 0 px(100) px(65);
+                        display: -webkit-inline-box;
+                        min-height: 100px;
                         margin-bottom: 0;
+                        line-height: 1;
+                        
+                        span {
+                            line-height: 1.5;
+                            position: absolute;
+                        }
 
-                        &:after { top: px(60); }
+                        &:after {
+                            left: px(-40);
+                            top: px(60);
+                        }
 
                         &:before {
-                            left: px(-60);
+                            left: px(-85);
                             top: 0;
                         }
                     }

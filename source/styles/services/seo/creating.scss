@@ -27,9 +27,6 @@
 // templates
 @import 'templates/seo-header/main';
 @import '../design/templates/design-plan/main';
-@import '../design/templates/design-our-works/main';
+@import '../web-production/templates/shop/web-production-our-works/main';
 @import '../web-production/templates/shop/web-production-answers/main';
 @import '../design/templates/design-footer/main';
-
-// logo and menu animation
-.logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }

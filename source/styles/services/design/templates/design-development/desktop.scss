@@ -54,12 +54,7 @@
                     display: block;
                     font-family: $Raleway-SemiBold;
                     font-size: px(152);
-                    span {
-                        color: $blue;
-                        display: block;
-                        font-size: px(150);
-                        margin-bottom: px(24);
-                    }
+                    &--blue { color: $blue; }
                 }
             }
             &-2 {
@@ -73,7 +68,7 @@
                 width: 35%;
             }
         }
-        p {
+        p, h3 {
             color: #E0E0E0;
             margin-top: 11vh;
             line-height: 1.3;
@@ -82,6 +77,10 @@
                 font-size: px(32);
                 float: right;
                 width: 55%;
+                span {
+                    color: $blue;
+                    font-size: px(45);
+                }
             }
         }
         ul li {
@@ -120,12 +119,6 @@
                     display: block;
                     font-family: $Raleway-SemiBold;
                     font-size: px(152);
-                    span {
-                        color: $blue;
-                        display: block;
-                        font-size: px(150);
-                        margin-bottom: px(24);
-                    }
                 }
             }
             &-2 {
