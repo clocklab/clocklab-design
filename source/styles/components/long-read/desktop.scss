@@ -1,9 +1,9 @@
 & {  
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    // z-index: -1;
     width: 100vw;
     height: 100vh;
     visibility: hidden;
@@ -155,6 +155,13 @@
                 }
             }
         }
+
+        &:nth-child(even) {
+
+            .row-title {
+                color: $blue;
+            }
+        }
     }
     
     .row-title {
@@ -162,10 +169,6 @@
         font-size: px(96);
         font-family: $Raleway-Bold;
         line-height: px(110);
-    
-        span {
-            color: $blue;
-        }
     }
     
     .list-item-title {
@@ -179,50 +182,51 @@
         }
     }
     
+    .italic {
+        font-family: $Raleway-Regular;
+        font-size: px(48);
+        font-style: italic;
+
+        span {
+            font-family: $Raleway-Regular;
+            color: $blue;
+        }
+    }
+
+    .bordered {
+        margin-top: px(160);
+        padding: px(80) 0;
+        border-top: 1px solid $gray;
+        border-bottom: 1px solid $gray;
+        font-size: px(48);
+    }
+
+    .left-bordered {
+        position: relative;
+        margin: px(150) 0;
+        padding: 0 0 px(10) px(90);
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: px(20);
+            height: 100%;
+            background: $blue;
+            content: '';
+        }
+    }
+
+    .bottom-bordered {
+        padding-bottom: px(80);
+        border-bottom: 1px solid $gray;
+    }
+
     p {
         margin-bottom: px(60);
         font-size: px(32);
         line-height: 1.5;
-        
-        &.italic {
-            font-family: $Raleway-Regular;
-            font-size: px(48);
-            font-style: italic;
-            span {
-                font-family: $Raleway-Regular;
-                color: $blue;
-            }
-        }
-
-        &.bordered {
-            margin-top: px(160);
-            padding: px(80) 0;
-            border-top: 1px solid $gray;
-            border-bottom: 1px solid $gray;
-            font-size: px(48);
-        }
-    
-        &.left-bordered {
-            position: relative;
-            margin: px(150) 0;
-            padding: 0 0 px(10) px(90);
-    
-            &:before {
-                display: block;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: px(20);
-                height: 100%;
-                background: $blue;
-                content: '';
-            }
-        }
-    
-        &.bottom-bordered {
-            padding-bottom: px(80);
-            border-bottom: 1px solid $gray;
-        }
 
         span {
             font-family: $Raleway-Bold;
