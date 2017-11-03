@@ -113,11 +113,17 @@
     article {
         padding-left: px(330);
 
-        p {
+        p,
+        h2,
+        h3 {
             margin-bottom: px(50);
             font-family: $Roboto-Regular;
             font-size: px(32);
             line-height: 1.4;
+            
+            &.bigger {
+                font-size: px(40);
+            }
         }
     }
 

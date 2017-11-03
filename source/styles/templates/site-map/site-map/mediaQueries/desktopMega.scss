@@ -1,0 +1,27 @@
+@import '../desktop';
+
+& {
+    
+    $contentWidth: px(4000);
+    $columnWidth: $contentWidth / 4;
+
+    a {
+        width: $contentWidth / 4;
+    }
+
+    .tree-level {
+        margin-left: $columnWidth;
+    }
+
+    .container {
+        width: $contentWidth;
+
+        & > .tree-level {
+            margin-left: 0;
+        }
+    }
+
+    .page-title {
+        width: $columnWidth;
+    }
+}

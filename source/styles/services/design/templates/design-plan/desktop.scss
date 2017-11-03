@@ -30,15 +30,11 @@
         .plan-title {
             display: block;
             font-family: $Raleway-Bold;
+            line-height: 1.4;
             font-size: px(90);
             color: $darkGray;
             margin-top: 22vh;
-            span {
-                display: -webkit-inline-box;
-                margin-top: px(20);
-                font-size: px(90);
-                color: $blue;
-            }
+            &--blue { color: $blue; }
         }
         ul li {
             margin-bottom: px(170);
@@ -50,7 +46,7 @@
             font-size: px(32);
             min-height: 16vh;
             width: 82%;
-            span {
+            h3 {
                 font-family: $Roboto-Bold;
                 margin-bottom: px(-20);
                 font-size: px(36);

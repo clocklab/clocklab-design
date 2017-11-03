@@ -9,6 +9,7 @@
     }
 
     .front-layer {
+        border-bottom: 1px solid $lightGray;
         position: relative;
         z-index: 2;
         background: $white;

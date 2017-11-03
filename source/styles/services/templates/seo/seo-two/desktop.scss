@@ -26,11 +26,13 @@
         }
         .word {
             &:after { animation: halfDown $time * 2 linear $time * 7 both; }
-            &:nth-of-type(1) span {
+            &:nth-of-type(1) span,
+            &:nth-of-type(1) h2 {
                 animation: titleWord $time * 2 $time * 8 linear;
                 animation-fill-mode: forwards;
             }
-            &:nth-of-type(2) span {
+            &:nth-of-type(2) span,
+            &:nth-of-type(2) h2 {
                 animation: titleWord $time * 2 $time * 9 linear;
                 animation-fill-mode: forwards;
             }
@@ -82,19 +84,9 @@
                 font-family: $Raleway-ExtraBold;
                 .word {
                     &:after { display: none; }
-                    &:nth-of-type(1) {
-                        margin-bottom: 14px;
-                        span {
-                            color: $white;
-                            text-transform: capitalize;
-                        }
-                    }
-                    &:nth-of-type(2) span {
-                        color: $blue;
-                        text-transform: uppercase;
-                    }
-                    span {
-                        text-transform: initial;
+                    margin-bottom: 14px;
+                    h2 {
+                        color: $white;
                         font-size: px(88);
                     }
                 }
