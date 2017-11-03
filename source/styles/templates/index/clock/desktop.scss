@@ -62,12 +62,15 @@
     .title {
         top: 25vh;
         left: 23vh;
+        width: 25%;
         z-index: 1;
         position: absolute;
         font-family: $Raleway-ExtraBold;
         .word {
+            width: auto;
             span, h1 {
                 text-transform: inherit;
+                white-space: normal;
                 font-size: px(106);
             }
             &:after { display: none; }

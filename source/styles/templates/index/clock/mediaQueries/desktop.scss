@@ -15,8 +15,9 @@
 
 // ----- title -----
 .title {
-	left: 9vh;
     top: 18vh;
+	left: 9vh;
+    width: 45%;
     .word {
         span { font-size: px(85); }
         &:last-of-type span { font-size: px(30); }
