@@ -1,0 +1,93 @@
+@import '../mobile';
+
+& {
+
+    header {
+        padding-top: px(0);
+
+        img {
+            margin: 0 auto;
+            width: 30%;
+            height: 80%;
+            object-fit: contain;
+        }
+
+        .slogan {
+            margin: px(-100) auto 0;
+            width: 60%;
+        }
+
+        .slogan-translation {
+            margin: px(30) auto 0; 
+            width: 60%;
+        }
+    }
+
+    .about-company {
+        padding: px(200) px(60) 0;
+
+        & > span {
+            font-size: px(30);
+        }
+
+        .title {
+            width: 70%;
+            font-size: px(90);
+        }
+    }
+
+    .services {
+
+        .carousel-slider-wrapper {
+
+            .carousel-slider {
+
+                &__item {
+                    padding: px(100) px(60) 0;
+                }
+            }
+        }
+    }
+
+    .portfolio {
+
+        .carousel-slider-wrapper {
+
+            .carousel-slider {
+
+                &__item {
+                    padding: px(170) px(60) 0;
+                }
+            }
+        }
+    }
+
+    .questions {
+        position: relative;
+        padding: px(130) px(60) 0;
+        text-align: center;
+
+        h3 {
+            margin-bottom: px(0);
+        }
+
+        & > span {
+            margin-bottom: px(50);
+        }
+
+        .contacts-info {
+            margin-top: px(30);
+
+            li {
+                margin-bottom: px(20);
+            }
+        }
+
+        .open-form {
+            margin-top: px(30);
+            padding: 0;
+            width: 40%;
+            height: px(60);
+        }
+    }
+}
