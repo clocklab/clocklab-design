@@ -212,6 +212,16 @@
     article {
         padding-left: px(200);
 
+        .big {
+            margin-bottom: px(110);
+            font-size: px(48);
+        }
+
+        .bold {
+            margin-bottom: px(60);
+            font-family: $Roboto-Bold;
+        }
+
         p {
             margin-bottom: px(60);
             color: $darkGray;
@@ -221,16 +231,6 @@
 
             span {
                 text-decoration: underline;
-            }
-
-            &.big {
-                margin-bottom: px(110);
-                font-size: px(48);
-            }
-
-            &.bold {
-                margin-bottom: px(60);
-                font-family: $Roboto-Bold;
             }
         }
     }
@@ -290,6 +290,19 @@
             }
         }
 
+        .bordered {
+            margin: px(120) 0;
+            padding-left: px(60);
+            border-left: 9px solid $blue;
+            font-size: px(50);
+            font-family: $Roboto-Bold;
+            font-style: italic;
+        }
+
+        .bold {
+            font-family: $Roboto-Bold;
+        }
+
         p {
             margin-bottom: px(60);
             font-family: $Roboto-Regular;
@@ -299,18 +312,29 @@
             span {
                 text-decoration: underline;
             }
+        }
 
-            &.bordered {
-                margin: px(120) 0;
-                padding-left: px(60);
-                border-left: 9px solid $blue;
-                font-size: px(50);
-                font-family: $Roboto-Bold;
-                font-style: italic;
-            }
+        ul {
+            margin-bottom: px(100);
+        }
 
-            &.bold {
-                font-family: $Roboto-Bold;
+        li {
+            position: relative;
+            margin-bottom: px(30);
+            padding-left: px(70);
+            font-size: px(32);
+            line-height: 1.4;
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 7px;
+                left: 7px;
+                width: 7px;
+                height: 7px;
+                background: $blue;
+                border-radius: 50%;
+                content: '';
             }
         }
 

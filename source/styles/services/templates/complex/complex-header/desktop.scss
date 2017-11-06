@@ -45,6 +45,21 @@
         }
     }
 
+    .big {
+        font-family: $Roboto-Regular;
+        font-size: px(48);
+    }
+
+    .bold {
+        font-family: $Roboto-Bold;
+        font-size: px(36);
+    }
+
+    .italic {
+        font-family: $Roboto-Regular;
+        font-style: italic;
+    }
+
     p {
         color: $darkGray;
         font-family: $Roboto-Regular;
@@ -55,16 +70,6 @@
             padding: px(60) 0;
             border-bottom: 1px solid $gray;
             border-top: 1px solid $gray;
-            font-size: px(48);
-        }
-
-        &.bold {
-            font-size: px(36);
-            font-family: $Roboto-Bold;
-        }
-
-        &.italic {
-            font-style: italic;
         }
 
         &.underlined {
@@ -357,6 +362,10 @@
             &--3 {
                 margin-top: px(290);
 
+                .big {
+                    margin-bottom: px(50);
+                }
+
                 .column {
                     padding-right: px(130);
                     width: 74%;
@@ -441,6 +450,10 @@
             &--6 {
                 margin-top: px(230);
 
+                .big {
+                    margin-bottom: px(50);
+                }
+
                 .column-2 {
                     margin-left: 44.5%;
                 }
@@ -482,11 +495,8 @@
                     padding-top: px(100);
                 }
 
-                p {
-
-                    &.big {
-                        margin-top: px(400);
-                    }
+                .big {
+                    margin: px(150) 0;
                 }
             }
         }

@@ -259,7 +259,7 @@
             &--6 {
                 margin-top: px(270);
 
-                p {
+                .big {
                     position: relative;
                     margin-left: 33%;
                     padding: 0 px(70) px(50) px(100);
@@ -371,31 +371,31 @@
         }
     }
 
+    .big {
+        font-size: px(48);
+    }
+
+    .bold {
+        font-family: $Roboto-Bold;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .underlined {
+
+        span {
+            text-decoration: underline;
+        }
+    }
+
     p {
         padding-right: px(40);
         color: $darkGray;
         font-family: $Roboto-Regular;
         font-size: px(32);
-        line-height: 1.5;
-
-        &.big {
-            font-size: px(48);
-        }
-
-        &.bold {
-            font-family: $Roboto-Bold;
-        }
-
-        &.italic {
-            font-style: italic;
-        }
-
-        &.underlined {
-
-            span {
-                text-decoration: underline;
-            }
-        }
+        line-height: 1.5;        
     }
 
     ul {
