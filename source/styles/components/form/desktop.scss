@@ -6,6 +6,44 @@
     height: px(1200);
     color: $white;
     font-family: $Roboto-Regular;
+    
+    .thanks {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .message {
+            position: absolute;
+            bottom: px(120);
+            height: 20%;
+            width: 100%;
+            left: 0;
+            
+            p {
+                font-family: $Raleway-Bold;
+                
+                &:first-of-type {
+                    text-transform: uppercase;
+                    padding-bottom: px(60);
+                    font-size: px(60);
+                }
+
+                &:last-of-type {
+                    font-size: px(48);
+                    color: $blue;
+                }
+            }
+        }
+    }
 
     .close-form {
         position: absolute;
