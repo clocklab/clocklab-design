@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const moveFrontLayer = newPos => {
         frontLayer.scrollLeft = currentScrollLeft + newPos
+
+        currentLeftPos = event.clientX
+        currentScrollLeft = frontLayer.scrollLeft
     }
 
     const moveObjects = event => {
