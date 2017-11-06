@@ -44,7 +44,7 @@
     .description {
         padding: px(250) px(40) 0 0;
 
-        span {
+        & > span {
             display: block;
         }
     }

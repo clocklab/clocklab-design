@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const moveFrontLayer = newPos => {
         frontLayer.scrollLeft = currentScrollLeft + newPos
+        currentLeftPos = event.clientX
+        currentScrollLeft = frontLayer.scrollLeft
     }
 
     const moveObjects = event => {
@@ -54,6 +56,15 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault()
             return false
         })
+    })
+
+    frontLayer.addEventListener('wheel', event => {
+        currentScrollLeft = frontLayer.scrollLeft
+
+        if (event.deltaY !== 0) {
+            event.preventDefault()
+            moveFrontLayer(event.deltaY)
+        }
     })
 
     frontLayer.addEventListener('mousedown', event => {
