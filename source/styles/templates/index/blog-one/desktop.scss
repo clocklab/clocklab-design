@@ -136,9 +136,6 @@
     }
     &.current-back { animation: none; }
     &.previous-back { animation-play-state: running; }
-    
-    // ----- bottom-button -----
-    .bottom-button span:before { content: 'Все новости'; }
 
     // ----- title -----
     .title {
