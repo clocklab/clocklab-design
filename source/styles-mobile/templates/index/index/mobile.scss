@@ -1,4 +1,6 @@
 & {  
+    position: relative;
+    z-index: 1;
 
     header {
         background: $lightBlack;
@@ -148,13 +150,6 @@
                     font-size: px(24);
                     text-transform: uppercase;
                 }
-    
-                &--audi {
-    
-                    img {
-                        object-position: px(-160) 0;
-                    }
-                }
             }
         }
     
@@ -268,7 +263,7 @@
             margin-top: px(190);
     
             li {
-                margin-bottom: px(80); 
+                margin-bottom: px(60); 
                 font-family: $Roboto-Medium;
                 font-size: px(28);
     
@@ -279,11 +274,13 @@
     
             span {
                 display: block;
-                margin-bottom: px(10);
+                margin-bottom: px(20);
                 color: $white;
             }
     
             a {
+                display: block;
+                margin-bottom: px(20);
                 color: $gray;
             }
         }

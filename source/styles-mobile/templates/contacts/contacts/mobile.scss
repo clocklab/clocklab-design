@@ -1,7 +1,7 @@
 & {
 
     position: relative;
-    padding: px(240) px(30) 0;
+    padding: px(150) px(30) 0;
     width: 100vw;
     height: 100vh;
     background: $lightBlack;
@@ -47,15 +47,19 @@
         }
 
         a {
+            display: block;
+            margin-bottom: px(10);
             color: $gray;
         }
     }
 
     .open-form {
         display: block;
-        margin: px(110) auto 0;
+        position: absolute;
+        bottom: px(40);
+        left: 5%;
         padding: px(30) 0;
-        width: 100%;
+        width: 90%;
         max-width: 400px;
         height: px(90);
         background: $blue;
