@@ -2,7 +2,11 @@
     height: px(2500);
     position: relative;
     background: $white;
-
+    
+    &.seo {
+        z-index: -1;
+    }
+    
     .front-layer,
     .back-layer {
         height: px(1920);
