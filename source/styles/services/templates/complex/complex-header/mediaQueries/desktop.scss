@@ -2,12 +2,9 @@
 
 & {
 
-    .new-title {
-
-        span {
-            font-size: px(86);
-            line-height: px(96);
-        }
+    .new-header {
+        font-size: px(86);
+        line-height: px(96);
     }
 
     .big-bg-letter-o {
@@ -26,15 +23,19 @@
         }
     }
 
+    .big {
+        font-size: px(42);
+    }
+
+    .bold {
+        font-size: px(34);
+    }
+
     p {
 
         &.big {
-            padding: px(40) 0;
+            padding: px(20) 0;
             font-size: px(42);
-        }
-
-        &.bold {
-            font-size: px(34);
         }
     }
 
@@ -125,11 +126,8 @@
 
             &--9 {
                 
-                p {
-
-                    &.big {
-                        margin-top: px(150);
-                    }
+                .big {
+                    margin: px(150) 0;
                 }
             }
         }
