@@ -3,7 +3,9 @@
     position: relative;
     background: $white;
     
-    &.seo { z-index: -1; }
+    &.seo {
+        z-index: -1;
+    }
     
     .front-layer,
     .back-layer {
