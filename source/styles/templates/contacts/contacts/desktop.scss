@@ -16,12 +16,8 @@
     // ----- copyright -----    
     .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
 
-    // ----- social -----
-    .social {
-        .instagram {  animation: social $time * 3 $time * 3 both; }
-        .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-        .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
-    }
+    // ----- networks -----
+    .networks { animation: fadeInRight $time * 3 $time * 3 both; }
 
     // ----- contacts-info -----
     .contacts-info {
@@ -56,6 +52,26 @@
         font-size: 120vh;
         color: rgba(68,68,68,.3);
         span::before  { content: 'c'; }
+    }
+
+    // ----- networks -----
+    .networks {
+        display: -webkit-inline-box;
+        position: absolute;
+        bottom: 7vh;
+        z-index: 5;
+        left: 23vh;
+        li {
+            margin-right: px(100);
+            &:last-of-type { margin-right: 0; }
+            a {
+                color: $white;
+                transition: $time;
+                font-size: px(50);
+                font-family: $Roboto-Regular;
+                &:hover { color: $blue; }
+            }
+        }
     }
     
     // ----- title -----

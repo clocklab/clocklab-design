@@ -83,8 +83,8 @@
         span::before  { content: 'o'; }
     }
     
-    // ----- main-form -----
-    .main-form {
+    // ----- back-layer -----
+    .back-layer {
         width: 40%;
         z-index: 2;
         visibility: hidden;
@@ -103,72 +103,6 @@
             color: $white;
             width: 100%;
             .close-form { display: none; }
-            .form-title {
-                font-family: $Raleway-ExtraBold;
-                text-transform: uppercase;
-                margin-bottom: px(175);
-                font-size: px(60);
-            }
-            label {
-                width: 100%;
-                display: block;
-                padding: 0 px(20);
-                position: relative;
-                margin-bottom: px(60);
-                border-bottom: 1px solid $gray;
-                &:nth-of-type(2) { margin-bottom: px(200); }
-                span {
-                    top: 0;
-                    left: px(20);
-                    height: 100%;
-                    color: $gray;
-                    display: block;
-                    font-size: px(34);
-                    line-height: 100%;
-                    position: absolute;
-                    margin-bottom: px(16);
-                    text-transform: uppercase;
-                    font-family: $Roboto-Regular;
-                    transition: top $timeHalf, color $timeHalf, font-size $timeHalf;
-                }
-                input {
-                    background: transparent;
-                    position: relative;
-                    padding: px(5) 0;
-                    display: block;
-                    z-index: 2;
-                    width: 100%;
-                    border: none;
-                    outline: none;
-                    color: $white;
-                    height: px(40);
-                    font-size: px(32);
-                    &:focus, &.filled {
-                        & ~ span {
-                            top: px(-30);
-                            color: $white;
-                            font-size: px(24);
-                        }
-                    }
-                }
-            }
-            .send {
-                color: $white;
-                display: block;
-                width: px(340);
-                height: px(90);
-                font-size: px(28);
-                background: $blue;
-                border: 2px solid $blue;
-                margin: px(90) 0 0 auto;
-                text-transform: uppercase;
-                font-family: $Raleway-Medium;
-                transition: color $time, background $time;
-                // &:hover {
-                //     background: $white;
-                //     color: $blue;
-                // }
-            }
         }
     }
 
