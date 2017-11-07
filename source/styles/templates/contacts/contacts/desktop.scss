@@ -19,6 +19,12 @@
     // ----- networks -----
     .networks { animation: fadeInRight $time * 3 $time * 3 both; }
 
+    // ----- back-layer -----
+    .back-layer {
+        animation: mainConatactsMapRight $time * 3 $time * 6 linear;
+        animation-fill-mode: forwards;
+    }
+    
     // ----- contacts-info -----
     .contacts-info {
         li:nth-of-type(1) { animation: fadeInUp $time * 3 $time * 3 both; }
@@ -33,16 +39,50 @@
     }
 
     // ----- title -----
-    .title {
-        .word {
-            &:after { animation: halfDown $time * 2 linear $time * 4 both; }
-            &:nth-of-type(1) h1 {
-                animation: titleWord $time * 2 $time * 5 linear;
-                animation-fill-mode: forwards;
-            }
+    .title .word {
+        &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+        &:nth-of-type(1) h1 {
+            animation: titleWord $time * 2 $time * 5 linear;
+            animation-fill-mode: forwards;
         }
     }
-    
+
+    // ----- map -----
+    #map {
+        top: 0;
+        left: 40%;
+        width: 30%;
+        z-index: 4;
+        height: 75vh;
+        position: absolute;
+        visibility: hidden;
+        animation: mainConatactsMapDown $time * 3 $time * 5 linear;
+        animation-fill-mode: forwards;
+    }
+
+    // ----- back-layer -----
+    .back-layer {
+        width: 30%;
+        z-index: 4;
+        visibility: hidden;
+        background-color: rgba(28,28,28,.9);
+        position: absolute;
+        bottom: 10vh;
+        right: 5%;
+        
+        // ----- form -----
+        form {
+            padding-bottom: px(130);
+            padding-right: px(260);
+            padding-left: px(260);
+            position: relative;
+            display: table;
+            color: $white;
+            width: 100%;
+            .close-form { display: none; }
+        }
+    }
+
     // ----- bi-background-letter -----
     .big-background-letter {
         top: 4vh;
@@ -88,14 +128,13 @@
     .contacts-info {
         z-index: 4;
         position: absolute;
-        margin: 35vh 0 0 px(630);
+        margin: 15vh 0 0 px(630);
         li {
             color: $white;
             font-size: px(30);
-            display: inline-block;
             font-family: $Roboto-Regular;
-            &:nth-of-type(1) { margin-right: px(290); }
-            &:nth-of-type(2) { margin-right: px(605); }
+            &:nth-of-type(1) { margin-bottom: px(60); }
+            &:nth-of-type(2) { margin-bottom: px(100); }
             &:nth-of-type(3) a {
                 transition: $time;
                 padding-bottom: 4px;
