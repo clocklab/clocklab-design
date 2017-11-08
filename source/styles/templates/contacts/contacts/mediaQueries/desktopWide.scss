@@ -1,1 +1,20 @@
 @import '../desktop';
+
+// ----- map -----
+#map {
+	width: 45%;
+	left: 35%; 
+}
+
+// ----- title -----
+.title { margin: 27vh 0 0 px(200); }
+
+// ----- contacts-info -----
+.contacts-info { margin: 15vh 0 0 px(200); }
+
+// ----- back-layer -----
+.back-layer {
+	right: 5%;
+	bottom: 5%;
+	width: 40%;
+}
