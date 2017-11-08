@@ -4,6 +4,17 @@
     // $BPostWidth: px(840);
     // $BPostHeight: px(720);
 
+    @keyframes leftDay {
+        from {
+            opacity: 0;
+            transform: translate3d(165%, 20%, 0) rotate(90deg);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(65%, 20%, 0) rotate(90deg);
+        }
+    }
+
     $BMaginLeft: 11.5vh;
     $BPostWidth: 43.75vh;
     $BPostHeight: 37.5vh;
@@ -155,7 +166,7 @@
 
             &:before {
                 height: px(80);
-                animation: halfDown $BFilterLineAnimationTime $BFilterLineDelayTime both;
+                animation: rightAndHalfDown $BFilterLineAnimationTime $BFilterLineDelayTime both;
             }
         }
 
@@ -337,17 +348,6 @@
 
             .number {
                 animation: fadeInLeft $BPostDateNumberAnimationTime linear $BPostDateNumberDelayTime both;
-            }
-
-            @keyframes leftDay {
-                from {
-                    opacity: 0;
-                    transform: translate3d(165%, 20%, 0) rotate(90deg);
-                }
-                to {
-                    opacity: 1;
-                    transform: translate3d(65%, 20%, 0) rotate(90deg);
-                }
             }
 
             .day {

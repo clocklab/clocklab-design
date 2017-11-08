@@ -98,8 +98,10 @@
         }
 
         &:hover {
-            top: px(60);
-            left: px(100);
+
+            svg {
+                transform: none;
+            }
             
             .logo-letter {
                 opacity: 1;

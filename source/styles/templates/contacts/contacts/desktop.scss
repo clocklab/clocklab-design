@@ -39,10 +39,10 @@
     // ----- title -----
     .title {
         .word {
-            &:after { animation: halfDown $time * 2 linear $time * 4 both; }
+            &:after { animation: rightAndHalfDown $time * 2 linear $time * 4 both; }
             &:nth-of-type(1) h1 {
-                animation: titleWord $time * 2 $time * 5 linear;
-                animation-fill-mode: forwards;
+                bottom: initial;
+                animation: Up $time * 2 $time * 5 linear both;
             }
         }
     }

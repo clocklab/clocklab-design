@@ -49,6 +49,8 @@
         }
     }
 
+    $innerTickAnimationDelay: 2s;
+
     position: fixed;
     top: 0;
     right: 0;
@@ -185,7 +187,7 @@
             }
         }
 
-        &::before {
+        &:before {
             position: absolute;
             top: px(50);
             right: px(50);
@@ -429,6 +431,10 @@
             }
         }
         /* STYLES FOR BORDER ANIMATION ENDS */
+
+        &.disabled {
+            pointer-events: none;
+        }
     }
 
     &__background {

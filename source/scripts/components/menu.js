@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     openCloseBtns.forEach(openCloseBtn => {
-        openCloseBtn.addEventListener('click', openMenu)  
+        openCloseBtn.addEventListener('click', openMenu)
+        openCloseBtn.addEventListener('click', event => event.preventDefault())  
     })
 });
