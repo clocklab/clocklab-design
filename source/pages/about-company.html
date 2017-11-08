@@ -5,17 +5,6 @@
         @@include('./components/head.html')
         <link rel="stylesheet" href="./../styles/about-company.css">
         <script src="../scripts/about-company.min.js" defer></script>
-        <script src="https://code.jquery.com/jquery-1.7.1.min.js" integrity="sha256-iBcUE/x23aI6syuqF7EeT/+JFBxjPs5zeFJEXxumwb0=" crossorigin="anonymous"></script>
-        <script>
-            $(document).ready(function(){
-                $(".scroll").on("click","a", function (event) {
-                    event.preventDefault();
-                    var id  = $(this).attr('href'),
-                        top = $(id).offset().top;
-                    $('body,html').animate({scrollTop: top}, 1000);
-                });
-            });
-        </script>
     </head>
     <body>
         <!-- <div class="wrapper"> -->
