@@ -1,34 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const topPanel = document.querySelector('.top-panel')
+    const menu = document.querySelector('.menu')
+    const logo = document.querySelector('.logo')
     const blocks = document.querySelectorAll('.global-container > div');
     const delay = 500
+    const delta = 20
 
-    document.addEventListener('scroll', () => {
-        document.documentElement.scrollTop !== 0 || document.body.scrollTop !== 0
-        ? !topPanel.classList.contains('scrolled') && topPanel.classList.add('scrolled')
-        : topPanel.classList.contains('scrolled') && topPanel.classList.remove('scrolled')
+    const addClasses = (arr, wantedClass) => {
+        arr.forEach(el => {
+            !el.classList.contains(wantedClass) && el.classList.add(wantedClass)
+        })
+    }
 
+    const removeClasses = (arr, unwantedClass) => {
+        arr.forEach(el => {
+            el.classList.contains(unwantedClass) && el.classList.remove(unwantedClass)
+        })
+    }
+
+    const checkCurrentBlockBackground = () => {
         blocks.forEach(block => {
-            if (block.getBoundingClientRect().top <= 0 && block.getBoundingClientRect().bottom <= 0) {
-                const background = getComputedStyle(slides[index]).backgroundColor.replace(/rgba?|\(|\)/g, '').split(', ')
+            if (block.getBoundingClientRect().top <= delta && block.getBoundingClientRect().bottom >= delta) {
+                const background = getComputedStyle(block).backgroundColor.replace(/rgba?|\(|\)/g, '').split(', ')
 
                 background.filter(number => number < 100).length
-                ? topPanel.classList.remove('dark')
-                : topPanel.classList.add('dark')
+                ? removeClasses([logo, menu], 'dark')
+                : addClasses([logo, menu], 'dark')
             } 
         })
+    }
+
+    document.addEventListener('scroll', () => {
+        document.documentElement.scrollTop >= delta || document.body.scrollTop >= delta
+        ? addClasses([logo, menu], 'scrolled')
+        : removeClasses([logo, menu], 'scrolled')
+
+        checkCurrentBlockBackground()    
     })
 
-
-
-    // setTopPanelStyle = () => {
-    //     const firstBlock = 
-    //     const background = getComputedStyle(slides[index]).backgroundColor.replace(/rgb|rgba|\(|\)/g, '').split(', ')
-
-    //     setTimeout(() => {
-    //         background.filter(number => number < 100).length
-    //         ? topPanel.classList.remove('dark')
-    //         : topPanel.classList.add('dark')
-    //     }, animationDeltaTime)
-    // }
+    checkCurrentBlockBackground()
 })
