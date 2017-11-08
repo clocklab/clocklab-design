@@ -68,26 +68,15 @@
         z-index: 10;
         width: px(266);
         height: px(102);
+        transition: top $timeTick, left $timeTick;
     
         &-letter {
             fill: $white;
+            transition: opacity $timeTick;
         }
     
         &-arrow {
             fill: $blue;
-    
-            &--minutes {
-                // transition: transform $time * 2;
-            }
-        }
-    
-        &:hover {
-    
-            &-arrow {
-    
-                &--minutes {
-                }
-            }
         }
     }
 
@@ -178,6 +167,7 @@
                 margin: 0 auto;
                 width: px(90);
                 height: px(72);
+                transition: transform $timeTick;
 
                 &-tick {
                     position: absolute;
@@ -264,6 +254,11 @@
                 width: px(240);
                 height: px(240);
                 transition: none;
+                transition: border-color $timeTick;
+
+                .name {
+                    transition: opacity $timeTick;
+                }
 
                 &::before {
                     display: none;
@@ -530,6 +525,15 @@
 
                 &--open-close {
                     padding-top: px(50);
+                    border-color: $darkGray;
+
+                    .hamburger {
+                        transform: scale(1) translate3d(0, 0, 0);
+                    }
+
+                    .name {
+                        opacity: 1;
+                    }
 
                     &:hover {
 
@@ -654,25 +658,6 @@
         }
     }
 
-    &.active {
-        background: rgba(0, 0, 0, .3);
-        opacity: 1;
-
-        &.scrolled {
-            top: px(-242);
-            opacity: 0;
-        }
-    }
-
-    &.form-opened {
-        top: px(-242);
-        opacity: 0;
-    }
-
-    &.back {
-        animation: toUp $topPanelAnimationTime ease-out both;
-    }
-
     &.dark {
 
         .logo {
@@ -722,9 +707,69 @@
                 background: rgba(255, 255, 255, .95);
             }
         }
+    }
 
-        &.active {
-            background: rgba(238, 238, 238, 0.7);
+    &.scrolled {
+        
+        .logo {
+            top: px(20);
+            left: 0;
+            
+            &-letter {
+                opacity: 0;
+
+                &.scrolling-visible {
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                top: px(60);
+                left: px(100);
+                
+                .logo-letter {
+                    opacity: 1;
+                }
+            }
         }
+
+        .menu {
+
+            &__item {
+
+                .hamburger {
+                    transform: scale(.8) translate3d(0, -70%, 0);
+                }
+
+                &--open-close {
+                    border-color: transparent;
+
+                    .name {
+                        opacity: 0;
+                    }
+
+                    &:hover {
+                        border-color: $darkGray;
+
+                        .hamburger {
+                            transform: scale(1) translate3d(0, 0, 0);
+                        }
+
+                        .name {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.form-opened {
+        top: px(-242);
+        opacity: 0;
+    }
+
+    &.back {
+        animation: toUp $topPanelAnimationTime ease-out both;
     }
 }

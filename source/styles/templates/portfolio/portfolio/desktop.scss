@@ -368,7 +368,7 @@
                 height: px(48);
                 background: $blue;
                 content: '';
-                animation: halfDown $PPTitleLineAnimationTime linear $PPTitleLineDelayTime both;
+                animation: rightAndHalfDown $PPTitleLineAnimationTime linear $PPTitleLineDelayTime both;
             }
         }
 

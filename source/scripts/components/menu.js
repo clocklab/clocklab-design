@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const openCloseBtns = document.querySelectorAll('.menu__item--open-close'),
-          animationTime = 1600,
+          animationTime = 2200,
           events = ['wheel', 'keydown', 'scroll']
+          needScrolledClass = false
 
     function preventScroll(event) {
         event.stopPropagation()
@@ -16,10 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
             menu.classList.remove('opened')
             menuBackground.removeEventListener('click', closeMenu)
             this.removeEventListener('click', closeMenu)
-            document.body.removeAttribute('style')
-    
+
             setTimeout(() => {
+                document.body.removeAttribute('style')
                 this.addEventListener('click', openMenu)
+                needScrolledClass && menu.classList.add('scrolled')
                 events.forEach(event => {
                     menu.removeEventListener(event, preventScroll)
                 })
@@ -31,6 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         menu.classList.add('opened')
         document.body.style.overflow = 'hidden'
+
+        if (menu.classList.contains('scrolled')) {
+            needScrolledClass = true
+            menu.classList.remove('scrolled')
+        }
 
         events.forEach(event => {
             menu.addEventListener(event, preventScroll)
@@ -45,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     openCloseBtns.forEach(openCloseBtn => {
-        openCloseBtn.addEventListener('click', openMenu)  
+        openCloseBtn.addEventListener('click', openMenu)
+        openCloseBtn.addEventListener('click', event => event.preventDefault())  
     })
 });
