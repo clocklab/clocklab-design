@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     const slides = Array.prototype.slice.call( document.querySelectorAll('.screen-block'))
-    const topPanel = document.querySelector('.top-panel')
+    const logo = document.querySelector('.logo')
+    const menu = document.querySelector('.menu')
     const events = ['wheel', 'keydown']
     const animationTime = 1000
     const animationDeltaTime = 600
@@ -30,9 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const background = getComputedStyle(slides[index]).backgroundColor.replace(/rgba?|\(|\)/g, '').split(', ')
 
         setTimeout(() => {
-            background.filter(number => number < 100).length
-            ? topPanel.classList.remove('dark')
-            : topPanel.classList.add('dark')
+            if (background.filter(number => number < 100).length) {
+                logo.classList.remove('dark')
+                menu.classList.remove('dark')
+            } else {
+                logo.classList.add('dark')
+                menu.classList.add('dark')
+            }
         }, animationDeltaTime)
     }
 
@@ -79,10 +84,12 @@ document.addEventListener('DOMContentLoaded', () => {
             moveToNext(index)
 
             slides[0].classList.contains('first-slide') && slides[0].classList.remove('first-slide')
-            topPanel.classList.add('back')
+            logo.classList.add('back')
+            menu.classList.add('back')
 
             setTimeout(() => {
-                topPanel.classList.remove('back')
+                logo.classList.remove('back')
+                menu.classList.remove('back')
             }, animationDeltaTime)
 
             setTopPanelStyle(slides[index + 1] ? index + 1 : 0)
@@ -98,11 +105,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     setTopPanelStyle(slides[index - 1] ? index - 1 : slides.length - 1)
 
                     setTimeout(() => {
-                        topPanel.classList.remove('back');
+                        logo.classList.remove('back');
+                        menu.classList.remove('back');
                     }, animationDeltaTime)
 
                     slides[index - 1].classList.add('current-back')
-                    topPanel.classList.add('back')
+                    logo.classList.add('back')
+                    menu.classList.add('back')
                 }
             } else {
                 setClasses(currentSlide, previousSlide, 'previous-back')
@@ -111,10 +120,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTopPanelStyle(slides[index - 1] ? index - 1 : slides.length - 1)
 
                 setTimeout(() => {
-                    topPanel.classList.remove('back');
+                    logo.classList.remove('back');
+                    menu.classList.remove('back');
                 }, animationDeltaTime)
 
-                topPanel.classList.add('back')
+                logo.classList.add('back')
+                menu.classList.add('back')
             }
         }
     }
