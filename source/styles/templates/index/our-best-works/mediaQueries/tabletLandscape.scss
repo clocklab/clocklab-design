@@ -1,1 +1,16 @@
 @import '../mobile';
+
+& {
+
+    .portfolio {
+
+        &__item {
+            margin: px(50) auto;
+            width: 60%;
+        }
+    }
+
+    .image-container {
+        height: px(600);
+    }
+}

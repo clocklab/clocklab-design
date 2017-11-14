@@ -1,3 +1,45 @@
 & {  
     
+    padding: px(300) px(60) 0;
+    font-family: $Raleway-Bold;
+    font-size: px(48);
+
+    & > img,
+    .dark-portfolio-client,
+    .dark-portfolio-right-panel {
+        display: none;
+    }
+
+    #mirror {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .project-name-container,
+    .info {
+        position: relative;
+        z-index: 2;
+    }
+
+    .project-name-container,
+    .about-work {
+        margin-bottom: px(40);
+    }
+
+    .project-name-container {
+        font-size: px(80);
+    }
+
+    .special-button {
+        color: $black;
+    }
 }

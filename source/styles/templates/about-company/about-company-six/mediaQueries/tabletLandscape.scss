@@ -1,1 +1,11 @@
 @import '../mobile';
+
+& {
+
+    .block {
+        
+        img {
+            width: 30%;
+        }
+    }
+}
