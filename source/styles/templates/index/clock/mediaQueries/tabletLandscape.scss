@@ -1,36 +1,24 @@
 @import '../mobile';
 
-.watch-light, .watch-shadow { display: none; }
+.seconds-container,
+.hours-container { 
+    zoom: .65; 
+}
 
-// ----- watch -----
-.seconds-container, .hours-container { zoom: .65; }
-.minutes-container { zoom: .6; }
+.minutes-container { 
+    zoom: .6; 
+}
+
 .watch {
     background-size: 20%;
-    margin: 6% auto 0;
 }
 
-// ----- letter c -----
-.big-background-letter {
-    top: -48vh;
-    right: 65vw;
-    font-size: 140vh;
-}
-
-// ----- title -----
 .title {
-    top: 22%;
-    left: 11%;
+    top: px(350);
+    left: px(50);
+    
     .word {
-        span { font-size: px(84); }
-        &:last-of-type {
-            margin: px(60) 0 0 px(20);
-            span {
-                color: $blue;
-                font-size: px(25);
-                font-weight: $medium;
-                font-family: $roboto;
-            }
-        }
+        margin-bottom: px(40);
+        font-size: px(60);
     }
 }

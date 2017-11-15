@@ -1,1 +1,13 @@
 @import '../mobile';
+
+& {
+
+    padding-top: px(100);
+
+    .image-block {
+        position: relative;
+        margin: px(50) auto 0;
+        width: 80%;
+        height: px(600);
+    }
+}

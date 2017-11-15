@@ -3,7 +3,7 @@ body { overflow: hidden; }
 // base
 @import "base/variables";
 @import "base/mixins";
-// @import "base/fonts";
+@import "base/fonts";
 @import "base/reset";
 @import "base/common";
 @import "base/animate";
@@ -16,12 +16,12 @@ body { overflow: hidden; }
 @import "components/modules/scroll";
 
 // components
-// @import "components/top-panel/main";
-@import "components/logo/main";
-@import "components/menu/main";
+@import "components/top-panel/main";
+// @import "components/logo/main";
+// @import "components/menu/main";
 @import "components/form/main";
 @import "components/long-read/main";
-@import "components/rotate-smartphone/main";
+// @import "components/rotate-smartphone/main";
 @import "components/big-background-letter/main";
 @import "components/portfolio-right-panel/main";
 @import "components/portfolio-client/main";
@@ -31,8 +31,7 @@ body { overflow: hidden; }
 @import "components/copyright/main";
 @import "components/sticker/main";
 @import "components/social/main";
-@import "components/small-width/main";
-@import "components/form/main";
+// @import "components/small-width/main";
 
 /* в дальнейшем свести к одному */
 @import "components/title/main";     

@@ -1,109 +1,16 @@
 & {
-    .service-info, .small-gray-lines { display: none; }
-    background: $background;
-    font-family: $raleway;
-    font-weight: $regular;
+    
+    background: $white;
+    font-family: $Raleway-Regular;
     overflow: hidden;
     
-    // ----- animation -----
-    &.current-slide {
-
-        // ----- navigation-elements -----
-        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
-
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 9 both; }
-
-        // ----- service-info -----
-        .service-info p { animation: fadeInDown $time * 2 $time * 9 both; }
-        .jump-button { animation: fadeInUp $time * 2 $time * 9 both; }
-
-        // ----- other -----
-        .page-layer.back-layer::after { animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both; }
-        .bottom-button {
-            span { animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
-            .line { animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
-        }
-
-        // ----- title -----
-        .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 7 linear;
-                animation-fill-mode: forwards;
-            }
-            span.name {
-                span {
-                    animation: titleName $time * 2 $time * 8 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:before {
-                    animation: titleNameShape $time * 2 $time * 7 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-            .word {
-                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
-                &:nth-of-type(1) span {
-                    animation: titleWord $time * 2 $time * 5 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-of-type(2) span {
-                    animation: titleWord $time * 2 $time * 6 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
-
-        // ----- blue-line and image-block -----
-        .blue-line { animation: heightChangingBlogThree $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both; }
-        .image-block {
-            p { animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
-            .image-container {
-                img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
-                &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
-            }
-        }
-    }
-    
-    // ----- page-layer -----
-    .page-layer {
-        top: 0;
-        left: 0;
-        &.back-layer {
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden;
-            &:after {
-                background: $white;
-                position: absolute;
-                display: block;
-                height: 100vh;
-                width: 100vw;
-                content: '';
-                top: 0;
-            }
-        }
-    }
-    
-    // ----- bottom-button -----
-    .bottom-button span:before { content: 'Все новости'; }
-
-    // ----- letter c -----
-    .big-background-letter {
-        right: 2vh;
-        z-index: 3;
-        top: 27.5vh;
-        font-size: 40vh;
-        color: $darkGray;
-        span::before  { content: 'c'; }
+    .service-info,
+    .small-gray-lines { 
+        display: none; 
     }
 
-    // ----- jump-button -----
     .jump-button {
-        left: initial;
-        bottom: px(-80);
-        margin-left: px(-20);
+        
         a {
             text-transform: uppercase;
             &:before { background: $darkGray; }
@@ -114,17 +21,6 @@
                 &:nth-of-type(10) { margin-right: 5px;}
             }
         }
-    }
-
-    // ----- blue-line -----
-    .blue-line {
-        right: 0;
-        top: 15vh;
-        z-index: 2;
-        width: px(200);
-        height: px(300);
-        background: $blue;
-        position: absolute;
     }
     
     // ----- image-block -----
@@ -184,5 +80,16 @@
             top: -3.5vh;
         }
         .word span { font-size: px(47); }
+    }
+
+    .special-buttons {
+        margin-top: px(50);
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            color: $darkGray;
+            text-transform: uppercase;
+        }
     }
 }

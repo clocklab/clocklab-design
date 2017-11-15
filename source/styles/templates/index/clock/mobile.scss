@@ -1,99 +1,37 @@
 & {
+
+    @keyframes rotate { 
+        100% { 
+            transform: rotateZ(360deg); 
+        } 
+    }
+
+    background: $lightBlack;
+    font-family: $Raleway-Regular;
     overflow: hidden;
-    font-family: $raleway;
-    font-weight: $regular;
     
-    // ----- animation -----
-    &.current-slide {
-        background: $background;
-        animation: fadeIn $time * 3 both;
-        
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-        
-        // ----- navigation-elements -----
-        .logo, .menu, .language a { animation: fadeInDown $time * 3 $time * 3 both; }
-        .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
-        .scroll { animation: fadeInUp $time * 2 $time * 7 both; }
-
-        // ----- social -----
-        .social {
-            .facebook, .instagram { animation-delay: $time * 3; } 
-            .jumping-button { animation-delay: $time * 6; }
-        }
-        
-        // ----- watch -----
-        .watch { animation: fadeIn $time * 2 $time * 4 both; }
-        .watch-shadow { animation: fadeIn $time * 2 $time * 5 both; }
-        .watch-light { animation: fadeIn $time * 2 $time * 6 both; }
-
-        // ----- title -----
-        .word:nth-of-type(1) span {
-            animation: titleWord $time * 2 $time * 5 linear;
-            animation-fill-mode: forwards;
-        }
-        .word:nth-of-type(2) span {
-            animation: titleWord $time * 2 $time * 6 linear;
-            animation-fill-mode: forwards;
-        }
-        .word:nth-of-type(3) span {
-            animation: titleWord $time * 2 $time * 7 linear;
-            animation-fill-mode: forwards;
-        }
-    }
-    
-    // ----- letter c -----
-    .big-background-letter {
-        top: -30vh;
-        right: 23vh;
-        font-size: 75vh;
-        color: rgba(68,68,68,.25);
-        span::before  { content: 'c'; }
-    }
-    
-    // ----- title -----
     .title {
-        top: 25.5%;
-        left: 4.5%;
-        z-index: 1;
         position: absolute;
-        font-weight: $extra-bold;
+        top: px(250);
+        left: px(30);
+        
         .word {
-            span {
-                text-transform: inherit;
-                letter-spacing: 1.5px;
-                font-size: px(53);
-            }
-            &:after { display: none; }
-            &:first-of-type { margin-bottom: px(24); }
-            &:last-of-type {
-                margin: px(14) 0 0;
-                width: px(310);
-                span {
-                    color: $blue;
-                    line-height: 1.5;
-                    font-size: px(22);
-                    white-space: normal;
-                    font-weight: $medium;
-                    font-family: $roboto;
-                }
-            }
+            margin-bottom: px(50);
+            color: $white;
+            font-size: px(48);
+            font-weight: $bold;
+            line-height: 1.4;
         }
     }
 
-    // ----- bg letter -----
-    .bg-letter { display: none; }
-
-    // ----- watch ----
-    .watch-light, .watch-shadow { display: none; }
     .watch {
         background: url('../images/watch.png') no-repeat center;
         background-size: 37%;
-        margin: 30% auto 0;
         position: absolute;
         height: 100%;
         width: 100%;
     }
+
     .hours-container,
     .minutes-container,
     .seconds-container {
@@ -107,6 +45,7 @@
         height: 300px;
         display: inline-flex;
     }
+
     .hours {
         background: url('../images/hours-hand.svg') no-repeat;
         transform-origin: 60% 100%;
@@ -119,6 +58,7 @@
         margin: auto;
         display: block;
     }
+
     .minutes {
         background: url('../images/minutes-hand.svg') no-repeat;
         transform-origin: 50% 100%;
@@ -131,6 +71,7 @@
         margin: auto;
         display: block;
     }
+
     .seconds {
         background: url('../images/seconds-hand.svg') no-repeat;
         transform: rotateZ(0) !important;
@@ -144,20 +85,23 @@
         margin: auto;
         display: block;
     }
+
     .hours-container {
         animation: rotate 43200s infinite linear;
         zoom: .4;
     }
+
     .minutes-container {
         transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
         zoom: .35;
     }
+
     .seconds-container {
         transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
         zoom: .4;
     }
-    @keyframes rotate { 100% { transform: rotateZ(360deg); } }
-
-    // ----- scroll -----
-    .scroll { display: none; }
+    
+    .scroll { 
+        display: none; 
+    }
 }

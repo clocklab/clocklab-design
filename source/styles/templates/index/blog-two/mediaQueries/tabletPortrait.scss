@@ -1,55 +1,9 @@
-@import 'tabletlandscape';
+@import '../mobile';
 
-// ----- title -----
-.title {
-	margin: 60vh 0 0 px(250);
-	span.name { top: -2vh; }
-	&.padding p { padding: px(50) 0 0; }
-	.word {
-		&:nth-of-type(1) { margin-bottom: 16px; }
-		&:after { top: 17px; }
-		span { font-size: px(94); }
-	}
-}
+& {
 
-// ----- letter o -----
-.big-background-letter {
-	left: initial;
-	top: 22vh;
-	right: 0;
-}
-
-// ----- image-block -----
-.image-block {
-    &.up {
-        right: 0;
-        top: px(300);
-        width: px(740);
-        height: px(630);
-        p {
-        	top: px(20);
-        	width: 100px;
-        	right: px(570);
-        	transform: rotate(90deg);
-    	}
-        .gray { display: none; }
+	.image-container {
+        width: 60%;
+        height: px(400);
     }
-    &.down {
-        top: px(550);
-    	left: px(225);
-    	height: px(510);
-    	width: px(1000);
-    }
-}
-
-// ----- service-info -----
-.service-info {
-    &.horizontal {
-    	bottom: 5vh;
-    	left: 50px;
-	}
-    &.vertical.one {
-    	left: -25px;
-    	top: 32.5vh;
-	}
 }
