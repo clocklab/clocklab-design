@@ -1,1 +1,17 @@
 @import '../mobile';
+
+// ----- our-works -----
+.our-works {
+    .work .content .opened-work {
+    	left: 0;
+    	top: 101%;
+        z-index: 9999;
+        transition: top $time * 2;
+        &.opened {
+            top: 0;
+        }
+	    .close-work {
+			display: none;
+	    }
+    }
+}

@@ -1,24 +1,28 @@
 & {  
     
-    position: fixed;
-    top: 0;
-    left: 101%;
-    z-index: 9999;
-    padding-top: px(125);
+    position: absolute;
+    left: 0;
+    top: 101%;
+    z-index: 99999;
+    padding-top: px(170);
     width: 100vw;
     height: 100vh;
     background: rgba(0,0,0,.9);
     color: $white;
     font-family: $Roboto-Regular;
     overflow: hidden;
-    transition: left $time;
+    transition: top $time * 2;
+    .content {
+        position: relative;
+    }
     
     .close-form {
-        position: absolute;
-        top: px(20);
+        top: 0;
         right: 0;
-        width: px(56);
-        height: px(56);
+        padding: 0;
+        width: px(40);
+        height: px(40);
+        position: absolute;
         background: transparent;
 
         &:before,
@@ -154,7 +158,7 @@
     }
 
     &.opened {
-        left: 0;
+        top: 0;
     }
 
     &--become-client {

@@ -66,14 +66,44 @@
 
 // ----- our-works -----
 .our-works {
+	.transition {
+    	padding-left: 50%;
+    	transition: $time * 2;
+    }
     .work .content {
+    	width: 100%;
         .work-title {
+        	transition: $time * 2;
             margin: 25vh 0 20vh;
             font-size: px(145);
         }
-        .half {
-        	float: left;
+        .opened-work {
+        	top: 0;
         	width: 50%;
+            left: -101%;
+        	transition: left $time * 2;
+        	.content {
+        		width: 80%;
+        	}
+        	.close-work {
+        		display: none;
+        	}
+        	p {
+	            line-height: px(42);
+	            font-size: px(30);
+	        }
+        	&.opened {
+        		left: 0;
+	        	width: 50%;
+	        }
+        }
+        
+        .half {
+        	width: 50%;
+        	float: left;
+        	&:first-of-type {
+        		float: right;
+        	}
         	.button {
         		width: px(500);
         		font-size: px(24);

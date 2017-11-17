@@ -28,8 +28,9 @@
         text-align: center;
         line-height: 55px;
         font-size: px(28);
-        width: 100%;
+        width: 99.99%;
         height: 55px;
+        z-index: 99999;
         position: relative;
         letter-spacing: 2px;
         
@@ -150,8 +151,11 @@
                 height: 100vh;
                 width: 100vw;
                 z-index: -1;
+                left: 0;
+                top: 0;
             }
             .content {
+                overflow: -webkit-paged-x;
                 text-align: center;
                 height: 100vh;
                 border: none;
@@ -162,29 +166,18 @@
                     font-size: px(96);
                     color: $white;
                 }
-                .skip {
-                    text-transform: uppercase;
-                    font-family: $Roboto-Bold;
-                    letter-spacing: 2px;
-                    font-size: px(24);
-                    color: $white;
-                }
-                .link-work {
-                    z-index: 99999;
-                }
                 .opened-work {
-                    position: fixed;
-                    top: 101%;
-                    left: 0;
-                    z-index: 9999;
+                    position: absolute;
                     padding-top: px(125);
                     width: 100vw;
                     height: 100vh;
-                    background: rgba(0,0,0,.9);
+                    background: rgb(0,0,0);
                     color: $white;
                     font-family: $Roboto-Regular;
                     overflow: hidden;
-                    transition: top $time *  2;
+                    .content {
+                        position: relative;
+                    }
                     &.fadeInWork {
                         .close-work, img {
                             animation: fadeInWork $time * 1.25 linear;
@@ -195,17 +188,18 @@
                     }
                     &.fadeOutWork {
                         .close-work, img {
-                            animation: fadeOutWork .25s linear forwards;
+                            animation: fadeOutWork .01s linear forwards;
                         }
                         p {
-                            animation: fadeOutWork .15s linear forwards;
+                            animation: fadeOutWork .05s linear forwards;
                         }
                     }
                     img {
                         height: auto;
-                        top: px(100);
+                        top: 0;
                         width: auto;
-                        left: 5%;
+                        left: 0;
+                        z-index: 1;
                     }
                     p {
                         font-family: $Roboto-Regular;
@@ -217,13 +211,13 @@
                         
                     }
                     .close-work {
+                        top: 0;
+                        right: 0;
+                        padding: 0;
+                        width: px(40);
+                        height: px(40);
                         position: absolute;
-                        top: px(100);
-                        right: 5%;
-                        width: px(56);
-                        height: px(56);
                         background: transparent;
-
                         &:before,
                         &:after {
                             display: block;
@@ -246,7 +240,7 @@
                         }
                     }
                     &.opened {
-                        top: 0;
+                        width: 100%;
                     }
                 }
             }
@@ -256,6 +250,7 @@
     // ----- questions -----
     .questions {
         position: relative;
+        overflow: hidden;
         height: 100vh;
         width: 100vw;
         .content {
@@ -370,65 +365,25 @@
     
             &__item {
                 position: relative;
-                padding: px(340) px(30) 0;
                 width: 100vw;
                 height: 100vh;
                 color: $white;
-    
-                img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-    
-                span,
-                .slider-item-title,
-                .slider-item-name,
-                a {
-                    position: relative;
-                    z-index: 2;
-                }
-    
-                span {
-                   font-family: $Raleway-Bold;
-                   font-size: px(22); 
-                   text-transform: uppercase;
-                }
-    
-                .slider-item-title {
-                    display: block;
-                    margin: px(32) 0 px(56);
-                    font-family: $Roboto-Black;
-                    font-size: px(120);
-                }
-
-                .slider-item-name {
-                    display: block;
-                    color: $blue;
-                    font-family: $Roboto-Black;
-                    font-size: px(72);
-                }
-    
-                a {
-                    color: $white;
-                    font-family: $Raleway-Bold;
-                    font-size: px(24);
-                    text-transform: uppercase;
-                }
             }
         }
-    
-        .dots {
+        .dots, .skip {
             display: flex;
             justify-content: center;
             align-items: center;
             position: absolute;
-            bottom: px(120);
+            bottom: px(50);
             z-index: 5;
+            transition: $time * 2;
             width: 100%;
+            text-transform: uppercase;
+            font-family: $Roboto-Bold;
+            letter-spacing: 2px;
+            font-size: px(24);
+            color: $white;
         }
     
         .dot {
@@ -462,13 +417,7 @@
                 }
             }
     
-            &.small {
-    
-                &:before {
-                    width: 3px;
-                    height: 3px;
-                }
-            }
+            
         }
     }   
 

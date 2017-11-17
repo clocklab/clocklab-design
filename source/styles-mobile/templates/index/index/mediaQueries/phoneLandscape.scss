@@ -9,13 +9,27 @@
     // ----- button -----
     .button {
         margin-bottom: px(65);
+        &.transparent {
+            z-index: 9999;
+        }
     }
 
     // ----- our-works -----
     .our-works {
         overflow: hidden;
-        .work .content .work-title {
-            margin: 22.5vh 0 5vh;
+        .work .content {
+            .work-title {
+                margin: 22.5vh 0 5vh;
+            }
+            .opened-work {
+                left: 0;
+                top: 101%;
+                z-index: 9999;
+                transition: top $time * 2;
+                &.opened {
+                    top: 0;
+                }
+            }
         }
     }
 
