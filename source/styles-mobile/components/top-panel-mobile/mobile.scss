@@ -198,53 +198,6 @@
             /* STYLES FOR ANIMATION END */
         }
     
-        .social {
-            display: flex;
-            justify-content: space-between;
-            position: absolute;
-            bottom: 60px;
-            left: 0;
-            padding: 0 px(30);
-            width: 100%;
-            color: $gray;
-            // color: $white;
-            font-family: $Roboto-Thin;
-            font-size: px(24);
-    
-            &__item {
-                overflow: hidden;
-                color: $gray;
-    
-                span {
-                    display: block;
-                    padding: px(20) 0;
-                    transform: translateY(101%);
-                    transition: transform $time;
-                }
-    
-                &--facebook {
-                    
-                    span {
-                        transition-delay: $timeTick * 2;
-                    }
-                }
-    
-                &--instagram {
-                    
-                    span {
-                        transition-delay: $timeTick;
-                    }
-                }
-    
-                &--behance {
-                    
-                    span {
-                        transition-delay: 0s;
-                    }
-                }
-            }
-        }
-    
         &.opened {
             width: 100vw;
             height: 100vh;
@@ -303,37 +256,6 @@
                     transition-delay: $menuMobileAnimationTime * 4;
                 }
                 /* STYLES FOR ANIMATION ENDS */
-            }
-    
-            .social {
-    
-                &__item {
-    
-                    span {
-                        transform: none;
-                    }
-    
-                    &--facebook {
-                        
-                        span {
-                            transition-delay: $menuMobileAnimationTime * 5;
-                        }
-                    }
-        
-                    &--instagram {
-                        
-                        span {
-                            transition-delay: $menuMobileAnimationTime * 5 + $timeTick;
-                        }
-                    }
-        
-                    &--behance {
-                        
-                        span {
-                            transition-delay: $menuMobileAnimationTime * 5 + $timeTick * 2;
-                        }
-                    }
-                }
             }
         }
     }

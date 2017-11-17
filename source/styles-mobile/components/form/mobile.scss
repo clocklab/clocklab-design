@@ -1,24 +1,28 @@
 & {  
     
-    position: fixed;
-    top: 0;
-    left: 101%;
-    z-index: 9999;
-    padding: px(140) px(30) 0;
+    position: absolute;
+    left: 0;
+    top: 101%;
+    z-index: 99999;
+    padding-top: px(170);
     width: 100vw;
     height: 100vh;
-    background: #222;
+    background: rgba(0,0,0,.9);
     color: $white;
     font-family: $Roboto-Regular;
     overflow: hidden;
-    transition: left $time;
-
+    transition: top $time * 2;
+    .content {
+        position: relative;
+    }
+    
     .close-form {
-        position: absolute;
-        top: px(20);
+        top: 0;
         right: 0;
-        width: px(56);
-        height: px(56);
+        padding: 0;
+        width: px(40);
+        height: px(40);
+        position: absolute;
         background: transparent;
 
         &:before,
@@ -51,8 +55,9 @@
     }
 
     p {
-        margin: px(20) 0 px(90);
+        margin: px(40) 0 px(90);
         color: #666;
+        line-height: px(36);
         font-family: $Roboto-Regular;
         font-size: px(28);
     }
@@ -62,7 +67,7 @@
         position: relative;
         padding: 0 px(20);
         width: 100%;
-        margin-bottom: px(120);
+        margin-bottom: 5vh;
         border-bottom: 1px solid $gray;
 
         .placeholder {
@@ -149,21 +154,11 @@
     }
 
     .send {
-        display: block;
-        position: relative;
-        margin: px(130) auto 0;
-        width: 100%;
-        max-width: 400px;
-        height: px(90);
-        background: $blue;
-        color: $white;
-        font-family: $Roboto-Medium;
-        font-size: px(28);
-        text-transform: uppercase;
+        margin: px(50) auto 0;
     }
 
     &.opened {
-        left: 0;
+        top: 0;
     }
 
     &--become-client {

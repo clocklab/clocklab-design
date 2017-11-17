@@ -1,1 +1,17 @@
-@import '../mobile';
+@import 'tabletPortrait';
+
+// ----- our-works -----
+.our-works {
+	.work .content {
+		.half .button {
+			margin-bottom: 30vh;
+	    }
+	}
+}
+
+// ----- questions -----
+.questions {
+	.content .form .content .send {
+		width: 75%;
+	}
+}

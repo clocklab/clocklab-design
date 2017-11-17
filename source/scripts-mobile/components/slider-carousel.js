@@ -2,7 +2,7 @@ function sliderCarousel() {
     const sliderCarousels = document.querySelectorAll('.carousel-slider')
     const minDif = 0.2
     const bottomLimit = - 100
-    const animationTime = 300
+    const animationTime = 500
 
     sliderCarousels.forEach(sliderCarousel => {
         const slides = sliderCarousel.querySelectorAll('.carousel-slider__item')
@@ -21,18 +21,18 @@ function sliderCarousel() {
             startTouchPos = event.touches[0].clientX
             startLeftValue = parseInt(sliderCarousel.style.left) || 0
     
-            sliderCarousel.addEventListener('touchmove', moveSlider)
-            sliderCarousel.addEventListener('touchend', setLeftPosition)
+            // sliderCarousel.addEventListener('touchmove', moveSlider)
+            // sliderCarousel.addEventListener('touchend', setLeftPosition)
         }
     
-        const moveSlider = event => {
-            lastMove = event
+        // const moveSlider = event => {
+        //     lastMove = event
     
-            const endTouchPos = lastMove.touches[0].clientX
-            const previousLeftValue = parseInt(sliderCarousel.style.left) || 0 
+        //     const endTouchPos = lastMove.touches[0].clientX
+        //     const previousLeftValue = parseInt(sliderCarousel.style.left) || 0 
     
-            sliderCarousel.style.left = `${startLeftValue + (endTouchPos - startTouchPos) / sliderCarouselWrapperWidth * 100 * koef}%`
-        }
+        //     sliderCarousel.style.left = `${startLeftValue + (endTouchPos - startTouchPos) / sliderCarouselWrapperWidth * 100 * koef}%`
+        // }
     
         const changeActiveDot = direction => {
             const activeDot = dots.filter(dot => dot.classList.contains('active'))[0]
@@ -160,8 +160,8 @@ function sliderCarousel() {
             }, animationTime)
             
             sliderCarousel.removeEventListener('touchstart', setPoints)
-            sliderCarousel.removeEventListener('touchmove', moveSlider)
-            sliderCarousel.removeEventListener('touchend', setLeftPosition)
+            // sliderCarousel.removeEventListener('touchmove', moveSlider)
+            // sliderCarousel.removeEventListener('touchend', setLeftPosition)
         }
     
         sliderCarousel.addEventListener('touchstart', setPoints)

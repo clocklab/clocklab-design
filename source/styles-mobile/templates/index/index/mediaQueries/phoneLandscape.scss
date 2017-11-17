@@ -1,93 +1,76 @@
 @import '../mobile';
-
 & {
 
-    header {
-        padding-top: px(0);
+    // ----- content -----
+    .content {
+        padding: 0 .5%;
+    }
 
-        img {
-            margin: 0 auto;
-            width: 30%;
-            height: 80%;
-            object-fit: contain;
-        }
-
-        .slogan {
-            margin: px(-100) auto 0;
-            width: 60%;
-        }
-
-        .slogan-translation {
-            margin: px(30) auto 0; 
-            width: 60%;
+    // ----- button -----
+    .button {
+        margin-bottom: px(65);
+        &.transparent {
+            z-index: 9999;
         }
     }
 
-    .about-company {
-        padding: px(200) px(60) 0;
-
-        & > span {
-            font-size: px(30);
-        }
-
-        .title {
-            width: 70%;
-            font-size: px(90);
-        }
-    }
-
-    .services {
-
-        .carousel-slider-wrapper {
-
-            .carousel-slider {
-
-                &__item {
-                    padding: px(100) px(60) 0;
+    // ----- our-works -----
+    .our-works {
+        overflow: hidden;
+        .work .content {
+            .work-title {
+                margin: 22.5vh 0 5vh;
+            }
+            .opened-work {
+                left: 0;
+                top: 101%;
+                z-index: 9999;
+                transition: top $time * 2;
+                &.opened {
+                    top: 0;
                 }
             }
         }
     }
 
-    .portfolio {
-
-        .carousel-slider-wrapper {
-
-            .carousel-slider {
-
-                &__item {
-                    padding: px(170) px(60) 0;
-                }
-            }
-        }
-    }
-
+    // ----- questions -----
     .questions {
-        position: relative;
-        padding: px(130) px(60) 0;
-        text-align: center;
-
-        h3 {
-            margin-bottom: px(0);
-        }
-
-        & > span {
-            margin-bottom: px(50);
-        }
-
-        .contacts-info {
-            margin-top: px(30);
-
-            li {
-                margin-bottom: px(20);
+        text-align: left;
+        .content {
+            overflow: hidden;
+            padding-top: px(135);
+            padding-bottom: px(50);
+            .questions-title {
+                margin-bottom: 0;
             }
-        }
-
-        .open-form {
-            margin-top: px(30);
-            padding: 0;
-            width: 40%;
-            height: px(60);
+            .contacts-info {
+                float: left;
+                width: 50%;
+                margin-top: px(35);
+                li {
+                    margin-bottom: px(30);
+                    a {
+                        font-size: px(20);
+                    }
+                }
+            }
+            .open-form {
+                margin: px(20) auto 0;
+            }
+            .form {
+                padding-top: px(50);
+                label:nth-of-type(2) {
+                    margin-bottom: px(100);
+                }
+                .content {
+                    .form-title {
+                        margin-bottom: px(60);
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
