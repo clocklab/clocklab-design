@@ -1,10 +1,323 @@
 & {  
-    position: relative;
     z-index: 1;
+    position: relative;
+    @keyframes fadeInWork {
+        0%, 50% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    @keyframes fadeOutWork {
+        100% { opacity: 0; }
+    }
+
+    // ----- content -----
+    .content {
+        padding: 0 1%;
+        border-right: 1px solid $border-mobile;
+        border-left: 1px solid $border-mobile;
+        overflow-x: hidden;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    // ----- button -----
+    .button {
+        text-transform: uppercase;
+        vertical-align: middle;
+        margin-bottom: px(100);
+        display: inline-block;
+        text-align: center;
+        line-height: 55px;
+        font-size: px(28);
+        width: 100%;
+        height: 55px;
+        position: relative;
+        letter-spacing: 2px;
+        
+        // ----- transparent -----
+        &.transparent {
+            color: $white;
+            padding: 0 20px;
+            font-family: $Roboto-Black;
+            &::before, &::after {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                z-index: 3;
+                content: '';
+                transition: $time;
+                box-sizing: border-box;
+            }
+            &.option::before {
+                border-left: 5px solid $white;
+                border-bottom: 1px solid $white;
+                transform-origin: 0 100%;
+                transform: scale(.1,.5);
+            }
+            &.option::after {
+                border-top: 1px solid $white;
+                border-right: 5px solid $white;
+                transform-origin: 100% 0%;
+                transform: scale(.1,.5);
+            }
+        }
+        
+        // ----- special -----
+        &.special {
+            color: $darkGray;
+            border: 1px solid;
+            font-family: $Roboto-Bold;
+            .element {
+                background-color: $white;
+                font-family: $Raleway-ExtraBold;
+                text-transform: none;
+                font-size: px(64);
+                position: absolute;
+                padding: px(10);
+                left: px(45);
+                top: px(-65);
+            }
+            &.blue {
+                background-color: $blue;
+                border-color: $blue;
+                color: $white;
+            }
+        }
+    }
+
+    // ----- about-company -----
+    .about-company {
+        position: relative;
+        width: 100vw;
+        .content {
+            padding-top: px(75);
+            padding-bottom: px(150);
+            p {
+                color: $darkGray;
+                line-height: px(40);
+            }
+            
+            .title {
+                font-family: $Raleway-ExtraBold;
+                margin-bottom: px(72);
+                line-height: px(72);
+                font-size: px(60);
+            }
+            .under-title {
+                line-height: px(40);
+                font-family: $Roboto-Regular;
+            }
+            .small-title {
+                font-family: $Roboto-Black;
+                margin-bottom: px(50);
+                font-size: px(36);
+            }
+            .block {
+                position: relative;
+                margin-bottom: px(125);
+                &:first-of-type {
+                    margin-top: px(175);
+                }
+                &:last-of-type {
+                    margin-bottom: px(175);
+                }
+                .index {
+                    font-family: $Roboto-Bold;
+                    position: absolute;
+                    font-size: px(24);
+                    top: px(-45);
+                }
+            }
+        }
+    }
+
+    // ----- our-works -----
+    .our-works {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        .work {
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            left: 0;
+            top: 0;
+            img {
+                object-position: center;
+                position: absolute;
+                object-fit: cover;
+                height: 100vh;
+                width: 100vw;
+                z-index: -1;
+            }
+            .content {
+                text-align: center;
+                height: 100vh;
+                border: none;
+                padding: 0;
+                .work-title {
+                    font-family: $Roboto-Black;
+                    margin: 25vh 0 20vh;
+                    font-size: px(96);
+                    color: $white;
+                }
+                .skip {
+                    text-transform: uppercase;
+                    font-family: $Roboto-Bold;
+                    letter-spacing: 2px;
+                    font-size: px(24);
+                    color: $white;
+                }
+                .link-work {
+                    z-index: 99999;
+                }
+                .opened-work {
+                    position: fixed;
+                    top: 101%;
+                    left: 0;
+                    z-index: 9999;
+                    padding-top: px(125);
+                    width: 100vw;
+                    height: 100vh;
+                    background: rgba(0,0,0,.9);
+                    color: $white;
+                    font-family: $Roboto-Regular;
+                    overflow: hidden;
+                    transition: top $time *  2;
+                    &.fadeInWork {
+                        .close-work, img {
+                            animation: fadeInWork $time * 1.25 linear;
+                        }
+                        p {
+                            animation: fadeInWork $time * 2 linear;
+                        }
+                    }
+                    &.fadeOutWork {
+                        .close-work, img {
+                            animation: fadeOutWork .25s linear forwards;
+                        }
+                        p {
+                            animation: fadeOutWork .15s linear forwards;
+                        }
+                    }
+                    img {
+                        height: auto;
+                        top: px(100);
+                        width: auto;
+                        left: 5%;
+                    }
+                    p {
+                        font-family: $Roboto-Regular;
+                        margin: px(125) 0 px(90);
+                        line-height: px(35);
+                        font-size: px(30);
+                        text-align: left;
+                        color: #CCC;
+                        
+                    }
+                    .close-work {
+                        position: absolute;
+                        top: px(100);
+                        right: 5%;
+                        width: px(56);
+                        height: px(56);
+                        background: transparent;
+
+                        &:before,
+                        &:after {
+                            display: block;
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            width: px(40);
+                            height: 1px;
+                            background: $gray;
+                            content: '';
+                            transition: background $time * 2;
+                        }
+
+                        &:before {
+                            transform: rotate(45deg);
+                        }
+
+                        &:after {
+                            transform: rotate(-45deg);
+                        }
+                    }
+                    &.opened {
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+    // ----- questions -----
+    .questions {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        .content {
+            height: 100vh;
+            padding-top: px(200);
+            padding-bottom: px(50);
+            .questions-title {
+                font-family: $Raleway-ExtraBold;
+                margin-bottom: px(30);
+                line-height: px(65);
+                font-size: px(48);
+                color: $darkGray;
+            }
+            .under-questions-title {
+                display: block;
+                color: $blue;
+                font-family: $Roboto-Medium;
+                font-size: px(32);
+            }
+            .form .content {
+                border: none;
+                padding: 0;
+            }
+        }
+        .contacts-info {
+            margin-top: px(50);
+            li {
+                margin-bottom: px(60); 
+                font-size: px(28);
+    
+                &:last-child {
+                    margin-bottom: px(10);
+                }
+            }
+    
+            span {
+                display: block;
+                font-family: $Roboto-Regular;
+                margin-bottom: px(20);
+                color: $darkGray;
+            }
+    
+            a {
+                display: block;
+                font-family: $Roboto-Medium;
+                margin-bottom: px(20);
+                color: $darkGray;
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+        // ----- open-form -----
+        .open-form {
+            margin: px(50) auto 0;
+        }
+    }
 
     header {
         background: $lightBlack;
-        padding: px(160) px(30) 0;
+        padding: px(320) px(30) 0;
         width: 100vw;
         height: 100vh;
 
@@ -41,51 +354,6 @@
             font-family: $Roboto-Medium;
             font-size: px(28);
         }
-    }
-
-    .about-company {
-        position: relative;
-        padding: px(260) px(30) 0;
-        width: 100vw;
-        height: 100vh;
-
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        & > span,
-        .title {
-            position: relative;
-            z-index: 2;
-        }
-
-        & > span {
-            color: $white;
-            font-family: $Raleway-ExtraBold;
-            font-size: px(22);
-        }
-
-        .title {
-            margin-top: px(60);
-            color: $white;
-            font-family: $Raleway-ExtraBold;
-            font-size: px(120);
-
-            .blue {
-                color: $blue;
-            }
-        }
-    }
-
-    .services {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
     }
 
     .carousel-slider-wrapper {
@@ -204,100 +472,5 @@
         }
     }   
 
-    .services {
-
-        .carousel-slider-wrapper {
-
-            .carousel-slider {
-
-                &__item {
-                    padding-top: px(460);
-
-                    .slider-item-title {
-                        margin: px(32) 0 px(26);
-                        font-size: px(72);
-                    }
-
-                    .slider-item-name {
-                        margin-bottom: px(40);
-                    }
-
-                    &:before {
-                        display: block;
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        z-index: 1;
-                        width: 100%;
-                        height: 100%;
-                        background: rgba(0, 0, 0, .4);
-                        content: '';
-                    }
-                }
-            }
-        }
-    }
-
-    .questions {
-        padding: px(200) px(30) 0;
-        width: 100vw;
-        height: 100vh;
-        background: $lightBlack;
-
-        .questions-title {
-            margin-bottom: px(24);
-            color: $white;
-            font-family: $Raleway-ExtraBold;
-            font-size: px(48);
-            text-transform: uppercase;
-        }
-
-        & > span {
-            display: block;
-            color: $blue;
-            font-family: $Roboto-Medium;
-            font-size: px(32);
-        }
     
-        .contacts-info {
-            margin-top: px(190);
-    
-            li {
-                margin-bottom: px(60); 
-                font-family: $Roboto-Medium;
-                font-size: px(28);
-    
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-    
-            span {
-                display: block;
-                margin-bottom: px(20);
-                color: $white;
-            }
-    
-            a {
-                display: block;
-                margin-bottom: px(20);
-                color: $gray;
-            }
-        }
-    
-        .open-form {
-            display: block;
-            margin: px(110) auto 0;
-            padding: px(30) 0;
-            width: 100%;
-            max-width: 400px;
-            height: px(90);
-            background: $blue;
-            color: $white;
-            font-family: $Roboto-Medium;
-            font-size: px(28);
-            text-align: center;
-            text-transform: uppercase;
-        }
-    }
 }

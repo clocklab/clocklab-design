@@ -2,12 +2,13 @@
 @import "base/reset";
 @import "base/variables";
 @import "base/fonts";
+@import "base/animate";
 
 // components
-@import "components/top-panel/main";
-@import "components/form/main";
+@import "components/top-panel-mobile/main";
 @import "components/our-clients/main";
 @import "components/portfolio/main";
+@import "components/form/main";
 
 // main
 @import "templates/index/index/main";
