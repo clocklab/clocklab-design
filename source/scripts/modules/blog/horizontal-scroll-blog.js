@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const frontLayer = document.querySelector('.blog .feed-container')
-    const blogLinks = document.querySelectorAll('.blog .feed__post a')
+    const blogLinks = document.querySelectorAll('.blog .feed__post')
     const images = document.querySelectorAll('.blog img')
 
     let currentScrollLeft = 0
