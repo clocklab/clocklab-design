@@ -6,7 +6,8 @@
         padding: px(100) 0;
     }
 
-    .title {
+    .title,
+    .title-text {
         font-size: px(60);
     }
 
@@ -20,6 +21,13 @@
             li {
                 margin-bottom: px(100);
             }
+        }
+    }
+
+    &--youtube {
+
+        .container {
+            padding: px(300) 0;
         }
     }
 }

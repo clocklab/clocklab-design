@@ -56,9 +56,32 @@
         }
     }
 
+    .blue {
+        color: $blue;
+    }
+    
+    .double {
+        width: 66%;
+    }
+
+    .title,
+    .title-text,
+    ul {
+        position: relative;
+        z-index: 2;
+    }
+
     .title {
         display: block;
         width: 33%;
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: px(88);
+        line-height: 1.2;
+    }
+
+    .title-text {
+        padding-right: 20%;
         color: $white;
         font-family: $Raleway-ExtraBold;
         font-size: px(88);
@@ -111,6 +134,13 @@
                 font-family: $Raleway-ExtraBold;
                 font-size: px(72);
             }
+        }
+    }
+
+    &--youtube {
+
+        .container {
+            padding: px(400) 0 px(500);
         }
     }
 }
