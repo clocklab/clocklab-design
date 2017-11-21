@@ -1,0 +1,25 @@
+@import '../desktop';
+
+& {
+
+    .container {
+        padding: px(100) 0;
+    }
+
+    .title {
+        font-size: px(60);
+    }
+
+    ul {
+        margin-top: px(160);
+
+        &.indexed {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                margin-bottom: px(100);
+            }
+        }
+    }
+}

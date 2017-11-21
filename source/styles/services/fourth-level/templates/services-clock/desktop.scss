@@ -1,0 +1,116 @@
+& {  
+
+    position: relative;
+    background: $lightBlack;
+
+    .clock-bg {
+
+        span {
+            color: $lightBlack;
+            font-family: $Raleway-Bold;
+            line-height: 1;
+            
+            &:before {
+                font-size: 28vw;
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        padding: px(300) 0 px(200);
+        width: 81%;
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .line {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: $gray;
+        opacity: .2;
+
+        &--1 {
+            left: 0;
+        }
+
+        &--2 {
+            left: 33%;
+        }
+
+        &--3 {
+            left: 66%;
+        }
+
+        &--4 {
+            left: 100%;
+        }
+    }
+
+    .title {
+        display: block;
+        width: 33%;
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: px(88);
+        line-height: 1.2;
+    }
+
+    ul {
+        margin: px(230) 0 0 33%;
+        width: 66%;
+
+        li {
+            color: $white;
+            font-family: $Roboto-Regular;
+            font-size: px(36);
+            line-height: 1.3;
+        }
+
+        &.indexed {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                position: relative;
+                margin-bottom: px(180);
+                padding-left: px(50);
+                width: 50%;
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    left: 10px;
+                    top: -15px;
+                    width: px(70);
+                    height: px(70);
+                    background: $darkGray;
+                    content: '';
+                }
+            }
+
+            p {
+                position: relative;
+                z-index: 2;
+            }
+
+            .index {
+                position: absolute;
+                top: -40px;
+                left: 0;
+                color: $blue;
+                font-family: $Raleway-ExtraBold;
+                font-size: px(72);
+            }
+        }
+    }
+}
