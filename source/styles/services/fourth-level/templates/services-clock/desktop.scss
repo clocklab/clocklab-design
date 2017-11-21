@@ -61,7 +61,8 @@
 
     .title,
     .title-text,
-    ul {
+    ul,
+    .text {
         position: relative;
         z-index: 2;
     }
@@ -81,6 +82,21 @@
         font-family: $Raleway-ExtraBold;
         font-size: px(88);
         line-height: 1.2;
+    }
+
+    .text {
+        display: flex;
+        margin: px(180) 0 0 33%;
+        width: 66%;
+
+        p {
+            padding-right: px(50);
+            width: 50%;
+            color: $white;
+            font-family: $Roboto-Regular;
+            font-size: px(32);
+            line-height: 1.4;
+        }
     }
 
     ul {
