@@ -6,6 +6,9 @@
     .clock-bg {
 
         span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: $lightBlack;
             font-family: $Raleway-Bold;
             line-height: 1;
@@ -54,14 +57,6 @@
         &--4 {
             left: 100%;
         }
-    }
-
-    .blue {
-        color: $blue;
-    }
-    
-    .double {
-        width: 66%;
     }
 
     .title,
@@ -135,6 +130,14 @@
                 font-size: px(72);
             }
         }
+    }
+
+    .blue {
+        color: $blue;
+    }
+    
+    .double {
+        width: 66%;
     }
 
     &--youtube {
