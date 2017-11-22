@@ -179,6 +179,10 @@
         }
     }
 
+    .crossed-button {
+        position: relative;
+    }
+
     .jumping-button {
         animation: fadeInUp $BFilterAnimationTime $BFilterDelayTime both;
 
