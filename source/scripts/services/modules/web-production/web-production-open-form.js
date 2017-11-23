@@ -72,60 +72,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     closeBtn.addEventListener('click', closeForm)
 
-    const form = document.querySelector('.back-layer form'),
-          inputs = document.querySelectorAll('.back-layer input'),
-          nameLabel = form.querySelector('.name'),
-          nameInput = nameLabel.querySelector('input'),
-          nameMessage = nameLabel.querySelector('.message'),
-          numberLabel = form.querySelector('.number'),
-          numberInput = numberLabel.querySelector('input'),
-          numberMessage = numberLabel.querySelector('.message'),
-          sendBtn = document.querySelector('form .send'),
-          messages = {
-              empty: 'данное поле не должно быть пустым',
-              wrongFormat: 'номер телефона не должен содержать букв'
-          }
+    const inputs = document.querySelectorAll('.back-layer input'),
+          textarea = document.querySelector('.back-layer textarea')
 
+    const checkEmptyField = field => {
+        field.value.trim()
+        ? field.classList.add('filled')
+        : field.classList.remove('filled')
 
-    sendBtn.addEventListener('click', event => {
-        event.preventDefault()
-        
-        const numberValue = numberInput.value.trim(),
-              nameValue = nameInput.value.trim()
-
-        if (/[а-яА-Яё-їЁ-ЇЄ-єІ-іa-zA-Z]/.test(numberValue) || !numberValue) {
-            numberLabel.classList.add('wrong')
-
-            numberMessage.innerText = !numberValue
-            ? messages.empty
-            : messages.wrongFormat
-        } else {
-            numberLabel.classList.remove('wrong')
-            numberMessage.innerText = ''
-        }
-
-        if (!nameValue) {
-            nameLabel.classList.add('wrong')
-            nameMessage.innerText = messages.empty
-        } else {
-            nameLabel.classList.remove('wrong')
-            nameMessage.innerText = ''
-        }
-
-        const wrongFields = form.querySelectorAll('.wrong')
-
-        wrongFields.length
-        ? wrongFields[0].querySelector('input').focus()
-        : form.submit()
-    })
+        field.parentElement.classList.remove('wrong')
+    }
 
     inputs.forEach(input => {
         input.addEventListener('blur', () => {
-            input.value.trim()
-            ? input.classList.add('filled')
-            : input.classList.remove('filled')
-
-            input.parentElement.classList.remove('wrong')
+            checkEmptyField(input)
         })
+    })
+
+    textarea.addEventListener('blur', () => {
+        checkEmptyField(textarea)
     })
 })

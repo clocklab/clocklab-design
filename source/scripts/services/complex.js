@@ -6,6 +6,8 @@
 
 //=include ./../libraries/wow.js
 
+//=include ./../libraries/maskinput.js
+
 //=include ./../components/big-background-letter.js
 
 //=include modules/web-production/web-production-questions.js
@@ -17,3 +19,5 @@
 //=include ./modules/scroll-menu.js
 
 new WOW().init();
+
+$("#tel").mask("+999999999999999", {placeholder: " "});
