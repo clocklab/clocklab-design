@@ -92,4 +92,13 @@ document.addEventListener('DOMContentLoaded', () => {
     textarea.addEventListener('blur', () => {
         checkEmptyField(textarea)
     })
+
+
+    const tel = document.getElementById('tel');
+
+    tel.addEventListener('keydown', event => {
+        if (/[а-яА-Яё-їЁ-ЇЄ-єІ-іa-zA-Z]/.test(event.key) && !(event.keyCode === 8 || event.keyCode === 46)) {
+            event.preventDefault()
+        }
+    })
 })

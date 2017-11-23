@@ -19,5 +19,3 @@
 //=include ./modules/scroll-menu.js
 
 new WOW().init();
-
-$("#tel").mask("+999999999999999", {placeholder: " "});
