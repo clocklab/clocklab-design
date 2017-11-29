@@ -40,21 +40,21 @@ var source = 'source',
             projects: build + '/projects'
         },
         source: {
-            html: source + `/pages${mobile}/**/**/**/**/*.html`,
+            html: source + `/pages${mobile}/**/**/**/**/**/**/*.html`,
             fonts: source + '/fonts/**/*.*',
             videos: source + '/videos/**/**/**/*.*',
-            images: source + '/images/**/**/**/*.*',
-            styles: source + `/styles${mobile}/**/**/**/*.*`,
-            scripts: source + `/scripts${mobile}/**/**/**/*.*`,
+            images: source + '/images/**/**/**/**/**/*.*',
+            styles: source + `/styles${mobile}/**/**/**/**/**/*.*`,
+            scripts: source + `/scripts${mobile}/**/**/**/**/*.*`,
             projects: source + '/projects/**/*'
         },
         watch: {
-            html: source + `/pages${mobile}/**/**/**/**/*.html`,
+            html: source + `/pages${mobile}/**/**/**/**/**/**/*.html`,
             fonts: source + '/fonts/**/*.*',
             videos: source + '/videos/**/**/**/*.*',
-            images: source + '/images/**/**/**/*.*',
-            styles: source + `/styles${mobile}/**/**/**/*.*`,
-            scripts: source + `/scripts${mobile}/**/**/**/*.*`,
+            images: source + '/images/**/**/**/**/**/*.*',
+            styles: source + `/styles${mobile}/**/**/**/**/**/*.*`,
+            scripts: source + `/scripts${mobile}/**/**/**/**/*.*`,
             projects: source + '/projects/**/*'
         },
         clean: 'build'

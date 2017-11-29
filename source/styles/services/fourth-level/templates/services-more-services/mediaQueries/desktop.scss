@@ -1,0 +1,18 @@
+@import '../desktop';
+
+& {
+
+    .container {
+        width: 95%;
+    }
+
+    .more-services-list {
+
+        .crossed-button {
+
+            span {
+                font-size: px(20);
+            }
+        }
+    }
+}

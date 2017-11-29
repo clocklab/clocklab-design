@@ -1,3 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('.top-panel').classList.add('dark')
+    document.querySelector('.menu').classList.add('dark')
+    document.querySelector('.logo').classList.add('dark')
 })
