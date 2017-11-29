@@ -3,7 +3,6 @@
     position: relative;
     padding-top: px(250);
     width: px(830);
-    height: px(1200);
     color: $white;
     font-family: $Roboto-Regular;
     
@@ -115,7 +114,8 @@
             transition: top $timeHalf, color $timeHalf, font-size $timeHalf;
         }
 
-        input {
+        input,
+        textarea {
             display: block;
             position: relative;
             z-index: 2;
@@ -127,6 +127,7 @@
             outline: none;
             color: $white;
             font-size: px(32);
+            resize: none;
 
             &:focus,
             &.filled {
@@ -164,7 +165,8 @@
 
         &.wrong {
             
-            input {
+            input,
+            textarea {
 
                 & ~ .tick {
                     width: 100%;
@@ -175,10 +177,6 @@
             .message {
                 visibility: visible;
             }
-        }
-
-        &:nth-of-type(2) {
-            margin-bottom: px(150);
         }
     }
 
