@@ -7,6 +7,7 @@
     margin: 0 auto;
     width: px(1960);
     padding: px(250) 0;
+    background: $white;
     .offer {
         width: px(1050);
     }
@@ -33,6 +34,7 @@
         width: px(420);
         height: px(110);
         color: $white;
+        border-radius: 0;
         background: $blue;
         font-family: $Roboto-Bold;
         text-transform: uppercase;
