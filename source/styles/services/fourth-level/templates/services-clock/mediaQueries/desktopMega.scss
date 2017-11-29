@@ -1,0 +1,15 @@
+@import '../desktop';
+
+& {
+
+    &--youtube {
+
+        .container {
+            padding: px(600) 0;
+        }
+        
+        .title-text {
+            width: 70%;
+        }
+    }
+}

@@ -8,7 +8,8 @@ var gulp = require('gulp'),
 var mobile = '-mobile'
 var mobile = ''
 
-var page = `blog${mobile}`
+var page = `services/fourth-level/fourth-level${mobile}`
+
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
@@ -40,21 +41,21 @@ var source = 'source',
             projects: build + '/projects'
         },
         source: {
-            html: source + `/pages${mobile}/**/**/**/**/*.html`,
+            html: source + `/pages${mobile}/**/**/**/**/**/**/*.html`,
             fonts: source + '/fonts/**/*.*',
             videos: source + '/videos/**/**/**/*.*',
-            images: source + '/images/**/**/**/*.*',
-            styles: source + `/styles${mobile}/**/**/**/*.*`,
-            scripts: source + `/scripts${mobile}/**/**/**/*.*`,
+            images: source + '/images/**/**/**/**/**/*.*',
+            styles: source + `/styles${mobile}/**/**/**/**/**/*.*`,
+            scripts: source + `/scripts${mobile}/**/**/**/**/*.*`,
             projects: source + '/projects/**/*'
         },
         watch: {
-            html: source + `/pages${mobile}/**/**/**/**/*.html`,
+            html: source + `/pages${mobile}/**/**/**/**/**/**/*.html`,
             fonts: source + '/fonts/**/*.*',
             videos: source + '/videos/**/**/**/*.*',
-            images: source + '/images/**/**/**/*.*',
-            styles: source + `/styles${mobile}/**/**/**/*.*`,
-            scripts: source + `/scripts${mobile}/**/**/**/*.*`,
+            images: source + '/images/**/**/**/**/**/*.*',
+            styles: source + `/styles${mobile}/**/**/**/**/**/*.*`,
+            scripts: source + `/scripts${mobile}/**/**/**/**/*.*`,
             projects: source + '/projects/**/*'
         },
         clean: 'build'
