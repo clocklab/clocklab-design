@@ -1,0 +1,38 @@
+@import '../desktop';
+& {
+    .front-layer {
+        h2 { margin-right: px(360); }
+        .works {
+            width: px(2200);
+            height: px(1700);
+        }
+        .work {
+            &--eurovision {
+                img {
+                    width: px(600);
+                    height: px(1000);
+                }
+            }
+            &--alta {
+                img {
+                    width: px(1000);
+                    height: px(650);
+                }
+            }
+            &--audi {
+                img {
+                    width: px(900);
+                    height: px(540);
+                }
+            }
+            &--vinograd {
+                img {
+                    width: px(600);
+                    height: px(600);
+                }
+            }
+        }
+    }
+    .back-layer { padding-right: px(300); }
+    &.opened { .front-layer { transform: rotateY(10deg) scaleX(.85); } }
+}

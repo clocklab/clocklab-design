@@ -1,0 +1,64 @@
+& {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    display: flex;
+    z-index: 3;
+    margin: 0 auto;
+    width: px(1960);
+    padding: px(250) 0;
+    .offer {
+        width: px(1050);
+    }
+    .offer-title {
+        display: block;
+        color: $darkGray;
+        font-size: px(72);
+        margin-bottom: px(24);
+        font-family: $Raleway-ExtraBold;
+        text-transform: uppercase;
+    }
+    p {
+        color: $gray;
+        font-size: px(28);
+        padding-right: px(150);
+        font-family: $Roboto-Regular;
+        line-height: 1.4;
+    }
+    .open-form {
+        position: relative;
+        font-size: px(32);
+        display: block;
+        margin: 0 auto;
+        width: px(420);
+        height: px(110);
+        color: $white;
+        background: $blue;
+        font-family: $Roboto-Bold;
+        text-transform: uppercase;
+        span {
+            letter-spacing: 1px;
+            position: relative;
+            z-index: 2;
+        }
+        &:before {
+            position: absolute;
+            display: block;
+            left: px(-24);
+            top: px(24);
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            content: '';
+            background: $darkGray;
+            transition: top $time, left $time, opacity $time;
+        }
+        &:hover {
+            &:before {
+                left: px(-10);
+                top: px(10);
+                opacity: 1;
+            }
+        }
+    }
+}

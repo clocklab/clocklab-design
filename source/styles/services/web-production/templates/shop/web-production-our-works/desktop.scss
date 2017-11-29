@@ -1,5 +1,4 @@
 & {  
-    height: px(2500);
     position: relative;
     background: $white;
     
@@ -272,9 +271,11 @@
     }
 
     &--dark {
-
+        background: $lightBlack;
+        
         .front-layer {
             background: $lightBlack;
+            border-bottom: none;
 
             .our-works-title {
                 color: $white;

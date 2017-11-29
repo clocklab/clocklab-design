@@ -18,7 +18,4 @@
 
 /* //= include ./../modules/make-top-panel-dark.js */
 
-// change language color
-// $('.dark').children().addClass('dark');
-
 new WOW().init();

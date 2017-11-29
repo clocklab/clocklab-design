@@ -1,0 +1,10 @@
+@import '../desktop';
+& {
+    .front-layer, .back-layer { height: px(1750); }
+    .front-layer {
+        .container { width: 95%; }
+        h2 { margin-right: px(100); }
+        .crossed-button { margin-left: px(20); }
+    }
+    &.opened { .front-layer { transform: rotateY(20deg) scaleX(.8); } }
+}

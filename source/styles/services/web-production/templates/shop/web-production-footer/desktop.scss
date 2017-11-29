@@ -139,11 +139,10 @@
             margin-bottom: px(10);
             font-family: $Raleway-ExtraBold;
             &:before {
-                height: px(20);
-                bottom: px(20);
+                display: none;
             }
             span {
-                font-size: px(50);
+                font-size: px(60);
                 line-height: px(90);
             }
         }
@@ -161,16 +160,98 @@
             line-height: 1.4;
         }
     }
-
-    .crossed-button {
-        margin-top: px(50);
-        margin-left: px(200);
-        font-family: $Raleway-Regular;
-
-        span {
+    
+    .special-buttons {
+        display: -webkit-inline-box;
+        margin: px(60) 0 0 px(170);
+        
+        .special-button {
+            margin-right: px(100);
+            line-height: px(110);
+            position: relative;
+            height: px(110);
+            display: block;
+            width: px(510);
+            color: $blue;
+            font-size: px(28);
+            transition: $time;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: $Roboto-Black;
+            
+            &-text {
+                position: relative;
+                z-index: 2;
+            }
 
             &:after {
-                content: 'Подробнее';
+                position: absolute;
+                display: block;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 15%;
+                content: '';
+                background: $blue;
+                transition: height $timeHalf ease-out;
+            }
+
+            &:hover {
+                color: $white;
+                
+                &:after {
+                    height: 100%;
+                }
+            }
+        }
+
+        .animated-button {
+            vertical-align: middle;
+            display: inline-block;
+            line-height: px(110);
+            text-align: center;
+            position: relative;
+            height: px(110);
+            color: $black;
+            width: px(300);
+            cursor: pointer;
+            padding: 0 20px;
+            transition: $time;
+            font-size: px(28);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-family: $Roboto-Black;
+            
+            &:hover::after,
+            &:hover::before {
+                -webkit-transform: scale(1);
+            }
+
+            &::before,
+            &::after {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                left: 0;
+                top: 0;
+                z-index: 3;
+                content: '';
+                transition: $time;
+                box-sizing: border-box;
+                -webkit-transform: scale(.15);
+            }
+
+            &.option::before {
+                border-left: 2px solid $black;
+                border-bottom: 2px solid $black;
+                -webkit-transform-origin: 0 100%;
+            }
+            
+            &.option::after {
+                border-top: 2px solid $black;
+                border-right: 2px solid $black;
+                -webkit-transform-origin: 100% 0%;
             }
         }
     }
