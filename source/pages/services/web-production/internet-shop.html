@@ -1,450 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>clocklab design | shop</title>
-    <!-- @@include('./components/head.html') -->
-    <link rel="stylesheet" href="../../../styles/services/web-production/shop.css">
-    <script src="../../../scripts/services/web-production/shop.min.js" defer></script>
-</head>
-<body>
+    <head>
+        <title>clocklab design | shop</title>
+        @@include('./components/head.html')
+        <link rel="stylesheet" href="../../../styles/services/web-production/shop.css">
+        <script src="../../../scripts/services/web-production/shop.min.js" defer></script>
+    </head>
+    <body>
 
-    <div class="shop">
-        @@include('./components/top-panel.html')
+        <!-- logo -->
+        @@include('./components/logo.html')
+        
+        <!-- menu -->
+        @@include('./components/menu.html')
+        
+        <!-- bread-crumbs -->
+        <ul class="bread-crumbs dark wow fadeInDown">
+            <li class="bread-crumbs__item current-page">
+                <span class="index">41</span>
+                <span class="symbol">Is</span>
+                <a class="link" href="#">
+                    <span>Интернет-магазин</span>
+                </a>
+            </li>
+            <li class="bread-crumbs__item">
+                <span class="index">28</span>
+                <span class="symbol">Wb</span>
+                <a class="link" href="/sozdanie-saytov">
+                    <span>Web-production</span>
+                </a>
+            </li>
+            <li class="bread-crumbs__item">
+                <span class="index">13</span>
+                <span class="symbol">Se</span>
+                <a class="link" href="/uslugi">
+                    <span>Услуги</span>
+                </a>
+            </li>
+            <li class="bread-crumbs__item">
+                <span class="index">1</span>
+                <span class="symbol">H</span>
+                <a class="link" href="/">
+                    <span>Главная</span>
+                </a>
+            </li>
+        </ul>
 
-        <div class="web-production-header">
-            <div class="dark-language wow fadeIn">
-                @@include('./components/language.html')
-            </div>
+        <!-- glogal-container -->
+        <div class="global-container">
 
-            <div class="big-bg-letter-o wow fadeIn">
-                @@include('./components/big-background-letter.html')
-            </div>
+            <div class="shop">
 
-            <div class="big-bg-letter-c wow fadeIn">
-                @@include('./components/big-background-letter.html')
-            </div>
+                <div class="web-production-header">
+                    <div class="dark-language wow fadeIn">
+                        @@include('./components/language.html')
+                    </div>
 
-            <div class="container">
-
-                <header>
-                    <p class="header-addition wow fadeIn">
-                        Ежегодно продажи в сети динамически увеличиваются на 15%
-                    </p>
-                    <div class="wow fadeIn">
+                    <div class="big-bg-letter-o wow fadeIn">
                         @@include('./components/big-background-letter.html')
                     </div>
-                    <div class="image-container wow fadeInUp">
-                        <img src="../../../images/services/web-production/shop/shop-header.jpg" alt="shop-header">
-                    </div>    
-                </header>
 
-                <div class="about">
-                    <div class="description wow fadeInUp">
-                        <p>
-                            Интернет-магазин — это веб-сайт со специальной структурой 
-                            и дизайном, ориентированными <span>на продажу товаров.</span>
+                    <div class="big-bg-letter-c wow fadeIn">
+                        @@include('./components/big-background-letter.html')
+                    </div>
+
+                    <div class="container">
+
+                        <header>
+                            <p class="header-addition wow fadeIn">
+                                Ежегодно продажи в сети динамически увеличиваются на 15%
+                            </p>
+                            <div class="wow fadeIn">
+                                @@include('./components/big-background-letter.html')
+                            </div>
+                            <div class="image-container wow fadeInUp">
+                                <img src="../../../images/services/web-production/shop/shop-header.jpg" alt="shop-header">
+                            </div>    
+                        </header>
+
+                        <div class="about">
+                            <div class="description wow fadeInUp">
+                                <p>
+                                    Интернет-магазин — это веб-сайт со специальной структурой 
+                                    и дизайном, ориентированными <span>на продажу товаров.</span>
+                                </p>
+                            </div>
+                            <div class="info wow fadeInUp">
+                                @@include('./components/sticker.html')
+                                <h1 class="new-header">Интернет магазин</h1>
+                                <article>
+                                    <p class="big">
+                                        Формат интернет-магазина позволяет обеспечить автоматизированную 
+                                        реализацию товаров непосредственно в онлайн-пространстве.  
+                                    </p>
+                                    <p class="bold">
+                                        Покупки могут совершаться как через интернет-браузер, так и через 
+                                        мобильное приложение. 
+                                    </p>
+                                    <p>
+                                        Успешность онлайн-магазина зависит от многих факторов, и одним из 
+                                        них является удобная, функциональная структура сайта. Большинство 
+                                        торговых компаний используют именно такой тип веб-сайтов для получения 
+                                        дохода через интернет. Может использоваться как единственная площадка 
+                                        для торговли, так и в качестве дополнения к оффлайн-магазину. 
+                                    </p>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="cases">
+                            <div class="list">
+                                <span class="list-title wow fadeInUp">
+                                    В каких случаях 
+                                    <span>интернет-магазин</span> 
+                                    является оптимальным форматом сайта для вас? 
+                                </span>
+                                <ul>
+                                    <li class="wow fadeInUp">
+                                        Есть необходимость перевести продажи товаров в Интернет (как 
+                                        дополнительный источник прибыли в дополнение к уже существующей 
+                                        точке продаж);
+                                    </li>
+                                    <li class="wow fadeInUp">
+                                        Отсутствие офлайн-точек продажи на первых этапах развития бизнеса;
+                                    </li>
+                                    <li class="wow fadeInUp">
+                                        Небольшой ассортимент товаров (который делает нецелесообразным       
+                                        открытие офлайн-магазина).  
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="images wow fadeInUp">
+                                <img src="../../../images/services/web-production/shop/shop-photo-1.jpg" alt="shop-img-1">
+                                <img src="../../../images/services/web-production/shop/shop-photo-2.jpg" alt="shop-img-1">
+                            </div>
+                        </div>
+
+                        <div class="advantages">
+                            <span class="advantages-title wow fadeInUp">
+                                Преимущества 
+                                <span>интернет-магазина:</span>
+                            </span>
+                            <ul>
+                                <li class="wow fadeInUp">
+                                    <div class="index">01</div>
+                                    Идеально подходит как для продажи товаров, так и для 
+                                    заказов услуг онлайн;
+                                </li>
+                                <li class="wow fadeInUp">
+                                    <div class="index">02</div>
+                                    Значительная экономия средств на аренде помещений 
+                                    для офлайн-магазина, его содержании;
+                                </li>
+                                <li class="wow fadeInUp">
+                                    <div class="index">03</div>
+                                    Высокая скорость запуска онлайн-магазина;
+                                </li>
+                                <li class="wow fadeInUp">
+                                    <div class="index">04</div>
+                                    Большой охват аудитории (продавать товары/услуги можно 
+                                    по всей стране и даже за рубеж);
+                                </li>
+                                <li class="wow fadeInUp">
+                                    <div class="index">05</div>
+                                    Круглосуточный доступ к магазину для клиентов 
+                                    (интернет-магазин работает 24 часа в сутки и 7 дней в неделю);
+                                </li>
+                                <li class="wow fadeInUp">
+                                    <div class="index">06</div>
+                                    Возможность войти в бизнес при сравнительно небольшом бюджете; 
+                                </li>
+                                <li class="wow fadeInUp">
+                                    <div class="index">07</div>
+                                    Невысокая стоимость содержания сайта;
+                                </li>
+                                <li class="wow fadeInUp">
+                                    <div class="index">08</div>
+                                    Широкий ассортимент товаров; 
+                                </li>
+                                <li class="wow fadeInUp">
+                                    <div class="index">09</div>
+                                    Возможность практически на 100% автоматизировать процесс 
+                                    работы интернет-магазина;                            
+                                </li>
+                                <li class="wow fadeInUp">
+                                    <div class="index">10</div>
+                                    Возможность вести веб-аналитику и делать анализ посещений, 
+                                    постоянно улучшая проект. 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="web-production-clock">
+                    @@include('./components/clock-bg.html')
+                    <blockquote>
+                        <p class="wow fadeIn">
+                            Современный интернет-магазин с понятной и 
+                            удобной структурой позволит 
+                            <span>в короткие сроки вывести бизнес на новую ступень развития.</span>  
+                            Статистика уверенно подтверждает, что интернет-магазины 
+                            всё более интегрируются в общественную жизнь и имеют 
+                            огромные перспективы на близкое и далёкое будущее. 
                         </p>
-                    </div>
-                    <div class="info wow fadeInUp">
-                        @@include('./components/sticker.html')
-                        <h1 class="new-header">Интернет магазин</h1>
-                        <article>
-                            <p class="big">
-                                Формат интернет-магазина позволяет обеспечить автоматизированную 
-                                реализацию товаров непосредственно в онлайн-пространстве.  
-                            </p>
-                            <p class="bold">
-                                Покупки могут совершаться как через интернет-браузер, так и через 
-                                мобильное приложение. 
-                            </p>
-                            <p>
-                                Успешность онлайн-магазина зависит от многих факторов, и одним из 
-                                них является удобная, функциональная структура сайта. Большинство 
-                                торговых компаний используют именно такой тип веб-сайтов для получения 
-                                дохода через интернет. Может использоваться как единственная площадка 
-                                для торговли, так и в качестве дополнения к оффлайн-магазину. 
-                            </p>
-                        </article>
+                    </blockquote>
+                </div>
+
+                @@include('./components/work-examples.html')
+
+                <div class="web-production-answers">
+                    @@include('./components/big-background-letter.html')
+
+                    <div class="container">
+                        <div class="lines">
+                            <div class="line line--1 wow slideInDown"></div>
+                            <div class="line line--2 wow slideInDown" data-wow-delay=".3"></div>
+                            <div class="line line--3 wow slideInDown" data-wow-delay=".6"></div>
+                            <div class="line line--4 wow slideInDown" data-wow-delay=".9"></div>
+                        </div>
+
+                        <div class="answers">
+                            <div class="column-1">
+                                <span class="answers-title wow slideInLeft">
+                                    Ответы
+                                    <span>на часто задаваемые вопросы</span>
+                                </span>
+                            </div>
+                            <div class="column-2">
+                                <ul>
+                                    <li class="question question--1 current">
+                                        <div class="index">
+                                            <span class="wow slideInUp" data-wow-delay=".3s">01</span>
+                                        </div>
+                                        <button>
+                                            <span class="wow slideInLeft" data-wow-delay=".3s">01 Правда ли, что Landing Page хуже, чем полноценный сайт?</span>
+                                        </button>
+                                    </li>
+                                    <li class="question question--2">
+                                        <div class="index">
+                                            <span class="wow slideInUp" data-wow-delay=".3s">02</span>
+                                        </div>
+                                        <button>
+                                            <span class="wow slideInLeft" data-wow-delay=".3s">02 Есть ли необходимость в полноценном сайте после запуска Landing Page?</span>
+                                        </button>
+                                    </li>
+                                    <li class="question question--3">
+                                        <div class="index">
+                                            <span class="wow slideInUp" data-wow-delay=".3s">03</span>
+                                        </div>
+                                        <button>
+                                            <span class="wow slideInLeft" data-wow-delay=".3s">03 Есть ли необходимость в полноценном сайте после запуска Landing Page?</span>
+                                        </button>
+                                    </li>
+                                    <li class="question question--4">
+                                        <div class="index">
+                                            <span class="wow slideInUp" data-wow-delay=".3s">04</span>
+                                        </div>
+                                        <button>
+                                            <span class="wow slideInLeft" data-wow-delay=".3s">04 Есть ли необходимость в полноценном сайте после запуска Landing Page?</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="column-3">
+                                <div class="answer answer--1 current">
+                                    <div class="index">
+                                        <span>
+                                            <span class="wow slideInUp" data-wow-delay=".6s">01</span>
+                                        </span>
+                                    </div>
+                                    <div class="content">
+                                        <span class="content-title">
+                                            <span class="wow slideInLeft" data-wow-delay=".6s">01 Правда ли, что Landing Page хуже, чем полноценный сайт?</span>
+                                        </span>
+                                        <div class="text">
+                                            <p class="wow slideInLeft" data-wow-delay=".6s">
+                                                01 Нет, такое сравнение некорректно. Формат Landing page 
+                                                разработан для решения конкретных задач и эффективно 
+                                                справляется с ними. По сути, это тоже полноценный 
+                                                одностраничный сайт, у него есть свои преимущества 
+                                                и недостатки — выбор в пользу того или иного формата 
+                                                сайта зависит от ваших требований и амбиций. 
+                                            </p>
+                                            <p class="wow slideInLeft" data-wow-delay=".6s">
+                                                Одним из основных преимуществ лэндинга является высокая 
+                                                конверсия и генерация лидов — это обусловлено тем, что 
+                                                в рамках одной страницы (в одном месте) вы даёте максимум 
+                                                информации о товаре/услуге/мероприятии  потенциальным клиентам. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="answer answer--2">
+                                    <div class="index">
+                                        <span>
+                                            <span>02</span>
+                                        </span>
+                                    </div>
+                                    <div class="content">
+                                        <span class="content-title">
+                                            <span>02 Правда ли, что SPA хуже, чем полноценный сайт?</span>
+                                        </span>
+                                        <div class="text">
+                                            <p>
+                                                02 Нет, такое сравнение некорректно. Формат Landing page 
+                                                разработан для решения конкретных задач и эффективно 
+                                                справляется с ними. По сути, это тоже полноценный 
+                                                одностраничный сайт, у него есть свои преимущества 
+                                                и недостатки — выбор в пользу того или иного формата 
+                                                сайта зависит от ваших требований и амбиций. 
+                                            </p>
+                                            <p>
+                                                Одним из основных преимуществ лэндинга является высокая 
+                                                конверсия и генерация лидов — это обусловлено тем, что 
+                                                в рамках одной страницы (в одном месте) вы даёте максимум 
+                                                информации о товаре/услуге/мероприятии  потенциальным клиентам. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="answer answer--3">
+                                    <div class="index">
+                                        <span>
+                                            <span>03</span>
+                                        </span>
+                                    </div>
+                                    <div class="content">
+                                        <span class="content-title">
+                                            <span>03 Правда ли, что SPA хуже, чем полноценный сайт?</span>
+                                        </span>
+                                        <div class="text">
+                                            <p>
+                                                03 Нет, такое сравнение некорректно. Формат Landing page 
+                                                разработан для решения конкретных задач и эффективно 
+                                                справляется с ними. По сути, это тоже полноценный 
+                                                одностраничный сайт, у него есть свои преимущества 
+                                                и недостатки — выбор в пользу того или иного формата 
+                                                сайта зависит от ваших требований и амбиций. 
+                                            </p>
+                                            <p>
+                                                Одним из основных преимуществ лэндинга является высокая 
+                                                конверсия и генерация лидов — это обусловлено тем, что 
+                                                в рамках одной страницы (в одном месте) вы даёте максимум 
+                                                информации о товаре/услуге/мероприятии  потенциальным клиентам. 
+                                            </p>
+                                            <p>
+                                                Нет, такое сравнение некорректно. Формат Landing page 
+                                                разработан для решения конкретных задач и эффективно 
+                                                справляется с ними. По сути, это тоже полноценный 
+                                                одностраничный сайт, у него есть свои преимущества 
+                                                и недостатки — выбор в пользу того или иного формата 
+                                                сайта зависит от ваших требований и амбиций. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="answer answer--4">
+                                    <div class="index">
+                                        <span>
+                                            <span>04</span>
+                                        </span>
+                                    </div>
+                                    <div class="content">
+                                        <span class="content-title">
+                                            <span>04 Правда ли, что SPA хуже, чем полноценный сайт?</span>
+                                        </span>
+                                        <div class="text">
+                                            <p>
+                                                04 Нет, такое сравнение некорректно. Формат Landing page 
+                                                разработан для решения конкретных задач и эффективно 
+                                                справляется с ними. По сути, это тоже полноценный 
+                                                одностраничный сайт, у него есть свои преимущества 
+                                                и недостатки — выбор в пользу того или иного формата 
+                                                сайта зависит от ваших требований и амбиций. 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="more">
+                            <div class="column-1">
+                                <span class="more-title wow fadeInLeft">
+                                    Больше услуг
+                                    <a href="#">web-production</a>
+                                </span>
+                            </div>
+                            <ul>
+                                <li class="column-1">
+                                    <a href="landing.html" class="crossed-button wow fadeInLeft">
+                                        <span>Landing page</span>
+                                        <div class="arrow-container">
+                                            <svg class="arrow" x="0px" y="0px"
+                                                viewBox="0 0 34.8 7.3">
+                                                <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                                                <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                                                <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                                            </svg>      
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="column-2">
+                                    <a href="corporate.html" class="crossed-button wow fadeInLeft" data-wow-delay=".3s">
+                                        <span>Корпоративный сайт</span>
+                                        <div class="arrow-container">
+                                            <svg class="arrow" x="0px" y="0px"
+                                                viewBox="0 0 34.8 7.3">
+                                                <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                                                <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                                                <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                                            </svg>      
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="column-3">
+                                    <a href="card.html" class="crossed-button wow fadeInLeft" data-wow-delay=".6s">
+                                        <span>Сайт-визитка</span>
+                                        <div class="arrow-container">
+                                            <svg class="arrow" x="0px" y="0px"
+                                                viewBox="0 0 34.8 7.3">
+                                                <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                                                <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                                                <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                                            </svg>      
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="cases">
-                    <div class="list">
-                        <span class="list-title wow fadeInUp">
-                            В каких случаях 
-                            <span>интернет-магазин</span> 
-                            является оптимальным форматом сайта для вас? 
-                        </span>
-                        <ul>
-                            <li class="wow fadeInUp">
-                                Есть необходимость перевести продажи товаров в Интернет (как 
-                                дополнительный источник прибыли в дополнение к уже существующей 
-                                точке продаж);
-                            </li>
-                            <li class="wow fadeInUp">
-                                Отсутствие офлайн-точек продажи на первых этапах развития бизнеса;
-                            </li>
-                            <li class="wow fadeInUp">
-                                Небольшой ассортимент товаров (который делает нецелесообразным       
-                                открытие офлайн-магазина).  
-                            </li>
-                        </ul>
+                <footer class="web-production-footer">
+                    @@include('./components/small-gray-lines.html')
+                    <!-- ссылка на blog.html -->
+                    <div class="bottom-button">
+                        <a href="">
+                            <span>Все новости</span>      
+                            <div class="arrow-container">
+                                <svg class="arrow" x="0px" y="0px"
+                                    viewBox="0 0 34.8 7.3">
+                                    <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                                    <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                                    <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                                </svg>      
+                            </div>
+                        </a>
+                        <div class="line"></div>
                     </div>
-                    <div class="images wow fadeInUp">
-                        <img src="../../../images/services/web-production/shop/shop-photo-1.jpg" alt="shop-img-1">
-                        <img src="../../../images/services/web-production/shop/shop-photo-2.jpg" alt="shop-img-1">
-                    </div>
-                </div>
 
-                <div class="advantages">
-                    <span class="advantages-title wow fadeInUp">
-                        Преимущества 
-                        <span>интернет-магазина:</span>
-                    </span>
-                    <ul>
-                        <li class="wow fadeInUp">
-                            <div class="index">01</div>
-                            Идеально подходит как для продажи товаров, так и для 
-                            заказов услуг онлайн;
-                        </li>
-                        <li class="wow fadeInUp">
-                            <div class="index">02</div>
-                            Значительная экономия средств на аренде помещений 
-                            для офлайн-магазина, его содержании;
-                        </li>
-                        <li class="wow fadeInUp">
-                            <div class="index">03</div>
-                            Высокая скорость запуска онлайн-магазина;
-                        </li>
-                        <li class="wow fadeInUp">
-                            <div class="index">04</div>
-                            Большой охват аудитории (продавать товары/услуги можно 
-                            по всей стране и даже за рубеж);
-                        </li>
-                        <li class="wow fadeInUp">
-                            <div class="index">05</div>
-                            Круглосуточный доступ к магазину для клиентов 
-                            (интернет-магазин работает 24 часа в сутки и 7 дней в неделю);
-                        </li>
-                        <li class="wow fadeInUp">
-                            <div class="index">06</div>
-                            Возможность войти в бизнес при сравнительно небольшом бюджете; 
-                        </li>
-                        <li class="wow fadeInUp">
-                            <div class="index">07</div>
-                            Невысокая стоимость содержания сайта;
-                        </li>
-                        <li class="wow fadeInUp">
-                            <div class="index">08</div>
-                            Широкий ассортимент товаров; 
-                        </li>
-                        <li class="wow fadeInUp">
-                            <div class="index">09</div>
-                            Возможность практически на 100% автоматизировать процесс 
-                            работы интернет-магазина;                            
-                        </li>
-                        <li class="wow fadeInUp">
-                            <div class="index">10</div>
-                            Возможность вести веб-аналитику и делать анализ посещений, 
-                            постоянно улучшая проект. 
-                        </li>
-                    </ul>
-                </div>
+                    <div class="blue-line wow slideInDown"></div>
+
+                    <div class="container">
+                        <p class="container-addition wow fadeIn">
+                            Lorem ipsum dolor sit amet consectetu adipisi
+                        </p>
+                        <div class="image-block wow fadeInUp">
+                            <div class="date">
+                                <span class="wow fadeInUp">6 октября 2017</span>
+                            </div>
+                            <div class="image-container wow fadeInUp">
+                                <img src="../../../images/services/web-production/shop/shop-footer.jpg" alt="shop-footer">
+                            </div>
+                        </div>
+                        <div class="info wow fadeInUp">
+                            @@include('./components/sticker.html')
+                            <div class="new-title">
+                                <div class="text-container">
+                                    <span>Шаблон или индивидуальная разработка:</span>
+                                </div>
+                                <div class="text-container">
+                                    <span>что выбрать при создании сайта?</span>
+                                </div>
+                            </div>
+                            <article>
+                                <p>На рынке веб-разработки нет какой-то единой, общепризнанной модели поведения — одни компании уверенно тратят сотни тысяч на сайт, а другие за сутки моделируют сайт на основе шаблона. И первые, и вторые, вероятно, считают свой выбор правильным. Но для нас важный критерий — это эффективность сайта для бизнеса, уровень посещаемости и позиции в Google. Разберёмся, какой сайт  — по шаблону или индивидуальной разработке — лучше по этим критериям.</p>
+                            </article>
+                            <div class="special-buttons">
+                                <a class="special-button" href="#">
+                                    <span class="special-button-text">Читать статью</span>
+                                </a>
+                                <a class="animated-button option" href="#">
+                                    <span>К блогу</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
         </div>
-        
-        <div class="web-production-clock">
-            @@include('./components/clock-bg.html')
-            <blockquote>
-                <p class="wow fadeIn">
-                    Современный интернет-магазин с понятной и 
-                    удобной структурой позволит 
-                    <span>в короткие сроки вывести бизнес на новую ступень развития.</span>  
-                    Статистика уверенно подтверждает, что интернет-магазины 
-                    всё более интегрируются в общественную жизнь и имеют 
-                    огромные перспективы на близкое и далёкое будущее. 
-                </p>
-            </blockquote>
-        </div>
-
-        @@include('./components/work-examples.html')
-
-        <div class="web-production-answers">
-            @@include('./components/big-background-letter.html')
-
-            <div class="container">
-                <div class="lines">
-                    <div class="line line--1 wow slideInDown"></div>
-                    <div class="line line--2 wow slideInDown" data-wow-delay=".3"></div>
-                    <div class="line line--3 wow slideInDown" data-wow-delay=".6"></div>
-                    <div class="line line--4 wow slideInDown" data-wow-delay=".9"></div>
-                </div>
-
-                <div class="answers">
-                    <div class="column-1">
-                        <span class="answers-title wow slideInLeft">
-                            Ответы
-                            <span>на часто задаваемые вопросы</span>
-                        </span>
-                    </div>
-                    <div class="column-2">
-                        <ul>
-                            <li class="question question--1 current">
-                                <div class="index">
-                                    <span class="wow slideInUp" data-wow-delay=".3s">01</span>
-                                </div>
-                                <button>
-                                    <span class="wow slideInLeft" data-wow-delay=".3s">01 Правда ли, что Landing Page хуже, чем полноценный сайт?</span>
-                                </button>
-                            </li>
-                            <li class="question question--2">
-                                <div class="index">
-                                    <span class="wow slideInUp" data-wow-delay=".3s">02</span>
-                                </div>
-                                <button>
-                                    <span class="wow slideInLeft" data-wow-delay=".3s">02 Есть ли необходимость в полноценном сайте после запуска Landing Page?</span>
-                                </button>
-                            </li>
-                            <li class="question question--3">
-                                <div class="index">
-                                    <span class="wow slideInUp" data-wow-delay=".3s">03</span>
-                                </div>
-                                <button>
-                                    <span class="wow slideInLeft" data-wow-delay=".3s">03 Есть ли необходимость в полноценном сайте после запуска Landing Page?</span>
-                                </button>
-                            </li>
-                            <li class="question question--4">
-                                <div class="index">
-                                    <span class="wow slideInUp" data-wow-delay=".3s">04</span>
-                                </div>
-                                <button>
-                                    <span class="wow slideInLeft" data-wow-delay=".3s">04 Есть ли необходимость в полноценном сайте после запуска Landing Page?</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="column-3">
-                        <div class="answer answer--1 current">
-                            <div class="index">
-                                <span>
-                                    <span class="wow slideInUp" data-wow-delay=".6s">01</span>
-                                </span>
-                            </div>
-                            <div class="content">
-                                <span class="content-title">
-                                    <span class="wow slideInLeft" data-wow-delay=".6s">01 Правда ли, что Landing Page хуже, чем полноценный сайт?</span>
-                                </span>
-                                <div class="text">
-                                    <p class="wow slideInLeft" data-wow-delay=".6s">
-                                        01 Нет, такое сравнение некорректно. Формат Landing page 
-                                        разработан для решения конкретных задач и эффективно 
-                                        справляется с ними. По сути, это тоже полноценный 
-                                        одностраничный сайт, у него есть свои преимущества 
-                                        и недостатки — выбор в пользу того или иного формата 
-                                        сайта зависит от ваших требований и амбиций. 
-                                    </p>
-                                    <p class="wow slideInLeft" data-wow-delay=".6s">
-                                        Одним из основных преимуществ лэндинга является высокая 
-                                        конверсия и генерация лидов — это обусловлено тем, что 
-                                        в рамках одной страницы (в одном месте) вы даёте максимум 
-                                        информации о товаре/услуге/мероприятии  потенциальным клиентам. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="answer answer--2">
-                            <div class="index">
-                                <span>
-                                    <span>02</span>
-                                </span>
-                            </div>
-                            <div class="content">
-                                <span class="content-title">
-                                    <span>02 Правда ли, что SPA хуже, чем полноценный сайт?</span>
-                                </span>
-                                <div class="text">
-                                    <p>
-                                        02 Нет, такое сравнение некорректно. Формат Landing page 
-                                        разработан для решения конкретных задач и эффективно 
-                                        справляется с ними. По сути, это тоже полноценный 
-                                        одностраничный сайт, у него есть свои преимущества 
-                                        и недостатки — выбор в пользу того или иного формата 
-                                        сайта зависит от ваших требований и амбиций. 
-                                    </p>
-                                    <p>
-                                        Одним из основных преимуществ лэндинга является высокая 
-                                        конверсия и генерация лидов — это обусловлено тем, что 
-                                        в рамках одной страницы (в одном месте) вы даёте максимум 
-                                        информации о товаре/услуге/мероприятии  потенциальным клиентам. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="answer answer--3">
-                            <div class="index">
-                                <span>
-                                    <span>03</span>
-                                </span>
-                            </div>
-                            <div class="content">
-                                <span class="content-title">
-                                    <span>03 Правда ли, что SPA хуже, чем полноценный сайт?</span>
-                                </span>
-                                <div class="text">
-                                    <p>
-                                        03 Нет, такое сравнение некорректно. Формат Landing page 
-                                        разработан для решения конкретных задач и эффективно 
-                                        справляется с ними. По сути, это тоже полноценный 
-                                        одностраничный сайт, у него есть свои преимущества 
-                                        и недостатки — выбор в пользу того или иного формата 
-                                        сайта зависит от ваших требований и амбиций. 
-                                    </p>
-                                    <p>
-                                        Одним из основных преимуществ лэндинга является высокая 
-                                        конверсия и генерация лидов — это обусловлено тем, что 
-                                        в рамках одной страницы (в одном месте) вы даёте максимум 
-                                        информации о товаре/услуге/мероприятии  потенциальным клиентам. 
-                                    </p>
-                                    <p>
-                                        Нет, такое сравнение некорректно. Формат Landing page 
-                                        разработан для решения конкретных задач и эффективно 
-                                        справляется с ними. По сути, это тоже полноценный 
-                                        одностраничный сайт, у него есть свои преимущества 
-                                        и недостатки — выбор в пользу того или иного формата 
-                                        сайта зависит от ваших требований и амбиций. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="answer answer--4">
-                            <div class="index">
-                                <span>
-                                    <span>04</span>
-                                </span>
-                            </div>
-                            <div class="content">
-                                <span class="content-title">
-                                    <span>04 Правда ли, что SPA хуже, чем полноценный сайт?</span>
-                                </span>
-                                <div class="text">
-                                    <p>
-                                        04 Нет, такое сравнение некорректно. Формат Landing page 
-                                        разработан для решения конкретных задач и эффективно 
-                                        справляется с ними. По сути, это тоже полноценный 
-                                        одностраничный сайт, у него есть свои преимущества 
-                                        и недостатки — выбор в пользу того или иного формата 
-                                        сайта зависит от ваших требований и амбиций. 
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="more">
-                    <div class="column-1">
-                        <span class="more-title wow fadeInLeft">
-                            Больше услуг
-                            <a href="#">web-production</a>
-                        </span>
-                    </div>
-                    <ul>
-                        <li class="column-1">
-                            <a href="landing.html" class="crossed-button wow fadeInLeft">
-                                <span>Landing page</span>
-                                <div class="arrow-container">
-                                    <svg class="arrow" x="0px" y="0px"
-                                        viewBox="0 0 34.8 7.3">
-                                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                    </svg>      
-                                </div>
-                            </a>
-                        </li>
-                        <li class="column-2">
-                            <a href="corporate.html" class="crossed-button wow fadeInLeft" data-wow-delay=".3s">
-                                <span>Корпоративный сайт</span>
-                                <div class="arrow-container">
-                                    <svg class="arrow" x="0px" y="0px"
-                                        viewBox="0 0 34.8 7.3">
-                                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                    </svg>      
-                                </div>
-                            </a>
-                        </li>
-                        <li class="column-3">
-                            <a href="card.html" class="crossed-button wow fadeInLeft" data-wow-delay=".6s">
-                                <span>Сайт-визитка</span>
-                                <div class="arrow-container">
-                                    <svg class="arrow" x="0px" y="0px"
-                                        viewBox="0 0 34.8 7.3">
-                                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                    </svg>      
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <footer class="web-production-footer">
-            @@include('./components/small-gray-lines.html')
-            <!-- ссылка на blog.html -->
-            <div class="bottom-button">
-                <a href="">
-                    <span>Все новости</span>      
-                    <div class="arrow-container">
-                        <svg class="arrow" x="0px" y="0px"
-                            viewBox="0 0 34.8 7.3">
-                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                        </svg>      
-                    </div>
-                </a>
-                <div class="line"></div>
-            </div>
-
-            <div class="blue-line wow slideInDown"></div>
-
-            <div class="container">
-                <p class="container-addition wow fadeIn">
-                    Lorem ipsum dolor sit amet consectetu adipisi
-                </p>
-                <div class="image-block wow fadeInUp">
-                    <div class="date">
-                        <span class="wow fadeInUp">6 октября 2017</span>
-                    </div>
-                    <div class="image-container wow fadeInUp">
-                        <img src="../../../images/services/web-production/shop/shop-footer.jpg" alt="shop-footer">
-                    </div>
-                </div>
-                <div class="info wow fadeInUp">
-                    @@include('./components/sticker.html')
-                    <div class="new-title">
-                        <div class="text-container">
-                            <span>Шаблон или индивидуальная разработка:</span>
-                        </div>
-                        <div class="text-container">
-                            <span>что выбрать при создании сайта?</span>
-                        </div>
-                    </div>
-                    <article>
-                        <p>На рынке веб-разработки нет какой-то единой, общепризнанной модели поведения — одни компании уверенно тратят сотни тысяч на сайт, а другие за сутки моделируют сайт на основе шаблона. И первые, и вторые, вероятно, считают свой выбор правильным. Но для нас важный критерий — это эффективность сайта для бизнеса, уровень посещаемости и позиции в Google. Разберёмся, какой сайт  — по шаблону или индивидуальной разработке — лучше по этим критериям.</p>
-                    </article>
-                    <!-- ссылка на пост -->
-                    @@include('./components/crossed-button.html')
-                </div>
-            </div>
-        </footer>
-        
-    </div>
-
-</body>
+    </body>
 </html>
