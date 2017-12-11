@@ -2,152 +2,153 @@
     box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $Raleway-Regular;
     overflow: hidden;
-    // position: relative;
-    // min-height: auto;
-    // display: inherit;
-    // z-index: 1;
-    // left: 0;
+    
+    position: relative;
+    min-height: auto;
+    display: inherit;
+    z-index: 1;
+    left: 0;
     
     // ----- animation -----
-    // // ----- other -----
-    // .back-layer {
-    //     animation: fadeIn 0s 0s both;
-    // }
-    // .vertical-text, .questions { animation: fadeIn $time * 6 $time * 15 both; }
+    // ----- other -----
+    .back-layer {
+        animation: fadeIn 0s 0s both;
+    }
+    .vertical-text, .questions { animation: fadeIn $time * 6 $time * 15 both; }
 
-    // // ----- big-background-letter -----
-    // .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+    // ----- big-background-letter -----
+    .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
 
-    // // ----- name -----
-    // .name { animation: fadeIn $time * 3 both; }
+    // ----- name -----
+    .name { animation: fadeIn $time * 3 both; }
     
-    // // ----- line -----
-    // .line { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+    // ----- line -----
+    .line { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
 
-    // // ----- other -----
-    // .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
-    // .table .container .item img { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+    // ----- other -----
+    .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
+    .table .container .item img { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
-    // // ----- title -----
-    // .title {
-    //     animation: fadeIn $time * 2 $time * 5 linear;
-    //     animation-fill-mode: forwards;
-    //     span.name {
-    //         span {
-    //             animation: titleName $time * 2 $time * 11 linear;
-    //             animation-fill-mode: forwards;
-    //         }
-    //         &:before {
-    //             animation: titleNameShape $time * 2 $time * 10 linear;
-    //             animation-fill-mode: forwards;
-    //         }
-    //     }
-    //     .word {
-    //         &:after { animation: halfDown $time * 2 linear $time * 7 both; }
-    //         span {
-    //             animation: titleWord $time * 2 $time * 8 linear;
-    //             animation-fill-mode: forwards;
-    //         }
-    //     }
-    // }
-    
-    // ----- animation left -----
-    &.current, &.current-back,
-    &.previous, &.previous-back {
-        animation: Left $time * 3 0s both;
-        
-        // ----- other -----
-        .back-layer {
-            animation: fadeIn 0s 0s both;
-        }
-        .vertical-text, .questions { animation: fadeIn $time * 6 $time * 15 both; }
-
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-
-        // ----- name -----
-        .name { animation: fadeIn $time * 3 both; }
-        
-        // ----- line -----
-        .line { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
-
-        // ----- other -----
-        .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
-        .table .container .item img { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime both; }
-
-        // ----- title -----
-        .title {
-            animation: fadeIn $time * 2 $time * 5 linear;
-            animation-fill-mode: forwards;
-            span.name {
-                span {
-                    animation: titleName $time * 2 $time * 11 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:before {
-                    animation: titleNameShape $time * 2 $time * 10 linear;
-                    animation-fill-mode: forwards;
-                }
+    // ----- title -----
+    .title {
+        animation: fadeIn $time * 2 $time * 5 linear;
+        animation-fill-mode: forwards;
+        span.name {
+            span {
+                animation: titleName $time * 2 $time * 11 linear;
+                animation-fill-mode: forwards;
             }
-            .word {
-                &:after { animation: halfDown $time * 2 linear $time * 7 both; }
-                span {
-                    animation: titleWord $time * 2 $time * 8 linear;
-                    animation-fill-mode: forwards;
-                }
+            &:before {
+                animation: titleNameShape $time * 2 $time * 10 linear;
+                animation-fill-mode: forwards;
+            }
+        }
+        .word {
+            &:after { animation: halfDown $time * 2 linear $time * 7 both; }
+            span {
+                animation: titleWord $time * 2 $time * 8 linear;
+                animation-fill-mode: forwards;
             }
         }
     }
-
-    // ----- animation right -----
-    &.previous, &.previous-back {
-        animation: slideRight $time * 3 $topPanelAnimationTime both;
-        animation-play-state: paused;
+    
+    // // ----- animation left -----
+    // &.current, &.current-back,
+    // &.previous, &.previous-back {
+    //     animation: Left $time * 3 0s both;
         
-        // ----- other -----
-        .back-layer {
-            animation: fadeIn 0s 0s both;
-        }
-        .vertical-text, .questions { animation: fadeIn $time * 6 $time * 15 both; }
+    //     // ----- other -----
+    //     .back-layer {
+    //         animation: fadeIn 0s 0s both;
+    //     }
+    //     .vertical-text, .questions { animation: fadeIn $time * 6 $time * 15 both; }
 
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+    //     // ----- big-background-letter -----
+    //     .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
 
-        // ----- name -----
-        .name { animation: fadeIn $time * 3 both; }
+    //     // ----- name -----
+    //     .name { animation: fadeIn $time * 3 both; }
         
-        // ----- line -----
-        .line { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+    //     // ----- line -----
+    //     .line { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
 
-        // ----- other -----
-        .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
-        .table .container .item img { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+    //     // ----- other -----
+    //     .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
+    //     .table .container .item img { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime both; }
 
-        // ----- title -----
-        .title {
-            animation: fadeIn $time * 2 $time * 5 linear;
-            animation-fill-mode: forwards;
-            span.name {
-                span {
-                    animation: titleName $time * 2 $time * 11 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:before {
-                    animation: titleNameShape $time * 2 $time * 10 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-            .word {
-                &:after { animation: halfDown $time * 2 linear $time * 7 both; }
-                span {
-                    animation: titleWord $time * 2 $time * 8 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
-    }
-    &.current-back { animation: none; }
-    &.previous-back { animation-play-state: running; }
+    //     // ----- title -----
+    //     .title {
+    //         animation: fadeIn $time * 2 $time * 5 linear;
+    //         animation-fill-mode: forwards;
+    //         span.name {
+    //             span {
+    //                 animation: titleName $time * 2 $time * 11 linear;
+    //                 animation-fill-mode: forwards;
+    //             }
+    //             &:before {
+    //                 animation: titleNameShape $time * 2 $time * 10 linear;
+    //                 animation-fill-mode: forwards;
+    //             }
+    //         }
+    //         .word {
+    //             &:after { animation: halfDown $time * 2 linear $time * 7 both; }
+    //             span {
+    //                 animation: titleWord $time * 2 $time * 8 linear;
+    //                 animation-fill-mode: forwards;
+    //             }
+    //         }
+    //     }
+    // }
+
+    // // ----- animation right -----
+    // &.previous, &.previous-back {
+    //     animation: slideRight $time * 3 $topPanelAnimationTime both;
+    //     animation-play-state: paused;
+        
+    //     // ----- other -----
+    //     .back-layer {
+    //         animation: fadeIn 0s 0s both;
+    //     }
+    //     .vertical-text, .questions { animation: fadeIn $time * 6 $time * 15 both; }
+
+    //     // ----- big-background-letter -----
+    //     .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
+
+    //     // ----- name -----
+    //     .name { animation: fadeIn $time * 3 both; }
+        
+    //     // ----- line -----
+    //     .line { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
+
+    //     // ----- other -----
+    //     .table .container .item::before { animation: fadeIn $BPostLinkAnimationTime $BPostLinkDelayTime * 1.1 both; }
+    //     .table .container .item img { animation: fadeInUp $BPostLinkAnimationTime $BPostLinkDelayTime both; }
+
+    //     // ----- title -----
+    //     .title {
+    //         animation: fadeIn $time * 2 $time * 5 linear;
+    //         animation-fill-mode: forwards;
+    //         span.name {
+    //             span {
+    //                 animation: titleName $time * 2 $time * 11 linear;
+    //                 animation-fill-mode: forwards;
+    //             }
+    //             &:before {
+    //                 animation: titleNameShape $time * 2 $time * 10 linear;
+    //                 animation-fill-mode: forwards;
+    //             }
+    //         }
+    //         .word {
+    //             &:after { animation: halfDown $time * 2 linear $time * 7 both; }
+    //             span {
+    //                 animation: titleWord $time * 2 $time * 8 linear;
+    //                 animation-fill-mode: forwards;
+    //             }
+    //         }
+    //     }
+    // }
+    // &.current-back { animation: none; }
+    // &.previous-back { animation-play-state: running; }
 
     // ----- front-layer -----
     .front-layer {
