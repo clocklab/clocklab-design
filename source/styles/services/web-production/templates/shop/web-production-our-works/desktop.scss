@@ -1,11 +1,6 @@
 & {  
-    height: px(2500);
     position: relative;
     background: $white;
-    
-    &.seo {
-        z-index: -1;
-    }
     
     .front-layer,
     .back-layer {
@@ -272,9 +267,11 @@
     }
 
     &--dark {
-
+        background: $lightBlack;
+        
         .front-layer {
             background: $lightBlack;
+            border-bottom: none;
 
             .our-works-title {
                 color: $white;

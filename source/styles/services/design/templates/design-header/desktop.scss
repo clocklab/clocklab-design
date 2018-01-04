@@ -1,5 +1,6 @@
 & {  
     font-family: $Roboto-Regular;
+    background: $white;
     position: relative;
     
     // ----- animation -----
@@ -98,6 +99,7 @@
                     display: inline-block;
                     margin-bottom: px(10);
                     font-family: $Raleway-ExtraBold;
+                    &:before { display: none; }
                     span {
                         font-size: px(120);
                         line-height: px(104);
