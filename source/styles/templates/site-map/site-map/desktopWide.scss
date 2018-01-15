@@ -1,8 +1,6 @@
-@import '../desktop';
-
-& {
+.site-map {
     
-    $contentWidth: px(2500);
+    $contentWidth: 1250px;
     $columnWidth: $contentWidth / 4;
 
     a {
@@ -14,16 +12,15 @@
     }
 
     .container {
-        padding-top: px(280);
+        padding-top: 140px;
         width: $contentWidth;
 
         & > .tree-level {
-            margin-left: 0;
             
             & > .tree-level {
     
                 & > a {
-                    font-size: px(54);
+                    font-size: 27px;
                 }
             }
         }
@@ -31,6 +28,6 @@
 
     .page-title {
         width: $columnWidth;
-        font-size: px(90);
+        font-size: 45px;
     }
 }

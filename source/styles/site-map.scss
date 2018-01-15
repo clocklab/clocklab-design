@@ -1,6 +1,5 @@
-// base
-@import "base/reset";
 @import "base/variables";
+@import "base/reset";
 @import "base/fonts";
 @import "base/common";
 @import "base/animations";
@@ -8,7 +7,91 @@
 // components
 @import "components/top-panel/main";
 @import "components/big-background-letter/main";
-@import "components/small-width/main";
+// @import "components/small-width/main";
 
-// main
-@import "templates/site-map/site-map/main";
+
+/*
+/
+/---- DESKTOP HD ---- */
+// -- site-map --
+@import "templates/site-map/site-map/desktopHD";
+// -- site-map --
+/* ---- DESKTOP HD ---- */
+
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    // -- site-map --
+    @import "templates/site-map/site-map/desktopMega";
+    // -- site-map --
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+    // -- site-map --
+    @import "templates/site-map/site-map/desktopWide";
+    // -- site-map --
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    // -- site-map --
+    @import "templates/site-map/site-map/desktop";
+    // -- site-map --
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    // -- site-map --
+    @import "templates/site-map/site-map/tabletLandscape";
+    // -- site-map --
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+    // -- site-map --
+    @import "templates/site-map/site-map/tabletPortrait";
+    // -- site-map --
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    // -- site-map --
+    @import "templates/site-map/site-map/phoneLandscape";
+    // -- site-map --
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+    // -- site-map --
+    @import "templates/site-map/site-map/phonePortrait";
+    // -- site-map --
+}
+/* ---- PHONE PORTRAIT ---- */

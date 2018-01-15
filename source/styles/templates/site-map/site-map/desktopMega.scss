@@ -1,8 +1,6 @@
-@import '../desktop';
-
-& {
+.site-map {
     
-    $contentWidth: px(4000);
+    $contentWidth: 1800px;
     $columnWidth: $contentWidth / 4;
 
     a {
@@ -15,10 +13,6 @@
 
     .container {
         width: $contentWidth;
-
-        & > .tree-level {
-            margin-left: 0;
-        }
     }
 
     .page-title {

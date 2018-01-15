@@ -1,0 +1,77 @@
+.site-map {
+    
+    a {
+        padding-right: 15px;
+        width: 30%;
+    }
+
+    .tree-level {
+        margin-left: 20%;
+    }
+
+    .container {
+        padding-top: 100px;
+        width: 80%;
+
+        & > .tree-level {
+            padding-bottom: 60px;
+    
+            & > a {
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+            
+            & > .tree-level {
+                margin-left: 33%;
+    
+                & > a {
+                    margin-bottom: 15px;
+                    width: 100%;
+                    font-size: 18px;
+                }
+    
+                & > .tree-level {
+                    margin-bottom: 25px;
+    
+                    & > a {
+                        margin-bottom: 15px;
+                        width: 100%;
+                        font-size: 16px;
+                    }
+    
+                    .tree-level {
+    
+                        a {
+                            margin-bottom: 7px;
+                            width: 100%;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .line {
+
+        &--2 {
+            left: 33%;
+        }
+
+        &--3 {
+            left: initial;
+            right: 1px;
+        }
+
+        &--4,
+        &--5 {
+            display: none;
+        }
+    }
+
+    .page-title {
+        padding-bottom: 25px;
+        width: 33%;
+        font-size: 24px;
+    }
+}

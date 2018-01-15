@@ -1,3 +1,8 @@
 <div class="copyright">
-    <p>All rights reserved. Copyright &copy; 2017</p>
+    <p>
+        All rights reserved. Copyright &copy; <span>2017</span>
+        <script>
+            document.currentScript.parentElement.firstElementChild.innerHTML = new Date().getFullYear()
+        </script>
+    </p>
 </div>
