@@ -1,0 +1,39 @@
+.site-map {
+    
+    a {
+        padding-right: 5px;
+        width: 40%;
+    }
+
+    .tree-level {
+        margin-left: 10%;
+    }
+
+    .container {
+        width: 90%;
+
+        & > .tree-level {
+    
+            & > a {
+                padding-right: 0;
+            }
+            
+            & > .tree-level {
+                margin-left: 40%;
+            }
+        }
+    }
+
+    .line {
+
+        &--2 {
+            left: 40%;
+        }
+    }
+
+    .page-title {
+        padding-bottom: 30px;
+        width: initial;
+        font-size: 30px;
+    }
+}

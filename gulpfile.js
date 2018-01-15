@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 var mobile = '-mobile'
 var mobile = ''
 
-var page = `index${mobile}`
+var page = `site-map${mobile}`
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
@@ -26,7 +26,6 @@ var source = 'source',
         tunnel: false,
         notify: false,
         host: 'localhost',
-        logPrefix: 'Gontarenko',
         server: { baseDir: build }
     },
     path = {
