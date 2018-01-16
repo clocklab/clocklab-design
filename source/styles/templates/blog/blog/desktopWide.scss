@@ -1,6 +1,4 @@
-@import '../desktop';
-
-& {
+.blog {
 
     .grid {
         min-height: 600px;
@@ -22,10 +20,10 @@
             min-height: 300px;
 
             .post-info {
-                margin-top: px(200);
+                margin-top: 100px;
 
                 .title {
-                    font-size: px(50);
+                    font-size: 25px;
                 }
             }
         }
@@ -34,7 +32,7 @@
     .filter {
 
         &--date {
-            margin-right: px(400);
+            margin-right: 200px;
         }
     }
 }

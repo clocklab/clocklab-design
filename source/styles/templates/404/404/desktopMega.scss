@@ -1,0 +1,8 @@
+// ----- title -----
+.title .word {
+    span { font-size: 58px; }
+    &:last-of-type span { font-size: 23px; }
+}
+
+// ----- scroll -----
+.scroll .arrow:before { right: 3.5px; }

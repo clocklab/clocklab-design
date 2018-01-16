@@ -1,19 +1,103 @@
 // base
-@import "base/variables";
-@import "base/fonts";
-@import "base/reset";
-@import "base/common";
-@import "base/animations";
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/common';
+@import 'base/animations';
 
 // components
-// @import "components/top-panel/main";
-@import "components/logo/main";
-@import "components/menu/main";
-@import "components/language/main";
-@import "components/sticker/main";
-@import "components/crossed-button/main";
-@import "components/jumping-button/main";
-@import "components/new-title/main";
+@import 'components/top-panel/main';
+// @import 'components/logo/main';
+// @import 'components/menu/main';
+@import 'components/language/main';
+@import 'components/sticker/main';
+@import 'components/crossed-button/main';
+@import 'components/jumping-button/main';
+@import 'components/new-title/main';
 
-// main
-@import "templates/blog/blog/main";
+
+/*
+/
+/---- DESKTOP HD ---- */
+// -- blog --
+@import 'templates/blog/blog/desktopHD';
+// -- blog --
+/* ---- DESKTOP HD ---- */
+
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    // -- blog --
+    // @import 'templates/blog/blog/desktopMega';
+    // -- blog --
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+    // -- blog --
+    @import 'templates/blog/blog/desktopWide';
+    // -- blog --
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    // -- blog --
+    @import 'templates/blog/blog/desktop';
+    // -- blog --
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    // -- blog --
+    @import 'templates/blog/blog/tabletLandscape';
+    // -- blog --
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+    // -- blog --
+    // @import 'templates/blog/blog/tabletPortrait';
+    // -- blog --
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    // -- blog --
+    @import 'templates/blog/blog/phoneLandscape';
+    // -- blog --
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+    // -- blog --
+    @import 'templates/blog/blog/phonePortrait';
+    // -- blog --
+}
+/* ---- PHONE PORTRAIT ---- */

@@ -1,3 +1,38 @@
+@import '../desktop';
+
+// ----- services-schedule -----
+.services-schedule {
+	padding-top: 25vh;
+	.container {
+		width: 700px;
+		span.name {
+			left: .5vh;
+			top: -8vh;
+		}
+		.item {
+			.types__item {
+				margin-bottom: 0;
+				width: 95%;
+			}
+			.content {
+				// padding-left: .5vh;
+				.content-title { font-size: 15px; }
+				p { font-size: 13px; }
+				ul li {
+					line-height: 1.2;
+					margin-bottom: 0;
+					a { font-size: 13px; }
+				}
+			}
+			&.up {
+				margin-bottom: 8vh;
+				.services-line { top: -25vh; }
+			}
+		}
+	}
+}
+
+
 & {
     // box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
     font-family: $Raleway-Regular;
@@ -188,7 +223,7 @@
             span.name {
                 text-transform: uppercase;
                 position: absolute;
-                font-size: px(28);
+                font-size: 14px;
                 top: -10vh;
                 span, h1 {
                     color: $white;
@@ -201,11 +236,11 @@
                     visibility: hidden;
                     position: absolute;
                     display: block;
-                    width: px(100);
+                    width: 50px;
                     left: -62px;
-                    height: px(6);
+                    height: 3px;
                     content: '';
-                    top: px(8);
+                    top: 4px;
                 }
             }
             .item {
@@ -237,7 +272,7 @@
                     }
                     ul li {
                         line-height: 1.5;
-                        margin-bottom: px(20);
+                        margin-bottom: 10px;
                         a {
                             color: $white;
                             transition: $time;
@@ -270,29 +305,29 @@
                         width: 75%;
                         display: block;
                         position: relative;
-                        margin-bottom: px(50);
+                        margin-bottom: 25px;
                         &:hover .index { color: $blue; }
                         .index {
                             color: $gray;
-                            top: px(-40);
-                            left: px(-40);
+                            top: -20px;
+                            left: -20px;
                             position: absolute;
                             font-family: $Roboto-Regular;
                             transform: rotate(-90deg);
                             transition: color $time;
                             overflow: hidden;
-                            font-size: px(32);
+                            font-size: 16px;
                             span { display: block; }
                         }
                         .content-title {
                             color: $white;
-                            font-size: px(48);
+                            font-size: 24px;
                             position: relative;
-                            line-height: px(60);
+                            line-height: 30px;
                             display: inline-block;  
                             text-transform: uppercase;
                             font-family: $Raleway-Bold;
-                            &:last-of-type { margin-bottom: px(50); }
+                            &:last-of-type { margin-bottom: 25px; }
                             &:before {
                                 position: absolute;
                                 display: block;
@@ -300,8 +335,8 @@
                                 width: 0;
                                 left: 0;
                                 content: '';
-                                height: px(15);
-                                bottom: px(7.5);
+                                height: 7px;
+                                bottom: 3px;
                                 background: $blue;
                                 transition: width $time;
                             }

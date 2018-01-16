@@ -1,0 +1,45 @@
+& {
+
+    padding-top: 50px;
+    background: $background;
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+    
+    .services-schedule {
+        padding-left: 20px;
+    }
+
+    .name {
+        display: block;
+        margin-bottom: 40px;
+        color: $white;
+        font-size: 24px;
+    }
+
+    .item {
+        margin-bottom: 35px;
+        padding-right: 15px;
+    }
+
+    .types__item {
+        display: block;
+        margin-bottom: 10px;
+        color: $lightGray;
+    }
+
+    ul {
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: $white;
+            transition: color $time;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+}

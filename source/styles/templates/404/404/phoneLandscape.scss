@@ -62,17 +62,17 @@
             span {
                 text-transform: inherit;
                 letter-spacing: 1.5px;
-                font-size: px(53);
+                font-size: 27px;
             }
             &:after { display: none; }
             &:first-of-type { margin-bottom: px(24); }
             &:last-of-type {
-                margin: px(14) 0 0;
-                width: px(310);
+                margin: 7px 0 0;
+                width: 155px;
                 span {
                     color: $blue;
                     line-height: 1.5;
-                    font-size: px(22);
+                    font-size: 11px;
                     white-space: normal;
                     font-weight: $medium;
                     font-family: $roboto;
@@ -98,7 +98,7 @@
     .minutes-container,
     .seconds-container {
         position: absolute;
-        left: px(-35);
+        left: -17px;
         margin: auto;
         bottom: 0;
         top: .5%;

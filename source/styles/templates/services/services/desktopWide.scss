@@ -4,7 +4,7 @@
 .services-schedule {
 	padding-top: 25vh;
 	.container {
-		width: 1280px;
+		width: 850px;
 		span.name {
 			left: .5vh;
 			top: -8vh;
@@ -12,16 +12,16 @@
 		.item {
 			.types__item {
 				margin-bottom: 0;
-				width: 80%;
+				width: 95%;
 			}
 			.content {
 				// padding-left: .5vh;
-				.content-title { font-size: px(45); }
-				p { font-size: px(34); }
+				.content-title { font-size: 18px; }
+				p { font-size: 15px; }
 				ul li {
-					line-height: 1.5;
+					line-height: 1.4;
 					margin-bottom: 0;
-					a { font-size: px(34); }
+					a { font-size: 15px; }
 				}
 			}
 			&.up {

@@ -1,0 +1,310 @@
+linters:
+
+  BangFormat:
+    enabled: true
+    space_before_bang: true
+    space_after_bang: false
+
+  BemDepth:
+    enabled: true
+    max_elements: 1
+
+  BorderZero:
+    enabled: true
+    convention: zero
+
+  ChainedClasses:
+    enabled: false
+
+  ColorKeyword:
+    enabled: true
+
+  ColorVariable:
+    enabled: true
+
+  Comment:
+    enabled: false
+
+  DebugStatement:
+    enabled: false
+
+  DeclarationOrder:
+    enabled: true
+
+  DisableLinterReason:
+    enabled: false
+
+  DuplicateProperty:
+    enabled: true
+
+  ElsePlacement:
+    enabled: true
+    style: same_line
+
+  EmptyLineBetweenBlocks:
+    enabled: true
+    ignore_single_line_blocks: false
+
+  EmptyRule:
+    enabled: true
+
+  ExtendDirective:
+    enabled: false
+
+  FinalNewline:
+    enabled: true
+    present: true
+
+  HexLength:
+    enabled: true
+    style: short
+
+  HexNotation:
+    enabled: true
+    style: uppercase
+
+  HexValidation:
+    enabled: true
+
+  IdSelector:
+    enabled: true
+
+  ImportantRule:
+    enabled: true
+
+  ImportPath:
+    enabled: true
+    leading_underscore: false
+    filename_extension: false
+
+  Indentation:
+    enabled: true
+    allow_non_nested_indentation: false
+    character: spaces
+    width: 4
+
+  LeadingZero:
+    enabled: true
+    style: exclude_zero
+
+  LengthVariable:
+    enable: false
+    allowed_lengths: []
+    allowed_properties: []
+
+  MergeableSelector:
+    enabled: true
+    force_nesting: true
+
+  NameFormat:
+    enabled: false
+    convention: hyphenated_lowercase
+    allow_leading_underscore: false
+
+  NestingDepth:
+    enabled: false
+    max_depth: 4
+    ignore_parent_selector: false
+
+  PlaceholderInExtend:
+    enabled: false
+
+  PrivateNamingConvention:
+    enabled: false
+    prefix: _
+
+  PropertyCount:
+    enabled: false
+
+  PropertySortOrder:
+    enabled: false
+    order:
+      - box-sizing
+      - pointer-events
+      - display
+      - order
+      - flex
+      - flex-flow
+      - flex-direction
+      - flex-basis
+      - flex-grow
+      - flex-shrink
+      - flex-wrap
+      - justify-content
+      - justify-items
+      - justify-self
+      - align-content
+      - align-items
+      - align-self
+      - float
+      - position
+      - top
+      - bottom
+      - left
+      - right
+      - z-index
+      - vertical-align
+      - margin
+      - margin-top
+      - margin-bottom
+      - margin-left
+      - margin-right
+      - padding
+      - padding-top
+      - padding-bottom
+      - padding-left
+      - padding-right
+      - width
+      - max-width
+      - min-width
+      - height
+      - max-height
+      - min-height
+      - object-fit
+      - object-position
+      - transform
+      - overflow
+      - overflow-x
+      - overflow-y
+      - backface-visibility
+      - background
+      - background-color
+      - background-image
+      - background-position
+      - background-repeat
+      - background-size
+      - background-attachment
+      - background-clip
+      - border
+      - border-width
+      - border-style
+      - border-color
+      - border-radius
+      - content
+      - cursor
+      - color
+      - font
+      - font-family
+      - font-weight
+      - font-size
+      - line-height
+      - text-align
+      - text-decoration
+      - opacity
+      - visibility
+      - transition
+      - animation
+      
+  PropertySpelling:
+    enabled: false
+    extra_properties: []
+
+  PropertyUnits:
+    enabled: false
+
+  PseudoElement:
+    enabled: false
+
+  QualifyingElement:
+    enabled: true
+    allow_element_with_attribute: false
+    allow_element_with_class: false
+    allow_element_with_id: false
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 4
+
+  SelectorFormat:
+    enabled: true
+    convention: hyphenated_BEM
+    # class_convention: '^(?:u|is|has)\-[a-z][a-zA-Z0-9]*$|^(?!u|is|has)[a-zA-Z][a-zA-Z0-9]*(?:\-[a-z][a-zA-Z0-9]*)?(?:\-\-[a-z][a-zA-Z0-9]*)?$'
+
+  Shorthand:
+    enabled: true
+
+  SingleLinePerProperty:
+    enabled: true
+    allow_single_line_rule_sets: false
+
+  SingleLinePerSelector:
+    enabled: true
+
+  SpaceAfterComma:
+    enabled: true
+
+  SpaceAfterComment:
+    enabled: 
+    allow_empty_comments: false
+    style: one_space
+
+  SpaceAfterPropertyColon:
+    enabled: true
+    style: one_space
+
+  SpaceAfterPropertyName:
+    enabled: true
+    style: one_space
+
+  SpaceAfterVariableColon:
+    enabled: true
+    style: one_space
+
+  SpaceAfterVariableName:
+    enabled: true
+
+  SpaceAroundOperator:
+    enabled: true
+    style: one_space
+
+  SpaceBeforeBrace:
+    enabled: true
+    style: space
+    allow_single_line_padding: false
+
+  SpaceBetweenParens:
+    enabled: true
+    spaces: 0
+
+  StringQuotes:
+    enabled: true
+    style: single_quotes
+
+  TrailingSemicolon:
+    enabled: true
+
+  TrailingWhitespace:
+    enabled: true
+
+  TrailingZero:
+    enabled: true
+
+  TransitionAll:
+    enabled: true
+
+  UnnecessaryMantissa:
+    enabled: true
+
+  UnnecessaryParentReference:
+    enabled: false
+
+  UrlFormat:
+    enabled: true
+
+  UrlQuotes:
+    enabled: true
+
+  VariableForProperty:
+    enabled: true
+    properties:
+      - color
+      - font
+
+  VendorPrefixes:
+    enabled: true
+    identifier_list: base
+    include: []
+    exclude: []
+
+  ZeroUnit:
+    enabled: true
