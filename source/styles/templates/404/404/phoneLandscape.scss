@@ -1,8 +1,22 @@
 .error-page {
+    min-height: 100vh;
+
+    .messages-block {
+        padding-top: 10vh;
+
+        .oops {
+            font-size: 50px;
+        }
+
+        .msg {
+            padding: 50vh 20px 0;
+            font-size: 26px;
+        }
+    }
 
     .watch {
-        margin: 30% auto 0;
-        background-size: 37%;
+        margin: 0 auto;
+        background-size: 25%;
     }
 
     .hours-container {
@@ -15,5 +29,13 @@
 
     .seconds-container {
         zoom: .4;
+    }
+
+    .alert {
+        top: 15%;
+
+        span {
+            font-size: 200px;
+        }
     }
 }

@@ -11,23 +11,20 @@
 
     .watch {
         background-size: 32%;
-        margin: 21% auto 0;
     }
 
-    .title {
+    .alert {
+        top: 30%;
 
-        .word {
+        span {
+            font-size: 300px;
+
             &:first-of-type {
-                margin-bottom: 12px;
+                margin-right: 18%;
             }
 
             &:last-of-type {
-                margin: 36px 0 0;
-
-                span {
-                    letter-spacing: 0;
-                    font-size: 20px;
-                }
+                margin-left: 18%;
             }
         }
     }
