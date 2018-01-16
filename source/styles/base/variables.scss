@@ -3,21 +3,21 @@ $browser-context: 16;
 // GLOBAL VARIABLES END
 
 // MEDIA QUERIES
-$phonePortrait:   '(max-width: 414px)';
-$phoneLandscape:  '(min-width: 415px) and (max-width: 667px)';
-$tabletPortrait:  '(min-width: 668px) and (max-width: 768px)';
+$phonePortrait: '(max-width: 414px)';
+$phoneLandscape: '(min-width: 415px) and (max-width: 667px)';
+$tabletPortrait: '(min-width: 668px) and (max-width: 768px)';
 $tabletLandscape: '(min-width: 769px) and (max-width: 1024px)';
-$desktop:         '(min-width: 1025px) and (max-width: 1366px)';
-$desktopWide:     '(min-width: 1367px) and (max-width: 1680px)';
-$desktopHD:       '(min-width: 1681px) and (max-width: 1920px)';
-$desktopMega:     '(min-width: 1921px)';
+$desktop: '(min-width: 1025px) and (max-width: 1366px)';
+$desktopWide: '(min-width: 1367px) and (max-width: 1680px)';
+$desktopHD: '(min-width: 1681px) and (max-width: 1920px)';
+$desktopMega: '(min-width: 1921px)';
 // MEDIA QUERIES END
 
 // COLORS VARIABLES
 $background: #1C1C1C;
 $silver: #2D2D2D;
 $blue: #0057FF;
-$dark: #333333;
+$dark: #333;
 $white: #FFF;
 $black: #000;
 $lightBlack: #1C1C1C;
@@ -27,8 +27,9 @@ $darkGray: #444;
 $secondary: #FAFBFC;
 $primary: #24292E;
 $border: #E1E4E8;
-$red: #b60000;
+$red: #B60000;
 $darkWhite: #EEE;
+$transparent: rgba(0, 0, 0, 0);
 // COLORS VARIABLES END
 
 // FONT VARIABLES
@@ -45,7 +46,7 @@ $Roboto-Light: 'Roboto Light'; // 300
 $Roboto-Regular: 'Roboto Regular'; // 400
 $Roboto-Medium: 'Roboto Medium'; // 500
 $Roboto-Bold: 'Roboto Bold'; // 700
-$Roboto-Black: 'Roboto Black';
+$Roboto-Black: 'Roboto Black'; // 900
 
 $Audi-Regular: 'Audi Regular'; // 400
 $Audi-Bold: 'Audi Bold'; // 700
@@ -148,20 +149,19 @@ $PAAboutDelayTime: $PAStickerLineDelayTime;
 $PAAboutAnimationTime: $time * 3;
 
 
+// MOBILE
+$portfolioAudiCenterBlockDelayTimeMobile: $time * 3;
+$portfolioAudiCenterBlockLineDelayTimeMobile: $portfolioAudiCenterBlockDelayTimeMobile + $portfolioAudiCenterBlockAnimationTime;
+$portfolioAudiCenterBlockShadowDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime - $timeTick;
+$portfolioAudiLeftBlockDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime;
+$PAStickerLineDelayTimeMobile: $portfolioAudiLeftBlockDelayTimeMobile + $portfolioAudiLeftBlockAnimationTime;
+$PAStickerTextDelayTimeMobile: $PAStickerLineDelayTimeMobile + $PAStickerLineAnimationTime;
+$PATitleLineDelayTimeMobile: $PAStickerLineDelayTimeMobile;
+$PATitleDelayTimeMobile: $PAStickerLineDelayTimeMobile;
+$PATextDelayTimeMobile: $PAStickerTextDelayTimeMobile;
 
-    // MOBILE
-    $portfolioAudiCenterBlockDelayTimeMobile: $time * 3;
-    $portfolioAudiCenterBlockLineDelayTimeMobile: $portfolioAudiCenterBlockDelayTimeMobile + $portfolioAudiCenterBlockAnimationTime;
-    $portfolioAudiCenterBlockShadowDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime - $timeTick;
-    $portfolioAudiLeftBlockDelayTimeMobile: $portfolioAudiCenterBlockLineDelayTimeMobile + $portfolioAudiCenterBlockLineAnimationTime;
-    $PAStickerLineDelayTimeMobile: $portfolioAudiLeftBlockDelayTimeMobile + $portfolioAudiLeftBlockAnimationTime;
-    $PAStickerTextDelayTimeMobile: $PAStickerLineDelayTimeMobile + $PAStickerLineAnimationTime;
-    $PATitleLineDelayTimeMobile: $PAStickerLineDelayTimeMobile;
-    $PATitleDelayTimeMobile: $PAStickerLineDelayTimeMobile;
-    $PATextDelayTimeMobile: $PAStickerTextDelayTimeMobile;
-
-    $PALongTextAnimationTime: $time * 3;
-    $PALongTextDelayTime: $PATextDelayTimeMobile;
+$PALongTextAnimationTime: $time * 3;
+$PALongTextDelayTime: $PATextDelayTimeMobile;
 // VARIABLES FOR PORTFOLIO BLOCK AUDI Q7 END
 
 
@@ -172,12 +172,12 @@ $portfolioVinogradLeftBlockAnimationTime: $time * 3;
 $portfolioVinogradRightBlockDelayTime: $portfolioVinogradLeftBlockDelayTime;
 $portfolioVinogradRightBlockAnimationTime: $portfolioVinogradLeftBlockAnimationTime;
 
-    // COMPONENTS
-    $portfolioVinogradRightPanelDelayTime: $portfolioVinogradLeftBlockDelayTime + $portfolioVinogradLeftBlockAnimationTime;
-    $portfolioVinogradClientDelayTime: $portfolioVinogradRightPanelDelayTime;
-    $portfolioVinogradClientNameDelayTime: $portfolioVinogradClientDelayTime + $portfolioClientAnimationTime;
-    $portfolioVinogradLogoDelayTime: $portfolioVinogradRightPanelDelayTime;
-    $portfolioVinogradMenuDelayTime: $portfolioVinogradRightPanelDelayTime;
+// COMPONENTS
+$portfolioVinogradRightPanelDelayTime: $portfolioVinogradLeftBlockDelayTime + $portfolioVinogradLeftBlockAnimationTime;
+$portfolioVinogradClientDelayTime: $portfolioVinogradRightPanelDelayTime;
+$portfolioVinogradClientNameDelayTime: $portfolioVinogradClientDelayTime + $portfolioClientAnimationTime;
+$portfolioVinogradLogoDelayTime: $portfolioVinogradRightPanelDelayTime;
+$portfolioVinogradMenuDelayTime: $portfolioVinogradRightPanelDelayTime;
 
 $portfolioVinogradPosterDelayTime: $portfolioRightPanelDevicesMobileDelayTime + $portfolioRightPanelDevicesMobileAnimationTime;
 $portfolioVinogradPosterAnimationTime: $time * 3;
@@ -206,14 +206,14 @@ $PVStickerTextAnimationTime: $time * 3;
 $PVAboutDelayTime: $PVStickerLineDelayTime;
 $PVAboutAnimationTime: $time * 3;
 
-    // MOBILE
-    $portfolioVinogradPosterDelayTimeMobile: $portfolioVinogradRightBlockDelayTime + $portfolioVinogradRightBlockAnimationTime;
-    $portfolioVinogradPosterImageDelayTimeMobile: $portfolioVinogradPosterDelayTimeMobile + $portfolioVinogradPosterAnimationTime;
-    $PVStickerLineDelayTimeMobile: $portfolioVinogradPosterImageDelayTimeMobile + $portfolioVinogradPosterImageAnimationTime;
-    $PVStickerTextDelayTimeMobile: $PVStickerLineDelayTimeMobile + $PVStickerLineAnimationTime;
-    $PVTitleDelayTimeMobile: $PVStickerLineDelayTimeMobile;
-    $PVTitleLineDelayTimeMobile: $PVTitleDelayTimeMobile;
-    $PVTextDelayTimeMobile: $PVStickerTextDelayTimeMobile;
+// MOBILE
+$portfolioVinogradPosterDelayTimeMobile: $portfolioVinogradRightBlockDelayTime + $portfolioVinogradRightBlockAnimationTime;
+$portfolioVinogradPosterImageDelayTimeMobile: $portfolioVinogradPosterDelayTimeMobile + $portfolioVinogradPosterAnimationTime;
+$PVStickerLineDelayTimeMobile: $portfolioVinogradPosterImageDelayTimeMobile + $portfolioVinogradPosterImageAnimationTime;
+$PVStickerTextDelayTimeMobile: $PVStickerLineDelayTimeMobile + $PVStickerLineAnimationTime;
+$PVTitleDelayTimeMobile: $PVStickerLineDelayTimeMobile;
+$PVTitleLineDelayTimeMobile: $PVTitleDelayTimeMobile;
+$PVTextDelayTimeMobile: $PVStickerTextDelayTimeMobile;
 // VARIABLES FOR PORTFOLIO BLOCK VINO GRAD END
 
 
@@ -297,26 +297,26 @@ $PACStickerTextDelayTime: $PACStickerLineDelayTime + $PACStickerLineAnimationTim
 $PACStickerTextAnimationTime: $time * 3;
 
 
-    // MOBILE
-    $portfolioAltaControlsRightBlockDelayTimeMobile: $portfolioAltaImageDelayTime + $portfolioAltaImageAnimationTime;
-    $portfolioAltaControlsLeftBlockDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile; 
-    $portfolioAltaControlsIndicatorsDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile + $portfolioAltaControlsRightBlockAimationTime;
+// MOBILE
+$portfolioAltaControlsRightBlockDelayTimeMobile: $portfolioAltaImageDelayTime + $portfolioAltaImageAnimationTime;
+$portfolioAltaControlsLeftBlockDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile;
+$portfolioAltaControlsIndicatorsDelayTimeMobile: $portfolioAltaControlsRightBlockDelayTimeMobile + $portfolioAltaControlsRightBlockAimationTime;
 
-    $PALongTextDelayTime: 3.6s;
-    $PALongTextAnimationTime: $time * 3;
-// VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL ENDS 
+$PALongTextDelayTime: 3.6s;
+$PALongTextAnimationTime: $time * 3;
+// VARIABLES FOR PORTFOLIO BLOCK ALTA CAPITAL ENDS
 
 // PORTFOLIO PAGE (PP - Portfolio Page)
-$PPLeftBlockDelayTime: 0s; 
+$PPLeftBlockDelayTime: 0s;
 $PPLeftBlockAnimationTime: $time * 3;
 
-$PPRightBlockDelayTime: $PPLeftBlockDelayTime; 
+$PPRightBlockDelayTime: $PPLeftBlockDelayTime;
 $PPRightBlockAnimationTime: $PPLeftBlockAnimationTime;
 
 $PPMenuDelayTime: $PPRightBlockDelayTime + $PPRightBlockAnimationTime;
 $PPMenuAnimationTime: $time * 3;
 
-$PPLogoDelayTime: $PPMenuDelayTime; 
+$PPLogoDelayTime: $PPMenuDelayTime;
 $PPLogoAnimationTime: $PPMenuAnimationTime;
 
 $PPLangDelayTime: $PPMenuDelayTime;
@@ -352,11 +352,11 @@ $PPTitleLineDelayTime: $PPImageDelayTime + $PPImageAnimationTime;
 $PPTitleLineAnimationTime: $time * 3;
 
 $PPTitleTextDelayTime: $PPTitleLineDelayTime + $PPTitleLineAnimationTime;
-$PPTitleTextAnimationTime: $time * 3; 
+$PPTitleTextAnimationTime: $time * 3;
 
-    // MOBILE
-    $PPBackBgDelayTime: $PPRightBlockDelayTime + $PPRightBlockAnimationTime;
-    $PPTitleTextDelayTimeMobile: $PPImageDelayTime + $PPImageAnimationTime;
+// MOBILE
+$PPBackBgDelayTime: $PPRightBlockDelayTime + $PPRightBlockAnimationTime;
+$PPTitleTextDelayTimeMobile: $PPImageDelayTime + $PPImageAnimationTime;
 // PORTFOLIO PAGE ENDS
 
 
@@ -442,7 +442,7 @@ $POPStickerTextAnimationTime: $time * 3;
 $POPArticleDelayTime: $POPStickerTextDelayTime;
 $POPArticleAnimationTime: $POPStickerTextAnimationTime;
 
-$POPSocialDelayTime: $POPArticleDelayTime + $POPArticleAnimationTime - $time * 2; 
+$POPSocialDelayTime: $POPArticleDelayTime + $POPArticleAnimationTime - $time * 2;
 $POPSocialAnimationTime: $time * 3;
 
 $POPBackDelayTime: $POPSocialDelayTime;
@@ -492,7 +492,7 @@ $WCStickerTextAnimationTime: $time * 3;
 $WCTextDelayTime: $WCStickerLineDelayTime;
 $WCTextAnimationTime: $WCStickerLineAnimationTime;
 
-$WCCrossedBtnDelayTime: $WCStickerTextDelayTime; 
+$WCCrossedBtnDelayTime: $WCStickerTextDelayTime;
 $WCCrossedBtnAnimationTime: $WCStickerTextAnimationTime;
 // WE CAN BLOCK
 
@@ -513,13 +513,13 @@ $STTextFirstColumnDelayTime: $STLineOneDelayTime + $STLineAnimationTime;
 $STTextSecondColumnDelayTime: $STLineTwoDelayTime + $STLineAnimationTime;
 $STTextSecondColumnTwoDelayTime: $STTextSecondColumnDelayTime + $timeTick;
 $STTextSecondColumnThreeDelayTime: $STTextSecondColumnTwoDelayTime + $timeTick;
-$STTextSecondColumnFourDelayTime: $STTextSecondColumnThreeDelayTime  + $timeTick;
+$STTextSecondColumnFourDelayTime: $STTextSecondColumnThreeDelayTime + $timeTick;
 
 $STTextThirdColumnDelayTime: $STLineThreeDelayTime + $STLineAnimationTime;
 $STTextThirdColumnTwoDelayTime: $STTextThirdColumnDelayTime + $timeTick;
 $STTextThirdColumnThreeDelayTime: $STTextThirdColumnTwoDelayTime + $timeTick;
-$STTextThirdColumnFourDelayTime: $STTextThirdColumnThreeDelayTime  + $timeTick;
-// SITE TYPES 
+$STTextThirdColumnFourDelayTime: $STTextThirdColumnThreeDelayTime + $timeTick;
+// SITE TYPES
 
 // WORK FLOW (WF - Work flow)
 $WFBeforeDelayTime: 0s;

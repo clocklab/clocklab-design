@@ -1,34 +1,21 @@
-.watch-light, .watch-shadow { display: none; }
+.error-page {
 
-// ----- watch -----
-.seconds-container, .hours-container { zoom: .65; }
-.minutes-container { zoom: .6; }
-.watch {
-    background-size: 20%;
-    margin: 6% auto 0;
-}
+    .watch-light,
+    .watch-shadow {
+        display: none;
+    }
 
-// ----- letter c -----
-.big-background-letter {
-    top: -48vh;
-    right: 65vw;
-    font-size: 140vh;
-}
+    .seconds-container,
+    .hours-container {
+        zoom: .65;
+    }
 
-// ----- title -----
-.title {
-    top: 22%;
-    left: 11%;
-    .word {
-        span { font-size: 42px; }
-        &:last-of-type {
-            margin: 30px 0 0 10px;
-            span {
-                color: $blue;
-                font-size: 13px;
-                font-weight: $medium;
-                font-family: $roboto;
-            }
-        }
+    .minutes-container {
+        zoom: .6;
+    }
+
+    .watch {
+        background-size: 20%;
+        margin: 6% auto 0;
     }
 }
