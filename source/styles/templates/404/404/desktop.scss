@@ -1,11 +1,35 @@
-// ----- watch -----
-.watch { background-size: 25%; }
+.error-page {
+    min-height: 600px;
 
-// ----- alert -----
-.alert {
-    top: 17.5%;
-    span {
-        &:first-of-type { margin-right: 15%; }
-        &:last-of-type { margin-left: 15%; }
+    .messages-block {
+        padding-top: 10vh;
+
+        .oops {
+            font-size: 90px;
+        }
+
+        .msg {
+            padding-top: 63vh;
+            font-size: 36px;
+        }
+    }
+
+    .watch {
+        background-size: 25%;
+    }
+
+    .alert {
+        top: 5%;
+
+        span {
+
+            &:first-of-type {
+                margin-right: 15%;
+            }
+
+            &:last-of-type {
+                margin-left: 15%;
+            }
+        }
     }
 }

@@ -5,8 +5,9 @@
             transform: translate3d($from, 0, 0);
             #{$name}: 0;
         }
+
         to {
-            transform: translate3d($to, 0, 0); 
+            transform: translate3d($to, 0, 0);
             #{$name}: 1;
         }
     }
@@ -19,6 +20,7 @@
         opacity: 0;
         transform: translate3d(100%, 60vh, 0);
     }
+
     to {
         opacity: 1;
         transform: translate3d(0, 60vh, 0);
@@ -30,6 +32,7 @@
         opacity: 0;
         transform: translateX(100%);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -41,9 +44,10 @@
 // PORTFOLIO Q7 ANIMATION
 @keyframes heightIncreaseDesktop {
     from {
-        height: 0vh;
+        height: 0;
         transform: translateY(40vh);
     }
+
     to {
         height: 88vh;
         transform: translateY(4vh);
@@ -52,9 +56,10 @@
 
 @keyframes heightIncreaseTablet {
     from {
-        height: 0vh;
+        height: 0;
         transform: translateY(56vh);
     }
+
     to {
         height: 72vh;
         transform: translateY(20vh);
@@ -63,9 +68,10 @@
 
 @keyframes heightIncreaseMobile {
     from {
-        height: 0vh;
+        height: 0;
         transform: translateY(60vh);
     }
+
     to {
         height: 60vh;
         transform: translateY(30vh);
@@ -76,6 +82,7 @@
     from {
         transform: rotate(45deg) translate3d(-100%, 0, 0);
     }
+
     to {
         transform: rotate(45deg) translate3d(100%, 0, 0);
     }
@@ -85,6 +92,7 @@
     from {
         transform: rotate(-45deg) translate3d(100%, 0, 0);
     }
+
     to {
         transform: rotate(-45deg) translate3d(-20%, 0, 0);
     }
@@ -94,6 +102,7 @@
     from {
         transform: rotate(45deg) translate3d(-100%, 0, 0);
     }
+
     to {
         transform: rotate(45deg) translate3d(100%, 0, 0);
     }
@@ -103,6 +112,7 @@
     from {
         transform: rotate(-45deg) translate3d(100%, 0, 0);
     }
+
     to {
         transform: rotate(-45deg) translate3d(-10%, 0, 0);
     }
@@ -113,6 +123,7 @@
         opacity: 0;
         transform: translateY(50%);
     }
+
     to {
         opacity: 1;
         transform: none;
@@ -124,6 +135,7 @@
         opacity: 0;
         transform: translateX(-30%);
     }
+
     to {
         opacity: 1;
         transform: none;
@@ -134,19 +146,21 @@
 
 // ----- social icons -----
 @keyframes social {
-    from { 
-        transform: rotateX(-90deg) rotateY(-90deg) perspective(300px); 
+    from {
+        transform: rotateX(-90deg) rotateY(-90deg) perspective(300px);
     }
-    to { 
-        transform: none; 
+
+    to {
+        transform: none;
     }
 }
 @keyframes socialReverse {
-    from {  
+    from {
         transform: rotateX(90deg) rotateY(90deg) perspective(300px);
     }
-    to {  
-        transform: none;  
+
+    to {
+        transform: none;
     }
 }
 
@@ -156,11 +170,13 @@
         height: 0;
         transform: translateY(36vh);
     }
+
     50% {
         width: 0;
         height: 36vh;
         transform: translateY(0);
     }
+
     to {
         width: 100%;
         height: 36vh;
@@ -172,6 +188,7 @@
     from {
         width: 0;
     }
+
     to {
         width: 100vw;
     }
@@ -184,14 +201,17 @@
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+
     49% {
         opacity: 1;
         transform: translate3d(0, 100%, 0);
     }
+
     50% {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
     }
+
     51% {
         opacity: 0;
         transform: translate3d(0, -100%, 0);
@@ -204,22 +224,30 @@
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+
     49% {
         opacity: 1;
         transform: translate3d(0, -100%, 0);
     }
+
     50% {
         opacity: 0;
         transform: translate3d(0, -100%, 0);
     }
+
     51% {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
     }
 }
 @keyframes crossAnchor {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0%); }
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
 }
 
 // word under title
@@ -229,6 +257,7 @@
         visibility: visible;
         transform: translateX(-15px);
     }
+
     100% {
         opacity: 1;
         visibility: visible;
@@ -243,6 +272,7 @@
         visibility: visible;
         transform: translateX(10vh);
     }
+
     100% {
         opacity: 1;
         visibility: visible;
@@ -255,6 +285,7 @@
         visibility: visible;
         transform: translateY(10vh);
     }
+
     100% {
         opacity: 1;
         visibility: visible;
@@ -265,43 +296,63 @@
 
 // shape under title
 @keyframes titleNameShape {
-    0% { width: 0; }
-    50% { width: 25px; }
-    100% { width: 50px; }
-    from, to { visibility: visible; }
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 25px;
+    }
+
+    100% {
+        width: 50px;
+    }
+
+    from,
+    to {
+        visibility: visible;
+    }
 }
 
 // title word
 @keyframes titleWord {
-    0% { 
-        transform: translateY(0); 
+    0% {
+        transform: translateY(0);
     }
-    25% { 
-        transform: translateY(-25px); 
+
+    25% {
+        transform: translateY(-25px);
     }
-    50% { 
-        transform: translateY(-50px); 
+
+    50% {
+        transform: translateY(-50px);
     }
-    75% { 
-        transform: translateY(-75px); 
+
+    75% {
+        transform: translateY(-75px);
     }
-    100% { 
-        transform: translateY(-100px); 
+
+    100% {
+        transform: translateY(-100px);
     }
 }
 
 // line animation on contacts page
 @keyframes lineDown {
-    from { transform: rotate(-65deg) translate3d(100%, 0, 0); }
+    from {
+        transform: rotate(-65deg) translate3d(100%, 0, 0);
+    }
+
     to {
         transform: rotate(-65deg) translate3d(-100%, 0, 0);
         visibility: visible;
     }
 }
 @keyframes lineUp {
-    from { 
-        transform: rotate(-65deg) translate3d(-100%, 0, 0); 
+    from {
+        transform: rotate(-65deg) translate3d(-100%, 0, 0);
     }
+
     to {
         transform: rotate(-65deg) translate3d(100%, 0, 0);
         visibility: visible;
@@ -314,9 +365,11 @@
     from {
         transform: translate3d(-100%, 0, 0);
     }
+
     50% {
         transform: translate3d(0, 0, 0);
     }
+
     to {
         transform: translate3d(0, 50%, 0);
     }
@@ -325,31 +378,56 @@
 
 // services
 @keyframes widthChanging {
-    from { width: 0; }
-    to { width: 100vh; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100vh;
+    }
 }
 @keyframes heightPercentChanging {
-    from { height: 0; }
-    to { height: 100%; }
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
 }
 
 // blog
 @keyframes heightChangingBlogThree {
-    from { height: 0; }
-    to { height: 35vh; }
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 35vh;
+    }
 }
 
 // company
 @keyframes heightChangingCompany {
-    from { height: 0; }
-    to { height: 290px; }
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 290px;
+    }
 }
 @keyframes fadeInUp {
-    from, to { visibility: visible; }
+    from,
+    to {
+        visibility: visible;
+    }
+
     from {
         opacity: 0;
         transform: translateY(100%);
     }
+
     to {
         opacity: 1;
         transform: none;
@@ -361,6 +439,7 @@
         opacity: 0;
         transform: translateX(-100%);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -371,6 +450,7 @@
     from {
         width: 0;
     }
+
     to {
         width: px(100);
     }
@@ -383,6 +463,7 @@
     from {
         height: 0;
     }
+
     to {
         height: 100vh;
     }
@@ -395,6 +476,7 @@
     from {
         transform: none;
     }
+
     to {
         transform: translateY(101%);
     }
@@ -404,6 +486,7 @@
     from {
         transform: none;
     }
+
     to {
         transform: translateY(-101%);
     }
@@ -413,6 +496,7 @@
     from {
         transform: none;
     }
+
     to {
         transform: translateX(-101%);
     }
@@ -422,6 +506,7 @@
     from {
         transform: none;
     }
+
     to {
         transform: translateX(101%);
     }
@@ -435,18 +520,20 @@
 
 // -------- OUR PERSONAL ANIMATIONS --------
 @keyframes fadeIn {
-    from { 
+    from {
         opacity: 0;
     }
-    to { 
-        opacity: 1; 
+
+    to {
+        opacity: 1;
     }
 }
 @keyframes fadeOut {
-    from { 
-        opacity: 1; 
+    from {
+        opacity: 1;
     }
-    to { 
+
+    to {
         opacity: 0;
     }
 }
@@ -455,14 +542,16 @@
     from {
         transform: translateY(101%);
     }
+
     to {
         transform: none;
     }
-}    
+}
 @keyframes Down {
     from {
         transform: translateY(-101%);
     }
+
     to {
         transform: none;
     }
@@ -471,6 +560,7 @@
     from {
         transform: translateX(101%);
     }
+
     to {
         transform: none;
     }
@@ -479,6 +569,7 @@
     from {
         transform: translateX(-101%);
     }
+
     to {
         transform: none;
     }
@@ -489,16 +580,18 @@
         opacity: 0;
         transform: translateY(101%);
     }
+
     to {
         opacity: 1;
         transform: none;
     }
-}    
+}
 @keyframes fadeInDown {
     from {
         opacity: 0;
         transform: translateY(-101%);
     }
+
     to {
         opacity: 1;
         transform: none;
@@ -509,6 +602,7 @@
         opacity: 0;
         transform: translateX(101%);
     }
+
     to {
         opacity: 1;
         transform: none;
@@ -519,6 +613,7 @@
         opacity: 0;
         transform: translateX(-101%);
     }
+
     to {
         opacity: 1;
         transform: none;
@@ -530,16 +625,18 @@
         opacity: 1;
         transform: translateY(101%);
     }
+
     to {
         opacity: 0;
         transform: none;
     }
-}    
+}
 @keyframes fadeOutDown {
     from {
         opacity: 1;
         transform: translateY(-101%);
     }
+
     to {
         opacity: 0;
         transform: none;
@@ -550,6 +647,7 @@
         opacity: 1;
         transform: translateX(101%);
     }
+
     to {
         opacity: 0;
         transform: none;
@@ -560,6 +658,7 @@
         opacity: 1;
         transform: translateX(-101%);
     }
+
     to {
         opacity: 0;
         transform: none;
@@ -570,14 +669,16 @@
     from {
         transform: none;
     }
+
     to {
         transform: translateY(-101%);
     }
-}    
+}
 @keyframes toDown {
     from {
         transform: none;
     }
+
     to {
         transform: translateY(101%);
     }
@@ -586,6 +687,7 @@
     from {
         transform: none;
     }
+
     to {
         transform: translateX(-101%);
     }
@@ -594,6 +696,7 @@
     from {
         transform: none;
     }
+
     to {
         transform: translateX(101%);
     }
@@ -604,36 +707,43 @@
         opacity: 0;
         transform: none;
     }
+
     to {
         opacity: 1;
         transform: translateY(-101%);
     }
-}    
+}
+
 @keyframes fadeInToDown {
     from {
         opacity: 0;
         transform: none;
     }
+
     to {
         opacity: 1;
         transform: translateY(101%);
     }
 }
+
 @keyframes fadeInToLeft {
     from {
         opacity: 0;
         transform: none;
     }
+
     to {
         opacity: 1;
         transform: translateX(-101%);
     }
 }
+
 @keyframes fadeInToRight {
     from {
         opacity: 0;
         transform: none;
     }
+
     to {
         opacity: 1;
         transform: translateX(101%);
@@ -645,36 +755,43 @@
         opacity: 1;
         transform: none;
     }
+
     to {
         opacity: 0;
         transform: translateY(-101%);
     }
-}    
+}
+
 @keyframes fadeOutToDown {
     from {
         opacity: 1;
         transform: none;
     }
+
     to {
         opacity: 0;
         transform: translateY(101%);
     }
 }
+
 @keyframes fadeOutToLeft {
     from {
         opacity: 1;
         transform: none;
     }
+
     to {
         opacity: 0;
         transform: translateX(-101%);
     }
 }
+
 @keyframes fadeOutToRight {
     from {
         opacity: 1;
         transform: none;
     }
+
     to {
         opacity: 0;
         transform: translateX(101%);
@@ -685,30 +802,37 @@
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
 }
+
 @keyframes heightToParent {
     from {
         height: 0;
     }
+
     to {
         height: 100%;
     }
 }
+
 @keyframes widthToScreen {
     from {
         width: 0;
     }
+
     to {
         width: 100vw;
     }
 }
+
 @keyframes heightToScreen {
     from {
         height: 0;
     }
+
     to {
         height: 100vh;
     }
@@ -718,44 +842,58 @@
     from {
         width: 100%;
     }
+
     to {
         width: 0;
     }
 }
+
 @keyframes heightFromParent {
     from {
         height: 100%;
     }
+
     to {
         height: 0;
     }
 }
+
 @keyframes widthFromScreen {
     from {
         width: 100vw;
     }
+
     to {
         width: 0;
     }
 }
+
 @keyframes heightFromScreen {
     from {
         height: 100vh;
     }
+
     to {
         height: 0;
     }
 }
 
 @keyframes pulse {
-    0%, 30%, 60%, 100% { 
-        transform: scale(1); 
+    0%,
+    30%,
+    60%,
+    100% {
+        transform: scale(1);
     }
-    40%, 50% { 
-        transform: scale(1.08); 
+
+    40%,
+    50% {
+        transform: scale(1.08);
     }
-    50%, 80% { 
-        transform: scale(.95); 
+
+    50%,
+    80% {
+        transform: scale(.95);
     }
 }
 
@@ -763,9 +901,11 @@
     from {
         transform: translate3d(-101%, 0, 0);
     }
+
     50% {
         transform: translate3d(0, 0, 0);
     }
+
     to {
         transform: translate3d(0, 50%, 0);
     }

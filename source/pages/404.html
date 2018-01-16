@@ -6,51 +6,46 @@
         <link rel="stylesheet" href="./../styles/404.css">
     </head>
     <body>
-        <div class="wrapper">
-            @@include('./components/top-panel.html')
+        @@include('./components/top-panel.html')
 
-            <div id="error" class="screen-block">
-                
-                <!-- messages-block -->
-                <div class="messages-block">
-                    <p class="oops">Oops!</p>
-                </div>
+        <div class="error-page">  
+            <div class="messages-block">
+                <p class="oops">Oops!</p>
+            </div>
 
-                <!-- watch -->
-                <div class="watch-light"></div>
-                <div class="watch-shadow"></div>
-                <div class="watch">
-                    <div class="hours-container">
-                        <div class="hours"></div>
-                    </div>
-                    <div class="minutes-container">
-                        <div class="minutes"></div>
-                    </div>
-                    <div class="seconds-container">
-                        <div class="seconds"></div>
-                    </div>
+            <div class="watch-light"></div>
+            <div class="watch-shadow"></div>
+            <div class="watch">
+                <div class="hours-container">
+                    <div class="hours"></div>
                 </div>
-                
-                <!-- alert -->
-                <div class="alert">
-                    <span>4</span>
-                    <span>4</span>
+                <div class="minutes-container">
+                    <div class="minutes"></div>
                 </div>
+                <div class="seconds-container">
+                    <div class="seconds"></div>
+                </div>
+            </div>
+            
+            <div class="alert">
+                <span>4</span>
+                <span>4</span>
+            </div>
 
-                <!-- messages-block -->
-                <div class="messages-block">
-                    <p class="msg">Что-то пошло не так, <br>
-                    и покорить мир не удалось :(</p>
-                </div>
+            <div class="messages-block">
+                <p class="msg">
+                    Что-то пошло не так, <br>
+                    и покорить мир не удалось :(
+                </p>
+            </div>
 
-                <!-- button -->
-                <a href="/home" class="button">
-                    <button class="blue">
-                        <span>На главную</span>
-                    </button>
+            <div class="button">
+                <a href="/home" class="blue">
+                    <span>На главную</span>
                 </a>
             </div>
         </div>
+        
         <script src="../scripts/404.min.js"></script>
     </body>
 </html>

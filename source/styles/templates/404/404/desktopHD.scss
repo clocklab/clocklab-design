@@ -1,91 +1,94 @@
-// ----- alert -----
-.alert {
-    top: 22.5%;
-    span {
-        &:first-of-type { margin-right: 12.5%; }
-        &:last-of-type { margin-left: 12.5%; }
-    }
-}
-
-& {
-    box-shadow: 0 15px 50px 7px rgba(0,0,0,.3);
-    font-family: $Raleway-Regular;
+.error-page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 700px;
     background: $background;
+    font-family: $Raleway-Regular;
     overflow: hidden;
-    z-index: 1;
-    
-    // ----- animation -----
     animation: fadeIn $time * 3 0s both;
-    
-    .oops { animation: fadeInDown $time * 2 $time * 5 both; }
-    .msg { animation: fadeInUp $time * 3 $time * 6 both; }
-    .button { animation: fadeInUp $time * 3 $time * 8 both; }
-    
-    // ----- watch -----
-    .watch, .alert { animation: fadeIn $time * 2 $time * 4 both; }
-    .watch-shadow { animation: fadeIn $time * 2 $time * 5 both; }
-    .watch-light { animation: fadeIn $time * 2 $time * 6 both; }
 
-    // ----- messages-block -----
+    @keyframes rotate {
+        100% {
+            transform: rotateZ(360deg);
+        }
+    }
+
     .messages-block {
-        text-align: center;
         position: absolute;
-        padding-top: 16vh;
-        height: 100vh;
-        width: 100%;
         z-index: 1;
+        padding-top: 16vh;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+
         .oops {
             color: $white;
             font-size: 105px;
             font-family: $Raleway-ExtraBold;
+            animation: fadeInDown $time * 2 $time * 5 both;
         }
+
         .msg {
-            color: #CCC;
-            font-family: $Roboto-Bold;
             padding-top: 59vh;
+            color: $lightGray;
+            font-family: $Roboto-Bold;
             font-size: 36px;
+            animation: fadeInUp $time * 3 $time * 6 both;
         }
     }
-    
-    // ----- alert -----
+
     .alert {
         position: absolute;
-        text-align: center;
-        top: 30%;
+        top: 22.5%;
         width: 100%;
         height: 100vh;
+        text-align: center;
+        animation: fadeIn $time * 2 $time * 4 both;
+
         span {
             color: $dark;
             font-size: 430px;
             font-family: $Raleway-ExtraBold;
-            &:first-of-type { margin-right: 10%; }
-            &:last-of-type { margin-left: 10%; }
+
+            &:first-of-type {
+                margin-right: 12.5%;
+            }
+
+            &:last-of-type {
+                margin-left: 12.5%;
+            }
         }
     }
 
-    // ----- button -----
     .button {
+        display: block;
         position: absolute;
-        margin: 0 auto;
         bottom: 5vh;
-        width: 100%;
         z-index: 3;
+        width: 100%;
+        animation: fadeInUp $time * 3 $time * 8 both;
+
         .blue {
-            position: relative;
             display: block;
+            position: relative;
             margin: 0 auto;
             width: 210px;
             height: 55px;
-            color: $white;
-            font-size: 16px;
             background: $blue;
+            color: $white;
             font-family: $Roboto-Bold;
+            font-size: 16px;
+            line-height: 55px;
             text-transform: uppercase;
+            text-align: center;
+
             span {
                 position: relative;
-                letter-spacing: 1px;
                 z-index: 2;
+                letter-spacing: 1px;
             }
+
             &:before {
                 display: block;
                 position: absolute;
@@ -98,89 +101,109 @@
                 opacity: 0;
                 transition: top $time, left $time, opacity $time;
             }
-            &:hover:before {
-                top: 5px;
-                left: -5px;
-                opacity: 1;
+
+            &:hover {
+
+                &:before {
+                    top: 5px;
+                    left: -5px;
+                    opacity: 1;
+                }
             }
         }
     }
-    
-    // ----- watch -----
+
     .watch-light {
+        position: absolute;
         top: 0;
         left: -17px;
         background: url('../images/watch-light.png') no-repeat center;
         background-size: cover;
-        position: absolute;
-        height: 100%;
         width: 100%;
+        height: 100%;
+        animation: fadeIn $time * 2 $time * 6 both;
     }
+
     .watch-shadow {
-        background: url('../images/watch-shadow.png') no-repeat center;
         position: absolute;
-        height: 100%;
         width: 100%;
+        height: 100%;
+        background: url('../images/watch-shadow.png') no-repeat center;
+        animation: fadeIn $time * 2 $time * 5 both;
     }
+
     .watch {
-        background: url('../images/watch.png') no-repeat center;
         position: absolute;
         margin: 0 auto;
-        height: 100%;
         width: 100%;
+        height: 100%;
+        background: url('../images/watch.png') no-repeat center;
+        animation: fadeIn $time * 2 $time * 4 both;
     }
+
     .hours-container,
     .minutes-container,
     .seconds-container {
+        display: inline-flex;
         position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
         left: -17px;
         margin: auto;
-        bottom: 0;
-        top: 0;
-        right: 0;
         width: 300px;
         height: 300px;
-        display: inline-flex;
     }
+
     .hours {
-        background: url('../images/hours-hand.svg') no-repeat;
-        transform-origin: 60% 100%;
-        background-size: cover;
+        display: block;
         position: absolute;
-        height: 60px;
         top: 30%;
+        margin: auto;
         left: 46%;
         width: 20px;
-        margin: auto;
-        display: block;
-    }
-    .minutes {
-        background: url('../images/minutes-hand.svg') no-repeat;
-        transform-origin: 50% 100%;
+        height: 60px;
+        background: url('../images/hours-hand.svg') no-repeat;
         background-size: cover;
+        transform-origin: 60% 100%;
+    }
+
+    .minutes {
+        display: block;
         position: absolute;
-        height: 252px;
-        width: 12px;
         top: -34.5%;
         left: 48%;
         margin: auto;
-        display: block;
-    }
-    .seconds {
-        background: url('../images/seconds-hand.svg') no-repeat;
-        transform: rotateZ(0) !important;
+        width: 12px;
+        height: 252px;
+        background: url('../images/minutes-hand.svg') no-repeat;
         background-size: cover;
-        position: absolute;
-        height: 145px;
-        left: 46.5%;
-        top: 41.5%;
-        z-index: 8;
-        width: 20px;
-        margin: auto;
-        display: block;
+        transform-origin: 50% 100%;
     }
-    .hours-container { animation: rotate 43200s infinite linear; }
-    .minutes-container { transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44); }
-    .seconds-container { transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44); }
-    @keyframes rotate { 100% { transform: rotateZ(360deg); } }
+
+    .seconds {
+        display: block;
+        position: absolute;
+        top: 41.5%;
+        left: 46.5%;
+        z-index: 8;
+        margin: auto;
+        width: 20px;
+        height: 145px;
+        background: url('../images/seconds-hand.svg') no-repeat;
+        background-size: cover;
+        transform: rotateZ(0) !important;
+    }
+
+    .hours-container {
+        animation: rotate 43200s infinite linear;
+    }
+
+    .minutes-container {
+        transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44);
+    }
+
+    .seconds-container {
+        transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44);
+    }
 }

@@ -9,11 +9,13 @@
     @return $pixels / $context * 1em;
 }
 
+
 // a mixin to create retina image
 @mixin image-retina($normal, $retina) {
     width: image-width($normal);
     height: image-height($normal);
     background-image: image-url($normal);
+
     @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
         background-size: (image-width($retina) / 2) (image-height($retina) / 2);
         background-image: image-url($retina);

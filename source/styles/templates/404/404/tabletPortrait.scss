@@ -1,26 +1,31 @@
-// ----- watch ----
-.seconds-container, .hours-container { zoom: .8; }
-.minutes-container { zoom: .75; }
-.watch {
-    background-size: 32%;
-    margin: 21% auto 0;
-}
+.error-page {
 
-// ----- title -----
-.title .word {
-    &:first-of-type { margin-bottom: 12px; }
-    &:last-of-type {
-        margin: 36px 0 0;
-	    span {
-			letter-spacing: 0;
-			font-size: 20px;
-		}
+    .seconds-container,
+    .hours-container {
+        zoom: .8;
     }
-}
 
-// ----- letter c -----
-.big-background-letter {
-    top: -37vh;
-    right: 60vw;
-    font-size: 100vh;
+    .minutes-container {
+        zoom: .75;
+    }
+
+    .watch {
+        background-size: 32%;
+    }
+
+    .alert {
+        top: 30%;
+
+        span {
+            font-size: 300px;
+
+            &:first-of-type {
+                margin-right: 18%;
+            }
+
+            &:last-of-type {
+                margin-left: 18%;
+            }
+        }
+    }
 }
