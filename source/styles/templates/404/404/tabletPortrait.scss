@@ -1,5 +1,3 @@
-@import 'tabletLandscape';
-
 // ----- watch ----
 .seconds-container, .hours-container { zoom: .8; }
 .minutes-container { zoom: .75; }
@@ -10,12 +8,12 @@
 
 // ----- title -----
 .title .word {
-    &:first-of-type { margin-bottom: px(24); }
+    &:first-of-type { margin-bottom: 12px; }
     &:last-of-type {
-        margin: px(72) 0 0;
+        margin: 36px 0 0;
 	    span {
 			letter-spacing: 0;
-			font-size: px(40);
+			font-size: 20px;
 		}
     }
 }

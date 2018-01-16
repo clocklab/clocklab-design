@@ -1,0 +1,433 @@
+.blog {
+
+    @keyframes leftDay {
+        from {
+            opacity: 0;
+            transform: translate3d(165%, 20%, 0) rotate(90deg);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate3d(65%, 20%, 0) rotate(90deg);
+        }
+    }
+
+    $BMaginLeft: 11.5vh;
+    $BPostWidth: 43.75vh;
+    $BPostHeight: 37.5vh;
+
+    overflow: hidden;
+
+    .page-layer {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .back-layer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .columns {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        .column {
+            position: relative;
+            width: 25vw;
+            height: 100vh;
+            overflow: hidden;
+
+            &:before {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: $lightBlack;
+                content: '';
+                animation: Right $BColumnAnimationTime $BColumnDelayTime both;
+            }
+        }
+    }
+
+    .grid {
+        display: flex;
+        position: absolute;
+        z-index: 2;
+        margin-top: 165px;
+        padding-left: $BMaginLeft;
+        height: 2 * $BPostHeight;
+        min-height: 790px;
+        animation: fadeIn $BGridAnimationTime $BGridDelayTime both;
+
+        &__item {
+            display: inline-block;
+            position: relative;
+            width: $BPostWidth;
+            height: $BPostHeight;
+            min-width: 437.5px;
+            min-height: 395px;
+
+            .line {
+                position: absolute;
+                left: - $BMaginLeft;
+                width: 100vw;
+                height: 1px;
+                background: $gray;
+
+                &--top {
+                    top: 0;
+                }
+
+                &--bottom {
+                    bottom: 0;
+                }
+            }
+
+            &--bordered {
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: - $BMaginLeft - $BPostWidth;
+                    width: 100vw;
+                    height: 1px;
+                    background: $gray;
+                    content: '';
+                }
+            }
+
+            &:nth-child(odd) {
+
+                &:before,
+                &:after {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    width: 1px;
+                    height: 100vh;
+                    background: $gray;
+                    content: '';
+                }
+
+                &:before {
+                    left: 0;
+                }
+
+                &:after {
+                    right: 0;
+                }
+            }
+
+            &:nth-child(even) {
+                transform: translateY(100%);
+            }
+
+            &:last-child {
+
+                &:before {
+                    position: absolute;
+                    top: -100%;
+                    right: 0;
+                    width: 1px;
+                    height: 100vh;
+                    background: $gray;
+                    content: '';
+                }
+            }
+        }
+    }
+
+    .front-layer {
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .language {
+        position: absolute;
+
+        a {
+            animation: Down $BLangAnimationTime $BLangDelayTime both;
+        }
+    }
+
+    .new-title {
+
+        .text-container {
+
+            &:before {
+                height: 40px;
+                animation: rightAndHalfDown $BFilterLineAnimationTime $BFilterLineDelayTime both;
+            }
+        }
+
+        span {
+            color: $white;
+            font-size: 36px;
+            line-height: 45px;
+            letter-spacing: 0;
+            animation: fadeInUp $BFilterTextAnimationTime $BFilterTextDelayTime both;
+        }
+    }
+
+    .crossed-button {
+        position: relative;
+    }
+
+    .jumping-button {
+        animation: fadeInUp $BFilterAnimationTime $BFilterDelayTime both;
+
+        button {
+            text-transform: initial;
+
+            span {
+                color: $white;
+                font-size: 24px;
+                font-family: $Raleway-Bold;
+            }
+
+            &:before {
+                top: 50%;
+                background: $white;
+            }
+        }
+    }
+
+    .blog-top-panel {
+        display: flex;
+        align-items: center;
+        padding-top: 80px;
+        padding-left: 380px;
+        color: $white;
+
+        & > .jumping-button {
+            // WARNING
+            display: none;
+            // WARNING
+            margin-right: 95px;
+
+            button {
+
+                &:hover {
+
+                    span {
+                        animation: none;
+                    }
+
+                    &:before {
+                        animation: none;
+                    }
+                }
+
+                &:before {
+                    transform: translateX(0);
+                    animation-delay: $timeTickHalf * 4;
+                }
+            }
+        }
+    }
+
+    .new-header {
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: 48px;
+        text-transform: uppercase;
+        animation: fadeInUp $time * 3 $time * 6 both;
+    }
+
+    .filter {
+        position: relative;
+
+        button {
+            background: transparent;
+        }
+
+        ul {
+            display: none;
+            position: absolute;
+            left: 0;
+        }
+
+        &--date {
+            margin-right: 350px;
+        }
+
+        &--categories {
+
+            .jumping-button {
+                // WARNING
+                display: none;
+                // WARNING
+
+                button {
+
+                    span {
+
+                        &:nth-child(2) {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    &:hover {
+
+                        &:before {
+                            animation-delay: $timeTickHalf * 9;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .feed-container {
+        position: absolute;
+        top: 165px;
+        margin-left: $BMaginLeft;
+        width: 100vw;
+        height: 2 * $BPostHeight;
+        min-height: 790px;
+        overflow-x: auto;
+        cursor: grab;
+        user-select: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &.active {
+            cursor: grabbing;
+        }
+    }
+
+    .feed {
+        display: flex;
+        position: absolute;
+        padding-right: 43.75vh * 1.5;
+        height: 100%;
+
+        &__post {
+            position: relative;
+            width: $BPostWidth;
+            height: $BPostHeight;
+            min-width: 437.5px;
+            min-height: 395px;
+            color: $white;
+
+            .image-container {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                font-size: 0;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    animation: Right $BPostImageAnimationTime linear $BPostImageDelayTime both;
+                }
+            }
+
+            .post-date {
+                display: flex;
+                align-items: flex-start;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 1;
+                padding-top: 20px;
+                font-family: $Roboto-Medium;
+                font-size: 36px;
+                text-align: right;
+            }
+
+            .number {
+                animation: fadeInLeft $BPostDateNumberAnimationTime linear $BPostDateNumberDelayTime both;
+            }
+
+            .day {
+                color: $gray;
+                font-size: 18px;
+                text-transform: uppercase;
+                transform-origin: 0 0;
+                transform: translate3d(65%, 20%, 0) rotate(90deg);
+                animation: leftDay $BPostDateDayAnimationTime $BPostDateDayDelayTime both;
+            }
+
+            .post-info {
+                margin-top: 100px;
+                color: $white;
+                transform: translateX(35vh);
+
+                .sticker {
+                    margin-bottom: 10px;
+                    font-family: $Raleway-Bold;
+
+                    span {
+                        color: $white;
+                        animation: FadeInRightHalf $BStickerTextAnimationTime $BStickerTextDelayTime both;
+                    }
+
+                    &:before {
+                        background: $white;
+                        animation: widthIncreaseStickerLine $BStickerLineAnimationTime $BStickerLineDelayTime both;
+                    }
+                }
+
+                .title {
+                    display: block;
+                    margin-bottom: 50px;
+                    max-width: 550px;
+                    font-family: $Raleway-ExtraBold;
+                    font-size: 36px;
+                    text-transform: uppercase;
+                    animation: fadeInUp $BPostTitleAnimationTime $BPostTitleDelayTime both;
+                }
+
+                .crossed-button {
+                    align-items: center;
+                    font-family: $Roboto-Medium;
+                    font-size: 12px;
+                    transform: translateX(135px);
+
+                    span {
+                        display: block;
+                        color: $white;
+                        animation: fadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
+
+                        &:before {
+                            background: $white;
+                        }
+
+                        &:after {
+                            content: 'Подробнее';
+                        }
+                    }
+
+                    .arrow {
+
+                        .st0,
+                        .st1 {
+                            stroke: $white;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(even) {
+                transform: translateY(100%);
+            }
+        }
+    }
+}

@@ -1,17 +1,102 @@
 // base
-@import "base/variables";
-@import "base/reset";
-// @import "base/fonts";
-@import "base/common";
-@import "base/animations";
+@import 'base/variables';
+@import 'base/reset';
+// @import 'base/fonts';
+@import 'base/common';
+@import 'base/animations';
 
 // components
-@import "components/top-panel/main";
-@import "components/title/main";
-@import "components/social/main";
-@import "components/languages/main";
-@import "components/copyright/main";
-@import "components/big-background-letter/main";
+@import 'components/top-panel/main';
+@import 'components/title/main';
+@import 'components/social/main';
+@import 'components/languages/main';
+@import 'components/copyright/main';
+@import 'components/big-background-letter/main';
 
-// main
-@import "templates/services/services/main";
+// #services.screen-block
+
+/*
+/
+/---- DESKTOP HD ---- */
+// -- services --
+@import 'templates/services/services/desktopHD';
+// -- services --
+/* ---- DESKTOP HD ---- */
+
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    // -- services --
+    @import 'templates/services/services/desktopMega';
+    // -- services --
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+    // -- services --
+    @import 'templates/services/services/desktopWide';
+    // -- services --
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    // -- services --
+    @import 'templates/services/services/desktop';
+    // -- services --
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    // -- services --
+    @import 'templates/services/services/tabletLandscape';
+    // -- services --
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+    // -- services --
+    @import 'templates/services/services/tabletPortrait';
+    // -- services --
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    // -- services --
+    @import 'templates/services/services/phoneLandscape';
+    // -- services --
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+    // -- services --
+    @import 'templates/services/services/phonePortrait';
+    // -- services --
+}
+/* ---- PHONE PORTRAIT ---- */

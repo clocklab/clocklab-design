@@ -1,11 +1,9 @@
-@import '../mobile';
-
-& {
+.blog {
 
     .new-title {
 
         span {
-            font-size: px(50);
+            font-size: 25px;
         }
     }
 
@@ -14,17 +12,17 @@
         button {
 
             span {
-                font-size: px(30);
+                font-size: 15px;
             }
         }
     }
 
-    .top-panel {
-        padding-top: px(200);
-        padding-left: px(500);
+    .blog-top-panel {
+        padding-top: 100px;
+        padding-left: 250px;
 
         & > .jumping-button {
-            margin-right: px(100);
+            margin-right: 50px;
         }
     }
 
@@ -48,11 +46,11 @@
             min-height: 288px;
 
             .post-info {
-                margin-top: px(200);
+                margin-top: 100px;
 
                 h3 {
-                    margin-bottom: px(50);
-                    font-size: px(60);
+                    margin-bottom: 25px;
+                    font-size: 30px;
                 }
             }
         }
@@ -61,7 +59,7 @@
     .filter {
 
         &--date {
-            margin-right: px(200);
+            margin-right: 100px;
         }
     }
 }
