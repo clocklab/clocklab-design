@@ -5,112 +5,121 @@
         @@include('./components/head.html')
         <link rel="stylesheet" href="../styles/services.css">
     </head>
-    <body>
-        <div class="wrapper">
-            
-            <!-- top-panel -->
-            @@include('./components/top-panel.html')
+    <body>  
 
-            <div id="services" class="screen-block">
+        @@include('./components/top-panel.html')
 
-                <!-- social -->
-                @@include('./components/social.html')
+        @@include('./components/social.html')
 
-                <!-- languages -->
-                @@include('./components/languages.html')
+        @@include('./components/languages.html')
 
-                <!-- copyright -->
-                @@include('./components/copyright.html')
-                
-                <!-- letter c -->
-                @@include('./components/big-background-letter.html')
+        @@include('./components/copyright.html')
 
-                <!-- services-schedule -->
-                <div class="services-schedule">      
-                    <div class="container">
-                        <span class="name"><h1>Услуги</h1></span>
-                        <div class="item up">
-                            <a href="web-production.html" class="types__item">
-                                <span class="index">
-                                    <span>01</span>
-                                </span>
-                                <div class="content">
-                                    <span class="content-title">WEB-PRODUCTION</span><br>
-                                    <span class="content-title">(Разработка)</span>
-                                    <ul>
-                                        <li><a href="services/web-production/landing.html">Landing Page</a></li>
-                                        <li><a href="services/web-production/corporate.html">Корпоративный сайт</a></li>
-                                        <li><a href="services/web-production/shop.html">Интернет-магазин</a></li>
-                                        <li><a href="services/web-production/card.html">Сайт визитка</a></li>
-                                    </ul>
-                                </div>
+        <div class="services">
+            @@include('./components/big-background-letter.html')
+
+            <div class="lines">
+                <div class="line line--1"></div>
+                <div class="line line--2"></div>
+                <div class="line line--3"></div>
+                <div class="line line--4"></div>
+            </div>
+
+            <div class="container">
+                <span class="name">
+                    <h1 class="name-text">Услуги</h1>
+                </span>
+
+                <div class="services-list">
+                    <div class="item">
+                        <span class="index">
+                            <span>01</span>
+                        </span>
+                        <div class="content">
+                            <a class="content-title" href="web-production.html">
+                                <span class="content-title-text">WEB-PRODUCTION</span>
+                                <br />
+                                <span class="content-title-text">(Разработка)</span>
                             </a>
-                            <div class="services-line"></div>
+                            <ul class="content-list">
+                                <li><a href="services/web-production/landing.html">Landing Page</a></li>
+                                <li><a href="services/web-production/corporate.html">Корпоративный сайт</a></li>
+                                <li><a href="services/web-production/shop.html">Интернет-магазин</a></li>
+                                <li><a href="services/web-production/card.html">Сайт визитка</a></li>
+                            </ul>
                         </div>
-                       <div class="item up">
-                            <a href="design.html" class="types__item">
-                                <span class="index">
-                                    <span>02</span>
-                                </span>
-                                <div class="content">
-                                    <span class="content-title">Услуги дизайна</span>
-                                    <ul>
-                                        <li><a href="services/design/ui-ux.html">UI/UX дизайн (web дизайн)</a></li>
-                                        <li><a href="services/design/brand-book.html">Разработка Brand Book</a></li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="item">
+                        <span class="index">
+                            <span>02</span>
+                        </span>
+                        <div class="content">
+                            <a class="content-title" href="design.html">
+                                <span class="content-title-text">Услуги дизайна</span>
                             </a>
-                            <div class="services-line"></div>
+                            <ul class="content-list">
+                                <li><a href="services/design/ui-ux.html">UI/UX дизайн (web дизайн)</a></li>
+                                <li><a href="services/design/brand-book.html">Разработка Brand Book</a></li>
+                            </ul>
                         </div>
-                        <div class="item up">
-                            <a href="marketing.html" class="types__item">
-                                <span class="index">
-                                    <span>03</span>
-                                </span>
-                                <div class="content">
-                                    <span class="content-title">Маркетинг</span>
-                                    <ul>
-                                        <li><a href="services/marketing/marketing-strategy.html">Разработка маркетинговой стратегии</a></li>
-                                        <li><a href="services/marketing/internet-marketing.html">Интернет-маркетинг</a></li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="item">
+                        <span class="index">
+                            <span>03</span>
+                        </span>
+                        <div class="content">
+                            <a class="content-title" href="marketing.html">
+                                <span class="content-title-text">Маркетинг</span>
                             </a>
-                            <div class="services-line"></div>
-                            <div class="services-line right"></div>
+                            <ul class="content-list">
+                                <li><a href="">Разработка маркетинговой стратегии</a></li>
+                                <li><a href="">Интернет-маркетинг</a></li>
+                                <li><a href="">Контекстная реклама</a></li>
+                                <li><a href="">Таргетинговая реклама в Фейсбук</a></li>
+                                <li><a href="">Таргетинговая реклама в Инстаграм</a></li>
+                                <li><a href="">Медийная реклама (Баннерная реклама)</a></li>
+                                <li><a href="">Поисковый Ремаркетинг (Ретиргетинг)</a></li>
+                                <li><a href="">Реклама в Ютуб</a></li>
+                            </ul>
                         </div>
-                        <div class="item">
-                            <a href="seo.html" class="types__item">
-                                <span class="index">
-                                    <span>04</span>
-                                </span>
-                                <div class="content">
-                                    <span class="content-title">SEO</span>
-                                    <ul>
-                                        <li><a href="services/seo/audit.html">SEO-аудит</a></li>
-                                        <li><a href="services/seo/creating.html">SEO на этапе создания сайта</a></li>
-                                        <li><a href="services/seo/sanctions.html">Снятие санкций поисковых систем</a></li>
-                                    </ul>
-                                </div>
+                    </div>
+                    <div class="item">
+                        <span class="index">
+                            <span>04</span>
+                        </span>
+                        <div class="content">
+                            <a class="content-title" href="seo.html">
+                                <span class="content-title-text">SEO</span>
                             </a>
-                            <div class="services-line"></div>
+                            <ul class="content-list">
+                                <li><a href="services/seo/audit.html">SEO-аудит</a></li>
+                                <li><a href="services/seo/creating.html">SEO на этапе создания сайта</a></li>
+                                <li><a href="services/seo/sanctions.html">Снятие санкций поисковых систем</a></li>
+                            </ul>
                         </div>
-                        <div class="item">
-                            <a href="complex.html" class="types__item">
-                                <span class="index">
-                                    <span>05</span>
-                                </span>
-                                <div class="content">
-                                    <span class="content-title">Комплексные решения &mdash;</span><br>
-                                    <span class="content-title">"стратегия flexible"</span>
-                                    <p>Наша уникальная услуга - формирование бренда с нуля от логотипа до полноценного бренда приносящего прибыль.</p>
-                                </div>
+                    </div>
+                    <div class="item">
+                        <span class="index">
+                            <span>05</span>
+                        </span>
+                        <div class="content">
+                            <a class="content-title" href="complex.html">
+                                <span class="content-title-text">Комплексные решения &mdash;</span>
+                                <br />
+                                <span class="content-title-text">"стратегия flexible"</span>
                             </a>
-                            <div class="services-line"></div>
+                            <p class="content-text">
+                                Комплексное решение от Clock Creative Lab – это большой 
+                                пакет услуг, направленных на цельное и всестороннее решение 
+                                одной глобальной задачи – качественно презентовать ваш бизнес 
+                                в интернете.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <script src="../scripts/services.min.js"></script>
     </body>
 </html>
