@@ -1,0 +1,24 @@
+.services {
+    min-height: 768px;
+
+    .content {
+
+        &-title {
+
+            &-text {
+                transition: color $time;
+            }
+
+            &:hover {
+
+                .content-title-text {
+                    color: $blue;
+
+                    &:before {
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+}

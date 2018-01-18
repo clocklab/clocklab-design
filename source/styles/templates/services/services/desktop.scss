@@ -1,44 +1,53 @@
-.services-schedule {
-    padding-top: 25vh;
+.services {
+    min-height: 650px;
+
+    $container-width: 80%;
+
+    .lines {
+        left: (100% - $container-width) / 2;
+        width: $container-width;
+    }
 
     .container {
-        width: 700px;
+        width: $container-width;
+    }
 
-        .name {
-            left: .5vh;
-            top: -8vh;
+    .services-list {
+        margin-top: 10px;
+    }
+
+    .item {
+        margin-top: 10px;
+    }
+
+    .index {
+        font-size: 12px;
+
+        span {
+            padding: 3px 5px;
+        }
+    }
+
+    .content {
+
+        &-title {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 18px;
         }
 
-        .item {
-
-            .types__item {
-                margin-bottom: 0;
-                width: 95%;
-            }
-
-            &.up {
-                margin-bottom: 8vh;
-            }
-        }
-
-        .content {
-            // padding-left: .5vh;
-            .content-title {
-                font-size: 15px;
-            }
-
-            p {
-                font-size: 13px;
-            }
-
-            li {
-                margin-bottom: 0;
-                line-height: 1.2;
-            }
+        &-list {
+            margin-top: 15px;
 
             a {
-                font-size: 13px;
+                margin-bottom: 5px;
+                font-size: 14px;
             }
+        }
+
+        &-text {
+            margin-top: 15px;
+            font-size: 14px;
         }
     }
 }

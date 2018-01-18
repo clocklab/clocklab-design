@@ -4,14 +4,10 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
+    min-height: 900px;
     background: $background;
     font-family: $Raleway-Regular;
     overflow: hidden;
-    // box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    // position: absolute;
-    // z-index: 1;
-    // left: 0;
-    // top: 0;
 
     $container-width: 62%;
 
@@ -112,7 +108,7 @@
     }
 
     .index {
-        display: block;
+        display: inline-block;
         color: $gray;
         font-family: $Roboto-Regular;
         font-size: 16px;
@@ -161,6 +157,7 @@
             &:hover {
 
                 .content-title-text {
+
                     &:before {
                         width: 100%;
                     }
@@ -176,7 +173,7 @@
                 margin-bottom: 10px;
                 color: $white;
                 font-size: 17px;
-                transition: $time;
+                transition: font-size $time, color $time;
 
                 &:hover {
                     color: $blue;
@@ -189,6 +186,86 @@
             color: $white;
             font-size: 17px;
             line-height: 1.5;
+        }
+    }
+
+    &.page {
+
+        .big-background-letter {
+            animation: fadeIn $time $time both;
+        }
+
+        .copyright {
+            overflow: hidden;
+
+            p {
+                padding: 10px 0;
+                animation: Up $time $time both;
+            }
+        }
+
+        .facebook,
+        .instagram {
+            animation: social $time $time both;
+        }
+
+        .line {
+            animation: Down $time $time both;
+
+            &--1 {
+                animation-delay: $time;
+            }
+
+            &--2 {
+                animation-delay: $time * 2;
+            }
+
+            &--3 {
+                animation-delay: $time * 3;
+            }
+
+            &--4 {
+                animation-delay: $time * 4;
+            }
+        }
+
+        .name {
+
+            &-text {
+                animation: titleName $time $time both;
+            }
+
+            &:before {
+                animation: titleNameShape $time $time both;
+            }
+        }
+
+        .index {
+
+            span {
+                animation: Up $time $time both;
+            }
+        }
+
+        .content {
+
+            &-title {
+
+                &-text {
+                    animation: Right $time $time both;
+                }
+            }
+
+            &-list {
+
+                a {
+                    animation: Right $time $time both;
+                }
+            }
+
+            &-text {
+                animation: Right $time $time both;
+            }
         }
     }
 }
@@ -204,79 +281,8 @@
     // &.previous,
     // &.previous-back {
     //     animation: Left $time * 3 0s both;
-
-    //     .content-title, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    //     .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    //     span.name {
-    //         span, h1 {
-    //             animation: titleName $time * 2 $time * 11 linear;
-    //             animation-fill-mode: forwards;
-    //         }
-    //         &:before {
-    //             animation: titleNameShape $time * 2 $time * 10 linear;
-    //             animation-fill-mode: forwards;
-    //         }
-    //     }
-
-    //     .types {
-    //         &__item {
-    //             &:nth-child(1),
-    //             &:nth-child(3) {
-    //                 .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
-    //                 .content-title { animation-delay: $STTextSecondColumnDelayTime; }
-    //                 p { animation-delay: $STTextSecondColumnTwoDelayTime; }
-    //             }
-    //             &:nth-child(2), &:nth-child(4) {
-    //                 .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
-    //                 .content-title { animation-delay: $STTextThirdColumnDelayTime; }
-    //                 p { animation-delay: $STTextThirdColumnTwoDelayTime; }
-    //             }
-    //         }
-    //     }
-
-    //     // ----- big-background-letter -----
-    //     .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-
-    //     .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
-
-    //     // ----- social -----
     //     .social {
-    //         .instagram {  animation: social $time * 3 $time * 3 both; }
-    //         .facebook { animation: socialReverse $time * 3 $time * 3 both; }
     //         .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
-    //     }
-    // }
-
-    // // ----- animation right -----
-    // &.previous, &.previous-back {
-    //     animation: slideRight $time * 3 0s both;
-    //     animation-play-state: paused;
-    //     .content-title, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    //     .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    //     span.name {
-    //         span, h1 {
-    //             animation: titleName $time * 2 $time * 11 linear;
-    //             animation-fill-mode: forwards;
-    //         }
-    //         &:before {
-    //             animation: titleNameShape $time * 2 $time * 10 linear;
-    //             animation-fill-mode: forwards;
-    //         }
-    //     }
-    //     .types {
-    //         &__item {
-    //             &:nth-child(1),
-    //             &:nth-child(3) {
-    //                 .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
-    //                 .content-title { animation-delay: $STTextSecondColumnDelayTime; }
-    //                 p { animation-delay: $STTextSecondColumnTwoDelayTime; }
-    //             }
-    //             &:nth-child(2), &:nth-child(4) {
-    //                 .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
-    //                 .content-title { animation-delay: $STTextThirdColumnDelayTime; }
-    //                 p { animation-delay: $STTextThirdColumnTwoDelayTime; }
-    //             }
-    //         }
     //     }
     // }
 
@@ -284,86 +290,10 @@
     // &.previous, &.previous-back {
     //     animation: slideRight $time * 3 $topPanelAnimationTime both;
     //     animation-play-state: paused;
-        
-    //     // ----- big-background-letter -----
-    //     .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-        
-    //     // ----- copyright -----
-    //     .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
-
-    //     // ----- social -----
     //     .social {
-    //         .instagram {  animation: social $time * 3 $time * 3 both; }
-    //         .facebook { animation: socialReverse $time * 3 $time * 3 both; }
     //         .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
     //     }
     // }
     // &.current-back { animation: none; }
     // &.previous-back { animation-play-state: running; }
     // // ----------------- ANIMATIONS FOR MAIN PAGE END -----------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //DONT TOUCH
-
-    // ----------------- ANIMATIONS FOR SERVICES PAGE -----------------
-    // animation: fadeIn $time * 3 0s both;
-    // .content-title, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    // .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    // span.name {
-    //     span {
-    //         animation: titleName $time * 2 $time * 11 linear;
-    //         animation-fill-mode: forwards;
-    //     }
-    //     &:before {
-    //         animation: titleNameShape $time * 2 $time * 10 linear;
-    //         animation-fill-mode: forwards;
-    //     }
-    // }
-    // .types {
-    //     &__item {
-    //         &:nth-child(1),
-    //         &:nth-child(3) {
-    //             .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
-    //             .content-title { animation-delay: $STTextSecondColumnDelayTime; }
-    //             p { animation-delay: $STTextSecondColumnTwoDelayTime; }
-    //         }
-    //         &:nth-child(2), &:nth-child(4) {
-    //             .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
-    //             .content-title { animation-delay: $STTextThirdColumnDelayTime; }
-    //             p { animation-delay: $STTextThirdColumnTwoDelayTime; }
-    //         }
-    //     }
-    // }
-        
-    // // ----- big-background-letter -----
-    // .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-    
-    // // ----- navigation-elements -----
-    // .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
-
-    // // ----- social -----
-    // .social {
-    //     .instagram {  animation: social $time * 3 $time * 3 both; }
-    //     .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-    //     .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
-    // }
-    // ----------------- ANIMATIONS FOR SERVICES PAGE END -----------------

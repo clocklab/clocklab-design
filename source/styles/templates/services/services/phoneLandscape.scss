@@ -1,0 +1,61 @@
+.services {
+    display: block;
+    height: initial;
+    min-height: initial;
+
+    $container-width: 60%;
+
+    .lines {
+        display: none;
+    }
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        padding: 100px 0;
+        width: $container-width;
+
+        &:before,
+        &:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -1px;
+            width: 1px;
+            height: 100%;
+            background: $gray;
+            content: '';
+            opacity: .5;
+        }
+
+        &:after {
+            left: 100%;
+        }
+    }
+
+    .name {
+
+        &:before {
+            left: -30px;
+            width: 25px;
+        }
+    }
+
+    .services-list {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .item {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .content {
+
+        &-title {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+}
