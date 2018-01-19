@@ -703,3 +703,15 @@ $ANBStickerTextAnimationTime: $ANBStickerLineAnimationTime;
 $ANBAboutDelayTime: $ANBStickerLineDelayTime;
 $ANBAboutAnimationTime: $ANBStickerLineAnimationTime;
 //  MAIN PAGE AUDI-NEW BLOCK END
+
+
+
+
+// SERVICES PAGE
+$services-page-animation-time: $time * 2;
+
+$services-page-first-column-delay: $time * 2;
+$services-page-second-column-delay: $services-page-first-column-delay + $services-page-animation-time;
+$services-page-third-column-delay: $services-page-second-column-delay + $services-page-animation-time;
+$services-page-fourth-column-delay: $services-page-third-column-delay + $services-page-animation-time;
+// SERVICES PAGE

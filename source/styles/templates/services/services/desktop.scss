@@ -1,356 +1,53 @@
-@import '../desktop';
+.services {
+    min-height: 650px;
 
-// ----- services-schedule -----
-.services-schedule {
-	padding-top: 25vh;
-	.container {
-		width: 700px;
-		span.name {
-			left: .5vh;
-			top: -8vh;
-		}
-		.item {
-			.types__item {
-				margin-bottom: 0;
-				width: 95%;
-			}
-			.content {
-				// padding-left: .5vh;
-				.content-title { font-size: 15px; }
-				p { font-size: 13px; }
-				ul li {
-					line-height: 1.2;
-					margin-bottom: 0;
-					a { font-size: 13px; }
-				}
-			}
-			&.up {
-				margin-bottom: 8vh;
-				.services-line { top: -25vh; }
-			}
-		}
-	}
-}
+    $container-width: 80%;
 
-
-& {
-    // box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    font-family: $Raleway-Regular;
-    background: $background;
-    // position: absolute;
-    overflow: hidden;
-    // z-index: 1;
-    // left: 0;
-    // top: 0;
-
-    // ----------------- ANIMATIONS FOR MAIN PAGE -----------------
-    // ----- animation left -----
-    &.current, &.current-back,
-    &.previous, &.previous-back {
-        animation: Left $time * 3 0s both;
-        .content-title, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-        .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-        span.name {
-            span, h1 {
-                animation: titleName $time * 2 $time * 11 linear;
-                animation-fill-mode: forwards;
-            }
-            &:before {
-                animation: titleNameShape $time * 2 $time * 10 linear;
-                animation-fill-mode: forwards;
-            }
-        }
-        .types {
-            &__item {
-                &:nth-child(1),
-                &:nth-child(3) {
-                    .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
-                    .content-title { animation-delay: $STTextSecondColumnDelayTime; }
-                    p { animation-delay: $STTextSecondColumnTwoDelayTime; }
-                }
-                &:nth-child(2), &:nth-child(4) {
-                    .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
-                    .content-title { animation-delay: $STTextThirdColumnDelayTime; }
-                    p { animation-delay: $STTextThirdColumnTwoDelayTime; }
-                }
-            }
-        }
-            
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-        
-        // ----- copyright -----
-        .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
-
-        // ----- social -----
-        .social {
-            .instagram {  animation: social $time * 3 $time * 3 both; }
-            .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-            .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
-        }
-        
-        // ----- services-line -----
-        .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
-    
+    .lines {
+        left: (100% - $container-width) / 2;
+        width: $container-width;
     }
 
-    // ----- animation right -----
-    &.previous, &.previous-back {
-        animation: slideRight $time * 3 0s both;
-        animation-play-state: paused;
-        .content-title, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-        .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-        span.name {
-            span, h1 {
-                animation: titleName $time * 2 $time * 11 linear;
-                animation-fill-mode: forwards;
-            }
-            &:before {
-                animation: titleNameShape $time * 2 $time * 10 linear;
-                animation-fill-mode: forwards;
-            }
-        }
-        .types {
-            &__item {
-                &:nth-child(1),
-                &:nth-child(3) {
-                    .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
-                    .content-title { animation-delay: $STTextSecondColumnDelayTime; }
-                    p { animation-delay: $STTextSecondColumnTwoDelayTime; }
-                }
-                &:nth-child(2), &:nth-child(4) {
-                    .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
-                    .content-title { animation-delay: $STTextThirdColumnDelayTime; }
-                    p { animation-delay: $STTextThirdColumnTwoDelayTime; }
-                }
-            }
+    .container {
+        width: $container-width;
+    }
+
+    .services-list {
+        margin-top: 10px;
+    }
+
+    .item {
+        margin-top: 10px;
+    }
+
+    .index {
+        font-size: 12px;
+
+        span {
+            padding: 3px 5px;
         }
     }
 
-    // ----- animation right -----
-    &.previous, &.previous-back {
-        animation: slideRight $time * 3 $topPanelAnimationTime both;
-        animation-play-state: paused;
-        
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-        
-        // ----- copyright -----
-        .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+    .content {
 
-        // ----- social -----
-        .social {
-            .instagram {  animation: social $time * 3 $time * 3 both; }
-            .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-            .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
+        &-title {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 22px;
         }
-        
-        // ----- services-line -----
-        .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
-    }
-    &.current-back { animation: none; }
-    &.previous-back { animation-play-state: running; }
-    // ----------------- ANIMATIONS FOR MAIN PAGE END -----------------
 
-    // ----------------- ANIMATIONS FOR SERVICES PAGE -----------------
-    // animation: fadeIn $time * 3 0s both;
-    // .content-title, p, li { animation: Right $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    // .index span { animation: Up $STTextColumnAnimationTime $STTextFirstColumnDelayTime both; }
-    // span.name {
-    //     span {
-    //         animation: titleName $time * 2 $time * 11 linear;
-    //         animation-fill-mode: forwards;
-    //     }
-    //     &:before {
-    //         animation: titleNameShape $time * 2 $time * 10 linear;
-    //         animation-fill-mode: forwards;
-    //     }
-    // }
-    // .types {
-    //     &__item {
-    //         &:nth-child(1),
-    //         &:nth-child(3) {
-    //             .index span { animation-delay: $STTextSecondColumnFourDelayTime; }
-    //             .content-title { animation-delay: $STTextSecondColumnDelayTime; }
-    //             p { animation-delay: $STTextSecondColumnTwoDelayTime; }
-    //         }
-    //         &:nth-child(2), &:nth-child(4) {
-    //             .index span { animation-delay: $STTextThirdColumnFourDelayTime; } 
-    //             .content-title { animation-delay: $STTextThirdColumnDelayTime; }
-    //             p { animation-delay: $STTextThirdColumnTwoDelayTime; }
-    //         }
-    //     }
-    // }
-        
-    // // ----- big-background-letter -----
-    // .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-    
-    // // ----- navigation-elements -----
-    // .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+        &-list {
+            margin-top: 15px;
 
-    // // ----- social -----
-    // .social {
-    //     .instagram {  animation: social $time * 3 $time * 3 both; }
-    //     .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-    //     .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
-    // }
-    
-    // // ----- services-line -----
-    // .services-line { animation: heightIncreaseFull $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
-    // ----------------- ANIMATIONS FOR SERVICES PAGE END -----------------
-
-    // ----- letter o -----
-    .big-background-letter {
-        top: 10vh;
-        z-index: 3;
-        right: -4vh;
-        position: fixed;
-        font-size: 110vh;
-        span::before  { content: 'o'; }
-    }
-    
-    // ----- services-schedule -----
-    .services-schedule {
-        position: relative;
-        z-index: 4;
-        padding-top: 20vh;
-        .container {
-            display: flex;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            max-width: 1440px;
-            position: relative;
-            span.name {
-                text-transform: uppercase;
-                position: absolute;
+            a {
+                margin-bottom: 5px;
                 font-size: 14px;
-                top: -10vh;
-                span, h1 {
-                    color: $white;
-                    display: block;
-                    visibility: hidden;
-                    font-family: $Raleway-Bold;
-                }
-                &:before {
-                    background: $white;
-                    visibility: hidden;
-                    position: absolute;
-                    display: block;
-                    width: 50px;
-                    left: -62px;
-                    height: 3px;
-                    content: '';
-                    top: 4px;
-                }
             }
-            .item {
-                width: 33.33%;
-                position: relative;
-                &:last-of-type::after { display: block; }
-                &:nth-of-type(4) .services-line, &:nth-of-type(5) .services-line,
-                &:nth-of-type(6) .services-line { display: none; }
-                &.up {
-                    margin-bottom: 18vh;
-                    .services-line {
-                        left: 0;
-                        top: -20vh;
-                        width: 1px;
-                        height: 100vh;
-                        position: absolute;
-                        background: $darkGray;
-                        &.right {
-                            left: initial;
-                            right: 0;
-                        }
-                    }
-                }
-                .content {
-                    overflow: hidden;
-                    p {
-                        color: $white;
-                        line-height: 1.5;
-                    }
-                    ul li {
-                        line-height: 1.5;
-                        margin-bottom: 10px;
-                        a {
-                            color: $white;
-                            transition: $time;
-                            &:hover {
-                                color: $blue;
-                                transition: $time;
-                            }
-                        }
-                    }
-                    &:hover {
-                        .content-title:before { width: 100%; }
-                        .crossed-button {
-                            span {
-                                padding: 0 px(10); 
-                                &:before { animation: spanCrossAnimation $time linear forwards; }
-                            }
-                            .arrow-container { transform: translateX(0%); }
-                            .arrow { animation: arrowAnimation $time $timeTickHalf linear forwards; }
-                        }
-                    }
-                }
-                .types {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                    align-content: space-between;
-                    height: 61.5vh;
-                    width: 66%;
-                    &__item {
-                        width: 75%;
-                        display: block;
-                        position: relative;
-                        margin-bottom: 25px;
-                        &:hover .index { color: $blue; }
-                        .index {
-                            color: $gray;
-                            top: -20px;
-                            left: -20px;
-                            position: absolute;
-                            font-family: $Roboto-Regular;
-                            transform: rotate(-90deg);
-                            transition: color $time;
-                            overflow: hidden;
-                            font-size: 16px;
-                            span { display: block; }
-                        }
-                        .content-title {
-                            color: $white;
-                            font-size: 24px;
-                            position: relative;
-                            line-height: 30px;
-                            display: inline-block;  
-                            text-transform: uppercase;
-                            font-family: $Raleway-Bold;
-                            &:last-of-type { margin-bottom: 25px; }
-                            &:before {
-                                position: absolute;
-                                display: block;
-                                z-index: -1;
-                                width: 0;
-                                left: 0;
-                                content: '';
-                                height: 7px;
-                                bottom: 3px;
-                                background: $blue;
-                                transition: width $time;
-                            }
-                        }
-                    }
-                }
+        }
 
-                &:hover {
-
-                    .index {
-                        color: $blue;
-                    }
-                }
-            }    
+        &-text {
+            margin-top: 15px;
+            font-size: 14px;
         }
     }
 }

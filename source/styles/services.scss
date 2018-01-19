@@ -1,7 +1,7 @@
 // base
 @import 'base/variables';
 @import 'base/reset';
-// @import 'base/fonts';
+@import 'base/fonts';
 @import 'base/common';
 @import 'base/animations';
 
@@ -73,7 +73,7 @@
 /---- TABLET PORTRAIT ---- */
 @media (max-width: 768px) {
     // -- services --
-    @import 'templates/services/services/tabletPortrait';
+    // @import 'templates/services/services/tabletPortrait';
     // -- services --
 }
 /* ---- TABLET PORTRAIT ---- */
