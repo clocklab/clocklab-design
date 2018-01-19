@@ -1,0 +1,469 @@
+.blog-two {
+    background: $background;
+    box-shadow: 0 15px 50px 7px rgba(0, 0, 0, .3);
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    .big-background-letter {
+        top: 3vh;
+        right: 50vh;
+        z-index: 4;
+        color: $white;
+        font-size: 45vh;
+
+        span {
+
+            &:before {
+                content: 'o';
+            }
+        }
+    }
+
+    .title {
+        z-index: 4;
+        margin: 20vh 0 0 137px;
+
+        .word {
+
+            span {
+                font-size: 40px;
+            }
+
+            &:nth-of-type(2) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    .text-block {
+        position: absolute;
+        top: 20%;
+        right: 11%;
+        z-index: 1;
+        padding: 5% 1vh 0;
+        width: 29%;
+        color: $white;
+        font-family: $Raleway-Medium;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .image-block {
+        position: absolute;
+        height: 525px;
+        width: 525px;
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 30px 8px rgba(0, 0, 0, .3);
+            overflow: hidden;
+
+            img {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &:before {
+                position: absolute;
+                z-index: 2;
+                height: 100%;
+                width: 100%;
+                background: $darkGray;
+                content: '';
+                transform: translate3d(-90%, 90%, 0);
+            }
+        }
+
+        &.up {
+            z-index: 3;
+            top: 5vh;
+            right: 200px;
+
+            p {
+                position: absolute;
+                top: 400px;
+                right: -167px;
+                color: $white;
+                font-family: $Roboto-Thin;
+                font-size: 17px;
+                transform-origin: 0 0;
+                transform: rotate(90deg);
+            }
+
+            .gray {
+                position: absolute;
+                top: 100px;
+                right: -450px;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                &:before {
+                    position: absolute;
+                    z-index: 2;
+                    width: 100%;
+                    height: 100%;
+                    background: $darkGray;
+                    content: '';
+                    transform: translate3d(-90%, 90%, 0);
+                }
+            }
+        }
+
+        &.down {
+            right: 418px;
+            top: 430px;
+            z-index: 4;
+        }
+    }
+
+    .jumping-button {
+
+        a {
+            text-transform: uppercase;
+
+            span {
+                color: $white;
+                font-size: 13px;
+                font-family: $Raleway-Medium;
+            }
+
+            &:before {
+                background: $white;
+            }
+        }
+    }
+
+    .service-info {
+        position: absolute;
+
+        p {
+            color: $white;
+            font-family: $Roboto-Regular;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        &.horizontal {
+            bottom: 14.5vh;
+            left: 75px;
+            width: 250px;
+        }
+
+        &.vertical {
+            width: 135px;
+            transform: rotate(-90deg);
+
+            &.one {
+                top: 34.5vh;
+                left: 20px;
+            }
+        }
+    }
+
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Up $time * 3 0s both;
+
+        .logo,
+        .menu {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .big-background-letter {
+            animation: fadeIn $time * 3 $time * 9 both;
+        }
+
+        .service-info {
+
+            &.horizontal {
+
+                p {
+                    animation: fadeInUp $time * 2 $time * 7 both;
+                }
+            }
+
+            &.vertical {
+                p {
+                    animation: fadeInDown $time * 2 $time * 7 both;
+                }
+            }
+        }
+
+        .jumping-button {
+            animation: fadeInUp $time * 2 $time * 8 both;
+        }
+
+        .bottom-button {
+
+            span {
+                animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+            }
+
+            .line {
+                animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+            }
+        }
+
+        .info-block {
+            animation: fadeInRight $time * 2 $time * 7 linear;
+            animation-fill-mode: forwards;
+        }
+
+        .title {
+
+            p {
+                animation: fadeInUp $time * 2 $time * 7 linear both;
+            }
+
+            .name {
+
+                span {
+                    animation: titleName $time * 2 $time * 8 linear;
+                    animation-fill-mode: forwards;
+                }
+
+                &:before {
+                    animation: titleNameShape $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            .word {
+
+                &:after {
+                    animation: halfDown $time * 2 linear $time * 4 both;
+                }
+
+                &:nth-of-type(1) {
+
+                    span {
+                        animation: titleWord $time * 2 $time * 5 linear;
+                        animation-fill-mode: forwards;
+                    }
+                }
+
+                &:nth-of-type(2) {
+
+                    span {
+                        animation: titleWord $time * 2 $time * 6 linear;
+                        animation-fill-mode: forwards;
+                    }
+                }
+
+                &:nth-of-type(3) {
+
+                    span {
+                        animation: titleWord $time * 2 $time * 7 linear;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+        }
+
+        .image-block {
+
+            p {
+                animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both;
+            }
+
+            &.up {
+
+                .gray {
+
+                    &:before {
+                        animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both;
+                    }
+                }
+
+                .image-container {
+                    animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+
+                    img {
+                        animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime * .25 both;
+                    }
+
+                    &:before {
+                        animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime * .25 both;
+                    }
+                }
+            }
+
+            &.down {
+
+                .image-container {
+                    animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+
+                    img {
+                        animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both;
+                    }
+
+                    &:before {
+                        animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both;
+                    }
+                }
+            }
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideDown $time * 3 $topPanelAnimationTime both;
+        animation-play-state: paused;
+
+        .logo,
+        .menu {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .big-background-letter {
+            animation: fadeIn $time * 3 $time * 9 both;
+        }
+
+        .service-info {
+
+            &.horizontal {
+
+                p {
+                    animation: fadeInUp $time * 2 $time * 7 both;
+                }
+            }
+
+            &.vertical {
+
+                p {
+                    animation: fadeInDown $time * 2 $time * 7 both;
+                }
+            }
+        }
+
+        .jumping-button {
+            animation: fadeInUp $time * 2 $time * 8 both;
+        }
+
+        .bottom-button {
+
+            span {
+                animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+            }
+
+            .line {
+                animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+            }
+        }
+
+        .info-block {
+            animation: fadeInRight $time * 2 $time * 7 linear;
+            animation-fill-mode: forwards;
+        }
+
+        .title {
+
+            p {
+                animation: fadeInUp $time * 2 $time * 7 linear both;
+            }
+
+            .name {
+
+                span {
+                    animation: titleName $time * 2 $time * 8 linear;
+                    animation-fill-mode: forwards;
+                }
+
+                &:before {
+                    animation: titleNameShape $time * 2 $time * 7 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            .word {
+
+                &:after {
+                    animation: halfDown $time * 2 linear $time * 4 both;
+                }
+
+                &:nth-of-type(1) {
+
+                    span {
+                        animation: titleWord $time * 2 $time * 5 linear;
+                        animation-fill-mode: forwards;
+                    }
+                }
+
+                &:nth-of-type(2) {
+
+                    span {
+                        animation: titleWord $time * 2 $time * 6 linear;
+                        animation-fill-mode: forwards;
+                    }
+                }
+
+                &:nth-of-type(3) {
+
+                    span {
+                        animation: titleWord $time * 2 $time * 7 linear;
+                        animation-fill-mode: forwards;
+                    }
+                }
+            }
+        }
+
+        .image-block {
+
+            p {
+                animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both;
+            }
+
+            &.up {
+
+                .gray {
+
+                    &:before {
+                        animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both;
+                    }
+                }
+
+                .image-container {
+                    animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+
+                    img {
+                        animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime * .25 both;
+                    }
+
+                    &:before {
+                        animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime * .25 both;
+                    }
+                }
+            }
+
+            &.down {
+                .image-container {
+                    animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
+
+                    img {
+                        animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both;
+                    }
+
+                    &:before {
+                        animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both;
+                    }
+                }
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
+    }
+}

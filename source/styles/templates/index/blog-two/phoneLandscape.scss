@@ -1,15 +1,14 @@
-& {
-    
-    padding-top: px(100);
+.blog-two {
+    padding-top: 50px;
     background-color: $white;
     color: $darkGray;
     font-family: $Raleway-Regular;
     overflow: hidden;
-    
+
     .image-container {
-        margin: px(30) auto;
+        margin: 15px auto;
         width: 100%;
-        height: px(400);
+        height: 200px;
 
         img {
             width: 100%;
