@@ -1,32 +1,30 @@
-@import '../desktop';
+.our-best-works {
 
-& { 
-
-    $paddingLeft: px(500);
-    $infoWidth: px(600);
-    $marginLeft: px(450);
-    $portfolioWidth: px(1150);
+    $paddingLeft: 500px;
+    $infoWidth: 300px;
+    $marginLeft: 275px;
+    $portfolioWidth: 800px;
 
     .lines {
 
         .line {
-    
+
             &--1 {
                 left: $paddingLeft;
             }
-    
+
             &--2 {
                 left: $paddingLeft + $infoWidth;
             }
-    
+
             &--3 {
                 left: $paddingLeft + $infoWidth + ($marginLeft + $portfolioWidth / 2) / 2;
             }
-    
+
             &--4 {
                 left: $paddingLeft + $infoWidth + $marginLeft + $portfolioWidth / 2;
             }
-    
+
             &--5 {
                 left: $paddingLeft + $infoWidth + $marginLeft * 3 / 2 + $portfolioWidth * 3 / 4;
             }
@@ -44,31 +42,12 @@
     .portfolio {
         margin-left: $marginLeft;
         width: $portfolioWidth;
-
-        &__item {
-            width: $portfolioWidth / 2;   
-            height: $portfolioWidth / 2;
-
-            &--audi {
-                left: px(-60); 
-                top: px(-60);
-            }
-
-            &--your-project {
-                left: px(60); 
-                top: px(60);
-            }
-        }
-    }   
-    
-    .back {
-        padding: px(30);
     }
 
     &.opened {
-        
+
         .front-layer {
-            transform: rotateY(20deg) scaleX(.8);
+            transform: rotateY(10deg) scaleX(.85);
         }
     }
 }

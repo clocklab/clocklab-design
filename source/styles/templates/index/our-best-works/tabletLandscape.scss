@@ -1,16 +1,14 @@
-@import '../mobile';
-
-& {
+.our-best-works {
 
     .portfolio {
 
         &__item {
-            margin: px(50) auto;
+            margin: 25px auto;
             width: 60%;
         }
     }
 
     .image-container {
-        height: px(600);
+        height: 300px;
     }
 }

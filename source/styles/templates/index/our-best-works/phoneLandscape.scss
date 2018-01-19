@@ -1,9 +1,8 @@
-& {  
-
-    padding: px(100) px(30) 0;
+.our-best-works {
+    padding: 50px 15px 0;
     color: $darkGray;
     font-family: $Raleway-Bold;
-    font-size: px(48);
+    font-size: 24px;
     line-height: 1.4;
 
     .back-layer,
@@ -16,11 +15,11 @@
     }
 
     .portfolio {
-        margin-top: px(100);
+        margin-top: 50px;
 
         &__item {
             display: block;
-            margin-bottom: px(50);
+            margin-bottom: 25px;
 
             &--your-project {
                 display: none;
@@ -30,7 +29,7 @@
 
     .image-container {
         width: 100%;
-        height: px(300);
+        height: 150px;
 
         img {
             width: 100%;

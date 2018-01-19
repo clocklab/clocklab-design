@@ -1,20 +1,20 @@
 // base
-@import "base/variables";
-@import "base/fonts";
-@import "base/reset";
-@import "base/common";
-@import "base/animations";
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/common';
+@import 'base/animations';
 
 // components
-// @import "components/top-panel/main";
-@import "components/logo/main";
-@import "components/menu/main";
-@import "components/language/main";
-@import "components/social/main";
-@import "components/copyright/main";
-@import "components/modules/clock-bg";
-@import "components/jumping-button/main";
-@import "components/new-title/main";
+// @import 'components/top-panel/main';
+@import 'components/logo/main';
+@import 'components/menu/main';
+@import 'components/language/main';
+@import 'components/social/main';
+@import 'components/copyright/main';
+@import 'components/modules/clock-bg';
+@import 'components/jumping-button/main';
+@import 'components/new-title/main';
 
 // main
-@import "templates/portfolio/portfolio/main";
+@import 'templates/portfolio/portfolio/main';

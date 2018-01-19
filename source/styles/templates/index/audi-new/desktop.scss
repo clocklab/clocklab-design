@@ -1,346 +1,42 @@
-& {  
-
-    width: 100vw;
-    height: 100vh;
-    background: $white;
-    font-size: 0;
+.audi-new {
 
     img {
-        width: 100%;
-        height: 100vh;
-        min-height: 960px;
-        object-fit: cover;
-    }
-
-    #mirror {
-        position: absolute;
-        top: 0;
-        z-index: 2;
-        width: 100%;
-        filter: drop-shadow(0 0 30px $black);
-
-        & > img {
-		    -webkit-clip-path:inset(0 50% 0 22%);
-            clip-path:inset(0 50% 0 22%);
-        }
-    }
-
-    .portfolio-client {
-
-        .client-name-container {
-
-            span {
-
-                &:before {
-                    content: 'Audi';
-                }
-            }
-        }
+        min-height: 650px;
     }
 
     .portfolio-right-panel {
 
         .date {
-            margin-bottom: px(300);
-
-            &-month {
-
-                &:before {
-                    content: 'April';
-                }
-            }
-
-            &-year {
-                &:after {
-                    content: '2016';
-                }
-            }
+            margin-bottom: 50px;
         }
     }
 
     .project-name-container {
-        position: absolute;
-        top: px(240);
-        right: px(480);
-        z-index: 1;
+        top: 85px;
+        right: 300px;
     }
 
     .project-name {
-        display: block;
-        font-family: $Audi-Bold;
-        font-size: px(500);
+        font-size: 135px;
     }
 
     .info {
-        position: absolute;
-        top: px(180);
-        right: px(410);
-        z-index: 3;
-        width: px(1360);
-    }
-
-    .sticker {
-        font-size: px(24);
-
-        span {
-            display: inline-block;
-            color: $darkGray;
-            text-transform: uppercase;
-
-            &:before {
-                content: 'Портфолио';
-            }
-        }
-
-        &:before {
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: px(-120);
-            width: px(100);
-            height: 3px;
-            background: $lightBlack;
-            content: '';
-            transform: translateY(-50%);
-        }
+        top: 75px;
+        right: 150px;
+        width: 500px;
     }
 
     .about-work {
-        margin-top: px(544);
-        margin-left: auto;
-        width: px(1000);
+        margin-top: 135px;
+        width: 70%;
 
         p {
-            color: $white;
-            font-family: $Roboto-Light;
-            font-size: px(60);
-            line-height: 1.4;
+            font-size: 20px;
         }
     }
 
     .special-button {
-        display: block;
-        position: relative;
-        margin: px(60) px(110) 0 auto;
-        height: px(110);
-        width: px(510);
-        color: $white;
-        font-family: $Roboto-Light;
-        font-size: px(28);  
-        line-height: px(110); 
-        letter-spacing: 2px;
-        text-align: center;
-        text-transform: uppercase;
-
-        &-text {
-            position: relative;
-            z-index: 2;
-        }
-
-        &:after {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            display: block;
-            width: 100%;
-            height: 15%;
-            background: $blue;
-            content: '';
-            transition: height $timeHalf ease-out;
-        }
-
-        &:hover {
-
-            &:after {
-                height: 100%;
-            }
-        }
+        margin-right: 45px;
+        width: 200px;
     }
-
-    .bottom-button {
-
-        .line {
-            background: $darkGray;
-        }
-
-        span {
-            color: $darkGray;
-        }
-
-        .arrow {
-
-            .st0,
-            .st1 {
-                fill: $darkGray;
-                stroke: $darkGray;
-            }
-        }
-    }
-
-    &.current,
-    &.current-back,
-    &.previous,
-    &.previous-back {
-        animation: Up $time * 3 0s both;
-
-        .portfolio-client {
-            
-            .client {
-                animation: fadeInRight $portfolioClientAnimationTime $portfolioClientDelayTime both;
-        
-                &-name-container {
-        
-                    span {
-                        animation: Right $portfolioClientNameAnimationTime $portfolioClientNameDelayTime both;
-                    }
-                }
-            }
-        }
-
-        .portfolio-right-panel {
-            
-            .date {
-                animation: fadeInLeft $portfolioRightPanelDateAnimationTime $portfolioRightPanelDateDelayTime both;
-            }
-        
-            .devices {
-                
-                span {
-                    animation-name: fadeInLeft;
-                    animation-fill-mode: both;
-        
-                    &:nth-child(1) {
-                        animation-duration: $portfolioRightPanelDevicesDesktopAnimationTime;
-                        animation-delay: $portfolioRightPanelDevicesDesktopDelayTime;
-                    }
-        
-                    &:nth-child(2) {
-                        animation-duration: $portfolioRightPanelDevicesTabletAnimationTime;
-                        animation-delay: $portfolioRightPanelDevicesTabletDelayTime;
-                    }
-        
-                    &:nth-child(3) {
-                        animation-duration: $portfolioRightPanelDevicesMobileAnimationTime;
-                        animation-delay: $portfolioRightPanelDevicesMobileDelayTime;
-                    }
-                }
-            }
-        }
-
-        .bottom-button {
-            
-            span {
-                animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
-            }
-        
-            .line {
-                animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
-            }
-        }
-
-        .sticker {
-
-            span {
-                animation: FadeInRightHalf $ANBStickerTextAnimationTime $ANBStickerTextDelayTime both;
-            }
-    
-            &:before {
-                animation: widthIncreaseStickerLine $ANBStickerLineAnimationTime $ANBStickerLineDelayTime both;
-            }
-        }
-
-        .project-name-container {
-            animation: fadeInRight $ANBStickerTextAnimationTime $ANBStickerTextDelayTime both;
-        }
-    
-        .about-work {
-    
-            p {
-                animation: fadeInUpHalf $ANBAboutAnimationTime $ANBAboutDelayTime both;
-            }
-        }
-
-        .special-button {
-            animation: fadeInUp $ANBStickerTextAnimationTime $ANBStickerTextDelayTime both;
-        }
-    }
-
-    &.previous,
-    &.previous-back {
-        animation: slideDown $time * 3 $topPanelAnimationTime both;
-        animation-play-state: paused;
-
-        .portfolio-client {
-            
-            .client {
-                animation-play-state: paused;
-        
-                &-name-container {
-        
-                    span {
-                        animation-play-state: paused;
-                    }
-                }
-            }
-        }
-
-        .portfolio-right-panel {
-            
-            .date {
-                animation-play-state: paused;
-            }
-        
-            .devices {
-                
-                span {
-                    animation-play-state: paused;
-                }
-            }
-        }
-
-        .bottom-button {
-            
-            span {
-                animation-play-state: paused;
-            }
-        
-            .line {
-                animation-play-state: paused;
-            }
-        }
-
-        .sticker {
-
-            span {
-                animation-play-state: paused;
-            }
-    
-            &:before {
-                animation-play-state: paused;
-            }
-        }
-
-        .project-name-container {
-            animation-play-state: paused;
-        }
-    
-        .about-work {
-    
-            p {
-                animation-play-state: paused;
-            }
-        }
-
-        .special-button {
-            animation-play-state: paused;
-        }
-    }
-
-    &.current-back {
-        animation: none;
-    }
-
-    &.previous-back {
-        animation-play-state: running;
-    }    
 }

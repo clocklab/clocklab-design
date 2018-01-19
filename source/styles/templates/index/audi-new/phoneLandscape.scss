@@ -1,8 +1,7 @@
-& {  
-    
-    padding: px(300) px(60) 0;
+.audi-new {
+    padding: 150px 30px 0;
     font-family: $Raleway-Bold;
-    font-size: px(48);
+    font-size: 24px;
 
     & > img,
     .dark-portfolio-client,
@@ -32,11 +31,11 @@
 
     .project-name-container,
     .about-work {
-        margin-bottom: px(40);
+        margin-bottom: 20px;
     }
 
     .project-name-container {
-        font-size: px(80);
+        font-size: 40px;
     }
 
     .special-button {

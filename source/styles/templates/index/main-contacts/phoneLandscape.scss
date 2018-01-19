@@ -1,25 +1,27 @@
-& {
-    
+.main-contacts {
     background: $background;
     font-family: $Raleway-Regular;
     overflow: hidden;
-    
+
     .main-contacts-title {
-        width: 95%;
         padding: 7.5vh 0 6.6vh 4%;
+        width: 95%;
         background-color: $lightBlack;
+
         p {
             font-weight: $extra-bold;
+
             &:first-child {
                 color: $white;
-                font-size: px(47);
+                font-size: 24px;
                 text-transform: uppercase;
             }
+
             &:last-child {
-                font-size: px(34);
                 padding-top: 1vh;
-                text-align: left;
                 color: $blue;
+                font-size: 17px;
+                text-align: left;
             }
         }
     }
@@ -29,18 +31,18 @@
         margin: 4vh 0 0 2vh;
 
         li {
-            line-height: .9;
-            color: $darkWhite;
-            font-size: px(26);
             margin-bottom: 4vh;
+            color: $darkWhite;
+            font-size: 13px;
+            line-height: .9;
 
-            a { 
-                color: $white; 
+            a {
+                color: $white;
             }
 
             &:last-of-type {
-                margin-bottom: 0;
                 display: block;
+                margin-bottom: 0;
             }
         }
     }
