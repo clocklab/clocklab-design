@@ -192,7 +192,7 @@
     &.page {
 
         .big-background-letter {
-            animation: fadeIn $time $time both;
+            animation: fadeIn $services-page-animation-time $time both;
         }
 
         .copyright {
@@ -200,71 +200,142 @@
 
             p {
                 padding: 10px 0;
-                animation: Up $time $time both;
+                animation: Up $services-page-animation-time $time both;
             }
         }
 
         .facebook,
         .instagram {
-            animation: social $time $time both;
+            animation: social $services-page-animation-time $time both;
         }
 
         .line {
-            animation: Down $time $time both;
+            animation: Down $services-page-animation-time 0s both;
 
             &--1 {
-                animation-delay: $time;
+                animation-delay: $services-page-first-column-delay;
             }
 
             &--2 {
-                animation-delay: $time * 2;
+                animation-delay: $services-page-second-column-delay;
             }
 
             &--3 {
-                animation-delay: $time * 3;
+                animation-delay: $services-page-third-column-delay;
             }
 
             &--4 {
-                animation-delay: $time * 4;
+                animation-delay: $services-page-fourth-column-delay;
             }
         }
 
         .name {
 
             &-text {
-                animation: titleName $time $time both;
+                animation: titleName $services-page-animation-time $services-page-second-column-delay both;
             }
 
             &:before {
-                animation: titleNameShape $time $time both;
+                animation: titleNameShape $services-page-animation-time $services-page-first-column-delay both;
             }
         }
 
-        .index {
+        .item {
 
-            span {
-                animation: Up $time $time both;
-            }
-        }
+            &:nth-child(1),
+            &:nth-child(4) {
 
-        .content {
+                .index {
 
-            &-title {
+                    span {
+                        animation: Up $services-page-animation-time $services-page-first-column-delay both;
+                    }
+                }
 
-                &-text {
-                    animation: Right $time $time both;
+                .content {
+
+                    &-title {
+
+                        &-text {
+                            animation: Right $services-page-animation-time $services-page-first-column-delay both;
+                        }
+                    }
+
+                    &-list {
+
+                        a {
+                            animation: Right $services-page-animation-time $services-page-first-column-delay both;
+                        }
+                    }
+
+                    &-text {
+                        animation: Right $services-page-animation-time $services-page-first-column-delay both;
+                    }
                 }
             }
 
-            &-list {
+            &:nth-child(2),
+            &:nth-child(5) {
 
-                a {
-                    animation: Right $time $time both;
+                .index {
+
+                    span {
+                        animation: Up $services-page-animation-time $services-page-second-column-delay both;
+                    }
+                }
+
+                .content {
+
+                    &-title {
+
+                        &-text {
+                            animation: Right $services-page-animation-time $services-page-second-column-delay both;
+                        }
+                    }
+
+                    &-list {
+
+                        a {
+                            animation: Right $services-page-animation-time $services-page-second-column-delay both;
+                        }
+                    }
+
+                    &-text {
+                        animation: Right $services-page-animation-time $services-page-second-column-delay both;
+                    }
                 }
             }
 
-            &-text {
-                animation: Right $time $time both;
+            &:nth-child(3),
+            &:nth-child(6) {
+
+                .index {
+
+                    span {
+                        animation: Up $services-page-animation-time $services-page-third-column-delay both;
+                    }
+                }
+
+                .content {
+
+                    &-title {
+
+                        &-text {
+                            animation: Right $services-page-animation-time $services-page-third-column-delay both;
+                        }
+                    }
+
+                    &-list {
+
+                        a {
+                            animation: Right $services-page-animation-time $services-page-third-column-delay both;
+                        }
+                    }
+
+                    &-text {
+                        animation: Right $services-page-animation-time $services-page-third-column-delay both;
+                    }
+                }
             }
         }
     }
