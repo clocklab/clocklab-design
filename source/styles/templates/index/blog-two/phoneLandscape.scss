@@ -1,0 +1,19 @@
+.blog-two {
+    padding-top: 50px;
+    background-color: $white;
+    color: $darkGray;
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    .image-container {
+        margin: 15px auto;
+        width: 100%;
+        height: 200px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

@@ -189,10 +189,15 @@
         }
     }
 
-    &.page {
+    &.page,
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: fadeIn $services-page-animation-time 0s both;
 
         .big-background-letter {
-            animation: fadeIn $services-page-animation-time $time both;
+            animation: fadeIn $services-page-animation-time $services-page-first-column-delay both;
         }
 
         .copyright {
@@ -200,13 +205,17 @@
 
             p {
                 padding: 10px 0;
-                animation: Up $services-page-animation-time $time both;
+                animation: Up $services-page-animation-time $services-page-first-column-delay both;
             }
         }
 
         .facebook,
         .instagram {
-            animation: social $services-page-animation-time $time both;
+            animation: social $services-page-animation-time $services-page-first-column-delay both;
+        }
+
+        .behance {
+            animation: fadeInRight $services-page-animation-time $services-page-first-column-delay both;
         }
 
         .line {
@@ -242,13 +251,41 @@
 
         .item {
 
+            .index {
+
+                span {
+                    animation: Up $services-page-animation-time 0s both;
+                }
+            }
+
+            .content {
+
+                &-title {
+
+                    &-text {
+                        animation: Right $services-page-animation-time 0s both;
+                    }
+                }
+
+                &-list {
+
+                    a {
+                        animation: Right $services-page-animation-time 0s both;
+                    }
+                }
+
+                &-text {
+                    animation: Right $services-page-animation-time 0s both;
+                }
+            }
+
             &:nth-child(1),
             &:nth-child(4) {
 
                 .index {
 
                     span {
-                        animation: Up $services-page-animation-time $services-page-first-column-delay both;
+                        animation-delay: $services-page-first-column-delay;
                     }
                 }
 
@@ -257,19 +294,19 @@
                     &-title {
 
                         &-text {
-                            animation: Right $services-page-animation-time $services-page-first-column-delay both;
+                            animation-delay: $services-page-first-column-delay;
                         }
                     }
 
                     &-list {
 
                         a {
-                            animation: Right $services-page-animation-time $services-page-first-column-delay both;
+                            animation-delay: $services-page-first-column-delay;
                         }
                     }
 
                     &-text {
-                        animation: Right $services-page-animation-time $services-page-first-column-delay both;
+                        animation-delay: $services-page-first-column-delay;
                     }
                 }
             }
@@ -280,7 +317,7 @@
                 .index {
 
                     span {
-                        animation: Up $services-page-animation-time $services-page-second-column-delay both;
+                        animation-delay: $services-page-second-column-delay;
                     }
                 }
 
@@ -289,19 +326,19 @@
                     &-title {
 
                         &-text {
-                            animation: Right $services-page-animation-time $services-page-second-column-delay both;
+                            animation-delay: $services-page-second-column-delay;
                         }
                     }
 
                     &-list {
 
                         a {
-                            animation: Right $services-page-animation-time $services-page-second-column-delay both;
+                            animation-delay: $services-page-second-column-delay;
                         }
                     }
 
                     &-text {
-                        animation: Right $services-page-animation-time $services-page-second-column-delay both;
+                        animation-delay: $services-page-second-column-delay;
                     }
                 }
             }
@@ -312,7 +349,7 @@
                 .index {
 
                     span {
-                        animation: Up $services-page-animation-time $services-page-third-column-delay both;
+                        animation-delay: $services-page-third-column-delay;
                     }
                 }
 
@@ -321,50 +358,107 @@
                     &-title {
 
                         &-text {
-                            animation: Right $services-page-animation-time $services-page-third-column-delay both;
+                            animation-delay: $services-page-third-column-delay;
                         }
                     }
 
                     &-list {
 
                         a {
-                            animation: Right $services-page-animation-time $services-page-third-column-delay both;
+                            animation-delay: $services-page-third-column-delay;
                         }
                     }
 
                     &-text {
-                        animation: Right $services-page-animation-time $services-page-third-column-delay both;
+                        animation-delay: $services-page-third-column-delay;
                     }
                 }
             }
         }
     }
+
+    &.current,
+    &.current-back {
+        animation: Left $services-page-animation-time 0s both;
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: toRight $services-page-animation-time $topPanelAnimationTime both;
+        animation-play-state: paused;
+
+        .big-background-letter {
+            animation-play-state: paused;
+        }
+
+        .copyright {
+
+            p {
+                animation-play-state: paused;
+            }
+        }
+
+        .facebook,
+        .instagram {
+            animation-play-state: paused;
+        }
+
+        .behance {
+            animation-play-state: paused;
+        }
+
+        .line {
+            animation-play-state: paused;
+        }
+
+        .name {
+
+            &-text {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .item {
+
+            .index {
+
+                span {
+                    animation-play-state: paused;
+                }
+            }
+
+            .content {
+
+                &-title {
+
+                    &-text {
+                        animation-play-state: paused;
+                    }
+                }
+
+                &-list {
+
+                    a {
+                        animation-play-state: paused;
+                    }
+                }
+
+                &-text {
+                    animation-play-state: paused;
+                }
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
+    }
 }
-
-
-
-
-
- // ----------------- ANIMATIONS FOR MAIN PAGE -----------------
-    // // ----- animation left -----
-    // &.current,
-    // &.current-back,
-    // &.previous,
-    // &.previous-back {
-    //     animation: Left $time * 3 0s both;
-    //     .social {
-    //         .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
-    //     }
-    // }
-
-    // // ----- animation right -----
-    // &.previous, &.previous-back {
-    //     animation: slideRight $time * 3 $topPanelAnimationTime both;
-    //     animation-play-state: paused;
-    //     .social {
-    //         .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
-    //     }
-    // }
-    // &.current-back { animation: none; }
-    // &.previous-back { animation-play-state: running; }
-    // // ----------------- ANIMATIONS FOR MAIN PAGE END -----------------

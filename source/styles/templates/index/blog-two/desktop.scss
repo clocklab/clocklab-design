@@ -1,304 +1,58 @@
-& {
-    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    font-family: $Raleway-Regular;
-    background: $background;
-    overflow: hidden;
-    
-    // ----- animation up -----
-    &.current, &.current-back,
-    &.previous, &.previous-back {
-        animation: Up $time * 3 0s both;
+.blog-two {
 
-        // ----- navigation-elements -----
-        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
-
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 9 both; }
-        
-        // ----- service-info -----
-        .service-info {
-            &.horizontal p { animation: fadeInUp $time * 2 $time * 7 both; }
-            &.vertical p { animation: fadeInDown $time * 2 $time * 7 both; }
-        }
-
-        // ----- other -----
-        .jumping-button { animation: fadeInUp $time * 2 $time * 8 both; }
-        .bottom-button {
-            span { animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
-            .line { animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
-        }
-        
-        // ----- info-block -----
-        .info-block {
-            animation: fadeInRight $time * 2 $time * 7 linear;
-            animation-fill-mode: forwards;
-        }
-
-        // ----- title -----
-        .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 7 linear both;
-            }
-            span.name {
-                span {
-                    animation: titleName $time * 2 $time * 8 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:before {
-                    animation: titleNameShape $time * 2 $time * 7 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-            .word {
-                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
-                &:nth-of-type(1) span {
-                    animation: titleWord $time * 2 $time * 5 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-of-type(2) span {
-                    animation: titleWord $time * 2 $time * 6 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-of-type(3) span {
-                    animation: titleWord $time * 2 $time * 7 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
-
-        // ----- blue-line and image-block -----
-        .image-block {
-            p { animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
-            &.up {
-                .gray::before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
-                .image-container {
-                    animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
-                    img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime * .25 both; }
-                    &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime * .25 both; }
-                }
-            }
-            &.down .image-container {
-                animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
-                img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
-                &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
-            }
-        }
-    }
-
-    // ----- animation down -----
-    &.previous, &.previous-back {
-        animation: slideDown $time * 3 $topPanelAnimationTime both;
-        animation-play-state: paused;
-
-        // ----- navigation-elements -----
-        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
-
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 9 both; }
-        
-        // ----- service-info -----
-        .service-info {
-            &.horizontal p { animation: fadeInUp $time * 2 $time * 7 both; }
-            &.vertical p { animation: fadeInDown $time * 2 $time * 7 both; }
-        }
-
-        // ----- other -----
-        .jumping-button { animation: fadeInUp $time * 2 $time * 8 both; }
-        .bottom-button {
-            span { animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both; }
-            .line { animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both; }
-        }
-        
-        // ----- info-block -----
-        .info-block {
-            animation: fadeInRight $time * 2 $time * 7 linear;
-            animation-fill-mode: forwards;
-        }
-
-        // ----- title -----
-        .title {
-            p {
-                animation: fadeInUp $time * 2 $time * 7 linear both;
-            }
-            span.name {
-                span {
-                    animation: titleName $time * 2 $time * 8 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:before {
-                    animation: titleNameShape $time * 2 $time * 7 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-            .word {
-                &:after { animation: halfDown $time * 2 linear $time * 4 both; }
-                &:nth-of-type(1) span {
-                    animation: titleWord $time * 2 $time * 5 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-of-type(2) span {
-                    animation: titleWord $time * 2 $time * 6 linear;
-                    animation-fill-mode: forwards;
-                }
-                &:nth-of-type(3) span {
-                    animation: titleWord $time * 2 $time * 7 linear;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
-
-        // ----- blue-line and image-block -----
-        .image-block {
-            p { animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both; }
-            &.up {
-                .gray::before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
-                .image-container {
-                    animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
-                    img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime * .25 both; }
-                    &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime * .25 both; }
-                }
-            }
-            &.down .image-container {
-                animation: shadowAppearance $portfolioEuroclubImageShadowAnimationTime $portfolioEuroclubImageShadowDelayTime both;
-                img { animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both; }
-                &:before { animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both; }
-            }
-        }
-    }
-    &.current-back { animation: none; }
-    &.previous-back { animation-play-state: running; }
-
-    // ----- bottom-button -----
-    // .bottom-button span:before { content: 'Все новости'; }
-
-    // ----- letter o -----
-    .big-background-letter {
-        top: 3vh;
-        z-index: 4;
-        right: 50vh;
-        color: $white;
-        font-size: 45vh;
-        span::before  { content: 'o'; }
-    }
-
-    // ----- title -----
     .title {
-        z-index: 4;
-        margin: 21vh 0 0 px(750);
-        .word:nth-of-type(2) { margin-bottom: 5px; }
-    }
-    .text-block {
-        font-family: $Raleway-Medium;
-        position: absolute;
-        padding: 5% 1vh 0;
-        font-size: px(28);
-        line-height: 1.5;
-        color: $white;
-        z-index: 1;
-        width: 29%;
-        right: 11%;
-        top: 20%;
+        margin: 21vh 0 0 140px;
+
+        .word {
+
+            span {
+                font-size: 27px;
+            }
+
+            &:after {
+                height: 17px;
+            }
+        }
     }
 
-    // ----- image-block -----
+    .big-background-letter {
+        top: 50vh;
+        left: 70vh;
+    }
+
     .image-block {
-        position: absolute;
-        height: px(1050);
-        width: px(1050);
-        .image-container {
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            position: relative;
-            box-shadow: 0 0 px(60) px(16) rgba(0,0,0,.3);
-            img {
-                z-index: 1;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                position: relative;
-            }
-            &:before {
-                height: 100%;
-                width: 100%;
-                z-index: 2;
-                content: '';
-                position: absolute;
-                background: $darkGray;
-                transform: translate3d(-90%, 90%, 0);
-            }
-        }
+        height: 350px;
+        width: 307px;
+
         &.up {
-            right: px(400);
-            z-index: 3;
-            top: 5vh;
+            right: 200px;
+
             p {
-                transform: rotate(90deg);
-                position: absolute;
-                font-size: px(34);
-                right: px(-325);
-                top: px(800);
-                color: $white;
-                transform-origin: 0 0;
-                font-family: $Roboto-Thin;
+                top: 213px;
             }
+
             .gray {
-                position: absolute;
-                overflow: hidden;
-                height: 100%;
-                width: 100%;
-                top: px(200);
-                right: px(-900);
-                &:before {
-                    height: 100%;
-                    width: 100%;
-                    z-index: 2;
-                    content: '';
-                    position: absolute;
-                    background: $darkGray;
-                    transform: translate3d(-90%, 90%, 0);
-                }
+                right: -82px;
+                height: 100px;
+                width: 100px;
+                top: 325px;
             }
         }
+
         &.down {
-            right: px(836);
-            top: px(860);
-            z-index: 4;
+            right: 300px;
+            top: 275px;
         }
     }
 
-    // ----- jump-button -----
-    .jumping-button a {
-        text-transform: uppercase;
-        &:before { background: $white; }
-        span {
-            color: $white;
-            font-size: px(25);
-            font-family: $Raleway-Medium;
-        }
-    }
-    
-    // ----- service-info -----
     .service-info {
-        position: absolute;
-        p {
-            font-family: $Roboto-Regular;
-            font-size: px(26);
-            line-height: 1.4;
-            color: $white;
-        }
+
         &.horizontal {
-            bottom: 14.5vh;
-            width: 250px;
-            left: 75px;
+            left: 40px;
         }
-        &.vertical {
-            transform: rotate(-90deg);
-            width: 135px;
-            &.one {
-                left: 20px;
-                top: 34.5vh;
-            }
+
+        &.vertical.one {
+            left: -10px;
         }
     }
 }

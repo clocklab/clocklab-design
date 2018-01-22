@@ -1,0 +1,49 @@
+.main-contacts {
+    background: $background;
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    .main-contacts-title {
+        padding: 7.5vh 0 6.6vh 4%;
+        width: 95%;
+        background-color: $lightBlack;
+
+        p {
+            font-weight: $extra-bold;
+
+            &:first-child {
+                color: $white;
+                font-size: 24px;
+                text-transform: uppercase;
+            }
+
+            &:last-child {
+                padding-top: 1vh;
+                color: $blue;
+                font-size: 17px;
+                text-align: left;
+            }
+        }
+    }
+
+    .main-contacts-info {
+        display: inherit;
+        margin: 4vh 0 0 2vh;
+
+        li {
+            margin-bottom: 4vh;
+            color: $darkWhite;
+            font-size: 13px;
+            line-height: .9;
+
+            a {
+                color: $white;
+            }
+
+            &:last-of-type {
+                display: block;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

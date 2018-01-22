@@ -5,6 +5,10 @@
 
     $container-width: 60%;
 
+    .social {
+        display: none;
+    }
+
     .lines {
         display: none;
     }
@@ -120,6 +124,29 @@
                         animation-delay: $services-page-first-column-delay;
                     }
                 }
+            }
+        }
+    }
+
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        width: 100vw;
+        height: 100vh;
+
+        .name {
+
+            &:before {
+                animation-name: titleNameShapeMobile;
+            }
+        }
+
+        .content {
+
+            &-list,
+            &-text {
+                display: none;
             }
         }
     }

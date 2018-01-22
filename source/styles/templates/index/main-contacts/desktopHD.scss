@@ -1,0 +1,201 @@
+.main-contacts {
+    background: $white;
+    box-shadow: 0 15px 50px 7px rgba(0, 0, 0, .3);
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    .big-background-letter {
+        top: -15vh;
+        right: 50vh;
+        z-index: 1;
+        font-size: 130vh;
+
+        span {
+
+            &:before {
+                content: 'o';
+            }
+        }
+    }
+
+    .back-layer {
+        position: absolute;
+        top: 32.5vh;
+        right: 1%;
+        z-index: 2;
+        width: 40%;
+        background-color: $lightBlack;
+        visibility: hidden;
+
+        form {
+            display: table;
+            position: relative;
+            padding: 0 130px 65px;
+            width: 100%;
+            color: $white;
+
+            .close-form {
+                display: none;
+            }
+        }
+    }
+
+    .main-contacts-title {
+        position: absolute;
+        top: 17vh;
+        z-index: 3;
+        padding: 6.5vh 9.5% 8.5vh 5.5%;
+        background-color: $lightBlack;
+
+        p {
+            font-family: $Raleway-ExtraBold;
+
+            &:first-child {
+                color: $white;
+                font-size: 59px;
+                line-height: 1.2;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+            }
+
+            &:last-child {
+                padding-top: 2.5vh;
+                color: $blue;
+                font-size: 30px;
+                text-align: right;
+            }
+        }
+    }
+
+    .main-contacts-info {
+        position: absolute;
+        bottom: 7vh;
+        left: 5.5%;
+
+        li {
+            margin-bottom: 3vh;
+            color: $darkGray;
+            font-size: 15px;
+
+            a {
+                color: $darkGray;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Right $time * 3 0s both;
+
+        .logo,
+        .menu {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .big-background-letter {
+            animation: fadeIn $time * 3 $time * 4 both;
+        }
+
+        .main-contacts-title {
+            animation: fadeInLeftMap $time * 3 $time * 3 both;
+        }
+
+        .main-contacts-info {
+
+            li {
+                &:nth-of-type(1) {
+                    animation: fadeInUp $time * 3 $time * 3 both;
+                }
+
+                &:nth-of-type(2) {
+                    animation: fadeInUp $time * 3 $time * 4 both;
+                }
+
+                &:nth-of-type(3) {
+                    animation: fadeInUp $time * 3 $time * 5 both;
+                }
+            }
+        }
+
+        .back-layer {
+            animation: mainConatactsMapRight $time * 3 $time * 3 linear;
+            animation-fill-mode: forwards;
+        }
+
+        .small-gray-lines {
+
+            .line {
+                animation: lineUp 1s $time * 4 both;
+
+                &.down {
+                    animation-name: lineDown;
+                }
+            }
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideLeft $time * 3 $topPanelAnimationTime both;
+        animation-play-state: paused;
+
+        .logo,
+        .menu {
+            animation: fadeInDown $time * 3 $time * 3 both;
+        }
+
+        .big-background-letter {
+            animation: fadeIn $time * 3 $time * 4 both;
+        }
+
+        .main-contacts-title {
+            animation: fadeInLeftMap $time * 3 $time * 3 both;
+        }
+
+        .main-contacts-info {
+
+            li {
+                &:nth-of-type(1) {
+                    animation: fadeInUp $time * 3 $time * 3 both;
+                }
+
+                &:nth-of-type(2) {
+                    animation: fadeInUp $time * 3 $time * 4 both;
+                }
+
+                &:nth-of-type(3) {
+                    animation: fadeInUp $time * 3 $time * 5 both;
+                }
+            }
+        }
+
+        .back-layer {
+            animation: mainConatactsMapRight $time * 3 $time * 3 forwards;
+        }
+
+        .small-gray-lines {
+
+            .line {
+                animation: lineUp 1s $time * 4 both;
+
+                &.down {
+                    animation-name: lineDown;
+                }
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
+    }
+}

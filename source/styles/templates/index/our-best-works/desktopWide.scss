@@ -1,0 +1,72 @@
+.our-best-works {
+
+    $paddingLeft: 250px;
+    $infoWidth: 300px;
+    $marginLeft: 225px;
+    $portfolioWidth: 575px;
+
+    .lines {
+
+        .line {
+
+            &--1 {
+                left: $paddingLeft;
+            }
+
+            &--2 {
+                left: $paddingLeft + $infoWidth;
+            }
+
+            &--3 {
+                left: $paddingLeft + $infoWidth + ($marginLeft + $portfolioWidth / 2) / 2;
+            }
+
+            &--4 {
+                left: $paddingLeft + $infoWidth + $marginLeft + $portfolioWidth / 2;
+            }
+
+            &--5 {
+                left: $paddingLeft + $infoWidth + $marginLeft * 3 / 2 + $portfolioWidth * 3 / 4;
+            }
+        }
+    }
+
+    .container {
+        padding-left: $paddingLeft;
+    }
+
+    .info {
+        width: $infoWidth;
+    }
+
+    .portfolio {
+        margin-left: $marginLeft;
+        width: $portfolioWidth;
+
+        &__item {
+            width: $portfolioWidth / 2;
+            height: $portfolioWidth / 2;
+
+            &--audi {
+                left: -30px;
+                top: -30px;
+            }
+
+            &--your-project {
+                left: 30px;
+                top: 30px;
+            }
+        }
+    }
+
+    .back {
+        padding: 15px;
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(20deg) scaleX(.8);
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.blog-three {
+    background: $white;
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    .service-info,
+    .small-gray-lines {
+        display: none;
+    }
+
+    .jump-button {
+
+        a {
+            text-transform: uppercase;
+
+            span {
+                color: $darkGray;
+                font-size: 14px;
+                font-weight: $medium;
+
+                &:nth-of-type(10) {
+                    margin-right: 5px;
+                }
+            }
+
+            &:before {
+                background: $darkGray;
+            }
+        }
+    }
+
+    .image-block {
+        position: relative;
+        z-index: 3;
+        margin-top: 120px;
+        width: 307px;
+        height: 150px;
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+            img {
+                position: relative;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &:before {
+                position: absolute;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                background: $darkGray;
+                content: '';
+                transform: translate3d(-90%, 90%, 0);
+            }
+        }
+
+        p {
+            box-sizing: border-box;
+            position: absolute;
+            top: -25px;
+            left: 125px;
+            width: 450px;
+            font-family: $roboto;
+            font-size: 13px;
+            line-height: 15px;
+            transform-origin: 0 0;
+        }
+    }
+
+    .title {
+        padding: 15% 25px 0;
+        width: 100%;
+
+        p {
+            padding: 7% 0 0;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .name {
+            top: -3.5vh;
+            left: 62px;
+            font-size: 13px;
+        }
+
+        .word {
+
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .special-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 25px;
+
+        a {
+            color: $darkGray;
+            text-transform: uppercase;
+        }
+    }
+}

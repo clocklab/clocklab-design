@@ -1,147 +1,23 @@
-& {
-    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    font-family: $Raleway-Regular;
-    background: $white;
-    overflow: hidden;
-    
-    // ----- animation right -----
-    &.current, &.current-back,
-    &.previous, &.previous-back {
-        animation: Right $time * 3 0s both;
+.main-contacts {
 
-        // ----- navigation-elements -----
-        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
-
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 4 both; }
-
-        // ----- main-contacts-title -----
-        .main-contacts-title { animation: fadeInLeftMap $time * 3 $time * 3 both; }
-
-        // ----- main-contacts-info -----
-        .main-contacts-info li {
-            &:nth-of-type(1) { animation: fadeInUp $time * 3 $time * 3 both; }
-            &:nth-of-type(2) { animation: fadeInUp $time * 3 $time * 4 both; }
-            &:nth-of-type(3) { animation: fadeInUp $time * 3 $time * 5 both; }
-        }
-
-        // ----- back-layer -----
-        .back-layer {
-            animation: mainConatactsMapRight $time * 3 $time * 3 linear;
-            animation-fill-mode: forwards;
-        }
-
-        // ----- small-gray-lines -----
-        .small-gray-lines .line {
-            animation: lineUp 1s $time * 4 both;
-            &.down { animation-name: lineDown; }
-        }
-    }
-
-    // ----- animation left -----
-    &.previous, &.previous-back {
-        animation: slideLeft $time * 3 $topPanelAnimationTime both;
-        animation-play-state: paused;
-
-        // ----- navigation-elements -----
-        .logo, .menu { animation: fadeInDown $time * 3 $time * 3 both; }
-
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 4 both; }
-
-        // ----- main-contacts-title -----
-        .main-contacts-title { animation: fadeInLeftMap $time * 3 $time * 3 both; }
-
-        // ----- main-contacts-info -----
-        .main-contacts-info li {
-            &:nth-of-type(1) { animation: fadeInUp $time * 3 $time * 3 both; }
-            &:nth-of-type(2) { animation: fadeInUp $time * 3 $time * 4 both; }
-            &:nth-of-type(3) { animation: fadeInUp $time * 3 $time * 5 both; }
-        }
-
-        // ----- back-layer -----
-        .back-layer {
-            animation: mainConatactsMapRight $time * 3 $time * 3 linear;
-            animation-fill-mode: forwards;
-        }
-
-        // ----- small-gray-lines -----
-        .small-gray-lines .line {
-            animation: lineUp 1s $time * 4 both;
-            &.down { animation-name: lineDown; }
-        }
-    }
-    &.current-back { animation: none; }
-    &.previous-back { animation-play-state: running; }
-    
-    // ----- big-background-letter -----
-    .big-background-letter {
-        z-index: 1;
-        top: -15vh;
-        right: 50vh;
-        font-size: 130vh;
-        span::before  { content: 'o'; }
-    }
-    
-    // ----- back-layer -----
-    .back-layer {
-        width: 40%;
-        z-index: 2;
-        visibility: hidden;
-        background-color: $lightBlack;
-        position: absolute;
-        top: 32.5vh;
-        right: 1%;
-        
-        // ----- form -----
-        form {
-            padding-bottom: px(130);
-            padding-right: px(260);
-            padding-left: px(260);
-            position: relative;
-            display: table;
-            color: $white;
-            width: 100%;
-            .close-form { display: none; }
-        }
-    }
-
-    // ----- main-contacts-title -----
     .main-contacts-title {
-        top: 17vh;
-        z-index: 3;
-        position: absolute;
-        background-color: $lightBlack;
-        padding: 6.5vh 9.5% 8.5vh 5.5%;
+        padding: 10.5vh 4.5% 8.5vh 5.5%;
+
         p {
-            font-family: $Raleway-ExtraBold;
+
             &:first-child {
-                color: $white;
-                line-height: 1.2;
-                font-size: px(118);
-                letter-spacing: 4px;
-                text-transform: uppercase;
-            }
-            &:last-child {
-                color: $blue;
-                font-size: px(60);
-                text-align: right;
-                padding-top: 2.5vh;
+                font-size: 50px;
             }
         }
     }
-    
-    // ----- main-contacts-info -----
-    .main-contacts-info {
-        position: absolute;
-        bottom: 7vh;
-        left: 5.5%;
-        li {
-            color: $darkGray;
-            font-size: px(30);
-            margin-bottom: 3vh;
-            a { color: $darkGray; }
-            &:last-of-type { margin-bottom: 0 }
+
+    .main-form {
+        top: 8%;
+        right: 4.5%;
+
+        form {
+            padding-right: 65px;
+            padding-left: 65px;
         }
     }
 }

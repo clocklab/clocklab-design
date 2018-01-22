@@ -1,0 +1,24 @@
+.blog-two {
+
+    .title {
+        margin: 20vh 0 0 137px;
+
+        .word {
+
+            span {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .image-block {
+
+        &.down {
+            right: 350px;
+        }
+    }
+
+    .big-background-letter {
+        right: 49vh;
+    }
+}
