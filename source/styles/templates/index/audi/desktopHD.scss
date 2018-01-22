@@ -1,17 +1,17 @@
-.audi-new {
+.audi {
     width: 100vw;
     height: 100vh;
     background: $white;
     font-size: 0;
 
-    img {
+    .audi-block-image {
         width: 100%;
         height: 100vh;
         min-height: 960px;
         object-fit: cover;
     }
 
-    #mirror {
+    .mirror {
         position: absolute;
         top: 0;
         z-index: 2;
@@ -23,50 +23,11 @@
         }
     }
 
-    .portfolio-client {
-
-        .client-name-container {
-
-            span {
-
-                &:before {
-                    content: 'Audi';
-                }
-            }
-        }
-    }
-
     .portfolio-right-panel {
 
         .date {
             margin-bottom: 150px;
-
-            &-month {
-
-                &:before {
-                    content: 'April';
-                }
-            }
-
-            &-year {
-                &:after {
-                    content: '2016';
-                }
-            }
         }
-    }
-
-    .project-name-container {
-        position: absolute;
-        top: 120px;
-        right: 240px;
-        z-index: 1;
-    }
-
-    .project-name {
-        display: block;
-        font-family: $Audi-Bold;
-        font-size: 250px;
     }
 
     .info {
@@ -84,10 +45,6 @@
             display: inline-block;
             color: $darkGray;
             text-transform: uppercase;
-
-            &:before {
-                content: 'Портфолио';
-            }
         }
 
         &:before {
@@ -101,6 +58,14 @@
             content: '';
             transform: translateY(-50%);
         }
+    }
+
+    .project-name {
+        display: block;
+        position: relative;
+        z-index: 1;
+        font-family: $Audi-Bold;
+        font-size: 250px;
     }
 
     .about-work {
