@@ -54,6 +54,7 @@ body {
 /---- DESKTOP HD ---- */
 /* -- home -- */
 @import 'templates/index/audi/desktopHD';
+@import 'templates/index/our-clients/desktopHD';
 // @import 'templates/index/our-best-works/desktopHD';
 // @import 'templates/index/main-contacts/desktopHD';
 // @import 'templates/index/blog-two/desktopHD';
@@ -61,7 +62,7 @@ body {
 /* -- home -- */
 /* -- services -- */
 @import 'templates/services/services/desktopHD';
-// -- services --
+/* -- services -- */
 /* ---- DESKTOP HD ---- */
 
 
@@ -71,6 +72,7 @@ body {
 @media (min-width: 1921px) {
     /* -- home -- */
     @import 'templates/index/audi/desktopMega';
+    // @import 'templates/index/our-clients/desktopMega';
     // @import 'templates/index/our-best-works/desktopMega';
     // @import 'templates/index/main-contacts/desktopMega';
     // @import 'templates/index/blog-two/desktopMega';
@@ -89,6 +91,7 @@ body {
 @media (max-width: 1680px) {
     /* -- home -- */
     @import 'templates/index/audi/desktopWide';
+    @import 'templates/index/our-clients/desktopWide';
     // @import 'templates/index/our-best-works/desktopWide';
     // @import 'templates/index/main-contacts/desktopWide';
     // @import 'templates/index/blog-two/desktopWide';
@@ -107,6 +110,7 @@ body {
 @media (max-width: 1366px) {
     /* -- home -- */
     @import 'templates/index/audi/desktop';
+    @import 'templates/index/our-clients/desktop';
     // @import 'templates/index/our-best-works/desktop';
     // @import 'templates/index/main-contacts/desktop';
     // @import 'templates/index/blog-two/desktop';
@@ -125,6 +129,7 @@ body {
 @media (max-width: 1024px) {
     /* -- home -- */
     @import 'templates/index/audi/tabletLandscape';
+    @import 'templates/index/our-clients/tabletLandscape';
     // @import 'templates/index/our-best-works/tabletLandscape';
     // @import 'templates/index/main-contacts/tabletLandscape';
     // @import 'templates/index/blog-two/tabletLandscape';
@@ -143,6 +148,7 @@ body {
 @media (max-width: 768px) {
     /* -- home -- */
     @import 'templates/index/audi/tabletPortrait';
+    @import 'templates/index/our-clients/tabletPortrait';
     // @import 'templates/index/our-best-works/tabletPortrait';
     // @import 'templates/index/main-contacts/tabletPortrait';
     // @import 'templates/index/blog-two/tabletPortrait';
@@ -161,6 +167,7 @@ body {
 @media (max-width: 667px) {
     /* -- home -- */
     @import 'templates/index/audi/phoneLandscape';
+    @import 'templates/index/our-clients/phoneLandscape';
     // @import 'templates/index/our-best-works/phoneLandscape';
     // @import 'templates/index/main-contacts/phoneLandscape';
     // @import 'templates/index/blog-two/phoneLandscape';
@@ -180,6 +187,7 @@ body {
 @media (max-width: 414px) {
     /* -- home -- */
     @import 'templates/index/audi/phonePortrait';
+    @import 'templates/index/our-clients/phonePortrait';
     // @import 'templates/index/our-best-works/phonePortrait';
     // @import 'templates/index/main-contacts/phonePortrait';
     // @import 'templates/index/blog-two/phonePortrait';

@@ -1,0 +1,22 @@
+.our-clients {
+
+    $container-width: 76%;
+
+    .lines,
+    .container {
+        width: $container-width;
+    }
+
+    .text-container {
+
+        span {
+            font-size: 24px;
+        }
+    }
+
+    .vertical-text {
+        left: 20px;
+        width: 350px;
+        line-height: 1.2;
+    }
+}

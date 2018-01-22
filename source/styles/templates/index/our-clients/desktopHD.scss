@@ -1,0 +1,192 @@
+.our-clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    min-height: 900px;
+    background: $lightBlack;
+    box-shadow: 0 15px 50px 7px rgba(0, 0, 0, .3);
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    $container-width: 62%;
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: calc((100% - $container-width) / 2);
+        width: $container-width;
+    }
+
+    .line {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100vh;
+        background: $darkGray;
+
+        &--1 {
+            left: -1px;
+        }
+
+        &--2 {
+            left: 25%;
+        }
+
+        &--3 {
+            left: 50%;
+        }
+
+        &--4 {
+            left: 75%;
+        }
+
+        &--5 {
+            left: 100%;
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        width: $container-width;
+    }
+
+    .sticker {
+
+        span {
+            color: $white;
+        }
+
+        &:before {
+            background: $white;
+        }
+    }
+
+    .new-title {
+        margin-top: 30px;
+    }
+
+    .text-container {
+
+        span {
+            color: $white;
+            font-size: 50px;
+            line-height: 1.1;
+        }
+    }
+
+    .clients {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .client {
+        margin-top: 50px;
+        width: 25%;
+    }
+
+    .vertical-text {
+        position: absolute;
+        bottom: 30.5vh;
+        left: 80px;
+        width: 300px;
+        color: $white;
+        font-family: $Roboto-Thin;
+        font-size: 14px;
+        line-height: 1.4;
+        transform-origin: 0 0;
+        transform: rotate(-90deg);
+    }
+
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Left $time * 3 0s both;
+
+        .line {
+            animation: Down $animation-time $animation-time-delay both;
+        }
+
+        .sticker {
+
+            span {
+                animation: titleName $animation-time $second-column-delay both;
+            }
+
+            &:before {
+                animation: fadeInRight $animation-time $first-column-delay both;
+            }
+        }
+
+        .text-container {
+
+            span {
+                animation: Up $animation-time $second-column-delay both;
+            }
+
+            &:before {
+                animation: halfDown $animation-time $first-column-delay both;
+            }
+        }
+
+        .client {
+            animation: fadeInUp $animation-time $second-column-delay both;
+        }
+
+        .vertical-text {
+            animation: fadeIn $animation-time $third-column-delay both;
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideRight $animation-time-delay $topPanelAnimationTime both;
+        animation-play-state: paused;
+
+        .line {
+            animation-play-state: paused;
+        }
+
+        .sticker {
+
+            span {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .text-container {
+
+            span {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .client {
+            animation-play-state: paused;
+        }
+
+        .vertical-text {
+            animation-play-state: paused;
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
+    }
+}

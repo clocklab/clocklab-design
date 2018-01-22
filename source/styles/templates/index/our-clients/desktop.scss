@@ -1,0 +1,38 @@
+.our-clients {
+    min-height: 650px;
+
+    $container-width: 68%;
+
+    .lines,
+    .container {
+        width: $container-width;
+    }
+
+    .container {
+        top: 25px;
+    }
+
+    .new-title {
+        margin-top: 15px;
+    }
+
+    .text-container {
+
+        span {
+            font-size: 30px;
+        }
+    }
+
+    .clients {
+        margin-top: 30px;
+    }
+
+    .client {
+        margin-top: 20px;
+    }
+
+    .vertical-text {
+        bottom: 10.5vh;
+        left: 30px;
+    }
+}

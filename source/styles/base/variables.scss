@@ -715,3 +715,17 @@ $services-page-second-column-delay: $services-page-first-column-delay + $service
 $services-page-third-column-delay: $services-page-second-column-delay + $services-page-animation-time;
 $services-page-fourth-column-delay: $services-page-third-column-delay + $services-page-animation-time;
 // SERVICES PAGE
+
+
+
+
+// INDEX PAGE (OUR CLIENTS TEMPLATE)
+$animation-time: $time * 2;
+$animation-time-delay: $time * 3;
+
+$first-column-delay: $animation-time + $time;
+$second-column-delay: $first-column-delay + $animation-time;
+$third-column-delay: $second-column-delay + $animation-time;
+$fourth-column-delay: $third-column-delay + $animation-time;
+$fifth-column-delay: $fourth-column-delay + $animation-time;
+// INDEX PAGE (OUR CLIENTS TEMPLATE)

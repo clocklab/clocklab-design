@@ -1,0 +1,18 @@
+.our-clients {
+
+    $container-width: 94%;
+
+    .lines,
+    .container {
+        width: $container-width;
+    }
+
+    .client {
+        margin-top: 10px;
+
+        img {
+            width: 80%;
+            height: 55px;
+        }
+    }
+}
