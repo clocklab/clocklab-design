@@ -1,0 +1,33 @@
+.audi {
+
+    .info {
+        margin-top: 50px;
+        margin-right: 5%;
+        width: 40%;
+    }
+
+    .project-name {
+        left: -60px;
+        font-size: 100px;
+    }
+
+    .about-work {
+        width: 100%;
+    }
+
+    .special-button {
+        margin: 35px auto;
+
+        &-text {
+            color: $darkGray;
+            transition: color $time;
+        }
+
+        &:hover {
+
+            .special-button-text {
+                color: $white;
+            }
+        }
+    }
+}
