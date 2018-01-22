@@ -1,0 +1,107 @@
+.clock {
+
+    @keyframes rotate {
+        100% {
+            transform: rotateZ(360deg);
+        }
+    }
+
+    background: $lightBlack;
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    .title {
+        position: absolute;
+        top: 125px;
+        left: 15px;
+
+        .word {
+            margin-bottom: 25px;
+            color: $white;
+            font-size: 24px;
+            font-weight: $bold;
+            line-height: 1.4;
+        }
+    }
+
+    .watch {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('../images/watch.png') no-repeat center;
+        background-size: 37%;
+    }
+
+    .hours-container,
+    .minutes-container,
+    .seconds-container {
+        display: inline-flex;
+        position: absolute;
+        top: .5%;
+        left: -17px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    .hours {
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 46%;
+        margin: auto;
+        width: 20px;
+        height: 60px;
+        background: url('../images/hours-hand.svg') no-repeat;
+        background-size: cover;
+        transform-origin: 60% 100%;
+    }
+
+    .minutes {
+        display: block;
+        position: absolute;
+        top: -34.5%;
+        left: 48%;
+        margin: auto;
+        width: 12px;
+        height: 252px;
+        background: url('../images/minutes-hand.svg') no-repeat;
+        background-size: cover;
+        transform-origin: 50% 100%;
+    }
+
+    .seconds {
+        display: block;
+        position: absolute;
+        top: 41.5%;
+        left: 46.5%;
+        z-index: 8;
+        margin: auto;
+        width: 20px;
+        height: 145px;
+        background: url('../images/seconds-hand.svg') no-repeat;
+        background-size: cover;
+        transform: rotateZ(0) !important;
+    }
+
+    .hours-container {
+        zoom: .4;
+        animation: rotate 43200s infinite linear;
+    }
+
+    .minutes-container {
+        zoom: .35;
+        transition: transform 0.3s cubic-bezier(.4, 2.08, .55, .44);
+    }
+
+    .seconds-container {
+        zoom: .4;
+        transition: transform 0.2s cubic-bezier(.4, 2.08, .55, .44);
+    }
+
+    .scroll {
+        display: none;
+    }
+}

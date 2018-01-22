@@ -1,166 +1,33 @@
-& {
-    box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
-    font-family: $Raleway-Regular;
-    background: $background;
-    overflow: hidden;
-    
-    // ----- animation fade -----
-    &.first-slide { animation: fadeIn $time * 3 0s both; }
-    &.current, &.current-back,
-    &.previous, &.previous-back {
-        animation: fadeIn $time * 3 0s both;
-        
-        // ----- big-background-letter -----
-        .big-background-letter { animation: fadeIn $time * 3 $time * 3 both; }
-        
-        // ----- navigation-elements -----
-        .logo, .menu, .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
-        .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
-        .scroll { animation: fadeInUp $time * 2 $time * 7 both; }
+.clock {
 
-        // ----- social -----
-        .social {
-            .instagram {  animation: social $time * 3 $time * 3 both; }
-            .facebook { animation: socialReverse $time * 3 $time * 3 both; }
-            .jumping-button { animation: fadeInRight $time * 3 $time * 3 both; }
-        }
-        
-        // ----- watch -----
-        .watch { animation: fadeIn $time * 2 $time * 4 both; }
-        .watch-shadow { animation: fadeIn $time * 2 $time * 5 both; }
-        .watch-light { animation: fadeIn $time * 2 $time * 6 both; }
-
-        // ----- title -----
-        .word:nth-of-type(1) .up {
-            animation: titleWord $time * 2 $time * 5 linear;
-            animation-fill-mode: forwards;
-        }
-        .word:nth-of-type(2) .down {
-            animation: titleWord $time * 2 $time * 6 linear;
-            animation-fill-mode: forwards;
-        }
-    }
-    &.current-back { animation: none; }
-    &.previous-back { animation-play-state: running; }
-    
-    // ----- letter c -----
     .big-background-letter {
-        top: -60vh;
-        right: 135vh;
-        font-size: 170vh;
-        color: rgba(68,68,68,.15);
-        span::before  { content: 'c'; }
+        top: -38vh;
+        right: 72vw;
+        font-size: 100vh;
     }
-    
-    // ----- scroll -----
+
     .scroll {
-        .circle { animation: bounce 2s 2s infinite; }
-        .arrow { animation: bounce 2s 2.03s infinite; }
+        bottom: 5vh;
     }
-    
-    // ----- title -----
+
+    .watch {
+        background-size: 25%;
+    }
+
     .title {
-        top: 25vh;
-        left: 23vh;
-        width: 25%;
-        z-index: 1;
-        position: absolute;
-        font-family: $Raleway-ExtraBold;
+        top: 18vh;
+        left: 9vh;
+        width: 45%;
+
         .word {
-            width: auto;
-            span, h1 {
-                text-transform: inherit;
-                white-space: normal;
-                font-size: px(106);
+
+            span {
+                font-size: 43px;
             }
-            &:after { display: none; }
-            &:last-of-type {
-                margin: 22px 0 0 5px;
-                .down {
-                    color: $blue;
-                    font-size: px(36);
-                    letter-spacing: 1px;
-                    font-family: $Roboto-Medium;
-                }
+
+            &:last-of-type span {
+                font-size: 15px;
             }
         }
     }
-    
-    // ----- watch -----
-    .watch-light {
-        top: 0;
-        left: px(-35);
-        background: url('../images/watch-light.png') no-repeat center;
-        background-size: cover;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-    }
-    .watch-shadow {
-        background: url('../images/watch-shadow.png') no-repeat center;
-        position: absolute;
-        height: 100%;
-        width: 100%;
-    }
-    .watch {
-        background: url('../images/watch.png') no-repeat center;
-        position: absolute;
-        margin: 0 auto;
-        height: 100%;
-        width: 100%;
-    }
-    .hours-container,
-    .minutes-container,
-    .seconds-container {
-        position: absolute;
-        left: px(-35);
-        margin: auto;
-        bottom: 0;
-        top: 0;
-        right: 0;
-        width: 300px;
-        height: 300px;
-        display: inline-flex;
-    }
-    .hours {
-        background: url('../images/hours-hand.svg') no-repeat;
-        transform-origin: 60% 100%;
-        background-size: cover;
-        position: absolute;
-        height: 60px;
-        top: 30%;
-        left: 46%;
-        width: 20px;
-        margin: auto;
-        display: block;
-    }
-    .minutes {
-        background: url('../images/minutes-hand.svg') no-repeat;
-        transform-origin: 50% 100%;
-        background-size: cover;
-        position: absolute;
-        height: 252px;
-        width: 12px;
-        top: -34.5%;
-        left: 48%;
-        margin: auto;
-        display: block;
-    }
-    .seconds {
-        background: url('../images/seconds-hand.svg') no-repeat;
-        transform: rotateZ(0) !important;
-        background-size: cover;
-        position: absolute;
-        height: 145px;
-        left: 46.5%;
-        top: 41.5%;
-        z-index: 8;
-        width: 20px;
-        margin: auto;
-        display: block;
-    }
-    .hours-container { animation: rotate 43200s infinite linear; }
-    .minutes-container { transition: transform 0.3s cubic-bezier(.4,2.08,.55,.44); }
-    .seconds-container { transition: transform 0.2s cubic-bezier(.4,2.08,.55,.44); }
-    @keyframes rotate { 100% { transform: rotateZ(360deg); } }
 }
