@@ -1,0 +1,47 @@
+.our-clients {
+    min-height: initial;
+
+    $container-width: 80%;
+
+    .lines,
+    .container {
+        width: $container-width;
+    }
+
+    .container {
+        top: 0;
+    }
+
+    .new-title {
+        margin-top: 0;
+    }
+
+    .text-container {
+        width: 90%;
+
+        span {
+            line-height: 1.2;
+        }
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .clients {
+        margin-top: 20px;
+    }
+
+    .client {
+        margin-top: 0;
+
+        img {
+            width: 70%;
+            height: 45px;
+        }
+    }
+
+    .vertical-text {
+        display: none;
+    }
+}

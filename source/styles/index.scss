@@ -167,6 +167,7 @@ body {
 @media (max-width: 667px) {
     /* -- home -- */
     @import 'templates/index/audi/phoneLandscape';
+    @import 'templates/index/our-clients/phoneLandscape';
     // @import 'templates/index/our-best-works/phoneLandscape';
     // @import 'templates/index/main-contacts/phoneLandscape';
     // @import 'templates/index/blog-two/phoneLandscape';
@@ -186,6 +187,7 @@ body {
 @media (max-width: 414px) {
     /* -- home -- */
     @import 'templates/index/audi/phonePortrait';
+    @import 'templates/index/our-clients/phonePortrait';
     // @import 'templates/index/our-best-works/phonePortrait';
     // @import 'templates/index/main-contacts/phonePortrait';
     // @import 'templates/index/blog-two/phonePortrait';
