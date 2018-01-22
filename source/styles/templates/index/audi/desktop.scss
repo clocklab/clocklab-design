@@ -1,6 +1,6 @@
-.audi-new {
+.audi {
 
-    img {
+    .audi-block-image {
         min-height: 650px;
     }
 
@@ -11,24 +11,19 @@
         }
     }
 
-    .project-name-container {
-        top: 85px;
-        right: 300px;
+    .info {
+        margin-top: 50px;
+        margin-right: 7%;
+        width: 35%;
     }
 
     .project-name {
+        left: -120px;
         font-size: 135px;
     }
 
-    .info {
-        top: 75px;
-        right: 150px;
-        width: 500px;
-    }
-
     .about-work {
-        margin-top: 135px;
-        width: 70%;
+        width: 85%;
 
         p {
             font-size: 20px;
@@ -36,7 +31,7 @@
     }
 
     .special-button {
-        margin-right: 45px;
+        margin-right: 100px;
         width: 200px;
     }
 }

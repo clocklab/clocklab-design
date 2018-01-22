@@ -1,34 +1,28 @@
-.audi-new {
+.audi {
 
-    img {
+    .audi-block-image {
         min-height: 800px;
     }
 
     .portfolio-right-panel {
 
         .date {
-            margin-bottom: 750px;
+            margin-bottom: 75px;
         }
     }
 
-    .project-name-container {
-        top: 125px;
-        right: 275px;
+    .info {
+        margin-top: 100px;
+        margin-right: 1%;
+        width: 40%;
     }
 
     .project-name {
+        left: -200px;
         font-size: 200px;
     }
 
-    .info {
-        top: 100px;
-        right: 150px;
-        width: 550px;
-    }
-
     .about-work {
-        margin-top: 225px;
-        width: 400px;
 
         p {
             font-size: 25px;

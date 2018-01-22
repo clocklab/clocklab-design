@@ -1,17 +1,20 @@
-.audi-new {
+.audi {
     width: 100vw;
     height: 100vh;
     background: $white;
     font-size: 0;
 
-    img {
+    .audi-block-image {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100vh;
         min-height: 960px;
         object-fit: cover;
     }
 
-    #mirror {
+    .mirror {
         position: absolute;
         top: 0;
         z-index: 2;
@@ -24,89 +27,37 @@
     }
 
     .portfolio-client {
-
-        .client-name-container {
-
-            span {
-
-                &:before {
-                    content: 'Audi';
-                }
-            }
-        }
+        color: $darkGray;
     }
 
     .portfolio-right-panel {
+        color: $darkGray;
 
         .date {
             margin-bottom: 150px;
-
-            &-month {
-
-                &:before {
-                    content: 'April';
-                }
-            }
-
-            &-year {
-                &:after {
-                    content: '2016';
-                }
-            }
         }
     }
 
-    .project-name-container {
-        position: absolute;
-        top: 120px;
-        right: 240px;
+    .info {
+        position: relative;
         z-index: 1;
+        margin: 90px 10% 0 auto;
+        width: 30%;
     }
 
     .project-name {
         display: block;
+        position: relative;
+        left: -240px;
+        z-index: 1;
         font-family: $Audi-Bold;
         font-size: 250px;
     }
 
-    .info {
-        position: absolute;
-        top: 90px;
-        right: 205px;
-        z-index: 3;
-        width: 680px;
-    }
-
-    .sticker {
-        font-size: 12px;
-
-        span {
-            display: inline-block;
-            color: $darkGray;
-            text-transform: uppercase;
-
-            &:before {
-                content: 'Портфолио';
-            }
-        }
-
-        &:before {
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: -60px;
-            width: 50px;
-            height: 3px;
-            background: $lightBlack;
-            content: '';
-            transform: translateY(-50%);
-        }
-    }
-
     .about-work {
-        margin-top: 272px;
+        margin-top: 40px;
         margin-left: auto;
-        width: 500px;
+        width: 80%;
 
         p {
             color: $white;
