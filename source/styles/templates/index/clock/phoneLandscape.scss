@@ -16,4 +16,21 @@
     .seconds-container {
         zoom: .4;
     }
+
+    .title {
+        top: 30%;
+        left: 10%;
+
+        .word {
+
+            .up {
+                font-size: 40px;
+            }
+
+            .down {
+                width: 50%;
+                font-size: 18px;
+            }
+        }
+    }
 }

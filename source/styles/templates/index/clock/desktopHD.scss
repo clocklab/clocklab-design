@@ -34,9 +34,11 @@
 
         .word {
             width: initial;
+            overflow: hidden;
 
             span,
             h1 {
+                display: block;
                 bottom: initial;
                 color: $white;
                 font-size: 53px;
@@ -175,6 +177,13 @@
 
         .scroll {
             animation: fadeIn $time * 2 $time * 7 both;
+        }
+
+        .copyright {
+
+            p {
+                animation: Up $time * 2 $time * 7 both;
+            }
         }
 
         .social {
