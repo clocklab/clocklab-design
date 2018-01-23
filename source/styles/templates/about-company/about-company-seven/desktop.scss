@@ -1,13 +1,31 @@
-@import '../desktop';
+.about-company-seven {
 
-.container .title {
-	margin-left: 0;
-	.word span { font-size: px(90); }
-} 
-.steps .step {
-	width: 50%;
-	.content {
-		.content-title { font-size: px(30); }
-		p { font-size: px(25); }
-	}
+    .container {
+
+        .title {
+            margin-left: 0;
+        }
+
+        .word {
+
+            span {
+                font-size: 45px;
+            }
+        }
+    }
+
+    .step {
+        width: 50%;
+
+        .content {
+
+            &-title {
+                font-size: 15px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+    }
 }

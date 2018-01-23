@@ -1,10 +1,24 @@
-@import '../desktop';
+.about-company-seven {
 
-.container .title .word span { font-size: px(90); }
-.steps .step {
-	width: 50%;
-	.content {
-		.content-title { font-size: px(40); }
-		p { font-size: px(30); }
-	}
+    .word {
+
+        span {
+            font-size: 45px;
+        }
+    }
+
+    .step {
+        width: 50%;
+
+        .content {
+
+            &-title {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
 }
