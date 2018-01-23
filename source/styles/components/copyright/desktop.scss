@@ -1,13 +1,7 @@
-& {
-    transform-origin: 100% 100%;
-    transform: rotate(-90deg);
-    position: absolute;
-    right: px(70);
-    bottom: 33vh;
-    z-index: 2;
+.copyright {
+    bottom: 45vh;
+
     p {
-        color: $white;
-        font-family: $Raleway-Thin;
-        font-size: px(29);
+        font-size: 14px;
     }
 }

@@ -1,0 +1,299 @@
+.clock {
+    box-shadow: 0 15px 50px 7px rgba(0, 0, 0, .3);
+    background: $background;
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    @keyframes rotate {
+        100% {
+            transform: rotateZ(360deg);
+        }
+    }
+
+    .big-background-letter {
+        top: -60vh;
+        right: 120vh;
+        color: rgba(68, 68, 68, .15);
+        font-size: 170vh;
+
+        span {
+
+            &:before {
+                content: 'c';
+            }
+        }
+    }
+
+    .title {
+        position: relative;
+        top: 25vh;
+        left: 23vh;
+        z-index: 1;
+        width: 30%;
+        font-family: $Raleway-ExtraBold;
+
+        .word {
+            width: initial;
+            overflow: hidden;
+
+            span,
+            h1 {
+                display: block;
+                bottom: initial;
+                color: $white;
+                font-size: 53px;
+                text-transform: inherit;
+                white-space: normal;
+            }
+
+            &:after {
+                display: none;
+            }
+
+            &:last-of-type {
+                margin: 22px 0 0 5px;
+
+                .down {
+                    color: $blue;
+                    font-family: $Roboto-Medium;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+
+    .watch-light {
+        position: absolute;
+        top: 0;
+        left: -17px;
+        width: 100%;
+        height: 100%;
+        background: url('../images/watch-light.png') no-repeat center;
+        background-size: cover;
+    }
+
+    .watch-shadow {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../images/watch-shadow.png') no-repeat center;
+    }
+
+    .watch {
+        position: absolute;
+        top: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        background: url('../images/watch.png') no-repeat center;
+    }
+
+    .hours-container,
+    .minutes-container,
+    .seconds-container {
+        display: inline-flex;
+        position: absolute;
+        top: 0;
+        left: -17px;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 300px;
+        height: 300px;
+    }
+
+    .hours {
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 46%;
+        margin: auto;
+        width: 20px;
+        height: 60px;
+        background: url('../images/hours-hand.svg') no-repeat;
+        background-size: cover;
+        transform-origin: 60% 100%;
+    }
+
+    .minutes {
+        display: block;
+        position: absolute;
+        top: -34.5%;
+        left: 48%;
+        margin: auto;
+        width: 12px;
+        height: 252px;
+        background: url('../images/minutes-hand.svg') no-repeat;
+        background-size: cover;
+        transform-origin: 50% 100%;
+    }
+
+    .seconds {
+        display: block;
+        position: absolute;
+        top: 41.5%;
+        left: 46.5%;
+        z-index: 8;
+        margin: auto;
+        width: 20px;
+        height: 145px;
+        background: url('../images/seconds-hand.svg') no-repeat;
+        background-size: cover;
+        transform: rotateZ(0) !important;
+    }
+
+    .hours-container {
+        animation: rotate 43200s infinite linear;
+    }
+
+    .minutes-container {
+        transition: transform 0.3s cubic-bezier(.4, 2.08, .55, .44);
+    }
+
+    .seconds-container {
+        transition: transform 0.2s cubic-bezier(.4, 2.08, .55, .44);
+    }
+
+    &.first-slide {
+        animation: fadeIn $time * 3 0s both;
+    }
+
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: fadeIn $time * 3 0s both;
+
+        .big-background-letter {
+            animation: fadeIn $time * 3 $time * 3 both;
+        }
+
+        .logo,
+        .menu {
+            animation: fadeInUp $time * 2 $time * 7 both;
+        }
+
+        .scroll {
+            animation: fadeIn $time * 2 $time * 7 both;
+        }
+
+        .copyright {
+
+            p {
+                animation: Up $time * 2 $time * 7 both;
+            }
+        }
+
+        .social {
+
+            .instagram {
+                animation: social $time * 3 $time * 3 both;
+            }
+
+            .facebook {
+                animation: socialReverse $time * 3 $time * 3 both;
+            }
+
+            .jumping-button {
+                animation: fadeInRight $time * 3 $time * 3 both;
+            }
+        }
+
+        .watch {
+            animation: fadeIn $time * 2 $time * 4 both;
+        }
+
+        .watch-shadow {
+            animation: fadeIn $time * 2 $time * 5 both;
+        }
+
+        .watch-light {
+            animation: fadeIn $time * 2 $time * 6 both;
+        }
+
+        .word {
+
+            &:nth-of-type(1) {
+
+                .up {
+                    animation: Up $time * 2 $time * 5 linear both;
+                }
+            }
+
+            &:nth-of-type(2) {
+
+                .down {
+                    animation: Up $time * 2 $time * 6 linear both;
+                }
+            }
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+
+        .big-background-letter {
+            animation-play-state: paused;
+        }
+
+        .logo,
+        .menu,
+        .scroll {
+            animation-play-state: paused;
+        }
+
+        .social {
+
+            .instagram {
+                animation-play-state: paused;
+            }
+
+            .facebook {
+                animation-play-state: paused;
+            }
+
+            .jumping-button {
+                animation-play-state: paused;
+            }
+        }
+
+        .watch {
+            animation-play-state: paused;
+        }
+
+        .watch-shadow {
+            animation-play-state: paused;
+        }
+
+        .watch-light {
+            animation-play-state: paused;
+        }
+
+        .word {
+
+            &:nth-of-type(1) {
+
+                .up {
+                    animation-play-state: paused;
+                }
+            }
+
+            &:nth-of-type(2) {
+
+                .down {
+                    animation-play-state: paused;
+                }
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
+    }
+}

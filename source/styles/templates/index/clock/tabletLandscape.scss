@@ -1,0 +1,30 @@
+.clock {
+
+    .watch-light,
+    .watch-shadow {
+        display: none;
+    }
+
+    .seconds-container,
+    .hours-container {
+        zoom: .65;
+    }
+
+    .minutes-container {
+        zoom: .6;
+    }
+
+    .watch {
+        background-size: 20%;
+    }
+
+    .title {
+        top: 175px;
+        left: 25px;
+
+        .word {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+    }
+}
