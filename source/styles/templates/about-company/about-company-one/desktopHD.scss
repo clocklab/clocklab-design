@@ -1,0 +1,142 @@
+& {
+    // box-shadow: 0 px(30) px(100) px(14) rgba(0,0,0,.3);
+    font-family: $Raleway-Regular;
+    position: relative;
+    min-height: auto;
+    overflow: hidden;
+    z-index: 1;
+    left: 0;
+    
+    // ----- bg-image -----
+    .bg-image { animation: fadeIn $time * 3 $time * 3 both; }
+
+    // ----- navigation-elements -----
+    .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
+    .copyright p { animation: fadeInUp $time * 3 $time * 3 both; }
+    .scroll { animation: fadeInUp $time * 2 $time * 7 both; }
+
+    // ----- networks -----
+    .networks { animation: fadeInRight $time * 3 $time * 3 both; }
+
+    // ----- shadow -----
+    .shadow div { animation: fadeIn $time * 3 $time * 3 both; }
+
+    // ----- title -----
+    .word:nth-of-type(1) span {
+        animation: titleWord $time * 2 $time * 5 linear;
+        animation-fill-mode: forwards;
+    }
+    .word:nth-of-type(2) span {
+        animation: titleWord $time * 2 $time * 6 linear;
+        animation-fill-mode: forwards;
+    }
+    .word:nth-of-type(3) span {
+        animation: titleWord $time * 2 $time * 7 linear;
+        animation-fill-mode: forwards;
+    }
+    .word:nth-of-type(4) span {
+        animation: titleWord $time * 2 $time * 8 linear;
+        animation-fill-mode: forwards;
+    }
+
+    // ----- animation fade -----
+    // &.current, &.current-back,
+    // &.previous, &.previous-back {
+    //     animation: fadeIn $time * 3 0s both;
+        
+    // }
+    // &.current-back { animation: none; }
+    // &.previous-back { animation-play-state: running; }
+
+    // ----- scroll -----
+    .scroll {
+        .circle { animation: bounce 2s 2s infinite; }
+        .arrow { animation: bounce 2s 2.03s infinite; }
+    }
+    
+    // ----- networks -----
+    .networks {
+        display: -webkit-inline-box;
+        position: absolute;
+        bottom: 7vh;
+        z-index: 5;
+        left: 23vh;
+        li {
+            margin-right: px(100);
+            &:last-of-type { margin-right: 0; }
+            a {
+                color: $white;
+                transition: $time;
+                font-size: px(50);
+                font-family: $Roboto-Regular;
+                &:hover { color: $blue; }
+            }
+        }
+    }
+    
+    // ----- bg-image -----
+    .bg-image {
+        height: 100%;
+        width: 100%;
+        img {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+    }
+
+    // ----- title -----
+    .title {
+        top: 25vh;
+        left: 23vh;
+        z-index: 1;
+        position: absolute;
+        font-family: $Raleway-ExtraBold;
+        .word { 
+            span {
+                text-transform: inherit;
+                font-size: px(106);
+            }
+            &:after { display: none; }
+            &:nth-of-type(1) span, &:nth-of-type(2) span {
+                font-family: $Raleway-Medium;
+                font-size: px(150);
+            }
+            &:nth-of-type(3) { margin: 22px 0 0 5px; }
+            &:nth-of-type(4) { margin: 0 0 0 5px; }
+            &:nth-of-type(3) span, &:nth-of-type(4) span {
+                color: $gray;
+                font-size: px(85);
+                letter-spacing: 1px;
+                font-family: $Roboto-Regular;
+            }
+        }
+    }
+
+    // ----- small-gray-lines -----
+    .small-gray-lines .line {
+        &:nth-of-type(1) {
+            left: 19vh;
+            top: 4vh;
+        }
+        &:nth-of-type(2) {
+            left: 101vh;
+            top: -12vh;
+        }
+        &:nth-of-type(3) {
+            right: 9vh;
+            top: 37vh;
+        }
+        &:nth-of-type(4) {
+            bottom: -10vh;
+            left: 30vh;
+        }
+        &:nth-of-type(5) {
+            bottom: 14vh;
+            right: 90vh;
+        }
+    }
+}
