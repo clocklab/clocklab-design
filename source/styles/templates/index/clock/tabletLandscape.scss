@@ -1,5 +1,10 @@
 .clock {
 
+    .watch-light,
+    .watch-shadow {
+        display: none;
+    }
+
     .seconds-container,
     .hours-container {
         zoom: .65;

@@ -164,6 +164,7 @@ body {
     /* -- COMPONENTS -- */
     /* -- COMPONENTS -- */
     /* -- HOME -- */
+    @import 'templates/index/clock/tabletPortrait';
     @import 'templates/index/audi/tabletPortrait';
     @import 'templates/index/our-clients/tabletPortrait';
     // @import 'templates/index/our-best-works/tabletPortrait';
@@ -186,6 +187,7 @@ body {
     @import 'components/copyright/phoneLandscape';
     /* -- COMPONENTS -- */
     /* -- HOME -- */
+    @import 'templates/index/clock/phoneLandscape';
     @import 'templates/index/audi/phoneLandscape';
     @import 'templates/index/our-clients/phoneLandscape';
     // @import 'templates/index/our-best-works/phoneLandscape';
@@ -208,6 +210,7 @@ body {
     /* -- COMPONENTS -- */
     /* -- COMPONENTS -- */
     /* -- HOME -- */
+    @import 'templates/index/clock/phonePortrait';
     @import 'templates/index/audi/phonePortrait';
     @import 'templates/index/our-clients/phonePortrait';
     // @import 'templates/index/our-best-works/phonePortrait';
