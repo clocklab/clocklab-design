@@ -24,17 +24,6 @@
         }
     }
 
-    .scroll {
-
-        .circle {
-            animation: bounce 2s 2s infinite;
-        }
-
-        .arrow {
-            animation: bounce 2s 2.03s infinite;
-        }
-    }
-
     .title {
         position: absolute;
         top: 25vh;
@@ -101,7 +90,7 @@
         display: inline-flex;
         position: absolute;
         top: 0;
-        left: px(-35);
+        left: -17px;
         bottom: 0;
         right: 0;
         margin: auto;
@@ -176,9 +165,12 @@
         }
 
         .logo,
-        .menu,
-        .scroll {
+        .menu {
             animation: fadeInUp $time * 2 $time * 7 both;
+        }
+
+        .scroll {
+            animation: fadeIn $time * 2 $time * 7 both;
         }
 
         .social {
@@ -208,19 +200,80 @@
             animation: fadeIn $time * 2 $time * 6 both;
         }
 
-        .word:nth-of-type(1) {
+        .word {
 
-            .up {
-                animation: titleWord $time * 2 $time * 5 linear;
-                animation-fill-mode: forwards;
+            &:nth-of-type(1) {
+
+                .up {
+                    animation: titleWord $time * 2 $time * 5 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            &:nth-of-type(2) {
+
+                .down {
+                    animation: titleWord $time * 2 $time * 6 linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+
+        .big-background-letter {
+            animation-play-state: paused;
+        }
+
+        .logo,
+        .menu,
+        .scroll {
+            animation-play-state: paused;
+        }
+
+        .social {
+
+            .instagram {
+                animation-play-state: paused;
+            }
+
+            .facebook {
+                animation-play-state: paused;
+            }
+
+            .jumping-button {
+                animation-play-state: paused;
             }
         }
 
-        .word:nth-of-type(2) {
+        .watch {
+            animation-play-state: paused;
+        }
 
-            .down {
-                animation: titleWord $time * 2 $time * 6 linear;
-                animation-fill-mode: forwards;
+        .watch-shadow {
+            animation-play-state: paused;
+        }
+
+        .watch-light {
+            animation-play-state: paused;
+        }
+
+        .word {
+
+            &:nth-of-type(1) {
+
+                .up {
+                    animation-play-state: paused;
+                }
+            }
+
+            &:nth-of-type(2) {
+
+                .down {
+                    animation-play-state: paused;
+                }
             }
         }
     }

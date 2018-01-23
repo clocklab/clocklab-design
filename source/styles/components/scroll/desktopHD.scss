@@ -1,0 +1,33 @@
+.scroll {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 5vh;
+    z-index: 1;
+    padding: 35px 10px 5px;
+    transform: translateX(-50%);
+
+    .circle {
+        position: relative;
+        left: 3px;
+        width: 4px;
+        height: 4px;
+        background: $white;
+        border-radius: 50px;
+        animation: bounce 2s 2s infinite;
+    }
+
+    .arrow {
+        margin-top: 10px;
+        animation: bounce 2s 2.03s infinite;
+
+        &-inner {
+            width: 10px;
+            height: 10px;
+            border: 1.5px solid $white;
+            border-top: 0;
+            border-left: 0;
+            transform: rotate(45deg);
+        }
+    }
+}
