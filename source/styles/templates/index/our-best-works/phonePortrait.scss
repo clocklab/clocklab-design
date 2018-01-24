@@ -1,0 +1,20 @@
+.our-best-works {
+
+    .container {
+        padding-top: 20vh;
+        width: 94%;
+    }
+
+    .info {
+        width: 80%;
+    }
+
+    .portfolio {
+        margin-top: 30px;
+        height: initial;
+
+        &__item {
+            width: 45%;
+        }
+    }
+}

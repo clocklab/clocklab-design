@@ -1,14 +1,76 @@
 .our-best-works {
 
-    .portfolio {
+    $portfolio-width: 65%;
+    $delta: 15px;
+    $info-width: 27%;
 
-        &__item {
-            margin: 25px auto;
-            width: 60%;
+    .container {
+        width: 83%;
+    }
+
+    .lines {
+
+        .line {
+
+            &--2 {
+                left: $info-width;
+            }
+
+            &--3 {
+                right: calc(#{$portfolio-width} - #{$delta * 2});
+            }
+
+            &--4 {
+                right: $portfolio-width / 2;
+            }
+
+            &--5 {
+                right: $delta * 2;
+            }
         }
     }
 
-    .image-container {
-        height: 300px;
+    .info {
+        width: $info-width;
+    }
+
+    .new-title {
+        margin-top: 20px;
+
+        .text-container {
+
+            span {
+                font-size: 36px;
+            }
+        }
+    }
+
+    .special-button {
+        margin-top: 30px;
+        font-family: $Roboto-Medium;
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+
+    .portfolio {
+        width: $portfolio-width;
+
+        &__item {
+
+            &--audi {
+                left: -$delta;
+                top: -$delta;
+            }
+
+            &--your-project {
+                left: $delta;
+                top: $delta;
+            }
+        }
+    }
+
+    .project-name {
+        padding: 10px;
+        font-size: 22px;
     }
 }

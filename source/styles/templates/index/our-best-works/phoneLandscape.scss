@@ -1,40 +1,100 @@
 .our-best-works {
-    padding: 50px 15px 0;
-    color: $darkGray;
-    font-family: $Raleway-Bold;
-    font-size: 24px;
-    line-height: 1.4;
 
-    .back-layer,
-    .back {
+    min-height: initial;
+
+    .front-layer,
+    .back-layer {
+        min-height: initial;
+    }
+
+    .container {
+        display: block;
+        padding-top: 40px;
+        width: 90%;
+    }
+
+    .lines {
         display: none;
     }
 
-    a {
-        color: $blue;
+    .info {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
     }
 
-    .portfolio {
-        margin-top: 50px;
+    .new-title {
+        margin-top: 0;
 
-        &__item {
-            display: block;
-            margin-bottom: 25px;
+        .text-container {
 
-            &--your-project {
-                display: none;
+            span {
+                font-size: 28px;
             }
         }
     }
 
-    .image-container {
-        width: 100%;
-        height: 150px;
+    .special-button {
+        margin-top: 15px;
+        font-size: 14px;
+    }
 
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+    .portfolio {
+        justify-content: space-around;
+        margin-top: 40px;
+        width: 100%;
+        height: 100%;
+
+        &__item {
+            margin-bottom: 20px;
+            width: 23%;
+            height: 150px;
+
+            &--audi {
+                left: initial;
+                top: initial;
+
+                .project-name {
+                    top: 0;
+                    left: initial;
+                }
+            }
+
+            &--dela {
+
+                .project-name {
+                    top: 0;
+                    right: initial;
+                }
+            }
+
+            &--euro-club {
+
+                .project-name {
+                    bottom: initial;
+                    top: 0;
+                    left: initial;
+                }
+            }
+
+            &--your-project {
+                top: 0;
+                left: initial;
+
+                .project-name {
+                    bottom: initial;
+                    top: 0;
+                    right: initial;
+                }
+            }
         }
+    }
+
+    .project-name {
+        position: absolute;
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        text-align: center;
     }
 }
