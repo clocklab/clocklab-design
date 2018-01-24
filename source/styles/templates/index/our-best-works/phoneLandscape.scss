@@ -1,0 +1,100 @@
+.our-best-works {
+
+    min-height: initial;
+
+    .front-layer,
+    .back-layer {
+        min-height: initial;
+    }
+
+    .container {
+        display: block;
+        padding-top: 40px;
+        width: 90%;
+    }
+
+    .lines {
+        display: none;
+    }
+
+    .info {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    .new-title {
+        margin-top: 0;
+
+        .text-container {
+
+            span {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .special-button {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .portfolio {
+        justify-content: space-around;
+        margin-top: 40px;
+        width: 100%;
+        height: 100%;
+
+        &__item {
+            margin-bottom: 20px;
+            width: 23%;
+            height: 150px;
+
+            &--audi {
+                left: initial;
+                top: initial;
+
+                .project-name {
+                    top: 0;
+                    left: initial;
+                }
+            }
+
+            &--dela {
+
+                .project-name {
+                    top: 0;
+                    right: initial;
+                }
+            }
+
+            &--euro-club {
+
+                .project-name {
+                    bottom: initial;
+                    top: 0;
+                    left: initial;
+                }
+            }
+
+            &--your-project {
+                top: 0;
+                left: initial;
+
+                .project-name {
+                    bottom: initial;
+                    top: 0;
+                    right: initial;
+                }
+            }
+        }
+    }
+
+    .project-name {
+        position: absolute;
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        text-align: center;
+    }
+}
