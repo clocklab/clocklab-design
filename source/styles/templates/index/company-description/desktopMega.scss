@@ -1,0 +1,13 @@
+.company-description {
+
+    .container {
+        width: 62%;
+    }
+
+    .image-container {
+
+        &:first-of-type {
+            max-height: 1000px;
+        }
+    }
+}

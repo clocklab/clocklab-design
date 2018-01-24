@@ -1,0 +1,26 @@
+.company-description {
+
+    .phrase {
+        font-size: 34px;
+    }
+
+    .phrase-description {
+        font-size: 18px;
+    }
+
+    .image-container {
+
+        &:first-of-type {
+            height: 60%;
+        }
+
+        &:last-of-type {
+            bottom: 15vh;
+            width: 40%;
+        }
+    }
+
+    .rotated-text {
+        top: 350px;
+    }
+}

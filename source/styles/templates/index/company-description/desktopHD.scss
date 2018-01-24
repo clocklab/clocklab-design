@@ -1,0 +1,302 @@
+.company-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    min-height: 900px;
+    background: $white;
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    .big-background-letter {
+        top: 28vh;
+        left: -100px;
+        right: initial;
+        color: rgba(68, 68, 68, .1);
+        font-size: 85vh;
+        text-transform: lowercase;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 3;
+        width: 80%;
+        height: 100%;
+    }
+
+    .texts {
+        position: relative;
+        z-index: 4;
+        width: 45%;
+    }
+
+    .phrases-container {
+        margin-top: 20px;
+    }
+
+    .phrase {
+        display: inline-block;
+        color: $blue;
+        font-family: $Raleway-Bold;
+        font-size: 85px;
+        line-height: .9;
+    }
+
+    .phrase-translation {
+        margin-top: 40px;
+        color: $gray;
+        font-family: $Raleway-Medium;
+        font-size: 50px;
+    }
+
+    .phrase-description {
+        margin-top: 60px;
+        font-family: $Roboto-Regular;
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .crossed-button {
+        position: relative;
+        float: right;
+        margin: 100px 0 0 -10px;
+
+        span {
+            color: $blue;
+            font-size: 20px;
+
+            &:before {
+                background: $blue;
+            }
+
+            &:after {
+                content: '';
+            }
+        }
+
+        .arrow-container {
+
+            .st0,
+            .st1 {
+                stroke: $blue;
+            }
+        }
+    }
+
+    .images {
+        width: 55%;
+        height: 100%;
+    }
+
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        font-size: 0;
+
+        img {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:first-of-type {
+            position: relative;
+            left: -10%;
+            width: 100%;
+            height: 100%;
+            max-height: 900px;
+            min-height: 700px;
+
+            &:after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 3;
+                width: 20%;
+                height: 85%;
+                background: $white;
+                content: '';
+            }
+        }
+
+        &:last-of-type {
+            position: absolute;
+            right: 0;
+            bottom: 10vh;
+            z-index: 2;
+        }
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            background: $darkGray;
+            content: '';
+        }
+    }
+
+    .rotated-text {
+        position: absolute;
+        top: 400px;
+        right: 90px;
+        z-index: 2;
+        width: 200px;
+        transform-origin: 100% 0;
+        transform: rotate(90deg);
+
+        p {
+            font-size: 12px;
+            line-height: 1.4;
+        }
+    }
+
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Up $time * 3 0s both;
+
+        .big-background-letter {
+            animation: fadeIn $animation-time $fifth-column-delay both;
+        }
+
+        .sticker {
+
+            span {
+                animation: fadeInRight $animation-time $second-column-delay both;
+            }
+
+            &:before {
+                animation: fadeInRight $animation-time $first-column-delay both;
+            }
+        }
+
+        .phrase {
+            animation: fadeInUp $animation-time $first-column-delay both;
+        }
+
+        .phrase-translation {
+            animation: fadeInUp $animation-time $second-column-delay both;
+        }
+
+        .phrase-description {
+            animation: fadeInUp $animation-time $third-column-delay both;
+        }
+
+        .crossed-button {
+            animation: fadeInRight $animation-time $fourth-column-delay both;
+        }
+
+        .image-container {
+
+            img {
+                animation: imageApear $animation-time linear both;
+            }
+
+            &:before {
+                animation: beforeApear $animation-time * 2 linear both;
+            }
+
+            &:first-of-type {
+
+                img {
+                    animation-delay: $first-column-delay;
+                }
+
+                &:before {
+                    animation-delay: $first-column-delay;
+                }
+            }
+
+            &:last-of-type {
+
+                img {
+                    animation-delay: $third-column-delay;
+                }
+
+                &:before {
+                    animation-delay: $third-column-delay;
+                }
+            }
+        }
+
+        .rotated-text {
+
+            p {
+                animation: fadeInUp $animation-time $fourth-column-delay both;
+            }
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideDown $time * 3 $topPanelAnimationTime both;
+        animation-play-state: paused;
+
+        .big-background-letter {
+            animation-play-state: paused;
+        }
+
+        .sticker {
+
+            span {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .phrase {
+            animation-play-state: paused;
+        }
+
+        .phrase-translation {
+            animation-play-state: paused;
+        }
+
+        .phrase-description {
+            animation-play-state: paused;
+        }
+
+        .crossed-button {
+            animation-play-state: paused;
+        }
+
+        .image-container {
+
+            img {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .rotated-text {
+
+            p {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
+    }
+}

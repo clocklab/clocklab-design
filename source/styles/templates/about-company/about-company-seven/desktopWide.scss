@@ -1,0 +1,24 @@
+.about-company-seven {
+
+    .word {
+
+        span {
+            font-size: 45px;
+        }
+    }
+
+    .step {
+        width: 50%;
+
+        .content {
+
+            &-title {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
