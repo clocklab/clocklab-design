@@ -55,6 +55,7 @@ body {
 /* -- COMPONENTS -- */
 /* -- HOME -- */
 @import 'templates/index/clock/desktopHD';
+@import 'templates/index/company-description/desktopHD';
 @import 'templates/index/audi/desktopHD';
 @import 'templates/index/our-clients/desktopHD';
 // @import 'templates/index/our-best-works/desktopHD';
@@ -76,6 +77,7 @@ body {
     /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/desktopMega';
+    @import 'templates/index/company-description/desktopMega';
     @import 'templates/index/audi/desktopMega';
     // @import 'templates/index/our-clients/desktopMega';
     // @import 'templates/index/our-best-works/desktopMega';
@@ -98,6 +100,7 @@ body {
     /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/desktopWide';
+    @import 'templates/index/company-description/desktopWide';
     @import 'templates/index/audi/desktopWide';
     @import 'templates/index/our-clients/desktopWide';
     // @import 'templates/index/our-best-works/desktopWide';
@@ -121,6 +124,7 @@ body {
     /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/desktop';
+    @import 'templates/index/company-description/desktop';
     @import 'templates/index/audi/desktop';
     @import 'templates/index/our-clients/desktop';
     // @import 'templates/index/our-best-works/desktop';
@@ -143,6 +147,7 @@ body {
     /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/tabletLandscape';
+    @import 'templates/index/company-description/tabletLandscape';
     @import 'templates/index/audi/tabletLandscape';
     @import 'templates/index/our-clients/tabletLandscape';
     // @import 'templates/index/our-best-works/tabletLandscape';
@@ -165,6 +170,7 @@ body {
     /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/tabletPortrait';
+    @import 'templates/index/company-description/tabletPortrait';
     @import 'templates/index/audi/tabletPortrait';
     @import 'templates/index/our-clients/tabletPortrait';
     // @import 'templates/index/our-best-works/tabletPortrait';
@@ -188,6 +194,7 @@ body {
     /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/phoneLandscape';
+    @import 'templates/index/company-description/phoneLandscape';
     @import 'templates/index/audi/phoneLandscape';
     @import 'templates/index/our-clients/phoneLandscape';
     // @import 'templates/index/our-best-works/phoneLandscape';

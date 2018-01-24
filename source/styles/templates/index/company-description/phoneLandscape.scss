@@ -1,0 +1,38 @@
+.company-description {
+    min-height: initial;
+
+    .container {
+        height: 100%;
+    }
+
+    .texts {
+        width: 100%;
+    }
+
+    .phrase {
+        font-size: 30px;
+    }
+
+    .phrase-translation {
+        font-size: 22px;
+    }
+
+    .phrase-description {
+        font-size: 16px;
+    }
+
+    .crossed-button {
+
+        span {
+            font-size: 15px;
+        }
+    }
+
+    .images {
+        display: none;
+    }
+
+    .rotated-text {
+        display: none;
+    }
+}

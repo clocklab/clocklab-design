@@ -1,0 +1,44 @@
+.company-description {
+    min-height: 650px;
+
+    .phrase {
+        font-size: 50px;
+    }
+
+    .phrase-translation {
+        margin-top: 20px;
+        font-size: 26px;
+    }
+
+    .phrase-description {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .crossed-button {
+        margin-top: 30px;
+
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .image-container {
+
+        &:first-of-type {
+            height: 90%;
+            max-height: 700px;
+            min-height: 500px;
+        }
+
+        &:last-of-type {
+            bottom: 5vh;
+            width: 35%;
+        }
+    }
+
+    .rotated-text {
+        right: 30px;
+        top: 300px;
+    }
+}
