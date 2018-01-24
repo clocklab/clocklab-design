@@ -1,117 +1,102 @@
 .our-best-works {
 
-    $paddingLeft: 200px;
-    $infoWidth: 250px;
-    $marginLeft: 160px;
-    $portfolioWidth: 500px;
+    $portfolio-width: 58%;
+    $info-width: 25%;
+    $delta: 20px;
 
+    .front-layer,
     .back-layer {
-        padding-right: 40px;
+        min-height: 650px;
+    }
+
+    .container {
+        width: 83%;
     }
 
     .lines {
 
         .line {
 
-            &--1 {
-                left: $paddingLeft;
-            }
-
             &--2 {
-                left: $paddingLeft + $infoWidth;
+                left: $info-width;
             }
 
             &--3 {
-                left: $paddingLeft + $infoWidth + ($marginLeft + $portfolioWidth / 2) / 2;
+                right: calc(#{$portfolio-width} - #{$delta});
             }
 
             &--4 {
-                left: $paddingLeft + $infoWidth + $marginLeft + $portfolioWidth / 2;
+                right: $portfolio-width / 2;
             }
 
             &--5 {
-                left: $paddingLeft + $infoWidth + $marginLeft * 3 / 2 + $portfolioWidth * 3 / 4;
+                right: $delta;
             }
         }
     }
 
-    .container {
-        padding-left: $paddingLeft;
-    }
-
     .info {
-        width: $infoWidth;
+        width: $info-width;
     }
 
     .new-title {
-        margin-top: 15px;
+        margin-top: 20px;
 
         .text-container {
 
             span {
                 font-size: 50px;
+                line-height: 1.1;
             }
         }
     }
 
     .special-button {
-        margin-top: 45px;
+        margin-top: 50px;
+        height: 45px;
+        line-height: 45px;
         letter-spacing: 1px;
     }
 
     .portfolio {
-        margin-left: $marginLeft;
-        width: $portfolioWidth;
+        width: $portfolio-width;
 
         &__item {
-            width: $portfolioWidth / 2;
-            height: $portfolioWidth / 2;
+            height: 210px;
 
             &--audi {
-                left: -40px;
-                top: -20px;
-
-                .project-name {
-                    left: -60px;
-                }
+                left: -$delta;
+                top: -$delta;
             }
 
             &--dela {
 
                 .project-name {
-                    right: -100px;
+                    right: -30px;
                 }
             }
 
             &--euro-club {
 
                 .project-name {
-                    left: -125px;
+                    left: -75px;
                 }
             }
 
             &--your-project {
-                left: 40px;
-                top: 20px;
+                left: $delta;
+                top: $delta;
 
                 .project-name {
-                    right: -150px;
+                    right: -20px;
                 }
             }
         }
     }
 
-    .back {
-        padding: 15px;
-    }
-
     .project-name {
-        padding: 10px 25px;
-        font-size: 35px;
-    }
-
-    .bottom-button {
-        bottom: 15px;
+        padding: 10px 20px;
+        font-size: 34px;
     }
 
     &.opened {

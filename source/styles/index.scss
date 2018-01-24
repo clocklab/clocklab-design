@@ -38,13 +38,6 @@ body {
 @import 'components/languages/main';
 /* в дальнейшем свести к одному */
 
-// ***** MAIN PAGE *****
-// @import 'templates/index/clock/main';
-
-// ***** ABOUT COMPANY PAGE ****
-// @import 'templates/about-company/about-company-two/main';
-
-
 
 /*
 /
@@ -57,8 +50,8 @@ body {
 @import 'templates/index/clock/desktopHD';
 @import 'templates/index/company-description/desktopHD';
 @import 'templates/index/audi/desktopHD';
+@import 'templates/index/our-best-works/desktopHD';
 @import 'templates/index/our-clients/desktopHD';
-// @import 'templates/index/our-best-works/desktopHD';
 // @import 'templates/index/main-contacts/desktopHD';
 // @import 'templates/index/blog-two/desktopHD';
 // @import 'templates/index/blog-three/desktopHD';
@@ -79,8 +72,7 @@ body {
     @import 'templates/index/clock/desktopMega';
     @import 'templates/index/company-description/desktopMega';
     @import 'templates/index/audi/desktopMega';
-    // @import 'templates/index/our-clients/desktopMega';
-    // @import 'templates/index/our-best-works/desktopMega';
+    @import 'templates/index/our-best-works/desktopMega';
     // @import 'templates/index/main-contacts/desktopMega';
     // @import 'templates/index/blog-two/desktopMega';
     // @import 'templates/index/blog-three/desktopMega';
@@ -102,8 +94,8 @@ body {
     @import 'templates/index/clock/desktopWide';
     @import 'templates/index/company-description/desktopWide';
     @import 'templates/index/audi/desktopWide';
+    @import 'templates/index/our-best-works/desktopWide';
     @import 'templates/index/our-clients/desktopWide';
-    // @import 'templates/index/our-best-works/desktopWide';
     // @import 'templates/index/main-contacts/desktopWide';
     // @import 'templates/index/blog-two/desktopWide';
     // @import 'templates/index/blog-three/desktopWide';
@@ -126,8 +118,8 @@ body {
     @import 'templates/index/clock/desktop';
     @import 'templates/index/company-description/desktop';
     @import 'templates/index/audi/desktop';
+    @import 'templates/index/our-best-works/desktop';
     @import 'templates/index/our-clients/desktop';
-    // @import 'templates/index/our-best-works/desktop';
     // @import 'templates/index/main-contacts/desktop';
     // @import 'templates/index/blog-two/desktop';
     // @import 'templates/index/blog-three/desktop';
@@ -149,8 +141,8 @@ body {
     @import 'templates/index/clock/tabletLandscape';
     @import 'templates/index/company-description/tabletLandscape';
     @import 'templates/index/audi/tabletLandscape';
-    @import 'templates/index/our-clients/tabletLandscape';
     // @import 'templates/index/our-best-works/tabletLandscape';
+    @import 'templates/index/our-clients/tabletLandscape';
     // @import 'templates/index/main-contacts/tabletLandscape';
     // @import 'templates/index/blog-two/tabletLandscape';
     // @import 'templates/index/blog-three/tabletLandscape';
@@ -172,14 +164,13 @@ body {
     @import 'templates/index/clock/tabletPortrait';
     @import 'templates/index/company-description/tabletPortrait';
     @import 'templates/index/audi/tabletPortrait';
-    @import 'templates/index/our-clients/tabletPortrait';
     // @import 'templates/index/our-best-works/tabletPortrait';
+    @import 'templates/index/our-clients/tabletPortrait';
     // @import 'templates/index/main-contacts/tabletPortrait';
     // @import 'templates/index/blog-two/tabletPortrait';
     // @import 'templates/index/blog-three/tabletPortrait';
     /* -- HOME -- */
     /* -- SERVICES -- */
-    // @import 'templates/services/services/tabletPortrait';
     /* -- SERVICES -- */
 }
 /* ---- TABLET PORTRAIT ---- */
@@ -196,8 +187,8 @@ body {
     @import 'templates/index/clock/phoneLandscape';
     @import 'templates/index/company-description/phoneLandscape';
     @import 'templates/index/audi/phoneLandscape';
-    @import 'templates/index/our-clients/phoneLandscape';
     // @import 'templates/index/our-best-works/phoneLandscape';
+    @import 'templates/index/our-clients/phoneLandscape';
     // @import 'templates/index/main-contacts/phoneLandscape';
     // @import 'templates/index/blog-two/phoneLandscape';
     // @import 'templates/index/blog-three/phoneLandscape';
@@ -219,8 +210,8 @@ body {
     /* -- HOME -- */
     @import 'templates/index/clock/phonePortrait';
     @import 'templates/index/audi/phonePortrait';
-    @import 'templates/index/our-clients/phonePortrait';
     // @import 'templates/index/our-best-works/phonePortrait';
+    @import 'templates/index/our-clients/phonePortrait';
     // @import 'templates/index/main-contacts/phonePortrait';
     // @import 'templates/index/blog-two/phonePortrait';
     // @import 'templates/index/blog-three/phonePortrait';

@@ -1,13 +1,13 @@
 .our-best-works {
 
-    $paddingLeft: 370px;
-    $infoWidth: 300px;
-    $marginLeft: 220px;
-    $portfolioWidth: 720px;
+    $info-width: 24%;
+    $portfolio-width: 60%;
+    $delta: 60px;
 
     display: block;
     width: 100vw;
     height: 100vh;
+    min-height: 900px;
     background: $lightBlack;
     overflow: hidden;
     box-shadow: 0 15px 50px 7px rgba(0, 0, 0, .3);
@@ -16,6 +16,7 @@
     .back-layer {
         width: 100vw;
         height: 100vh;
+        min-height: 900px;
     }
 
     .front-layer {
@@ -60,17 +61,25 @@
         top: -100%;
 
         span {
-            font-size: 1900px;
-
-            &:before {
-
-                content: 'O';
-            }
+            font-size: 1600px;
         }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        width: 68%;
+        height: 100%;
     }
 
     .lines {
         position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
 
@@ -83,39 +92,29 @@
             opacity: .2;
 
             &--1 {
-                left: $paddingLeft;
+                left: 0;
             }
 
             &--2 {
-                left: $paddingLeft + $infoWidth;
+                left: $info-width;
             }
 
             &--3 {
-                left: $paddingLeft + $infoWidth + ($marginLeft + $portfolioWidth / 2) / 2;
+                right: calc(#{$portfolio-width} - #{$delta});
             }
 
             &--4 {
-                left: $paddingLeft + $infoWidth + $marginLeft + $portfolioWidth / 2;
+                right: $portfolio-width / 2;
             }
 
             &--5 {
-                left: $paddingLeft + $infoWidth + $marginLeft * 3 / 2 + $portfolioWidth * 3 / 4;
+                right: $delta;
             }
         }
     }
 
-    .container {
-        display: flex;
-        align-items: center;
-        position: relative;
-        z-index: 2;
-        padding-left: $paddingLeft;
-        width: 100%;
-        height: 100%;
-    }
-
     .info {
-        width: $infoWidth;
+        width: $info-width;
     }
 
     .sticker {
@@ -192,14 +191,13 @@
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
-        margin-left: $marginLeft;
-        width: $portfolioWidth;
+        width: $portfolio-width;
         height: 100%;
 
         &__item {
             position: relative;
-            width: $portfolioWidth / 2;
-            height: $portfolioWidth / 2;
+            width: 50%;
+            height: 350px;
 
             &:hover {
 
@@ -226,8 +224,8 @@
             }
 
             &--audi {
-                left: -60px;
-                top: -60px;
+                left: -$delta;
+                top: -$delta;
 
                 .project-name {
                     top: 0;
@@ -252,8 +250,8 @@
             }
 
             &--your-project {
-                left: 60px;
-                top: 60px;
+                left: $delta;
+                top: $delta;
                 cursor: pointer;
 
                 .project-description {
@@ -314,7 +312,7 @@
         background: $lightBlack;
         color: $white;
         font-family: $Raleway-Medium;
-        font-size: 41px;
+        font-size: 40px;
         transition: opacity $timeTick $time * 2;
     }
 

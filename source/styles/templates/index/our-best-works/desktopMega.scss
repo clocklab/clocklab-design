@@ -1,47 +1,19 @@
 .our-best-works {
 
-    $paddingLeft: 500px;
-    $infoWidth: 300px;
-    $marginLeft: 275px;
-    $portfolioWidth: 800px;
+    $info-width: 20%;
 
     .lines {
 
         .line {
 
-            &--1 {
-                left: $paddingLeft;
-            }
-
             &--2 {
-                left: $paddingLeft + $infoWidth;
-            }
-
-            &--3 {
-                left: $paddingLeft + $infoWidth + ($marginLeft + $portfolioWidth / 2) / 2;
-            }
-
-            &--4 {
-                left: $paddingLeft + $infoWidth + $marginLeft + $portfolioWidth / 2;
-            }
-
-            &--5 {
-                left: $paddingLeft + $infoWidth + $marginLeft * 3 / 2 + $portfolioWidth * 3 / 4;
+                left: $info-width;
             }
         }
     }
 
-    .container {
-        padding-left: $paddingLeft;
-    }
-
     .info {
-        width: $infoWidth;
-    }
-
-    .portfolio {
-        margin-left: $marginLeft;
-        width: $portfolioWidth;
+        width: $info-width;
     }
 
     &.opened {
