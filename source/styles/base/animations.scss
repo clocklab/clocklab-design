@@ -502,11 +502,13 @@
 
 @keyframes beforeApear {
     from {
-        transform: translate3d(100%, -100%, 0);           
+        transform: translate3d(100%, -100%, 0);
     }
+
     50% {
         transform: translate3d(0, 0, 0);
     }
+
     to {
         transform: translate3d(-100%, 100%, 0);
     }
@@ -514,8 +516,9 @@
 
 @keyframes imageApear {
     from {
-        transform: translate3d(100%, -100%, 0);           
+        transform: translate3d(100%, -100%, 0);
     }
+
     to {
         transform: translate3d(0, 0, 0);
     }

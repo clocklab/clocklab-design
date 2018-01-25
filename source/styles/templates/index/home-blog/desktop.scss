@@ -1,0 +1,57 @@
+.home-blog {
+    min-height: 650px;
+
+    .container {
+        padding: 15vh 0;
+        width: 82%;
+    }
+
+    .blue-line {
+        right: 30%;
+        height: 280px;
+    }
+
+    .text-block {
+        min-width: 440px;
+    }
+
+    .text-container {
+
+        span {
+            font-size: 32px;
+        }
+
+        &:before {
+            height: 20px;
+        }
+    }
+
+    .special-button {
+        margin-right: 50px;
+        width: 40%;
+        height: 55px;
+        line-height: 55px;
+        letter-spacing: 2px;
+    }
+
+    .animated-button {
+        padding: 0 20px;
+        width: 30%;
+        height: 55px;
+        line-height: 55px;
+        letter-spacing: 2px;
+    }
+
+    .image-block {
+        width: 45%;
+    }
+
+    .image-container {
+        height: 300px;
+    }
+
+    .date {
+        margin-top: 10px;
+        padding-right: 20px;
+    }
+}

@@ -149,11 +149,11 @@
     }
 
     .minutes-container {
-        transition: transform 0.3s cubic-bezier(.4, 2.08, .55, .44);
+        transition: transform .3s cubic-bezier(.4, 2.08, .55, .44);
     }
 
     .seconds-container {
-        transition: transform 0.2s cubic-bezier(.4, 2.08, .55, .44);
+        transition: transform .2s cubic-bezier(.4, 2.08, .55, .44);
     }
 
     &.first-slide {

@@ -1,0 +1,384 @@
+.home-blog {
+    min-height: 900px;
+    background: $white;
+    box-shadow: 0 15px 50px 7px rgba(0, 0, 0, .3);
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    .big-background-letter {
+        top: 0;
+        right: 7vh;
+        z-index: 2;
+        color: $darkGray;
+        font-size: 58vh;
+        text-transform: lowercase;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        padding: 15vh 100px 15vh 0;
+        width: 80%;
+        height: 100%;
+    }
+
+    .blue-line {
+        position: absolute;
+        top: 0;
+        right: 35%;
+        width: 25%;
+        height: 380px;
+        background: $blue;
+    }
+
+    .text-block {
+        align-self: flex-end;
+        width: 45%;
+        min-width: 560px;
+    }
+
+    .new-title {
+        margin-top: 30px;
+    }
+
+    .text-container {
+        display: inline-block;
+        line-height: 1.2;
+
+        span {
+            font-size: 44px;
+            line-height: 1.2;
+        }
+    }
+
+    .text {
+        margin-top: 30px;
+        padding-left: 10%;
+        color: $darkGray;
+        font-family: $Roboto-Regular;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .special-buttons {
+        display: flex;
+        margin-top: 30px;
+        padding-left: 10%;
+    }
+
+    .special-button {
+        position: relative;
+        margin-right: 50px;
+        width: 40%;
+        height: 55px;
+        color: $blue;
+        font-family: $Roboto-Black;
+        font-size: 14px;
+        line-height: 55px;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+        transition: color $time;
+
+        &-text {
+            position: relative;
+            z-index: 2;
+        }
+
+        &:after {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 15%;
+            content: '';
+            background: $blue;
+            transition: height $timeHalf ease-out;
+        }
+
+        &:hover {
+            color: $white;
+
+            &:after {
+                height: 100%;
+            }
+        }
+    }
+
+    .animated-button {
+        position: relative;
+        padding: 0 20px;
+        width: 30%;
+        height: 55px;
+        color: $black;
+        cursor: pointer;
+        font-family: $Roboto-Black;
+        font-size: 14px;
+        line-height: 55px;
+        letter-spacing: 2px;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:before,
+        &:after {
+            box-sizing: border-box;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            width: 100%;
+            height: 100%;
+            content: '';
+            transform: scale(.15);
+            transition: transform $time;
+        }
+
+        &:hover {
+
+            &:after,
+            &:before {
+                transform: scale(1);
+            }
+        }
+
+        &.option {
+
+            &:before {
+                border-left: 2px solid $black;
+                border-bottom: 2px solid $black;
+                transform-origin: 0 100%;
+            }
+
+            &:after {
+                border-top: 2px solid $black;
+                border-right: 2px solid $black;
+                transform-origin: 100% 0%;
+            }
+        }
+    }
+
+    .image-block {
+        align-self: flex-start;
+        width: 50%;
+    }
+
+    .image-container {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        font-size: 0;
+        overflow: hidden;
+
+        img {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &:before {
+            z-index: 2;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: $darkGray;
+            content: '';
+            transform: translate3d(-90%, 90%, 0);
+        }
+    }
+
+    .date {
+        margin-top: 20px;
+        padding-right: 40px;
+        font-family: $Roboto-Regular;
+        font-size: 16px;
+        text-align: right;
+    }
+
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Right $time * 3 0s both;
+
+        .small-gray-lines {
+
+            .line {
+                animation: lineUp 1s $time * 3 both;
+
+                &.down {
+                    animation-name: lineDown;
+                }
+            }
+        }
+
+        .big-background-letter {
+            animation: fadeIn $time * 3 $time * 9 both;
+        }
+
+        .blue-line {
+            animation: Down $portfolioEuroclubBlueLineAnimationTime $portfolioEuroclubBlueLineDelayTime both;
+        }
+
+        .sticker {
+
+            span {
+                animation: titleName $animation-time $second-column-delay both;
+            }
+
+            &:before {
+                animation: fadeInRight $animation-time $first-column-delay both;
+            }
+        }
+
+        .text-container {
+
+            span {
+                animation: Up $animation-time $second-column-delay both;
+            }
+
+            &:before {
+                animation: halfDown $animation-time $first-column-delay both;
+            }
+        }
+
+        .text {
+            animation: fadeInUp $animation-time $third-column-delay both;
+        }
+
+        .special-button {
+            animation: fadeInUp $animation-time $fourth-column-delay both;
+        }
+
+        .animated-button {
+            animation: fadeInUp $animation-time $fourth-column-delay + $time both;
+        }
+
+        .bottom-button {
+
+            span {
+                animation: fadeInRight $portfolioBottomTextAnimationTime $portfolioBottomTextDelayTime both;
+            }
+
+            .line {
+                animation: Right $portfolioBottomLineAnimationTime $portfolioBottomLineDelayTime both;
+            }
+        }
+
+        .image-block {
+
+            .image-container {
+
+                img {
+                    animation: imageApear $portfolioEuroclubImageAnimationTime linear $portfolioEuroclubImageDelayTime both;
+                }
+
+                &:before {
+                    animation: beforeApear $portfolioEuroclubGrayBlockAnimationTime linear $portfolioEuroclubGrayBlockDelayTime both;
+                }
+            }
+
+            .date {
+                animation: fadeIn $portfolioEuroclubImageTextAnimationTime $portfolioEuroclubImageTextDelayTime both;
+            }
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideLeft $time * 3 $topPanelAnimationTime both;
+        animation-play-state: paused;
+
+        .small-gray-lines {
+
+            .line {
+                animation-play-state: paused;
+            }
+        }
+
+        .big-background-letter {
+            animation-play-state: paused;
+        }
+
+        .blue-line {
+            animation-play-state: paused;
+        }
+
+        .sticker {
+
+            span {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .text-container {
+
+            span {
+                animation-play-state: paused;
+            }
+
+            &:before {
+                animation-play-state: paused;
+            }
+        }
+
+        .text {
+            animation-play-state: paused;
+        }
+
+        .special-button {
+            animation-play-state: paused;
+        }
+
+        .animated-button {
+            animation-play-state: paused;
+        }
+
+        .bottom-button {
+
+            span {
+                animation-play-state: paused;
+            }
+
+            .line {
+                animation-play-state: paused;
+            }
+        }
+
+        .image-block {
+
+            .image-container {
+
+                img {
+                    animation-play-state: paused;
+                }
+
+                &:before {
+                    animation-play-state: paused;
+                }
+            }
+
+            .date {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
+    }
+}
