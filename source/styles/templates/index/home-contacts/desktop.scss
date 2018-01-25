@@ -1,0 +1,41 @@
+.home-contacts {
+    padding: 100px 0 40px;
+    min-height: 650px;
+
+    .home-contacts-title {
+        padding: 3% 7% 2% 3%;
+        width: 58%;
+
+        p {
+            font-size: 34px;
+            line-height: 1.1;
+            letter-spacing: 2px;
+        }
+
+        span {
+            margin-top: 25px;
+            font-size: 24px;
+        }
+    }
+
+    .form {
+        right: 1%;
+        padding: 60px 5% 45px;
+        width: 36%;
+    }
+
+    .home-contacts-info {
+
+        li {
+            margin-bottom: 30px;
+        }
+
+        .type {
+            margin-bottom: 10px;
+        }
+
+        a {
+            margin-bottom: 5px;
+        }
+    }
+}
