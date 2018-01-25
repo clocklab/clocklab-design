@@ -1,0 +1,194 @@
+.home-contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 170px 0 60px;
+    min-height: 900px;
+    background: $white;
+    box-shadow: 0 15px 50px 7px rgba(0, 0, 0, .3);
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    .line {
+        opacity: .1;
+    }
+
+    .big-background-letter {
+        top: -15vh;
+        right: 50vh;
+        z-index: 1;
+        font-size: 130vh;
+    }
+
+    .home-contacts-title {
+        align-self: flex-start;
+        position: relative;
+        z-index: 2;
+        padding: 4% 10% 3% 4%;
+        width: 57%;
+        background-color: $lightBlack;
+
+        p {
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: 59px;
+            line-height: 1.2;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        span {
+            display: block;
+            margin-top: 40px;
+            color: $blue;
+            font-size: 30px;
+            text-align: right;
+            text-transform: initial;
+            letter-spacing: initial;
+        }
+    }
+
+    .form {
+        align-self: flex-end;
+        position: relative;
+        right: 1%;
+        z-index: 2;
+        padding: 100px 7% 65px;
+        width: 40%;
+        background-color: $lightBlack;
+        color: $white;
+
+        .close-form {
+            display: none;
+        }
+    }
+
+    .home-contacts-info {
+        position: absolute;
+        bottom: 7vh;
+        left: 5.5%;
+        z-index: 3;
+
+        li {
+            margin-bottom: 40px;
+            color: $darkGray;
+            font-size: 16px;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+
+        .type {
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        a {
+            display: block;
+            margin-bottom: 8px;
+            color: $darkGray;
+            transition: color $time;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    &.current,
+    &.current-back,
+    &.previous,
+    &.previous-back {
+        animation: Right $time * 3 0s both;
+
+        .big-background-letter {
+            animation: fadeIn $time * 3 $time * 4 both;
+        }
+
+        .home-contacts-title {
+            animation: fadeInRight $time * 3 $time * 3 both;
+        }
+
+        .form {
+            animation: fadeInLeft $time * 3 $time * 3 both;
+        }
+
+        .home-contacts-info {
+
+            li {
+                &:nth-of-type(1) {
+                    animation: fadeInUp $time * 3 $time * 3 both;
+                }
+
+                &:nth-of-type(2) {
+                    animation: fadeInUp $time * 3 $time * 4 both;
+                }
+
+                &:nth-of-type(3) {
+                    animation: fadeInUp $time * 3 $time * 5 both;
+                }
+            }
+        }
+
+        .small-gray-lines {
+
+            .line {
+                animation: lineUp 1s $time * 4 both;
+
+                &.down {
+                    animation-name: lineDown;
+                }
+            }
+        }
+    }
+
+    &.previous,
+    &.previous-back {
+        animation: slideLeft $time * 3 $topPanelAnimationTime both;
+        animation-play-state: paused;
+
+        .big-background-letter {
+            animation-play-state: paused;
+        }
+
+        .home-contacts-title {
+            animation-play-state: paused;
+        }
+
+        .form {
+            animation-play-state: paused;
+        }
+
+        .home-contacts-info {
+
+            li {
+                &:nth-of-type(1) {
+                    animation-play-state: paused;
+                }
+
+                &:nth-of-type(2) {
+                    animation-play-state: paused;
+                }
+
+                &:nth-of-type(3) {
+                    animation-play-state: paused;
+                }
+            }
+        }
+
+        .small-gray-lines {
+
+            .line {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+    &.current-back {
+        animation: none;
+    }
+
+    &.previous-back {
+        animation-play-state: running;
+    }
+}
