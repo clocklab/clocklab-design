@@ -1,0 +1,34 @@
+.portfolio-client {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 150px;
+    left: 50px;
+    z-index: 5;
+    color: $white;
+    font-family: $Raleway-Regular;
+
+    span {
+        display: block;
+    }
+
+    .client {
+        padding-right: 50px;
+        font-size: 14px;
+        line-height: 31px;
+        font-weight: 500;
+        vertical-align: bottom;
+
+        &-name-container {
+            vertical-align: bottom;
+            font-size: 36px;
+            line-height: 45px;
+            font-weight: 700;
+            overflow: hidden;
+        }
+    }
+
+    &.gray {
+        color: $darkGray;
+    }
+}

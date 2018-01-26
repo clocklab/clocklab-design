@@ -1,9 +1,11 @@
 @import 'variables';
 
 html {
+
     body {
         min-width: 320px;
         overflow-x: hidden;
+
         .wrapper {
             width: 100%;
             height: 100%;
@@ -11,21 +13,24 @@ html {
             flex-direction: column;
             background: $white;
             overflow: hidden;
-            input, button { outline: none; }
-            button { border: none; }
-            header { flex: 0 0 auto; }
-            footer { flex: 0 0 auto; }
-            main { flex: 1 0 auto; }
-            a { text-decoration: none; }
-            ul {
-                margin: 0;
-                padding: 0;
-                li { list-style-type: none; }
+
+            header {
+                flex: 0 0 auto;
             }
+
+            footer {
+                flex: 0 0 auto;
+            }
+
+            main {
+                flex: 1 0 auto;
+            }
+
             .valign {
                 display: flex;
                 align-items: center;
             }
+
             .truncate {
                 overflow: hidden;
                 white-space: nowrap;
@@ -48,48 +53,7 @@ html {
 
 }
 
-.screen-block {
-    @media only screen and (min-width: 668px) and (max-width: 768px) { min-height: 1024px; }
-    @media only screen and (min-width: 769px) and (max-width: 1024px) { min-height: 768px; }
-    @media only screen and (min-width: 1025px) and (max-width: 1366px) { min-height: 650px; }
-    @media only screen and (min-width: 1367px) and (max-width: 1680px) { min-height: 800px; }
-    @media only screen and (min-width: 1681px) and (max-width: 1920px) { min-height: 960px; }
-    @media only screen and (min-width: 1921px) { min-height: 900px; }
 
-    position: absolute;
-    display: table;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1;
-    left: 101%;
-    top: 0;
-    &.previous-back { 
-        z-index: 3;
-        left: 0;
-    }
-    &.current,
-    &.current-back { 
-        z-index: 2;
-        left: 0;
-    }              
-    &.previous { 
-        z-index: 1;
-        left: 0;
-    }
-    @media only screen and (max-width: 1024px) {
-        display: block;
-        position: relative;
-        top: initial;
-        left: initial;
-        z-index: 1;
-        &.current,
-        &.previous {
-            z-index: 1;
-        }
-    }
-}
-
-// ---- LANGUAGE ----
 .dark-language {
 
     .language {
@@ -112,7 +76,6 @@ html {
     }
 }
 
-// ---- PORTFOLIO CLIENT ----
 .dark-portfolio-client {
 
     .portfolio-client {
@@ -120,7 +83,6 @@ html {
     }
 }
 
-// ---- PORTFOLIO RIGHT PANEL ----
 .dark-portfolio-right-panel {
 
     .portfolio-right-panel {

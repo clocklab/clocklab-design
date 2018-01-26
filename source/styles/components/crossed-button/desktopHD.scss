@@ -1,0 +1,103 @@
+.crossed-button {
+    display: flex;
+    position: absolute;
+    background: transparent;
+
+    span {
+        position: relative;
+        padding: 0 10px;
+        color: $black;
+        font-family: $Raleway-Bold;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: padding $time;
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $black;
+            content: '';
+            transform: translateX(-100%);
+        }
+
+        &:after {
+            content: 'посмотреть работы';
+        }
+    }
+
+    .arrow-container {
+        width: 36px;
+        overflow: hidden;
+        transform: translateX(-20%);
+        transition: transform $timeTick linear $time;
+    }
+
+    .arrow {
+        width: 100%;
+        opacity: 0;
+        transform: translateX(-100%);
+
+        .st0,
+        .st1 {
+            fill: none;
+            stroke: $black;
+            stroke-width: 1;
+            stroke-miterlimit: 10;
+        }
+
+        .st1 {
+            stroke-width: .75;
+        }
+    }
+
+    &:hover {
+
+        span {
+            padding: 0 5px;
+
+            &:before {
+                animation: Right $time / 2 linear forwards, toRight $time / 2 linear $time / 2 both;
+            }
+        }
+
+        .arrow-container {
+            transform: translateX(0);
+        }
+
+        .arrow {
+            animation: fadeInRight $time $timeTickHalf linear both;
+        }
+    }
+
+    &.reversed {
+        flex-direction: row-reverse;
+
+        span {
+
+            &:before {
+                top: 7px;
+                transform: translateX(100%);
+            }
+        }
+
+        .arrow-container {
+            transform: rotate(180deg);
+        }
+
+        &:hover {
+
+            span {
+
+                &:before {
+                    animation-direction: reverse;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.big-background-letter {
+    position: absolute;
+    z-index: 1;
+    color: rgba(68, 68, 68, .05);
+    font-family: $Raleway-Bold;
+    user-select: none;
+    transition: transform $time cubic-bezier(.05, .71, .48, 1);
+}

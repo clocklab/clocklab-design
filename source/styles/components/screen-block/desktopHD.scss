@@ -1,0 +1,26 @@
+.screen-block {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 101%;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    min-height: 960px;
+
+    &.previous-back {
+        z-index: 3;
+        left: 0;
+    }
+
+    &.current,
+    &.current-back {
+        z-index: 2;
+        left: 0;
+    }
+
+    &.previous {
+        z-index: 1;
+        left: 0;
+    }
+}

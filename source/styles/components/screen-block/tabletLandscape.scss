@@ -1,0 +1,13 @@
+.screen-block {
+    display: block;
+    position: relative;
+    top: initial;
+    left: initial;
+    z-index: 1;
+    min-height: 768px;
+
+    &.current,
+    &.previous {
+        z-index: 1;
+    }
+}

@@ -134,6 +134,11 @@ body {
     height: 100%;
 }
 
+input,
+button {
+    outline: none;
+}
+
 button {
     border: 0;
     background: transparent;
