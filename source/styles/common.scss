@@ -1,0 +1,98 @@
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/reset';
+@import 'base/common';
+@import 'base/animate';
+@import 'base/animations';
+
+
+@import 'components/top-panel/main';
+// @import 'components/logo/main';
+// @import 'components/menu/main';
+@import 'components/form/main';
+@import 'components/long-read/main';
+@import 'components/big-background-letter/main';
+@import 'components/portfolio-right-panel/main';
+@import 'components/portfolio-client/main';
+@import 'components/crossed-button/main';
+@import 'components/jumping-button/main';
+@import 'components/bottom-button/main';
+@import 'components/sticker/main';
+@import 'components/social/main';
+
+/* в дальнейшем свести к одному */
+@import 'components/title/main';
+@import 'components/new-title/main';
+@import 'components/language/main';
+@import 'components/languages/main';
+/* в дальнейшем свести к одному */
+
+
+/*
+/
+/---- DESKTOP HD ---- */
+@import 'components/copyright/desktopHD';
+@import 'components/scroll/desktopHD';
+@import 'components/small-gray-lines/desktopHD';
+@import 'components/clock-bg/desktopHD';
+/* ---- DESKTOP HD ---- */
+
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    @import 'components/copyright/desktop';
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    @import 'components/copyright/phoneLandscape';
+    @import 'components/small-gray-lines/phoneLandscape';
+    @import 'components/clock-bg/phoneLandscape';
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+}
+/* ---- PHONE PORTRAIT ---- */

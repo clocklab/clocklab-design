@@ -1,0 +1,38 @@
+.mockup-back-button {
+    position: relative;
+    z-index: 999;
+    background: $background;
+    width: 100%;
+    height: 17px;
+
+    .crossed-button {
+        position: absolute;
+        left: 25px;
+        bottom: 6px;
+        font-family: $roboto;
+        font-weight: $medium;
+        animation: fadeInLeft $POPBackAnimationTime $POPBackDelayTime both;
+
+        .arrow {
+
+            .st0,
+            .st1,
+            .st2 {
+                stroke: $white;
+            }
+        }
+
+        span {
+            color: $white;
+            font-size: 6px;
+
+            &:before {
+                background: $white;
+            }
+
+            &:after {
+                content: 'Назад';
+            }
+        }
+    }
+}
