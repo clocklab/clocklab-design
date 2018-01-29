@@ -21,15 +21,15 @@
 /---- DESKTOP HD ---- */
 @import 'components/screen-block/desktopHD';
 @import 'components/copyright/desktopHD';
-// @import 'components/scroll/desktopHD';
+@import 'components/scroll/desktopHD';
 // @import 'components/small-gray-lines/desktopHD';
 // @import 'components/clock-bg/desktopHD';
 @import 'components/big-background-letter/desktopHD';
 // @import 'components/sticker/desktopHD';
-// @import 'components/jumping-button/desktopHD';
+@import 'components/jumping-button/desktopHD';
 // @import 'components/crossed-button/desktopHD';
 // @import 'components/bottom-button/desktopHD';
-// @import 'components/social/desktopHD';
+@import 'components/social/desktopHD';
 // @import 'components/languages/desktopHD';
 // @import 'components/portfolio-right-panel/desktopHD';
 // @import 'components/portfolio-client/desktopHD';
@@ -105,7 +105,7 @@
     // @import 'components/clock-bg/phoneLandscape';
     @import 'components/big-background-letter/phoneLandscape';
     // @import 'components/bottom-button/phoneLandscape';
-    // @import 'components/social/phoneLandscape';
+    @import 'components/social/phoneLandscape';
 }
 /* ---- PHONE LANDSCAPE ---- */
 
