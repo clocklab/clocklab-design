@@ -35,6 +35,7 @@ var source = 'source',
             videos: build + '/videos',
             images: build + '/images',
             styles: build + `/styles${mobile}`,
+            stylesCommon: build + `/styles${mobile}`,
             scripts: build + `/scripts${mobile}`,
             projects: build + '/projects'
         },
@@ -44,6 +45,7 @@ var source = 'source',
             videos: source + '/videos/**/**/**/*.*',
             images: source + '/images/**/**/**/**/**/*.*',
             styles: source + `/styles${mobile}/**/**/**/**/**/*.*`,
+            stylesCommon: source + `/styles${mobile}/**/**/**/**/**/*.*`,
             scripts: source + `/scripts${mobile}/**/**/**/**/*.*`,
             projects: source + '/projects/**/*'
         },
@@ -53,6 +55,7 @@ var source = 'source',
             videos: source + '/videos/**/**/**/*.*',
             images: source + '/images/**/**/**/**/**/*.*',
             styles: source + `/styles${mobile}/**/**/**/**/**/*.*`,
+            stylesCommon: source + `/styles${mobile}/components/**/**/**/**/*.*`,
             scripts: source + `/scripts${mobile}/**/**/**/**/*.*`,
             projects: source + '/projects/**/*'
         },
@@ -61,7 +64,7 @@ var source = 'source',
 
 gulp.task('default', ['build', 'server', 'watch']);
 
-gulp.task('build', ['html', 'fonts', 'videos', 'images', 'sass', 'scripts', 'projects']);
+gulp.task('build', ['html', 'fonts', 'videos', 'images', 'sass', 'sass-common', 'scripts', 'projects']);
 
 gulp.task('html', function() {
     gulp.src(path.source.html)
@@ -100,6 +103,20 @@ gulp.task('sass', function() {
         // .pipe(cleanCSS())
         // .pipe(sourceMaps.write())
         .pipe(gulp.dest(path.build.styles))
+        .pipe(plugins.browserSync.reload({
+            stream: true
+        }));
+});
+
+gulp.task('sass-common', function() {
+    return sass(`source/styles${mobile}/common.scss`, { sourcemap: false/*, style: 'compact'*/ })
+        .on('error', sass.logError)
+        // .pipe(sourceMaps.init({loadMaps: true}))
+        .pipe(autoPrefixer('last 2 version'))
+        .pipe(rename(`common.css`))
+        // .pipe(cleanCSS())
+        // .pipe(sourceMaps.write())
+        .pipe(gulp.dest(path.build.stylesCommon))
         .pipe(plugins.browserSync.reload({
             stream: true
         }));
@@ -152,6 +169,9 @@ gulp.task('watch', function() {
     });
     plugins.watch([path.watch.styles], function(event, cb) {
         gulp.start('sass');
+    });
+    plugins.watch([path.watch.stylesCommon], function(event, cb) {
+        gulp.start('sass-common');
     });
     plugins.watch([path.watch.projects], function(event, cb) {
         gulp.start('projects');
