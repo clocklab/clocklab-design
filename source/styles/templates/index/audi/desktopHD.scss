@@ -189,7 +189,7 @@
 
         .sticker {
 
-            span {
+            &-text {
                 animation: FadeInRightHalf $ANBStickerTextAnimationTime $ANBStickerTextDelayTime both;
             }
 
@@ -260,7 +260,7 @@
 
         .sticker {
 
-            span {
+            &-text {
                 animation-play-state: paused;
             }
 

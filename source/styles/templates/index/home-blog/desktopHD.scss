@@ -228,12 +228,12 @@
 
         .sticker {
 
-            span {
+            &-text {
                 animation: titleName $animation-time $second-column-delay both;
             }
 
             &:before {
-                animation: fadeInRight $animation-time $first-column-delay both;
+                animation: widthIncreaseStickerLine $animation-time $first-column-delay both;
             }
         }
 
@@ -312,7 +312,7 @@
 
         .sticker {
 
-            span {
+            &-text {
                 animation-play-state: paused;
             }
 

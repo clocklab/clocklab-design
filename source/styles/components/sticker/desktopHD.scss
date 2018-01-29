@@ -1,9 +1,9 @@
 .sticker {
     position: relative;
     font-family: $Raleway-Bold;
-    font-size: 12px;
+    font-size: 14px;
 
-    span {
+    &-text {
         display: inline-block;
         color: $darkGray;
         text-transform: uppercase;
@@ -12,11 +12,23 @@
     &:before {
         display: block;
         position: absolute;
-        top: 45%;
-        left: -60px;
-        width: 50px;
+        top: 50%;
+        left: -45px;
+        width: 35px;
         height: 3px;
-        background: $lightBlack;
+        background: $darkGray;
         content: '';
+        transform: translateY(-50%);
+    }
+
+    &.white {
+
+        .sticker-text {
+            color: $white;
+        }
+
+        &:before {
+            background: $white;
+        }
     }
 }
