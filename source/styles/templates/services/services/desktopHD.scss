@@ -63,29 +63,6 @@
         width: $container-width;
     }
 
-    .name {
-        position: relative;
-        font-size: 14px;
-        text-transform: uppercase;
-
-        &-text {
-            display: block;
-            color: $white;
-            font-family: $Raleway-Bold;
-        }
-
-        &:before {
-            display: block;
-            position: absolute;
-            top: 4px;
-            left: -62px;
-            width: 50px;
-            height: 3px;
-            background: $white;
-            content: '';
-        }
-    }
-
     .services-list {
         display: flex;
         flex-wrap: wrap;
@@ -238,14 +215,14 @@
             }
         }
 
-        .name {
+        .sticker {
 
             &-text {
-                animation: titleName $services-page-animation-time $services-page-second-column-delay both;
+                animation: fadeInRight $services-page-animation-time $services-page-second-column-delay both;
             }
 
             &:before {
-                animation: titleNameShape $services-page-animation-time $services-page-first-column-delay both;
+                animation: widthIncreaseStickerLine $services-page-animation-time $services-page-first-column-delay both;
             }
         }
 
@@ -411,7 +388,7 @@
             animation-play-state: paused;
         }
 
-        .name {
+        .sticker {
 
             &-text {
                 animation-play-state: paused;

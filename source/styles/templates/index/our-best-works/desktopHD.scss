@@ -117,34 +117,23 @@
         width: $info-width;
     }
 
-    .sticker {
+    .new-title {
+        margin-top: 25px;
+    }
 
-        span {
-            color: $white;
-        }
+    .text-container {
 
         &:before {
-            background: $white;
+            display: none;
         }
     }
 
-    .new-title {
-        margin-top: 25px;
-
-        .text-container {
-
-            span {
-                color: $white;
-                font-family: $Raleway-ExtraBold;
-                font-size: 72px;
-                line-height: 1.2;
-                text-transform: initial;
-            }
-
-            &:before {
-                display: none;
-            }
-        }
+    .new-title-text {
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: 72px;
+        line-height: 1.2;
+        text-transform: initial;
     }
 
     .special-button {

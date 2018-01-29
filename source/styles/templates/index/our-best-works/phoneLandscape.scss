@@ -17,7 +17,14 @@
         display: none;
     }
 
+    .sticker {
+        margin-bottom: 10px;
+    }
+
     .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin: 0 auto;
         width: 50%;
         text-align: center;
@@ -25,13 +32,10 @@
 
     .new-title {
         margin-top: 0;
+    }
 
-        .text-container {
-
-            span {
-                font-size: 28px;
-            }
-        }
+    .new-title-text {
+        font-size: 28px;
     }
 
     .special-button {

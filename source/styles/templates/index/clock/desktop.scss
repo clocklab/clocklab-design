@@ -14,20 +14,17 @@
         background-size: 25%;
     }
 
-    .title {
+    .text-block {
         top: 18vh;
         left: 9vh;
         width: 45%;
+    }
 
-        .word {
+    .text-block-header {
+        font-size: 43px;
+    }
 
-            span {
-                font-size: 43px;
-            }
-
-            &:last-of-type span {
-                font-size: 15px;
-            }
-        }
+    .text-block-slogan {
+        font-size: 15px;
     }
 }

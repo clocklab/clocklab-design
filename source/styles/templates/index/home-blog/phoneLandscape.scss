@@ -19,19 +19,19 @@
     }
 
     .new-title {
-        margin-top: 0;
+        margin-top: 10px;
         width: 280px;
     }
 
     .text-container {
 
-        span {
-            font-size: 22px;
-        }
-
         &:before {
             height: 15px;
         }
+    }
+
+    .new-title-text {
+        font-size: 22px;
     }
 
     .text {

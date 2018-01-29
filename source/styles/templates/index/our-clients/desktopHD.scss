@@ -52,28 +52,14 @@
         width: $container-width;
     }
 
-    .sticker {
-
-        span {
-            color: $white;
-        }
-
-        &:before {
-            background: $white;
-        }
-    }
-
     .new-title {
         margin-top: 30px;
     }
 
-    .text-container {
-
-        span {
-            color: $white;
-            font-size: 50px;
-            line-height: 1.1;
-        }
+    .new-title-text {
+        color: $white;
+        font-size: 50px;
+        line-height: 1.1;
     }
 
     .clients {
@@ -113,12 +99,12 @@
 
         .sticker {
 
-            span {
-                animation: titleName $animation-time $second-column-delay both;
+            &-text {
+                animation: fadeInRight $animation-time $second-column-delay both;
             }
 
             &:before {
-                animation: fadeInRight $animation-time $first-column-delay both;
+                animation: widthIncreaseStickerLine $animation-time $first-column-delay both;
             }
         }
 
@@ -153,7 +139,7 @@
 
         .sticker {
 
-            span {
+            &-text {
                 animation-play-state: paused;
             }
 

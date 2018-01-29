@@ -26,12 +26,7 @@
         }
     }
 
-    .portfolio-client {
-        color: $darkGray;
-    }
-
     .portfolio-right-panel {
-        color: $darkGray;
 
         .date {
             margin-bottom: 150px;
@@ -189,7 +184,7 @@
 
         .sticker {
 
-            span {
+            &-text {
                 animation: FadeInRightHalf $ANBStickerTextAnimationTime $ANBStickerTextDelayTime both;
             }
 
@@ -260,7 +255,7 @@
 
         .sticker {
 
-            span {
+            &-text {
                 animation-play-state: paused;
             }
 

@@ -1,19 +1,10 @@
 .clock {
 
-    .title {
+    .text-block-header {
+        font-size: 58px;
+    }
 
-        .word {
-
-            span {
-                font-size: 58px;
-            }
-
-            &:last-of-type {
-
-                span {
-                    font-size: 23px;
-                }
-            }
-        }
+    .text-block-slogan {
+        font-size: 23px;
     }
 }

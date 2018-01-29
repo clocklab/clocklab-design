@@ -5,21 +5,17 @@
         background-size: 35%;
     }
 
-    .title {
+    .text-block {
         width: 90%;
         top: 20%;
         left: 5%;
+    }
 
-        .word {
+    .text-block-header {
+        font-size: 30px;
+    }
 
-            .up {
-                font-size: 30px;
-            }
-
-            .down {
-                width: 100%;
-                font-size: 18px;
-            }
-        }
+    .text-block-slogan {
+        font-size: 18px;
     }
 }

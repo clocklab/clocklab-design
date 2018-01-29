@@ -65,9 +65,6 @@ body {
 /
 /---- DESKTOP ---- */
 @media (max-width: 1366px) {
-    /* -- COMPONENTS -- */
-    @import 'components/copyright/desktop';
-    /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/desktop';
     @import 'templates/index/company-description/desktop';

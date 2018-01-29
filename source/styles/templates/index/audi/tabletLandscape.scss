@@ -1,7 +1,15 @@
 .audi {
 
     .sticker {
-        display: none;
+        margin-bottom: 10px;
+
+        &-text {
+            color: $black;
+        }
+
+        &:before {
+            background: $black;
+        }
     }
 
     .about-work {
