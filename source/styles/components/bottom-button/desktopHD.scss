@@ -34,12 +34,14 @@
         color: $lightGray;
         font-size: 12px;
         font-family: $Raleway-Bold;
-        line-height: 16px;
+        line-height: 20px;
         text-transform: uppercase;
         transition: padding $timeTick;
     }
 
     .arrow-container {
+        display: flex;
+        align-items: center;
         width: 40px;
         overflow: hidden;
     }
