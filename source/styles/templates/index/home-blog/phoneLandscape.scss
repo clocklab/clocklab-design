@@ -25,13 +25,13 @@
 
     .text-container {
 
-        span {
-            font-size: 22px;
-        }
-
         &:before {
             height: 15px;
         }
+    }
+
+    .new-title-text {
+        font-size: 22px;
     }
 
     .text {

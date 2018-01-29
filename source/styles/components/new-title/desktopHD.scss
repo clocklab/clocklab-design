@@ -1,0 +1,34 @@
+.new-title {
+
+    .text-container {
+        position: relative;
+        overflow: hidden;
+
+        &:before {
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background: $blue;
+            content: '';
+            transform: translate3d(0, 50%, 0);
+        }
+
+        &:last-child {
+            display: inline-block;
+        }
+    }
+
+    &-text {
+        display: block;
+        position: relative;
+        z-index: 1;
+        color: $black;
+        font-family: $Raleway-ExtraBold;
+        font-size: 60px;
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+}

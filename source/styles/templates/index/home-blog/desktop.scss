@@ -17,13 +17,13 @@
 
     .text-container {
 
-        span {
-            font-size: 32px;
-        }
-
         &:before {
             height: 20px;
         }
+    }
+
+    .new-title-text {
+        font-size: 32px;
     }
 
     .special-button {

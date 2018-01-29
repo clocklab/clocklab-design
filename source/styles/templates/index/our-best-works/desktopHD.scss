@@ -119,21 +119,21 @@
 
     .new-title {
         margin-top: 25px;
+    }
 
-        .text-container {
+    .text-container {
 
-            span {
-                color: $white;
-                font-family: $Raleway-ExtraBold;
-                font-size: 72px;
-                line-height: 1.2;
-                text-transform: initial;
-            }
-
-            &:before {
-                display: none;
-            }
+        &:before {
+            display: none;
         }
+    }
+
+    .new-title-text {
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: 72px;
+        line-height: 1.2;
+        text-transform: initial;
     }
 
     .special-button {

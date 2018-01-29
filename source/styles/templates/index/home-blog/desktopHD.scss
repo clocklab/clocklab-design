@@ -47,11 +47,11 @@
     .text-container {
         display: inline-block;
         line-height: 1.2;
+    }
 
-        span {
-            font-size: 44px;
-            line-height: 1.2;
-        }
+    .new-title-text {
+        font-size: 44px;
+        line-height: 1.2;
     }
 
     .text {
@@ -239,13 +239,13 @@
 
         .text-container {
 
-            span {
-                animation: Up $animation-time $second-column-delay both;
-            }
-
             &:before {
                 animation: halfDown $animation-time $first-column-delay both;
             }
+        }
+
+        .new-title-text {
+            animation: Up $animation-time $second-column-delay both;
         }
 
         .text {
@@ -323,13 +323,13 @@
 
         .text-container {
 
-            span {
-                animation-play-state: paused;
-            }
-
             &:before {
                 animation-play-state: paused;
             }
+        }
+
+        .new-title-text {
+            animation-play-state: paused;
         }
 
         .text {

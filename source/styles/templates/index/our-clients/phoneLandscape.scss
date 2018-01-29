@@ -19,13 +19,13 @@
     .text-container {
         width: 90%;
 
-        span {
-            line-height: 1.2;
-        }
-
         &:before {
             display: none;
         }
+    }
+
+    .new-title-text {
+        line-height: 1.2;
     }
 
     .clients {

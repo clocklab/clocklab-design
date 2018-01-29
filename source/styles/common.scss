@@ -10,16 +10,12 @@
 // @import 'components/logo/main';
 // @import 'components/menu/main';
 
-/* в дальнейшем свести к одному */
-@import 'components/title/main';
-@import 'components/new-title/main';
-/* в дальнейшем свести к одному */
-
 
 /*
 /
 /---- DESKTOP HD ---- */
 @import 'components/screen-block/desktopHD';
+@import 'components/new-title/desktopHD';
 @import 'components/copyright/desktopHD';
 @import 'components/scroll/desktopHD';
 // @import 'components/small-gray-lines/desktopHD';

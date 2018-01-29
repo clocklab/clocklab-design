@@ -17,20 +17,17 @@
         zoom: .4;
     }
 
-    .title {
+    .text-block {
         top: 30%;
         left: 10%;
+    }
 
-        .word {
+    .text-block-header {
+        font-size: 40px;
+    }
 
-            .up {
-                font-size: 40px;
-            }
-
-            .down {
-                width: 50%;
-                font-size: 18px;
-            }
-        }
+    .text-slogan {
+        width: 50%;
+        font-size: 18px;
     }
 }
