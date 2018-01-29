@@ -2,50 +2,11 @@ body {
     overflow: hidden;
 }
 
-// base
 @import 'base/variables';
-@import 'base/mixins';
-@import 'base/fonts';
-@import 'base/reset';
-@import 'base/common';
-@import 'base/animate';
-@import 'base/animations';
-
-// modules
-@import 'components/modules/small-gray-lines';
-@import 'components/modules/jelly-button';
-@import 'components/modules/clock-bg';
-
-// components
-@import 'components/top-panel/main';
-// @import 'components/logo/main';
-// @import 'components/menu/main';
-@import 'components/form/main';
-@import 'components/long-read/main';
-@import 'components/big-background-letter/main';
-@import 'components/portfolio-right-panel/main';
-@import 'components/portfolio-client/main';
-@import 'components/crossed-button/main';
-@import 'components/jumping-button/main';
-@import 'components/bottom-button/main';
-@import 'components/sticker/main';
-@import 'components/social/main';
-
-/* в дальнейшем свести к одному */
-@import 'components/title/main';
-@import 'components/new-title/main';
-@import 'components/language/main';
-@import 'components/languages/main';
-/* в дальнейшем свести к одному */
-
 
 /*
 /
 /---- DESKTOP HD ---- */
-/* -- COMPONENTS -- */
-@import 'components/copyright/desktopHD';
-@import 'components/scroll/desktopHD';
-/* -- COMPONENTS -- */
 /* -- HOME -- */
 @import 'templates/index/clock/desktopHD';
 @import 'templates/index/company-description/desktopHD';
@@ -65,8 +26,6 @@ body {
 /
 /---- DESKTOP MEGA ---- */
 @media (min-width: 1921px) {
-    /* -- COMPONENTS -- */
-    /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/desktopMega';
     @import 'templates/index/company-description/desktopMega';
@@ -86,8 +45,6 @@ body {
 /
 /---- DESKTOP WIDE ---- */
 @media (max-width: 1680px) {
-    /* -- COMPONENTS -- */
-    /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/desktopWide';
     @import 'templates/index/company-description/desktopWide';
@@ -131,8 +88,6 @@ body {
 /
 /---- TABLET LANDSCAPE ---- */
 @media (max-width: 1024px) {
-    /* -- COMPONENTS -- */
-    /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/tabletLandscape';
     @import 'templates/index/company-description/tabletLandscape';
@@ -140,7 +95,6 @@ body {
     @import 'templates/index/our-best-works/tabletLandscape';
     @import 'templates/index/our-clients/tabletLandscape';
     @import 'templates/index/home-blog/tabletLandscape';
-    // @import 'templates/index/home-contacts/tabletLandscape';
     /* -- HOME -- */
     /* -- SERVICES -- */
     @import 'templates/services/services/tabletLandscape';
@@ -153,8 +107,6 @@ body {
 /
 /---- TABLET PORTRAIT ---- */
 @media (max-width: 768px) {
-    /* -- COMPONENTS -- */
-    /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/tabletPortrait';
     @import 'templates/index/company-description/tabletPortrait';
@@ -162,8 +114,6 @@ body {
     @import 'templates/index/our-clients/tabletPortrait';
     @import 'templates/index/home-contacts/tabletPortrait';
     /* -- HOME -- */
-    /* -- SERVICES -- */
-    /* -- SERVICES -- */
 }
 /* ---- TABLET PORTRAIT ---- */
 
@@ -172,9 +122,6 @@ body {
 /
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
-    /* -- COMPONENTS -- */
-    @import 'components/copyright/phoneLandscape';
-    /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/phoneLandscape';
     @import 'templates/index/company-description/phoneLandscape';
@@ -191,13 +138,10 @@ body {
 /* ---- PHONE LANDSCAPE ---- */
 
 
-
 /*
 /
 /---- PHONE PORTRAIT ---- */
 @media (max-width: 414px) {
-    /* -- COMPONENTS -- */
-    /* -- COMPONENTS -- */
     /* -- HOME -- */
     @import 'templates/index/clock/phonePortrait';
     @import 'templates/index/audi/phonePortrait';

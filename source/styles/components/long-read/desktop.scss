@@ -1,81 +1,26 @@
-& {  
-
-    width: 100vw;
-    height: 100vh;
-    visibility: hidden;
-    opacity: 0;
-    background: $white;
-    overflow-y: auto;
-    
-    .long-read-background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background: $white;
-    }
+.long-read {
 
     .cross {
-        position: absolute;
-        top: px(150);
-        right: px(150);
-        width: px(56);
-        height: px(56);
-        background: transparent;
-    
-        &:before,
-        &:after {
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: px(40);
-            height: 2px;
-            background: $gray;
-            content: '';
-            transition: background $time;
-        }
-    
-        &:before {
-            transform: rotate(45deg);
-        }
-    
-        &:after {
-            transform: rotate(-45deg);
-        }
-    
-        &:hover {
-    
-            &:before,
-            &:after {
-                background: $black;
-            }
-        }
+        top: 25px;
+        right: 25px;
     }
-    
+
     .long-read-container {
-        position: relative;
-        z-index: 3;
-        margin: 0 auto;
-        padding: px(300) px(260) px(160) px(370);
-        color: $darkGray;
-        font-family: $Roboto-Regular;
-        opacity: 0;
+        padding: 100px 75px 50px 50px;
     }
-    
+
     .row {
         display: flex;
         justify-content: space-between;
-    
+
         & > div {
-    
+
             &:first-child {
-                width: 51%;
+                width: 50%;
             }
-    
+
             &:last-child {
-                width: 49%;
+                width: 50%;
             }
         }
 
@@ -84,637 +29,170 @@
             & > div {
 
                 &:nth-child(1) {
-                    padding-right: px(450);
+                    padding-right: 100px;
                 }
             }
         }
-    
+
         &--2 {
-            margin-top: px(300);
+            margin-top: 75px;
 
             & > div {
 
                 &:nth-child(1) {
-                    padding-right: px(450);
+                    padding-right: 125px;
                 }
             }
         }
-    
+
         &--3 {
-            margin-top: px(460);
+            margin-top: 75px;
 
             & > div {
 
                 &:nth-child(1) {
-                    padding-right: px(390);
+                    padding-right: 150px;
                 }
             }
         }
-    
+
         &--4 {
-            margin-top: px(450);
+            margin-top: 75px;
 
             & > div {
 
                 &:nth-child(1) {
-                    padding-right: px(650);
+                    padding-right: 250px;
                 }
             }
         }
-    
-        &--5 {
-            margin-top: px(240);
-        }
-    
-        &--6 {
-            margin-top: px(310);
-        }
-    
+
+        &--5,
+        &--6,
         &--7 {
-            margin-top: px(360);
-            
-            & > div {
-
-                &:nth-child(1) {
-                    padding-right: px(390);
-                }
-            }
+            margin-top: 75px;
         }
-    
-        &--8,
-        &--9 {
-            margin-top: px(450);
+
+        &--8 {
+            margin-top: 75px;
 
             & > div {
 
                 &:nth-child(1) {
-                    padding-right: px(780);
+                    padding-right: 200px;
                 }
             }
         }
-
-        &:nth-child(even) {
-
-            .row-title {
-                color: $blue;
-            }
-        }
-    }
-    
-    .row-title {
-        display: block;
-        font-size: px(96);
-        font-family: $Raleway-Bold;
-        line-height: px(110);
-        
-        span,
-        &--blue {
-            color: $blue;
-        }
-    }
-    
-    .list-item-title {
-        display: block;
-        font-size: px(36);
-        font-family: $Raleway-Bold;
-
-        &.big {
-            margin-bottom: px(40);
-            font-size: px(48);
-        }
-    }
-    
-    .italic {
-        font-family: $Raleway-Regular;
-        font-size: px(48);
-        font-style: italic;
-    }
-  
-    p,
-    h2,
-    h3 {
-        margin-bottom: px(60);
-        font-size: px(32);
-        line-height: 1.5;
-        
-        &.italic {
-            font-family: $Raleway-Regular;
-            color: $blue;
-        }
-    }
-
-    .bordered {
-        margin-top: px(160);
-        padding: px(80) 0;
-        border-top: 1px solid $gray;
-        border-bottom: 1px solid $gray;
-        font-size: px(48);
-    }
-
-    .left-bordered {
-        position: relative;
-        margin: px(150) 0;
-        padding: 0 0 px(10) px(90);
-
-        &:before {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: px(20);
-            height: 100%;
-            background: $blue;
-            content: '';
-        }
-    }
-
-    .bottom-bordered {
-        padding-bottom: px(80);
-        border-bottom: 1px solid $gray;
     }
 
     p {
-        margin-bottom: px(60);
-        font-size: px(32);
-        line-height: 1.5;
 
-        span {
-            font-family: $Raleway-Bold;
+        &.bordered {
+            margin-top: 45px;
+            padding: 25px 0;
+            font-size: 20px;
+        }
+
+        &.left-bordered {
+            margin: 35px 0;
+        }
+
+        &.bottom-bordered {
+            padding-bottom: 25px;
         }
     }
-    
+
     ul {
-        
+
         &.circled {
-    
+
             li {
-                position: relative;
-                margin-bottom: px(60);
-                padding-left: px(60);
-    
-                &:before {
-                    display: block;
-                    position: absolute;
-                    top: 4px;
-                    left: -4px;
-                    width: 8px;
-                    height: 8px;
-                    border-radius: 50%;
-                    background: $blue;
-                    content: '';
-                }
+                margin-bottom: 25px;
+                padding-left: 12px;
             }
 
-            .list-item-title {
-                margin-bottom: px(30);
+            h4 {
+                margin-bottom: 10px;
             }
         }
 
         &.circled-double {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: space-between;
-            height: px(450);
+            flex-direction: row;
+            height: initial;
 
             li {
-                width: px(740);
+                padding-right: 10px;
+                width: 300px;
             }
         }
 
         &.indexed {
-            padding-top: px(90);
 
             li {
-                position: relative;
-                margin-bottom: px(200);
-                padding-left: px(30);
-
-                &:before,
-                &:after {
-                    display: block;
-                    position: absolute;
-                }
+                margin-bottom: 40px;
+                padding-left: 10px;
 
                 &:before {
-                    z-index: 2;
-                    top: px(-110);
-                    left: px(-80);
-                    color: $darkGray;
-                    font-family: $Raleway-ExtraBold;
-                    font-size: px(96);
+                    top: -35px;
+                    left: -40px;
+                    font-size: 38px;
                 }
 
                 &:after {
-                    z-index: -1;
-                    top: px(-50);
-                    left: px(-40);
-                    width: px(88);
-                    height: px(88);
-                    background: $darkWhite;
-                    content: '';
-                }
-
-                &:nth-child(1) {
-                    
-                    &:before {
-                        content: '01';
-                    }
-                }
-
-                &:nth-child(2) {
-                    
-                    &:before {
-                        content: '02';
-                    }
-                }
-
-                &:nth-child(3) {
-                    
-                    &:before {
-                        content: '03';
-                    }
-                }
-
-                &:nth-child(4) {
-                    
-                    &:before {
-                        content: '04';
-                    }
-                }
-
-                &:nth-child(5) {
-                    
-                    &:before {
-                        content: '05';
-                    }
-                }
-
-                &:nth-child(6) {
-                    
-                    &:before {
-                        content: '06';
-                    }
-                }
-
-                &:nth-child(7) {
-                    
-                    &:before {
-                        content: '07';
-                    }
+                    top: -10px;
+                    left: -10px;
+                    width: 30px;
+                    height: 30px;
                 }
             }
 
-            .list-item-title {
-                margin-bottom: px(40);
-                font-size: px(36);
-                font-family: $Raleway-Bold;
-            }
-
-            span {
-                font-family: $Raleway-Bold;
+            h4 {
+                margin-bottom: 15px;
+                font-size: 17px;
             }
         }
 
         &.indexed-double {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
 
             li {
-                padding-left: px(60);
-                width: px(740); 
-
-                &:before {
-                    top: px(-95);
-                    left: px(-90);
-                }
-
-                &:after {
-                    left: px(-50);
-                }
+                padding-left: 10px;
+                padding-right: 10px;
+                width: 300px;
 
                 &:nth-child(1),
                 &:nth-child(3) {
-                    padding-left: px(100);
+                    padding-left: 10px;
 
                     &:before {
-                        left: px(-50);
+                        left: -40px;
                     }
-    
+
                     &:after {
-                        left: px(-10);
+                        left: -10px;
                     }
                 }
             }
         }
     }
-    
+
     .jumping-button {
-        margin: px(330) auto 0;
-        color: $darkGray;
-        font-family: $Roboto-Bold;
-        font-size: px(28);
-        text-align: center;
-
-        span {
-            font-size: px(28);
-            font-family: $Raleway-Bold;
-            
-        }
-    
-        &:before {
-            background: $darkGray;
-        }
+        margin: 25px auto 0;
     }
 
-    &.opened {
-        z-index: 9999;
-        visibility: visible;
-        opacity: 1;
-
-        .long-read-container {
-            animation: fadeIn $time .5s both;
-        }
-    }
-
-    &--web-production, 
-    &--design, 
-    &--about-company, 
-    &--seo {
-
-        .long-read-background {
-            background: lighten($darkWhite, 5%);
-        }
+    &--web-production {
 
         .row {
 
-            &--2 {
-                margin-top: px(280);
-            }
-
-            &--3 {
-                margin-top: px(340);
-
-                .row-title {
-                    margin-bottom: px(220);
-                }
-            }
-
-            &--4 {
-                margin-top: px(500);
-
-                & > div {
-
-                    &:nth-child(1) {
-                        padding-right: px(360);
-                    }
-                }
-            }
-
-            &--5 {
-                margin-top: px(580);
-
-                & > div {
-
-                    &:nth-child(1) {
-                        padding-right: px(280);
-                    }
-                }
-            }
-
             &--6 {
-                margin-top: px(640);
-
-                & > div {
-
-                    &:nth-child(1) {
-                        padding-right: px(300);
-                    }
-                }
-
-                .list-item-title {
-
-                    &.big {
-                        margin-top: px(390);
-                    }
-                }
 
                 ul {
-                    margin: px(200) 0 0 px(70);
+                    margin: 35px 0 0 35px;
                 }
             }
-        }
-    }
-    
-    &--web-production,
-    &--about-company,
-    &--marketing,
-    &--design,
-    &--seo {
-        position: relative;
-        z-index: 1;
-        height: initial;
-        visibility: visible;
-        opacity: 1;
-
-        .cross {
-            display: none;
-        }
-
-        .long-read-container {
-            opacity: 1;
         }
 
         .jumping-button {
-            display: none;
-        }
-    }
-
-    &.long-read--about-company {
-        
-        ul li { line-height: 1.5; }
-
-        .row {
-
-            &--6 {
-
-                .list-item-title {
-
-                    &.big {
-                        margin-top: 0;
-                    }
-                }
-            }
-        }
-    }
-
-    &.long-read--design {
-        
-        ul li { line-height: 1.5; }
-
-        .row {
-            
-            &--5 {
-
-                ul.indexed {
-                    padding-top: 0;
-                    padding-bottom: px(180);
-
-                    li {
-                        padding: px(55) 0 px(100) px(65);
-                        display: -webkit-inline-box;
-                        min-height: 100px;
-                        margin-bottom: 0;
-                        line-height: 1;
-                        
-                        span {
-                            line-height: 1.5;
-                            position: absolute;
-                        }
-
-                        &:after {
-                            left: px(-40);
-                            top: px(60);
-                        }
-
-                        &:before {
-                            left: px(-85);
-                            top: 0;
-                        }
-                    }
-                }
-            }
-
-            &--6 {
-
-                .list-item-title.big {
-                    font-size: px(40);
-                }
-                
-                ul.circled {
-
-                    li {
-
-                        &:before {
-                            top: 8px;
-                        }
-                    }
-                }
-                ul {
-                    margin: px(120) 0 0 px(70);
-                }
-            }
-        }
-    }
-
-    &.long-read--seo {
-        
-        ul li { line-height: 1.5; }
-
-        .row {
-
-            &--2 {
-                margin-top: px(230);
-            }
-
-            &--3 {
-                margin-top: px(390);
-            }
-
-            &--4 {
-                margin-top: px(310);
-
-                ul.indexed {
-                    padding-top: 0;
-                    padding-bottom: px(180);
-
-                    li {
-                        padding: px(55) 0 px(100) px(65);
-                        display: -webkit-inline-box;
-                        min-height: 100px;
-                        margin-bottom: 0;
-                        line-height: 1;
-                        
-                        span {
-                            line-height: 1.5;
-                            position: absolute;
-                        }
-
-                        &:after {
-                            left: px(-40);
-                            top: px(60);
-                        }
-
-                        &:before {
-                            left: px(-85);
-                            top: 0;
-                        }
-                    }
-                }
-                
-                p {
-                    margin-bottom: px(180);
-                }
-            }
-
-            &--5 {
-
-                ul.circled li {
-                    
-                    &:before {
-                        top: 8px;
-                    }
-
-                    span {
-                        font-family: $Raleway-Bold;
-                    }
-                }
-
-            }
-
-            &--6 {
-                margin-top: px(380);
-            }
-
-            &--7 {
-                margin-top: px(490);
-
-                p.bordered {
-                    margin: px(180) 0;
-                }
-            }
-
-            &--8 {
-
-                ul.indexed {
-                    padding-top: 0;
-                    padding-bottom: px(180);
-
-                    li {
-                        padding: px(55) 0 px(100) px(65);
-                        display: -webkit-inline-box;
-                        min-height: 100px;
-                        margin-bottom: 0;
-                        line-height: 1;
-                        
-                        span {
-                            line-height: 1.5;
-                            position: absolute;
-                        }
-
-                        &:after {
-                            left: px(-40);
-                            top: px(60);
-                        }
-
-                        &:before {
-                            left: px(-85);
-                            top: 0;
-                        }
-                    }
-                }
-            }
+            margin-top: 85px;
         }
     }
 }

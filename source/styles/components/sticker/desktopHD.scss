@@ -1,0 +1,22 @@
+.sticker {
+    position: relative;
+    font-family: $Raleway-Bold;
+    font-size: 12px;
+
+    span {
+        display: inline-block;
+        color: $darkGray;
+        text-transform: uppercase;
+    }
+
+    &:before {
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: -60px;
+        width: 50px;
+        height: 3px;
+        background: $lightBlack;
+        content: '';
+    }
+}

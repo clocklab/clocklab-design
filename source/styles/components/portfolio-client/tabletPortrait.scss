@@ -1,0 +1,12 @@
+.portfolio-client {
+    bottom: 80px;
+    left: 20px;
+
+    .client {
+        padding-right: 20px;
+
+        &-name-container {
+            font-size: 30px;
+        }
+    }
+}

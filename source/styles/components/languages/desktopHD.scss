@@ -1,0 +1,33 @@
+.languages {
+    bottom: 45vh;
+    left: 50px;
+    font-family: $Raleway-Regular;
+    font-size: 0;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    overflow: hidden;
+
+    a {
+        display: inline-block;
+        padding: 0 5px;
+        color: $gray;
+        cursor: pointer;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: color $time;
+
+        &.select {
+            color: $white;
+
+            &:before {
+                position: relative;
+                color: $white;
+                content: '—';
+            }
+        }
+
+        &:hover {
+            color: $white;
+        }
+    }
+}

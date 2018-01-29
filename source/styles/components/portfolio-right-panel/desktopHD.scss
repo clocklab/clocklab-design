@@ -1,0 +1,29 @@
+.portfolio-right-panel {
+    position: absolute;
+    bottom: 150px;
+    right: 120px;
+    z-index: 5;
+    color: $white;
+    font-family: $Raleway-Medium;
+    font-size: 14px;
+    text-align: right;
+
+    .date {
+        margin-bottom: 240px;
+
+        span {
+
+            &:last-child {
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .devices {
+
+        span {
+            display: block;
+            margin-bottom: 7px;
+        }
+    }
+}

@@ -1,0 +1,221 @@
+.form {
+    position: relative;
+    padding-top: 125px;
+    width: 415px;
+    color: $white;
+    font-family: $Roboto-Regular;
+
+    .thanks {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .message {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        width: 100%;
+        height: 20%;
+
+        p {
+            font-family: $Raleway-Bold;
+
+            &:first-of-type {
+                padding-bottom: 30px;
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+
+            &:last-of-type {
+                color: $blue;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .close-form {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 28px;
+        height: 28px;
+        background: transparent;
+
+        &:before,
+        &:after {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 20px;
+            height: 2px;
+            background: $gray;
+            content: '';
+            transition: background $time;
+        }
+
+        &:before {
+            transform: rotate(45deg);
+        }
+
+        &:after {
+            transform: rotate(-45deg);
+        }
+
+        &:hover {
+
+            &:before,
+            &:after {
+                background: $white;
+            }
+        }
+    }
+
+    .form-title {
+        display: block;
+        margin-bottom: 110px;
+        font-family: $Raleway-ExtraBold;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    label {
+        display: block;
+        position: relative;
+        margin-bottom: 50px;
+        padding: 0 10px;
+        width: 100%;
+        border-bottom: 1px solid $gray;
+
+        .placeholder {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            margin-bottom: 8px;
+            height: 100%;
+            color: $gray;
+            font-family: $Roboto-Regular;
+            font-size: 15px;
+            line-height: 100%;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: top $timeHalf, color $timeHalf, font-size $timeHalf;
+        }
+
+        input,
+        textarea {
+            display: block;
+            position: relative;
+            z-index: 2;
+            padding: 3px 0;
+            width: 100%;
+            height: 20px;
+            background: transparent;
+            border: 0;
+            outline: none;
+            color: $white;
+            font-size: 16px;
+            resize: none;
+
+            &:focus,
+            &.filled {
+
+                & ~ .placeholder {
+                    top: -15px;
+                    color: $white;
+                    font-size: 12px;
+                }
+
+                & ~ .tick {
+                    width: 100%;
+                }
+            }
+        }
+
+        .message {
+            position: absolute;
+            top: 100%;
+            padding-top: 5px;
+            color: $red;
+            visibility: hidden;
+        }
+
+        .tick {
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: $white;
+            transition: width $timeHalf, background $timeHalf;
+        }
+
+        &.wrong {
+
+            input,
+            textarea {
+
+                & ~ .tick {
+                    width: 100%;
+                    background: $red;
+                }
+            }
+
+            .message {
+                visibility: visible;
+            }
+        }
+    }
+
+    .send {
+        display: block;
+        position: relative;
+        margin: 45px 0 0 auto;
+        width: 170px;
+        height: 45px;
+        background: $blue;
+        color: $white;
+        font-family: $Roboto-Medium;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        span {
+            position: relative;
+            z-index: 2;
+            letter-spacing: 1px;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 12px;
+            left: -12px;
+            width: 100%;
+            height: 100%;
+            background: $darkGray;
+            content: '';
+            opacity: 0;
+            transition: top $time, left $time, opacity $time;
+        }
+
+        &:hover {
+
+            &:before {
+                top: 5px;
+                left: -5px;
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.bottom-button {
+    bottom: 15px;
+    padding: 0 15px;
+
+    a {
+
+        &:hover {
+
+            span {
+                padding: 0 44px 0 10px;
+            }
+        }
+    }
+
+    .arrow-container {
+        right: 15px;
+    }
+}

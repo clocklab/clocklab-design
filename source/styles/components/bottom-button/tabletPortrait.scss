@@ -1,0 +1,30 @@
+.bottom-button {
+    bottom: 20px;
+    padding: 0 25px;
+    width: 100%;
+
+    a {
+
+        &:hover {
+
+            span {
+                padding: 0 50px 0 25px;
+            }
+        }
+    }
+
+    span {
+        padding-left: 30px;
+        color: $gray;
+    }
+
+    .arrow-container {
+        position: absolute;
+        right: 12px;
+        width: 37px;
+    }
+
+    .line {
+        background: $gray;
+    }
+}

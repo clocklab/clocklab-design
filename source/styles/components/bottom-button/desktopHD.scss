@@ -1,0 +1,72 @@
+.bottom-button {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    z-index: 6;
+    margin-left: 3%;
+    width: 93%;
+    overflow: hidden;
+
+    a {
+        display: flex;
+        height: 20px;
+        cursor: pointer;
+
+        &:hover {
+
+            span {
+                padding: 0 30px 0 25px;
+            }
+
+            .arrow {
+                opacity: 1;
+                transform: translateX(10%);
+            }
+        }
+    }
+
+    span {
+        position: relative;
+        padding-left: 48px;
+        color: $lightGray;
+        font-size: 12px;
+        font-family: $Raleway-Bold;
+        line-height: 16px;
+        text-transform: uppercase;
+        transition: padding $timeTick;
+    }
+
+    .arrow-container {
+        width: 40px;
+        overflow: hidden;
+    }
+
+    .arrow {
+        width: 90%;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity $timeTickHalf, transform $time;
+
+        .st0,
+        .st1 {
+            fill: $lightGray;
+            stroke: $lightGray;
+            stroke-width: .75;
+            stroke-miterlimit: 10;
+        }
+
+        .st1 {
+            fill: none;
+        }
+    }
+
+    .line {
+        flex-grow: 1;
+        height: 1px;
+        background: $lightGray;
+        transition: width $timeTick;
+    }
+}
