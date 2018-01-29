@@ -29,8 +29,8 @@
 @import 'components/crossed-button/desktopHD';
 @import 'components/bottom-button/desktopHD';
 @import 'components/social/desktopHD';
-// @import 'components/portfolio-right-panel/desktopHD';
-// @import 'components/portfolio-client/desktopHD';
+@import 'components/portfolio-right-panel/desktopHD';
+@import 'components/portfolio-client/desktopHD';
 // @import 'components/form/desktopHD';
 /* ---- DESKTOP HD ---- */
 
@@ -60,8 +60,8 @@
 @media (max-width: 1366px) {
     @import 'components/screen-block/desktop';
     @import 'components/copyright/desktop';
-    // @import 'components/portfolio-right-panel/desktop';
-    // @import 'components/portfolio-client/desktop';
+    @import 'components/portfolio-right-panel/desktop';
+    @import 'components/portfolio-client/desktop';
     // @import 'components/form/desktop';
 }
 /* ---- DESKTOP ---- */
@@ -72,8 +72,8 @@
 /---- TABLET LANDSCAPE ---- */
 @media (max-width: 1024px) {
     @import 'components/screen-block/tabletLandscape';
-    // @import 'components/portfolio-right-panel/tabletLandscape';
-    // @import 'components/portfolio-client/tabletLandscape';
+    @import 'components/portfolio-right-panel/tabletLandscape';
+    @import 'components/portfolio-client/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
@@ -83,8 +83,8 @@
 /---- TABLET PORTRAIT ---- */
 @media (max-width: 768px) {
     @import 'components/screen-block/tabletPortrait';
-    // @import 'components/portfolio-right-panel/tabletPortrait';
-    // @import 'components/portfolio-client/tabletPortrait';
+    @import 'components/portfolio-right-panel/tabletPortrait';
+    @import 'components/portfolio-client/tabletPortrait';
 }
 /* ---- TABLET PORTRAIT ---- */
 
