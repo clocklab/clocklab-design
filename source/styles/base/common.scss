@@ -38,40 +38,4 @@ html {
             }
         }
     }
-
-    @media only screen and (max-width: 1024px) {
-        body {
-            overflow: visible;
-
-            .wrapper {
-                width: initial;
-                height: initial;
-                overflow: visible;
-            }
-        }
-    }
-
-}
-
-
-.dark-language {
-
-    .language {
-
-        a {
-            color: $darkGray;
-
-            &.select {
-                color: $gray;
-
-                &:before {
-                    color: $gray;
-                }
-            }
-
-            &:hover {
-                color: $gray;
-            }
-        }
-    }
 }
