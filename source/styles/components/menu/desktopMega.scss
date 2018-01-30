@@ -1,0 +1,97 @@
+.menu {
+    width: 140px;
+    height: 140px;
+
+    &__item {
+        width: 140px;
+        height: 140px;
+
+        .text-block {
+            padding-top: 40px;
+        }
+
+        .serial-number {
+            top: 15px;
+            right: 15px;
+            font-size: 16px;
+        }
+
+        .symbol,
+        .name {
+            font-size: 40px;
+        }
+
+        .name {
+            bottom: 20px;
+            font-size: 18px;
+        }
+
+        .hamburger {
+            width: 55px;
+            height: 40px;
+        }
+
+        &:before {
+            top: 40px;
+            right: 40px;
+        }
+
+        &:hover {
+
+            &:before {
+                top: 10px;
+                right: 10px;
+            }
+        }
+
+        &--open-close {
+            padding-top: 40px;
+            width: 140px;
+            height: 140px;
+        }
+
+        &--blog {
+            top: 139px;
+        }
+
+        &--about-us {
+            right: 139px;
+        }
+
+        &--services {
+            top: 139px;
+            right: 139px;
+        }
+
+        &--contact {
+            top: 139px * 2;
+        }
+
+        &--portfolio {
+            right: 139px * 2;
+        }
+
+        &--home {
+            right: 139px * 3;
+        }
+    }
+
+    &.opened {
+
+        .menu__item {
+
+            .hamburger {
+                width: 60px;
+                height: 60px;
+            }
+
+            &--open-close {
+                padding-top: 30px;
+            }
+        }
+    }
+
+    &.form-opened {
+        top: -141px;
+    }
+}
