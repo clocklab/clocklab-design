@@ -5,15 +5,12 @@
 @import 'base/animate';
 @import 'base/animations';
 
-
-// @import 'components/top-panel/main';
-// @import 'components/logo/main';
 // @import 'components/menu/main';
-
 
 /*
 /
 /---- DESKTOP HD ---- */
+@import 'components/logo/desktopHD';
 @import 'components/screen-block/desktopHD';
 @import 'components/new-title/desktopHD';
 @import 'components/copyright/desktopHD';
@@ -35,6 +32,7 @@
 /
 /---- DESKTOP MEGA ---- */
 @media (min-width: 1921px) {
+    @import 'components/logo/desktopMega';
     @import 'components/screen-block/desktopMega';
     @import 'components/form/desktopMega';
 }
@@ -78,6 +76,7 @@
 /
 /---- TABLET PORTRAIT ---- */
 @media (max-width: 768px) {
+    @import 'components/logo/tabletPortrait';
     @import 'components/screen-block/tabletPortrait';
     @import 'components/portfolio-right-panel/tabletPortrait';
     @import 'components/portfolio-client/tabletPortrait';
@@ -89,6 +88,7 @@
 /
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
+    @import 'components/logo/phoneLandscape';
     @import 'components/copyright/phoneLandscape';
     @import 'components/big-background-letter/phoneLandscape';
     @import 'components/sticker/phoneLandscape';
