@@ -4,6 +4,10 @@
     $delta: 15px;
     $info-width: 27%;
 
+    .back-layer {
+        padding-right: 4%;
+    }
+
     .container {
         width: 83%;
     }
@@ -69,5 +73,16 @@
     .project-name {
         padding: 10px;
         font-size: 22px;
+    }
+
+    .form {
+        width: 35%;
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(25deg) scaleX(.65);
+        }
     }
 }
