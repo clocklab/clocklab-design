@@ -5,15 +5,11 @@
 @import 'base/animate';
 @import 'base/animations';
 
-
-// @import 'components/top-panel/main';
-// @import 'components/logo/main';
-// @import 'components/menu/main';
-
-
 /*
 /
 /---- DESKTOP HD ---- */
+@import 'components/logo/desktopHD';
+@import 'components/menu/desktopHD';
 @import 'components/screen-block/desktopHD';
 @import 'components/new-title/desktopHD';
 @import 'components/copyright/desktopHD';
@@ -35,6 +31,8 @@
 /
 /---- DESKTOP MEGA ---- */
 @media (min-width: 1921px) {
+    @import 'components/logo/desktopMega';
+    @import 'components/menu/desktopMega';
     @import 'components/screen-block/desktopMega';
     @import 'components/form/desktopMega';
 }
@@ -54,6 +52,8 @@
 /
 /---- DESKTOP ---- */
 @media (max-width: 1366px) {
+    @import 'components/logo/desktop';
+    @import 'components/menu/desktop';
     @import 'components/screen-block/desktop';
     @import 'components/copyright/desktop';
     @import 'components/portfolio-right-panel/desktop';
@@ -78,6 +78,7 @@
 /
 /---- TABLET PORTRAIT ---- */
 @media (max-width: 768px) {
+    @import 'components/logo/tabletPortrait';
     @import 'components/screen-block/tabletPortrait';
     @import 'components/portfolio-right-panel/tabletPortrait';
     @import 'components/portfolio-client/tabletPortrait';
@@ -89,6 +90,8 @@
 /
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
+    @import 'components/logo/phoneLandscape';
+    @import 'components/menu/phoneLandscape';
     @import 'components/copyright/phoneLandscape';
     @import 'components/big-background-letter/phoneLandscape';
     @import 'components/sticker/phoneLandscape';
