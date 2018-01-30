@@ -5,6 +5,10 @@
         min-height: initial;
     }
 
+    .back-layer {
+        padding-right: 0;
+    }
+
     .container {
         display: block;
         padding-top: 40px;
@@ -50,7 +54,7 @@
         &__item {
             margin-bottom: 20px;
             width: 23%;
-            height: 150px;
+            height: 100px;
 
             &--audi {
                 left: initial;
@@ -93,10 +97,18 @@
     }
 
     .project-name {
-        position: absolute;
-        width: 100%;
-        padding: 5px 0;
-        font-size: 16px;
-        text-align: center;
+        display: none;
+    }
+
+    .form {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(120deg) scaleX(1);
+        }
     }
 }
