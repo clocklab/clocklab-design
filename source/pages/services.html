@@ -3,16 +3,19 @@
     <head>
         <title>Clocklab Design | Services</title>
         @@include('./components/head.html')
+        <link rel="stylesheet" href="./../styles/common.css">
         <link rel="stylesheet" href="../styles/services.css">
     </head>
     <body>  
 
-        @@include('./components/top-panel.html')
+        @@include('./components/logo.html')
+
+        @@include('./components/menu.html')
 
         <div class="services page">
-            @@include('./components/big-background-letter.html')
-
-            @@include('./components/social.html')
+            <div class="big-background-letter">
+                <span>o</span>
+            </div>
 
             @@include('./components/languages.html')
 
@@ -26,8 +29,8 @@
             </div>
 
             <div class="container">
-                <span class="name">
-                    <h1 class="name-text">Услуги</h1>
+                <span class="sticker white">
+                    <h1 class="sticker-text">Услуги</h1>
                 </span>
 
                 <div class="services-list">
@@ -118,6 +121,8 @@
                     </div>
                 </div>
             </div>
+
+            @@include('./components/social.html')
         </div>
 
         <script src="../scripts/services.min.js"></script>

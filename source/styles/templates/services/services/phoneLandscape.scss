@@ -65,12 +65,17 @@
     }
 
     &.page {
+        height: initial;
+        min-height: 100vh;
+        overflow: auto;
 
         .line {
             animation: none;
         }
 
         .container {
+            height: initial;
+            min-height: 100vh;
 
             &:before,
             &:after {
@@ -124,6 +129,17 @@
                     &-text {
                         animation-delay: $services-page-first-column-delay;
                     }
+                }
+            }
+        }
+
+        .content {
+
+            &-list {
+
+                a {
+                    margin-bottom: 10px;
+                    line-height: 1.2;
                 }
             }
         }
