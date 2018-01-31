@@ -1,17 +1,87 @@
-// base
-@import "../base/variables";
-@import "../base/fonts";
-@import "../base/reset";
-@import "../base/common";
-@import "../base/animations";
+@import 'base/variables';
 
-// components
-@import "../components/top-panel/main";
-@import "../components/language/main";
-@import "../components/crossed-button/main";
-@import "../components/jumping-button/main";
-@import "../components/sticker/main";
-@import "../components/modules/clock-bg";
+/*
+/
+/---- DESKTOP HD ---- */
+// -- services --
+@import 'templates/post/post/desktopHD';
+// -- services --
+/* ---- DESKTOP HD ---- */
 
-// main
-@import "templates/post/post/main";
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    // -- services --
+    @import 'templates/post/post/desktopMega';
+    // -- services --
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+    // -- services --
+    @import 'templates/post/post/desktopWide';
+    // -- services --
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    // -- services --
+    @import 'templates/post/post/desktop';
+    // -- services --
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    // -- services --
+    @import 'templates/post/post/tabletLandscape';
+    // -- services --
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+    // -- services --
+    // @import 'templates/post/post/tabletPortrait';
+    // -- services --
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    // -- services --
+    @import 'templates/post/post/phoneLandscape';
+    // -- services --
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+    // -- services --
+    @import 'templates/post/post/phonePortrait';
+    // -- services --
+}
+/* ---- PHONE PORTRAIT ---- */
