@@ -1,19 +1,4 @@
-// base
 @import 'base/variables';
-@import 'base/fonts';
-@import 'base/reset';
-@import 'base/common';
-@import 'base/animations';
-
-// components
-@import 'components/top-panel/main';
-// @import 'components/logo/main';
-// @import 'components/menu/main';
-@import 'components/language/main';
-@import 'components/sticker/main';
-@import 'components/crossed-button/main';
-@import 'components/jumping-button/main';
-@import 'components/new-title/main';
 
 
 /*
@@ -97,7 +82,7 @@
 /---- PHONE PORTRAIT ---- */
 @media (max-width: 414px) {
     // -- blog --
-    @import 'templates/blog/blog/phonePortrait';
+    // @import 'templates/blog/blog/phonePortrait';
     // -- blog --
 }
 /* ---- PHONE PORTRAIT ---- */
