@@ -1,12 +1,11 @@
 .site-map {
-    
+
     $contentWidth: 1500px;
-    $columnWidth: $contentWidth / 4; 
+    $columnWidth: $contentWidth / 4;
 
     position: relative;
     background: $lightBlack;
 
-    // ---- common style ----
     a {
         display: block;
         padding-right: 15px;
@@ -22,25 +21,23 @@
         margin-left: $columnWidth;
         overflow-x: hidden;
     }
-    // ---- common style ----
 
     .big-background-letter {
         font-size: 850px;
         animation: fadeIn $time * 3 $time * 3 both;
-        
+
         span {
             font-family: $Raleway-ExtraBold;
             text-transform: uppercase;
         }
 
         &--c {
-            right: initial;
             top: 100vh;
             left: -200px;
         }
 
         &--o {
-            top: initial;
+            right: -100px;
             bottom: 60vh;
         }
     }
@@ -55,21 +52,21 @@
         & > .tree-level {
             margin-left: 0;
             padding-bottom: 320px;
-    
+
             & > a {
                 margin-bottom: 40px;
                 color: $blue;
                 font-family: $Roboto-Black;
                 font-size: 36px;
                 text-transform: uppercase;
-    
+
                 &:hover {
                     color: $white;
                 }
             }
-            
+
             & > .tree-level {
-    
+
                 & > a {
                     margin-bottom: 50px;
                     color: $white;
@@ -81,9 +78,9 @@
                         color: $blue;
                     }
                 }
-    
+
                 & > .tree-level {
-    
+
                     & > a {
                         margin-bottom: 35px;
                         color: $lightGray;
@@ -95,9 +92,9 @@
                             color: $blue;
                         }
                     }
-    
+
                     .tree-level {
-    
+
                         a {
                             margin-bottom: 20px;
                             color: $gray;
@@ -169,7 +166,7 @@
         font-size: 48px;
         text-transform: uppercase;
         overflow: hidden;
-        
+
         span {
             display: block;
             animation: Right $time * 3 $time * 3 both;
