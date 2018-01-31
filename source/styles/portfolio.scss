@@ -1,20 +1,87 @@
-// base
 @import 'base/variables';
-@import 'base/fonts';
-@import 'base/reset';
-@import 'base/common';
-@import 'base/animations';
 
-// components
-// @import 'components/top-panel/main';
-@import 'components/logo/main';
-@import 'components/menu/main';
-@import 'components/language/main';
-@import 'components/social/main';
-@import 'components/copyright/main';
-@import 'components/modules/clock-bg';
-@import 'components/jumping-button/main';
-@import 'components/new-title/main';
+/*
+/
+/---- DESKTOP HD ---- */
+// -- portfolio --
+@import 'templates/portfolio/portfolio/desktopHD';
+// -- portfolio --
+/* ---- DESKTOP HD ---- */
 
-// main
-@import 'templates/portfolio/portfolio/main';
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    // -- portfolio --
+    // @import 'templates/portfolio/portfolio/desktopMega';
+    // -- portfolio --
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+    // -- portfolio --
+    @import 'templates/portfolio/portfolio/desktopWide';
+    // -- portfolio --
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    // -- portfolio --
+    @import 'templates/portfolio/portfolio/desktop';
+    // -- portfolio --
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    // -- portfolio --
+    @import 'templates/portfolio/portfolio/tabletLandscape';
+    // -- portfolio --
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+    // -- portfolio --
+    // @import 'templates/portfolio/portfolio/tabletPortrait';
+    // -- portfolio --
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    // -- portfolio --
+    @import 'templates/portfolio/portfolio/phoneLandscape';
+    // -- portfolio --
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+    // -- portfolio --
+    // @import 'templates/portfolio/portfolio/phonePortrait';
+    // -- portfolio --
+}
+/* ---- PHONE PORTRAIT ---- */

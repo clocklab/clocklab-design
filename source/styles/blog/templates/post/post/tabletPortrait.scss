@@ -1,0 +1,71 @@
+.post {
+
+    .crossed-button {
+        top: 800px;
+        left: 10px;
+        bottom: initial;
+
+        span {
+            transform: rotate(-90deg) translateY(-15px);
+        }
+
+        &:hover {
+
+            span {
+
+                &:before {
+                    animation: none;
+                }
+            }
+        }
+    }
+
+    .social {
+        bottom: 160px;
+        left: 92px;
+    }
+
+    .nav-arrows {
+        display: block;
+        position: absolute;
+        bottom: 57px;
+        right: 35px;
+        z-index: 3;
+        overflow: hidden;
+    }
+
+    .image-container {
+        height: 335px;
+    }
+
+    .date {
+        bottom: -25px;
+        padding: 14px 12px;
+        width: 170px;
+        height: 80px;
+    }
+
+    main {
+        margin-top: 0;
+        padding: 35px 55px 220px 90px;
+
+        .sticker {
+            margin-left: 0;
+        }
+
+        h1 {
+            margin-top: 25px;
+            font-size: 48px;
+            line-height: 55px;
+        }
+
+        article {
+            margin-top: 25px;
+
+            p {
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+    }
+}

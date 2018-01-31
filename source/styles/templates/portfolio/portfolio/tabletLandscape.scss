@@ -1,0 +1,47 @@
+.portfolio {
+
+    .page-layer {
+        min-height: 768px;
+    }
+
+    .new-header {
+        left: 50px;
+    }
+
+    .letter {
+
+        &-c {
+            top: 100px;
+            left: 100px;
+        }
+
+        &-o {
+            bottom: 100px;
+            right: 100px;
+        }
+    }
+
+    .content-container {
+        justify-content: space-around;
+        padding-bottom: 110px;
+        min-height: 768px;
+    }
+
+    .nav-arrows {
+        right: 40px;
+        width: 90px;
+
+        .arrow {
+            width: 45px;
+            height: 45px;
+
+            svg {
+                width: 20px;
+            }
+
+            &--next {
+                left: 44px;
+            }
+        }
+    }
+}

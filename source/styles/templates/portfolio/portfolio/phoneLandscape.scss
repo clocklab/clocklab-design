@@ -1,0 +1,109 @@
+.portfolio {
+
+    .page-layer {
+        min-height: 568px;
+    }
+
+    .letters {
+        font-size: 20vw;
+    }
+
+    .letter {
+
+        &-c {
+            top: 170px;
+            left: 5%;
+        }
+
+        &-o {
+            bottom: 120px;
+            right: 10%;
+        }
+    }
+
+    .new-header {
+        top: 90px;
+        left: 15px;
+        font-size: 30px;
+    }
+
+    .content-container {
+        justify-content: center;
+        align-items: center;
+        padding: 130px 15px 170px;
+        min-height: 568px;
+    }
+
+    .portfolio-item {
+
+        &:nth-child(4n + 1),
+        &:nth-child(4n + 2),
+        &:nth-child(4n + 3),
+        &:nth-child(4n + 4) {
+            margin: 0;
+            margin-right: 25px;
+
+            .image-container {
+                width: 35vh;
+                min-width: 230px;
+                height: 40vh;
+                min-height: 250px;
+            }
+
+            .new-title {
+                display: block;
+                position: absolute;
+                bottom: initial;
+                margin-top: 15px;
+            }
+
+            .text-container {
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        &:last-child {
+            padding-right: 100px;
+        }
+    }
+
+    .nav-arrows {
+        right: 20px;
+        width: 80px;
+
+        .arrow {
+            width: 40px;
+            height: 40px;
+
+            svg {
+                width: 20px;
+            }
+
+            &--next {
+                left: 39px;
+            }
+        }
+    }
+
+    .back-info {
+        padding: 10px 20px;
+
+        img {
+            width: 80px;
+            height: 30px;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    }
+}
