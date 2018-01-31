@@ -1,0 +1,582 @@
+.portfolio {
+    font-family: $Raleway-Regular;
+
+    .page-layer {
+        top: 0;
+        left: 0;
+    }
+
+    .back-layer {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+
+        &:before,
+        &:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            width: 50vw;
+            height: 100vh;
+            background: $lightBlack;
+            content: '';
+        }
+
+        &:before {
+            left: 0;
+            animation: Down $PPLeftBlockAnimationTime $PPLeftBlockDelayTime both;
+        }
+
+        &:after {
+            right: 0;
+            animation: Up $PPRightBlockAnimationTime $PPRightBlockDelayTime both;
+        }
+    }
+
+    /* FIRSTLY MAKE COMPONENT */
+    .clock-bg {
+        z-index: 1;
+        user-select: none;
+
+        span {
+            color: $lightBlack;
+
+            &:before {
+                animation: Right $PPClockAnimationTime both;
+            }
+
+            &:nth-child(1) {
+
+                &:before {
+                    animation-delay: $PPClockFirstDelayTime;
+                }
+            }
+
+            &:nth-child(2) {
+
+                &:before {
+                    animation-delay: $PPClockSecondDelayTime;
+                }
+            }
+
+            &:nth-child(3) {
+
+                &:before {
+                    animation-delay: $PPClockThirdDelayTime;
+                }
+            }
+
+            &:nth-child(4) {
+
+                &:before {
+                    animation-delay: $PPClockFourthDelayTime;
+                }
+            }
+
+            &:nth-child(5) {
+
+                &:before {
+                    animation-delay: $PPClockFifthDelayTime;
+                }
+            }
+        }
+    }
+    /* FIRSTLY MAKE COMPONENT */
+
+    .letters {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        // color: rgba(0, 0, 0, .2);
+        color: $gray;
+        font-family: $Raleway-Bold;
+        font-size: 12vw;
+        user-select: none;
+    }
+
+    .letter {
+        position: absolute;
+        animation: fadeIn $PPLettersAnimationTime $PPLettersDelayTime both;
+
+        &-c {
+            top: 140px;
+            // left: 450px;
+            left: 20%;
+        }
+
+        &-o {
+            bottom: 100px;
+            // right: 400px;
+            right: 20%;
+        }
+    }
+
+    .new-header {
+        position: absolute;
+        top: 180px;
+        left: 125px;
+        z-index: 2;
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: 48px;
+        text-transform: uppercase;
+        animation: fadeInUp $time * 3 $time * 6 both;
+    }
+
+    .front-layer {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        min-height: 900px;
+        cursor: grab;
+        user-select: none;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &.active {
+            cursor: grabbing;
+        }
+    }
+
+    .content-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: flex-start;
+        position: absolute;
+        padding: 135px 150px 140px 125px;
+        width: 100vw;
+        height: 100%;
+        min-height: 900px;
+    }
+
+    .portfolio-item {
+        position: relative;
+        color: $white;
+
+        &:nth-child(4n) {
+            margin: 160px 0;
+            margin-right: 85px;
+
+            .image-container {
+                width: 45vh;
+                min-width: 430px;
+                height: 37.5vh;
+                min-height: 360px;
+
+                /*  WTF??!! */
+                & > img {
+                    width: 45vh;
+                    min-width: 430px;
+                    height: 37.5vh;
+                    min-height: 360px;
+                }
+                /*  WTF??!! */
+            }
+
+            .new-title {
+                display: block;
+                position: absolute;
+                margin-top: 15px;
+            }
+        }
+
+        &:nth-child(4n + 1) {
+            margin-left: 30px;
+            vertical-align: bottom;
+
+            .image-container {
+                display: inline-block;
+                width: 52vh;
+                min-width: 500px;
+                height: 31.25vh;
+                min-height: 300px;
+
+                /*  WTF??!! */
+                & > img {
+                    width: 52vh;
+                    min-width: 500px;
+                    height: 31.25vh;
+                    min-height: 300px;
+                }
+                /*  WTF??!! */
+            }
+
+            .new-title {
+                display: inline-block;
+                bottom: 20px;
+                left: 10px;
+            }
+        }
+
+        &:nth-child(4n + 2) {
+
+            .image-container {
+                display: inline-block;
+                width: 31.25vh;
+                min-width: 300px;
+                height: 31.25vh;
+                min-height: 300px;
+
+                /*  WTF??!! */
+                img {
+                    width: 31.25vh;
+                    min-width: 300px;
+                    height: 31.25vh;
+                    min-height: 300px;
+                }
+                /*  WTF??!! */
+            }
+
+            .new-title {
+                display: inline-block;
+                bottom: 30px;
+                left: 20px;
+            }
+        }
+
+        &:nth-child(4n + 3) {
+            margin-top: 45px;
+            margin-left: 80px;
+            margin-right: 260px;
+
+            .image-container {
+                width: 31.25vh;
+                min-width: 300px;
+                height: 55vh;
+                min-height: 530px;
+
+                img {
+                    width: 31.25vh;
+                    min-width: 300px;
+                    height: 55vh;
+                    min-height: 530px;
+                }
+            }
+
+            .new-title {
+                display: block;
+                position: absolute;
+                margin-top: 20px;
+            }
+        }
+
+        &:last-child {
+            padding-right: 100px;
+        }
+    }
+
+    .image-container {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        font-size: 0;
+
+        & > img {
+            position: relative;
+            z-index: 2;
+            object-fit: cover;
+            user-select: none;
+            animation: Right $PPImageAnimationTime  $PPImageDelayTime both;
+        }
+
+        &:hover {
+
+            .back-info {
+
+                img,
+                p,
+                button {
+                    opacity: 1;
+                    transform: none;
+                    transition-delay: 0s;
+                }
+
+                p {
+                    transition-delay: $timeHalf;
+                }
+
+                button {
+                    transition-delay: $time;
+                }
+
+                &:before {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .4);
+            content: '';
+            animation: Right $PPImageBgAnimationTime  $PPImageBgDelayTime both;
+        }
+
+        &:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: $transparent;
+            content: '';
+            transition: background $time * 3;
+        }
+
+        &.active {
+
+            & > img {
+                position: fixed;
+                z-index: 9999;
+                width: 50vw;
+                height: 50vh;
+                opacity: .5;
+                transition: width linear $time * 3, height linear $time * 3, opacity $time * 1.5 $time * 1.5;
+            }
+
+            &:before {
+                display: none;
+            }
+
+            &:after {
+                position: fixed;
+                z-index: 5;
+                width: 100vw;
+                height: 100vw;
+                background: rgba(255, 255, 255, .85);
+            }
+        }
+    }
+
+    .new-title {
+        position: relative;
+        padding: 0 8px;
+        overflow: hidden;
+
+        span {
+            display: block;
+            position: relative;
+            z-index: 1;
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: 24px;
+            line-height: 30px;
+            animation: Up $PPTitleTextAnimationTime $PPTitleTextDelayTime both;
+        }
+
+        &:before {
+            height: 24px;
+            animation: rightAndHalfDown $PPTitleLineAnimationTime linear $PPTitleLineDelayTime both;
+        }
+    }
+
+    .languages,
+    .social,
+    .copyright,
+    .nav-arrows {
+        position: fixed;
+        z-index: 5;
+    }
+
+    .languages {
+
+        a {
+            animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+        }
+    }
+
+    .copyright {
+        right: 32px;
+        bottom: 370px;
+        overflow: hidden;
+
+        p {
+            padding: 5px 0;
+            animation: Up $PPCopyAnimationTime $PPCopyDelayTime both;
+        }
+    }
+
+    .social {
+
+        .facebook,
+        .instagram {
+            animation: social $time * 3 $time * 3 both;
+        }
+
+        .jumping-button {
+            animation: fadeInRight $time * 3 $time * 6 both;
+        }
+    }
+
+    .nav-arrows {
+        bottom: 41px;
+        right: 110px;
+        width: 100px;
+
+        .arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            border: 1px solid $white;
+            animation: social $time * 3 $time * 3 both;
+
+            svg {
+                position: relative;
+                z-index: 2;
+                width: 30px;
+            }
+
+            .st0,
+            .st1 {
+                stroke: $white;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 100%;
+                height: 100%;
+                background: $blue;
+                content: '';
+                opacity: 0;
+                transition: top $time, right $time, opacity $time;
+            }
+
+            &:hover {
+
+                &:before {
+                    top: 3px;
+                    right: 3px;
+                    opacity: 1;
+                }
+            }
+
+            &--next {
+                left: 49px;
+                top: -1px;
+            }
+
+            &--prev {
+
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+
+    .back-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        padding: 15px 25px;
+        width: 100%;
+        height: 100%;
+
+        img,
+        p,
+        button {
+            position: relative;
+            z-index: 2;
+            transition: transform $time ease-out, opacity $time ease-out;
+        }
+
+        img {
+            display: block;
+            width: 85px;
+            height: 35px;
+            object-fit: contain;
+            opacity: 0;
+            transform: translateY(100%);
+            transition-delay: $time;
+        }
+
+        p {
+            margin-top: 25px;
+            color: $white;
+            font-family: $Roboto-Regular;
+            font-size: 20px;
+            line-height: 1.3;
+            opacity: 0;
+            transform: translateY(50%);
+            transition-delay: $timeHalf;
+        }
+
+        button {
+            display: block;
+            margin-top: 25px;
+            padding: 7px 15px;
+            background: $blue;
+            border-radius: 0;
+            color: $white;
+            font-family: $Roboto-Medium;
+            font-size: 15px;
+            text-transform: uppercase;
+            opacity: 0;
+            transform: translateY(100%);
+            transition-delay: 0s;
+
+            span {
+                position: relative;
+                z-index: 2;
+            }
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 10px;
+                left: -10px;
+                width: 100%;
+                height: 100%;
+                background: $darkGray;
+                content: '';
+                opacity: 0;
+                transition: top $time, left $time, opacity $time;
+            }
+
+            &:hover {
+
+                &:before {
+                    top: 3px;
+                    left: -3px;
+                    opacity: 1;
+                }
+            }
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .9);
+            content: '';
+            opacity: 0;
+            transition: opacity $time * 1.5;
+        }
+    }
+
+    &.active {
+        cursor: grabbing;
+    }
+}

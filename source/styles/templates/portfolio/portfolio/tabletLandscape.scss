@@ -1,27 +1,37 @@
 .portfolio {
 
-    .new-header {
-        font-size: 40px;
+    .back-layer {
+
+        .letter {
+
+            &-c {
+                top: 100px;
+                left: 100px;
+            }
+
+            &-o {
+                bottom: 100px;
+                right: 100px;
+            }
+        }
     }
 
     .content-container {
         justify-content: space-around;
-        padding: 85px 100px 80px;
-        min-height: 650px;
+        padding-bottom: 110px;
+        min-height: 768px;
     }
 
     .portfolio-item {
 
         &:nth-child(4n) {
-            margin: 200px 0;
-            margin-right: 85px;
 
             .image-container {
                 min-width: 300px;
                 min-height: 250px;
 
                 /*  WTF??!! */
-                & > img {
+                img {
                     min-width: 300px;
                     min-height: 250px;
                 }
@@ -32,13 +42,13 @@
         &:nth-child(4n + 1) {
 
             .image-container {
-                min-width: 300px;
-                min-height: 175px;
+                min-width: 400px;
+                min-height: 200px;
 
                 /*  WTF??!! */
-                & > img {
-                    min-width: 300px;
-                    min-height: 175px;
+                img {
+                    min-width: 400px;
+                    min-height: 200px;
                 }
                 /*  WTF??!! */
             }
@@ -51,7 +61,7 @@
                 min-height: 200px;
 
                 /*  WTF??!! */
-                & > img {
+                img {
                     min-width: 200px;
                     min-height: 200px;
                 }
@@ -60,55 +70,18 @@
         }
 
         &:nth-child(4n + 3) {
-            margin-right: 100px;
 
             .image-container {
                 min-width: 200px;
                 min-height: 400px;
 
                 /*  WTF??!! */
-                & > img {
+                img {
                     min-width: 200px;
                     min-height: 400px;
                 }
                 /*  WTF??!! */
             }
-        }
-
-        &--q7 {
-
-            .new-title {
-                width: 250px;
-            }
-        }
-    }
-
-    .social {
-        bottom: 20px;
-    }
-
-    .nav-arrows {
-        bottom: 20px;
-        right: 60px;
-    }
-
-    .back-info {
-        padding: 15px;
-
-        img {
-            width: 75px;
-            height: 25px;
-        }
-
-        p {
-            margin-top: 15px;
-            font-size: 16px;
-        }
-
-        button {
-            margin-top: 15px;
-            padding: 5px 15px;
-            font-size: 14px;
         }
     }
 }

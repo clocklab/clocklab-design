@@ -1,20 +1,87 @@
-// base
 @import 'base/variables';
-@import 'base/fonts';
-@import 'base/reset';
-@import 'base/common';
-@import 'base/animations';
 
-// components
-// @import 'components/top-panel/main';
-@import 'components/logo/main';
-@import 'components/menu/main';
-@import 'components/language/main';
-@import 'components/social/main';
-@import 'components/copyright/main';
-@import 'components/modules/clock-bg';
-@import 'components/jumping-button/main';
-@import 'components/new-title/main';
+/*
+/
+/---- DESKTOP HD ---- */
+// -- services --
+@import 'templates/portfolio/portfolio/desktopHD';
+// -- services --
+/* ---- DESKTOP HD ---- */
 
-// main
-@import 'templates/portfolio/portfolio/main';
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    // -- services --
+    @import 'templates/portfolio/portfolio/desktopMega';
+    // -- services --
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+    // -- services --
+    @import 'templates/portfolio/portfolio/desktopWide';
+    // -- services --
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    // -- services --
+    @import 'templates/portfolio/portfolio/desktop';
+    // -- services --
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    // -- services --
+    @import 'templates/portfolio/portfolio/tabletLandscape';
+    // -- services --
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+    // -- services --
+    // @import 'templates/portfolio/portfolio/tabletPortrait';
+    // -- services --
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    // -- services --
+    @import 'templates/portfolio/portfolio/phoneLandscape';
+    // -- services --
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+    // -- services --
+    @import 'templates/portfolio/portfolio/phonePortrait';
+    // -- services --
+}
+/* ---- PHONE PORTRAIT ---- */

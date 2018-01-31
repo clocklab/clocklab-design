@@ -3,18 +3,19 @@
 <head>
     <title>clocklab design | portfolio</title>
     <!-- @@include('./components/head.html') -->
+    <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/portfolio.css">
+    <script src="../scripts/portfolio.min.js" defer></script>
 </head>
 <body>
 
     <div class="portfolio">
 
         @@include('./components/logo.html')
+
         @@include('./components/menu.html')
 
         <div class="page-layer back-layer">
-            
-            <!-- clock bg -->
             @@include('./components/clock-bg.html')
 
             <div class="letters">
@@ -27,7 +28,6 @@
             </div>
 
             <h1 class="new-header">Портфолио</h1>
-    
         </div>
     
         <div class="page-layer front-layer">
@@ -261,7 +261,5 @@
             </div>
         </div>
     </div>
-
-    <script src="../scripts/portfolio.min.js"></script>
 </body>
 </html>
