@@ -1,18 +1,23 @@
 .portfolio {
 
-    .back-layer {
+    .page-layer {
+        min-height: 768px;
+    }
 
-        .letter {
+    .new-header {
+        left: 50px;
+    }
 
-            &-c {
-                top: 100px;
-                left: 100px;
-            }
+    .letter {
 
-            &-o {
-                bottom: 100px;
-                right: 100px;
-            }
+        &-c {
+            top: 100px;
+            left: 100px;
+        }
+
+        &-o {
+            bottom: 100px;
+            right: 100px;
         }
     }
 
@@ -22,65 +27,20 @@
         min-height: 768px;
     }
 
-    .portfolio-item {
+    .nav-arrows {
+        right: 40px;
+        width: 90px;
 
-        &:nth-child(4n) {
+        .arrow {
+            width: 45px;
+            height: 45px;
 
-            .image-container {
-                min-width: 300px;
-                min-height: 250px;
-
-                /*  WTF??!! */
-                img {
-                    min-width: 300px;
-                    min-height: 250px;
-                }
-                /*  WTF??!! */
+            svg {
+                width: 20px;
             }
-        }
 
-        &:nth-child(4n + 1) {
-
-            .image-container {
-                min-width: 400px;
-                min-height: 200px;
-
-                /*  WTF??!! */
-                img {
-                    min-width: 400px;
-                    min-height: 200px;
-                }
-                /*  WTF??!! */
-            }
-        }
-
-        &:nth-child(4n + 2) {
-
-            .image-container {
-                min-width: 200px;
-                min-height: 200px;
-
-                /*  WTF??!! */
-                img {
-                    min-width: 200px;
-                    min-height: 200px;
-                }
-                /*  WTF??!! */
-            }
-        }
-
-        &:nth-child(4n + 3) {
-
-            .image-container {
-                min-width: 200px;
-                min-height: 400px;
-
-                /*  WTF??!! */
-                img {
-                    min-width: 200px;
-                    min-height: 400px;
-                }
-                /*  WTF??!! */
+            &--next {
+                left: 44px;
             }
         }
     }

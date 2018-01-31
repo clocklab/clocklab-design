@@ -3,9 +3,9 @@
 /*
 /
 /---- DESKTOP HD ---- */
-// -- services --
+// -- portfolio --
 @import 'templates/portfolio/portfolio/desktopHD';
-// -- services --
+// -- portfolio --
 /* ---- DESKTOP HD ---- */
 
 
@@ -13,9 +13,9 @@
 /
 /---- DESKTOP MEGA ---- */
 @media (min-width: 1921px) {
-    // -- services --
-    @import 'templates/portfolio/portfolio/desktopMega';
-    // -- services --
+    // -- portfolio --
+    // @import 'templates/portfolio/portfolio/desktopMega';
+    // -- portfolio --
 }
 /* ---- DESKTOP MEGA ---- */
 
@@ -24,9 +24,9 @@
 /
 /---- DESKTOP WIDE ---- */
 @media (max-width: 1680px) {
-    // -- services --
+    // -- portfolio --
     @import 'templates/portfolio/portfolio/desktopWide';
-    // -- services --
+    // -- portfolio --
 }
 /* ---- DESKTOP WIDE ---- */
 
@@ -35,9 +35,9 @@
 /
 /---- DESKTOP ---- */
 @media (max-width: 1366px) {
-    // -- services --
+    // -- portfolio --
     @import 'templates/portfolio/portfolio/desktop';
-    // -- services --
+    // -- portfolio --
 }
 /* ---- DESKTOP ---- */
 
@@ -46,9 +46,9 @@
 /
 /---- TABLET LANDSCAPE ---- */
 @media (max-width: 1024px) {
-    // -- services --
+    // -- portfolio --
     @import 'templates/portfolio/portfolio/tabletLandscape';
-    // -- services --
+    // -- portfolio --
 }
 /* ---- TABLET LANDSCAPE ---- */
 
@@ -57,9 +57,9 @@
 /
 /---- TABLET PORTRAIT ---- */
 @media (max-width: 768px) {
-    // -- services --
+    // -- portfolio --
     // @import 'templates/portfolio/portfolio/tabletPortrait';
-    // -- services --
+    // -- portfolio --
 }
 /* ---- TABLET PORTRAIT ---- */
 
@@ -68,9 +68,9 @@
 /
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
-    // -- services --
+    // -- portfolio --
     @import 'templates/portfolio/portfolio/phoneLandscape';
-    // -- services --
+    // -- portfolio --
 }
 /* ---- PHONE LANDSCAPE ---- */
 
@@ -80,8 +80,8 @@
 /
 /---- PHONE PORTRAIT ---- */
 @media (max-width: 414px) {
-    // -- services --
-    @import 'templates/portfolio/portfolio/phonePortrait';
-    // -- services --
+    // -- portfolio --
+    // @import 'templates/portfolio/portfolio/phonePortrait';
+    // -- portfolio --
 }
 /* ---- PHONE PORTRAIT ---- */

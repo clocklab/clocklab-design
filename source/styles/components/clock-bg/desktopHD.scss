@@ -7,8 +7,9 @@
     z-index: 0;
     width: 100%;
     height: 100%;
+    user-select: none;
 
-    span {
+    .letter-container {
         width: 20%;
         color: $white;
         font-family: $Raleway-ExtraBold;
@@ -16,45 +17,10 @@
         line-height: 100vh;
         text-align: center;
         overflow-x: hidden;
+    }
 
-        &:before {
-            display: block;
-            font-size: 30vw;
-        }
-
-        &:nth-child(1) {
-
-            &:before {
-                content: 'c';
-            }
-        }
-
-        &:nth-child(2) {
-
-            &:before {
-                content: 'l';
-            }
-        }
-
-        &:nth-child(3) {
-
-            &:before {
-                content: 'o';
-            }
-        }
-
-        &:nth-child(4) {
-
-            &:before {
-                content: 'c';
-            }
-        }
-
-        &:nth-child(5) {
-
-            &:before {
-                content: 'k';
-            }
-        }
+    &-letter {
+        display: block;
+        font-size: 30vw;
     }
 }

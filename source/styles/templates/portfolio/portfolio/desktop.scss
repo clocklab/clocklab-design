@@ -1,6 +1,11 @@
 .portfolio {
 
+    .page-layer {
+        min-height: 650px;
+    }
+
     .new-header {
+        top: 120px;
         font-size: 40px;
     }
 
@@ -12,66 +17,38 @@
 
     .portfolio-item {
 
-        &:nth-child(4n) {
+        &:nth-child(4n + 1) {
             margin: 200px 0;
             margin-right: 85px;
 
             .image-container {
                 min-width: 300px;
                 min-height: 250px;
-
-                /*  WTF??!! */
-                & > img {
-                    min-width: 300px;
-                    min-height: 250px;
-                }
-                /*  WTF??!! */
-            }
-        }
-
-        &:nth-child(4n + 1) {
-
-            .image-container {
-                min-width: 300px;
-                min-height: 175px;
-
-                /*  WTF??!! */
-                & > img {
-                    min-width: 300px;
-                    min-height: 175px;
-                }
-                /*  WTF??!! */
             }
         }
 
         &:nth-child(4n + 2) {
 
             .image-container {
-                min-width: 200px;
-                min-height: 200px;
-
-                /*  WTF??!! */
-                & > img {
-                    min-width: 200px;
-                    min-height: 200px;
-                }
-                /*  WTF??!! */
+                min-width: 300px;
+                min-height: 175px;
             }
         }
 
         &:nth-child(4n + 3) {
+
+            .image-container {
+                min-width: 200px;
+                min-height: 200px;
+            }
+        }
+
+        &:nth-child(4n + 4) {
             margin-right: 100px;
 
             .image-container {
                 min-width: 200px;
                 min-height: 400px;
-
-                /*  WTF??!! */
-                & > img {
-                    min-width: 200px;
-                    min-height: 400px;
-                }
-                /*  WTF??!! */
             }
         }
 
@@ -81,6 +58,10 @@
                 width: 250px;
             }
         }
+    }
+
+    .copyright {
+        bottom: 350px;
     }
 
     .social {
