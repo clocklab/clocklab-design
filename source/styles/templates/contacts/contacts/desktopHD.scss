@@ -1,10 +1,46 @@
+body {
+    overflow: hidden;
+}
+
 .contacts {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 8% 0 15%;
+    width: 100vw;
+    height: 100vh;
+    min-height: 900px;
     background: $background;
     font-family: $Raleway-Regular;
     overflow: hidden;
     animation: fadeIn $time * 3 both;
 
+    @keyframes contactsMap {
+        from {
+            opacity: 0;
+            transform: translateX(-15%);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    @keyframes contactsForm {
+        from {
+            opacity: 0;
+            transform: translateX(15%);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
     .copyright {
+        bottom: 43vh;
 
         p {
             animation: fadeInUp $time * 3 $time * 3 both;
@@ -22,33 +58,29 @@
         }
     }
 
-    .map {
-        position: absolute;
-        top: 0;
-        left: 35%;
-        z-index: 4;
-        width: 45%;
-        height: 75vh;
-        animation: mainConatactsMapDown $time * 3 $time * 5 linear forwards;
-    }
+    .social {
+        left: 70px;
 
-    .back-layer {
-        position: absolute;
-        bottom: 10vh;
-        right: 5%;
-        z-index: 4;
-        width: 30%;
-        background-color: rgba(28, 28, 28, .9);
-        animation: mainConatactsMapRight $time * 3 $time * 6 linear forwards;
+        .instagram,
+        .facebook {
+            width: 40px;
+            height: 40px;
+            animation: social $time * 3 $time * 3 both;
+        }
 
-        form {
-            position: relative;
-            padding: 0 130px 65px;
-            width: 100%;
-            color: $white;
+        .instagram {
+            top: -39px;
+        }
 
-            .close-form {
-                display: none;
+        .jumping-button {
+            margin-left: 100px;
+        }
+
+        .behance {
+            animation: fadeInRight $time * 3 $time * 5 both;
+
+            span {
+                font-size: 18px;
             }
         }
     }
@@ -61,70 +93,101 @@
         animation: fadeIn $time * 3 $time * 3 both;
     }
 
-    .networks {
-        bottom: 7vh;
-        left: 23vh;
-        z-index: 5;
-        animation: fadeInRight $time * 3 $time * 3 both;
+    .info-block {
+        position: relative;
+        z-index: 2;
+        width: 30%;
+        align-self: center;
+    }
 
-        li {
-            margin-right: 50px;
+    .new-title {
 
-            a {
-                color: $white;
-                font-size: 25px;
-                font-family: $Roboto-Regular;
-                transition: color $time;
+        .text-container {
 
-                &:hover {
-                    color: $blue;
-                }
+            &:before {
+                animation: rightAndHalfDown $time * 3 $first-column-delay both;
             }
+        }
 
-            &:last-of-type {
-                margin-right: 0;
-            }
+        &-text {
+            color: $white;
+            animation: Up $time * 3 $second-column-delay both;
         }
     }
 
     .contacts-info {
-        position: absolute;
-        z-index: 4;
-        margin: 15vh 0 0 100px;
+        margin-top: 10vh;
 
         li {
+            margin-bottom: 40px;
             color: $white;
-            font-size: 15px;
-            font-family: $Roboto-Regular;
-
-            a {
-                display: block;
-                margin-bottom: 10px;
-                color: $white;
-            }
+            font-size: 18px;
+            animation: fadeInUp $time * 3 both;
 
             &:nth-of-type(1) {
-                margin-bottom: 30px;
-                animation: fadeInUp $time * 3 $time * 3 both;
+                animation-delay: $first-column-delay;
             }
 
             &:nth-of-type(2) {
-                margin-bottom: 50px;
-                animation: fadeInUp $time * 3 $time * 4 both;
+                animation-delay: $first-column-delay + $time;
             }
 
-            &:nth-of-type(3) {
-                animation: fadeInUp $time * 3 $time * 5 both;
+            &:last-of-type {
+                margin-bottom: 0;
+                animation-delay: $first-column-delay + $time * 2;
 
                 a {
-                    padding-bottom: 4px;
-                    border-bottom: 1px solid;
+                    text-decoration: underline;
 
                     &:hover {
-                        border: 0;
+                        text-decoration: none;
                     }
                 }
             }
+        }
+
+        .type {
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        a {
+            display: inline-block;
+            margin-bottom: 8px;
+            color: $white;
+            transition: color $time;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    .map-block {
+        position: relative;
+        z-index: 2;
+        width: 60%;
+    }
+
+    .map {
+        width: 70%;
+        height: 75vh;
+        min-height: 700px;
+        animation: contactsMap $time * 2 $time * 5 linear both;
+    }
+
+    .form {
+        position: absolute;
+        bottom: 10vh;
+        right: 5%;
+        padding: 65px 8% 35px;
+        width: 60%;
+        color: $white;
+        background-color: rgba(28, 28, 28, .95);
+        animation: contactsForm $time * 2 $time * 6 linear both;
+
+        .close-form {
+            display: none;
         }
     }
 }

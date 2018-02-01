@@ -1,0 +1,57 @@
+.contacts {
+    padding: 0 8% 0 10%;
+    min-height: 650px;
+
+    .copyright {
+        bottom: 60vh;
+    }
+
+    .social {
+        left: 20px;
+
+        .instagram,
+        .facebook {
+            width: 35px;
+            height: 35px;
+        }
+
+        .instagram {
+            top: -34px;
+        }
+
+        .jumping-button {
+            margin-left: 50px;
+        }
+
+        .behance {
+
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .new-title {
+
+        &-text {
+            font-size: 40px;
+        }
+    }
+
+    .contacts-info {
+        margin-top: 7vh;
+
+        li {
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+    }
+
+    .map {
+        min-height: 400px;
+    }
+
+    .form {
+        bottom: 5vh;
+    }
+}

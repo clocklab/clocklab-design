@@ -1,21 +1,87 @@
-// base
 @import 'base/variables';
-@import 'base/fonts';
-@import 'base/reset';
-@import 'base/common';
-@import 'base/animations';
 
-// components
-// @import 'components/top-panel/main';
-@import 'components/logo/main';
-@import 'components/menu/main';
-@import 'components/title/main';
-@import 'components/social/main';
-@import 'components/languages/main';
-@import 'components/copyright/main';
-@import 'components/modules/small-gray-lines';
-@import 'components/big-background-letter/main';
-@import 'components/form/main';
+/*
+/
+/---- DESKTOP HD ---- */
+// -- contacts --
+@import 'templates/contacts/contacts/desktopHD';
+// -- contacts --
+/* ---- DESKTOP HD ---- */
 
-// templates
-@import 'templates/contacts/contacts/main';
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    // -- contacts --
+    // @import 'templates/contacts/contacts/desktopMega';
+    // -- contacts --
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+    // -- contacts --
+    // @import 'templates/contacts/contacts/desktopWide';
+    // -- contacts --
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    // -- contacts --
+    @import 'templates/contacts/contacts/desktop';
+    // -- contacts --
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    // -- contacts --
+    // @import 'templates/contacts/contacts/tabletLandscape';
+    // -- contacts --
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+    // -- contacts --
+    // @import 'templates/contacts/contacts/tabletPortrait';
+    // -- contacts --
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    // -- contacts --
+    // @import 'templates/contacts/contacts/phoneLandscape';
+    // -- contacts --
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+    // -- contacts --
+    // @import 'templates/contacts/contacts/phonePortrait';
+    // -- contacts --
+}
+/* ---- PHONE PORTRAIT ---- */
