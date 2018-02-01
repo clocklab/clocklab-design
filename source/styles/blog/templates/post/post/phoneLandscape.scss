@@ -1,0 +1,55 @@
+.post {
+
+    .crossed-button {
+        bottom: 10px;
+        left: 5px;
+
+        span {
+            font-size: 14px;
+        }
+
+        .arrow-container {
+            width: 20px;
+        }
+    }
+
+    .clock-bg {
+        position: fixed;
+    }
+
+    .social {
+        bottom: 50px;
+        left: 5px;
+    }
+
+    header {
+        padding-top: 70px;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .image-container {
+        height: initial;
+    }
+
+    .date {
+        top: initial;
+        right: 0;
+        bottom: 0;
+    }
+
+
+    main {
+        padding-right: 10px;
+        width: 80%;
+        margin-right: initial;
+
+        .sticker {
+            margin-left: 0;
+        }
+
+        .title {
+            font-size: 24px;
+        }
+    }
+}
