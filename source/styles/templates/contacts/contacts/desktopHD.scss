@@ -1,0 +1,130 @@
+.contacts {
+    background: $background;
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+    animation: fadeIn $time * 3 both;
+
+    .copyright {
+
+        p {
+            animation: fadeInUp $time * 3 $time * 3 both;
+        }
+    }
+
+    .small-gray-lines {
+
+        .line {
+            animation: lineUp 1s $time * 4 both;
+
+            &.down {
+                animation-name: lineDown;
+            }
+        }
+    }
+
+    .map {
+        position: absolute;
+        top: 0;
+        left: 35%;
+        z-index: 4;
+        width: 45%;
+        height: 75vh;
+        animation: mainConatactsMapDown $time * 3 $time * 5 linear forwards;
+    }
+
+    .back-layer {
+        position: absolute;
+        bottom: 10vh;
+        right: 5%;
+        z-index: 4;
+        width: 30%;
+        background-color: rgba(28, 28, 28, .9);
+        animation: mainConatactsMapRight $time * 3 $time * 6 linear forwards;
+
+        form {
+            position: relative;
+            padding: 0 130px 65px;
+            width: 100%;
+            color: $white;
+
+            .close-form {
+                display: none;
+            }
+        }
+    }
+
+    .big-background-letter {
+        top: 4vh;
+        right: -2vh;
+        color: rgba(68, 68, 68, .3);
+        font-size: 120vh;
+        animation: fadeIn $time * 3 $time * 3 both;
+    }
+
+    .networks {
+        bottom: 7vh;
+        left: 23vh;
+        z-index: 5;
+        animation: fadeInRight $time * 3 $time * 3 both;
+
+        li {
+            margin-right: 50px;
+
+            a {
+                color: $white;
+                font-size: 25px;
+                font-family: $Roboto-Regular;
+                transition: color $time;
+
+                &:hover {
+                    color: $blue;
+                }
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .contacts-info {
+        position: absolute;
+        z-index: 4;
+        margin: 15vh 0 0 100px;
+
+        li {
+            color: $white;
+            font-size: 15px;
+            font-family: $Roboto-Regular;
+
+            a {
+                display: block;
+                margin-bottom: 10px;
+                color: $white;
+            }
+
+            &:nth-of-type(1) {
+                margin-bottom: 30px;
+                animation: fadeInUp $time * 3 $time * 3 both;
+            }
+
+            &:nth-of-type(2) {
+                margin-bottom: 50px;
+                animation: fadeInUp $time * 3 $time * 4 both;
+            }
+
+            &:nth-of-type(3) {
+                animation: fadeInUp $time * 3 $time * 5 both;
+
+                a {
+                    padding-bottom: 4px;
+                    border-bottom: 1px solid;
+
+                    &:hover {
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}
