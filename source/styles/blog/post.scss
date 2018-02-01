@@ -1,11 +1,11 @@
-@import 'base/variables';
+@import '../base/variables';
 
 /*
 /
 /---- DESKTOP HD ---- */
-// -- services --
+// -- post --
 @import 'templates/post/post/desktopHD';
-// -- services --
+// -- post --
 /* ---- DESKTOP HD ---- */
 
 
@@ -13,9 +13,9 @@
 /
 /---- DESKTOP MEGA ---- */
 @media (min-width: 1921px) {
-    // -- services --
+    // -- post --
     @import 'templates/post/post/desktopMega';
-    // -- services --
+    // -- post --
 }
 /* ---- DESKTOP MEGA ---- */
 
@@ -24,9 +24,9 @@
 /
 /---- DESKTOP WIDE ---- */
 @media (max-width: 1680px) {
-    // -- services --
+    // -- post --
     @import 'templates/post/post/desktopWide';
-    // -- services --
+    // -- post --
 }
 /* ---- DESKTOP WIDE ---- */
 
@@ -35,9 +35,9 @@
 /
 /---- DESKTOP ---- */
 @media (max-width: 1366px) {
-    // -- services --
+    // -- post --
     @import 'templates/post/post/desktop';
-    // -- services --
+    // -- post --
 }
 /* ---- DESKTOP ---- */
 
@@ -46,9 +46,9 @@
 /
 /---- TABLET LANDSCAPE ---- */
 @media (max-width: 1024px) {
-    // -- services --
+    // -- post --
     @import 'templates/post/post/tabletLandscape';
-    // -- services --
+    // -- post --
 }
 /* ---- TABLET LANDSCAPE ---- */
 
@@ -57,9 +57,9 @@
 /
 /---- TABLET PORTRAIT ---- */
 @media (max-width: 768px) {
-    // -- services --
+    // -- post --
     // @import 'templates/post/post/tabletPortrait';
-    // -- services --
+    // -- post --
 }
 /* ---- TABLET PORTRAIT ---- */
 
@@ -68,9 +68,9 @@
 /
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
-    // -- services --
-    @import 'templates/post/post/phoneLandscape';
-    // -- services --
+    // -- post --
+    // @import 'templates/post/post/phoneLandscape';
+    // -- post --
 }
 /* ---- PHONE LANDSCAPE ---- */
 
@@ -80,8 +80,8 @@
 /
 /---- PHONE PORTRAIT ---- */
 @media (max-width: 414px) {
-    // -- services --
-    @import 'templates/post/post/phonePortrait';
-    // -- services --
+    // -- post --
+    // @import 'templates/post/post/phonePortrait';
+    // -- post --
 }
 /* ---- PHONE PORTRAIT ---- */

@@ -3,13 +3,16 @@
 <head>
     <title>clocklab design | post</title>
     <!-- @@include('./components/head.html') -->
+    <link rel="stylesheet" href="../../styles/common.css">
     <link rel="stylesheet" href="../../styles/blog/post.css">
 </head>
 <body>
 
     <div class="post">
         
-        @@include('./components/top-panel.html')
+        @@include('./components/logo.html')
+
+        @@include('./components/menu.html')
 
         @@include('./components/clock-bg.html')
 
@@ -36,7 +39,7 @@
             </svg> 
         </a>
 
-        <div class="nav-arrows">
+        <!-- <div class="nav-arrows">
             <a class="arrow arrow--prev">
                 <svg viewBox="0 0 34.8 7.3">
                     <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
@@ -51,7 +54,7 @@
                     <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
                 </svg>
             </a>
-        </div>
+        </div> -->
         
         <header>
             <div class="image-container">

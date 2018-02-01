@@ -1,47 +1,62 @@
 .post {
 
     .crossed-button {
-        left: 35px;
+        left: 10px;
     }
 
     .social {
-        bottom: 150px;
-        left: 150px;
-    }
-
-    .nav-arrows {
-        bottom: 15px;
-        right: 15px;
+        bottom: 105px;
+        left: 70px;
     }
 
     header {
-        padding-left: 275px;
+        padding-left: 25%;
+        width: 75%;
     }
 
     .image-container {
-        width: 550px;
-        height: 365px;
+        height: 250px;
     }
 
     .date {
-        left: 725px;
-        width: 165px;
-        height: 80px;
-    }
+        right: -30px;
+        width: 150px;
+        height: 70px;
 
-    main {
-        width: 650px;
+        .day {
+            font-size: 26px;
 
-        .sticker {
-            margin-left: 85px;
+            span {
+                font-size: 14px;
+            }
         }
 
-        h1 {
-            margin-left: 85px;
+        .year {
+            right: 15px;
+            bottom: 10px;
+            transform: none;
+            animation: fadeInLeft $POPYearAnimationTime $POPYearDelayTime both;
+        }
+    }
+
+
+    main {
+        padding-bottom: 55px;
+        width: 50%;
+
+        .sticker {
+            margin-left: 50px;
+        }
+
+        .title {
+            margin-left: 0;
+            width: 100%;
+            font-size: 32px;
         }
 
         article {
-            margin-left: 125px;
+            margin-left: 50px;
+            margin-top: 20px;
         }
     }
 }

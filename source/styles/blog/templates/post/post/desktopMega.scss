@@ -1,24 +1,22 @@
 .post {
 
     header {
-        padding-left: 400px;
+        width: 80%;
     }
 
     .image-container {
-        width: 1150px;
         height: 600px;
     }
 
-    .date {
-        left: 1435px;
-    }
 
     main {
-        width: 1200px;
+        margin-top: 50px;
+        width: 55%;
 
         article {
 
             p {
+                margin-bottom: 30px;
                 font-size: 20px;
                 line-height: 30px;
             }
