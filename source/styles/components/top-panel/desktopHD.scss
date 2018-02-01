@@ -1,0 +1,71 @@
+.top-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 120px;
+    background: transparent;
+    transform: translateY(-101%);
+    transition: top $time * 2 ease-out, background $time, opacity $time * 2 ease-out;
+    animation: Down $topPanelAnimationTime $time * 3 ease-out forwards;
+
+    &.scrolled {
+
+        .logo {
+            top: 10px;
+            left: 0;
+
+            &-letter {
+                opacity: 0;
+
+                &.scrolling-visible {
+                    opacity: 1;
+                }
+            }
+
+            &:hover {
+                top: 30px;
+                left: 50px;
+
+                .logo-letter {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .menu {
+
+            &__item {
+
+                .hamburger {
+                    transform: scale(.8) translate3d(0, -70%, 0);
+                }
+
+                &--open-close {
+                    border-color: transparent;
+
+                    .name {
+                        opacity: 0;
+                    }
+
+                    &:hover {
+                        border-color: $darkGray;
+
+                        .hamburger {
+                            transform: scale(1) translate3d(0, 0, 0);
+                        }
+
+                        .name {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.back {
+        animation: toUp $topPanelAnimationTime ease-out both;
+    }
+}
