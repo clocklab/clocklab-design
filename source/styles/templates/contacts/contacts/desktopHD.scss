@@ -1,0 +1,193 @@
+body {
+    overflow: hidden;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 8% 0 15%;
+    width: 100vw;
+    height: 100vh;
+    min-height: 900px;
+    background: $background;
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+    animation: fadeIn $time * 3 both;
+
+    @keyframes contactsMap {
+        from {
+            opacity: 0;
+            transform: translateX(-15%);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    @keyframes contactsForm {
+        from {
+            opacity: 0;
+            transform: translateX(15%);
+        }
+
+        to {
+            opacity: 1;
+            transform: none;
+        }
+    }
+
+    .copyright {
+        bottom: 43vh;
+
+        p {
+            animation: fadeInUp $time * 3 $time * 3 both;
+        }
+    }
+
+    .small-gray-lines {
+
+        .line {
+            animation: lineUp 1s $time * 4 both;
+
+            &.down {
+                animation-name: lineDown;
+            }
+        }
+    }
+
+    .social {
+        left: 70px;
+
+        .instagram,
+        .facebook {
+            width: 40px;
+            height: 40px;
+            animation: social $time * 3 $time * 3 both;
+        }
+
+        .instagram {
+            top: -39px;
+        }
+
+        .jumping-button {
+            margin-left: 100px;
+        }
+
+        .behance {
+            animation: fadeInRight $time * 3 $time * 5 both;
+
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .big-background-letter {
+        top: 4vh;
+        right: -2vh;
+        color: rgba(68, 68, 68, .3);
+        font-size: 120vh;
+        animation: fadeIn $time * 3 $time * 3 both;
+    }
+
+    .info-block {
+        position: relative;
+        z-index: 2;
+        width: 30%;
+        align-self: center;
+    }
+
+    .new-title {
+
+        .text-container {
+
+            &:before {
+                animation: rightAndHalfDown $time * 3 $first-column-delay both;
+            }
+        }
+
+        &-text {
+            color: $white;
+            animation: Up $time * 3 $second-column-delay both;
+        }
+    }
+
+    .contacts-info {
+        margin-top: 10vh;
+
+        li {
+            margin-bottom: 40px;
+            color: $white;
+            font-size: 18px;
+            animation: fadeInUp $time * 3 both;
+
+            &:nth-of-type(1) {
+                animation-delay: $first-column-delay;
+            }
+
+            &:nth-of-type(2) {
+                animation-delay: $first-column-delay + $time;
+            }
+
+            &:last-of-type {
+                margin-bottom: 0;
+                animation-delay: $first-column-delay + $time * 2;
+
+                a {
+                    text-decoration: underline;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .type {
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        a {
+            display: inline-block;
+            margin-bottom: 8px;
+            color: $white;
+            transition: color $time;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    .map-block {
+        position: relative;
+        z-index: 2;
+        width: 60%;
+    }
+
+    .map {
+        width: 70%;
+        height: 75vh;
+        min-height: 700px;
+        animation: contactsMap $time * 2 $time * 5 linear both;
+    }
+
+    .form {
+        position: absolute;
+        bottom: 10vh;
+        right: 5%;
+        padding: 65px 8% 35px;
+        width: 60%;
+        color: $white;
+        background-color: rgba(28, 28, 28, .95);
+        animation: contactsForm $time * 2 $time * 6 linear both;
+
+        .close-form {
+            display: none;
+        }
+    }
+}

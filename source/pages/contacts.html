@@ -3,64 +3,59 @@
     <head>
         <title>Clocklab Design | Contacts</title>
         @@include('./components/head.html')
+        <link rel="stylesheet" href="../styles/common.css">
         <link rel="stylesheet" href="../styles/contacts.css">
         <script src="../scripts/contacts.min.js" defer></script>
     </head>
     <body>
-        <div class="wrapper">
+        
+        @@include('./components/logo.html')
 
-            <!-- top-panel -->
-            @@include('./components/top-panel.html')
-            
-            <div id="contacts" class="screen-block">
+        @@include('./components/menu.html')
+        
+        <div class="contacts">
+            @@include('./components/copyright.html')
 
-                <!-- copyright -->
-                @@include('./components/copyright.html')
+            @@include('./components/small-gray-lines.html')
 
-                <!-- small-gray-lines -->
-                @@include('./components/small-gray-lines.html')
+            <div class="big-background-letter">
+                <span>c</span>
+            </div>
 
-                <!-- big-background-letter -->
-                @@include('./components/big-background-letter.html')
-
-                <!-- networks -->
-                <ul class="networks">
-                    <li><a href="https://www.facebook.com/clocklab.design" target="_blank">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/clock_creative_lab" target="_blank">Instagram</a></li>
-                    <li><a href="https://www.behance.net/clocklab" target="_blank">Behance</a></li>
-                </ul>
-
-                <!-- title -->
-                <div class="title">
-                    <div class="word">
-                        <h1>Контакты</h1>
+            <div class="info-block">
+                <div class="new-title">
+                    <div class="text-container">
+                        <h1 class="new-title-text">Контакты</h1>
                     </div>
                 </div>
-                
-                <!-- map -->
-                <div id="map"></div>
 
-                <!-- main-form -->
-                <div class="back-layer">
-
-                    <!-- form -->
-                    @@include('./components/form.html')
-                </div>
-
-                <!-- contacts-info -->
                 <ul class="contacts-info">
-                    <li>Телефон<br><br>
+                    <li>
+                        <span class="type">Телефон</span>
                         <a href="tel:+380673959192">+380 (67) 395-91-92</a>
+                        <br/>
+                        <a href="tel:+380930399393">+380 (93) 039-93-93</a>
                     </li>
-                    <li>E-mail<br><br>
+                    <li>
+                        <span class="type">E-mail</span>
                         <a href="mailto:hello@clocklab.design">hello@clocklab.design</a>
                     </li>
-                    <li>Адрес<br><br>
+                    <li>
+                        <span class="type">Адрес</span>
                         <a href="https://www.google.com.ua/maps/place/%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC'%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%BF%D0%BB%D0%BE%D1%89%D0%B0,+2,+%D0%9A%D0%B8%D1%97%D0%B2/@50.431644,30.4710183,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cebfa52cd7bf:0x2169dd9a939a0aa8!8m2!3d50.431644!4d30.473207" target="_blank">Соломенская площадь, 2</a>
                     </li>
                 </ul>
             </div>
+
+            <div class="map-block">
+                <div id="map" class="map"></div>
+
+                @@include('./components/form.html')
+            </div>
+
+            @@include('./components/social.html')
         </div>
+
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpTfzEfoNeVlnJhNyZCHOlMSEl5BrFyUQ"></script>
         <script>
 
