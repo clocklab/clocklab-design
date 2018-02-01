@@ -1,0 +1,52 @@
+.contacts {
+    padding: 0 8% 0 4%;
+    min-height: 768px;
+
+    .copyright {
+        right: 15px;
+        bottom: 45vh;
+    }
+
+    .info-block {
+        width: 40%;
+    }
+
+    .new-title {
+
+        &-text {
+            font-size: 36px;
+        }
+    }
+
+    .map-block {
+        align-self: center;
+        top: 45px;
+    }
+
+    .map {
+        width: 100%;
+        height: 250px;
+        min-height: initial;
+    }
+
+    .form {
+        position: relative;
+        bottom: initial;
+        right: initial;
+        margin-top: 30px;
+        padding: 30px;
+        width: 100%;
+
+        .form-title {
+            margin-bottom: 40px;
+        }
+
+        label {
+            margin-bottom: 20px;
+        }
+
+        .send {
+            margin-top: 30px;
+        }
+    }
+}
