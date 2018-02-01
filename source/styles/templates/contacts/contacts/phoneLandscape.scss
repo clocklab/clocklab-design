@@ -1,0 +1,77 @@
+body {
+    overflow: visible;
+    overflow-x: hidden;
+}
+
+.contacts {
+    display: block;
+    padding: 90px 5% 40px;
+    width: initial;
+    height: initial;
+    min-height: 100vh;
+    overflow: visible;
+
+    .social {
+        position: relative;
+        bottom: initial;
+        left: 0;
+        margin-top: 50px;
+
+        .instagram,
+        .facebook {
+            width: 25px;
+            height: 25px;
+        }
+
+        .instagram {
+            top: -24px;
+        }
+
+        .jumping-button {
+            margin-left: 50px;
+        }
+
+        .behance {
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .info-block {
+        width: 100%;
+    }
+
+    .new-title {
+
+        &-text {
+            font-size: 32px;
+        }
+    }
+
+    .contacts-info {
+        margin-top: 30px;
+
+        li {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+    }
+
+    .map-block {
+        top: initial;
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    .form {
+        padding: 40px 8% 20px;
+        width: 100%;
+        background: $black;
+    }
+}
