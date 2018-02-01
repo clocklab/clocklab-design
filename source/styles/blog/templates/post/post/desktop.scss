@@ -1,19 +1,38 @@
 .post {
 
-    .social {
-        left: 250px;
+    .crossed-button {
+        left: 30px;
     }
 
-    .nav-arrows {
-        right: 25px;
+    .social {
+        bottom: 105px;
+        left: 20%;
+    }
+
+    header {
+        width: 70%;
     }
 
     .image-container {
-        width: 750px;
-        height: 400px;
+        height: 350px;
     }
 
     .date {
-        left: 950px;
+        right: -50px;
+        padding: 10px 15px;
+        width: 200px;
+        height: 80px;
+    }
+
+    main {
+        position: relative;
+        z-index: 2;
+        margin: 30px auto 0;
+        padding-bottom: 75px;
+        width: 50%;
+
+        .title {
+            font-size: 44px;
+        }
     }
 }
