@@ -11,36 +11,7 @@
         
         @@include('./components/menu.html')
         
-        <ul class="bread-crumbs dark wow fadeInDown">
-            <li class="bread-crumbs__item current-page">
-                <span class="index">41</span>
-                <span class="symbol">Bb</span>
-                <a class="link" href="#">
-                    <span>Brand Book</span>
-                </a>
-            </li>
-            <li class="bread-crumbs__item">
-                <span class="index">28</span>
-                <span class="symbol">D</span>
-                <a class="link" href="/dizayn">
-                    <span>Дизайн</span>
-                </a>
-            </li>
-            <li class="bread-crumbs__item">
-                <span class="index">13</span>
-                <span class="symbol">Se</span>
-                <a class="link" href="/uslugi">
-                    <span>Услуги</span>
-                </a>
-            </li>
-            <li class="bread-crumbs__item">
-                <span class="index">1</span>
-                <span class="symbol">H</span>
-                <a class="link" href="/">
-                    <span>Главная</span>
-                </a>
-            </li>
-        </ul>
+        @@include('./services/templates/bread-crumbs.html')
 
         <div class="global-container">
             <div class="design-header">
@@ -154,6 +125,18 @@
                                     в дальнейшем избежать лишних расходов на рекламу.
                                 </li>
                             </ul>
+
+                            <!-- ------ PART FROM UI-UX.HTML ------ -->
+                            <p class="half wow fadeInUp">
+                                Перед UI/UX дизайнером стоит задача создать именно дружественный по 
+                                отношению к пользователю интерфейс. На первый взгляд достижение 
+                                такой цели может показаться делом несложным, но на деле — требуется 
+                                масса времени, ресурсов и знаний на проектирование, разработку и 
+                                тестирование проекта.
+                                Главные ориентиры тут — удобство, практичность и интуитивная ясность.
+                                Функциональность, логика, удобство.
+                                UX — это то, что вы запоминаете.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -167,12 +150,10 @@
                 <div class="container">
                     <div>
                         <div class="line"></div>
-
                         <div class="column-1">
                             <h2 class="development-title development-title--blue wow fadeInUp">Разработка Brand Book</h2>
                             <h3 class="wow fadeInLeft">Мы предлагаем полный спектр услуг по разработке фирменного стиля компании:</h3>
                         </div>
-
                         <div class="column-2 wow fadeInUp">
                            <ul>
                                <li>Разработка имени бренда (нейминг)</li>
@@ -182,7 +163,6 @@
                                <li>Дизайн упаковки/этикеток</li>
                            </ul>
                         </div>
-
                         <div class="column-3 wow fadeInUp">
                             <ul>
                                <li>Дизайн печатной / наружной рекламы</li>
@@ -191,6 +171,36 @@
                                <li>Брендинг</li>
                                <li>Ребрендинг</li>
                            </ul>
+                        </div>
+
+                        <!-- ------ PART FROM UI-UX.HTML ------ -->
+                        <div class="column-1">
+                            <h2 class="development-title wow fadeInLeft">UI и UX В чем различие?</h2>
+                        </div>
+                        <div class="column-2">
+                            <span class="label wow fadeInRightBig" data-wow-delay=".5s">U<span>X</span></span>
+                            <span class="label wow fadeInRightBig" data-wow-delay="1s"><span>U</span>I</span>
+                        </div>
+                        <div class="column-3">
+                            <p class="wow fadeInUp" data-wow-delay="1.5s">
+                                user experience &mdash; эмоции, чувства и опыт пользователя, его 
+                                впечатления, восприятие вашего сайта. Качественный UX дизайн делает 
+                                веб-сайт максимально удобным и интуитивно понятным, а также 
+                                обеспечивает главное: чтобы посетители могли легко и самым простым 
+                                путём достичь всех своих целей на вашем сайте (нужно довести 
+                                каждого посетителя до какой-то логической точки в интерфейсе, 
+                                чтобы он получил полезный и приятный опыт нахождения на вашем 
+                                сайте). Структура сайта приобретает логику и ясность, очень 
+                                доступно передавая всё содержимое страниц.
+                            </p>
+                            <p class="wow fadeInUp" data-wow-delay="2s">
+                                user interface &mdash; это то, что вы видите, внешний вид вашего 
+                                сайта, его привлекательность и физические характеристики. UI-дизайнер 
+                                работает над цветом страниц, размерами кнопок, расположением и 
+                                читабельностью текста и так далее. Он разрабатывает стиль проекта, 
+                                обеспечивает соответствие между визуальным дизайном и логической 
+                                структурой сайта.
+                            </p>
                         </div>
                     </div>
 
@@ -284,44 +294,11 @@
                 </div>
             </div>
             
-            <!-- ------------ WEB-PRODUCTION-OUR-WORKS ------------ -->
+            @@include('./services/templates/work-examples.html')
             
-            <div class="design-answers">
-                <div class="container">
-                    <div class="lines">
-                        <div class="line line--1 wow slideInDown"></div>
-                        <div class="line line--2 wow slideInDown" data-wow-delay=".3s"></div>
-                        <div class="line line--3 wow slideInDown" data-wow-delay=".6s"></div>
-                        <div class="line line--4 wow slideInDown" data-wow-delay=".9s"></div>
-                    </div>
-
-                    <div class="more">
-                        <div class="column-1">
-                            <span class="more-title wow fadeInLeft">Больше услуг<a href="#">дизайна</a></span>
-                        </div>
-
-                        <ul>
-                            <li class="column-1"></li>
-                            <li class="column-2">
-                                <a href="ui-ux.html" class="crossed-button wow fadeInLeft" data-wow-delay=".3s">
-                                    <span>UI/UX (WEB-дизайн)</span>
-                                    <div class="arrow-container">
-                                        <svg class="arrow" x="0px" y="0px"
-                                            viewBox="0 0 34.8 7.3">
-                                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                        </svg>      
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="column-3"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            @@include('./services/templates/services-questions.html')
             
-            @@include('./services/templates/footer-blog.html')
+            @@include('./services/templates/services-blog.html')
         </div>
     </body>
 </html>

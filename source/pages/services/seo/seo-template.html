@@ -11,36 +11,7 @@
         
         @@include('./components/menu.html')
         
-        <ul class="bread-crumbs wow fadeInDown">
-            <li class="bread-crumbs__item current-page">
-                <span class="index">41</span>
-                <span class="symbol">As</span>
-                <a class="link" href="#">
-                    <span>SEO-аудит</span>
-                </a>
-            </li>
-            <li class="bread-crumbs__item">
-                <span class="index">28</span>
-                <span class="symbol">S</span>
-                <a class="link" href="/seo">
-                    <span>SEO</span>
-                </a>
-            </li>
-            <li class="bread-crumbs__item">
-                <span class="index">13</span>
-                <span class="symbol">Se</span>
-                <a class="link" href="/uslugi">
-                    <span>Услуги</span>
-                </a>
-            </li>
-            <li class="bread-crumbs__item">
-                <span class="index">1</span>
-                <span class="symbol">H</span>
-                <a class="link" href="/">
-                    <span>Главная</span>
-                </a>
-            </li>
-        </ul>
+        @@include('./services/templates/bread-crumbs.html')
 
         <div class="global-container">
             <div class="seo-header">
@@ -51,11 +22,18 @@
                 <div class="main-block">
                     <div class="header-container">
                         <div class="title audit">
-                            <span class="name"><span>Услуги SEO</span></span>
+                            <span class="name">
+                                <span>Услуги SEO</span>
+                            </span>
                             <div class="word">
                                 <h1>SEO-аудит сайта</h1>
                             </div>
-                            <h2>Качественный SEO-аудит позволяет выявить и устранить любые технические ошибки, которые могут снизить эффективность дальнейшей работы по повышению позиций сайта в выдаче поисковых систем</h2>
+                            <h2>
+                                Качественный SEO-аудит позволяет выявить и устранить любые 
+                                технические ошибки, которые могут снизить эффективность 
+                                дальнейшей работы по повышению позиций сайта в выдаче 
+                                поисковых систем
+                            </h2>
                         </div>
 
                         <div class="lines">
@@ -210,6 +188,35 @@
                             </ul>
                         </div>
                     </div>
+
+                    <!-- ------ PART FROM CREATING.HTML ------ -->
+                    <div class="container__item container__item--5">
+                        <div class="column-1"></div>
+                        <div class="column-2"></div>
+                        <div class="column-3">
+                            <h2 class="italic bold bordered-left-blue wow fadeInLeft">
+                                Привлечение SEO-специалиста на этапе разработки 
+                                сайта — гарантия, что сайт изначально будет 
+                                настроен под эффективную поисковую оптимизацию
+                            </h2>
+                        </div>
+                    </div>
+
+                    <!-- ------ PART FROM CREATING.HTML ------ -->
+                    <div class="container__item container__item--6">
+                        <div class="column-1"></div>
+                        <div class="column-2">
+                            <p class="wow fadeInUp">
+                                Мы предлагаем эффективные меры SEO-оптимизации на 
+                                самых ранних стадиях разработки сайта. Будет 
+                                проведён глубокий анализ проекта, подготовлена 
+                                эффективная стратегия и даны рекомендации для всех 
+                                членов команды по работе над сайтом с точки зрения 
+                                «пользы для поисковой эффективности сайта».
+                            </p>
+                        </div>
+                        <div class="column-3"></div>
+                    </div>
                 </div>
             </div>
 
@@ -266,174 +273,11 @@
                 </div>
             </div>
 
-            <!-- ------------ WEB-PRODUCTION-OUR-WORKS ------------ -->
+            @@include('./services/templates/work-examples.html')
 
-            <div class="web-production-answers">
-                <div class="big-background-letter">
-                    <span>o</span>
-                </div>
+            @@include('./services/templates/services-questions.html')
 
-                <div class="container">
-                    <div class="lines">
-                        <div class="line line--1 wow slideInDown"></div>
-                        <div class="line line--2 wow slideInDown" data-wow-delay=".3s"></div>
-                        <div class="line line--3 wow slideInDown" data-wow-delay=".6s"></div>
-                        <div class="line line--4 wow slideInDown" data-wow-delay=".9s"></div>
-                    </div>
-                    <div class="answers">
-                        <div class="column-1">
-                            <span class="answers-title wow slideInLeft">
-                                Ответы
-                                <span>на часто задаваемые вопросы</span>
-                            </span>
-                        </div>
-                        <div class="column-2">
-                            <ul>
-                                <li class="question question--1 current">
-                                    <div class="index">
-                                        <span class="wow slideInUp" data-wow-delay=".3s">01</span>
-                                    </div>
-                                    <button>
-                                        <span class="wow slideInLeft" data-wow-delay=".3s">
-                                            Я хочу заказать SEO-оптимизацию и продвижение, а 
-                                            SEO-аудит у меня уже готов. Можете ли вы работать 
-                                            на его основе?
-                                        </span>
-                                    </button>
-                                </li>
-                                <li class="question question--2">
-                                    <div class="index">
-                                        <span class="wow slideInUp" data-wow-delay=".3s">02</span>
-                                    </div>
-                                    <button>
-                                        <span class="wow slideInLeft" data-wow-delay=".3s">
-                                            Обязательно ли выполнять рекомендации, представленные 
-                                            в SEO-аудите?
-                                        </span>
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="column-3">
-                            <div class="answer answer--1 current">
-                                <div class="index">
-                                    <span>
-                                        <span class="wow slideInUp" data-wow-delay=".6s">01</span>
-                                    </span>
-                                </div>
-                                <div class="content">
-                                    <span class="content-title">
-                                        <h2 class="wow slideInLeft" data-wow-delay=".6s">
-                                            Я хочу заказать SEO-оптимизацию и продвижение, 
-                                            а SEO-аудит у меня уже готов. Можете ли вы 
-                                            работать на его основе?
-                                        </h2>
-                                    </span>
-                                    <div class="text">
-                                        <p class="wow slideInLeft" data-wow-delay=".6s">
-                                            Вероятно, нет. Даже если имеется уже готовый аудит 
-                                            сайта, мы все равно своими силами будем проводить 
-                                            базовый SEO-аудит: очевидно, что разные компании 
-                                            по-разному понимают критерии качества, глубины и 
-                                            правильности такого исследования.
-                                        </p>
-                                        <p class="wow slideInLeft" data-wow-delay=".6s">
-                                            Мы убеждены, что поисковый аудит должен проводиться 
-                                            теми SEO-специалистами, которые в будущем будут 
-                                            заниматься его продвижением, так как сайт требует 
-                                            пристального знакомства и тщательного изучения 
-                                            перед работой над SEO.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="answer answer--2">
-                                <div class="index">
-                                    <span>
-                                        <span>02</span>
-                                    </span>
-                                </div>
-                                <div class="content">
-                                    <span class="content-title">
-                                        <h2>
-                                            Обязательно ли выполнять рекомендации, 
-                                            представленные в SEO-аудите?
-                                        </h2>
-                                    </span>
-                                    <div class="text">
-                                        <p>
-                                            Безусловно, в противном случае поисковый 
-                                            аудит теряет смысл. В этом отчете отражен 
-                                            результат тщательной проверки и анализа 
-                                            веб-сайта, в результате которых были 
-                                            сформированы эффективные шаги по улучшению 
-                                            проекта согласно требованиям SEO и поисковых 
-                                            систем.
-                                        </p>
-                                        <p>
-                                            Отчет после SEO-аудита — это руководство по 
-                                            устранению любых ошибок и недочетов, которые 
-                                            мешают вам выйти на первые строчки в Google. 
-                                            Соблюдать эти рекомендации — обязательно.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="more">
-                        <div class="column-1">
-                            <span class="more-title wow fadeInLeft">
-                                Больше услуг
-                                <a href="#">web-production</a>
-                            </span>
-                        </div>
-                        <ul>
-                            <li class="column-1">
-                                <a href="landing.html" class="crossed-button wow fadeInLeft">
-                                    <span>Landing page</span>
-                                    <div class="arrow-container">
-                                        <svg class="arrow" x="0px" y="0px"
-                                            viewBox="0 0 34.8 7.3">
-                                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                        </svg>      
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="column-2">
-                                <a href="corporate.html" class="crossed-button wow fadeInLeft" data-wow-delay=".3s">
-                                    <span>Корпоративный сайт</span>
-                                    <div class="arrow-container">
-                                        <svg class="arrow" x="0px" y="0px"
-                                            viewBox="0 0 34.8 7.3">
-                                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                        </svg>      
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="column-3">
-                                <a href="internet-shop.html" class="crossed-button wow fadeInLeft" data-wow-delay=".6s">
-                                    <span>Интернет магазин</span>
-                                    <div class="arrow-container">
-                                        <svg class="arrow" x="0px" y="0px"
-                                            viewBox="0 0 34.8 7.3">
-                                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                                        </svg>      
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            @@include('./services/templates/footer-blog.html')
+            @@include('./services/templates/services-blog.html')
         </div>
     </body>
 </html>
