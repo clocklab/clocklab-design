@@ -1,31 +1,6 @@
-// base
 @import '../../base/variables';
-@import '../../base/animate';
-@import '../../base/common';
-// @import '../../base/fonts';
-@import '../../base/reset';
 
-// components 
-@import '../../components/logo/main';
-@import '../../components/menu/main';
-@import '../../components/bread-crumbs/main';
-@import '../../components/modules/small-gray-lines';
-@import '../../components/jumping-button/main';
-@import '../../components/modules/clock-bg';
-@import '../../components/form/main';
-@import '../../components/sticker/main';
-@import '../../components/bottom-button/main';
-@import '../../components/crossed-button/main';
-@import '../../components/big-background-letter/main';
 
-/* в дальнейшем свести к одному */
-@import "../../components/title/main";     
-@import "../../components/new-title/main";
-@import "../../components/language/main";
-@import "../../components/languages/main";
-/* в дальнейшем свести к одному */
-
-// templates
 @import 'templates/design-header/main';
 @import 'templates/design-development/main';
 @import 'templates/design-plan/main';
