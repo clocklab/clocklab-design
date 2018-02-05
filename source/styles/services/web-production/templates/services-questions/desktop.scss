@@ -1,31 +1,29 @@
-@import '../desktop';
-
-& {
+.services-questions {
 
     .big-background-letter {
-        top: px(-700);
+        top: -350px;
     }
 
     .container {
-        padding-top: px(250);
-        height: px(2000);
+        padding-top: 125px;
+        height: 100px;
     }
 
     .answers {
 
         .question {
-            padding-right: px(50);
+            padding-right: 25px;
         }
     }
 
     .more {
-        margin-top: px(500);
+        margin-top: 250px;
     }
 
     &--complex {
 
         .container {
-            height: px(1600);
+            height: 800px;
         }
     }
 
@@ -36,7 +34,7 @@
             .crossed-button {
 
                 span {
-                    font-size: px(24);
+                    font-size: 12px;
                 }
             }
         }

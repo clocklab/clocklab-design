@@ -1,0 +1,233 @@
+.web-production-clock {
+    position: relative;
+    height: 610px;
+    background: $lightBlack;
+
+    .clock-bg {
+
+        span {
+            color: $lightBlack;
+            font-family: $Raleway-Bold;
+            line-height: 1;
+
+            &:before {
+                font-size: 28vw;
+            }
+        }
+    }
+
+    blockquote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+        padding-left: 100px;
+        width: 925px;
+        height: 100%;
+
+        p {
+
+            &:first-of-type {
+
+                &:before {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    p {
+        position: relative;
+        color: #ccc;
+        font-family: $Roboto-Light;
+        font-size: 24px;
+        font-style: italic;
+        line-height: 1.4;
+
+        span {
+            color: $blue;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            left: -110px;
+            top: -50px;
+            width: 133px;
+            height: 88px;
+            background: url('../../../../../../images/services/web-production/quotes.png') center no-repeat;
+            background-size: cover;
+            content: '';
+        }
+
+        &:last-of-type {
+            margin-top: 35px;
+
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    .jumping-button {
+        position: absolute;
+        bottom: 75px;
+        right: 20%;
+
+        a {
+
+            span {
+                color: $white;
+                font-family: $Raleway-Bold;
+                font-size: 14px;
+
+                &.blue {
+                    color: $blue;
+                }
+
+                &.margined {
+                    margin-right: 4px;
+                }
+            }
+
+            &:before {
+                background: $white;
+                animation-delay: $timeTickHalf * 13.5;
+            }
+        }
+    }
+
+    .advantages {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        padding-top: 150px;
+        padding-right: 190px;
+        width: 81%;
+        color: $white;
+        font-family: $Raleway-Regular;
+
+        .advantages-title {
+            width: 500px;
+            font-size: 48px;
+            font-family: $Raleway-ExtraBold;
+            line-height: 1.2;
+
+            span {
+                display: block;
+                color: $blue;
+            }
+        }
+
+        ul {
+            width: 570px;
+            height: 350px;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 75px;
+            padding-left: 35px;
+            width: 640px;
+            color: $lightGray;
+            font-family: $Roboto-Regular;
+            font-size: 16px;
+            line-height: 1.4;
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: -15px;
+                left: 0;
+                width: 35px;
+                height: 35px;
+                background: $darkGray;
+                content: '';
+                opacity: .7;
+            }
+        }
+
+        .index {
+            position: absolute;
+            top: -45px;
+            left: -8px;
+            color: $white;
+            font-family: $Raleway-Bold;
+            font-size: 36px;
+        }
+    }
+
+    .lists {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-right: 190px;
+        width: 81%;
+        color: #ccc;
+        font-family: $Roboto-Regular;
+
+        ul {
+
+            &:first-child {
+                width: 595px;
+
+                .list-title {
+                    color: $white;
+                }
+            }
+
+            &:last-child {
+                width: 570px;
+            }
+
+            &.gray {
+                color: $gray;
+            }
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 25px;
+            padding-left: 35px;
+            font-size: 16px;
+            line-height: 1.4;
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 7px;
+                left: 7px;
+                width: 7px;
+                height: 7px;
+                background: $blue;
+                border-radius: 50%;
+                content: '';
+            }
+        }
+
+        .list-title {
+            display: block;
+            margin-bottom: 40px;
+            font-family: $Raleway-Bold;
+            font-size: 24px;
+        }
+    }
+
+    &--corporate {
+
+        p {
+
+            span {
+                font-size: 36px;
+                font-family: $Roboto-Bold;
+            }
+        }
+    }
+}

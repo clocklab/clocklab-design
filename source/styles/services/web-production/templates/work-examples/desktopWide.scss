@@ -1,10 +1,8 @@
-@import '../desktop';
-
-& {
+.work-examples {
 
     .front-layer,
     .back-layer {
-        height: px(1750);
+        height: 875px;
     }
 
     .front-layer {
@@ -14,16 +12,16 @@
         }
 
         .our-works-title {
-            margin-right: px(100);
+            margin-right: 50px;
         }
 
         .crossed-button {
-            margin-left: px(20);
+            margin-left: 10px;
         }
     }
 
     &.opened {
-        
+
         .front-layer {
             transform: rotateY(20deg) scaleX(.8);
         }

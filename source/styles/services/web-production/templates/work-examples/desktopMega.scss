@@ -1,60 +1,58 @@
-@import '../desktop';
-
-& {
+.work-examples {
 
     .front-layer {
 
         .our-works-title {
-            margin-right: px(360);
+            margin-right: 180px;
         }
 
         .works {
-            width: px(2200);
-            height: px(1700);
+            width: 1100px;
+            height: 850px;
         }
 
         .work {
 
             &--eurovision {
-                
+
                 img {
-                    width: px(600);
-                    height: px(1000);
+                    width: 300px;
+                    height: 500px;
                 }
             }
 
             &--alta {
-                
+
                 img {
-                    width: px(1000);
-                    height: px(650);
+                    width: 500px;
+                    height: 325px;
                 }
             }
 
             &--audi {
-                
+
                 img {
-                    width: px(900);
-                    height: px(540);
+                    width: 450px;
+                    height: 270px;
                 }
             }
 
             &--vinograd {
-                
+
                 img {
-                    width: px(600);
-                    height: px(600);
+                    width: 300px;
+                    height: 300px;
                 }
             }
         }
     }
 
     .back-layer {
-        padding-right: px(300);
+        padding-right: 150px;
     }
 
     &.opened {
-        
+
         .front-layer {
             transform: rotateY(10deg) scaleX(.85);
         }

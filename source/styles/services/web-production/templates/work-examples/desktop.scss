@@ -1,10 +1,8 @@
-@import '../desktop';
-
-& {
+.work-examples {
 
     .front-layer,
     .back-layer {
-        height: px(1750);
+        height: 875px;
     }
 
     .front-layer {
@@ -14,32 +12,32 @@
         }
 
         .our-works-title {
-            margin-right: px(100);
-            font-size: px(80);
+            margin-right: 50px;
+            font-size: 40px;
         }
 
         .crossed-button {
-            margin-left: px(20);
+            margin-left: 10px;
         }
 
         .works {
-            width: px(1400);
+            width: 700px;
         }
 
         .work {
 
             &--audi {
-                left: px(50);
+                left: 25px;
             }
         }
     }
 
     .back-layer {
-        padding-right: px(80);
+        padding-right: 40px;
     }
 
     &.opened {
-        
+
         .front-layer {
             transform: rotateY(15deg) scaleX(.8);
         }
