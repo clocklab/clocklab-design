@@ -1,0 +1,45 @@
+.work-examples {
+
+    .front-layer,
+    .back-layer {
+        height: 875px;
+    }
+
+    .front-layer {
+
+        .container {
+            width: 95%;
+        }
+
+        .our-works-title {
+            margin-right: 50px;
+            font-size: 40px;
+        }
+
+        .crossed-button {
+            margin-left: 10px;
+        }
+
+        .works {
+            width: 700px;
+        }
+
+        .work {
+
+            &--audi {
+                left: 25px;
+            }
+        }
+    }
+
+    .back-layer {
+        padding-right: 40px;
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(15deg) scaleX(.8);
+        }
+    }
+}

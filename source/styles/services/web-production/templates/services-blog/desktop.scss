@@ -1,0 +1,61 @@
+.services-blog {
+    height: 100vh;
+    min-height: 650px;
+    max-height: 800px;
+
+    .blue-line {
+        width: 150px;
+        left: 100px;
+    }
+
+    .container {
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+        width: 85%;
+        height: 100%;
+
+        &:after {
+            top: 400px;
+        }
+    }
+
+    .image-container {
+        width: 450px;
+        height: 550px;
+    }
+
+    .info {
+        margin-left: 75px;
+        padding-top: 0;
+        width: 600px;
+    }
+
+    .new-title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .text-container {
+
+            &:before {
+                height: 6px;
+                bottom: 3px;
+            }
+
+            span {
+                font-size: 19px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    article {
+        padding-left: 50px;
+        padding-right: 125p;
+    }
+
+    .crossed-button {
+        margin-top: 15px;
+        margin-left: 50px;
+    }
+}

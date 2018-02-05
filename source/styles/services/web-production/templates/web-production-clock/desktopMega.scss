@@ -1,0 +1,17 @@
+.web-production-clock {
+
+    .clock-bg {
+
+        span {
+
+            &:before {
+                font-size: 21vw;
+            }
+        }
+    }
+
+    .advantages,
+    .lists {
+        width: 65%;
+    }
+}

@@ -1,0 +1,29 @@
+.work-examples {
+
+    .front-layer,
+    .back-layer {
+        height: 875px;
+    }
+
+    .front-layer {
+
+        .container {
+            width: 95%;
+        }
+
+        .our-works-title {
+            margin-right: 50px;
+        }
+
+        .crossed-button {
+            margin-left: 10px;
+        }
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(20deg) scaleX(.8);
+        }
+    }
+}

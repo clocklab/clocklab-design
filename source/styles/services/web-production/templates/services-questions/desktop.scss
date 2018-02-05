@@ -1,0 +1,42 @@
+.services-questions {
+
+    .big-background-letter {
+        top: -350px;
+    }
+
+    .container {
+        padding-top: 125px;
+        height: 100px;
+    }
+
+    .answers {
+
+        .question {
+            padding-right: 25px;
+        }
+    }
+
+    .more {
+        margin-top: 250px;
+    }
+
+    &--complex {
+
+        .container {
+            height: 800px;
+        }
+    }
+
+    &--internet-marketing {
+
+        .more {
+
+            .crossed-button {
+
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

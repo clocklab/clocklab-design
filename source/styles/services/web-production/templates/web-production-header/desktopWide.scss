@@ -1,0 +1,76 @@
+.web-production-header {
+
+    .container {
+        padding-right: 50px;
+        padding-bottom: 50px;
+    }
+
+    .description {
+        padding-top: 125px;
+    }
+
+    .info {
+        top: -200px;
+        padding-top: 60px;
+    }
+
+    .new-title {
+        margin-bottom: 40px;
+    }
+
+    article {
+
+        p {
+
+            &.big {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .cases {
+        margin-top: -60px;
+    }
+
+    .list {
+
+        .list-title {
+            margin-bottom: 100px;
+        }
+    }
+
+    .images {
+
+        img {
+
+            &:first-child {
+                left: 50px;
+            }
+
+            &:last-child {
+                top: 200px;
+            }
+        }
+    }
+
+    .advantages {
+
+        .advantages-title {
+            margin-bottom: 90px;
+        }
+
+        ul {
+            height: 600px;
+        }
+
+        &--corporate {
+
+            &--landing {
+
+                ul {
+                    height: 700px;
+                }
+            }
+        }
+    }
+}

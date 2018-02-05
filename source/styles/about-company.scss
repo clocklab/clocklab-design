@@ -1,40 +1,5 @@
-// base
 @import 'base/variables';
-@import 'base/mixins';
-@import 'base/fonts';
-@import 'base/reset';
-@import 'base/common';
-@import 'base/animate';
-@import 'base/animations';
 
-// тут хранится анимация для некоторых элементов
-@import 'templates/index/euro-club/main';
-
-// modules
-@import 'components/modules/small-gray-lines';
-@import 'components/modules/jelly-button';
-@import 'components/modules/clock-bg';
-@import 'components/modules/scroll';
-
-// components
-@import 'components/logo/main';
-@import 'components/menu/main';
-@import 'components/form/main';
-@import 'components/social/main';
-@import 'components/copyright/main';
-@import 'components/long-read/main';
-@import 'components/jumping-button/main';
-@import 'components/crossed-button/main';
-@import 'components/big-background-letter/main';
-
-/* в дальнейшем свести к одному */
-@import 'components/title/main';
-@import 'components/new-title/main';
-@import 'components/language/main';
-@import 'components/languages/main';
-/* в дальнейшем свести к одному */
-
-// screens
 @import 'templates/about-company/about-company-one/main';
 @import 'templates/about-company/about-company-two/main';
 @import 'templates/about-company/about-company-three/main';

@@ -1,9 +1,85 @@
-// @import '../../base/variables.scss';
+@import '../../base/variables';
 
 
-// @import 'templates/shop/web-production-header/main';
-// @import 'templates/shop/web-production-clock/main';
-// @import 'templates/shop/web-production-our-works/main';
-// @import '../design/templates/design-discuss/main';
-// @import 'templates/shop/web-production-answers/main';
-// @import 'templates/shop/web-production-footer/main';
+/*
+/
+/---- DESKTOP HD ---- */
+// -- web-production-template --
+@import 'templates/web-production-header/desktopHD';
+// @import 'templates/web-production-clock/desktopHD';
+// @import 'templates/web-production-our-works/desktopHD';
+// @import 'templates/web-production-answers/desktopHD';
+// @import 'templates/web-production-footer/desktopHD';
+// -- web-production-template --
+/* ---- DESKTOP HD ---- */
+
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    // -- web-production-template --
+    // -- web-production-template --
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+    // -- web-production-template --
+    // -- web-production-template --
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    // -- web-production-template --
+    // -- web-production-template --
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    // -- web-production-template --
+    // -- web-production-template --
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+    // -- web-production-template --
+    // -- web-production-template --
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    // -- web-production-template --
+    // -- web-production-template --
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+    // -- web-production-template --
+    // -- web-production-template --
+}
+/* ---- PHONE PORTRAIT ---- */
