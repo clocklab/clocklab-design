@@ -1,13 +1,11 @@
-@import '../desktop';
-
-& {
+.services-blog {
     height: 100vh;
     min-height: 650px;
     max-height: 800px;
 
     .blue-line {
-        width: px(300);
-        left: px(200);
+        width: 150px;
+        left: 100px;
     }
 
     .container {
@@ -18,46 +16,46 @@
         height: 100%;
 
         &:after {
-            top: px(800);
+            top: 400px;
         }
     }
 
     .image-container {
-        width: px(900);
-        height: px(1100);
+        width: 450px;
+        height: 550px;
     }
 
     .info {
-        margin-left: px(150);
+        margin-left: 75px;
         padding-top: 0;
-        width: px(1200);
+        width: 600px;
     }
 
     .new-title {
-        margin-top: px(40);
-        margin-bottom: px(40);
+        margin-top: 20px;
+        margin-bottom: 20px;
 
         .text-container {
 
             &:before {
-                height: px(12);
-                bottom: px(6);
+                height: 6px;
+                bottom: 3px;
             }
 
             span {
-                font-size: px(38);
-                line-height: px(40);
+                font-size: 19px;
+                line-height: 20px;
             }
         }
     }
 
     article {
-        padding-left: px(100);
-        padding-right: px(250);
+        padding-left: 50px;
+        padding-right: 125p;
     }
 
     .crossed-button {
-        margin-top: px(30);
-        margin-left: px(100);
+        margin-top: 15px;
+        margin-left: 50px;
     }
 }

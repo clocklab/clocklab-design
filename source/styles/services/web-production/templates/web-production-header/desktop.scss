@@ -1,17 +1,15 @@
-@import '../desktop';
-
-& {
+.web-production-header {
 
     .container {
-        padding-right: px(100);
-        padding-bottom: px(80);
+        padding-right: 50px;
+        padding-bottom: 40px;
     }
 
     header {
         max-height: 900px;
 
         .image-container {
-            width: px(2000);
+            width: 1000px;
         }
     }
 
@@ -42,7 +40,7 @@
     }
 
     .description {
-        padding: px(250) px(40) 0 0;
+        padding: 125px 20px 0 0;
 
         & > span {
             display: block;
@@ -50,15 +48,15 @@
     }
 
     .info {
-        top: px(-300);
-        padding-top: px(80);
-        padding-left: px(160);
+        top: -150px;
+        padding-top: 40px;
+        padding-left: 80px;
     }
 
     .new-header {
-        margin-top: px(50);
-        margin-bottom: px(80);
-        font-size: px(80);
+        margin-top: 25px;
+        margin-bottom: 40px;
+        font-size: 40px;
     }
 
     article {
@@ -67,21 +65,21 @@
         p {
 
             &.big {
-                margin-bottom: px(60);
+                margin-bottom: 30px;
             }
         }
     }
 
     .cases {
-        margin-top: px(-120);
+        margin-top: -60px;
     }
 
     .list {
 
         .list-title {
-            margin-bottom: px(150);
-            font-size: px(66);
-            line-height: px(70);
+            margin-bottom: 75px;
+            font-size: 33px;
+            line-height: 35px;
 
             span {
                 display: block;
@@ -94,26 +92,26 @@
         img {
 
             &:first-child {
-                left: px(100);
-                width: px(1000);
-                height: px(600);
+                left: 50px;
+                width: 500px;
+                height: 300px;
             }
 
             &:last-child {
-                top: px(300);
-                width: px(600);
-                height: px(800);
+                top: 150px;
+                width: 300px;
+                height: 400px;
             }
         }
     }
 
     .advantages {
-        margin-top: px(220);
+        margin-top: 110px;
 
         .advantages-title {
-            margin-bottom: px(180);
-            font-size: px(84);
-            line-height: px(92);
+            margin-bottom: 90px;
+            font-size: 42px;
+            line-height: 46px;
 
             span {
                 display: block;
@@ -121,11 +119,11 @@
         }
 
         ul {
-            height: px(950);
+            height: 475px;
         }
 
         li {
-            margin-bottom: px(100);
+            margin-bottom: 50px;
             width: 45%;
         }
 

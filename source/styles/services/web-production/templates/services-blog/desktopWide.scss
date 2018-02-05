@@ -1,0 +1,35 @@
+.services-blog {
+
+    .blue-line {
+        left: 150px;
+    }
+
+    .info {
+        margin-left: 90px;
+        width: 770px;
+    }
+
+    .new-title {
+
+        .text-container {
+
+            &:before {
+                height: 6px;
+                bottom: 3px;
+            }
+
+            span {
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+
+    article {
+        padding-right: 150px;
+
+        p {
+            font-size: 16px;
+        }
+    }
+}

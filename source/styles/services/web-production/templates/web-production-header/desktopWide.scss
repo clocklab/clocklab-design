@@ -1,23 +1,21 @@
-@import '../desktop';
-
-& {
+.web-production-header {
 
     .container {
-        padding-right: px(100);
-        padding-bottom: px(100);
+        padding-right: 50px;
+        padding-bottom: 50px;
     }
 
     .description {
-        padding-top: px(250);
+        padding-top: 125px;
     }
 
     .info {
-        top: px(-400);
-        padding-top: px(120);
+        top: -200px;
+        padding-top: 60px;
     }
 
     .new-title {
-        margin-bottom: px(80);
+        margin-bottom: 40px;
     }
 
     article {
@@ -25,19 +23,19 @@
         p {
 
             &.big {
-                margin-bottom: px(60);
+                margin-bottom: 30px;
             }
         }
     }
 
     .cases {
-        margin-top: px(-120);
+        margin-top: -60px;
     }
 
     .list {
 
         .list-title {
-            margin-bottom: px(200);
+            margin-bottom: 100px;
         }
     }
 
@@ -46,11 +44,11 @@
         img {
 
             &:first-child {
-                left: px(100);
+                left: 50px;
             }
 
             &:last-child {
-                top: px(400);
+                top: 200px;
             }
         }
     }
@@ -58,11 +56,11 @@
     .advantages {
 
         .advantages-title {
-            margin-bottom: px(180);
+            margin-bottom: 90px;
         }
 
         ul {
-            height: px(1200);
+            height: 600px;
         }
 
         &--corporate {
@@ -70,7 +68,7 @@
             &--landing {
 
                 ul {
-                    height: px(1400);
+                    height: 700px;
                 }
             }
         }
