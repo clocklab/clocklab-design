@@ -1,61 +1,77 @@
 <div class="work-examples">
-    <div class="front-layer">
-        @@include('./components/small-gray-lines.html')
-        @@include('./components/big-background-letter.html')
-
-        <div class="container">
-            <span class="our-works-title wow fadeIn">
-                Примеры
-                <span>наших работ</span>
-            </span>
-            <div class="works wow fadeInUp">
-                <div class="work work--eurovision">
-                    <a href="#">
-                        <img src="../../../images/services/eurovision.jpg" alt="eurovision">
-                        <span>Eurovision</span>
-                    </a>
-                </div>
-                <div class="work work--alta">
-                    <a href="#">
-                        <img src="../../../images/services/alta.jpg" alt="eurovision">
-                        <span>Alta capital</span>
-                    </a>
-                </div>
-                <div class="work work--audi">
-                    <a href="#">
-                        <img src="../../../images/services/audi.jpg" alt="eurovision">
-                        <span>Audi</span>
-                    </a>
-                </div>
-                <div class="work work--vinograd">
-                    <a href="#">
-                        <img src="../../../images/services/vinograd.jpg" alt="eurovision">
-                        <span>Vino grad</span>
-                    </a>
-                </div>
+    <div class="examples">
+        <div class="front-layer">
+            @@include('./components/small-gray-lines.html')
+            
+            <div class="big-background-letter">
+                <span>c</span>
             </div>
 
-            <!-- ссылка на страницу portfolio.html -->
-            @@include('./components/crossed-button.html')
+            <div class="container">
+                <span class="our-works-title wow fadeIn">
+                    Примеры
+                    <span>наших работ</span>
+                </span>
+                <div class="works wow fadeInUp">
+                    <div class="work work--eurovision">
+                        <a href="#">
+                            <img src="../../../images/services/eurovision.jpg" alt="eurovision">
+                            <span>Eurovision</span>
+                        </a>
+                    </div>
+                    <div class="work work--alta">
+                        <a href="#">
+                            <img src="../../../images/services/alta.jpg" alt="eurovision">
+                            <span>Alta capital</span>
+                        </a>
+                    </div>
+                    <div class="work work--audi">
+                        <a href="#">
+                            <img src="../../../images/services/audi.jpg" alt="eurovision">
+                            <span>Audi</span>
+                        </a>
+                    </div>
+                    <div class="work work--vinograd">
+                        <a href="#">
+                            <img src="../../../images/services/vinograd.jpg" alt="eurovision">
+                            <span>Vino grad</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a class="crossed-button">
+                    <span>Посмотреть все работы</span>
+                    <div class="arrow-container">
+                        <svg class="arrow" x="0px" y="0px"
+                            viewBox="0 0 34.8 7.3">
+                            <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                            <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                            <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                        </svg>      
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="back-layer">
+            <div class="big-background-letter">
+                <span>o</span>
+            </div>
+
+            @@include('./components/form.html')
         </div>
     </div>
 
-    <div class="back-layer">
-        @@include('./components/big-background-letter.html')
-        @@include('./components/form.html')
+    <div class="discuss wow fadeIn">
+        <div class="text-block">
+            <span class="text-title">Хотите обсудить проект?</span>
+            <p>
+                Для экономии Вашего времени и нервов просто обратитесь к нам  
+                за  успехом  для Вашего бизнеса.
+            </p>
+        </div>
+        <button class="open-form">
+            <span>Обсудить</span>
+        </button>
     </div>
-
-</div>
-
-<div class="design-discuss wow fadeIn">
-    <div class="offer">
-        <span class="offer-title">Хотите обсудить проект?</span>
-        <p>
-            Для экономии Вашего времени и нервов просто обратитесь к нам  
-            за  успехом  для Вашего бизнеса.
-        </p>
-    </div>
-    <button class="open-form">
-        <span>Обсудить</span>
-    </button>
 </div>
