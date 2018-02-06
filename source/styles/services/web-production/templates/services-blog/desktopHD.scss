@@ -4,22 +4,11 @@
     height: 960px;
     overflow: hidden;
 
-    .blue-line {
-        position: absolute;
-        top: 0;
-        left: 184px;
-        width: 280px;
-        height: 100%;
-        background: $blue;
-    }
-
     .small-gray-lines {
-        z-index: 1;
 
         .line {
             visibility: visible;
-            background: gray;
-            opacity: .2;
+            opacity: .1;
 
             &.up {
                 transform: rotate(-65deg) translate3d(100%, 0, 0);
@@ -28,122 +17,90 @@
             &.down {
                 transform: rotate(-65deg) translate3d(-100%, 0, 0);
             }
-
-            &.up,
-            &.down {
-                animation: none;
-            }
-        }
-    }
-
-    .bottom-button {
-
-        span {
-            font-family: $Raleway-Regular;
         }
     }
 
     .container {
         display: flex;
+        justify-content: space-between;
         position: relative;
         z-index: 2;
         margin: 0 auto;
         padding-top: 90px;
         width: 81%;
+        height: 100%;
+    }
 
-        &-addition {
-            display: block;
-            position: absolute;
-            top: 600px;
-            left: 105%;
-            width: 140px;
-            color: $darkGray;
-            font-family: $Roboto-Regular;
-            font-size: 12px;
-            line-height: 1.4;
-            transform-origin: 0 0;
-            transform: rotate(90deg);
-        }
+    .blue-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 18%;
+        height: 100%;
+        background: $blue;
     }
 
     .image-block {
         position: relative;
         padding-left: 60px;
+        width: 41%;
+        height: 80%;
     }
 
     .date {
         position: absolute;
-        right: 95%;
-        top: 25px;
-        width: 125px;
+        top: 0;
+        left: 60px;
         color: $white;
         font-family: $Roboto-Light;
         font-size: 16px;
-        transform-origin: 100% 0;
-        transform: rotate(-90deg);
+        transform-origin: 100% 100%;
+        transform: translate3d(-100%, -100%, 0) rotate(-90deg);
 
         span {
             display: block;
+            padding: 15px 30px;
         }
     }
 
     .image-container {
         position: relative;
-        width: 570px;
-        height: 760px;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
 
         img {
             position: relative;
-            z-index: 2;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-
-        &:before {
-            display: block;
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: $gray;
-            content: '';
-        }
     }
 
-    .info {
-        margin-left: 150px;
-        padding-top: 65px;
-        width: 760px;
+    .info-block {
+        padding-top: 70px;
+        width: 49%;
+        min-width: 730px;
     }
 
     .new-title {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        font-family: $Raleway-Regular;
+        margin-top: 50px;
 
         .text-container {
             display: inline-block;
             margin-bottom: 5px;
-            font-family: $Raleway-ExtraBold;
+        }
 
-            &:before {
-                display: none;
-            }
-
-            span {
-                font-size: 30px;
-                line-height: 45px;
-            }
+        &-text {
+            font-size: 30px;
+            line-height: 1.2;
         }
     }
 
     article {
-        padding-left: 100px;
-        padding-right: 190px;
+        margin-top: 40px;
+        padding-left: 10%;
+        padding-right: 25%;
 
         p {
             margin-bottom: 25px;
@@ -155,8 +112,9 @@
     }
 
     .special-buttons {
-        display: -webkit-inline-box;
-        margin: 30px 0 0 85px;
+        display: flex;
+        margin-top: 50px;
+        padding-left: 10%;
 
         .special-button {
             display: block;
@@ -204,13 +162,13 @@
             vertical-align: middle;
             position: relative;
             padding: 0 20px;
-            width: px(300);
-            height: px(110);
+            width: 150px;
+            height: 55px;
             color: $black;
             cursor: pointer;
             font-family: $Roboto-Black;
-            font-size: px(28);
-            line-height: px(110);
+            font-size: 14px;
+            line-height: 55px;
             letter-spacing: 2px;
             text-align: center;
             text-transform: uppercase;
