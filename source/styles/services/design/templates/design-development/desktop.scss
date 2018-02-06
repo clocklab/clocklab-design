@@ -1,161 +1,23 @@
-& {  
-    font-family: $Roboto-Regular;
-    background: $black;
-    position: relative;
-    overflow: hidden;
-    z-index: -1;
-    
-    // ----- big-background-letter -----
-    .big-background-letter {
-        position: absolute;
-        right: inherit;
-        top: inherit;
-        bottom: -25vh;
-        left: px(-450);
-        font-size: 115vh;
-        color: rgba(68,68,68,.2);
-        span::before { content: 'o'; }
-    }
-
-    // ----- container -----
-    .container {
-        padding-top: px(415);
-        position: relative;
-        height: px(2520);
-        margin: 0 auto;
-        z-index: 2;
-        width: 81%;
-        & > div {
-            position: relative;
-            display: flex;
-            width: 100%;
-            color: $white;
-        }
-    }
-    
-    // ----- line -----
-    .line {
-        right: 0;
-        width: 55%;
-        height: 1px;
-        top: 16.5vh;
-        position: absolute;
-        background: $background;
-    }
-
-    // ----- brand-book -----
-    &.brand-book {
-
-        // ----- column -----
-        .column {
-            &-1 {
-                width: 60%;
-                .development-title {
-                    display: block;
-                    font-family: $Raleway-SemiBold;
-                    font-size: px(152);
-                    &--blue { color: $blue; }
-                }
-            }
-            &-2 {
-                padding-top: px(530);
-                width: 38%;
-            }
-            &-3 {
-                padding-right: px(200);
-                padding-top: px(530);
-                position: relative;
-                width: 35%;
-            }
-        }
-        p, h3 {
-            color: #E0E0E0;
-            margin-top: 11vh;
-            line-height: 1.3;
-            font-size: px(36);
-            &.right {
-                font-size: px(32);
-                float: right;
-                width: 55%;
-                span {
-                    color: $blue;
-                    font-size: px(45);
-                }
-            }
-        }
-        ul li {
-            margin-bottom: px(54);
-            padding-left: px(85);
-            position: relative;
-            font-size: px(32);
-            line-height: 1.4;
-            span {
-                font-family: $Raleway-Bold;
-                margin-bottom: px(-25);
-                display: block;
-            }
-            &:before {
-                position: absolute;
-                display: block;
-                left: 7px;
-                top: 7px;
-                width: 7px;
-                height: 7px;
-                content: '';
-                background: $blue;
-                border-radius: 50%;
-            }
-        }
-    }
-    
-    // ----- ui-ux -----
+@import '../desktop';
+& {
+	&.brand-book {
+		.big-background-letter { top: px(-700); }
+    	.more { margin-top: px(500); }
+	    .container {
+	    	.column { &-2, &-3 { padding-top: px(350); } }
+	        p { margin: 6vh 0;}
+	        padding-top: px(250);
+	        height: auto;
+	    }
+	}
     &.ui-ux {
-
-        // ----- column -----
-        .column {
-            &-1 {
-                width: 68%;
-                .development-title {
-                    display: block;
-                    font-family: $Raleway-SemiBold;
-                    font-size: px(152);
-                }
-            }
-            &-2 {
-                padding-top: px(400);
-                display: grid;
-                .label {
-                    font-size: px(400);
-                    min-height: px(400);
-                    font-family: $Roboto-Bold;
-                    span { color: $blue; }
-                    &:last-of-type {
-                        text-align: right;
-                        padding-top: px(245);
-                    }
-                }
-            }
-            &-3 {
-                width: 57%;
-                padding-top: px(450);
-                padding-left: px(260);
-                p {
-                    min-height: px(400);
-                    &:last-of-type { padding-top: px(235); }
-                }
-            }
-        }
-        p {
-            line-height: 1.3;
-            font-size: px(32);
-            float: right;
-            color: $gray;
-            &.right {
-                width: 55%;
-                float: right;
-                color: #E0E0E0;
-                margin-top: 11vh;
-            }
-        }
+    	.column-1 .development-title {
+    		font-size: px(100);
+    		span { font-size: px(100); }
+    	}
+    	.column-3 {
+    		width: 100%;
+    		padding-left: px(100);
+		}
     }
 }
