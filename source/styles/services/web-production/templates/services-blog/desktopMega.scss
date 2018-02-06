@@ -1,10 +1,15 @@
 .services-blog {
 
-    .blue-line {
-        left: 370px;
+    .container {
+        justify-content: space-around;
     }
 
-    .container {
-        justify-content: center;
+    .image-block {
+        width: 35%;
+        height: 85%;
+    }
+
+    .info-block {
+        width: 45%;
     }
 }

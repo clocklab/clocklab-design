@@ -3,37 +3,30 @@
     min-height: 650px;
     max-height: 800px;
 
-    .blue-line {
-        width: 150px;
-        left: 100px;
-    }
-
     .container {
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         padding-top: 0;
-        width: 85%;
-        height: 100%;
-
-        &:after {
-            top: 400px;
-        }
+        width: 90%;
     }
 
-    .image-container {
-        width: 450px;
-        height: 550px;
+    .blue-line {
+        width: 15%;
     }
 
-    .info {
-        margin-left: 75px;
+    .image-block {
+        width: 35%;
+        height: 70%;
+    }
+
+    .info-block {
         padding-top: 0;
-        width: 600px;
+        width: 45%;
+        min-width: 460px;
     }
 
     .new-title {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 25px;
 
         .text-container {
 
@@ -41,21 +34,26 @@
                 height: 6px;
                 bottom: 3px;
             }
+        }
 
-            span {
-                font-size: 19px;
-                line-height: 20px;
-            }
+        &-text {
+            font-size: 19px;
+            line-height: 20px;
         }
     }
 
     article {
-        padding-left: 50px;
-        padding-right: 125p;
+        margin-top: 20px;
+        padding-left: 5%;
+        padding-right: 10%;
+
+        p {
+            margin-bottom: 15px;
+        }
     }
 
-    .crossed-button {
+    .special-buttons {
         margin-top: 15px;
-        margin-left: 50px;
+        padding-left: 5%;
     }
 }
