@@ -1,12 +1,19 @@
 .services-blog {
 
-    .blue-line {
-        left: 150px;
+    .container {
+        width: 85%;
     }
 
-    .info {
-        margin-left: 90px;
-        width: 770px;
+    .image-block {
+        padding-left: 40px;
+    }
+
+    .date {
+        left: 40px;
+    }
+
+    .info-block {
+        min-width: 600px;
     }
 
     .new-title {
@@ -14,22 +21,12 @@
         .text-container {
 
             &:before {
-                height: 6px;
-                bottom: 3px;
-            }
-
-            span {
-                font-size: 20px;
-                line-height: 25px;
+                height: 20px;
             }
         }
-    }
 
-    article {
-        padding-right: 150px;
-
-        p {
-            font-size: 16px;
+        &-text {
+            font-size: 24px;
         }
     }
 }

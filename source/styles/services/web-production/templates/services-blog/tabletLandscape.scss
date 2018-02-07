@@ -1,0 +1,35 @@
+.services-blog {
+
+    .container {
+        justify-content: center;
+    }
+
+    .blue-line {
+        width: 10%;
+    }
+
+    .image-block {
+        position: absolute;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .info-block {
+        width: 77%;
+        min-width: initial;
+        max-width: 610px;
+    }
+
+    .new-title {
+        font-size: 0;
+    }
+
+    .special-buttons {
+        margin-top: 30px;
+    }
+}

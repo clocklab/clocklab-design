@@ -2,38 +2,65 @@
 
     .front-layer,
     .back-layer {
-        height: 875px;
+        height: 650px;
     }
 
-    .front-layer {
+    .big-background-letter {
+        top: 100px;
+        font-size: 500px;
+    }
 
-        .container {
-            width: 95%;
-        }
+    .container {
+        justify-content: space-between;
+        padding-top: 0;
+        width: 90%;
+        height: 100%;
+    }
 
-        .our-works-title {
-            margin-right: 50px;
-            font-size: 40px;
-        }
+    .our-works-title {
+        margin-right: 0;
+        min-width: 230px;
+        font-size: 36px;
+    }
 
-        .crossed-button {
-            margin-left: 10px;
-        }
+    .works {
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+    }
 
-        .works {
-            width: 700px;
-        }
+    .work {
 
-        .work {
+        &:nth-of-type(1),
+        &:nth-of-type(2),
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
 
-            &--audi {
-                left: 25px;
+            img {
+                height: 220px;
             }
         }
+
+        &:nth-of-type(1),
+        &:nth-of-type(3) {
+            margin-right: 25px;
+        }
+
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
+            margin-top: 30px;
+        }
     }
 
-    .back-layer {
-        padding-right: 40px;
+    .crossed-button {
+        bottom: 100px;
+    }
+
+    .discuss {
+
+        .open-form {
+            margin-left: 100px;
+        }
     }
 
     &.opened {
