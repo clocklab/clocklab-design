@@ -11,16 +11,16 @@
             .front-layer {
                 background: $lightBlack;
                 border-bottom: 0;
+            }
 
-                .our-works-title {
+            .our-works-title {
+                color: $white;
+            }
+
+            .work {
+
+                span {
                     color: $white;
-                }
-
-                .work {
-
-                    span {
-                        color: $white;
-                    }
                 }
             }
 
@@ -33,13 +33,13 @@
                         background: $white;
                     }
                 }
+            }
 
-                .arrow {
+            .arrow {
 
-                    .st0,
-                    .st1 {
-                        stroke: $white;
-                    }
+                .st0,
+                .st1 {
+                    stroke: $white;
                 }
             }
         }
