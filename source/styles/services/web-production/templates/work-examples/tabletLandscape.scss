@@ -1,0 +1,76 @@
+.work-examples {
+
+    .front-layer {
+        height: initial;
+    }
+
+    .container {
+        display: block;
+        padding: 30px 0 130px;
+        width: 90%;
+    }
+
+    .our-works-title {
+        margin-right: 0;
+        color: $darkGray;
+        font-size: 42px;
+        text-align: center;
+        transform: none;
+    }
+
+    .works {
+        justify-content: space-around;
+        margin-top: 40px;
+        width: 100%;
+        height: initial;
+    }
+
+    .work {
+
+        &:nth-of-type(1),
+        &:nth-of-type(2),
+        &:nth-of-type(3),
+        &:nth-of-type(4) {
+
+            img {
+                height: 240px;
+            }
+        }
+
+        &:nth-of-type(1),
+        &:nth-of-type(3) {
+            margin-right: 0;
+        }
+    }
+
+    .crossed-button {
+        position: absolute;
+        left: 50%;
+        bottom: initial;
+        margin-top: 40px;
+        transform: translateX(-50%);
+    }
+
+    .back-layer {
+        height: 100%;
+    }
+
+    .discuss {
+        justify-content: space-around;
+        padding: 50px 0;
+
+        .text-block {
+            width: 50%;
+        }
+
+        .text-title {
+            font-size: 26px;
+        }
+
+        .open-form {
+            margin-left: 30px;
+            width: 180px;
+            height: 50px;
+        }
+    }
+}
