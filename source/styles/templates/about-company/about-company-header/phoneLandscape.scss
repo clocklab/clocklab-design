@@ -1,0 +1,50 @@
+.about-company-header {
+    padding: 20px 0;
+    height: initial;
+    min-height: initial;
+
+    .text-block {
+        top: initial;
+        left: initial;
+        margin: 50px auto 0;
+        padding: 40px 0;
+        width: 90%;
+    }
+
+    .slogan {
+        font-size: 36px;
+    }
+
+    .translation {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .social {
+        position: relative;
+        bottom: initial;
+        left: 0;
+        margin-top: 50px;
+
+        .instagram,
+        .facebook {
+            width: 25px;
+            height: 25px;
+        }
+
+        .instagram {
+            top: -24px;
+        }
+
+        .jumping-button {
+            margin-left: 20px;
+        }
+
+        .behance {
+
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}

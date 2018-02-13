@@ -1,0 +1,128 @@
+.about-company-header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-height: 960px;
+    overflow: hidden;
+
+    .copyright {
+        bottom: 400px;
+
+        p {
+            animation: fadeInUp $time * 3 $time * 3 both;
+        }
+    }
+
+    .scroll {
+        animation: fadeInUp $time * 2 $time * 7 both;
+    }
+
+    .bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: fadeIn $time * 3 $time * 3 both;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .text-block {
+        position: relative;
+        top: 300px;
+        left: 15%;
+        z-index: 2;
+        line-height: 1.1;
+
+        span {
+            display: block;
+            animation: Up $time * 2 ease-in-out both;
+        }
+    }
+
+    .slogan {
+        color: $white;
+        font-family: $Raleway-Medium;
+        font-size: 76px;
+
+        .phrase {
+
+            &:nth-of-type(1) {
+
+                span {
+                    animation-delay: $time * 3;
+                }
+            }
+
+            &:nth-of-type(2) {
+
+                span {
+                    animation-delay: $time * 4;
+                }
+            }
+        }
+    }
+
+    .phrase {
+        overflow: hidden;
+    }
+
+    .translation {
+        margin-top: 30px;
+        color: $gray;
+        font-family: $Roboto-Regular;
+        font-size: 43px;
+
+        .phrase {
+
+            &:nth-of-type(1) {
+
+                span {
+                    animation-delay: $time * 6;
+                }
+            }
+
+            &:nth-of-type(2) {
+
+                span {
+                    animation-delay: $time * 7;
+                }
+            }
+        }
+    }
+
+    .social {
+        left: 70px;
+
+        .instagram,
+        .facebook {
+            width: 40px;
+            height: 40px;
+            animation: social $time * 3 $time * 3 both;
+        }
+
+        .instagram {
+            top: -39px;
+        }
+
+        .jumping-button {
+            margin-left: 100px;
+        }
+
+        .behance {
+            animation: fadeInRight $time * 3 $time * 5 both;
+
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+}

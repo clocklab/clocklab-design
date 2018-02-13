@@ -14,6 +14,7 @@
         position: absolute;
         top: 0;
         left: calc((100% - $container-width) / 2);
+        height: 100%;
         width: $container-width;
     }
 
@@ -21,7 +22,7 @@
         position: absolute;
         top: 0;
         width: 1px;
-        height: 100vh;
+        height: 100%;
         background: $darkGray;
 
         &--1 {
@@ -208,10 +209,10 @@
             }
 
             &:hover {
-                color: $black;
+                color: $gray;
 
                 span {
-                    color: $black;
+                    color: $gray;
                 }
             }
         }
