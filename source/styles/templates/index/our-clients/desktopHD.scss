@@ -174,4 +174,56 @@
     &.previous-back {
         animation-play-state: running;
     }
+
+    // ----- STYLES FOR ABOUT-COMPANY PAGE -----
+    &.about-company {
+        width: 100vw;
+        height: 100vh;
+        min-height: 900px;
+
+        .front-layer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            background: $lightBlack;
+        }
+
+        .open-form {
+            padding: 0;
+            color: $white;
+            font-family: $Raleway-ExtraBold;
+            font-size: 28px;
+            line-height: 1.1;
+            text-align: left;
+            transition: color $time;
+
+            span {
+                display: block;
+                color: $blue;
+                transition: color $time;
+            }
+
+            &:hover {
+                color: $black;
+
+                span {
+                    color: $black;
+                }
+            }
+        }
+
+        .back-layer {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    // ----- STYLES FOR ABOUT-COMPANY PAGE -----
 }
