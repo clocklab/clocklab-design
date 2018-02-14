@@ -19,4 +19,15 @@
         width: 350px;
         line-height: 1.2;
     }
+
+    // ----- STYLES FOR ABOUT-COMPANY PAGE -----
+    &.about-company {
+        min-height: 1024px;
+
+        .open-form {
+            font-size: 16px;
+            line-height: 1;
+        }
+    }
+    // ----- STYLES FOR ABOUT-COMPANY PAGE -----
 }

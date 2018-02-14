@@ -1,0 +1,50 @@
+.work-flow {
+    padding: 40px 0 30px;
+
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .new-title {
+        margin-top: 10px;
+
+        &-text {
+            font-size: 30px;
+        }
+    }
+
+    .text-container {
+
+        &:before {
+            height: 20px;
+        }
+    }
+
+    .steps {
+        margin-top: 15px;
+    }
+
+    .step-container {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+    .step {
+
+        &-image {
+            width: 35%;
+        }
+    }
+
+    .content {
+
+        &-title {
+            font-size: 22px;
+        }
+
+        &-text {
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.about-company-header {
+    min-height: 650px;
+
+    .copyright {
+        bottom: 300px;
+    }
+
+    .text-block {
+        left: 15%;
+    }
+
+    .slogan {
+        font-size: 56px;
+    }
+
+    .translation {
+        font-size: 33px;
+    }
+
+    .social {
+        left: 20px;
+
+        .instagram,
+        .facebook {
+            width: 35px;
+            height: 35px;
+        }
+
+        .instagram {
+            top: -34px;
+        }
+
+        .jumping-button {
+            margin-left: 50px;
+        }
+
+        .behance {
+
+            span {
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,192 +1,22 @@
 .long-read {
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 230px 10% 0;
     background: $white;
-    opacity: 0;
-    visibility: hidden;
-    overflow-y: auto;
+    color: $darkGray;
+    font-family: $Roboto-Regular;
 
-    .long-read-background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 0;
-        background: $white;
-    }
+    & > div {
+        margin-bottom: 180px;
 
-    .cross {
-        position: absolute;
-        top: 75px;
-        right: 75px;
-        width: 28px;
-        height: 28px;
-        background: transparent;
-
-        &:before,
-        &:after {
-            display: block;
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 20px;
-            height: 2px;
-            background: $gray;
-            content: '';
-            transition: background $time;
-        }
-
-        &:before {
-            transform: rotate(45deg);
-        }
-
-        &:after {
-            transform: rotate(-45deg);
-        }
-
-        &:hover {
-
-            &:before,
-            &:after {
-                background: $black;
-            }
-        }
-    }
-
-    .long-read-container {
-        position: relative;
-        z-index: 3;
-        margin: 0 auto;
-        padding: 150px 130px 80px 185px;
-        color: $darkGray;
-        font-family: $Roboto-Regular;
-        opacity: 0;
-    }
-
-    .row {
-        display: flex;
-        justify-content: space-between;
-
-        & > div {
-
-            &:first-child {
-                width: 51%;
-            }
-
-            &:last-child {
-                width: 49%;
-            }
-        }
-
-        &--1 {
-
-            & > div {
-
-                &:nth-child(1) {
-                    padding-right: 225px;
-                }
-            }
-        }
-
-        &--2 {
-            margin-top: 150px;
-
-            & > div {
-
-                &:nth-child(1) {
-                    padding-right: 225px;
-                }
-            }
-        }
-
-        &--3 {
-            margin-top: 230px;
-
-            & > div {
-
-                &:nth-child(1) {
-                    padding-right: 195px;
-                }
-            }
-        }
-
-        &--4 {
-            margin-top: 225px;
-
-            & > div {
-
-                &:nth-child(1) {
-                    padding-right: 325px;
-                }
-            }
-        }
-
-        &--5 {
-            margin-top: 120px;
-        }
-
-        &--6 {
-            margin-top: 155px;
-        }
-
-        &--7 {
-            margin-top: 180px;
-
-            & > div {
-
-                &:nth-child(1) {
-                    padding-right: 195px;
-                }
-            }
-        }
-
-        &--8,
-        &--9 {
-            margin-top: 225px;
-
-            & > div {
-
-                &:nth-child(1) {
-                    padding-right: 390px;
-                }
-            }
+        &:nth-child(odd) {
+            width: 40%;
         }
 
         &:nth-child(even) {
-
-            .row-title {
-                color: $blue;
-            }
+            width: 49%;
         }
-    }
-
-    .row-title {
-        display: block;
-        font-size: 48px;
-        font-family: $Raleway-Bold;
-        line-height: 55px;
-
-        span,
-        &--blue {
-            color: $blue;
-        }
-    }
-
-    .list-item-title {
-        display: block;
-        font-size: 18px;
-        font-family: $Raleway-Bold;
-
-        &.big {
-            margin-bottom: 20px;
-            font-size: 24px;
-        }
-    }
-
-    .italic {
-        font-family: $Raleway-Regular;
-        font-size: 24px;
-        font-style: italic;
     }
 
     p,
@@ -195,14 +25,23 @@
         margin-bottom: 30px;
         font-size: 16px;
         line-height: 1.5;
-
-        &.italic {
-            font-family: $Raleway-Regular;
-            color: $blue;
-        }
     }
 
-    .bordered {
+    .bold {
+        font-family: $Raleway-Bold;
+    }
+
+    .italic {
+        font-family: $Raleway-Regular;
+        font-size: 24px;
+        font-style: italic;
+    }
+
+    .blue {
+        color: $blue;
+    }
+
+    .top-bottom-bordered {
         margin-top: 80px;
         padding: 40px 0;
         border-top: 1px solid $gray;
@@ -232,14 +71,19 @@
         border-bottom: 1px solid $gray;
     }
 
-    p {
-        margin-bottom: 30px;
-        font-size: 16px;
-        line-height: 1.5;
+    .big {
+        font-size: 18px;
+    }
 
-        span {
-            font-family: $Raleway-Bold;
-        }
+    .bigger {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .huge {
+        font-family: $Raleway-Bold;
+        font-size: 48px;
     }
 
     ul {
@@ -403,320 +247,6 @@
 
                     &:after {
                         left: -5px;
-                    }
-                }
-            }
-        }
-    }
-
-    .jumping-button {
-        margin: 165px auto 0;
-        color: $darkGray;
-        font-family: $Roboto-Bold;
-        font-size: 14px;
-        text-align: center;
-
-        span {
-            font-size: 14px;
-            font-family: $Raleway-Bold;
-
-        }
-
-        &:before {
-            background: $darkGray;
-        }
-    }
-
-    &.opened {
-        z-index: 9999;
-        visibility: visible;
-        opacity: 1;
-
-        .long-read-container {
-            animation: fadeIn $time .5s both;
-        }
-    }
-
-    &--web-production,
-    &--design,
-    &--about-company,
-    &--seo {
-
-        .long-read-background {
-            background: lighten($darkWhite, 5%);
-        }
-
-        .row {
-
-            &--2 {
-                margin-top: 140px;
-            }
-
-            &--3 {
-                margin-top: 170px;
-
-                .row-title {
-                    margin-bottom: 110px;
-                }
-            }
-
-            &--4 {
-                margin-top: 250px;
-
-                & > div {
-
-                    &:nth-child(1) {
-                        padding-right: 180px;
-                    }
-                }
-            }
-
-            &--5 {
-                margin-top: 290px;
-
-                & > div {
-
-                    &:nth-child(1) {
-                        padding-right: 140px;
-                    }
-                }
-            }
-
-            &--6 {
-                margin-top: 320px;
-
-                & > div {
-
-                    &:nth-child(1) {
-                        padding-right: 150px;
-                    }
-                }
-
-                .list-item-title {
-
-                    &.big {
-                        margin-top: 190px;
-                    }
-                }
-
-                ul {
-                    margin: 100px 0 0 35px;
-                }
-            }
-        }
-    }
-
-    &--web-production,
-    &--about-company,
-    &--marketing,
-    &--design,
-    &--seo {
-        position: relative;
-        z-index: 1;
-        height: initial;
-        visibility: visible;
-        opacity: 1;
-
-        .cross {
-            display: none;
-        }
-
-        .long-read-container {
-            opacity: 1;
-        }
-
-        .jumping-button {
-            display: none;
-        }
-    }
-
-    &.long-read--about-company {
-
-        li {
-            line-height: 1.5;
-        }
-
-        .row {
-
-            &--6 {
-
-                .list-item-title {
-
-                    &.big {
-                        margin-top: 0;
-                    }
-                }
-            }
-        }
-    }
-
-    &.long-read--design {
-
-        li {
-            line-height: 1.5;
-        }
-
-        .row {
-
-            &--5 {
-
-                .indexed {
-                    padding-top: 0;
-                    padding-bottom: 90px;
-
-                    li {
-                        padding: 27px 0 50px 32px;
-                        min-height: 100px;
-                        margin-bottom: 0;
-                        line-height: 1;
-
-                        &:after {
-                            left: -20px;
-                            top: 30px;
-                        }
-
-                        &:before {
-                            left: -43px;
-                            top: 0;
-                        }
-                    }
-
-                    span {
-                        line-height: 1.5;
-                        position: absolute;
-                    }
-                }
-            }
-
-            &--6 {
-
-                .list-item-title.big {
-                    font-size: 20px;
-                }
-
-                .circled {
-
-                    li {
-
-                        &:before {
-                            top: 8px;
-                        }
-                    }
-                }
-
-                ul {
-                    margin: 60px 0 0 35px;
-                }
-            }
-        }
-    }
-
-    &.long-read--seo {
-
-        li {
-            line-height: 1.5;
-        }
-
-        .row {
-
-            &--2 {
-                margin-top: 115px;
-            }
-
-            &--3 {
-                margin-top: 190px;
-            }
-
-            &--4 {
-                margin-top: 155px;
-
-                .indexed {
-                    padding-top: 0;
-                    padding-bottom: 90px;
-
-                    li {
-                        margin-bottom: 0;
-                        padding: 27px 0 50px 32px;
-                        min-height: 100px;
-                        line-height: 1;
-
-                        &:after {
-                            left: -20px;
-                            top: 30px;
-                        }
-
-                        &:before {
-                            left: -42px;
-                            top: -11px;
-                        }
-                    }
-
-                    span {
-                        position: absolute;
-                        line-height: 1.5;
-                    }
-                }
-
-                p {
-                    margin-bottom: 90px;
-                }
-            }
-
-            &--5 {
-
-                .circled {
-
-                    li {
-
-                        &:before {
-                            top: 8px;
-                        }
-                    }
-
-                    span {
-                        font-family: $Raleway-Bold;
-                    }
-                }
-            }
-
-            &--6 {
-                margin-top: 190px;
-            }
-
-            &--7 {
-                margin-top: 245px;
-
-                .bordered {
-                    margin: 90px 0;
-                }
-            }
-
-            &--8 {
-
-                .indexed {
-                    padding-top: 0;
-                    padding-bottom: 90px;
-
-                    li {
-                        margin-bottom: 0;
-                        padding: 27px 0 50px 32px;
-                        min-height: 100px;
-                        line-height: 1;
-
-                        &:after {
-                            left: -20px;
-                            top: 30px;
-                        }
-
-                        &:before {
-                            left: -42px;
-                            top: 0;
-                        }
-                    }
-
-                    span {
-                        line-height: 1.5;
-                        position: absolute;
                     }
                 }
             }

@@ -1,9 +1,93 @@
 @import 'base/variables';
 
-@import 'templates/about-company/about-company-one/main';
-@import 'templates/about-company/about-company-two/main';
-@import 'templates/about-company/about-company-three/main';
-@import 'templates/about-company/about-company-four/main';
-@import 'templates/about-company/about-company-five/main';
-@import 'templates/about-company/about-company-six/main';
-@import 'templates/about-company/about-company-seven/main';
+
+/*
+/
+/---- DESKTOP HD ---- */
+// @import 'templates/about-company/about-company-two/main';
+// @import 'templates/about-company/about-company-three/main';
+// @import 'templates/about-company/about-company-five/main';
+// @import 'templates/about-company/about-company-six/main';
+
+@import 'templates/about-company/about-company-header/desktopHD';
+@import 'templates/about-company/founders/desktopHD';
+@import 'templates/about-company/work-flow/desktopHD';
+@import 'templates/index/our-clients/desktopHD';
+/* ---- DESKTOP HD ---- */
+
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    @import 'templates/about-company/founders/desktopMega';
+    @import 'templates/about-company/work-flow/desktopMega';
+    @import 'templates/index/our-clients/desktopMega';
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+    @import 'templates/about-company/about-company-header/desktopWide';
+    @import 'templates/about-company/founders/desktopWide';
+    @import 'templates/index/our-clients/desktopWide';
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    @import 'templates/about-company/about-company-header/desktop';
+    @import 'templates/about-company/founders/desktop';
+    @import 'templates/about-company/work-flow/desktop';
+    @import 'templates/index/our-clients/desktop';
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    @import 'templates/about-company/founders/tabletLandscape';
+    @import 'templates/about-company/work-flow/tabletLandscape';
+    @import 'templates/index/our-clients/tabletLandscape';
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+    @import 'templates/about-company/founders/tabletPortrait';
+    @import 'templates/index/our-clients/tabletPortrait';
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    @import 'templates/about-company/about-company-header/phoneLandscape';
+    @import 'templates/about-company/work-flow/phoneLandscape';
+    @import 'templates/about-company/founders/phoneLandscape';
+    @import 'templates/index/our-clients/phoneLandscape';
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+    @import 'templates/index/our-clients/phonePortrait';
+}
+/* ---- PHONE PORTRAIT ---- */

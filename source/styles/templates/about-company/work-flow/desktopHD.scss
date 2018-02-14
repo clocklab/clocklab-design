@@ -1,0 +1,100 @@
+.work-flow {
+    padding: 100px 0 120px;
+    background: $white;
+
+    .container {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .new-title {
+        margin-top: 20px;
+    }
+
+    .text-container {
+        display: inline-block;
+    }
+
+    .steps {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+
+    .step-container {
+        margin-bottom: 40px;
+        width: 30%;
+        overflow: hidden;
+
+        // &:nth-of-type(1) {
+
+        //     .step {
+        //         animation-delay: $time * 2;
+        //     }
+        // }
+
+        // &:nth-of-type(2) {
+
+        //     .step {
+        //         animation-delay: $time * 3;
+        //     }
+        // }
+
+        // &:nth-of-type(3) {
+
+        //     .step {
+        //         animation-delay: $time * 4;
+        //     }
+        // }
+
+        // &:nth-of-type(4) {
+
+        //     .step {
+        //         animation-delay: $time * 2;
+        //     }
+        // }
+
+        // &:nth-of-type(5) {
+
+        //     .step {
+        //         animation-delay: $time * 3;
+        //     }
+        // }
+
+        // &:nth-of-type(6) {
+
+        //     .step {
+        //         animation-delay: $time * 4;
+        //     }
+        // }
+    }
+
+    .step {
+        color: $darkGray;
+        font-family: $Roboto-Regular;
+        // animation: Right $time * 2 ease both;
+
+        &-image {
+            width: 25%;
+        }
+    }
+
+    .content {
+
+        &-title {
+            display: block;
+            color: $blue;
+            font-family: $Raleway-Bold;
+            font-size: 24px;
+            line-height: 1.2;
+        }
+
+        &-text {
+            margin-top: 15px;
+            padding-right: 20px;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    }
+}

@@ -15,4 +15,29 @@
             font-size: 24px;
         }
     }
+
+    // ----- STYLES FOR ABOUT-COMPANY PAGE -----
+    &.about-company {
+        min-height: 768px;
+
+        .open-form {
+            font-size: 22px;
+        }
+
+        .back-layer {
+            padding-right: 4%;
+        }
+
+        .form {
+            width: 35%;
+        }
+
+        &.opened {
+
+            .front-layer {
+                transform: rotateY(25deg) scaleX(.65);
+            }
+        }
+    }
+    // ----- STYLES FOR ABOUT-COMPANY PAGE -----
 }

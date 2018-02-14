@@ -1,0 +1,48 @@
+.long-read {
+    padding-top: 100px;
+
+    & > div {
+        margin-bottom: 70px;
+
+        &:nth-child(odd) {
+            width: 42%;
+        }
+
+        &:nth-child(even) {
+            width: 50%;
+        }
+    }
+
+    p,
+    h2,
+    h3 {
+        margin-bottom: 15px;
+    }
+
+    .top-bottom-bordered {
+        margin-top: 40px;
+        padding: 20px 0;
+        font-size: 18px;
+    }
+
+    .left-bordered {
+        margin: 25px 0;
+        padding: 0 0 5px 25px;
+
+        &:before {
+            width: 5px;
+        }
+    }
+
+    .bottom-bordered {
+        padding-bottom: 20px;
+    }
+
+    .bigger {
+        font-size: 22px;
+    }
+
+    .huge {
+        font-size: 28px;
+    }
+}

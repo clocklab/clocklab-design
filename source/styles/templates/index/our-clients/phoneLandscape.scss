@@ -43,4 +43,26 @@
     .vertical-text {
         display: none;
     }
+
+    // ----- STYLES FOR ABOUT-COMPANY PAGE -----
+    &.about-company {
+        min-height: 568px;
+
+        .back-layer {
+            padding-right: 0;
+        }
+
+        .form {
+            margin: 0 auto;
+            width: 70%;
+        }
+    
+        &.opened {
+    
+            .front-layer {
+                transform: rotateY(120deg) scaleX(1);
+            }
+        }
+    }
+    // ----- STYLES FOR ABOUT-COMPANY PAGE -----
 }
