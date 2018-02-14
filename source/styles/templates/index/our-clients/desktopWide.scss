@@ -7,6 +7,17 @@
     // ----- STYLES FOR ABOUT-COMPANY PAGE -----
     &.about-company {
         min-height: 800px;
+
+        .form {
+            width: 25%;
+        }
+
+        &.opened {
+
+            .front-layer {
+                transform: rotateY(20deg) scaleX(.8);
+            }
+        }
     }
     // ----- STYLES FOR ABOUT-COMPANY PAGE -----
 }

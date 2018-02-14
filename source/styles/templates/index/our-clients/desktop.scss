@@ -39,6 +39,17 @@
         .open-form {
             font-size: 24px;
         }
+
+        .back-layer {
+            padding-right: 2%;
+        }
+
+        &.opened {
+
+            .front-layer {
+                transform: rotateY(15deg) scaleX(.8);
+            }
+        }
     }
     // ----- STYLES FOR ABOUT-COMPANY PAGE -----
 }

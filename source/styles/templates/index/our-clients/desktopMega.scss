@@ -1,0 +1,12 @@
+.our-clients {
+
+    &.about-company-page {
+
+        &.opened {
+
+            .front-layer {
+                transform: rotateY(10deg) scaleX(.85);
+            }
+        }
+    }
+}
