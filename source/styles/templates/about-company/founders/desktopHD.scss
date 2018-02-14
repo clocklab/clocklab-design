@@ -1,0 +1,52 @@
+.founders {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 18% 0 10%;
+    background: $white;
+    color: $darkGray;
+
+    .big-background-letter {
+        top: 28vh;
+        left: -6vh;
+        font-size: 1000px;
+        animation: fadeIn $time * 3 $time * 15 both;
+    }
+
+    .text-block {
+        position: relative;
+        z-index: 2;
+        min-width: 460px;
+        max-width: 620px;
+    }
+
+    .text {
+        margin-top: 40px;
+
+        p {
+            margin-bottom: 30px;
+            font-family: $Roboto-Regular;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    }
+
+
+    .image-block {
+        position: relative;
+        z-index: 2;
+    }
+
+    .rotated-text {
+        position: absolute;
+        top: 450px;
+        right: 8%;
+        width: 310px;
+        font-family: $Raleway-Regular;
+        font-size: 14px;
+        line-height: 1.3;
+        transform-origin: 100% 0;
+        transform: rotate(90deg);
+    }
+}

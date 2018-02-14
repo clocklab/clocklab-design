@@ -1,0 +1,29 @@
+.founders {
+    display: block;
+    padding: 30px 10%;
+
+    .text-block {
+        top: initial;
+        width: 100%;
+    }
+
+    .text {
+        margin-top: 20px;
+
+        p {
+            margin-bottom: 15px;
+        }
+    }
+
+    .image-block {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .rotated-text {
+        top: initial;
+        right: initial;
+        bottom: 0;
+        left: -40%;
+    }
+}

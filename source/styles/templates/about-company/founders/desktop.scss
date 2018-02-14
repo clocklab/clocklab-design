@@ -1,0 +1,38 @@
+.founders {
+    justify-content: space-around;
+    padding: 0 12% 0 6%;
+
+    .big-background-letter {
+        font-size: 700px;
+    }
+
+    .text-block {
+        width: 40%;
+        min-width: initial;
+    }
+
+    .new-title {
+
+        &-text {
+            font-size: 30px;
+        }
+    }
+
+    .text-container {
+
+        &:before {
+            height: 20px;
+        }
+    }
+
+    .image-block {
+        width: 50%;
+        height: 650px;
+    }
+
+    .rotated-text {
+        top: 550px;
+        right: 3%;
+        width: 400px;
+    }
+}
