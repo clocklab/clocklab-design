@@ -1,0 +1,13 @@
+.long-read {
+    display: block;
+    padding-top: 70px;
+
+    & > div {
+        margin-bottom: 50px;
+
+        &:nth-child(odd),
+        &:nth-child(even) {
+            width: 100%;
+        }
+    }
+}

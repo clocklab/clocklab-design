@@ -1,0 +1,11 @@
+.long-read {
+    padding-top: 180px;
+
+    & > div {
+        margin-bottom: 100px;
+    }
+
+    .huge {
+        font-size: 44px;
+    }
+}
