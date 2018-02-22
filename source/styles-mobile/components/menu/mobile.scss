@@ -54,394 +54,183 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 99999;
-    width: px(240);
-    height: px(240);
+    z-index: 9998;
+    width: px(126);
+    color: $white;
+    height: px(126);
     background: transparent;
     font-family: $Roboto-Regular;
     animation: Down $topPanelAnimationTime $time * 3 ease-out both;
     transition: top $time * 2 ease-out, background $time * 2 2s, width 0s $time * 2 + 2s, height 0s $time * 2 + 2s;
 
-    &__item {
-        box-sizing: border-box;
-        display: block;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
-        width: px(240);
-        height: px(240);
-        border: 1px solid $white;
-        color: $white;
-        cursor: pointer;
-        outline: 0;
-        backface-visibility: hidden;
-        transition: transform $HomeMenuBlockAnimationTime;
+    $menuItemWidth: px(196);
+    $menuItemHeight: px(196);
+    $menuItemWidthSmall: px(126);
+    $dif: px(2);
 
-        .text-block {
-            position: relative;
-            z-index: 3;
-            padding-top: px(60);
-            width: 100%;
-            height: 100%;
-        }
+    .menu__item {
+        box-sizing: border-box;
+        position: absolute;
+        float: right;
+        padding-top: px(52);
+        width: px(196);
+        height: px(196);
+        border: 1px solid $white;
+        backface-visibility: hidden;
+        color: $white;
+        transition: transform $menuMobileAnimationTime;
 
         .serial-number {
             position: absolute;
-            top: px(20);
-            right: px(20);
-            font-size: px(28);
+            top: px(14);
+            right: px(10);
             color: $gray;
+            font-family: $Roboto-Regular;
+            font-size: px(28);
         } 
 
-        .symbol,
-        .name {
-            font-size: px(72);
-            text-align: center;
-            transition: color $time;
-        }
-
         .symbol {
-            font-family: $Raleway-Regular;
+            font-family: $Raleway-ExtraBold;
+            font-size: px(60);
+            text-align: center;
         }
 
         .name {
-            display: block;
-            position: absolute;
-            bottom: px(30);
-            width: 100%;
+            margin-top: px(40);
+            font-family: $Roboto-Regular;
             font-size: px(32);
-        }
-
-        .border-left {
-            position: absolute;
-            top: 0;
-            right: 100%;
-            width: 1px;
-            height: 0;
-            background: $white;
-            transition: height $time; 
-        }
-
-        .border-bottom {
-            position: absolute;
-            top: 100%;
-            right: 0;
-            width: 0;
-            height: 1px;
-            background: $white;
-            transition: width $time;
-        }
-
-        .hamburger {
-            position: relative;
-            margin: 0 auto;
-            width: px(90);
-            height: px(72);
-            transition: transform $timeTick;
-
-            &-tick {
-                position: absolute;
-                left: 0;
-                width: 100%;
-                height: 3px;
-                border-radius: 3px;
-                overflow-x: hidden;
-
-                .inner-tick {
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background: $white;
-                    mix-blend-mode: darken;
-                    border-radius: 3px;
-                    transition: transform $time;
-
-                    &-2 {
-                        transform: translateX(-101%);
-                    }
-                }
-
-                &-1 {
-                    top: 0;
-                    width: 50%;
-                }
-
-                &-2 {
-                    top: calc(100% / 3);
-                    transition: width $time;
-                }
-
-                &-3 {
-                    top: calc(100% / 3 * 2);
-                    width: 50%;
-                    transition: width $time;
-                }
-                
-                &-4 {
-                    top: 100%;
-                }
-            }
-        }
-
-        &:before {
-            position: absolute;
-            top: px(50);
-            right: px(50);
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-            background: $blue;
-            content: '';
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity $time, top $time, right $time;
-        }
-
-        &:hover {
-
-            .text-block {
-
-                .symbol,
-                .name {
-                    color: $white;
-                }
-            }
-
-
-            &::before {
-                top: px(10);
-                right: px(10);
-                opacity: 1;
-                visibility: visible;
-            }
+            text-align: center;
         }
 
         &--open-close {
-            padding-top: px(70);
-            width: px(240);
-            height: px(240);
-            transition: none;
-            transition: border-color $timeTick;
+            position: relative;
+            padding-top: px(32);
+            width: $menuItemWidthSmall;
+            height: $menuItemWidthSmall;
 
-            .name {
-                transition: opacity $timeTick;
-            }
-
-            &::before {
-                display: none;
-            }
-
-            &:hover {
-
-                .hamburger-tick {
-
-                    .inner-tick {
-                        animation-fill-mode: forwards;
-                        animation-timing-function: linear;
-
-                        &-1 {
-                            animation-name: innerTickAnimation1;
-                        }
-
-                        &-2 {
-                            animation-name: innerTickAnimation2;
-                        }
-                    }
-
-                    &-1,
-                    &-3 {
-
-                        .inner-tick {
-                            animation-duration: $timeTickHalf;
-                        }
-                    }
-
-                    &-2,
-                    &-4 {
-                        .inner-tick {
-                            animation-duration: $timeTick;
-                        }
-                    }
-
+            .hamburger {
+                transition: transform $timeTick;
+                position: relative;
+                margin: 0 auto;
+                width: px(52);
+                height: px(34);
+    
+                &-tick {
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    border-radius: 3px;
+                    background: $white;
+                    transform-origin: 50% 50%;
+    
                     &-1 {
-
-                        .inner-tick {
-
-                            &-1 {
-                                animation-delay: 0s;
-                            }
-
-                            &-2 {
-                                animation-delay: $timeTickHalf * 4 + $timeTick * 3;
-                            }
-                        }
+                        top: 0;
+                        width: 50%;
+                        transition: top $time $time, width 0s $time;
                     }
-
+    
                     &-2 {
-
-                        .inner-tick {
-
-                            &-1 {
-                                animation-delay: $timeTickHalf;
-                            }
-
-                            &-2 {
-                                animation-delay: $timeTickHalf * 4 + $timeTick * 2;
-                            }
-                        }
+                        top: calc(100% / 3);
+                        transition: top $time $time, transform $time;
                     }
-
+    
                     &-3 {
-
-                        .inner-tick {
-
-                            &-1 {
-                                animation-delay: $timeTickHalf * 2;
-                            }
-
-                            &-2 {
-                                animation-delay: $timeTickHalf * 3 + $timeTick * 2;
-                            }
-                        }
+                        top: calc(100% / 3 * 2);
+                        width: 50%;
+                        transition: top $time $time, width 0s $time;
                     }
-
+                    
                     &-4 {
-
-                        .inner-tick {
-
-                            &-1 {
-                                animation-delay: $timeTickHalf * 3;
-                            }
-
-                            &-2 {
-                                animation-delay: $timeTickHalf * 3 + $timeTick;
-                            }
-                        }
+                        top: 100%;
+                        transition: top $time $time, transform $time;
                     }
                 }
             }
+
+            .name {
+                margin-top: px(20);
+                font-size: px(24);
+            }
+        }
+
+        &--about-us {
+            top: $menuItemWidthSmall - $dif;
+            right: $menuItemWidthSmall - $dif;   
+        }
+
+        &--portfolio {
+            top: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+            right: $menuItemWidthSmall - $dif;   
+        }
+
+        &--services {
+            top: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;   
+        }
+
+        &--contact {
+            top: $menuItemWidthSmall + $menuItemWidth * 2 - $dif * 3;
+            right: $menuItemWidthSmall - $dif;   
         }
 
         &--blog {
-            z-index: 5;
-            top: px(238);
-            transform-origin: 50% 0%;
-            transform: perspective(300px) rotateX(-90deg);
-        }
-
-        &--about-us {
-            z-index: 4;
-            right: px(238);
-            transform-origin: 100% 50%;
-            transform: perspective(300px) rotateY(-90deg);
-        }
-
-        &--services {
-            z-index: 3;
-            top: px(238);
-            right: px(238);
-            transform-origin: 100% 50%;
-            transform: perspective(300px) rotateY(-90deg);
-        }
-
-        &--contact {
-            top: px(238) * 2;
-            transform-origin: 50% 0%;
-            transform: perspective(300px) rotateX(-90deg);
-        }
-
-        &--portfolio {
-            z-index: 3;
-            right: px(238) * 2;
-            transform-origin: 100% 50%;
-            transform: perspective(300px) rotateY(-90deg);
+            top: $menuItemWidthSmall + $menuItemWidth * 2 - $dif * 3;
+            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
         }
 
         &--home {
-            z-index: 2;
-            right: px(238) * 3;
-            transform-origin: 100% 50%;
-            transform: perspective(300px) rotateY(-90deg);
+            top: $menuItemWidthSmall + $menuItemWidth * 3 - $dif * 4;
+            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
         }
 
         /* STYLES FOR ANIMATION */
-        &--blog,
         &--about-us {
-            transition-delay: $HomeMenuBlock1DelayTimeReversed;
+            transform-origin: 100% 0;
+            transform: perspective(300px) rotateX(90deg) rotateY(90deg);
+        }
+
+        &--portfolio,
+        &--contact,
+        &--home {
+            transform-origin: 50% 0;
+            transform: perspective(300px) rotateX(-90deg);
         }
 
         &--services,
-        &--contact,
+        &--blog {
+            transform-origin: 100% 50%;
+            transform: perspective(300px) rotateY(-90deg);
+        }
+
+        &--about-us {
+            transition-delay: $timeTick * 2 + $time + $menuMobileAnimationTime * 4;
+        }
+
         &--portfolio {
-            transition-delay: $HomeMenuBlock2DelayTimeReversed; 
+            transition-delay: $timeTick * 2 + $time + $menuMobileAnimationTime * 3;
+        }
+
+        &--services,
+        &--contact {
+            transition-delay: $timeTick * 2 + $time + $menuMobileAnimationTime * 2;
+        }
+
+        &--blog {
+            transition-delay: $timeTick * 2 + $time + $menuMobileAnimationTime;
         }
 
         &--home {
-            transition-delay: $HomeMenuBlock3DelayTimeReversed;
+            transition-delay: $timeTick * 2 + $time;
         }
         /* STYLES FOR ANIMATION END */
-
-        /* STYLES FOR BORDER ANIMATION */
-        &--open-close {
-
-            .border-left {
-                transition-delay: $HomeMenuLine7DelayTimeReversed;
-            }
-
-            .border-bottom {
-                transition-delay: $HomeMenuLine1DelayTimeReversed;   
-            }
-        }
-
-        &--contact {
-
-            .border-bottom {
-                transition-delay: $HomeMenuLine3DelayTimeReversed;
-            }
-        }
-
-        &--portfolio {
-
-            .border-left {
-                transition-delay: $HomeMenuLine5DelayTimeReversed;
-            }
-        }
-
-        &--home {
-
-            .border-left {
-                transition-delay: $HomeMenuLine4DelayTimeReversed;
-            }
-        }
-
-        &--services {
-
-            .border-left {
-                top: -100%;
-                transition-delay: $HomeMenuLine6DelayTimeReversed;
-            }
-
-            .border-bottom {
-                right: -100%;
-                transition-delay: $HomeMenuLine2DelayTimeReversed;
-            }
-        }
-        /* STYLES FOR BORDER ANIMATION ENDS */
-
-        &.disabled {
-            pointer-events: none;
-        }
     }
 
     &__background {
         position: absolute;
         top: 0;
         right: 0;
-        z-index: 1;
+        z-index: -1;
         width: 100%;
         height: 100%;
         cursor: pointer;
@@ -451,184 +240,60 @@
         width: 100vw;
         height: 100vh;
         background: rgba(0, 0, 0, .85);
-        transition: background $time * 2 0s;
+        transition: width 0s, height 0s, background $time;
 
         .menu__item {
             transform: none;
 
-            .hamburger {
-                width: px(100);
-                height: px(100);
-                overflow: hidden;
-
-                &-tick {
-                    transform-origin: 50% 50%;
-
-                    &:nth-child(2),
-                    &:nth-child(3) {
-                        top: 50%;
-                        width: 100%;
-
-                        .inner-tick {
-                            width: 80%;
-
-                            &-1 {
-                                left: 10%;
-                            }
-
-                            &-2 {
-                                left: -101%;
-                                transform: none;
-                            }
-                        }
-                    }
-
-                    &:nth-child(2) {
-                        transform: translateY(-50%) rotate(45deg);
-                    }
-
-                    &:nth-child(3) {
-                        transform: translateY(-50%) rotate(-45deg);
-                    }
-
-                    &:nth-child(1),
-                    &:nth-child(4) {
-                        width: 0;
-                    }
-                }
-            }
-
             &--open-close {
-                padding-top: px(50);
-                border-color: $white;
 
                 .hamburger {
-                    transform: scale(1) translate3d(0, 0, 0);
-                }
-
-                .name {
-                    opacity: 1;
-                }
-
-                &:hover {
-
-                    .hamburger-tick {
-
-                        .inner-tick {
-                            animation: none;
-                            animation-duration: $timeTick;
-                            animation-fill-mode: forwards;
-                            animation-timing-function: linear; 
-
-                            &-1 {
-                                animation-name: innerTickOpenedAnimation1; 
-                            }
-
-                            &-2 {
-                                animation-name: innerTickOpenedAnimation2;
-                            }
+    
+                    &-tick {
+    
+                        &:nth-child(1),
+                        &:nth-child(3) {
+                            top: 50%;
+                            width: 0;
+                            transition: top $time, width 0s $time;
                         }
 
-                        &-2 {
-
-                            .inner-tick {
-
-                                &-1 {
-                                    animation-delay: 0s;
-                                }
-
-                                &-2 {
-                                    animation-delay: $timeTick * 2 - $timeDif / 2;
-                                }
-                            }
+                        &:nth-child(2),
+                        &:nth-child(4) {
+                            top: 50%;
+                            transform: rotate(45deg);
+                            transition: top $time, transform $time $time;
                         }
 
-                        &-3 {
-
-                            .inner-tick {
-
-                                &-1 {
-                                    animation-delay: $timeTick - $timeDif / 2;
-                                }
-
-                                &-2 {
-                                    animation-delay: $timeTick * 3 - $timeDif / 2;
-                                }
-                            }
+                        &:nth-child(4) {
+                            transform: rotate(-45deg);
                         }
                     }
                 }
             }
 
             /* STYLES FOR ANIMATION */
-            &--blog,
             &--about-us {
-                transition-delay: $HomeMenuBlock1DelayTime; 
+                transition-delay: 0s;
+            }
+
+            &--portfolio {
+                transition-delay: $menuMobileAnimationTime;
             }
 
             &--services,
-            &--contact,
-            &--portfolio {
-                transition-delay: $HomeMenuBlock2DelayTime; 
+            &--contact {
+                transition-delay: $menuMobileAnimationTime * 2;
+            }
+
+            &--blog {
+                transition-delay: $menuMobileAnimationTime * 3;
             }
 
             &--home {
-                transition-delay: $HomeMenuBlock3DelayTime;
+                transition-delay: $menuMobileAnimationTime * 4;
             }
             /* STYLES FOR ANIMATION ENDS */
-
-            /* STYLES FOR BORDER ANIMATION */
-            .border-left {
-                height: 100vh;
-            }
-
-            .border-bottom {
-                width: 100vw;
-            }
-
-            &--open-close {
-
-                .border-left {
-                    transition-delay: $HomeMenuLine7DelayTime;
-                }
-
-                .border-bottom {
-                    transition-delay: $HomeMenuLine1DelayTime;   
-                }
-            }
-
-            &--services {
-
-                .border-left {
-                    transition-delay: $HomeMenuLine6DelayTime;
-                }
-
-                .border-bottom {
-                    transition-delay: $HomeMenuLine2DelayTime;   
-                }
-            }
-
-            &--home {
-
-                .border-left {
-                    transition-delay: $HomeMenuLine4DelayTime;
-                }
-            }
-
-            &--contact {
-
-                .border-bottom {
-                    transition-delay: $HomeMenuLine3DelayTime;
-                }
-            }
-
-            &--portfolio {
-
-                .border-left {
-                    transition-delay: $HomeMenuLine5DelayTime;
-                }
-            }
-            /* STYLES FOR BORDER ANIMATION ENDS */
         }
     }
 
@@ -650,10 +315,7 @@
             .hamburger {
 
                 &-tick {
-
-                    .inner-tick {
-                        background: $darkGray;
-                    }
+                    background: $black;
                 }
             }
 
@@ -704,7 +366,7 @@
         .menu__item {
 
             .hamburger {
-                transform: scale(.8) translate3d(0, -70%, 0);
+                transform: scale(.8) translate3d(45%, -40%, 0);
             }
 
             &--open-close {
@@ -714,17 +376,7 @@
                     opacity: 0;
                 }
 
-                &:hover {
-                    border-color: $darkGray;
-
-                    .hamburger {
-                        transform: scale(1) translate3d(0, 0, 0);
-                    }
-
-                    .name {
-                        opacity: 1;
-                    }
-                }
+                
             }
         }
     }

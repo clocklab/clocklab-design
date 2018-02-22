@@ -1,9 +1,9 @@
 & {  
 
     position: fixed;
+    z-index: 999999;
     top: 0;
     left: 0;
-    z-index: 5;
     width: 100%;
     height: px(126);
     background: rgba(0, 0, 0, .4);

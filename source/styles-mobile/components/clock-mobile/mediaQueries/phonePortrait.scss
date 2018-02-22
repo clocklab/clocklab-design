@@ -1,0 +1,13 @@
+@import '../mobile';
+
+ul.flip {
+    margin: 2%;
+    width: 130px;
+    height: 120px;
+    font-size: 90px;
+    position: relative;
+    line-height: 119px;
+    border-radius: 6px;
+    font-family: $Roboto-Bold;
+    display: -webkit-inline-box;
+}

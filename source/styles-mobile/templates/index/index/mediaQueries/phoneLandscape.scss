@@ -1,76 +1,83 @@
 @import '../mobile';
-& {
+.content {
+    padding: 0 .5%;
+}
 
-    // ----- content -----
-    .content {
-        padding: 0 .5%;
+// ***** header *****
+header {
+    .scroll-line {
+        margin: 0 auto 5vh;
+        height: 40px;
     }
+}
 
-    // ----- button -----
-    .button {
-        margin-bottom: px(65);
-        &.transparent {
+// ----- our-works -----
+.our-works {
+    overflow: hidden;
+    .work .content {
+        .work-title {
+            margin: 22.5vh 0 5vh;
+        }
+        .opened-work {
+            left: 0;
+            top: 101%;
             z-index: 9999;
+            padding-top: px(60);
+            transition: top $time * 2;
+            &.opened {
+                top: 0;
+            }
         }
     }
+}
 
-    // ----- our-works -----
-    .our-works {
+// ----- questions -----
+.questions {
+    text-align: left;
+    .content {
         overflow: hidden;
-        .work .content {
-            .work-title {
-                margin: 22.5vh 0 5vh;
+        padding-top: px(135);
+        padding-bottom: px(50);
+        .questions-title {
+            margin-bottom: 0;
+        }
+        .contacts-info {
+            float: left;
+            width: 50%;
+            margin-top: px(35);
+            li {
+                margin-bottom: px(30);
+                a {
+                    font-size: px(20);
+                }
             }
-            .opened-work {
-                left: 0;
-                top: 101%;
-                z-index: 9999;
-                transition: top $time * 2;
-                &.opened {
-                    top: 0;
+        }
+        .open-form {
+            margin: px(20) auto 0;
+        }
+        .form {
+            padding-top: px(50);
+            label:nth-of-type(2) {
+                margin-bottom: px(100);
+            }
+            .content {
+                .form-title {
+                    margin-bottom: px(60);
+                }
+                p {
+                    display: none;
                 }
             }
         }
     }
+}
 
-    // ----- questions -----
-    .questions {
-        text-align: left;
-        .content {
-            overflow: hidden;
-            padding-top: px(135);
-            padding-bottom: px(50);
-            .questions-title {
-                margin-bottom: 0;
-            }
-            .contacts-info {
-                float: left;
-                width: 50%;
-                margin-top: px(35);
-                li {
-                    margin-bottom: px(30);
-                    a {
-                        font-size: px(20);
-                    }
-                }
-            }
-            .open-form {
-                margin: px(20) auto 0;
-            }
-            .form {
-                padding-top: px(50);
-                label:nth-of-type(2) {
-                    margin-bottom: px(100);
-                }
-                .content {
-                    .form-title {
-                        margin-bottom: px(60);
-                    }
-                    p {
-                        display: none;
-                    }
-                }
-            }
-        }
+// ----- carousel-slider-wrapper -----
+.carousel-slider-wrapper {
+    .control-buttons {
+        margin: 55vh auto;
+    }
+    .skip, .dots {
+        display: none;
     }
 }

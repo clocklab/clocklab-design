@@ -7,317 +7,268 @@
         <script src="../scripts-mobile/index-mobile.min.js" defer></script>
     </head>
     <body>
+        
+        <!-- logo -->
+        @@include('./components/logo-mobile.html')
+
+        <!-- menu -->
+        @@include('./components/menu-mobile.html')
 
         <!-- index-mobile -->
         <div class="index-mobile">
-
-            <!-- top-panel-mobile -->
-            <!-- @@include('./components/top-panel-mobile.html') -->
-
-            <!-- header -->
-            <header>
-
-                <!-- clock -->
-                <!-- @@include('./components/clock-mobile.html') -->
-            </header>
             
-            <!-- about-company -->
-            <div class="about-company">
-                <div class="content">
-                    <div class="tablet-lines">
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="row">
-                        <div class="column double">
+            <!-- globla-container -->
+            <div class="global-container">
 
-                            <!-- title -->
-                            <p class="title wow fadeInLeft">Digital агенство Clock Creative Lab</p>
-                            <p class="under-title wow fadeInLeft">Наша философия — это разработка уникальных интернет-продуктов, решений, бренд-инструментов буквально в лабораторных условиях, с полным погружением в специфику вашего бизнеса. Для каждого проекта мы проводим аналитику и аудит, мы охватываем всё, что касается вашего бизнеса.</p>
-                        </div>
-                        <div class="column"></div>
+                <!-- header -->
+                <div class="header">
+
+                    <!-- clock-mobile -->
+                    <div class="clock-mobile wow fadeIn" data-wow-duration="5s">
+                        @@include('./components/clock-mobile.html')
                     </div>
-                    <div class="row">
-                        <div class="column">
-                            <div class="block">
-                                <span class="index wow fadeInLeft" data-wow-delay="1s">01</span>
-                                <p class="small-title wow fadeInLeft">Web-production</p>
-                                <p class="under-title wow fadeInLeft">Мы создаем не просто сайты &ndash; мы создаем стратегию развития ващего бизнеса в интернете.</p>
-                            </div>
+
+                    <!-- services -->
+                    <div class="services wow fadeIn" data-wow-delay="1s">
+                        <div class="half">
+                            <p id="category"></p>
                         </div>
-                        <div class="column">
-                            <div class="block">
-                                <span class="index wow fadeInLeft" data-wow-delay="1s">02</span>
-                                <p class="small-title wow fadeInLeft">Дизайн</p>
-                                <p class="under-title wow fadeInLeft">Дизайн для нас &ndash; не только эстетика, он имеет цели и решает конкретные задачи.</p>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="block">
-                                <span class="index wow fadeInLeft" data-wow-delay="1s">03</span>
-                                <p class="small-title wow fadeInLeft">Брендинг</p>
-                                <p class="under-title wow fadeInLeft">В нашей креативной лаборатории мы даем жизнь брендам &ndash; взращиваем и формируем их сильный характер.</p>
-                            </div>
+                        <div class="half">
+                            <div id="subcategory"></div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="column">
-                            <div class="block">
-                                <span class="index wow fadeInLeft" data-wow-delay="1s">04</span>
-                                <p class="small-title wow fadeInLeft">Маркетинг</p>
-                                <p class="under-title wow fadeInLeft">Наши маркетинговые решения направлены на цельное и всестороннее решение одной масштабной задачи — например, качественно представить ваш бизнес в интернете.</p>
+
+                    <!-- scroll-line -->
+                    <a class="scroll-line" href="#about-company">
+                        <div class="wow fadeInUpBig" data-wow-delay="1s" data-wow-duration="2s"></div>
+                    </a>
+                </div>
+                
+                <!-- about-company -->
+                <div id="about-company" class="about-company">
+                    <div class="content">
+                        <div class="tablet-lines">
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="row">
+                            <div class="column double">
+                                <p class="title wow fadeInLeft">Digital агенство Clock Creative Lab</p>
+                                <p class="under-title wow fadeInLeft">Наша философия — это разработка уникальных интернет-продуктов, решений, бренд-инструментов буквально в лабораторных условиях, с полным погружением в специфику вашего бизнеса. Для каждого проекта мы проводим аналитику и аудит, мы охватываем всё, что касается вашего бизнеса.</p>
+                            </div>
+                            <div class="column"></div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <div class="block">
+                                    <span class="index wow fadeInLeft" data-wow-delay="1s">01</span>
+                                    <p class="small-title wow fadeInLeft">Web-production</p>
+                                    <p class="under-title wow fadeInLeft">Мы создаем не просто сайты &ndash; мы создаем стратегию развития ващего бизнеса в интернете.</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="block">
+                                    <span class="index wow fadeInLeft" data-wow-delay="1s">02</span>
+                                    <p class="small-title wow fadeInLeft">Дизайн</p>
+                                    <p class="under-title wow fadeInLeft">Дизайн для нас &ndash; не только эстетика, он имеет цели и решает конкретные задачи.</p>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="block">
+                                    <span class="index wow fadeInLeft" data-wow-delay="1s">03</span>
+                                    <p class="small-title wow fadeInLeft">Брендинг</p>
+                                    <p class="under-title wow fadeInLeft">В нашей креативной лаборатории мы даем жизнь брендам &ndash; взращиваем и формируем их сильный характер.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="column">
-                            <div class="block">
-                                <span class="index wow fadeInLeft" data-wow-delay="1s">05</span>
-                                <p class="small-title wow fadeInLeft">Результативность</p>
-                                <p class="under-title wow fadeInLeft">Мы разрабатываем комплексные решения развития вашего бизнеса. Наши решения нацелены на лидерство вашего бизнеса в своей нише.</p>
+                        <div class="row">
+                            <div class="column">
+                                <div class="block">
+                                    <span class="index wow fadeInLeft" data-wow-delay="1s">04</span>
+                                    <p class="small-title wow fadeInLeft">Маркетинг</p>
+                                    <p class="under-title wow fadeInLeft">Наши маркетинговые решения направлены на цельное и всестороннее решение одной масштабной задачи — например, качественно представить ваш бизнес в интернете.</p>
+                                </div>
                             </div>
+                            <div class="column">
+                                <div class="block">
+                                    <span class="index wow fadeInLeft" data-wow-delay="1s">05</span>
+                                    <p class="small-title wow fadeInLeft">Результативность</p>
+                                    <p class="under-title wow fadeInLeft">Мы разрабатываем комплексные решения развития вашего бизнеса. Наши решения нацелены на лидерство вашего бизнеса в своей нише.</p>
+                                </div>
+                            </div>
+                            <div class="column"></div>
                         </div>
-                        <div class="column"></div>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                            <a class="button special wow fadeInDown" href="#">
-                                <span class="element wow fadeInUp">Au</span>
-                                <span>О нас</span>
-                            </a>
-                        </div>
-                        <div class="column"></div>
-                        <div class="column">
-                            <a class="button special wow fadeInDown" href="#">
-                                <span class="element wow fadeInUp">Se</span>
-                                <span>Услуги</span>
-                            </a>
+                        <div class="row">
+                            <div class="column">
+                                <a class="button special wow fadeInDown" href="/o-kompanii">
+                                    <span class="element wow fadeInUp">Au</span>
+                                    <span>О нас</span>
+                                </a>
+                            </div>
+                            <div class="column"></div>
+                            <div class="column">
+                                <a class="button special wow fadeInDown" href="/uslugi">
+                                    <span class="element wow fadeInUp">Se</span>
+                                    <span>Услуги</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- our-works -->
-            <div id="our-works" class="our-works">
-                <div class="carousel-slider-wrapper">
-                    <div class="carousel-slider">
+                <!-- our-works -->
+                <div id="our-works" class="our-works">
+                    <div class="carousel-slider-wrapper">
+                        <div class="carousel-slider">
 
-                        <!-- work dela -->
-                        <div class="work carousel-slider__item carousel-slider__item--dela carousel-slider__item--clone">
-                            <img src="/images/dela-work.jpg" alt="dela">
-                            <div class="content">
-                                <p class="work-title slider-item-title wow fadeInUp">Dela.ua</p>
-                                <div class="half">
-                                    <a class="open-work button transparent option wow fadeInUp" href="#our-works"></a>
+                            <!-- dela -->
+                            <div class="work carousel-slider__item carousel-slider__item--dela carousel-slider__item--clone">
+                                <img src="/images/dela-work.jpg" alt="dela">
+                                <div class="content">
+                                    <p class="work-title slider-item-title wow fadeInUp">Dela.ua</p>
+                                    <div class="opened-work">
+                                        <div class="content">
+                                            <img src="/images/dela-logo-work.png" alt="">
+                                            <p>Документ-сервис Dela.ua — современный центр административных услуг. Нами был разработан уникальный концепт — строгий и лаконичный дизайн дополнен простой и понятной навигацией.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="half">
-                                    <a class="button special blue wow fadeInUp" href="/razrabotka-sayta-dokument-servisa-dela-ua" target="_blank">
-                                        <span>Просмотреть работу</span>
-                                    </a>
+                            </div>
+
+                            <!-- audi -->
+                            <div class="work carousel-slider__item carousel-slider__item--audi">
+                                <img src="/images/audi-work.jpg" alt="audi">
+                                <div class="content">
+                                    <p class="work-title slider-item-title wow fadeInUp">Audi</p>
+                                    <div class="opened-work">
+                                        <div class="content">
+                                            <img src="/images/audi-logo-work.png" alt="">
+                                            <p>Мы обеспечили официальному представителю Audi лидерство на украинском рынке. В результате сотрудничества Audi Центр Киев Юг стабильно занимает первые строчки в Google и имеет самые высокие продажи среди конкурентов.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="opened-work">
-                                    <div class="content">
-                                        <button class="close-work"></button>
-                                        <img src="/images/dela-logo-work.png" alt="">
-                                        <p>Документ-сервис Dela.ua — современный центр административных услуг. Нами был разработан уникальный концепт — строгий и лаконичный дизайн дополнен простой и понятной навигацией.</p>
+                            </div>
+
+                            <!-- euroclub -->
+                            <div class="work carousel-slider__item carousel-slider__item--euroclub">
+                                <img src="/images/euroclub-work.jpg" alt="euroclub">
+                                <div class="content">
+                                    <p class="work-title slider-item-title wow fadeInUp">Euro Club</p>
+                                    <div class="opened-work">
+                                        <div class="content">
+                                            <img src="/images/euroclub-logo-work.png" alt="">
+                                            <p>EuroClub — официальная локация международного песенного конкурса «Евровидение-2017». Команда Clock Creative Lab работала над созданием Landing Page для EuroClub.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- dela -->
+                            <div class="work carousel-slider__item carousel-slider__item--dela">
+                                <img src="/images/dela-work.jpg" alt="dela">
+                                <div class="content">
+                                    <p class="work-title slider-item-title wow fadeInUp">Dela.ua</p>
+                                    <div class="opened-work">
+                                        <div class="content">
+                                            <img src="/images/dela-logo-work.png" alt="">
+                                            <p>Документ-сервис Dela.ua — современный центр административных услуг. Нами был разработан уникальный концепт — строгий и лаконичный дизайн дополнен простой и понятной навигацией.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- audi -->
+                            <div class="work carousel-slider__item carousel-slider__item--audi carousel-slider__item--clone">
+                                <img src="/images/audi-work.jpg" alt="audi">
+                                <div class="content">
+                                    <p class="work-title slider-item-title wow fadeInUp">Audi</p>
+                                    <div class="opened-work">
+                                        <div class="content">
+                                            <img src="/images/audi-logo-work.png" alt="">
+                                            <p>Мы обеспечили официальному представителю Audi лидерство на украинском рынке. В результате сотрудничества Audi Центр Киев Юг стабильно занимает первые строчки в Google и имеет самые высокие продажи среди конкурентов.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- work audi -->
-                        <div class="work carousel-slider__item carousel-slider__item--audi">
-                            <img src="/images/audi-work.jpg" alt="audi">
-                            <div class="content">
-                                <p class="work-title slider-item-title wow fadeInUp">Audi</p>
-                                <div class="half">
-                                    <a class="open-work button transparent option wow fadeInUp" href="#our-works"></a>
-                                </div>
-                                <div class="half">
-                                    <a class="button special blue wow fadeInUp" href="/razrabotka-i-prodvizhenie-sayta-audi" target="_blank">
-                                        <span>Просмотреть работу</span>
-                                    </a>
-                                </div>
-                                <div class="opened-work">
-                                    <div class="content">
-                                        <button class="close-work"></button>
-                                        <img src="/images/audi-logo-work.png" alt="">
-                                        <p>Мы обеспечили официальному представителю Audi лидерство на украинском рынке. В результате сотрудничества Audi Центр Киев Юг стабильно занимает первые строчки в Google и имеет самые высокие продажи среди конкурентов.</p>
-                                    </div>
+                        <!-- control-buttons -->
+                        <div class="control-buttons">
+                            <div class="half">
+                                <a class="open-work button transparent option wow fadeIn" href="#our-works"></a>
+                            </div>
+                            <div class="half">
+                                <div class="open-link button special blue wow fadeIn">
+                                    <a href="#" target="_blank">Посмотреть работу</a>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- work euroclub -->
-                        <div class="work carousel-slider__item carousel-slider__item--euroclub">
-                            <img src="/images/euroclub-work.jpg" alt="euroclub">
-                            <div class="content">
-                                <p class="work-title slider-item-title wow fadeInUp">Euro Club</p>
-                                <div class="half">
-                                    <a class="open-work button transparent option wow fadeInUp" href="#our-works"></a>
-                                </div>
-                                <div class="half">
-                                    <a class="button special blue wow fadeInUp" href="/razrabotka-langing-page-euroclub" target="_blank">
-                                        <span>Просмотреть работу</span>
-                                    </a>
-                                </div>
-                                <div class="opened-work">
-                                    <div class="content">
-                                        <button class="close-work"></button>
-                                        <img src="/images/euroclub-logo-work.png" alt="">
-                                        <p>EuroClub — официальная локация международного песенного конкурса «Евровидение-2017». Команда Clock Creative Lab работала над созданием Landing Page для EuroClub.</p>
-                                    </div>
-                                </div>
-                            </div>
+                        
+                        <!-- skip -->
+                        <a class="skip wow fadeIn" href="#questions">пропустить</a>
+                        
+                        <!-- dots -->
+                        <div class="dots wow fadeInUp">
+                            <div class="dot active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
                         </div>
-
-                        <!-- work dela -->
-                        <div class="work carousel-slider__item carousel-slider__item--dela">
-                            <img src="/images/dela-work.jpg" alt="dela">
-                            <div class="content">
-                                <p class="work-title slider-item-title wow fadeInUp">Dela.ua</p>
-                                <div class="half">
-                                    <a class="open-work button transparent option wow fadeInUp" href="#our-works"></a>
-                                </div>
-                                <div class="half">
-                                    <a class="button special blue wow fadeInUp" href="/razrabotka-sayta-dokument-servisa-dela-ua" target="_blank">
-                                        <span>Просмотреть работу</span>
-                                    </a>
-                                </div>
-                                <div class="opened-work">
-                                    <div class="content">
-                                        <button class="close-work"></button>
-                                        <img src="/images/dela-logo-work.png" alt="">
-                                        <p>Документ-сервис Dela.ua — современный центр административных услуг. Нами был разработан уникальный концепт — строгий и лаконичный дизайн дополнен простой и понятной навигацией.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- work audi -->
-                        <div class="work carousel-slider__item carousel-slider__item--audi carousel-slider__item--clone">
-                            <img src="/images/audi-work.jpg" alt="audi">
-                            <div class="content">
-                                <p class="work-title slider-item-title wow fadeInUp">Audi</p>
-                                <div class="half">
-                                    <a class="open-work button transparent option wow fadeInUp" href="#our-works"></a>
-                                </div>
-                                <div class="half">
-                                    <a class="button special blue wow fadeInUp" href="/razrabotka-i-prodvizhenie-sayta-audi" target="_blank">
-                                        <span>Просмотреть работу</span>
-                                    </a>
-                                </div>
-                                <div class="opened-work">
-                                    <div class="content">
-                                        <button class="close-work"></button>
-                                        <img src="/images/audi-logo-work.png" alt="">
-                                        <p>Мы обеспечили официальному представителю Audi лидерство на украинском рынке. В результате сотрудничества Audi Центр Киев Юг стабильно занимает первые строчки в Google и имеет самые высокие продажи среди конкурентов.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <a href="#" class="skip wow fadeIn" data-wow-delay="1s">skip</a> -->
-                    <div class="dots wow fadeInUp" data-wow-delay="1s">
-                        <div class="dot active"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- questions -->
-            <div class="questions">
-                <div class="content">
-                    <div class="tablet-lines">
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="row">
-                        <div class="column double">
-                            <p class="questions-title wow fadeInLeft">Давайте обсудим ваш будующий проект</p>
-                            <span class="under-questions-title wow fadeInLeft">и как сделать его лучшим на рынке</span>
+                
+                <!-- questions -->
+                <div id="questions" class="questions">
+                    <div class="content">
+                        <div class="tablet-lines">
+                            <div></div>
+                            <div></div>
                         </div>
-                        <div class="column"></div>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-
-                            <!-- contacts-info -->
-                            <ul class="contacts-info">
-                                <li class="wow fadeInLeft">
-                                    <span>Телефон</span>
-                                    <a href="tel:+380673959192">+380 (67) 395-91-92</a>
-                                    <a href="tel:+380930399393">+380 (93) 039-93-93</a>
-                                </li>
-                                <li class="wow fadeInLeft">
-                                    <span>E-mail</span>
-                                    <a href="mailto:hello@clocklab.design">hello@clocklab.design</a>
-                                </li>
-                            </ul>
+                        <div class="row">
+                            <div class="column double">
+                                <p class="questions-title wow fadeInLeft">Давайте обсудим ваш будующий проект</p>
+                                <span class="under-questions-title wow fadeInLeft">и как сделать его лучшим на рынке</span>
+                            </div>
+                            <div class="column"></div>
                         </div>
-                        <div class="column">
+                        <div class="row">
+                            <div class="column">
 
-                            <!-- contacts-info -->
-                            <ul class="contacts-info">
-                                <li class="wow fadeInLeft">
-                                    <span>Адрес</span>
-                                    <a href="https://www.google.com.ua/maps/place/%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC'%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%BF%D0%BB%D0%BE%D1%89%D0%B0,+2,+%D0%9A%D0%B8%D1%97%D0%B2/@50.431644,30.4710183,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cebfa52cd7bf:0x2169dd9a939a0aa8!8m2!3d50.431644!4d30.473207" target="_blank">Соломенская площадь, 2</a>
-                                </li>
-                            </ul>
+                                <!-- contacts-info -->
+                                <ul class="contacts-info">
+                                    <li class="wow fadeInLeft">
+                                        <span>Телефон</span>
+                                        <a href="tel:+380673959192">+380 (67) 395-91-92</a>
+                                        <a href="tel:+380930399393">+380 (93) 039-93-93</a>
+                                    </li>
+                                    <li class="wow fadeInLeft">
+                                        <span>E-mail</span>
+                                        <a href="mailto:hello@clocklab.design">hello@clocklab.design</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="column">
+
+                                <!-- contacts-info -->
+                                <ul class="contacts-info">
+                                    <li class="wow fadeInLeft">
+                                        <span>Адрес</span>
+                                        <a href="https://www.google.com.ua/maps/place/%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC'%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%BF%D0%BB%D0%BE%D1%89%D0%B0,+2,+%D0%9A%D0%B8%D1%97%D0%B2/@50.431644,30.4710183,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cebfa52cd7bf:0x2169dd9a939a0aa8!8m2!3d50.431644!4d30.473207" target="_blank">Соломенская площадь, 2</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="column"></div>
                         </div>
-                        <div class="column"></div>
-                    </div>
-                    
-                    <!-- open-form -->
-                    <button class="open-form button special blue wow fadeIn" data-wow-delay=".5s" data-form-id="questions">
-                        <span>Задать вопрос</span>
-                    </button>
+                        
+                        <!-- open-form -->
+                        <button class="open-form button special blue wow fadeIn" data-wow-delay=".5s" data-form-id="questions">
+                            <span>Задать вопрос</span>
+                        </button>
 
-                    <!-- form-questions-mobile -->
-                    @@include('./components/form-questions-mobile.html')
+                        <!-- form-questions-mobile -->
+                        @@include('./components/form-questions-mobile.html')
+                    </div>
                 </div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-                crossorigin="anonymous"></script>
-        <script>
-
-            // ----- anchors -----
-            $(document).on('click', 'a[href^="#"]', function(event) {
-                event.preventDefault();
-
-                $('html, body').animate({
-                    scrollTop: $($.attr(this, 'href')).offset().top
-                }, 500);
-            });
-
-            // ----- our-works -----
-            $( document ).ready(function() {
-                var opened = false;
-                $('.open-work').text('Информация о проекте');
-
-                $('.open-work, .close-work').click(function() {
-                    (!opened) ? (
-                        $('.opened-work').addClass('opened fadeInWork'),
-                        $('.work-title, .dots').addClass('transition'),
-                        $('.opened-work').removeClass('fadeOutWork'),
-                        $('.work').bind('touchmove', false),
-                        window.setTimeout(function() {
-                            $('.open-work').text('Закрыть');
-                        }, 190)
-                    ) : (
-                        $('.opened-work').removeClass('opened fadeInWork'),
-                        $('.work-title, .dots').removeClass('transition'),
-                        $('.opened-work').addClass('fadeOutWork'),
-                        $('.work').unbind('touchmove', false),
-                        window.setTimeout(function() {
-                            $('.open-work').text('Информация о проекте');
-                        }, 190)
-                    );
-
-                    opened = !opened;
-                });
-            });
-        </script>
     </body>
 </html>
