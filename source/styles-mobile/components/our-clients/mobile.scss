@@ -1,295 +1,248 @@
 & {  
-
-    position: relative;
-    padding: px(90) px(30) 0;
     width: 100vw;
     height: 100vh;
+    padding: 22px 44px;
     background: $lightBlack;
+    position: relative;
     overflow: hidden;
-
     & > span {
         color: #666;
-        font-family: $Raleway-Bold;
         font-size: px(22);
         text-transform: uppercase;
+        font-family: $Raleway-Bold;
     }
-
     .slogan {
-        margin-top: px(20);
         color: $white;
-        font-family: $Roboto-Bold;
         font-size: px(48);
+        margin-top: px(20);
         line-height: px(52);
+        font-family: $Roboto-Bold;
     }
-
     .slider-clients-wrapper {
+        overflow: hidden;
         position: relative;
         margin-top: px(20);
+        height: px(650);
         width: 100%;
-        height: px(730);
-        overflow: hidden;
     }
-
-    .lines {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .line {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        background: $gray;
-
-        &--1 {
-            top: 25%; 
-        }
-
-        &--2 {
-            top: 50%; 
-        }
-
-        &--3 {
-            top: 75%; 
-        }
-
-        &--4 {
-            top: 0;
-            left: 50%;
-        }
-
-        &.vertical {
-            width: 1px;
-            height: 100%;
-        }
-    }
-
     .slider-clients {
-        display: flex;
         position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        width: 300%;
+        display: flex;
         height: 100%;
+        width: 300%;
+        z-index: 2;
+        left: 0;
+        top: 0;
     }
-
     .slide {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-content: flex-start;
         position: relative;
-        width: 100%;
         height: 100%;
-
+        width: 100%;
         &__item {
             display: flex;
             justify-content: center;
             align-items: center;
             padding: px(20);
+            height: 22.5%;
             width: 50%;
-            height: 25%;
-
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
-
             &--audi {
-
                 img {
                     height: 50%;
                 }   
             }
-
             &--tommy-hilfiger {
-
                 img {
                     height: 50%;
                 }   
             }
-
             &--gstar-raw {
-
                 img {
                     height: 50%;
                 }   
             }
-
             &--dkny-men {
-
                 img {
                     height: 20%;
                 }   
             }
-
             &--fornarina {
-
                 img {
                     height: 30%;
                 }   
             }
-
             &--accessorize {
-
                 img {
                     height: 30%;
                 }   
             }
-
             &--doberman {
-
                 img {
                     height: 70%;
                 }   
             }
-
             &--lets-help {
-
                 img {
                     height: 70%;
                 }   
             }
-
             &--seven-hills {
-
                 img {
                     height: 60%;
                 }   
             }
-
             &--park-avenue {
-
                 img {
                     height: 80%;
                 }   
             }
-
             &--gogol {
-
                 img {
                     height: 80%;
                 }   
             }
-
             &--preppy {
-
                 img {
                     height: 80%;
                 }   
             }
-
             &--pepe-jeans {
-
                 img {
                     height: 60%;
                 }   
             }
-
             &--gant {
-
                 img {
                     height: 20%;
                 }   
             }
-
             &--diesel {
-
                 img {
                     height: 50%;
                 }   
             }
-
             &--oodji {
-
                 img {
                     height: 60%;
                 }   
             }
-
             &--shell {
-
                 img {
                     height: 50%;
                 }   
             }
-
             &--jti {
-
                 img {
                     height: 50%;
                 }   
             }
-
             &--stem {
-
                 img {
                     height: 30%;
                 }   
             }
         }
-
         .open-form {
-            position: absolute;
-            bottom: 0;
             right: 0;
+            bottom: 0;
             padding: 0;
-            padding-left: px(10);
             width: 50%;
             height: 25%;
             color: $white;
-            font-family: $Roboto-Bold;
-            font-family: $Roboto-Black;
-            font-size: px(44);
             text-align: left;
-
+            font-size: px(30);
+            font-family: $Roboto-Black;
+            padding-left: px(10);
+            position: absolute;
             span {
                 display: block;
                 color: $blue;
             }
         }
     }
-
     .dots {
-        display: flex;
         justify-content: center;
         align-items: center;
         margin-top: px(40);
-
+        display: flex;
         .dot {
-            display: flex;
             justify-content: center;
             align-items: center;
             margin-right: px(8);
+            display: flex;
             width: 8px;
             height: 8px;
-
             &:before {
-                display: block;
                 width: 6px;
                 height: 6px;
+                display: block;
+                transition: width $timeTick, height $timeTick, background $timeTick;
                 border-radius: 50%;
                 background: $gray;
                 content: '';
-                transition: width $timeTick, height $timeTick, background $timeTick;
             }
-
             &:last-child {
                 margin-right: 0;
             }
-
             &.active {
-
                 &:before {
                     background: $blue;
                     width: 8px;
                     height: 8px;
+                }
+            }
+        }
+    }
+    .form-title {
+        margin-bottom: 52px;
+        line-height: inherit;
+    }
+    .content {
+        padding: 0 1%;
+        overflow-x: hidden;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .button {
+        text-transform: uppercase;
+        vertical-align: middle;
+        margin-bottom: px(100);
+        display: inline-block;
+        text-align: center;
+        line-height: 55px;
+        font-size: px(28);
+        width: 99.99%;
+        height: 55px;
+        z-index: 99999;
+        position: relative;
+        letter-spacing: 2px;
+        &.special {
+            color: $darkGray;
+            border: 1px solid;
+            font-family: $Roboto-Bold;
+            .element {
+                background-color: $white;
+                font-family: $Raleway-ExtraBold;
+                text-transform: none;
+                font-size: px(64);
+                position: absolute;
+                padding: px(10);
+                left: px(45);
+                top: px(-65);
+            }
+            &.blue {
+                background-color: $blue;
+                border-color: $blue;
+                span, a {
+                    color: $white;
                 }
             }
         }

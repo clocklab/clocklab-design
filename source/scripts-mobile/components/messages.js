@@ -97,10 +97,10 @@ function minutePlay() {
     cat.push(catMsg);
     subСat.push(subСatMsg);
 
-    $(".clock-mobile").click(function() {
-        recurse(counter + 1);
-        clearTimeout(timer);
-        secondPlay();
-        minutePlay();
-    });
+    // $(".clock-mobile").click(function() {
+    //     recurse(counter + 1);
+    //     clearTimeout(timer);
+    //     secondPlay();
+    //     minutePlay();
+    // });
 })(0);
