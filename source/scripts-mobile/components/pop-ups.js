@@ -7,18 +7,18 @@ $('.open-work').click(function() {
         $('.opened-work').addClass('opened fadeInWork'),
         $('.work-title, .dots, .skip').addClass('transition'),
         $('.opened-work').removeClass('fadeOutWork'),
-        $('.work').bind('touchmove', false),
+        $('.work, .portfolio').bind('touchmove', false),
         window.setTimeout(function() {
-            $('.open-work').text('Закрыть');
+            $('.open-work').text('Закрыть').addClass('white');
         }, 190)
     ) : (
         $('.logo, .menu').fadeIn(190),
         $('.opened-work').removeClass('opened fadeInWork'),
         $('.work-title, .dots, .skip').removeClass('transition'),
         $('.opened-work').addClass('fadeOutWork'),
-        $('.work').unbind('touchmove', false),
+        $('.work, .portfolio').unbind('touchmove', false),
         window.setTimeout(function() {
-            $('.open-work').text('Информация о проекте');
+            $('.open-work').text('Информация о проекте').removeClass('white');
         }, 190)
     );
 
