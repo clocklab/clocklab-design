@@ -1,4 +1,5 @@
 & {
+    height: 100%;
     overflow: hidden;
     position: relative;
     background: $lightBlack;
@@ -68,7 +69,7 @@
                 &:after {
                     background: url('../images/services/arrow-down-mobile.png');
                     height: px(15);
-                    width: px(32);
+                    width: px(30);
                 }
             }
             &:after {
