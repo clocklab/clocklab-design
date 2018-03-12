@@ -1,81 +1,91 @@
 @import '../mobile';
 
-& {
+// ----- our-works -----
+.our-works {
+    background: $lightBlack;
+    display: grid;
 
-    .back-layer {
-
-        .letter {
-
-            &-c {
-                top: px(200);
-                left: px(200);
-            }
-
-            &-o {
-                bottom: px(200);
-                right: px(200);
-            }
-        }
+    // ----- title -----
+    .title {
+        font-size: 30px;
+        letter-spacing: 3px;
+        font-family: $Raleway-Bold;
+        text-transform: uppercase;
+        position: absolute;
+        display: block;
+        color: $white;
+        right: 25%;
+        top: 100px;
     }
 
-    .front-layer {
-
-        .content-container {
-            justify-content: space-around;
-            padding-bottom: px(220);
-            min-height: 768px;
+    // ----- portfolio -----
+    .portfolio {
+        width: 50%;
+        padding: 0;
+        height: auto;
+        &:first-of-type {
+            padding-top: 175px;
+            margin-top: 0;
+            .opened-work {
+                margin-top: 175px;
+            }
+        }
+        &:last-of-type {
+            padding-bottom: 100px;
+        }
+        img {
+            width: 100%;
+            height: 250px;
+        }
+        &__left {
+            padding-right: 22px;
+            padding-left: 44px;
+            margin-top: -135px;
+            .opened-work {
+                margin: 0 44px;
+            }
+        }
+        &__right {
+            padding-right: 44px;
+            padding-left: 22px;
+            margin-top: -135px;
+            margin-left: 50%;
+            .opened-work {
+                margin: 0 22px;
+            }
+        }
+        &__title {
+            width: 50%;
+            color: $white;
+            margin-left: 50%;
+            min-height: 60px;
+            position: inherit;
+        }
+        .opened-work {
+            width: calc(100% - 66px);
+            height: 250px;
+            p {
+                margin: 0;
+            }
+            img {
+                display: none;
+            }
+            &.opened {
+                width: calc(100% - 66px);
+            }
         }
 
-        .portfolio-item {
+        // ----- button -----
+        .button {
+            float: right;
+            width: 80%;
 
-            &--audi {
-
-                .image-container {
-                    min-width: px(600);
-                    min-height: px(500);
-
-                    img {
-                        min-width: px(600);
-                        min-height: px(500);
-                    }
-                }
-            }
-
-            &--alta-capital {
-                
-                .image-container {
-                    min-width: px(800);
-                    min-height: px(400);
-
-                    img {
-                        min-width: px(800);
-                        min-height: px(400);
-                    }
-                }
-            }
-
-            &--vino-grad {
-                
-                .image-container {
-                    min-width: px(400);
-                    min-height: px(400);
-
-                    img {
-                        min-width: px(400);
-                        min-height: px(400);
-                    }
-                }
-            }
-
-            &--euro-club {
-                
-                .image-container {
-                    min-width: px(400);
-                    min-height: px(800);
-
-                    img {
-                        min-width: px(400);
-                        min-height: px(800);
+            // ----- transparent -----
+            &.transparent {
+                color: $white;
+                &.option {
+                    &::before, &::after {
+                        border-color: $white;
                     }
                 }
             }

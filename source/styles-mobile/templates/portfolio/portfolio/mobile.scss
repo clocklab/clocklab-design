@@ -5,6 +5,11 @@
     .our-works {
         background: $white;
 
+        // ----- title -----
+        .title {
+            display: none;
+        }
+
         // ----- portfolio -----
         .portfolio {
             padding: 100px 44px 0;
