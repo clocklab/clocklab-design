@@ -1,4 +1,7 @@
 @import '../mobile';
 & {
-
+	&:before,
+    &:after {
+        display: none;
+    }
 }

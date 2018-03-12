@@ -10,6 +10,12 @@
         }
         .opened-work {
 	    	height: 320px;
+	    	p {
+                margin: px(75) 0;
+            }
+            img {
+                display: initial;
+            }
 	    }
     }
 }
