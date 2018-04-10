@@ -1,3 +1,10 @@
+var movingAnswers = document.querySelectorAll('.answers .answer');
+
+for (var i = 0; i < movingAnswers.length; i++) {
+    movingAnswers[i].style.left = `${-100 * i}%`;
+}
+
+
 //= include ./../../libraries/jquery.min.js
 
 //= include ./../../components/menu.js
@@ -16,6 +23,5 @@
 
 //= include ./../modules/scroll-menu.js
 
-/* //= include ./../modules/make-top-panel-dark.js */
 
 new WOW().init();

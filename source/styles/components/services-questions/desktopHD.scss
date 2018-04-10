@@ -1,7 +1,6 @@
 .services-questions {
     position: relative;
     background: $lightBlack;
-    overflow: hidden;
 
     .big-background-letter {
         top: -150px;
@@ -13,9 +12,8 @@
         position: relative;
         z-index: 2;
         margin: 0 auto;
-        padding-top: 325px;
+        padding: 325px 0 50px;
         width: 81%;
-        height: 1260px;
 
         & > div {
             display: flex;
@@ -36,6 +34,7 @@
 
         &-3 {
             width: 44%;
+            max-width: 44%;
         }
     }
 
@@ -63,7 +62,7 @@
             }
 
             &--4 {
-                left: 100%;
+                left: 101%;
             }
         }
     }
@@ -74,7 +73,7 @@
             overflow: hidden;
         }
 
-        .answers-title {
+        &-title {
             display: block;
             font-family: $Raleway-Medium;
             font-size: 48px;
@@ -154,15 +153,17 @@
         }
 
         .column-3 {
+            display: flex;
             position: relative;
-            padding-right: px(200);
         }
 
         .answer {
-            position: absolute;
+            position: relative;
             top: 25px;
             left: 0;
-            width: 82%;
+            padding-right: 100px;
+            width: 100%;
+            min-width: 100%;
             color: $white;
             font-family: $Roboto-Regular;
             background: $lightBlack;
@@ -192,9 +193,9 @@
 
             .content-title {
                 display: block;
-                margin-bottom: px(60);
+                margin-bottom: 30px;
                 font-family: $Raleway-Medium;
-                font-size: px(48);
+                font-size: 24px;
 
                 span {
                     display: block;
@@ -247,17 +248,12 @@
                     }
                 }
             }
-
-            &.previous {
-                z-index: 1;
-            }
         }
     }
 
     .more {
         flex-wrap: wrap;
-        position: absolute;
-        bottom: 80px;
+        margin-top: 100px;
 
         .column-1,
         .column-2,
@@ -265,7 +261,7 @@
             overflow: hidden;
         }
 
-        .more-title {
+        &-title {
             display: block;
             width: 100%;
             font-family: $Raleway-Medium;
@@ -314,13 +310,6 @@
                     color: $blue;
                 }
             }
-        }
-    }
-
-    &--complex {
-
-        .container {
-            height: 990px;
         }
     }
 }

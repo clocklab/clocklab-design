@@ -1,0 +1,67 @@
+.services-questions {
+
+    .container {
+        padding: 120px 0 50px;
+    }
+
+    .answers {
+
+        &-title {
+            font-size: 36px;
+
+            span {
+                margin-top: 10px;
+                font-size: 22px;
+            }
+        }
+
+        .question {
+            padding-right: 30px;
+
+            .index {
+                top: -20px;
+                font-size: 14px;
+            }
+
+            button {
+                font-size: 16px;
+            }
+        }
+
+        .answer {
+            padding-right: 10px;
+
+            .index {
+                top: -15px;
+                font-size: 16px;
+            }
+
+            .content-title {
+                margin-bottom: 20px;
+                font-size: 20px;
+            }
+
+            p {
+                margin-bottom: 15px;
+                padding-right: 0;
+            }
+        }
+    }
+
+    .more {
+        margin-top: 85px;
+
+        &-title {
+            font-size: 36px;
+
+            span {
+                margin-top: 10px;
+                font-size: 22px;
+            }
+        }
+
+        ul {
+            margin-top: 50px;
+        }
+    }
+}
