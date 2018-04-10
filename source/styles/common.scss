@@ -27,6 +27,7 @@
 @import 'components/clock-bg/desktopHD';
 @import 'components/bread-crumbs/desktopHD';
 @import 'components/long-read/desktopHD';
+@import 'components/services-work-examples/desktopHD';
 /* ---- DESKTOP HD ---- */
 
 
@@ -39,6 +40,7 @@
     @import 'components/screen-block/desktopMega';
     @import 'components/form/desktopMega';
     @import 'components/bread-crumbs/desktopMega';
+    @import 'components/services-work-examples/desktopMega';
 }
 /* ---- DESKTOP MEGA ---- */
 
@@ -48,6 +50,7 @@
 /---- DESKTOP WIDE ---- */
 @media (max-width: 1680px) {
     @import 'components/screen-block/desktopWide';
+    @import 'components/services-work-examples/desktopWide';
 }
 /* ---- DESKTOP WIDE ---- */
 
@@ -65,6 +68,7 @@
     @import 'components/form/desktop';
     @import 'components/bread-crumbs/desktop';
     @import 'components/long-read/desktop';
+    @import 'components/services-work-examples/desktop';
 }
 /* ---- DESKTOP ---- */
 
@@ -78,6 +82,7 @@
     @import 'components/portfolio-client/tabletLandscape';
     @import 'components/bread-crumbs/tabletLandscape';
     @import 'components/long-read/tabletLandscape';
+    @import 'components/services-work-examples/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
@@ -108,6 +113,7 @@
     @import 'components/social/phoneLandscape';
     @import 'components/bread-crumbs/phoneLandscape';
     @import 'components/long-read/phoneLandscape';
+    @import 'components/services-work-examples/phoneLandscape';
 }
 /* ---- PHONE LANDSCAPE ---- */
 
