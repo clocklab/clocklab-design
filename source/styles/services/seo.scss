@@ -1,36 +1,7 @@
-// body { overflow: hidden; }
+@import '../base/variables';
 
-// base
-@import "../base/variables";
-@import "../base/mixins";
-// @import "../base/fonts";
-@import "../base/reset";
-@import "../base/common";
-@import "../base/animate";
-@import "../base/animations";
+@import '../templates/index/euro-club/main';
 
-// modules
-@import "../components/modules/small-gray-lines";
-
-// components
-@import "../components/form/main";
-@import "../components/top-panel/main";
-@import "../components/long-read/main";
-@import "../components/crossed-button/main";
-@import "../components/jumping-button/main";
-@import "../components/big-background-letter/main";
-
-/* в дальнейшем свести к одному */
-@import "../components/title/main";     
-@import "../components/new-title/main";
-@import "../components/languages/main";
-@import "../components/language/main";
-/* в дальнейшем свести к одному */
-
-// тут хранится анимация для некоторых элементов
-@import "../templates/index/euro-club/main";
-
-// screens
-@import "templates/seo/seo-one/main";
-@import "templates/seo/seo-two/main";
-@import "templates/seo/seo-three/main";
+@import 'templates/seo/seo-one/main';
+@import 'templates/seo/seo-two/main';
+@import 'templates/seo/seo-three/main';

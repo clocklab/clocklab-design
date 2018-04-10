@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Clocklab Design | SEO-аудит</title>
+        <title>Clocklab Design | SEO-шаблон</title>
         @@include('./components/head.html')
-        <link rel="stylesheet" href="../../../styles/services/seo/audit.css">
+        <link rel="stylesheet" href="../../../styles/common.css">
+        <link rel="stylesheet" href="../../../styles/services/seo/seo-second-level.css">
         <script src="../../../scripts/services/seo/seo-services.min.js" defer></script>
     </head>
     <body>
@@ -11,7 +12,7 @@
         
         @@include('./components/menu.html')
         
-        @@include('./services/templates/bread-crumbs.html')
+        @@include('./components/bread-crumbs.html')
 
         <div class="global-container">
             <div class="seo-header">
@@ -273,11 +274,11 @@
                 </div>
             </div>
 
-            @@include('./services/templates/work-examples.html')
+            @@include('./components/services-work-examples.html')
 
-            @@include('./services/templates/services-questions.html')
+            @@include('./components/services-questions.html')
 
-            @@include('./services/templates/services-blog.html')
+            @@include('./components/services-blog.html')
         </div>
     </body>
 </html>

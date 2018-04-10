@@ -1,0 +1,75 @@
+@import '../../base/variables';
+
+// @import '../design/templates/design-plan/main';
+// @import '../design/templates/design-discuss/main';
+
+
+/*
+/
+/---- DESKTOP HD ---- */
+@import 'templates/seo-header/desktopHD';
+/* ---- DESKTOP HD ---- */
+
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+
+}
+/* ---- PHONE PORTRAIT ---- */

@@ -38,6 +38,7 @@
     @import 'components/menu/desktopMega';
     @import 'components/screen-block/desktopMega';
     @import 'components/form/desktopMega';
+    @import 'components/bread-crumbs/desktopMega';
 }
 /* ---- DESKTOP MEGA ---- */
 
@@ -62,6 +63,7 @@
     @import 'components/portfolio-right-panel/desktop';
     @import 'components/portfolio-client/desktop';
     @import 'components/form/desktop';
+    @import 'components/bread-crumbs/desktop';
     @import 'components/long-read/desktop';
 }
 /* ---- DESKTOP ---- */
@@ -74,6 +76,7 @@
     @import 'components/screen-block/tabletLandscape';
     @import 'components/portfolio-right-panel/tabletLandscape';
     @import 'components/portfolio-client/tabletLandscape';
+    @import 'components/bread-crumbs/tabletLandscape';
     @import 'components/long-read/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
@@ -103,6 +106,7 @@
     @import 'components/sticker/phoneLandscape';
     @import 'components/bottom-button/phoneLandscape';
     @import 'components/social/phoneLandscape';
+    @import 'components/bread-crumbs/phoneLandscape';
     @import 'components/long-read/phoneLandscape';
 }
 /* ---- PHONE LANDSCAPE ---- */
