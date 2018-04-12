@@ -1,0 +1,49 @@
+.animated-button {
+    display: inline-block;
+    // vertical-align: middle;
+    position: relative;
+    padding: 0 40px;
+    color: $black;
+    cursor: pointer;
+    font-family: $Roboto-Black;
+    font-size: 14px;
+    line-height: 4;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: $time;
+
+    &:before,
+    &:after {
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        content: '';
+        transform: scale(.15);
+        transition: transform $time;
+    }
+
+    &:before {
+        border-left: 2px solid $black;
+        border-bottom: 2px solid $black;
+        transform-origin: 0 100%;
+    }
+
+    &:after {
+        border-top: 2px solid $black;
+        border-right: 2px solid $black;
+        transform-origin: 100% 0%;
+    }
+
+    &:hover {
+
+        &:after,
+        &:before {
+            transform: scale(1);
+        }
+    }
+}

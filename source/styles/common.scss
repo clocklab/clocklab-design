@@ -30,6 +30,8 @@
 @import 'components/services-work-examples/desktopHD';
 @import 'components/services-questions/desktopHD';
 @import 'components/services-blog/desktopHD';
+@import 'components/special-button/desktopHD';
+@import 'components/animated-button/desktopHD';
 /* ---- DESKTOP HD ---- */
 
 
@@ -91,6 +93,8 @@
     @import 'components/services-work-examples/tabletLandscape';
     @import 'components/services-questions/tabletLandscape';
     @import 'components/services-blog/tabletLandscape';
+    @import 'components/special-button/tabletLandscape';
+    @import 'components/animated-button/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
@@ -124,6 +128,8 @@
     @import 'components/services-work-examples/phoneLandscape';
     @import 'components/services-questions/phoneLandscape';
     @import 'components/services-blog/phoneLandscape';
+    @import 'components/special-button/phoneLandscape';
+    @import 'components/animated-button/phoneLandscape';
 }
 /* ---- PHONE LANDSCAPE ---- */
 
