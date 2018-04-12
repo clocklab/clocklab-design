@@ -1,389 +1,389 @@
-.seo-header {  
-    font-family: $Raleway-Regular;
-    background: $background;
+.seo-header {
     position: relative;
-
-    // ----- animation -----
+    background: $background;
+    color: $gray-two;
+    font-family: $Raleway-Regular;
+    font-size: 16px;
+    line-height: 1.4;
     animation: fadeIn $time * 3 both;
-    
-    // ----- big-bg-letters -----
-    .big-background-letter, .big-bg-letter-c { animation: fadeIn $time * 3 $time * 3 both; }
-    
-    // ----- lines -----
-    .lines div { animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both; }
-    
-    // ----- navigation-elements -----
-    .languages a { animation: fadeInDown $time * 3 $time * 6 both; }
-    .header-image { animation: fadeInFive $time * 6 $time * 9 both; }
-    
-    // ----- title -----
-    .title {
-        h2 { animation: fadeInUp $time * 2 $time * 7 linear both; }
-        span.name {
-            span {
-                animation: titleName $time * 2 $time * 8 linear;
-                animation-fill-mode: forwards;
-            }
-            &:before {
-                animation: titleNameShape $time * 2 $time * 7 linear;
-                animation-fill-mode: forwards;
-            }
-        }
-        .word {
-            &:after { animation: halfDown $time * 2 linear $time * 4 both; }
-            &:nth-of-type(1) span,
-            &:nth-of-type(1) h1 {
-                animation: titleWord $time * 2 $time * 5 linear;
-                animation-fill-mode: forwards;
-            }
-            &:nth-of-type(2) span,
-            &:nth-of-type(2) h1 {
-                animation: titleWord $time * 2 $time * 6 linear;
-                animation-fill-mode: forwards;
-            }
-        }
-    }
 
-    // ----- graph -----
     @keyframes fadeInThree {
-        from { opacity: 0; }
-        to { opacity: 3.000000e-02; }
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 3e;
+        }
     }
+
     @keyframes fadeInFour {
-        from { opacity: 0; }
-        to { opacity: .1; }
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: .1;
+        }
     }
+
     @keyframes fadeInFive {
-        from { opacity: 0; }
-        to { opacity: .15; }
-    }
-    .st7 { animation: fadeIn $time * 6 $time * 3 both; }
-    .st8 { animation: fadeIn $time * 6 $time * 3.2 both; }
-    .st9 { animation: fadeIn $time * 6 $time * 3.3 both; }
-    .st5 { animation: fadeInThree $time * 3 $time * 8 both; }
-    .st6 { animation: fadeInFour $time * 6 $time * 10 both; }
-    .st2, .st3, .st4 { animation: fadeIn $time * 6 $time * 15 both; }
+        from {
+            opacity: 0;
+        }
 
-    // ----- big-background-letter -----
-    .big-background-letter {
-        top: 40vh;
-        right: px(14);
-        font-size: px(3000);
+        to {
+            opacity: .15;
+        }
+    }
+
+    @keyframes line {
+        from {
+            visibility: visible;
+            stroke-dashoffset: 4444;
+        }
+
+        to {
+            visibility: visible;
+            stroke-dashoffset: 0;
+        }
+    }
+
+
+    /* --- HTML HELPFUL CLASSES --- */
+    .container {
+        position: relative;
+        margin: 0 auto;
+        width: 81%;
+        height: 100%;
+    }
+
+    .big {
+        padding: 30px 0;
+        font-size: 24px;
+    }
+
+    .huge {
+        font-size: 50px;
+    }
+
+    .bold {
         font-family: $Raleway-ExtraBold;
-        span:before { content: 'c'; }
     }
 
-    // ----- lines -----
+    .italic {
+        font-style: italic;
+    }
+
+    .blue {
+        color: $blue;
+    }
+
+    .gray {
+        color: $gray;
+    }
+
+    .bordered {
+
+        &-bottom {
+            padding-bottom: 30px;
+            border-bottom: 1px solid $gray;
+        }
+
+        &-left {
+            padding: 0 30px;
+            border-left: 5px solid $blue;
+        }
+    }
+
+    .margined {
+
+        &-top {
+            margin-top: 200px;
+
+            &-double {
+                margin-top: 400px;
+            }
+        }
+
+        &-left {
+            margin-left: calc(100% / 3);
+
+            &-double {
+                margin-left: calc(100% / 3 * 2);
+            }
+        }
+    }
+
+    ul {
+
+        li {
+            position: relative;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            color: $white;
+            font-family: $Roboto-Regular;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        &.dotted {
+
+            li {
+
+                &:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: $blue;
+                    content: '•';
+                    font-size: 10px;
+                }
+            }
+        }
+
+        &.indexed {
+
+            li {
+                position: relative;
+                margin-bottom: 62px;
+                font-family: $Roboto-Regular;
+                font-size: 16px;
+                line-height: 1.4;
+                color: $gray-two;
+
+                .index {
+                    position: absolute;
+                    top: -43px;
+                    left: -43px;
+                    z-index: 2;
+                    font-family: $Raleway-Bold;
+                    font-size: 36px;
+                    color: $gray-two;
+                }
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: -15px;
+                    left: -34px;
+                    z-index: 1;
+                    background: $dark;
+                    content: '';
+                    width: 35px;
+                    height: 35px;
+                }
+
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .column {
+        width: calc(100% / 3);
+
+        &-1 {
+            padding-right: 6.5%;
+        }
+
+        &-2 {
+            padding-right: 2.5%;
+        }
+
+        &.double {
+            width: calc(100% / 3 * 2);
+        }
+    }
+    /* --- HTML HELPFUL CLASSES --- */
+
+    img {
+        width: 100%;
+    }
+
     .lines {
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        position: absolute;
-        div {
-            width: 1px;
-            z-index: 1;
+
+        .line {
             position: absolute;
-            background: rgba(102,102,102,.5);
-            &:nth-of-type(1) { left: px(0); }
-            &:nth-of-type(2) { left: 33.33%; }
-            &:nth-of-type(3) { right: 33.33%; }
-            &:nth-of-type(4) { right: px(0); }
+            z-index: 1;
+            width: 1px;
+            background: rgba(102, 102, 102, .5);
+            animation: heightPercentChanging $time * 9 $portfolioEuroclubBlueLineDelayTime both;
+
+            &:nth-of-type(1) {
+                left: 0;
+            }
+
+            &:nth-of-type(2) {
+                left: 33.33%;
+            }
+
+            &:nth-of-type(3) {
+                right: 33.33%;
+            }
+
+            &:nth-of-type(4) {
+                right: 0;
+            }
+
         }
     }
-    
-    // ----- main-block -----
+
+    .big-background-letter {
+        top: 40vh;
+        right: 7px;
+        font-size: 1500px;
+        font-family: $Raleway-ExtraBold;
+        animation: fadeIn $time * 3 $time * 3 both;
+    }
+
     .main-block {
         position: relative;
-        height: 100vh;
         width: 100%;
-        
-        // ----- header-container -----
-        .header-container {
-            position: relative;
-            margin: 0 auto;
-            width: 81%;
+        height: 100vh;
+        min-height: 900px;
+    }
 
-            // ----- lines -----
-            .lines { height: 100vh; }
+    .header-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        animation: fadeInFive $time * 6 $time * 9 both;
+    }
 
-            // ----- title -----
-            .title {
-                left: 0;
-                top: 35vh;
-                z-index: 2;
-                position: absolute;
-                font-family: $Raleway-ExtraBold;
-                &.creating p, &.sanctions h2 { width: 100%; }
-                p, h2 {
-                    width: 165%;
-                    color: $white;
-                    padding-left: 0;
-                    font-size: px(48);
-                    font-family: $Roboto-Regular;
-                }
-                .new-header {
-                    margin-bottom: px(30);
-                    width: 165%;
-                    color: $white;
-                    font-size: px(106);
-                }
-            }
-        }
-        
-        // ----- header-image -----
-        .header-image {
-            position: absolute;
-            object-fit: cover;
-            height: 100vh;
-            width: 100%;
-            left: 0;
-            top: 0;
+    .graph {
+        position: absolute;
+        bottom: -1vh;
+        width: 100%;
+
+        .st0 {
+            fill: $background;
         }
 
-        // ----- graph -----
-        .graph {
-            width: 100%;
-            bottom: -1vh;
-            position: absolute;
-            .st0 { fill: $background; }
-            .st1 {
-                animation: line 5s $time both;
-                stroke-dasharray: 4444;
-                stroke-miterlimit: 10;
-                stroke-width: 10.2689;
-                stroke-linecap: round;
-                stroke: url(#SVGID_1_);
-                visibility: hidden;
-                fill: none;
-            }
-            .st2 { fill: #666667; }
-            .st3 { font-family: $Roboto-Medium; }
-            .st4 { font-size: 29.3479px; }
-            .st5 {
-                opacity: 3.000000e-02;
-                fill: #FFFFFF;
-                enable-background: new;
-            }
-            .st6 {
-                opacity: 0.1;
-                fill: #FFFFFF;
-                enable-background: new;
-            }
-            .st7 { fill: #953C7F; }
-            .st8 { fill: #62417C; }
-            .st9 { fill: #773D75; }
-            @keyframes line {
-                from, to { visibility: visible; }
-                from { stroke-dashoffset: 4444; }
-                to { stroke-dashoffset: 0; }
-            }
+        .st1 {
+            animation: line 5s $time both;
+            stroke-dasharray: 4444;
+            stroke-miterlimit: 10;
+            stroke-width: 10.2689;
+            stroke-linecap: round;
+            stroke: url(#SVGID_1_);
+            visibility: hidden;
+            fill: none;
+        }
+
+        .st2,
+        .st3,
+        .st4 {
+            animation: fadeIn $time * 6 $time * 15 both;
+        }
+
+        .st2 {
+            fill: #666667;
+        }
+
+        .st3 {
+            font-family: $Roboto-Medium;
+        }
+
+        .st4 {
+            font-size: 29.3479px;
+        }
+
+        .st5 {
+            opacity: .03;
+            fill: $white;
+            enable-background: new;
+            animation: fadeInThree $time * 3 $time * 8 both;
+        }
+
+        .st6 {
+            opacity: .1;
+            fill: $white;
+            enable-background: new;
+            animation: fadeInFour $time * 6 $time * 10 both;
+        }
+
+        .st7 {
+            fill: #953C7F;
+            animation: fadeIn $time * 6 $time * 3 both;
+        }
+
+        .st8 {
+            fill: #62417C;
+            animation: fadeIn $time * 6 $time * 3.2 both;
+        }
+
+        .st9 {
+            fill: #773D75;
+            animation: fadeIn $time * 6 $time * 3.3 both;
         }
     }
-    .bordered-left-blue {
-        line-height: 1.7;
-        margin-top: px(180);
-        padding: 0 px(30) 0 px(40);
-        border-left: 10px solid $blue;
+
+    .header-container {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-bottom: 20%;
+            height: 100%;
+        }
     }
-    .dotted-list {
-        margin: px(56) px(48);
-        list-style: none;
-        padding: 0;
-        li {
-            font-family: $Roboto-Regular;
-            margin-bottom: px(45);
-            padding-left: px(20);
-            position: relative;
-            font-size: px(32);
-            line-height: 1.4;
+
+    .new-title {
+        margin: 50px 0 30px;
+
+        &-text {
             color: $white;
-            &:before {
-                position: absolute;
-                font-size: 3vh;
-                height: px(20);
-                content: "•";
-                color: $blue;
-                top: -1.25vh;
-                left: -10px;
-            }
         }
     }
+
+    .header-text {
+        padding-right: calc(100% / 3);
+        color: $white;
+        font-size: 24px;
+        font-family: $Roboto-Regular;
+    }
+
     .column-title {
         display: block;
         color: $white;
         line-height: 1.2;
         font-family: $Roboto-Bold;
-        &--blue { color: $blue; }
     }
-    p, h2, h3 {
-        font-family: $Roboto-Regular;
-        font-size: px(32);
-        line-height: 1.4;
-        color: #CCC;
-        &.big {
-            border-bottom: 1px solid $gray;
-            border-top: 1px solid $gray;
-            padding: px(60) 0;
-            font-size: px(48);
-        }
-        &.bold {
-            font-size: px(36);
-            font-family: $Raleway-ExtraBold;
-        }
-        &.italic {
-            font-family: $Raleway-Light;
-            font-style: italic;
-        }
-        &.underlined span { text-decoration: underline; }
-    }
-    .column {
-        &-1 {
-            padding-right: 6.5%;
-            width: 33.33%;
-        }
-        &-2 {
-            padding-right: 2.5%;
-            width: 33.33%;
-        }
-        &-3 { width: 33.33%;}
-    }
-    .numbered-list li {
-        &:last-of-type { margin-bottom: 0; }
-        font-family: $Roboto-Regular;
-        margin-bottom: px(125);
-        position: relative;
-        font-size: px(32);
-        line-height: 1.4;
-        color: #CCC;
-        &:before {
-            background: $dark;
-            position: absolute;
-            display: block;
-            left: px(-68);
-            top: px(-30);
-            content: '';
-            z-index: -1;
-            width: px(70);
-            height: px(70);
-        }
-        .index {
-            font-family: $Raleway-Bold;
-            position: absolute;
-            font-size: px(72);
-            left: px(-86);
-            top: px(-86);
-            color: #CCC;
-        }
-    }
-    .double { width: 66%; }
+
     .info {
         z-index: 2;
         width: 62%;
         background: $white;
         position: relative;
-        padding: px(110) 0 px(60) 6.5%;
-        .big { margin: px(120) 0 px(90); }
-    }
-    .container {
-        padding-bottom: px(320);
-        position: relative;
-        margin: 0 auto;
-        height: 100%;
-        width: 81%;
-        &.creating {
-            padding-bottom: px(270);
-            .container {
-                &__item {
-                    &--4 {
-                        margin-top: px(45);
-                        p:first-of-type { margin-bottom: px(60); }
-                    }
-                    &--5 {
-                        .bordered-left-blue {
-                            margin-top: 0;
-                            line-height: 1.4;
-                            font-size: px(48);
-                            font-family: $Raleway-Medium;
-                        }
-                    }
-                    &--6 { margin-top: px(90); }
-                }
-            }
+        padding: 55px 0 30px 6.5%;
+
+        .big {
+            margin: 60px 0 45px;
         }
+    }
+
+    .seo-feed {
+        padding-bottom: 160px;
+
         &__item {
-            position: relative;
             display: flex;
-            width: 100%;
+            position: relative;
             z-index: 2;
-            &--1 {
-                .column-2 {
-                    margin-top: px(-60);
-                    p {
-                        &.bold {
-                            margin-top: px(140);
-                            color: $white;
-                        }
-                        &:nth-of-type(1) { margin-bottom: px(60); }
-                        &:last-of-type { margin-top: px(40); }
-                    }
-                }
-                .column-3 {
-                    margin-top: px(-512);
-                    .italic {
-                        opacity: .4;
-                        font-size: px(36);
-                        padding-bottom: px(36);
-                        margin: px(40) px(20) px(-40);
-                        border-bottom: 1px solid $darkGray;
-                        & + h3 { padding-top: px(160); }
-                    }
-                }
-            }
-            &--2 {
-                margin-top: px(420);
-                .column-1 {
-                    padding-right: 0;
-                    img { width: 100%; }
-                }
-                .double {
-                    display: flex;
-                    flex-wrap: wrap;
-                    padding-left: px(65);
-                    justify-content: space-between;
-                }
-                .column-title {
-                    margin-bottom: px(160);
-                    font-size: px(72);
-                    width: 100%;
-                }
-            }
-            &--3 {
-                margin-top: px(-300);
-                .column {
-                    padding-right: px(130);
-                    width: 74%;
-                }
-                .column-2 { padding-left: px(65); }
-                .column-3 {
-                    p { margin-bottom: px(90); }
-                }
-            }
-            &--4 {
-                margin-top: px(230);
-                .column-title { font-size: px(102); }
-                .numbered-list { margin-top: px(440); }
-                .column-1 {
-                    position: relative;
-                    p {
-                        top: px(560);
-                        width: px(600);
-                        position: relative;
-                        transform-origin: 0 0;
-                        transform: rotate(-90deg);
-                    }
-                }
-            }
+            width: 100%;
         }
     }
 }
