@@ -137,41 +137,9 @@
 
     .special-button {
         display: block;
-        position: relative;
         margin-top: 70px;
         width: 100%;
-        height: 55px;
         color: $white;
-        font-family: $Roboto-Black;
-        font-size: 14px;
-        line-height: 55px;
-        letter-spacing: 2px;
-        text-align: center;
-        text-transform: uppercase;
-
-        &-text {
-            position: relative;
-            z-index: 2;
-        }
-
-        &:after {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            display: block;
-            width: 100%;
-            height: 15%;
-            background: $blue;
-            content: '';
-            transition: height $timeHalf ease-out;
-        }
-
-        &:hover {
-
-            &:after {
-                height: 100%;
-            }
-        }
     }
 
     .portfolio {
