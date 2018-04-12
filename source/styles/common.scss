@@ -29,6 +29,7 @@
 @import 'components/long-read/desktopHD';
 @import 'components/services-work-examples/desktopHD';
 @import 'components/services-questions/desktopHD';
+@import 'components/services-blog/desktopHD';
 /* ---- DESKTOP HD ---- */
 
 
@@ -42,6 +43,7 @@
     @import 'components/form/desktopMega';
     @import 'components/bread-crumbs/desktopMega';
     @import 'components/services-work-examples/desktopMega';
+    @import 'components/services-blog/desktopMega';
 }
 /* ---- DESKTOP MEGA ---- */
 
@@ -52,6 +54,7 @@
 @media (max-width: 1680px) {
     @import 'components/screen-block/desktopWide';
     @import 'components/services-work-examples/desktopWide';
+    @import 'components/services-blog/desktopWide';
 }
 /* ---- DESKTOP WIDE ---- */
 
@@ -71,6 +74,7 @@
     @import 'components/long-read/desktop';
     @import 'components/services-work-examples/desktop';
     @import 'components/services-questions/desktop';
+    @import 'components/services-blog/desktop';
 }
 /* ---- DESKTOP ---- */
 
