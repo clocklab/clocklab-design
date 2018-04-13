@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Clocklab Design | SEO-аудит</title>
+        <title>Clocklab Design | SEO-шаблон</title>
         @@include('./components/head.html')
-        <link rel="stylesheet" href="../../../styles/services/seo/audit.css">
-        <script src="../../../scripts/services/seo/seo-services.min.js" defer></script>
+        <link rel="stylesheet" href="../../../styles/common.css">
+        <link rel="stylesheet" href="../../../styles/services/seo/seo-second-level.css">
+        <script src="../../../scripts/services/seo/seo-second-level.min.js" defer></script>
     </head>
     <body>
         @@include('./components/logo.html')
         
         @@include('./components/menu.html')
         
-        @@include('./services/templates/bread-crumbs.html')
+        @@include('./components/bread-crumbs.html')
 
         <div class="global-container">
             <div class="seo-header">
                 <div class="big-background-letter">
-                    <span>o</span>
+                    <span>c</span>
+                </div>
+                
+                <div class="lines">
+                    <div class="container">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
                 </div>
 
-                <div class="main-block">
-                    <div class="header-container">
-                        <div class="title audit">
-                            <span class="name">
-                                <span>Услуги SEO</span>
-                            </span>
-                            <div class="word">
-                                <h1>SEO-аудит сайта</h1>
+                <div class="seo-main-block">
+                    <img 
+                        class="header-image" 
+                        src="../../../images/services/seo/audit/audit-header.jpg" 
+                        alt="audit-header">
+
+                    <div class="header-container wow fadeIn">
+                        <div class="container">
+                            <div class="sticker white">
+                                <span class="sticker-text">Услуги SEO</span>
                             </div>
-                            <h2>
+    
+                            <div class="new-title">
+                                <div class="text-container">
+                                    <h1 class="new-title-text">SEO-аудит сайта</h1>
+                                </div>
+                            </div>
+    
+                            <h2 class="header-text">
                                 Качественный SEO-аудит позволяет выявить и устранить любые 
                                 технические ошибки, которые могут снизить эффективность 
                                 дальнейшей работы по повышению позиций сайта в выдаче 
                                 поисковых систем
                             </h2>
                         </div>
-
-                        <div class="lines">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
                     </div>
-
-                    <img class="header-image" src="../../../images/services/seo/audit/audit-header.jpg" alt="audit-header">
 
                     <div class="graph">
                         <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -54,7 +64,12 @@
                                     c-148.1,161-265.9,114.8-265.9,114.8s-76.9-19.6-134.2,19.1c-95.3,90.7-316,48.7-316,48.7s-95.9,13.1-129.2,109.8
                                     c-48.6,61.4-79.4,38.3-133.1,26.6c-53.7-11.7-83.4,1.9-162,55.8c-54.4,39.1-238,57.6-237.4,47.9C0.7,1079.4,0,1157.3,0,1157.3z"/>
                             </g>
-                            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-5.1344" y1="1272.1215" x2="1927.3344" y2="1272.1215" gradientTransform="matrix(1 0 0 -1 0 2063.28)">
+                            <linearGradient 
+                                id="SVGID_1_" 
+                                gradientUnits="userSpaceOnUse" 
+                                x1="-5.1344" y1="1272.1215" 
+                                x2="1927.3344" y2="1272.1215" 
+                                gradientTransform="matrix(1 0 0 -1 0 2063.28)">
                                 <stop  offset="0" style="stop-color:#C84081"/>
                                 <stop  offset="1" style="stop-color:#3A367C"/>
                             </linearGradient>
@@ -85,145 +100,125 @@
                     </div>
                 </div>
 
-                <div class="container">
-                    <div class="lines">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+                <div class="seo-feed">
+                    <div class="container">
+                        <div class="seo-feed__item">
+                            <div class="column margined-left-double">
+                                <h3 class="italic bordered-bottom gray wow fadeInUp">
+                                    SEO-аудит — комплексный анализ сайта на предмет его 
+                                    соответствия стандартам и требованиям современной 
+                                    поисковой оптимизации
+                                </h3>
+                            </div>
+                        </div>
 
-                    <div class="container__item container__item--1">
-                        <div class="column-1"></div>
-                        <div class="column-2">
-                            <p class="wow fadeInUp">
-                                Перед тем, как вкладывать время и деньги в SEO-продвижение, 
-                                нужно убедиться — сайт правильно настроен, не имеет проблемных 
-                                участков и слабых мест. Ничего не должно мешать SEO, блокировать его.
-                            </p>
-                            <p class="wow fadeInUp">
-                                Но главная задача аудита — составить детальные рекомендации 
-                                по эффективной подготовке сайта к поисковой оптимизации. 
-                                Отчет специалиста по SEO-аудиту — это четкий план по 
-                                устранению обнаруженных недочетов и ошибки на вашем сайте.
-                            </p>
+                        <div class="seo-feed__item margined-top">
+                            <div class="column margined-left">
+                                <p class="wow fadeInUp">
+                                    Перед тем, как вкладывать время и деньги в SEO-продвижение, 
+                                    нужно убедиться — сайт правильно настроен, не имеет проблемных 
+                                    участков и слабых мест. Ничего не должно мешать SEO, блокировать его.
+                                </p>
+                                <p class="wow fadeInUp">
+                                    Но главная задача аудита — составить детальные рекомендации 
+                                    по эффективной подготовке сайта к поисковой оптимизации. 
+                                    Отчет специалиста по SEO-аудиту — это четкий план по 
+                                    устранению обнаруженных недочетов и ошибки на вашем сайте.
+                                </p>
+                            </div>
                         </div>
-                        <div class="column-3">
-                            <h3 class="italic wow fadeInUp">
-                                SEO-аудит — комплексный анализ сайта на предмет его 
-                                соответствия стандартам и требованиям современной 
-                                поисковой оптимизации
-                            </h3>
+    
+                        <div class="seo-feed__item margined-top">
+                            <div class="column">
+                                <img
+                                    class="wow fadeInRight" 
+                                    data-wow-delay="1s" 
+                                    src="../../../images/services/seo/audit/audit-photo-1.jpg" 
+                                    alt="audit-photo-1">
+                            </div>
+                            <div class="column double">
+                                <h2 class="blue huge wow fadeInUp">
+                                    Главная задача SEO-аудита – исправить значительные 
+                                    ошибки и подготовить ваш сайт к эффективной поисковой оптимизации
+                                </h2>
+                            </div>
                         </div>
-                    </div>
+    
+                        <div class="seo-feed__item">
+                            <div class="column margined-left-double">
+                                <h2 class="bold big wow fadeInUp">SEO-аудит необходим в следующих случаях:</h2>
+                                <ul class="dotted wow fadeInUp">
+                                    <li>
+                                        У вас полностью новый сайт, требующий предварительной 
+                                        настройки сайта перед поисковой оптимизацией.
+                                    </li>
+                                    <li>
+                                        Вы перенесли уже полноценно работающий сайт на 
+                                        новую CMS, что в некотором роде равнозначно пункту 1. 
+                                        Если вовремя провести SEO-аудит, можно в кратчайшие сроки 
+                                        занять прежние позиции (или даже выше) либо вовсе 
+                                        предотвратить падение сайта в выдаче Google.
+                                    </li>
+                                    <li>
+                                        Проводимое SEO-продвижение не дает результатов. 
+                                        Аудит выявить ошибки в стратегии продвижения и 
+                                        сформирует новый, эффективный подход.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="seo-feed__item margined-top">
+                            <div class="column margined-left">
+                                <h2 class="blue huge wow fadeInUp">Что входит в SEO-аудит?</h2>
+                            </div>
+                        </div>
 
-                    <div class="container__item container__item--2">
-                        <div class="column-1">
-                            <img class="wow fadeInRight" data-wow-delay="1s" src="../../../images/services/seo/audit/audit-photo-1.jpg" alt="audit-photo-1">
+                        <div class="seo-feed__item">
+                            <div class="column margined-left-double">
+                                <ul class="indexed">
+                                    <li class="wow fadeInUp">
+                                        <div class="index">01</div>
+                                        Основные функции «поискового аудита» — это анализ, 
+                                        исследование и изучение.
+                                    </li>
+                                    <li class="wow fadeInUp">
+                                        <div class="index">02</div>
+                                        Под прицелом специалиста по SEO-аудиту оказывается 
+                                        структура и вся техническая «начинка» сайта, 
+                                        семантическое ядро, поведенческие факторы и многое другое.
+                                    </li>
+                                    <li class="wow fadeInUp">
+                                        <div class="index">03</div>
+                                        Тщательно изучается рынок и ситуация с конкурентами — 
+                                        их позиции в Google, сильные и слабые стороны, их перспективы.
+                                    </li>
+                                    <li class="wow fadeInUp">
+                                        <div class="index">04</div>
+                                        Проводится детальный анализ контента и ссылочной массы, 
+                                        анализ трафика, оценка индексации сайта и его актуальных 
+                                        позиций в поиске по ключевым запросам, общая видимость 
+                                        в интернете.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="column double">
-                            <h2 class="column-title column-title--blue wow fadeInUp">
-                                Главная задача SEO-аудита – исправить значительные 
-                                ошибки и подготовить ваш сайт к эффективной поисковой оптимизации
-                            </h2>
+    
+                        <div class="seo-feed__item margined-top">
+                            <div class="column">
+                                <h2 class="italic bold big bordered-left wow fadeInLeft">
+                                    Привлечение SEO-специалиста на этапе разработки 
+                                    сайта — гарантия, что сайт изначально будет 
+                                    настроен под эффективную поисковую оптимизацию
+                                </h2>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="container__item container__item--3">
-                        <div class="column-1"></div>
-                        <div class="column-2"></div>
-                        <div class="column-3">
-                            <h2 class="bold wow fadeInUp">SEO-аудит необходим в следующих случаях:</h2>
-                            <ul class="dotted-list wow fadeInUp">
-                                <li>
-                                    У вас полностью новый сайт, требующий предварительной 
-                                    настройки сайта перед поисковой оптимизацией.
-                                </li>
-                                <li>
-                                    Вы перенесли уже полноценно работающий сайт на 
-                                    новую CMS, что в некотором роде равнозначно пункту 1. 
-                                    Если вовремя провести SEO-аудит, можно в кратчайшие сроки 
-                                    занять прежние позиции (или даже выше) либо вовсе 
-                                    предотвратить падение сайта в выдаче Google.
-                                </li>
-                                <li>
-                                    Проводимое SEO-продвижение не дает результатов. 
-                                    Аудит выявить ошибки в стратегии продвижения и 
-                                    сформирует новый, эффективный подход.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="container__item container__item--4">
-                        <div class="column-1"></div>
-                        <div class="column-2">
-                            <h2 class="column-title column-title--blue wow fadeInUp">Что входит в SEO-аудит?</h2>
-                        </div>
-                        <div class="column-3">
-                            <ul class="numbered-list">
-                                <li class="wow fadeInUp">
-                                    <div class="index">01</div>
-                                    Основные функции «поискового аудита» — это анализ, 
-                                    исследование и изучение.
-                                </li>
-                                <li class="wow fadeInUp">
-                                    <div class="index">02</div>
-                                    Под прицелом специалиста по SEO-аудиту оказывается 
-                                    структура и вся техническая «начинка» сайта, 
-                                    семантическое ядро, поведенческие факторы и многое другое.
-                                </li>
-                                <li class="wow fadeInUp">
-                                    <div class="index">03</div>
-                                    Тщательно изучается рынок и ситуация с конкурентами — 
-                                    их позиции в Google, сильные и слабые стороны, их перспективы.
-                                </li>
-                                <li class="wow fadeInUp">
-                                    <div class="index">04</div>
-                                    Проводится детальный анализ контента и ссылочной массы, 
-                                    анализ трафика, оценка индексации сайта и его актуальных 
-                                    позиций в поиске по ключевым запросам, общая видимость 
-                                    в интернете.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- ------ PART FROM CREATING.HTML ------ -->
-                    <div class="container__item container__item--5">
-                        <div class="column-1"></div>
-                        <div class="column-2"></div>
-                        <div class="column-3">
-                            <h2 class="italic bold bordered-left-blue wow fadeInLeft">
-                                Привлечение SEO-специалиста на этапе разработки 
-                                сайта — гарантия, что сайт изначально будет 
-                                настроен под эффективную поисковую оптимизацию
-                            </h2>
-                        </div>
-                    </div>
-
-                    <!-- ------ PART FROM CREATING.HTML ------ -->
-                    <div class="container__item container__item--6">
-                        <div class="column-1"></div>
-                        <div class="column-2">
-                            <p class="wow fadeInUp">
-                                Мы предлагаем эффективные меры SEO-оптимизации на 
-                                самых ранних стадиях разработки сайта. Будет 
-                                проведён глубокий анализ проекта, подготовлена 
-                                эффективная стратегия и даны рекомендации для всех 
-                                членов команды по работе над сайтом с точки зрения 
-                                «пользы для поисковой эффективности сайта».
-                            </p>
-                        </div>
-                        <div class="column-3"></div>
                     </div>
                 </div>
             </div>
 
-            <div class="design-plan seo">
-                <div class="big-background-letter">
-                    <span>o</span>
-                </div>
+            <div class="seo-getting">
+                @@include('./components/clock-bg.html')
                 
                 <div class="container">
                     <div class="lines">
@@ -233,51 +228,48 @@
                         <div class="line line--4 wow slideInDown" data-wow-delay=".9"></div>
                     </div>
 
-                    <div>
-                        <div class="column-1">
-                            <h2 class="plan-title plan-title--blue wow fadeInRight">
-                                Что вы получаете от SEO-аудита:
-                            </h2>
-                        </div>
+                    <div class="content">
+                        <h2 class="content-title wow fadeInRight">
+                            Что вы получаете от SEO-аудита:
+                        </h2>
 
-                        <div class="column-2 wow fadeInUp" data-wow-delay="1s">
-                            <ul>
-                                <li>
-                                    <div class="index">01</div>
+                        <ul class="content-list">
+                            <li class="wow fadeInUp">
+                                <div class="index">01</div>
+                                <p>
                                     Полноценный отчет, состоящий из комплексного анализа 
                                     сайта, а главное — предметных рекомендаций специалистов. 
                                     Результат SEO-аудита — одновременно и стратегия развития, 
                                     и отчет.
-                                </li>
-                                <li>
-                                    <div class="index">02</div>
+                                </p>
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="index">02</div>
+                                <p>
                                     Мы выясняем, что мешает вам занять лидерские позиции 
                                     в Google и даем рекомендации по устранению ошибок.
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="column-3 wow fadeInUp" data-wow-delay="1.5s">
-                            <ul>
-                                <li>
-                                    <div class="index">03</div>
+                                </p>
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="index">03</div>
+                                <p>
                                     Профессиональный SEO-аудита сайта и дальнейшее 
                                     следование рекомендациям гарантированно принесут 
                                     рост трафика, повышение позиций в Google и, 
                                     соответственно — рост доходов, укрепление имиджа 
                                     и узнаваемость бренда.
-                                </li>
-                            </ul>
-                        </div>
+                                </p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            @@include('./services/templates/work-examples.html')
+            @@include('./components/services-work-examples.html')
 
-            @@include('./services/templates/services-questions.html')
+            @@include('./components/services-questions.html')
 
-            @@include('./services/templates/services-blog.html')
+            @@include('./components/services-blog.html')
         </div>
     </body>
 </html>

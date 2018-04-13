@@ -3,6 +3,7 @@
     <head>
         <title>Clocklab Design | Brand Book</title>
         @@include('./components/head.html')
+        <link rel="stylesheet" href="../../../styles/common.css">
         <link rel="stylesheet" href="../../../styles/services/design/brand-book.css">
         <script src="../../../scripts/services/design/design-services.min.js" defer></script>
     </head>
@@ -294,11 +295,11 @@
                 </div>
             </div>
             
-            @@include('./services/templates/work-examples.html')
-            
-            @@include('./services/templates/services-questions.html')
-            
-            @@include('./services/templates/services-blog.html')
+            @@include('./components/services-work-examples.html')
+
+            @@include('./components/services-questions.html')
+
+            @@include('./components/services-blog.html')
         </div>
     </body>
 </html>

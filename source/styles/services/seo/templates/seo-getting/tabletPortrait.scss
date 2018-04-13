@@ -1,0 +1,26 @@
+.seo-getting {
+
+    .container {
+        width: 80%;
+    }
+
+    .content {
+        display: block;
+
+        &-title {
+            padding-right: 0;
+            width: 100%;
+        }
+
+        &-list {
+            display: block;
+            margin-top: 70px;
+            width: 100%;
+
+            li {
+                padding-right: 0;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+@import '../../base/variables';
+
+
+/*
+/
+/---- DESKTOP HD ---- */
+@import 'templates/seo-header/desktopHD';
+@import 'templates/seo-getting/desktopHD';
+/* ---- DESKTOP HD ---- */
+
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    @import 'templates/seo-header/desktopMega';
+    @import 'templates/seo-getting/desktopMega';
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+    @import 'templates/seo-header/desktopWide';
+    @import 'templates/seo-getting/desktopWide';
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    @import 'templates/seo-header/desktop';
+    @import 'templates/seo-getting/desktop';
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+    @import 'templates/seo-header/tabletPortrait';
+    @import 'templates/seo-getting/tabletPortrait';
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    @import 'templates/seo-header/phoneLandscape';
+    @import 'templates/seo-getting/phoneLandscape';
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+
+}
+/* ---- PHONE PORTRAIT ---- */
