@@ -99,6 +99,13 @@
 
     .new-title {
 
+        .text-container {
+
+            &:before {
+                display: none;
+            }
+        }
+
         &-text {
             font-size: 32px;
         }
