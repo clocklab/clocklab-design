@@ -53,6 +53,7 @@
 /---- TABLET PORTRAIT ---- */
 @media (max-width: 768px) {
     @import 'templates/seo-header/tabletPortrait';
+    @import 'templates/seo-getting/tabletPortrait';
 }
 /* ---- TABLET PORTRAIT ---- */
 
@@ -62,6 +63,7 @@
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
     @import 'templates/seo-header/phoneLandscape';
+    @import 'templates/seo-getting/phoneLandscape';
 }
 /* ---- PHONE LANDSCAPE ---- */
 
