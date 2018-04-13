@@ -1,0 +1,57 @@
+.seo-header {
+
+    /* --- HTML HELPFUL CLASSES --- */
+    .huge {
+        font-size: 22px;
+    }
+
+    .big {
+        font-size: 18px;
+    }
+
+    ul {
+
+        &.indexed {
+
+            li {
+                font-size: 14px;
+
+                .index {
+                    top: -25px;
+                    left: -25px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+
+    p {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    /* --- HTML HELPFUL CLASSES --- */
+
+    .seo-main-block {
+        padding-top: 100px;
+    }
+
+    .new-title {
+        margin: 10px 0 5px;
+
+        &-text {
+            font-size: 20px;
+        }
+    }
+
+    .header-text {
+        font-size: 14px;
+    }
+
+    .seo-feed {
+        padding-bottom: 60px;
+
+        &__item {
+            margin-top: 30px;
+        }
+    }
+}
