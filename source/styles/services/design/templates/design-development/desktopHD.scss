@@ -69,12 +69,23 @@
     .column {
 
         &:first-child {
+            padding-right: 30px;
             width: 45%;
         }
 
         &:last-child {
             padding-top: 200px;
             width: 55%;
+        }
+    }
+
+    .row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &:last-of-type {
+            margin: 120px 0 150px;
         }
     }
 
@@ -88,47 +99,10 @@
         margin-top: 130px;
     }
 
-
-
-
-
-    //     .column {
-
-    //         &-1 {
-    //             width: 68%;
-
-    //             .development-title {
-    //                 display: block;
-    //                 font-family: $Raleway-SemiBold;
-    //                 font-size: 76px;
-    //             }
-    //         }
-
-    //         &-2 {
-    //             padding-top: 200px;
-    //             display: grid;
-
-    //             .label {
-    //                 font-size: 200px;
-    //                 min-height: 200px;
-    //                 font-family: $Roboto-Bold;
-    //                 &:last-of-type {
-    //                     text-align: right;
-    //                     padding-top: 122px;
-    //                 }
-    //             }
-    //         }
-
-    //         &-3 {
-    //             width: 57%;
-    //             padding-top: 225px;
-    //             padding-left: 130px;
-
-    //             p {
-    //                 min-height: 200px;
-    //                 &:last-of-type { padding-top: 117px; }
-    //             }
-    //         }
-    //     }
-
+    .label {
+        display: block;
+        min-width: 350px;
+        font-family: $Roboto-Bold;
+        font-size: 200px;
+    }
 }

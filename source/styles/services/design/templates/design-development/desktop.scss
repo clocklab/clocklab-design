@@ -29,11 +29,23 @@
         }
     }
 
+    .row {
+
+        &:last-of-type {
+            margin: 80px 0 100px;
+        }
+    }
+
     .development-title {
         font-size: 52px;
     }
 
     .development-offer {
         margin-top: 80px;
+    }
+
+    .label {
+        min-width: 250px;
+        font-size: 150px;
     }
 }
