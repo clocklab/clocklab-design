@@ -102,6 +102,14 @@
                 line-height: 1;
                 transform: translate(-110%, -120%);
             }
+
+            .list-item-title {
+                display: block;
+                margin-bottom: 10px;
+                font-family: $Roboto-Bold;
+                font-size: 20px;
+                line-height: 1.2;
+            }
         }
     }
 }
