@@ -1,9 +1,0 @@
-@import '../desktop';
-& {
-	.clock-bg span { line-height: 90vh; }
-    .container {
-    	ul li { min-height: 20vh; }
-    	h2 { margin-top: 27vh; }
-	}
-	&.ui-ux .clock-bg span { line-height: 75vh; }
-}

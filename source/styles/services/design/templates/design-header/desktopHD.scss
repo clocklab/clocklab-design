@@ -1,69 +1,54 @@
-& {  
-    font-family: $Roboto-Regular;
-    background: $white;
+.design-header {
     position: relative;
-    
-    // ----- animation -----
+    background: $white;
+    font-family: $Roboto-Regular;
     animation: fadeIn $time * 3 both;
-    
-    // ----- big-bg-letters -----
-    .big-background-letter, .big-bg-letter-c { animation: fadeIn $time * 3 $time * 3 both; }
-    
-    // ----- languages -----
-    .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
-    
-    // ----- article -----
-    article { width: 112%; }
-    p, h2, h3 {
+
+    .big-background-letter {
+        animation: fadeIn $time * 3 $time * 3 both;
+    }
+
+    p,
+    h2,
+    h3 {
         line-height: 1.4;
         color: $darkGray;
-        font-size: px(32);
+        font-size: 16px;
         &.percent { width: 48%; }
         &.big {
-            font-size: px(48);
-            margin-bottom: px(100);
-            padding: px(56) 0 px(72);
+            font-size: 24px;
+            margin-bottom: 50px;
+            padding: 28px 0 36px;
             border-top: 1px solid #DBDBDB;
             border-bottom: 1px solid #DBDBDB;
         }
         &.bold {
             line-height: 1.3;
-            font-size: px(36);
-            margin: px(70) 0 px(100);
+            font-size: 18px;
+            margin: 35px 0 50px;
             font-family: $Roboto-Bold;
         }
         &.half {
             column-count: 2;
-            column-gap: px(200);
-        }
-    }
-    
-    // ----- big-bg-letter-c -----
-    .big-bg-letter-c {
-        position: absolute;
-        text-transform: uppercase;
-        font-family: $Raleway-ExtraBold;
-        left: px(-500);
-        z-index: 2;
-        top: 35vh;
-        .big-background-letter {
-            span::before { content: 'c'; }
-            font-size: 100vh;
-            bottom: initial;
-            right: initial;
-            left: px(1060);
-            top: 62vh;
+            column-gap: 100px;
         }
     }
 
-    // ----- container -----
+    
+        .big-background-letter {
+            font-size: 100vh;
+            bottom: initial;
+            right: initial;
+            left: 530px;
+            top: 62vh;
+        }
+
     .container {
-        padding-bottom: px(320);
+        padding-bottom: 160px;
         position: relative;
         margin: 0 auto;
         width: 81%;
-        
-        // ----- images -----
+
         .images {
             position: relative;
             img {
@@ -73,44 +58,41 @@
             }
         }
 
-        // ----- info -----
         .info {
-            padding-left: px(300);
-            padding-top: px(70);
+            padding-left: 150px;
+            padding-top: 35px;
             position: relative;
-            right: px(200);
-            top: px(-94);
+            right: 100px;
+            top: -47px;
             width: 60%;
             .white-bg {
                 background: $white;
                 position: absolute;
-                height: px(200);
+                height: 100px;
                 width: 100%;
                 left: 0;
                 top: 0;
             }
-            .sticker span::before { content: 'Услуги дизайна'; }
             .new-title {
                 font-family: $Raleway-Regular;
-                margin-bottom: px(220);
+                margin-bottom: 110px;
                 white-space: nowrap;
-                margin-top: px(80);
+                margin-top: 40px;
                 .text-container {
                     display: inline-block;
-                    margin-bottom: px(10);
+                    margin-bottom: 5px;
                     font-family: $Raleway-ExtraBold;
                     &:before { display: none; }
                     span {
-                        font-size: px(120);
-                        line-height: px(104);
+                        font-size: 60px;
+                        line-height: 52px;
                     }
                 }
             }
         }
-    
-        // ----- header -----
+
         .header {
-            padding-top: px(240);
+            padding-top: 120px;
             position: relative;
             max-height: 1100px;
             min-height: 650px;
@@ -130,58 +112,55 @@
                 font-family: $Raleway-ExtraBold;
                 color: $darkGray;
                 right: inherit;
-                top: px(920);
-                left: px(-40);
-                font-size: px(520);
+                top: 460px;
+                left: -20px;
+                font-size: 260px;
                 text-transform: uppercase;
-                span::before { content: 'o'; }
             }
         }
 
-        // ----- about ---
         .about {
             z-index: 2;
             position: relative;
             .description {
                 width: 40%;
                 z-index: 1;
-                padding: px(250) px(150) 0 0;
+                padding: 125px 75px 0 0;
                 p {
                     border-bottom: 1px solid #DBDBDB;
                     font-family: $Roboto-Light;
-                    padding-bottom: px(60);
+                    padding-bottom: 30px;
                     font-style: italic;
-                    font-size: px(36);
+                    font-size: 18px;
                     line-height: 1.4;
                     color: $gray;
                 }
             }
         }
 
-        // ----- cases -----
         .cases {
             .images { width: 40%; }
             .list {
                 width: 60%;
                 .list-title {
                     display: block;
-                    margin: px(165) 0 px(110) px(88);
+                    margin: 82px 0 55px 44px;
                     font-family: $Roboto-Bold;
-                    font-size: px(80);
+                    font-size: 40px;
                     line-height: 1.3;
                     &--blue { color: $blue; }
                 }
-                p { padding-left: px(85); }
+                p { padding-left: 42px; }
                 li {
                     &:last-of-type { margin-bottom: 0; }
-                    margin-bottom: px(72);
-                    padding-left: px(85);
+                    margin-bottom: 36px;
+                    padding-left: 42px;
                     position: relative;
-                    font-size: px(32);
+                    font-size: 16px;
                     line-height: 1.4;
                     span {
                         font-family: $Roboto-Bold;
-                        margin-bottom: px(-25);
+                        margin-bottom: -12px;
                         display: block;
                     }
                     &:before {
@@ -199,24 +178,12 @@
             }
         }
 
-        // ----- about and cases -----
-        .about, .cases {
+        .about,
+        .cases {
             justify-content: space-between;
             align-items: flex-start;
             display: flex;
             width: 100%;
-        }
-    }
-
-    // ----- ui-ux -----
-    &.ui-ux {
-        .images { top: px(-570); }
-        .cases .list-title {
-            margin: px(165) 0 px(110) px(76);
-            font-family: $Roboto-Bold;
-            line-height: px(80);
-            font-size: px(92);
-            &--blue { color: $blue; }
         }
     }
 }
