@@ -14,6 +14,7 @@
 /---- DESKTOP MEGA ---- */
 @media (min-width: 1921px) {
     @import 'templates/design-header/desktopMega';
+    @import 'templates/design-development/desktopMega';
 }
 /* ---- DESKTOP MEGA ---- */
 
@@ -32,6 +33,7 @@
 /---- DESKTOP ---- */
 @media (max-width: 1366px) {
     @import 'templates/design-header/desktop';
+    @import 'templates/design-development/desktop';
 }
 /* ---- DESKTOP ---- */
 
@@ -41,6 +43,7 @@
 /---- TABLET LANDSCAPE ---- */
 @media (max-width: 1024px) {
     @import 'templates/design-header/tabletLandscape';
+    @import 'templates/design-development/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
@@ -58,6 +61,7 @@
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
     @import 'templates/design-header/phoneLandscape';
+    @import 'templates/design-development/phoneLandscape';
 }
 /* ---- PHONE LANDSCAPE ---- */
 

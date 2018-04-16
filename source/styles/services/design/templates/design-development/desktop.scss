@@ -1,0 +1,39 @@
+.design-development {
+
+    ul {
+        padding: 30px 0 80px;
+    }
+
+    li {
+        margin-bottom: 20px;
+    }
+
+    .big-background-letter {
+        bottom: -50px;
+        left: -200px;
+    }
+
+    .container {
+        padding: 100px 0 70px;
+        width: 85%;
+    }
+
+    .column {
+
+        &:first-child {
+            padding-right: 30px;
+        }
+
+        &:last-child {
+            padding-top: 100px;
+        }
+    }
+
+    .development-title {
+        font-size: 52px;
+    }
+
+    .development-offer {
+        margin-top: 80px;
+    }
+}
