@@ -43,7 +43,7 @@
 /
 /---- TABLET LANDSCAPE ---- */
 @media (max-width: 1024px) {
-
+    @import 'templates/design-header/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
@@ -62,7 +62,7 @@
 /
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
-    // @import 'templates/seo-header/phoneLandscape';
+    @import 'templates/design-header/phoneLandscape';
     // @import 'templates/seo-getting/phoneLandscape';
 }
 /* ---- PHONE LANDSCAPE ---- */

@@ -1,0 +1,126 @@
+.design-header {
+
+    /* --- HTML HELPFUL CLASSES --- */
+    .container {
+        width: 80%;
+    }
+
+    .huge {
+        font-size: 26px;
+    }
+
+    .italic {
+        font-size: 16px;
+    }
+
+    .bordered {
+
+        &-top {
+
+            &-bottom {
+                margin: 40px 0 20px;
+            }
+        }
+    }
+
+    .margined {
+
+        &-top {
+            margin-top: 50px;
+
+            &-double {
+                margin-top: 100px;
+            }
+
+            &-reversed {
+                margin-top: 0;
+
+                &-half {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .with-white-top {
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .row {
+        display: block;
+        padding-top: 50px;
+
+        &-inner {
+            display: block;
+            padding-top: 0;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        &:first-child {
+            display: flex;
+            flex-direction: column;
+
+            .column {
+
+                &:first-child {
+                    order: 2;
+                }
+
+                &:last-child {
+                    order: 1;
+                }
+            }
+        }
+    }
+
+    .column {
+
+        &:first-child {
+            padding-right: 0;
+            width: 100%;
+        }
+
+        &:last-child {
+            width: 100%;
+        }
+
+        &-inner {
+            width: 100%;
+
+            &:first-child {
+                padding-right: 0;
+            }
+        }
+    }
+
+    ul {
+
+        li {
+            margin-bottom: 30px;
+        }
+
+        .list-item-title {
+            margin-bottom: 5px;
+        }
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+    /* --- HTML HELPFUL CLASSES --- */
+
+    .header {
+        height: initial;
+        min-height: initial;
+    }
+
+    .about {
+        padding: 0 0 40px;
+    }
+}
