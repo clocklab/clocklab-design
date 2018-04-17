@@ -1,19 +1,4 @@
 .web-production-clock {
-    height: 400px;
-
-    .clock-bg {
-
-        span {
-
-            &:before {
-                font-size: 25vw;
-            }
-        }
-    }
-
-    .jumping-button {
-        bottom: 15px;
-    }
 
     .advantages {
         padding-top: 90px;
@@ -24,9 +9,8 @@
             width: 42%;
         }
 
-        h2 {
-            font-size: 42px;
-            line-height: 46px;
+        .advantages-title {
+            font-size: 38px;
         }
 
         li {
@@ -34,38 +18,15 @@
         }
     }
 
-    &--landing {
-        height: 500px;
+    .lists {
+        padding: 50px 0;
 
-        .clock-bg {
-            top: 60px;
+        ul {
+            width: 45%;
         }
 
-        .lists {
-            padding-top: 50px;
-            padding-right: 50px;
-
-            ul {
-
-                &:first-child,
-                &:last-child {
-                    width: 45%;
-                }
-            }
-
-            li {
-                margin-bottom: 15px;
-            }
-        }
-    }
-
-    &--card {
-
-        .advantages {
-
-            .advantages-title {
-                width: 50%;
-            }
+        li {
+            margin-bottom: 15px;
         }
     }
 }
