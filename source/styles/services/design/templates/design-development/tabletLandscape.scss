@@ -1,1 +1,16 @@
-@import '../mobile';
+.design-development {
+
+    .container {
+        display: block;
+        width: 80%;
+    }
+
+    .column {
+
+        &:first-child,
+        &:last-child {
+            padding-right: 0;
+            width: 100%;
+        }
+    }
+}
