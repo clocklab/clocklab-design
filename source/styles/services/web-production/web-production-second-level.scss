@@ -14,6 +14,7 @@
 /---- DESKTOP MEGA ---- */
 @media (min-width: 1921px) {
     @import 'templates/web-production-clock/desktopMega';
+    @import 'templates/web-production-header/desktopMega';
 }
 /* ---- DESKTOP MEGA ---- */
 
@@ -32,6 +33,7 @@
 /---- DESKTOP ---- */
 @media (max-width: 1366px) {
     @import 'templates/web-production-clock/desktop';
+    @import 'templates/web-production-header/desktop';
 }
 /* ---- DESKTOP ---- */
 
@@ -41,6 +43,7 @@
 /---- TABLET LANDSCAPE ---- */
 @media (max-width: 1024px) {
     @import 'templates/web-production-clock/tabletLandscape';
+    @import 'templates/web-production-header/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
