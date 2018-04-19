@@ -1,31 +1,26 @@
-& {  
+.marketing-inlcudes {
     background: $white;
     position: relative;
     width: 100%;
-    height: px(1980);
     overflow: hidden;
 
     .big-background-letter {
         right: initial;
-        left: px(-450);
+        left: -225px;
         top: initial;
-        bottom: px(-900);
+        bottom: -450px;
 
         span {
             font-family: $Raleway-ExtraBold;
-            font-size: px(1700);
+            font-size: 850px;
             text-transform: uppercase;
-
-            &:before {
-                content: 'c';
-            }
         }
     }
 
     .container {
         position: relative;
         margin: 0 auto;
-        padding-top: px(290);
+        padding-top: 145px;
         width: 81%;
         height: 100%;
         overflow: hidden;
@@ -44,21 +39,22 @@
             width: 1px;
             height: 100%;
             background: $darkWhite;
+            opacity: .1;
 
             &--1 {
                 left: 0;
             }
 
             &--2 {
-                left: 33%;
+                left: calc(100% / 3);
             }
 
             &--3 {
-                left: 66%;
+                left: calc(100% / 3 * 2);
             }
 
             &--4 {
-                right: 0;
+                left: 100%;
             }
         }
     }
@@ -67,33 +63,26 @@
         display: block;
         position: relative;
         z-index: 2;
-        margin-bottom: px(200);
-        width: 45%;
+        margin-bottom: 100px;
         color: $darkGray;
         font-family: $Raleway-ExtraBold;
-        font-size: px(96);
-        line-height: px(120);
-
-        span {
-            color: $blue;
-        }
+        font-size: 48px;
+        line-height: 1.3;
     }
 
     ul {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 33%;
-        width: 66%;
         font-family: $Roboto-Regular;
     }
 
     li {
         position: relative;
-        margin-bottom: px(120);
-        padding: 0 px(70) 0 px(24);
+        margin-bottom: 60px;
+        padding: 0 35px 0 12px;
         width: 50%;
         color: $darkGray;
-        font-size: px(32);
+        font-size: 16px;
         line-height: 1.4;
 
         .circle {
@@ -108,11 +97,11 @@
 
         .list-item-title {
             display: block;
-            margin-bottom: px(30);
-            font-size: px(36);
+            margin-bottom: 15px;
+            font-size: 18px;
             font-family: $Roboto-Bold;
             overflow: hidden;
-            
+
             span {
                 display: block;
             }
@@ -129,51 +118,54 @@
             width: 70%;
         }
 
-        li {  
-            padding-left: 0;
-    
-            &:nth-child(1),
-            &:nth-child(2) {
-                margin-bottom: px(250);
-            }
-    
-            &:nth-child(2),
-            &:nth-child(4) {
-                top: px(300);
-            }
-    
-            &:nth-child(1),
-            &:nth-child(3) {
-                padding-right: px(190);
-            }
-    
-            &:nth-child(2),
-            &:nth-child(4) {
-                padding-right: px(80);
-            }
-        }
+        .indexed {
 
-        .rect {
-            position: absolute;
-            top: px(-30);
-            left: initial;
-            right: 100%;
-            width: px(70);
-            height: px(70);
-            background: $lightGray;
-        }
-    
-        .index {
-            position: absolute;
-            z-index: 1;
-            top: px(-90);
-            right: 100%;
-            font-family: $Raleway-ExtraBold;
-            font-size: px(72);
-            overflow: hidden;
+            li {
+                padding-left: 0;
 
-            span {
-                display: block;
+                &:nth-child(1),
+                &:nth-child(2) {
+                    margin-bottom: 125px;
+                }
+
+                &:nth-child(2),
+                &:nth-child(4) {
+                    top: 150px;
+                }
+
+                &:nth-child(1),
+                &:nth-child(3) {
+                    padding-right: 95px;
+                }
+
+                &:nth-child(2),
+                &:nth-child(4) {
+                    padding-right: 40px;
+                }
+            }
+
+            .rect {
+                position: absolute;
+                top: -15px;
+                left: initial;
+                right: 100%;
+                width: 35px;
+                height: 35px;
+                background: $lightGray;
+            }
+
+            .index {
+                position: absolute;
+                z-index: 1;
+                top: -45px;
+                right: 100%;
+                font-family: $Raleway-ExtraBold;
+                font-size: 36px;
+                overflow: hidden;
+
+                span {
+                    display: block;
+                }
             }
         }
     }

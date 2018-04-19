@@ -13,10 +13,7 @@
         @@include('./components/menu.html')
 
         <div class="global-container">
-
-            <div class="internet-marketing">
-
-                <div class="internet-marketing-header">
+                <!-- <div class="marketing-header">
             
                     <div class="big-background-letter">
                         <span>o</span>
@@ -93,10 +90,10 @@
                             <p class="big bold">
                                 Интернет-маркетинг имеет важные <span>преимущества</span>, которые выгодно 
                                 отличают его от классического продвижения товаров в оффлайне.
-                            </p>
+                            </p> -->
 
                             <!-- ------ PART FROM MARKETING-STRATEGY.HTML ------ -->
-                            <h2 class="big bold">
+                            <!-- <h2 class="big bold">
                                 Разработка маркетинговой стратегии
                                 от Clock Creative Lab — поиск и определение уникальных 
                                 ноу-хау решений, определяющих поведение вашего бренда 
@@ -143,9 +140,9 @@
                         </div>
 
                         <div class="container__item container__item--5-5">
-                            <div>
+                            <div> -->
                                 <!-- ------ PART FROM MARKETING-STRATEGY.HTML ------ -->
-                                <span class="container-item-title">
+                                <!-- <span class="container-item-title">
                                     Зачем нужна стратегия в маркетинге? 
                                 </span>
                                 
@@ -174,10 +171,10 @@
                                 Выйти на рынок с помощью интернет-технологий гораздо проще и дешевле, 
                                 чем через традиционные рекламные медиа. Кроме того, сам интернет-маркетинг 
                                 стремительно развивается, а значит, даёт всё больше новых возможностей. 
-                            </p>
+                            </p> -->
 
                             <!-- ------ PART FROM MARKETING-STRATEGY.HTML ------ -->
-                            <h2 class="big bold italic left-bordered">
+                            <!-- <h2 class="big bold italic left-bordered">
                                 Разработанная нашими маркетологами стратегия развития всегда будет гибкой и всегда актуальной
                             </h2>
                         </div>
@@ -249,10 +246,10 @@
                                     универсальных решений нет. Наша компания разрабатывает только 
                                     индивидуальные стратегические решения, взаимосвязанные 
                                     и ведущие к единой цели — реальному росту продаж. 
-                                </p>
+                                </p> -->
 
                                 <!-- ------ PART FROM MARKETING-STRATEGY.HTML ------ -->
-                                <ul class="circled">
+                                <!-- <ul class="circled">
                                     <li>Определения стратегических направлений дальнейшего развития.</li>
                                     <li>Оценки рыночных перспектив вашего бренда или его услуг.</li>
                                     <li>Формирования функциональной и эффективной системы продаж.</li>
@@ -267,25 +264,29 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
-                <div class="internet-marketing-clock">
-                    @@include('./components/clock-bg.html')
+            <div class="marketing-clock">
+                @@include('./components/clock-bg.html')
 
-                    <div class="container">
+                <div class="container">
+                    <div class="lines">
+                        <div class="line line--1 wow slideInDown"></div>
+                        <div class="line line--2 wow slideInDown" data-wow-delay=".3s"></div>
+                        <div class="line line--3 wow slideInDown" data-wow-delay=".6s"></div>
+                        <div class="line line--4 wow slideInDown" data-wow-delay=".9s"></div>
+                    </div>
 
-                        <div class="lines">
-                            <div class="line line--1 wow slideInDown"></div>
-                            <div class="line line--2 wow slideInDown" data-wow-delay=".3s"></div>
-                            <div class="line line--3 wow slideInDown" data-wow-delay=".6s"></div>
-                            <div class="line line--4 wow slideInDown" data-wow-delay=".9s"></div>
-                        </div>
-
+                    <div class="column">
                         <span class="clock-title wow slideInLeft">
-                            <span>Задачи которые решает</span>
+                            Задачи которые решает 
                             интеренет-маркетинг
                         </span>
+                    </div>
 
+                    <div class="column"></div>
+
+                    <div class="column">
                         <ul>
                             <li>
                                 <div class="tick">
@@ -340,8 +341,9 @@
                         </ul>
                     </div>
                 </div>
+            </div>
 
-                <div class="internet-marketing-includes">
+                <div class="marketing-includes">
                     <div class="big-background-letter big-background-letter--c">
                         <span>c</span>
                     </div>
@@ -536,12 +538,11 @@
                     </div>
                 </div>
                 
-                @@include('./components/services-work-examples.html')
+            @@include('./components/services-work-examples.html')
 
-                @@include('./components/services-questions.html')
+            @@include('./components/services-questions.html')
 
-                @@include('./components/services-blog.html')
-            </div>
+            @@include('./components/services-blog.html')
         </div>
     </body>
 </html>
