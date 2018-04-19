@@ -1,0 +1,75 @@
+@import '../../base/variables';
+
+
+/*
+/
+/---- DESKTOP HD ---- */
+@import 'templates/web-production-clock/desktopHD';
+@import 'templates/web-production-header/desktopHD';
+/* ---- DESKTOP HD ---- */
+
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    @import 'templates/web-production-clock/desktopMega';
+    @import 'templates/web-production-header/desktopMega';
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    @import 'templates/web-production-clock/desktop';
+    @import 'templates/web-production-header/desktop';
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    @import 'templates/web-production-clock/tabletLandscape';
+    @import 'templates/web-production-header/tabletLandscape';
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    @import 'templates/web-production-clock/phoneLandscape';
+    @import 'templates/web-production-header/phoneLandscape';
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+}
+/* ---- PHONE PORTRAIT ---- */

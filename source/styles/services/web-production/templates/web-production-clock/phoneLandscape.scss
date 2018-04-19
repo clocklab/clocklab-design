@@ -1,0 +1,51 @@
+.web-production-clock {
+
+    .advantages {
+        padding: 40px 0 20px;
+
+        .advantages-title {
+            font-size: 28px;
+        }
+
+        ul {
+            margin-top: 80px;
+        }
+
+        li {
+            margin-bottom: 50px;
+            padding-left: 30px;
+
+            &:before {
+                top: -5px;
+                left: 0;
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        .index {
+            top: -25px;
+            left: -10px;
+            font-size: 28px;
+        }
+    }
+
+    .info {
+        padding: 50px 0 100px;
+
+        .big {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .jumping-button {
+
+            span {
+                font-size: 12px;
+            }
+        }
+    }
+}

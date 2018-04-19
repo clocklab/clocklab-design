@@ -1,0 +1,52 @@
+.web-production-clock {
+
+    .advantages,
+    .lists {
+        width: 80%;
+    }
+
+    .advantages {
+        display: block;
+        padding: 70px 0 50px;
+
+        .advantages-title,
+        ul {
+            width: 100%;
+        }
+
+        .advantages-title {
+            font-size: 34px;
+
+            span {
+                display: inline;
+            }
+        }
+
+        ul {
+            margin-top: 80px;
+        }
+    }
+
+    .lists {
+        display: block;
+
+        ul {
+            margin-bottom: 50px;
+            width: 100%;
+        }
+
+        .list-title {
+            margin-bottom: 25px;
+        }
+    }
+
+    .info {
+        padding: 120px 0;
+        width: 80%;
+
+        .jumping-button {
+            bottom: 40px;
+            right: 0;
+        }
+    }
+}

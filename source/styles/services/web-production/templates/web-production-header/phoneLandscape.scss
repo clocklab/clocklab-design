@@ -1,0 +1,29 @@
+.web-production-header {
+
+    .new-header {
+        font-size: 32px;
+    }
+
+    .bordered {
+
+        &-left {
+            padding-left: 25px;
+
+            &:before {
+                width: 5px;
+            }
+        }
+    }
+
+    .big {
+        margin: 30px 0;
+    }
+
+    .huge {
+        font-size: 28px;
+    }
+
+    .the-biggest {
+        font-size: 32px;
+    }
+}

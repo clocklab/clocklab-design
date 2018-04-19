@@ -1,90 +1,22 @@
 .web-production-header {
+    padding-top: 100px;
 
     .container {
         padding-right: 50px;
         padding-bottom: 40px;
+        width: 85%;
     }
 
-    header {
+    .header {
+        height: 50vh;
+        min-height: 500px;
         max-height: 900px;
-
-        .image-container {
-            width: 1000px;
-        }
-    }
-
-    .about,
-    .cases,
-    .advantages {
-
-        & > div {
-
-            &:first-child {
-                width: 42%;
-            }
-
-            &:last-child {
-                width: 42%;
-            }
-        }
-    }
-
-    .about {
-
-        & > div {
-
-            &:last-child {
-                width: 57%;
-            }
-        }
-    }
-
-    .description {
-        padding: 125px 20px 0 0;
-
-        & > span {
-            display: block;
-        }
-    }
-
-    .info {
-        top: -150px;
-        padding-top: 40px;
-        padding-left: 80px;
     }
 
     .new-header {
         margin-top: 25px;
-        margin-bottom: 40px;
+        margin-bottom: 0;
         font-size: 40px;
-    }
-
-    article {
-        padding-left: 15%;
-
-        p {
-
-            &.big {
-                margin-bottom: 30px;
-            }
-        }
-    }
-
-    .cases {
-        margin-top: -60px;
-    }
-
-    .list {
-
-        .list-title {
-            margin-bottom: 75px;
-            font-size: 33px;
-            line-height: 35px;
-
-            span {
-                display: block;
-            }
-        }
     }
 
     .images {
@@ -92,51 +24,27 @@
         img {
 
             &:first-child {
-                left: 50px;
-                width: 500px;
-                height: 300px;
+                left: 20%;
+                width: 100%;
+                height: 70%;
             }
 
             &:last-child {
-                top: 150px;
-                width: 300px;
-                height: 400px;
+                height: 350px;
+                transform: translateY(40%);
             }
         }
     }
 
-    .advantages {
-        margin-top: 110px;
+    .row {
+        margin-bottom: 80px;
+    }
 
-        .advantages-title {
-            margin-bottom: 90px;
-            font-size: 42px;
-            line-height: 46px;
+    .column {
 
-            span {
-                display: block;
-            }
-        }
-
-        ul {
-            height: 475px;
-        }
-
-        li {
-            margin-bottom: 50px;
-            width: 45%;
-        }
-
-        &--corporate {
-
-            ul {
-                width: 42%;
-                height: initial;
-            }
-
-            li {
-                width: 100%;
-            }
+        &:nth-of-type(1),
+        &:nth-of-type(2) {
+            width: 42%;
         }
     }
 }
