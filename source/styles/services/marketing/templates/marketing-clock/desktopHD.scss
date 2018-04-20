@@ -5,13 +5,24 @@
     color: $white;
     overflow: hidden;
 
+    .clock-bg {
+
+        .letter-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $lightBlack;
+        }
+    }
+
     .container {
+        display: flex;
+        justify-content: space-between;
         position: relative;
         margin: 0 auto;
         padding: 145px 0;
         width: 81%;
         height: 100%;
-        overflow: hidden;
     }
 
     .lines {
@@ -59,6 +70,10 @@
         line-height: 1.3;
     }
 
+    ul {
+        margin-top: 120px;
+    }
+
     li {
         position: relative;
         margin-bottom: 50px;
@@ -81,9 +96,8 @@
             position: absolute;
             top: 0;
             left: -1px;
-            width: 3px;
+            width: 5px;
             height: 100%;
-            // height: 23px;
 
             span {
                 width: 100%;
