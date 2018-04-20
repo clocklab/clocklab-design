@@ -3,12 +3,6 @@
     position: relative;
     overflow: hidden;
 
-    .language {
-        position: absolute;
-        top: px(1000);
-        z-index: 5;
-    }
-
     .big-bg-letter-o {
 
         .big-background-letter {
@@ -19,13 +13,6 @@
             font-family: $Raleway-ExtraBold;
             font-size: px(2000);
             text-transform: uppercase;
-        }
-        
-        span {
-
-            &:before {
-                content: 'o';
-            }
         }
     }
 
