@@ -1,0 +1,82 @@
+@import '../../base/variables';
+
+
+/*
+/
+/---- DESKTOP HD ---- */
+@import 'templates/marketing-header/desktopHD';
+@import 'templates/marketing-clock/desktopHD';
+@import 'templates/marketing-includes/desktopHD';
+/* ---- DESKTOP HD ---- */
+
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    @import 'templates/marketing-header/desktopMega';
+    @import 'templates/marketing-clock/desktopMega';
+    @import 'templates/marketing-includes/desktopMega';
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    @import 'templates/marketing-header/desktop';
+    @import 'templates/marketing-clock/desktop';
+    @import 'templates/marketing-includes/desktop';
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    @import 'templates/marketing-header/tabletLandscape';
+    @import 'templates/marketing-clock/tabletLandscape';
+    @import 'templates/marketing-includes/tabletLandscape';
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    @import 'templates/marketing-header/phoneLandscape';
+    @import 'templates/marketing-clock/phoneLandscape';
+    @import 'templates/marketing-includes/phoneLandscape';
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+
+}
+/* ---- PHONE PORTRAIT ---- */

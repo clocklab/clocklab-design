@@ -1,0 +1,85 @@
+.marketing-header {
+
+    .big-background-letter--o {
+        font-size: 800px;
+    }
+
+    .header {
+
+        & > img {
+            width: 60%;
+            height: 450px;
+        }
+
+        .image-container {
+            top: 100px;
+            width: 60%;
+            height: 450px;
+        }
+
+        .big-background-letter {
+            top: -135px;
+            left: -300px;
+            width: 420px;
+            height: 520px;
+            font-size: 600px;
+        }
+    }
+
+    .container {
+        padding: 100px 0;
+    }
+
+    .row {
+        margin-top: 80px;
+    }
+
+    .new-header {
+        font-size: 40px;
+    }
+
+
+    /* --- COMMON STYLES FOR CLASSES AND TAGS --- */
+    ul {
+
+        &.circled {
+
+            li {
+                padding-left: 25px;
+            }
+        }
+    }
+
+    li {
+        margin-bottom: 20px;
+        padding-right: 15px;
+    }
+
+    .big {
+        font-size: 22px;
+    }
+
+    .paddinged {
+
+        &-left {
+            padding-left: 25px;
+        }
+
+        &-top {
+            padding-top: 25px;
+        }
+    }
+
+    .bordered {
+
+        &-left {
+            padding-left: 20px;
+            border-left: 5px solid $blue;
+        }
+
+        &-bottom {
+            padding-bottom: 15px;
+        }
+    }
+    /* --- COMMON STYLES FOR CLASSES AND TAGS --- */
+}
