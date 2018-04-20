@@ -1,4 +1,4 @@
-.marketing-inlcudes {
+.marketing-includes {
     background: $white;
     position: relative;
     width: 100%;
@@ -6,9 +6,9 @@
 
     .big-background-letter {
         right: initial;
-        left: -225px;
+        left: -200px;
         top: initial;
-        bottom: -450px;
+        bottom: -250px;
 
         span {
             font-family: $Raleway-ExtraBold;
@@ -18,12 +18,13 @@
     }
 
     .container {
+        display: flex;
+        justify-content: space-between;
         position: relative;
         margin: 0 auto;
-        padding-top: 145px;
+        padding: 145px 0;
         width: 81%;
         height: 100%;
-        overflow: hidden;
     }
 
     .lines {
@@ -39,7 +40,6 @@
             width: 1px;
             height: 100%;
             background: $darkWhite;
-            opacity: .1;
 
             &--1 {
                 left: 0;
@@ -59,11 +59,19 @@
         }
     }
 
+    .column {
+        position: relative;
+        width: calc(100% / 3);
+
+        &.double {
+            width: calc(100% / 3 * 2);
+        }
+    }
+
     .includes-title {
         display: block;
         position: relative;
         z-index: 2;
-        margin-bottom: 100px;
         color: $darkGray;
         font-family: $Raleway-ExtraBold;
         font-size: 48px;
@@ -71,62 +79,16 @@
     }
 
     ul {
+        margin-top: 150px;
         display: flex;
         flex-wrap: wrap;
         font-family: $Roboto-Regular;
-    }
 
-    li {
-        position: relative;
-        margin-bottom: 60px;
-        padding: 0 35px 0 12px;
-        width: 50%;
-        color: $darkGray;
-        font-size: 16px;
-        line-height: 1.4;
-
-        .circle {
-            position: absolute;
-            top: 3px;
-            left: -4px;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: $blue;
-        }
-
-        .list-item-title {
-            display: block;
-            margin-bottom: 15px;
-            font-size: 18px;
-            font-family: $Roboto-Bold;
-            overflow: hidden;
-
-            span {
-                display: block;
-            }
-        }
-
-        .text-container {
-            overflow: hidden;
-        }
-    }
-
-    &--strategy {
-
-        .includes-title {
-            width: 70%;
-        }
-
-        .indexed {
+        &.indexed {
 
             li {
+                margin-bottom: 125px;
                 padding-left: 0;
-
-                &:nth-child(1),
-                &:nth-child(2) {
-                    margin-bottom: 125px;
-                }
 
                 &:nth-child(2),
                 &:nth-child(4) {
@@ -167,6 +129,42 @@
                     display: block;
                 }
             }
+        }
+    }
+
+    li {
+        position: relative;
+        margin-bottom: 60px;
+        padding: 0 35px 0 12px;
+        width: 50%;
+        color: $darkGray;
+        font-size: 16px;
+        line-height: 1.4;
+
+        .circle {
+            position: absolute;
+            top: 8px;
+            left: -4px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: $blue;
+        }
+
+        .list-item-title {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-family: $Roboto-Bold;
+            overflow: hidden;
+
+            span {
+                display: block;
+            }
+        }
+
+        .text-container {
+            overflow: hidden;
         }
     }
 }
