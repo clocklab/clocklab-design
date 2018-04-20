@@ -72,6 +72,7 @@
         display: block;
         position: relative;
         z-index: 2;
+        padding-right: 50px;
         color: $darkGray;
         font-family: $Raleway-ExtraBold;
         font-size: 48px;
@@ -160,6 +161,15 @@
 
             span {
                 display: block;
+            }
+
+            a {
+                color: $darkGray;
+                transition: color $time;
+
+                &:hover {
+                    color: $blue;
+                }
             }
         }
 
