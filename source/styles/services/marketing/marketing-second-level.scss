@@ -4,7 +4,7 @@
 /*
 /
 /---- DESKTOP HD ---- */
-// @import 'templates/marketing-header/desktopHD';
+@import 'templates/marketing-header/desktopHD';
 @import 'templates/marketing-clock/desktopHD';
 @import 'templates/marketing-includes/desktopHD';
 /* ---- DESKTOP HD ---- */
@@ -14,7 +14,7 @@
 /
 /---- DESKTOP MEGA ---- */
 @media (min-width: 1921px) {
-    // @import 'templates/marketing-header/desktopMega';
+    @import 'templates/marketing-header/desktopMega';
     @import 'templates/marketing-clock/desktopMega';
     @import 'templates/marketing-includes/desktopMega';
 }
@@ -34,7 +34,7 @@
 /
 /---- DESKTOP ---- */
 @media (max-width: 1366px) {
-    // @import 'templates/marketing-header/desktop';
+    @import 'templates/marketing-header/desktop';
     @import 'templates/marketing-clock/desktop';
     @import 'templates/marketing-includes/desktop';
 }
@@ -45,6 +45,7 @@
 /
 /---- TABLET LANDSCAPE ---- */
 @media (max-width: 1024px) {
+    @import 'templates/marketing-header/tabletLandscape';
     @import 'templates/marketing-clock/tabletLandscape';
     @import 'templates/marketing-includes/tabletLandscape';
 }
@@ -64,6 +65,7 @@
 /
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
+    @import 'templates/marketing-header/phoneLandscape';
     @import 'templates/marketing-clock/phoneLandscape';
     @import 'templates/marketing-includes/phoneLandscape';
 }
