@@ -1,0 +1,25 @@
+.marketing-advantages {
+
+    .line {
+
+        &--2 {
+            left: 50%;
+        }
+
+        &--3 {
+            left: 100%;
+        }
+
+        &--4 {
+            display: none;
+        }
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .about {
+        padding-left: 0;
+    }
+}
