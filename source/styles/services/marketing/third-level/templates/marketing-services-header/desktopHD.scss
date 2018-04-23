@@ -1,7 +1,6 @@
 .marketing-services-header {
     position: relative;
     padding-top: 120px;
-    width: 100vw;
     background: $white;
     overflow: hidden;
 
@@ -28,33 +27,34 @@
         height: 520px;
     }
 
-    img {
+    .header-image {
         position: absolute;
         top: 0;
         left: 0;
         width: 67%;
         height: 100%;
         object-fit: cover;
-    }
-
-    .sticker {
-        left: 60px;
+        object-position: center;
     }
 
     .title-block {
         position: relative;
         z-index: 2;
         padding: 40px 0 45px 70px;
-        width: 580px;
+        width: 38%;
         background: $white;
+    }
 
-        .title {
-            display: block;
-            margin-top: 40px;
-            font-family: $Raleway-ExtraBold;
-            font-size: 60px;
-            line-height: 1.2;
-            text-transform: uppercase;
-        }
+    .sticker {
+        left: 50px;
+    }
+
+    .title {
+        display: block;
+        margin-top: 40px;
+        font-family: $Raleway-ExtraBold;
+        font-size: 60px;
+        line-height: 1.2;
+        text-transform: uppercase;
     }
 }
