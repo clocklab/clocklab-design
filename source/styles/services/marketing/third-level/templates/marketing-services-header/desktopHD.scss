@@ -1,0 +1,60 @@
+.marketing-services-header {
+    position: relative;
+    padding-top: 120px;
+    width: 100vw;
+    background: $white;
+    overflow: hidden;
+
+    .big-background-letter {
+        top: 100px;
+        right: 50px;
+        font-size: initial;
+        opacity: .8;
+
+        span {
+            color: $darkGray;
+            font-family: $Raleway-ExtraBold;
+            font-size: 260px;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        position: relative;
+        margin: 0 auto;
+        width: 81%;
+        height: 520px;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 67%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .sticker {
+        left: 60px;
+    }
+
+    .title-block {
+        position: relative;
+        z-index: 2;
+        padding: 40px 0 45px 70px;
+        width: 580px;
+        background: $white;
+
+        .title {
+            display: block;
+            margin-top: 40px;
+            font-family: $Raleway-ExtraBold;
+            font-size: 60px;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+    }
+}

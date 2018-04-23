@@ -4,6 +4,8 @@
 /*
 /
 /---- DESKTOP HD ---- */
+@import 'templates/marketing-services-header/desktopHD';
+@import 'templates/marketing-services-content/desktopHD';
 @import 'templates/marketing-advantages/desktopHD';
 @import 'templates/more-marketing-services/desktopHD';
 /* ---- DESKTOP HD ---- */
@@ -13,6 +15,7 @@
 /
 /---- DESKTOP MEGA ---- */
 @media (min-width: 1921px) {
+    @import 'templates/marketing-services-header/desktopMega';
     @import 'templates/marketing-advantages/desktopMega';
 }
 /* ---- DESKTOP MEGA ---- */
