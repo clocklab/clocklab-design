@@ -1,0 +1,51 @@
+.marketing-services-content {
+
+    .container {
+        width: 80%;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .column {
+        width: 100%;
+
+        &.double {
+            width: 100%;
+        }
+
+        &.margined {
+
+            &-left {
+                margin-left: 0;
+
+                &-double {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .paddinged {
+
+        &-top {
+            padding-top: 15px;
+        }
+    }
+
+    img {
+        max-height: initial;
+    }
+
+    ul {
+
+        &.double {
+            display: block;
+
+            li {
+                width: 100%;
+            }
+        }
+    }
+}

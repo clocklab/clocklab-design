@@ -1,0 +1,34 @@
+.marketing-advantages {
+
+    .line {
+
+        &--2 {
+            left: 100%;
+        }
+
+        &--3 {
+            display: none;
+        }
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .about {
+        display: block;
+        margin-top: 90px;
+    }
+
+    .text {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    ul {
+
+        li {
+            width: 100%;
+        }
+    }
+}

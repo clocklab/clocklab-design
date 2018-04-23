@@ -1,0 +1,29 @@
+.more-marketing-services {
+
+    .container {
+        padding: 100px 0 150px;
+    }
+
+    .line {
+
+        &--2 {
+            left: 50%;
+        }
+
+        &--3 {
+            left: 100%;
+        }
+
+        &--4 {
+            display: none;
+        }
+    }
+
+    .more-services-list {
+        margin-top: 70px;
+
+        li {
+            width: 50%;
+        }
+    }
+}
