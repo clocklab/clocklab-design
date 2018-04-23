@@ -1,0 +1,25 @@
+.marketing-services-content {
+
+    .container {
+        padding: 80px 0 120px;
+    }
+
+    .row {
+        margin-top: 100px;
+    }
+
+    .huge {
+        font-size: 30px;
+    }
+
+    .big {
+        font-size: 20px;
+    }
+
+    .bordered {
+
+        &-left {
+            padding-left: 15px;
+        }
+    }
+}

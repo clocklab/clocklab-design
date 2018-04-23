@@ -37,6 +37,7 @@
 /---- DESKTOP ---- */
 @media (max-width: 1366px) {
     @import 'templates/marketing-services-header/desktop';
+    @import 'templates/marketing-services-content/desktop';
     @import 'templates/marketing-advantages/desktop';
     @import 'templates/more-marketing-services/desktop';
 }
@@ -48,6 +49,7 @@
 /---- TABLET LANDSCAPE ---- */
 @media (max-width: 1024px) {
     @import 'templates/marketing-services-header/tabletLandscape';
+    @import 'templates/marketing-services-content/tabletLandscape';
     @import 'templates/marketing-advantages/tabletLandscape';
     @import 'templates/more-marketing-services/tabletLandscape';
 }
@@ -67,6 +69,7 @@
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
     @import 'templates/marketing-services-header/phoneLandscape';
+    @import 'templates/marketing-services-content/phoneLandscape';
     @import 'templates/marketing-advantages/phoneLandscape';
     @import 'templates/more-marketing-services/phoneLandscape';
 }
