@@ -5,14 +5,15 @@
         @@include('./components/head.html')
         <link rel="stylesheet" href="../../../styles/common.css">
         <link rel="stylesheet" href="../../../styles/services/marketing/third-level/marketing-third-level.css">
-        <script src="../../../../scripts/services/fourth-level/fourth-level.min.js" defer></script>
+        <script src="../../../../scripts/common.min.js" defer></script>
+        <script src="../../../../scripts/services/marketing/marketing-third-level.min.js" defer></script>
     </head>
     <body>
         @@include('./components/logo.html')
 
         @@include('./components/menu.html')
 
-        <div class="marketing-services-header">
+        <div class="marketing-services-header" data-top-panel-bg="light">
             <div class="big-background-letter wow fadeIn">
                 <span>C</span>
             </div>
@@ -32,7 +33,7 @@
             </div>
         </div>
 
-        <div class="marketing-services-content">
+        <div class="marketing-services-content" data-top-panel-bg="light">
             <div class="big-background-letter">
                 <span>o</span>
             </div>
@@ -133,7 +134,7 @@
             </div>
         </div>
 
-        <div class="marketing-advantages">
+        <div class="marketing-advantages" data-top-panel-bg="dark">
             @@include('./components/clock-bg.html')
 
             <div class="container">
@@ -202,7 +203,7 @@
             </div>
         </div>
 
-        <div class="marketing-services-content">
+        <div class="marketing-services-content" data-top-panel-bg="light">
             <div class="container">
                 <div class="lines">
                     <div class="line line--1 wow slideInDown"></div>
@@ -290,7 +291,7 @@
 
         @@include('./components/services-work-examples.html')
         
-        <div class="more-marketing-services">
+        <div class="more-marketing-services" data-top-panel-bg="light">
             <div class="container">
                 <div class="lines">
                     <div class="line line--1 wow slideInDown"></div>

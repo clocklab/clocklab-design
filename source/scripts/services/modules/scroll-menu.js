@@ -1,41 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.menu')
-    const logo = document.querySelector('.logo')
-    const blocks = document.querySelectorAll('.global-container > div');
-    const delay = 500
-    const delta = 20
+    const menu = document.querySelector('#menu');
+    const logo = document.querySelector('#logo');
+    const blocks = document.querySelectorAll('[data-top-panel-bg]');
+    const DELAY = 500;
+    const DELTA = 20;
 
     const addClasses = (arr, wantedClass) => {
         arr.forEach(el => {
-            !el.classList.contains(wantedClass) && el.classList.add(wantedClass)
-        })
+            !el.classList.contains(wantedClass) && el.classList.add(wantedClass);
+        });
     }
 
     const removeClasses = (arr, unwantedClass) => {
         arr.forEach(el => {
-            el.classList.contains(unwantedClass) && el.classList.remove(unwantedClass)
+            el.classList.contains(unwantedClass) && el.classList.remove(unwantedClass);
         })
     }
 
     const checkCurrentBlockBackground = () => {
         blocks.forEach(block => {
-            if (block.getBoundingClientRect().top <= delta && block.getBoundingClientRect().bottom >= delta) {
-                const background = getComputedStyle(block).backgroundColor.replace(/rgba?|\(|\)/g, '').split(', ')
+            if (block.getBoundingClientRect().top <= DELTA && block.getBoundingClientRect().bottom >= DELTA) {
+                const background = getComputedStyle(block).backgroundColor.replace(/rgba?|\(|\)/g, '').split(', ');
 
-                background.filter(number => number < 100).length
-                ? removeClasses([logo, menu], 'dark')
-                : addClasses([logo, menu], 'dark')
-            } 
+                block.dataset.topPanelBg === 'light'
+                ? addClasses([logo, menu], 'dark')
+                : removeClasses([logo, menu], 'dark');
+            }
         })
     }
 
-    document.addEventListener('scroll', () => {
-        document.documentElement.scrollTop >= delta || document.body.scrollTop >= delta
+    const changeTopPanel = () => {
+        window.scrollY >= DELTA
         ? addClasses([logo, menu], 'scrolled')
         : removeClasses([logo, menu], 'scrolled')
 
-        checkCurrentBlockBackground()    
-    })
+        checkCurrentBlockBackground()
+    }
+
+    window.addEventListener('scroll', changeTopPanel);
+    window.addEventListener('resize', changeTopPanel);
 
     checkCurrentBlockBackground()
 })
