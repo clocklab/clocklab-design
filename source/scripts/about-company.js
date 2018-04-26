@@ -1,13 +1,14 @@
-//= include ./libraries/jquery.min.js
+//= include ./components/open-form.js
 
-//= include ./libraries/wow.js
-
-//= include ./components/menu.js
-
-//= include ./components/big-background-letter.js
-
-//= include ./services/modules/web-production/web-production-open-form.js
-
-//= include ./services/modules/scroll-menu.js
+//= include ./components/scroll-menu.js
 
 new WOW().init();
+
+$(document).ready(function(){
+    $(".scroll").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1000);
+    });
+});
