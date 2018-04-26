@@ -5,24 +5,22 @@
         @@include('./components/head.html')
         <link rel="stylesheet" href="./../styles/common.css">
         <link rel="stylesheet" href="./../styles/about-company.css">
+        <script src="../scripts/common.min.js" defer></script>
         <script src="../scripts/about-company.min.js" defer></script>
     </head>
     <body>
-            
         @@include('./components/logo.html')
 
         @@include('./components/menu.html')
         
-        <div class="global-container">
-            @@include('./templates/about-company/about-company-header.html')
+        @@include('./templates/about-company/about-company-header.html')
 
-            @@include('./templates/about-company/founders.html')
+        @@include('./templates/about-company/founders.html')
 
-            @@include('./components/long-read.html')
+        @@include('./components/long-read.html')
 
-            @@include('./templates/about-company/work-flow.html')
+        @@include('./templates/about-company/work-flow.html')
 
-            @@include('./templates/about-company/our-clients.html')
-        </div>
+        @@include('./templates/about-company/our-clients.html')
     </body>
 </html>
