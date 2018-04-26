@@ -1,27 +1,12 @@
-var movingAnswers = document.querySelectorAll('.answers .answer');
+//=include ./../../components/questions.js
 
-for (var i = 0; i < movingAnswers.length; i++) {
-    movingAnswers[i].style.left = `${-100 * i}%`;
-}
+//=include ./../../components/open-form.js
 
-
-//= include ./../../libraries/jquery.min.js
-
-//= include ./../../components/menu.js
-
-//= include ./../../libraries/wow.js
-
-//= include ./../../components/clock-bg.js
-
-//= include ./../modules/design/clock-bg.js
-
-//= include ./../modules/design/questions.js
-
-//= include ./../modules/web-production/web-production-open-form.js
-
-//= include ./../../components/big-background-letter.js
-
-//= include ./../modules/scroll-menu.js
-
+//=include ./../../components/scroll-menu.js
 
 new WOW().init();
+
+$('#clock-bg').textshadow({
+    color: 'rgba(0, 0, 0, .05)',
+    textShadow: true
+});
