@@ -7,6 +7,8 @@
 new WOW().init();
 
 $('#clock-bg').textshadow({
-    color: 'rgba(0, 0, 0, .05)',
+    color: $('#clock-bg').hasClass('white')
+        ? 'rgba(0, 0, 0, .05)'
+        : 'rgba(0, 0, 0, 1)',
     textShadow: true
 });
