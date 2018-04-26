@@ -1,8 +1,8 @@
-//=include ./../../components/questions.js
+//=include ./../components/questions.js
 
-//=include ./../../components/open-form.js
+//=include ./../components/open-form.js
 
-//=include ./../../components/scroll-menu.js
+//=include ./../components/scroll-menu.js
 
 new WOW().init();
 
