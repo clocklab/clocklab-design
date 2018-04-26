@@ -1,28 +1,12 @@
-//=include ./../components/menu.js
+//=include ./../components/questions.js
 
-//=include ./modules/make-top-panel-dark.js
+//=include ./../components/open-form.js
 
-//=include ./../libraries/jquery.min.js
-
-//=include ./../libraries/wow.js
-
-//=include ./../libraries/maskinput.js
-
-//=include ./../components/big-background-letter.js
-
-//=include modules/web-production/web-production-questions.js
-
-//=include modules/web-production/web-production-open-form.js
-
-//=include ./modules/scroll-menu.js
+//=include ./../components/scroll-menu.js
 
 new WOW().init();
 
-
-
-
 // complex-time.js
-
 const watch = document.querySelector('.complex .watch'),
       watchSectors = Array.prototype.slice.call(document.querySelectorAll('.watch-sectors .sector')),
       watchTicks = Array.prototype.slice.call(document.querySelectorAll('.watch-ticks .watch__tick')),
