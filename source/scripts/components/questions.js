@@ -2,6 +2,8 @@
     const questions = Array.prototype.slice.call(document.querySelectorAll('.answers .question > button')),
           answers = Array.prototype.slice.call(document.querySelectorAll('.answers .answer'));
     
+    answers.forEach((answer, index) => answer.style.left = `${-100 * index}%`);
+
     questions.forEach(question => {
         question.addEventListener('click', () => {
             if (!question.parentElement.classList.contains('current')) {
@@ -25,6 +27,4 @@
             }
         })
     });
-
-    
-})();    
+})();

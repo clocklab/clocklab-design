@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const background = getComputedStyle(block).backgroundColor.replace(/rgba?|\(|\)/g, '').split(', ');
 
                 block.dataset.topPanelBg === 'light'
-                ? addClasses([logo, menu], 'dark')
-                : removeClasses([logo, menu], 'dark');
+                ? removeClasses([logo, menu], 'dark')
+                : addClasses([logo, menu], 'dark');
             }
         })
     }
