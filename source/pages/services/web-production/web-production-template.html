@@ -5,7 +5,8 @@
         @@include('./components/head.html')
         <link rel="stylesheet" href="../../../styles/common.css">
         <link rel="stylesheet" href="../../../styles/services/web-production/web-production-second-level.css">
-        <script src="../../../scripts/services/web-production/shop.min.js" defer></script>
+        <script src="../../../scripts/common.min.js" defer></script>
+        <script src="../../../scripts/services/web-production/web-production-second-level.min.js" defer></script>
     </head>
     <body>
         @@include('./components/logo.html')
@@ -13,385 +14,381 @@
         @@include('./components/menu.html')
 
         @@include('./components/bread-crumbs.html')
-        
-        <div class="global-container">
 
-            <div class="web-production-header">
-                <div class="big-background-letter big-background-letter--o wow fadeIn">
-                    <span>o</span>
-                </div>
+        <div class="web-production-header" data-top-panel-bg="dark">
+            <div class="big-background-letter big-background-letter--o wow fadeIn">
+                <span>o</span>
+            </div>
 
-                <div class="big-background-letter big-background-letter--c wow fadeIn">
-                    <span>c</span>
-                </div>
+            <div class="big-background-letter big-background-letter--c wow fadeIn">
+                <span>c</span>
+            </div>
 
-                <div class="container">
-                    <header class="header">
-                        <div class="big-background-letter wow fadeIn">
-                            <span>с</span>
+            <div class="container">
+                <header class="header">
+                    <div class="big-background-letter wow fadeIn">
+                        <span>с</span>
+                    </div>
+                    
+                    <img class="header-image" src="../../../images/services/web-production/card/card-header.jpg" alt="shop-header">
+                </header>
+
+                <div class="about">
+                    <div class="row">
+                        <div class="column">
+                            <p class="italic light medium bordered-bottom">
+                                Сайт-визитка — это небольшой сайт, имеющий одну или несколько 
+                                веб-страниц с основной информацией о компании или частном лице.
+                            </p>
                         </div>
-                        
-                        <img class="header-image" src="../../../images/services/web-production/card/card-header.jpg" alt="shop-header">
-                    </header>
 
-                    <div class="about">
-                        <div class="row">
-                            <div class="column">
-                                <p class="italic light medium bordered-bottom">
-                                    Сайт-визитка — это небольшой сайт, имеющий одну или несколько 
-                                    веб-страниц с основной информацией о компании или частном лице.
-                                </p>
-                            </div>
-
-                            <div class="column">
-                                <div class="column-header">
-                                    <div class="sticker">
-                                        <span class="sticker-text">Услуги Web-Production</span>
-                                    </div>
-    
-                                    <h1 class="new-header">Сайт-визитка</h1>
+                        <div class="column">
+                            <div class="column-header">
+                                <div class="sticker">
+                                    <span class="sticker-text">Услуги Web-Production</span>
                                 </div>
 
-                                <h2 class="big black">
-                                    Лаконичный и ёмкий дизайн идеально выполняет основную задачу — 
-                                    дать потенциальной аудитории представление о вас или вашем предложении.                                  
-                                </h2>
-
-                                <p>
-                                    Для этого используется упрощённая структура сайта, без дополнительных 
-                                    программных модулей и элементов. Сайт-визитка сравнительно прост в 
-                                    плане реализации, но достаточно эффективен в главном — 
-                                    <span class="underlined">презентовать вас и ваш бизнес перед целевой аудиторией.</span>
-                                </p>
-
-                                <p>
-                                    Сайт-визитка по подаче и эффективности балансирует между Landing Page 
-                                    и полноценным сайтом. 
-                                </p>
-
-                                <p class="bold">
-                                    Однако Лэндинг и сайт-визитка — это разные вещи. 
-                                </p>
-
-                                <p>
-                                    Landing Page заточен под продажу конкретного товара/услуги, а 
-                                    сайт-визитка — это пусть упрощённая, но всё же форма полноценного 
-                                    сайта, который кроме продаж выполняет и другие важные цели. 
-                                </p>
+                                <h1 class="new-header">Сайт-визитка</h1>
                             </div>
+
+                            <h2 class="big black">
+                                Лаконичный и ёмкий дизайн идеально выполняет основную задачу — 
+                                дать потенциальной аудитории представление о вас или вашем предложении.                                  
+                            </h2>
+
+                            <p>
+                                Для этого используется упрощённая структура сайта, без дополнительных 
+                                программных модулей и элементов. Сайт-визитка сравнительно прост в 
+                                плане реализации, но достаточно эффективен в главном — 
+                                <span class="underlined">презентовать вас и ваш бизнес перед целевой аудиторией.</span>
+                            </p>
+
+                            <p>
+                                Сайт-визитка по подаче и эффективности балансирует между Landing Page 
+                                и полноценным сайтом. 
+                            </p>
+
+                            <p class="bold">
+                                Однако Лэндинг и сайт-визитка — это разные вещи. 
+                            </p>
+
+                            <p>
+                                Landing Page заточен под продажу конкретного товара/услуги, а 
+                                сайт-визитка — это пусть упрощённая, но всё же форма полноценного 
+                                сайта, который кроме продаж выполняет и другие важные цели. 
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">
+                            <p class="huge bold wow fadeInUp">
+                                Отличный способ показать себя, сформировать
+                                <span class="blue">правильный имидж</span> 
+                                и собрать необходимую статистику для планирования 
+                                более долго-срочной стратегии.
+                            </p>
+
+                            <p class="wow fadeInUp">
+                                Создание сайта-визитки — подходящий формат для быстрого 
+                                запуска бизнеса в Интернете. Разработка такого сайта 
+                                обойдётся меньшими затратами в сравнении с традиционным 
+                                веб-сайтом, но при этом вы сможете избежать ограничений, 
+                                присущих лэндингу. 
+                            </p>
+
+                            <p class="bordered-left italic big bold wow fadeInUp">
+                                Готовый сайт-визитка — это компактный полноценный сайт, 
+                                имеющий адаптивный дизайн и удобную CMS, имеющий высокие 
+                                перспективы SEO-продвижения.
+                            </p>
                         </div>
 
-                        <div class="row">
-                            <div class="column">
-                                <p class="huge bold wow fadeInUp">
-                                    Отличный способ показать себя, сформировать
-                                    <span class="blue">правильный имидж</span> 
-                                    и собрать необходимую статистику для планирования 
-                                    более долго-срочной стратегии.
-                                </p>
-
-                                <p class="wow fadeInUp">
-                                    Создание сайта-визитки — подходящий формат для быстрого 
-                                    запуска бизнеса в Интернете. Разработка такого сайта 
-                                    обойдётся меньшими затратами в сравнении с традиционным 
-                                    веб-сайтом, но при этом вы сможете избежать ограничений, 
-                                    присущих лэндингу. 
-                                </p>
-
-                                <p class="bordered-left italic big bold wow fadeInUp">
-                                    Готовый сайт-визитка — это компактный полноценный сайт, 
-                                    имеющий адаптивный дизайн и удобную CMS, имеющий высокие 
-                                    перспективы SEO-продвижения.
-                                </p>
-                            </div>
-
-                            <div class="column">
-                                <div class="images wow fadeInUp">
-                                    <img src="../../../images/services/marketing/marketing-header.jpg" alt="shop-img-1">
-                                    <img src="../../../images/services/web-production/card/card-photo-2.jpg" alt="shop-img-1">
-                                </div>
+                        <div class="column">
+                            <div class="images wow fadeInUp">
+                                <img src="../../../images/services/marketing/marketing-header.jpg" alt="shop-img-1">
+                                <img src="../../../images/services/web-production/card/card-photo-2.jpg" alt="shop-img-1">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="column">
-                                <ul class="indexed">
-                                    <li class="wow fadeInUp">
-                                        <div class="index">01</div>
-                                        <p>
-                                            Сделать акцент на одном товаре или бренде из широкой линейки 
-                                            ваших предложений. Отлично подходит для интернет-магазинов 
-                                            с большим количеством товаров, среди которых появляется 
-                                            особо актуальная позиция. 
-                                        </p>
-                                    </li>
-                                    <li class="wow fadeInUp">
-                                        <div class="index">02</div>
-                                        <p>
-                                            Сделать рекламу для ограниченного ряда услуг. Если вы предлагаете 
-                                            небольшой спектр услуг, например, продаёте только одну категорию 
-                                            товаров или оказываете узкоспециализированные услуги, то в создании 
-                                            полноценного сайта нет необходимости — качественный одностраничный 
-                                            формат сайта (Landing) позволит привлечь достаточное внимание к 
-                                            вашему основному предложению.
-                                        </p>
-                                    </li>
-                                    <li class="wow fadeInUp">
-                                        <div class="index">03</div>
-                                        <p>
-                                            Раскрутить в Интернете предстоящее мероприятие, ивент, конференцию 
-                                            или промо-акцию. Формат лэндинга позволит разместить максимум 
-                                            информации про событие и легко привлечь целевую аудиторию. 
-                                        </p>
-                                    </li>
-                                    <li class="wow fadeInUp">
-                                        <div class="index">04</div>
-                                        <p>
-                                            Для сбора аналитической информации по вашему виду деятельности. 
-                                            Например, вы только планируете заняться новым видом бизнеса и 
-                                            сомневаетесь в спросе на свой товар. С Landing Page Вы легко 
-                                            сможете собрать необходимую статистику по вашей нише и понять 
-                                            степень заинтересованность аудитории в вашем предложении.
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="column">
-                                <ul class="dotted">
-                                    <li>оформление заявки на покупку</li>
-                                    <li>введение контактной информации</li>
-                                    <li>подписка на рассылку</li>
-                                    <li>регистрация на основном сайте</li>
-                                    <li>загрузка приложения</li>
-                                    <li>участие в голосовании или конкурсе</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <ul class="indexed double">
+                    <div class="row">
+                        <div class="column">
+                            <ul class="indexed">
                                 <li class="wow fadeInUp">
                                     <div class="index">01</div>
                                     <p>
-                                        Идеально подходит как для продажи товаров, так и для 
-                                        заказов услуг онлайн;
+                                        Сделать акцент на одном товаре или бренде из широкой линейки 
+                                        ваших предложений. Отлично подходит для интернет-магазинов 
+                                        с большим количеством товаров, среди которых появляется 
+                                        особо актуальная позиция. 
                                     </p>
                                 </li>
                                 <li class="wow fadeInUp">
                                     <div class="index">02</div>
                                     <p>
-                                        Значительная экономия средств на аренде помещений для 
-                                        офлайн-магазина, его содержании;
+                                        Сделать рекламу для ограниченного ряда услуг. Если вы предлагаете 
+                                        небольшой спектр услуг, например, продаёте только одну категорию 
+                                        товаров или оказываете узкоспециализированные услуги, то в создании 
+                                        полноценного сайта нет необходимости — качественный одностраничный 
+                                        формат сайта (Landing) позволит привлечь достаточное внимание к 
+                                        вашему основному предложению.
                                     </p>
                                 </li>
                                 <li class="wow fadeInUp">
                                     <div class="index">03</div>
                                     <p>
-                                        Высокая скорость запуска онлайн-магазина;
+                                        Раскрутить в Интернете предстоящее мероприятие, ивент, конференцию 
+                                        или промо-акцию. Формат лэндинга позволит разместить максимум 
+                                        информации про событие и легко привлечь целевую аудиторию. 
                                     </p>
                                 </li>
                                 <li class="wow fadeInUp">
                                     <div class="index">04</div>
                                     <p>
-                                        Большой охват аудитории (продавать товары/услуги можно по 
-                                        всей стране и даже за рубеж);
-                                    </p>
-                                </li>
-                                <li class="wow fadeInUp">
-                                    <div class="index">05</div>
-                                    <p>
-                                        Круглосуточный доступ к магазину для клиентов 
-                                        (интернет-магазин работает 24 часа в сутки и 7 
-                                        дней в неделю);
-                                    </p> 
-                                </li>
-                                <li class="wow fadeInUp">
-                                    <div class="index">06</div>
-                                    <p>
-                                        Возможность войти в бизнес при сравнительно небольшом 
-                                        бюджете;
-                                    </p>
-                                </li>
-                                <li class="wow fadeInUp">
-                                    <div class="index">07</div>
-                                    <p>
-                                        Невысокая стоимость содержания сайта;
-                                    </p>
-                                </li>
-                                <li class="wow fadeInUp">
-                                    <div class="index">08</div>
-                                    <p>
-                                        Широкий ассортимент товаров;
-                                    </p>
-                                </li>
-                                <li class="wow fadeInUp">
-                                    <div class="index">09</div>
-                                    <p>
-                                        Возможность практически на 100% автоматизировать процесс 
-                                        работы интернет-магазина;
-                                    </p> 
-                                </li>
-                                <li class="wow fadeInUp">
-                                    <div class="index">10</div>
-                                    <p>
-                                        Возможность вести веб-аналитику и делать анализ 
-                                        посещений, постоянно улучшая проект.
+                                        Для сбора аналитической информации по вашему виду деятельности. 
+                                        Например, вы только планируете заняться новым видом бизнеса и 
+                                        сомневаетесь в спросе на свой товар. С Landing Page Вы легко 
+                                        сможете собрать необходимую статистику по вашей нише и понять 
+                                        степень заинтересованность аудитории в вашем предложении.
                                     </p>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="row">
-                            <h2 class="the-biggest extra-bold wow fadeInUp">
-                                Преимущества и недостатки Landing Page
-                            </h2>
+                        <div class="column">
+                            <ul class="dotted">
+                                <li>оформление заявки на покупку</li>
+                                <li>введение контактной информации</li>
+                                <li>подписка на рассылку</li>
+                                <li>регистрация на основном сайте</li>
+                                <li>загрузка приложения</li>
+                                <li>участие в голосовании или конкурсе</li>
+                            </ul>
                         </div>
+                    </div>
+
+                    <div class="row">
+                        <ul class="indexed double">
+                            <li class="wow fadeInUp">
+                                <div class="index">01</div>
+                                <p>
+                                    Идеально подходит как для продажи товаров, так и для 
+                                    заказов услуг онлайн;
+                                </p>
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="index">02</div>
+                                <p>
+                                    Значительная экономия средств на аренде помещений для 
+                                    офлайн-магазина, его содержании;
+                                </p>
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="index">03</div>
+                                <p>
+                                    Высокая скорость запуска онлайн-магазина;
+                                </p>
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="index">04</div>
+                                <p>
+                                    Большой охват аудитории (продавать товары/услуги можно по 
+                                    всей стране и даже за рубеж);
+                                </p>
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="index">05</div>
+                                <p>
+                                    Круглосуточный доступ к магазину для клиентов 
+                                    (интернет-магазин работает 24 часа в сутки и 7 
+                                    дней в неделю);
+                                </p> 
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="index">06</div>
+                                <p>
+                                    Возможность войти в бизнес при сравнительно небольшом 
+                                    бюджете;
+                                </p>
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="index">07</div>
+                                <p>
+                                    Невысокая стоимость содержания сайта;
+                                </p>
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="index">08</div>
+                                <p>
+                                    Широкий ассортимент товаров;
+                                </p>
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="index">09</div>
+                                <p>
+                                    Возможность практически на 100% автоматизировать процесс 
+                                    работы интернет-магазина;
+                                </p> 
+                            </li>
+                            <li class="wow fadeInUp">
+                                <div class="index">10</div>
+                                <p>
+                                    Возможность вести веб-аналитику и делать анализ 
+                                    посещений, постоянно улучшая проект.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <h2 class="the-biggest extra-bold wow fadeInUp">
+                            Преимущества и недостатки Landing Page
+                        </h2>
                     </div>
                 </div>
             </div>
-                
-            <!-- <div class="web-production-clock"> -->
-                <!-- @@include('./components/clock-bg.html') -->
-                
-                <!-- ------ PART FROM CARD.HTML ------ -->
-                <!-- <div class="advantages">
-                    <span class="advantages-title wow fadeInUp">
-                        В каких случаях
-                        <span>сайт визитка</span>
-                        будет оптимальным вариантом для вас?
-                    </span>
-                    <ul>
-                        <li class="wow fadeInUp">
-                            <div class="index">01</div>
-                            <p>
-                                Если вам необходимо эффективное SEO-продвижение 
-                                (которое не обеспечивает Landing Page); 
-                            </p>
-                        </li>
-                        <li class="wow fadeInUp">
-                            <div class="index">02</div>
-                            <p>
-                                При ограниченном бюджете или ассортименте услуг, 
-                                которые делают полноценный сайт нецелесообразным форматом;
-                            </p>
-                        </li>
-                        <li class="wow fadeInUp">
-                            <div class="index">03</div>
-                            <p>
-                                Если вам нужен качественный сайт, способный достойно 
-                                представить компанию, но нет необходимости в большом, 
-                                многоуровневом сайте.
-                            </p>
-                        </li>
-                    </ul>
-                </div> -->
-
-                <!-- ------ PART FROM LANDING.HTML ------ -->
-                <!-- <div class="lists">
-                    <ul>
-                        <span class="list-title">Преимущества</span>
-                        <li class="wow fadeInUp">
-                            Максимально конкретная подача, высокая таргетированность и        
-                            точечная направленность рекламного предложения, позволяющая   
-                            повысить заинтересованность потенциального клиента;
-                        </li>
-                        <li class="wow fadeInUp">
-                            Лёгкость навигации по одностраничному сайту (внимание посетителя 
-                            полностью концентрируется на продукте); 
-                        </li>
-                        <li class="wow fadeInUp">
-                            Высокая оперативность создания сайта и сравнительно низкие   
-                            расходы;
-                        </li>
-                        <li class="wow fadeInUp">
-                            Возможность легко сегментировать и создать базу целевой аудитории.    
-                            Например, подписка на новости, заинтересованность определённым  
-                            товаром и т.д. 
-                        </li>
-                    </ul>
-                    <ul class="gray">
-                        <span class="list-title">Недостатки</span>
-                        <li class="wow fadeInUp">
-                            Landing Page очень тяжело продвигается в органическом поисковом  
-                            трафике, что делает малоэффективным SEO-продвижение; 
-                        </li>
-                        <li class="wow fadeInUp">
-                            Landing Page не пользуется высоким доверием у пользователей: люди 
-                            склонны доверять сайтам с большим количеством товаров и услуг, 
-                            исчерпывающим описанием деятельности компании. 
-                        </li>
-                    </ul>
-                </div> -->
-
-                <!-- ------ PART FROM CORPORATE.HTML ------ -->
-                <!-- <div class="info">
-                    <p class="wow fadeIn">
-                        <span class="blue big">Корпоративный сайт</span>
-                        позволяет не только привлекать 
-                        и активно работать с клиентами, 
-                        но и расширять возможности партнёрства, 
-                        укреплять взаимодействие со СМИ. 
-                    </p>
-                    <p class="wow fadeIn">
-                        Более целесообразно создавать корпоративный 
-                        сайт для компаний, имеющих зрелую бизнес-модель 
-                        и постоянные заказы — в противном случае более 
-                        подходящим форматом будет Landing Page. 
-                    </p>
-                    <div class="jumping-button wow fadeIn">
-                        <a href="landing.html">
-                            <span>У</span>
-                            <span>з</span>
-                            <span>н</span>
-                            <span>а</span>
-                            <span>т</span>
-                            <span class="margined">ь</span>
-                            <span>б</span>
-                            <span>о</span>
-                            <span>л</span>
-                            <span>ь</span>
-                            <span>ш</span>
-                            <span class="margined">е</span>
-                            <span class="margined">о</span>
-                            <span class="blue">l</span>
-                            <span class="blue">a</span>
-                            <span class="blue">n</span>
-                            <span class="blue">d</span>
-                            <span class="blue">i</span>
-                            <span class="blue">n</span>
-                            <span class="blue margined">g</span>
-                            <span class="blue">p</span>
-                            <span class="blue">a</span>
-                            <span class="blue">g</span>
-                            <span class="blue">e</span>
-                        </a>
-                    </div>
-                </div> -->
-
-                <!-- ------ PART FROM LANDING-PAGE.HTML ------ -->
-                <!-- <div class="info">
-                    <p>
-                        Современный интернет-магазин с понятной и 
-                        удобной структурой позволит 
-                        <span class="blue">
-                            в короткие сроки вывести бизнес на новую 
-                            ступень развития.
-                        </span> 
-                        Статистика уверенно подтверждает, что 
-                        интернет-магазины все более интегрируются 
-                        в общественную жизнь и имеют огромные перспективы 
-                        на близкое и далекое будущее.
-                    </p>
-                </div> -->
-            <!-- </div> -->
-
-
-            <!-- @@include('./components/services-work-examples.html') -->
-
-            <!-- @@include('./components/services-questions.html') -->
-
-            <!-- @@include('./components/services-blog.html') -->
         </div>
+                
+        <div class="web-production-clock" data-top-panel-bg="light">
+            @@include('./components/clock-bg.html')
+            
+            <!-- ------ PART FROM CARD.HTML ------ -->
+            <div class="advantages">
+                <span class="advantages-title wow fadeInUp">
+                    В каких случаях
+                    <span>сайт визитка</span>
+                    будет оптимальным вариантом для вас?
+                </span>
+                <ul>
+                    <li class="wow fadeInUp">
+                        <div class="index">01</div>
+                        <p>
+                            Если вам необходимо эффективное SEO-продвижение 
+                            (которое не обеспечивает Landing Page); 
+                        </p>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <div class="index">02</div>
+                        <p>
+                            При ограниченном бюджете или ассортименте услуг, 
+                            которые делают полноценный сайт нецелесообразным форматом;
+                        </p>
+                    </li>
+                    <li class="wow fadeInUp">
+                        <div class="index">03</div>
+                        <p>
+                            Если вам нужен качественный сайт, способный достойно 
+                            представить компанию, но нет необходимости в большом, 
+                            многоуровневом сайте.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ------ PART FROM LANDING.HTML ------ -->
+            <!-- <div class="lists">
+                <ul>
+                    <span class="list-title">Преимущества</span>
+                    <li class="wow fadeInUp">
+                        Максимально конкретная подача, высокая таргетированность и        
+                        точечная направленность рекламного предложения, позволяющая   
+                        повысить заинтересованность потенциального клиента;
+                    </li>
+                    <li class="wow fadeInUp">
+                        Лёгкость навигации по одностраничному сайту (внимание посетителя 
+                        полностью концентрируется на продукте); 
+                    </li>
+                    <li class="wow fadeInUp">
+                        Высокая оперативность создания сайта и сравнительно низкие   
+                        расходы;
+                    </li>
+                    <li class="wow fadeInUp">
+                        Возможность легко сегментировать и создать базу целевой аудитории.    
+                        Например, подписка на новости, заинтересованность определённым  
+                        товаром и т.д. 
+                    </li>
+                </ul>
+                <ul class="gray">
+                    <span class="list-title">Недостатки</span>
+                    <li class="wow fadeInUp">
+                        Landing Page очень тяжело продвигается в органическом поисковом  
+                        трафике, что делает малоэффективным SEO-продвижение; 
+                    </li>
+                    <li class="wow fadeInUp">
+                        Landing Page не пользуется высоким доверием у пользователей: люди 
+                        склонны доверять сайтам с большим количеством товаров и услуг, 
+                        исчерпывающим описанием деятельности компании. 
+                    </li>
+                </ul>
+            </div> -->
+
+            <!-- ------ PART FROM CORPORATE.HTML ------ -->
+            <!-- <div class="info">
+                <p class="wow fadeIn">
+                    <span class="blue big">Корпоративный сайт</span>
+                    позволяет не только привлекать 
+                    и активно работать с клиентами, 
+                    но и расширять возможности партнёрства, 
+                    укреплять взаимодействие со СМИ. 
+                </p>
+                <p class="wow fadeIn">
+                    Более целесообразно создавать корпоративный 
+                    сайт для компаний, имеющих зрелую бизнес-модель 
+                    и постоянные заказы — в противном случае более 
+                    подходящим форматом будет Landing Page. 
+                </p>
+                <div class="jumping-button wow fadeIn">
+                    <a href="landing.html">
+                        <span>У</span>
+                        <span>з</span>
+                        <span>н</span>
+                        <span>а</span>
+                        <span>т</span>
+                        <span class="margined">ь</span>
+                        <span>б</span>
+                        <span>о</span>
+                        <span>л</span>
+                        <span>ь</span>
+                        <span>ш</span>
+                        <span class="margined">е</span>
+                        <span class="margined">о</span>
+                        <span class="blue">l</span>
+                        <span class="blue">a</span>
+                        <span class="blue">n</span>
+                        <span class="blue">d</span>
+                        <span class="blue">i</span>
+                        <span class="blue">n</span>
+                        <span class="blue margined">g</span>
+                        <span class="blue">p</span>
+                        <span class="blue">a</span>
+                        <span class="blue">g</span>
+                        <span class="blue">e</span>
+                    </a>
+                </div>
+            </div> -->
+
+            <!-- ------ PART FROM LANDING-PAGE.HTML ------ -->
+            <!-- <div class="info">
+                <p>
+                    Современный интернет-магазин с понятной и 
+                    удобной структурой позволит 
+                    <span class="blue">
+                        в короткие сроки вывести бизнес на новую 
+                        ступень развития.
+                    </span> 
+                    Статистика уверенно подтверждает, что 
+                    интернет-магазины все более интегрируются 
+                    в общественную жизнь и имеют огромные перспективы 
+                    на близкое и далекое будущее.
+                </p>
+            </div> -->
+        </div>
+
+        @@include('./components/services-work-examples.html')
+
+        @@include('./components/services-questions.html')
+
+        @@include('./components/services-blog.html')
     </body>
 </html>
