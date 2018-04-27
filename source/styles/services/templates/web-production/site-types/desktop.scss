@@ -1,0 +1,34 @@
+.site-types {
+    min-height: 650px;
+
+    .container {
+        width: 80%;
+        min-width: initial;
+    }
+
+    .types-title {
+        margin-top: -200px;
+        padding-right: 25px;
+        font-size: 40px;
+    }
+
+    .new-title {
+        margin-bottom: 15px;
+
+        .text-container {
+
+            &:before {
+                height: 15px;
+            }
+        }
+
+        &-text {
+            font-size: 20px;
+        }
+    }
+
+    .content-text {
+        margin-bottom: 10px;
+        padding-right: 30px;
+    }
+}

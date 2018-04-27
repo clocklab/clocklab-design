@@ -1,0 +1,81 @@
+.work-flow {
+
+    .front-layer,
+    .back-layer {
+        min-height: 650px;
+    }
+
+    .container {
+        width: 88%;
+        min-height: 650px;
+    }
+
+    .result {
+        padding-top: 5vh;
+    }
+
+    .new-title {
+        margin-top: 10px;
+        width: 30%;
+
+        .text-container {
+            margin-bottom: 0;
+
+            &:before {
+                height: 20px;
+            }
+        }
+
+        &-text {
+            font-size: 32px;
+        }
+    }
+
+    .step {
+
+        .index {
+            top: -40px;
+            font-size: 14px;
+
+            span {
+                padding: 0;
+                width: 45px;
+            }
+        }
+
+        .content-title {
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        p {
+            padding-right: 10px;
+            font-size: 12px;
+        }
+    }
+
+    .questions {
+        bottom: 50px;
+
+        .questions-title {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        p {
+            margin-bottom: 25px;
+        }
+
+        .open-form {
+            width: 150px;
+            height: 40px;
+        }
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(25deg) scaleX(.7);
+        }
+    }
+}

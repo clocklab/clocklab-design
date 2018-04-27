@@ -5,8 +5,8 @@
 /
 /---- DESKTOP HD ---- */
 @import 'templates/web-production/we-can/desktopHD';
-// @import 'templates/web-production/site-types/desktopHD';
-// @import 'templates/web-production/work-flow/desktopHD';
+@import 'templates/web-production/site-types/desktopHD';
+@import 'templates/web-production/work-flow/desktopHD';
 /* ---- DESKTOP HD ---- */
 
 
@@ -14,6 +14,7 @@
 /
 /---- DESKTOP MEGA ---- */
 @media (min-width: 1921px) {
+    @import 'templates/web-production/work-flow/desktopMega';
 }
 /* ---- DESKTOP MEGA ---- */
 
@@ -23,6 +24,7 @@
 /---- DESKTOP WIDE ---- */
 @media (max-width: 1680px) {
     @import 'templates/web-production/we-can/desktopWide';
+    @import 'templates/web-production/work-flow/desktopWide';
 }
 /* ---- DESKTOP WIDE ---- */
 
@@ -32,6 +34,8 @@
 /---- DESKTOP ---- */
 @media (max-width: 1366px) {
     @import 'templates/web-production/we-can/desktop';
+    @import 'templates/web-production/site-types/desktop';
+    @import 'templates/web-production/work-flow/desktop';
 }
 /* ---- DESKTOP ---- */
 
@@ -41,6 +45,8 @@
 /---- TABLET LANDSCAPE ---- */
 @media (max-width: 1024px) {
     @import 'templates/web-production/we-can/tabletLandscape';
+    @import 'templates/web-production/site-types/tabletLandscape';
+    @import 'templates/web-production/work-flow/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
@@ -58,6 +64,8 @@
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
     @import 'templates/web-production/we-can/phoneLandscape';
+    @import 'templates/web-production/site-types/phoneLandscape';
+    @import 'templates/web-production/work-flow/phoneLandscape';
 }
 /* ---- PHONE LANDSCAPE ---- */
 

@@ -44,7 +44,7 @@
     .container {
         position: relative;
         margin: 0 auto;
-        width: 79%;
+        width: 80%;
         height: 100vh;
         min-height: 800px;
     }
@@ -52,7 +52,7 @@
     .result {
         position: relative;
         z-index: 3;
-        padding-top: 190px;
+        padding-top: 10vh;
         font-family: $Raleway-Regular;
     }
 
@@ -272,7 +272,7 @@
     &.opened {
 
         .front-layer {
-            transform: rotateY(15deg) scaleX(.85);
+            transform: rotateY(17deg) scaleX(.85);
 
             &:after {
                 z-index: 9999;
