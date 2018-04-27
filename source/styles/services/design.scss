@@ -1,36 +1,67 @@
-// body { overflow: hidden; }
+@import '../base/variables';
 
-// base
-@import "../base/variables";
-@import "../base/mixins";
-// @import "../base/fonts";
-@import "../base/reset";
-@import "../base/common";
-@import "../base/animate";
-@import "../base/animations";
 
-// modules
-@import "../components/modules/small-gray-lines";
+/*
+/
+/---- DESKTOP HD ---- */
+@import 'templates/design/design-header/desktopHD';
+// @import 'templates/design/design-services/desktopHD';
+// @import 'templates/design/design-why-us/desktopHD';
+/* ---- DESKTOP HD ---- */
 
-// components
-@import "../components/form/main";
-@import "../components/top-panel/main";
-@import "../components/long-read/main";
-@import "../components/crossed-button/main";
-@import "../components/jumping-button/main";
-@import "../components/big-background-letter/main";
 
-/* в дальнейшем свести к одному */
-@import "../components/title/main";     
-@import "../components/new-title/main";
-@import "../components/languages/main";
-@import "../components/language/main";
-/* в дальнейшем свести к одному */
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+}
+/* ---- DESKTOP MEGA ---- */
 
-// тут хранится анимация для некоторых элементов
-@import "../templates/index/euro-club/main";
 
-// screens
-@import "templates/design/design-one/main";
-@import "templates/design/design-two/main";
-@import "templates/design/design-three/main";
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+}
+/* ---- PHONE PORTRAIT ---- */

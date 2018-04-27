@@ -1,0 +1,92 @@
+.design-services {
+    position: relative;
+    background: $background;
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    .big-background-letter {
+        top: 10vh;
+        right: -4vh;
+        z-index: 3;
+        font-size: 110vh;
+    }
+
+    .services-schedule {
+        padding-top: 16.5vh;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        max-width: 1170px;
+    }
+
+    .item {
+        position: relative;
+        width: calc(100% / 3);
+
+        &:nth-of-type(1) {
+
+            .name {
+                position: absolute;
+                padding-top: 20vh;
+                color: $white;
+                font-family: $Raleway-ExtraBold;
+                font-size: 52px;
+                opacity: 0;
+            }
+        }
+
+        &.up {
+            margin-bottom: 26vh;
+
+            .services-line {
+                left: 0;
+                width: 1px;
+                top: -16.5vh;
+                height: 100vh;
+                position: absolute;
+                background: $darkGray;
+
+                &.right {
+                    left: initial;
+                    right: 0;
+                }
+            }
+        }
+
+        .crossed-button {
+            left: 0;
+            bottom: -55px;
+            position: absolute;
+            align-items: center;
+            font-family: $Roboto-Medium;
+
+            .st0,
+            .st1 {
+                stroke: $white;
+            }
+
+            span {
+                color: $white;
+                display: block;
+                font-size: 12px;
+
+                &:before {
+                    background: $white;
+                }
+            }
+        }
+
+        &:before {
+            top: -28px;
+            left: -25px;
+            color: #666;
+            font-size: 18px;
+            position: absolute;
+            transform: rotate(-90deg);
+            font-family: $Roboto-Regular;
+        }
+    }
+}
