@@ -1,0 +1,28 @@
+.design-header {
+    min-height: 650px;
+
+    .info-block {
+        padding: 30px 40px 30px 0;
+        min-width: 550px;
+        width: 60%;
+    }
+
+    .sticker {
+        margin-bottom: 15px;
+    }
+
+    .new-title {
+        margin-bottom: 30px;
+
+        .text-container {
+
+            &:before {
+                height: 20px;
+            }
+        }
+
+        &-text {
+            font-size: 40px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.design-services {
+    height: initial;
+    min-height: initial;
+
+    .container {
+        padding: 70px 0;
+        width: 80%;
+        height: initial;
+    }
+
+    .line {
+
+        &:nth-child(2) {
+            left: 50%;
+        }
+
+        &:nth-child(3) {
+            display: none;
+        }
+    }
+
+    .info {
+        display: block;
+    }
+
+    .title {
+        width: 50%;
+    }
+
+    .services {
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    .new-title {
+
+        .text-container {
+
+            &:before {
+                height: 0;
+            }
+        }
+
+        &-text {
+            white-space: initial;
+        }
+    }
+}

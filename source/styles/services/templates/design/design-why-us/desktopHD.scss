@@ -1,181 +1,190 @@
 .design-why-us {
     position: relative;
+    height: 100vh;
+    min-height: 900px;
     background: $white;
     font-family: $Raleway-Regular;
     overflow: hidden;
     transition: perspective $time * 2;
+
+    .front-layer,
+    .back-layer {
+        min-height: 900px;
+    }
 
     .front-layer {
         position: relative;
         z-index: 2;
         width: 100%;
         height: 100vh;
+        background: $white;
+        overflow: hidden;
         transform-origin: 0 50%;
         transform-style: preserve-3d;
         transition: transform $time * 2;
 
-        &:before,
         &:after {
             display: block;
             position: absolute;
+            z-index: -1;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
-            background: $white;
+            height: 100%;
+            background: $black;
             content: '';
-        }
-
-        &:after {
-            z-index: -1;
-            background: rgba(0, 0, 0, .4);
             opacity: 0;
             transition: opacity $time;
         }
+    }
 
-        .big-background-letter {
-            z-index: 3;
-            top: -70vh;
-            left: -3vw;
-            color: rgba(68, 68, 68, .2);
-            font-size: 175vh;
+    .big-background-letter {
+        z-index: 3;
+        top: -500px;
+        left: -220px;
+        color: rgba(68, 68, 68, .2);
+        font-size: 1300px;
+    }
+
+    .container {
+        display: flex;
+        position: relative;
+        margin: 0 auto;
+        width: 1170px;
+        height: 100%;
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .line {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: $darkWhite;
+
+        &--1 {
+            left: calc(100% / 3);
         }
 
-        .container {
-            position: relative;
-            margin: 0 auto;
-            width: 80%;
-            height: 100vh;
-
-            .title {
-                margin-top: 165px;
-            }
-
-            .result {
-                position: relative;
-                z-index: 3;
-                padding-top: 130px;
-            }
+        &--2 {
+            left: calc(100% / 3 * 2);
         }
 
-        .lines {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
+        &--3 {
+            left: 100%;
+        }
+    }
+
+    .result {
+        position: relative;
+        left: -200px;
+        z-index: 3;
+        padding-top: 250px;
+        width: calc(100% / 3);
+    }
+
+    .sticker {
+        margin-bottom: 30px;
+    }
+
+    .new-title {
+
+        .text-container {
+            display: inline-block;
         }
 
-        .line {
-            position: absolute;
-            top: 0;
-            width: 1px;
-            height: 100vh;
-            background: $darkWhite;
-
-            &--1 {
-                left: 40%;
-            }
-
-            &--2 {
-                left: 60%;
-            }
-
-            &--3 {
-                left: 80%;
-            }
-        }
-
-        .steps {
-            display: flex;
-            align-items: flex-end;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            z-index: 1;
-            padding-bottom: 115px;
-            width: 100%;
-            height: 100vh;
-        }
-
-        .step {
-            position: relative;
-            z-index: 2;
-            width: 30%;
+        &-text {
             color: $darkGray;
-            font-family: $Roboto-Regular;
-
-            &:before {
-                display: block;
-                position: absolute;
-                top: -22px;
-                left: -4px;
-                width: 8px;
-                height: 8px;
-                background: $blue;
-                border-radius: 50%;
-                content: '';
-            }
-
-            &:nth-child(1) {
-                bottom: 58vh;
-                left: 40%;
-            }
-
-            &:nth-child(2) {
-                bottom: 8vh;
-                left: 10%;
-            }
-
-            &:nth-child(3) {
-                bottom: 35vh;
-                left: 0;
-            }
         }
+    }
 
-        .index {
+    .steps {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 100px 0 150px;
+        width: calc(100% / 3 * 2);
+        height: 100%;
+    }
+
+    .step {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 50px;
+        width: 66%;
+        color: $darkGray;
+        font-family: $Roboto-Regular;
+
+        &:before {
+            display: block;
             position: absolute;
-            top: -55px;
-            right: 100%;
-            color: $gray;
-            font-size: 18px;
-            text-transform: lowercase;
-            overflow: hidden;
-
-            span {
-                display: block;
-                width: 37px;
-            }
+            top: -22px;
+            left: -4px;
+            width: 8px;
+            height: 8px;
+            background: $blue;
+            border-radius: 50%;
+            content: '';
         }
 
-        .content {
-            overflow: hidden;
+        &:nth-child(2) {
+            margin-left: 50%;
+        }
 
-            .content-title {
-                display: block;
-                font-family: $Raleway-Bold;
-                text-transform: uppercase;
-                margin-bottom: 12px;
-                font-size: 24px;
-            }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 
-            p {
-                padding-right: 20px;
-                font-size: 14px;
-                line-height: 1.4;
-            }
+    .index {
+        position: absolute;
+        top: -55px;
+        right: 100%;
+        color: $gray;
+        font-size: 18px;
+        text-transform: lowercase;
+        overflow: hidden;
+
+        span {
+            display: block;
+            width: 37px;
+        }
+    }
+
+    .content {
+        overflow: hidden;
+
+        .content-title {
+            display: block;
+            font-family: $Raleway-Bold;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            font-size: 24px;
+        }
+
+        p {
+            padding-right: 20px;
+            font-size: 14px;
+            line-height: 1.4;
         }
     }
 
     .questions {
         position: absolute;
         bottom: 8.5vh;
-        right: 0;
+        left: 100%;
         z-index: 3;
         width: 20%;
         overflow: hidden;
 
-        .questions-title {
+        &-title {
             display: block;
             margin-bottom: 17px;
             color: $darkGray;
@@ -225,29 +234,14 @@
         width: 100%;
     }
 
-    &:before,
-    &:after {
-        background: $white;
-        position: absolute;
-        display: block;
-        content: '';
-        left: 0;
-        top: 0;
-        width: 50%;
-        height: 100vh;
-    }
-
-    &:after {
-        left: 50%;
-    }
-
     &.opened {
+
         .front-layer {
             transform: rotateY(30deg);
 
             &:after {
                 z-index: 9999;
-                opacity: 1;
+                opacity: .4;
             }
         }
     }

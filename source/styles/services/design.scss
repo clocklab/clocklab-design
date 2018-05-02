@@ -5,8 +5,8 @@
 /
 /---- DESKTOP HD ---- */
 @import 'templates/design/design-header/desktopHD';
-// @import 'templates/design/design-services/desktopHD';
-// @import 'templates/design/design-why-us/desktopHD';
+@import 'templates/design/design-services/desktopHD';
+@import 'templates/design/design-why-us/desktopHD';
 /* ---- DESKTOP HD ---- */
 
 
@@ -14,6 +14,7 @@
 /
 /---- DESKTOP MEGA ---- */
 @media (min-width: 1921px) {
+    @import 'templates/design/design-why-us/desktopMega';
 }
 /* ---- DESKTOP MEGA ---- */
 
@@ -22,6 +23,9 @@
 /
 /---- DESKTOP WIDE ---- */
 @media (max-width: 1680px) {
+    @import 'templates/design/design-header/desktopWide';
+    @import 'templates/design/design-services/desktopWide';
+    @import 'templates/design/design-why-us/desktopWide';
 }
 /* ---- DESKTOP WIDE ---- */
 
@@ -30,6 +34,9 @@
 /
 /---- DESKTOP ---- */
 @media (max-width: 1366px) {
+    @import 'templates/design/design-header/desktop';
+    @import 'templates/design/design-services/desktop';
+    @import 'templates/design/design-why-us/desktop';
 }
 /* ---- DESKTOP ---- */
 
@@ -38,6 +45,9 @@
 /
 /---- TABLET LANDSCAPE ---- */
 @media (max-width: 1024px) {
+    @import 'templates/design/design-header/tabletLandscape';
+    @import 'templates/design/design-services/tabletLandscape';
+    @import 'templates/design/design-why-us/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
@@ -54,6 +64,9 @@
 /
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
+    @import 'templates/design/design-header/phoneLandscape';
+    @import 'templates/design/design-services/phoneLandscape';
+    @import 'templates/design/design-why-us/phoneLandscape';
 }
 /* ---- PHONE LANDSCAPE ---- */
 
