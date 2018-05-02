@@ -1,22 +1,23 @@
-<div class="marketing-brand">
+<div class="marketing-brand" data-top-panel-bg="dark">
     <div class="front-layer">
-        
         <div class="container">
-            
-            <div class="development">
-                @@include('./components/sticker.html')
-                
-                <span class="marketing-brand-title">
-                    <span>Как мы</span>
-                    <span class="blue">работаем</span>
-                    <span>над проектом?</span>
-                </span>
-            </div>
-
             <div class="lines">
                 <div class="line line--1"></div>
                 <div class="line line--2"></div>
                 <div class="line line--3"></div>
+            </div>
+
+            <div class="development">
+                <div class="sticker">
+                    <span class="sticker-text">Услуги маркетинга</span>
+                </div>
+                
+                <span class="marketing-brand-title">
+                    Как мы
+                    <span class="blue">работаем</span>
+                    над
+                    <span>проектом?</span>
+                </span>
             </div>
 
             <div class="steps">
@@ -26,7 +27,7 @@
                     </div>
                     <div class="content">
                         <span class="content-title">Разработка стратегии продвижения бренда</span>
-                        <p>
+                        <p class="content-text">
                             Мы проводим тщательную маркетинговую диагностику 
                             бизнеса: находя проблемные точки и, с другой стороны, 
                             преимущества бизнеса, выстраиваем чёткую схему развития 
@@ -43,7 +44,7 @@
                     </div>
                     <div class="content">
                         <span class="content-title">Планирование бюджета, составление сметы и оценка эффективности</span>
-                        <p>
+                        <p class="content-text">
                             Планируем затраты на реализацию маркетинговой стратегии, 
                             определяем ключевые показатели эффективности, по которым 
                             в дальнейшем будет оцениваться успех проекта.                                
@@ -56,7 +57,7 @@
                     </div>
                     <div class="content">
                         <span class="content-title">Создание плана мероприятий по реализации маркетинговой стратегии</span>
-                        <p>
+                        <p class="content-text">
                             Самая превосходная маркетинговая стратегия ничего не будет 
                             стоить, если не будут применены необходимые меры по её реализации — 
                             рекламные кампании, PR-акции, ивенты. Именно в результате 
@@ -71,7 +72,7 @@
                     </div>
                     <div class="content">
                         <span class="content-title">Контроль реализации маркетинговой стратегии</span>
-                        <p>
+                        <p class="content-text">
                             На этапе реализации строго контролируется выполнение всех 
                             пунктов программы. Осуществляется мониторинг качества и 
                             точности проведения запланированных мероприятий.                                
@@ -89,13 +90,10 @@
                     </button>
                 </div>
             </div>
-
         </div>
-
     </div>
     
     <div class="back-layer">
-        @@include('./components/big-background-letter.html')
         @@include('./components/form.html')
     </div>
 </div>

@@ -1,0 +1,48 @@
+.marketing-services {
+
+    .container {
+        padding: 50px 0;
+        width: 84%;
+    }
+
+    .line {
+
+        &--2 {
+            left: 30%;
+        }
+
+        &--3 {
+            left: 65%;
+        }
+    }
+
+    .marketing-services-title {
+        padding-right: 0;
+        width: 30%;
+        font-size: 36px;
+    }
+
+    .types {
+        width: 70%;
+    }
+
+    .new-title {
+        margin-bottom: 20px;
+
+        .text-container {
+
+            &:before {
+                height: 16px;
+            }
+        }
+
+        &-text {
+            font-size: 22px;
+        }
+    }
+
+    .content-text {
+        margin-bottom: 30px;
+        padding-right: 20px;
+    }
+}

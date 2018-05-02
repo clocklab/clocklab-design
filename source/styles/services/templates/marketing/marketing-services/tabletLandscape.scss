@@ -1,0 +1,28 @@
+.marketing-services {
+
+    .container {
+        display: block;
+        min-height: initial;
+    }
+
+    .line {
+
+        &--2 {
+            left: 50%;
+        }
+
+        &--3 {
+            display: none;
+        }
+    }
+
+    .marketing-services-title {
+        top: initial;
+        width: 50%;
+    }
+
+    .types {
+        margin-top: 70px;
+        width: 100%;
+    }
+}

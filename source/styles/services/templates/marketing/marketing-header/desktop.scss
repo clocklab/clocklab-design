@@ -1,0 +1,27 @@
+.marketing-header {
+    min-height: 650px;
+
+    .container {
+        padding: calc(4% + 100px) 0 4% 50px;
+    }
+
+    .info {
+        width: 60%;
+    }
+
+    .sticker {
+        top: initial;
+    }
+
+    .new-header {
+        top: initial;
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 42px;
+    }
+
+    article {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+}

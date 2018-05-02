@@ -1,0 +1,56 @@
+.marketing-brand {
+
+    .front-layer,
+    .back-layer {
+        height: initial;
+        min-height: initial;
+    }
+
+    .back-layer {
+        height: 100%;
+    }
+
+    .container {
+        align-items: flex-start;
+        padding: 80px 0 50px;
+        width: 84%;
+    }
+
+    .line {
+
+        &--2 {
+            left: 30%;
+        }
+
+        &--3 {
+            left: 65%;
+        }
+    }
+
+    .development {
+        top: initial;
+        width: 30%;
+    }
+
+    .marketing-brand-title {
+        font-size: 40px;
+    }
+
+    .steps {
+        width: 70%;
+    }
+
+    .questions {
+
+        .questions-title {
+            font-size: 20px;
+        }
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(25deg) scaleX(.7);
+        }
+    }
+}

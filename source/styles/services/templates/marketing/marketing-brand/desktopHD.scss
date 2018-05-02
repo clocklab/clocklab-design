@@ -1,7 +1,6 @@
 .marketing-brand {
+
     position: relative;
-    width: 100vw;
-    height: 100vh;
     background: $white;
 
     .front-layer,
@@ -43,33 +42,9 @@
         align-items: center;
         position: relative;
         margin: 0 auto;
-        width: 79%;
-        height: 100vh;
-        min-height: 900px;
-    }
-
-    .development {
-        position: relative;
-        top: -18vh;
-        z-index: 3;
-        font-family: $Raleway-Regular;
-    }
-
-    .marketing-brand-title {
-        display: block;
-        margin-top: 30px;
-        width: 600px;
-        font-family: $Raleway-ExtraBold;
-        font-size: 72px;
-        overflow: hidden;
-
-        span {
-            display: block;
-
-            &.blue {
-                color: $blue;
-            }
-        }
+        padding: 50px 0;
+        width: 75%;
+        height: 100%;
     }
 
     .lines {
@@ -77,15 +52,14 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
-        overflow: hidden;
+        height: 100%;
     }
 
     .line {
         position: absolute;
         top: 0;
         width: 1px;
-        height: 100vh;
+        height: 100%;
         background: $darkWhite;
 
         &--1 {
@@ -93,11 +67,33 @@
         }
 
         &--2 {
-            left: 600px;
+            left: 36%;
         }
 
         &--3 {
-            left: 1060px;
+            left: 68%;
+        }
+    }
+
+    .development {
+        position: relative;
+        top: -200px;
+        z-index: 3;
+        width: 36%;
+        font-family: $Raleway-Regular;
+    }
+
+    .marketing-brand-title {
+        display: block;
+        margin-top: 30px;
+        padding-right: 50px;
+        width: 100%;
+        font-family: $Raleway-ExtraBold;
+        font-size: 72px;
+        overflow: hidden;
+
+        .blue {
+            color: $blue;
         }
     }
 
@@ -105,51 +101,50 @@
         display: flex;
         flex-wrap: wrap;
         position: relative;
-        top: 3vh;
         z-index: 1;
-        width: 1060px;
+        width: 64%;
     }
 
     .step {
         position: relative;
         z-index: 2;
         margin-bottom: 50px;
-        padding-right: 125px;
         width: 50%;
         color: $darkGray;
         font-family: $Roboto-Regular;
+    }
 
-        .index {
-            position: absolute;
-            top: -20px;
-            left: -20px;
-            color: $gray;
-            font-family: $Roboto-Regular;
-            font-size: 16px;
-            transform: rotate(-90deg);
-            overflow: hidden;
+    .index {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        color: $gray;
+        font-family: $Roboto-Regular;
+        font-size: 16px;
+        transform: rotate(-90deg);
+        overflow: hidden;
 
-            span {
-                display: block;
-            }
-        }
-
-        .content {
-            overflow: hidden;
-        }
-
-        .content-title {
+        span {
             display: block;
-            margin-bottom: 12px;
-            font-family: $Raleway-Bold;
-            font-size: 24px;
         }
+    }
 
-        p {
-            padding-right: 20px;
-            font-size: 14px;
-            line-height: 1.4;
-        }
+    .content {
+        overflow: hidden;
+    }
+
+    .content-title {
+        display: block;
+        padding-right: 80px;
+        margin-bottom: 12px;
+        font-family: $Raleway-Bold;
+        font-size: 24px;
+    }
+
+    .content-text {
+        padding-right: 20px;
+        font-size: 14px;
+        line-height: 1.4;
     }
 
     .questions {
@@ -231,10 +226,14 @@
         background: $black;
     }
 
+    .form {
+        width: 20%;
+    }
+
     &.opened {
 
         .front-layer {
-            transform: rotateY(30deg);
+            transform: rotateY(15deg) scaleX(.85);
 
             &:after {
                 z-index: 9999;
