@@ -1,0 +1,136 @@
+.design-services {
+    position: relative;
+    height: 100vh;
+    min-height: 900px;
+    background: $lightBlack;
+    font-family: $Raleway-Regular;
+    overflow: hidden;
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        width: 1170px;
+        height: 100%;
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        background: $darkGray;
+
+        &:nth-child(2) {
+            left: calc(100% / 3);
+        }
+
+        &:nth-child(3) {
+            left: calc(100% / 3 * 2);
+        }
+
+        &:nth-child(4) {
+            left: 100%;
+        }
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+    }
+
+    .title {
+        width: calc(100% / 3);
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: 50px;
+
+        .blue {
+            display: block;
+            color: $blue;
+        }
+    }
+
+    .services {
+        width: calc(100% / 3 * 2 - 1px);
+    }
+
+    .service {
+        position: relative;
+        width: 50%;
+
+        &:nth-child(2) {
+            margin-top: 200px;
+            margin-left: 50%;
+        }
+    }
+
+    .index {
+        position: absolute;
+        top: -25px;
+        left: -25px;
+        color: $darkGray;
+        font-family: $Roboto-Regular;
+        font-size: 18px;
+        transform: rotate(-90deg);
+    }
+
+    .new-title {
+
+        .text-container {
+
+            &:before {
+                height: 20px;
+            }
+        }
+
+        &-text {
+            color: $white;
+            font-family: $Raleway-Medium;
+            font-size: 26px;
+        }
+    }
+
+    .service-text {
+        margin-top: 30px;
+        padding-right: 30px;
+        color: $white;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .crossed-button {
+        display: inline-flex;
+        position: initial;
+        margin-top: 40px;
+
+        span {
+            color: $white;
+
+            &:before {
+                background: $white;
+            }
+        }
+
+        .arrow {
+
+            .st1,
+            .st0 {
+                stroke: $white;
+            }
+        }
+    }
+}

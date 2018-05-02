@@ -1,0 +1,23 @@
+.design-header {
+    display: block;
+    padding-top: 100px;
+    min-height: initial;
+    height: initial;
+
+    .image-block {
+        position: relative;
+        top: initial;
+        right: initial;
+        margin-bottom: 30px;
+        width: 100%;
+        height: initial;
+        min-height: initial;
+    }
+
+    .info-block {
+        padding-right: 0;
+        width: 100%;
+        min-width: initial;
+        background: initial;
+    }
+}

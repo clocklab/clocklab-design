@@ -1,0 +1,27 @@
+.design-header {
+    padding-top: 70px;
+
+    .image-block {
+        margin-bottom: 0;
+    }
+
+    .sticker {
+        margin-bottom: 10px;
+    }
+
+    .new-title {
+        margin-bottom: 20px;
+
+        .text-container {
+
+            &:before {
+                height: 0;
+            }
+        }
+
+        &-text {
+            font-size: 30px;
+            white-space: initial;
+        }
+    }
+}

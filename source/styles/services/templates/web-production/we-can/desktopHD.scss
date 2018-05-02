@@ -1,0 +1,102 @@
+.we-can {
+    position: relative;
+    background: $white;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        padding: 100px 0 100px 75px;
+        width: 80%;
+        min-height: 100vh;
+    }
+
+    .images {
+        position: relative;
+        width: 40%;
+    }
+
+    .image-container {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            display: block;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $darkGray;
+            content: '';
+        }
+
+        &--1 {
+            width: 100%;
+            height: 475px;
+
+            &:after {
+                display: block;
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                right: 0;
+                width: 70px;
+                height: 170px;
+                background: $white;
+                content: '';
+            }
+        }
+
+        &--2 {
+            position: absolute;
+            bottom: -130px;
+            right: -100px;
+            width: 410px;
+            height: 220px;
+        }
+    }
+
+    .info {
+        position: relative;
+        width: 60%;
+    }
+
+    .new-header {
+        margin: 40px 0;
+        font-family: $Raleway-ExtraBold;
+        font-size: 55px;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    article {
+        padding-left: 165px;
+    }
+
+    p,
+    h2,
+    h3 {
+        margin-bottom: 25px;
+        font-family: $Roboto-Regular;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .bigger {
+        font-size: 20px;
+    }
+}
