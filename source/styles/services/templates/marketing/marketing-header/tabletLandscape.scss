@@ -1,0 +1,28 @@
+.marketing-header {
+    height: initial;
+    min-height: initial;
+
+    .container {
+        display: block;
+        padding: 120px 0 80px;
+    }
+
+    .info {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    article {
+        padding-right: 0;
+        background: initial;
+    }
+
+    .image-container {
+        position: relative;
+        top: initial;
+        right: initial;
+        width: 100%;
+        max-height: 400px;
+        font-size: 0;
+    }
+}

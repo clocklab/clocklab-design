@@ -1,0 +1,50 @@
+.marketing-brand {
+
+    .line {
+
+        &--2 {
+            display: none;
+        }
+    }
+
+    .development {
+        width: 100%;
+    }
+
+    .marketing-brand-title {
+        padding-right: 0;
+        font-size: 32px;
+    }
+
+    .steps {
+        display: block;
+    }
+
+    .step {
+        width: 100%;
+    }
+
+    .questions {
+        width: 100%;
+
+        p {
+            padding-right: 0;
+        }
+    }
+
+    .back-layer {
+        padding-right: 0;
+    }
+
+    .form {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(120deg) scaleX(1);
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.marketing-brand {
+
+    .container {
+        display: block;
+    }
+
+    .line {
+
+        &--2 {
+            left: 50%;
+        }
+
+        &--3 {
+            left: 100%;
+        }
+    }
+
+    .development {
+        width: 50%;
+    }
+
+    .steps {
+        margin-top: 70px;
+        width: 100%;
+    }
+
+    .form {
+        width: 35%;
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(25deg) scaleX(.65);
+        }
+    }
+}

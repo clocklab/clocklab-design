@@ -1,0 +1,9 @@
+.marketing-brand {
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(10deg) scaleX(.85);
+        }
+    }
+}
