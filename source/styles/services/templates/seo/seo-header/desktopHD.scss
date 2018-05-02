@@ -1,7 +1,8 @@
 .seo-header {
     position: relative;
-    background: $darkGray;
+    background: $lightBlack;
     font-family: $Raleway-Regular;
+    min-height: 100vh;
     overflow: hidden;
 
     @keyframes fadeInThree {
