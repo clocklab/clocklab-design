@@ -1,0 +1,18 @@
+.seo-order {
+    min-height: 750px;
+
+    .container {
+        padding-top: 100px;
+    }
+
+    .title {
+        margin-top: 60px;
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(20deg) scaleX(.7);
+        }
+    }
+}

@@ -1,10 +1,9 @@
-.seo-one {
+.seo-header {
     position: relative;
-    left: 0;
-    z-index: 1;
-    min-height: auto;
-    background: $background;
+    background: $lightBlack;
     font-family: $Raleway-Regular;
+    height: 100vh;
+    min-height: 900px;
     overflow: hidden;
 
     @keyframes fadeInThree {
@@ -45,22 +44,18 @@
     .graph {
         position: absolute;
         bottom: 0;
-        z-index: -1;
+        left: 0;
         margin-bottom: -8vh;
 
         .st0 {
-            animation: line 5s 2.5s both;
+            // animation: line 5s 2.5s both;
             stroke-dasharray: 4444;
             stroke-miterlimit: 10;
             stroke-linecap: round;
             stroke: url(#SVGID_1_);
-            visibility: hidden;
+            // visibility: hidden;
             stroke-width: 7;
             fill: none;
-        }
-
-        .st1 {
-            opacity: .6;
         }
 
         .st2 {
@@ -95,17 +90,20 @@
         }
     }
 
-    .container {
-        position: relative;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 1170px;
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 60%;
+        height: 100%;
+        transform: translateX(-50%);
     }
 
     .line {
         position: absolute;
+        z-index: 2;
         width: 1px;
-        height: 100vh;
+        height: 100%;
         background: rgba(102, 102, 102, .5);
 
         &--1 {
@@ -125,77 +123,52 @@
         }
     }
 
-    .title {
-        position: absolute;
-        top: 34vh;
-        left: 660px;
-        margin: 22vh 0 0 40vh;
-
-        &.padding {
-
-            p {
-                width: 750px;
-                padding: 35px 0 0 160px;
-            }
-        }
-    }
-
-    .crossed-button {
-        position: absolute;
-        left: 154px;
-        bottom: -54px;
-        align-items: center;
-        font-family: $Roboto-Medium;
-
-        .st0,
-        .st1 {
-            stroke: $white;
-        }
-
-        span {
-            display: block;
-            color: $white;
-            font-family: $Raleway-Bold;
-            font-size: 13px;
-            animation: fadeInRight $BPostLinkAnimationTime $BPostLinkDelayTime both;
-
-            &:before {
-                background: $white;
-            }
-        }
-    }
-
-    .image-block {
+    .container {
+        display: flex;
+        align-items: flex-end;
         position: relative;
-        z-index: 3;
-        margin-top: 241px;
-        margin-left: 200px;
-        width: 712px;
-        height: 550px;
+        z-index: 2;
+        padding: 13% 5% 15% 10%;
+        width: 100%;
+        height: 100%;
     }
 
     .image-container {
-        position: relative;
+        align-self: center;
         width: 100%;
         height: 100%;
         overflow: hidden;
+        // box-shadow: 0 0 5px 5px $black;
 
         img {
             position: relative;
             z-index: 1;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            object-position: center;
         }
+    }
 
-        &:before {
-            position: absolute;
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-            background: $darkGray;
-            content: '';
-            transform: translate3d(-90%, 90%, 0);
+    .info {
+        margin-left: 150px;
+        padding-bottom: 20px;
+
+        &-text {
+            margin-top: 40px;
+            padding-left: 150px;
+            color: $white;
+            font-family: $Roboto-Regular;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    }
+
+    .new-title {
+        margin-top: 30px;
+
+        &-text {
+            color: $white;
         }
     }
 }
