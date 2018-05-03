@@ -1,0 +1,26 @@
+.seo-header {
+    height: initial;
+    min-height: initial;
+
+    .container {
+        display: block;
+        margin: 0 auto;
+        padding: 120px 0 80px;
+        width: 80%;
+    }
+
+    .image-container {
+        width: 100%;
+
+        img {
+            max-height: 300px;
+            object-fit: cover;
+        }
+    }
+
+    .info {
+        margin-top: 50px;
+        margin-left: 0;
+        width: 100%;
+    }
+}
