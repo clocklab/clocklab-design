@@ -1,0 +1,219 @@
+.complex-header {
+    position: relative;
+    background: $white;
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        padding: 120px 0 225px;
+        width: 81%;
+    }
+
+    .header {
+        position: relative;
+        height: 860px;
+
+        .big-background-letter {
+            top: initial;
+            right: initial;
+            bottom: -100px;
+            left: -75px;
+            font-size: 260px;
+
+            span {
+                color: $darkGray;
+                font-family: $Raleway-ExtraBold;
+            }
+        }
+
+        &-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 1035px;
+            height: 735px;
+            object-fit: cover;
+        }
+
+        .column {
+            position: relative;
+            z-index: 2;
+            padding: 55px 0 30px 6.5%;
+            width: 62%;
+            background: $white;
+        }
+
+        .sticker {
+            margin-bottom: 20px;
+        }
+
+        .new-header {
+            color: $black;
+            font-family: $Raleway-ExtraBold;
+            font-size: 60px;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+    }
+
+    .about {
+
+        .big-background-letter {
+            font-family: $Raleway-ExtraBold;
+            font-size: 1000px;
+
+            &--o {
+                top: 35%;
+                right: initial;
+                left: 250px;
+            }
+
+            &--c {
+                top: initial;
+                right: initial;
+                bottom: 0;
+                left: -100px;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    p {
+        margin-bottom: 30px;
+        color: $darkGray;
+        font-family: $Roboto-Regular;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    li {
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 30px;
+        color: $darkGray;
+        font-family: $Roboto-Regular;
+    }
+
+    ul {
+        margin-bottom: 40px;
+
+        &.circled {
+
+            li {
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: -4px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: $blue;
+                    content: '';
+                }
+            }
+        }
+
+        &.indexed {
+
+            li {
+                margin-bottom: 90px;
+
+                .index {
+                    display: block;
+                    position: absolute;
+                    z-index: 2;
+                    top: -55px;
+                    left: -40px;
+                    color: $darkGray;
+                    font-family: $Raleway-ExtraBold;
+                    font-size: 48px;
+                }
+
+                &:after {
+                    display: block;
+                    position: absolute;
+                    z-index: -1;
+                    top: -25px;
+                    left: -20px;
+                    width: 44px;
+                    height: 44px;
+                    background: $darkWhite;
+                    content: '';
+                }
+            }
+        }
+
+        &.double {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                width: 50%;
+            }
+        }
+    }
+
+    .bold {
+        font-family: $Roboto-Bold;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .blue {
+        color: $blue;
+    }
+
+    .black {
+        color: $black;
+    }
+
+    .gray {
+        color: $gray;
+    }
+
+    .block {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .big {
+        font-size: 24px;
+    }
+
+    .huge {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+
+    .column {
+
+        &-1 {
+            padding-right: 6.5%;
+            width: 44.5%;
+        }
+
+        &-2 {
+            padding-right: 65px;
+            width: 29.5%;
+        }
+
+        &-3 {
+            width: 26%;
+        }
+
+    }
+
+    .double {
+        width: 55.5%;
+    }
+}

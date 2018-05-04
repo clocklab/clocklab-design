@@ -1,7 +1,6 @@
-& {  
-
-    width: 100vw;
-    height: px(2200);
+.complex-time {
+    width: 100%;
+    height: 1100px;
     background: $black;
 
     .container {
@@ -10,8 +9,8 @@
         position: relative;
         z-index: 2;
         margin: 0 auto;
-        padding-top: px(170);
-        padding-bottom: px(120);
+        padding-top: 85px;
+        padding-bottom: 60px;
         width: 81%;
         height: 100%;
     }
@@ -22,10 +21,10 @@
         justify-content: space-between;
         position: relative;
         z-index: 2;
-        height: px(1640);
+        height: 820px;
         color: $white;
         font-family: $Roboto-Regular;
-        font-size: px(32);
+        font-size: 16px;
         line-height: 1.4;
         overflow: hidden;
 
@@ -52,7 +51,7 @@
         }
 
         &--3 {
-            
+
             p {
                 transform: translateX(-101%);
 
@@ -101,11 +100,11 @@
         display: block;
         position: relative;
         z-index: 2;
-        margin-bottom: px(150);
+        margin-bottom: 75px;
         width: 100%;
         color: $white;
         font-family: $Raleway-ExtraBold;
-        font-size: px(144);
+        font-size: 72px;
 
         span {
             color: $blue;
@@ -117,8 +116,8 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        width: px(1400);
-        height: px(1400);
+        width: 700px;
+        height: 700px;
         border-radius: 50%;
         cursor: pointer;
     }
@@ -142,7 +141,7 @@
         z-index: 2;
         left: 50%;
         height: 50%;
-        width: px(60);
+        width: 30px;
         transform-origin: 50% 100%;
         transform: translateX(-50%);
 
@@ -151,8 +150,8 @@
             position: absolute;
             top: 0;
             left: 50%;
-            width: px(14);
-            height: px(60);
+            width: 7px;
+            height: 30px;
             background: $gray;
             content: '';
             transform: translateX(-50%);
@@ -162,8 +161,8 @@
         &--big {
 
             &:before {
-                width: px(34);
-                height: px(110);
+                width: 17px;
+                height: 55px;
             }
         }
 
@@ -412,7 +411,7 @@
 
         &:nth-child(60) {
             transform: translateX(-50%) rotate(6deg * 59);
-        }        
+        }
     }
 
     .watch-lines {
@@ -437,12 +436,12 @@
         flex-wrap: wrap;
         align-items: center;
         z-index: 3;
-        padding: px(100);
+        padding: 50px;
 
         span {
             width: 50%;
-            height: px(60);
-            font-size: px(36);
+            height: 30px;
+            font-size: 18px;
             line-height: 100%;
             text-align: center;
         }
@@ -462,30 +461,26 @@
 
             &--web-production {
                 background-color: $blue;
-                background-image: 
-                    linear-gradient(180deg, transparent 50%, $black 50%),
-                    linear-gradient(90deg, $black 50%, transparent 50%);
+                background-image: linear-gradient(180deg, transparent 50%, $black 50%),
+                                linear-gradient(90deg, $black 50%, transparent 50%);
             }
 
             &--marketing {
                 background-color: $blue;
-                background-image: 
-                    linear-gradient(180deg, transparent 50%, $black 50%),
-                    linear-gradient(270deg, $black 50%, transparent 50%);
+                background-image: linear-gradient(180deg, transparent 50%, $black 50%),
+                                linear-gradient(270deg, $black 50%, transparent 50%);
             }
 
             &--design {
                 background-color: $blue;
-                background-image: 
-                    linear-gradient(0deg, transparent 50%, $black 50%),
-                    linear-gradient(270deg, $black 50%, transparent 50%);
+                background-image: linear-gradient(0deg, transparent 50%, $black 50%),
+                                linear-gradient(270deg, $black 50%, transparent 50%);
             }
 
             &--seo {
                 background-color: $blue;
-                background-image: 
-                    linear-gradient(0deg, transparent 50%, $black 50%),
-                    linear-gradient(90deg, $black 50%, transparent 50%);
+                background-image: linear-gradient(0deg, transparent 50%, $black 50%),
+                                linear-gradient(90deg, $black 50%, transparent 50%);
             }
 
             &.current {
@@ -500,35 +495,35 @@
         align-items: center;
         position: relative;
         z-index: 2;
-        width: px(420);
-        height: px(420);
+        width: 210px;
+        height: 210px;
         background: $blue;
         border-radius: 50%;
-        font-size: px(48);
+        font-size: 24px;
         text-align: center;
 
         &:before,
         &:after {
             position: absolute;
-            top: px((420 - 500) / 2);
-            left: px((420 - 500) / 2);
+            top: (210px - 250px) / 2;
+            left: (210px - 250px) / 2;
             z-index: -1;
             display: block;
-            width: px(500);
-            height: px(500);
+            width: 250px;
+            height: 250px;
             background: $blue;
             border-radius: 50%;
             content: '';
             opacity: .5;
-            transform: translate3d(px(-220), px(-220), 0);
+            transform: translate3d(-110px, -100px, 0);
             animation: pulse $time * 5 infinite both;
         }
 
         &:after {
-            top: px((420 - 640) / 2);
-            left: px((420 - 640) / 2);
-            width: px(640);
-            height: px(640);
+            top: (210px - 320px) / 2;
+            left: (210px - 320px) / 2;
+            width: 320px;
+            height: 320px;
             opacity: .3;
         }
 
