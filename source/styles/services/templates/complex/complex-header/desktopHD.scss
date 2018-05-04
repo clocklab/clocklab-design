@@ -1,6 +1,16 @@
 .complex-header {
     position: relative;
     background: $white;
+    color: $darkGray;
+    font-family: $Roboto-Regular;
+    line-height: 1.3;
+
+    $first-column-width: 44.5%;
+    $first-column-padding-right: 6.5%;
+    $second-column-width: 29.5%;
+    $second-column-padding-right: 65px;
+    $third-column-width: 26%;
+    $third-column-padding-right: 0;
 
     .container {
         position: relative;
@@ -10,8 +20,11 @@
     }
 
     .header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
         position: relative;
-        height: 860px;
+        height: 900px;
 
         .big-background-letter {
             top: initial;
@@ -30,16 +43,17 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 1035px;
-            height: 735px;
+            z-index: 1;
+            width: 60%;
+            height: 100%;
             object-fit: cover;
         }
 
-        .column {
+        &-column {
             position: relative;
             z-index: 2;
-            padding: 55px 0 30px 6.5%;
-            width: 62%;
+            padding: 55px 0 30px $first-column-padding-right;
+            width: $second-column-width + $third-column-width + $first-column-padding-right;
             background: $white;
         }
 
@@ -48,6 +62,7 @@
         }
 
         .new-header {
+            margin-bottom: 50px;
             color: $black;
             font-family: $Raleway-ExtraBold;
             font-size: 60px;
@@ -63,9 +78,9 @@
             font-size: 1000px;
 
             &--o {
-                top: 35%;
+                top: 40%;
                 right: initial;
-                left: 250px;
+                left: 50%;
             }
 
             &--c {
@@ -121,25 +136,32 @@
         }
 
         &.indexed {
+            padding-top: 50px;
 
             li {
                 margin-bottom: 90px;
+                padding-left: 0;
 
                 .index {
                     display: block;
                     position: absolute;
                     z-index: 2;
-                    top: -55px;
+                    top: -60px;
                     left: -40px;
                     color: $darkGray;
                     font-family: $Raleway-ExtraBold;
                     font-size: 48px;
                 }
 
+                p,
+                span {
+                    position: relative;
+                    z-index: 2;
+                }
+
                 &:after {
                     display: block;
                     position: absolute;
-                    z-index: -1;
                     top: -25px;
                     left: -20px;
                     width: 44px;
@@ -158,6 +180,16 @@
             li {
                 width: 50%;
             }
+
+            &.circled {
+
+                li {
+
+                    &:nth-child(odd) {
+                        padding-right: $second-column-padding-right;
+                    }
+                }
+            }
         }
     }
 
@@ -167,6 +199,13 @@
 
     .italic {
         font-style: italic;
+    }
+
+    .rotated {
+        display: block;
+        width: 70%;
+        transform-origin: 100% 0;
+        transform: translateX(-100%) rotate(-90deg);
     }
 
     .blue {
@@ -187,33 +226,99 @@
     }
 
     .big {
+        margin-bottom: 40px;
         font-size: 24px;
     }
 
     .huge {
+        display: block;
+        margin-bottom: 50px;
         font-size: 48px;
         line-height: 1.2;
     }
 
-    .column {
+    .bordered {
+        position: relative;
 
-        &-1 {
-            padding-right: 6.5%;
-            width: 44.5%;
+        &-left {
+            padding-left: 30px;
+            border-left: 10px solid $blue;
         }
 
-        &-2 {
-            padding-right: 65px;
-            width: 29.5%;
+        &-bottom {
+            padding-bottom: 30px;
+            border-bottom: 1px solid $darkGray;
         }
 
-        &-3 {
-            width: 26%;
+        &-top-bottom {
+            padding: 30px 0;
+            border-top: 1px solid $darkGray;
+            border-bottom: 1px solid $darkGray;
         }
-
     }
 
-    .double {
-        width: 55.5%;
+    .row {
+        display: flex;
+        margin-top: 150px;
+
+        &.no-margin-top {
+            margin-top: 0;
+        }
+    }
+
+    .column {
+
+        &:nth-of-type(1) {
+            padding-right: $first-column-padding-right;
+            width: $first-column-width;
+
+            &.double {
+                padding-right: $second-column-padding-right;
+                width: $first-column-width + $second-column-width;
+
+                & + .column {
+                    padding-right: $third-column-padding-right;
+                    width: $third-column-width;
+                }
+
+                &.margined-left {
+                    padding-right: $third-column-padding-right;
+                    width: $second-column-width + $third-column-width;
+                }
+            }
+
+            &.margined-left {
+                padding-right: $second-column-padding-right;
+                width: $second-column-width;
+
+                & + .column {
+                    padding-right: $third-column-padding-right;
+                    width: $third-column-width;
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+            padding-right: $second-column-padding-right;
+            width: $second-column-width;
+        }
+
+        &:last-of-type {
+            width: $third-column-width;
+
+            &.double {
+                padding-right: $third-column-padding-right;
+                width: $second-column-width + $third-column-width;
+            }
+        }
+
+        &.margined-left {
+            margin-left: $first-column-width;
+
+            &-double {
+                margin-left: $first-column-width + $second-column-width;
+                padding-right: $third-column-padding-right;
+            }
+        }
     }
 }
