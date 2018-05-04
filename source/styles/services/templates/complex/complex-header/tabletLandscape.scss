@@ -1,3 +1,96 @@
 .complex-header {
 
+    .container {
+        padding-bottom: 70px;
+    }
+
+    .header {
+        display: block;
+        height: initial;
+
+        .big-background-letter {
+            display: none;
+        }
+
+        &-image {
+            position: relative;
+            width: 100%;
+        }
+
+        &-column {
+            padding-left: 0;
+            width: 100%;
+            background: initial;
+        }
+    }
+
+    .bordered-bottom {
+        padding-bottom: 10px;
+    }
+
+    .rotated {
+        width: 100%;
+        transform: none;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .column {
+        margin-bottom: 20px;
+
+        &:nth-of-type(1) {
+            padding-right: 0;
+            width: 100%;
+
+            &.double {
+                padding-right: 0;
+                width: 100%;
+
+                & + .column {
+                    padding-right: 0;
+                    width: 100%;
+                }
+
+                &.margined-left {
+                    padding-right: 0;
+                    width: 100%;
+                }
+            }
+
+            &.margined-left {
+                padding-right: 0;
+                width: 100%;
+
+                & + .column {
+                    padding-right: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+            padding-right: 0;
+            width: 100%;
+        }
+
+        &:last-of-type {
+            width: 100%;
+
+            &.double {
+                padding-right: 0;
+                width: 100%;
+            }
+        }
+
+        &.margined-left {
+            margin-left: 0;
+
+            &-double {
+                margin-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
 }

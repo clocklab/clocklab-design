@@ -20,13 +20,10 @@
 
         .sticker {
             margin-bottom: 10px;
+            padding-left: 45px;
 
             &:before {
                 left: 0;
-            }
-
-            &-text {
-                padding-left: 45px;
             }
         }
 

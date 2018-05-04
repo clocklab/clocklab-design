@@ -1,3 +1,51 @@
 .complex-header {
 
+    .container {
+        padding-top: 80px;
+    }
+
+    .header {
+
+        .new-header {
+            font-size: 28px;
+        }
+    }
+
+    ul {
+
+        &.indexed {
+
+            li {
+                margin-bottom: 70px;
+
+                .index {
+                    top: -40px;
+                    left: 0;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        &.double {
+            display: block;
+
+            li {
+                width: 100%;
+            }
+
+            &.circled {
+
+                li {
+
+                    &:nth-child(odd) {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .huge {
+        font-size: 26px;
+    }
 }
