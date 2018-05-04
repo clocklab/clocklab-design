@@ -5,7 +5,7 @@
 /
 /---- DESKTOP HD ---- */
 @import 'templates/complex/complex-header/desktopHD';
-// @import 'templates/complex/complex-time/desktopHD';
+@import 'templates/complex/complex-time/desktopHD';
 /* ---- DESKTOP HD ---- */
 
 
@@ -32,6 +32,7 @@
 /---- DESKTOP ---- */
 @media (max-width: 1366px) {
     @import 'templates/complex/complex-header/desktop';
+    @import 'templates/complex/complex-time/desktop';
 }
 /* ---- DESKTOP ---- */
 
@@ -41,6 +42,7 @@
 /---- TABLET LANDSCAPE ---- */
 @media (max-width: 1024px) {
     @import 'templates/complex/complex-header/tabletLandscape';
+    @import 'templates/complex/complex-time/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
@@ -58,6 +60,7 @@
 /---- PHONE LANDSCAPE ---- */
 @media (max-width: 667px) {
     @import 'templates/complex/complex-header/phoneLandscape';
+    @import 'templates/complex/complex-time/phoneLandscape';
 }
 /* ---- PHONE LANDSCAPE ---- */
 

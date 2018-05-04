@@ -1,18 +1,16 @@
 .complex-time {
     width: 100%;
-    height: 1100px;
     background: $black;
 
     .container {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         position: relative;
         z-index: 2;
         margin: 0 auto;
-        padding-top: 85px;
-        padding-bottom: 60px;
+        padding: 85px 0 60px;
         width: 81%;
-        height: 100%;
     }
 
     .column {
@@ -21,7 +19,6 @@
         justify-content: space-between;
         position: relative;
         z-index: 2;
-        height: 820px;
         color: $white;
         font-family: $Roboto-Regular;
         font-size: 16px;
@@ -47,6 +44,7 @@
         &--2 {
             justify-content: center;
             align-items: center;
+            padding: 100px 0;
             width: 48%;
         }
 
@@ -116,8 +114,10 @@
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 700px;
-        height: 700px;
+        width: 38vw;
+        max-width: 830px;
+        height: 38vw;
+        max-height: 830px;
         border-radius: 50%;
         cursor: pointer;
     }
@@ -173,244 +173,10 @@
             }
         }
 
-        &:nth-child(1) {
-            transform: translateX(-50%);
-        }
-
-        &:nth-child(2) {
-            transform: translateX(-50%) rotate(6deg);
-        }
-
-        &:nth-child(3) {
-            transform: translateX(-50%) rotate(6deg * 2);
-        }
-
-        &:nth-child(4) {
-            transform: translateX(-50%) rotate(6deg * 3);
-        }
-
-        &:nth-child(5) {
-            transform: translateX(-50%) rotate(6deg * 4);
-        }
-
-        &:nth-child(6) {
-            transform: translateX(-50%) rotate(6deg * 5);
-        }
-
-        &:nth-child(7) {
-            transform: translateX(-50%) rotate(6deg * 6);
-        }
-
-        &:nth-child(8) {
-            transform: translateX(-50%) rotate(6deg * 7);
-        }
-
-        &:nth-child(9) {
-            transform: translateX(-50%) rotate(6deg * 8);
-        }
-
-        &:nth-child(10) {
-            transform: translateX(-50%) rotate(6deg * 9);
-        }
-
-        &:nth-child(11) {
-            transform: translateX(-50%) rotate(6deg * 10);
-        }
-
-        &:nth-child(12) {
-            transform: translateX(-50%) rotate(6deg * 11);
-        }
-
-        &:nth-child(13) {
-            transform: translateX(-50%) rotate(6deg * 12);
-        }
-
-        &:nth-child(14) {
-            transform: translateX(-50%) rotate(6deg * 13);
-        }
-
-        &:nth-child(15) {
-            transform: translateX(-50%) rotate(6deg * 14);
-        }
-
-        &:nth-child(16) {
-            transform: translateX(-50%) rotate(6deg * 15);
-        }
-
-        &:nth-child(17) {
-            transform: translateX(-50%) rotate(6deg * 16);
-        }
-
-        &:nth-child(18) {
-            transform: translateX(-50%) rotate(6deg * 17);
-        }
-
-        &:nth-child(19) {
-            transform: translateX(-50%) rotate(6deg * 18);
-        }
-
-        &:nth-child(20) {
-            transform: translateX(-50%) rotate(6deg * 19);
-        }
-
-        &:nth-child(21) {
-            transform: translateX(-50%) rotate(6deg * 20);
-        }
-
-        &:nth-child(22) {
-            transform: translateX(-50%) rotate(6deg * 21);
-        }
-
-        &:nth-child(23) {
-            transform: translateX(-50%) rotate(6deg * 22);
-        }
-
-        &:nth-child(24) {
-            transform: translateX(-50%) rotate(6deg * 23);
-        }
-
-        &:nth-child(25) {
-            transform: translateX(-50%) rotate(6deg * 24);
-        }
-
-        &:nth-child(26) {
-            transform: translateX(-50%) rotate(6deg * 25);
-        }
-
-        &:nth-child(27) {
-            transform: translateX(-50%) rotate(6deg * 26);
-        }
-
-        &:nth-child(28) {
-            transform: translateX(-50%) rotate(6deg * 27);
-        }
-
-        &:nth-child(29) {
-            transform: translateX(-50%) rotate(6deg * 28);
-        }
-
-        &:nth-child(30) {
-            transform: translateX(-50%) rotate(6deg * 29);
-        }
-
-        &:nth-child(31) {
-            transform: translateX(-50%) rotate(6deg * 30);
-        }
-
-        &:nth-child(32) {
-            transform: translateX(-50%) rotate(6deg * 31);
-        }
-
-        &:nth-child(33) {
-            transform: translateX(-50%) rotate(6deg * 32);
-        }
-
-        &:nth-child(34) {
-            transform: translateX(-50%) rotate(6deg * 33);
-        }
-
-        &:nth-child(35) {
-            transform: translateX(-50%) rotate(6deg * 34);
-        }
-
-        &:nth-child(36) {
-            transform: translateX(-50%) rotate(6deg * 35);
-        }
-
-        &:nth-child(37) {
-            transform: translateX(-50%) rotate(6deg * 36);
-        }
-
-        &:nth-child(38) {
-            transform: translateX(-50%) rotate(6deg * 37);
-        }
-
-        &:nth-child(39) {
-            transform: translateX(-50%) rotate(6deg * 38);
-        }
-
-        &:nth-child(40) {
-            transform: translateX(-50%) rotate(6deg * 39);
-        }
-
-        &:nth-child(41) {
-            transform: translateX(-50%) rotate(6deg * 40);
-        }
-
-        &:nth-child(42) {
-            transform: translateX(-50%) rotate(6deg * 41);
-        }
-
-        &:nth-child(43) {
-            transform: translateX(-50%) rotate(6deg * 42);
-        }
-
-        &:nth-child(44) {
-            transform: translateX(-50%) rotate(6deg * 43);
-        }
-
-        &:nth-child(45) {
-            transform: translateX(-50%) rotate(6deg * 44);
-        }
-
-        &:nth-child(46) {
-            transform: translateX(-50%) rotate(6deg * 45);
-        }
-
-        &:nth-child(47) {
-            transform: translateX(-50%) rotate(6deg * 46);
-        }
-
-        &:nth-child(48) {
-            transform: translateX(-50%) rotate(6deg * 47);
-        }
-
-        &:nth-child(49) {
-            transform: translateX(-50%) rotate(6deg * 48);
-        }
-
-        &:nth-child(50) {
-            transform: translateX(-50%) rotate(6deg * 49);
-        }
-
-        &:nth-child(51) {
-            transform: translateX(-50%) rotate(6deg * 50);
-        }
-
-        &:nth-child(52) {
-            transform: translateX(-50%) rotate(6deg * 51);
-        }
-
-        &:nth-child(53) {
-            transform: translateX(-50%) rotate(6deg * 52);
-        }
-
-        &:nth-child(54) {
-            transform: translateX(-50%) rotate(6deg * 53);
-        }
-
-        &:nth-child(55) {
-            transform: translateX(-50%) rotate(6deg * 54);
-        }
-
-        &:nth-child(56) {
-            transform: translateX(-50%) rotate(6deg * 55);
-        }
-
-        &:nth-child(57) {
-            transform: translateX(-50%) rotate(6deg * 56);
-        }
-
-        &:nth-child(58) {
-            transform: translateX(-50%) rotate(6deg * 57);
-        }
-
-        &:nth-child(59) {
-            transform: translateX(-50%) rotate(6deg * 58);
-        }
-
-        &:nth-child(60) {
-            transform: translateX(-50%) rotate(6deg * 59);
+        @for $i from 1 through 60 {
+            &:nth-child(#{$i}) {
+                transform: translateX(-50%) rotate(6deg * ($i - 1));
+            }
         }
     }
 

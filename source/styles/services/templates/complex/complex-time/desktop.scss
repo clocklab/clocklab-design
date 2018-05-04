@@ -1,0 +1,61 @@
+.complex-time {
+
+    .complex-time-title {
+        margin-bottom: 50px;
+        font-size: 50px;
+    }
+
+    .column {
+
+        &--2 {
+            padding: 20px 0;
+        }
+    }
+
+    .watch__tick {
+        width: 20px;
+
+        &:before {
+            width: 2px;
+            height: 20px;
+        }
+
+        &--big {
+
+            &:before {
+                width: 5px;
+                height: 35px;
+            }
+        }
+    }
+
+    .watch-marks {
+
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .watch-core {
+        width: 160px;
+        height: 160px;
+        font-size: 20px;
+        line-height: 1.2;
+
+        &:before,
+        &:after {
+            top: (160px - 220px) / 2;
+            left: (160px - 220px) / 2;
+            width: 220px;
+            height: 220px;
+            transform: translate3d(-110px, -100px, 0);
+        }
+
+        &:after {
+            top: (160px - 300px) / 2;
+            left: (160px - 300px) / 2;
+            width: 300px;
+            height: 300px;
+        }
+    }
+}
