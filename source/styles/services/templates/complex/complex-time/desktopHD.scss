@@ -67,30 +67,30 @@
         width: 100%;
         height: 100%;
         overflow: hidden;
+    }
 
-        .line {
-            position: absolute;
-            top: 0;
-            width: 1px;
-            height: 100%;
-            background: $darkWhite;
-            opacity: .1;
+    .line {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: $darkWhite;
+        opacity: .1;
 
-            &--1 {
-                left: 0;
-            }
+        &--1 {
+            left: 0;
+        }
 
-            &--2 {
-                left: 26%;
-            }
+        &--2 {
+            left: 26%;
+        }
 
-            &--3 {
-                left: 74%;
-            }
+        &--3 {
+            left: 74%;
+        }
 
-            &--4 {
-                right: 0;
-            }
+        &--4 {
+            right: 0;
         }
     }
 
