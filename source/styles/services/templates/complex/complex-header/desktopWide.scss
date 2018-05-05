@@ -1,0 +1,20 @@
+.complex-header {
+
+    .header {
+        height: 630px;
+
+        &-column {
+            padding-bottom: 0;
+        }
+
+        .new-header {
+            margin-bottom: 35px;
+            font-size: 42px;
+        }
+    }
+
+    .big {
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+}

@@ -7,11 +7,11 @@
 new WOW().init();
 
 // complex-time.js
-const watch = document.querySelector('.complex .watch'),
+const watch = document.querySelector('.watch'),
       watchSectors = Array.prototype.slice.call(document.querySelectorAll('.watch-sectors .sector')),
       watchTicks = Array.prototype.slice.call(document.querySelectorAll('.watch-ticks .watch__tick')),
       watchInfos = Array.prototype.slice.call(document.querySelectorAll('.complex-time p')),
-      watchCore = document.querySelector('.complex .watch-core')
+      watchCore = watch.querySelector('.watch-core');
 
 let watchSizes = {}
 let cursorPos = {}
