@@ -10,4 +10,30 @@
             width: 100%;
         }
     }
+
+    .huge {
+        margin-bottom: 40px;
+    }
+
+    ul {
+
+        &.indexed {
+
+            li {
+
+                &:after {
+                    top: -10px;
+                    left: -5px;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            .index {
+                top: -25px;
+                left: -25px;
+                font-size: 32px;
+            }
+        }
+    }
 }

@@ -1,222 +1,89 @@
-& {  
-    font-family: $Roboto-Regular;
-    background: $white;
-    position: relative;
-    
-    // ----- animation -----
-    animation: fadeIn $time * 3 both;
-    
-    // ----- big-bg-letters -----
-    .big-background-letter, .big-bg-letter-c { animation: fadeIn $time * 3 $time * 3 both; }
-    
-    // ----- languages -----
-    .languages a { animation: fadeInDown $time * 3 $time * 3 both; }
-    
-    // ----- article -----
-    article { width: 112%; }
-    p, h2, h3 {
-        line-height: 1.4;
-        color: $darkGray;
-        font-size: px(32);
-        &.percent { width: 48%; }
-        &.big {
-            font-size: px(48);
-            margin-bottom: px(100);
-            padding: px(56) 0 px(72);
-            border-top: 1px solid #DBDBDB;
-            border-bottom: 1px solid #DBDBDB;
-        }
-        &.bold {
-            line-height: 1.3;
-            font-size: px(36);
-            margin: px(70) 0 px(100);
-            font-family: $Roboto-Bold;
-        }
-        &.half {
-            column-count: 2;
-            column-gap: px(200);
-        }
-    }
-    
-    // ----- big-bg-letter-c -----
-    .big-bg-letter-c {
-        position: absolute;
-        text-transform: uppercase;
-        font-family: $Raleway-ExtraBold;
-        left: px(-500);
-        z-index: 2;
-        top: 35vh;
-        .big-background-letter {
-            span::before { content: 'c'; }
-            font-size: 100vh;
-            bottom: initial;
-            right: initial;
-            left: px(1060);
-            top: 62vh;
-        }
-    }
+.design-header {
 
-    // ----- container -----
+    /* --- HTML HELPFUL CLASSES --- */
     .container {
-        padding-bottom: px(320);
-        position: relative;
-        margin: 0 auto;
-        width: 81%;
-        
-        // ----- images -----
-        .images {
-            position: relative;
-            img {
-                top: 0;
-                left: 0;
-                position: absolute;
-            }
-        }
+        width: 85%;
+    }
 
-        // ----- info -----
-        .info {
-            padding-left: px(300);
-            padding-top: px(70);
-            position: relative;
-            right: px(200);
-            top: px(-94);
-            width: 60%;
-            .white-bg {
-                background: $white;
-                position: absolute;
-                height: px(200);
-                width: 100%;
-                left: 0;
-                top: 0;
-            }
-            .sticker span::before { content: 'Услуги дизайна'; }
-            .new-title {
-                font-family: $Raleway-Regular;
-                margin-bottom: px(220);
-                white-space: nowrap;
-                margin-top: px(80);
-                .text-container {
-                    display: inline-block;
-                    margin-bottom: px(10);
-                    font-family: $Raleway-ExtraBold;
-                    &:before { display: none; }
-                    span {
-                        font-size: px(120);
-                        line-height: px(104);
-                    }
-                }
-            }
-        }
-    
-        // ----- header -----
-        .header {
-            padding-top: px(240);
-            position: relative;
-            max-height: 1100px;
-            min-height: 650px;
-            height: 89vh;
-            .image-container {
-                position: relative;
-                height: 100%;
-                z-index: 2;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    object-position: left;
-                }
-            }
-            .big-background-letter {
-                font-family: $Raleway-ExtraBold;
-                color: $darkGray;
-                right: inherit;
-                top: px(920);
-                left: px(-40);
-                font-size: px(520);
-                text-transform: uppercase;
-                span::before { content: 'o'; }
-            }
-        }
+    .big {
+        padding: 20px 0;
+        font-size: 20px;
+    }
 
-        // ----- about ---
-        .about {
-            z-index: 2;
-            position: relative;
-            .description {
-                width: 40%;
-                z-index: 1;
-                padding: px(250) px(150) 0 0;
-                p {
-                    border-bottom: 1px solid #DBDBDB;
-                    font-family: $Roboto-Light;
-                    padding-bottom: px(60);
-                    font-style: italic;
-                    font-size: px(36);
-                    line-height: 1.4;
-                    color: $gray;
-                }
-            }
-        }
+    .huge {
+        padding: 5px 0 20px;
+        font-size: 30px;
+    }
 
-        // ----- cases -----
-        .cases {
-            .images { width: 40%; }
-            .list {
-                width: 60%;
-                .list-title {
-                    display: block;
-                    margin: px(165) 0 px(110) px(88);
-                    font-family: $Roboto-Bold;
-                    font-size: px(80);
-                    line-height: 1.3;
-                    &--blue { color: $blue; }
-                }
-                p { padding-left: px(85); }
-                li {
-                    &:last-of-type { margin-bottom: 0; }
-                    margin-bottom: px(72);
-                    padding-left: px(85);
-                    position: relative;
-                    font-size: px(32);
-                    line-height: 1.4;
-                    span {
-                        font-family: $Roboto-Bold;
-                        margin-bottom: px(-25);
-                        display: block;
-                    }
-                    &:before {
-                        top: 7px;
-                        left: 7px;
-                        width: 7px;
-                        height: 7px;
-                        display: block;
-                        background: $blue;
-                        border-radius: 50%;
-                        position: absolute;
-                        content: '';
-                    }
-                }
-            }
-        }
+    .margined {
 
-        // ----- about and cases -----
-        .about, .cases {
-            justify-content: space-between;
-            align-items: flex-start;
-            display: flex;
-            width: 100%;
+        &-top {
+
+            &-reversed {
+                margin-top: -100px;
+            }
         }
     }
 
-    // ----- ui-ux -----
-    &.ui-ux {
-        .images { top: px(-570); }
-        .cases .list-title {
-            margin: px(165) 0 px(110) px(76);
-            font-family: $Roboto-Bold;
-            line-height: px(80);
-            font-size: px(92);
-            &--blue { color: $blue; }
+    .bordered {
+
+        &-top {
+
+            &-bottom {
+                margin: 60px 0 30px;
+                padding: 20px 0;
+            }
+        }
+
+        &-bottom {
+            padding-bottom: 20px;
+        }
+    }
+
+    .with-white-top {
+
+        &:before {
+            width: 115%;
+            height: 50px;
+            transform: translate(-20%, -100%);
+        }
+    }
+
+    .column {
+
+        &:first-child {
+            padding-right: 50px;
+        }
+
+        &-inner {
+
+            &:first-child {
+                padding-right: 30px;
+            }
+        }
+    }
+    /* --- HTML HELPFUL CLASSES --- */
+
+    .header {
+        padding-top: 100px;
+        min-height: 500px;
+    }
+
+    .about {
+        padding-bottom: 100px;
+    }
+
+    .new-title {
+
+        .text-container {
+
+            &:before {
+                height: 20px;
+            }
+        }
+
+        &-text {
+            font-size: 32px;
         }
     }
 }

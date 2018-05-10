@@ -1,0 +1,155 @@
+.marketing-header {
+    position: relative;
+    height: 100vh;
+    min-height: 900px;
+    background: $black;
+    overflow: hidden;
+
+    .gray-block,
+    .blue-block {
+        position: absolute;
+        top: 15%;
+        height: 80%;
+        overflow: hidden;
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+        }
+    }
+
+    .gray-block {
+        left: 2%;
+        width: 72%;
+
+        &:before {
+            background: $lightBlack;
+        }
+    }
+
+    .blue-block {
+        right: 0;
+        width: 24%;
+
+        &:before {
+            background: $blue;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+        margin: 0 auto;
+        padding: calc(5% + 100px) 0 5% 100px;
+        width: 80%;
+        height: 100%;
+    }
+
+    .info {
+        position: relative;
+        z-index: 3;
+        width: 50%;
+        min-width: 50%;
+    }
+
+    .sticker {
+        position: relative;
+        top: 70px;
+
+        span {
+            color: $lightGray;
+        }
+
+        &:before {
+            background: $lightGray;
+        }
+    }
+
+    .new-header {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        top: 70px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: 60px;
+        line-height: 62px;
+        text-transform: uppercase;
+    }
+
+    article {
+        padding: 70px 55px 120px 0;
+        background: $lightBlack;
+        overflow: hidden;
+
+        p {
+            margin-bottom: 25px;
+            color: $white;
+            font-family: $Roboto-Regular;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    }
+
+    .crossed-button {
+        margin-top: 25px;
+        font-family: $Raleway-Bold;
+
+        span {
+
+            &:after {
+                color: $white;
+            }
+
+            &:before {
+                background: $white;
+            }
+        }
+
+        .arrow {
+
+            .st0,
+            .st1 {
+                stroke: $white;
+            }
+        }
+    }
+
+    .image-container {
+        position: absolute;
+        top: 20%;
+        right: 0;
+        z-index: 2;
+        width: 60%;
+        height: 65%;
+        overflow: hidden;
+
+        img {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $gray;
+            content: '';
+        }
+    }
+}

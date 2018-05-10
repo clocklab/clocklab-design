@@ -1,0 +1,9 @@
+.special-button {
+    padding: 0 20px;
+    line-height: 3;
+    letter-spacing: 1px;
+
+    &:after {
+        height: 10%;
+    }
+}

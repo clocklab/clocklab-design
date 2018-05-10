@@ -1,0 +1,36 @@
+.we-can {
+
+    .container {
+        display: block;
+        padding: 100px 0 70px;
+    }
+
+    .images {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .image-container {
+
+        &--1 {
+            width: 60%;
+            height: initial;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        &--2 {
+            right: 0;
+            bottom: -50px;
+            width: 60%;
+        }
+    }
+
+    .info {
+        margin-top: 100px;
+        width: 100%;
+    }
+}

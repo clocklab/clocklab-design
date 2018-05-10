@@ -1,0 +1,33 @@
+.seo-getting {
+
+    .container {
+        padding: 60px 0;
+        width: 85%;
+    }
+
+    .content {
+
+        &-title {
+            padding-right: 50px;
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        &-list {
+            margin-top: 120px;
+
+            li {
+                margin-bottom: 60px;
+
+                &:before {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+
+            .index {
+                font-size: 32px;
+            }
+        }
+    }
+}

@@ -1,1 +1,48 @@
-@import '../mobile';
+.design-development {
+
+    ul {
+        padding-bottom: 30px;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    .big {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 80px 0 50px;
+    }
+
+    .column {
+
+        &:last-child {
+            padding-top: 50px;
+        }
+    }
+
+    .row {
+        display: block;
+
+        &:last-of-type {
+            margin: 40px 0 60px;
+        }
+    }
+
+    .development-title {
+        font-size: 30px;
+    }
+
+    .development-offer {
+        margin-top: 30px;
+    }
+
+    .label {
+        display: block;
+        text-align: center;
+        min-width: initial;
+        font-size: 70px;
+    }
+}

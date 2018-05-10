@@ -1,26 +1,80 @@
-// body {
-//     overflow: hidden;
-// }
+@import '../base/variables';
 
-// base
-@import "../base/reset";
-@import "../base/fonts";
-@import "../base/variables";
-@import "../base/common";
-@import "../base/animate";
-@import "../base/animations";
 
-// components
-@import "../components/top-panel/main";
-@import "../components/language/main";
-@import "../components/crossed-button/main";
-@import "../components/new-title/main";
-@import "../components/sticker/main";
-@import "../components/jumping-button/main";
-@import "../components/long-read/main";
-@import "../components/form/main";
+/*
+/
+/---- DESKTOP HD ---- */
+@import 'templates/marketing/marketing-header/desktopHD';
+@import 'templates/marketing/marketing-services/desktopHD';
+@import 'templates/marketing/marketing-brand/desktopHD';
+/* ---- DESKTOP HD ---- */
 
-// screens
-@import "templates/marketing/marketing-header/main";
-@import "templates/marketing/marketing-services/main";
-@import "templates/marketing/marketing-brand/main";
+
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    @import 'templates/marketing/marketing-brand/desktopMega';
+}
+/* ---- DESKTOP MEGA ---- */
+
+
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+    @import 'templates/marketing/marketing-header/desktopWide';
+    @import 'templates/marketing/marketing-services/desktopWide';
+    @import 'templates/marketing/marketing-brand/desktopWide';
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    @import 'templates/marketing/marketing-header/desktop';
+    @import 'templates/marketing/marketing-services/desktop';
+    @import 'templates/marketing/marketing-brand/desktop';
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    @import 'templates/marketing/marketing-header/tabletLandscape';
+    @import 'templates/marketing/marketing-services/tabletLandscape';
+    @import 'templates/marketing/marketing-brand/tabletLandscape';
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    @import 'templates/marketing/marketing-header/phoneLandscape';
+    @import 'templates/marketing/marketing-services/phoneLandscape';
+    @import 'templates/marketing/marketing-brand/phoneLandscape';
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+}
+/* ---- PHONE PORTRAIT ---- */

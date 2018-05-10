@@ -1,0 +1,23 @@
+.marketing-includes {
+
+    .includes-title {
+        padding-right: 0;
+        font-size: 26px;
+    }
+
+    ul {
+
+        &.indexed {
+
+            .rect {
+                width: 20px;
+                height: 20px;
+            }
+
+            .index {
+                top: -30px;
+                font-size: 22px;
+            }
+        }
+    }
+}

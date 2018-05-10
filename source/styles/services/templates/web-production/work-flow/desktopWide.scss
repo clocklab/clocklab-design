@@ -1,0 +1,25 @@
+.work-flow {
+
+    .front-layer,
+    .back-layer {
+        min-height: 750px;
+    }
+
+    .container {
+        min-height: 750px;
+    }
+
+    .new-title {
+
+        &-text {
+            font-size: 50px;
+        }
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(20deg) scaleX(.7);
+        }
+    }
+}

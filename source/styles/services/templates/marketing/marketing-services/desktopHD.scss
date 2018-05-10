@@ -1,0 +1,196 @@
+.marketing-services {
+    position: relative;
+    background: $white;
+    overflow: hidden;
+
+    .marketing-services-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        padding: 150px 0;
+        width: 75%;
+        min-height: 100vh;
+        color: $darkGray;
+        font-family: $Raleway-Regular;
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .line {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: $gray;
+
+        &--1 {
+            left: 0;
+        }
+
+        &--2 {
+            left: 36%;
+        }
+
+        &--3 {
+            left: 68%;
+        }
+
+        &--4 {
+            left: 100%;
+        }
+    }
+
+    .marketing-services-title {
+        display: block;
+        align-self: center;
+        position: relative;
+        top: 8vh;
+        padding-right: 75px;
+        width: 36%;
+        font-family: $Raleway-ExtraBold;
+        font-size: 48px;
+        line-height: 1.1;
+        overflow: hidden;
+
+        .blue {
+            color: $blue;
+        }
+    }
+
+    .types {
+        width: 64%;
+
+        &__item {
+            display: block;
+            position: relative;
+            width: 50%;
+
+            &:hover {
+
+                .index {
+                    color: $blue;
+                }
+
+                .new-title {
+
+                    .text-container {
+
+                        &:before {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .crossed-button {
+
+                    span {
+                        padding: 5px;
+
+                        &:before {
+                            animation: Right $time / 2 linear both, toRight $time / 2 linear $time / 2 forwards;
+                        }
+                    }
+
+                    .arrow-container {
+                        transform: translateX(0);
+                    }
+
+                    .arrow {
+                        animation: fadeInRight $time $timeTickHalf linear both;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                margin-left: 50%;
+            }
+        }
+    }
+
+    .index {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        color: $gray;
+        font-family: $Roboto-Regular;
+        font-size: 16px;
+        transform: rotate(-90deg);
+        transition: color $time;
+        overflow: hidden;
+
+        span {
+            display: block;
+        }
+    }
+
+    .content {
+        overflow: hidden;
+    }
+
+    .new-title {
+        margin-bottom: 35px;
+        padding-right: 50%;
+
+        .text-container {
+            display: inline-block;
+
+            &:before {
+                width: 0;
+                height: 20px;
+                transition: width $time;
+            }
+        }
+
+        &-text {
+            color: $darkGray;
+            font-family: $Raleway-Bold;
+            font-size: 24px;
+            line-height: 1.2;
+        }
+    }
+
+    .content-text {
+        margin-bottom: 45px;
+        padding-right: 90px;
+        color: $darkGray;
+        font-family: $Roboto-Regular;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .crossed-button {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        span {
+            color: $darkGray;
+
+            &:before {
+                background: $darkGray;
+            }
+        }
+
+        .st0,
+        .st1 {
+            stroke: $darkGray;
+        }
+    }
+}

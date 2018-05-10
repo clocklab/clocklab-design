@@ -27,6 +27,11 @@
 @import 'components/clock-bg/desktopHD';
 @import 'components/bread-crumbs/desktopHD';
 @import 'components/long-read/desktopHD';
+@import 'components/services-work-examples/desktopHD';
+@import 'components/services-questions/desktopHD';
+@import 'components/services-blog/desktopHD';
+@import 'components/special-button/desktopHD';
+@import 'components/animated-button/desktopHD';
 /* ---- DESKTOP HD ---- */
 
 
@@ -38,6 +43,9 @@
     @import 'components/menu/desktopMega';
     @import 'components/screen-block/desktopMega';
     @import 'components/form/desktopMega';
+    @import 'components/bread-crumbs/desktopMega';
+    @import 'components/services-work-examples/desktopMega';
+    @import 'components/services-blog/desktopMega';
 }
 /* ---- DESKTOP MEGA ---- */
 
@@ -47,6 +55,8 @@
 /---- DESKTOP WIDE ---- */
 @media (max-width: 1680px) {
     @import 'components/screen-block/desktopWide';
+    @import 'components/services-work-examples/desktopWide';
+    @import 'components/services-blog/desktopWide';
 }
 /* ---- DESKTOP WIDE ---- */
 
@@ -62,7 +72,11 @@
     @import 'components/portfolio-right-panel/desktop';
     @import 'components/portfolio-client/desktop';
     @import 'components/form/desktop';
+    @import 'components/bread-crumbs/desktop';
     @import 'components/long-read/desktop';
+    @import 'components/services-work-examples/desktop';
+    @import 'components/services-questions/desktop';
+    @import 'components/services-blog/desktop';
 }
 /* ---- DESKTOP ---- */
 
@@ -74,7 +88,13 @@
     @import 'components/screen-block/tabletLandscape';
     @import 'components/portfolio-right-panel/tabletLandscape';
     @import 'components/portfolio-client/tabletLandscape';
+    @import 'components/bread-crumbs/tabletLandscape';
     @import 'components/long-read/tabletLandscape';
+    @import 'components/services-work-examples/tabletLandscape';
+    @import 'components/services-questions/tabletLandscape';
+    @import 'components/services-blog/tabletLandscape';
+    @import 'components/special-button/tabletLandscape';
+    @import 'components/animated-button/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
@@ -103,7 +123,13 @@
     @import 'components/sticker/phoneLandscape';
     @import 'components/bottom-button/phoneLandscape';
     @import 'components/social/phoneLandscape';
+    @import 'components/bread-crumbs/phoneLandscape';
     @import 'components/long-read/phoneLandscape';
+    @import 'components/services-work-examples/phoneLandscape';
+    @import 'components/services-questions/phoneLandscape';
+    @import 'components/services-blog/phoneLandscape';
+    @import 'components/special-button/phoneLandscape';
+    @import 'components/animated-button/phoneLandscape';
 }
 /* ---- PHONE LANDSCAPE ---- */
 

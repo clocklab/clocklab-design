@@ -1,0 +1,48 @@
+.work-flow {
+
+    .line {
+
+        &--2 {
+            left: 100%;
+        }
+
+        &--3 {
+            display: none;
+        }
+    }
+
+    .new-title {
+        width: 100%;
+
+        .text-container {
+
+            &:before {
+                height: 10px;
+            }
+        }
+
+        &-text {
+            font-size: 22px;
+        }
+    }
+
+    .steps {
+        margin-top: 50px;
+    }
+
+    .step {
+        margin-bottom: 50px;
+        width: 100%;
+
+        .index {
+            right: initial;
+            top: -25px;
+            left: 15px;
+        }
+    }
+
+    .questions {
+        margin-top: 50px;
+        width: 100%;
+    }
+}

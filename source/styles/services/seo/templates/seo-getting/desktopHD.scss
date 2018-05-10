@@ -1,0 +1,115 @@
+.seo-getting {
+    position: relative;
+    background: $white;
+    font-family: $Roboto-Regular;
+    overflow: hidden;
+
+
+    .clock-bg {
+
+        .letter-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        padding: 200px 0;
+        width: 81%;
+    }
+
+    .lines {
+
+        .line {
+            position: absolute;
+            top: 0;
+            width: 1px;
+            height: 100%;
+            background: $gray;
+            opacity: .2;
+
+            &--1 {
+                left: 0;
+            }
+
+            &--2 {
+                left: calc(100% / 3);
+            }
+
+            &--3 {
+                left: calc(100% / 3 * 2);
+            }
+
+            &--4 {
+                left: 100%;
+            }
+        }
+    }
+
+    .content {
+        display: flex;
+
+        &-title {
+            display: block;
+            width: calc(100% / 3);
+            font-family: $Raleway-Bold;
+            font-size: 45px;
+            line-height: 1.4;
+            color: $blue;
+        }
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 150px;
+            width: calc(100% / 3 * 2);
+
+            li {
+                position: relative;
+                margin-bottom: 85px;
+                padding-right: 50px;
+                width: 50%;
+                color: $darkGray;
+                font-size: 16px;
+                line-height: 1.4;
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background: $lightGray;
+                    content: '';
+                    width: 40px;
+                    height: 40px;
+                    transform: translate(-100%, -80%);
+                }
+            }
+
+            .index {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: $darkGray;
+                font-family: $Raleway-Bold;
+                font-size: 40px;
+                line-height: 1;
+                transform: translate(-110%, -120%);
+            }
+
+            .list-item-title {
+                display: block;
+                margin-bottom: 10px;
+                font-family: $Roboto-Bold;
+                font-size: 20px;
+                line-height: 1.2;
+            }
+        }
+    }
+}

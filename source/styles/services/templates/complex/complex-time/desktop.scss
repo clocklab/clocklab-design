@@ -1,543 +1,61 @@
-& {  
+.complex-time {
 
-    width: 100vw;
-    height: px(2200);
-    background: $black;
-
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        z-index: 2;
-        margin: 0 auto;
-        padding-top: px(170);
-        padding-bottom: px(120);
-        width: 81%;
-        height: 100%;
+    .complex-time-title {
+        margin-bottom: 50px;
+        font-size: 50px;
     }
 
     .column {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        position: relative;
-        z-index: 2;
-        height: px(1640);
-        color: $white;
-        font-family: $Roboto-Regular;
-        font-size: px(32);
-        line-height: 1.4;
-        overflow: hidden;
-
-        &--1,
-        &--3 {
-            width: 26%;
-        }
-
-        &--1 {
-
-            p {
-                transform: translateX(101%);
-
-                &.current {
-                    animation: Left $time both;
-                }
-            }
-        }
 
         &--2 {
-            justify-content: center;
-            align-items: center;
-            width: 48%;
+            padding: 20px 0;
         }
-
-        &--3 {
-            
-            p {
-                transform: translateX(-101%);
-
-                &.current {
-                    animation: Right $time both;
-                }
-            }
-        }
-    }
-
-    .lines {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-
-        .line {
-            position: absolute;
-            top: 0;
-            width: 1px;
-            height: 100%;
-            background: $darkWhite;
-            opacity: .1;
-
-            &--1 {
-                left: 0;
-            }
-
-            &--2 {
-                left: 26%;
-            }
-
-            &--3 {
-                left: 74%;
-            }
-
-            &--4 {
-                right: 0;
-            }
-        }
-    }
-
-    .complex-time-title {
-        display: block;
-        position: relative;
-        z-index: 2;
-        margin-bottom: px(150);
-        width: 100%;
-        color: $white;
-        font-family: $Raleway-ExtraBold;
-        font-size: px(144);
-
-        span {
-            color: $blue;
-        }
-    }
-
-    .watch {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        width: px(1400);
-        height: px(1400);
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    .watch-ticks,
-    .watch-lines,
-    .watch-marks,
-    .watch-sectors {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        overflow: hidden;
     }
 
     .watch__tick {
-        position: absolute;
-        top: 0;
-        z-index: 2;
-        left: 50%;
-        height: 50%;
-        width: px(60);
-        transform-origin: 50% 100%;
-        transform: translateX(-50%);
+        width: 20px;
 
         &:before {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: px(14);
-            height: px(60);
-            background: $gray;
-            content: '';
-            transform: translateX(-50%);
-            transition: background $time;
+            width: 2px;
+            height: 20px;
         }
 
         &--big {
 
             &:before {
-                width: px(34);
-                height: px(110);
-            }
-        }
-
-        &.current {
-
-            &:before {
-                background: $white;
-            }
-        }
-
-        &:nth-child(1) {
-            transform: translateX(-50%);
-        }
-
-        &:nth-child(2) {
-            transform: translateX(-50%) rotate(6deg);
-        }
-
-        &:nth-child(3) {
-            transform: translateX(-50%) rotate(6deg * 2);
-        }
-
-        &:nth-child(4) {
-            transform: translateX(-50%) rotate(6deg * 3);
-        }
-
-        &:nth-child(5) {
-            transform: translateX(-50%) rotate(6deg * 4);
-        }
-
-        &:nth-child(6) {
-            transform: translateX(-50%) rotate(6deg * 5);
-        }
-
-        &:nth-child(7) {
-            transform: translateX(-50%) rotate(6deg * 6);
-        }
-
-        &:nth-child(8) {
-            transform: translateX(-50%) rotate(6deg * 7);
-        }
-
-        &:nth-child(9) {
-            transform: translateX(-50%) rotate(6deg * 8);
-        }
-
-        &:nth-child(10) {
-            transform: translateX(-50%) rotate(6deg * 9);
-        }
-
-        &:nth-child(11) {
-            transform: translateX(-50%) rotate(6deg * 10);
-        }
-
-        &:nth-child(12) {
-            transform: translateX(-50%) rotate(6deg * 11);
-        }
-
-        &:nth-child(13) {
-            transform: translateX(-50%) rotate(6deg * 12);
-        }
-
-        &:nth-child(14) {
-            transform: translateX(-50%) rotate(6deg * 13);
-        }
-
-        &:nth-child(15) {
-            transform: translateX(-50%) rotate(6deg * 14);
-        }
-
-        &:nth-child(16) {
-            transform: translateX(-50%) rotate(6deg * 15);
-        }
-
-        &:nth-child(17) {
-            transform: translateX(-50%) rotate(6deg * 16);
-        }
-
-        &:nth-child(18) {
-            transform: translateX(-50%) rotate(6deg * 17);
-        }
-
-        &:nth-child(19) {
-            transform: translateX(-50%) rotate(6deg * 18);
-        }
-
-        &:nth-child(20) {
-            transform: translateX(-50%) rotate(6deg * 19);
-        }
-
-        &:nth-child(21) {
-            transform: translateX(-50%) rotate(6deg * 20);
-        }
-
-        &:nth-child(22) {
-            transform: translateX(-50%) rotate(6deg * 21);
-        }
-
-        &:nth-child(23) {
-            transform: translateX(-50%) rotate(6deg * 22);
-        }
-
-        &:nth-child(24) {
-            transform: translateX(-50%) rotate(6deg * 23);
-        }
-
-        &:nth-child(25) {
-            transform: translateX(-50%) rotate(6deg * 24);
-        }
-
-        &:nth-child(26) {
-            transform: translateX(-50%) rotate(6deg * 25);
-        }
-
-        &:nth-child(27) {
-            transform: translateX(-50%) rotate(6deg * 26);
-        }
-
-        &:nth-child(28) {
-            transform: translateX(-50%) rotate(6deg * 27);
-        }
-
-        &:nth-child(29) {
-            transform: translateX(-50%) rotate(6deg * 28);
-        }
-
-        &:nth-child(30) {
-            transform: translateX(-50%) rotate(6deg * 29);
-        }
-
-        &:nth-child(31) {
-            transform: translateX(-50%) rotate(6deg * 30);
-        }
-
-        &:nth-child(32) {
-            transform: translateX(-50%) rotate(6deg * 31);
-        }
-
-        &:nth-child(33) {
-            transform: translateX(-50%) rotate(6deg * 32);
-        }
-
-        &:nth-child(34) {
-            transform: translateX(-50%) rotate(6deg * 33);
-        }
-
-        &:nth-child(35) {
-            transform: translateX(-50%) rotate(6deg * 34);
-        }
-
-        &:nth-child(36) {
-            transform: translateX(-50%) rotate(6deg * 35);
-        }
-
-        &:nth-child(37) {
-            transform: translateX(-50%) rotate(6deg * 36);
-        }
-
-        &:nth-child(38) {
-            transform: translateX(-50%) rotate(6deg * 37);
-        }
-
-        &:nth-child(39) {
-            transform: translateX(-50%) rotate(6deg * 38);
-        }
-
-        &:nth-child(40) {
-            transform: translateX(-50%) rotate(6deg * 39);
-        }
-
-        &:nth-child(41) {
-            transform: translateX(-50%) rotate(6deg * 40);
-        }
-
-        &:nth-child(42) {
-            transform: translateX(-50%) rotate(6deg * 41);
-        }
-
-        &:nth-child(43) {
-            transform: translateX(-50%) rotate(6deg * 42);
-        }
-
-        &:nth-child(44) {
-            transform: translateX(-50%) rotate(6deg * 43);
-        }
-
-        &:nth-child(45) {
-            transform: translateX(-50%) rotate(6deg * 44);
-        }
-
-        &:nth-child(46) {
-            transform: translateX(-50%) rotate(6deg * 45);
-        }
-
-        &:nth-child(47) {
-            transform: translateX(-50%) rotate(6deg * 46);
-        }
-
-        &:nth-child(48) {
-            transform: translateX(-50%) rotate(6deg * 47);
-        }
-
-        &:nth-child(49) {
-            transform: translateX(-50%) rotate(6deg * 48);
-        }
-
-        &:nth-child(50) {
-            transform: translateX(-50%) rotate(6deg * 49);
-        }
-
-        &:nth-child(51) {
-            transform: translateX(-50%) rotate(6deg * 50);
-        }
-
-        &:nth-child(52) {
-            transform: translateX(-50%) rotate(6deg * 51);
-        }
-
-        &:nth-child(53) {
-            transform: translateX(-50%) rotate(6deg * 52);
-        }
-
-        &:nth-child(54) {
-            transform: translateX(-50%) rotate(6deg * 53);
-        }
-
-        &:nth-child(55) {
-            transform: translateX(-50%) rotate(6deg * 54);
-        }
-
-        &:nth-child(56) {
-            transform: translateX(-50%) rotate(6deg * 55);
-        }
-
-        &:nth-child(57) {
-            transform: translateX(-50%) rotate(6deg * 56);
-        }
-
-        &:nth-child(58) {
-            transform: translateX(-50%) rotate(6deg * 57);
-        }
-
-        &:nth-child(59) {
-            transform: translateX(-50%) rotate(6deg * 58);
-        }
-
-        &:nth-child(60) {
-            transform: translateX(-50%) rotate(6deg * 59);
-        }        
-    }
-
-    .watch-lines {
-        z-index: 2;
-
-        .line {
-            position: absolute;
-            top: 50%;
-            left: 10%;
-            width: 80%;
-            height: 1px;
-            background: $gray;
-
-            &--2 {
-                transform: rotate(90deg);
+                width: 5px;
+                height: 35px;
             }
         }
     }
 
     .watch-marks {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        z-index: 3;
-        padding: px(100);
 
         span {
-            width: 50%;
-            height: px(60);
-            font-size: px(36);
-            line-height: 100%;
-            text-align: center;
-        }
-    }
-
-    .watch-sectors {
-
-        .sector {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            opacity: 0;
-            transition: opacity $time;
-
-            &--web-production {
-                background-color: $blue;
-                background-image: 
-                    linear-gradient(180deg, transparent 50%, $black 50%),
-                    linear-gradient(90deg, $black 50%, transparent 50%);
-            }
-
-            &--marketing {
-                background-color: $blue;
-                background-image: 
-                    linear-gradient(180deg, transparent 50%, $black 50%),
-                    linear-gradient(270deg, $black 50%, transparent 50%);
-            }
-
-            &--design {
-                background-color: $blue;
-                background-image: 
-                    linear-gradient(0deg, transparent 50%, $black 50%),
-                    linear-gradient(270deg, $black 50%, transparent 50%);
-            }
-
-            &--seo {
-                background-color: $blue;
-                background-image: 
-                    linear-gradient(0deg, transparent 50%, $black 50%),
-                    linear-gradient(90deg, $black 50%, transparent 50%);
-            }
-
-            &.current {
-                opacity: 1;
-            }
+            font-size: 16px;
         }
     }
 
     .watch-core {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 2;
-        width: px(420);
-        height: px(420);
-        background: $blue;
-        border-radius: 50%;
-        font-size: px(48);
-        text-align: center;
+        width: 160px;
+        height: 160px;
+        font-size: 20px;
+        line-height: 1.2;
 
         &:before,
         &:after {
-            position: absolute;
-            top: px((420 - 500) / 2);
-            left: px((420 - 500) / 2);
-            z-index: -1;
-            display: block;
-            width: px(500);
-            height: px(500);
-            background: $blue;
-            border-radius: 50%;
-            content: '';
-            opacity: .5;
-            transform: translate3d(px(-220), px(-220), 0);
-            animation: pulse $time * 5 infinite both;
+            top: (160px - 220px) / 2;
+            left: (160px - 220px) / 2;
+            width: 220px;
+            height: 220px;
+            transform: translate3d(-110px, -100px, 0);
         }
 
         &:after {
-            top: px((420 - 640) / 2);
-            left: px((420 - 640) / 2);
-            width: px(640);
-            height: px(640);
-            opacity: .3;
-        }
-
-        &.disabled {
-
-            &:before,
-            &:after {
-                animation-play-state: paused;
-            }
+            top: (160px - 300px) / 2;
+            left: (160px - 300px) / 2;
+            width: 300px;
+            height: 300px;
         }
     }
 }

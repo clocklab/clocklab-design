@@ -1,0 +1,17 @@
+.bread-crumbs {
+
+    $itemWidth: 140px;
+
+    padding-right: $itemWidth * 2;
+    height: $itemWidth;
+
+    &__item {
+        width: $itemWidth;
+        height: $itemWidth;
+
+        .symbol {
+            margin-top: 15px;
+            font-size: 40px;
+        }
+    }
+}

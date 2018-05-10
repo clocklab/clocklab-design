@@ -1,0 +1,28 @@
+.seo-order {
+    min-height: 650px;
+
+    .container {
+        padding-top: 70px;
+        width: 80%;
+    }
+
+    .title {
+        margin-top: 30px;
+        font-size: 36px;
+    }
+
+    .items {
+        margin-top: 70px;
+    }
+
+    .item {
+        padding-top: 30px;
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(25deg) scaleX(.7);
+        }
+    }
+}

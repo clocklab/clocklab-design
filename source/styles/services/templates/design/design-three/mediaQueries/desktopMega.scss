@@ -1,4 +1,0 @@
-@import '../desktop';
-
-.back-layer { padding-right: px(300); }
-&.opened { .front-layer { transform: rotateY(20deg); } }

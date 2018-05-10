@@ -1,0 +1,49 @@
+.design-services {
+    min-height: 650px;
+
+    .container {
+        width: 900px;
+    }
+
+    .line {
+
+        &:nth-child(2) {
+            left: 25%;
+        }
+
+        &:nth-child(3) {
+            left: calc(25% + 75% / 2);
+        }
+    }
+
+    .title {
+        width: 25%;
+        font-size: 40px;
+    }
+
+    .services {
+        width: 75%;
+    }
+
+    .service {
+
+        &:nth-child(2) {
+            margin-top: 30px;
+        }
+    }
+
+    .new-title {
+
+        &-text {
+            font-size: 22px;
+        }
+    }
+
+    .service-text {
+        margin-top: 20px;
+    }
+
+    .crossed-button {
+        margin-top: 25px;
+    }
+}

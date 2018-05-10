@@ -165,11 +165,5 @@
     function detectMobile () {
         return navigator.userAgent.indexOf("Mobile") !== -1 || navigator.userAgent.indexOf("Android") !== -1;
     }
-
-    // ----- block-bg -----
-    $('#clock-bg').textshadow({
-        color: 'rgba(0,0,0,.05)',
-        textShadow: true
-    });
 })(jQuery);
 

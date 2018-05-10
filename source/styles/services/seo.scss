@@ -1,36 +1,80 @@
-// body { overflow: hidden; }
+@import '../base/variables';
 
-// base
-@import "../base/variables";
-@import "../base/mixins";
-// @import "../base/fonts";
-@import "../base/reset";
-@import "../base/common";
-@import "../base/animate";
-@import "../base/animations";
 
-// modules
-@import "../components/modules/small-gray-lines";
+/*
+/
+/---- DESKTOP HD ---- */
+@import 'templates/seo/seo-header/desktopHD';
+@import 'templates/seo/seo-services/desktopHD';
+@import 'templates/seo/seo-order/desktopHD';
+/* ---- DESKTOP HD ---- */
 
-// components
-@import "../components/form/main";
-@import "../components/top-panel/main";
-@import "../components/long-read/main";
-@import "../components/crossed-button/main";
-@import "../components/jumping-button/main";
-@import "../components/big-background-letter/main";
 
-/* в дальнейшем свести к одному */
-@import "../components/title/main";     
-@import "../components/new-title/main";
-@import "../components/languages/main";
-@import "../components/language/main";
-/* в дальнейшем свести к одному */
+/*
+/
+/---- DESKTOP MEGA ---- */
+@media (min-width: 1921px) {
+    @import 'templates/seo/seo-order/desktopMega';
+}
+/* ---- DESKTOP MEGA ---- */
 
-// тут хранится анимация для некоторых элементов
-@import "../templates/index/euro-club/main";
 
-// screens
-@import "templates/seo/seo-one/main";
-@import "templates/seo/seo-two/main";
-@import "templates/seo/seo-three/main";
+/*
+/
+/---- DESKTOP WIDE ---- */
+@media (max-width: 1680px) {
+    @import 'templates/seo/seo-header/desktopWide';
+    @import 'templates/seo/seo-services/desktopWide';
+    @import 'templates/seo/seo-order/desktopWide';
+}
+/* ---- DESKTOP WIDE ---- */
+
+
+/*
+/
+/---- DESKTOP ---- */
+@media (max-width: 1366px) {
+    @import 'templates/seo/seo-header/desktop';
+    @import 'templates/seo/seo-services/desktop';
+    @import 'templates/seo/seo-order/desktop';
+}
+/* ---- DESKTOP ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (max-width: 1024px) {
+    @import 'templates/seo/seo-header/tabletLandscape';
+    @import 'templates/seo/seo-services/tabletLandscape';
+    @import 'templates/seo/seo-order/tabletLandscape';
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (max-width: 768px) {
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (max-width: 667px) {
+    @import 'templates/seo/seo-header/phoneLandscape';
+    @import 'templates/seo/seo-services/phoneLandscape';
+    @import 'templates/seo/seo-order/phoneLandscape';
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+
+/*
+/
+/---- PHONE PORTRAIT ---- */
+@media (max-width: 414px) {
+}
+/* ---- PHONE PORTRAIT ---- */

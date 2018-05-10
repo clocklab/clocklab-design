@@ -1,0 +1,9 @@
+.work-flow {
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(20deg) scaleX(.85);
+        }
+    }
+}

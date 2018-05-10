@@ -1,0 +1,30 @@
+.marketing-advantages {
+
+    .container {
+        padding: 110px 0 50px;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    ul {
+
+        li {
+            margin-bottom: 50px;
+            padding-left: 20px;
+
+            &:before {
+                left: 5px;
+                top: -5px;
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        .index {
+            top: -30px;
+            font-size: 28px;
+        }
+    }
+}

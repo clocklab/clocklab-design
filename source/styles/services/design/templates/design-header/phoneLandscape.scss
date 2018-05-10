@@ -1,0 +1,17 @@
+.design-header {
+
+    .new-title {
+
+        .text-container {
+
+            &:before {
+                display: none;
+            }
+        }
+
+        &-text {
+            font-size: 26px;
+            white-space: initial;
+        }
+    }
+}

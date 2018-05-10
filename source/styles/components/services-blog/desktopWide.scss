@@ -1,0 +1,33 @@
+.services-blog {
+
+    .container {
+        width: 85%;
+        min-height: initial;
+    }
+
+    .image-block {
+        padding-left: 40px;
+    }
+
+    .date {
+        left: 40px;
+    }
+
+    .info-block {
+        min-width: 600px;
+    }
+
+    .new-title {
+
+        .text-container {
+
+            &:before {
+                height: 20px;
+            }
+        }
+
+        &-text {
+            font-size: 24px;
+        }
+    }
+}

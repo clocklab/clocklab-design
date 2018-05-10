@@ -1,0 +1,53 @@
+.design-why-us {
+
+    .line {
+
+        &--1 {
+            left: 25%;
+        }
+
+        &--2 {
+            left: calc(25% + 75% / 2);
+        }
+
+        &--3 {
+            left: 100%;
+        }
+    }
+
+    .container {
+        width: 900px;
+    }
+
+    .result {
+        width: 25%;
+    }
+
+    .new-title {
+
+        .text-container {
+
+            &:before {
+                height: 0;
+            }
+
+        }
+
+        &-text {
+            font-size: 34px;
+            line-height: 1;
+            white-space: initial;
+        }
+    }
+
+    .steps {
+        width: 75%;
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(15deg) scaleX(.8);
+        }
+    }
+}

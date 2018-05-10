@@ -1,449 +1,56 @@
-& {  
-
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background: $white;
-
-    .language {
-        position: absolute;
-        z-index: 5;
-
-        a {
-            animation: none;
-        }
-    }
+.marketing-brand {
 
     .front-layer,
     .back-layer {
-        min-height: 900px;
-    }
-
-    .front-layer {
-        position: relative;
-        z-index: 2;
-        width: 100%;
-        height: 100vh;
-        transform-origin: 0 50%;
-        transform-style: preserve-3d;
-        transition: transform $time * 2;
-
-        &:before,
-        &:after {
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: $white;
-            content: '';
-        }
-
-        &:after {
-            z-index: -1;
-            background: rgba(0, 0, 0, .4);
-            opacity: 0;
-            transition: opacity $time;
-        }
-    }
-
-    .container {
-        display: flex;
-        align-items: center;
-        position: relative;
-        margin: 0 auto;
-        width: 79%;
-        height: 100vh;
-        min-height: 900px;
-    }
-
-    .development {
-        position: relative;
-        top: -18vh;
-        z-index: 3;
-        font-family: $Raleway-Regular;
-    }
-
-    .sticker {
-
-        span {
-
-            &:before {
-                content: 'Услуги маркетинга';
-            }
-        }
-
-        &:before {
-            top: 40%;
-        }
-    }
-
-    .marketing-brand-title {
-        display: block;
-        margin-top: px(60);
-        width: px(1200);
-        font-family: $Raleway-ExtraBold;
-        font-size: px(144);
-        overflow: hidden;
-        
-        span {
-            display: block;
-
-            &.blue {
-                color: $blue;
-            }
-        }
-    }
-
-    .lines {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-
-        .line {
-            position: absolute;
-            top: 0;
-            width: 1px;
-            height: 100vh;
-            background: $darkWhite;
-
-            &--1 {
-                left: 0;
-            }
-
-            &--2 {
-                left: px(1200);
-            }
-
-            &--3 {
-                left: px(2120);
-            }
-        }
-    }
-
-    .steps {
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        top: 3vh;
-        z-index: 1;
-        width: px(2120);
-    }
-
-    .step {
-        position: relative;
-        z-index: 2;
-        margin-bottom: px(100);
-        padding-right: px(250);
-        width: 50%;
-        color: $darkGray;
-        font-family: $Roboto-Regular;
-
-        .index {
-            position: absolute;
-            top: px(-40);
-            left: px(-40);
-            color: $gray;
-            font-family: $Roboto-Regular;
-            font-size: px(32);
-            transform: rotate(-90deg);
-            overflow: hidden;
-
-            span {
-                display: block;
-            }
-        }
-
-        .content {
-            overflow: hidden;
-        }
-
-        .content-title {
-            display: block;
-            margin-bottom: px(24);
-            font-family: $Raleway-Bold;
-            font-size: px(48);
-        }
-
-        p {
-            padding-right: px(40);
-            font-size: px(28);
-            line-height: 1.4;
-        }
-    }
-
-    .questions {
-        z-index: 3;
-        margin-left: auto;
-        width: 50%;
-
-        .questions-title {
-            display: block;
-            margin-bottom: px(34);
-            color: $darkGray;
-            font-family: $Raleway-ExtraBold;
-            font-size: px(48);
-            text-transform: uppercase;
-        }
-
-        p {
-            margin-bottom: px(66);
-            padding-right: px(300);
-            color: $gray;
-            font-family: $Roboto-Regular;
-            font-size: px(28);
-            line-height: 1.4;
-        }
-
-        .open-form {
-            display: block;
-            position: relative;
-            width: px(332);
-            height: px(90);
-            background: $blue;
-            border: 2px solid $blue;
-            color: $white;
-            font-family: $Roboto-Bold;
-            font-size: px(28);
-            text-transform: uppercase;
-
-            span {
-                position: relative;
-                letter-spacing: 1px;
-                z-index: 2;
-            }
-
-            &:before {
-                display: block;
-                position: absolute;
-                top: px(24);
-                left: px(-24);
-                width: 100%;
-                height: 100%;
-                background: $darkGray;
-                content: '';
-                opacity: 0;
-                transition: top $time, left $time, opacity $time;
-            }
-
-            &:hover {
-
-                &:before {
-                    top: px(10);
-                    left: px(-10);
-                    opacity: 1;
-                }
-            }
-        }
+        height: initial;
+        min-height: initial;
     }
 
     .back-layer {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        padding-right: px(140);
-        width: 100%;
-        height: 100vh;
-        background: $black;
+        height: 100%;
     }
 
-    &.opened {
-        
-        .front-layer {
-            transform: rotateY(30deg);
-    
-            &:after {
-                z-index: 9999;
-                opacity: 1;
-            }
+    .container {
+        align-items: flex-start;
+        padding: 80px 0 50px;
+        width: 84%;
+    }
+
+    .line {
+
+        &--2 {
+            left: 30%;
+        }
+
+        &--3 {
+            left: 65%;
         }
     }
 
-    // &.screen-block {
+    .development {
+        top: initial;
+        width: 30%;
+    }
 
-    //     &.current {
-    //         display: block;
-    //     }
-    // }
+    .marketing-brand-title {
+        font-size: 40px;
+    }
 
-    // &.current,
-    // &.current-back,
-    // &.previous,
-    // &.previous-back {
-    //     animation: Up $time * 3 0s both;
+    .steps {
+        width: 70%;
+    }
 
-    //     .language {
+    .questions {
 
-    //         a {
-    //             animation: Down $STBorderElAnimationTime $STBorderElDelayTime both;
-    //         }
-    //     }
+        .questions-title {
+            font-size: 20px;
+        }
+    }
 
-    //     .lines {
+    &.opened {
 
-    //         .line {
-
-    //             &--1 {
-    //                 animation: Down $MBLine1AnimationTime $MBLine1DelayTime both;
-    //             }
-
-    //             &--2 {
-    //                 animation: Down $MBLine2AnimationTime $MBLine2DelayTime both;
-    //             }
-
-    //             &--3 {
-    //                 animation: Down $MBLine3AnimationTime $MBLine3DelayTime both;
-    //             }
-    //         }
-    //     }
-
-    //     .marketing-brand-title {
-
-    //         span {
-    //             animation: Right $MBColumn1AnimationTime $MBColumn1DelayTime both;
-    //         }
-    //     }
-
-    //     .sticker {
-
-    //         span {
-    //             animation: fadeInRight $MBStickerTextAnimationTime $MBStickerTextDelayTime both;
-    //         }
-
-    //         &:before {
-    //             animation: fadeInRight $MBStickerTextAnimationTime $MBStickerTextDelayTime both;
-    //         }
-    //     }
-
-    //     .step {
-
-    //         .index {
-
-    //             span {
-    //                 animation: Up $MBColumn2AnimationTime $MBColumn2DelayTime both;
-    //             }
-    //         }
-
-    //         .content-title,
-    //         p {
-    //             animation: Right $MBColumn2AnimationTime $MBColumn2DelayTime both;
-    //         }
-
-    //         &:nth-of-type(2),
-    //         &:nth-of-type(4) {
-
-    //             .content-title,
-    //             p {
-    //                 animation: Right $MBColumn3AnimationTime $MBColumn3DelayTime both;
-    //             }   
-    //         }
-    //     }
-
-    //     .questions {
-
-    //         .questions-title,
-    //         p,
-    //         button {
-    //             animation: Right $MBColumn3AnimationTime $MBColumn3DelayTime both;
-    //         }
-    //     }
-    // }
-
-    // &.previous,
-    // &.previous-back {
-    //     animation: slideDown $time * 3 0s both;
-    //     animation-play-state: paused;
-
-    //     .language {
-
-    //         a {
-    //             animation-play-state: paused;
-    //         }
-    //     }
-
-    //     .lines {
-
-    //         .line {
-
-    //             &--1 {
-    //                 animation-play-state: paused;
-    //             }
-
-    //             &--2 {
-    //                 animation-play-state: paused;
-    //             }
-
-    //             &--3 {
-    //                 animation-play-state: paused;
-    //             }
-    //         }
-    //     }
-
-    //     .marketing-brand-title {
-
-    //         span {
-    //             animation-play-state: paused;
-    //         }
-    //     }
-
-    //     .sticker {
-
-    //         span {
-    //             animation-play-state: paused;
-    //         }
-
-    //         &:before {
-    //             animation-play-state: paused;
-    //         }
-    //     }
-
-    //     .step {
-
-    //         .index {
-
-    //             span {
-    //                 animation-play-state: paused;
-    //             }
-    //         }
-
-    //         .content-title,
-    //         p {
-    //             animation-play-state: paused;
-    //         }
-
-    //         &:nth-of-type(2),
-    //         &:nth-of-type(4) {
-
-    //             .content-title,
-    //             p {
-    //                 animation-play-state: paused;
-    //             }   
-    //         }
-    //     }
-
-    //     .questions {
-
-    //         .questions-title,
-    //         p,
-    //         button {
-    //             animation-play-state: paused;
-    //         }
-    //     }
-    // }
-
-    // &.current-back {
-    //     animation: none;
-    // }
-
-    // &.previous-back {
-    //     animation-play-state: running;
-    // }
+        .front-layer {
+            transform: rotateY(25deg) scaleX(.7);
+        }
+    }
 }

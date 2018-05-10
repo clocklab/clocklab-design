@@ -1,0 +1,77 @@
+.marketing-header {
+
+    .header {
+
+        & > img {
+            width: 60%;
+            height: initial;
+        }
+
+        .image-container {
+            top: 100px;
+            width: 60%;
+            height: 100%;
+        }
+
+        .big-background-letter {
+            top: -10vw;
+            left: -25vw;
+            width: 280px;
+            height: 350px;
+            font-size: 400px;
+        }
+    }
+
+    .row {
+        margin-top: 50px;
+        display: block;
+    }
+
+    .column {
+        margin: 30px 0;
+        width: 100%;
+
+        &.double {
+            width: 100%;
+        }
+
+        &.margined {
+
+            &-left {
+                margin-left: 0;
+
+                &-double {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .paddinged {
+
+        &-top {
+            padding-top: 0;
+        }
+
+        &-left {
+            padding-left: 0;
+        }
+    }
+
+    ul {
+
+        &.double {
+            display: block;
+
+            li {
+                width: 100%;
+            }
+        }
+    }
+
+    p,
+    .big,
+    .bold {
+        margin: 15px 0;
+    }
+}

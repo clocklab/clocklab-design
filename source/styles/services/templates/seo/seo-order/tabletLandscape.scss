@@ -1,0 +1,35 @@
+.seo-order {
+    height: initial;
+    min-height: initial;
+
+    .big-background-letter {
+        top: initial;
+        bottom: -180px;
+    }
+
+    .container {
+        padding-bottom: 70px;
+    }
+
+    .items {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .item {
+        margin-bottom: 60px;
+        width: 100%;
+    }
+
+    .open-form {
+        position: relative;
+        bottom: initial;
+    }
+
+    &.opened {
+
+        .front-layer {
+            transform: rotateY(120deg) scaleX(.85);
+        }
+    }
+}
