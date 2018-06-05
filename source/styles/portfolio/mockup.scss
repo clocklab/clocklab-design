@@ -111,11 +111,18 @@ section {
 .row {
     display: flex;
     position: relative;
-    padding: 250px 0 150px;
+    padding-top: 250px;
     width: 100%;
-    overflow-x: hidden;
     color: $darkGray;
     font-family: $Roboto-Regular;
+
+    &-half-paddinged {
+        padding-top: 120px;
+    }
+
+    &-without-paddinged {
+        padding: 0;
+    }
 
     &-black-two {
         background: $black-two;
@@ -127,6 +134,10 @@ section {
 
     & > .container {
         display: flex;
+    }
+
+    .line {
+        background: $darkGray;
     }
 }
 
@@ -165,8 +176,24 @@ section {
 
 .paddinged {
 
+    &-bottom {
+        padding-bottom: 250px;
+
+        &-half {
+            padding-bottom: 120px;
+        }
+    }
+
     &-top {
-        padding-top: 120px;
+        padding-top: 250px;
+
+        &-half {
+            padding-top: 120px;
+        }
+
+        &-none {
+            padding-top: 0;
+        }
     }
 
     &-all {
@@ -175,6 +202,10 @@ section {
         &-half {
             padding: 50px;
         }
+    }
+
+    &-none {
+        padding: 0;
     }
 }
 
@@ -373,7 +404,7 @@ ul {
 
             &:before {
                 position: absolute;
-                top: 3px;
+                top: 6px;
                 left: 0;
                 width: 6px;
                 height: 6px;
@@ -381,6 +412,15 @@ ul {
                 border-radius: 50%;
                 content: '';
             }
+        }
+    }
+
+    &.underlined-list {
+
+        li {
+            margin: 0 auto 90px;
+            width: 90%;
+            border-bottom: 1px solid $gray;
         }
     }
 }
