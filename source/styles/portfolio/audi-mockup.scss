@@ -47,7 +47,7 @@
 
 p {
     margin-bottom: 25px;
-    color: #444;
+    color: $darkGray;
     font-size: 14px;
     line-height: 1.4;
 
@@ -58,7 +58,7 @@ p {
 
 h4 {
     margin-bottom: 30px;
-    color: #444;
+    color: $darkGray;
     font-family: $Audi-Bold;
     font-size: 24px;
 }
@@ -92,7 +92,7 @@ header {
     }
 
     .year {
-        color: #444;
+        color: $darkGray;
         font-family: $Audi-Bold;
         font-size: 8px;
 
@@ -148,7 +148,7 @@ header {
         width: 40%;
         left: 98%;
         right: 10px;
-        color: #444;
+        color: $darkGray;
     }
 }
 // --- MACBOOK-1 ---
@@ -163,8 +163,8 @@ header {
         display: block;
         padding: 30px 64px 30px 230px;
         width: 530px;
-        background: #000;
-        color: #FFF;
+        background: $black;
+        color: $white;
         font-family: $Audi-Bold;
         font-size: 36px;
     }
@@ -272,27 +272,27 @@ header {
             justify-content: center;
             padding: 30px;
             width: 60%;
-            background: #000;
-            color: #fff;
+            background: $black;
+            color: $white;
         }
 
         h4 {
             margin-bottom: 50px;
             width: 100%;
-            color: #fff;
+            color: $white;
             font-size: 35px;
             line-height: 55px;
         }
 
         p {
-            color: #fff;
+            color: $white;
             font-size: 16px;
             line-height: 24px;
         }
     }
 
     &-7 {
-        background: #000;
+        background: $black;
 
         .inner-container {
             position: relative;
@@ -692,7 +692,7 @@ header {
             display: block;
             margin: 350px auto 420px;
             width: 77%;
-            min-width: 900px; 
+            min-width: 900px;
         }
 
         .image-block {
@@ -734,9 +734,9 @@ header {
         width: 240px;
         min-width: 240px;
         height: 45px;
-        background: #000;
-        border: 2px solid #000;
-        color: #FFF;
+        background: $black;
+        border: 2px solid $black;
+        color: $white;
         cursor: pointer;
         font-family: $Audi-Bold;
         font-size: 14px;
@@ -746,7 +746,7 @@ header {
 
         &:hover {
             background: transparent;
-            color: #000;
+            color: $black;
         }
     }
 }
@@ -763,7 +763,7 @@ header {
 
         & > .inner-container {
             padding: 0;
-            width: 100%;    
+            width: 100%;
             min-width: 100%;
         }
     }
@@ -823,17 +823,17 @@ header {
                 margin-top: -110px;
 
                 img {
-                    
+
                     &:first-child {
                         width: 40%;
                     }
-    
+
                     &:nth-child(2) {
                         position: relative;
                         left: -80px;
                         width: 40%;
                     }
-    
+
                     &:nth-child(3) {
                         position: relative;
                         left: -130px;
@@ -854,7 +854,7 @@ header {
                         color: $darkGray;
                         font-size: 16px;
                     }
-    
+
                     li {
                         margin-bottom: 20px;
                         padding-left: 40px;
@@ -862,7 +862,7 @@ header {
                         &:before {
                             font-size: 16px;
                         }
-                    }    
+                    }
                 }
             }
 
@@ -881,7 +881,7 @@ header {
                 top: -10px;
                 left: 20px;
             }
-    
+
             .device {
                 bottom: -90px;
                 right: -80px;
@@ -896,16 +896,16 @@ header {
                 margin-top: 40px;
                 padding-left: 30px;
                 width: 70%;
-    
+
                 img {
                     width: 100%;
                 }
-    
+
                 video {
                     width: 78%;
                     transform: translate3d(-47%, -50%, 0);
                 }
-    
+
                 .device {
                     right: -200px;
                     top: 50%;
@@ -967,7 +967,7 @@ header {
 
                 img {
                     height: 100%;
-                    
+
                     &:first-child {
                         width: 60%;
                     }
@@ -1095,7 +1095,7 @@ header {
             padding: 0 15px;
             width: 100%;
         }
-        
+
         .video-block {
             width: 100%;
         }
@@ -1111,7 +1111,7 @@ header {
 
         h3 {
             display: block;
-            padding: 10px 4% 10px 4%;
+            padding: 10px 4%;
             width: 50%;
             font-size: 18px;
             text-align: right;
@@ -1355,7 +1355,7 @@ header {
                 display: block;
 
                 img {
-                    
+
                     &:first-child,
                     &:last-child {
                         top: 0;
