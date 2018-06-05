@@ -18,7 +18,14 @@ $justify-right-double-half: $justify-right-double / 2;
 /*
 /
 /---- DESKTOP HD ---- */
+body {
+    position: relative;
+    height: initial;
+}
+
 .header {
+    position: relative;
+    z-index: 3;
     width: 100%;
     height: 100vh;
     min-height: 650px;
@@ -31,6 +38,18 @@ $justify-right-double-half: $justify-right-double / 2;
     }
 }
 
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    .container {
+        height: 100%;
+    }
+}
+
 .line {
     position: absolute;
     top: 0;
@@ -39,17 +58,22 @@ $justify-right-double-half: $justify-right-double / 2;
     height: 100%;
     background: $lightGray;
 
-    &--2 {
+    &-2 {
         left: calc(100% / 3);
     }
 
-    &--3 {
+    &-3 {
         left: calc(100% / 3 * 2);
     }
 
-    &--4 {
+    &-4 {
         left: 100%;
     }
+}
+
+section {
+    position: relative;
+    z-index: 2;
 }
 
 .container {
@@ -82,8 +106,6 @@ $justify-right-double-half: $justify-right-double / 2;
 
 .column {
     width: $column-width;
-    border-right: 1px solid $darkGray;
-    border-left: 1px solid $darkGray;
 
     & > .special-button,
     & > .label-button {
@@ -348,6 +370,7 @@ li {
 
 p {
     margin: 20px 0;
+    padding-right: 20px;
     color: $darkGray;
     font: 16px / 1.4 $Roboto-Regular;
 }
