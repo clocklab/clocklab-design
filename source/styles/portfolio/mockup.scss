@@ -23,6 +23,32 @@ body {
     height: initial;
 }
 
+[data-animated] {
+    opacity: 0;
+    transition: transform $time * 3, opacity $time * 3;
+
+    &.active {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+[data-animated="left"] {
+    transform: translateX(100px);
+}
+
+[data-animated="right"] {
+    transform: translateX(-100px);
+}
+
+[data-animated="up"] {
+    transform: translateY(100px);
+}
+
+[data-animated="down"] {
+    transform: translateX(-100px);
+}
+
 .header {
     position: relative;
     z-index: 3;
