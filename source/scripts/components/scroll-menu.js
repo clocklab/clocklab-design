@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const checkCurrentBlockBackground = () => {
         blocks.forEach(block => {
-            if (block.getBoundingClientRect().top <= DELTA && block.getBoundingClientRect().bottom >= DELTA) {
-                const background = getComputedStyle(block).backgroundColor.replace(/rgba?|\(|\)/g, '').split(', ');
+            if (block.getBoundingClientRect().top <= DELTA && 
+                block.getBoundingClientRect().bottom >= DELTA) {
 
                 block.dataset.topPanelBg === 'light'
                 ? removeClasses([logo, menu], 'dark')
