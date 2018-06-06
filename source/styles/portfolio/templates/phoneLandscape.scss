@@ -1,0 +1,93 @@
+.header {
+
+    &__image {
+        min-height: initial;
+    }
+}
+
+.row {
+    padding: 0;
+}
+
+.column {
+    padding: 20px 0;
+}
+
+.medium {
+    font-size: 18px;
+}
+
+.semi-big {
+    font-size: 20px;
+}
+
+.big {
+    padding-bottom: 5px;
+    font-size: 24px;
+}
+
+.huge {
+    font-size: 30px;
+}
+
+.paddinged {
+
+    &-top {
+
+        &-half {
+            padding-top: 40px;
+        }
+    }
+
+    &-bottom {
+
+        &-half {
+            padding-bottom: 40px;
+        }
+    }
+
+    &-all {
+        padding: 15px;
+
+        &-half {
+            padding: 15px;
+        }
+    }
+}
+
+.halfed {
+    width: 80%;
+}
+
+p {
+    margin: 10px 0;
+    padding-right: 0;
+}
+
+blockquote {
+
+    &:before {
+        font-size: 50px;
+    }
+}
+
+ul {
+
+    &.indexed {
+        padding: 0;
+
+        li {
+
+            &:before {
+                width: 20px;
+                height: 20px;
+                transform: translate(0, -100%);
+            }
+        }
+    }
+}
+
+.index {
+    font-size: 32px;
+    transform: translate(0, -100%);
+}

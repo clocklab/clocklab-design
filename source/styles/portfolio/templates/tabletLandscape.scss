@@ -1,0 +1,103 @@
+$container-width: 80%;
+$part-space-width: (100% - $container-width) / 2;
+$column-width: 100%;
+$justify: (($part-space-width / $container-width) * 100%) * 100 / $column-width;
+$justify-left: $justify * -1%;
+$justify-right: $justify * 1%;
+
+
+.header {
+    height: initial;
+    min-height: initial;
+
+    &__image {
+        min-height: 400px;
+    }
+}
+
+.row {
+    display: block;
+    padding-top: 60px;
+
+    & > .container {
+        display: block;
+    }
+}
+
+.column {
+    padding: 50px 0;
+    width: $column-width;
+
+    &.double,
+    &.triple {
+        width: $column-width;
+    }
+
+    &.margined {
+
+        &-left {
+            margin-left: 0;
+
+            &-double {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.paddinged {
+
+    &-bottom {
+        padding-bottom: 60px;
+    }
+
+    &-top {
+        padding-top: 60px;
+    }
+
+    &-all {
+        padding: 30px;
+    }
+}
+
+.justified {
+
+    &-left {
+        left: $justify-left;
+
+        &-half {
+            left: $justify-left;
+        }
+
+        &-double {
+            left: $justify-left;
+
+            &-half {
+                left: $justify-left;
+            }
+        }
+    }
+
+    &-right {
+        left: $justify-right;
+
+        &-half {
+            left: $justify-right;
+        }
+
+        &-double {
+            left: $justify-right;
+
+            &-half {
+                left: $justify-right;
+            }
+        }
+    }
+}
+
+blockquote {
+
+    &:before {
+        font-size: 100px;
+    }
+}

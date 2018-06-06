@@ -1,0 +1,53 @@
+$container-width: 65%;
+$part-space-width: (100% - $container-width) / 2;
+$column-width: 100% / 3;
+$column-width-double: 100% / 3 * 2;
+$justify: (($part-space-width / $container-width) * 100%) * 100 / $column-width;
+$justify-double: (($part-space-width / $container-width) * 100%) * 100 / $column-width-double;
+$justify-left: $justify * -1%;
+$justify-left-half: $justify-left / 2;
+$justify-right: $justify * 1%;
+$justify-right-half: $justify-right / 2;
+$justify-left-double: $justify-double * -1%;
+$justify-left-double-half: $justify-left-double / 2;
+$justify-right-double: $justify-double * 1%;
+$justify-right-double-half: $justify-right-double / 2;
+
+.container {
+    width: $container-width;
+}
+
+.justified {
+
+    &-left {
+        left: $justify-left;
+
+        &-half {
+            left: $justify-left-half;
+        }
+
+        &-double {
+            left: $justify-left-double;
+
+            &-half {
+                left: $justify-left-double-half;
+            }
+        }
+    }
+
+    &-right {
+        left: $justify-right;
+
+        &-half {
+            left: $justify-right-half;
+        }
+
+        &-double {
+            left: $justify-right-double;
+
+            &-half {
+                left: $justify-right-double-half;
+            }
+        }
+    }
+}
