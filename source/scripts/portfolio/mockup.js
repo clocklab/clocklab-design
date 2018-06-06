@@ -31,6 +31,7 @@
 
     function changeWindowHeight() {
         windowHeight = window.innerHeight;
+        checkSlide();
     }
 
 
