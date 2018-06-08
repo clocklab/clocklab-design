@@ -1,13 +1,52 @@
 .portfolio {
 
     .page-layer {
-        min-height: 800px;
+        min-height: 750px;
     }
 
     .content-container {
-        justify-content: space-around;
         padding: 90px 100px 95px;
-        min-height: 800px;
+    }
+
+    .portfolio-item {
+
+        &:nth-child(4n + 2),
+        &:nth-child(4n + 3) {
+
+            .image-container {
+                min-height: 250px;
+            }
+
+            .back-info {
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .info {
+                max-width: 350px;
+            }
+
+            .title {
+                font-size: 20px;
+            }
+
+            .animated-button,
+            .special-button {
+                margin-top: 20px;
+                height: 45px;
+                letter-spacing: 1px;
+                line-height: 45px;
+            }
+        }
+
+        &:nth-child(4n + 2) {
+
+            .image-container {
+                min-width: 400px;
+            }
+        }
     }
 
     .nav-arrows {
