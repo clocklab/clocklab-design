@@ -46,6 +46,12 @@
         }
     }
 
+    .languages {
+        position: absolute;
+        left: initial;
+        right: -30px;
+    }
+
     .container {
         position: relative;
         z-index: 2;
@@ -93,6 +99,13 @@
     &.previous-back {
         animation: Left $time * 3 0s both;
 
+        .languages {
+
+            a {
+                animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+            }
+        }
+
         .line {
             animation: Down $animation-time $animation-time-delay both;
         }
@@ -132,6 +145,13 @@
     &.previous-back {
         animation: slideRight $animation-time-delay $topPanelAnimationTime both;
         animation-play-state: paused;
+
+        .languages {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
 
         .line {
             animation-play-state: paused;

@@ -155,6 +155,13 @@
     &.previous-back {
         animation: fadeIn $time * 3 0s both;
 
+        .languages {
+
+            a {
+                animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+            }
+        }
+
         .big-background-letter {
             animation: fadeIn $time * 3 $time * 3 both;
         }
@@ -208,6 +215,13 @@
 
     &.previous,
     &.previous-back {
+
+        .languages {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
 
         .big-background-letter {
             animation-play-state: paused;

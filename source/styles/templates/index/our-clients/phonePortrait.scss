@@ -2,6 +2,10 @@
 
     $container-width: 94%;
 
+    .languages {
+        display: none;
+    }
+
     .lines,
     .container {
         width: $container-width;
