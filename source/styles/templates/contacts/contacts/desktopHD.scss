@@ -47,6 +47,13 @@ body {
         }
     }
 
+    .languages {
+
+        a {
+            animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+        }
+    }
+
     .small-gray-lines {
 
         .line {

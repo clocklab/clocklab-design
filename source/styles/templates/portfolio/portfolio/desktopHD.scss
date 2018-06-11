@@ -185,6 +185,7 @@
             padding: 40px;
             max-width: 450px;
             min-width: 300px;
+            animation: fadeIn $PPImageAnimationTime $PPImageDelayTime + $PPImageAnimationTime  both;
 
             &:before {
                 display: block;

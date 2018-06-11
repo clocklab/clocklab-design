@@ -1,8 +1,12 @@
-body {
+@import 'base/variables';
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: $white;
     overflow: hidden;
 }
-
-@import 'base/variables';
 
 /*
 /
