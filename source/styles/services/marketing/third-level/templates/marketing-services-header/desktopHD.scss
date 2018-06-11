@@ -4,6 +4,16 @@
     background: $white;
     overflow: hidden;
 
+    .languages {
+        position: absolute;
+        top: 50vh;
+        height: 40px;
+
+        a {
+            animation: Down $time * 3 $time * 3 both;
+        }
+    }
+
     .big-background-letter {
         top: 100px;
         right: 50px;

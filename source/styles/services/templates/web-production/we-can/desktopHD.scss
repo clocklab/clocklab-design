@@ -2,6 +2,14 @@
     position: relative;
     background: $white;
 
+    .languages {
+        position: absolute;
+
+        a {
+            animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+        }
+    }
+
     .container {
         display: flex;
         justify-content: space-between;

@@ -12,6 +12,15 @@
     font-family: $Raleway-Regular;
     overflow: hidden;
 
+    .languages {
+        position: absolute;
+        top: 350px;
+
+        a {
+            animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+        }
+    }
+
     .big-background-letter {
         top: 30vh;
         right: -2vw;
