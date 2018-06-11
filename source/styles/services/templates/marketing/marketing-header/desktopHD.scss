@@ -5,6 +5,15 @@
     background: $black;
     overflow: hidden;
 
+    .languages {
+        position: absolute;
+        top: 350px;
+
+        a {
+            animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+        }
+    }
+
     .gray-block,
     .blue-block {
         position: absolute;

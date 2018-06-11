@@ -7,6 +7,15 @@
     line-height: 1.4;
     animation: fadeIn $time * 3 both;
 
+    .languages {
+        position: absolute;
+        top: 50vh;
+
+        a {
+            animation: Down $time * 3 $time * 3 both;
+        }
+    }
+
     /* --- HTML HELPFUL CLASSES --- */
     .container {
         position: relative;

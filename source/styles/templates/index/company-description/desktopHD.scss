@@ -8,6 +8,10 @@
     font-family: $Raleway-Regular;
     overflow: hidden;
 
+    .languages {
+        position: absolute;
+    }
+
     .big-background-letter {
         top: 28vh;
         left: -100px;
@@ -164,6 +168,13 @@
     &.previous-back {
         animation: Up $time * 3 0s both;
 
+        .languages {
+
+            a {
+                animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+            }
+        }
+
         .big-background-letter {
             animation: fadeIn $animation-time $fifth-column-delay both;
         }
@@ -240,6 +251,13 @@
     &.previous-back {
         animation: slideDown $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;
+
+        .languages {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
 
         .big-background-letter {
             animation-play-state: paused;

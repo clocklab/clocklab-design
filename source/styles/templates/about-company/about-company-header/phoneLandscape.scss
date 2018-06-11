@@ -3,12 +3,17 @@
     height: initial;
     min-height: initial;
 
+    .languages {
+        bottom: 150px;
+        left: 10px;
+    }
+
     .text-block {
         top: initial;
         left: initial;
         margin: 50px auto 0;
         padding: 40px 0;
-        width: 90%;
+        width: 80%;
     }
 
     .slogan {

@@ -41,6 +41,16 @@
         }
     }
 
+    .languages {
+        position: absolute;
+        top: 350px;
+        z-index: 3;
+
+        a {
+            animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+        }
+    }
+
     .graph {
         position: absolute;
         bottom: 0;

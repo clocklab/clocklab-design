@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
     width: 100vw;
     height: 100vh;
     min-height: 900px;
@@ -24,13 +25,14 @@
         z-index: 2;
         left: (100% - $container-width) / 2;
         width: $container-width;
+        height: 100%;
     }
 
     .line {
         position: absolute;
         top: 0;
         width: 1px;
-        height: 100vh;
+        height: 100%;
         background: $darkGray;
 
         &--1 {
@@ -165,6 +167,13 @@
     &.previous,
     &.previous-back {
         animation: fadeIn $services-page-animation-time 0s both;
+
+        .languages {
+
+            a {
+                animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+            }
+        }
 
         .big-background-letter {
             animation: fadeIn $services-page-animation-time $services-page-first-column-delay both;
@@ -356,6 +365,13 @@
     &.previous-back {
         animation: toRight $services-page-animation-time $topPanelAnimationTime both;
         animation-play-state: paused;
+
+        .languages {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
 
         .big-background-letter {
             animation-play-state: paused;

@@ -5,6 +5,16 @@
     line-height: 1.4;
     overflow: hidden;
 
+    .languages {
+        position: absolute;
+        top: 50vh;
+        z-index: 3;
+
+        a {
+            animation: Down $time * 3 $time * 3 both;
+        }
+    }
+
     .big-background-letter--o {
         right: initial;
         left: -350px;

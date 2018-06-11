@@ -6,6 +6,16 @@
     font-family: $Roboto-Regular;
     overflow: hidden;
 
+    .languages {
+        position: absolute;
+        top: 50vh;
+        z-index: 3;
+
+        a {
+            animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+        }
+    }
+
     .big-background-letter--c {
         top: 75vh;
         left: -250px;

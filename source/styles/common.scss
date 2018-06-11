@@ -1,7 +1,6 @@
 @import 'base/variables';
 @import 'base/fonts';
 @import 'base/reset';
-@import 'base/common';
 @import 'base/animate';
 @import 'base/animations';
 
@@ -10,6 +9,7 @@
 /---- DESKTOP HD ---- */
 @import 'components/logo/desktopHD';
 @import 'components/menu/desktopHD';
+@import 'components/languages/desktopHD';
 @import 'components/screen-block/desktopHD';
 @import 'components/new-title/desktopHD';
 @import 'components/copyright/desktopHD';
@@ -117,6 +117,7 @@
 @media (max-width: 667px) {
     @import 'components/logo/phoneLandscape';
     @import 'components/menu/phoneLandscape';
+    @import 'components/languages/phoneLandscape';
     @import 'components/screen-block/phoneLandscape';
     @import 'components/copyright/phoneLandscape';
     @import 'components/big-background-letter/phoneLandscape';

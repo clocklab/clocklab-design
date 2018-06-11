@@ -1,6 +1,8 @@
 .languages {
+    position: fixed;
     bottom: 45vh;
     left: 50px;
+    z-index: 5;
     font-family: $Raleway-Regular;
     font-size: 0;
     transform-origin: 0 0;
@@ -17,6 +19,7 @@
         transition: color $time;
 
         &.select {
+            pointer-events: none;
             color: $white;
 
             &:before {
@@ -28,6 +31,25 @@
 
         &:hover {
             color: $white;
+        }
+    }
+
+    &.dark {
+
+        a {
+            color: $black;
+
+            &.select {
+                color: $gray;
+
+                &:before {
+                    color: $gray;
+                }
+            }
+
+            &:hover {
+                color: $gray;
+            }
         }
     }
 }

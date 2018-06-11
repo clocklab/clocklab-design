@@ -55,6 +55,10 @@
         background: $black;
     }
 
+    .languages {
+        position: absolute;
+    }
+
     .big-background-letter {
         right: 50px;
         top: -100%;
@@ -385,6 +389,13 @@
     &.previous-back {
         animation: Down $time * 3 0s both;
 
+        .languages {
+
+            a {
+                animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+            }
+        }
+
         .big-background-letter {
             animation: fadeIn $time * 3 $time * 3 both;
         }
@@ -413,6 +424,13 @@
     &.previous-back {
         animation: toUp $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;
+
+        .languages {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
 
         .big-background-letter {
             animation-play-state: paused;

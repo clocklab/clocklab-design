@@ -12,6 +12,16 @@
     $third-column-width: 26%;
     $third-column-padding-right: 0;
 
+    .languages {
+        position: absolute;
+        top: 450px;
+        z-index: 3;
+
+        a {
+            animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+        }
+    }
+
     .container {
         position: relative;
         margin: 0 auto;

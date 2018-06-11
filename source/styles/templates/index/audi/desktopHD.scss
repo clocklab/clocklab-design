@@ -5,6 +5,10 @@
     background: $white;
     font-size: 0;
 
+    .languages {
+        position: absolute;
+    }
+
     .audi-block-image {
         position: absolute;
         top: 0;
@@ -103,6 +107,13 @@
     &.previous-back {
         animation: Up $time * 3 0s both;
 
+        .languages {
+
+            a {
+                animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+            }
+        }
+
         .portfolio-client {
 
             .client {
@@ -189,6 +200,13 @@
     &.previous-back {
         animation: slideDown $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;
+
+        .languages {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
 
         .portfolio-client {
 

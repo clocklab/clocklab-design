@@ -4,6 +4,12 @@
     font-family: $Raleway-Regular;
     overflow: hidden;
 
+    .languages {
+        position: absolute;
+        top: 250px;
+        left: 4%;
+    }
+
     .big-background-letter {
         top: 0;
         right: 7vh;
@@ -119,6 +125,13 @@
     &.previous-back {
         animation: Right $time * 3 0s both;
 
+        .languages {
+
+            a {
+                animation: Down $PPLangAnimationTime $PPLangDelayTime both;
+            }
+        }
+
         .small-gray-lines {
 
             .line {
@@ -206,6 +219,13 @@
     &.previous-back {
         animation: slideLeft $time * 3 $topPanelAnimationTime both;
         animation-play-state: paused;
+
+        .languages {
+
+            a {
+                animation-play-state: paused;
+            }
+        }
 
         .small-gray-lines {
 
