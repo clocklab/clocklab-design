@@ -31,20 +31,4 @@
             padding-right: 0;
         }
     }
-
-    .back-layer {
-        padding-right: 0;
-    }
-
-    .form {
-        margin: 0 auto;
-        width: 70%;
-    }
-
-    &.opened {
-
-        .front-layer {
-            transform: rotateY(120deg) scaleX(1);
-        }
-    }
 }

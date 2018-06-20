@@ -1,13 +1,10 @@
 .marketing-brand {
 
-    .front-layer,
-    .back-layer {
+    .front-layer {
+        display: flex;
+        align-items: center;
         height: initial;
         min-height: initial;
-    }
-
-    .back-layer {
-        height: 100%;
     }
 
     .container {
@@ -50,7 +47,7 @@
     &.opened {
 
         .front-layer {
-            transform: rotateY(25deg) scaleX(.7);
+            transform: rotateY(25deg);
         }
     }
 }
