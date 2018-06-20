@@ -32,6 +32,7 @@
 @import 'components/services-blog/desktopHD';
 @import 'components/special-button/desktopHD';
 @import 'components/animated-button/desktopHD';
+@import 'components/services-container/desktopHD';
 /* ---- DESKTOP HD ---- */
 
 
@@ -57,6 +58,7 @@
     @import 'components/screen-block/desktopWide';
     @import 'components/services-work-examples/desktopWide';
     @import 'components/services-blog/desktopWide';
+    @import 'components/services-container/desktopWide';
 }
 /* ---- DESKTOP WIDE ---- */
 
@@ -77,6 +79,7 @@
     @import 'components/services-work-examples/desktop';
     @import 'components/services-questions/desktop';
     @import 'components/services-blog/desktop';
+    @import 'components/services-container/desktop';
 }
 /* ---- DESKTOP ---- */
 
@@ -95,6 +98,7 @@
     @import 'components/services-blog/tabletLandscape';
     @import 'components/special-button/tabletLandscape';
     @import 'components/animated-button/tabletLandscape';
+    @import 'components/services-container/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 

@@ -1,7 +1,6 @@
 .work-flow {
 
-    .front-layer,
-    .back-layer {
+    .front-layer {
         min-height: 750px;
     }
 
@@ -19,7 +18,7 @@
     &.opened {
 
         .front-layer {
-            transform: rotateY(20deg) scaleX(.7);
+            transform: rotateY(20deg);
         }
     }
 }
