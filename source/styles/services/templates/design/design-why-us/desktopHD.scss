@@ -1,22 +1,18 @@
 .design-why-us {
     position: relative;
+    z-index: 3;
+    width: 0;
     height: 100vh;
     min-height: 900px;
-    background: $white;
     font-family: $Raleway-Regular;
-    overflow: hidden;
     transition: perspective $time * 2;
-
-    .front-layer,
-    .back-layer {
-        min-height: 900px;
-    }
 
     .front-layer {
         position: relative;
-        z-index: 2;
-        width: 100%;
+        z-index: 3;
+        width: 100vw;
         height: 100vh;
+        min-height: 900px;
         background: $white;
         overflow: hidden;
         transform-origin: 0 50%;
@@ -220,24 +216,10 @@
         }
     }
 
-    .back-layer {
-        top: 0;
-        left: 0;
-        z-index: 1;
-        display: flex;
-        padding-right: 70px;
-        justify-content: flex-end;
-        align-items: center;
-        position: absolute;
-        background: $black;
-        height: 100vh;
-        width: 100%;
-    }
-
     &.opened {
 
         .front-layer {
-            transform: rotateY(30deg);
+            transform: rotateY(15deg);
 
             &:after {
                 z-index: 9999;
