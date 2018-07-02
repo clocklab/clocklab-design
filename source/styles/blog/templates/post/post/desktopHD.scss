@@ -59,6 +59,13 @@
         }
     }
 
+    .languages {
+
+        a {
+            animation: Down $time * 3 $time * 3 both;
+        }
+    }
+
     .crossed-button {
         position: fixed;
         bottom: 40px;

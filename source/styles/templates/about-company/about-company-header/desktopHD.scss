@@ -7,6 +7,10 @@
 
     .languages {
         position: absolute;
+
+        a {
+            animation: fadeInUp $time * 3 $time * 3 both;
+        }
     }
 
     .copyright {
