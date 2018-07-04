@@ -1,18 +1,15 @@
 .marketing-brand {
-
     position: relative;
+    z-index: 3;
+    width: 0;
     background: $white;
-
-    .front-layer,
-    .back-layer {
-        min-height: 900px;
-    }
 
     .front-layer {
         position: relative;
         z-index: 2;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
+        min-height: 900px;
         transform-origin: 0 50%;
         transform-style: preserve-3d;
         transition: transform $time * 2;
@@ -212,28 +209,10 @@
         }
     }
 
-    .back-layer {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        padding-right: 70px;
-        width: 100%;
-        height: 100vh;
-        background: $black;
-    }
-
-    .form {
-        width: 20%;
-    }
-
     &.opened {
 
         .front-layer {
-            transform: rotateY(15deg) scaleX(.85);
+            transform: rotateY(15deg);
 
             &:after {
                 z-index: 9999;

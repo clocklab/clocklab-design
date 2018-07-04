@@ -2,14 +2,9 @@
     min-height: initial;
     height: initial;
 
-    .front-layer,
-    .back-layer {
+    .front-layer {
         min-height: initial;
         height: initial;
-    }
-
-    .back-layer {
-        height: 100%;
     }
 
     .result {
@@ -56,14 +51,10 @@
         }
     }
 
-    .form {
-        width: 25%;
-    }
-
     &.opened {
 
         .front-layer {
-            transform: rotateY(20deg) scaleX(.8);
+            transform: rotateY(20deg);
         }
     }
 }

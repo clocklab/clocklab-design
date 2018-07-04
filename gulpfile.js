@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 var mobile = '-mobile'
 var mobile = ''
 
-var page = `services/web-production/web-production-second-level${mobile}`
+var page = `blog/post${mobile}`
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
@@ -29,7 +29,7 @@ var source = 'source',
         server: { baseDir: build }
     },
     path = {
-        build: {
+        build: { 
             html: build + `/pages${mobile}`,
             fonts: build + '/fonts',
             videos: build + '/videos',

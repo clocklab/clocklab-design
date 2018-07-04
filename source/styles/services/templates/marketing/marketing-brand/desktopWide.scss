@@ -8,14 +8,10 @@
         font-size: 20px;
     }
 
-    .form {
-        width: 25%;
-    }
-
     &.opened {
 
         .front-layer {
-            transform: rotateY(20deg) scaleX(.8);
+            transform: rotateY(20deg);
         }
     }
 }

@@ -2,12 +2,7 @@
 
     .front-layer {
         height: initial;
-        min-height: initial;
-    }
-
-    .back-layer {
-        height: 100%;
-        min-height: initial;
+        min-height: 100vh;
     }
 
     .container {
@@ -78,7 +73,7 @@
     &.opened {
 
         .front-layer {
-            transform: rotateY(120deg) scaleX(.85);
+            transform: rotateY(90deg);
         }
     }
 }
