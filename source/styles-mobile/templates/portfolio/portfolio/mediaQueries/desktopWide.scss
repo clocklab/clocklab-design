@@ -1,13 +1,1 @@
 @import '../desktop';
-
-& {
-
-    .front-layer {
-        
-        .content-container {
-            justify-content: space-around;
-            padding: px(180) px(200) px(190);
-            min-height: 800px;
-        }
-    }
-}

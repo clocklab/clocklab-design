@@ -1,13 +1,6 @@
-& {  
+& {
     z-index: 1;
     position: relative;
-    @keyframes fadeInWork {
-        0%, 50% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-    @keyframes fadeOutWork {
-        100% { opacity: 0; }
-    }
 
     // ----- content -----
     .content {
@@ -33,13 +26,15 @@
         z-index: 99999;
         position: relative;
         letter-spacing: 2px;
-        
+
         // ----- transparent -----
         &.transparent {
             color: $white;
             padding: 0 20px;
             font-family: $Roboto-Black;
-            &::before, &::after {
+
+            &::before,
+            &::after {
                 position: absolute;
                 height: 100%;
                 width: 100%;
@@ -50,25 +45,28 @@
                 transition: $time;
                 box-sizing: border-box;
             }
+
             &.option::before {
                 border-left: 5px solid $white;
                 border-bottom: 1px solid $white;
                 transform-origin: 0 100%;
-                transform: scale(.1,.5);
+                transform: scale(.1, .5);
             }
+
             &.option::after {
                 border-top: 1px solid $white;
                 border-right: 5px solid $white;
                 transform-origin: 100% 0%;
-                transform: scale(.1,.5);
+                transform: scale(.1, .5);
             }
         }
-        
+
         // ----- special -----
         &.special {
             color: $darkGray;
             border: 1px solid;
             font-family: $Roboto-Bold;
+
             .element {
                 background-color: $white;
                 font-family: $Raleway-ExtraBold;
@@ -79,50 +77,125 @@
                 left: px(45);
                 top: px(-65);
             }
+
             &.blue {
                 background-color: $blue;
                 border-color: $blue;
-                color: $white;
+
+                a,
+                span {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    // ***** header *****
+    .header {
+        padding: 20vh px(30) 0;
+        background: $black;
+        text-align: center;
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+
+        // ----- scroll-line -----
+        .scroll-line {
+            animation: bounce 1s infinite linear;
+            margin: 0 auto 15vh;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            width: 25%;
+            height: 50px;
+
+            div {
+                position: absolute;
+                background: $white;
+                margin: 0 auto;
+                width: 1px;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                top: 0;
+            }
+        }
+
+        // ----- services -----
+        .services {
+
+            .half {
+                margin: 2.5% 2.5% 5%;
+                float: left;
+                width: 45%;
+
+                #category {
+                    text-align: right;
+                    text-transform: uppercase;
+                    font-family: $Roboto-Bold;
+                    line-height: px(45);
+                    font-size: px(28);
+                    color: $white;
+                }
+
+                #subcategory {
+                    color: $gray;
+                    font-size: px(20);
+                    line-height: px(45);
+                    text-transform: uppercase;
+                    font-family: $Roboto-Bold;
+                    text-align: left;
+                }
             }
         }
     }
 
     // ----- about-company -----
     .about-company {
+        background: $white;
         position: relative;
         width: 100vw;
+
         .content {
-            padding-top: px(75);
+            padding-top: px(150);
             padding-bottom: px(150);
+
             p {
                 color: $darkGray;
                 line-height: px(40);
             }
-            
+
             .title {
                 font-family: $Raleway-ExtraBold;
                 margin-bottom: px(72);
                 line-height: px(72);
                 font-size: px(60);
             }
+
             .under-title {
                 line-height: px(40);
                 font-family: $Roboto-Regular;
             }
+
             .small-title {
                 font-family: $Roboto-Black;
                 margin-bottom: px(50);
                 font-size: px(36);
             }
+
             .block {
                 position: relative;
                 margin-bottom: px(125);
+
                 &:first-of-type {
                     margin-top: px(175);
                 }
+
                 &:last-of-type {
                     margin-bottom: px(175);
                 }
+
                 .index {
                     font-family: $Roboto-Bold;
                     position: absolute;
@@ -138,12 +211,14 @@
         position: relative;
         height: 100vh;
         width: 100vw;
+
         .work {
             position: absolute;
             height: 100vh;
             width: 100vw;
             left: 0;
             top: 0;
+
             img {
                 object-position: center;
                 position: absolute;
@@ -154,91 +229,74 @@
                 left: 0;
                 top: 0;
             }
+
             .content {
                 overflow: -webkit-paged-x;
                 text-align: center;
                 height: 100vh;
-                border: none;
                 padding: 0;
+                border: 0;
+
                 .work-title {
                     font-family: $Roboto-Black;
                     margin: 25vh 0 20vh;
                     font-size: px(96);
                     color: $white;
                 }
+
                 .opened-work {
-                    position: absolute;
-                    padding-top: px(125);
-                    width: 100vw;
-                    height: 100vh;
-                    background: rgb(0,0,0);
-                    color: $white;
                     font-family: $Roboto-Regular;
+                    padding-top: px(125);
+                    background: $black;
+                    position: absolute;
                     overflow: hidden;
+                    height: 100vh;
+                    width: 100vw;
+                    color: $white;
+
                     .content {
                         position: relative;
                     }
+
                     &.fadeInWork {
-                        .close-work, img {
+
+                        img {
                             animation: fadeInWork $time * 1.25 linear;
                         }
+
                         p {
                             animation: fadeInWork $time * 2 linear;
                         }
                     }
+
                     &.fadeOutWork {
-                        .close-work, img {
+
+                        img {
                             animation: fadeOutWork .01s linear forwards;
                         }
+
                         p {
                             animation: fadeOutWork .05s linear forwards;
                         }
                     }
+
                     img {
-                        height: auto;
                         top: 0;
-                        width: auto;
-                        left: 0;
+                        left: px(2);
                         z-index: 1;
+                        height: auto;
+                        width: 120px;
                     }
+
                     p {
                         font-family: $Roboto-Regular;
                         margin: px(125) 0 px(90);
                         line-height: px(35);
                         font-size: px(30);
                         text-align: left;
-                        color: #CCC;
-                        
+                        color: #CCC;  
                     }
-                    .close-work {
-                        top: 0;
-                        right: 0;
-                        padding: 0;
-                        width: px(40);
-                        height: px(40);
-                        position: absolute;
-                        background: transparent;
-                        &:before,
-                        &:after {
-                            display: block;
-                            position: absolute;
-                            top: 50%;
-                            left: 0;
-                            width: px(40);
-                            height: 1px;
-                            background: $gray;
-                            content: '';
-                            transition: background $time * 2;
-                        }
 
-                        &:before {
-                            transform: rotate(45deg);
-                        }
-
-                        &:after {
-                            transform: rotate(-45deg);
-                        }
-                    }
                     &.opened {
                         width: 100%;
                     }
@@ -246,17 +304,24 @@
             }
         }
     }
-    
+
     // ----- questions -----
     .questions {
+        background: $white;
         position: relative;
         overflow: hidden;
         height: 100vh;
         width: 100vw;
+
+        .open-form {
+            margin: px(50) auto 0;
+        }
+
         .content {
             height: 100vh;
             padding-top: px(200);
             padding-bottom: px(50);
+
             .questions-title {
                 font-family: $Raleway-ExtraBold;
                 margin-bottom: px(30);
@@ -264,162 +329,177 @@
                 font-size: px(48);
                 color: $darkGray;
             }
+
             .under-questions-title {
                 display: block;
                 color: $blue;
                 font-family: $Roboto-Medium;
                 font-size: px(32);
             }
+
             .form .content {
-                border: none;
                 padding: 0;
+                border: 0;
             }
         }
+
         .contacts-info {
             margin-top: px(50);
+
             li {
-                margin-bottom: px(60); 
+                margin-bottom: px(60);
                 font-size: px(28);
-    
+
                 &:last-child {
                     margin-bottom: px(10);
                 }
             }
-    
+
             span {
                 display: block;
                 font-family: $Roboto-Regular;
                 margin-bottom: px(20);
                 color: $darkGray;
             }
-    
+
             a {
                 display: block;
                 font-family: $Roboto-Medium;
                 margin-bottom: px(20);
                 color: $darkGray;
+
                 &:last-of-type {
                     margin-bottom: 0;
                 }
             }
         }
-        
-        // ----- open-form -----
-        .open-form {
-            margin: px(50) auto 0;
-        }
     }
 
-    header {
-        background: $lightBlack;
-        padding: px(320) px(30) 0;
-        width: 100vw;
-        height: 100vh;
-
-        img {
-            display: block;
-            margin-left: px(160);
-            width: px(376);
-            height: px(786);
-            object-fit: cover;
-        }
-
-        .slogan {
-            margin-top: px(-100);
-            color: $white;
-            font-family: $Raleway-ExtraBold;
-            font-size: px(48);
-            text-transform: uppercase;
-
-            span {
-                display: block;
-                margin-top: px(10);
-                color: $white;
-            }
-
-            .blue {
-                color: $blue;
-            }
-        }
-
-        .slogan-translation {
-            display: block;
-            margin-top: px(30);
-            color: $gray;
-            font-family: $Roboto-Medium;
-            font-size: px(28);
-        }
-    }
-
+    // ----- carousel-slider-wrapper -----
     .carousel-slider-wrapper {
-        position: relative;
         width: 100%;
         height: 100%;
         overflow: hidden;
+        position: relative;
+
+        .control-buttons {
+            text-align: center;
+            margin: 55vh auto 0;
+            width: 90%;
+
+            .button {
+                margin-bottom: px(40);
+            }
+        }
 
         .carousel-slider {
-            display: flex;
             position: absolute;
-            top: 0;
+            display: flex;
             left: 0;
-    
+            top: 0;
+
             &__item {
                 position: relative;
-                width: 100vw;
                 height: 100vh;
+                width: 100vw;
                 color: $white;
             }
         }
-        .dots, .skip {
-            display: flex;
+
+        .dots,
+        .skip {
             justify-content: center;
             align-items: center;
             position: absolute;
-            bottom: px(50);
+            display: flex;
             z-index: 5;
-            transition: $time * 2;
             width: 100%;
+            color: $white;
+            font-size: px(24);
+            letter-spacing: 2px;
+            transition: $time * 2;
             text-transform: uppercase;
             font-family: $Roboto-Bold;
-            letter-spacing: 2px;
-            font-size: px(24);
-            color: $white;
         }
-    
+
+        .dots {
+            bottom: px(50);
+        }
+
+        .skip {
+            bottom: px(175);
+            margin-left: 1%;
+        }
+
         .dot {
-            display: flex;
             justify-content: center;
             align-items: center;
             margin-right: px(8);
+            display: flex;
             width: 8px;
             height: 8px;
-    
+
             &:before {
-                display: block;
                 width: 6px;
                 height: 6px;
-                border-radius: 50%;
-                background: $gray;
                 content: '';
+                display: block;
+                background: $gray;
+                border-radius: 50%;
                 transition: width $timeTick, height $timeTick, background $timeTick;
             }
-    
+
             &:last-child {
                 margin-right: 0;
             }
-    
+
             &.active {
-    
+
                 &:before {
                     background: $blue;
-                    width: 8px;
                     height: 8px;
+                    width: 8px;
                 }
             }
-    
-            
         }
-    }   
+    }
 
-    
+    // ***** keyframes *****
+    @keyframes fadeInWork {
+
+        0%,
+        50% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeOutWork {
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes bounce {
+
+        0% {
+            bottom: 0;
+        }
+
+        33% {
+            bottom: -.5em;
+        }
+
+        66% {
+            bottom: -1em;
+        }
+
+        100% {
+            bottom: 0;
+        }
+    }
 }

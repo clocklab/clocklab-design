@@ -72,6 +72,10 @@ $timeTick: .2s;
 $timeTickHalf: $timeTick / 2;
 // TIME CONSTANTS END
 
+// TOP PANEL
+$topPanelAnimationTime: $time * 2;
+// TOP PANEL ENDS
+
 // VARIABLES FOR PORTFOLIO CLIENT
 //$portfolioClientDelayTime: 0s;
 $portfolioClientDelayTime: $time * 3;
@@ -629,7 +633,43 @@ $MSColumn3DelayTime: $MSLine3DelayTime + $time;
 // MARKETING SERVICES BLOCK (MS)
 
 
+//  MAIN PAGE AUDI-NEW BLOCK ANB(Audi New Block)
+$ANBStickerLineDelayTime: $topPanelAnimationTime + $time * 3;
+$ANBStickerLineAnimationTime: $time * 3;
+$ANBStickerTextDelayTime: $ANBStickerLineDelayTime + $ANBStickerLineAnimationTime;
+$ANBStickerTextAnimationTime: $ANBStickerLineAnimationTime;
 
+$ANBAboutDelayTime: $ANBStickerLineDelayTime;
+$ANBAboutAnimationTime: $ANBStickerLineAnimationTime;
+//  MAIN PAGE AUDI-NEW BLOCK END
+
+// MAIN MENU
+$HomeMenuBlockAnimationTime: $time * 2;
+$HomeMenuBlock1DelayTime: 0s;
+$HomeMenuBlock2DelayTime: $HomeMenuBlock1DelayTime + $HomeMenuBlockAnimationTime;
+$HomeMenuBlock3DelayTime: $HomeMenuBlock2DelayTime + $HomeMenuBlockAnimationTime;
+
+$HomeMenuLineAnimationTime: $time;
+$HomeMenuLine1DelayTime: $HomeMenuBlock3DelayTime + $HomeMenuBlockAnimationTime;
+$HomeMenuLine2DelayTime: $HomeMenuLine1DelayTime + $timeDif;
+$HomeMenuLine3DelayTime: $HomeMenuLine2DelayTime + $timeDif;
+$HomeMenuLine4DelayTime: $HomeMenuLine3DelayTime + $timeDif;
+$HomeMenuLine5DelayTime: $HomeMenuLine4DelayTime + $timeDif;
+$HomeMenuLine6DelayTime: $HomeMenuLine5DelayTime + $timeDif;
+$HomeMenuLine7DelayTime: $HomeMenuLine6DelayTime + $timeDif;
+
+$HomeMenuLine7DelayTimeReversed: 0;
+$HomeMenuLine6DelayTimeReversed: $HomeMenuLine7DelayTimeReversed + $timeDif;
+$HomeMenuLine5DelayTimeReversed: $HomeMenuLine6DelayTimeReversed + $timeDif;
+$HomeMenuLine4DelayTimeReversed: $HomeMenuLine5DelayTimeReversed + $timeDif;
+$HomeMenuLine3DelayTimeReversed: $HomeMenuLine4DelayTimeReversed + $timeDif;
+$HomeMenuLine2DelayTimeReversed: $HomeMenuLine3DelayTimeReversed + $timeDif;
+$HomeMenuLine1DelayTimeReversed: $HomeMenuLine2DelayTimeReversed + $timeDif;
+
+$HomeMenuBlock3DelayTimeReversed: $HomeMenuLine1DelayTimeReversed + $HomeMenuLineAnimationTime;
+$HomeMenuBlock2DelayTimeReversed: $HomeMenuBlock3DelayTimeReversed + $HomeMenuBlockAnimationTime;
+$HomeMenuBlock1DelayTimeReversed: $HomeMenuBlock2DelayTimeReversed + $HomeMenuBlockAnimationTime;
+// MAIN MENU ENDS
 
 // MENU MOBILE
 $menuMobileAnimationTime: $time * 1.2;

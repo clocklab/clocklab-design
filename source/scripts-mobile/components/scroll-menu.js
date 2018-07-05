@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.menu-mobile')
-    const logo = document.querySelector('.logo-mobile')
+    const menu = document.querySelector('.menu')
+    const logo = document.querySelector('.logo')
     const blocks = document.querySelectorAll('.global-container > div');
     const delay = 500
     const delta = 20

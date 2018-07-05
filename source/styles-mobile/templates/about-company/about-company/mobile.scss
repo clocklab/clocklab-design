@@ -1,398 +1,206 @@
-& {  
+& {
+    font-family: $Raleway-Regular;
+    font-size: px(22);
 
-    & > header {
-        position: relative;
-        padding: px(720) px(30) 0;
-        width: 100vw;
-        height: 100vh;
+    p,
+    span {
+        letter-spacing: 1px;
+        line-height: 1.5;
 
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        &.blue {
+            color: $blue;
         }
 
-        .slogan {
-            position: relative;
-            z-index: 2;
-            color: $white;       
-            font-family: $Raleway-ExtraBold;
-            font-size: px(48);
-            text-transform: uppercase;
+        &.bold {
+            font-family: $Raleway-Bold;
+        }
+    }
+
+    // ----- blue-border -----
+    .blue-border {
+        padding: 5px 0 5px 25px;
+        position: relative;
+
+        &:before {
+            content: '';
+            background: $blue;
+            position: absolute;
+            height: 100%;
+            width: 10px;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    // ----- border -----
+    .border {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        border: 2px solid;
+        margin: 50px 0;
+        height: 250px;
+
+        span {
+            font-family: $Raleway-Bold;
+            font-size: px(32);
+            line-height: 1.5;
+            padding: 20px;
+
+            &.regular {
+                font-family: $Raleway-Regular;
+            }
+        }
+
+        &--blue {
+            background-color: $blue;
+            border-color: $blue;
 
             span {
-                display: block;
-                margin-top: px(10);
-                color: $blue;
-            }
-
-            .page-title {
                 color: $white;
             }
         }
+    }
+
+    // ----- line -----
+    .line {
+        background: $black;
+        margin: 25px auto;
+        height: 1px;
+        width: 100%;
+
+        &--white {
+            background: $white;
+        }
+    }
+
+    // ----- title -----
+    .title {
+        font-family: $Raleway-Bold;
+        letter-spacing: 1.5px;
+        text-align: center;
+        position: relative;
+        font-size: px(33);
+        line-height: 1.2;
+        display: block;
+        margin: 25px 0;
 
         &:before {
-            display: block;
-            position: absolute;
-            top: 0;
+            border: 1px solid;
+            padding: 0 5px 5px;
+            text-decoration: line-through;
+            text-decoration-color: $white;
+            font-family: $Raleway-Bold;
+            margin-right: 10px;
+            font-size: 48px;
+            float: left;
             left: 0;
-            z-index: 1;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, .4);
-            content: '';
+            top: 0;
+        }
+
+        &--one:before {
+            content: '01';
+        }
+
+        &--two:before {
+            content: '02';
+        }
+
+        &--three:before {
+            content: '03';
+        }
+
+        &--four:before {
+            content: '04';
+        }
+
+        &--five:before {
+            content: '05';
+        }
+
+        &--six:before {
+            content: '06';
+        }
+
+        &--white {
+            color: $white;
+        }
+
+        &--left {
+            text-align: left;
+        }
+
+        &--big {
+            margin: 50px 0 25px;
+            font-size: px(45);
+        }
+
+        &--uppercase {
+            text-transform: uppercase;
         }
     }
 
-    .about-our-company {
+    // ***** header *****
+    .header {
+        padding: px(500) px(50) 0 px(100);
         position: relative;
-        padding: px(170) 0 px(200);
+        height: 100vh;
+        width: 100vw;
 
-        .title {
-            margin-left: px(30);
-            color: $gray;
-            font-family: $Raleway-ExtraBold;
-            font-size: px(22);
-            text-transform: uppercase;
-        }
-
-        .title-name {
-            display: block;
-            margin: px(40) 0 px(60) px(30);
-            font-family: $Roboto-Black;
-            font-size: px(60);
-            color: $darkGray;
-            text-transform: initial;
-
-            span {
-                color: $blue;
-            }
-        }
-
-        .about-our-company-photo {
-            display: block;
-            margin-bottom: px(80);
-            padding: 0 px(30);
+        img {
+            top: 0;
+            left: 0;
             width: 100%;
-            height: px(450);
+            height: 100%;
             object-fit: cover;
-
-            img {
-                width: 100%;
-                height: 100%;
-            }
+            position: absolute;
+            object-position: 72% 0%;
         }
 
-        .long-read-container {
+        // ----- slogan -----
+        .slogan {
             position: relative;
-            max-height: px(380);
-            overflow: hidden;
+            font-size: px(48);
+            display: block;
+            color: $white;
+            z-index: 2;
+        }
+    }
 
-            &:before {
+    // ***** founders *****
+    .founders {
+        background-color: $white;
+        padding: 20px 44px 0;
+
+        img {
+            width: 100%;
+
+            & + p {
+                font-size: px(18);
+                margin-top: 25px;
                 display: block;
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                z-index: 2;
-                width: 100%;
-                height: px(110);
-                background: linear-gradient(0deg, $white 0%, $white 20%, rgba(255, 255, 255, .8) 70%, transparent 100%);
-                content: '';
-            }
-
-            &.opened {
-                max-height: initial;
-
-                &:before {
-                    background: transparent;
-                }
-            }
-        }
-
-        .long-read {
-            position: relative;
-            padding: 0 px(30) px(120);
-
-            p {
-                position: relative;
-                margin-bottom: px(60);
-                color: $darkGray;
-                font-family: $Roboto-Regular;
-                font-size: px(32);
-                line-height: 1.4;
 
                 span {
-                    font-family: $Roboto-Bold;
-                }
-
-                &.big {
-                    margin: px(120) 0 px(90);
-                    font-family: $Roboto-Black;
-                    font-size: px(48);
-
-                    span {
-                        color: $blue;
-                    }
-                }
-
-                &.italic {
-                    font-style: italic;
-                }
-
-                &.left-bordered {
-
-                    &:before {
-                        position: absolute;
-                        top: 0;
-                        left: px(-30);
-                        width: 4px;
-                        height: 100%;
-                        background: $blue;
-                        content: '';
-                    }
-                }
-
-                &.bordered {
-                    margin: px(100) 0 px(150);
-                    padding: px(40) 0;
-                    border-top: 1px solid $gray;
-                    border-bottom: 1px solid $gray;
-                }
-            }
-
-            blockquote {
-                margin: px(120) 0 px(100);
-                padding-bottom: px(60);
-                border-bottom: 1px solid $gray;
-                font-family: $Roboto-Regular;
-                font-style: italic;
-                font-size: px(28);
-                line-height: 1.4;
-
-                .dots {
-                    display: flex;
-                    justify-content: space-between;
-                    margin: 0 auto px(80);
-                    width: px(100);
-                }
-
-                .dot {
-                    width: 5px;
-                    height: 5px;
-                    border-radius: 50%;
-                    background: $gray;
-                }
-            }
-
-            .text-title {
-                font-family: $Roboto-Black;
-                font-size: px(36);
-            }
-
-            .quotes {
-                position: absolute;
-                top: px(-70);
-                left: px(-30);
-            }
-
-            .open-form {
-                display: block;
-                margin-top: px(100);
-                color: $blue;
-                font-family: $Roboto-Bold;
-                font-size: px(48);
-            }
-        }
-
-        .open-close-long-read {
-            display: block;
-            position: absolute;
-            z-index: 3;
-            bottom: px(80);
-            padding: 0;
-            width: 100vw;
-            height: px(100);
-            color: $darkGray;
-            font-family: $Raleway-Bold;
-            font-size: px(24);
-            text-transform: uppercase;
-            overflow: hidden;
-            transition: bottom $time;
-
-            .text-container {
-                width: 100%;
-                transition: transform $time * 2, background $time;
-            }
-
-            .open,
-            .close {
-                display: block;
-                height: px(100);
-                line-height: px(100);
-            }
-
-            &:before,
-            &:after {
-                position: absolute;
-                left: 5%;
-                z-index: 2;
-                width: 90%;
-                height: 1px;
-                background: $darkGray;
-                content: '';
-            }
-
-            &:before {
-                top: 0;
-            }
-
-            &:after {
-                bottom: 0;
-            }
-
-            &.opened {
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                z-index: 3;
-
-                .text-container {
-                    transform: translateY(-50%);
-                    background: #f9f9f9;
+                    color: $blue;
                 }
             }
         }
     }
 
-    .our-honors {
-        padding: px(110) px(30) 0;
-        width: 100vw;
-        height: 100vh;
-        background: $lightBlack;
+    // ***** long-read *****
+    .long-read {
+        background-color: $white;
+        padding: 20px 44px 0;
+    }
+
+    // ----- work-flow -----
+    .work-flow {
+        background-color: $white;
+        padding: 20px 44px 44px;
 
         .title {
-            color: $gray;
-            font-family: $Raleway-Bold;
-            font-size: px(22);
-            text-transform: uppercase;
-        }
-
-        .title-name {
-            display: block;
-            margin-top: px(46);
-            width: 60%;
-            color: $white;
-            font-family: $Roboto-Black;
-            font-size: px(48);
-            line-height: 1.4;
-
-            span {
-                color: $blue;
-            }
-        }
-
-        .honors-container {
-            position: relative;
-            margin-top: px(60);
-            width: 100%;
-            height: px(720);
-        }
-
-        .lines {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .line {
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background: $gray;
-
-            &--1 {
-                top: 33%;
-            }
-
-            &--2 {
-                top: 66%;
-            }
-
-            &.vertical {
-                width: 1px;
-                height: 100%;
-                top: 0;
-                left: 50%;
-            }
-        }
-
-        .honors {
-            display: flex;
-            flex-wrap: wrap;
-            align-content: flex-start;
-            width: 100%;
-            height: 100%;
-        }
-
-        .honors-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 50%;
-            height: 33%;
-        }
-
-        .honors-item-image {
-            width: 100%;
-            height: 55%;
-            object-fit: contain;
-        }
-    }
-
-    .work-flow {
-        padding: px(180) px(30) px(150);
-
-        .name {
-            color: $darkGray;
-            font-family: $Roboto-Black;
-            font-size: px(72);
-            line-height: 1.3;
-
-            span {
-                color: $blue;
-            }
-        }
-
-        ul {
-            margin-top: px(80);
-
-            li {
-                margin-bottom: px(70);
-                color: $darkGray;
-
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-
-            .list-item-title {
-                display: block;
-                margin-bottom: px(30);
-                font-family: $Roboto-Black;
-                font-size: px(48);
-            }
-            
-            p {
-                font-family: $Roboto-Regular;
-                font-size: px(32);
-                line-height: 1.4;
-            }
+            float: left;
         }
     }
 }

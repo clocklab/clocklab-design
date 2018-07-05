@@ -1,9 +1,14 @@
 function sliderCarousel() {
     const sliderCarousels = document.querySelectorAll('.carousel-slider')
-    const minDif = 0.2
+    const minDif = 0
     const bottomLimit = - 100
     const animationTime = 500
-
+    
+    // disable vertical scroll when hovering over the block
+    jQuery(sliderCarousels).bind('touchmove', function(e) {
+        e.preventDefault();
+    });
+   
     sliderCarousels.forEach(sliderCarousel => {
         const slides = sliderCarousel.querySelectorAll('.carousel-slider__item')
         const dots = Array.prototype.slice.call(sliderCarousel.parentElement.querySelectorAll('.carousel-slider-wrapper .dots .dot'))
@@ -21,18 +26,18 @@ function sliderCarousel() {
             startTouchPos = event.touches[0].clientX
             startLeftValue = parseInt(sliderCarousel.style.left) || 0
     
-            // sliderCarousel.addEventListener('touchmove', moveSlider)
-            // sliderCarousel.addEventListener('touchend', setLeftPosition)
+            sliderCarousel.addEventListener('touchmove', moveSlider)
+            sliderCarousel.addEventListener('touchend', setLeftPosition)
         }
     
-        // const moveSlider = event => {
-        //     lastMove = event
+        const moveSlider = event => {
+            // lastMove = event
     
-        //     const endTouchPos = lastMove.touches[0].clientX
-        //     const previousLeftValue = parseInt(sliderCarousel.style.left) || 0 
+            // const endTouchPos = lastMove.touches[0].clientX
+            // const previousLeftValue = parseInt(sliderCarousel.style.left) || 0 
     
-        //     sliderCarousel.style.left = `${startLeftValue + (endTouchPos - startTouchPos) / sliderCarouselWrapperWidth * 100 * koef}%`
-        // }
+            // sliderCarousel.style.left = `${startLeftValue + (endTouchPos - startTouchPos) / sliderCarouselWrapperWidth * 100 * koef}%`
+        }
     
         const changeActiveDot = direction => {
             const activeDot = dots.filter(dot => dot.classList.contains('active'))[0]
@@ -66,7 +71,7 @@ function sliderCarousel() {
                 : `${startLeftValue - 100}%`
     
               if (dif > minDif) {
-                endTouchPos > startTouchPos 
+                endTouchPos > startTouchPos
                 ? startLeftValue === bottomLimit && resetCarousel('end')
                 : startLeftValue === topLimit && resetCarousel('start')
     
@@ -86,22 +91,22 @@ function sliderCarousel() {
                             break
                         case topLimit + 200:
                             console.log('topLimit + 200')
-                            if (topLimit + 200 === bottomLimit - 200) {
+                            if (topLimit + 200 === bottomLimit + 200) {
                                 dots[0].classList.remove('small')
                             }
                             if (!dots[1].classList.contains('active')) {
                                 changeActiveDot('prev')
                             }
-                            dots[dots.length - 1].classList.add('small')
+                            dots[dots.length + 1].classList.add('small')
                             break
-                        case bottomLimit - 200:
-                            console.log('bottomLimit - 200')
+                        case bottomLimit + 200:
+                            console.log('bottomLimit + 200')
                             if (!dots[1].classList.contains('active')) {
                                 changeActiveDot('prev')
                             }
                             dots[0].classList.remove('small')
                             break
-                        case bottomLimit - 100:
+                        case bottomLimit + 100:
                             console.log('bottomLimit - 100')
                             changeActiveDot('prev')
                             break   
@@ -160,8 +165,8 @@ function sliderCarousel() {
             }, animationTime)
             
             sliderCarousel.removeEventListener('touchstart', setPoints)
-            // sliderCarousel.removeEventListener('touchmove', moveSlider)
-            // sliderCarousel.removeEventListener('touchend', setLeftPosition)
+            sliderCarousel.removeEventListener('touchmove', moveSlider)
+            sliderCarousel.removeEventListener('touchend', setLeftPosition)
         }
     
         sliderCarousel.addEventListener('touchstart', setPoints)

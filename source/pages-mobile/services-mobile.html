@@ -7,75 +7,74 @@
         <script src="../scripts-mobile/services-mobile.min.js" defer></script>
     </head>
     <body>
+
+        <!-- logo -->
+        @@include('./components/logo-mobile.html')
+
+        <!-- menu -->
+        @@include('./components/menu-mobile.html')
+
+        <!-- services-mobile -->
         <div class="services-mobile">
-            @@include('./components/top-panel-mobile.html')
 
-            <span class="page-title">Услуги</span>
-
-            <div class="service">
-                <a href="">
-                    Web Production
-                    <span>(разработка)</span>
-                </a>
-                <ul>
-                    <li>
-                        <a href="">Landing Page</a>
-                    </li>
-                    <li>
-                        <a href="">Корпоративный сайт</a>
-                    </li>
-                    <li>
-                        <a href="">Интернет магазин</a>
-                    </li>
-                    <li>
-                        <a href="">Сайт визитка</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="service">
-                <a href="">Услуги дизайна</a>
-                <ul>
-                    <li>
-                        <a href="">UI/UX дизайн (web дизайн)</a>
-                    </li>
-                    <li>
-                        <a href="">Разработка Brand Book</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="service">
-                <a href="">Маркетинг</a>
-                <ul>
-                    <li>
-                        <a href="">Разработка маркетинговой стратегии</a>
-                    </li>
-                    <li>
-                        <a href="">Интернет маркетинг</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="service">
-                <a href="">SEO</a>
-                <ul>
-                    <li>
-                        <a href="">Seo - аудит</a>
-                    </li>
-                    <li>
-                        <a href="">Seo на этапе создания сайта</a>
-                    </li>
-                    <li>
-                        <a href="">Снятие санкций поисковых систем</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="service service--complex">
-                <a href="">
-                    Комплексные решения - <span>Стратегия Flexible</span>
-                </a>
-                <p>
-                    Наша уникальная услуга — формирования бренда с нуля 
-                    от логотипа до полноценного бренда приносящего прибыль.
-                </p>
+            <!-- global-container -->
+            <div class="global-container">
+            
+                <!-- title -->
+                <span class="title wow fadeIn">Услуги</span>
+                
+                <!-- service -->
+                <div class="service wow fadeIn">
+                    <p class="toggle one">Web Production (разработка)</p>
+                    <div class="bg"></div>
+                    <ul class="list">
+                        <li><a href="/sozdanie-saytov">01<span>Обзор</span></a></li>
+                        <li><a href="/landing-page">02<span>Landing Page</span></a></li>
+                        <li><a href="/korporativnyy-sayt">03<span>Корпоративный сайт</span></a></li>
+                        <li><a href="/internet-magazin">04<span>Интернет магазин</span></a></li>
+                        <li><a href="/sayt-vizitka">05<span>Сайт визитка</span></a></li>
+                    </ul>
+                </div>
+                <div class="service wow fadeIn">
+                    <p class="toggle two">Услуги дизайна</p>
+                    <div class="bg"></div>
+                    <ul class="list">
+                        <li><a href="/dizayn">01<span>Обзор</span></a></li>
+                        <li><a href="/ui-ux-dizayn">02<span>UI / UX дизайн<br>(Web-дизайн)</span></a></li>
+                        <li><a href="/razrabotka-brend-buka">03<span>Разработка Brand Book</span></a></li>
+                    </ul>
+                </div>
+                <div class="service wow fadeIn">
+                    <p class="toggle three">Маркетинг</p>
+                    <div class="bg"></div>
+                    <ul class="list">
+                        <li><a href="/marketing">01<span>Обзор</span></a></li>
+                        <li><a href="/razrabotka-marketingovoy-strategii">02<span>Разработка маркетинговой стратегии</span></a></li>
+                        <li><a href="/internet-marketing">03<span>Интернет-маркетинг</span></a></li>
+                        <li><a href="/kontekstnaya-reklama">04<span>Контекстная реклама</span></a></li>
+                        <li><a href="/targetingovaya-reklama-v-facebook">05<span>Таргетинговая реклама в Facebook</span></a></li>
+                        <li><a href="/targetingovaya-reklama-v-instagram">06<span>Таргетинговая реклама в Instagram</span></a></li>
+                        <li><a href="/mediynaya-reklama-bannernaya-reklama">07<span>Медийная реклама<br>(Баннерная реклама)</span></a></li>
+                        <li><a href="/poiskovyy-remarketing-retargeting">08<span>Поисковый Ремаркетинг<br>(Ретаргетинг)</span></a></li>
+                        <li><a href="/reklama-v-youtube">09<span>Реклама в YouTube</span></a></li>
+                    </ul>
+                </div>
+                <div class="service wow fadeIn">
+                    <p class="toggle four">SEO</p>
+                    <div class="bg"></div>
+                    <ul class="list">
+                        <li><a href="/seo">01<span>Обзор</span></a></li>
+                        <li><a href="/seo-audit">02<span>Seo - аудит</span></a></li>
+                        <li><a href="/seo-na-etape-sozdaniya-sayta">03<span>Seo на этапе создания сайта</span></a></li>
+                        <li><a href="/snyatie-sanktsiy-poiskovyh-sistem">04<span>Снятие санкций поисковых систем</span></a></li>
+                    </ul>
+                </div>
+                <div class="service wow fadeIn">
+                    <a href="/kompleksnye-resheniya" class="five">Комплексные решения - «Стратегия Flexible»</a>
+                    <div class="bg"></div>
+                    <p class="text">Наша уникальная услуга — формирования бренда с нуля 
+                    от логотипа до полноценного бренда приносящего прибыль.</p>
+                </div>
             </div>
         </div>
     </body>

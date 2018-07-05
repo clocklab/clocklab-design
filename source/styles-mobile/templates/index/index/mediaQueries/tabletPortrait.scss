@@ -1,14 +1,27 @@
 @import '../mobile';
 
+// ***** header *****
+header {
+
+	// ----- services -----
+	.services .half {
+	    #category {
+	        line-height: px(75);
+	        font-size: px(50);
+	    }
+	    #subcategory {
+	        font-size: px(30);
+	        line-height: px(75);
+	    }
+	}
+}
+
 // ----- content -----
 .content {
 	position: relative;
-	
-	// ----- tablet-lines -----
 	.tablet-lines {
 		position: absolute;
 		height: 100%;
-		z-index: -1;
 		width: 100%;
 		top: 0;
 		div {
@@ -27,8 +40,6 @@
 	    	padding-top: 0;
 	    }
 	}
-
-	// ----- row -----
 	.row {
 	    display: flex;
 	    float: left;
@@ -38,6 +49,7 @@
 			overflow-x: hidden;
 		    width: 33.33%;
 		    float: left;
+		    z-index: 1;
 		    &.double {
 		        width: 66%;
 		    }
@@ -97,19 +109,6 @@
 	        	width: 50%;
 	        }
         }
-        
-        .half {
-        	width: 50%;
-        	float: left;
-        	&:first-of-type {
-        		float: right;
-        	}
-        	.button {
-        		width: px(500);
-        		font-size: px(24);
-        		margin-bottom: 37.5vh;
-        	}
-        }
     }
 }
 
@@ -168,4 +167,32 @@
 		    }
 	    }
 	}
+}
+
+// ----- carousel-slider-wrapper -----
+.carousel-slider-wrapper {
+	.control-buttons {
+		width: 100%;
+		.half {
+	    	width: 50%;
+	    	&:first-of-type {
+	    		float: right;
+	    	}
+	    	&:last-of-type {
+	    		float: left;
+	    	}
+	    	.button {
+	    		width: px(500);
+	    		margin-bottom: 0;
+	    		font-size: px(24);
+	    	}
+	    }
+	}
+	.dots {
+        bottom: px(100);
+    }
+    .skip {
+        bottom: px(200);
+        margin-left: px(2);
+    }
 }
