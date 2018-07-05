@@ -1,12 +1,16 @@
-& {  
+& {
     font-family: $Raleway-Regular;
     font-size: px(22);
-    p, span {
+
+    p,
+    span {
         letter-spacing: 1px;
         line-height: 1.5;
+
         &.blue {
             color: $blue;
         }
+
         &.bold {
             font-family: $Raleway-Bold;
         }
@@ -16,8 +20,9 @@
     .blue-border {
         padding: 5px 0 5px 25px;
         position: relative;
+
         &:before {
-            content: "";
+            content: '';
             background: $blue;
             position: absolute;
             height: 100%;
@@ -26,7 +31,7 @@
             top: 0;
         }
     }
-    
+
     // ----- border -----
     .border {
         width: 100%;
@@ -36,18 +41,22 @@
         border: 2px solid;
         margin: 50px 0;
         height: 250px;
+
         span {
             font-family: $Raleway-Bold;
             font-size: px(32);
             line-height: 1.5;
             padding: 20px;
+
             &.regular {
                 font-family: $Raleway-Regular;
             }
         }
+
         &--blue {
             background-color: $blue;
             border-color: $blue;
+
             span {
                 color: $white;
             }
@@ -60,6 +69,7 @@
         margin: 25px auto;
         height: 1px;
         width: 100%;
+
         &--white {
             background: $white;
         }
@@ -75,11 +85,12 @@
         line-height: 1.2;
         display: block;
         margin: 25px 0;
+
         &:before {
             border: 1px solid;
-            padding: 0px 5px 5px;
+            padding: 0 5px 5px;
             text-decoration: line-through;
-            text-decoration-color: white;
+            text-decoration-color: $white;
             font-family: $Raleway-Bold;
             margin-right: 10px;
             font-size: 48px;
@@ -87,34 +98,44 @@
             left: 0;
             top: 0;
         }
+
         &--one:before {
-            content: "01";
+            content: '01';
         }
+
         &--two:before {
-            content: "02";
+            content: '02';
         }
+
         &--three:before {
-            content: "03";
+            content: '03';
         }
+
         &--four:before {
-            content: "04";
+            content: '04';
         }
+
         &--five:before {
-            content: "05";
+            content: '05';
         }
+
         &--six:before {
-            content: "06";
+            content: '06';
         }
+
         &--white {
             color: $white;
         }
+
         &--left {
             text-align: left;
         }
+
         &--big {
             margin: 50px 0 25px;
             font-size: px(45);
         }
+
         &--uppercase {
             text-transform: uppercase;
         }
@@ -126,6 +147,7 @@
         position: relative;
         height: 100vh;
         width: 100vw;
+
         img {
             top: 0;
             left: 0;
@@ -141,7 +163,7 @@
             position: relative;
             font-size: px(48);
             display: block;
-            color: $white;       
+            color: $white;
             z-index: 2;
         }
     }
@@ -150,12 +172,15 @@
     .founders {
         background-color: $white;
         padding: 20px 44px 0;
+
         img {
             width: 100%;
+
             & + p {
                 font-size: px(18);
                 margin-top: 25px;
                 display: block;
+
                 span {
                     color: $blue;
                 }
@@ -168,11 +193,12 @@
         background-color: $white;
         padding: 20px 44px 0;
     }
-    
+
     // ----- work-flow -----
     .work-flow {
         background-color: $white;
         padding: 20px 44px 44px;
+
         .title {
             float: left;
         }

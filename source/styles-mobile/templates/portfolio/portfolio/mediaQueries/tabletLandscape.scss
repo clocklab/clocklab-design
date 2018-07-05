@@ -23,37 +23,46 @@
         width: 50%;
         padding: 0;
         height: auto;
+
         &:first-of-type {
             padding-top: 175px;
             margin-top: 0;
+
             .opened-work {
                 margin-top: 175px;
             }
         }
+
         &:last-of-type {
             padding-bottom: 100px;
         }
+
         img {
             width: 100%;
             height: 250px;
         }
+
         &__left {
             padding-right: 22px;
             padding-left: 44px;
             margin-top: -135px;
+
             .opened-work {
                 margin: 0 44px;
             }
         }
+
         &__right {
             padding-right: 44px;
             padding-left: 22px;
             margin-top: -135px;
             margin-left: 50%;
+
             .opened-work {
                 margin: 0 22px;
             }
         }
+
         &__title {
             width: 50%;
             color: $white;
@@ -61,15 +70,19 @@
             min-height: 60px;
             position: inherit;
         }
+
         .opened-work {
             width: calc(100% - 66px);
             height: 250px;
+
             p {
                 margin: 0;
             }
+
             img {
                 display: none;
             }
+
             &.opened {
                 width: calc(100% - 66px);
             }
@@ -83,8 +96,11 @@
             // ----- transparent -----
             &.transparent {
                 color: $white;
+
                 &.option {
-                    &::before, &::after {
+
+                    &::before,
+                    &::after {
                         border-color: $white;
                     }
                 }

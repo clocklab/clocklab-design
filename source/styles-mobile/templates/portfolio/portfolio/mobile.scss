@@ -1,6 +1,6 @@
 & {
     display: grid;
-    
+
     // ----- our-works -----
     .our-works {
         background: $white;
@@ -16,14 +16,17 @@
             position: relative;
             overflow: hidden;
             height: 100vh;
+
             img {
                 width: 100%;
                 height: 175px;
                 object-fit: cover;
             }
+
             &:last-of-type {
                 margin-bottom: 0;
             }
+
             &__title {
                 font-family: $Raleway-Medium;
                 text-transform: uppercase;
@@ -31,42 +34,52 @@
                 line-height: 1.2;
                 display: block;
                 margin: 20px 0;
+
                 span {
                     font-family: $Raleway-Bold;
                 }
             }
+
             .opened-work {
                 color: $white;
                 z-index: 9999;
                 padding: 60px 44px 0;
                 transition: top $time * 2;
                 font-family: $Roboto-Regular;
-                background: rgb(0,0,0);
+                background: $black;
                 position: absolute;
                 overflow: hidden;
                 height: 100vh;
                 width: 100%;
                 top: 101%;
                 left: 0;
+
                 .content {
                     position: relative;
                 }
+
                 &.fadeInWork {
+
                     img {
                         animation: fadeInWork $time * 1.25 linear;
                     }
+
                     p {
                         animation: fadeInWork $time * 2 linear;
                     }
                 }
+
                 &.fadeOutWork {
+
                     img {
                         animation: fadeOutWork .01s linear forwards;
                     }
+
                     p {
                         animation: fadeOutWork .05s linear forwards;
                     }
                 }
+
                 img {
                     top: 0;
                     z-index: 1;
@@ -74,6 +87,7 @@
                     height: auto;
                     width: 120px;
                 }
+
                 p {
                     font-family: $Roboto-Regular;
                     line-height: px(35);
@@ -81,12 +95,13 @@
                     margin: px(75) 0;
                     text-align: left;
                     color: #CCC;
-                    
                 }
+
                 &.opened {
                     width: 100%;
                     top: 0;
                 }
+
                 .close-work {
                     display: none;
                 }
@@ -106,27 +121,33 @@
                 z-index: 99999;
                 position: relative;
                 letter-spacing: 2px;
+
                 &:last-of-type {
                     margin-bottom: 0;
                 }
-                
+
                 // ----- transparent -----
                 &.transparent {
                     color: $black;
                     padding: 0 20px;
                     font-family: $Roboto-Black;
+
                     &.white {
                         color: $white;
+
                         &.option::before {
                             border-left: 5px solid $white;
                             border-bottom: 1px solid $white;
                         }
+
                         &.option::after {
                             border-top: 1px solid $white;
                             border-right: 5px solid $white;
                         }
                     }
-                    &::before, &::after {
+
+                    &::before,
+                    &::after {
                         position: absolute;
                         height: 100%;
                         width: 100%;
@@ -137,25 +158,28 @@
                         transition: $time;
                         box-sizing: border-box;
                     }
+
                     &.option::before {
                         border-left: 5px solid $black;
                         border-bottom: 1px solid $black;
                         transform-origin: 0 100%;
-                        transform: scale(.1,.5);
+                        transform: scale(.1, .5);
                     }
+
                     &.option::after {
                         border-top: 1px solid $black;
                         border-right: 5px solid $black;
                         transform-origin: 100% 0%;
-                        transform: scale(.1,.5);
+                        transform: scale(.1, .5);
                     }
                 }
-                
+
                 // ----- special -----
                 &.special {
                     color: $white;
                     border: 1px solid;
                     font-family: $Roboto-Bold;
+
                     .element {
                         background-color: $white;
                         font-family: $Raleway-ExtraBold;
@@ -165,10 +189,13 @@
                         left: px(45);
                         top: px(-65);
                     }
+
                     &.blue {
                         background-color: $blue;
                         border-color: $blue;
-                        span, a {
+
+                        a,
+                        span {
                             color: $white;
                         }
                     }
@@ -179,14 +206,18 @@
 
     // ***** keyframes *****
     @keyframes fadeInWork {
-        0%, 50% {
+
+        0%,
+        50% {
             opacity: 0;
         }
+
         100% {
             opacity: 1;
         }
     }
     @keyframes fadeOutWork {
+
         100% {
             opacity: 0;
         }
