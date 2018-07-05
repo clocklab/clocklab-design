@@ -138,11 +138,6 @@ gulp.task('scripts', function() {
         }));
 });
 
-gulp.task('projects', function() {
-    gulp.src(path.source.projects)
-        .pipe(gulp.dest(path.build.projects));
-});
-
 gulp.task('server', function() {
     plugins.browserSync(config);
 });

@@ -1,11 +1,5 @@
-// base
-@import "../base/reset";
-@import "../base/variables";
-@import "../base/fonts";
-
-// components
-@import "../components/top-panel/main";
-@import "../components/form/main";
+@import '../components/top-panel/main';
+@import '../components/form/main';
 
 // main
-@import "templates/services-second-level/services-second-level/main";
+@import 'templates/services-second-level/services-second-level/main';
