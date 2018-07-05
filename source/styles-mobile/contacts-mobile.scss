@@ -1,11 +1,4 @@
-// base
-@import "base/reset";
-@import "base/variables";
-@import "base/fonts";
+@import 'components/top-panel/main';
+@import 'components/form/main';
 
-// components
-@import "components/top-panel/main";
-@import "components/form/main";
-
-// main
-@import "templates/contacts/contacts/main";
+@import 'templates/contacts/contacts/main';

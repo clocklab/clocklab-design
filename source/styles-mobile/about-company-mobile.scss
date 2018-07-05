@@ -1,14 +1,8 @@
-// base
-@import "base/reset";
-@import "base/variables";
-@import "base/animate";
-@import "base/fonts";
+@import 'base/animate';
 
-// components
-@import "components/logo/main";
-@import "components/menu/main";
-@import "components/form/main";
-@import "components/our-clients/main";
+@import 'components/logo/main';
+@import 'components/menu/main';
+@import 'components/form/main';
+@import 'components/our-clients/main';
 
-// main
-@import "templates/about-company/about-company/main";
+@import 'templates/about-company/about-company/main';

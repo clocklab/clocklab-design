@@ -1,5 +1,5 @@
-& {  
-    
+& {
+
     .crossed-button {
         position: absolute;
         bottom: px(100);
@@ -115,7 +115,7 @@
                 position: relative;
                 padding-top: px(50);
                 font-style: italic;
-    
+
                 .circles {
                     display: flex;
                     justify-content: center;
@@ -160,11 +160,11 @@
                 height: px(60);
                 border: 1px solid $darkGray;
 
-                svg { 
+                svg {
                     width: 55%;
                 }
 
-                path { 
+                path {
                     fill: $darkGray;
                 }
             }

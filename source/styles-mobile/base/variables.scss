@@ -17,7 +17,7 @@ $desktopMega:     '(min-width: 1921px)';
 // COLORS VARIABLES
 $silver: #2D2D2D;
 $blue: #0057FF;
-$dark: #333333;
+$dark: #333;
 $white: #FFF;
 $black: #000;
 $lightBlack: #1C1C1C;
@@ -28,7 +28,7 @@ $secondary: #FAFBFC;
 $primary: #24292E;
 $border: #E1E4E8;
 $border-mobile: #E0E1E0;
-$red: #b60000;
+$red: #B60000;
 $darkWhite: #EEE;
 // COLORS VARIABLES END
 
@@ -493,7 +493,7 @@ $WCStickerTextAnimationTime: $time * 3;
 $WCTextDelayTime: $WCStickerLineDelayTime;
 $WCTextAnimationTime: $WCStickerLineAnimationTime;
 
-$WCCrossedBtnDelayTime: $WCStickerTextDelayTime; 
+$WCCrossedBtnDelayTime: $WCStickerTextDelayTime;
 $WCCrossedBtnAnimationTime: $WCStickerTextAnimationTime;
 // WE CAN BLOCK
 

@@ -1,11 +1,4 @@
-// base
-@import "../base/reset";
-@import "../base/variables";
-@import "../base/fonts";
+@import '../components/top-panel/main';
+@import '../components/crossed-button/main';
 
-// components
-@import "../components/top-panel/main";
-@import "../components/crossed-button/main";
-
-// main
-@import "templates/post-mobile/post-mobile/main";
+@import 'templates/post-mobile/post-mobile/main';
