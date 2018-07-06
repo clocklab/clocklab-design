@@ -1,4 +1,64 @@
-@import 'components/top-panel/main';
-@import 'components/form/main';
+@import 'base/variables';
 
-@import 'templates/contacts/contacts';
+/*
+/
+/---- MOBILE ---- */
+@import 'templates/contacts/mobile';
+/* ---- MOBILE ---- */
+
+
+/*
+/
+/---- PHONE LANDSCAPE ---- */
+@media (min-width: #{$phoneLandscapeWidth}) {
+}
+/* ---- PHONE LANDSCAPE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (min-width: #{$tabletPortraitWidth}) {
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- IPhone6/7/8Plus ---- */
+@media (min-width: #{$iPhone8PlusLandscapeWidth}) and (max-width: #{($tabletLandscapeWidth - 1px)}) and (orientation: landscape) {
+}
+/* ---- IPhone6/7/8Plus ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (min-width: #{$tabletLandscapeWidth}) {
+    @import 'templates/contacts/tabletLandscape';
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- IPhoneX ---- */
+@media (min-width: #{$iPhoneXLandscapeWidth}) and (max-width: #{($iPadProPortraitWidth - 1px)}) and (orientation: landscape) {
+}
+/* ---- IPhoneX ---- */
+
+
+/*
+/
+/---- IPadPro PORTRAIT ---- */
+@media (min-width: #{$iPadProPortraitWidth}) {
+}
+/* ---- IPadPro PORTRAIT ---- */
+
+
+/*
+/
+/---- IPadPro LANDSCAPE ---- */
+@media (min-width: #{$iPadProLandscapeWidth}) {
+}
+/* ---- IPadPro LANDSCAPE ---- */

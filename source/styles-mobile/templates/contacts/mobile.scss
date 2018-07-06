@@ -1,0 +1,82 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    padding: 100px 10% 50px;
+    min-height: 100vh;
+    background: $lightBlack;
+    color: $white;
+    font-family: $Raleway-Regular;
+    line-height: 1.2;
+
+    &__title {
+        position: relative;
+        z-index: 2;
+        font-family: $Raleway-ExtraBold;
+        font-size: 32px;
+        text-transform: uppercase;
+        animation: Up $time * 3 $time * 2 both;
+
+        &-container {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 50px;
+            overflow: hidden;
+
+            &:before {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 70%;
+                background: $blue;
+                content: '';
+                animation: rightAndHalfDown $time * 3 both;
+            }
+        }
+    }
+
+    &__info {
+        margin-bottom: 30px;
+    }
+
+    &__type {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        display: inline-block;
+        margin: 5px 0;
+        color: $white;
+        font-size: 18px;
+
+        &--underlined {
+            text-decoration: underline;
+        }
+    }
+
+    &__btn {
+        order: 2;
+        display: block;
+        width: 100%;
+        background: $blue;
+        color: $white;
+        font-size: 16px;
+        font-family: $Raleway-Bold;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+
+    &__map {
+        margin: 40px auto;
+        width: 100%;
+        height: 70vh;
+        min-height: 350px;
+        background: $gray;
+        border: 1px solid $gray;
+    }
+}

@@ -1,3 +1,70 @@
+// ~~~~~~~~~~~~~ USEFULL ANIMATIONS ~~~~~~~~~~~~~
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes rightAndHalfDown {
+    from {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: none;
+    }
+
+    to {
+        transform: translateY(50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // UNIVERSAL MIXIN
 @mixin animation-mixin($name, $from, $to) {
     @keyframes #{$name} {
@@ -476,17 +543,6 @@
 @keyframes heightChangingCompany {
     from { height: 0; }
     to { height: 290px; }
-}
-@keyframes fadeInUp {
-    from, to { visibility: visible; }
-    from {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    to {
-        opacity: 1;
-        transform: none;
-    }
 }
 
 @keyframes fadeInLeft {

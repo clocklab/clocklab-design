@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 var mobile = '-mobile'
 // var mobile = ''
 
-var page = `blog/post${mobile}`
+var page = `contacts${mobile}`
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
@@ -36,8 +36,7 @@ var source = 'source',
             images: build + '/images',
             styles: build + `/styles${mobile}`,
             stylesCommon: build + `/styles${mobile}`,
-            scripts: build + `/scripts${mobile}`,
-            projects: build + '/projects'
+            scripts: build + `/scripts${mobile}`
         },
         source: {
             html: source + `/pages${mobile}/**/**/**/**/**/**/*.html`,
@@ -46,8 +45,7 @@ var source = 'source',
             images: source + '/images/**/**/**/**/**/*.*',
             styles: source + `/styles${mobile}/**/**/**/**/**/*.*`,
             stylesCommon: source + `/styles${mobile}/**/**/**/**/**/*.*`,
-            scripts: source + `/scripts${mobile}/**/**/**/**/*.*`,
-            projects: source + '/projects/**/*'
+            scripts: source + `/scripts${mobile}/**/**/**/**/*.*`
         },
         watch: {
             html: source + `/pages${mobile}/**/**/**/**/**/**/*.html`,
@@ -56,15 +54,14 @@ var source = 'source',
             images: source + '/images/**/**/**/**/**/*.*',
             styles: source + `/styles${mobile}/**/**/**/**/**/*.*`,
             stylesCommon: source + `/styles${mobile}/components/**/**/**/**/*.*`,
-            scripts: source + `/scripts${mobile}/**/**/**/**/*.*`,
-            projects: source + '/projects/**/*'
+            scripts: source + `/scripts${mobile}/**/**/**/**/*.*`
         },
         clean: 'build'
     };
 
 gulp.task('default', ['build', 'server', 'watch']);
 
-gulp.task('build', ['html', 'fonts', 'videos', 'images', 'sass', 'sass-common', 'scripts', 'projects']);
+gulp.task('build', ['html', 'fonts', 'videos', 'images', 'sass', 'sass-common', 'scripts']);
 
 gulp.task('html', function() {
     gulp.src(path.source.html)
@@ -167,8 +164,5 @@ gulp.task('watch', function() {
     });
     plugins.watch([path.watch.stylesCommon], function(event, cb) {
         gulp.start('sass-common');
-    });
-    plugins.watch([path.watch.projects], function(event, cb) {
-        gulp.start('projects');
     });
 });
