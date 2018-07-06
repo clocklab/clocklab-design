@@ -1,31 +1,31 @@
 & {
-    padding-top: px(300);
+    padding-top: 150px;
     background: $lightBlack;
 
     .feed {
-        padding: 0 px(30) px(150);
+        padding: 0 15px 75px;
 
         &__item {
             display: block;
-            margin-bottom: px(150);
+            margin-bottom: 75px;
             width: 100%;
 
             img {
                 width: 100%;
-                height: px(460);
+                height: 230px;
                 object-fit: cover;
             }
 
             .info {
-                margin-top: px(50);
+                margin-top: 25px;
                 color: $gray;
                 font-family: $Roboto-Regular;
-                font-size: px(24);
+                font-size: 12px;
             }
 
             .date {
                 position: relative;
-                padding-right: px(20);
+                padding-right: 10px;
 
                 &:after {
                     position: absolute;
@@ -36,17 +36,17 @@
             }
 
             .read-duration {
-                padding-left: px(20);
+                padding-left: 10px;
             }
 
             .feed-item-title {
                 display: block;
-                margin-top: px(40);
-                padding-right: px(50);
+                margin-top: 20px;
+                padding-right: 25px;
                 color: $white;
                 font-family: $Roboto-Black;
-                font-size: px(60);
-                line-height: px(72);
+                font-size: 30px;
+                line-height: 36px;
             }
 
             &:last-child {

@@ -1,0 +1,190 @@
+.services {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: $lightBlack;
+    padding: 100px 37px 100px 45px;
+
+    .title {
+        color: $white;
+        display: block;
+        letter-spacing: 3px;
+        padding-left: 55px;
+        margin-bottom: 32px;
+        font-family: $Raleway-Bold;
+        text-transform: uppercase;
+        position: relative;
+        font-size: 31px;
+
+        &:before {
+            width: 50px;
+            height: 2px;
+            content: '';
+            position: absolute;
+            background: $white;
+            top: 17px;
+            left: 0;
+        }
+    }
+
+    .service {
+        z-index: 2;
+        position: relative;
+        margin-bottom: 20px;
+
+        a {
+            display: block;
+        }
+
+        & > a,
+        & > p {
+            line-height: 1.2;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-family: $Roboto-Regular;
+            align-items: center;
+            position: relative;
+            font-size: 16px;
+            display: flex;
+            color: $white;
+
+            &.five:after {
+                display: none;
+            }
+
+            &.active {
+                & + .bg {
+                    position: absolute;
+                    background: $blue;
+                    left: -45px;
+                    height: 57px;
+                    z-index: -1;
+                    width: 200%;
+                    top: 0;
+
+                    & + .list {
+                        display: block;
+                    }
+                }
+
+                &:before {
+                    text-decoration-color: $blue;
+                }
+
+                &:after {
+                    background: url('../images/services/arrow-down-mobile.png');
+                    height: 7px;
+                    width: 15px;
+
+                }
+            }
+
+            &:after {
+                top: 16px;
+                width: 9px;
+                right: -17px;
+                height: 14px;
+                background: url('../images/services/arrow-mobile.png');
+                background-size: cover;
+                position: absolute;
+                display: block;
+                content: '';
+            }
+
+            &:before {
+                text-decoration: line-through;
+                text-decoration-color: $lightBlack;
+                font-family: $Raleway-Bold;
+                margin-right: 15px;
+                font-size: 44px;
+                float: left;
+                left: 0;
+                top: 0;
+            }
+
+            &.one:before {
+                content: '01';
+            }
+
+            &.two:before {
+                content: '02';
+            }
+
+            &.three:before {
+                content: '03';
+            }
+
+            &.four:before {
+                content: '04';
+            }
+
+            &.five:before {
+                content: '05';
+            }
+
+            span {
+                display: block;
+                margin-top: 8px;
+                color: $gray;
+            }
+        }
+
+        .list {
+            display: none;
+
+            a {
+                color: #9c9c9c;
+                position: relative;
+                margin-bottom: 7px;
+                font-family: $Roboto-Regular;
+                line-height: 21px;
+                font-size: 13px;
+                display: flex;
+
+                span {
+                    margin-left: 45px;
+                    letter-spacing: .5px;
+                    display: inline-flex;
+                }
+            }
+        }
+
+        .text {
+            color: $gray;
+            line-height: 1.6;
+            font-size: 13px;
+            letter-spacing: .5px;
+            text-transform: inherit;
+            font-family: $Roboto-Regular;
+
+            &:after {
+                display: none;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &:before,
+    &:after {
+        top: 0;
+        width: 1px;
+        height: 100%;
+        display: block;
+        position: absolute;
+        background: $gray;
+        content: '';
+        opacity: .3;
+    }
+
+    &:before {
+        left: 38px;
+    }
+
+    &:after {
+        left: 238px;
+    }
+}

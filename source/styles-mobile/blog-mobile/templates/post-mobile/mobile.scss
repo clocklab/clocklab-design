@@ -2,8 +2,8 @@
 
     .crossed-button {
         position: absolute;
-        bottom: px(100);
-        left: px(140);
+        bottom: 50px;
+        left: 70px;
         z-index: 3;
         font-family: $roboto;
         font-weight: 600;
@@ -11,7 +11,7 @@
 
         span {
             color: $darkGray;
-            font-size: px(24);
+            font-size: 12px;
 
             &:after {
                 content: 'Назад';
@@ -22,7 +22,7 @@
     header {
         position: relative;
         width: 100%;
-        height: px(600);
+        height: 300px;
 
         img {
             width: 100%;
@@ -34,11 +34,11 @@
     .date {
         position: absolute;
         z-index: 2;
-        bottom: px(-50);
-        right: px(30);
-        padding: px(20) px(26);
-        width: px(260);
-        height: px(120);
+        bottom: -25px;
+        right: 15px;
+        padding: 10px 14px;
+        width: 130px;
+        height: 60px;
         background: $blue;
         color: $white;
         font-weight: 600;
@@ -47,10 +47,10 @@
             display: block;
             position: absolute;
             font-family: $Roboto-Regular;
-            font-size: px(48);
+            font-size: 24px;
 
             span {
-                font-size: px(24);
+                font-size: 12px;
                 font-family: $Roboto-Bold;
                 text-transform: uppercase;
             }
@@ -58,11 +58,11 @@
 
         .year {
             position: absolute;
-            right: px(40);
-            bottom: px(18);
+            right: 20px;
+            bottom: 9px;
             display: block;
             color: $gray;
-            font-size: px(28);
+            font-size: 14px;
             font-family: $Raleway-Medium;
             transform-origin: 100% 100%;
             transform: rotate(90deg);
@@ -72,15 +72,15 @@
     main {
         position: relative;
         z-index: 2;
-        margin-top: px(100);
-        padding: 0 px(30) px(80);
+        margin-top: 50px;
+        padding: 0 15px 40px;
 
         .post-title {
             display: block;
             color: $darkGray;
             font-family: $Roboto-Black;
-            font-size: px(60);
-            line-height: px(72);
+            font-size: 30px;
+            line-height: 36px;
 
             &:first-letter {
                 text-transform: uppercase;
@@ -88,21 +88,21 @@
         }
 
         .reading-duration {
-            margin-top: px(10);
+            margin-top: 5px;
             color: $gray;
             font-family: $Roboto-Regular;
-            font-size: px(24);
+            font-size: 12px;
         }
 
         article {
-            margin-top: px(50);
+            margin-top: 25px;
 
             p,
             blockquote {
-                margin-bottom: px(50);
+                margin-bottom: 25px;
                 color: $darkGray;
                 font-family: $Roboto-Regular;
-                font-size: px(32);
+                font-size: 16px;
                 line-height: 1.4;
                 letter-spacing: 0;
 
@@ -113,7 +113,7 @@
 
             blockquote {
                 position: relative;
-                padding-top: px(50);
+                padding-top: 25px;
                 font-style: italic;
 
                 .circles {
@@ -144,7 +144,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: px(90);
+            margin-top: 45px;
 
             .crossed-button {
                 position: relative;
@@ -156,8 +156,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                width: px(60);
-                height: px(60);
+                width: 30px;
+                height: 30px;
                 border: 1px solid $darkGray;
 
                 svg {
