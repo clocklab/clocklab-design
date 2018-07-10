@@ -1,0 +1,19 @@
+.blog {
+    padding: 120px 10% 100px;
+
+    .feed {
+
+        &__item {
+            margin-bottom: 50px;
+            width: 50%;
+
+            &:nth-child(even) {
+                margin-left: auto;
+            }
+        }
+
+        &__title {
+            padding-right: 0;
+        }
+    }
+}
