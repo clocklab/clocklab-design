@@ -1,0 +1,30 @@
+.services {
+    padding: 120px 0 100px;
+
+    .container {
+        width: 75%;
+        max-width: 800px;
+    }
+
+    &__title {
+        font-size: 40px;
+    }
+
+    .inner-list {
+
+        &__item {
+
+            &-link {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .name {
+        font-size: 22px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+}
