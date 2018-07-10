@@ -3,79 +3,188 @@
     <head>
         <title>Clocklab Design | Services</title>
         @@include('./components/head.html')
+        <link rel="stylesheet" href="../styles-mobile/common.css">
         <link rel="stylesheet" href="../styles-mobile/services-mobile.css">
         <script src="../scripts-mobile/services-mobile.min.js" defer></script>
     </head>
     <body>
+        <!-- @@include('./components/logo-mobile.html') -->
 
-        <!-- logo -->
-        @@include('./components/logo-mobile.html')
+        <!-- @@include('./components/menu-mobile.html') -->
 
-        <!-- menu -->
-        @@include('./components/menu-mobile.html')
-
-        <!-- services-mobile -->
-        <div class="services-mobile">
-
-            <!-- global-container -->
-            <div class="global-container">
-            
-                <!-- title -->
-                <span class="title wow fadeIn">Услуги</span>
-                
-                <!-- service -->
-                <div class="service wow fadeIn">
-                    <p class="toggle one">Web Production (разработка)</p>
-                    <div class="bg"></div>
-                    <ul class="list">
-                        <li><a href="/sozdanie-saytov">01<span>Обзор</span></a></li>
-                        <li><a href="/landing-page">02<span>Landing Page</span></a></li>
-                        <li><a href="/korporativnyy-sayt">03<span>Корпоративный сайт</span></a></li>
-                        <li><a href="/internet-magazin">04<span>Интернет магазин</span></a></li>
-                        <li><a href="/sayt-vizitka">05<span>Сайт визитка</span></a></li>
-                    </ul>
-                </div>
-                <div class="service wow fadeIn">
-                    <p class="toggle two">Услуги дизайна</p>
-                    <div class="bg"></div>
-                    <ul class="list">
-                        <li><a href="/dizayn">01<span>Обзор</span></a></li>
-                        <li><a href="/ui-ux-dizayn">02<span>UI / UX дизайн<br>(Web-дизайн)</span></a></li>
-                        <li><a href="/razrabotka-brend-buka">03<span>Разработка Brand Book</span></a></li>
-                    </ul>
-                </div>
-                <div class="service wow fadeIn">
-                    <p class="toggle three">Маркетинг</p>
-                    <div class="bg"></div>
-                    <ul class="list">
-                        <li><a href="/marketing">01<span>Обзор</span></a></li>
-                        <li><a href="/razrabotka-marketingovoy-strategii">02<span>Разработка маркетинговой стратегии</span></a></li>
-                        <li><a href="/internet-marketing">03<span>Интернет-маркетинг</span></a></li>
-                        <li><a href="/kontekstnaya-reklama">04<span>Контекстная реклама</span></a></li>
-                        <li><a href="/targetingovaya-reklama-v-facebook">05<span>Таргетинговая реклама в Facebook</span></a></li>
-                        <li><a href="/targetingovaya-reklama-v-instagram">06<span>Таргетинговая реклама в Instagram</span></a></li>
-                        <li><a href="/mediynaya-reklama-bannernaya-reklama">07<span>Медийная реклама<br>(Баннерная реклама)</span></a></li>
-                        <li><a href="/poiskovyy-remarketing-retargeting">08<span>Поисковый Ремаркетинг<br>(Ретаргетинг)</span></a></li>
-                        <li><a href="/reklama-v-youtube">09<span>Реклама в YouTube</span></a></li>
-                    </ul>
-                </div>
-                <div class="service wow fadeIn">
-                    <p class="toggle four">SEO</p>
-                    <div class="bg"></div>
-                    <ul class="list">
-                        <li><a href="/seo">01<span>Обзор</span></a></li>
-                        <li><a href="/seo-audit">02<span>Seo - аудит</span></a></li>
-                        <li><a href="/seo-na-etape-sozdaniya-sayta">03<span>Seo на этапе создания сайта</span></a></li>
-                        <li><a href="/snyatie-sanktsiy-poiskovyh-sistem">04<span>Снятие санкций поисковых систем</span></a></li>
-                    </ul>
-                </div>
-                <div class="service wow fadeIn">
-                    <a href="/kompleksnye-resheniya" class="five">Комплексные решения - «Стратегия Flexible»</a>
-                    <div class="bg"></div>
-                    <p class="text">Наша уникальная услуга — формирования бренда с нуля 
-                    от логотипа до полноценного бренда приносящего прибыль.</p>
-                </div>
+        <div class="services">
+            <div class="container">
+                <h1 class="services__title">
+                    Услуги
+                </h1>
             </div>
+
+            <ul class="list">
+                <li class="list__item">
+                    <div class="title-block item-toggler">
+                        <div class="container">
+                            <div class="name-container">
+                                <span class="index">01</span>
+                                <span class="name">Web Production (разработка)</span>
+                            </div>
+                            <svg class="arrow">
+                                <polyline 
+                                    points="0,0 10,10 20,0"
+                                    class="arrow__part" />
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <ul class="inner-list">
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">01 Обзор</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">02 Landing Page</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">03 Корпоративный сайт</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">04 Интернет магазин</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">05 Сайт визитка</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list__item">
+                    <div class="title-block item-toggler">
+                        <div class="container">
+                            <div class="name-container">
+                                <span class="index">02</span>
+                                <span class="name">Услуги дизайна</span>
+                            </div>
+                            <svg class="arrow">
+                                <polyline 
+                                    points="0,0 10,10 20,0"
+                                    class="arrow__part" />
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <ul class="inner-list">
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">01 Обзор</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">02 UI / UX дизайн<br/> (Web-дизайн)</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">03 Разработка Brand Book</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list__item">
+                    <div class="title-block item-toggler">
+                        <div class="container">
+                            <div class="name-container">
+                                <span class="index">03</span>
+                                <span class="name">Маркетинг</span>
+                            </div>
+                            <svg class="arrow">
+                                <polyline 
+                                    points="0,0 10,10 20,0"
+                                    class="arrow__part" />
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <ul class="inner-list">
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">01 Обзор</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">02 Разработка маркетинговой стратегии</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">03 Интернет-маркетинг</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">04 Контекстная реклама</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">05 Таргетинговая реклама в Facebook</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">06 Таргетинговая реклама в Instagram</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">07 Медийная реклама<br/> (Баннерная реклама)</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">08 Поисковый Ремаркетинг<br/> (Ретаргетинг)</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">09 Реклама в YouTube</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list__item">
+                    <div class="title-block item-toggler">
+                        <div class="container">
+                            <div class="name-container">
+                                <span class="index">04</span>
+                                <span class="name">SEO</span>
+                            </div>
+                            <svg class="arrow">
+                                <polyline 
+                                    points="0,0 10,10 20,0"
+                                    class="arrow__part" />
+                            </svg>
+                        </div>
+                    </div>
+                    
+                    <div class="container">
+                        <ul class="inner-list">
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">01 Обзор</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">02 Seo - аудит</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">03 Seo на этапе создания сайта</a>
+                            </li>
+                            <li class="inner-list__item">
+                                <a href="/" class="inner-list__item-link">04 Снятие санкций поисковых систем</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="list__item">
+                    <div class="title-block">
+                        <a href="/" class="container">
+                            <div class="name-container">
+                                <span class="index">05</span>
+                                <span class="name">Комплексные решения - «Стратегия Flexible»</span>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="container">
+                        <p class="text">
+                            Наша уникальная услуга — формирования бренда с нуля 
+                            от логотипа до полноценного бренда приносящего прибыль.
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </body>
 </html>
