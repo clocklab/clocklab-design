@@ -1,24 +1,23 @@
-& { 
-    
+& {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     position: relative;
     z-index: 1;
-    padding: 0 px(60);
+    padding: 0 30px;
     width: 100vw;
     height: 100vh;
     background: $lightBlack;
     color: $white;
     font-family: $Roboto-Bold;
-    font-size: px(48);
+    font-size: 24px;
     line-height: 1.3;
     text-align: center;
-    
+
     a {
-        margin-top: px(100);
-        padding: px(20);
+        margin-top: 50px;
+        padding: 10px;
         background: $blue;
         color: $white;
     }
@@ -26,9 +25,9 @@
     p {
 
         &.big {
-            margin-bottom: px(80);
+            margin-bottom: 40px;
             font-family: $Raleway-Bold;
-            font-size: px(210);
+            font-size: 105px;
         }
     }
 }

@@ -3,39 +3,55 @@
     <head>
         <title>Clocklab Design | Contacts</title>
         @@include('./components/head.html')
+        <link rel="stylesheet" href="../styles-mobile/common.css">
         <link rel="stylesheet" href="../styles-mobile/contacts-mobile.css">
         <script src="../scripts-mobile/contacts-mobile.min.js" defer></script>
     </head>
     <body>
-        <div class="contacts-mobile">
-            @@include('./components/top-panel-mobile.html')
+        <!-- @@include('./components/top-panel-mobile.html') -->
 
-            <span class="page-title">
-                Контакты
-                <span>Давайте общаться :)</span>
-            </span>
+        <div class="contacts">
+            <div class="contacts__title-container">
+                <h1 class="contacts__title">Контакты</h1>
+            </div>
 
-            <ul class="contacts-info">
-                <li>
-                    <span>Телефон</span>
-                    <a href="tel:+380673959192">+380 (67) 395-91-92</a>
-                    <a href="tel:+380930399393">+380 (93) 039-93-93</a>
-                </li>
-                <li>
-                    <span>E-mail</span>
-                    <a href="mailto:hello@clocklab.design">hello@clocklab.design</a>
-                </li>
-                <li>
-                    <span>Адрес</span>
-                    <a href="https://www.google.com.ua/maps/place/%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC'%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%BF%D0%BB%D0%BE%D1%89%D0%B0,+2,+%D0%9A%D0%B8%D1%97%D0%B2/@50.431644,30.4710183,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cebfa52cd7bf:0x2169dd9a939a0aa8!8m2!3d50.431644!4d30.473207" target="_blank">Соломенская площадь, 2</a>
-                </li>
-            </ul>
+            <div class="contacts__info">
+                <span class="contacts__type">Телефон</span>
+                <ul>
+                    <li><a class="contacts__link" href="tel:+380673959192">+38 (067) 395-91-92</a></li>
+                    <li><a class="contacts__link" href="tel:+380930399393">+38 (093) 039-93-93</a></li>
+                </ul>
+            </div>
 
-            <button class="open-form" data-form-id="questions">
-                <span>Задать вопрос</span>
-            </button>
+            <div class="contacts__info">
+                <span class="contacts__type">E-mail</span>
+                <ul>
+                    <li><a class="contacts__link" href="mailto:hello@clocklab.design">hello@clocklab.design</a></li>
+                </ul>
+            </div>
 
-            @@include('./components/form-questions-mobile.html')
+            <div class="contacts__info">
+                <span class="contacts__type">Адрес</span>
+                <ul>
+                    <li>
+                        <a 
+                            class="contacts__link contacts__link--underlined"
+                            href="https://www.google.com.ua/maps/place/%D0%A1%D0%BE%D0%BB%D0%BE%D0%BC'%D1%8F%D0%BD%D1%81%D1%8C%D0%BA%D0%B0+%D0%BF%D0%BB%D0%BE%D1%89%D0%B0,+2,+%D0%9A%D0%B8%D1%97%D0%B2/@50.431644,30.4710183,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cebfa52cd7bf:0x2169dd9a939a0aa8!8m2!3d50.431644!4d30.473207" 
+                            target="_blank">
+                            Соломенская площадь, 2
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="contacts__btn" data-form-id="questions">Задать вопрос</button>
+
+            <div class="contacts__map" id="map"></div>
+
+            <!-- @@include('./components/form-questions-mobile.html') -->
         </div>
+
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpTfzEfoNeVlnJhNyZCHOlMSEl5BrFyUQ"></script>
     </body>
 </html>

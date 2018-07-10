@@ -1,11 +1,34 @@
-// base
-@import "base/reset";
-@import "base/variables";
-@import "base/fonts";
+@import 'base/variables';
 
-// components
-@import "components/top-panel/main";
-@import "components/form/main";
+/*
+/
+/---- MOBILE ---- */
+@import 'templates/contacts/mobile';
+/* ---- MOBILE ---- */
 
-// main
-@import "templates/contacts/contacts/main";
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (min-width: #{$tabletPortraitWidth}) {
+    // @import 'templates/contacts/tabletPortrait';
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+    // @import 'templates/contacts/tabletLandscape';
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- IPadPro PORTRAIT ---- */
+@media (min-width: #{$iPadProPortraitWidth}) and (orientation: portrait) {
+    // @import 'templates/contacts/iPadProPortrait';
+}
+/* ---- IPadPro PORTRAIT ---- */

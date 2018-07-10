@@ -3,21 +3,30 @@ $browser-context: 16;
 // GLOBAL VARIABLES END
 
 // MEDIA QUERIES
-$phonePortrait:   '(max-width: 414px)';
-$phoneLandscape:  '(min-width: 415px) and (max-width: 667px)';
-$tabletPortrait:  '(min-width: 668px) and (max-width: 768px)';
+$phonePortrait: '(max-width: 414px)';
+$phoneLandscape: '(min-width: 415px) and (max-width: 667px)';
+$tabletPortrait: '(min-width: 668px) and (max-width: 768px)';
 $tabletLandscape: '(min-width: 769px) and (max-width: 1024px)';
-$desktop:         '(min-width: 1025px) and (max-width: 1366px)';
-$desktopWide:     '(min-width: 1367px) and (max-width: 1680px)';
-$desktopHD:       '(min-width: 1681px) and (max-width: 1920px)';
-$desktopMega:     '(min-width: 1921px)';
+$desktop: '(min-width: 1025px) and (max-width: 1366px)';
+$desktopWide: '(min-width: 1367px) and (max-width: 1680px)';
+$desktopHD: '(min-width: 1681px) and (max-width: 1920px)';
+$desktopMega: '(min-width: 1921px)';
+
+$phonePortraitWidth: 320px;
+$phoneLandscapeWidth: 415px;
+$tabletPortraitWidth: 668px; // 768px;
+$iPhone8PlusLandscapeWidth: 736px;
+$iPhoneXLandscapeWidth: 812px;
+$tabletLandscapeWidth: 1024px;
+$iPadProPortraitWidth: $tabletLandscapeWidth;
+$iPadProLandscapeWidth: 1366px;
 
 // MEDIA QUERIES END
 
 // COLORS VARIABLES
 $silver: #2D2D2D;
 $blue: #0057FF;
-$dark: #333333;
+$dark: #333;
 $white: #FFF;
 $black: #000;
 $lightBlack: #1C1C1C;
@@ -28,7 +37,7 @@ $secondary: #FAFBFC;
 $primary: #24292E;
 $border: #E1E4E8;
 $border-mobile: #E0E1E0;
-$red: #b60000;
+$red: #B60000;
 $darkWhite: #EEE;
 // COLORS VARIABLES END
 
@@ -493,7 +502,7 @@ $WCStickerTextAnimationTime: $time * 3;
 $WCTextDelayTime: $WCStickerLineDelayTime;
 $WCTextAnimationTime: $WCStickerLineAnimationTime;
 
-$WCCrossedBtnDelayTime: $WCStickerTextDelayTime; 
+$WCCrossedBtnDelayTime: $WCStickerTextDelayTime;
 $WCCrossedBtnAnimationTime: $WCStickerTextAnimationTime;
 // WE CAN BLOCK
 

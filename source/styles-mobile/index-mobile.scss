@@ -1,36 +1,31 @@
-// base
-@import "base/reset";
-@import "base/variables";
-@import "base/animate";
-@import "base/fonts";
+@import 'components/logo/main';
+@import 'components/menu/main';
+@import 'components/clock-mobile/main';
+@import 'components/our-clients/main';
+@import 'components/portfolio/main';
+@import 'components/form/main';
 
-// components
-@import "components/logo/main";
-@import "components/menu/main";
-@import "components/clock-mobile/main";
-@import "components/our-clients/main";
-@import "components/portfolio/main";
-@import "components/form/main";
+@import 'templates/index/index/main';
 
-// main
-@import "templates/index/index/main";
-
-// clock works with body
 @keyframes tick {
     0% {
         z-index: 2;
     }
+
     5% {
         z-index: 4;
     }
+
     100% {
         z-index: 4;
     }
 }
+
 @keyframes turnOne {
     0% {
         transform: rotateX(90deg);
     }
+
     100% {
         transform: rotateX(0deg);
     }
@@ -39,26 +34,32 @@
     0% {
         transform: rotateX(0deg);
     }
+
     100% {
         transform: rotateX(-90deg);
     }
 }
+
 @keyframes show {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
 }
+
 @keyframes hide {
     0% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
 }
+
 body.play ul li {
 	&.before {
 	    z-index: 3;

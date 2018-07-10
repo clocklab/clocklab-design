@@ -1,32 +1,32 @@
-& {  
+& {
 
     & > header {
         position: relative;
-        padding-bottom: px(200);
+        padding-bottom: 100px;
 
         img {
             width: 100%;
-            height: px(600);
+            height: 300px;
             object-fit: cover;
         }
 
         .title {
             display: block;
-            margin-top: px(70);
-            padding-left: px(30);
+            margin-top: 35px;
+            padding-left: 15px;
             color: $gray;
             font-family: $Raleway-ExtraBold;
-            font-size: px(22);
+            font-size: 11px;
             text-transform: uppercase;
         }
 
         .title-name {
             display: block;
-            margin-top: px(20);
-            padding-left: px(30);
-            padding-right: px(40);
+            margin-top: 10px;
+            padding-left: 15px;
+            padding-right: 20px;
             font-family: $Roboto-Black;
-            font-size: px(60);
+            font-size: 30px;
             color: $darkGray;
 
             span {
@@ -36,8 +36,8 @@
 
         .long-read-container {
             position: relative;
-            margin-top: px(70);
-            max-height: px(1280);
+            margin-top: 35px;
+            max-height: 640px;
             overflow: hidden;
 
             &:before {
@@ -47,7 +47,7 @@
                 left: 0;
                 z-index: 2;
                 width: 100%;
-                height: px(110);
+                height: 55px;
                 background: linear-gradient(0deg, $white 0%, $white 20%, rgba(255, 255, 255, .8) 70%, rgba(255, 255, 255, 0) 100%);
                 content: '';
             }
@@ -61,24 +61,24 @@
             }
 
             &--seo {
-                max-height: px(1100);
+                max-height: 550px;
             }
 
             &--design {
-                max-height: px(800);
+                max-height: 400px;
             }
         }
 
         .long-read {
             position: relative;
-            padding: 0 px(30) px(120);
+            padding: 0 15px 60px;
 
             p {
                 position: relative;
-                margin-bottom: px(60);
+                margin-bottom: 30px;
                 color: $darkGray;
                 font-family: $Roboto-Regular;
-                font-size: px(32);
+                font-size: 16px;
                 line-height: 1.4;
 
                 span {
@@ -86,9 +86,9 @@
                 }
 
                 &.big {
-                    margin: px(120) 0 px(90);
+                    margin: 60px 0 45px;
                     font-family: $Roboto-Black;
-                    font-size: px(48);
+                    font-size: 24px;
 
                     span {
                         color: $blue;
@@ -108,7 +108,7 @@
                     &:before {
                         position: absolute;
                         top: 0;
-                        left: px(-30);
+                        left: -15px;
                         width: 4px;
                         height: 100%;
                         background: $blue;
@@ -117,8 +117,8 @@
                 }
 
                 &.bordered {
-                    margin: px(100) 0 px(150);
-                    padding: px(40) 0;
+                    margin: 50px 0 75px;
+                    padding: 20px 0;
                     border-top: 1px solid $gray;
                     border-bottom: 1px solid $gray;
                 }
@@ -126,7 +126,7 @@
 
             ul {
                 font-family: $Roboto-Regular;
-                font-size: px(32);
+                font-size: 16px;
                 line-height: 1.4;
             }
 
@@ -134,9 +134,9 @@
 
                 .list-item-title {
                     display: block;
-                    margin-bottom: px(40);
+                    margin-bottom: 20px;
                     font-family: $Roboto-Black;
-                    font-size: px(48);
+                    font-size: 24px;
                     line-height: 1.2;
                 }
             }
@@ -147,9 +147,9 @@
 
             .list-title {
                 display: block;
-                margin-bottom: px(40);
+                margin-bottom: 20px;
                 font-family: $Roboto-Black;
-                font-size: px(36);
+                font-size: 18px;
             }
 
             .circled {
@@ -161,14 +161,14 @@
 
                 li {
                     position: relative;
-                    padding-left: px(70);
-                    margin-bottom: px(50);
+                    padding-left: 35px;
+                    margin-bottom: 25px;
 
                     &:before {
                         display: block;
                         position: absolute;
                         top: 7px;
-                        left: px(30);
+                        left: 15px;
                         width: 7px;
                         height: 7px;
                         border-radius: 50%;
@@ -179,19 +179,19 @@
             }
 
             blockquote {
-                margin: px(120) 0 px(100);
-                padding-bottom: px(60);
+                margin: 60px 0 50px;
+                padding-bottom: 30px;
                 border-bottom: 1px solid $gray;
                 font-family: $Roboto-Regular;
                 font-style: italic;
-                font-size: px(28);
+                font-size: 14px;
                 line-height: 1.4;
 
                 .dots {
                     display: flex;
                     justify-content: space-between;
-                    margin: 0 auto px(80);
-                    width: px(100);
+                    margin: 0 auto 40px;
+                    width: 50px;
                 }
 
                 .dot {
@@ -205,42 +205,42 @@
             span {
 
                 .bold {
-                    padding-left: px(40);
+                    padding-left: 20px;
 
                     span {
                         color: $blue;
                     }
                 }
             }
-                
+
             .text-title {
                 font-family: $Roboto-Black;
-                font-size: px(36);
+                font-size: 18px;
             }
 
             .quotes {
                 position: absolute;
-                top: px(-70);
-                left: px(-30);
+                top: -35px;
+                left: -15px;
             }
 
             .open-form {
                 display: block;
-                margin-top: px(100);
+                margin-top: 50px;
                 color: $blue;
                 font-family: $Roboto-Bold;
-                font-size: px(48);
+                font-size: 24px;
             }
 
             &--seo,
             &--design {
 
                 .indexed {
-                    margin-bottom: px(90);
+                    margin-bottom: 45px;
 
                     li {
-                        margin-bottom: px(40);
-                        padding-left: px(40);
+                        margin-bottom: 20px;
+                        padding-left: 20px;
                     }
                 }
 
@@ -263,13 +263,13 @@
             display: block;
             position: absolute;
             z-index: 3;
-            bottom: px(60);
+            bottom: 30px;
             padding: 0;
             width: 100vw;
-            height: px(100);
+            height: 50px;
             color: $darkGray;
             font-family: $Raleway-Bold;
-            font-size: px(24);
+            font-size: 12px;
             text-transform: uppercase;
             overflow: hidden;
             transition: bottom $time;
@@ -282,8 +282,8 @@
             .open,
             .close {
                 display: block;
-                height: px(100);
-                line-height: px(100);
+                height: 50px;
+                line-height: 50px;
             }
 
             &:before,
@@ -320,16 +320,16 @@
     }
 
     .services {
-        margin-top: px(70);
-        padding: px(80) px(30) px(40);
+        margin-top: 35px;
+        padding: 40px 15px 20px;
         background: $lightBlack;
 
         .title {
-            padding-right: px(30);
-            margin-bottom: px(80);
+            padding-right: 15px;
+            margin-bottom: 40px;
             color: $white;
             font-family: $Roboto-Black;
-            font-size: px(72);
+            font-size: 36px;
             line-height: 1.2;
 
             span {
@@ -338,17 +338,17 @@
         }
 
         li {
-            margin-bottom: px(88);
+            margin-bottom: 44px;
             color: $white;
         }
 
         .list-item-title {
             display: block;
             position: relative;
-            margin-bottom: px(30);
-            padding-left: px(40);
+            margin-bottom: 15px;
+            padding-left: 20px;
             font-family: $Roboto-Black;
-            font-size: px(48);
+            font-size: 24px;
 
             &:before {
                 display: block;
@@ -365,23 +365,23 @@
         p {
             color: $lightGray;
             font-family: $Roboto-Regular;
-            font-size: px(32);
+            font-size: 16px;
             line-height: 1.4;
         }
     }
 
     .work-flow {
-        padding: px(120) px(30) px(80);
+        padding: 60px 15px 40px;
         color: $darkGray;
 
         .indexed {
-            padding-left: px(40);
+            padding-left: 20px;
         }
 
         .title {
-            margin-bottom: px(80);
+            margin-bottom: 40px;
             font-family: $Roboto-Black;
-            font-size: px(72);
+            font-size: 36px;
             line-height: 1.2;
 
             span {
@@ -390,14 +390,14 @@
         }
 
         li {
-            margin-bottom: px(90);
+            margin-bottom: 45px;
         }
 
         .list-item-title {
             display: block;
-            margin-bottom: px(30);
+            margin-bottom: 15px;
             font-family: $Roboto-Black;
-            font-size: px(48);
+            font-size: 24px;
             line-height: 1.2;
         }
 
@@ -408,7 +408,7 @@
 
         p {
             font-family: $Roboto-Regular;
-            font-size: px(32);
+            font-size: 16px;
             line-height: 1.4;
         }
     }
@@ -419,7 +419,7 @@
         z-index: 1;
 
         .form-title {
-            font-size: px(46);
+            font-size: 23px;
         }
     }
 }
