@@ -3,74 +3,49 @@
     <head>
         <title>clocklab design | blog</title>
         @@include('./components/head.html')
+        <link rel="stylesheet" href="../styles-mobile/common.css">
         <link rel="stylesheet" href="../styles-mobile/blog-mobile.css">
         <script src="../scripts-mobile/blog-mobile.min.js" defer></script>
     </head>
     <body>
+        <!-- @@include('./components/top-panel-mobile.html') -->
 
-        <div class="blog-mobile">
-            @@include('./components/top-panel-mobile.html')
-
-            <div class="filters">
-
+        <div class="blog">
+            <div class="blog__title-container">
+                <h1 class="blog__title">Блог</h1>
             </div>
 
             <div class="feed">
-                <a class="feed__item">
-                    <img src="../images/blog/post1.jpg" alt="feed__item--1">
-                    <div class="info">
-                        <span class="date">
-                            <span class="day">3</span>
-                            <span class="month">июля</span>
-                        </span>
-                        <span class="read-duration">
-                            <span>10</span>
-                            мин чтения
-                        </span>
-                    </div>
-                    <span class="feed-item-title"h2>Lorem ipsum dolor sit amet</span>
+                <a href="/" class="feed__item">
+                    <img class="feed__image" src="../images/blog/post1.jpg" alt="feed__item--1">
+                    <span class="feed__date">3 июля</span>
+                    <span class="feed__title">
+                        Шаблон или индивидуальная разработка: что выбрать при создании сайта?
+                    </span>
                 </a>
-                <a class="feed__item">
-                    <img src="../images/blog/post2.jpg" alt="feed__item--2">
-                    <div class="info">
-                        <span class="date">
-                            <span>7</span>
-                            <span>июля</span>
-                        </span>
-                        <span class="read-duration">
-                            <span>5</span>
-                            мин чтения
-                        </span>
-                    </div>
-                    <span class="feed-item-title">Lorem ipsum dolor</span>
+
+                <a href="/" class="feed__item">
+                    <img class="feed__image" src="../images/blog/post2.jpg" alt="feed__item--1">
+                    <span class="feed__date">7 июля</span>
+                    <span class="feed__title">
+                        6 примеров UX дизайна, который дорого обходится компаниям
+                    </span>
                 </a>
-                <a class="feed__item">
-                    <img src="../images/blog/post3.jpg" alt="feed__item--3">
-                    <div class="info">
-                        <span class="date">
-                            <span>21</span>
-                            <span>июля</span>
-                        </span>
-                        <span class="read-duration">
-                            <span>15</span>
-                            мин чтения
-                        </span>
-                    </div>
-                    <span class="feed-item-title">Lorem ipsum dolor sit amet psum</span>
+
+                <a href="/" class="feed__item">
+                    <img class="feed__image" src="../images/blog/post3.jpg" alt="feed__item--1">
+                    <span class="feed__date">21 июля</span>
+                    <span class="feed__title">
+                        Почему комплексное продвижение сайта эффективнее
+                    </span>
                 </a>
-                <a class="feed__item">
-                    <img src="../images/blog/post4.jpg" alt="feed__item--4">
-                    <div class="info">
-                        <span class="date">
-                            <span>27</span>
-                            <span>июля</span>
-                        </span>
-                        <span class="read-duration">
-                            <span>7</span>
-                            мин чтения
-                        </span>
-                    </div>
-                    <span class="feed-item-title">Lorem ipsum dolor sit amet psum dolor sit </span>
+
+                <a href="/" class="feed__item">
+                    <img class="feed__image" src="../images/blog/post4.jpg" alt="feed__item--1">
+                    <span class="feed__date">27 июля</span>
+                    <span class="feed__title">
+                        Почему комплексное продвижение сайта эффективнее
+                    </span>
                 </a>
             </div>
         </div>

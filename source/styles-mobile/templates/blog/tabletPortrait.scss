@@ -1,0 +1,20 @@
+.blog {
+    padding: 120px 15% 100px;
+
+    &__title {
+        font-size: 40px;
+    }
+
+    .feed {
+
+        &__date {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        &__title {
+            margin-top: 10px;
+            font-size: 32px;
+        }
+    }
+}
