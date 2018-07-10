@@ -72,8 +72,9 @@
             transform: translate3d($from, 0, 0);
             #{$name}: 0;
         }
+
         to {
-            transform: translate3d($to, 0, 0); 
+            transform: translate3d($to, 0, 0);
             #{$name}: 1;
         }
     }
@@ -85,6 +86,7 @@
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(101%);
     }
@@ -94,6 +96,7 @@
     from {
         transform: translateX(-101%);
     }
+
     to {
         transform: translateX(0);
     }
@@ -103,6 +106,7 @@
     from {
         left: 10%;
     }
+
     to {
         left: 101%;
     }
@@ -112,6 +116,7 @@
     from {
         left: -101%;
     }
+
     to {
         left: 10%;
     }
@@ -124,6 +129,7 @@
         opacity: 0;
         transform: translateX(-100%);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -134,6 +140,7 @@
     from {
         transform: translateX(-100%);
     }
+
     to {
         transform: translateX(0);
     }
@@ -147,6 +154,7 @@
         opacity: 0;
         transform: translate3d(100%, 60vh, 0);
     }
+
     to {
         opacity: 1;
         transform: translate3d(0, 60vh, 0);
@@ -158,6 +166,7 @@
         opacity: 0;
         transform: translateX(100%);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -171,6 +180,7 @@
     from {
         width: 0;
     }
+
     to {
         width: 100%;
     }
@@ -178,9 +188,10 @@
 
 @keyframes heightIncreaseDesktop {
     from {
-        height: 0vh;
+        height: 0;
         transform: translateY(40vh);
     }
+
     to {
         height: 88vh;
         transform: translateY(4vh);
@@ -189,9 +200,10 @@
 
 @keyframes heightIncreaseTablet {
     from {
-        height: 0vh;
+        height: 0;
         transform: translateY(56vh);
     }
+
     to {
         height: 72vh;
         transform: translateY(20vh);
@@ -200,9 +212,10 @@
 
 @keyframes heightIncreaseMobile {
     from {
-        height: 0vh;
+        height: 0;
         transform: translateY(60vh);
     }
+
     to {
         height: 60vh;
         transform: translateY(30vh);
@@ -213,6 +226,7 @@
     from {
         transform: rotate(45deg) translate3d(-100%, 0, 0);
     }
+
     to {
         transform: rotate(45deg) translate3d(100%, 0, 0);
     }
@@ -222,6 +236,7 @@
     from {
         transform: rotate(-45deg) translate3d(100%, 0, 0);
     }
+
     to {
         transform: rotate(-45deg) translate3d(-20%, 0, 0);
     }
@@ -231,6 +246,7 @@
     from {
         transform: rotate(45deg) translate3d(-100%, 0, 0);
     }
+
     to {
         transform: rotate(45deg) translate3d(100%, 0, 0);
     }
@@ -240,6 +256,7 @@
     from {
         transform: rotate(-45deg) translate3d(100%, 0, 0);
     }
+
     to {
         transform: rotate(-45deg) translate3d(-10%, 0, 0);
     }
@@ -250,6 +267,7 @@
         opacity: 0;
         transform: translateY(50%);
     }
+
     to {
         opacity: 1;
         transform: none;
@@ -261,6 +279,7 @@
         opacity: 0;
         transform: translateX(-100%);
     }
+
     to {
         opacity: 1;
         transform: none;
@@ -272,6 +291,7 @@
         opacity: 0;
         transform: translateX(-30%);
     }
+
     to {
         opacity: 1;
         transform: none;
@@ -284,25 +304,28 @@
 @keyframes up {
     from {
         transform: translateY(100%);
-    }   
+    }
+
     to {
         transform: translateY(0);
-    } 
+    }
 }
 
 @keyframes down {
     from {
         transform: translateY(-100%);
-    }   
+    }
+
     to {
         transform: translateY(0);
-    } 
+    }
 }
 
 @keyframes right {
     from {
         transform: translateX(-100%);
     }
+
     to {
         transform: translateX(0);
     }
@@ -310,12 +333,22 @@
 
 // ----- social icons -----
 @keyframes social {
-    from { transform: rotateX(-90deg) rotateY(-90deg) perspective(300px); }
-    to { transform: none; }
+    from {
+        transform: rotateX(-90deg) rotateY(-90deg) perspective(300px);
+    }
+
+    to {
+        transform: none;
+    }
 }
 @keyframes socialReverse {
-    from {  transform: rotateX(90deg) rotateY(90deg) perspective(300px) }
-    to {  transform: none;  }
+    from {
+        transform: rotateX(90deg) rotateY(90deg) perspective(300px);
+    }
+
+    to {
+        transform: none;
+    }
 }
 
 @keyframes posterTablet {
@@ -324,11 +357,13 @@
         height: 0;
         transform: translateY(36vh);
     }
+
     50% {
         width: 0;
         height: 36vh;
         transform: translateY(0);
     }
+
     to {
         width: 100%;
         height: 36vh;
@@ -340,6 +375,7 @@
     from {
         width: 0;
     }
+
     to {
         width: 100vw;
     }
@@ -352,14 +388,17 @@
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+
     49% {
         opacity: 1;
         transform: translate3d(0, 100%, 0);
     }
+
     50% {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
     }
+
     51% {
         opacity: 0;
         transform: translate3d(0, -100%, 0);
@@ -372,22 +411,30 @@
         opacity: 1;
         transform: translate3d(0, 0, 0);
     }
+
     49% {
         opacity: 1;
         transform: translate3d(0, -100%, 0);
     }
+
     50% {
         opacity: 0;
         transform: translate3d(0, -100%, 0);
     }
+
     51% {
         opacity: 0;
         transform: translate3d(0, 100%, 0);
     }
 }
 @keyframes crossAnchor {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0%); }
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
 }
 
 // word under title
@@ -397,6 +444,7 @@
         visibility: visible;
         transform: translateX(-15px);
     }
+
     100% {
         opacity: 1;
         visibility: visible;
@@ -411,6 +459,7 @@
         visibility: visible;
         transform: translateX(10vh);
     }
+
     100% {
         opacity: 1;
         visibility: visible;
@@ -423,6 +472,7 @@
         visibility: visible;
         transform: translateY(10vh);
     }
+
     100% {
         opacity: 1;
         visibility: visible;
@@ -450,14 +500,20 @@
 
 // line animation on contacts page
 @keyframes lineDown {
-    from { transform: rotate(-65deg) translate3d(100%, 0, 0); }
+    from {
+        transform: rotate(-65deg) translate3d(100%, 0, 0);
+    }
+
     to {
         transform: rotate(-65deg) translate3d(-100%, 0, 0);
         visibility: visible;
     }
 }
 @keyframes lineUp {
-    from { transform: rotate(-65deg) translate3d(-100%, 0, 0); }
+    from {
+        transform: rotate(-65deg) translate3d(-100%, 0, 0);
+    }
+
     to {
         transform: rotate(-65deg) translate3d(100%, 0, 0);
         visibility: visible;
@@ -470,6 +526,7 @@
         opacity: 0;
         transform: translateY(-100%);
     }
+
     to {
         opacity: 1;
         transform: none;
@@ -483,6 +540,7 @@
     from {
         transform: translateY(-100%);
     }
+
     to {
         transform: none;
     }
@@ -491,6 +549,7 @@
     from {
         transform: translateY(100%);
     }
+
     to {
         transform: none;
     }
@@ -500,6 +559,7 @@
     from {
         transform: translateX(-101%);
     }
+
     to {
         transform: none;
     }
@@ -514,9 +574,11 @@
     from {
         transform: translate3d(-100%, 0, 0);
     }
+
     50% {
         transform: translate3d(0, 0, 0);
     }
+
     to {
         transform: translate3d(0, 50%, 0);
     }
@@ -550,6 +612,7 @@
         opacity: 0;
         transform: translateX(100%);
     }
+
     to {
         opacity: 1;
         transform: none;
@@ -561,6 +624,7 @@
         opacity: 0;
         transform: translateX(-100%);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -571,6 +635,7 @@
     from {
         width: 0;
     }
+
     to {
         width: px(100);
     }
@@ -582,6 +647,7 @@
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: none;
     }
@@ -594,6 +660,7 @@
     from {
         height: 0;
     }
+
     to {
         height: 100vh;
     }
@@ -606,6 +673,7 @@
     from {
         transform: none;
     }
+
     to {
         transform: translateY(101%);
     }
@@ -615,6 +683,7 @@
     from {
         transform: none;
     }
+
     to {
         transform: translateY(-101%);
     }
@@ -624,6 +693,7 @@
     from {
         transform: none;
     }
+
     to {
         transform: translateX(-101%);
     }
@@ -633,6 +703,7 @@
     from {
         transform: none;
     }
+
     to {
         transform: translateX(101%);
     }
@@ -646,7 +717,7 @@
         opacity: 0;
         transform: translate3d(-100%, 0, 0);
     }
-  
+
     to {
         opacity: 1;
         transform: none;
@@ -661,7 +732,7 @@
         opacity: 0;
         transform: translate3d(100%, 0, 0);
     }
-  
+
     to {
         opacity: 1;
         transform: none;

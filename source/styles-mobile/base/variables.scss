@@ -14,11 +14,11 @@ $desktopMega: '(min-width: 1921px)';
 
 $phonePortraitWidth: 320px;
 $phoneLandscapeWidth: 415px;
-$tabletPortraitWidth: 668px;
+$tabletPortraitWidth: 668px; // 768px;
 $iPhone8PlusLandscapeWidth: 736px;
-$tabletLandscapeWidth: 769px;
 $iPhoneXLandscapeWidth: 812px;
-$iPadProPortraitWidth: 1024px;
+$tabletLandscapeWidth: 1024px;
+$iPadProPortraitWidth: $tabletLandscapeWidth;
 $iPadProLandscapeWidth: 1366px;
 
 // MEDIA QUERIES END

@@ -9,56 +9,26 @@
 
 /*
 /
-/---- PHONE LANDSCAPE ---- */
-@media (min-width: #{$phoneLandscapeWidth}) {
-}
-/* ---- PHONE LANDSCAPE ---- */
-
-
-/*
-/
 /---- TABLET PORTRAIT ---- */
 @media (min-width: #{$tabletPortraitWidth}) {
+    // @import 'templates/contacts/tabletPortrait';
 }
 /* ---- TABLET PORTRAIT ---- */
 
 
 /*
 /
-/---- IPhone6/7/8Plus ---- */
-@media (min-width: #{$iPhone8PlusLandscapeWidth}) and (max-width: #{($tabletLandscapeWidth - 1px)}) and (orientation: landscape) {
-}
-/* ---- IPhone6/7/8Plus ---- */
-
-
-/*
-/
 /---- TABLET LANDSCAPE ---- */
-@media (min-width: #{$tabletLandscapeWidth}) {
-    @import 'templates/contacts/tabletLandscape';
+@media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+    // @import 'templates/contacts/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
 
 /*
 /
-/---- IPhoneX ---- */
-@media (min-width: #{$iPhoneXLandscapeWidth}) and (max-width: #{($iPadProPortraitWidth - 1px)}) and (orientation: landscape) {
-}
-/* ---- IPhoneX ---- */
-
-
-/*
-/
 /---- IPadPro PORTRAIT ---- */
-@media (min-width: #{$iPadProPortraitWidth}) {
+@media (min-width: #{$iPadProPortraitWidth}) and (orientation: portrait) {
+    // @import 'templates/contacts/iPadProPortrait';
 }
 /* ---- IPadPro PORTRAIT ---- */
-
-
-/*
-/
-/---- IPadPro LANDSCAPE ---- */
-@media (min-width: #{$iPadProLandscapeWidth}) {
-}
-/* ---- IPadPro LANDSCAPE ---- */
