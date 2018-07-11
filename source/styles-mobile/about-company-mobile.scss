@@ -1,6 +1,34 @@
-@import 'components/logo/main';
-@import 'components/menu/main';
-@import 'components/form/main';
-@import 'components/our-clients/main';
+@import 'base/variables';
 
-@import 'templates/about-company/about-company/main';
+/*
+/
+/---- MOBILE ---- */
+@import 'templates/about-company/about-company-header/mobile';
+@import 'templates/about-company/founders/mobile';
+@import 'templates/about-company/long-read/mobile';
+@import 'templates/about-company/work-flow/mobile';
+/* ---- MOBILE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (min-width: #{$tabletPortraitWidth}) {
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- IPadPro PORTRAIT ---- */
+@media (min-width: #{$iPadProPortraitWidth}) and (orientation: portrait) {
+}
+/* ---- IPadPro PORTRAIT ---- */

@@ -1,28 +1,20 @@
 .long-read {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 230px 10% 0;
+    padding: 70px 5% 0;
     background: $white;
     color: $darkGray;
-    font-family: $Roboto-Regular;
+    font-family: $Raleway-Regular;
 
     & > div {
-        margin-bottom: 100px;
-
-        &:nth-child(odd) {
-            width: 40%;
-        }
-
-        &:nth-child(even) {
-            width: 49%;
-        }
+        margin-bottom: 50px;
     }
 
     p,
     h2,
     h3 {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
         font-size: 16px;
         line-height: 1.4;
     }
@@ -46,24 +38,24 @@
     }
 
     .top-bottom-bordered {
-        margin-top: 80px;
-        padding: 40px 0;
+        margin-top: 40px;
+        padding: 20px 0;
         border-top: 1px solid $gray;
         border-bottom: 1px solid $gray;
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .left-bordered {
         position: relative;
-        margin: 75px 0;
-        padding: 0 0 5px 45px;
+        margin: 15px 0;
+        padding: 0 0 5px 25px;
 
         &:before {
             display: block;
             position: absolute;
             top: 0;
             left: 0;
-            width: 10px;
+            width: 5px;
             height: 100%;
             background: $blue;
             content: '';
@@ -71,7 +63,7 @@
     }
 
     .bottom-bordered {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         border-bottom: 1px solid $gray;
     }
 
@@ -82,14 +74,14 @@
     .bigger {
         display: block;
         margin-bottom: 20px;
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .huge {
         display: block;
-        margin-bottom: 100px;
+        margin-bottom: 40px;
         font-family: $Raleway-Bold;
-        font-size: 40px;
+        font-size: 28px;
         line-height: 1.1;
     }
 
@@ -120,21 +112,29 @@
             }
         }
 
+        &.double {
+
+            li {
+                padding-right: 0;
+                width: 100%;
+            }
+        }
+
         &.indexed {
             padding-top: 45px;
 
             li {
                 position: relative;
-                margin-bottom: 100px;
+                margin-bottom: 80px;
                 padding-left: 15px;
 
                 &:after {
                     display: block;
                     position: absolute;
-                    top: -25px;
-                    left: -20px;
-                    width: 44px;
-                    height: 44px;
+                    top: -10px;
+                    left: -5px;
+                    width: 30px;
+                    height: 30px;
                     background: $darkWhite;
                     content: '';
                 }
@@ -147,12 +147,12 @@
 
             .index {
                 position: absolute;
+                top: -25px;
+                left: -25px;
                 z-index: 2;
-                top: -55px;
-                left: -40px;
                 color: $darkGray;
                 font-family: $Raleway-ExtraBold;
-                font-size: 48px;
+                font-size: 32px;
             }
 
             .list-item-title {
