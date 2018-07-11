@@ -1,0 +1,33 @@
+.sitemap {
+
+    .container {
+
+        & > .tree-level {
+
+            & > .tree-level {
+                padding-left: calc(100% / 3);
+
+                & > div > a {
+                    width: 50%;
+                }
+
+                & > .tree-level {
+                    padding-left: 50%;
+                }
+            }
+        }
+    }
+
+    .line {
+
+        &--2 {
+            display: block;
+            left: calc(100% / 3);
+        }
+
+        &--3 {
+            display: block;
+            left: calc(100% / 3 * 2);
+        }
+    }
+}
