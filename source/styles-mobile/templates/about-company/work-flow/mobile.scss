@@ -1,8 +1,50 @@
 .work-flow {
-    background-color: $white;
-    padding: 20px 44px 44px;
+    margin-top: 70px;
 
-    .title {
-        float: left;
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .sticker,
+    .step-image {
+        display: none;
+    }
+
+    .new-title-text {
+        font-family: $Raleway-Bold;
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 1.2;
+    }
+
+    .content {
+        margin: 30px 0;
+    }
+
+    .content-title {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        font-family: $Raleway-Bold;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+
+    .index {
+        margin-right: 10px;
+        padding: 5px 5px 10px;
+        border: 1px solid $black;
+        font-family: $Raleway-Bold;
+        font-size: 48px;
+        text-decoration: line-through;
+        text-decoration-color: $white;
+    }
+
+    .content-text {
+        margin-top: 15px;
+        font-family: $Raleway-Regular;
+        font-size: 16px;
+        line-height: 1.5;
     }
 }

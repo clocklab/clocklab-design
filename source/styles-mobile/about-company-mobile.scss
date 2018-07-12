@@ -14,6 +14,8 @@
 /
 /---- TABLET PORTRAIT ---- */
 @media (min-width: #{$tabletPortraitWidth}) {
+    @import 'templates/about-company/about-company-header/tabletPortrait';
+    @import 'templates/about-company/founders/tabletPortrait';
 }
 /* ---- TABLET PORTRAIT ---- */
 
@@ -22,6 +24,9 @@
 /
 /---- TABLET LANDSCAPE ---- */
 @media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+    @import 'templates/about-company/founders/tabletLandscape';
+    @import 'templates/about-company/long-read/tabletLandscape';
+    @import 'templates/about-company/work-flow/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 

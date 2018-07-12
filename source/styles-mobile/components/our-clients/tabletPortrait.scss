@@ -1,0 +1,25 @@
+.our-clients {
+    margin-top: 50px;
+    padding: 60px 5%;
+
+    &__title {
+        padding: 20px 0;
+        font-size: 28px;
+    }
+
+    .slider-clients-wrapper {
+        margin-top: 40px;
+    }
+
+    .slide {
+
+        &__item {
+            height: 90px;
+        }
+
+        .open-form {
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+}
