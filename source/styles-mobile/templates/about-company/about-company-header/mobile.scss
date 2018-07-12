@@ -7,6 +7,13 @@
     min-height: 100vh;
     overflow: hidden;
 
+    .scroll,
+    .languages,
+    .copyright,
+    .social {
+        display: none;
+    }
+
     .bg-image {
         position: absolute;
         top: 0;
