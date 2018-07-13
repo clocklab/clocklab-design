@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>clocklab design | portfolio</title>
+        <title>Clocklab Design | Portfolio</title>
         @@include('./components/head.html')
+        <link rel="stylesheet" href="../styles-mobile/common.css">
         <link rel="stylesheet" href="../styles-mobile/portfolio-mobile.css">
-        <script src="../scripts-mobile/portfolio-mobile.min.js" defer></script>
+        <!-- <script src="../scripts-mobile/portfolio-mobile.min.js" defer></script> -->
     </head>
     <body>
+        <!-- @@include('./components/logo-mobile.html') -->
 
-        <!-- logo -->
-        @@include('./components/logo-mobile.html')
-
-        <!-- menu -->
-        @@include('./components/menu-mobile.html')
+        <!-- @@include('./components/menu-mobile.html') -->
         
-        <!-- portfolio-mobile -->
-        <div class="portfolio-mobile">
+        <div class="portfolio">
+            <div class="our-works">                
+                <h1 class="title">Портфолио</h1>
 
-            <!-- global-container -->
-            <div class="global-container">
-
-                <!-- our-works -->
-                <div class="our-works">
-                    
-                    <!-- title -->
-                    <h1 class="title wow fadeIn">Портфолио</h1>
-
-                    <!-- audi -->
-                    <div id="audi" class="portfolio portfolio__left wow fadeIn">
-                        <img src="../images/index/audi-rs4-mirror.jpg" alt="audi">
-                        <span class="portfolio__title">Корпоративный сайт официального дилера <span>Audi</span></span>
-                        <div class="opened-work">
-                            <div class="content">
-                                <img src="/images/audi-logo-work.png" alt="">
-                                <p>Мы обеспечили официальному представителю Audi лидерство на украинском рынке. В результате сотрудничества Audi Центр Киев Юг стабильно занимает первые строчки в Google и имеет самые высокие продажи среди конкурентов.</p>
-                            </div>
+                <div id="audi" class="portfolio portfolio__left wow fadeIn">
+                    <img src="../images/index/audi-rs4-mirror.jpg" alt="audi">
+                    <span class="portfolio__title">
+                        Корпоративный сайт официального дилера <span>Audi</span>
+                    </span>
+                    <div class="opened-work">
+                        <div class="content">
+                            <img src="/images/audi-logo-work.png" alt="">
+                            <p>
+                                Мы обеспечили официальному представителю Audi лидерство на украинском 
+                                рынке. В результате сотрудничества Audi Центр Киев Юг стабильно занимает 
+                                первые строчки в Google и имеет самые высокие продажи среди конкурентов.
+                            </p>
                         </div>
-                        <a href="#audi" class="open-work button transparent option wow fadeIn" data-name="audi">информация о проекте</a>
-                        <a href="/razrabotka-i-prodvizhenie-sayta-audi" class="button special blue wow fadeIn">посмотреть работу</a>
                     </div>
+                    <a href="#audi" class="open-work button transparent option wow fadeIn" data-name="audi">информация о проекте</a>
+                    <a href="/razrabotka-i-prodvizhenie-sayta-audi" class="button special blue wow fadeIn">посмотреть работу</a>
+                </div>
 
-                    <!-- euroclub -->
-                    <div id="euroclub" class="portfolio portfolio__right wow fadeIn">
-                        <img src="https://img.clocklab.design/data/portfolio/euro-club.jpg" alt="euroclub">
-                        <span class="portfolio__title">Промо сайт <span>Eurovision</span></span>
-                        <div class="opened-work">
-                            <div class="content">
-                                <img src="/images/euroclub-logo-work.png" alt="">
-                                <p>EuroClub — официальная локация международного песенного конкурса «Евровидение-2017». Команда Clock Creative Lab работала над созданием Landing Page для EuroClub.</p>
-                            </div>
+                <div id="euroclub" class="portfolio portfolio__right wow fadeIn">
+                    <img src="https://img.clocklab.design/data/portfolio/euro-club.jpg" alt="euroclub">
+                    <span class="portfolio__title">
+                        Промо сайт <span>Eurovision</span>
+                    </span>
+                    <div class="opened-work">
+                        <div class="content">
+                            <img src="/images/euroclub-logo-work.png" alt="">
+                            <p>
+                                EuroClub — официальная локация международного песенного конкурса «Евровидение-2017». 
+                                Команда Clock Creative Lab работала над созданием Landing Page для EuroClub.
+                            </p>
                         </div>
-                        <a href="#euroclub" class="open-work button transparent option wow fadeIn" data-name="euroclub">информация о проекте</a>
-                        <a href="/razrabotka-langing-page-euroclub" class="button special blue wow fadeIn">посмотреть работу</a>
                     </div>
+                    <a href="#euroclub" class="open-work button transparent option wow fadeIn" data-name="euroclub">информация о проекте</a>
+                    <a href="/razrabotka-langing-page-euroclub" class="button special blue wow fadeIn">посмотреть работу</a>
+                </div>
 
-                    <!-- dela -->
-                    <div id="dela" class="portfolio portfolio__left wow fadeIn">
-                        <img src="https://img.clocklab.design/data/portfolio/delaua.jpg" alt="dela">
-                        <span class="portfolio__title">Корпоративный сайт <span>Dela.ua</span></span>
-                        <div class="opened-work">
-                            <div class="content">
-                                <img src="/images/dela-logo-work.png" alt="">
-                                <p>Документ-сервис Dela.ua — современный центр административных услуг. Нами был разработан уникальный концепт — строгий и лаконичный дизайн дополнен простой и понятной навигацией.</p>
-                            </div>
+                <div id="dela" class="portfolio portfolio__left wow fadeIn">
+                    <img src="https://img.clocklab.design/data/portfolio/delaua.jpg" alt="dela">
+                    <span class="portfolio__title">
+                        Корпоративный сайт <span>Dela.ua</span>
+                    </span>
+                    <div class="opened-work">
+                        <div class="content">
+                            <img src="/images/dela-logo-work.png" alt="">
+                            <p>
+                                Документ-сервис Dela.ua — современный центр административных услуг. Нами был 
+                                разработан уникальный концепт — строгий и лаконичный дизайн дополнен простой 
+                                и понятной навигацией.
+                            </p>
                         </div>
-                        <a href="#dela" class="open-work button transparent option wow fadeIn" data-name="dela">информация о проекте</a>
-                        <a href="/razrabotka-sayta-dokument-servisa-dela-ua" class="button special blue wow fadeIn">посмотреть работу</a>
                     </div>
+                    <a href="#dela" class="open-work button transparent option wow fadeIn" data-name="dela">информация о проекте</a>
+                    <a href="/razrabotka-sayta-dokument-servisa-dela-ua" class="button special blue wow fadeIn">посмотреть работу</a>
                 </div>
             </div>
         </div>
