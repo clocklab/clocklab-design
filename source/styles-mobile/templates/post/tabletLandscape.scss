@@ -1,0 +1,68 @@
+.post {
+
+    .header {
+        height: initial;
+
+        &__image {
+            width: 90%;
+        }
+
+        &__date {
+            bottom: 100px;
+            padding: 20px 30px;
+        }
+
+        &__day {
+            padding-right: 50px;
+            font-size: 32px;
+        }
+
+        &__month {
+            font-size: 22px;
+        }
+
+        &__year {
+            font-size: 18px;
+        }
+    }
+
+    .main {
+        padding: 0 10% 40px;
+
+        .post-title {
+            font-size: 52px;
+        }
+
+        article {
+            padding-left: 50px;
+        }
+
+        p,
+        blockquote {
+            font-size: 18px;
+        }
+    }
+
+    .footer {
+        padding-bottom: 50px;
+
+        .facebook {
+            width: 50px;
+            height: 50px;
+        }
+
+        .crossed-button {
+            margin-top: 50px;
+            padding-left: 50px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+
+        .arrow-container {
+            width: 40px;
+        }
+    }
+
+}
