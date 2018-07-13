@@ -1,110 +1,50 @@
 .menu {
-
-    @keyframes Down {
-        from {
-            transform: translateY(-101%);
-        }
-        to {
-            transform: none;
-        }
-    }
-    @keyframes toUp {
-        from {
-            transform: none;
-        }
-        to {
-            transform: translateY(-101%);
-        }
-    }   
-    @keyframes innerTickAnimation1 {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(101%);
-        }
-    }
-    @keyframes innerTickAnimation2 {
-        from {
-            transform: translateX(-101%);
-        }
-        to {
-            transform: translateX(0);
-        }
-    }
-    @keyframes innerTickOpenedAnimation1 {
-        from {
-            left: 10%;
-        }
-        to {
-            left: 101%;
-        }
-    }
-    @keyframes innerTickOpenedAnimation2 {
-        from {
-            left: -101%;
-        }
-        to {
-            left: 10%;
-        }
-    }
-
-    $innerTickAnimationDelay: 2s;
-
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 9998;
-    width: px(126);
-    color: $white;
-    height: px(126);
+    width: 63px;
+    height: 63px;
     background: transparent;
+    color: $white;
     font-family: $Roboto-Regular;
-    animation: Down $topPanelAnimationTime $time * 3 ease-out both;
-    transition: top $time * 2 ease-out, background $time * 2 2s, width 0s $time * 2 + 2s, height 0s $time * 2 + 2s;
 
-    $menuItemWidth: px(196);
-    $menuItemHeight: px(196);
-    $menuItemWidthSmall: px(126);
-    $dif: px(2);
+    $menuItemWidth: 98px;
+    $menuItemHeight: 98px;
+    $menuItemWidthSmall: 63px;
+    $dif: 1px;
 
     .menu__item {
         box-sizing: border-box;
         position: absolute;
-        float: right;
-        padding-top: px(52);
-        width: px(196);
-        height: px(196);
+        padding-top: 26px;
+        width: 98px;
+        height: 98px;
         border: 1px solid $white;
         backface-visibility: hidden;
         color: $white;
-        transition: transform $menuMobileAnimationTime;
 
         .serial-number {
             position: absolute;
-            top: px(14);
-            right: px(10);
+            top: 7px;
+            right: 5px;
             color: $gray;
             font-family: $Roboto-Regular;
-            font-size: px(28);
-        } 
+            font-size: 14px;
+        }
 
         .symbol {
             font-family: $Raleway-ExtraBold;
-            font-size: px(60);
+            font-size: 30px;
             text-align: center;
         }
 
         .name {
-            margin-top: px(40);
+            margin-top: 20px;
             font-family: $Roboto-Regular;
-            font-size: px(32);
+            font-size: 16px;
             text-align: center;
         }
 
         &--open-close {
             position: relative;
-            padding-top: px(32);
+            padding-top: 16px;
             width: $menuItemWidthSmall;
             height: $menuItemWidthSmall;
 
@@ -112,9 +52,9 @@
                 transition: transform $timeTick;
                 position: relative;
                 margin: 0 auto;
-                width: px(52);
-                height: px(34);
-    
+                width: 26px;
+                height: 17px;
+
                 &-tick {
                     position: absolute;
                     left: 0;
@@ -123,24 +63,24 @@
                     border-radius: 3px;
                     background: $white;
                     transform-origin: 50% 50%;
-    
+
                     &-1 {
                         top: 0;
                         width: 50%;
                         transition: top $time $time, width 0s $time;
                     }
-    
+
                     &-2 {
                         top: calc(100% / 3);
                         transition: top $time $time, transform $time;
                     }
-    
+
                     &-3 {
                         top: calc(100% / 3 * 2);
                         width: 50%;
                         transition: top $time $time, width 0s $time;
                     }
-                    
+
                     &-4 {
                         top: 100%;
                         transition: top $time $time, transform $time;
@@ -149,81 +89,10 @@
             }
 
             .name {
-                margin-top: px(20);
-                font-size: px(24);
+                margin-top: 10px;
+                font-size: 12px;
             }
         }
-
-        &--about-us {
-            top: $menuItemWidthSmall - $dif;
-            right: $menuItemWidthSmall - $dif;   
-        }
-
-        &--portfolio {
-            top: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
-            right: $menuItemWidthSmall - $dif;   
-        }
-
-        &--services {
-            top: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
-            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;   
-        }
-
-        &--contact {
-            top: $menuItemWidthSmall + $menuItemWidth * 2 - $dif * 3;
-            right: $menuItemWidthSmall - $dif;   
-        }
-
-        &--blog {
-            top: $menuItemWidthSmall + $menuItemWidth * 2 - $dif * 3;
-            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
-        }
-
-        &--home {
-            top: $menuItemWidthSmall + $menuItemWidth * 3 - $dif * 4;
-            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
-        }
-
-        /* STYLES FOR ANIMATION */
-        &--about-us {
-            transform-origin: 100% 0;
-            transform: perspective(300px) rotateX(90deg) rotateY(90deg);
-        }
-
-        &--portfolio,
-        &--contact,
-        &--home {
-            transform-origin: 50% 0;
-            transform: perspective(300px) rotateX(-90deg);
-        }
-
-        &--services,
-        &--blog {
-            transform-origin: 100% 50%;
-            transform: perspective(300px) rotateY(-90deg);
-        }
-
-        &--about-us {
-            transition-delay: $timeTick * 2 + $time + $menuMobileAnimationTime * 4;
-        }
-
-        &--portfolio {
-            transition-delay: $timeTick * 2 + $time + $menuMobileAnimationTime * 3;
-        }
-
-        &--services,
-        &--contact {
-            transition-delay: $timeTick * 2 + $time + $menuMobileAnimationTime * 2;
-        }
-
-        &--blog {
-            transition-delay: $timeTick * 2 + $time + $menuMobileAnimationTime;
-        }
-
-        &--home {
-            transition-delay: $timeTick * 2 + $time;
-        }
-        /* STYLES FOR ANIMATION END */
     }
 
     &__background {
@@ -248,9 +117,9 @@
             &--open-close {
 
                 .hamburger {
-    
+
                     &-tick {
-    
+
                         &:nth-child(1),
                         &:nth-child(3) {
                             top: 50%;
@@ -271,29 +140,6 @@
                     }
                 }
             }
-
-            /* STYLES FOR ANIMATION */
-            &--about-us {
-                transition-delay: 0s;
-            }
-
-            &--portfolio {
-                transition-delay: $menuMobileAnimationTime;
-            }
-
-            &--services,
-            &--contact {
-                transition-delay: $menuMobileAnimationTime * 2;
-            }
-
-            &--blog {
-                transition-delay: $menuMobileAnimationTime * 3;
-            }
-
-            &--home {
-                transition-delay: $menuMobileAnimationTime * 4;
-            }
-            /* STYLES FOR ANIMATION ENDS */
         }
     }
 
@@ -331,8 +177,8 @@
 
 
                 &::before {
-                    top: px(10);
-                    right: px(10);
+                    top: 5px;
+                    right: 5px;
                     opacity: 1;
                     visibility: visible;
                 }
@@ -348,45 +194,5 @@
                 }
             }
         }
-
-        &.opened {
-            background: rgba(255, 255, 255, .95);
-
-            .menu__item {
-
-                &--open-close {
-                    border-color: $darkGray;
-                }
-            }
-        }
-    }
-
-    &.scrolled {        
-
-        .menu__item {
-
-            .hamburger {
-                transform: scale(.8) translate3d(45%, -40%, 0);
-            }
-
-            &--open-close {
-                border-color: transparent;
-
-                .name {
-                    opacity: 0;
-                }
-
-                
-            }
-        }
-    }
-
-    &.form-opened {
-        top: px(-242);
-        opacity: 0;
-    }
-
-    &.back {
-        animation: toUp $topPanelAnimationTime ease-out both;
     }
 }
