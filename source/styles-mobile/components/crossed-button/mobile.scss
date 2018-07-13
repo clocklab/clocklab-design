@@ -1,21 +1,20 @@
-& {  
-        
+.crossed-button {
     display: flex;
 
     span {
         position: relative;
-        padding: 0 px(30);
+        padding: 0 15px;
         color: rgba(0, 0, 0, 1);
-        font-size: px(24);
+        font-size: 12px;
         line-height: 16px;
-        font-weight: 700; 
+        font-weight: 700;
         overflow: hidden;
         text-transform: uppercase;
         transition: padding $time;
     }
 
     .arrow-container {
-        width: px(72);
+        width: 36px;
         overflow: hidden;
         transform: translateX(-20%);
         transition: transform $timeTick linear $time;
@@ -35,7 +34,7 @@
         .st1 {
             fill: none;
             stroke: $black;
-            stroke-width: 0.75;
+            stroke-width: .75;
             stroke-miterlimit: 10;
         }
     }

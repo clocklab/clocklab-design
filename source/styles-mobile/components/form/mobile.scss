@@ -1,28 +1,25 @@
-& {  
-    
+.form {
     position: absolute;
+    top: 0;
     left: 0;
-    top: 101%;
-    z-index: 99999;
-    padding-top: px(170);
+    padding-top: 85px;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,.9);
+    background: $black;
     color: $white;
     font-family: $Roboto-Regular;
     overflow: hidden;
-    transition: top $time * 2;
+
     .content {
         position: relative;
     }
-    
+
     .close-form {
+        position: absolute;
         top: 0;
         right: 0;
-        padding: 0;
-        width: px(40);
-        height: px(40);
-        position: absolute;
+        width: 20px;
+        height: 20px;
         background: transparent;
 
         &:before,
@@ -31,11 +28,10 @@
             position: absolute;
             top: 50%;
             left: 0;
-            width: px(40);
+            width: 20px;
             height: 1px;
             background: $gray;
             content: '';
-            transition: background $time;
         }
 
         &:before {
@@ -50,76 +46,66 @@
     .form-title {
         display: block;
         font-family: $Raleway-ExtraBold;
-        font-size: px(48);
+        font-size: 24px;
         text-transform: uppercase;
     }
 
     p {
-        margin: px(40) 0 px(90);
-        color: #666;
-        line-height: px(36);
+        margin: 20px 0 45px;
+        color: $darkGray;
         font-family: $Roboto-Regular;
-        font-size: px(28);
+        font-size: 14px;
+        line-height: 1.2;
     }
 
     label {
         display: block;
         position: relative;
-        padding: 0 px(20);
+        padding: 0 10px;
         width: 100%;
-        margin-bottom: 5vh;
         border-bottom: 1px solid $gray;
 
         .placeholder {
             display: block;
             position: absolute;
             top: 0;
-            left: px(20);
-            margin-bottom: px(16);
+            left: 10px;
+            margin-bottom: 8px;
             height: 100%;
             color: $gray;
             font-family: $Roboto-Regular;
-            font-size: px(30);
+            font-size: 15px;
             line-height: 100%;
             letter-spacing: 1px;
             text-transform: uppercase;
-            transition: top $timeHalf, color $timeHalf, font-size $timeHalf;
         }
 
         input {
             display: block;
             position: relative;
             z-index: 2;
-            padding: px(5) 0;
+            padding: 5px 0;
             width: 100%;
-            height: px(40);
+            height: 20px;
             background: transparent;
-            border: none;
-            outline: none;
+            border: 0;
             color: $white;
-            font-size: px(32);
+            font-size: 16px;
+            outline: 0;
 
             &:focus,
             &.filled {
-                
+
                 & ~ .placeholder {
-                    top: px(-30);
+                    top: -15px;
                     color: $white;
-                    font-size: px(24);
+                    font-size: 12px;
                 }
 
                 & ~ .tick {
                     width: 100%;
                 }
             }
-        }
-
-        .message {
-            position: absolute;
-            top: 100%;
-            padding-top: px(10);
-            color: $red;
-            visibility: hidden;
         }
 
         .tick {
@@ -130,41 +116,10 @@
             width: 0;
             height: 1px;
             background: $white;
-            transition: width $timeHalf, background $timeHalf;
-        }
-
-        &.wrong {
-            
-            input {
-
-                & ~ .tick {
-                    width: 100%;
-                    background: $red;
-                }
-            }
-
-            .message {
-                visibility: visible;
-            }
-        }
-
-        &:nth-of-type(2) {
-            margin-bottom: px(150);
         }
     }
 
     .send {
-        margin: px(50) auto 0;
-    }
-
-    &.opened {
-        top: 0;
-    }
-
-    &--become-client {
-        
-        h3 {
-            margin-bottom: px(140);
-        }
+        margin: 25px auto 0;
     }
 }
