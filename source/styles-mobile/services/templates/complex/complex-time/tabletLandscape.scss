@@ -1,0 +1,69 @@
+.complex-time {
+
+    .container {
+        padding: 100px 0 70px;
+        width: 80%;
+    }
+
+    .complex-time-title {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+
+    .column {
+        font-size: 20px;
+
+        p {
+            margin-bottom: 30px;
+        }
+    }
+
+    .watch {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .watch__tick {
+
+        &:before {
+            width: 2px;
+            height: 15px;
+        }
+
+        &--big {
+
+            &:before {
+                width: 5px;
+                height: 35px;
+            }
+        }
+    }
+
+    .watch-marks {
+
+        span {
+            font-size: 22px;
+        }
+    }
+
+    $width-small: 30vw;
+    $width-middle: 40vw;
+    $width-big: 45vw;
+
+    .watch-core {
+        width: $width-small;
+        height: $width-small;
+        font-size: 32px;
+
+        &:before,
+        &:after {
+            width: $width-middle;
+            height: $width-middle;
+        }
+
+        &:after {
+            width: $width-big;
+            height: $width-big;
+        }
+    }
+}

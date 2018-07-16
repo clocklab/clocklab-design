@@ -115,7 +115,6 @@
             background: $gray;
             content: '';
             transform: translateX(-50%);
-            transition: background $time;
         }
 
         &--big {
@@ -123,13 +122,6 @@
             &:before {
                 width: 3px;
                 height: 15px;
-            }
-        }
-
-        &.current {
-
-            &:before {
-                background: $white;
             }
         }
 
