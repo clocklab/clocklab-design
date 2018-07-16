@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>clocklab design | 404</title>
+        <title>Clocklab Design | 404</title>
         @@include('./components/head.html')
+        <link rel="stylesheet" href="../styles-mobile/common.css">
         <link rel="stylesheet" href="../styles-mobile/404-mobile.css">
-        <script src="../scripts-mobile/404-mobile.min.js" defer></script>
+        <!-- <script src="../scripts-mobile/404-mobile.min.js" defer></script> -->
     </head>
     <body>
+        <!-- @@include('./components/top-panel-mobile.html') -->
 
-        @@include('./components/top-panel-mobile.html')
-
-        <div class="error-page-mobile">
-            <p class="big">404</p>
-            <p>
-                Что-то пошло не так,
-                и покорить мир не удалось :(
-            </p>
-            <a href="index.html">На главную</a>
+        <div class="error">
+            <div class="error__container">
+                <p class="error__code">404</p>
+                <p class="error__message">Что-то пошло не так, и покорить мир не удалось :(</p>
+                <a class="error__link" href="/">На главную</a>
+            </div>
         </div>
 
     </body>

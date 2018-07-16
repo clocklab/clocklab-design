@@ -1,0 +1,27 @@
+.work-flow {
+    margin: 40px 0 80px;
+
+    .text-container {
+        display: inline-block;
+    }
+
+    .new-title-text {
+        font-size: 36px;
+    }
+
+    .steps {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+
+    .step-container {
+        width: 49%;
+
+        &:nth-child(odd) {
+            padding-right: 20px;
+        }
+    }
+}

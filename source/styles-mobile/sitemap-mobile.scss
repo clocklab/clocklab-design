@@ -1,0 +1,33 @@
+@import 'base/variables';
+
+/*
+/
+/---- MOBILE ---- */
+@import 'templates/sitemap/mobile';
+/* ---- MOBILE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (min-width: #{$tabletPortraitWidth}) {
+    @import 'templates/sitemap/tabletPortrait';
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+    @import 'templates/sitemap/tabletLandscape';
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- IPadPro PORTRAIT ---- */
+@media (min-width: #{$iPadProPortraitWidth}) and (orientation: portrait) {
+}
+/* ---- IPadPro PORTRAIT ---- */

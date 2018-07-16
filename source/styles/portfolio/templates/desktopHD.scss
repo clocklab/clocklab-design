@@ -375,6 +375,22 @@ section {
 ul {
     margin: 30px 0;
 
+    &.imagined {
+
+        li {
+            display: flex;
+        }
+
+        .list-image {
+            display: block;
+            margin-right: 20px;
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
     &.indexed {
         padding: 0 50px;
 

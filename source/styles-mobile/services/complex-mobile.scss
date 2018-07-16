@@ -1,0 +1,34 @@
+@import '../base/variables';
+
+/*
+/
+/---- MOBILE ---- */
+@import 'templates/complex/complex-header/mobile';
+@import 'templates/complex/complex-time/mobile';
+/* ---- MOBILE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (min-width: #{$tabletPortraitWidth}) {
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+    @import 'templates/complex/complex-header/tabletLandscape';
+    @import 'templates/complex/complex-time/tabletLandscape';
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- IPadPro PORTRAIT ---- */
+@media (min-width: #{$iPadProPortraitWidth}) and (orientation: portrait) {
+}
+/* ---- IPadPro PORTRAIT ---- */

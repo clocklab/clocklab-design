@@ -1,250 +1,120 @@
-& {  
-    width: 100vw;
-    height: 100vh;
-    padding: 22px 44px;
-    background: $lightBlack;
+.our-clients {
     position: relative;
-    overflow: hidden;
-    & > span {
-        color: #666;
-        font-size: px(22);
-        text-transform: uppercase;
-        font-family: $Raleway-Bold;
-    }
-    .slogan {
+    padding: 40px 5%;
+    background: $lightBlack;
+
+    &__title {
+        padding: 30px 0;
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
         color: $white;
-        font-size: px(48);
-        margin-top: px(20);
-        line-height: px(52);
         font-family: $Roboto-Bold;
+        font-size: 20px;
+        line-height: 1.1;
     }
+
     .slider-clients-wrapper {
-        overflow: hidden;
+        overflow-x: hidden;
         position: relative;
-        margin-top: px(20);
-        height: px(650);
+        margin-top: 10px;
         width: 100%;
     }
+
     .slider-clients {
-        position: absolute;
         display: flex;
-        height: 100%;
-        width: 300%;
-        z-index: 2;
-        left: 0;
+        position: relative;
         top: 0;
+        left: 0;
+        z-index: 2;
+        width: 300%;
     }
+
     .slide {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-content: flex-start;
         position: relative;
-        height: 100%;
         width: 100%;
+
         &__item {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: px(20);
-            height: 22.5%;
+            padding: 10px;
             width: 50%;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
+            height: 70px;
+        }
+
+        &__image {
+            max-width: 100%;
+            object-fit: contain;
+
+            &--big {
+                height: 75%;
             }
-            &--audi {
-                img {
-                    height: 50%;
-                }   
+
+            &--middle {
+                height: 55%;
             }
-            &--tommy-hilfiger {
-                img {
-                    height: 50%;
-                }   
-            }
-            &--gstar-raw {
-                img {
-                    height: 50%;
-                }   
-            }
-            &--dkny-men {
-                img {
-                    height: 20%;
-                }   
-            }
-            &--fornarina {
-                img {
-                    height: 30%;
-                }   
-            }
-            &--accessorize {
-                img {
-                    height: 30%;
-                }   
-            }
-            &--doberman {
-                img {
-                    height: 70%;
-                }   
-            }
-            &--lets-help {
-                img {
-                    height: 70%;
-                }   
-            }
-            &--seven-hills {
-                img {
-                    height: 60%;
-                }   
-            }
-            &--park-avenue {
-                img {
-                    height: 80%;
-                }   
-            }
-            &--gogol {
-                img {
-                    height: 80%;
-                }   
-            }
-            &--preppy {
-                img {
-                    height: 80%;
-                }   
-            }
-            &--pepe-jeans {
-                img {
-                    height: 60%;
-                }   
-            }
-            &--gant {
-                img {
-                    height: 20%;
-                }   
-            }
-            &--diesel {
-                img {
-                    height: 50%;
-                }   
-            }
-            &--oodji {
-                img {
-                    height: 60%;
-                }   
-            }
-            &--shell {
-                img {
-                    height: 50%;
-                }   
-            }
-            &--jti {
-                img {
-                    height: 50%;
-                }   
-            }
-            &--stem {
-                img {
-                    height: 30%;
-                }   
+
+            &--small {
+                height: 25%;
             }
         }
+
         .open-form {
-            right: 0;
-            bottom: 0;
-            padding: 0;
-            width: 50%;
-            height: 25%;
+            display: block;
             color: $white;
-            text-align: left;
-            font-size: px(30);
             font-family: $Roboto-Black;
-            padding-left: px(10);
-            position: absolute;
+            font-size: 18px;
+            text-align: left;
+
             span {
                 display: block;
                 color: $blue;
             }
         }
     }
+
     .dots {
+        display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: px(40);
-        display: flex;
-        .dot {
+        margin-top: 20px;
+
+        &__item {
+            display: flex;
             justify-content: center;
             align-items: center;
-            margin-right: px(8);
-            display: flex;
+            margin-right: 5px;
             width: 8px;
             height: 8px;
-            &:before {
-                width: 6px;
-                height: 6px;
-                display: block;
-                transition: width $timeTick, height $timeTick, background $timeTick;
-                border-radius: 50%;
-                background: $gray;
-                content: '';
-            }
+
             &:last-child {
                 margin-right: 0;
             }
+
             &.active {
-                &:before {
-                    background: $blue;
-                    width: 8px;
-                    height: 8px;
+
+                .dots {
+
+                    &__inner-item {
+                        background: $blue;
+                        width: 8px;
+                        height: 8px;
+                    }
                 }
             }
         }
-    }
-    .form-title {
-        margin-bottom: 52px;
-        line-height: inherit;
-    }
-    .content {
-        padding: 0 1%;
-        overflow-x: hidden;
-        margin: 0 auto;
-        width: 90%;
-    }
-    .button {
-        text-transform: uppercase;
-        vertical-align: middle;
-        margin-bottom: px(100);
-        display: inline-block;
-        text-align: center;
-        line-height: 55px;
-        font-size: px(28);
-        width: 99.99%;
-        height: 55px;
-        z-index: 99999;
-        position: relative;
-        letter-spacing: 2px;
-        &.special {
-            color: $darkGray;
-            border: 1px solid;
-            font-family: $Roboto-Bold;
-            .element {
-                background-color: $white;
-                font-family: $Raleway-ExtraBold;
-                text-transform: none;
-                font-size: px(64);
-                position: absolute;
-                padding: px(10);
-                left: px(45);
-                top: px(-65);
-            }
-            &.blue {
-                background-color: $blue;
-                border-color: $blue;
-                span, a {
-                    color: $white;
-                }
-            }
+
+        &__inner-item {
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: $gray;
+            transition: width $timeTick, height $timeTick, background $timeTick;
         }
     }
 }

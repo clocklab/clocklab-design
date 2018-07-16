@@ -1,4 +1,31 @@
-@import 'components/logo/main';
-@import 'components/menu/main';
+@import 'base/variables';
 
-@import 'templates/portfolio/portfolio/main';
+/*
+/
+/---- MOBILE ---- */
+@import 'templates/portfolio/mobile';
+/* ---- MOBILE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (min-width: #{$tabletPortraitWidth}) {
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- IPadPro PORTRAIT ---- */
+@media (min-width: #{$iPadProPortraitWidth}) and (orientation: portrait) {
+}
+/* ---- IPadPro PORTRAIT ---- */

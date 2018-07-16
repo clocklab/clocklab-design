@@ -1,0 +1,59 @@
+.founders {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 30px 5%;
+    background: $white;
+    color: $black;
+
+    .big-background-letter {
+        display: none;
+    }
+
+    .text-block {
+        order: 2;
+        margin-top: 50px;
+    }
+
+    .new-title {
+        margin: 50px 0 25px;
+        font-family: $Raleway-Bold;
+        font-size: 26px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .text {
+        margin-top: 40px;
+
+        p {
+            margin-bottom: 30px;
+            font-family: $Raleway-Regular;
+            font-size: 16px;
+            line-height: 1.4;
+
+            &:nth-child(2) {
+                font-family: $Raleway-Bold;
+            }
+        }
+    }
+
+    .image-block {
+        position: relative;
+        z-index: 2;
+
+        img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    .rotated-text {
+        margin-top: 30px;
+        font-family: $Raleway-Regular;
+        font-size: 14px;
+        line-height: 1.3;
+    }
+}

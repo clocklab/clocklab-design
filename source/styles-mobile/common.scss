@@ -3,3 +3,37 @@
 @import 'base/fonts';
 @import 'base/animate';
 @import 'base/animations';
+
+
+/*
+/
+/---- MOBILE ---- */
+@import 'components/top-panel/mobile';
+@import 'components/our-clients/mobile';
+@import 'components/form/mobile';
+/* ---- MOBILE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (min-width: #{$tabletPortraitWidth}) {
+    @import 'components/our-clients/tabletPortrait';
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- IPadPro PORTRAIT ---- */
+@media (min-width: #{$iPadProPortraitWidth}) and (orientation: portrait) {
+}
+/* ---- IPadPro PORTRAIT ---- */

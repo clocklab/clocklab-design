@@ -1,0 +1,117 @@
+.sitemap {
+    min-height: 100vh;
+    background: $lightBlack;
+
+    .container {
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        padding: 100px 0 30px;
+        width: 90%;
+
+        a {
+            display: inline-block;
+            line-height: 1.2;
+        }
+
+        & > .tree-level {
+            padding-bottom: 20px;
+
+            & > div > a {
+                margin-bottom: 30px;
+                color: $blue;
+                font-family: $Roboto-Black;
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+
+            & > .tree-level {
+                margin-bottom: 30px;
+
+                & > div > a {
+                    margin-bottom: 20px;
+                    color: $white;
+                    font-family: $Roboto-Bold;
+                    font-size: 26px;
+                    animation-delay: $time * 3 + $timeTick;
+                }
+
+                & > .tree-level {
+                    margin-bottom: 20px;
+
+                    & > div > a {
+                        margin-bottom: 20px;
+                        color: $lightGray;
+                        font-family: $Roboto-Medium;
+                        font-size: 18px;
+                        animation-delay: $time * 3 + $timeTick * 2;
+                    }
+                }
+            }
+        }
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+    .line {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: $gray;
+        opacity: .3;
+        // animation: Down $time * 6 $time * 3 both;
+
+        &--1 {
+            left: 1px;
+        }
+
+        &--2 {
+            display: none;
+            left: calc(100% / 3);
+            animation-delay: $time * 3 + $timeTick;
+        }
+
+        &--3 {
+            display: none;
+            left: calc(100% / 3 * 2);
+            animation-delay: $time * 3 + $timeTick * 2;
+        }
+
+        &--4 {
+            right: 0;
+            animation-delay: $time * 3 + $timeTick * 3;
+        }
+    }
+
+    .page-title-container {
+        display: block;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 40px;
+        overflow: hidden;
+    }
+
+    .page-title {
+        display: block;
+        color: $white;
+        font-family: $Raleway-ExtraBold;
+        font-size: 36px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        // animation: Right $time * 3 $time * 3 both;
+    }
+
+    .tree-level {
+        position: relative;
+        z-index: 2;
+        // overflow-x: hidden;
+    }
+}

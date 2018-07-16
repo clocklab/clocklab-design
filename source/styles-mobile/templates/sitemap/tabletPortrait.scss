@@ -1,0 +1,13 @@
+.sitemap {
+
+    .container {
+        width: 80%;
+
+        & > .tree-level {
+
+            .tree-level {
+                padding-left: 75px;
+            }
+        }
+    }
+}

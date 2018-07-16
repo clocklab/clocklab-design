@@ -1,0 +1,61 @@
+.about-company-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px 0 90px;
+    min-height: 100vh;
+    overflow: hidden;
+
+    .scroll,
+    .languages,
+    .copyright,
+    .social {
+        display: none;
+    }
+
+    .bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .text-block {
+        position: relative;
+        width: 80%;
+        z-index: 2;
+        line-height: 1.1;
+
+        span {
+            display: block;
+        }
+    }
+
+    .slogan {
+        color: $white;
+        font-family: $Raleway-Medium;
+        font-size: 36px;
+    }
+
+    .phrase {
+        overflow: hidden;
+    }
+
+    .translation {
+        margin-top: 20px;
+        color: $gray;
+        font-family: $Roboto-Regular;
+        font-size: 20px;
+    }
+}

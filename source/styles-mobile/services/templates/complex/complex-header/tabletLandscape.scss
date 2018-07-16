@@ -1,0 +1,34 @@
+.complex-header {
+
+    .header {
+
+        &-column {
+            padding: 0 10%;
+        }
+    }
+
+    .about {
+        margin-top: 50px;
+        padding: 0 10% 70px;
+    }
+
+    img {
+        max-height: 70vh;
+    }
+
+    ul {
+        margin: 70px 0;
+    }
+
+    li {
+        margin-bottom: 25px;
+    }
+
+    .huge {
+        font-size: 30px;
+    }
+
+    .big {
+        font-size: 24px;
+    }
+}

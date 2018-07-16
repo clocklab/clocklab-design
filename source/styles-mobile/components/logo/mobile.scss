@@ -1,66 +1,13 @@
-& {  
-
-    @keyframes Down {
-        from {
-            transform: translateY(-101%);
-        }
-        to {
-            transform: none;
-        }
-    }
-    @keyframes toUp {
-        from {
-            transform: none;
-        }
-        to {
-            transform: translateY(-101%);
-        }
-    }   
-    @keyframes innerTickAnimation1 {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(101%);
-        }
-    }
-    @keyframes innerTickAnimation2 {
-        from {
-            transform: translateX(-101%);
-        }
-        to {
-            transform: translateX(0);
-        }
-    }
-    @keyframes innerTickOpenedAnimation1 {
-        from {
-            left: 10%;
-        }
-        to {
-            left: 101%;
-        }
-    }
-    @keyframes innerTickOpenedAnimation2 {
-        from {
-            left: -101%;
-        }
-        to {
-            left: 10%;
-        }
-    }
-
+.logo {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    position: fixed;
-    left: px(-30);
-    top: px(-30);
+    left: -15px;
+    top: -15px;
     z-index: 10;
-    width: px(225);
-    height: px(125);
+    width: 115px;
+    height: 62px;
     overflow: hidden;
-    animation: Down $topPanelAnimationTime $time * 3 ease-out both;
-    transition: top $time * 2 ease-out;
 
     svg {
         width: 73%;
@@ -83,34 +30,8 @@
         }
     }
 
-    &.scrolled {
-
-        svg {
-            transform: translate3d(px(-60), px(-10), 0);
-        }
-        
-        .logo-letter {
-            opacity: 0;
-
-            &.scrolling-visible {
-                opacity: 1;
-            }
-        }
-
-        &:hover {
-
-            svg {
-                transform: none;
-            }
-            
-            .logo-letter {
-                opacity: 1;
-            }
-        }
-    }
-
     &.form-opened {
-        top: px(-242);
+        top: -121px;
         opacity: 0;
     }
 
