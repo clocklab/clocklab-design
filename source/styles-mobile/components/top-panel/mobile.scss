@@ -8,7 +8,7 @@
     left: 0;
     width: 100%;
     height: 50px;
-    background: linear-gradient(90deg, $black, $black, rgba(0, 0, 0, .7), rgba(0, 0, 0, .7), $black, $black);
+    background: linear-gradient(90deg, $black, $black, $darkGray, $darkGray, $black, $black);
     background-size: 500% 100%;
     animation: background 15s linear infinite;
 
