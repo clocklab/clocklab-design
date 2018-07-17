@@ -32,9 +32,26 @@
     const menu = document.querySelector('#menu');
     const menuSwitcher = document.querySelector('#menu-switcher');
 
+    function changeMenu(e) {
+        if (e.target === this ) {
+            menu.removeEventListener('transitionend', changeMenu);
+            window.pageYOffset && menu.classList.add('scrolled');
+        }
+    }
+
+    function openMenu() {
+        menu.classList.add('opened');
+        menu.classList.remove('scrolled');
+    }
+
+    function closeMenu() {
+        menu.classList.remove('opened');
+        menu.addEventListener('transitionend', changeMenu);
+    }
+
     menuSwitcher.addEventListener('click', (e) => {
         e.preventDefault();
-        menu.classList.toggle('opened');
+        menu.matches('.opened') ? closeMenu() : openMenu();
     });
 })();
 

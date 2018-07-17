@@ -12,10 +12,10 @@
     background: transparent;
     color: $black;
     font-family: $Roboto-Regular;
-    transition: background $time;
     overflow: hidden;
     perspective: 300px;
     perspective-origin: 50% 50%;
+    transition: width 0s $time * 7, height 0s $time * 7, background $time $time * 5;
 
     .hamburger {
         position: absolute;
@@ -72,6 +72,7 @@
         border: 1px solid $black;
         backface-visibility: hidden;
         color: $white;
+        transition: transform $time linear;
 
         &--small {
             display: block;
@@ -82,52 +83,59 @@
 
         &--diagonal-transformed {
             transform-origin: 100% 0;
-            transform: rotate3d(1, 1, 0, -45deg);
+            transform: rotate3d(1, 1, 0, -180deg);
         }
 
         &--top-transformed {
             transform-origin: 50% 0;
-            transform: rotateX(-45deg);
+            transform: rotateX(-180deg);
         }
 
         &--right-transformed {
             transform-origin: 100% 50%;
-            transform: rotateY(-45deg);
+            transform: rotateY(-180deg);
         }
 
         &:nth-child(1) {
             top: 0;
             right: 0;
+            transition-delay: $time * 6;
         }
 
         &:nth-child(2) {
             top: $menuItemWidthSmall - $dif;
             right: $menuItemWidthSmall - $dif;
+            transition-delay: $time * 5;
         }
 
         &:nth-child(3) {
             top: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
-            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+            right: $menuItemWidthSmall - $dif;
+            transition-delay: $time * 4;
         }
 
         &:nth-child(4) {
             top: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
-            right: $menuItemWidthSmall - $dif;
+            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+            transition-delay: $time * 3;
         }
 
         &:nth-child(5) {
             top: $menuItemWidthSmall + $menuItemWidth * 2 - $dif * 3;
-            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+            right: $menuItemWidthSmall - $dif;
+            transition-delay: $time * 3;
         }
 
         &:nth-child(6) {
             top: $menuItemWidthSmall + $menuItemWidth * 2 - $dif * 3;
-            right: $menuItemWidthSmall - $dif;
+            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+            transition-delay: $time * 2;
         }
 
         &:nth-child(7) {
             top: $menuItemWidthSmall + $menuItemWidth * 3 - $dif * 4;
             right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+            transition-delay: $time;
         }
     }
 
@@ -175,10 +183,36 @@
         width: 100vw;
         height: 100vh;
         background: $white;
+        transition: width 0s, height 0s, background $time;
 
         .menu {
 
             &__item {
+                transform: none;
+
+                &:nth-child(2) {
+                    transition-delay: $time;
+                }
+
+                &:nth-child(3) {
+                    transition-delay: $time * 2;
+                }
+
+                &:nth-child(4) {
+                    transition-delay: $time * 3;
+                }
+
+                &:nth-child(5) {
+                    transition-delay: $time * 3;
+                }
+
+                &:nth-child(6) {
+                    transition-delay: $time * 4;
+                }
+
+                &:nth-child(7) {
+                    transition-delay: $time * 5;
+                }
 
                 &--small {
                     border: 1px solid $black;
