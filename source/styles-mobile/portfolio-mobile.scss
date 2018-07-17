@@ -11,6 +11,7 @@
 /
 /---- TABLET PORTRAIT ---- */
 @media (min-width: #{$tabletPortraitWidth}) {
+    @import 'templates/portfolio/tabletPortrait';
 }
 /* ---- TABLET PORTRAIT ---- */
 

@@ -84,13 +84,15 @@
     .case {
         position: relative;
         // margin-bottom: 50px;
-        padding: 50px 10% 0;
+        padding: 50px 10% 20px;
         min-height: 100vh;
         overflow: hidden;
 
         &__image {
             width: 100%;
+            max-height: 320px;
             object-fit: cover;
+            object-position: center;
         }
 
         &__title {
