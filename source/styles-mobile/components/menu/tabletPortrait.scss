@@ -1,0 +1,70 @@
+.menu {
+    $menuItemWidth: 110px;
+    $menuItemWidthSmall: 75px;
+    $dif: 1px;
+
+    width: $menuItemWidthSmall;
+    height: $menuItemWidthSmall;
+
+    .hamburger {
+        top: 50%;
+        left: 50%;
+        width: 35px;
+        height: 24px;
+    }
+
+    &__item {
+        padding: 5px;
+        width: $menuItemWidth;
+        height: $menuItemWidth;
+
+        &--small {
+            width: $menuItemWidthSmall;
+            height: $menuItemWidthSmall;
+        }
+
+        &:nth-child(2) {
+            top: $menuItemWidthSmall - $dif;
+            right: $menuItemWidthSmall - $dif;
+        }
+
+        &:nth-child(3) {
+            top: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+            right: $menuItemWidthSmall - $dif;
+        }
+
+        &:nth-child(4) {
+            top: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+        }
+
+        &:nth-child(5) {
+            top: $menuItemWidthSmall + $menuItemWidth * 2 - $dif * 3;
+            right: $menuItemWidthSmall - $dif;
+        }
+
+        &:nth-child(6) {
+            top: $menuItemWidthSmall + $menuItemWidth * 2 - $dif * 3;
+            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+        }
+
+        &:nth-child(7) {
+            top: $menuItemWidthSmall + $menuItemWidth * 3 - $dif * 4;
+            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+        }
+    }
+
+    &__index {
+        font-size: 16px;
+    }
+
+    &__icon {
+        margin-top: 10px;
+        font-size: 34px;
+    }
+
+    &__name {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+}

@@ -20,6 +20,7 @@
 /---- TABLET PORTRAIT ---- */
 @media (min-width: #{$tabletPortraitWidth}) {
     @import 'components/logo/tabletPortrait';
+    @import 'components/menu/tabletPortrait';
     @import 'components/our-clients/tabletPortrait';
 }
 /* ---- TABLET PORTRAIT ---- */
