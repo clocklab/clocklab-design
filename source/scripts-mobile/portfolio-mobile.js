@@ -1,18 +1,3 @@
-//    //= include ./libraries/jquery-3.2.1.min.js
-
-//    //= include ./libraries/wow.js
-
-//    //= include ./components/menu.js
-
-//    //= include ./components/scroll-menu.js
-
-//    //= include ./components/pop-ups.js
-
-//    //= include ./components/anchors.js
-
-//    new WOW().init();
-
-
 ;(function() {
     var btns = document.querySelectorAll('.case__open-btn');
 
@@ -39,4 +24,16 @@
             openClose(btn.parentElement)
         });
     })
+})();
+
+
+// ~~~~~~~~~ MOVE TO COMMON SCRIPTS ~~~~~~~~~
+;(function() {
+    const logo = document.querySelector('#logo');
+
+    window.addEventListener('scroll', () => {
+        window.pageYOffset > 0
+        ? logo.classList.add('scrolled')
+        : logo.classList.remove('scrolled');
+    });
 })();

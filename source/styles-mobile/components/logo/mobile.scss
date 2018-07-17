@@ -1,41 +1,42 @@
 .logo {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    left: -15px;
-    top: -15px;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 10;
-    width: 115px;
-    height: 62px;
-    overflow: hidden;
+    padding: 10px 0 0 10px;
+    width: 90px;
+    transition: left $time;
 
-    svg {
-        width: 73%;
-        transition: transform $timeTick;
+    &__letter {
+        transition: opacity $time;
     }
 
-    &-letter {
-        fill: $white;
-        transition: opacity $timeTick;
-    }
-
-    &-arrow {
+    &__arrow {
         fill: $blue;
     }
 
-    &.dark {
+    &.scrolled {
+        left: -30px;
 
-        .logo-letter {
-            fill: $black;
+        .logo {
+
+            &__letter {
+                opacity: 0;
+
+                &--visible {
+                    opacity: 1;
+                }
+            }
         }
     }
 
-    &.form-opened {
-        top: -121px;
-        opacity: 0;
-    }
+    &.light {
 
-    &.back {
-        animation: toUp $topPanelAnimationTime ease-out both;
-    }
+        .logo {
+
+            &__letter {
+                fill: $white;
+            }
+        }
+    } 
 }
