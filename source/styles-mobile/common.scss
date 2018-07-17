@@ -9,6 +9,7 @@
 /
 /---- MOBILE ---- */
 @import 'components/logo/mobile';
+@import 'components/menu/mobile';
 @import 'components/our-clients/mobile';
 @import 'components/form/mobile';
 /* ---- MOBILE ---- */
@@ -18,6 +19,7 @@
 /
 /---- TABLET PORTRAIT ---- */
 @media (min-width: #{$tabletPortraitWidth}) {
+    @import 'components/logo/tabletPortrait';
     @import 'components/our-clients/tabletPortrait';
 }
 /* ---- TABLET PORTRAIT ---- */

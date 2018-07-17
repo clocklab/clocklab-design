@@ -21,7 +21,7 @@
 
     btns.forEach(btn => {
         btn.addEventListener('click', () => {
-            openClose(btn.parentElement)
+            openClose(btn.parentElement);
         });
     })
 })();
@@ -29,11 +29,26 @@
 
 // ~~~~~~~~~ MOVE TO COMMON SCRIPTS ~~~~~~~~~
 ;(function() {
+    const menu = document.querySelector('#menu');
+    const menuSwitcher = document.querySelector('#menu-switcher');
+
+    menuSwitcher.addEventListener('click', (e) => {
+        e.preventDefault();
+        menu.classList.toggle('opened');
+    });
+})();
+
+;(function() {
     const logo = document.querySelector('#logo');
+    const menu = document.querySelector('#menu');
 
     window.addEventListener('scroll', () => {
-        window.pageYOffset > 0
-        ? logo.classList.add('scrolled')
-        : logo.classList.remove('scrolled');
+        if (window.pageYOffset) {
+            logo.classList.add('scrolled')
+            menu.classList.add('scrolled')
+        } else {
+            logo.classList.remove('scrolled');
+            menu.classList.remove('scrolled');
+        }
     });
 })();
