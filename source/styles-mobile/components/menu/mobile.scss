@@ -267,4 +267,43 @@
             }
         }
     }
+
+    &.light {
+        color: $white;
+
+        .hamburger {
+
+            &__item {
+                background: $white;
+            }
+        }
+
+        .menu {
+
+            &__item {
+                border-color: $white;
+            }
+
+            &__index,
+            &__icon,
+            &__name {
+                color: $white;
+            }
+        }
+
+        .languages {
+
+            &__item {
+                color: $white;
+
+                &.current {
+                    color: $blue;
+                }
+            }
+        }
+
+        &.opened {
+            background: $lightBlack;
+        }
+    }
 }

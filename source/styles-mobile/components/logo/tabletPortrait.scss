@@ -1,4 +1,8 @@
 .logo {
     padding: 20px 0 0 20px;
     width: 110px;
+
+    &.scrolled {
+        left: -45px;
+    }
 }
