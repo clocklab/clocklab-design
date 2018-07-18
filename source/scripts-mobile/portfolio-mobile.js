@@ -36,10 +36,12 @@
         if (e.target === this ) {
             menu.removeEventListener('transitionend', changeMenu);
             window.pageYOffset && menu.classList.add('scrolled');
+            document.body.removeAttribute('style');
         }
     }
 
     function openMenu() {
+        document.body.style.overflow = 'hidden';
         menu.classList.add('opened');
         menu.classList.remove('scrolled');
     }
