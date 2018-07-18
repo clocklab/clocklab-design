@@ -13,6 +13,8 @@
 @import 'components/languages/mobile';
 @import 'components/our-clients/mobile';
 @import 'components/form/mobile';
+@import 'components/crossed-button/mobile';
+@import 'components/services-work-examples/mobile';
 /* ---- MOBILE ---- */
 
 
@@ -34,6 +36,7 @@
     @import 'components/menu/tabletPortrait';
     @import 'components/languages/tabletPortrait';
     @import 'components/our-clients/tabletPortrait';
+    @import 'components/services-work-examples/tabletPortrait';
 }
 /* ---- TABLET PORTRAIT ---- */
 
@@ -42,6 +45,7 @@
 /
 /---- TABLET LANDSCAPE ---- */
 @media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+    @import 'components/services-work-examples/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
