@@ -1,6 +1,6 @@
-//= include ./libraries/jquery-3.2.1.min.js
+//    //= include ./libraries/jquery-3.2.1.min.js
 
-//= include ./libraries/wow.js
+//    //= include ./libraries/wow.js
 
 //= include ./components/menu.js
 

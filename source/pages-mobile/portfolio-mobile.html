@@ -5,11 +5,12 @@
         @@include('./components/head.html')
         <link rel="stylesheet" href="../styles-mobile/common.css">
         <link rel="stylesheet" href="../styles-mobile/portfolio-mobile.css">
-        <!-- <script src="../scripts-mobile/portfolio-mobile.min.js" defer></script> -->
+        <script src="../scripts-mobile/portfolio-mobile.min.js" defer></script>
     </head>
     <body>
+        @@include('./components/logo.html')
 
-        @@include('./components/top-panel.html')
+        @@include('./components/menu.html')
         
         <div class="portfolio">
             <div class="portfolio__title-container">
@@ -17,21 +18,21 @@
             </div>
 
             <div class="case">
-                <img class="case__image" src="../images//portfolio/audi.jpg" alt="">
+                <img class="case__image" src="../images/portfolio/audi.jpg" alt="">
 
                 <span class="case__title">
-                    Корпоративный сайт официального дилера <span class="bold">Audi</span>
+                    Корпоративный сайт официального дилера <span class="extra-bold">Audi</span>
                 </span>
 
-                <button class="case__open-btn">
-                    <span>информация о проекте</span>
-                    <span>закрыть</span>
+                <button class="case__open-btn switch-btn">
+                    <span class="switch-btn__text">информация о проекте</span>
+                    <span class="switch-btn__text">закрыть</span>
                 </button>
 
                 <a class="case__link" href="/razrabotka-i-prodvizhenie-sayta-audi">посмотреть работу</a>
 
                 <div class="case__content">
-                    <img class="case__logo" src="" alt="">
+                    <img class="case__logo" src="../images/audi-logo-work.png" alt="">
                     <p class="case__text">
                         Мы обеспечили официальному представителю Audi лидерство на украинском 
                         рынке. В результате сотрудничества Audi Центр Киев Юг стабильно занимает 
@@ -40,19 +41,22 @@
                 </div>
             </div>
 
-            <!-- <div class="case">
-                <img class="case__image" src="" alt="">
+            <div class="case">
+                <img class="case__image" src="../images/portfolio/euro-club.jpg" alt="">
 
                 <span class="case__title">
-                    Промо сайт <span class="bold">Eurovision</span>
+                    Промо сайт <span class="extra-bold">Eurovision</span>
                 </span>
 
-                <button class="case__open-btn">информация о проекте</a>
+                <button class="case__open-btn switch-btn">
+                    <span class="switch-btn__text">информация о проекте</span>
+                    <span class="switch-btn__text">закрыть</span>
+                </button>
 
                 <a class="case__link" href="/razrabotka-langing-page-euroclub">посмотреть работу</a>
 
                 <div class="case__content">
-                    <img class="case__logo" src="" alt="">
+                    <img class="case__logo" src="../images/euroclub-logo-work.png" alt="">
                     <p class="case__text">
                         EuroClub — официальная локация международного песенного конкурса «Евровидение-2017». 
                         Команда Clock Creative Lab работала над созданием Landing Page для EuroClub.
@@ -61,25 +65,28 @@
             </div>
 
             <div class="case">
-                <img class="case__image" src="" alt="">
+                <img class="case__image" src="../images/portfolio/dela.jpg" alt="">
 
                 <span class="case__title">
-                    Корпоративный сайт <span class="bold">Dela.ua</span>
+                    Корпоративный сайт <span class="extra-bold">Dela.ua</span>
                 </span>
 
-                <button class="case__open-btn">информация о проекте</button>
+                <button class="case__open-btn switch-btn">
+                    <span class="switch-btn__text">информация о проекте</span>
+                    <span class="switch-btn__text">закрыть</span>
+                </button>
 
                 <a class="case__link" href="/razrabotka-sayta-dokument-servisa-dela-ua">посмотреть работу</a>
 
                 <div class="case__content">
-                    <img class="case__logo" src="" alt="">
+                    <img class="case__logo" src="../images/dela-logo-work.png" alt="">
                     <p class="case__text">
                         Документ-сервис Dela.ua — современный центр административных услуг. Нами был 
                         разработан уникальный концепт — строгий и лаконичный дизайн дополнен простой 
                         и понятной навигацией.
                     </p>
                 </div>
-            </div> -->
+            </div>
         </div>
     </body>
 </html>

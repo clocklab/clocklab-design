@@ -1,6 +1,6 @@
 .portfolio {
     position: relative;
-    padding: 70px 5% 50px;
+    padding: 80px 10% 0;
 
     &__title {
         position: relative;
@@ -13,7 +13,7 @@
         &-container {
             display: inline-block;
             position: relative;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             overflow: hidden;
 
             &:before {
@@ -30,19 +30,68 @@
         }
     }
 
-    .bold {
-        font-family: $Raleway-Bold;
+    .extra-bold {
+        font-family: $Raleway-ExtraBold;
+    }
+
+    $btn-height: 55px;
+
+    .switch-btn {
+        position: relative;
+        height: $btn-height;
+        overflow: hidden;
+
+        &__text {
+            display: block;
+            font-family: $Roboto-Bold;
+            font-size: 14px;
+            line-height: $btn-height;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: transform $time linear;
+
+            &:nth-child(2) {
+                color: $white;
+            }
+        }
+
+        &:before,
+        &:after {
+            display: block;
+            position: absolute;
+            width: 20%;
+            height: 30%;
+            content: '';
+        }
+
+        &:before {
+            bottom: 0;
+            left: 0;
+            border-left: 1px solid $black;
+            border-bottom: 1px solid $black;
+        }
+
+        &:after {
+            top: 0;
+            right: 0;
+            border-top: 1px solid $black;
+            border-right: 1px solid $black;
+        }
     }
 
     .case {
         position: relative;
-        padding-top: 100px;
-        height: 100vh;
+        margin-bottom: 70px;
+        padding: 20px 10px;
+        // min-height: 100vh;
         overflow: hidden;
 
         &__image {
             width: 100%;
+            max-height: 320px;
             object-fit: cover;
+            object-position: center;
         }
 
         &__title {
@@ -55,50 +104,40 @@
         }
 
         &__open-btn {
-            display: block;
-            position: relative;
-            margin-top: 25px;
+            z-index: 3;
+            margin: 20px 0;
             width: 100%;
-            padding: 10px 0;
-            font-size: 14px;
-            letter-spacing: 2px;
-            text-align: center;
-
-            &:before,
-            &:after {
-                position: absolute;
-                width: 10%;
-                height: 60%;
-                content: '';
-            }
-
-            &:before {
-                bottom: 0;
-                left: 0;
-            }
-
-            &:after {
-                top: 0;
-                right: 0;
-            }
         }
 
         &__link {
             display: block;
+            position: relative;
+            z-index: 3;
             width: 100%;
             background: $blue;
             color: $white;
-            font-family: $Roboto-Black;
+            font-family: $Roboto-Bold;
             font-size: 14px;
-            letter-spacing: 2px;
+            line-height: $btn-height;
+            letter-spacing: 1px;
+            text-align: center;
+            text-transform: uppercase;
         }
 
         &__content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            padding: 20px 10% 0;
             width: 100%;
             height: 100%;
             background: $black;
             color: $white;
             font-family: $Roboto-Regular;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity $time linear, transform $time linear;
         }
 
         &__logo {
@@ -106,10 +145,33 @@
         }
 
         &__text {
-            margin: 35px 0;
+            margin: 30px 0;
             font-family: $Roboto-Regular;
             font-size: 16px;
-            line-height: 1.2;
+            line-height: 1.4;
+        }
+
+        &.opened {
+
+            .case {
+
+                &__content {
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+
+            .switch-btn {
+
+                &__text {
+                    transform: translateY(-100%);
+                }
+
+                &:before,
+                &:after {
+                    border-color: $white;
+                }
+            }
         }
     }
 }

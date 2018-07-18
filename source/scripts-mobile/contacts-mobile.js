@@ -1,12 +1,5 @@
-// //=include ./components/menu.js
-
-//  //=include ./components/open-form.js
-
-(function() {
-    // ----- google map -----
+;(function() {
     function initialize() {
-                
-        // ----- определяем настройки отображения карты -----
         var settings = {
             center: new google.maps.LatLng(50.431399, 30.472858),
             streetViewControl: false,
@@ -39,16 +32,12 @@
             ]
         };
 
-        // ----- определяем карту -----
         var map = new google.maps.Map(document.getElementById("map"), settings);
 
-            // ----- инициализируем карту ---
-            setMarkers(map, pointer);
+        setMarkers(map, pointer);
     }  
 
     function setMarkers(map, locations) {
-
-        // ----- определяем область показа маркеров -----
         var latlngbounds = new google.maps.LatLngBounds();  
         var image = new google.maps.MarkerImage('/images/clock-pointer.png',
                     new google.maps.Size(46, 62),      
@@ -59,7 +48,6 @@
 
             latlngbounds.extend(myLatLng);
 
-            // ----- определяем настройки маркера -----
             var marker = new google.maps.Marker({
                 title: locations[i][0],
                 position: myLatLng,
@@ -68,11 +56,9 @@
             }); 
         }
 
-        // ----- центрируем и масштабируем карту =====
         map.setCenter(latlngbounds.getCenter());     
     };
 
-    // ----- определяем места на карте -----
     var pointer = [['pointer', 50.431399, 30.472858]];
 
     initialize();
