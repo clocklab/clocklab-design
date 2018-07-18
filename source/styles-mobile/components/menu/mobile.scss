@@ -2,6 +2,15 @@
     $menuItemWidth: 90px;
     $menuItemWidthSmall: 55px;
     $dif: 1px;
+    $duration: $time;
+    $first-delay: $duration;
+    $second-delay: $first-delay + $duration;
+    $third-delay: $second-delay + $duration;
+    $fourth-delay: $third-delay + $duration;
+    $fifth-delay: $fourth-delay + $duration;
+    $sixth-delay: $fifth-delay + $duration;
+    $seventh-delay: $sixth-delay + $duration;
+
 
     position: fixed;
     top: 0;
@@ -13,9 +22,7 @@
     color: $black;
     font-family: $Roboto-Regular;
     overflow: hidden;
-    perspective: 300px;
-    perspective-origin: 50% 50%;
-    transition: width 0s $time * 7, height 0s $time * 7, background $time $time * 5;
+    transition: width 0s $seventh-delay, height 0s $seventh-delay, background $duration $fifth-delay;
 
     .hamburger {
         position: absolute;
@@ -66,6 +73,7 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
+        z-index: 2;
         padding: 5px;
         width: $menuItemWidth;
         height: $menuItemWidth;
@@ -83,59 +91,62 @@
 
         &--diagonal-transformed {
             transform-origin: 100% 0;
-            transform: rotate3d(1, 1, 0, -180deg);
+            transform: perspective(300px) rotate3d(1, 1, 0, -180deg);
         }
 
-        &--top-transformed {
+        &--portfolio,
+        &--contacts,
+        &--home {
             transform-origin: 50% 0;
-            transform: rotateX(-180deg);
+            transform: perspective(300px) rotateX(-180deg);
         }
 
-        &--right-transformed {
+        &--services,
+        &--blog {
             transform-origin: 100% 50%;
-            transform: rotateY(-180deg);
+            transform: perspective(300px) rotateY(-180deg);
         }
 
         &:nth-child(1) {
             top: 0;
             right: 0;
-            transition-delay: $time * 6;
+            transition-delay: $sixth-delay;
         }
 
         &:nth-child(2) {
             top: $menuItemWidthSmall - $dif;
             right: $menuItemWidthSmall - $dif;
-            transition-delay: $time * 5;
+            transition-delay: $fifth-delay;
         }
 
         &:nth-child(3) {
             top: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
             right: $menuItemWidthSmall - $dif;
-            transition-delay: $time * 4;
+            transition-delay: $fourth-delay;
         }
 
         &:nth-child(4) {
             top: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
             right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
-            transition-delay: $time * 3;
+            transition-delay: $third-delay;
         }
 
         &:nth-child(5) {
             top: $menuItemWidthSmall + $menuItemWidth * 2 - $dif * 3;
             right: $menuItemWidthSmall - $dif;
-            transition-delay: $time * 3;
+            transition-delay: $third-delay;
         }
 
         &:nth-child(6) {
             top: $menuItemWidthSmall + $menuItemWidth * 2 - $dif * 3;
             right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
-            transition-delay: $time * 2;
+            transition-delay: $second-delay;
         }
 
         &:nth-child(7) {
             top: $menuItemWidthSmall + $menuItemWidth * 3 - $dif * 4;
             right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
-            transition-delay: $time;
+            transition-delay: $first-delay;
         }
     }
 
@@ -183,7 +194,7 @@
         width: 100vw;
         height: 100vh;
         background: $white;
-        transition: width 0s, height 0s, background $time;
+        transition: width 0s, height 0s, background $duration;
 
         .menu {
 
@@ -191,27 +202,24 @@
                 transform: none;
 
                 &:nth-child(2) {
-                    transition-delay: $time;
+                    transition-delay: $first-delay;
                 }
 
                 &:nth-child(3) {
-                    transition-delay: $time * 2;
+                    transition-delay: $second-delay;
                 }
 
-                &:nth-child(4) {
-                    transition-delay: $time * 3;
-                }
-
+                &:nth-child(4),
                 &:nth-child(5) {
-                    transition-delay: $time * 3;
+                    transition-delay: $third-delay;
                 }
 
                 &:nth-child(6) {
-                    transition-delay: $time * 4;
+                    transition-delay: $fourth-delay;
                 }
 
                 &:nth-child(7) {
-                    transition-delay: $time * 5;
+                    transition-delay: $fifth-delay;
                 }
 
                 &--small {
@@ -241,6 +249,20 @@
 
                 &:nth-child(4) {
                     transform: rotate(-45deg);
+                }
+            }
+        }
+
+        .languages {
+
+            &__item {
+                opacity: 1;
+                pointer-events: initial;
+                transform: none;
+                transition-delay: $sixth-delay;
+
+                &.current {
+                    pointer-events: none;
                 }
             }
         }

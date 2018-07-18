@@ -1,0 +1,100 @@
+.menu {
+    $menuItemWidth: 90px;
+    $menuItemWidthSmall: 55px;
+    $dif: 1px;
+    $duration: $time;
+    $first-delay: $duration;
+    $second-delay: $first-delay + $duration;
+    $third-delay: $second-delay + $duration;
+    $fourth-delay: $third-delay + $duration;
+    $fifth-delay: $fourth-delay + $duration;
+    $sixth-delay: $fifth-delay + $duration;
+    $seventh-delay: $sixth-delay + $duration;
+
+
+    transition: width 0s $sixth-delay, height 0s $sixth-delay, background $duration $fourth-delay;
+
+    &__item {
+
+        &--portfolio,
+        &--services {
+            transform-origin: 50% 0;
+            transform: perspective(300px) rotateX(-180deg);
+        }
+
+        &--blog,
+        &--contacts,
+        &--home {
+            transform-origin: 100% 50%;
+            transform: perspective(300px) rotateY(-180deg);
+        }
+
+        &:nth-child(1) {
+            transition-delay: $fifth-delay;
+        }
+
+        &:nth-child(2) {
+            transition-delay: $fourth-delay;
+        }
+
+        &:nth-child(3) {
+            transition-delay: $third-delay;
+        }
+
+        &:nth-child(4) {
+            transition-delay: $second-delay;
+        }
+
+        &:nth-child(5) {
+            top: $menuItemWidthSmall - $dif;
+            right: $menuItemWidthSmall + $menuItemWidth - $dif * 2;
+            transition-delay: $third-delay;
+        }
+
+        &:nth-child(6) {
+            top: $menuItemWidthSmall - $dif;
+            right: $menuItemWidthSmall + $menuItemWidth * 2 - $dif * 3;
+            transition-delay: $second-delay;
+        }
+
+        &:nth-child(7) {
+            top: $menuItemWidthSmall - $dif;
+            right: $menuItemWidthSmall + $menuItemWidth * 3 - $dif * 4;
+            transition-delay: $first-delay;
+        }
+    }
+
+    &.opened {
+
+        .menu {
+
+            &__item {
+
+                &:nth-child(2) {
+                    transition-delay: $first-delay;
+                }
+
+                &:nth-child(3),
+                &:nth-child(5) {
+                    transition-delay: $second-delay;
+                }
+
+                &:nth-child(4),
+                &:nth-child(6) {
+                    transition-delay: $third-delay;
+                }
+
+                &:nth-child(7) {
+                    transition-delay: $fourth-delay;
+                }
+            }
+        }
+
+        .languages {
+
+            &__item {
+                transition-delay: $fifth-delay;
+            }
+        }
+    }
+}

@@ -10,6 +10,7 @@
 /---- MOBILE ---- */
 @import 'components/logo/mobile';
 @import 'components/menu/mobile';
+@import 'components/languages/mobile';
 @import 'components/our-clients/mobile';
 @import 'components/form/mobile';
 /* ---- MOBILE ---- */
@@ -17,10 +18,21 @@
 
 /*
 /
+/---- MOBILE LANDSCAPE ---- */
+@media (max-width: #{$iPhoneXLandscapeWidth}) and (orientation: landscape) {
+    @import 'components/menu/mobileLandscape';
+    @import 'components/languages/mobileLandscape';
+}
+/* ---- MOBILE LANDSCAPE ---- */
+
+
+/*
+/
 /---- TABLET PORTRAIT ---- */
-@media (min-width: #{$tabletPortraitWidth}) {
+@media (min-width: #{$tabletPortraitWidth}) and (max-width: #{$iPhoneXLandscapeWidth}) and (orientation: portrait), (min-width: $iPhoneXLandscapeWidth + 1px) {
     @import 'components/logo/tabletPortrait';
     @import 'components/menu/tabletPortrait';
+    @import 'components/languages/tabletPortrait';
     @import 'components/our-clients/tabletPortrait';
 }
 /* ---- TABLET PORTRAIT ---- */
