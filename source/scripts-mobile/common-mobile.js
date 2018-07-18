@@ -1,19 +1,27 @@
 ;(function() {
     const menu = document.querySelector('#menu');
     const menuSwitcher = document.querySelector('#menu-switcher');
+    const languages = document.querySelector('#languages');
 
     function changeMenu(e) {
         if (e.target === this ) {
             menu.removeEventListener('transitionend', changeMenu);
             window.pageYOffset && menu.classList.add('scrolled');
             document.body.removeAttribute('style');
+            menuSwitcher.addEventListener('click', toggleMenu);
         }
+    }
+
+    function addListener(e) {
+        languages.removeEventListener('transitionend', addListener);
+        menuSwitcher.addEventListener('click', toggleMenu);
     }
 
     function openMenu() {
         document.body.style.overflow = 'hidden';
         menu.classList.add('opened');
         menu.classList.remove('scrolled');
+        languages.addEventListener('transitionend', addListener);
     }
 
     function closeMenu() {
@@ -21,10 +29,12 @@
         menu.addEventListener('transitionend', changeMenu);
     }
 
-    menuSwitcher.addEventListener('click', (e) => {
-        e.preventDefault();
+    function toggleMenu() {
+        menuSwitcher.removeEventListener('click', toggleMenu);
         menu.matches('.opened') ? closeMenu() : openMenu();
-    });
+    }
+
+    menuSwitcher.addEventListener('click', toggleMenu);
 })();
 
 

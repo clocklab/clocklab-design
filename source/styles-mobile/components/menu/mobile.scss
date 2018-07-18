@@ -82,6 +82,11 @@
         color: $white;
         transition: transform $time linear;
 
+        &.disabled {
+            background: $blue;
+            pointer-events: none;
+        }
+
         &--small {
             display: block;
             padding-top: 0;
