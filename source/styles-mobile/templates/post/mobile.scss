@@ -130,41 +130,12 @@
         }
 
         .crossed-button {
-            display: flex;
-            align-items: center;
-            position: relative;
             margin-top: 30px;
             padding-left: 30px;
             font-family: $Roboto-Medium;
 
-            span {
-                padding-left: 10px;
-                color: $darkGray;
+            &__text {
                 font-size: 14px;
-                text-transform: uppercase;
-            }
-        }
-
-        .arrow-container {
-            display: flex;
-            align-items: center;
-            width: 36px;
-        }
-
-        .arrow {
-            width: 100%;
-            transform: rotate(180deg);
-
-            .st0,
-            .st1 {
-                fill: none;
-                stroke: $black;
-                stroke-width: 1;
-                stroke-miterlimit: 10;
-            }
-
-            .st1 {
-                stroke-width: .75;
             }
         }
     }
