@@ -80,6 +80,7 @@
         border: $dif solid $black;
         backface-visibility: hidden;
         color: $white;
+        text-decoration: none;
         transition: transform $time linear;
 
         &.disabled {
