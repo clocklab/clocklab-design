@@ -1,58 +1,43 @@
 .crossed-button {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
 
-    span {
+    &__text {
         position: relative;
-        padding: 0 15px;
-        color: rgba(0, 0, 0, 1);
-        font-size: 12px;
-        line-height: 16px;
-        font-weight: 700;
-        overflow: hidden;
+        color: $darkGray;
+        font-size: 16px;
         text-transform: uppercase;
-        transition: padding $time;
     }
 
-    .arrow-container {
+    &__arrow {
+        margin-left: 10px;
         width: 36px;
-        overflow: hidden;
-        transform: translateX(-20%);
-        transition: transform $timeTick linear $time;
     }
 
-    .arrow {
-        width: 100%;
-        opacity: 1;
+    &__arrow-part {
+        fill: none;
+        stroke: $black;
+        stroke-width: 1;
+        stroke-miterlimit: 10;
 
-        .st0 {
-            fill: none;
-            stroke: $black;
-            stroke-width: 1;
-            stroke-miterlimit: 10;
-        }
-
-        .st1 {
-            fill: none;
-            stroke: $black;
+        &--center {
             stroke-width: .75;
-            stroke-miterlimit: 10;
         }
     }
 
-    // Button reversed
     &.reversed {
-        flex-direction: row-reverse;
 
-        span {
+        .crossed-button {
 
-            &:before {
-                top: 7px;
-                transform: translateX(100%);
+            &__text {
+                order: 2;
             }
-        }
 
-        .arrow-container {
-            transform: rotate(180deg);
+            &__arrow {
+                margin-left: 0;
+                margin-right: 10px;
+                transform: rotate(180deg);
+            }
         }
     }
 }

@@ -37,6 +37,8 @@
 
     checkSlide();
 
+    objects[0].classList.add('active');
+
 
     window.addEventListener('scroll', debounce(checkSlide));
     window.addEventListener('resize', debounce(changeWindowHeight, 200));

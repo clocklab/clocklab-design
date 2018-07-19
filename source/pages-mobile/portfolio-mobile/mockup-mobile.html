@@ -4,14 +4,17 @@
         <title>Mockup</title>
         @@include('./components/head.html')
         <link rel="stylesheet" href="./../../styles-mobile/common.css">
-        <link rel="stylesheet" href="./../../styles-mobile/portfolio/mockup-mobile.css">
-        <script src="../../scripts-mobile/portfolio-mobile/mockup.min.js" defer></script>
+        <link rel="stylesheet" href="./../../styles-mobile/portfolio-mobile/mockup-mobile.css">
+        <script src="./../../scripts-mobile/common-mobile.min.js" defer></script>
+        <script src="./../../scripts-mobile/portfolio-mobile/mockup-mobile.min.js" defer></script>
     </head>
     <body>
-        @@include('./components/top-panel.html')
+        @@include('./components/logo.html')
+        @@include('./components/menu.html')
 
-        <div class="header" data-animated="up" data-top-panel-bg="light">
+        <div class="header" data-items-color="light">
             <img 
+                data-animated="up"
                 class="header__image" 
                 src="../../images/portfolio/audi/header__image.jpg" 
                 alt="">
@@ -26,7 +29,7 @@
             </div>
         </div>
 
-        <section data-top-panel-bg="dark">
+        <section data-items-color="dark">
             <div class="row">
                 <div class="container">
                     <div class="column" data-animated="right">
@@ -94,7 +97,7 @@
             </div>
         </section>
 
-        <section data-top-panel-bg="light">
+        <section data-items-color="light">
             <div class="row row-light-black paddinged-bottom-half paddinged-top-half">
                 <div class="lines">
                     <div class="container">
@@ -147,7 +150,7 @@
             </div>
         </section>
         
-        <section data-top-panel-bg="dark">
+        <section data-items-color="dark">
             <div class="row">
                 <div class="container">
                     <div class="column" data-animated="right">
@@ -381,7 +384,7 @@
             </div>
         </section>
         
-        <section data-top-panel-bg="light">
+        <section data-items-color="light">
             <div class="row row-black-two">
                 <div class="container">
                     <div class="column triple" data-animated="up">
@@ -431,7 +434,7 @@
             </div>
         </section>
 
-        <section data-top-panel-bg="dark">
+        <section data-items-color="dark">
             <div class="container">
                 <div class="row">
                     <div class="column" data-animated="up">
@@ -480,7 +483,7 @@
             </div>
         </section>
 
-        <section data-top-panel-bg="light">
+        <section data-items-color="light">
             <div class="row row-light-black paddinged-top-half">
                 <div class="lines">
                     <div class="container">
@@ -548,7 +551,7 @@
             </div>
         </section>
 
-        <section data-top-panel-bg="dark">
+        <section data-items-color="dark">
             <div class="container">
                 <div class="row">
                     <div class="column triple" data-animated="up">
@@ -572,7 +575,7 @@
             </div>
         </section>
 
-        <section data-top-panel-bg="light">
+        <section data-items-color="light">
             <div class="row row-light-black paddinged-top-half paddinged-bottom-half">
                 <div class="lines">
                     <div class="container">

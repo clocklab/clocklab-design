@@ -48,13 +48,13 @@ body {
 .header {
     position: relative;
     z-index: 3;
-    padding-top: 50px;
     width: 100%;
     height: initial;
     min-height: initial;
     font-size: 0;
 
     &__image {
+        display: block;
         width: 100%;
         object-fit: cover;
         object-position: center;

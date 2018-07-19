@@ -3,16 +3,14 @@
 <head>
     <title>Сlocklab Design | Post</title>
     @@include('./components/head.html')
-    <link rel="stylesheet" href="../styles-mobile/common.css">
     <link rel="stylesheet" href="../styles-mobile/post-mobile.css">
-    <!-- <script src="../scripts-mobile/post-mobile.min.js" defer></script> -->
 </head>
 <body>
-
-    <!-- @@include('./components/top-panel-mobile.html') -->
+    @@include('./components/logo.html')
+    @@include('./components/menu.html')
 
     <div class="post">
-        <header class="header">
+        <header class="header" data-items-color="light">
             <img class="header__image" src="../../images/blog/post/post.jpg">
             <div class="header__date">
                 <span class="header__day">
@@ -22,7 +20,7 @@
             </div>
         </header>
         
-        <main class="main">
+        <main class="main" data-items-color="dark">
             <h1 class="post-title">nsectetur adipisicing elit</h1>
             <article>
                 <p>
@@ -85,19 +83,16 @@
                 </svg> 
             </a>
 
-            <a href="/blog" class="crossed-button reversed">
-                <div class="arrow-container">
-                    <svg class="arrow" x="0px" y="0px"
-                        viewBox="0 0 34.8 7.3">
-                        <line class="st0" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
-                        <line class="st1" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
-                        <line class="st1" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
-                    </svg>      
-                </div>
-                <span>В блог</span>
+            <a class="crossed-button reversed" href="/blog">
+                <span class="crossed-button__text">В блог</span>
+            
+                <svg class="crossed-button__arrow" x="0px" y="0px" viewBox="0 0 34.8 7.3">
+                    <line class="crossed-button__arrow-part crossed-button__arrow-part--center" x1="0.2" y1="3.5" x2="34.6" y2="3.5"/>
+                    <line class="crossed-button__arrow-part" x1="29.1" y1="0.3" x2="34.3" y2="3.5"/>
+                    <line class="crossed-button__arrow-part" x1="34.3" y1="3.5" x2="29.1" y2="6.7"/>
+                </svg>      
             </a>
         </footer>
     </div>
-
 </body>
 </html>

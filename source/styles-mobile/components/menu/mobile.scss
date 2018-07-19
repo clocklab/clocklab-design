@@ -80,7 +80,13 @@
         border: $dif solid $black;
         backface-visibility: hidden;
         color: $white;
+        text-decoration: none;
         transition: transform $time linear;
+
+        &.disabled {
+            background: $blue;
+            pointer-events: none;
+        }
 
         &--small {
             display: block;
@@ -265,6 +271,45 @@
                     pointer-events: none;
                 }
             }
+        }
+    }
+
+    &.light {
+        color: $white;
+
+        .hamburger {
+
+            &__item {
+                background: $white;
+            }
+        }
+
+        .menu {
+
+            &__item {
+                border-color: $white;
+            }
+
+            &__index,
+            &__icon,
+            &__name {
+                color: $white;
+            }
+        }
+
+        .languages {
+
+            &__item {
+                color: $white;
+
+                &.current {
+                    color: $blue;
+                }
+            }
+        }
+
+        &.opened {
+            background: $lightBlack;
         }
     }
 }

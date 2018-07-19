@@ -1,0 +1,42 @@
+.services-work-examples {
+    padding: 80px 0 50px;
+
+    .title {
+        font-size: 38px;
+    }
+
+    .block {
+        display: inline;
+    }
+
+    .works {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        &__item {
+            width: 45%;
+        }
+    }
+
+    .discuss {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__block {
+            flex-grow: 1;
+        }
+
+        &__text {
+            max-width: 600px;
+        }
+
+        &__btn {
+            margin-top: 0;
+            margin-left: 50px;
+            padding: 25px 40px;
+            font-size: 20px;
+        }
+    }
+}

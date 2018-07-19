@@ -22,7 +22,11 @@ $iPadProLandscapeWidth: 1366px;
 // Z-INDEXES
 $logoZIndex: 10;
 $menuZIndex: $logoZIndex + 1;
+$formZIndex: $menuZIndex + 1;
 // Z-INDEXES END
+
+
+$bounce: cubic-bezier(.87, -.41, .19, 1.44);
 
 
 // COLORS VARIABLES
