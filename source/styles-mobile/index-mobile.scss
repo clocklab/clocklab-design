@@ -4,6 +4,7 @@
 /
 /---- MOBILE ---- */
 @import 'templates/index/about-us/mobile';
+@import 'templates/index/questions/mobile';
 /* ---- MOBILE ---- */
 
 
@@ -19,6 +20,7 @@
 /
 /---- TABLET LANDSCAPE ---- */
 @media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+    @import 'templates/index/about-us/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
