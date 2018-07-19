@@ -1,19 +1,25 @@
 .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: $formZIndex;
-    padding: 50px 10%;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background: $black;
     color: $white;
     font-family: $Raleway-Regular;
+    overflow: auto;
     transform: translateX(101%);
-    transition: transform $timeDouble $bounce;
+    transition: transform $time;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 10%;
+        min-height: 100vh;
+        // overflow: auto;
+    }
 
     &__close {
         position: absolute;
@@ -44,6 +50,7 @@
     }
 
     &__title {
+        display: block;
         font-family: $Raleway-ExtraBold;
         font-size: 28px;
         line-height: 1.2;

@@ -1,5 +1,8 @@
 .form {
-    padding: 70px 20%;
+
+    &__content {
+        padding: 70px 20%;
+    }
 
     &__close {
         top: 50px;
