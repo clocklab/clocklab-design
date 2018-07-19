@@ -95,3 +95,36 @@
         })
     })
 })();
+
+
+;(function() {
+    const openBtn = document.querySelector('#open-form');
+
+    if (openBtn) {
+        const form = document.querySelector('#form');
+        const closeBtn = form.querySelector('#close-form');
+        const inputs = form.querySelectorAll('.form__field');
+
+
+        function openForm() {
+            form.classList.add('opened');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeForm() {
+            form.classList.remove('opened');
+            document.body.removeAttribute('style');
+        }
+
+        function checkInput() {
+            this.value.trim()
+            ? this.classList.add('filled')
+            : this.classList.remove('filled');
+        }
+
+
+        inputs.forEach(input => input.addEventListener('blur', checkInput));
+        openBtn.addEventListener('click', openForm);
+        closeBtn.addEventListener('click', closeForm);
+    }
+})();
