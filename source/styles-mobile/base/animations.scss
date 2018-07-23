@@ -59,23 +59,55 @@
     }
 }
 
-@keyframes turnOne {
+@keyframes flipDownTop {
     0% {
-        transform: rotateX(90deg);
+        transform: none;
     }
 
     100% {
-        transform: rotateX(0deg);
+        transform: rotateX(-180deg);
     }
 }
 
-@keyframes turnTwo {
+@keyframes flipDownBottom {
     0% {
-        transform: rotateX(0deg);
+        transform: rotateX(180deg);
     }
 
     100% {
-        transform: rotateX(-90deg);
+        transform: none;
+    }
+}
+
+@keyframes changeLayer {
+    0% {
+        z-index: 2;
+    }
+
+    5% {
+        z-index: 4;
+    }
+
+    100% {
+        z-index: 4;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 0;
+    }
+
+    33% {
+        bottom: -.5em;
+    }
+
+    66% {
+        bottom: -1em;
+    }
+
+    100% {
+        bottom: 0;
     }
 }
 // ~~~~~~~~~~~~~ USEFULL ANIMATIONS ~~~~~~~~~~~~~

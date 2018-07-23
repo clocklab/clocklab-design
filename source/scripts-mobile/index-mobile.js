@@ -1,104 +1,74 @@
-var cat = [
-    "Web-production",
-    "Услуги дизайна",
-    "Маркетинг",
-    "SEO",
-    "Комплексные решения"
-],
-subСat = [
-    "Landing page <br> Интернет магазин <br> Корпоративный сайт <br> Сайт визитка",
-    "UI / UX дизайн <br> Разработка Brand Book",
-    "Разработка маркетинговой стратегии <br> Интернет маркетинг",
-    "SEO-аудит <br> SEO на этапе создания сайта <br> Снятие санкций поисковых систем",
-    ""
-];
+;(function() {
+    var categories = [].slice.call(document.querySelectorAll('#categories .categories__item'));
+    var subCategories = [].slice.call(document.querySelectorAll('#subcategories .subcategories__item'));
+    var slidesMinutes = [].slice.call(document.querySelectorAll('#minutes .flip-list__item'));
+    var slidesSeconds = [].slice.call(document.querySelectorAll('#seconds .flip-list__item'));
+    var ANIMATION_TIME = 1000;
 
 
-function secondPlay() {
-    $("body").removeClass("play");
-    var aa = $("ul.secondPlay li.active");
+    function changeService() {
+        var activeCategory = document.querySelector('#categories .active');
+        var activeSubCategory = document.querySelector('#subcategories .active');
+        var activeIndex = categories.indexOf(activeCategory);
+        var nextIndex = activeIndex + 1;
 
-    if (aa.html() == undefined) {
-        aa = $("ul.secondPlay li").eq(0);
-        aa
-            .addClass("before")
-            .removeClass("active")
-            .next("li")
-            .addClass("active")
-            .closest("body")
-            .addClass("play");
+        activeCategory.classList.remove('active');
+        activeSubCategory.classList.remove('active');
 
+        if (categories[nextIndex]) {
+            categories[nextIndex].classList.add('active');
+            subCategories[nextIndex].classList.add('active');
+        } else {
+            categories[0].classList.add('active');
+            subCategories[0].classList.add('active');
+        }
     }
-    else if (aa.is(":last-child")) {
-        $("ul.secondPlay li").removeClass("before");
-        aa.addClass("before").removeClass("active");
-        aa = $("ul.secondPlay li").eq(0);
-        aa
-            .addClass("active")
-            .closest("body")
-            .addClass("play");
+
+    function changeSlide() {
+        var activeMinutes = document.querySelector('#minutes .active');
+        var previousMinutes = document.querySelector('#minutes .previous');
+        var activeSeconds = document.querySelector('#seconds .active');
+        var previousSeconds = document.querySelector('#seconds .previous');
+        var activeIndex = slidesMinutes.indexOf(activeMinutes);
+        var nextIndex = activeIndex + 1;
+
+        previousMinutes && previousMinutes.classList.remove('previous');
+        previousSeconds && previousSeconds.classList.remove('previous');
+
+        activeMinutes.classList.remove('active');
+        activeMinutes.classList.add('previous');
+        activeSeconds.classList.remove('active');
+        activeSeconds.classList.add('previous');
+
+        if (slidesMinutes[nextIndex]) {
+            slidesMinutes[nextIndex].classList.add('active');
+            slidesSeconds[nextIndex].classList.add('active');
+        } else {
+            slidesMinutes[0].classList.add('active');
+            slidesSeconds[0].classList.add('active');
+        }
     }
-    else {
-        $("ul.secondPlay li").removeClass("before");
-        aa
-            .addClass("before")
-            .removeClass("active")
-            .next("li")
-            .addClass("active")
-            .closest("body")
-            .addClass("play");
+
+
+    // setInterval(changeService, ANIMATION_TIME);
+    setInterval(changeSlide, ANIMATION_TIME);
+})();
+
+
+;(function() {
+    var scrollLine = document.querySelector('#scroll-line');
+    var aboutUs = document.querySelector('#about-us');
+
+    if (aboutUs) {
+        scrollLine.addEventListener('click', () => {
+            var elScroll = aboutUs.getBoundingClientRect().top;
+            var windowScroll = window.pageYOffset;
+            var wantedScroll = windowScroll + elScroll;
+
+            window.scroll({
+                top: wantedScroll,
+                behavior: 'smooth'
+            });
+        });
     }
-}
-
-function minutePlay() {
-    $("body").removeClass("play");
-    var aa = $("ul.minutePlay li.active");
-
-    if (aa.html() == undefined) {
-        aa = $("ul.minutePlay li").eq(0);
-        aa.addClass("before")
-            .removeClass("active")
-            .next("li")
-            .addClass("active")
-            .closest("body")
-            .addClass("play");
-
-    }
-    else if (aa.is(":last-child")) {
-        $("ul.minutePlay li").removeClass("before");
-        aa.addClass("before").removeClass("active");
-        aa = $("ul.minutePlay li").eq(0);
-        aa.addClass("active")
-            .closest("body")
-            .addClass("play");
-    }
-    else {
-        $("ul.minutePlay li").removeClass("before");
-        aa.addClass("before")
-            .removeClass("active")
-            .next("li")
-            .addClass("active")
-            .closest("body")
-            .addClass("play");
-    }
-}
-
-(function recurse(counter) {
-    var catMsg = cat[counter],
-        subСatMsg = subСat[counter],
-        timer = setTimeout(function() {
-            recurse(counter + 1);
-            secondPlay();
-            minutePlay();
-        }, 4000);
-
-    $('#category').html(catMsg).fadeIn(500).delay(3250).fadeOut(250);
-    $('#subcategory').html(subСatMsg).fadeIn(500).delay(3250).fadeOut(250);
-
-    delete cat[counter];
-    delete subСat[counter];
-
-    cat.push(catMsg);
-    subСat.push(subСatMsg);
-
-})(0);
+})();

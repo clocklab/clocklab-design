@@ -11,189 +11,171 @@
         @@include('./components/menu.html')
 
         <header class="header" data-top-panel-bg="light">
-            <div class="clock">
-                <ul class="flip minutePlay">
-                    <li>
-                        <a href="#">
-                            <div class="up">
-                                <div class="shadow"></div>
-                                <div class="inn">1</div>
+            <div class="container">
+                <div class="clock">
+                    <ul class="flip-list" id="minutes">
+                        <li class="flip-list__item active">
+                            <div class="flip-list__top">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">1</div>
                             </div>
-                            <div class="down">
-                                <div class="shadow"></div>
-                                <div class="inn">1</div>
+                            <div class="flip-list__bottom">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">1</div>
                             </div>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="#">
-                            <div class="up">
-                                <div class="shadow"></div>
-                                <div class="inn">2</div>
-                            </div>
-                            <div class="down">
-                                <div class="shadow"></div>
-                                <div class="inn">2</div>
-                            </div>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="#">
-                            <div class="up">
-                                <div class="shadow"></div>
-                                <div class="inn">3</div>
-                            </div>
-                            <div class="down">
-                                <div class="shadow"></div>
-                                <div class="inn">3</div>
-                            </div>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="#">
-                            <div class="up">
-                                <div class="shadow"></div>
-                                <div class="inn">4</div>
-                            </div>
-                            <div class="down">
-                                <div class="shadow"></div>
-                                <div class="inn">4</div>
-                            </div>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="#">
-                            <div class="up">
-                                <div class="shadow"></div>
-                                <div class="inn">5</div>
-                            </div>
-                            <div class="down">
-                                <div class="shadow"></div>
-                                <div class="inn">5</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                
-                <ul class="flip secondPlay">
-                    <li>
-                        <a href="#">
-                            <div class="up">
-                                <div class="shadow"></div>
-                                <div class="inn">04</div>
-                            </div>
-                            <div class="down">
-                                <div class="shadow"></div>
-                                <div class="inn">04</div>
-                            </div>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="#">
-                            <div class="up">
-                                <div class="shadow"></div>
-                                <div class="inn">02</div>
-                            </div>
-                            <div class="down">
-                                <div class="shadow"></div>
-                                <div class="inn">02</div>
-                            </div>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="#">
-                            <div class="up">
-                                <div class="shadow"></div>
-                                <div class="inn">02</div>
-                            </div>
-                            <div class="down">
-                                <div class="shadow"></div>
-                                <div class="inn">02</div>
-                            </div>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="#">
-                            <div class="up">
-                                <div class="shadow"></div>
-                                <div class="inn">03</div>
-                            </div>
-                            <div class="down">
-                                <div class="shadow"></div>
-                                <div class="inn">03</div>
-                            </div>
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="#">
-                            <div class="up">
-                                <div class="shadow"></div>
-                                <div class="inn">00</div>
-                            </div>
-                            <div class="down">
-                                <div class="shadow"></div>
-                                <div class="inn">00</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="services">
-                <ul class="categories" id="categories">
-                    <li class="categories__item active">Web-production</li>
-                    <li class="categories__item">Услуги дизайна</li>
-                    <li class="categories__item">Маркетинг</li>
-                    <li class="categories__item">SEO</li>
-                    <li class="categories__item">Комплексные решения</li>
-                </ul>
-
-                <ul class="subcategories" id="subcategories">
-                    <li class="subcategories__item">
-                        <ul>
-                            <li>Landing page</li>
-                            <li>Интернет магазин</li>
-                            <li>Корпоративный сайт</li>
-                            <li>Сайт визитка</li>
-                        </ul>
-                    </li>
+                        </li>
                     
-                    <li class="subcategories__item">
-                        <ul>
-                            <li>UI / UX дизайн</li>
-                            <li>Разработка Brand Book</li>
-                        </ul>
-                    </li>
+                        <li class="flip-list__item">
+                            <div class="flip-list__top">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">2</div>
+                            </div>
+                            <div class="flip-list__bottom">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">2</div>
+                            </div>
+                        </li>
                     
-                    <li class="subcategories__item">
-                        <ul>
-                            <li>Разработка маркетинговой стратегии</li>
-                            <li>Интернет маркетинг</li>
-                        </ul>
-                    </li>
+                        <li class="flip-list__item">
+                            <div class="flip-list__top">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">3</div>
+                            </div>
+                            <div class="flip-list__bottom">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">3</div>
+                            </div>
+                        </li>
                     
-                    <li class="subcategories__item">
-                        <ul>
-                            <li>SEO-аудит</li>
-                            <li>SEO на этапе создания сайта</li>
-                            <li>Снятие санкций поисковых систем</li>
-                        </ul>
-                    </li>
+                        <li class="flip-list__item">
+                            <div class="flip-list__top">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">4</div>
+                            </div>
+                            <div class="flip-list__bottom">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">4</div>
+                            </div>
+                        </li>
                     
-                    <li class="subcategories__item"></li>
-                </ul>
-            </div>
-
-            <div class="scroll-line" id="scroll-line">
-                <div class="scroll-line__tick"></div>
+                        <li class="flip-list__item">
+                            <div class="flip-list__top">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">5</div>
+                            </div>
+                            <div class="flip-list__bottom">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">5</div>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <ul class="flip-list" id="seconds">
+                        <li class="flip-list__item active">
+                            <div class="flip-list__top">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">04</div>
+                            </div>
+                            <div class="flip-list__bottom">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">04</div>
+                            </div>
+                        </li>
+                    
+                        <li class="flip-list__item">
+                            <div class="flip-list__top">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">02</div>
+                            </div>
+                            <div class="flip-list__bottom">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">02</div>
+                            </div>
+                        </li>
+                    
+                        <li class="flip-list__item">
+                            <div class="flip-list__top">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">02</div>
+                            </div>
+                            <div class="flip-list__bottom">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">02</div>
+                            </div>
+                        </li>
+                    
+                        <li class="flip-list__item">
+                            <div class="flip-list__top">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">03</div>
+                            </div>
+                            <div class="flip-list__bottom">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">03</div>
+                            </div>
+                        </li>
+                    
+                        <li class="flip-list__item">
+                            <div class="flip-list__top">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">00</div>
+                            </div>
+                            <div class="flip-list__bottom">
+                                <div class="flip-list__shadow"></div>
+                                <div class="flip-list__number">00</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="services">
+                    <ul class="categories" id="categories">
+                        <li class="categories__item active">Web-production</li>
+                        <li class="categories__item">Услуги дизайна</li>
+                        <li class="categories__item">Маркетинг</li>
+                        <li class="categories__item">SEO</li>
+                        <li class="categories__item">Комплексные решения</li>
+                    </ul>
+    
+                    <ul class="subcategories" id="subcategories">
+                        <li class="subcategories__item active">
+                            <ul class="subcategories__sublist">
+                                <li class="subcategories__sublist-item">Landing page</li>
+                                <li class="subcategories__sublist-item">Интернет магазин</li>
+                                <li class="subcategories__sublist-item">Корпоративный сайт</li>
+                                <li class="subcategories__sublist-item">Сайт визитка</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="subcategories__item">
+                            <ul class="subcategories__sublist">
+                                <li class="subcategories__sublist-item">UI / UX дизайн</li>
+                                <li class="subcategories__sublist-item">Разработка Brand Book</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="subcategories__item">
+                            <ul class="subcategories__sublist">
+                                <li class="subcategories__sublist-item">Разработка маркетинговой стратегии</li>
+                                <li class="subcategories__sublist-item">Интернет маркетинг</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="subcategories__item">
+                            <ul class="subcategories__sublist">
+                                <li class="subcategories__sublist-item">SEO-аудит</li>
+                                <li class="subcategories__sublist-item">SEO на этапе создания сайта</li>
+                                <li class="subcategories__sublist-item">Снятие санкций поисковых систем</li>
+                            </ul>
+                        </li>
+                        
+                        <li class="subcategories__item"></li>
+                    </ul>
+                </div>
+    
+                <div class="scroll-line" id="scroll-line">
+                    <div class="scroll-line__tick"></div>
+                </div>
             </div>
         </header>
             

@@ -13,6 +13,7 @@
 /
 /---- TABLET PORTRAIT ---- */
 @media (min-width: #{$tabletPortraitWidth}) {
+    @import 'templates/index/header/tabletPortrait';
     @import 'templates/index/about-us/tabletPortrait';
     @import 'templates/index/questions/tabletPortrait';
 }
