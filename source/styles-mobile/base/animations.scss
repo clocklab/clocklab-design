@@ -1,4 +1,24 @@
 // ~~~~~~~~~~~~~ USEFULL ANIMATIONS ~~~~~~~~~~~~~
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -38,6 +58,27 @@
         transform: scale3d(1, 1, 1);
     }
 }
+
+@keyframes turnOne {
+    0% {
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@keyframes turnTwo {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateX(-90deg);
+    }
+}
+// ~~~~~~~~~~~~~ USEFULL ANIMATIONS ~~~~~~~~~~~~~
 
 
 
@@ -577,11 +618,6 @@
     to {
         transform: none;
     }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 @keyframes halfDown {

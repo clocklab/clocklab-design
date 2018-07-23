@@ -1,0 +1,216 @@
+@keyframes tick {
+    0% {
+        z-index: 2;
+    }
+
+    5% {
+        z-index: 4;
+    }
+
+    100% {
+        z-index: 4;
+    }
+}
+
+@keyframes fadeInWork {
+    0%,
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+
+    0% {
+        bottom: 0;
+    }
+
+    33% {
+        bottom: -.5em;
+    }
+
+    66% {
+        bottom: -1em;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.header {
+    position: relative;
+    padding: 20vh 15px 0;
+    width: 100vw;
+    height: 100vh;
+    background: $black;
+    text-align: center;
+}
+
+.services {
+
+    .category {
+        text-align: right;
+        text-transform: uppercase;
+        font-family: $Roboto-Bold;
+        line-height: 1.8;
+        font-size: 14px;
+        color: $white;
+    }
+
+    .subcategory {
+        color: $gray;
+        font-size: 10px;
+        line-height: 22px;
+        text-transform: uppercase;
+        font-family: $Roboto-Bold;
+        text-align: left;
+    }
+}
+
+.scroll-line {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto 15vh;
+    width: 25%;
+    height: 50px;
+    animation: bounce 1s infinite linear;
+
+    &__tick {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        width: 1px;
+        background: $white;
+    }
+}
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+body.play ul li {
+
+    &.before {
+        z-index: 3;
+
+	    .up {
+		    z-index: 2;
+            animation: turnTwo .5s linear both;
+
+		    .shadow {
+			    background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
+			    animation: show .5s linear both;
+			}
+        }
+
+		.down .shadow {
+		    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
+		    animation: show .5s linear both;
+		}
+    }
+
+	&.active {
+        z-index: 2;
+	    animation: tick .5s .5s linear both;
+
+	    .up .shadow {
+		    background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
+		    animation: hide .5s .3s linear both;
+        }
+
+	    .down {
+		    z-index: 2;
+            animation: turnOne .5s .5s linear both;
+
+		    .shadow {
+			    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
+			    animation: hide .5s .3s linear both;
+			}
+		}
+	}
+}
+
+ul.flip li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    &:first-child {
+        z-index: 2;
+    }
+
+    a {
+        display: block;
+        height: 100%;
+        perspective: 200px;
+
+        div {
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            position: absolute;
+
+            &.inn {
+                left: 0;
+                z-index: 1;
+                color: #CCC;
+                width: 100%;
+                height: 200%;
+                position: absolute;
+                text-align: center;
+                border-radius: 6px;
+                background-color: $lightBlack;
+            }
+
+            &.up {
+                transform-origin: 50% 100%;
+                top: 0;
+
+                div.inn {
+                    top: 0;
+                }
+            }
+
+            &.down {
+                transform-origin: 50% 0%;
+                bottom: 0;
+
+                div.inn {
+                    bottom: 0;
+                }
+
+                &:after {
+                    top: 0;
+                    left: 0;
+                    z-index: 5;
+                    width: 100%;
+                    height: 3px;
+                    content: '';
+                    position: absolute;
+                    background-color: $black;
+                }
+            }
+
+            .shadow {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                z-index: 2;
+            }
+        }
+    }
+}

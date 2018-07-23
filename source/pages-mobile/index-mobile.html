@@ -10,8 +10,8 @@
         @@include('./components/logo.html')
         @@include('./components/menu.html')
 
-        <!-- <header class="header" data-top-panel-bg="light">
-            <div class="clock-mobile">
+        <header class="header" data-top-panel-bg="light">
+            <div class="clock">
                 <ul class="flip minutePlay">
                     <li>
                         <a href="#">
@@ -148,20 +148,56 @@
             </div>
 
             <div class="services">
-                <div class="half">
-                    <p id="category"></p>
-                </div>
-                <div class="half">
-                    <div id="subcategory"></div>
-                </div>
+                <ul class="categories" id="categories">
+                    <li class="categories__item active">Web-production</li>
+                    <li class="categories__item">Услуги дизайна</li>
+                    <li class="categories__item">Маркетинг</li>
+                    <li class="categories__item">SEO</li>
+                    <li class="categories__item">Комплексные решения</li>
+                </ul>
+
+                <ul class="subcategories" id="subcategories">
+                    <li class="subcategories__item">
+                        <ul>
+                            <li>Landing page</li>
+                            <li>Интернет магазин</li>
+                            <li>Корпоративный сайт</li>
+                            <li>Сайт визитка</li>
+                        </ul>
+                    </li>
+                    
+                    <li class="subcategories__item">
+                        <ul>
+                            <li>UI / UX дизайн</li>
+                            <li>Разработка Brand Book</li>
+                        </ul>
+                    </li>
+                    
+                    <li class="subcategories__item">
+                        <ul>
+                            <li>Разработка маркетинговой стратегии</li>
+                            <li>Интернет маркетинг</li>
+                        </ul>
+                    </li>
+                    
+                    <li class="subcategories__item">
+                        <ul>
+                            <li>SEO-аудит</li>
+                            <li>SEO на этапе создания сайта</li>
+                            <li>Снятие санкций поисковых систем</li>
+                        </ul>
+                    </li>
+                    
+                    <li class="subcategories__item"></li>
+                </ul>
             </div>
 
-            <a class="scroll-line" href="#about-company">
-                <div class=" Big" data--delay="1s" data--duration="2s"></div>
-            </a>
-        </header> -->
+            <div class="scroll-line" id="scroll-line">
+                <div class="scroll-line__tick"></div>
+            </div>
+        </header>
             
-        <!-- <div class="about-us" data-top-panel-bg="dark">
+        <!-- <div id="about-us" class="about-us" data-top-panel-bg="dark">
             <div class="container">
                 <div class="lines">
                     <div class="lines__item"></div>
