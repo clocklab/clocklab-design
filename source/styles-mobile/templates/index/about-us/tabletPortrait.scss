@@ -1,0 +1,21 @@
+.about-us {
+
+    .lines {
+
+        &__item {
+
+            &:nth-child(2) {
+                left: 50%;
+            }
+        }
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+
+        &__item {
+            width: 50%;
+        }
+    }
+}

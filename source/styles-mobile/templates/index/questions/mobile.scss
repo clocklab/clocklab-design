@@ -47,6 +47,7 @@
     }
 
     .title {
+        display: block;
         font-family: $Raleway-ExtraBold;
         font-size: 26px;
     }
@@ -59,14 +60,10 @@
         font-size: 18px;
     }
 
-    .list {
+    .info {
         margin: 50px 0;
 
-        &__item {
-            margin-bottom: 35px;
-        }
-
-        &__text {
+        &__title {
             display: block;
             font-family: $Raleway-Regular;
             font-size: 16px;

@@ -12,6 +12,8 @@
 /
 /---- TABLET PORTRAIT ---- */
 @media (min-width: #{$tabletPortraitWidth}) {
+    @import 'templates/index/about-us/tabletPortrait';
+    @import 'templates/index/questions/tabletPortrait';
 }
 /* ---- TABLET PORTRAIT ---- */
 
@@ -21,6 +23,7 @@
 /---- TABLET LANDSCAPE ---- */
 @media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
     @import 'templates/index/about-us/tabletLandscape';
+    @import 'templates/index/questions/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
