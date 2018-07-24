@@ -29,16 +29,24 @@
         var previousMinutes = document.querySelector('#minutes .previous');
         var activeSeconds = document.querySelector('#seconds .active');
         var previousSeconds = document.querySelector('#seconds .previous');
-        var activeIndex = slidesMinutes.indexOf(activeMinutes);
-        var nextIndex = activeIndex + 1;
+        var activeIndex;
+        var nextIndex;
+
+        activeIndex = activeMinutes ? slidesMinutes.indexOf(activeMinutes) : 0;
+        nextIndex = activeIndex + 1;
 
         previousMinutes && previousMinutes.classList.remove('previous');
         previousSeconds && previousSeconds.classList.remove('previous');
 
-        activeMinutes.classList.remove('active');
-        activeMinutes.classList.add('previous');
-        activeSeconds.classList.remove('active');
-        activeSeconds.classList.add('previous');
+        if (activeMinutes) {
+            activeMinutes.classList.remove('active');
+            activeMinutes.classList.add('previous');
+            activeSeconds.classList.remove('active');
+            activeSeconds.classList.add('previous');
+        } else {
+            slidesMinutes[activeIndex].classList.add('previous');
+            slidesSeconds[activeIndex].classList.add('previous');
+        }
 
         if (slidesMinutes[nextIndex]) {
             slidesMinutes[nextIndex].classList.add('active');
@@ -50,7 +58,7 @@
     }
 
 
-    // setInterval(changeService, ANIMATION_TIME);
+    setInterval(changeService, ANIMATION_TIME);
     setInterval(changeSlide, ANIMATION_TIME);
 })();
 
