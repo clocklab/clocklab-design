@@ -1,8 +1,24 @@
-
-
 .flip-list {
     width: 250px;
     height: 200px;
+
+    &__item {
+        perspective: 800px;
+    }
+
+    &__top {
+
+        &:after {
+            height: 3px;
+        }
+    }
+
+    &__bottom {
+
+        &:before {
+            height: 3px;
+        }
+    }
 
     &__number {
         font-size: 160px;
