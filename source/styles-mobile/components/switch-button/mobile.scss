@@ -40,4 +40,14 @@
         border-top: 1px solid $black;
         border-right: 1px solid $black;
     }
+
+    &.opened {
+
+        .switch-button {
+
+            &__text {
+                transform: translateY(-100%);
+            }
+        }
+    }
 }

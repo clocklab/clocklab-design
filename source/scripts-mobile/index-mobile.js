@@ -1,3 +1,4 @@
+// ~~~~~~~ Watches ~~~~~~~
 ;(function() {
     var categories = [].slice.call(document.querySelectorAll('#categories .categories__item'));
     var subCategories = [].slice.call(document.querySelectorAll('#subcategories .subcategories__item'));
@@ -62,7 +63,7 @@
     setInterval(changeSlide, ANIMATION_TIME);
 })();
 
-
+// ~~~~~~~ Scroll Line (Header) ~~~~~~~
 ;(function() {
     var scrollLine = document.querySelector('#scroll-line');
     var aboutUs = document.querySelector('#about-us');
@@ -79,4 +80,130 @@
             });
         });
     }
+})();
+
+// ~~~~~~~ Slider ~~~~~~~
+;(function() {
+    var openCloseBtn = document.querySelector('#open-work');
+    var skipBtn = document.querySelector('#skip');
+    var ourWorks = document.querySelector('#our-works');
+    var questions = document.querySelector('#questions');
+    var aboutUs = document.querySelector('#about-us');
+    var sliderContent = document.querySelector('#slider .slider__content');
+    var slides = document.querySelectorAll('#slider .slider__slide');
+    var limit = slides.length;
+    var counter = 0;
+    var DELTA = 50;
+    let startTouchPos = null;
+    let lastMove = null;
+
+
+    function showHideInfo() {
+        slides[counter].classList.toggle('opened');
+        this.classList.toggle('opened');
+    }
+
+    function checkElementTopPos() {
+        if (!questions.getBoundingClientRect().top) {
+            document.body.removeAttribute('style');
+            window.removeEventListener('scroll', checkElementTopPos);
+        }
+    }
+
+    function skipToBottom() {
+        removeDocumentListeners();
+        window.removeEventListener('scroll', stopDownScroll);
+
+        window.scroll({
+            top: window.pageYOffset + questions.getBoundingClientRect().top,
+            behavior: 'smooth'
+        });
+
+        window.addEventListener('scroll', checkElementTopPos);
+
+        // window.addEventListener('scroll', stopTopScroll);
+        // skipBtn.removeEventListener('click', skipToBottom);
+        // skipBtn.addEventListener('click', skipToTop);
+    }
+
+    function skipToTop() {
+
+    }
+
+
+    // ~~~~~ Slider functions ~~~~~
+    function startMove(e) {
+        startTouchPos = e.touches[0].clientY;
+    }
+
+    function continueMove(e) {
+        lastMove = e;
+    }
+
+    function endMove() {
+        var finishTouchPos = lastMove.touches[0].clientY;
+
+        if (finishTouchPos < startTouchPos) {
+            if (counter + 1 >= limit) {
+                skipToBottom();
+                return;
+            }
+            ++counter;
+        } else {
+            if (counter - 1 < 0) {
+                skipToTop();
+                return;
+            }
+            --counter;
+        }
+
+        sliderContent.style.transform = `translateX(${counter * -100}%)`;
+    }
+    // ~~~~~ Slider functions ~~~~~
+
+
+    function removeDocumentListeners() {
+        document.removeEventListener('touchstart', startMove);
+        document.removeEventListener('touchmove', continueMove);
+        document.removeEventListener('touchend', endMove);
+    }
+
+    function addDocumentListeners() {
+        document.addEventListener('touchstart', startMove);
+        document.addEventListener('touchmove', continueMove);
+        document.addEventListener('touchend', endMove);
+    }
+    
+
+    function stopDownScroll() {
+        var topPos = ourWorks.getBoundingClientRect().top;
+
+        if (topPos < DELTA) {
+            window.scroll({
+                top: window.pageYOffset + topPos,
+                behavior: 'smooth'
+            });
+            document.body.style.overflow = 'hidden';
+            window.removeEventListener('scroll', stopDownScroll);
+            addDocumentListeners();
+        }
+    }
+
+    // function stopTopScroll() {
+    //     var topPos = ourWorks.getBoundingClientRect().top;
+
+    //     if (topPos > -DELTA) {
+    //         window.scroll({
+    //             top: window.pageYOffset + topPos,
+    //             behavior: 'smooth'
+    //         });
+    //         document.body.style.overflow = 'hidden';
+    //         window.removeEventListener('scroll', stopTopScroll);
+    //     }
+    // }
+
+    
+    openCloseBtn.addEventListener('click', showHideInfo);
+    skipBtn.addEventListener('click', skipToBottom);
+    window.addEventListener('scroll', stopDownScroll);
 })();

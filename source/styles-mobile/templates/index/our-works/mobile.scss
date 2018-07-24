@@ -15,13 +15,27 @@
         position: absolute;
         top: 0;
         left: 0;
+        width: 100%;
         height: 100%;
+        transition: transform $time;
     }
 
     &__slide {
         position: relative;
         padding-top: 25vh;
         width: 100vw;
+        min-width: 100vw;
+
+        &.opened {
+
+            .slider {
+
+                &__info {
+                    opacity: 1;
+                    transform: none;
+                }
+            }
+        }
     }
 
     &__image {
@@ -54,7 +68,7 @@
         background: $black;
         opacity: 0;
         transform: translateY(100%);
-        transition: transform $time, opacity $time;
+        transition: transform $time * 2, opacity $time * 2;
     }
 
     &__logo {
