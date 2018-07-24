@@ -11,11 +11,28 @@
 
 /*
 /
+/---- MOBILE LANDSCAPE ---- */
+@media (max-width: #{$iPhoneXLandscapeWidth}) and (orientation: landscape) {
+    @import 'templates/index/header/mobileLandscape';
+}
+/* ---- MOBILE LANDSCAPE ---- */
+
+
+/*
+/
 /---- TABLET PORTRAIT ---- */
 @media (min-width: #{$tabletPortraitWidth}) {
-    @import 'templates/index/header/tabletPortrait';
     @import 'templates/index/about-us/tabletPortrait';
     @import 'templates/index/questions/tabletPortrait';
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (min-width: #{$tabletPortraitWidth}) and (max-width: #{$iPhoneXLandscapeWidth}) and (orientation: portrait), (min-width: $iPhoneXLandscapeWidth + 1px) {
+    @import 'templates/index/header/tabletPortrait';
 }
 /* ---- TABLET PORTRAIT ---- */
 

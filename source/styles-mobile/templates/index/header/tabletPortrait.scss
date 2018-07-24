@@ -1,3 +1,23 @@
-.header {
 
+
+.flip-list {
+    width: 250px;
+    height: 200px;
+
+    &__number {
+        font-size: 160px;
+        border-radius: 10px;
+    }
+}
+
+.services {
+    margin-top: 50px;
+}
+
+.categories {
+    font-size: 22px;
+}
+
+.subcategories {
+    font-size: 20px;
 }

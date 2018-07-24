@@ -3,7 +3,7 @@
     var subCategories = [].slice.call(document.querySelectorAll('#subcategories .subcategories__item'));
     var slidesMinutes = [].slice.call(document.querySelectorAll('#minutes .flip-list__item'));
     var slidesSeconds = [].slice.call(document.querySelectorAll('#seconds .flip-list__item'));
-    var ANIMATION_TIME = 1000;
+    var ANIMATION_TIME = 5000;
 
 
     function changeService() {
