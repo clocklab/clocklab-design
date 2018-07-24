@@ -1,0 +1,43 @@
+.switch-button {
+    position: relative;
+    height: $btn-height;
+    overflow: hidden;
+
+    &__text {
+        display: block;
+        font-family: $Roboto-Bold;
+        font-size: 14px;
+        line-height: $btn-height;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: transform $time linear;
+
+        &:nth-child(2) {
+            color: $white;
+        }
+    }
+
+    &:before,
+    &:after {
+        display: block;
+        position: absolute;
+        width: 20%;
+        height: 30%;
+        content: '';
+    }
+
+    &:before {
+        bottom: 0;
+        left: 0;
+        border-left: 1px solid $black;
+        border-bottom: 1px solid $black;
+    }
+
+    &:after {
+        top: 0;
+        right: 0;
+        border-top: 1px solid $black;
+        border-right: 1px solid $black;
+    }
+}
