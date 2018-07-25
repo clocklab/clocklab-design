@@ -4,12 +4,13 @@
         <title>Clocklab Design | Complex</title>
         @@include('./components/head.html')
         <link rel="stylesheet" href="../../styles-mobile/common.css">
-        <link rel="stylesheet" href="../../styles-mobile/services/complex-mobile.css">
+        <link rel="stylesheet" href="../../styles-mobile/services-mobile/complex-mobile.css">
+        <script src="../../scripts-mobile/common-mobile.min.js" defer></script>
         <!-- <script src="../../scripts-mobile/services/complex-mobile.min.js" defer></script> -->
     </head>
     <body>
-        <!-- @@include('./components/logo.html')
-        @@include('./components/menu.html') -->
+        @@include('./components/logo.html')
+        @@include('./components/menu.html')
 
         <div class="complex-header" data-top-panel-bg="dark">
             <div class="languages dark">
@@ -526,5 +527,11 @@
 
         @@include('./components/services-work-examples.html')
 
+        @@include('./components/services-questions.html')
+
+        <!-- @@include('./components/services-blog.html') -->
+
+        @@include('./components/form.html')
+        @@include('./components/scroll-to-top.html')
     </body>
 </html>

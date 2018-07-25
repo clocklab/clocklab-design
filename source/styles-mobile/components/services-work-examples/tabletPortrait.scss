@@ -19,6 +19,13 @@
         }
     }
 
+    .crossed-button {
+
+        &__text {
+            font-size: 18px;
+        }
+    }
+
     .discuss {
         display: flex;
         align-items: center;
