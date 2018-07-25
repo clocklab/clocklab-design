@@ -1,0 +1,56 @@
+.services-questions {
+
+    .container {
+        padding: 100px 0;
+    }
+
+    .answers {
+
+        &-title {
+            font-size: 42px;
+
+            span {
+                font-size: 28px;
+            }
+        }
+
+        .content {
+
+            &-title {
+                font-size: 20px;
+            }
+        }
+
+        .text {
+            font-size: 18px;
+        }
+    }
+
+    .more {
+        margin-top: 70px;
+
+        &-title {
+            font-size: 42px;
+
+            a {
+                font-size: 26px;
+            }
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            margin-right: 20px;
+        }
+
+        .crossed-button {
+            font-size: 18px;
+        }
+
+        .arrow {
+            margin-left: 5px;
+        }
+    }
+}
