@@ -41,7 +41,7 @@
 ;(function() {
     const logo = document.querySelector('#logo');
     const menu = document.querySelector('#menu');
-    const blocks = document.querySelectorAll('[data-items-color]');
+    const blocks = document.querySelectorAll('[data-top-panel-bg]');
     const DELTA = 20;
 
     const addClasses = (arr, wantedClass) => {
@@ -59,7 +59,7 @@
     const checkCurrentBlockBackground = () => {
         blocks.forEach(block => {
             if (block.getBoundingClientRect().top <= DELTA && block.getBoundingClientRect().bottom >= DELTA) {
-                block.dataset.itemsColor === 'light'
+                block.dataset.topPanelBg === 'light'
                 ? addClasses([logo, menu], 'light')
                 : removeClasses([logo, menu], 'light');
             }

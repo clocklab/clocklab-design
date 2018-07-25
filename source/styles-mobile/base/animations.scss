@@ -1,4 +1,24 @@
 // ~~~~~~~~~~~~~ USEFULL ANIMATIONS ~~~~~~~~~~~~~
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -38,6 +58,59 @@
         transform: scale3d(1, 1, 1);
     }
 }
+
+@keyframes flipDownTop {
+    0% {
+        transform: none;
+    }
+
+    100% {
+        transform: rotateX(-180deg);
+    }
+}
+
+@keyframes flipDownBottom {
+    0% {
+        transform: rotateX(180deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+@keyframes changeLayer {
+    0% {
+        z-index: 2;
+    }
+
+    5% {
+        z-index: 4;
+    }
+
+    100% {
+        z-index: 4;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        bottom: 0;
+    }
+
+    33% {
+        bottom: -.5em;
+    }
+
+    66% {
+        bottom: -1em;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+// ~~~~~~~~~~~~~ USEFULL ANIMATIONS ~~~~~~~~~~~~~
 
 
 
@@ -577,11 +650,6 @@
     to {
         transform: none;
     }
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 @keyframes halfDown {

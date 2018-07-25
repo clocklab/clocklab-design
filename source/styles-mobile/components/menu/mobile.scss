@@ -81,6 +81,7 @@
         backface-visibility: hidden;
         color: $white;
         text-decoration: none;
+        will-change: transform;
         transition: transform $time linear;
 
         &.disabled {

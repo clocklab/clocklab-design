@@ -1,0 +1,36 @@
+.questions {
+
+    .lines {
+
+        &__item {
+
+            &:nth-child(2) {
+                left: calc(100% / 3);
+            }
+
+            &:nth-child(3) {
+                left: calc(100% / 3 * 2);
+            }
+        }
+    }
+
+    .content {
+
+        &__btn {
+            width: calc(100% / 3);
+        }
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .title,
+    .blue {
+        width: calc(100% / 3 * 2);
+    }
+
+    .info {
+        width: calc(100% / 3);
+    }
+}
