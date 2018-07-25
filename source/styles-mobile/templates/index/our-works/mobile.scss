@@ -145,6 +145,7 @@
         height: 8px;
         border-radius: 50%;
         background: $gray;
+        transition: background $time;
 
         &:last-child {
             margin-right: 0;

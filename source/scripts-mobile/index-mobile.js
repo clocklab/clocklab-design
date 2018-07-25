@@ -86,11 +86,18 @@
 ;(function() {
     var openCloseBtn = document.querySelector('#open-work');
     var skipBtn = document.querySelector('#skip');
+
     var ourWorks = document.querySelector('#our-works');
     var questions = document.querySelector('#questions');
-    var aboutUs = document.querySelector('#about-us');
+    // var aboutUs = document.querySelector('#about-us');
+
+    var slider = document.querySelector('#slider');
     var sliderContent = document.querySelector('#slider .slider__content');
     var slides = document.querySelectorAll('#slider .slider__slide');
+    
+    var dotsContainer = document.querySelector('#dots');
+    var dots = document.querySelectorAll('#dots .dots__item');
+    
     var limit = slides.length;
     var counter = 0;
     var DELTA = 50;
@@ -103,15 +110,28 @@
         this.classList.toggle('opened');
     }
 
+
+
+    // ~~~~~ Scroll functions ~~~~~
     function checkElementTopPos() {
         if (!questions.getBoundingClientRect().top) {
             document.body.removeAttribute('style');
             window.removeEventListener('scroll', checkElementTopPos);
+            window.addEventListener('scroll', stopTopScroll);
+        }
+    }
+
+    function checkElementBottomPos() {
+        if (ourWorks.getBoundingClientRect().top === window.innerHeight) {
+            document.body.removeAttribute('style');
+            window.removeEventListener('scroll', checkElementBottomPos);
+            window.addEventListener('scroll', stopDownScroll);
         }
     }
 
     function skipToBottom() {
-        removeDocumentListeners();
+        removeSliderListeners();
+        skipBtn.removeEventListener('click', skipToBottom);
         window.removeEventListener('scroll', stopDownScroll);
 
         window.scroll({
@@ -119,16 +139,25 @@
             behavior: 'smooth'
         });
 
+        skipBtn.addEventListener('click', skipToTop);
         window.addEventListener('scroll', checkElementTopPos);
-
-        // window.addEventListener('scroll', stopTopScroll);
-        // skipBtn.removeEventListener('click', skipToBottom);
-        // skipBtn.addEventListener('click', skipToTop);
     }
 
     function skipToTop() {
+        removeSliderListeners();
+        skipBtn.removeEventListener('click', skipToTop);
+        window.removeEventListener('scroll', stopTopScroll);
 
+        window.scroll({
+            top: window.pageYOffset - window.innerHeight,
+            behavior: 'smooth'
+        });
+
+        skipBtn.addEventListener('click', skipToBottom);
+        window.addEventListener('scroll', checkElementBottomPos);
     }
+    // ~~~~~ Scroll functions ~~~~~
+
 
 
     // ~~~~~ Slider functions ~~~~~
@@ -142,6 +171,7 @@
 
     function endMove() {
         var finishTouchPos = lastMove.touches[0].clientY;
+        var activeDot = dotsContainer.querySelector('.active');
 
         if (finishTouchPos < startTouchPos) {
             if (counter + 1 >= limit) {
@@ -157,22 +187,26 @@
             --counter;
         }
 
+        activeDot.classList.remove('active');
+        dots[counter].classList.add('active');
         sliderContent.style.transform = `translateX(${counter * -100}%)`;
     }
     // ~~~~~ Slider functions ~~~~~
 
 
-    function removeDocumentListeners() {
-        document.removeEventListener('touchstart', startMove);
-        document.removeEventListener('touchmove', continueMove);
-        document.removeEventListener('touchend', endMove);
+    // ~~~~~ Touch functions ~~~~~
+    function removeSliderListeners() {
+        slider.removeEventListener('touchstart', startMove);
+        slider.removeEventListener('touchmove', continueMove);
+        slider.removeEventListener('touchend', endMove);
     }
 
-    function addDocumentListeners() {
-        document.addEventListener('touchstart', startMove);
-        document.addEventListener('touchmove', continueMove);
-        document.addEventListener('touchend', endMove);
+    function addSliderListeners() {
+        slider.addEventListener('touchstart', startMove);
+        slider.addEventListener('touchmove', continueMove);
+        slider.addEventListener('touchend', endMove);
     }
+    // ~~~~~ Touch functions ~~~~~
     
 
     function stopDownScroll() {
@@ -185,22 +219,23 @@
             });
             document.body.style.overflow = 'hidden';
             window.removeEventListener('scroll', stopDownScroll);
-            addDocumentListeners();
+            addSliderListeners();
         }
     }
 
-    // function stopTopScroll() {
-    //     var topPos = ourWorks.getBoundingClientRect().top;
+    function stopTopScroll() {
+        var topPos = ourWorks.getBoundingClientRect().top;
 
-    //     if (topPos > -DELTA) {
-    //         window.scroll({
-    //             top: window.pageYOffset + topPos,
-    //             behavior: 'smooth'
-    //         });
-    //         document.body.style.overflow = 'hidden';
-    //         window.removeEventListener('scroll', stopTopScroll);
-    //     }
-    // }
+        if (topPos > -DELTA) {
+            window.scroll({
+                top: window.pageYOffset + topPos,
+                behavior: 'smooth'
+            });
+            document.body.style.overflow = 'hidden';
+            window.removeEventListener('scroll', stopTopScroll);
+            addSliderListeners();
+        }
+    }
 
     
     openCloseBtn.addEventListener('click', showHideInfo);
