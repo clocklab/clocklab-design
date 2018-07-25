@@ -1,0 +1,105 @@
+.services-blog {
+    padding: 40px 0;
+    font-family: $Roboto-Regular;
+
+    .small-gray-lines,
+    .blue-line,
+    article {
+        display: none;
+    }
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .image-block {
+        position: relative;
+    }
+
+    .date {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 15px 20px;
+        background: $blue;
+        color: $white;
+        font-size: 16px;
+    }
+
+    .image-container {
+        font-size: 0;
+
+        img {
+            width: 100%;
+            max-height: 100vh;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .sticker {
+        position: relative;
+        margin-top: 20px;
+        padding-left: 30px;
+        color: $darkGray;
+        font-family: $Roboto-Bold;
+        text-transform: uppercase;
+
+        &:before {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 20px;
+            height: 2px;
+            background: $darkGray;
+            content: '';
+            transform: translateY(-50%);
+        }
+    }
+
+    .new-title {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+
+    .text-container {
+        display: inline;
+    }
+
+    .special-buttons {
+        margin-top: 30px;
+    }
+
+    .special-button,
+    .animated-button {
+        position: relative;
+        display: block;
+        margin-bottom: 20px;
+        padding: 5px 0;
+        color: $black;
+        font-family: $Roboto-Black;
+        text-align: center;
+        text-transform: uppercase;
+        border-bottom: 5px solid $blue;
+    }
+
+    .bottom-button {
+        margin-top: 50px;
+        margin-left: 10%;
+        text-transform: uppercase;
+
+        & > a {
+            display: inline-flex;
+            color: $black;
+        }
+    }
+
+    .arrow {
+        margin-left: 10px;
+        width: 30px;
+        stroke: $black;
+    }
+}
