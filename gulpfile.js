@@ -5,8 +5,8 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
-var mobile = '-mobile'
-// var mobile = ''
+var mobile = '-mobile';
+// var mobile = '';
 
 var page = `services-mobile/web-production/web-production-second-level${mobile}`
 

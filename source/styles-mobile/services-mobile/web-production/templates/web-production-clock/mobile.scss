@@ -1,0 +1,95 @@
+.web-production-clock {
+    padding: 20px 0 40px;
+    background: $lightBlack;
+    color: $white;
+
+    .clock-bg {
+        display: none;
+    }
+
+    .advantages,
+    .lists,
+    .info {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .advantages {
+        padding-top: 20px;
+
+        &-title {
+            font-family: $Raleway-Bold;
+            font-size: 26px;
+
+            span {
+                color: $blue;
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    p {
+        margin: 30px 0 20px;
+        font-family: $Roboto-Regular;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    ul {
+        margin: 30px 0;
+
+        &.gray {
+            color: $gray;
+        }
+    }
+
+    li {
+        margin-bottom: 15px;
+        font-family: $Roboto-Regular;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .index {
+        font-family: $Raleway-Bold;
+        font-size: 18px;
+    }
+
+    .list-title {
+        display: block;
+        margin: 40px 0 20px;
+        font-family: $Raleway-Bold;
+        font-size: 20px;
+    }
+
+    .jumping-button {
+        padding: 10px;
+        font-family: $Raleway-Medium;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+
+        a {
+            color: $blue;
+        }
+
+        .margined {
+            position: relative;
+            margin-right: 10px;
+            line-height: 1.4;
+
+            &:after {
+                display: block;
+                position: relative;
+                content: '';
+            }
+        }
+    }
+
+    .blue {
+        color: $blue;
+    }
+}
