@@ -26,10 +26,15 @@
 
         .sticker {
             margin-top: 40px;
+            padding-left: 0;
             color: $gray;
             font-family: $Raleway-ExtraBold;
             font-size: 14px;
             text-transform: uppercase;
+
+            &:before {
+                display: none;
+            }
         }
 
         .new-header {
