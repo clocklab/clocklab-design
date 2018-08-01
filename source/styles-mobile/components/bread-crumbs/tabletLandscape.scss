@@ -1,0 +1,12 @@
+.bread-crumbs {
+    margin: 25px auto 15px;
+
+    &__item {
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    .link {
+        font-size: 18px;
+    }
+}

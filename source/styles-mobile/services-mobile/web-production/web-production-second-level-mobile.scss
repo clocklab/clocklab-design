@@ -20,6 +20,8 @@
 /
 /---- TABLET LANDSCAPE ---- */
 @media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+    @import 'templates/web-production-header/tabletLandscape';
+    @import 'templates/web-production-clock/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 

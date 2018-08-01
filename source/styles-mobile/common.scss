@@ -54,6 +54,7 @@
 /
 /---- TABLET LANDSCAPE ---- */
 @media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+    @import 'components/bread-crumbs/tabletLandscape';
     @import 'components/services-work-examples/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
