@@ -31,7 +31,7 @@
 
     .link {
         position: relative;
-        color: $darkGray;
+        color: $white;
         font-family: $Roboto-Regular;
         font-size: 14px;
         text-decoration: underline;
@@ -43,6 +43,13 @@
             left: 100%;
             content: '→';
             transform: translateY(-50%);
+        }
+    }
+
+    &.dark {
+
+        .link {
+            color: $darkGray;
         }
     }
 }
