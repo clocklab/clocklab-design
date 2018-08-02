@@ -156,10 +156,11 @@
 		});
     }
 
-    var btns = [].slice.call(document.querySelectorAll('.content-title'));
-    var texts = [].slice.call(document.querySelectorAll('.text'));
+    var btns = [].slice.call(document.querySelectorAll('.services-questions .content-title'));
+    var texts = [].slice.call(document.querySelectorAll('.services-questions .text'));
     var animationTime = 300;
-	var toggleClass = 'active';
+    var toggleClass = 'active';
+
 
     function openCloseText() {
         this.removeEventListener('click', openCloseText);
