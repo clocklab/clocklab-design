@@ -51,5 +51,18 @@
         .link {
             color: $darkGray;
         }
+
+        .bread-crumbs {
+
+            &__item {
+
+                &.current-page {
+
+                    .link {
+                        color: $blue;
+                    }
+                }
+            }
+        }
     }
 }
