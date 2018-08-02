@@ -1,0 +1,131 @@
+.design-header {
+    font-family: $Roboto-Regular;
+    font-size: 16px;
+    line-height: 1.2;
+
+    .languages,
+    .big-background-letter {
+        display: none;
+    }
+
+    .about {
+        padding: 0 10% 40px;
+
+        .row {
+
+            &:first-child {
+                display: flex;
+                flex-direction: column;
+
+                .column {
+
+                    &:first-child {
+                        order: 2;
+                    }
+                }
+            }
+        }
+
+        ul {
+            margin: 40px 0;
+
+            &.circled,
+            &.dotted {
+
+                li {
+                    padding-left: 20px;
+
+                    &:before {
+                        display: block;
+                        position: absolute;
+                        top: 5px;
+                        left: 0;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background: $blue;
+                        content: '';
+                    }
+                }
+            }
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 25px;
+            padding-left: 10px;
+        }
+    }
+
+    .sticker {
+        margin-top: 0;
+    }
+
+    .new-title {
+        margin: 10px 0 20px;
+        font-size: 26px;
+        font-family: $Raleway-ExtraBold;
+        text-transform: uppercase;
+    }
+
+    .huge {
+        display: block;
+        margin: 40px 0 30px;
+        font-size: 22px;
+    }
+
+    .big {
+        display: block;
+        margin: 30px 0;
+        font-size: 20px;
+    }
+
+    .bold {
+        font-family: $Raleway-Bold;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .gray {
+        color: $gray;
+    }
+
+    .blue {
+        color: $blue;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .bordered {
+
+        &-bottom {
+            margin: 40px 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid $gray;
+        }
+    }
+
+    img {
+        width: 100%;
+        max-height: 70vh;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .list-item-title {
+        font-family: $Raleway-Bold;
+        font-size: 18px;
+    }
+
+    p,
+    .h2,
+    .h3,
+    h2,
+    h3 {
+        margin: 20px 0;
+    }
+}
