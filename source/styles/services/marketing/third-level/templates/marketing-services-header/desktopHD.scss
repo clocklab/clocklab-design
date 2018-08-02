@@ -6,7 +6,7 @@
 
     .languages {
         position: absolute;
-        top: 50vh;
+        top: 400px;
         height: 40px;
 
         a {
@@ -33,18 +33,22 @@
         align-items: flex-end;
         position: relative;
         margin: 0 auto;
-        width: 81%;
+        padding: 0 9.5%;
         height: 520px;
     }
 
     .header-image {
         position: absolute;
         top: 0;
-        left: 0;
-        width: 67%;
+        left: 9.5%;
+        width: 54%;
         height: 100%;
         object-fit: cover;
         object-position: center;
+    }
+
+    .bread-crumbs {
+        top: -120px;
     }
 
     .title-block {
