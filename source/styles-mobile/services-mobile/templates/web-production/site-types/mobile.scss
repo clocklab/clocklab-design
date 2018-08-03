@@ -1,3 +1,85 @@
 .site-types {
-    
+    background: $lightBlack;
+    font-family: $Roboto-Regular;
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        padding: 50px 0;
+        width: 80%;
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .line {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: $darkGray;
+
+        &--1 {
+            left: 0;
+        }
+
+        &--4 {
+            left: 100%;
+        }
+    }
+
+    .types-title {
+        color: $blue;
+        font-family: $Raleway-ExtraBold;
+        font-size: 32px;
+    }
+
+    .types {
+        position: relative;
+        z-index: 2;
+        margin-top: 40px;
+
+        &__item,
+        .crossed-button {
+            color: $white;
+        }
+
+        &__item {
+            display: block;
+            margin-bottom: 30px;
+        }
+
+        .crossed-button {
+            display: inline-flex;
+            margin: 10px auto 15px;
+            color: $blue;
+        }
+
+        .arrow {
+            margin-left: 10px;
+            width: 30px;
+            stroke: $blue;
+        }
+    }
+
+    .index {
+        color: $gray;
+        font-size: 14px;
+    }
+
+    .new-title {
+        display: block;
+        margin: 5px 0 10px;
+        font-family: $Raleway-Bold;
+        font-size: 18px;
+    }
+
+    .content-text {
+        line-height: 1.3;
+    }
 }

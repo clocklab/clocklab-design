@@ -1,3 +1,40 @@
 .site-types {
-    
+
+    .container {
+        padding: 80px 0;
+    }
+
+    .line {
+
+        &--2 {
+            left: calc(100% / 3);
+        }
+
+        &--3 {
+            left: calc(100% / 3 * 2);
+        }
+    }
+
+    .types-title {
+        display: block;
+        width: calc(100% / 3);
+        font-size: 42px;
+    }
+
+    .types {
+        margin-top: 60px;
+        margin-left: calc(100% / 3);
+    }
+
+    .index {
+        font-size: 16px;
+    }
+
+    .new-title {
+        font-size: 24px;
+    }
+
+    .content-text {
+        font-size: 18px;
+    }
 }
