@@ -1,0 +1,126 @@
+.marketing-services-content {
+    padding: 10px 0 30px;
+    font-family: $Roboto-Regular;
+
+    .big-background-letter,
+    .lines {
+        display: none;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .bordered {
+
+        &-left {
+            position: relative;
+            padding-left: 15px;
+
+            &:before {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 5px;
+                height: 100%;
+                background: $blue;
+                content: '';
+            }
+        }
+
+        &-bottom {
+            margin: 40px 0;
+            padding-bottom: 15px;
+            border-bottom: 1px solid $gray;
+        }
+    }
+
+    .bold {
+        font-family: $Raleway-Bold;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .black {
+        color: $black;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+
+    .blue {
+        color: $blue;
+    }
+
+    .gray {
+        color: $gray;
+    }
+
+    .light-gray {
+        color: $lightGray;
+    }
+
+    .huge {
+        display: block;
+        margin: 40px 0 30px;
+        font-size: 22px;
+    }
+
+    .big {
+        display: block;
+        margin: 30px 0;
+        font-size: 20px;
+    }
+
+    img {
+        display: block;
+        margin: 30px 0;
+        width: 100%;
+        max-height: 70vh;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    p {
+        margin: 20px 0;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    ul {
+        margin: 50px 0;
+
+        p {
+            margin: 10px 0 20px;
+        }
+
+        &.circled {
+
+            li {
+                padding-left: 10px;
+
+                &:before {
+                    display: block;
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                    width: 6px;
+                    height: 6px;
+                    background: $blue;
+                    border-radius: 50%;
+                    content: '';
+                }
+            }
+        }
+    }
+
+    li {
+        position: relative;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,30 @@
+.marketing-services-content {
+
+    .huge {
+        margin: 60px 0 50px;
+        font-size: 26px;
+    }
+
+    .big {
+        margin: 40px 0;
+        font-size: 22px;
+    }
+
+    p {
+        margin: 40px 0;
+        font-size: 18px;
+    }
+
+    ul {
+
+        &.double {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                width: 50%;
+                padding-right: 30px;
+            }
+        }
+    }
+}
