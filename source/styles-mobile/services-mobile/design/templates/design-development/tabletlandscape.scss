@@ -1,0 +1,51 @@
+.design-development {
+    padding: 80px 0 100px;
+
+    .development-title {
+        display: block;
+        width: calc(100% / 3 * 2);
+        font-size: 40px;
+    }
+
+    .development-offer {
+        display: block;
+        width: calc(100% / 3 * 2);
+        font-size: 24px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 0;
+    }
+
+    li {
+        padding-right: 30px;
+        width: 50%;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .big {
+        font-size: 26px;
+    }
+
+    .row {
+        display: flex;
+        align-items: flex-start;
+        margin: 80px 0;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .label {
+        margin-top: 0;
+        min-width: 160px;
+        font-size: 100px;
+        text-align: center;
+    }
+}

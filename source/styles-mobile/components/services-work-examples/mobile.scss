@@ -1,12 +1,41 @@
 .services-work-examples {
-    padding: 50px 0 30px;
     color: $darkGray;
     font-family: $Raleway-Bold;
+
+    .examples {
+        padding: 50px 0 20px;
+
+        &.dark {
+            background: $lightBlack;
+            color: $white;
+
+            .crossed-button {
+
+                &__text {
+                    color: $white;
+                }
+
+                &__arrow {
+
+                    &-part {
+                        stroke: $white;
+                    }
+                }
+            }
+
+            .works {
+
+                &__text {
+                    color: $white;
+                }
+            }
+        }
+    }
 
     .container {
         position: relative;
         margin: 0 auto;
-        width: 90%;
+        width: 80%;
     }
 
     .title {
@@ -47,9 +76,16 @@
         }
     }
 
+    .crossed-button {
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+
     .discuss {
-        margin-top: 60px;
-        padding: 0 5% 40px;
+        margin-top: 40px;
+        padding: 0 10% 30px;
 
         &__title {
             font-size: 24px;
@@ -67,6 +103,7 @@
             padding: 15px 30px;
             background: $blue;
             color: $white;
+            text-transform: uppercase;
         }
     }
 }

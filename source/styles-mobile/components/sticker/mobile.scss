@@ -1,0 +1,25 @@
+.sticker {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 30px;
+    color: $darkGray;
+    font-family: $Roboto-Bold;
+    text-transform: uppercase;
+
+    &-text {
+        color: $darkGray;
+        font-size: 14px;
+    }
+
+    &:before {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 20px;
+        height: 2px;
+        background: $darkGray;
+        content: '';
+        transform: translateY(-50%);
+    }
+}

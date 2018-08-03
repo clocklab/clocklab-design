@@ -1,0 +1,40 @@
+.more-marketing-services {
+
+    .container {
+        padding: 80px 0;
+    }
+
+    .line {
+
+        &--2 {
+            left: calc(100% / 3);
+        }
+
+        &--3 {
+            left: calc(100% / 3 * 2);
+        }
+    }
+
+    .title {
+        font-size: 42px;
+
+        a {
+            font-size: 28px;
+        }
+    }
+
+    .more-services-list {
+        margin-top: 60px;
+        margin-left: calc(100% / 3);
+    }
+
+    .crossed-button {
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    .arrow {
+        margin-left: 10px;
+        width: 30px;
+    }
+}

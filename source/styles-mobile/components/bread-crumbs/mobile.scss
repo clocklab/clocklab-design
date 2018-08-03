@@ -1,0 +1,68 @@
+.bread-crumbs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px auto;
+    width: 80%;
+
+    &__item {
+        margin-bottom: 10px;
+        margin-right: 20px;
+
+        &.current-page {
+            pointer-events: none;
+
+            .link {
+                color: $blue;
+                text-decoration: none;
+            }
+        }
+
+        @for $i from 1 through 6 {
+            &:nth-child(#{$i}) {
+                order: (6 - $i);
+            }
+        }
+    }
+
+    .index,
+    .symbol {
+        display: none;
+    }
+
+    .link {
+        position: relative;
+        color: $white;
+        font-family: $Roboto-Regular;
+        font-size: 14px;
+        text-decoration: underline;
+
+        &:after {
+            display: block;
+            position: absolute;
+            top: 60%;
+            left: 100%;
+            content: '→';
+            transform: translateY(-50%);
+        }
+    }
+
+    &.dark {
+
+        .link {
+            color: $darkGray;
+        }
+
+        .bread-crumbs {
+
+            &__item {
+
+                &.current-page {
+
+                    .link {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}

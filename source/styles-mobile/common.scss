@@ -16,7 +16,11 @@
 @import 'components/crossed-button/mobile';
 @import 'components/switch-button/mobile';
 @import 'components/scroll-to-top/mobile';
+@import 'components/sticker/mobile';
+@import 'components/bread-crumbs/mobile';
 @import 'components/services-work-examples/mobile';
+@import 'components/services-questions/mobile';
+@import 'components/services-blog/mobile';
 /* ---- MOBILE ---- */
 
 
@@ -40,6 +44,8 @@
     @import 'components/our-clients/tabletPortrait';
     @import 'components/form/tabletPortrait';
     @import 'components/services-work-examples/tabletPortrait';
+    @import 'components/services-questions/tabletPortrait';
+    @import 'components/services-blog/tabletPortrait';
 }
 /* ---- TABLET PORTRAIT ---- */
 
@@ -48,6 +54,7 @@
 /
 /---- TABLET LANDSCAPE ---- */
 @media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+    @import 'components/bread-crumbs/tabletLandscape';
     @import 'components/services-work-examples/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */

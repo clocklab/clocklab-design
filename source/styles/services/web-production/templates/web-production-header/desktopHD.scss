@@ -29,7 +29,7 @@
     }
 
     .container {
-        position: relative;
+        // position: relative;
         margin: 0 auto;
         padding-right: 190px;
         padding-bottom: 175px;
@@ -105,6 +105,11 @@
                 transform: translateY(30%);
             }
         }
+    }
+
+    .bread-crumbs {
+        position: absolute;
+        margin: 0;
     }
 
     ul {

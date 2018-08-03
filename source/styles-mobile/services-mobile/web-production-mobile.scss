@@ -1,0 +1,36 @@
+@import '../base/variables';
+
+/*
+/
+/---- MOBILE ---- */
+@import 'templates/web-production/we-can/mobile';
+@import 'templates/web-production/site-types/mobile';
+@import 'templates/web-production/work-flow/mobile';
+/* ---- MOBILE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (min-width: #{$tabletPortraitWidth}) {
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+    @import 'templates/web-production/we-can/tabletLandscape';
+    @import 'templates/web-production/site-types/tabletLandscape';
+    @import 'templates/web-production/work-flow/tabletLandscape';
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- IPadPro PORTRAIT ---- */
+@media (min-width: #{$iPadProPortraitWidth}) and (orientation: portrait) {
+}
+/* ---- IPadPro PORTRAIT ---- */

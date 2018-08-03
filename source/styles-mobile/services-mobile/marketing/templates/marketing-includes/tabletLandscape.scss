@@ -1,0 +1,45 @@
+.marketing-includes {
+
+    .container {
+        padding: 60px 0;
+    }
+
+    .line {
+
+        &--2 {
+            left: calc(100% / 3);
+        }
+
+        &--3 {
+            left: calc(100% / 3 * 2);
+        }
+    }
+
+    .includes-title {
+        width: calc(100% / 3 * 2);
+        font-size: 36px;
+    }
+
+    ul {
+        margin: 40px 0 40px calc(100% / 3);
+        width: calc(100% / 3 * 2);
+
+        &.dotted {
+
+            .circle {
+                top: 7px;
+            }
+        }
+
+        &.indexed {
+
+            .index {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .list-item-title {
+        font-size: 20px;
+    }
+}

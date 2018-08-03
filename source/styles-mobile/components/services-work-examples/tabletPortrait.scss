@@ -1,5 +1,8 @@
 .services-work-examples {
-    padding: 80px 0 50px;
+
+    .examples {
+        padding: 80px 0 50px;
+    }
 
     .title {
         font-size: 38px;
@@ -16,6 +19,13 @@
 
         &__item {
             width: 45%;
+        }
+    }
+
+    .crossed-button {
+
+        &__text {
+            font-size: 18px;
         }
     }
 
