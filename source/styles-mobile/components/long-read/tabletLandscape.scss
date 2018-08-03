@@ -1,0 +1,31 @@
+.long-read {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > div {
+        margin-bottom: 60px;
+
+        &:nth-child(odd) {
+            width: 40%;
+        }
+
+        &:nth-child(even) {
+            width: 49%;
+        }
+    }
+
+    ul {
+
+        &.double {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                padding-right: 20px;
+                width: 50%;
+            }
+        }
+    }
+}

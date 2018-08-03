@@ -21,6 +21,7 @@
 @import 'components/services-work-examples/mobile';
 @import 'components/services-questions/mobile';
 @import 'components/services-blog/mobile';
+@import 'components/long-read/mobile';
 /* ---- MOBILE ---- */
 
 
@@ -56,6 +57,7 @@
 @media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
     @import 'components/bread-crumbs/tabletLandscape';
     @import 'components/services-work-examples/tabletLandscape';
+    @import 'components/long-read/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 
