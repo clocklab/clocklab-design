@@ -5,10 +5,10 @@ var gulp = require('gulp'),
         pattern: '*'
     });
 
-// var mobile = '-mobile';
-var mobile = '';
+var mobile = '-mobile';
+// var mobile = '';
 
-var page = `about-company${mobile}`
+var page = `services-mobile/web-production${mobile}`
 
 var sass = require('gulp-ruby-sass');
 var rename = require('gulp-rename');
