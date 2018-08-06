@@ -1,0 +1,55 @@
+.marketing-services {
+
+    .container {
+        display: flex;
+        align-items: center;
+        padding: 100px 0;
+    }
+
+    .line {
+
+        &--2 {
+            left: calc(100% / 3);
+        }
+
+        &--3 {
+            left: calc(100% / 3 * 2);
+        }
+    }
+
+    &-title {
+        display: block;
+        width: calc(100% / 3);
+        font-size: 36px;
+    }
+
+    .types {
+        display: flex;
+        align-items: center;
+        width: calc(100% / 3 * 2);
+
+        &__item {
+            width: 50%;
+        }
+    }
+
+    .content {
+
+        &-text {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+    }
+
+    .index {
+        font-size: 18px;
+    }
+
+    .text-container {
+        font-size: 24px;
+    }
+
+    .crossed-button {
+        margin-top: 25px;
+    }
+}

@@ -1,0 +1,51 @@
+.seo-order {
+
+    .container {
+        padding: 60px 0 80px;
+    }
+
+    .line {
+
+        &--2 {
+            left: calc(100% / 3);
+        }
+
+        &--3 {
+            left: calc(100% / 3 * 2);
+        }
+    }
+
+    .title {
+        margin-top: 15px;
+        width: calc(100% / 3 * 2);
+        font-size: 36px;
+    }
+
+    .items {
+        margin-top: 50px;
+    }
+
+    .item {
+        width: calc(100% / 3);
+
+        &:nth-child(2) {
+            margin-left: calc(100% / 3);
+        }
+
+        &:nth-child(3) {
+            margin-left: calc(100% / 3 * 2);
+        }
+    }
+
+    .index {
+        font-size: 30px;
+    }
+
+    .item-text {
+        font-size: 18px;
+    }
+
+    .open-form {
+        width: calc(100% / 3);
+    }
+}

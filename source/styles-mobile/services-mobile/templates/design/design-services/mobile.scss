@@ -1,0 +1,99 @@
+.design-services {
+    background: $lightBlack;
+    color: $white;
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        padding: 50px 0;
+        width: 80%;
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .line {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: $darkGray;
+
+        &:nth-child(1) {
+            left: 0;
+        }
+
+        &:nth-child(4) {
+            left: 100%;
+        }
+    }
+
+    .info {
+        position: relative;
+        z-index: 2;
+    }
+
+    .title {
+        font-family: $Raleway-ExtraBold;
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .blue {
+        color: $blue;
+    }
+
+    .services {
+        margin-top: 30px;
+    }
+
+    .service {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .index {
+        margin-bottom: 5px;
+        color: $gray;
+        font-family: $Roboto-Regular;
+        font-size: 14px;
+    }
+
+    .new-title {
+        margin-bottom: 10px;
+        font-family: $Roboto-Bold;
+        font-size: 20px;
+    }
+
+    .service-text {
+        font-family: $Roboto-Regular;
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .crossed-button {
+        margin-top: 10px;
+        color: $blue;
+        font-family: $Roboto-Regular;
+        text-transform: uppercase;
+    }
+
+    .arrow-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .arrow {
+        margin-left: 5px;
+        width: 30px;
+        stroke: $blue;
+    }
+}

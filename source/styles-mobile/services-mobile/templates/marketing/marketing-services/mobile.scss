@@ -1,0 +1,114 @@
+.marketing-services {
+    position: relative;
+
+    &-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        padding: 60px 0;
+        width: 80%;
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .line {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: $lightGray;
+
+        &--1 {
+            left: 0;
+        }
+
+        &--4 {
+            left: 100%;
+        }
+    }
+
+    &-title {
+        position: relative;
+        z-index: 2;
+        font-family: $Raleway-ExtraBold;
+        font-size: 26px;
+    }
+
+    .blue {
+        color: $blue;
+    }
+
+    .types {
+        position: relative;
+        z-index: 2;
+        margin-top: 30px;
+
+        &__item {
+            display: block;
+            position: relative;
+            margin-bottom: 30px;
+            color: $black;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .index {
+        font-family: $Roboto-Regular;
+        font-size: 16px;
+        color: $darkGray;
+    }
+
+    .content {
+        margin-top: 5px;
+
+        &-text {
+            margin-top: 10px;
+            font-family: $Roboto-Regular;
+            font-size: 16px;
+            line-height: 1.2;
+        }
+    }
+
+    .text-container {
+        display: inline-block;
+        font-family: $Raleway-Bold;
+        font-size: 18px;
+    }
+
+    .crossed-button {
+        margin-top: 15px;
+        color: $blue;
+        font-family: $Roboto-Regular;
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .arrow-container {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .arrow {
+        margin-left: 10px;
+        width: 30px;
+        stroke: $blue;
+    }
+}

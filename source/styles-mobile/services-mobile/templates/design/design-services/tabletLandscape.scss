@@ -1,4 +1,4 @@
-.site-types {
+.design-services {
 
     .container {
         padding: 80px 0;
@@ -6,35 +6,34 @@
 
     .line {
 
-        &--2 {
+        &:nth-child(2) {
             left: calc(100% / 3);
         }
 
-        &--3 {
+        &:nth-child(3) {
             left: calc(100% / 3 * 2);
         }
     }
 
-    .types-title {
-        display: block;
+    .title {
         width: calc(100% / 3);
-        font-size: 42px;
+        font-size: 32px;
     }
 
-    .types {
-        margin-top: 60px;
+    .services {
+        margin-top: 50px;
         margin-left: calc(100% / 3);
     }
 
-    .index {
-        font-size: 16px;
+    .service {
+        margin-bottom: 40px;
     }
 
     .new-title {
-        font-size: 24px;
+        font-size: 22px;
     }
 
-    .content-text {
+    .service-text {
         font-size: 18px;
     }
 }

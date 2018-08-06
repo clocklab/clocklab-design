@@ -1,0 +1,36 @@
+@import '../base/variables';
+
+/*
+/
+/---- MOBILE ---- */
+@import 'templates/marketing/marketing-header/mobile';
+@import 'templates/marketing/marketing-services/mobile';
+@import 'templates/marketing/marketing-brand/mobile';
+/* ---- MOBILE ---- */
+
+
+/*
+/
+/---- TABLET PORTRAIT ---- */
+@media (min-width: #{$tabletPortraitWidth}) {
+}
+/* ---- TABLET PORTRAIT ---- */
+
+
+/*
+/
+/---- TABLET LANDSCAPE ---- */
+@media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
+    @import 'templates/marketing/marketing-header/tabletLandscape';
+    @import 'templates/marketing/marketing-services/tabletLandscape';
+    @import 'templates/marketing/marketing-brand/tabletLandscape';
+}
+/* ---- TABLET LANDSCAPE ---- */
+
+
+/*
+/
+/---- IPadPro PORTRAIT ---- */
+@media (min-width: #{$iPadProPortraitWidth}) and (orientation: portrait) {
+}
+/* ---- IPadPro PORTRAIT ---- */

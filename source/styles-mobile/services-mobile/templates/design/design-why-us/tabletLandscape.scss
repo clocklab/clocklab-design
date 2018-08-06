@@ -1,4 +1,4 @@
-.work-flow {
+.design-why-us {
 
     .container {
         padding: 80px 0;
@@ -9,20 +9,20 @@
         &--2 {
             left: calc(100% / 3);
         }
-
-        &--3 {
-            left: calc(100% / 3 * 2);
-        }
     }
 
     .new-title {
         width: calc(100% / 3);
-        font-size: 42px;
+        font-size: 32px;
     }
 
-    .steps,
-    .questions {
+    .steps {
+        margin-top: 50px;
         margin-left: calc(100% / 3);
+    }
+
+    .step {
+        margin-bottom: 35px;
     }
 
     .index {
@@ -38,5 +38,9 @@
         p {
             font-size: 18px;
         }
+    }
+
+    .questions {
+        margin-left: calc(100% / 3);
     }
 }

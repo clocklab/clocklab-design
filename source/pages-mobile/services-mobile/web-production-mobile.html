@@ -12,9 +12,9 @@
         @@include('./components/menu.html')
         
         <div class="we-can" data-top-panel-bg="dark">
-            @@include('./components/clock-bg-white.html')
+            <!-- @@include('./components/clock-bg-white.html') -->
         
-            @@include('./components/languages-dark.html')
+            <!-- @@include('./components/languages-dark.html') -->
         
             <div class="container">
                 <div class="images">
@@ -551,12 +551,15 @@
                             Для экономии Вашего времени и нервов просто 
                             обратитесь к нам за успехом для Вашего бизнеса.
                         </p>
-                        <button class="open-form">
+                        <button class="open-form" id="open-form">
                             <span>Да</span>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
+
+        @@include('./components/form.html')
+        @@include('./components/scroll-to-top.html')
     </body>
 </html>

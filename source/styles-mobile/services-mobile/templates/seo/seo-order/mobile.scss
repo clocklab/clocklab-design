@@ -1,0 +1,90 @@
+.seo-order {
+    font-family: $Roboto-Regular;
+
+    .big-background-letter {
+        display: none;
+    }
+
+    .container {
+        position: relative;
+        margin: 0 auto;
+        padding: 30px 0 50px;
+        width: 80%;
+    }
+
+    .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .line {
+        position: absolute;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: $lightGray;
+
+        &--1 {
+            left: 0;
+        }
+
+        &--4 {
+            left: 100%;
+        }
+    }
+
+    .title,
+    .items,
+    .open-form {
+        position: relative;
+        z-index: 2;
+    }
+
+    .title {
+        margin-top: 10px;
+        color: $blue;
+        font-family: $Raleway-ExtraBold;
+        font-size: 28px;
+    }
+
+    .items {
+        margin-top: 30px;
+    }
+
+    .item {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .index {
+        color: $darkGray;
+        font-size: 20px;
+        font-family: $Raleway-Bold;
+    }
+
+    .item-text {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .open-form {
+        display: block;
+        margin: 50px auto 0;
+        padding: 15px 30px;
+        width: 100%;
+        max-width: 300px;
+        background: $blue;
+        color: $white;
+        font-family: $Raleway-Bold;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
