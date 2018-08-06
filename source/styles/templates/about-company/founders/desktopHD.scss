@@ -21,6 +21,23 @@
         max-width: 620px;
     }
 
+    .text-container {
+
+        &:before {
+            display: none;
+        }
+    }
+
+    .new-title {
+
+        &-text {
+            display: inline;
+            white-space: initial;
+            text-decoration: underline;
+            text-decoration-color: $blue;
+        }
+    }
+
     .text {
         margin-top: 40px;
 
@@ -31,7 +48,6 @@
             line-height: 1.4;
         }
     }
-
 
     .image-block {
         position: relative;
