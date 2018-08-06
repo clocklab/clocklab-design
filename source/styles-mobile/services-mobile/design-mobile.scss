@@ -3,9 +3,9 @@
 /*
 /
 /---- MOBILE ---- */
-@import 'templates/complex/design-header/mobile';
-@import 'templates/complex/design-services/mobile';
-@import 'templates/complex/design-why-us/mobile';
+@import 'templates/design/design-header/mobile';
+@import 'templates/design/design-services/mobile';
+@import 'templates/design/design-why-us/mobile';
 /* ---- MOBILE ---- */
 
 
@@ -21,9 +21,9 @@
 /
 /---- TABLET LANDSCAPE ---- */
 @media (min-width: #{$iPhoneXLandscapeWidth + 1px}) {
-    @import 'templates/complex/design-header/tabletLandscape';
-    @import 'templates/complex/design-services/tabletLandscape';
-    @import 'templates/complex/design-why-us/tabletLandscape';
+    @import 'templates/design/design-header/tabletLandscape';
+    @import 'templates/design/design-services/tabletLandscape';
+    @import 'templates/design/design-why-us/tabletLandscape';
 }
 /* ---- TABLET LANDSCAPE ---- */
 

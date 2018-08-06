@@ -1,3 +1,46 @@
 .design-why-us {
 
+    .container {
+        padding: 80px 0;
+    }
+
+    .line {
+
+        &--2 {
+            left: calc(100% / 3);
+        }
+    }
+
+    .new-title {
+        width: calc(100% / 3);
+        font-size: 32px;
+    }
+
+    .steps {
+        margin-top: 50px;
+        margin-left: calc(100% / 3);
+    }
+
+    .step {
+        margin-bottom: 35px;
+    }
+
+    .index {
+        font-size: 18px;
+    }
+
+    .content {
+
+        &-title {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .questions {
+        margin-left: calc(100% / 3);
+    }
 }
