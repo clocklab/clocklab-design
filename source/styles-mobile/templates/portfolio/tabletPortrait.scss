@@ -29,6 +29,15 @@
             font-size: 16px;
         }
 
+        &__content {
+            padding-top: 50px;
+        }
+
+        &__logo {
+            max-height: 60px;
+            max-width: 150px;
+        }
+
         &:nth-child(odd) {
             margin-left: auto;
         }

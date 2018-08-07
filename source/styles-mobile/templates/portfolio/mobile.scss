@@ -83,7 +83,7 @@
             top: 0;
             left: 0;
             z-index: 2;
-            padding: 20px 10px 0;
+            padding: 20px 10% 0;
             width: 100%;
             height: 100%;
             background: $black;
@@ -95,8 +95,8 @@
         }
 
         &__logo {
-            // width: 120px;
-            height: 40px;
+            max-width: 120px;
+            max-height: 40px;
         }
 
         &__text {
