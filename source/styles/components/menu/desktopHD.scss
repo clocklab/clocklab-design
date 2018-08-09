@@ -403,6 +403,8 @@
         /* STYLES FOR BORDER ANIMATION ENDS */
 
         &.disabled {
+            background: $blue;
+            cursor: default;
             pointer-events: none;
         }
     }

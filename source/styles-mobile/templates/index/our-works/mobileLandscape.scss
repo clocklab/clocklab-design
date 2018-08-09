@@ -1,0 +1,34 @@
+.our-works {
+
+    .slider {
+
+        &__info {
+            padding-top: 30px;
+        }
+    }
+
+    .control-buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        bottom: 40px;
+
+        &__item {
+            width: 45%;
+            line-height: 45px;
+        }
+    }
+
+    .switch-button {
+        height: 45px;
+
+        &__text {
+            line-height: 45px;
+        }
+    }
+
+    .skip,
+    .dots {
+        display: none;
+    }
+}

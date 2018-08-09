@@ -106,15 +106,24 @@
 
 
     function showHideInfo() {
+        this.matches('.opened')
+        ? addSliderListeners()
+        : removeSliderListeners();
+
         slides[counter].classList.toggle('opened');
         this.classList.toggle('opened');
+        skipBtn.classList.toggle('opened');
+        dotsContainer.classList.toggle('opened');
     }
 
 
 
     // ~~~~~ Scroll functions ~~~~~
     function checkElementTopPos() {
-        if (!questions.getBoundingClientRect().top) {
+        if (
+            !questions.getBoundingClientRect().top || 
+            questions.getBoundingClientRect().bottom === window.innerHeight
+        ) {
             document.body.removeAttribute('style');
             window.removeEventListener('scroll', checkElementTopPos);
             window.addEventListener('scroll', stopTopScroll);
@@ -122,7 +131,7 @@
     }
 
     function checkElementBottomPos() {
-        if (ourWorks.getBoundingClientRect().top === window.innerHeight) {
+        if (ourWorks.getBoundingClientRect().top >= window.innerHeight) {
             document.body.removeAttribute('style');
             window.removeEventListener('scroll', checkElementBottomPos);
             window.addEventListener('scroll', stopDownScroll);
@@ -132,29 +141,33 @@
     function skipToBottom() {
         removeSliderListeners();
         skipBtn.removeEventListener('click', skipToBottom);
+        skipBtn.addEventListener('click', skipToTop);
         window.removeEventListener('scroll', stopDownScroll);
+        window.addEventListener('scroll', checkElementTopPos);
+
+        ourWorks.classList.remove('visible');
 
         window.scroll({
             top: window.pageYOffset + questions.getBoundingClientRect().top,
             behavior: 'smooth'
         });
 
-        skipBtn.addEventListener('click', skipToTop);
-        window.addEventListener('scroll', checkElementTopPos);
     }
 
     function skipToTop() {
         removeSliderListeners();
         skipBtn.removeEventListener('click', skipToTop);
+        skipBtn.addEventListener('click', skipToBottom);
         window.removeEventListener('scroll', stopTopScroll);
+        window.addEventListener('scroll', checkElementBottomPos);
+
+        ourWorks.classList.remove('visible');
 
         window.scroll({
             top: window.pageYOffset - window.innerHeight,
             behavior: 'smooth'
         });
 
-        skipBtn.addEventListener('click', skipToBottom);
-        window.addEventListener('scroll', checkElementBottomPos);
     }
     // ~~~~~ Scroll functions ~~~~~
 
@@ -218,6 +231,7 @@
                 behavior: 'smooth'
             });
             document.body.style.overflow = 'hidden';
+            ourWorks.classList.add('visible');
             window.removeEventListener('scroll', stopDownScroll);
             addSliderListeners();
         }
@@ -232,6 +246,7 @@
                 behavior: 'smooth'
             });
             document.body.style.overflow = 'hidden';
+            ourWorks.classList.add('visible');
             window.removeEventListener('scroll', stopTopScroll);
             addSliderListeners();
         }

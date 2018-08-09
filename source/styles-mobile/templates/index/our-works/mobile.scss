@@ -2,6 +2,12 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    // height: calc(var(--vh, 1vh) * 100);
+    pointer-events: none;
+
+    &.visible {
+        pointer-events: initial;
+    }
 }
 
 .slider {
@@ -124,12 +130,18 @@
     position: absolute;
     bottom: 70px;
     left: 50%;
+    z-index: 3;
     color: $white;
     font-family: $Roboto-Bold;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
     transform: translateX(-50%);
+    transition: opacity $time * 2;
+
+    &.opened {
+        opacity: 0;
+    }
 }
 
 .dots {
@@ -137,6 +149,7 @@
     position: absolute;
     bottom: 30px;
     left: 50%;
+    z-index: 3;
     transform: translateX(-50%);
 
     &__item {

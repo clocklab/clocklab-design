@@ -87,17 +87,59 @@
 // ~~~~~~ MENU AND LOGO CHANGE COLOR ~~~~~~
 
 
+// ~~~~~~ THROTTLE FUNCTION ~~~~~~
+function throttle(func, ms = 20) {
+    var isThrottled = false,
+        savedArgs,
+        savedThis;
+    
+    function wrapper() {
+        if (isThrottled) {
+            savedArgs = arguments;
+            savedThis = this;
+            return;
+        }
+    
+        func.apply(this, arguments);
+    
+        isThrottled = true;
+    
+        setTimeout(function() {
+            isThrottled = false;
+            if (savedArgs) {
+                wrapper.apply(savedThis, savedArgs);
+                savedArgs = savedThis = null;
+            }
+        }, ms);
+    }
+  
+    return wrapper;
+}
+// ~~~~~~ THROTTLE FUNCTION ~~~~~~
+
+
 // ~~~~~~ SCROLL TO TOP ~~~~~~
 ;(function() {
     const btn = document.querySelector('#scroll-to-top');
+    let windowHeight = window.innerHeight;
 
-    btn && btn.addEventListener('click', () => {
-        window.scroll({
-            top: 0,
-            left: 0,
-            behavior: 'smooth'
-        })
-    })
+    function toggleButton() {
+        window.scrollY >= windowHeight * 2
+        ? !btn.matches('.visible') && btn.classList.add('visible')
+        : btn.matches('.visible') && btn.classList.remove('visible');
+    }
+    
+    if (btn) {
+        btn.addEventListener('click', () => {
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            })
+        });
+
+        window.addEventListener('scroll', throttle(toggleButton));
+    }
 })();
 // ~~~~~~ SCROLL TO TOP ~~~~~~
 
