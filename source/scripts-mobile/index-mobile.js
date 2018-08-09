@@ -131,7 +131,7 @@
     }
 
     function checkElementBottomPos() {
-        if (ourWorks.getBoundingClientRect().top === window.innerHeight) {
+        if (ourWorks.getBoundingClientRect().top >= window.innerHeight) {
             document.body.removeAttribute('style');
             window.removeEventListener('scroll', checkElementBottomPos);
             window.addEventListener('scroll', stopDownScroll);
@@ -144,6 +144,8 @@
         skipBtn.addEventListener('click', skipToTop);
         window.removeEventListener('scroll', stopDownScroll);
         window.addEventListener('scroll', checkElementTopPos);
+
+        ourWorks.classList.remove('visible');
 
         window.scroll({
             top: window.pageYOffset + questions.getBoundingClientRect().top,
@@ -158,6 +160,8 @@
         skipBtn.addEventListener('click', skipToBottom);
         window.removeEventListener('scroll', stopTopScroll);
         window.addEventListener('scroll', checkElementBottomPos);
+
+        ourWorks.classList.remove('visible');
 
         window.scroll({
             top: window.pageYOffset - window.innerHeight,
@@ -227,6 +231,7 @@
                 behavior: 'smooth'
             });
             document.body.style.overflow = 'hidden';
+            ourWorks.classList.add('visible');
             window.removeEventListener('scroll', stopDownScroll);
             addSliderListeners();
         }
@@ -241,6 +246,7 @@
                 behavior: 'smooth'
             });
             document.body.style.overflow = 'hidden';
+            ourWorks.classList.add('visible');
             window.removeEventListener('scroll', stopTopScroll);
             addSliderListeners();
         }
