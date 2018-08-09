@@ -1,0 +1,101 @@
+.our-works {
+
+    .slider {
+
+        &__slide {
+
+            &.opened {
+
+                .slider {
+
+                    &__title {
+                        left: 75%;
+                    }
+                }
+            }
+        }
+
+        &__title {
+            position: absolute;
+            top: 25vh;
+            left: 50%;
+            font-size: 60px;
+            transform: translateX(-50%);
+            transition: left $time * 2;
+        }
+
+        &__info {
+            padding-top: 10vh;
+            width: 50%;
+            transform: translateX(-100%);
+        }
+
+        &__logo {
+            width: 150px;
+            max-height: 40px;
+            object-fit: contain;
+            object-position: left;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+    }
+
+    .control-buttons {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        bottom: 40%;
+
+        &__item {
+            width: 42%;
+            max-width: 350px;
+            font-size: 18px;
+            line-height: 65px;
+
+            &--switch {
+
+                &:before,
+                &:after {
+                    border-width: 3px;
+                }
+            }
+        }
+    }
+
+    .switch-button {
+        height: 65px;
+
+        &__text {
+            font-size: 18px;
+            line-height: 65px;
+        }
+    }
+
+    .skip {
+        bottom: 130px;
+        font-size: 16px;
+        transition: left $time * 2, opacity $time * 2;
+
+        &.opened {
+            left: 75%;
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+
+    .dots {
+        bottom: 100px;
+        transition: left $time * 2;
+
+        &__item {
+            width: 10px;
+            height: 10px;
+        }
+
+        &.opened {
+            left: 75%;
+        }
+    }
+}

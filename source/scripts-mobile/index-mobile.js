@@ -108,6 +108,8 @@
     function showHideInfo() {
         slides[counter].classList.toggle('opened');
         this.classList.toggle('opened');
+        skipBtn.classList.toggle('opened');
+        dotsContainer.classList.toggle('opened');
     }
 
 
