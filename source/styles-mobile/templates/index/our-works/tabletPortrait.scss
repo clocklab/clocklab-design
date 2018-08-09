@@ -19,6 +19,7 @@
             position: absolute;
             top: 25vh;
             left: 50%;
+            width: max-content;
             font-size: 60px;
             transform: translateX(-50%);
             transition: left $time * 2;

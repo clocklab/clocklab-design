@@ -132,6 +132,11 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     transform: translateX(-50%);
+    transition: opacity $time * 2;
+
+    &.opened {
+        opacity: 0;
+    }
 }
 
 .dots {
